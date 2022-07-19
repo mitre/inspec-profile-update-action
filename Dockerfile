@@ -29,6 +29,7 @@ RUN npm install -g /build/saf.tgz
 # Copies your code file from your action repository to the filesystem path `/` of the container
 WORKDIR /action
 COPY index.js package.json package-lock.json /action/
+RUN npm install --omit=dev
 
 # Useful for CI pipelines
 RUN apk add bash jq curl ca-certificates
