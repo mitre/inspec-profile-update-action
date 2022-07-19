@@ -27,7 +27,7 @@ COPY --from=builder /build/saf.tgz /build/
 RUN npm install -g /build/saf.tgz
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
-COPY entrypoint.sh /entrypoint.sh
+COPY index.js /index.js
 
 # Useful for CI pipelines
 RUN apk add bash jq curl ca-certificates
