@@ -5,6 +5,7 @@ import re
 import json
 import uuid
 import re
+import urllib.request
 
 url = "https://public.cyber.mil/stigs/downloads/"
 
@@ -33,6 +34,9 @@ with open('stigs.json', 'r') as existingSTIGsFile:
 def cleanText(inputText):
     return re.sub(' +', ' ', inputText.replace('\r', ' ').replace('\u200b', '').replace('\n', ' ').split('\t')[0].strip()).strip()
 
+def getFilenameFromURL(url):
+    return url.split('/')[-1]
+
 for row in table.find_all('tr'):
     try:
         columns = row.find_all('td')
@@ -59,6 +63,8 @@ for row in table.find_all('tr'):
             if newStig:
                 if (href.lower().endswith('.zip')):
                     knownURLs.append(href)
+                    print(f"Downloading {name}: {href}")
+                    urllib.request.urlretrieve(href, "tmp/" + getFilenameFromURL(href))
                     stigs.append({
                         'id': str(uuid.uuid4()),
                         'name': name,
@@ -69,7 +75,8 @@ for row in table.find_all('tr'):
                 print("Existing STIG: " + name)
     except KeyboardInterrupt:
         exit()
-    except:
+    except Exception as e:
+        print(e)
         # Bad rows ignored, typicall they don't contain a download link
         pass
 
