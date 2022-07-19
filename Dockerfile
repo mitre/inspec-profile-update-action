@@ -33,4 +33,4 @@ COPY entrypoint.sh /entrypoint.sh
 RUN apk add bash jq curl ca-certificates
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.sh"]
+CMD ["node", "index.js"]
