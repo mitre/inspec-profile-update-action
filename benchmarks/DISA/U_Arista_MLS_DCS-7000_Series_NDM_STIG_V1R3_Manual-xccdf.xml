@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Arista_DCS-7000_Series_NDM_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2019-09-30">accepted</status><title>Arista MLS DCS-7000 Series NDM Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 3 Benchmark Date: 25 Oct 2019</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60815" selected="true" /><select idref="V-60833" selected="true" /><select idref="V-60835" selected="true" /><select idref="V-60837" selected="true" /><select idref="V-60839" selected="true" /><select idref="V-60841" selected="true" /><select idref="V-60843" selected="true" /><select idref="V-60845" selected="true" /><select idref="V-60847" selected="true" /><select idref="V-60849" selected="true" /><select idref="V-60851" selected="true" /><select idref="V-60853" selected="true" /><select idref="V-60855" selected="true" /><select idref="V-60857" selected="true" /><select idref="V-60859" selected="true" /><select idref="V-60861" selected="true" /><select idref="V-60863" selected="true" /><select idref="V-60865" selected="true" /><select idref="V-60867" selected="true" /><select idref="V-60869" selected="true" /><select idref="V-60871" selected="true" /><select idref="V-60873" selected="true" /><select idref="V-60875" selected="true" /><select idref="V-60877" selected="true" /><select idref="V-60879" selected="true" /><select idref="V-60881" selected="true" /><select idref="V-60883" selected="true" /><select idref="V-60885" selected="true" /><select idref="V-60887" selected="true" /><select idref="V-67195" selected="true" /><select idref="V-67197" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60815" selected="true" /><select idref="V-60833" selected="true" /><select idref="V-60835" selected="true" /><select idref="V-60837" selected="true" /><select idref="V-60839" selected="true" /><select idref="V-60841" selected="true" /><select idref="V-60843" selected="true" /><select idref="V-60845" selected="true" /><select idref="V-60847" selected="true" /><select idref="V-60849" selected="true" /><select idref="V-60851" selected="true" /><select idref="V-60853" selected="true" /><select idref="V-60855" selected="true" /><select idref="V-60857" selected="true" /><select idref="V-60859" selected="true" /><select idref="V-60861" selected="true" /><select idref="V-60863" selected="true" /><select idref="V-60865" selected="true" /><select idref="V-60867" selected="true" /><select idref="V-60869" selected="true" /><select idref="V-60871" selected="true" /><select idref="V-60873" selected="true" /><select idref="V-60875" selected="true" /><select idref="V-60877" selected="true" /><select idref="V-60879" selected="true" /><select idref="V-60881" selected="true" /><select idref="V-60883" selected="true" /><select idref="V-60885" selected="true" /><select idref="V-60887" selected="true" /><select idref="V-67195" selected="true" /><select idref="V-67197" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60815" selected="true" /><select idref="V-60833" selected="true" /><select idref="V-60835" selected="true" /><select idref="V-60837" selected="true" /><select idref="V-60839" selected="true" /><select idref="V-60841" selected="true" /><select idref="V-60843" selected="true" /><select idref="V-60845" selected="true" /><select idref="V-60847" selected="true" /><select idref="V-60849" selected="true" /><select idref="V-60851" selected="true" /><select idref="V-60853" selected="true" /><select idref="V-60855" selected="true" /><select idref="V-60857" selected="true" /><select idref="V-60859" selected="true" /><select idref="V-60861" selected="true" /><select idref="V-60863" selected="true" /><select idref="V-60865" selected="true" /><select idref="V-60867" selected="true" /><select idref="V-60869" selected="true" /><select idref="V-60871" selected="true" /><select idref="V-60873" selected="true" /><select idref="V-60875" selected="true" /><select idref="V-60877" selected="true" /><select idref="V-60879" selected="true" /><select idref="V-60881" selected="true" /><select idref="V-60883" selected="true" /><select idref="V-60885" selected="true" /><select idref="V-60887" selected="true" /><select idref="V-67195" selected="true" /><select idref="V-67197" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60815" selected="true" /><select idref="V-60833" selected="true" /><select idref="V-60835" selected="true" /><select idref="V-60837" selected="true" /><select idref="V-60839" selected="true" /><select idref="V-60841" selected="true" /><select idref="V-60843" selected="true" /><select idref="V-60845" selected="true" /><select idref="V-60847" selected="true" /><select idref="V-60849" selected="true" /><select idref="V-60851" selected="true" /><select idref="V-60853" selected="true" /><select idref="V-60855" selected="true" /><select idref="V-60857" selected="true" /><select idref="V-60859" selected="true" /><select idref="V-60861" selected="true" /><select idref="V-60863" selected="true" /><select idref="V-60865" selected="true" /><select idref="V-60867" selected="true" /><select idref="V-60869" selected="true" /><select idref="V-60871" selected="true" /><select idref="V-60873" selected="true" /><select idref="V-60875" selected="true" /><select idref="V-60877" selected="true" /><select idref="V-60879" selected="true" /><select idref="V-60881" selected="true" /><select idref="V-60883" selected="true" /><select idref="V-60885" selected="true" /><select idref="V-60887" selected="true" /><select idref="V-67195" selected="true" /><select idref="V-67197" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60815" selected="true" /><select idref="V-60833" selected="true" /><select idref="V-60835" selected="true" /><select idref="V-60837" selected="true" /><select idref="V-60839" selected="true" /><select idref="V-60841" selected="true" /><select idref="V-60843" selected="true" /><select idref="V-60845" selected="true" /><select idref="V-60847" selected="true" /><select idref="V-60849" selected="true" /><select idref="V-60851" selected="true" /><select idref="V-60853" selected="true" /><select idref="V-60855" selected="true" /><select idref="V-60857" selected="true" /><select idref="V-60859" selected="true" /><select idref="V-60861" selected="true" /><select idref="V-60863" selected="true" /><select idref="V-60865" selected="true" /><select idref="V-60867" selected="true" /><select idref="V-60869" selected="true" /><select idref="V-60871" selected="true" /><select idref="V-60873" selected="true" /><select idref="V-60875" selected="true" /><select idref="V-60877" selected="true" /><select idref="V-60879" selected="true" /><select idref="V-60881" selected="true" /><select idref="V-60883" selected="true" /><select idref="V-60885" selected="true" /><select idref="V-60887" selected="true" /><select idref="V-67195" selected="true" /><select idref="V-67197" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60815" selected="true" /><select idref="V-60833" selected="true" /><select idref="V-60835" selected="true" /><select idref="V-60837" selected="true" /><select idref="V-60839" selected="true" /><select idref="V-60841" selected="true" /><select idref="V-60843" selected="true" /><select idref="V-60845" selected="true" /><select idref="V-60847" selected="true" /><select idref="V-60849" selected="true" /><select idref="V-60851" selected="true" /><select idref="V-60853" selected="true" /><select idref="V-60855" selected="true" /><select idref="V-60857" selected="true" /><select idref="V-60859" selected="true" /><select idref="V-60861" selected="true" /><select idref="V-60863" selected="true" /><select idref="V-60865" selected="true" /><select idref="V-60867" selected="true" /><select idref="V-60869" selected="true" /><select idref="V-60871" selected="true" /><select idref="V-60873" selected="true" /><select idref="V-60875" selected="true" /><select idref="V-60877" selected="true" /><select idref="V-60879" selected="true" /><select idref="V-60881" selected="true" /><select idref="V-60883" selected="true" /><select idref="V-60885" selected="true" /><select idref="V-60887" selected="true" /><select idref="V-67195" selected="true" /><select idref="V-67197" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60815" selected="true" /><select idref="V-60833" selected="true" /><select idref="V-60835" selected="true" /><select idref="V-60837" selected="true" /><select idref="V-60839" selected="true" /><select idref="V-60841" selected="true" /><select idref="V-60843" selected="true" /><select idref="V-60845" selected="true" /><select idref="V-60847" selected="true" /><select idref="V-60849" selected="true" /><select idref="V-60851" selected="true" /><select idref="V-60853" selected="true" /><select idref="V-60855" selected="true" /><select idref="V-60857" selected="true" /><select idref="V-60859" selected="true" /><select idref="V-60861" selected="true" /><select idref="V-60863" selected="true" /><select idref="V-60865" selected="true" /><select idref="V-60867" selected="true" /><select idref="V-60869" selected="true" /><select idref="V-60871" selected="true" /><select idref="V-60873" selected="true" /><select idref="V-60875" selected="true" /><select idref="V-60877" selected="true" /><select idref="V-60879" selected="true" /><select idref="V-60881" selected="true" /><select idref="V-60883" selected="true" /><select idref="V-60885" selected="true" /><select idref="V-60887" selected="true" /><select idref="V-67195" selected="true" /><select idref="V-67197" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60815" selected="true" /><select idref="V-60833" selected="true" /><select idref="V-60835" selected="true" /><select idref="V-60837" selected="true" /><select idref="V-60839" selected="true" /><select idref="V-60841" selected="true" /><select idref="V-60843" selected="true" /><select idref="V-60845" selected="true" /><select idref="V-60847" selected="true" /><select idref="V-60849" selected="true" /><select idref="V-60851" selected="true" /><select idref="V-60853" selected="true" /><select idref="V-60855" selected="true" /><select idref="V-60857" selected="true" /><select idref="V-60859" selected="true" /><select idref="V-60861" selected="true" /><select idref="V-60863" selected="true" /><select idref="V-60865" selected="true" /><select idref="V-60867" selected="true" /><select idref="V-60869" selected="true" /><select idref="V-60871" selected="true" /><select idref="V-60873" selected="true" /><select idref="V-60875" selected="true" /><select idref="V-60877" selected="true" /><select idref="V-60879" selected="true" /><select idref="V-60881" selected="true" /><select idref="V-60883" selected="true" /><select idref="V-60885" selected="true" /><select idref="V-60887" selected="true" /><select idref="V-67195" selected="true" /><select idref="V-67197" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60815" selected="true" /><select idref="V-60833" selected="true" /><select idref="V-60835" selected="true" /><select idref="V-60837" selected="true" /><select idref="V-60839" selected="true" /><select idref="V-60841" selected="true" /><select idref="V-60843" selected="true" /><select idref="V-60845" selected="true" /><select idref="V-60847" selected="true" /><select idref="V-60849" selected="true" /><select idref="V-60851" selected="true" /><select idref="V-60853" selected="true" /><select idref="V-60855" selected="true" /><select idref="V-60857" selected="true" /><select idref="V-60859" selected="true" /><select idref="V-60861" selected="true" /><select idref="V-60863" selected="true" /><select idref="V-60865" selected="true" /><select idref="V-60867" selected="true" /><select idref="V-60869" selected="true" /><select idref="V-60871" selected="true" /><select idref="V-60873" selected="true" /><select idref="V-60875" selected="true" /><select idref="V-60877" selected="true" /><select idref="V-60879" selected="true" /><select idref="V-60881" selected="true" /><select idref="V-60883" selected="true" /><select idref="V-60885" selected="true" /><select idref="V-60887" selected="true" /><select idref="V-67195" selected="true" /><select idref="V-67197" selected="true" /></Profile><Group id="V-60815"><title>SRG-APP-000516-NDM-000317</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75271r1_rule" severity="high" weight="10.0"><version>AMLS-NM-000100</version><title>The Arista Multilayer Switch must have a local infrequently used account to be used as an account of last resort with full access to the network device.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password complexity is one factor of several that determines how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that needs to be tested before the password is compromised.
+
+Typically, the account of last resort is a built-in account with full privileges to the network device. This account should only be used when the authentication mechanism is unreachable and configuration or maintenance actions must be taken.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-66501r1_fix">Configure the Arista Multilayer Switch with a local infrequently used account to be used as an account of last resort with full access to the network device.</fixtext><fix id="F-66501r1_fix" /><check system="C-61737r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the Arista Multilayer Switch configuration for a local infrequently used account to be used as an account of last resort with full access to the network device. The default account on the Arista MLS is called admin.
+
+If the account of last resort does not exist, this is a finding.
+
+To assign a password to this account, enter the following:
+
+username admin secret [password] role [role]</check-content></check></Rule></Group><Group id="V-60833"><title>SRG-APP-000164-NDM-000252</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75289r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000110</version><title>The Arista Multilayer Switch account of last resort must have a password with a length of 15 characters.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password complexity is one factor of several that determines how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that needs to be tested before the password is compromised.
+
+Typically, the account of last resort is a built-in account with full privileges to the network device. This account should only be used when the authentication mechanism is unreachable and configuration or maintenance actions must be taken.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000205</ident><fixtext fixref="F-66543r1_fix">Configure the Arista Multilayer Switch account of last resort with a password with a length of at least 15 characters.
+
+To configure the password minimum length, enter the following commands:
+
+configure
+management security
+password minimum length 15</fixtext><fix id="F-66543r1_fix" /><check system="C-61779r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the Arista Multilayer Switch configuration for the account of last resort with full access to the network device.
+
+If the account of last resort does not require a password length of at least 15 characters, this is a finding.
+
+To verify the setting is correct, run the "show running-config" command on the switch. Under the section "management security", the configuration statement "password minimum length 15" must be present, with a value set to 15 or higher.</check-content></check></Rule></Group><Group id="V-60835"><title>SRG-APP-000026-NDM-000208</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75291r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000120</version><title>The Arista Multilayer Switch must automatically audit account creation.</title><description>&lt;VulnDiscussion&gt;Upon gaining access to a network device, an attacker will often first attempt to create a persistent method of reestablishing access. One way to accomplish this is to create a new account. Notification of account creation helps to mitigate this risk. Auditing account creation provides the necessary reconciliation that account management procedures are being followed. Without this audit trail, personnel without the proper authorization may gain access to critical network nodes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000018</ident><fixtext fixref="F-66545r1_fix">Enable logging on the switch with sufficient detail to fulfill the specifications set forth in the VulDiscussion.
+
+To configure logging to a remote syslog server at the informational level, enter:
+
+switch#config
+switch(config)#logging host [ip address]
+switch(config)#logging trap informational
+
+Then configure the following AAA:
+
+aaa accounting commands all default start-stop logging [group radius]</fixtext><fix id="F-66545r1_fix" /><check system="C-61781r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the switch configuration and verify that logging is enabled.
+
+If logging is not enabled or is not enabled with sufficient detail to fulfill the specifications set forth in the VulDiscussion, this is a finding.
+
+To determine if logging is enabled, enter: 
+
+switch#show logging
+
+The output must show logging as enabled, with a logging level of informational or debugging.
+
+In order to ensure all user commands are captured, the following statement must be in the running config:
+
+aaa accounting commands all default start-stop logging [group radius]</check-content></check></Rule></Group><Group id="V-60837"><title>SRG-APP-000027-NDM-000209</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75293r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000130</version><title>The Arista Multilayer Switch must automatically audit account modification.</title><description>&lt;VulnDiscussion&gt;Since the accounts in the network device are privileged or system-level accounts, account management is vital to the security of the network device. Account management by a designated authority ensures access to the network device is being controlled in a secure manner by granting access to only authorized personnel with the appropriate and necessary privileges. Auditing account modification along with an automatic notification to appropriate individuals will provide the necessary reconciliation that account management procedures are being followed. If modifications to management accounts are not audited, reconciliation of account management procedures cannot be tracked.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001403</ident><fixtext fixref="F-66547r1_fix">Enable logging on the switch with sufficient detail to fulfill the specifications set forth in the VulDiscussion.
+
+To configure logging to a remote syslog server at the informational level, enter:
+
+switch#config
+switch(config)#logging host [ip address]
+switch(config)#logging trap informational
+
+Then configure the following AAA
+
+aaa accounting commands all default start-stop logging [group radius]</fixtext><fix id="F-66547r1_fix" /><check system="C-61783r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the switch configuration and verify that logging is enabled.
+
+If logging is not enabled or is not enabled with sufficient detail to fulfill the specifications set forth in the VulDiscussion, this is a finding.
+
+To determine if logging is enabled, enter: 
+
+switch#show logging
+
+The output must show logging as enabled, with a logging level of informational or debugging.
+
+In order to ensure all user commands are captured, the following statement must be in the running config.
+
+aaa accounting commands all default start-stop logging [group radius]</check-content></check></Rule></Group><Group id="V-60839"><title>SRG-APP-000028-NDM-000210</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75295r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000140</version><title>The Arista Multilayer Switch must automatically audit account disabling actions.</title><description>&lt;VulnDiscussion&gt;Account management, as a whole, ensures access to the network device is being controlled in a secure manner by granting access to only authorized personnel. Auditing account disabling actions will support account management procedures. When device management accounts are disabled, user or service accessibility may be affected. Auditing also ensures authorized active accounts remain enabled and available for use when required.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001404</ident><fixtext fixref="F-66549r1_fix">Enable logging on the switch with sufficient detail to fulfill the specifications set forth in the VulDiscussion.
+
+To configure logging to a remote syslog server at the informational level, enter:
+
+switch#config
+switch(config)#logging host [ip address]
+switch(config)#logging trap informational
+
+Then configure the following AAA
+
+aaa accounting commands all default start-stop logging [group radius]</fixtext><fix id="F-66549r1_fix" /><check system="C-61785r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the switch configuration and verify that logging is enabled.
+
+If logging is not enabled or is not enabled with sufficient detail to fulfill the specifications set forth in the VulDiscussion, this is a finding.
+
+To determine if logging is enabled, enter: 
+
+switch#show logging
+
+The output must show logging as enabled, with a logging level of informational or debugging.
+
+In order to ensure all user commands are captured, the following statement must be in the running config.
+
+aaa accounting commands all default start-stop logging [group radius]</check-content></check></Rule></Group><Group id="V-60841"><title>SRG-APP-000029-NDM-000211</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75297r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000150</version><title>The Arista Multilayer Switch must automatically audit account removal actions.</title><description>&lt;VulnDiscussion&gt;Account management, as a whole, ensures access to the network device is being controlled in a secure manner by granting access to only authorized personnel. Auditing account removal actions will support account management procedures. When device management accounts are terminated, user or service accessibility may be affected. Auditing also ensures authorized active accounts remain enabled and available for use when required.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001405</ident><fixtext fixref="F-66551r1_fix">Enable logging on the switch with sufficient detail to fulfill the specifications set forth in the VulDiscussion.
+
+To configure logging to a remote syslog server at the informational level, enter:
+
+switch#config
+switch(config)#logging host [ip address]
+switch(config)#logging trap informational
+
+Then configure the following AAA:
+
+aaa accounting commands all default start-stop logging [group radius]</fixtext><fix id="F-66551r1_fix" /><check system="C-61787r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the switch configuration and verify that logging is enabled.
+
+If logging is not enabled or is not enabled with sufficient detail to fulfill the specifications set forth in the VulDiscussion, this is a finding.
+
+To determine if logging is enabled, enter: 
+
+switch#show logging
+
+The output must show logging as enabled, with a logging level of informational or debugging.
+
+In order to ensure all user commands are captured, the following statement must be in the running config:
+
+aaa accounting commands all default start-stop logging [group radius]</check-content></check></Rule></Group><Group id="V-60843"><title>SRG-APP-000068-NDM-000215</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75299r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000160</version><title>The Arista Multilayer Switch must display the Standard Mandatory DoD Notice and Consent Banner before granting access to the device.</title><description>&lt;VulnDiscussion&gt;Display of the DoD-approved use notification before granting access to the network device ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000048</ident><fixtext fixref="F-66553r1_fix">Configure the switch to display the Standard DoD Notice and Consent banner.
+
+To configure the banner, enter the following commands from the configuration mode interface. Replace the bracketed data with the DoD Banner.
+
+switch(config)#banner login
+[DoD Banner]
+EOF</fixtext><fix id="F-66553r1_fix" /><check system="C-61789r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the device configuration and verify display of the Standard DoD Notice and Consent Banner.
+
+If the banner is not displayed, this is a finding.
+
+To verify the device is configured to display the DoD Banner, review the running configuration with the "show running-config" command. Identify the section "banner login" and verify the standard DoD Banner is displayed.</check-content></check></Rule></Group><Group id="V-60845"><title>SRG-APP-000080-NDM-000220</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75301r1_rule" severity="low" weight="10.0"><version>AMLS-NM-000170</version><title>The Arista Multilayer Switch must protect against an individual (or process acting on behalf of an individual) falsely denying having performed organization-defined actions to be covered by non-repudiation.</title><description>&lt;VulnDiscussion&gt;This requirement supports non-repudiation of actions taken by an administrator and is required in order to maintain the integrity of the configuration management process. All configuration changes to the network device are logged, and administrators authenticate with two-factor authentication before gaining administrative access. Together, these processes will ensure the administrators can be held accountable for the configuration changes they implement.
+
+To meet this requirement, the network device must log administrator access and activity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000166</ident><fixtext fixref="F-66555r1_fix">Enable logging on the switch with sufficient detail to fulfill the specifications set forth in the VulDiscussion.
+
+To configure logging to a remote syslog server at the informational level, enter:
+
+switch#config
+switch(config)#logging host [ip address]
+switch(config)#logging trap informational
+
+Then configure the following AAA
+
+aaa accounting commands all default start-stop logging [group radius]</fixtext><fix id="F-66555r1_fix" /><check system="C-61791r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the switch configuration and verify that logging is enabled.
+
+If logging is not enabled or is not enabled with sufficient detail to fulfill the specifications set forth in the VulDiscussion, this is a finding.
+
+To determine if logging is enabled, enter: 
+
+switch#show logging
+
+The output must show logging as enabled, with a logging level of informational or debugging.
+
+In order to ensure all user commands are captured, the following statement must be in the running config:
+
+aaa accounting commands all default start-stop logging [group radius]</check-content></check></Rule></Group><Group id="V-60847"><title>SRG-APP-000091-NDM-000223</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75303r1_rule" severity="low" weight="10.0"><version>AMLS-NM-000180</version><title>The Arista Multilayer Switch must generate audit records when successful/unsuccessful attempts to access privileges occur.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. 
+
+Audit records can be generated from various components within the information system (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000172</ident><fixtext fixref="F-66557r1_fix">Enable logging on the switch with sufficient detail to fulfill the specifications set forth in the VulDiscussion.
+
+To configure logging to a remote syslog server at the informational level, enter:
+
+switch#config
+switch(config)#logging host [ip address]
+switch(config)#logging trap informational
+
+Then configure the following AAA:
+
+aaa accounting commands all default start-stop logging [group radius]</fixtext><fix id="F-66557r1_fix" /><check system="C-61793r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the switch configuration and verify that logging is enabled.
+
+If logging is not enabled or is not enabled with sufficient detail to fulfill the specifications set forth in the VulDiscussion, this is a finding.
+
+To determine if logging is enabled, enter: 
+
+switch#show logging
+
+The output must show logging as enabled, with a logging level of informational or debugging.
+
+In order to ensure all user commands are captured, the following statement must be in the running config:
+
+aaa accounting commands all default start-stop logging [group radius]</check-content></check></Rule></Group><Group id="V-60849"><title>SRG-APP-000095-NDM-000225</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75305r1_rule" severity="low" weight="10.0"><version>AMLS-NM-000190</version><title>The Arista Multilayer Switch must produce audit log records containing sufficient information to establish what type of event occurred.</title><description>&lt;VulnDiscussion&gt;It is essential for security personnel to know what is being done, what was attempted, where it was done, when it was done, and by whom it was done in order to compile an accurate risk assessment. Associating event types with detected events in the application and audit logs provides a means of investigating an attack; recognizing resource utilization or capacity thresholds; or identifying an improperly configured network device. Without this capability, it would be difficult to establish, correlate, and investigate the events leading up to an outage or attack.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000130</ident><fixtext fixref="F-66559r1_fix">Enable logging on the switch with sufficient detail to establish what type of event occurred.
+
+To configure logging to a remote syslog server at the informational level, enter:
+
+switch#config
+switch(config)#logging host [ip address]
+switch(config)#logging trap informational</fixtext><fix id="F-66559r1_fix" /><check system="C-61795r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the device configuration and verify that logging is enabled with sufficient detail to establish what type of event occurred.
+
+If logging is not enabled or does not provide sufficient detail, this is a finding.
+
+To determine if logging is enabled, enter:
+
+switch#show logging
+
+The output must show logging as enabled, with a logging level of informational or debugging.</check-content></check></Rule></Group><Group id="V-60851"><title>SRG-APP-000101-NDM-000231</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75307r1_rule" severity="low" weight="10.0"><version>AMLS-NM-000200</version><title>The Arista Multilayer Switch must generate audit records containing the full-text recording of privileged commands.</title><description>&lt;VulnDiscussion&gt;Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough information. 
+
+Organizations consider limiting the additional audit information to only that information explicitly needed for specific audit requirements. The additional information required is dependent on the type of information (i.e., sensitivity of the data and the environment within which it resides). At a minimum, the organization must audit full-text recordings of privileged commands. The organization must maintain audit trails in sufficient detail to reconstruct events to determine the cause and impact of compromise.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000135</ident><fixtext fixref="F-66561r1_fix">Enable logging on the switch with sufficient detail to fulfill the specifications set forth in the VulDiscussion.
+
+To configure logging to a remote syslog server at the informational level, enter:
+
+switch#config
+switch(config)#logging host [ip address]
+switch(config)#logging trap informational
+
+Then configure the following AAA:
+
+aaa accounting commands all default start-stop logging [group radius]</fixtext><fix id="F-66561r1_fix" /><check system="C-61797r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the switch configuration and verify that logging is enabled.
+
+If logging is not enabled or is not enabled with sufficient detail to fulfill the specifications set forth in the VulDiscussion, this is a finding.
+
+To determine if logging is enabled, enter:
+
+switch#show logging
+
+The output must show logging as enabled, with a logging level of informational or debugging.
+
+In order to ensure all user commands are captured, the following statement must be in the running config:
+
+aaa accounting commands all default start-stop logging [group radius]</check-content></check></Rule></Group><Group id="V-60853"><title>SRG-APP-000142-NDM-000245</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75309r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000210</version><title>The Arista Multilayer Switch must be configured to prohibit the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.</title><description>&lt;VulnDiscussion&gt;In order to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable unused or unnecessary physical and logical ports/protocols on information systems.
+
+Network devices are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., email and web services); however, doing so increases risk over limiting the services provided by any one component. 
+
+To support the requirements and principles of least functionality, the network device must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved to conduct official business or to address authorized quality of life issues.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000382</ident><fixtext fixref="F-66563r1_fix">Configure the network device to prohibit the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.
+
+To configure an access control list, use the following commands:
+
+configure
+ip access-list [name]
+10 deny [protocol] [src port] [src mask] [dst port] [dst mask] [options]
+exit
+
+To apply an access control list to an interface, use the following commands from the interface configuration mode:
+
+ip access-group [name] [direction]</fixtext><fix id="F-66563r1_fix" /><check system="C-61799r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device prohibits the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments.
+
+This can be verified by reviewing the access control list configuration on the device and comparing against the PPSM CAL. The access control list configuration must deny ports, protocols, and services defined by the PPSM CAL. IP access list configuration can be viewed via the "show ip access-lists" command. To verify an interface has the appropriate access control list on it, use the "show ip access-list" summary command.
+
+If any unnecessary or nonsecure functions are permitted, this is a finding.</check-content></check></Rule></Group><Group id="V-60855"><title>SRG-APP-000151-NDM-000248</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75311r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000220</version><title>The Arista Multilayer Switch must use multifactor authentication for local access to privileged accounts.</title><description>&lt;VulnDiscussion&gt;Multifactor authentication is defined as: using two or more factors to achieve authentication.
+
+Factors include: 
+(i) Something a user knows (e.g., password/PIN); 
+(ii) Something a user has (e.g., cryptographic identification device, token); or 
+(iii) Something a user is (e.g., biometric).
+
+To assure accountability and prevent unauthenticated access, privileged users must utilize multifactor authentication to prevent potential misuse and compromise of the system. 
+
+Local access is defined as access to an organizational information system by a user (or process acting on behalf of a user) communicating through a direct connection without the use of a network.
+
+Applications integrating with the DoD Active Directory and utilizing the DoD CAC are examples of compliant multifactor authentication solutions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000767</ident><fixtext fixref="F-66565r1_fix">Configure the network device or its associated authentication server to use multifactor authentication for local access to privileged accounts.
+
+To configure the local device to authenticate via its authentication server, enter the following command from the configuration mode interface. Replace the bracketed value with the configured server group name or the name of the server type to validate against all configured servers of that type.
+
+switch(config)#aaa authentication login console group [radius] local</fixtext><fix id="F-66565r1_fix" /><check system="C-61801r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device uses multifactor authentication for local access to privileged accounts. This requirement may be verified by demonstration or configuration review. This requirement may be met through use of a properly configured authentication server if the device is configured to use the authentication server. 
+
+If multifactor authentication is not used for local access to privileged accounts, this is a finding.
+
+Review the device configuration via the "show running-config" command. The line "aaa authentication login console group [server-group] [radius/tacplus] [local]" must be present and must contain, at a minimum, the server group used for authentication, if present, or the term radius or tacplus to indicate all configured radius or tacplus servers, and the term local for local database authentication.</check-content></check></Rule></Group><Group id="V-60857"><title>SRG-APP-000190-NDM-000267</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75315r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000240</version><title>The Arista Multilayer Switch must terminate all network connections associated with a device management session at the end of the session, or the session must be terminated after 10 minutes of inactivity except to fulfill documented and validated mission requirements.</title><description>&lt;VulnDiscussion&gt;Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. In addition, quickly terminating an idle session will also free up resources committed by the managed network element.
+
+Terminating network connections associated with communications sessions includes, for example, de-allocating associated TCP/IP address/port pairs at the operating system level, or de-allocating networking assignments at the application level if multiple application sessions are using a single, operating system-level network connection. This does not mean that the device terminates all sessions or network access; it only ends the inactive session and releases the resources associated with that session.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001133</ident><fixtext fixref="F-66569r1_fix">Configure the network device to terminate the connection associated with a device management session at the end of the session or after 10 minutes of inactivity.
+
+Arista switches have a configurable timeout function that automatically closes connections to the switch upon reaching an organization-defined period of time.
+
+Configuration Example:
+
+switch(config)#management ssh
+switch(config-mgmt-ssh)#idle-timeout 10
+
+Configure the switch to terminate an idle ssh connection after 10 minutes of inactivity.</fixtext><fix id="F-66569r1_fix" /><check system="C-61805r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device terminates the connection associated with a device management session at the end of the session or after 10 minutes of inactivity. This requirement may be verified by demonstration or configuration review.
+
+Verify by executing a "show running-config" command, and under the "management ssh" subsection, validate the configuration statement "idle-timeout 10" is present and the value is 10 or less.
+
+If the network device does not terminate the connection associated with a device management session at the end of the session or after 10 minutes of inactivity, this is a finding.</check-content></check></Rule></Group><Group id="V-60859"><title>SRG-APP-000267-NDM-000273</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75317r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000250</version><title>The Arista Multilayer Switch must reveal error messages only to authorized individuals (ISSO, ISSM, and SA).</title><description>&lt;VulnDiscussion&gt;Only authorized personnel should be aware of errors and the details of the errors. Error messages are an indicator of an organization's operational state. Additionally, sensitive account information must not be revealed through error messages to unauthorized personnel or their designated representatives.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001314</ident><fixtext fixref="F-66571r1_fix">Configure the network device or its associated audit server to reveal error messages only to authorized individuals.
+
+SNMP is used to fulfill this function. An example SNMP configuration is provided below. To configure SNMP according to site-specific policies and procedures, refer to the Arista Configuration Guide Chapter 37
+
+snmp-server engineID local 
+snmp-server view snmpview system included
+snmp-server group ROgroup v3 priv read snmpview
+snmp-server group RWgroup v3 priv write snmpview
+snmp-server user disa ROgroup v3
+snmp-server user disaRW RWgroup v3
+snmp-server host 10.1.1.1 version 3 priv disaRW
+snmp-server host 10.2.2.2 version 3 noauth disaRW
+snmp-server host 10.3.3.3 version 3 noauth disaRW
+snmp-server host 127.0.0.1 version 3 noauth auth
+snmp-server host 172.22.29.82 version 3 noauth disaRW
+snmp-server enable traps</fixtext><fix id="F-66571r1_fix" /><check system="C-61807r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device is configured to reveal error messages only to authorized individuals. This requirement may be verified by demonstration or configuration review. This requirement can be met by a central audit server if the network device is configured to send audit logs to that audit server.
+
+If the network device reveals error messages to any unauthorized individuals, this is a finding.
+
+This is a function of SNMP Traps. Verify the SNMP configuration is present in the output of the "show running-config" command and that SNMP is active via the "show snmp" command.</check-content></check></Rule></Group><Group id="V-60861"><title>SRG-APP-000268-NDM-000274</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75319r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000260</version><title>The Arista Multilayer Switch must activate a system alert message, send an alarm, and/or automatically shut down when a component failure is detected.</title><description>&lt;VulnDiscussion&gt;Predictable failure prevention requires organizational planning to address device failure issues. If components key to maintaining the device's security fail to function, the device could continue operating in an insecure state. If appropriate actions are not taken when a network device failure occurs, a denial of service condition may occur that could result in mission failure since the network would be operating without a critical security monitoring and prevention function. Upon detecting a failure of network device security components, the network device must activate a system alert message, send an alarm, or shut down.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001328</ident><fixtext fixref="F-66573r1_fix">Configure the network device to activate a system alert message, send an alarm, and/or automatically shut down when a component failure is detected.
+
+SNMP is used to fulfill this function. An example SNMP configuration is provided below. To configure SNMP according to site-specific policies and procedures, refer to the Arista Configuration Guide, Chapter 37.
+
+snmp-server engineID local 
+snmp-server view snmpview system included
+snmp-server group ROgroup v3 priv read snmpview
+snmp-server group RWgroup v3 priv write snmpview
+snmp-server user disa ROgroup v3
+snmp-server user disaRW RWgroup v3
+snmp-server host 10.1.1.1 version 3 priv disaRW
+snmp-server host 10.2.2.2 version 3 noauth disaRW
+snmp-server host 10.3.3.3 version 3 noauth disaRW
+snmp-server host 127.0.0.1 version 3 noauth auth
+snmp-server host 172.22.29.82 version 3 noauth disaRW
+snmp-server enable traps</fixtext><fix id="F-66573r1_fix" /><check system="C-61809r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device activates a system alert message, sends an alarm, and/or automatically shuts down when a component failure is detected. This requirement may be verified by demonstration or configuration review. 
+
+If the network device does not activate a system alert message, send an alarm, or automatically shut down when a component failure is detected, this is a finding.
+
+This is a function of SNMP Traps. Verify the SNMP configuration is present in the output of the "show running-config" command and that SNMP is active via the "show snmp" command.</check-content></check></Rule></Group><Group id="V-60863"><title>SRG-APP-000372-NDM-000297</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75321r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000270</version><title>The Arista Multilayer Switch must synchronize internal information system clocks to the authoritative time source when the time difference is greater than the organization-defined time period.</title><description>&lt;VulnDiscussion&gt;Inaccurate time stamps make it more difficult to correlate events and can lead to an inaccurate analysis. Determining the correct time a particular event occurred on a system is critical when conducting forensic analysis and investigating system events. 
+
+Synchronizing internal information system clocks provides uniformity of time stamps for information systems with multiple system clocks and systems connected over a network. Organizations should consider setting time periods for different types of systems (e.g., financial, legal, or mission-critical systems). Organizations should also consider endpoints that may not have regular access to the authoritative time server (e.g., mobile, teleworking, and tactical endpoints). This requirement is related to the comparison done every 24 hours in CCI-001891 because a comparison must be done in order to determine the time difference.
+
+The organization-defined time period will depend on multiple factors, most notably the granularity of time stamps in audit logs. For example, if time stamps only show to the nearest second, there is no need to have accuracy of a tenth of a second in clocks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002046</ident><fixtext fixref="F-66575r1_fix">Configure the network device to synchronize internal information system clocks to the authoritative time source when the time difference is greater than the organization-defined time period.
+
+Configuration Example:
+switch(config)#ntp server HOST
+switch(config)#ntp server HOST prefer</fixtext><fix id="F-66575r1_fix" /><check system="C-61811r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Check the network device configuration to determine if the device synchronizes internal information system clocks to the authoritative time source when the time difference is greater than the organization-defined time period. 
+
+If this synchronization is not occurring when the time difference is greater than the organization-defined time period, this is a finding.
+
+Verify with the "show NTP status" command, which shows the state of device synchronization.</check-content></check></Rule></Group><Group id="V-60865"><title>SRG-APP-000373-NDM-000298</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75323r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000280</version><title>The Arista Multilayer Switch must be configured to synchronize internal information system clocks with the primary and secondary time sources located in different geographic regions using redundant authoritative time sources.</title><description>&lt;VulnDiscussion&gt;The loss of connectivity to a particular authoritative time source will result in the loss of time synchronization (free-run mode) and increasingly inaccurate time stamps on audit events and other functions.
+
+Multiple time sources provide redundancy by including a secondary source. Time synchronization is usually a hierarchy; clients synchronize time to a local source while that source synchronizes its time to a more accurate source. The network device must utilize an authoritative time server and/or be configured to use redundant authoritative time sources. This requirement is related to the comparison done in CCI-001891.
+
+DoD-approved solutions consist of a combination of a primary and secondary time source using a combination or multiple instances of the following: a time server designated for the appropriate DoD network (NIPRNet/SIPRNet); United States Naval Observatory (USNO) time servers; and/or the Global Positioning System (GPS). The secondary time source must be located in a different geographic region than the primary time source.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001893</ident><fixtext fixref="F-66577r1_fix">Configure the network device to synchronize internal information system clocks with the primary and secondary time sources located in different geographic regions using redundant authoritative time sources.
+
+Configuration Example: 
+
+switch(config)#ntp server HOST
+switch(config)#ntp server HOST prefer</fixtext><fix id="F-66577r1_fix" /><check system="C-61813r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device is configured to synchronize internal information system clocks with the primary and secondary time sources located in different geographic regions using redundant authoritative time sources.
+
+If the network device is not configured to synchronize internal information system clocks with the primary and secondary time sources located in different geographic regions using redundant authoritative time sources, this is a finding.
+
+Verify with: 
+
+switch#show NTP status 
+
+Identify the NTP status and available time sources.</check-content></check></Rule></Group><Group id="V-60867"><title>SRG-APP-000374-NDM-000299</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75325r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000290</version><title>The Arista Multilayer Switch must record time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).</title><description>&lt;VulnDiscussion&gt;If time stamps are not consistently applied and there is no common time reference, it is difficult to perform forensic analysis.
+
+Time stamps generated by the application include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001890</ident><fixtext fixref="F-66579r1_fix">Configure the network device to record time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).
+
+This can be configured with the following command:
+
+clock timezone GMT</fixtext><fix id="F-66579r1_fix" /><check system="C-61815r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device records time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT). This requirement may be verified by demonstration or configuration review.
+
+If the network device does not record time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT), this is a finding.
+
+This can be configured with the following command:
+
+clock timezone GMT
+
+and verified by 
+
+show run section clock
+
+Log records can be validated with:
+
+show logging</check-content></check></Rule></Group><Group id="V-60869"><title>SRG-APP-000411-NDM-000330</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75327r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000340</version><title>Arista Multilayer Switches used for nonlocal maintenance sessions must implement cryptographic mechanisms to protect the integrity of nonlocal maintenance and diagnostic communications.</title><description>&lt;VulnDiscussion&gt;This requires the use of secure protocols instead of their unsecured counterparts, such as SSH instead of telnet, SCP instead of FTP, and HTTPS instead of HTTP.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002890</ident><fixtext fixref="F-66581r1_fix">Configure the network device to use secure protocols instead of their unsecured counterparts.
+
+Configuration Example: 
+
+Disable unsecure protocols.
+configure
+management telnet
+shutdown
+exit
+management api http-commands
+no protocol http
+protocol https
+exit 
+
+Other protocols (FTP) can be denied using AAA and RBAC. For connections that require use of these maintenance protocols, creation of SSH tunnels can fulfill this security requirement. This is summarized here and available at length in the Common Criteria guidance document.
+
+Configuration Example: 
+
+management ssh
+tunnel NEW
+local port 514
+ssh-server syslogServer user authuser port 22
+remote host localhost port 514
+no shutdown</fixtext><fix id="F-66581r1_fix" /><check system="C-61817r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device uses secure protocols instead of their unsecured counterparts. 
+
+If any unsecured maintenance protocols are in use (e.g., telnet, FTP, HTTP) and these protocols are not wrapped in a secure tunnel, this is a finding.
+
+Validate by checking that unsecure protocols are either disabled or wrapped in SSH tunnels.
+
+Executing a "show run" command will provide a means to validate this config. From the output of this command, verify that there is no statement enabling telnet, there is no statement enabling FTP, and there is no statement enabling the API, or the API is configured to use only HTTPS.</check-content></check></Rule></Group><Group id="V-60871"><title>SRG-APP-000412-NDM-000331</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75329r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000350</version><title>Arista Multilayer Switches used for nonlocal maintenance sessions must implement cryptographic mechanisms to protect the confidentiality of nonlocal maintenance and diagnostic communications.</title><description>&lt;VulnDiscussion&gt;This requires the use of secure protocols instead of their unsecured counterparts, such as SSH instead of telnet, SCP instead of FTP, and HTTPS instead of HTTP.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-003123</ident><fixtext fixref="F-66583r1_fix">Configure the network device to use secure protocols instead of their unsecured counterparts.
+
+Configuration Example: 
+
+Disable unsecure protocols.
+configure
+management telnet
+shutdown
+exit
+management api http-commands
+no protocol http
+protocol https
+exit 
+
+Other protocols (FTP) can be denied using AAA and RBAC. For connections that require use of these maintenance protocols, creation of SSH tunnels can fulfill this security requirement. This is summarized here and available at length in the Common Criteria guidance document.
+
+Configuration Example: 
+
+management ssh
+tunnel NEW
+local port 514
+ssh-server syslogServer user authuser port 22
+remote host localhost port 514
+no shutdown</fixtext><fix id="F-66583r1_fix" /><check system="C-61819r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device uses secure protocols instead of their unsecured counterparts.
+
+If any unsecured maintenance protocols are in use (e.g., telnet, FTP, HTTP) and these protocols are not wrapped in a secure tunnel, this is a finding.
+
+Validate by checking that unsecure protocols are either disabled or wrapped in SSH tunnels.
+
+Executing a "show run" command will provide a means to validate this config. From the output of this command, verify that there is no statement enabling telnet, no statement enabling FTP, no statement enabling HTTP, and no statement enabling the API, or the API is configured to use only HTTPS.</check-content></check></Rule></Group><Group id="V-60873"><title>SRG-APP-000504-NDM-000321</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75331r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000360</version><title>The Arista Multilayer Switch must generate audit records for privileged activities or other system-level access.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. 
+
+Audit records can be generated from various components within the information system (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000172</ident><fixtext fixref="F-66585r1_fix">Configure the network device to generate audit records for privileged activities or other system-level access.
+
+aaa accounting commands all default start-stop
+aaa accounting exec default start-stop
+aaa accounting system default start-stop</fixtext><fix id="F-66585r1_fix" /><check system="C-61821r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device generates audit records for privileged activities or other system-level access. 
+
+If the network device does not generate audit records for privileged activities or other system-level access, this is a finding.
+
+Verify logging is configured to audit full-text commands.
+
+Execute a "show logging" command and review the logs to verify the full text of commands is included.</check-content></check></Rule></Group><Group id="V-60875"><title>SRG-APP-000505-NDM-000322</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75333r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000370</version><title>The Arista Multilayer Switch must generate audit records showing starting and ending time for administrator access to the system.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. 
+
+Audit records can be generated from various components within the information system (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000172</ident><fixtext fixref="F-66587r1_fix">Configure the network device to generate audit records showing starting and ending time for administrator access to the system.
+
+Enable logging level 6 to ensure this event is captured.
+
+Switch(config)#logging trap 6
+switch(config)#logging level all 6</fixtext><fix id="F-66587r1_fix" /><check system="C-61823r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device generates audit records showing starting and ending time for administrator access to the system. 
+
+If the network device does not generate audit records showing starting and ending time for administrator access to the system, this is a finding.
+
+Verify by reviewing log files to show start and end times for administrator access to the system via the "show logging" command.</check-content></check></Rule></Group><Group id="V-60877"><title>SRG-APP-000506-NDM-000323</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75335r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000380</version><title>The Arista Multilayer Switch must generate audit records when concurrent logons from different workstations occur.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. 
+
+Audit records can be generated from various components within the information system (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000172</ident><fixtext fixref="F-66589r1_fix">Configure the network device to generate audit records when concurrent logons from different workstations occur.
+
+Enable logging level 6 to ensure this event is captured.
+
+Switch(config)#logging trap 6
+switch(config)#logging level all 6</fixtext><fix id="F-66589r1_fix" /><check system="C-61825r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device generates audit records when concurrent logons from different workstations occur. 
+
+If the network device does not generate audit records when concurrent logons from different workstations occur, this is a finding.
+
+Verify by reviewing log files to show concurrent logons to the system via the "Show Logging" command.</check-content></check></Rule></Group><Group id="V-60879"><title>SRG-APP-000509-NDM-000324</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75337r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000390</version><title>The Arista Multilayer Switch must generate audit records for all account creations, modifications, disabling, and termination events.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. 
+
+Audit records can be generated from various components within the information system (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000172</ident><fixtext fixref="F-66591r1_fix">Configure the network device to generate audit records for all account creations, modifications, disabling, and termination events.
+
+Enable logging level 6 to ensure this event is captured:
+
+Switch(config)#logging trap 6
+switch(config)#logging level all 6</fixtext><fix id="F-66591r1_fix" /><check system="C-61827r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Determine if the network device generates audit records for all account creations, modifications, disabling, and termination events. 
+
+If the network device does not generate audit records for all account creations, modifications, disabling, and termination events, this is a finding.
+
+Verify by reviewing log files to show audit records for account creation, modification, disabling, and termination via the "Show Logging" command.</check-content></check></Rule></Group><Group id="V-60881"><title>SRG-APP-000515-NDM-000325</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75339r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000400</version><title>The Arista Multilayer Switch must, at a minimum, off-load audit records for interconnected systems in real time.</title><description>&lt;VulnDiscussion&gt;Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
+
+Off-loading is a common process in information systems with limited audit storage capacity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001851</ident><fixtext fixref="F-66593r1_fix">Configure the network device to off-load interconnected systems in real time and off-load standalone systems weekly.
+
+Arista EOS logs can be exported to, including by a regular syslog server.
+
+Configuration Example: 
+
+switch(config)#logging host[ a.b.c.d]
+switch(config)#logging trap informational</fixtext><fix id="F-66593r1_fix" /><check system="C-61829r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Check the network device configuration to determine if the device off-loads audit records onto a different system or media than the system being audited. 
+
+If the device does not off-load audit records onto a different system or media, this is a finding.
+
+Review the configuration for the "logging host [a.b.c.d]" statement. Execute a "show logging" to verify logging host status.</check-content></check></Rule></Group><Group id="V-60883"><title>SRG-APP-000516-NDM-000317</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75341r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-000420</version><title>The Arista Multilayer Switch must protect the audit records of nonlocal accesses to privileged accounts and the execution of privileged functions.</title><description>&lt;VulnDiscussion&gt;Auditing may not be reliable when performed by the network device to which the user being audited has privileged access. The privileged user may inhibit auditing or modify audit records. This control enhancement helps mitigate this risk by requiring that privileged access be further defined between audit-related privileges and other privileges, thus limiting the users with audit-related privileges. Reducing the risk of audit compromises by privileged users can also be achieved by performing audit activity on a separate information system or by using storage media that cannot be modified (e.g., write-once recording devices).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-66595r1_fix">Configure the system to protect the audit records of nonlocal accesses to privileged accounts and the execution of privileged functions.
+
+Enable remote logging with:
+
+config
+logging host a.b.c.d
+logging trap informational
+
+To assign a user to a role, use the command:
+
+username [name] role [role name]
+
+To deny access to logging functions via RBAC:
+
+role [name]
+deny command logging [all]</fixtext><fix id="F-66595r1_fix" /><check system="C-61831r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the network device account configuration files to determine if the privileged functions to access and modify audit settings and files are restricted to authorized security personnel. Review locations of audit logs generated as a result of nonlocal accesses to privileged accounts and the execution of privileged functions. Verify there are appropriate controls and permissions to protect the audit information from unauthorized access.
+
+If the audit records that are generated upon nonlocal access to privileged accounts or upon the execution of privileged functions are not protected, this is a finding.
+
+Verify remote logging is enabled via the "Show Logging" command.
+
+Verify that individual accounts do not have access to logging functionality by executing the "show user-account" command and validating that only intended users are assigned to roles that permit access to logging functions. To verify what permissions are allowed by each role, execute the "show roles" command.</check-content></check></Rule></Group><Group id="V-60885"><title>SRG-APP-000516-NDM-000336</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75343r2_rule" severity="high" weight="10.0"><version>AMLS-NM-000430</version><title>The Arista Multilayer Switch must employ AAA service to centrally manage authentication settings.</title><description>&lt;VulnDiscussion&gt;The use of authentication servers or other centralized management servers for providing centralized authentication services is required for network device management. Maintaining local administrator accounts for daily usage on each network device without centralized management is not scalable or feasible. Without centralized management, it is likely that credentials for some network devices will be forgotten, leading to delays in administration, which itself leads to delays in remediating production problems and in addressing compromises in a timely fashion.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-000370</ident><fixtext fixref="F-66597r2_fix">Configure AAA services via a remote AAA server for all nonlocal accounts.
+
+Configuration:
+aaa group server [radius/tacacs] [name]
+[radius/tacacs]-server host [IP Address] vrf [name] key [key]
+aaa authentication login default group [group name] [radius/tacacs] [local]
+aaa authentication login console [group] [group name/radius/tacacs+] [local]
+aaa authentication dot1x default group [group] [radius]
+aaa authentication policy on-success log
+aaa authentication policy on-failure log
+aaa authorization console
+aaa authorization exec default [radius/tacacs] local
+aaa authorization commands all default local
+aaa accounting exec default start-stop logging
+aaa accounting system default start-stop logging
+aaa accounting commands all default start-stop logging
+no aaa root
+
+Example RBAC roles:
+
+role administrator
+ 10 permit command .*
+
+ role operator
+ 10 permit command show running-config [all|detail] sanitized
+ 20 deny command &gt;|&gt;&gt;|extension|\||session|do|delete|copy|rmdir|mkdir|python-shell|bash|platform|scp|append|redirect|tee|more|less|who|show run.*
+ 25 deny command bash
+ 30 deny mode config command (no |default ) (username|role|aaa|tcpdump|schedule|event.*)
+ 40 permit command .*
+ 30 deny mode config command (no |default ) (username|role|aaa|tcpdump|schedule|event.*)
+ 40 permit command .*</fixtext><fix id="F-66597r2_fix" /><check system="C-61833r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the device's configuration and verify the use of an AAA server for Account Management. Configuration must include at least one authenticated remote AAA server and verification that authentication, authorization, and accounting are enabled. In order for AAA to execute authorizations, role-based access control (RBAC) must also be configured on the switch, as shown in the configuration example. User roles do not need to follow these exact permissions, but they must comply with organizational policies for access-control. If the AAA server is not configured to centrally manage authentication settings, this is a finding.
+
+Using the "show running-config" command will display all configured AAA commands, which must include the following commands with the variables completed:
+
+aaa group server [radius/tacacs] [name]
+[radius/tacacs]-server host [IP Address] vrf [name] key [key]
+aaa authentication login default group [group name] [radius/tacacs] [local]
+aaa authentication login console [group] [group name/radius/tacacs+] [local]
+aaa authentication dot1x default group [group] [radius]
+aaa authentication policy on-success log
+aaa authentication policy on-failure log
+aaa authorization console
+aaa authorization exec default [radius/tacacs] local
+aaa authorization commands all default local
+aaa accounting exec default start-stop logging
+aaa accounting system default start-stop logging
+aaa accounting commands all default start-stop logging
+no aaa root
+
+Executing the "Show aaa sessions" command will verify the operation of AAA for any connected sessions. This will include the username, role, state, authentication method, and remote host information, which must match the configured remote AAA server.
+
+Verify Role Based Access Control is enabled by executing the "show roles" command, and review the configured roles to ensure they meet organization-defined requirements.</check-content></check></Rule></Group><Group id="V-60887"><title>SRG-APP-000516-NDM-000340</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75345r1_rule" severity="low" weight="10.0"><version>AMLS-NM-000440</version><title>The Arista Multilayer Switch must support organizational requirements to conduct backups of system-level information contained in the information system when changes occur or weekly, whichever is sooner.</title><description>&lt;VulnDiscussion&gt;System-level information includes default and customized settings and security attributes, including ACLs that relate to the network device configuration, as well as software required for the execution and operation of the device. Information system backup is a critical step in ensuring system integrity and availability. If the system fails and there is no backup of the system-level information, a denial of service condition is possible for all who utilize this critical network component.
+
+This control requires the network device to support the organizational central backup process for system-level information associated with the network device. This function may be provided by the network device itself; however, the preferred best practice is a centralized backup rather than each network device performing discrete backups.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-000537</ident><fixtext fixref="F-66599r2_fix">Configure the network device to conduct backups of system-level information contained in the information system when changes occur or weekly, whichever is sooner.
+
+For weekly backups, the following chronologically scheduled command will back up the switch information one per day at noon:
+
+switch(config)#schedule [name] at [hh:mm:ss] interval 1440 max-log-files 100 command bash FastCli -p 15 -c $'enable\nshow tech-support &gt; scp:[remote destination/filename]\n'
+
+The following event-handler will schedule backups any time the configuration is changed and written to memory:
+
+event-handler Copy-Config
+trigger on-startup-config
+action bash sudo ip netns exec ns-DATA scp /mnt/flash/startup-config [user@IPaddress/filepath/filename]
+delay 5</fixtext><fix id="F-66599r2_fix" /><check system="C-61835r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Check the network device to determine if the network device is configured to conduct backups of system-level information contained in the information system when changes occur or weekly, whichever is sooner. 
+
+If the network device does not support the organizational requirements to conduct backups of system-level data according to the defined frequency, this is a finding.</check-content></check></Rule></Group><Group id="V-67195"><title>SRG-APP-000516-NDM-000317</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81685r1_rule" severity="low" weight="10.0"><version>AMLS-NM-000500</version><title>The Arista Multilayer Switch must be updated to one of the minimum approved versions of EOS.</title><description>&lt;VulnDiscussion&gt;The Arista Multilayer Switch uses the EOS operating system. Updates to EOS contain new security-related features and security patches that address known vulnerabilities. Running a current DoD-approved software version improves the security posture of the network device.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-73307r2_fix">Configure the Arista Multilayer Switch to use an approved software version. Download the approved version from www.arista.com/support, copy the .swi file to flash via an approved file transfer mechanism, and then enter:
+
+Enable
+Configure
+Boot system flash:&lt;your_image.swi&gt;
+Write memory
+reload</fixtext><fix id="F-73307r2_fix" /><check system="C-67773r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Verify the Arista Multilayer Switch configuration using the “Show version” command. Review the software image version, and verify it is a minimum DoD-approved version. The current approved minimum versions are 4.16.0F, 4.15.3F, 4.14.11M, or later. If the Arista Multilayer Switch is not using a minimum approved versions of EOS, this is a finding.</check-content></check></Rule></Group><Group id="V-67197"><title>SRG-APP-000179-NDM-000265</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81687r1_rule" severity="medium" weight="10.0"><version>AMLS-NM-200825</version><title>The Arista Multilayer Switch must use FIPS-compliant mechanisms for authentication to a cryptographic module.</title><description>&lt;VulnDiscussion&gt;Unapproved mechanisms that are used for authentication to the cryptographic module are not verified and therefore cannot be relied upon to provide confidentiality or integrity, and DoD data may be compromised.
+
+Network devices utilizing encryption are required to use FIPS-compliant mechanisms for authenticating to cryptographic modules.
+
+FIPS 140-2 is the current standard for validating that mechanisms used to access cryptographic modules utilize authentication that meets DoD requirements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series NDM</dc:subject><dc:identifier>2825</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000803</ident><fixtext fixref="F-73309r1_fix">Enable FIPS restrictions via the following commands:
+Enable
+Configure
+Management ssh
+Fips restrictions
+Exit
+
+Additionally, the switch should be configured to use its Hardware Random Number Generator as a source of entropy for the SSH protocol. To enable this, configure:
+
+Enable
+Configure
+Management security
+Entropy source hardware
+
+Once this has been changed, regenerate the SSH RSA Keys with:
+
+Reset ssh hostkey rsa</fixtext><fix id="F-73309r1_fix" /><check system="C-67775r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_NDM_STIG.xml" /><check-content>Review the device configuration via the “show running-config” command for the following statement:
+
+management ssh
+fips restrictions
+
+If this statement is not present, this is a finding.</check-content></check></Rule></Group></Benchmark>

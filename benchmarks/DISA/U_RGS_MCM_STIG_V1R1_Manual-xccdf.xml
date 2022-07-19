@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Rancher_MCM_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2022-03-17">accepted</status><title>Rancher Government Solutions Multi-Cluster Manager Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 30 Mar 2022</plain-text><plain-text id="generator">3.3.0.27375</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252843" selected="true" /><select idref="V-252844" selected="true" /><select idref="V-252845" selected="true" /><select idref="V-252846" selected="true" /><select idref="V-252847" selected="true" /><select idref="V-252848" selected="true" /><select idref="V-252849" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252843" selected="true" /><select idref="V-252844" selected="true" /><select idref="V-252845" selected="true" /><select idref="V-252846" selected="true" /><select idref="V-252847" selected="true" /><select idref="V-252848" selected="true" /><select idref="V-252849" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252843" selected="true" /><select idref="V-252844" selected="true" /><select idref="V-252845" selected="true" /><select idref="V-252846" selected="true" /><select idref="V-252847" selected="true" /><select idref="V-252848" selected="true" /><select idref="V-252849" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252843" selected="true" /><select idref="V-252844" selected="true" /><select idref="V-252845" selected="true" /><select idref="V-252846" selected="true" /><select idref="V-252847" selected="true" /><select idref="V-252848" selected="true" /><select idref="V-252849" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252843" selected="true" /><select idref="V-252844" selected="true" /><select idref="V-252845" selected="true" /><select idref="V-252846" selected="true" /><select idref="V-252847" selected="true" /><select idref="V-252848" selected="true" /><select idref="V-252849" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252843" selected="true" /><select idref="V-252844" selected="true" /><select idref="V-252845" selected="true" /><select idref="V-252846" selected="true" /><select idref="V-252847" selected="true" /><select idref="V-252848" selected="true" /><select idref="V-252849" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252843" selected="true" /><select idref="V-252844" selected="true" /><select idref="V-252845" selected="true" /><select idref="V-252846" selected="true" /><select idref="V-252847" selected="true" /><select idref="V-252848" selected="true" /><select idref="V-252849" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252843" selected="true" /><select idref="V-252844" selected="true" /><select idref="V-252845" selected="true" /><select idref="V-252846" selected="true" /><select idref="V-252847" selected="true" /><select idref="V-252848" selected="true" /><select idref="V-252849" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252843" selected="true" /><select idref="V-252844" selected="true" /><select idref="V-252845" selected="true" /><select idref="V-252846" selected="true" /><select idref="V-252847" selected="true" /><select idref="V-252848" selected="true" /><select idref="V-252849" selected="true" /></Profile><Group id="V-252843"><title>SRG-APP-000023-CTR-000055</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252843r819979_rule" weight="10.0" severity="high"><version>CNTR-RM-000030</version><title>Rancher MCM must use a centralized user management solution to support account management functions. For accounts using password authentication, the container platform must use FIPS-validated SHA-2 or later protocol to protect the integrity of the password authentication process.</title><description>&lt;VulnDiscussion&gt;RBAC Integration and Authn/Authz
+
+Centralized authentication services provide additional functionality fulfilling security requirements:
+- Multi-factor authentication, which is compatible with Rancher MCM
+- Disabling users after a period of time
+- Storage and transmission of secure information is encrypted
+- Secure authentication protocols such as LDAP over TLS, or LDAPS using FIPS 140-2 approved encryption modules
+- PKI based authentication
+
+Rancher MCM can integrate with external centralized authentication but does not offer a native solution. The authentication mechanism needs to be initially enabled and configured. The proxy authenticates users and forwards their requests to Kubernetes clusters using a service account.
+
+Satisfies: SRG-APP-000023-CTR-000055, SRG-APP-000024-CTR-000060, SRG-APP-000027-CTR-000075, SRG-APP-000029-CTR-000085, SRG-APP-000033-CTR-000095, SRG-APP-000038-CTR-000105, SRG-APP-000065-CTR-000115, SRG-APP-000099-CTR-000190, SRG-APP-000111-CTR-000220, SRG-APP-000118-CTR-000240, SRG-APP-000119-CTR-000245, SRG-APP-000120-CTR-000250, SRG-APP-000121-CTR-000255, SRG-APP-000122-CTR-000260, SRG-APP-000123-CTR-000265, SRG-APP-000126-CTR-000275, SRG-APP-000133-CTR-000310, SRG-APP-000148-CTR-000335, SRG-APP-000148-CTR-000340, SRG-APP-000148-CTR-000345, SRG-APP-000148-CTR-000350, SRG-APP-000149-CTR-000355, SRG-APP-000150-CTR-000360, SRG-APP-000156-CTR-000380, SRG-APP-000163-CTR-000395, SRG-APP-000164-CTR-000400, SRG-APP-000165-CTR-000405, SRG-APP-000166-CTR-000410, SRG-APP-000167-CTR-000415, SRG-APP-000168-CTR-000420, SRG-APP-000169-CTR-000425, SRG-APP-000170-CTR-000430, SRG-APP-000171-CTR-000435, SRG-APP-000172-CTR-000440, SRG-APP-000173-CTR-000445, SRG-APP-000174-CTR-000450, SRG-APP-000177-CTR-000465, SRG-APP-000178-CTR-000470, SRG-APP-000243-CTR-000595, SRG-APP-000317-CTR-000735, SRG-APP-000340-CTR-000770, SRG-APP-000345-CTR-000785, SRG-APP-000378-CTR-000880, SRG-APP-000378-CTR-000885, SRG-APP-000378-CTR-000890, SRG-APP-000380-CTR-000900, SRG-APP-000381-CTR-000905, SRG-APP-000384-CTR-000915, SRG-APP-000319-CTR-000745&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Rancher Government Solutions Multi-Cluster Manager</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Rancher Government Solutions Multi-Cluster Manager</dc:subject><dc:identifier>5467</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-000016</ident><ident system="http://cyber.mil/cci">CCI-000044</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><ident system="http://cyber.mil/cci">CCI-000154</ident><ident system="http://cyber.mil/cci">CCI-000162</ident><ident system="http://cyber.mil/cci">CCI-000163</ident><ident system="http://cyber.mil/cci">CCI-000164</ident><ident system="http://cyber.mil/cci">CCI-000187</ident><ident system="http://cyber.mil/cci">CCI-000192</ident><ident system="http://cyber.mil/cci">CCI-000193</ident><ident system="http://cyber.mil/cci">CCI-000194</ident><ident system="http://cyber.mil/cci">CCI-000195</ident><ident system="http://cyber.mil/cci">CCI-000196</ident><ident system="http://cyber.mil/cci">CCI-000197</ident><ident system="http://cyber.mil/cci">CCI-000198</ident><ident system="http://cyber.mil/cci">CCI-000199</ident><ident system="http://cyber.mil/cci">CCI-000200</ident><ident system="http://cyber.mil/cci">CCI-000205</ident><ident system="http://cyber.mil/cci">CCI-000206</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><ident system="http://cyber.mil/cci">CCI-000765</ident><ident system="http://cyber.mil/cci">CCI-000766</ident><ident system="http://cyber.mil/cci">CCI-000795</ident><ident system="http://cyber.mil/cci">CCI-001090</ident><ident system="http://cyber.mil/cci">CCI-001350</ident><ident system="http://cyber.mil/cci">CCI-001368</ident><ident system="http://cyber.mil/cci">CCI-001403</ident><ident system="http://cyber.mil/cci">CCI-001493</ident><ident system="http://cyber.mil/cci">CCI-001494</ident><ident system="http://cyber.mil/cci">CCI-001495</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-001619</ident><ident system="http://cyber.mil/cci">CCI-001734</ident><ident system="http://cyber.mil/cci">CCI-001782</ident><ident system="http://cyber.mil/cci">CCI-001783</ident><ident system="http://cyber.mil/cci">CCI-001784</ident><ident system="http://cyber.mil/cci">CCI-001911</ident><ident system="http://cyber.mil/cci">CCI-002112</ident><ident system="http://cyber.mil/cci">CCI-002205</ident><ident system="http://cyber.mil/cci">CCI-002208</ident><fixtext fixref="F-56249r819978_fix">RBAC Integration and Authn/Authz
+
+Navigate to Triple Bar Symbol(Global) &gt;&gt; Users &amp; Authentication &gt;&gt; Auth Provider.
+
+From this screen the authentication mechanism can be selected and configured. 
+
+This STIG is written and tested with KeyCloak and not included with Rancher MCM. Installation instructions for KeyCloak can be found here:
+
+https://www.keycloak.org/getting-started/getting-started-kube</fixtext><fix id="F-56249r819978_fix" /><check system="C-56299r819977_chk"><check-content-ref href="Rancher_Government_Solutions_Multi-Cluster_Manager_STIG.xml" name="M" /><check-content>RBAC Integration and Authn/Authz
+
+View and modify authentication settings through the Rancher MCM UI.
+
+Navigate to Triple Bar Symbol(Global) &gt;&gt; Users &amp; Authentication &gt;&gt; Auth Provider.
+
+This screen shows the authentication mechanism that is configured. If no authentication mechanism is configured or disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-252844"><title>SRG-APP-000026-CTR-000070</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252844r819982_rule" weight="10.0" severity="medium"><version>CNTR-RM-000060</version><title>Rancher MCM must generate audit records for all DoD-defined auditable events within all components in the platform.</title><description>&lt;VulnDiscussion&gt;Audit logs must be enabled.
+
+Rancher MCM provides audit record generation capabilities. Audit logs capture what happened, when it happened, who initiated it, and what cluster it affected to ensure non-repudiation of actions taken.
+
+Audit logging at the platform level also needs to be enabled. This will need to be done through the Kubernetes engine and is not always configurable through the Rancher MCM application.
+
+Audit log verbosity can be set to one of the following levels:
+0 - Disable audit log (default setting).
+1 - Log event metadata.
+2 - Log event metadata and request body.
+3 - Log event metadata, request body, and response body. Each log transaction for a request/response pair uses the same auditID value. 
+
+Cluster administrators with authorized access can view logs produced by the Rancher MCM server. Audit and normal application logs generated by Rancher MCM can be forwarded to a remote log aggregation system for use by authorized viewers as well. This system can in turn be configured for further log processing, monitoring, backup, and alerting. This aggregation also should include failover and buffering in the event that a logging subsystem fails. The logging mechanism of the individual server is independent and will kill the server process if this logging mechanism fails.
+
+To meet the requirements of this control, an administrator with access to the local cluster configuration must add the 'AUDIT_LOG' environment variable with a level of at least  2 in the Rancher MCM deployment configuration. This setting will persist between restarts of the application.
+
+Satisfies: SRG-APP-000026-CTR-000070, SRG-APP-000033-CTR-000100, SRG-APP-000089-CTR-000150, SRG-APP-000090-CTR-000155, SRG-APP-000091-CTR-000160, SRG-APP-000092-CTR-000165, SRG-APP-000095-CTR-000170, SRG-APP-000096-CTR-000175, SRG-APP-000109-CTR-000215, SRG-APP-000343-CTR-000780, SRG-APP-000358-CTR-000805, SRG-APP-000374-CTR-000865, SRG-APP-000375-CTR-000870&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Rancher Government Solutions Multi-Cluster Manager</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Rancher Government Solutions Multi-Cluster Manager</dc:subject><dc:identifier>5467</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000018</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000140</ident><ident system="http://cyber.mil/cci">CCI-000169</ident><ident system="http://cyber.mil/cci">CCI-000171</ident><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-001464</ident><ident system="http://cyber.mil/cci">CCI-001821</ident><ident system="http://cyber.mil/cci">CCI-001859</ident><ident system="http://cyber.mil/cci">CCI-001860</ident><ident system="http://cyber.mil/cci">CCI-002204</ident><fixtext fixref="F-56250r819981_fix">Ensure audit logging is enabled:
+
+Navigate to Triple Bar Symbol(Global) &gt;&gt;  &lt;local cluster&gt; 
+-From the drop down next to the cluster name, select 'cattle-system'.
+-Click "deployments" under Workload menu item.
+-Select "rancher" in the Deployments section.
+-Click the three dot config menu on the right.
+-Choose "Edit Config".
+-Scroll down to the "Environment Variables" section.
+-Change the AUDIT_LEVEL value to "2" or "3" and then click "Save".
+
+If the variable does not exist:
+-Click "Add Variable".
+-Keep Default key/Value Pair as "Type"
+-Add "AUDIT_LEVEL" as Variable Name.
+-Input "2,3" for a value.
+-Click "Save".</fixtext><fix id="F-56250r819981_fix" /><check system="C-56300r819980_chk"><check-content-ref href="Rancher_Government_Solutions_Multi-Cluster_Manager_STIG.xml" name="M" /><check-content>Ensure audit logging is enabled:
+
+Navigate to Triple Bar Symbol(Global) &gt;&gt;  &lt;local cluster&gt; 
+-From the drop down next to the cluster name, select "cattle-system".
+-Click "deployments" under Workload menu item.
+-Select "rancher" in the Deployments section.
+-Click the three dot config menu on the right.
+-Choose "Edit Config".
+-Scroll down to the "Environment Variables" section.
+
+If the  'AUDIT_LEVEL' environment variable does not exist or &lt; Level 2, this is a finding.</check-content></check></Rule></Group><Group id="V-252845"><title>SRG-APP-000028-CTR-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252845r822506_rule" weight="10.0" severity="medium"><version>CNTR-RM-000080</version><title>When allowed by the central authentication system, the default role assigned to a user must be User-Base.</title><description>&lt;VulnDiscussion&gt;Rancher MCM uses roles for authentication. It is necessary to ensure the proper roles and permissions are configured. The role used by default does not ensure least privilege. The default role needs to be changed to allow least privilege access.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Rancher Government Solutions Multi-Cluster Manager</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Rancher Government Solutions Multi-Cluster Manager</dc:subject><dc:identifier>5467</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001404</ident><fixtext fixref="F-56251r822506_fix">From the GUI, navigate to Triple Bar Symbol(Global) &gt;&gt; Users &amp; Authentication &gt;&gt; Roles.
+-Click "Standard User".
+-At the top right, click the three dots, and then "Edit Config".
+-Under "New User Default", select "No" and click "Save".
+-Click "User-Base".
+-At the top right, click the three dots, and then click "Edit Config".
+-Under "New User Default", select "Yes", and then click "Save".</fixtext><fix id="F-56251r822506_fix" /><check system="C-56301r822505_chk"><check-content-ref href="Rancher_Government_Solutions_Multi-Cluster_Manager_STIG.xml" name="M" /><check-content>Verify User-Base is the default assigned role:
+-From the GUI, navigate to Triple Bar Symbol(Global) &gt;&gt; Users &amp; Authentication &gt;&gt; Roles. 
+-Click "Standard User".
+-At the top right, click the three dots, and then choose "Edit Config".
+-Under "New User Default", ensure "No" is selected. 
+-Click "User-Base".
+-At the top right, click the three dots, and then "Edit Config".
+-Under "New User Default", ensure "Yes" is selected.
+
+If "No" is not selected for Standard User, this is a finding. 
+
+If "Yes" is not selected for User-Base, this is a finding.</check-content></check></Rule></Group><Group id="V-252846"><title>SRG-APP-000098-CTR-000185</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252846r819988_rule" weight="10.0" severity="medium"><version>CNTR-RM-000250</version><title>Rancher MCM must allocate audit record storage and generate audit records associated with events, users, and groups.</title><description>&lt;VulnDiscussion&gt;Rancher logging capability and optional aggregation
+
+The Rancher server automatically logs everything at the container level. These logs are stored on the system which are then optionally picked up by further log aggregation systems.
+
+Cluster administrators with authorized access can view logs produced by the Rancher server as well as change logging settings to trigger a new deployment with the new settings. Audit and normal application logs generated by Rancher can be forwarded to a remote log aggregation system for use by authorized viewers as well. This system can in turn be configured for further log processing, monitoring, backup, and alerting. This aggregation also must include failover and buffering in the event a logging subsystem fails. The logging mechanism of the individual server is independent and will kill the server process if this logging mechanism fails.
+
+Rancher provides audit record generation capabilities. Audit logs capture what happened, when it happened, who initiated it, and what cluster it affected to ensure non-repudiation of actions taken.
+
+Audit log verbosity can be set to one of the following levels:
+0 - Disable audit log (default setting).
+1 - Log event metadata.
+2 - Log event metadata and request body.
+3 - Log event metadata, request body, and response body. Each log transaction for a request/response pair uses the same auditID value. 
+
+Application logs can be set to one of the following levels:
+info = Logs informational messages. This is the default log level.
+debug = Logs more detailed messages that can be used to debug.
+trace = Logs very detailed messages on internal functions. This is very verbose and can contain sensitive information.
+
+Log metadata includes the following information (sample):
+
+{
+
+  'auditID': '30022177-9e2e-43d1-b0d0-06ef9d3db183',
+
+  'requestURI': '/v3/schemas',
+
+  'sourceIPs': ['::1'],
+
+  'user': {
+
+    'name': 'user-f4tt2',
+
+    'group': ['system:authenticated']
+
+  },
+
+  'verb': 'GET',
+
+  'stage': 'RequestReceived',
+
+  'stageTimestamp': '2018-07-20 10:22:43 +0800'
+
+  'requestBody': {
+
+    [redacted]
+
+  }
+
+}
+
+Satisfies: SRG-APP-000098-CTR-000185, SRG-APP-000100-CTR-000195, SRG-APP-000100-CTR-000200, SRG-APP-000101-CTR-000205, SRG-APP-000181-CTR-000485, SRG-APP-000290-CTR-000670, SRG-APP-000357-CTR-000800, SRG-APP-000359-CTR-000810, SRG-APP-000360-CTR-000815, SRG-APP-000492-CTR-001220, SRG-APP-000493-CTR-001225, SRG-APP-000494-CTR-001230, SRG-APP-000495-CTR-001235, SRG-APP-000496-CTR-001240, SRG-APP-000497-CTR-001245, SRG-APP-000498-CTR-001250, SRG-APP-000499-CTR-001255, SRG-APP-000500-CTR-001260, SRG-APP-000501-CTR-001265, SRG-APP-000502-CTR-001270, SRG-APP-000503-CTR-001275, SRG-APP-000504-CTR-001280, SRG-APP-000505-CTR-001285, SRG-APP-000506-CTR-001290, SRG-APP-000507-CTR-001295, SRG-APP-000508-CTR-001300, SRG-APP-000509-CTR-001305, SRG-APP-000510-CTR-001310, SRG-APP-000516-CTR-000790&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Rancher Government Solutions Multi-Cluster Manager</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Rancher Government Solutions Multi-Cluster Manager</dc:subject><dc:identifier>5467</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000135</ident><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001487</ident><ident system="http://cyber.mil/cci">CCI-001496</ident><ident system="http://cyber.mil/cci">CCI-001819</ident><ident system="http://cyber.mil/cci">CCI-001825</ident><ident system="http://cyber.mil/cci">CCI-001828</ident><ident system="http://cyber.mil/cci">CCI-001846</ident><fixtext fixref="F-56252r819987_fix">Enable log aggregation:
+Navigate to Triple Bar Symbol(Global).
+
+For each cluster in  "EXPLORE CLUSTER":
+-Select "Cluster".
+-Select "Cluster Tools" (bottom left).
+-In the "Logging Block", select "Install".
+-Select the newest version of logging in the dropdown. 
+-Open the "Install into Project Dropdown".
+-Select the Project. (Note: Kubernetes STIG requires creating new project &amp; namespace for deployments. Using Default or System is not best practice.)
+-Click "Next".
+-Review the options and click "Install".</fixtext><fix id="F-56252r819987_fix" /><check system="C-56302r819986_chk"><check-content-ref href="Rancher_Government_Solutions_Multi-Cluster_Manager_STIG.xml" name="M" /><check-content>Ensure logging aggregation is enabled:
+Navigate to Triple Bar Symbol(Global).
+
+For each cluster in "EXPLORE CLUSTER":
+-Select "Cluster".
+-Select "Cluster Tools" (bottom left).
+
+This screen shows the current configuration for logging. 
+
+If the logging block has an Install button, this is a finding.</check-content></check></Rule></Group><Group id="V-252847"><title>SRG-APP-000234-CTR-000590</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252847r819991_rule" weight="10.0" severity="medium"><version>CNTR-RM-000850</version><title>Rancher MCM must never automatically remove or disable emergency accounts.</title><description>&lt;VulnDiscussion&gt;Emergency accounts are administrator accounts that are established in response to crisis situations where the need for rapid account activation is required. Therefore, emergency account activation may bypass normal account authorization processes. If these accounts are automatically disabled, system maintenance during emergencies may not be possible, thus adversely affecting system availability.
+
+Emergency accounts are different from infrequently used accounts (i.e., local logon accounts used by system administrators when network or normal logon/access is not available). Infrequently used accounts also remain available and are not subject to automatic termination dates. However, an emergency account is normally a different account that is created for use by vendors or system maintainers.
+
+To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to off-load those access control functions and focus on core application features and functionality.
+
+Local Admin user should exist so that Rancher can be used if the external authentication service encounters issues.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Rancher Government Solutions Multi-Cluster Manager</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Rancher Government Solutions Multi-Cluster Manager</dc:subject><dc:identifier>5467</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001682</ident><fixtext fixref="F-56253r819990_fix">Ensure local emergency admin account has not been removed and is the only Local account. 
+
+Navigate to the Triple Bar Symbol(Global) &gt;&gt; Users &amp; Authentication. In the left navigation menu, click "Users".
+
+To Create a User:
+-Click "Create".
+-Complete the "Add User" form. Ensure Global Permissions are set to "Administrator".
+-Click "Create".
+
+To Delete a User:
+-Select the user and click "Delete".</fixtext><fix id="F-56253r819990_fix" /><check system="C-56303r819989_chk"><check-content-ref href="Rancher_Government_Solutions_Multi-Cluster_Manager_STIG.xml" name="M" /><check-content>Ensure local emergency admin account has not been removed and is the only Local account. 
+
+Navigate to the Triple Bar Symbol(Global) &gt;&gt; Users &amp; Authentication. In the left navigation menu, click "Users".
+
+There should be only one local account and that account should have administrator role.
+
+If no local administrator account exists or there is more than one local account, this is a finding.</check-content></check></Rule></Group><Group id="V-252848"><title>SRG-APP-000318-CTR-000740</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252848r819994_rule" weight="10.0" severity="medium"><version>CNTR-RM-000970</version><title>Rancher MCM must enforce organization-defined circumstances and/or usage conditions for organization-defined accounts.</title><description>&lt;VulnDiscussion&gt;Rancher MCM must verify the certificate used for Rancher's ingress is a valid DOD certificate. This is achieved by verifying the helm installation contains correct parameters.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Rancher Government Solutions Multi-Cluster Manager</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Rancher Government Solutions Multi-Cluster Manager</dc:subject><dc:identifier>5467</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002115</ident><fixtext fixref="F-56254r819993_fix">Update the secrets to contain valid certificates.
+
+Put the correct and valid DOD certificate and key in files called "tls.crt" and "tls.key", respectively, and then run:
+kubectl -n cattle-system create secret tls tls-rancher-ingress \  --cert=tls.crt \   --key=tls.key                         
+
+Upload the CA required for the certs by creating another file called "cacerts.pem" and running: 
+kubectl -n cattle-system create secret generic tls-ca \   --from-file=cacerts.pem=./cacerts.pem 
+
+The helm chart values need to be updated to include the check section: 
+privateCA: true   
+ingress:            
+tls:                                                                        
+source: secret   
+
+Re-run helm upgrade with the new values for the certs to take effect.</fixtext><fix id="F-56254r819993_fix" /><check system="C-56304r819992_chk"><check-content-ref href="Rancher_Government_Solutions_Multi-Cluster_Manager_STIG.xml" name="M" /><check-content>Verify helm installation contains correct parameters:
+Navigate to Triple Bar Symbol(Global) &gt;&gt;  &lt;local cluster&gt;.
+From the kubectl shell (&gt;_) Execute:
+`helm get values rancher -n cattle-system`
+
+The output must contain:
+```
+privateCA: true
+ingress:
+tls:
+source: secret
+```
+If the output source is not "secret", this is a finding.
+
+Verify contents of certificates are correct: 
+From the console, type:
+kubectl -n cattle-system get secret tls-rancher-ingress -o 'jsonpath={.data.tls\.crt}' | base64 --decode | openssl x509 -noout -text
+
+kubectl -n cattle-system get secret tls-ca -o 'jsonpath={.data.cacerts\.pem}' | base64 --decode | openssl x509 -noout -text</check-content></check></Rule></Group><Group id="V-252849"><title>SRG-APP-000645-CTR-001410</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252849r819997_rule" weight="10.0" severity="high"><version>CNTR-RM-001730</version><title>Rancher MCM must prohibit or restrict the use of protocols that transmit unencrypted authentication information or use flawed cryptographic algorithms for transmission.</title><description>&lt;VulnDiscussion&gt;The container platform and its components will adhere to NIST 800-52R2. To ensure that traffic coming through the ingress controller is re-encrypted internally, switch off port 80 on the service object and direct ingress traffic to port 443 over HTTPS.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Rancher Government Solutions Multi-Cluster Manager</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Rancher Government Solutions Multi-Cluster Manager</dc:subject><dc:identifier>5467</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-56255r819996_fix">From the dropdown select Global &gt;&gt;  &lt;local cluster&gt;.
+From the kubectl shell (&gt;_) execute the following:
+
+kubectl patch -n cattle-system service rancher -p '{"spec":{"ports":[{"port":443,"targetPort":443}]}}'
+export RANCHER_HOSTNAME=rancher.disa-eval-2-6.tomatodamato.com &lt; Caution-http://rancher.disa-eval-2-6.tomatodamato.com &gt; 
+kubectl -n cattle-system patch ingress rancher -p "{\"metadata\":{\"annotations\":{\"nginx.ingress.Kubernetes.io/backend-protocol\ &lt; Caution-http://nginx.ingress.Kubernetes.io/backend-protocol\ &gt; ":\"HTTPS\"}},\"spec\":{\"rules\":[{\"host\":\"$RANCHER_HOSTNAME\",\"http\":{\"paths\":[{\"backend\":{\"service\":{\"name\":\"rancher\",\"port\":{\"number\":443}}},\"pathType\":\"ImplementationSpecific\"}]}}]}}"
+kubectl patch -n cattle-system service rancher --type=json -p '[{"op":"remove","path":"/spec/ports/0"}]'</fixtext><fix id="F-56255r819996_fix" /><check system="C-56305r819995_chk"><check-content-ref href="Rancher_Government_Solutions_Multi-Cluster_Manager_STIG.xml" name="M" /><check-content>Navigate to Triple Bar Symbol(Global) &gt;&gt;  &lt;local cluster&gt;.
+From the kubectl shell (&gt;_) execute:
+kubectl get ingress -n cattle-system rancher -o yaml
+
+verify:
+spec:
+  rules:
+  - host: rancher.example.com &lt; Caution-http://rancher.example.com &gt; 
+    http:
+      paths:
+      - backend:
+          service:
+            name: rancher
+            port:
+              number: 443
+
+kubectl get svc rancher -n cattle-system -o yaml
+Verify:
+spec:
+  clusterIP: 10.43.145.4
+  clusterIPs:
+  - 10.43.145.4
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: https-internal
+    port: 443
+    protocol: TCP
+    targetPort: 443
+
+If the output does not match the above, this is a finding.</check-content></check></Rule></Group></Benchmark>

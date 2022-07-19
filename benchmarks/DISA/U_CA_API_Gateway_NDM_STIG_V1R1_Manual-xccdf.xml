@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="CA_API_Gateway_NDM_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2016-09-20">accepted</status><title>CA API Gateway NDM Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 19 Sep 2016</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71519" selected="true" /><select idref="V-71521" selected="true" /><select idref="V-71523" selected="true" /><select idref="V-71525" selected="true" /><select idref="V-71527" selected="true" /><select idref="V-71529" selected="true" /><select idref="V-71531" selected="true" /><select idref="V-71533" selected="true" /><select idref="V-71535" selected="true" /><select idref="V-71537" selected="true" /><select idref="V-71539" selected="true" /><select idref="V-71541" selected="true" /><select idref="V-71543" selected="true" /><select idref="V-71545" selected="true" /><select idref="V-71547" selected="true" /><select idref="V-71549" selected="true" /><select idref="V-71551" selected="true" /><select idref="V-71553" selected="true" /><select idref="V-71555" selected="true" /><select idref="V-71557" selected="true" /><select idref="V-71559" selected="true" /><select idref="V-71561" selected="true" /><select idref="V-71563" selected="true" /><select idref="V-71565" selected="true" /><select idref="V-71567" selected="true" /><select idref="V-71569" selected="true" /><select idref="V-71571" selected="true" /><select idref="V-71573" selected="true" /><select idref="V-71575" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71519" selected="true" /><select idref="V-71521" selected="true" /><select idref="V-71523" selected="true" /><select idref="V-71525" selected="true" /><select idref="V-71527" selected="true" /><select idref="V-71529" selected="true" /><select idref="V-71531" selected="true" /><select idref="V-71533" selected="true" /><select idref="V-71535" selected="true" /><select idref="V-71537" selected="true" /><select idref="V-71539" selected="true" /><select idref="V-71541" selected="true" /><select idref="V-71543" selected="true" /><select idref="V-71545" selected="true" /><select idref="V-71547" selected="true" /><select idref="V-71549" selected="true" /><select idref="V-71551" selected="true" /><select idref="V-71553" selected="true" /><select idref="V-71555" selected="true" /><select idref="V-71557" selected="true" /><select idref="V-71559" selected="true" /><select idref="V-71561" selected="true" /><select idref="V-71563" selected="true" /><select idref="V-71565" selected="true" /><select idref="V-71567" selected="true" /><select idref="V-71569" selected="true" /><select idref="V-71571" selected="true" /><select idref="V-71573" selected="true" /><select idref="V-71575" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71519" selected="true" /><select idref="V-71521" selected="true" /><select idref="V-71523" selected="true" /><select idref="V-71525" selected="true" /><select idref="V-71527" selected="true" /><select idref="V-71529" selected="true" /><select idref="V-71531" selected="true" /><select idref="V-71533" selected="true" /><select idref="V-71535" selected="true" /><select idref="V-71537" selected="true" /><select idref="V-71539" selected="true" /><select idref="V-71541" selected="true" /><select idref="V-71543" selected="true" /><select idref="V-71545" selected="true" /><select idref="V-71547" selected="true" /><select idref="V-71549" selected="true" /><select idref="V-71551" selected="true" /><select idref="V-71553" selected="true" /><select idref="V-71555" selected="true" /><select idref="V-71557" selected="true" /><select idref="V-71559" selected="true" /><select idref="V-71561" selected="true" /><select idref="V-71563" selected="true" /><select idref="V-71565" selected="true" /><select idref="V-71567" selected="true" /><select idref="V-71569" selected="true" /><select idref="V-71571" selected="true" /><select idref="V-71573" selected="true" /><select idref="V-71575" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71519" selected="true" /><select idref="V-71521" selected="true" /><select idref="V-71523" selected="true" /><select idref="V-71525" selected="true" /><select idref="V-71527" selected="true" /><select idref="V-71529" selected="true" /><select idref="V-71531" selected="true" /><select idref="V-71533" selected="true" /><select idref="V-71535" selected="true" /><select idref="V-71537" selected="true" /><select idref="V-71539" selected="true" /><select idref="V-71541" selected="true" /><select idref="V-71543" selected="true" /><select idref="V-71545" selected="true" /><select idref="V-71547" selected="true" /><select idref="V-71549" selected="true" /><select idref="V-71551" selected="true" /><select idref="V-71553" selected="true" /><select idref="V-71555" selected="true" /><select idref="V-71557" selected="true" /><select idref="V-71559" selected="true" /><select idref="V-71561" selected="true" /><select idref="V-71563" selected="true" /><select idref="V-71565" selected="true" /><select idref="V-71567" selected="true" /><select idref="V-71569" selected="true" /><select idref="V-71571" selected="true" /><select idref="V-71573" selected="true" /><select idref="V-71575" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71519" selected="true" /><select idref="V-71521" selected="true" /><select idref="V-71523" selected="true" /><select idref="V-71525" selected="true" /><select idref="V-71527" selected="true" /><select idref="V-71529" selected="true" /><select idref="V-71531" selected="true" /><select idref="V-71533" selected="true" /><select idref="V-71535" selected="true" /><select idref="V-71537" selected="true" /><select idref="V-71539" selected="true" /><select idref="V-71541" selected="true" /><select idref="V-71543" selected="true" /><select idref="V-71545" selected="true" /><select idref="V-71547" selected="true" /><select idref="V-71549" selected="true" /><select idref="V-71551" selected="true" /><select idref="V-71553" selected="true" /><select idref="V-71555" selected="true" /><select idref="V-71557" selected="true" /><select idref="V-71559" selected="true" /><select idref="V-71561" selected="true" /><select idref="V-71563" selected="true" /><select idref="V-71565" selected="true" /><select idref="V-71567" selected="true" /><select idref="V-71569" selected="true" /><select idref="V-71571" selected="true" /><select idref="V-71573" selected="true" /><select idref="V-71575" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71519" selected="true" /><select idref="V-71521" selected="true" /><select idref="V-71523" selected="true" /><select idref="V-71525" selected="true" /><select idref="V-71527" selected="true" /><select idref="V-71529" selected="true" /><select idref="V-71531" selected="true" /><select idref="V-71533" selected="true" /><select idref="V-71535" selected="true" /><select idref="V-71537" selected="true" /><select idref="V-71539" selected="true" /><select idref="V-71541" selected="true" /><select idref="V-71543" selected="true" /><select idref="V-71545" selected="true" /><select idref="V-71547" selected="true" /><select idref="V-71549" selected="true" /><select idref="V-71551" selected="true" /><select idref="V-71553" selected="true" /><select idref="V-71555" selected="true" /><select idref="V-71557" selected="true" /><select idref="V-71559" selected="true" /><select idref="V-71561" selected="true" /><select idref="V-71563" selected="true" /><select idref="V-71565" selected="true" /><select idref="V-71567" selected="true" /><select idref="V-71569" selected="true" /><select idref="V-71571" selected="true" /><select idref="V-71573" selected="true" /><select idref="V-71575" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71519" selected="true" /><select idref="V-71521" selected="true" /><select idref="V-71523" selected="true" /><select idref="V-71525" selected="true" /><select idref="V-71527" selected="true" /><select idref="V-71529" selected="true" /><select idref="V-71531" selected="true" /><select idref="V-71533" selected="true" /><select idref="V-71535" selected="true" /><select idref="V-71537" selected="true" /><select idref="V-71539" selected="true" /><select idref="V-71541" selected="true" /><select idref="V-71543" selected="true" /><select idref="V-71545" selected="true" /><select idref="V-71547" selected="true" /><select idref="V-71549" selected="true" /><select idref="V-71551" selected="true" /><select idref="V-71553" selected="true" /><select idref="V-71555" selected="true" /><select idref="V-71557" selected="true" /><select idref="V-71559" selected="true" /><select idref="V-71561" selected="true" /><select idref="V-71563" selected="true" /><select idref="V-71565" selected="true" /><select idref="V-71567" selected="true" /><select idref="V-71569" selected="true" /><select idref="V-71571" selected="true" /><select idref="V-71573" selected="true" /><select idref="V-71575" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71519" selected="true" /><select idref="V-71521" selected="true" /><select idref="V-71523" selected="true" /><select idref="V-71525" selected="true" /><select idref="V-71527" selected="true" /><select idref="V-71529" selected="true" /><select idref="V-71531" selected="true" /><select idref="V-71533" selected="true" /><select idref="V-71535" selected="true" /><select idref="V-71537" selected="true" /><select idref="V-71539" selected="true" /><select idref="V-71541" selected="true" /><select idref="V-71543" selected="true" /><select idref="V-71545" selected="true" /><select idref="V-71547" selected="true" /><select idref="V-71549" selected="true" /><select idref="V-71551" selected="true" /><select idref="V-71553" selected="true" /><select idref="V-71555" selected="true" /><select idref="V-71557" selected="true" /><select idref="V-71559" selected="true" /><select idref="V-71561" selected="true" /><select idref="V-71563" selected="true" /><select idref="V-71565" selected="true" /><select idref="V-71567" selected="true" /><select idref="V-71569" selected="true" /><select idref="V-71571" selected="true" /><select idref="V-71573" selected="true" /><select idref="V-71575" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71519" selected="true" /><select idref="V-71521" selected="true" /><select idref="V-71523" selected="true" /><select idref="V-71525" selected="true" /><select idref="V-71527" selected="true" /><select idref="V-71529" selected="true" /><select idref="V-71531" selected="true" /><select idref="V-71533" selected="true" /><select idref="V-71535" selected="true" /><select idref="V-71537" selected="true" /><select idref="V-71539" selected="true" /><select idref="V-71541" selected="true" /><select idref="V-71543" selected="true" /><select idref="V-71545" selected="true" /><select idref="V-71547" selected="true" /><select idref="V-71549" selected="true" /><select idref="V-71551" selected="true" /><select idref="V-71553" selected="true" /><select idref="V-71555" selected="true" /><select idref="V-71557" selected="true" /><select idref="V-71559" selected="true" /><select idref="V-71561" selected="true" /><select idref="V-71563" selected="true" /><select idref="V-71565" selected="true" /><select idref="V-71567" selected="true" /><select idref="V-71569" selected="true" /><select idref="V-71571" selected="true" /><select idref="V-71573" selected="true" /><select idref="V-71575" selected="true" /></Profile><Group id="V-71519"><title>SRG-APP-000516-NDM-000317</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86143r1_rule" severity="high" weight="10.0"><version>CAGW-DM-000100</version><title>The CA API Gateway must be installed on Red Hat Enterprise Linux (RHEL) Version 6.7 or higher.</title><description>&lt;VulnDiscussion&gt;The API Gateway (Appliance version) depends on specific RHEL capabilities for the security, logging, and auditing subsystems. Installation on alternative or older RHEL versions may create vulnerabilities.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-77839r1_fix">Configure the CA API Gateway to be installed on Red Hat Enterprise Linux (RHEL) Version 6.7 or higher.</fixtext><fix id="F-77839r1_fix" /><check system="C-71891r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the CA API Gateway is installed on Red Hat Enterprise Linux (RHEL) Version 6.7 or higher.
+
+If the CA API Gateway is not installed on Red Hat Enterprise Linux (RHEL) Version 6.7 or higher, this is a finding.</check-content></check></Rule></Group><Group id="V-71521"><title>SRG-APP-000516-NDM-000336</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86145r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000110</version><title>The CA API Gateway must employ RADIUS + LDAPS or LDAPS to centrally manage authentication settings.</title><description>&lt;VulnDiscussion&gt;The use of authentication servers or other centralized management servers for providing centralized authentication services is required for network device management. Maintaining local administrator accounts for daily usage on each network device without centralized management is not scalable or feasible. Without centralized management, it is likely that credentials for some network devices will be forgotten, leading to delays in administration, which itself leads to delays in remediating production problems and in addressing compromises in a timely fashion.
+
+Use of RADIUS + LDAPS or LDAPS for authentication and authorization provides the Gateway with an ability to authenticate credentials against a centralized and secured identity management system. This allows permissions for administration of the Gateway to be governed independently of the Gateway.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-000370</ident><fixtext fixref="F-77841r2_fix">Configure the CA API Gateway to employ RADIUS + LDAPS or LDAPS to centrally manage authentication settings.
+
+Prerequisites:
+
+- RADIUS server (for the RADIUS+LDAPS configuration)
+- LDAPS server with posixAccount objects for user logins
+- LDAPS server CA certificate available via HTTP at a specific URL
+- LDAP account for the SSG to bind and lookup info
+- posixUser object within LDAP contain object (OU)
+- All SSG LDAP posixAccount objects are filtered either by a fixed gidNumber or by membership in an LDAP group containing a sequence of memberUid attributes, one for each user.
+
+Configure SSG to use LDAPS.
+
+- SSH to SSG as a member of ssgconfig
+- Select: 1) Configure system settings, 4) Configure authentication method.
+- Select: 2) ldap.
+- Walk through configuration steps, providing requisite information ensuring:
+  - Select LDAPS (secure) "y".
+  - Select the appropriate TLS port (636 is the default).
+  - Disable anonymous bind.
+  - Specify the URL containing the PEM of the CA certificate to download.
+  - Specify that the SSG LDAP client "demand" the server's certificate.
+  - Set the user filter to use either a specific gidNumber or a group DN.
+  - Set the posixAccount attribute to use as login name (uid).
+
+Confirmation configuration should be approximately:
+
+Authentication Type: LDAP_ONLY
+
+Label                                     | Value                                            
+---------------------------------------------------------------------------------------------
+Secure                                    | true                                             
+ActiveDirectory                           | false                                            
+Server                                    | smldap.l7tech.com                                
+BaseDn                                    | dc=l7tech,dc=com                                 
+Port                                      | 636                                              
+AnonymousBind                             | false                                            
+BindDn                                    | cn=Manager,dc=l7tech,dc=com                      
+BindPassword                              | &lt;Hidden&gt;                                         
+Object for finding the password for users | ou=posixAccounts                                 
+Object class name of users in the LDAP    | posixAccount                                     
+Server CaCert File                        | /etc/openldap/cacerts/ldapcacert                 
+Certificate Action                        | DEMAND                                           
+GroupDn                                   | cn=ssgconfig_ldap,ou=posixGroups,dc=l7tech,dc=com
+PAM login attribute                       | uid                                              
+
+Finally, apply configuration and restart the SSG.
+
+Configure SSG to use RADIUS+LDAPS.
+
+- SSH to SSG as ssgconfig.
+- Select: 1) Configure system settings, 4) Configure authentication method.
+- Select: 4) ldap_radius.
+- Walk through configuration steps, providing requisite information ensuring:
+  - Enter the RADIUS server's address and secret.
+  - Complete the LDAP questions as for the LDAPS only case (above).
+
+Confirmation configuration should be approximately:
+
+Authentication Type: RADIUS_WITH_LDAP
+
+Label   | Value                
+-------------------------------
+Server  | freerad217.l7tech.com
+Secret  | &lt;Hidden&gt;             
+Timeout | 3                    
+
+Label                                     | Value                                            
+---------------------------------------------------------------------------------------------
+Secure                                    | true                                             
+ActiveDirectory                           | false                                            
+Server                                    | smldap.l7tech.com                                
+BaseDn                                    | dc=l7tech,dc=com                                 
+Port                                      | 636                                              
+AnonymousBind                             | false                                            
+BindDn                                    | cn=Manager,dc=l7tech,dc=com                      
+BindPassword                              | &lt;Hidden&gt;                                         
+Object for finding the password for users | ou=posixAccounts                                 
+Object class name of users in the LDAP    | posixAccount                                     
+Server CaCert Url                         | http://localhost:8080/cert                       
+Certificate Action                        | DEMAND                                           
+GroupDn                                   | cn=ssgconfig_ldap,ou=posixGroups,dc=l7tech,dc=com
+PAM login attribute                       | uid</fixtext><fix id="F-77841r2_fix" /><check system="C-71893r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Review the CA API Gateway configuration to determine if RADIUS + LDAPS or LDAPS is employed to centrally manage authentication settings.
+
+- SSH to SSG as a member of ssgconfig.
+- Select: 1) Configure system settings, 6) Export configuration.
+- Export configuration to "file".
+- Go back to main menu, select 3) Use a privileged shell (root).
+- Navigate to /home/ssgconfig, open "file".
+- Check "authenticationType".
+
+If "authenticationType" is not RADIUS_WITH_LDAP or RADIUS_WITH_LDAPS, this is a finding.</check-content></check></Rule></Group><Group id="V-71523"><title>SRG-APP-000109-NDM-000233</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86147r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000120</version><title>The CA API Gateway must shut down by default upon audit failure (unless availability is an overriding concern).</title><description>&lt;VulnDiscussion&gt;It is critical that when the network device is at risk of failing to process audit logs as required, it take action to mitigate the failure. Audit processing failures include: software/hardware errors; failures in the audit capturing mechanisms; and audit storage capacity being reached or exceeded. Responses to audit failure depend upon the nature of the failure mode. 
+
+When availability is an overriding concern, other approved actions in response to an audit failure are as follows: 
+
+(i) If the failure was caused by the lack of audit record storage capacity, the network device must continue generating audit records if possible (automatically restarting the audit service if necessary), overwriting the oldest audit records in a first-in-first-out manner.
+(ii) If audit records are sent to a centralized collection server and communication with this server is lost or the server fails, the network device must queue audit records locally until communication is restored or until the audit records are retrieved manually. Upon restoration of the connection to the centralized collection server, action should be taken to synchronize the local audit data with the collection server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000140</ident><fixtext fixref="F-77843r1_fix">Configure the "auditd" configuration file "/etc/audit/auditd.conf" by adding these lines: 
+
+disk_full_action = HALT
+disk_error_action = HALT</fixtext><fix id="F-77843r1_fix" /><check system="C-71895r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the "/etc/audit/auditd.conf" file contains the lines: 
+
+disk_full_action = HALT
+disk_error_action = HALT
+
+If "/etc/audit/auditd.conf" does not contain these lines, this is a finding.</check-content></check></Rule></Group><Group id="V-71525"><title>SRG-APP-000125-NDM-000241</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86149r1_rule" severity="low" weight="10.0"><version>CAGW-DM-000130</version><title>The CA API Gateway must forward all log audit log messages to the central log server.</title><description>&lt;VulnDiscussion&gt;Protection of log data includes assuring log data is not accidentally lost or deleted. Regularly backing up audit records to a different system or onto separate media than the system being audited helps to assure, in the event of a catastrophic system failure, the audit records will be retained. 
+
+This helps to ensure a compromise of the information system being audited does not also result in a compromise of the audit records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001348</ident><fixtext fixref="F-77845r1_fix">Configure the CA API Gateway to forward all audit log messages to the central log server.
+
+- Log in to CA API Gateway as root.
+- Open "/etc/rsyslog.conf" for editing.
+- Add a rule "*.* @@loghost.log.com" to the ruleset section of the "rsyslogd.conf" file.</fixtext><fix id="F-77845r1_fix" /><check system="C-71897r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the CA API Gateway forwards all log audit log messages to the central log server. 
+
+Within the "/etc/rsyslog.conf" file, confirm a rule in the format "*.* @@loghost.log.com" is in the ruleset section.
+
+If the CA API Gateway "/etc/rsyslog.conf" file does not have a rule in the format "*.* @@loghost.log.com" in the ruleset section, this is a finding.</check-content></check></Rule></Group><Group id="V-71527"><title>SRG-APP-000080-NDM-000345</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86151r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000140</version><title>The CA API Gateway must not have any default manufacturer passwords when deployed.</title><description>&lt;VulnDiscussion&gt;Network devices not protected with strong password schemes provide the opportunity for anyone to crack the password and gain access to the device, which can result in loss of availability, confidentiality, or integrity of network traffic. 
+
+Many default vendor passwords are well known or are easily guessed; therefore, not removing them prior to deploying the network device into production provides an opportunity for a malicious user to gain unauthorized access to the device.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002041</ident><fixtext fixref="F-77847r1_fix">Use the "passwd" command to set non-default passwords.</fixtext><fix id="F-77847r1_fix" /><check system="C-71899r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify login as "root" (at the console) and "ssgconfig" have non-default passwords. 
+
+The default password for "root" is "7layer" and the default password for "ssgconfig" is "7layer".
+
+If root or ssgconfig use default passwords, this is a finding.</check-content></check></Rule></Group><Group id="V-71529"><title>SRG-APP-000148-NDM-000346</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86153r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000150</version><title>In the event the authentication server is unavailable, there must be one local account of last resort.</title><description>&lt;VulnDiscussion&gt;Authentication for administrative (privileged-level) access to the device is required at all times. An account can be created on the device's local database for use in an emergency, such as when the authentication server is down or connectivity between the device and the authentication server is not operable. This account is also referred to as the account of last resort since the emergency administration account is strictly intended to be used only as a last resort and immediate administrative access is absolutely necessary.
+
+The number of emergency administration accounts is restricted to at least one, but no more than operationally required as determined by the ISSO. The emergency administration account logon credentials must be stored in a sealed envelope and kept in a safe.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001358</ident><ident system="http://iase.disa.mil/cci">CCI-002111</ident><fixtext fixref="F-77849r1_fix">Configure the "root" account as the local account of last resort. 
+
+Disable the "ssgconfig" account by destroying its password and making the login shell "/sbin/nologin".</fixtext><fix id="F-77849r1_fix" /><check system="C-71901r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the "root" (or its equivalent, renamed account) is listed in the password configuration files.
+
+If the "root" account is not listed in the password configuration files, this is a finding.</check-content></check></Rule></Group><Group id="V-71531"><title>SRG-APP-000164-NDM-000252</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86155r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000160</version><title>The CA API Gateway must enforce a minimum 15-character password length.</title><description>&lt;VulnDiscussion&gt;Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password.
+
+The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised. Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000205</ident><fixtext fixref="F-77851r1_fix">In order to change the default setting: 
+
+- Log in to Gateway via SSH.
+- Open /etc/login.defs.
+- Change the value for PASS_MIN_LENGTH to desired value.
+
+Then:
+
+- Change the PASS_MIN_LENGTH field to desired value in the following files:
+-- /etc/pam.d/password-auth
+-- /etc/pam.d/password-auth-ac
+-- /etc/pam.d/system-auth
+-- /etc/pam.d/system-auth-ac
+
+Note: Must be a value of "15" or greater.</fixtext><fix id="F-77851r1_fix" /><check system="C-71903r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the CA API Gateway configuration files for passwords (/etc/login.defs, /etc/pam.d/password, /etc/pam.d/password-auth-ac, /etc/pam.d/system-auth, and /etc/pam.d/system-auth-ac) each have this line: 
+
+PASS_MIN_LEN 15.
+
+If the CA API Gateway configuration files for passwords (/etc/login.defs, /etc/pam.d/password, /etc/pam.d/password-auth-ac, /etc/pam.d/system-auth, and /etc/pam.d/system-auth-ac) do not have the line requiring minimum 15-character password length, this is a finding.</check-content></check></Rule></Group><Group id="V-71533"><title>SRG-APP-000170-NDM-000329</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86157r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000170</version><title>If multifactor authentication is not supported and passwords must be used, the CA API Gateway must require that when a password is changed, the characters are changed in at least 8 of the positions within the password.</title><description>&lt;VulnDiscussion&gt;If the application allows the user to consecutively reuse extensive portions of passwords, this increases the chances of password compromise by increasing the window of opportunity for attempts at guessing and brute-force attacks.
+
+The number of changed characters refers to the number of changes required with respect to the total number of positions in the current password. In other words, characters may be the same within the two passwords; however, the positions of the like characters must be different.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000195</ident><fixtext fixref="F-77853r1_fix">Set the password attribute "difok" field is set to "8" in the following files: 
+
+-- /etc/pam.d/password-auth
+-- /etc/pam.d/password-auth-ac</fixtext><fix id="F-77853r1_fix" /><check system="C-71905r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the password attribute "difok" field is set to "8" in the following files: 
+
+-- /etc/pam.d/password-auth
+-- /etc/pam.d/password-auth-ac
+
+If the password attribute "difok" field is not set to "8" in these files, this is a finding.</check-content></check></Rule></Group><Group id="V-71535"><title>SRG-APP-000234-NDM-000272</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86159r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000180</version><title>The CA API Gateway must automatically remove or disable emergency accounts, except the emergency administration account, after 72 hours.</title><description>&lt;VulnDiscussion&gt;Emergency accounts are administrator accounts which are established in response to crisis situations where the need for rapid account activation is required. Therefore, emergency account activation may bypass normal account authorization processes. 
+
+If emergency accounts remain active when no longer needed, they may be used to gain unauthorized access. The risk is greater for the network device since these accounts have elevated privileges. To mitigate this risk, automated termination of these accounts must be set upon account creation.
+
+It is important to note the difference between emergency accounts and the emergency administration account. The emergency administration account, also known as the account of last resort, is an infrequently used account used by network administrators only when network or normal logon/access is not available. The emergency administration account is not subject to automatic termination dates.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001682</ident><fixtext fixref="F-77855r1_fix">For existing accounts, set expiry time of an account using command: 
+
+chage -E "YYYY-MM-DD" "USERNAME
+
+For new accounts, create using command: 
+
+useradd -e &lt;expiry_date&gt; USERNAME
+
+where the expiry date in YYYY-MM-DD format is when you wish the account to expire.</fixtext><fix id="F-77855r1_fix" /><check system="C-71907r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify expiry of account with command: 
+
+chage -l "USERNAME"
+
+and look at the "Account expires" line for expiry date.
+
+If the expiry date is more than "72" hours after emergency account creation, this is a finding.</check-content></check></Rule></Group><Group id="V-71537"><title>SRG-APP-000268-NDM-000274</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86161r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000190</version><title>The CA API Gateway must activate a system alert message, send an alarm, and/or automatically shut down when a component failure is detected.</title><description>&lt;VulnDiscussion&gt;Predictable failure prevention requires organizational planning to address device failure issues. If components key to maintaining the device's security fail to function, the device could continue operating in an insecure state. If appropriate actions are not taken when a network device failure occurs, a denial of service condition may occur which could result in mission failure since the network would be operating without a critical security monitoring and prevention function. Upon detecting a failure of network device security components, the network device must activate a system alert message, send an alarm, or shut down.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001328</ident><fixtext fixref="F-77857r1_fix">Install and configure (setup SNMP trap dest/authentication) alerter script in /usr/local/bin/failtest. Configure cron to run "/usr/local/bin/failtest" every minute as indicated by /etc/crontab entry</fixtext><fix id="F-77857r1_fix" /><check system="C-71909r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify "/usr/local/bin/failtest" script exists and is executable. 
+
+Verify crontab runs "/usr/local/bin/failtest" every minute by checking cron's logfile "/var/log/cron".
+
+If "/usr/local/bin/failtest" does not exist or it is not executable, this is a finding.</check-content></check></Rule></Group><Group id="V-71539"><title>SRG-APP-000320-NDM-000284</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86163r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000200</version><title>The CA API Gateway must notify System Administrators (SAs) and Information System Security Officers (ISSMs) when accounts are created, or enabled when previously disabled.</title><description>&lt;VulnDiscussion&gt;Once an attacker establishes initial access to a system, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to simply enable a new or disabled account. Notification of account enabling is one method for mitigating this risk. A comprehensive account management process will ensure an audit trail which documents the creation of application user accounts and notifies SAs and ISSMs. Such a process greatly reduces the risk that accounts will be surreptitiously enabled and provides logging that can be used for forensic purposes.
+
+In order to detect and respond to events that affect network administrator accessibility and device processing, network devices must audit account enabling actions and, as required, notify the appropriate individuals so they can investigate the event.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002132</ident><fixtext fixref="F-77859r1_fix">Install and configure (setup SNMP trap dest/authentication) alerter script in /usr/local/bin/alerter. 
+
+Run "/usr/local/bin/alerter -w" to write initial config to filesystem. 
+
+Configure cron to run "/usr/local/bin/alerter -c" every minute.
+
+An example follows. The SNMP destination host and username/password are configured by editing the shell variables near the beginning of the script. SNMPUSER should be set to the username recognized by the SNMP Management Station. SNMPENGINEID should be set to the SNMPv3 EngineID the Management Station uses for this application. SNMPHOST should be set to the hostname of the SNMP Management Station. 
+
+This authentication configuration is placed in "/etc/snmp/snmp.conf":
+-----------------------------------
+
+defSecurityLevel authPriv
+defAuthType SHA
+defPrivType AES
+defAuthPassphrase {password123}
+defPrivPassphrase {password123}
+-----------------------------------
+
+This snmp alerter script is placed in "/usr/local/bin/alerter script":
+--------
+
+#!/bin/bash
+
+This script implements watching for changes in a system that may indicate unauthorized changes have been made to the system. It is designed to be run as "alerter -w" to capture the current configuration and then to be run out of cron on a regular basis as "alerter -c", which then compares the current configuration to the previously captured configuration. 
+
+If the configuration has changed, an SNMP TRAP is sent using the "SNMPBASECMD" variable as the base "snmptrap" command. 
+# SNMPBASECMD will have to be configured appropriately depending on the exact SNMPv3 security
+# implemented on the SNMP Management Server.
+#
+# The script uses "/var/run/alerter" as a base directory to capture filesystem timestamps and
+# the installed RPM software list.
+
+SNMPUSER=myuser
+SNMPENGINEID=0x0102030405
+SNMPHOST=rsbfreebsd.ca.com
+
+SNMPENTNUM="1.3.6.1.4.1.17304"
+SNMPNOTIF=".7.3.128"
+SNMPBASECMD="snmptrap -v 3 -n \"\"  -u ${SNMPUSER} -e ${SNMPENGINEID} ${SNMPHOST} 0 ${SNMPENTNUM}.7.3.128.0 ${SNMPENTNUM}.7.3.129.0 s"
+
+ALERTER_ROOT=/var/run/alerter
+
+ACCOUNTFILES=("/etc/passwd" "/etc/shadow" "/etc/group")
+
+TSFILE=timestamps
+RPMFILE=rpmlist
+
+function usage {
+  echo "$0 [-w | -c]"
+  echo "   -w - Write data"
+  echo "   -c - Compare current to data"
+  echo " (at least one must be selected)"
+  echo
+}
+
+function writeTsSummary {
+  for file in ${ACCOUNTFILES[*]} 
+  do
+    ts=$(stat -c '%Y' $file)
+    echo $file $ts &gt;&gt; $ALERTER_ROOT/$TSFILE
+  done
+}
+
+function writeRpmSummary {
+  rpm -qa &gt;&gt; $ALERTER_ROOT/$RPMFILE
+}
+
+function writeSummaries {
+
+  if [ ! -d $ALERTER_ROOT ]
+  then
+    mkdir $ALERTER_ROOT
+  fi
+
+  rm -f $ALERTER_ROOT/$TSFILE $ALERTER_ROOT/$RPMFILE
+
+  writeTsSummary
+  writeRpmSummary
+}</fixtext><fix id="F-77859r1_fix" /><check system="C-71911r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify "/usr/local/bin/alerter" script exists and is executable. 
+
+Verify crontab runs "/usr/local/bin/alerter" every minute by checking cron's logfile /var/log/cron.
+
+If the "/usr/local/bin/alerter" script does not exist, this is a finding. 
+
+If the "/usr/local/bin/alerter" script does not run every minute as a cron job, this is a finding. 
+
+An example follows. The SNMP destination host and username/password are configured by editing the shell variables near the beginning of the script. SNMPUSER should be set to the username recognized by the SNMP Management Station. SNMPENGINEID should be set to the SNMPv3 EngineID the Management Station uses for this application. SNMPHOST should be set to the hostname of the SNMP Management Station. 
+
+This authentication configuration is placed in "/etc/snmp/snmp.conf":
+-----------------------------------
+defSecurityLevel authPriv
+defAuthType SHA
+defPrivType AES
+defAuthPassphrase {password123}
+defPrivPassphrase {password123}
+-----------------------------------
+
+This snmp alerter script is placed in "/usr/local/bin/alerter script":
+--------
+#!/bin/bash
+
+#
+# This script implements watching for changes in a system that may indicate unauthorized
+# changes have been made to the system
+#
+# It is designed to be run as "alerter -w" to capture the current configuration and
+# then to be run out of cron on a regular basis as "alerter -c" which then compares the
+# current configuration to the previously captured configuration. If the configuration
+# has changed an SNMP TRAP is sent using the SNMPBASECMD variable as the base snmptrap command.
+# SNMPBASECMD will have to be configured appropriately depending on the exact SNMPv3 security
+# implemented on the SNMP Management Server.
+#
+# The script uses /var/run/alerter as a base directory to capture filesystem timestamps and
+# the installed RPM software list.
+
+SNMPUSER=myuser
+SNMPENGINEID=0x0102030405
+SNMPHOST=rsbfreebsd.ca.com
+
+SNMPENTNUM="1.3.6.1.4.1.17304"
+SNMPNOTIF=".7.3.128"
+SNMPBASECMD="snmptrap -v 3 -n \"\"  -u ${SNMPUSER} -e ${SNMPENGINEID} ${SNMPHOST} 0 ${SNMPENTNUM}.7.3.128.0 ${SNMPENTNUM}.7.3.129.0 s"
+
+ALERTER_ROOT=/var/run/alerter
+
+ACCOUNTFILES=("/etc/passwd" "/etc/shadow" "/etc/group")
+
+TSFILE=timestamps
+RPMFILE=rpmlist
+
+function usage {
+  echo "$0 [-w | -c]"
+  echo "   -w - Write data"
+  echo "   -c - Compare current to data"
+  echo " (at least one must be selected)"
+  echo
+}
+
+function writeTsSummary {
+  for file in ${ACCOUNTFILES[*]} 
+  do
+    ts=$(stat -c '%Y' $file)
+    echo $file $ts &gt;&gt; $ALERTER_ROOT/$TSFILE
+  done
+}
+
+function writeRpmSummary {
+  rpm -qa &gt;&gt; $ALERTER_ROOT/$RPMFILE
+}
+
+function writeSummaries {
+
+  if [ ! -d $ALERTER_ROOT ]
+  then
+    mkdir $ALERTER_ROOT
+  fi
+
+  rm -f $ALERTER_ROOT/$TSFILE $ALERTER_ROOT/$RPMFILE
+
+  writeTsSummary
+  writeRpmSummary
+}</check-content></check></Rule></Group><Group id="V-71541"><title>SRG-APP-000325-NDM-000285</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86165r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000210</version><title>The CA API Gateway must transmit organization-defined access authorization information using organization-defined security safeguards to organization-defined information systems which enforce access control decisions.</title><description>&lt;VulnDiscussion&gt;Protecting access authorization information (i.e., access control decisions) ensures that authorization information cannot be altered, spoofed, or otherwise compromised during transmission.
+
+In distributed information systems, authorization processes and access control decisions may occur in separate parts of the systems. In such instances, authorization information is transmitted securely so timely access control decisions can be enforced at the appropriate locations. To support the access control decisions, it may be necessary to transmit, as part of the access authorization information, supporting security attributes. This is because, in distributed information systems, there are various access control decisions that need to be made, and different entities (e.g., services) make these decisions in a serial fashion, each requiring some security attributes to make the decisions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002353</ident><fixtext fixref="F-77861r1_fix">Configure the Gateway to use LDAP or RADIUS+LDAP for all administrative accounts by using the "ssgconfig" account and using menu: 1) Configure system settings &gt;&gt; 4) Configure authentication method.
+
+Select the appropriate ldap/ldap+radius configuration and then set the appropriate settings for your environment by following the menu process until it completes.</fixtext><fix id="F-77861r1_fix" /><check system="C-71913r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the CA API Gateway is configured to use LDAP or RADIUS+LDAP for all administrative accounts by using the "ssgconfig" account and using menu: 1) Configure system settings &gt;&gt; 4) Configure authentication method.
+
+Select the appropriate ldap/ldap+radius configuration and then verify its settings by continuing the menu process until it completes.
+
+If LDAP or RADIUS+LDAP is not configured for all administrative accounts, this is a finding.</check-content></check></Rule></Group><Group id="V-71543"><title>SRG-APP-000373-NDM-000298</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86167r1_rule" severity="low" weight="10.0"><version>CAGW-DM-000220</version><title>The CA API Gateway must be configured to synchronize internal information system clocks with the primary and secondary time sources located in different geographic regions using redundant authoritative time sources.</title><description>&lt;VulnDiscussion&gt;The loss of connectivity to a particular authoritative time source will result in the loss of time synchronization (free-run mode) and increasingly inaccurate time stamps on audit events and other functions. 
+
+Multiple time sources provide redundancy by including a secondary source. Time synchronization is usually a hierarchy; clients synchronize time to a local source while that source synchronizes its time to a more accurate source. The network device must utilize an authoritative time server and/or be configured to use redundant authoritative time sources. This requirement is related to the comparison done in CCI-001891.
+
+DoD-approved solutions consist of a combination of a primary and secondary time source using a combination or multiple instances of the following: a time server designated for the appropriate DoD network (NIPRNet/SIPRNet); United States Naval Observatory (USNO) time servers; and/or the Global Positioning System (GPS). The secondary time source must be located in a different geographic region than the primary time source.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001893</ident><fixtext fixref="F-77863r1_fix">Configure the Gateway using "ssgconfig" to set multiple ntp sources using menu: 1) Configure system settings &gt;&gt; 1) Configure networking and system time settings. 
+
+Walk through the query process until being queried for time servers and insert a comma-separated list of ntp time servers.</fixtext><fix id="F-77863r1_fix" /><check system="C-71915r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the Gateway (using "ssgconfig") is configured to use multiple ntp sources using menu: 1) Configure system settings &gt;&gt; 1) Configure networking and system time settings. 
+
+Walk through the query process until being queried for time servers and verify the list of ntp servers is correct.
+
+If the CA API Gateway is not configured to use multiple ntp sources, this is a finding.</check-content></check></Rule></Group><Group id="V-71545"><title>SRG-APP-000374-NDM-000299</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86169r1_rule" severity="low" weight="10.0"><version>CAGW-DM-000230</version><title>The CA API Gateway must record time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).</title><description>&lt;VulnDiscussion&gt;If time stamps are not consistently applied and there is no common time reference, it is difficult to perform forensic analysis.
+
+Time stamps generated by the application include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001890</ident><fixtext fixref="F-77865r1_fix">Configure the Gateway using "ssgconfig" to set multiple ntp sources using menu: 1) Configure system settings &gt;&gt; 1) Configure networking and system time settings. 
+
+Walk through the query process until being queried for time servers and insert a comma-separated list of ntp time servers.</fixtext><fix id="F-77865r1_fix" /><check system="C-71917r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the Gateway (using ssgconfig) is configured to use multiple ntp sources using menu: 1) Configure system settings &gt;&gt; 1) Configure networking and system time settings. 
+
+Walk through the query process until being queried for time servers and verify the list of ntp servers is correct.
+
+If the CA API Gateway is not configured to use multiple ntp sources, this is a finding.</check-content></check></Rule></Group><Group id="V-71547"><title>SRG-APP-000375-NDM-000300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86171r1_rule" severity="low" weight="10.0"><version>CAGW-DM-000240</version><title>The CA API Gateway must record time stamps for audit records that meet a granularity of one second for a minimum degree of precision.</title><description>&lt;VulnDiscussion&gt;Without sufficient granularity of time stamps, it is not possible to adequately determine the chronological order of records. Time stamps generated by the application include date and time. Granularity of time measurements refers to the degree of synchronization between information system clocks and reference clocks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001889</ident><fixtext fixref="F-77867r1_fix">Configure the Gateway using ssgconfig to set multiple ntp sources using menu: 1) Configure system settings &gt;&gt; 1) Configure networking and system time settings. 
+
+Walk through the query process until being queried for time servers and insert a comma-separated list of ntp time servers.</fixtext><fix id="F-77867r1_fix" /><check system="C-71919r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the Gateway (using ssgconfig) is configured to use multiple ntp sources using menu: 1) Configure system settings &gt;&gt; 1) Configure networking and system time settings. 
+
+Walk through the query process until being queried for time servers and verify the list of ntp servers is correct.
+
+If the CA API Gateway is not configured to use multiple ntp sources, this is a finding.</check-content></check></Rule></Group><Group id="V-71549"><title>SRG-APP-000377-NDM-000301</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86173r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000250</version><title>The CA API Gateway must generate an alert that will then be sent to the ISSO, ISSM, and other designated personnel (deemed appropriate by the local organization) when the unauthorized installation of software is detected.</title><description>&lt;VulnDiscussion&gt;Unauthorized software not only increases risk by increasing the number of potential vulnerabilities, it also can contain malicious code. Sending an alert (in real time) when unauthorized software is detected allows designated personnel to take action on the installation of unauthorized software. Note that while the device must generate the alert, the notification may be done by a management server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001811</ident><fixtext fixref="F-77869r1_fix">Install and configure (setup SNMP trap dest/authentication) alerter script in "/usr/local/bin/alerter". 
+
+Run "/usr/local/bin/alerter -w" to write initial config to filesystem. 
+
+Configure cron to run "/usr/local/bin/alerter -c" every minute.
+
+An example follows. The SNMP destination host and username/password are configured by editing the shell variables near the beginning of the script. SNMPUSER should be set to the username recognized by the SNMP Management Station. SNMPENGINEID should be set to the SNMPv3 EngineID the Management Station uses for this application. SNMPHOST should be set to the hostname of the SNMP Management Station. 
+
+This authentication configuration is placed in "/etc/snmp/snmp.conf":
+-----------------------------------
+defSecurityLevel authPriv
+defAuthType SHA
+defPrivType AES
+defAuthPassphrase {password123}
+defPrivPassphrase {password123}
+-----------------------------------
+
+This snmp alerter script is placed in "/usr/local/bin/alerter script":
+--------
+#!/bin/bash
+
+#
+# This script implements watching for changes in a system that may indicate unauthorized
+# changes have been made to the system
+#
+# It is designed to be run as "alerter -w" to capture the current configuration and
+# then to be run out of cron on a regular basis as "alerter -c" which then compares the
+# current configuration to the previously captured configuration. If the configuration
+# has changed an SNMP TRAP is sent using the SNMPBASECMD variable as the base snmptrap command.
+# SNMPBASECMD will have to be configured appropriately depending on the exact SNMPv3 security
+# implemented on the SNMP Management Server.
+#
+# The script uses /var/run/alerter as a base directory to capture filesystem timestamps and
+# the installed RPM software list.
+
+SNMPUSER=myuser
+SNMPENGINEID=0x0102030405
+SNMPHOST=rsbfreebsd.ca.com
+
+SNMPENTNUM="1.3.6.1.4.1.17304"
+SNMPNOTIF=".7.3.128"
+SNMPBASECMD="snmptrap -v 3 -n \"\"  -u ${SNMPUSER} -e ${SNMPENGINEID} ${SNMPHOST} 0 ${SNMPENTNUM}.7.3.128.0 ${SNMPENTNUM}.7.3.129.0 s"
+
+ALERTER_ROOT=/var/run/alerter
+
+ACCOUNTFILES=("/etc/passwd" "/etc/shadow" "/etc/group")
+
+TSFILE=timestamps
+RPMFILE=rpmlist
+
+function usage {
+  echo "$0 [-w | -c]"
+  echo "   -w - Write data"
+  echo "   -c - Compare current to data"
+  echo "   (at least one must be selected)"
+  echo
+}
+
+function writeTsSummary {
+  for file in ${ACCOUNTFILES[*]} 
+  do
+    ts=$(stat -c '%Y' $file)
+    echo $file $ts &gt;&gt; $ALERTER_ROOT/$TSFILE
+  done
+}
+
+function writeRpmSummary {
+  rpm -qa &gt;&gt; $ALERTER_ROOT/$RPMFILE
+}
+
+function writeSummaries {
+
+  if [ ! -d $ALERTER_ROOT ]
+  then
+    mkdir $ALERTER_ROOT
+  fi
+
+  rm -f $ALERTER_ROOT/$TSFILE $ALERTER_ROOT/$RPMFILE
+
+  writeTsSummary
+  writeRpmSummary
+}</fixtext><fix id="F-77869r1_fix" /><check system="C-71921r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify "/usr/local/bin/alerter" script exists and is executable. 
+
+Verify crontab runs "/usr/local/bin/alerter" every minute by checking cron's logfile /var/log/cron.
+
+If the "/usr/local/bin/alerter" script does not exist, this is a finding. 
+
+If the "/usr/local/bin/alerter" script does not run every minute as a cron job, this is a finding. 
+
+An example follows. The SNMP destination host and username/password are configured by editing the shell variables near the beginning of the script. SNMPUSER should be set to the username recognized by the SNMP Management Station. SNMPENGINEID should be set to the SNMPv3 EngineID the Management Station uses for this application. SNMPHOST should be set to the hostname of the SNMP Management Station. 
+
+This authentication configuration is placed in "/etc/snmp/snmp.conf":
+-----------------------------------
+defSecurityLevel authPriv
+defAuthType SHA
+defPrivType AES
+defAuthPassphrase {password123}
+defPrivPassphrase {password123}
+-----------------------------------
+
+This snmp alerter script is placed in "/usr/local/bin/alerter script":
+--------
+#!/bin/bash
+
+#
+# This script implements watching for changes in a system that may indicate unauthorized
+# changes have been made to the system
+#
+# It is designed to be run as "alerter -w" to capture the current configuration and
+# then to be run out of cron on a regular basis as "alerter -c" which then compares the
+# current configuration to the previously captured configuration. If the configuration
+# has changed an SNMP TRAP is sent using the SNMPBASECMD variable as the base snmptrap command.
+# SNMPBASECMD will have to be configured appropriately depending on the exact SNMPv3 security
+# implemented on the SNMP Management Server.
+#
+# The script uses /var/run/alerter as a base directory to capture filesystem timestamps and
+# the installed RPM software list.
+
+SNMPUSER=myuser
+SNMPENGINEID=0x0102030405
+SNMPHOST=rsbfreebsd.ca.com
+
+SNMPENTNUM="1.3.6.1.4.1.17304"
+SNMPNOTIF=".7.3.128"
+SNMPBASECMD="snmptrap -v 3 -n \"\" -u ${SNMPUSER} -e ${SNMPENGINEID} ${SNMPHOST} 0 ${SNMPENTNUM}.7.3.128.0 ${SNMPENTNUM}.7.3.129.0 s"
+
+ALERTER_ROOT=/var/run/alerter
+
+ACCOUNTFILES=("/etc/passwd" "/etc/shadow" "/etc/group")
+
+TSFILE=timestamps
+RPMFILE=rpmlist
+
+function usage {
+  echo "$0 [-w | -c]"
+  echo "   -w - Write data"
+  echo "   -c - Compare current to data"
+  echo "   (at least one must be selected)"
+  echo
+}
+
+function writeTsSummary {
+  for file in ${ACCOUNTFILES[*]} 
+  do
+    ts=$(stat -c '%Y' $file)
+    echo $file $ts &gt;&gt; $ALERTER_ROOT/$TSFILE
+  done
+}
+
+function writeRpmSummary {
+  rpm -qa &gt;&gt; $ALERTER_ROOT/$RPMFILE
+}
+
+function writeSummaries {
+
+  if [ ! -d $ALERTER_ROOT ]
+  then
+    mkdir $ALERTER_ROOT
+  fi
+
+  rm -f $ALERTER_ROOT/$TSFILE $ALERTER_ROOT/$RPMFILE
+
+  writeTsSummary
+  writeRpmSummary
+}</check-content></check></Rule></Group><Group id="V-71551"><title>SRG-APP-000395-NDM-000310</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86175r1_rule" severity="low" weight="10.0"><version>CAGW-DM-000260</version><title>The CA API Gateway must authenticate NTP endpoint devices before establishing a network connection using bidirectional authentication that is cryptographically based.</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk.
+
+A local connection is any connection with a device communicating without the use of a network. A network connection is any connection with a device that communicates through a network (e.g., local area or wide area network, Internet). A remote connection is any connection with a device communicating through an external network (e.g., the Internet).
+
+Because of the challenges of applying this requirement on a large scale, organizations are encouraged to only apply the requirement to those limited number (and type) of devices that truly need to support this capability. For network device management, this has been determined to be network management device addresses, SNMP authentication, and NTP authentication.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001967</ident><fixtext fixref="F-77871r1_fix">Configure Gateway to use public key (autokey in NTP terminology) authentication. See: http://support.ntp.org/bin/view/Support/ConfiguringAutokey</fixtext><fix id="F-77871r1_fix" /><check system="C-71923r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify "server" lines in the "/etc/ntp.conf" file are all marked with "autokey". Perform the command "ntpq -p" to show peer functioning.
+
+If the "server" lines in the "/etc/ntp.conf" file are not marked with "autokey", this is a finding. 
+
+If the command "ntpq -p" does not show peers functioning, this is a finding.</check-content></check></Rule></Group><Group id="V-71553"><title>SRG-APP-000395-NDM-000310</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86177r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000270</version><title>The CA API Gateway must authenticate SNMP endpoint devices before establishing a network connection using bidirectional authentication that is cryptographically based.</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk.
+
+A local connection is any connection with a device communicating without the use of a network. A network connection is any connection with a device that communicates through a network (e.g., local area or wide area network, Internet). A remote connection is any connection with a device communicating through an external network (e.g., the Internet).
+
+Because of the challenges of applying this requirement on a large scale, organizations are encouraged to only apply the requirement to those limited number (and type) of devices that truly need to support this capability. For network device management, this has been determined to be network management device addresses, SNMP authentication, and NTP authentication.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001967</ident><fixtext fixref="F-77873r1_fix">Change the "snmptrap" command at each source to use encryption/authentication (Version 3) IE: "snmptrap -v 3 -a SHA -A mypassword -x AES -X mypassword -l authPriv -u traptest -e 0x8000000001020304 localhost REQUIRED_TRAP_OID"</fixtext><fix id="F-77873r1_fix" /><check system="C-71925r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the "snmptrap" shell command used to emit SNMP TRAPS to the Network Management Station is using Version 3 with User Authentication for each potential trap source identified in this document. "snmptrap -v 3 -a SHA -A mypassword -x AES -X mypassword -l authPriv -u traptest -e 0x8000000001020304 localhost REQUIRED_TRAP_OID"
+
+If SNMP Version 3 is not being used, this is a finding.</check-content></check></Rule></Group><Group id="V-71555"><title>SRG-APP-000395-NDM-000310</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86179r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000280</version><title>The CA API Gateway must authenticate RADIUS endpoint devices before establishing a network connection using bidirectional authentication that is cryptographically based.</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk.
+
+A local connection is any connection with a device communicating without the use of a network. A network connection is any connection with a device that communicates through a network (e.g., local area or wide area network, Internet). A remote connection is any connection with a device communicating through an external network (e.g., the Internet).
+
+Because of the challenges of applying this requirement on a large scale, organizations are encouraged to only apply the requirement to those limited number (and type) of devices that truly need to support this capability. For network device management, this has been determined to be network management device addresses, SNMP authentication, and NTP authentication.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001967</ident><fixtext fixref="F-77875r1_fix">Using the ssgconfig menu subsystem, confirm RADIUS has been configured via 1) Configure system settings &gt;&gt; 4) Configure authentication method item 3 or 4. 
+
+Configure radius/ladap_radius as required.</fixtext><fix id="F-77875r1_fix" /><check system="C-71927r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Using the "ssgconfig" menu subsystem, confirm RADIUS has been configured via 1) Configure system settings &gt;&gt; 4) Configure authentication method item 3 or 4. 
+
+Confirm password is set to "Enter the RADIUS shared secret [&lt;Hidden&gt;]".
+
+If RADIUS is not correctly configured, this is a finding.</check-content></check></Rule></Group><Group id="V-71557"><title>SRG-APP-000395-NDM-000310</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86181r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000290</version><title>The CA API Gateway must authenticate LDAPS endpoint devices before establishing a network connection using bidirectional authentication that is cryptographically based.</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk.
+
+A local connection is any connection with a device communicating without the use of a network. A network connection is any connection with a device that communicates through a network (e.g., local area or wide area network, Internet). A remote connection is any connection with a device communicating through an external network (e.g., the Internet).
+
+Because of the challenges of applying this requirement on a large scale, organizations are encouraged to only apply the requirement to those limited number (and type) of devices that truly need to support this capability. For network device management, this has been determined to be network management device addresses, SNMP authentication, and NTP authentication.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001967</ident><fixtext fixref="F-77879r1_fix">Using the "ssgconfig" menu subsystem, set LDAP (Secure) by 1) Configure system settings &gt;&gt; 4) Configure authentication method item 2 or 4. 
+
+Set the answer to the question "Do you want to specify the URL to a PEM containing the certificate (y/n) [y]:" to "y". 
+
+Set the answer to the question "Specify the URL where the PEM formatted CA certificate can be located [ldaps://smldap.l7tech.com:636]:" to a trusted source of the certificate.</fixtext><fix id="F-77879r1_fix" /><check system="C-71931r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Using the "ssgconfig" menu subsystem, confirm LDAP (Secure) has been configured via 1) Configure system settings &gt;&gt; 4) Configure authentication method item 2 or 4. 
+
+Confirm the answer to the question "Do you want to specify the URL to a PEM containing the certificate (y/n) [y]:" is "y". 
+
+Ensure the answer to question "Specify the URL where the PEM formatted CA certificate can be located [ldaps://smldap.l7tech.com:636]:" is a trusted source of the certificate.
+
+If the LDAP is not correctly configured, this is a finding.</check-content></check></Rule></Group><Group id="V-71559"><title>SRG-APP-000395-NDM-000310</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86183r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000300</version><title>The CA API Gateway must obtain LDAPS server certificates securely to use bidirectional authentication that is cryptographically based.</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk.
+
+A local connection is any connection with a device communicating without the use of a network. A network connection is any connection with a device that communicates through a network (e.g., local area or wide area network, Internet). A remote connection is any connection with a device communicating through an external network (e.g., the Internet).
+
+Because of the challenges of applying this requirement on a large scale, organizations are encouraged to only apply the requirement to those limited number (and type) of devices that truly need to support this capability. For network device management, this has been determined to be network management device addresses, SNMP authentication, and NTP authentication.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001967</ident><fixtext fixref="F-77883r1_fix">Configure LDAPS/LDAPS+RADIUS to use LDAPS server certificates for bidirectional authentication that is cryptographically based.
+
+Place the LDAPS server certificate in "/etc/openldap/cacerts". 
+
+Set "TLS_REQCERT" to demand in "/etc/openldap/ldap.conf".</fixtext><fix id="F-77883r1_fix" /><check system="C-71937r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the LDAPS server certificate is in "/etc/openldap/cacerts". Verify TLS_REQCERT is set to demand in "/etc/openldap/ldap.conf".
+
+If the LDAPS server certificate is not in "/etc/openldap/cacerts", this is a finding. 
+
+If "TLS_REQCERT" is not set to demand in "/etc/openldap/ldap.conf", this is a finding.</check-content></check></Rule></Group><Group id="V-71561"><title>SRG-APP-000435-NDM-000315</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86185r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000310</version><title>The CA API Gateway must protect against or limit the effects of all known types of Denial of Service (DoS) attacks on the CA API Gateway management network by employing organization-defined security safeguards.</title><description>&lt;VulnDiscussion&gt;DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity.
+
+This requirement addresses the configuration of network devices to mitigate the impact of DoS attacks that have occurred or are ongoing on device availability. For each network device, known and potential DoS attacks must be identified and solutions for each type implemented. A variety of technologies exist to limit or, in some cases, eliminate the effects of DoS attacks (e.g., limiting processes or restricting the number of sessions the device opens at one time). Employing increased capacity and bandwidth, combined with service redundancy, may reduce the susceptibility to some DoS attacks.
+
+The security safeguards cannot be defined at the DoD level because they vary according to the capabilities of the individual network devices and the security controls applied on the adjacent networks (for example, firewalls performing packet filtering to block DoS attacks).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002385</ident><fixtext fixref="F-77885r1_fix">If the "iptables" file is not consistent, replace it with one from the distribution RPM. You may need to add additional permissions if some services are required.</fixtext><fix id="F-77885r1_fix" /><check system="C-71939r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the CA API Gateway drops packets by default and only puts non-Gateway services on trusted interfaces.
+ 
+Check for the following lines in "/etc/sysconfig/iptables":
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+[0:0] -A INPUT -i eth0 -p udp -m udp --dport 53 -j ACCEPT
+[0:0] -A INPUT -i eth2 -p udp -m udp --dport 53 -j ACCEPT
+[0:0] -A INPUT -i eth3 -p udp -m udp --dport 53 -j ACCEPT
+[0:0] -A INPUT -i eth0 -p udp -m udp --dport 123 -j ACCEPT
+[0:0] -A INPUT -i eth2 -p udp -m udp --dport 123 -j ACCEPT
+[0:0] -A INPUT -i eth3 -p udp -m udp --dport 123 -j ACCEPT
+[0:0] -A INPUT -i eth0 -p tcp -m tcp --dport 3306 -j ACCEPT
+[0:0] -A INPUT -i eth0 -p tcp -m tcp --dport 22 -j ACCEPT
+ 
+Check for the following lines in "/etc/sysconfig/ip6tables":
+:INPUT DROP [0:0]
+[0:0] -A INPUT -i eth0 -p udp -m udp --dport 53 -j ACCEPT
+[0:0] -A INPUT -i eth2 -p udp -m udp --dport 53 -j ACCEPT
+[0:0] -A INPUT -i eth3 -p udp -m udp --dport 53 -j ACCEPT
+[0:0] -A INPUT -i eth0 -p udp -m udp --dport 123 -j ACCEPT
+[0:0] -A INPUT -i eth2 -p udp -m udp --dport 123 -j ACCEPT
+[0:0] -A INPUT -i eth3 -p udp -m udp --dport 123 -j ACCEPT
+[0:0] -A INPUT -i eth0 -p tcp -m tcp --dport 3306 -j ACCEPT
+[0:0] -A INPUT -i eth0 -p tcp -m tcp --dport 22 -j ACCEPT
+ 
+If the CA API Gateway does not drop packets by default or puts non-Gateway services on untrusted interfaces, this is a finding.
+ 
+Verify the CA API Gateway logs and drops TCP packets with bad flags.
+ 
+Check for the following lines in "/etc/sysconfig/iptables":
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,PSH,URG -j badflags
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,SYN,RST,PSH,ACK,URG -j badflags
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,SYN,RST,ACK,URG -j badflags
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG NONE -j badflags
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags SYN,RST SYN,RST -j badflags
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags FIN,SYN FIN,SYN -j badflags
+[0:0] -A badflags -m limit --limit 15/min -j LOG --log-prefix "Badflags:"
+[0:0] -A badflags -j DROP
+ 
+Check for the following lines in "/etc/sysconfig/ip6tables":
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,PSH,URG -j badflags6
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,SYN,RST,PSH,ACK,URG -j badflags6
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,SYN,RST,ACK,URG -j badflags6
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG NONE -j badflags6
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags SYN,RST SYN,RST -j badflags6
+[0:0] -A INPUT -p tcp -m tcp --tcp-flags FIN,SYN FIN,SYN -j badflags6
+[0:0] -A badflags6 -m limit --limit 15/min -j LOG --log-prefix "Badflags6:"
+[0:0] -A badflags6 -j DROP
+ 
+If the CA API Gateway does not log and drop TCP packets with bad flags, this is a finding.
+ 
+Verify the CA API Gateway only allows certain ICMPs and rate limits pings.
+ 
+Check for the following lines in "/etc/sysconfig/iptables":
+[0:0] -A INPUT -p icmp -m icmp --icmp-type 0 -j ACCEPT
+[0:0] -A INPUT -p icmp -m icmp --icmp-type 3 -j ACCEPT
+[0:0] -A INPUT -p icmp -m icmp --icmp-type 11 -j ACCEPT
+[0:0] -A INPUT -p icmp -m icmp --icmp-type 8 -m limit --limit 2/sec -j ACCEPT
+[0:0] -A INPUT -p icmp -j badflags
+[0:0] -A OUTPUT -p icmp -m state --state INVALID -j DROP
+ 
+Check for the following lines in "/etc/sysconfig/ip6tables":
+[0:0] -A INPUT -p icmpv6 -m icmpv6 --icmpv6-type 1 -j ACCEPT
+[0:0] -A INPUT -p icmpv6 -m icmpv6 --icmpv6-type 3 -j ACCEPT
+[0:0] -A INPUT -p icmpv6 -m icmpv6 --icmpv6-type 129 -j ACCEPT
+[0:0] -A INPUT -p icmpv6 -m icmpv6 --icmpv6-type 128 -m limit --limit 2/sec -j ACCEPT
+[0:0] -A INPUT -p icmpv6 -m icmpv6 --icmpv6-type 133 -j ACCEPT
+[0:0] -A INPUT -p icmpv6 -m icmpv6 --icmpv6-type 134 -j ACCEPT
+[0:0] -A INPUT -p icmpv6 -m icmpv6 --icmpv6-type 135 -j ACCEPT
+[0:0] -A INPUT -p icmpv6 -m icmpv6 --icmpv6-type 136 -j ACCEPT
+[0:0] -A INPUT -p icmpv6 -m icmpv6 --icmpv6-type 137 -j ACCEPT
+[0:0] -A INPUT -p icmpv6 -j badflags6
+ 
+If the CA API Gateway does not only allow certain ICMPs and rate limits pings, this is a finding.</check-content></check></Rule></Group><Group id="V-71563"><title>SRG-APP-000503-NDM-000320</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86187r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000320</version><title>The CA API Gateway must generate audit records when successful/unsuccessful logon attempts occur.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.
+
+Audit records can be generated from various components within the network device (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000172</ident><fixtext fixref="F-77887r1_fix">Obtain a copy of the appropriate audit package RPM file from CA Support and install it using RPM:
+
+rpm -i "RPMFILE"</fixtext><fix id="F-77887r1_fix" /><check system="C-71941r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Confirm the CA API Gateway file "/etc/audit/audit.rules" is the file as distributed using command:
+
+rpm -Vf /etc/audit/audit.rules
+
+If the string returned contains a "5" (ok: .......T., failure: S.5....T.), this is a finding.</check-content></check></Rule></Group><Group id="V-71565"><title>SRG-APP-000505-NDM-000322</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86189r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000330</version><title>The CA API Gateway must generate audit records showing starting and ending time for administrator access to the system.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. 
+
+Audit records can be generated from various components within the network device (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000172</ident><fixtext fixref="F-77889r1_fix">Obtain a copy of the appropriate audit package RPM file from CA Support and install it using RPM:
+
+rpm -i "RPMFILE"</fixtext><fix id="F-77889r1_fix" /><check system="C-71943r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Confirm the CA API Gateway file "/etc/audit/audit.rules" is the file as distributed using command:
+
+rpm -Vf /etc/audit/audit.rules
+
+If the string returned contains a "5" (ok: .......T., failure: S.5....T.), this is a finding.</check-content></check></Rule></Group><Group id="V-71567"><title>SRG-APP-000506-NDM-000323</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86191r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000340</version><title>The CA API Gateway must generate audit records when concurrent logons from different workstations occur.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.
+
+Audit records can be generated from various components within the network device (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000172</ident><fixtext fixref="F-77891r1_fix">Obtain a copy of the appropriate audit package RPM file from CA Support and install it using RPM:
+
+rpm -i "RPMFILE"</fixtext><fix id="F-77891r1_fix" /><check system="C-71945r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Confirm the CA API Gateway file "/etc/audit/audit.rules" is the file as distributed using command:
+rpm -Vf /etc/audit/audit.rules
+
+If the string returned contains a "5" (ok: .......T., failure: S.5....T.), this is a finding.</check-content></check></Rule></Group><Group id="V-71569"><title>SRG-APP-000515-NDM-000325</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86193r1_rule" severity="low" weight="10.0"><version>CAGW-DM-000350</version><title>The CA API Gateway must off-load audit records onto a different system or media than the system being audited.</title><description>&lt;VulnDiscussion&gt;Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
+
+Off-loading is a common process in information systems with limited audit storage capacity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001851</ident><fixtext fixref="F-77893r1_fix">Setup steps:
+
+Configure rsyslogd to monitor "/var/log/auditd/auditd.log" file for updates by adding stanza:
+
+# auditd audit.log
+$ModLoad imfile
+$InputFileName /var/log/audit/audit.log
+$InputFileTag tag_audit_log:
+$InputFileStateFile audit_log
+$InputFileSeverity info
+$InputFileFacility local6
+$InputRunFileMonitor
+
+to the "/etc/rsyslogd.conf" file. 
+
+Note: This creates audit log entries for facility "local6" and priority "info." This can be changed to suite.
+
+Configure "rsyslogd" to forward this combination (local6.info) to the appropriate loghost by adding logging rule to the rule section of the "rsyslogd.conf" file:
+
+local6.* @@loghost.ca.com
+
+Note that the syntax "@@loghost.ca.com" means that the records are forwarded via TCP.
+
+A single "@" before the remote loghost would mean the records are forwarded via UDP.</fixtext><fix id="F-77893r1_fix" /><check system="C-71947r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify by confirming the following lines are part of "rsyslogd.conf":
+
+# auditd audit.log
+$ModLoad imfile
+$InputFileName /var/log/audit/audit.log
+$InputFileTag tag_audit_log:
+$InputFileStateFile audit_log
+$InputFileSeverity info
+$InputFileFacility local6
+$InputRunFileMonitor
+
+Further verify that this line is also part of the rsyslogd.conf file:
+local6.* @@loghost.ca.com
+
+If "rsyslogd.conf" does not contain the above lines, this is a finding.</check-content></check></Rule></Group><Group id="V-71571"><title>SRG-APP-000516-NDM-000334</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86195r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000360</version><title>The CA API Gateway must generate audit log events for a locally developed list of auditable events.</title><description>&lt;VulnDiscussion&gt;Auditing and logging are key components of any security architecture. Logging the actions of specific events provides a means to investigate an attack; to recognize resource utilization or capacity thresholds; or to identify an improperly configured network device. If auditing is not comprehensive, it will not be useful for intrusion monitoring, security investigations, and forensic analysis.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-77895r1_fix">The Gateway relies on the standard Linux audit subsystem. The subsystem is configurable by modifying /etc/audit/audit.rules. Custom rules can be added to this file. 
+
+See the Linux man-page for audit.rules(7) for detail about specifying custom rules.</fixtext><fix id="F-77895r1_fix" /><check system="C-71949r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Examine "/etc/audit/audit.rules" to confirm any custom developed rules are contained within the file.
+
+If the "/etc/audit/audit.rules" does not contain the custom developed rules within the file, this is a finding.</check-content></check></Rule></Group><Group id="V-71573"><title>SRG-APP-000516-NDM-000342</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86197r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000400</version><title>The CA API Gateway must employ automated mechanisms to assist in the tracking of security incidents.</title><description>&lt;VulnDiscussion&gt;Despite the investment in perimeter defense technologies, enclaves are still faced with detecting, analyzing, and remediating network breaches and exploits that have made it past the network device. An automated incident response infrastructure allows network operations to immediately react to incidents by identifying, analyzing, and mitigating any network device compromise. Incident response teams can perform root cause analysis, determine how the exploit proliferated, and identify all affected nodes, as well as contain and eliminate the threat.
+
+The network device assists in the tracking of security incidents by logging detected security events. The audit log and network device application logs capture different types of events. The audit log tracks audit events occurring on the components of the network device. The application log tracks the results of the network device content filtering function. These logs must be aggregated into a centralized server and can be used as part of the organization's security incident tracking and analysis.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-000833</ident><fixtext fixref="F-77897r1_fix">Configure the CA API Gateway to forward all log audit log messages to the central log server.
+
+- Log in to CA API Gateway as root.
+- Open "/etc/rsyslog.conf" for editing.
+- Add a rule "*.* @@loghost.log.com" to the ruleset section of the rsyslogd.conf file.</fixtext><fix id="F-77897r1_fix" /><check system="C-71951r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify the CA API Gateway forwards all log audit log messages to the central log server. 
+
+Within the "/etc/rsyslog.conf" file, confirm a rule in the format "*.* @@loghost.log.com" is in the ruleset section.
+
+If the CA API Gateway "/etc/rsyslog.conf" file does not have a rule in the format "*.* @@loghost.log.com" in the ruleset section, this is a finding.</check-content></check></Rule></Group><Group id="V-71575"><title>SRG-APP-000516-NDM-000339</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86199r1_rule" severity="medium" weight="10.0"><version>CAGW-DM-000370</version><title>The CA API Gateway must employ automated mechanisms to detect the addition of unauthorized components or devices.</title><description>&lt;VulnDiscussion&gt;This requirement addresses configuration management of the network device. The network device must automatically detect the installation of unauthorized software or hardware onto the device itself. Monitoring may be accomplished on an ongoing basis or by periodic monitoring. Automated mechanisms can be implemented within the network device and/or in another separate information system or device. If the addition of unauthorized components or devices is not automatically detected, then such components or devices could be used for malicious purposes, such as transferring sensitive data to removable media for compromise.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA API Gateway NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA API Gateway NDM</dc:subject><dc:identifier>3051</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-000416</ident><fixtext fixref="F-77899r1_fix">Set contents of "/etc/modprobe.d/ssg-harden.conf" file to:
+
+install dccp /bin/false
+install sctp /bin/false
+install rds /bin/false
+install tipc /bin/false
+install net-pf-31 /bin/false
+install bluetooth /bin/false
+install usb-storage /bin/false
+options ipv6 disable=1</fixtext><fix id="F-77899r1_fix" /><check system="C-71953r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_CA_API_Gateway_NDM_STIG.xml" /><check-content>Verify "/etc/modprobe.d/ssg-harden.conf" contents are:
+
+install dccp /bin/false
+install sctp /bin/false
+install rds /bin/false
+install tipc /bin/false
+install net-pf-31 /bin/false
+install bluetooth /bin/false
+install usb-storage /bin/false
+options ipv6 disable=1
+
+If the "/etc/modprobe.d/ssg-harden.conf" contents do not contain the above, this is a finding.</check-content></check></Rule></Group></Benchmark>

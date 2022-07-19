@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="zOS_CA_Auditor_for_TSS_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2015-01-15">accepted</status><title>z/OS CA Auditor for TSS STIG</title><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA, Field Security Operations</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 3 Benchmark Date: 20 Jan 2015</plain-text><version>6</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17947" selected="true" /><select idref="V-21592" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17947" selected="true" /><select idref="V-21592" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17947" selected="true" /><select idref="V-21592" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17947" selected="true" /><select idref="V-21592" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17947" selected="true" /><select idref="V-21592" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17947" selected="true" /><select idref="V-21592" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17947" selected="true" /><select idref="V-21592" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17947" selected="true" /><select idref="V-21592" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17947" selected="true" /><select idref="V-21592" selected="true" /></Profile><Group id="V-16932"><title>ZB000000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-31920r1_rule" severity="medium" weight="10.0"><version>ZADTT000</version><title>CA Auditor installation data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor installation data sets have the ability to use privileged functions and/or have access to sensitive data.  Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;Systems Programmer&lt;/Responsibility&gt;&lt;IAControls&gt;DCSL-1, ECAR-1, ECAR-2, ECCD-1, ECCD-2&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA Auditor for zOS</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA Auditor for zOS</dc:subject><dc:identifier>2016</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000213</ident><ident system="http://iase.disa.mil/cci">CCI-002234</ident><fixtext fixref="F-309r1_fix">The IAO will ensure that update and allocate access to CA Auditor installation data sets is limited to System Programmers only, and all update and allocate access is logged.  Read access can be given to auditors, security administrators, and/or CA Auditor’s STCs and batch users.
+
+The installing Systems Programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. He will identify if any additional groups have update and/or alter access for specific data sets, and once documented he will work with the IAO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS2.EXAMINE
+SYS2A.EXAMINE
+
+The following commands are provided as a sample for implementing data set controls:
+
+TSS PERMIT(&lt;syspaudt&gt;) DSN(SYS2.EXAMINE.) ACCESS(R)
+TSS PERMIT(&lt;syspaudt&gt;) DSN(SYS2.EXAMINE.) ACCESS(ALL) ACTION(AUDIT)
+TSS PERMIT(&lt;audtaudt&gt;) DSN(SYS2.EXAMINE.) ACCESS(R)
+TSS PERMIT(&lt;secaaudt&gt;) DSN(SYS2.EXAMINE.) ACCESS(R)
+TSS PERMIT(EXAMMON) DSN(SYS2.EXAMINE.) ACCESS(R)
+TSS PERMIT(&lt;syspaudt&gt;) DSN(SYS2A.EXAMINE.) ACCESS(R)
+TSS PERMIT(&lt;syspaudt&gt;) DSN(SYS2A.EXAMINE.) ACCESS(ALL) ACTION(AUDIT)
+TSS PERMIT(&lt;audtaudt&gt;) DSN(SYS2A.EXAMINE.) ACCESS(R)
+TSS PERMIT(&lt;secaaudt&gt;) DSN(SYS2A.EXAMINE.) ACCESS(R)
+TSS PERMIT(EXAMMON) DSN(SYS2A.EXAMINE.) ACCESS(R)</fixtext><fix id="F-309r1_fix" /><check system="C-672r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_zOS CA Auditor for TSS STIG.xml" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ADTRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZADT0000)
+
+Verify that the accesses to the CA Auditor installation data sets are properly restricted.
+ 
+___	The TSS data set rules for the data sets restricts READ access to auditors, security administrators, and/or CA Auditor’s STCs and batch users.
+
+___	The TSS data set rules for the data sets restricts UPDATE and/or ALL access to systems programming personnel.
+
+___	The TSS data set rules for the data sets specify that all (i.e., failures and successes) UPDATE and/or ALL access are logged.</check-content></check></Rule></Group><Group id="V-17947"><title>ZB000020</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-32210r1_rule" severity="medium" weight="10.0"><version>ZADTT020</version><title>CA Auditor resources are not properly defined and protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor can run with sensitive system privileges, and potentially can circumvent system controls.  Failure to properly control access to product resources could result in the compromise of the operating system environment, and compromise the confidentiality of customer data.  Many utilities assign resource controls that can be granted to system programmers only in greater than read authority.  Resources are also granted to certain non systems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;Systems Programmer&lt;/Responsibility&gt;&lt;IAControls&gt;ECCD-1, ECCD-2&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA Auditor for zOS</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA Auditor for zOS</dc:subject><dc:identifier>2016</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000035</ident><ident system="http://iase.disa.mil/cci">CCI-002234</ident><fixtext fixref="F-31606r1_fix">The IOA will verify that the LTDMMAIN resource in the PROGRAM resource class is restricted to system programmers, auditors, and security personnel.
+
+The TSS owner is defined for the LTDMMAIN resource and/or PROGRAM RDT entry has DEFPROT specified.
+
+Example:
+
+TSS ADD(dept-acid)PROGRAM(LTDMMAIN)
+
+TSS REP(RDT)RESCLASS(PROGRAM)ATTR(DEFPROT)
+
+The TSS rules for the LTDMMAIN resource is restricted access to system programmers, auditors, and security personnel.
+
+Example:
+
+TSS PERMIT(audtaudt)PROGRAM(LTDMMAIN)
+TSS PERMIT(secaaudt)PROGRAM(LTDMMAIN)
+TSS PERMIT(syspaudt)PROGRAM(LTDMMAIN)</fixtext><fix id="F-31606r1_fix" /><check system="C-36349r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_zOS CA Auditor for TSS STIG.xml" /><check-content>Refer to the following reports produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ZADT0020)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZADT0020)
+
+Verify that the access to the LTDMMAIN resource in the PROGRAM resource class is restricted.
+
+___	The TSS owner is defined for the prefix of the resource and/or the resource classes RDT entry has DEFPROT specified.
+
+___	The TSS rules for the resources are restricted access to system programmers, auditors, and security personnel.</check-content></check></Rule></Group><Group id="V-21592"><title>ZB000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-32207r1_rule" severity="medium" weight="10.0"><version>ZADTT002</version><title>CA Auditor User data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor User data sets have the ability to use privileged functions and/or have access to sensitive data.  Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;DCSL-1, ECAR-1, ECAR-2, ECCD-1, ECCD-2&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target CA Auditor for zOS</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>CA Auditor for zOS</dc:subject><dc:identifier>2016</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001499</ident><fixtext fixref="F-31607r1_fix">The IAO will ensure that update and allocate access to CA Auditor User data sets are limited to System Programmers,  security personnel and auditors.
+
+The installing Systems Programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. He will identify if any additional groups have update and/or alter access for specific data sets, and once documented he will work with the IAO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be:
+
+SYS3.EXAMINE
+
+The following commands are provided as a sample for implementing data set controls:
+
+TSS PERMIT(&lt;syspaudt&gt;) DSN(SYS3.EXAMINE) ACCESS(ALL)
+TSS PERMIT(&lt;audtaudt&gt;) DSN(SYS3.EXAMINE) ACCESS(ALL)
+TSS PERMIT(&lt;secaaudt&gt;) DSN(SYS3.EXAMINE) ACCESS(ALL)</fixtext><fix id="F-31607r1_fix" /><check system="C-36350r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_zOS CA Auditor for TSS STIG.xml" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ADTUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZADT0002)
+
+Verify that the accesses to the CA Auditor User data sets are properly restricted.
+
+___	The TSS data set rules for the data sets restricts UPDATE and/or ALL access to systems programming personnel, security personnel and auditors.
+
+</check-content></check></Rule></Group></Benchmark>
