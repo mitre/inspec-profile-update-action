@@ -27,10 +27,11 @@ COPY --from=builder /build/saf.tgz /build/
 RUN npm install -g /build/saf.tgz
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
-COPY index.js /index.js
+WORKDIR /action
+COPY index.js package.json package-lock.json /action/
 
 # Useful for CI pipelines
 RUN apk add bash jq curl ca-certificates
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-CMD ["node", "/index.js"]
+CMD ["node", "/action/index.js"]
