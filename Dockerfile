@@ -34,20 +34,3 @@ RUN apk add bash jq curl ca-certificates
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
-
-# COPY . /build
-# WORKDIR /build
-# RUN rm -rf test
-# RUN yarn --frozen-lockfile --production --network-timeout 600000
-# RUN yarn pack --install-if-needed --prod --filename saf.tgz
-
-# FROM node:lts-alpine
-
-# COPY --from=builder /build/saf.tgz /build/
-# RUN npm install -g /build/saf.tgz
-
-# # Useful for CI pipelines
-# RUN apk add bash jq curl ca-certificates
-
-# ENTRYPOINT ["saf"]
-# VOLUME ["/share"]
