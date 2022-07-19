@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="McAfee_Application_Control_7-x_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2018-01-03">accepted</status><title>McAfee Application Control 7.x Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en">Developed_by_DISA_for_the_DoD</notice><reference><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 3 Benchmark Date: 26 Jan 2018</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-74175" selected="true" /><select idref="V-74195" selected="true" /><select idref="V-74197" selected="true" /><select idref="V-74199" selected="true" /><select idref="V-74201" selected="true" /><select idref="V-74203" selected="true" /><select idref="V-74205" selected="true" /><select idref="V-74207" selected="true" /><select idref="V-74209" selected="true" /><select idref="V-74211" selected="true" /><select idref="V-74213" selected="true" /><select idref="V-74215" selected="true" /><select idref="V-74217" selected="true" /><select idref="V-74219" selected="true" /><select idref="V-74221" selected="true" /><select idref="V-74223" selected="true" /><select idref="V-74225" selected="true" /><select idref="V-74227" selected="true" /><select idref="V-74229" selected="true" /><select idref="V-74231" selected="true" /><select idref="V-74233" selected="true" /><select idref="V-74235" selected="true" /><select idref="V-74237" selected="true" /><select idref="V-74239" selected="true" /><select idref="V-74241" selected="true" /><select idref="V-74243" selected="true" /><select idref="V-74247" selected="true" /><select idref="V-74249" selected="true" /><select idref="V-74251" selected="true" /><select idref="V-74253" selected="true" /><select idref="V-74255" selected="true" /><select idref="V-74257" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-74175" selected="true" /><select idref="V-74195" selected="true" /><select idref="V-74197" selected="true" /><select idref="V-74199" selected="true" /><select idref="V-74201" selected="true" /><select idref="V-74203" selected="true" /><select idref="V-74205" selected="true" /><select idref="V-74207" selected="true" /><select idref="V-74209" selected="true" /><select idref="V-74211" selected="true" /><select idref="V-74213" selected="true" /><select idref="V-74215" selected="true" /><select idref="V-74217" selected="true" /><select idref="V-74219" selected="true" /><select idref="V-74221" selected="true" /><select idref="V-74223" selected="true" /><select idref="V-74225" selected="true" /><select idref="V-74227" selected="true" /><select idref="V-74229" selected="true" /><select idref="V-74231" selected="true" /><select idref="V-74233" selected="true" /><select idref="V-74235" selected="true" /><select idref="V-74237" selected="true" /><select idref="V-74239" selected="true" /><select idref="V-74241" selected="true" /><select idref="V-74243" selected="true" /><select idref="V-74247" selected="true" /><select idref="V-74249" selected="true" /><select idref="V-74251" selected="true" /><select idref="V-74253" selected="true" /><select idref="V-74255" selected="true" /><select idref="V-74257" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-74175" selected="true" /><select idref="V-74195" selected="true" /><select idref="V-74197" selected="true" /><select idref="V-74199" selected="true" /><select idref="V-74201" selected="true" /><select idref="V-74203" selected="true" /><select idref="V-74205" selected="true" /><select idref="V-74207" selected="true" /><select idref="V-74209" selected="true" /><select idref="V-74211" selected="true" /><select idref="V-74213" selected="true" /><select idref="V-74215" selected="true" /><select idref="V-74217" selected="true" /><select idref="V-74219" selected="true" /><select idref="V-74221" selected="true" /><select idref="V-74223" selected="true" /><select idref="V-74225" selected="true" /><select idref="V-74227" selected="true" /><select idref="V-74229" selected="true" /><select idref="V-74231" selected="true" /><select idref="V-74233" selected="true" /><select idref="V-74235" selected="true" /><select idref="V-74237" selected="true" /><select idref="V-74239" selected="true" /><select idref="V-74241" selected="true" /><select idref="V-74243" selected="true" /><select idref="V-74247" selected="true" /><select idref="V-74249" selected="true" /><select idref="V-74251" selected="true" /><select idref="V-74253" selected="true" /><select idref="V-74255" selected="true" /><select idref="V-74257" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-74175" selected="true" /><select idref="V-74195" selected="true" /><select idref="V-74197" selected="true" /><select idref="V-74199" selected="true" /><select idref="V-74201" selected="true" /><select idref="V-74203" selected="true" /><select idref="V-74205" selected="true" /><select idref="V-74207" selected="true" /><select idref="V-74209" selected="true" /><select idref="V-74211" selected="true" /><select idref="V-74213" selected="true" /><select idref="V-74215" selected="true" /><select idref="V-74217" selected="true" /><select idref="V-74219" selected="true" /><select idref="V-74221" selected="true" /><select idref="V-74223" selected="true" /><select idref="V-74225" selected="true" /><select idref="V-74227" selected="true" /><select idref="V-74229" selected="true" /><select idref="V-74231" selected="true" /><select idref="V-74233" selected="true" /><select idref="V-74235" selected="true" /><select idref="V-74237" selected="true" /><select idref="V-74239" selected="true" /><select idref="V-74241" selected="true" /><select idref="V-74243" selected="true" /><select idref="V-74247" selected="true" /><select idref="V-74249" selected="true" /><select idref="V-74251" selected="true" /><select idref="V-74253" selected="true" /><select idref="V-74255" selected="true" /><select idref="V-74257" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-74175" selected="true" /><select idref="V-74195" selected="true" /><select idref="V-74197" selected="true" /><select idref="V-74199" selected="true" /><select idref="V-74201" selected="true" /><select idref="V-74203" selected="true" /><select idref="V-74205" selected="true" /><select idref="V-74207" selected="true" /><select idref="V-74209" selected="true" /><select idref="V-74211" selected="true" /><select idref="V-74213" selected="true" /><select idref="V-74215" selected="true" /><select idref="V-74217" selected="true" /><select idref="V-74219" selected="true" /><select idref="V-74221" selected="true" /><select idref="V-74223" selected="true" /><select idref="V-74225" selected="true" /><select idref="V-74227" selected="true" /><select idref="V-74229" selected="true" /><select idref="V-74231" selected="true" /><select idref="V-74233" selected="true" /><select idref="V-74235" selected="true" /><select idref="V-74237" selected="true" /><select idref="V-74239" selected="true" /><select idref="V-74241" selected="true" /><select idref="V-74243" selected="true" /><select idref="V-74247" selected="true" /><select idref="V-74249" selected="true" /><select idref="V-74251" selected="true" /><select idref="V-74253" selected="true" /><select idref="V-74255" selected="true" /><select idref="V-74257" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-74175" selected="true" /><select idref="V-74195" selected="true" /><select idref="V-74197" selected="true" /><select idref="V-74199" selected="true" /><select idref="V-74201" selected="true" /><select idref="V-74203" selected="true" /><select idref="V-74205" selected="true" /><select idref="V-74207" selected="true" /><select idref="V-74209" selected="true" /><select idref="V-74211" selected="true" /><select idref="V-74213" selected="true" /><select idref="V-74215" selected="true" /><select idref="V-74217" selected="true" /><select idref="V-74219" selected="true" /><select idref="V-74221" selected="true" /><select idref="V-74223" selected="true" /><select idref="V-74225" selected="true" /><select idref="V-74227" selected="true" /><select idref="V-74229" selected="true" /><select idref="V-74231" selected="true" /><select idref="V-74233" selected="true" /><select idref="V-74235" selected="true" /><select idref="V-74237" selected="true" /><select idref="V-74239" selected="true" /><select idref="V-74241" selected="true" /><select idref="V-74243" selected="true" /><select idref="V-74247" selected="true" /><select idref="V-74249" selected="true" /><select idref="V-74251" selected="true" /><select idref="V-74253" selected="true" /><select idref="V-74255" selected="true" /><select idref="V-74257" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-74175" selected="true" /><select idref="V-74195" selected="true" /><select idref="V-74197" selected="true" /><select idref="V-74199" selected="true" /><select idref="V-74201" selected="true" /><select idref="V-74203" selected="true" /><select idref="V-74205" selected="true" /><select idref="V-74207" selected="true" /><select idref="V-74209" selected="true" /><select idref="V-74211" selected="true" /><select idref="V-74213" selected="true" /><select idref="V-74215" selected="true" /><select idref="V-74217" selected="true" /><select idref="V-74219" selected="true" /><select idref="V-74221" selected="true" /><select idref="V-74223" selected="true" /><select idref="V-74225" selected="true" /><select idref="V-74227" selected="true" /><select idref="V-74229" selected="true" /><select idref="V-74231" selected="true" /><select idref="V-74233" selected="true" /><select idref="V-74235" selected="true" /><select idref="V-74237" selected="true" /><select idref="V-74239" selected="true" /><select idref="V-74241" selected="true" /><select idref="V-74243" selected="true" /><select idref="V-74247" selected="true" /><select idref="V-74249" selected="true" /><select idref="V-74251" selected="true" /><select idref="V-74253" selected="true" /><select idref="V-74255" selected="true" /><select idref="V-74257" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-74175" selected="true" /><select idref="V-74195" selected="true" /><select idref="V-74197" selected="true" /><select idref="V-74199" selected="true" /><select idref="V-74201" selected="true" /><select idref="V-74203" selected="true" /><select idref="V-74205" selected="true" /><select idref="V-74207" selected="true" /><select idref="V-74209" selected="true" /><select idref="V-74211" selected="true" /><select idref="V-74213" selected="true" /><select idref="V-74215" selected="true" /><select idref="V-74217" selected="true" /><select idref="V-74219" selected="true" /><select idref="V-74221" selected="true" /><select idref="V-74223" selected="true" /><select idref="V-74225" selected="true" /><select idref="V-74227" selected="true" /><select idref="V-74229" selected="true" /><select idref="V-74231" selected="true" /><select idref="V-74233" selected="true" /><select idref="V-74235" selected="true" /><select idref="V-74237" selected="true" /><select idref="V-74239" selected="true" /><select idref="V-74241" selected="true" /><select idref="V-74243" selected="true" /><select idref="V-74247" selected="true" /><select idref="V-74249" selected="true" /><select idref="V-74251" selected="true" /><select idref="V-74253" selected="true" /><select idref="V-74255" selected="true" /><select idref="V-74257" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-74175" selected="true" /><select idref="V-74195" selected="true" /><select idref="V-74197" selected="true" /><select idref="V-74199" selected="true" /><select idref="V-74201" selected="true" /><select idref="V-74203" selected="true" /><select idref="V-74205" selected="true" /><select idref="V-74207" selected="true" /><select idref="V-74209" selected="true" /><select idref="V-74211" selected="true" /><select idref="V-74213" selected="true" /><select idref="V-74215" selected="true" /><select idref="V-74217" selected="true" /><select idref="V-74219" selected="true" /><select idref="V-74221" selected="true" /><select idref="V-74223" selected="true" /><select idref="V-74225" selected="true" /><select idref="V-74227" selected="true" /><select idref="V-74229" selected="true" /><select idref="V-74231" selected="true" /><select idref="V-74233" selected="true" /><select idref="V-74235" selected="true" /><select idref="V-74237" selected="true" /><select idref="V-74239" selected="true" /><select idref="V-74241" selected="true" /><select idref="V-74243" selected="true" /><select idref="V-74247" selected="true" /><select idref="V-74249" selected="true" /><select idref="V-74251" selected="true" /><select idref="V-74253" selected="true" /><select idref="V-74255" selected="true" /><select idref="V-74257" selected="true" /></Profile><Group id="V-74175"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88849r1_rule" severity="medium" weight="10.0"><version>MCAC-PO-000100</version><title>A McAfee Application Control written policy must be documented to outline the organization-specific variables for application whitelisting.</title><description>&lt;VulnDiscussion&gt;Enabling application whitelisting without adequate design and organization-specific requirements will either result in an implementation which is too relaxed or an implementation which causes denial of service to its user community. Documenting the specific requirements and trust model before configuring and deploying the McAfee Application Control software is mandatory.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80705r2_fix">Document fully the written policy for the McAfee Application Control software, to include processes for password management, vetting application for whitelist/blocking, frequency of reviewing application whitelist, and settings for other requirements in this STIG.
+
+Submit the written policy to be initially approved by and maintained by the Information System Security Officer/Information System Security Manager (ISSO/ISSM/AO) at that location.
+
+Formalize a change control process to ensure changes to the written policy are made in a controlled manner. 
+
+Formalize a review process requiring signed acceptance by the ISSO/ISSM/AO for any changes made to the written policy. 
+
+If a formal Change Advisory Board (CAB) or Configuration Control Board (CCB) exists, the McAfee Application Control written policy must be under the CAB/CCB oversight.</fixtext><fix id="F-80705r2_fix" /><check system="C-74229r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Consult with the ISSO/ISSM to review the organizational-specific written policy for the McAfee Application Control software.
+
+If no written policy exists, this is a finding.</check-content></check></Rule></Group><Group id="V-74195"><title>SRG-APP-000172</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88869r1_rule" severity="medium" weight="10.0"><version>MCAC-PO-000103</version><title>The Solidcore client Command Line Interface (CLI) Access Password protection process must be documented in the organizations written policy.</title><description>&lt;VulnDiscussion&gt;The Solidcore client can be configured locally at the CLI, but only when accessed with the required password.
+
+Since the McAfee Application Control configuration is to be managed by ePO policies, allowing enablement of the CLI to would introduce the capability of local configuration changes. 
+
+Strict management of the accessibility of the CLI is necessary in order to prevent its misuse.
+
+The misuse of the CLI would open the system up to the possible configuration changes potentially allowing malicious applications to execute unknowingly.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000197</ident><fixtext fixref="F-80737r1_fix">Follow the formal change and acceptance process to update the written policy with specific information on how the CLI password is protected and that the password must be stored in a sealed envelope in an approved safe with the last access date noted.</fixtext><fix id="F-80737r1_fix" /><check system="C-74231r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Note: The CLI Access is in lockdown mode by default when being managed by ePO. Since the CLI Access can be recovered for troubleshooting, this requirement needs to be met.
+
+Consult with the ISSO/ISSM to obtain a copy of the organization's documented policy for application whitelisting.
+
+Review the written policy for how the Solidcore client interface is used by the organization.
+
+Verify the policy identifies how the CLI password is protected.
+
+Ask the ePO admin, "What protection measures are used for the CLI password?"
+
+The protection measures should include, at a minimum, storage in a sealed envelope, which is then stored in an approved safe.
+
+Note: The envelope will contain the last access date along with those authorized to use it.
+
+If the written policy does not contain specific information on how the CLI password is protected and/or if that policy does not include, at a minimum, that the password be stored in a sealed envelope in an approved safe with the last access date noted, this is a finding.</check-content></check></Rule></Group><Group id="V-74197"><title>SRG-APP-000174</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88871r1_rule" severity="medium" weight="10.0"><version>MCAC-PO-000104</version><title>The requirement for scheduled Solidcore client Command Line Interface (CLI) Access Password changes must be documented in the organizations written policy.</title><description>&lt;VulnDiscussion&gt;The Solidcore client can be configured locally at the CLI, but only when accessed with the required password.
+
+The misuse of the CLI would open the system up to the possible configuration, allowing malicious applications to execute unknowingly. Strict management of the accessibility of the CLI is necessary in order to prevent its misuse.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000199</ident><fixtext fixref="F-80739r1_fix">Follow the formal change and acceptance process to update the written policy with specific information on the frequency with which the CLI password is changed.</fixtext><fix id="F-80739r1_fix" /><check system="C-74233r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Note: The CLI Access is in lockdown mode by default when being managed by ePO. Since the CLI Access can be recovered for troubleshooting, this requirement needs to be met.
+
+Consult with the ISSO/ISSM to obtain a copy of the organization's documented policy for application whitelisting.
+
+Review the written policy for how the Solidcore client interface is used by the organization.
+
+Verify the policy identifies the frequency with which the CLI password is changed.
+
+If the written policy does not contain specific information on frequency with which the CLI password is changed, this is a finding.</check-content></check></Rule></Group><Group id="V-74199"><title>SRG-APP-000397</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88873r1_rule" severity="medium" weight="10.0"><version>MCAC-PO-000105</version><title>The process by which the Solidcore client Command Line Interface (CLI) Access Password is made available to administrators when needed must be documented in the organizations written policy.</title><description>&lt;VulnDiscussion&gt;The Solidcore client can be configured locally at the CLI, but only when accessed with the required password.
+
+Since the McAfee Application Control configuration is to be managed by ePO policies, allowing enablement of the CLI to would introduce the capability of local configuration changes. 
+
+Strict management of the accessibility of the CLI is necessary in order to prevent its misuse.
+
+The misuse of the CLI would open the system up to the possible configuration changes potentially allowing malicious applications to execute unknowingly.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002041</ident><fixtext fixref="F-80741r1_fix">Follow the formal change and acceptance process to update the written policy to include procedures for accessing the CLI password and how the SA gains access to an approved safe in order for obtaining the password.</fixtext><fix id="F-80741r1_fix" /><check system="C-74235r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Note: The CLI Access is in lockdown mode by default when being managed by ePO. Since the CLI Access can be recovered for troubleshooting, this requirement needs to be met.
+
+Consult with the ISSO/ISSM to obtain a copy of the organization's documented policy for application whitelisting.
+
+The policy must contain procedures for accessing the CLI password, to include the SA gaining access to an approved safe in order for obtaining the password.
+
+If a procedure does not exist for accessing the CLI password as described above, this is a finding.</check-content></check></Rule></Group><Group id="V-74201"><title>SRG-APP-000276</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88875r1_rule" severity="medium" weight="10.0"><version>MCAC-PO-000106</version><title>The McAfee Application Control Options Advanced Threat Defense (ATD) settings, if being used, must be confined to the organizations enclave.</title><description>&lt;VulnDiscussion&gt;Data will be leaving the endpoint to be analyzed by the ATD. Because data could feasibly be intercepted en route, risk of outside threats is minimized by ensuring the ATD is in the same enclave as the endpoints.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001240</ident><fixtext fixref="F-80743r1_fix">Relocate or reinstall the ATD being used by the organization to be confined to the organization's enclave.</fixtext><fix id="F-80743r1_fix" /><check system="C-74237r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>If an ATD server is not being used in the environment, this is Not Applicable.
+
+Consult with the ISSO/ISSM to review the written policy to ensure the usage of an ATD is documented.
+
+If the usage of an ATD is not documented in the written policy, this is a finding.
+
+Determine the location of the ATD being used by the organization and verify the ATD is confined to the organization's enclave.
+
+If the location of the ATD being used by the organization cannot be determined and the ATD is not confined to the organization's enclave, this is a finding.</check-content></check></Rule></Group><Group id="V-74203"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88877r1_rule" severity="medium" weight="10.0"><version>MCAC-PO-000108</version><title>The configuration of features under McAfee Application Control Options policies Enforce feature control must be documented in the organizations written policy.</title><description>&lt;VulnDiscussion&gt;By default, the McAfee Application Control prevents installation of ActiveX controls on endpoints, enforces memory protection techniques on endpoints, and prevents MSI-installers from running on endpoints. The Feature Control allows for those safeguards to be bypassed and in doing so renders the McAfee Application Control less effective.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80745r1_fix">Follow the formal change and acceptance process to document any features needing to be enabled.</fixtext><fix id="F-80745r1_fix" /><check system="C-74239r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Consult with the ISSO/ISSM to obtain a copy of the organization's documented policy for application whitelisting.
+
+Review the written policy for how the Solidcore client interface is used by the organization.
+
+Verify the written policy identifies whether additional features are enabled or not under "Enforce feature control" of the McAfee Application Control Options ePO policy.
+
+If the written policy does not identify whether additional features are enabled or not under "Enforce feature control" of the McAfee Application Control Options ePO policy, this is a finding.</check-content></check></Rule></Group><Group id="V-74205"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88879r1_rule" severity="medium" weight="10.0"><version>MCAC-PO-000109</version><title>The organizations written policy must include a process for how whitelisted applications are deemed to be allowed.</title><description>&lt;VulnDiscussion&gt;Enabling application whitelisting without adequate design and organization-specific requirements will either result in an implementation which is too relaxed or an implementation which causes denial of service to its user community. Documenting the specific requirements and trust model before configuring and deploying the McAfee Application Control software is mandatory.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80747r1_fix">Follow the formal change and acceptance process to update the written policy to include a process for how applications are vetted and deemed to be allowed.</fixtext><fix id="F-80747r1_fix" /><check system="C-74241r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Consult with the ISSO/ISSM to review the organizational-specific written policy for the McAfee Application Control software.
+
+Verify the written policy includes a process for how applications are vetted and deemed to be allowed.
+
+If no written policy exists, this is a finding.
+
+If written policy does not include a process for vetting applications before allowing them, this is a finding.</check-content></check></Rule></Group><Group id="V-74207"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88881r1_rule" severity="medium" weight="10.0"><version>MCAC-PO-000110</version><title>The organizations written policy must include procedures for how often the whitelist of allowed applications is reviewed.</title><description>&lt;VulnDiscussion&gt;Enabling application whitelisting without adequate design and organization-specific requirements will either result in an implementation which is too relaxed or an implementation which causes denial of service to its user community. Documenting the specific requirements and trust model before configuring and deploying the McAfee Application Control software is mandatory.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80749r1_fix">Follow the formal change and acceptance process to update the written policy to include a process for how often the application whitelist is reviewed.</fixtext><fix id="F-80749r1_fix" /><check system="C-74243r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Consult with the ISSO/ISSM to review the organizational-specific written policy for the McAfee Application Control software.
+
+Verify the written policy includes a process for how often the application whitelist is reviewed.
+
+If no written policy exists, this is a finding.
+
+If written policy does not include a process for how often the application whitelist is reviewed, this is a finding.</check-content></check></Rule></Group><Group id="V-74209"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88883r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000100</version><title>The Solidcore client must be enabled.</title><description>&lt;VulnDiscussion&gt;The Application Control whitelisting must be enabled on all workstation endpoints. To enable Application Control, the Solidcore client needs to be in enabled mode.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80751r5_fix">Although there is more than one way to deploy and enable the Solidcore client, the following is the method described in the McAfee Application Control Installation Guide.
+
+From the ePO server console System Tree, select "My Organization" in the System Tree.
+
+To deploy the Solidcore 7 client:
+
+Select "This Group and All Subgroups".
+Select the asset and view its properties.
+Click on the "Actions" button at the bottom of the screen.
+Select "Agent".
+Select "Modify Tasks on a Single System".
+Click "Actions".
+Select "New Client Task Assignment" to open the "Client Task Assignment Builder" page.
+Specify the task name and add descriptive information.
+Select the target platform, subplatform, and version.
+Select the "Solidcore 7.0.0" product from the "Products and components" list.
+Select the "Install" action.
+Select the language of the package.
+Specify the branch where to add the package.
+Click "Save", then click "Next to open the "Schedule" page.
+Specify scheduling details, then click "Next".
+Review details, then click "Save".
+
+To enable the Solidcore 7 client and scan for inventory:
+
+Select "This Group and All Subgroups".
+Select the asset and view its properties.
+Click on the "Actions" button at the bottom of the screen.
+Select "Agent".
+Select "Modify Tasks on a Single System".
+Click "Actions".
+Select "New Client Task Assignment" to open the "Client Task Assignment Builder" page.
+Select the "Solidcore 7.0.0" product and "SC: Enable" task type, then click "Create New Task".
+
+On the "Client Task Catalog" page, specify the task name and add descriptive information.
+Select the platform, subplatform, and version.
+Select "Application Control".
+Specify the scan priority.
+Specify "Full Feature Activation".
+Select "Start Observe Mode".
+Select "Pull Inventory".
+Click "Save", then click "Next" to open the Schedule page.
+Specify scheduling details, then click "Next".
+Review details, then click "Save".</fixtext><fix id="F-80751r5_fix" /><check system="C-74245r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated and view its properties.
+
+Click on the "Products" tab.
+
+Under "Product", verify the Solidcore 7 client is listed as a product. If exists, click on the row to review additional information. Verify status shows "Enabled".
+
+If the Solidcore 7 client is listed as an installed product but the status is not "Enabled", this is a finding.</check-content></check></Rule></Group><Group id="V-74211"><title>SRG-APP-000383</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88885r1_rule" severity="high" weight="10.0"><version>MCAC-TE-000101</version><title>The Solidcore client Command Line Interface (CLI) must be in lockdown mode.</title><description>&lt;VulnDiscussion&gt;By default, when an endpoint's Solidcore installation is managed by the ePO server, the CLI will automatically be in lockdown mode. This will ensure the endpoint receives all of its Solidcore configuration settings from the ePO server. The CLI can, however, be activated for troubleshooting efforts during which time the ePO settings will not be enforced. Leaving the CLI in an allowed status will prevent the endpoint from receiving changes from the ePO server for the Solidcore client.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001762</ident><fixtext fixref="F-80753r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Click "Actions".
+Select "New Client Task Assignment" to open the Client Task Assignment Builder page.
+
+Select the "Solidcore 7.0.0 product", "SC: Change Local CLI Access" task type, then click "Create New Task" to open the Client Task Catalog page.
+
+Change "CLI status" to "Restrict".
+
+Click "Save".</fixtext><fix id="F-80753r2_fix" /><check system="C-74247r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Determine CLI status.
+
+Access the system being reviewed. From an operating system command line, execute the following command:
+
+sadmin status &lt;enter&gt;
+
+If the status for CLI is "Allowed", this is a finding.</check-content></check></Rule></Group><Group id="V-74213"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88887r1_rule" severity="high" weight="10.0"><version>MCAC-TE-000102</version><title>The Solidcore client Command Line Interface (CLI) Access Password must be changed from the default.</title><description>&lt;VulnDiscussion&gt;The Solidcore client can be configured locally at the CLI, but only when accessed with the required password.
+
+Since the McAfee Application Control configuration is to be managed by ePO policies, allowing enablement of the CLI to would introduce the capability of local configuration changes. 
+
+Strict management of the accessibility of the CLI is necessary in order to prevent its misuse.
+
+The misuse of the CLI would open the system up to the possible configuration changes potentially allowing malicious applications to execute unknowingly.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80755r1_fix">Change the CLI password with one other than the default, using administrative password complexity.
+
+From the ePO server console System Tree, select "My Organization".
+
+In the "Configuration (Client)" category, click on the Organization's specific Configuration (Client) McAfee Default policy.
+
+In the "CLI" tab, type a password other than the default, ensuring to conform to password complexity.
+
+Confirm the password.
+
+Click "Save".</fixtext><fix id="F-80755r1_fix" /><check system="C-74249r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>This is a manual procedure to verify the CLI Access Password has been changed from its default setting by the ePO administrator. 
+
+Ask the ePO admin, "Has the CLI Access Password been changed from its default setting?"
+
+If the default password is being used, this is a finding. 
+
+Note: The password does not need to be divulged during the review. An interview question of the SA to validate that it is not the default is sufficient.</check-content></check></Rule></Group><Group id="V-74215"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88889r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000103</version><title>The organization-specific Rules policy must only include executable and dll files that are associated with applications as allowed by the organizations written policy.</title><description>&lt;VulnDiscussion&gt;To ensure Solidcore clients are only configured to STIG and organization-specific settings, organization-specific ePO policies must be applied to all organization workstation endpoints.
+
+The McAfee Application Control installs with two Default Rules policies.
+
+The McAfee Default Rules policy includes the whitelist for commonly used applications to the platform.
+
+The McAfee Applications Default Rules policy include the whitelist for McAfee applications.
+
+Both of these policies are at the "My Organization" level of the System Tree and must be inherited by all branches of the System Tree.
+
+Organization-specific applications would be whitelisted with an organization-specific policy combined with the two Default policies into one effective policy.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80757r2_fix">Obtain the organization's written policy for the McAfee Application Control software from the System or ePO Administrator.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+Remove any "Rules Groups" and/or applications under the "Rules Groups" that do not comply with the organization's written policy.
+
+If applications are required, follow the formal change and acceptance process to document the applications in the organization's written policy.</fixtext><fix id="F-80757r2_fix" /><check system="C-74251r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Obtain the organization's written policy for the McAfee Application Control software from the System or ePO Administrator.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select "Solidcore 7.x: Application Control".
+
+For the "Application Control Rules (Windows)" Category, click on "Edit Assignments" under the "Actions" column.
+
+Identify the organization-specific Rules policy applied to the system being reviewed.
+
+Click on "Edit Policy" beside the organization-specific Rules policy.
+
+Verify the list of applications under each of the "Rules Groups" in the organization-specific Rules policy against the written policy's list of allowed applications.
+
+If the organization-specific Rules policy contains any applications not documented in the written policy as allowed, this is a finding.</check-content></check></Rule></Group><Group id="V-74217"><title>SRG-APP-000276</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88891r2_rule" severity="medium" weight="10.0"><version>MCAC-TE-000104</version><title>The McAfee Application Control Options Reputation setting must be configured to use the McAfee Global Threat Intelligence (McAfee GTI) option.</title><description>&lt;VulnDiscussion&gt;If a Threat Intelligence Exchange (TIE) server is being used in the organization, reputation for files and certificates is fetched from the TIE server. The reputation values control execution at endpoints and are displayed on the Application Control pages on the McAfee ePO console.
+
+If the GTI is being used, reputation for files and certificates is fetched from the McAfee GTI.
+
+For both methods, the administrator can review the reputation values and make informed decisions for inventory items in the enterprise.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001240</ident><fixtext fixref="F-80759r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+Select the "Reputation" tab.
+
+Place a check in the "Use McAfee Global Threat Intelligence (McAfee GTI)" option.
+
+Click "Save".</fixtext><fix id="F-80759r2_fix" /><check system="C-74253r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>NOTE: This requirement is Not Applicable on a classified SIPRNet or otherwise closed network.
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset to be validated.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+Select the "Reputation" tab.
+
+Verify the "Use McAfee Global Threat Intelligence (McAfee GTI)" option is selected.
+
+Note: The "McAfee GTI" option must be selected, as a failover, even if an internal McAfee TIE server is configured.
+
+If the "McAfee GTI" option is not selected, this is a finding.
+</check-content></check></Rule></Group><Group id="V-74219"><title>SRG-APP-000165</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88893r1_rule" severity="medium" weight="10.0"><version>MCAC-PO-000101</version><title>The use of a Solidcore 7.x local Command Line Interface (CLI) Access Password must be documented in the organizations written policy.</title><description>&lt;VulnDiscussion&gt;The Solidcore client can be configured locally at the CLI, but only when accessed with the required password.
+
+Since the McAfee Application Control configuration is to be managed by ePO policies, allowing enablement of the CLI to would introduce the capability of local configuration changes. 
+
+Strict management of the accessibility of the CLI is necessary in order to prevent its misuse.
+
+The misuse of the CLI would open the system up to the possible configuration changes potentially allowing malicious applications to execute unknowingly.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000200</ident><fixtext fixref="F-80761r1_fix">Follow the formal change and acceptance process to update the organization's written policy with the use of the CLI.</fixtext><fix id="F-80761r1_fix" /><check system="C-74255r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Note: The CLI Access is in lockdown mode by default when being managed by ePO. Since the CLI Access can be recovered for troubleshooting, this requirement needs to be met.
+
+Consult with the ISSO/ISSM to obtain a copy of the organization's documented policy for application whitelisting.
+
+Review the written policy for how and when the Solidcore CLI is used by the organization.
+
+If the use of the CLI is not documented in the organization's written policy, this is a finding.</check-content></check></Rule></Group><Group id="V-74221"><title>SRG-APP-000169</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88895r1_rule" severity="medium" weight="10.0"><version>MCAC-PO-000102</version><title>The Solidcore client Command Line Interface (CLI) Access password complexity requirements must be documented in the organizations written policy.</title><description>&lt;VulnDiscussion&gt;The Solidcore client can be configured locally at the CLI, but only when accessed with the required password.
+
+The misuse of the CLI would open the system up to the possible configuration, allowing malicious applications to execute unknowingly. Strict management of the accessibility of the CLI is necessary in order to prevent its misuse.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001619</ident><fixtext fixref="F-80763r1_fix">Follow the formal change and acceptance process to update the written policy with the CLI password complexity requirements.</fixtext><fix id="F-80763r1_fix" /><check system="C-74257r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Note: The CLI Access is in lockdown mode by default when being managed by ePO. Since the CLI Access can be recovered for troubleshooting, this requirement needs to be met.
+
+Since the Solidcore CLI does not allow for technical enforcement of password complexity the enforcement will be via this written policy directive.
+
+Consult with the ISSO/ISSM to obtain a copy of the organization's documented policy for application whitelisting.
+
+Review the written policy for CLI password complexity requirements.
+
+Verify the policy requires the password to be 15 characters in length and contain a mix of at least one lower-case, one upper-case, one number, and one special character.
+
+If the written policy does not document the requirement for password complexity and/or does not specify the password must be 15 characters in length and contain a mix of at least one lower-case, one upper-case, one number, and one special character, this is a finding.</check-content></check></Rule></Group><Group id="V-74223"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88897r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000105</version><title>The McAfee Application Control Options Reputation-Based Execution settings, if enabled, must be configured to allow Most Likely Trusted or Known Trusted only.</title><description>&lt;VulnDiscussion&gt;When a file is executed on an endpoint, the Application Control performs multiple checks to determine whether to allow or ban the execution. Only files with a reputation of "Most Likely Trusted", "Known Trusted" or "Might be Trusted" are considered to be allowed. By configuring the setting to only "Most Likely Trusted" or "Known Trusted", the files with a reputation of "Might be Trusted" are blocked. While this may impact operationally in the beginning, after the inventories are vetted by the administrators, files with a "Might be Trusted" value may be recategorized in that organization.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80765r2_fix">If Reputation-Based Execution settings is not enabled, this check is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+Select the "Reputation" tab.
+
+Place a check in the "Reputation-Based Execution Settings: Allow binaries with" check box and select "Most Likely Trusted" from the drop-down selection box.
+
+Click "Save".</fixtext><fix id="F-80765r2_fix" /><check system="C-74259r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>If Reputation-Based Execution settings is not enabled, this check is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+Select the "Reputation" tab.
+
+Verify the "Reputation-Based Execution Settings" is configured to allow binaries with "Most Likely Trusted" and above.
+
+If the allow binaries "Most Likely Trusted" and above is not selected for "Reputation-Based Execution Settings", this is a finding.</check-content></check></Rule></Group><Group id="V-74225"><title>SRG-APP-000276</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88899r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000106</version><title>The McAfee Application Control Options Advanced Threat Defense (ATD) settings must not be enabled unless an internal ATD is maintained by the organization.</title><description>&lt;VulnDiscussion&gt;This option will automatically send files with a specific file reputation to ATD for further analysis. This option is not selected by default and must only be selected if an ATD is being used.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001240</ident><fixtext fixref="F-80767r2_fix">If an ATD server is not being used in the environment, this is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+Select the "Reputation" tab.
+
+Place a check in the "Advanced Threat Defense (ATD) settings: Send binaries" check box.
+
+Click "Save".
+
+Update the written policy to ensure the usage of an ATD is documented.</fixtext><fix id="F-80767r2_fix" /><check system="C-74261r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>If an ATD server is not being used in the environment, this is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+Select the "Reputation" tab.
+
+Verify the option for sending binaries for analysis under the "Advanced Threat Defense (ATD) settings" is selected.
+
+Consult with the ISSO/ISSM to review the written policy to verify the usage of an ATD is documented.
+
+If the option for sending binaries for analysis under the "Advanced Threat Defense (ATD) settings" is selected and the written policy does not include documentation on the usage of an ATD, this is a finding.</check-content></check></Rule></Group><Group id="V-74227"><title>SRG-APP-000276</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88901r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000107</version><title>The McAfee Application Control Options Advanced Threat Defense (ATD) settings, if being used, must be configured to send all binaries with a reputation of Might be Trusted and below for analysis.</title><description>&lt;VulnDiscussion&gt;When the file reputation of "Might be Trusted" is configured for being forwarded to ATD, all files with the reputation of "Might be Trusted", "Unknown", "Might be Malicious", "Most Likely Malicious" and "Known Malicious" are forwarded to the ATD.
+
+The files with "Might be Trusted" reputation may be redesignated as "Trusted" after analysis.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001240</ident><fixtext fixref="F-80769r2_fix">If an ATD server is not being used in the environment, this is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+Select the "Reputation" tab.
+
+In the drop-down selection box of the "Advanced Threat Defense (ATD) settings: Send binaries" option, select "Might be Trusted".
+
+Click "Save".</fixtext><fix id="F-80769r2_fix" /><check system="C-74263r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>If an ATD server is not being used in the environment, this is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control. From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+Select the "Reputation" tab.
+
+If the option for sending binaries for analysis under the "Advanced Threat Defense (ATD) settings" is selected, verify the level of binaries to be sent for analysis is "Might be Trusted" and below.
+
+If the level of binaries to be sent for analysis is not "Might be Trusted", this is a finding.</check-content></check></Rule></Group><Group id="V-74229"><title>SRG-APP-000276</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88903r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000108</version><title>The McAfee Application Control Options Advanced Threat Defense (ATD) settings, if being used, must be configured to only send binaries with a size of 5 MB or less.</title><description>&lt;VulnDiscussion&gt;Since binaries can be large, the file size must be limited to avoid congestion on the network and degradation on the endpoint when sending the binaries to the ATD.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001240</ident><fixtext fixref="F-80771r2_fix">If an ATD server is not being used in the environment, this is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+Select the "Reputation" tab.
+
+In the drop-down selection box of the "Advanced Threat Defense (ATD) settings: Limit file save" text box, enter a value of 5 MB or less.
+
+Click "Save".</fixtext><fix id="F-80771r2_fix" /><check system="C-74265r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>If an ATD server is not being used in the environment, this is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+Select the "Reputation" tab.
+
+If the option for sending binaries for analysis under the "Advanced Threat Defense (ATD) settings" is selected, verify the "Limit file size to" option is set to 5 MB or less.
+
+If the "Limit file size to" option is not set to 5 MB or less, this is a finding.</check-content></check></Rule></Group><Group id="V-74231"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88905r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000109</version><title>Organization-specific McAfee Applications Control Options policies must be created and applied to all endpoints.</title><description>&lt;VulnDiscussion&gt;To ensure Solidcore clients are only configured to STIG and organization-specific settings, organization-specific ePO policies must be applied to all organization workstation endpoints rather than resorting to the McAfee Applications Control (Default) policy.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80773r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Actions" column, select "Edit Assignment" for the "Application Control Options (Windows) Category".
+
+Next to "Assigned policy:", click on drop-down selection box and choose an organization-specific Application Control Options policy for the asset being reviewed.
+
+Click "Save".
+
+If no organization-specific Application Control Options policy exist, click on "New Policy".
+
+Choose "McAfee Default" for "Create a policy based on this existing policy".
+
+Type a unique Policy Name.
+
+Click "OK".
+
+Configure the "Self-Approval", "End User Notifications", "Features", "Inventory", and "Reputation" tabs according to the organization's written policy and remaining STIG settings.</fixtext><fix id="F-80773r2_fix" /><check system="C-74267r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)" that is specific for the asset being reviewed.
+
+If the only "Application Control Options" policy applied to the system is the "McAfee Default" policy, this is a finding.</check-content></check></Rule></Group><Group id="V-74233"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88907r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000110</version><title>The McAfee Application Control Options policy must be configured to disable Self-Approval.</title><description>&lt;VulnDiscussion&gt;The McAfee Application Control Self-Approval feature allows the user to take an action when a user tries to run a new or unknown application.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80775r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)".
+
+On the "Self-Approval" tab, de-select the "Enable Self-Approval" check box.
+
+Click "Save".</fixtext><fix id="F-80775r2_fix" /><check system="C-74269r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)".
+
+On the "Self-Approval" tab, verify the "Enable Self-Approval" check box is not selected.
+
+If the "Enable Self-Approval" check box is selected, this is a finding.</check-content></check></Rule></Group><Group id="V-74235"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88909r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000111</version><title>The McAfee Application Control Options policy End User Notification, if configured by organization, must have all default variables replaced with the organization-specific data.</title><description>&lt;VulnDiscussion&gt;The "User Message" option will show a dialog box when an event is detected and display the organization-specified text in the message.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80777r2_fix">If "End User Notification" is not used by the organization, this is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)".
+
+On the "End User Notification" tab, select or de-select the "Show the messages dialog box when an event is detected and display the specified text in the message." based upon organization's written policy.
+
+If "Show the messages dialog box when an event is detected and display the specified text in the message." is de-selected based upon written policy, populate "Helpdesk Information" with information from the written policy.
+
+Click "Save".
+
+If "Show the messages dialog box when an event is detected and display the specified text in the message." is selected based upon written policy, populate "Helpdesk Information" with information from the written policy.
+
+Click "Save".</fixtext><fix id="F-80777r2_fix" /><check system="C-74271r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>If "End User Notification" is not used by the organization, this is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)".
+
+On the "End User Notification" tab, determine if the "User Message:" option "Show the messages dialog box when an event is detected and display the specified text in the message." is selected.
+
+If "Show the messages dialog box when an event is detected and display the specified text in the message." is not selected, this is Not Applicable.
+
+If "Show the messages dialog box when an event is detected and display the specified text in the message." is selected, consult with the ISSO/ISSM to review the organizational-specific written policy for the McAfee Application Control software.
+
+Verify the usage of "End User Notification" is documented in the written policy and verify criteria for configuration.
+
+If "End User Notification:" variables are not configured to written documentation, this is a finding.
+
+If "End User Notification" is not documented in written policy, this is a finding.</check-content></check></Rule></Group><Group id="V-74237"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88911r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000112</version><title>The McAfee Application Control Options policies Enforce feature control memory protection must be enabled.</title><description>&lt;VulnDiscussion&gt;By default, the McAfee Application Control prevents installation of ActiveX controls on endpoints, enforces memory protection techniques on endpoints, and prevents MSI-installers from running on endpoints. The Feature Control allows for those safeguards to be bypassed and in doing so renders the McAfee Application Control less effective.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80779r2_fix">If HIPS/ENS is enabled and enforced, this is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)".
+
+On the "Features" tab, place a check in the "Enforce feature control" check box.
+
+Place a check in the "Memory protection" check box.
+
+Select or de-select remaining features, based upon written policy.
+
+Click "Save".</fixtext><fix id="F-80779r2_fix" /><check system="C-74273r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>If HIPS/ENS is enabled and enforced, this is Not Applicable.
+
+From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)".
+
+On the "Features" tab, review options selected.
+
+If the "Enforce feature control" check box is not selected and "Memory protection" is selected, this is a finding.</check-content></check></Rule></Group><Group id="V-74239"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88913r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000113</version><title>Enabled features under McAfee Application Control Options policies Enforce feature control must not be configured unless documented in written policy and approved by ISSO/ISSM.</title><description>&lt;VulnDiscussion&gt;By default, the McAfee Application Control prevents installation of ActiveX controls on endpoints, enforces memory protection techniques on endpoints, and prevents MSI-installers from running on endpoints. The "Feature Control" allows for those safeguards to be bypassed and in doing so renders the McAfee Application Control less effective.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80781r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control. From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)".
+
+On the "Features" tab, remove any features selected.
+
+If features are required technically that are not documented in the organization's written policy, document the use of those features following the formal change and acceptance process as documented in the organization's written policy.</fixtext><fix id="F-80781r2_fix" /><check system="C-74275r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control. From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)".
+
+On the "Features" tab, review options selected.
+
+If the "Enforce feature control" check box is selected with any features, consult with the ISSO/ISSM to review the written policy and ensure the usage of additional features are documented.
+
+If the usage of additional features are not documented in the written policy, this is a finding.</check-content></check></Rule></Group><Group id="V-74241"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88915r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000114</version><title>The McAfee Application Control Options Inventory option must be configured to hide OS Files.</title><description>&lt;VulnDiscussion&gt;By default, the Windows operating system files are excluded from the inventory. By selecting this option, the overwhelming the inventory with legitimate Windows Files in the &lt;system drive&gt;\Windows folder which are signed by the Microsoft certificate and all files in the &lt;system drive&gt;\Windows\winsxs folder will not be included in the inventory.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80783r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control. 
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)".
+
+On the "Inventory" tab, place a check in the "Inventory: Hide Windows OS Files: Inventory items signed with Microsoft certificates will not be sent to McAfee ePO." check box.
+
+Click "Save".</fixtext><fix id="F-80783r2_fix" /><check system="C-74277r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+From the "Policy" column, select the policy associated with the Category "Application Control Options (Windows)".
+
+On the "Inventory" tab, review options selected.
+
+If the "Hide Windows OS Files: Inventory items signed with Microsoft certificates will not be sent to McAfee ePO." option is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-74243"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88917r2_rule" severity="medium" weight="10.0"><version>MCAC-TE-000115</version><title>The McAfee Application Control Options Inventory interval option must be configured to pull inventory from endpoints on a regular basis not to exceed seven days.</title><description>&lt;VulnDiscussion&gt;When McAfee Application Control is deployed on a system, it creates a whitelist of all executable binaries and scripts present on the system. The whitelist contains all authorized files, and only files that are present in the whitelist are allowed to execute. An executable binary, script, or process that is not in the whitelist is said to be unauthorized and is prevented from running.  McAfee Application Control uses a centralized repository of trusted applications and dynamic whitelisting to reduce manual maintenance effort.
+Running frequent Pull Inventory tasks ensures inventory information does not become stale. There must be the minimum interval between consecutive inventory pull runs (when the inventory information is fetched from the endpoints). By default, this value is 7 days and is the recommended setting. Pulling at an interval of greater than 7 days will allow for the inventory of endpoints to become stale.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80785r3_fix">From the McAfee ePO console, select Menu &gt;&gt; Systems &gt;&gt; System Tree.
+
+To apply a client task to a group, select a group in the System Tree and switch to the “Assigned Client Tasks” tab.
+
+To apply a client task to an endpoint, select the endpoint on the “Systems” page and then click Actions &gt;&gt; Agent &gt;&gt; Modify Tasks on a Single System.
+
+Click Actions &gt;&gt; New Client Task Assignment to open the “Client Task Assignment Builder” page.
+
+Select “Solidcore 7.x” for the product and “SC: Pull Inventory” for the task type and then click “Create New Task” to open the “Client Task Catalog” page.
+Specify the task name and add any descriptive information.
+
+Click “Save”.
+Click “Next” to open the “Schedule” page. Schedule the task to run at least as frequently as every 7 days and then click “Next”.
+
+Review and verify the task details and then click “Save”.
+</fixtext><fix id="F-80785r3_fix" /><check system="C-74279r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>Consult with the ISSO to determine the endpoints used for the sampling of inventory pulls.
+
+From the McAfee ePO console, select Menu &gt;&gt; Systems &gt;&gt; System Tree.
+
+If sampling is a group, select the group in the System Tree and switch to the “Assigned Client Tasks” tab.
+
+Otherwise, select each endpoint on the “Systems” page and then click Actions &gt;&gt; Agent &gt;&gt; Modify Tasks on a Single System.
+
+Confirm a client task exists with an “SC: Pull Inventory” task type. Review the task properties to validate the task is configured to run at least as frequently as every 7 days.
+
+If a sampling of endpoints does not have a “Pull Inventory” task type applied and/or the “Pull Inventory” task is not configured to run at least as frequently as every 7 days, this is a finding.
+</check-content></check></Rule></Group><Group id="V-74247"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88921r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000117</version><title>The McAfee Applications Default Rules policy must be part of the effective rules policy applied to every endpoint.</title><description>&lt;VulnDiscussion&gt;To ensure Solidcore clients are only configured to STIG and organization-specific settings, organization-specific ePO policies must be applied to all organization workstation endpoints.
+
+The McAfee Application Control installs with two Default Rules policies.
+
+The McAfee Default Rules policy includes the whitelist for commonly used applications to the platform.
+
+The McAfee Applications Default Rules policy include the whitelist for McAfee applications.
+
+Both of these policies are at the "My Organization" level of the System Tree and must be inherited by all branches of the System Tree.
+
+Organization-specific applications would be whitelisted with an organization-specific policy combined with the two Default policies into one effective policy.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80789r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+For the "Application Control Rules (Windows)" Category, click on "Edit Assignments" under the "Actions" column.
+
+Click on the "New Policy Instance" button at the bottom of the screen.
+
+Scroll down to locate the new policy instance just created.
+
+Click on the drop-down selection box for "Assigned policy:" and choose "McAfee Applications (McAfee Default)".
+
+Select the "Locked (prevent breaking inheritance below this point)" radio button.
+
+Click "Save".</fixtext><fix id="F-80789r2_fix" /><check system="C-74283r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+For the "Application Control Rules (Windows)" Category, click on "Edit Assignments" under the "Actions" column.
+
+Verify that the McAfee Applications Default Rules policy is part of the assigned policies applied to the system being reviewed.
+
+If the McAfee Applications Default Rules policy is not part of the assigned polices applied to the system being reviewed, this is a finding.</check-content></check></Rule></Group><Group id="V-74249"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88923r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000118</version><title>A copy of the McAfee Default Rules policy must be part of the effective rules policy applied to every endpoint.</title><description>&lt;VulnDiscussion&gt;To ensure Solidcore clients are only configured to STIG and organization-specific settings, an organization-specific ePO policies must be applied to all organization workstation endpoints.
+
+The McAfee Application Control installs with two Default Rules policies.
+
+The McAfee Default Rules policy includes the whitelist for commonly used applications to the platform.
+
+The McAfee Applications Default Rules policy include the whitelist for McAfee applications.
+
+Both of these policies are at the My Organization level of the System Tree and must be inherited by all branches of the System Tree.
+
+Organization-specific applications would be whitelisted with an organization-specific policy combined with the two Default policies into one effective policy.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80791r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups". 
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System". 
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+For the "Application Control Rules (Windows)" Category, click on "Edit Assignments" under the "Actions" column.
+
+Click on the "New Policy Instance" button at the bottom of the screen.
+
+Scroll down to locate the new policy instance just created. Click on the drop-down selection box for "Assigned policy:" and choose "McAfee Default)".
+
+Select the "Locked (prevent breaking inheritance below this point)" radio button.
+
+Click "Save".</fixtext><fix id="F-80791r2_fix" /><check system="C-74285r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent". 
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control. 
+
+For the "Application Control Rules (Windows)" Category, click on "Edit Assignments" under the "Actions" column.
+
+Verify that a Rules policy copied from the McAfee Default Rules policy is part of the assigned policies applied to the system being reviewed. 
+
+If a Rules policy copied from the McAfee Default Rules policy is not part of the assigned policies applied to the system being reviewed, this is a finding.</check-content></check></Rule></Group><Group id="V-74251"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88925r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000119</version><title>The organization-specific Rules policies must be part of the effective rules policy applied to all endpoints.</title><description>&lt;VulnDiscussion&gt;To ensure Solidcore clients are only configured to STIG and organization-specific settings, an organization-specific ePO policies must be applied to all organization workstation endpoints.
+
+The McAfee Application Control installs with two Default Rules policies. 
+
+The McAfee Default Rules policy includes the whitelist for commonly used applications to the platform.
+
+The McAfee Applications Default Rules policy include the whitelist for McAfee applications.
+
+Both of these policies are at the "My Organization" level of the System Tree and must be inherited by all branches of the System Tree.
+
+Organization-specific applications would be whitelisted with an organization-specific policy combined with the two Default policies into one effective policy.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80793r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups". 
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+For the "Application Control Rules (Windows)" Category, click on "Edit Assignments" under the "Actions" column.
+
+Click on the "New Policy Instance" button at the bottom of the screen.
+
+Scroll down to locate the new policy instance just created. Click on the drop-down selection box for "Assigned policy:" and choose the organization-specific policy for the system being reviewed.
+
+If one does not exist, click "New Policy" and create a new policy based upon organization's written policy.
+
+Click "Save".</fixtext><fix id="F-80793r2_fix" /><check system="C-74287r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: Application Control.
+
+For the "Application Control Rules (Windows)" Category, click on "Edit Assignments" under the "Actions" column.
+
+Verify that there exists at least one organization-specific Rules policy as part of the assigned policies applied to the system being reviewed.
+
+If an organization-specific Rules policy is not part of the assigned polices applied to the system being reviewed, this is a finding.
+
+If the only "Application Control Rules" policy applied to the system is the "McAfee Default" policy, this is a finding.</check-content></check></Rule></Group><Group id="V-74253"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88927r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000120</version><title>The organization-specific Solidcore Client Policies must be created and applied to all endpoints.</title><description>&lt;VulnDiscussion&gt;McAfee Application Control is deployed with default policies. To ensure the default policies are not used and that an organization knowingly configures their systems to their own configuration requirements, organization-specific policies will need to be created.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80795r3_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: General.
+
+From the "Actions" column, select "Edit Assignment" for the "Solidcore (Client)" Category.
+
+Next to "Assigned policy:", click on the drop-down selection box and choose an organization-specific "Solidcore (Client)" policy.
+
+Click "Save".
+
+If no organization-specific Solidcore (Client) policy exists, click on "New Policy". Choose "McAfee Default" for "Create a policy based on this existing policy".
+
+Type a unique Policy Name.
+
+Click "OK".</fixtext><fix id="F-80795r3_fix" /><check system="C-74289r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: General.
+
+From the "Policy" column, select the policy associated with the Category "Configuration (Client)" that is specific to the organization.
+
+If the only "Configuration (Client)" policy applied to the system is the "McAfee Default" policy, this is a finding.</check-content></check></Rule></Group><Group id="V-74255"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88929r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000121</version><title>The Throttling settings must be enabled and configured to settings according to organizations requirements.</title><description>&lt;VulnDiscussion&gt;The throttling settings regulate the data flow between the clients and McAfee ePO. The value for each category defines the number of entries that will be sent to the McAfee ePO daily. Clients start caching for the defined category when the specified threshold value is reached. After the cache is full, new data for that category is dropped and not sent to the McAfee ePO. As such, settings must be high enough to allow for all data to reach the McAfee ePO.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80797r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: General.
+
+From the "Policy" column, select the policy associated with the Category "Configuration (Client)" that is specific to the organization and select the "Throttling" tab.
+
+Place a check in the "Enable Throttling" check box.
+
+Configure the throttling settings based upon organization's written policy.
+
+Click "Save".</fixtext><fix id="F-80797r2_fix" /><check system="C-74291r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: General.
+
+From the "Policy" column, select the policy associated with the Category "Configuration (Client)" that is specific to the organization and select the "Throttling" tab.
+
+Verify the "Enable Throttling" check box is selected.
+
+Verify the throttling settings are configured according to organization's written policy.
+
+If the "Enable Throttling" check box is not selected, this is a finding.
+
+If the throttling settings do not match the organization's written policy or the settings are not documented in the written policy, this is a finding.</check-content></check></Rule></Group><Group id="V-74257"><title>SRG-APP-000386</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-88931r1_rule" severity="medium" weight="10.0"><version>MCAC-TE-000123</version><title>The Solidcore Client Exception Rules must be documented in the organizations written policy.</title><description>&lt;VulnDiscussion&gt;When exceptions are created for applications, it results in potential attack vectors. As such, exceptions should only be created with a full approval by the local ISSO/ISSM. The organization's entire written policy requires approval by the ISSO/ISSM/AO and is required to be under CAB/CCB oversight.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee Application Control 7.0 Managed Desktop</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee Application Control 7.0 Managed Desktop</dc:subject><dc:identifier>3143</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001774</ident><fixtext fixref="F-80799r2_fix">From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+Select the asset.
+Select "Actions".
+Select "Agent".
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: General.
+
+From the "Policy" column, select the policy associated with the Category "Exception Rules (Windows)" that is specific to the organization.
+
+Remove any exceptions which are not documented in the organization's written policy.
+
+If any exceptions are required, follow the formal change and acceptance process to document the required exceptions in the organization's written policy.</fixtext><fix id="F-80799r2_fix" /><check system="C-74293r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_Application_Control_7-x_STIG.xml" /><check-content>From the ePO server console System Tree, select the "Systems" tab.
+
+Select "This Group and All Subgroups".
+
+Select the asset to be validated.
+
+Select "Actions".
+
+Select "Agent".
+
+Select "Modify Policies on a Single System".
+
+From the product pull-down list, select Solidcore 7.x: General.
+
+From the "Policy" column, select the policy associated with the Category "Exception Rules (Windows)" that is specific to the organization.
+
+If the "Exception Rules (Windows)" policy applied to the system has exceptions documented, verify the exceptions are documented in the organization's written policy.
+
+If the Exceptions are not documented, this is a finding.</check-content></check></Rule></Group></Benchmark>

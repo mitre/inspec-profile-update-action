@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="VMware_ESX_3_Virtual_Machine" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2016-05-03">accepted</status><title>VMware ESX 3 Virtual Machine</title><description>The VMware ESX 3 Virtual Machine Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 22 Jul 2016</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-15921" selected="true" /><select idref="V-15924" selected="true" /><select idref="V-15926" selected="true" /><select idref="V-15931" selected="true" /><select idref="V-15932" selected="true" /><select idref="V-17043" selected="true" /><select idref="V-68727" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-15921" selected="true" /><select idref="V-15924" selected="true" /><select idref="V-15926" selected="true" /><select idref="V-15931" selected="true" /><select idref="V-15932" selected="true" /><select idref="V-17043" selected="true" /><select idref="V-68727" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-15921" selected="true" /><select idref="V-15924" selected="true" /><select idref="V-15926" selected="true" /><select idref="V-15931" selected="true" /><select idref="V-15932" selected="true" /><select idref="V-17043" selected="true" /><select idref="V-68727" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-15921" selected="true" /><select idref="V-15924" selected="true" /><select idref="V-15926" selected="true" /><select idref="V-15931" selected="true" /><select idref="V-15932" selected="true" /><select idref="V-17043" selected="true" /><select idref="V-68727" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-15921" selected="true" /><select idref="V-15924" selected="true" /><select idref="V-15926" selected="true" /><select idref="V-15931" selected="true" /><select idref="V-15932" selected="true" /><select idref="V-17043" selected="true" /><select idref="V-68727" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-15921" selected="true" /><select idref="V-15924" selected="true" /><select idref="V-15926" selected="true" /><select idref="V-15931" selected="true" /><select idref="V-15932" selected="true" /><select idref="V-17043" selected="true" /><select idref="V-68727" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-15921" selected="true" /><select idref="V-15924" selected="true" /><select idref="V-15926" selected="true" /><select idref="V-15931" selected="true" /><select idref="V-15932" selected="true" /><select idref="V-17043" selected="true" /><select idref="V-68727" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-15921" selected="true" /><select idref="V-15924" selected="true" /><select idref="V-15926" selected="true" /><select idref="V-15931" selected="true" /><select idref="V-15932" selected="true" /><select idref="V-17043" selected="true" /><select idref="V-68727" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-15921" selected="true" /><select idref="V-15924" selected="true" /><select idref="V-15926" selected="true" /><select idref="V-15931" selected="true" /><select idref="V-15932" selected="true" /><select idref="V-17043" selected="true" /><select idref="V-68727" selected="true" /></Profile><Group id="V-15921"><title>Unused hardware is enabled on virtual machines</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-16863r1_rule" severity="medium" weight="10.0"><version>ESX1170</version><title>Unused hardware is enabled in virtual machines.</title><description>&lt;VulnDiscussion&gt;Virtual machines can connect or disconnect hardware devices. These devices may be network adapters, CD-ROM drives, USB drives, etc. Attackers may use this capability via non-privileged users or processes to breach virtual machines in several ways. An attacker that has access to a virtual machine may connect a CD-ROM drive and access sensitive information on the media left in the drive. Another action an attacker may perform is disconnecting the network adapter to isolate the virtual machine from its network resulting in a DoS. Therefore, as a general security precaution, SAs will remove any unneeded or unused hardware devices.  If permanently removing a device is not feasible, SAs can restrict a virtual machine process or user from connecting or disconnecting devices from within the guest operating system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;[Guest Administrator]&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware Virtual Machine 3.x/4.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware Virtual Machine 3.x/4.x</dc:subject><dc:identifier>1429</dc:identifier></reference><fixtext fixref="F-15874r1_fix">Disable or remove all unused hardware in virtual machines.</fixtext><fix id="F-15874r1_fix" /><check system="C-16276r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMware_ESX_3_Virtual_Machine.xml" /><check-content>1. Login to VirtualCenter with the VI Client and select the virtual machine from the inventory panel. 
+2. Click Edit settings. 
+3. Click the Hardware tab.
+4. Compare the virtual machine requirements documentation for the virtual machine to ensure that only the required devices are configured in the hardware tab.  All devices (serial ports, network adapters, CD-ROMs, etc.) that are listed in the hardware tab and not in the virtual machine documentation will be a finding.  If no virtual machine requirements exist, this is a finding.
+</check-content></check></Rule></Group><Group id="V-15924"><title>Guest OS selection does not match installed OS</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-16866r1_rule" severity="medium" weight="10.0"><version>ESX1180</version><title>Guest OS selection does not match installed OS.</title><description>&lt;VulnDiscussion&gt;Selecting the correct guest OS for each virtual machine is important. ESX Servers optimize certain internal configurations on the basis of this selection. For this reason, it is important to set the guest operating system correctly. The correct guest operating selection can greatly aid the operating system chosen and may cause significant performance degradation if there is a mismatch between the selection and the OS actually running in the virtual machine. The performance degradation may be similar to running an unsupported OS on the ESX Server. Selecting the wrong guest OS is not likely to cause a virtual machine to run incorrectly, but it could degrade the virtual machine’s performance.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;[Guest Administrator]&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware Virtual Machine 3.x/4.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware Virtual Machine 3.x/4.x</dc:subject><dc:identifier>1429</dc:identifier></reference><fixtext fixref="F-15875r1_fix">Select the correct operating system for all virtual machines.</fixtext><fix id="F-15875r1_fix" /><check system="C-16277r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMware_ESX_3_Virtual_Machine.xml" /><check-content>Select a Linux and Windows server to verify that the OS selections are accurate.  For instance, Red Hat EL 4 should be selected as RedHat EL 4, not Linux, Suse, etc.  
+
+1. Login to VirtualCenter with the VI Client and select the virtual machine from the inventory panel. 
+2. Click Edit settings. Click Options &gt; General Options.  Review the Guest Operating System and Version to obtain the guest operating system selection.
+3. Review the selected OS and the actual OS version running.  If they are different, this is a finding.
+
+</check-content></check></Rule></Group><Group id="V-15926"><title>Guest OS is not supported by ESX Server</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-16868r1_rule" severity="high" weight="10.0"><version>ESX1190</version><title>Guest operating system is not supported by ESX Server.</title><description>&lt;VulnDiscussion&gt;The guest OS on the ESX Server must be supported by VMware. Guest OS will need to be approved by VMware so that if problems are encountered with the guest OS, VMware can assist with the resolution.  Also, unsupported guest virtual machines create problems since no documentation or support is available from VMware.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;[Guest Administrator]&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware Virtual Machine 3.x/4.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware Virtual Machine 3.x/4.x</dc:subject><dc:identifier>1429</dc:identifier></reference><fixtext fixref="F-15876r1_fix">Use only supported operating systems on the ESX Server.</fixtext><fix id="F-15876r1_fix" /><check system="C-16278r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMware_ESX_3_Virtual_Machine.xml" /><check-content>The following table lists the supported OSs for each VMware product.  For the ESX Server, focus on column 4 in the Table.  If the table has a blank box, this means the operating system is not supported.  
+1. Login to VirtualCenter with the VI Client. Select an ESX Server and review all the virtual machines.  
+2. Review the OS of the virtual machines and verify that no “other” virtual machines are running.  “Other” virtual machines may be identified by logging into VirtualCenter with the VI Client and selecting the virtual machine from the inventory panel. Click Edit settings. Click Options &gt; General Options.  Review the Guest Operating System and Version to obtain the guest operating system selection. If "other" is selected, this is a finding.  
+
+.  
+Guest Operating System	Workstation	VMware 
+ACE	GSX 
+Server   	ESX 
+Server	VMware Server   	VMware Fusion
+Windows Server 2008 
+6.0.1–6.0.2	2.0.1–2.0.2	  	3.5	  	  
+Windows Vista 
+6.0–6.0.2	2.0–2.0.2	  	3.0–3.5	  	1.0–1.1.1
+Windows Server 2003 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0–3.5	1.0–1.0.4	1.0–1.1.1
+Windows XP 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0–3.5	1.0–1.0.4	1.0–1.1.1
+Windows 2000 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0–3.5	1.0–1.0.4	1.0–1.1.1
+Windows NT 4.0 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0–3.5	1.0–1.0.4	1.0–1.1.1
+Windows Me 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	1.0–1.1.1
+Windows 98 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	1.0–1.1.1
+Windows 95 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	1.0–1.1.1
+DOS and Windows 3.1x 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	1.0–1.1.1
+Mandriva Corporate Server 4 
+5.5.3–6.0.2	2.0–2.0.2	 	 	 	  
+Mandriva Linux 2007 
+5.5.3–6.0.2	2.0–2.0.2	 	 	 	1.0–1.1.1
+Mandriva Linux 2006 
+5.5.2–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	1.0–1.1.1
+Mandrake Linux 10.1 
+5.5–6.0.2	2.0–2.0.2	3.2–3.2.1	 	1.0–1.0.4	  
+Mandrake Linux 10 
+5.0–6.0.2	2.0–2.0.2	3.2–3.2.1	 	1.0–1.0.4	  
+Mandrake Linux 9.2 
+5.0–6.0.2	2.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+Mandrake Linux 9.1 
+ 	 	3.1–3.2.1	 	 	  
+Mandrake Linux 9.0 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+Mandrake Linux 8.2 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+Mandrake Linux 8.0 and 8.1 
+ 	 	3.0–3.2.1	 	 	  
+Novell Linux Desktop 9 
+5.0–6.0.2	1.0–2.0.2	 	 	1.0–1.0.4	1.0–1.1.1
+Red Hat Enterprise Linux 5 
+5.5.3–6.0.2	2.0–2.0.2	 	3.0.2–3.5	 	1.0–1.1.1
+Red Hat Enterprise Linux 4 
+5.0–6.0.2	1.0.1–2.0.2	3.2–3.2.1	2.5.2–3.5	1.0–1.0.4	1.0–1.1.1
+Red Hat Enterprise Linux 3 
+4.5–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0.1–3.5	1.0–1.0.4	1.0–1.1.1
+Red Hat Enterprise Linux 2.1 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0–3.5	1.0–1.0.4	1.0–1.1.1
+Red Hat Linux 9.0 
+4.0.1–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0–2.5.5	1.0–1.0.4	1.0–1.1.1
+Red Hat Linux 8.0 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0–2.5.5	1.0–1.0.4	  
+Red Hat Linux 7.3 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0–2.5.5	1.0–1.0.4	  
+Red Hat Linux 7.2 
+4.0–6.0.2	1.02.0.2	3.0–3.2.1	2.0–2.5.5	1.0–1.0.4	  
+Red Hat Linux 7.1 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+Red Hat Linux 7.0 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	1.0–1.1.1
+Red Hat Linux 6.2 
+ 	 	3.0–3.2.1	 	 	  
+Sun Java Desktop System 2 
+5.0–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	  
+SUSE Linux Enterprise Server 10 
+5.5.2–6.0.2	2.0–2.0.2	 	3.0.1–3.5	1.0–1.0.4	1.0–1.1.1
+SUSE Linux Enterprise Server 9 
+5.0–6.0.2	1.0.1–2.0.2	3.2–3.2.1	2.5–3.5	1.0–1.0.4	  
+SUSE Linux Enterprise Server 8 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0–3.5	1.0–1.0.4	  
+SUSE Linux Enterprise Server 7 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+Open SUSE Linux 10.3 
+6.0.1–6.0.2	2.0.1–2.0.2	 	 	  	  
+Open SUSE Linux 10.2 
+6.0–6.0.2	2.0–2.0.2	 	 	  	  
+SUSE Linux 10.1 
+5.5.2–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	1.0–1.1.1
+SUSE Linux 10 
+5.5–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	  
+SUSE Linux 9.3 
+5.5–6.0.2	2.0–2.0.2	 	2.5.2–2.5.5	1.0–1.0.4	1.0–1.1.1
+SUSE Linux 9.2 
+5.0–6.0.2	1.0.1–2.0.2	3.2–3.2.1	2.5.1–2.5.5	1.0–1.0.4	  
+SUSE Linux 9.1 
+4.5.2–6.0.2	1.0–2.0.2	3.1–3.2.1	2.5–2.5.5	1.0–1.0.4	  
+SUSE Linux 9.0 
+4.5–6.0.2	1.0–2.0.2	3.0–3.2.1	2.1–2.5.5	1.0–1.0.4	  
+SUSE Linux 8.2 
+4.0.1–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0–2.5.5	1.0–1.0.4	  
+SUSE Linux 8.1 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+SUSE Linux 8.0 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+SUSE Linux 7.3 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+Turbolinux 10 Server 
+6.0.1–6.0.2	2.0.1–2.0.2	  	  	  	  
+Turbolinux 10 Desktop 
+5.5–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	1.0–1.1.1
+Turbolinux Enterprise Server 8 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	1.0–1.1.1
+Turbolinux Workstation 8 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+Turbolinux 7.0 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+Ubuntu Linux 7.04 
+6.0–6.0.2	2.0–2.0.2	 	3.0.2–3.5	 	  
+Ubuntu Linux 6.10 
+6.0–6.0.2	2.0–2.0.2	  	  	  	1.0–1.1.1
+Ubuntu Linux 6.06 
+5.5.2–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	  
+Ubuntu Linux 5.10 
+5.5–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	1.0–1.1.1
+Ubuntu Linux 5.04 
+5.5–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	  
+FreeBSD 6.2 
+6.0.1–6.0.2	2.0.1–2.0.2	  	  	  	  
+FreeBSD 6.1 
+5.5.2–6.0.2	2.0–2.0.2	 	 	 	1.0–1.1.1
+FreeBSD 6.0 
+5.5.2–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	  
+FreeBSD 5.5 
+5.5–6.0.2	2.0–2.0.22	  	  	1.0–1.0.4	1.0–1.1.1
+FreeBSD 5.4 
+5.5–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	  
+FreeBSD 5.3 
+5.5–6.0.2	2.0–2.0.2	 	 	1.0–1.0.4	  
+FreeBSD 5.2 
+5.0–6.0.2	2.0–2.0.2	3.1–3.2.1	 	1.0–1.0.4	  
+FreeBSD 5.1 
+5.0–6.0.2	2.0–2.0.2	3.2–3.2.1	 	1.0–1.0.4	  
+FreeBSD 5.0 
+4.5–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+FreeBSD 4.11 
+ 	 	 	2.5.4–2.5.5	 	  
+FreeBSD 4.10 
+ 	 	 	2.5–2.5.5	 	  
+FreeBSD 4.9 
+ 	 	3.2–3.2.1	2.5	 	  
+FreeBSD 4.4, 4.5, 4.6.2, 4.8 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+FreeBSD 4.0, 4.1, 4.2, 4.3 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+NetWare 6.5 Server 
+4.5–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0.1–3.5	1.0–1.0.4	1.0–1.1.1
+NetWare 6.0 Server 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0.1–3.5	1.0–1.0.4	  
+NetWare 5.1 Server 
+4.0–6.0.2	1.0–2.0.2	3.0–3.2.1	2.0.1–3.5	1.0–1.0.4	  
+NetWare 4.2 Server 
+5.5.2–6.0.2	2.0–2.0.2	3.0–3.2.1	 	1.0–1.0.4	  
+Solaris 10 Operating System for x86 Platforms 
+4.5.2–6.0.2	1.0–2.0.2	3.1–3.2.1	3.0–3.5	1.0–1.0.4	1.0–1.1.1
+Solaris 9 Operating System x86 Platform Edition 
+4.5.2–6.0.2	1.0–2.0.2	3.1–3.2.1	 	1.0–1.0.4	  
+</check-content></check></Rule></Group><Group id="V-15931"><title>Anti-virus software and signatures out-of-date</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-16873r1_rule" severity="medium" weight="10.0"><version>ESX1200</version><title>Anti-virus software and signatures are out of date for “off” and “suspended” virtual machines</title><description>&lt;VulnDiscussion&gt;Creating new virtual machines is as easy as copying a file. Copying files is a quick and efficient way to rollout new virtual machines. Virtual machines can grow at an explosive rate and really tax the security systems of an organization. Many administrative tasks may be automated, but some upgrades and patches require manual tools. For instance, virtual machines may need to be patched, scanned, and purged in response to a virus or worm attack on the network. Therefore, to protect against potential virus and spyware infections, all off and suspended virtual machines will have the latest up-to-date anti-virus software and signatures.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;[Guest Administrator]&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware Virtual Machine 3.x/4.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware Virtual Machine 3.x/4.x</dc:subject><dc:identifier>1429</dc:identifier></reference><fixtext fixref="F-15877r1_fix">Apply the latest virus updates for all “off” and “suspended” virtual machines.</fixtext><fix id="F-15877r1_fix" /><check system="C-16279r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMware_ESX_3_Virtual_Machine.xml" /><check-content>Work with the OS reviewer to determine if the requirement is being met.
+1. Login to VirtualCenter with the VI Client and select a “suspended” or “off” virtual machine. 
+2. Turn on the virtual machine and have the IAO/SA login.
+3. Obtain the running virus engine and signatures from guest OS and compare this with the latest virus engine and signatures released from the JTG-GNO.  URL for JTG-GNO is https://www.jtfgno.mil/antivirus/av_info.htm.  If the signature or engine is older than the latest release, this is a finding.
+
+</check-content></check></Rule></Group><Group id="V-15932"><title>OS patches and updates out of date </title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-16874r1_rule" severity="medium" weight="10.0"><version>ESX1210</version><title>OS patches and updates are out of date on “off” and “suspended” virtual machines.</title><description>&lt;VulnDiscussion&gt;Virtual machines create a condition where they may be on, off, or suspended.  The requirement that machines be on in a conventional approach to patch management, virus and vulnerability scanning, and machine configuration creates an issue in the virtual world. Virtual machines can appear and disappear from the network sporadically. Conventional networks can “anneal” new machines into a known good configuration state very quickly. However, converging virtual machines to a known good state is more challenging since the state may change quickly.  For instance, a vulnerable machine can appear briefly and either become infected or reappear in a vulnerable state at a later time. Therefore, vulnerable virtual machines may become infected with a virus and never be detected since the virtual machine may be suspended or off.  Suspended and off virtual machines should be patched regularly to ensure patches are up to date. Virtual machines that are on will be kept current with the OS per the appropriate OS STIG.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;[Guest Administrator]&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware Virtual Machine 3.x/4.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware Virtual Machine 3.x/4.x</dc:subject><dc:identifier>1429</dc:identifier></reference><fixtext fixref="F-15878r1_fix">Apply the latest OS patches for all “suspended” and “off” virtual machines.</fixtext><fix id="F-15878r1_fix" /><check system="C-16280r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMware_ESX_3_Virtual_Machine.xml" /><check-content>Work with the OS reviewer to determine if the requirement is being met.
+1. Login to VirtualCenter with the VI Client and select a suspended or off virtual machine. 
+2. Turn on the virtual machine and have the IAO/SA login.
+3. Have the IAO/SA obtain the latest patch level for the OS and compare this to the latest release from the OS vendor.  If the patch level is older than the latest release, this is a finding.
+
+</check-content></check></Rule></Group><Group id="V-17043"><title>Virtual Machines with incorrect posture in VMS</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-18043r1_rule" severity="medium" weight="10.0"><version>ESX1220</version><title>Virtual machines are not configured with the correct posture in VMS.</title><description>&lt;VulnDiscussion&gt;Correctly configuring virtual machine assets in VMS will ensure that the appropriate vulnerabilities are assigned to the asset. If the asset is not configured with the correct posture, vulnerabilities may be open on the asset.  These open vulnerabilities may allow an attacker access to the system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;[Guest Administrator]&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware Virtual Machine 3.x/4.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware Virtual Machine 3.x/4.x</dc:subject><dc:identifier>1429</dc:identifier></reference><fixtext fixref="F-16847r1_fix">Configure the virtual machine with the proper posture in VMS.</fixtext><fix id="F-16847r1_fix" /><check system="C-17721r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMware_ESX_3_Virtual_Machine.xml" /><check-content>Verify the correct postures are configured for virtual machine assets.  If there are many assets, check a sampling of the total virtual machines registered. 
+
+    UNIX (Linux or Unix) or Windows (Windows OS Version)
+    VMware Virtual Machine
+
+If the virtual machine is not registered or is not registered properly, this is a finding.
+</check-content></check></Rule></Group><Group id="V-68727"><title>VMware ESX 3 and 4 Unsupported</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-83305r1_rule" severity="high" weight="10.0"><version>ESX1100</version><title>VMware ESX virtual machines that are no longer supported by the vendor for security updates must not be installed on a system.</title><description>&lt;VulnDiscussion&gt;VMware ESX operating systems, virtual machines, and associated management software that are no longer supported by VMware for security updates are not evaluated or updated for vulnerabilities leaving them open to potential attack.  Organizations must transition to a supported ESXi operating system, virtual machines, and associated management software to ensure continued support.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;DCSQ-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware Virtual Machine 3.x/4.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware Virtual Machine 3.x/4.x</dc:subject><dc:identifier>1429</dc:identifier></reference><fixtext fixref="F-74849r1_fix">Upgrade ESX version 3 and 4 virtual machines to supported versions.
+</fixtext><fix id="F-74849r1_fix" /><check system="C-69219r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMware_ESX_3_Virtual_Machine.xml" /><check-content>VMware support for ESX versions 3 and 4 ended 21 May 2016.  If ESX version 3 or 4 virtual machines are installed on a system, this is a finding.</check-content></check></Rule></Group></Benchmark>
