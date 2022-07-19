@@ -33,4 +33,4 @@ COPY index.js /index.js
 RUN apk add bash jq curl ca-certificates
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-CMD ["node", "index.js"]
+CMD ["node", "/index.js"]
