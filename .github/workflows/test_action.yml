@@ -3,7 +3,7 @@ on: [push]
 jobs:
   test_action:
     runs-on: ubuntu-latest
-    name: A job to test the inpec-profile-update action
+    name: Test inpec-profile-update action
     steps:
       # To use this repository's private action,
       # you must check out the repository
@@ -13,7 +13,7 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
-          who-to-greet: 'Mona the Octocat'
+          profile-url: ''
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
