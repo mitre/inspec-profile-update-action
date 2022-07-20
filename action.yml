@@ -1,5 +1,9 @@
 name: 'InSpec Profile Updater'
 description: 'Automattically update InSpec profiles with the newest releases from DISA and CIS'
+inputs:
+  profile:
+    description: 'The unique identifier for your profile'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
