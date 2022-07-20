@@ -52,27 +52,37 @@ for row in table.find_all('tr'):
         if (href != "" and name != "" and size != "" and ('stig' in name.lower() or 'benchmark' in name.lower() or 'stig' in href.lower() or 'benchmark' in href.lower()) and "viewer" not in name.lower()):
             # Check if the similarity of the current name is similar to an existing name
             newStig = True
+            knownIndex = 0
             hrefWithNoVersion = re.sub(r'V\d(\d?)(\d?)(\d?)(\d?)R\d(\d?)(\d?)(\d?)(\d?)', '', href)
-            for knownURL in knownURLs:
+            for idx, knownURL in enumerate(knownURLs):
                 knownURLWithNoVersion = re.sub(r'V\d(\d?)(\d?)(\d?)(\d?)R\d(\d?)(\d?)(\d?)(\d?)', '', knownURL)
                 if SequenceMatcher(None, hrefWithNoVersion, knownURLWithNoVersion).ratio() > 0.99:
                     print("Found a duplicate: " + href)
                     print("Similar to: " + knownURL)
+                    knownIndex = idx
                     newStig = False
                     break
             if newStig:
                 if (href.lower().endswith('.zip')):
                     knownURLs.append(href)
-                    print(f"Downloading {name}: {href}")
-                    urllib.request.urlretrieve(href, "tmp/" + getFilenameFromURL(href))
-                    stigs.append({
-                        'id': str(uuid.uuid4()),
-                        'name': name,
-                        'url': href,
-                        'size': size
-                    })
+                    #print(f"Downloading {name}: {href}")
+                    #urllib.request.urlretrieve(href, "tmp/" + getFilenameFromURL(href))
+                    # Get version from the file name e.g "U_IBM_MaaS360_with_Watson_v10-x_MDM_V1R2_STIG.zip"
+                    version = re.search(r'V\d(\d?)(\d?)(\d?)(\d?)R\d(\d?)(\d?)(\d?)(\d?)', href).group(0)
+                    if version:
+                        stigs.append({
+                            'id': str(uuid.uuid4()),
+                            'name': name,
+                            'url': href,
+                            'size': size,
+                            'version': version
+                        })
             else:
-                print("Existing STIG: " + name)
+                stigs[knownIndex]['url'] = href
+                stigs[knownIndex]['size'] = size
+                stigs[knownIndex]['version'] = version
+                stigs[knownIndex]['name'] = name
+
     except KeyboardInterrupt:
         exit()
     except Exception as e:
