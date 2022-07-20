@@ -8,11 +8,13 @@ console.log(`Current version: ${version}`);
 
 const profile = process.env.profile
 
+let foundProfile = false
 
 // Find latest version
 axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/main/stigs.json`).then(({data}) => {
     data.forEach(stig => {
         if (stig.id === profile) {
+            foundProfile = true;
             console.log(`Latest version: ${stig.version}`);
             if (stig.version !== version) {
                 console.log(`New version available: ${stig.version}`);
@@ -21,4 +23,8 @@ axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/
             }
         }
     })
+}).then(() => {
+    if (!foundProfile) {
+        throw new Error(`Benchmark ID ${profile} not found.`);
+    }
 })
