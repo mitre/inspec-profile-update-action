@@ -5,4 +5,4 @@ const fs = require('fs');
 const version = fs.readFileSync('/github/workspace/VERSION', 'utf-8');
 console.log(`Current version: ${version}`);
 
-console.log(process.env)
+console.log(process.argv)
