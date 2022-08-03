@@ -1,7 +1,6 @@
 const { exec } = require('child_process');
 const axios = require('axios');
 const fs = require('fs');
-const saf = require('@mitre/saf');
 
 // Find current version
 const version = fs.readFileSync('/github/workspace/VERSION', 'utf-8');
