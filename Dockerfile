@@ -2,7 +2,7 @@
 ARG CACHEBUST=1
 FROM node:lts-alpine as builder
 
-ARG branch=delta
+ARG branch=main
 
 LABEL name="inspec-profile-update-action" \
       vendor="The MITRE Corporation" \
