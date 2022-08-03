@@ -51,9 +51,8 @@ axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/
         } else {
           console.log(stig)
           // Download the latest STIG
-          downloadFile(stig.url, '/github/workspace/update.xccdf').then(() => {
-            exec('saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf')
-          })
+          exec(`wget -O /github/workspace/update.xccdf ${stig.url}`)
+          exec('saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf')
         }
       } else {
         console.log(`No new version available.`);
