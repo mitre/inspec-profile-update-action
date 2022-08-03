@@ -15,10 +15,6 @@ async function downloadFile(fileUrl, outputLocationPath) {
   const writer = fs.createWriteStream(outputLocationPath);
 
   return axios.get(fileUrl, { responseType: 'stream' }).then(response => {
-
-    //ensure that the user can call `then()` only when the file has
-    //been downloaded entirely.
-
     return new Promise((resolve, reject) => {
       response.data.pipe(writer);
       let error = null;
@@ -32,7 +28,10 @@ async function downloadFile(fileUrl, outputLocationPath) {
           resolve(true);
         }
       });
-    });
+    }).catch((error) => {
+      console.log(error)
+      reject(error)
+    })
   });
 }
 
@@ -47,6 +46,7 @@ axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/
         if (!fs.existsSync('/github/workspace/profile.json')) {
           throw new Error("profile.json is missing. Please generate one with `inspec profile . > profile.json`")
         } else {
+          console.log(stig)
           // Download the latest STIG
           downloadFile(stig.url, '/github/workspace/update.xccdf').then(() => {
             exec('saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf')
