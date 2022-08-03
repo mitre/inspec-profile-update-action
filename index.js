@@ -11,32 +11,17 @@ const profile = process.env.profile
 
 let foundProfile = false
 
-async function downloadFile(fileUrl, outputLocationPath) {
-  const writer = fs.createWriteStream(outputLocationPath);
-
-  return axios.get(fileUrl, { responseType: 'stream', headers: {
-    // Required to disable OPTIONS request sent to github
-    'Access-Control-Max-Age': '86400',
-  }}).then(response => {
-    return new Promise((resolve, reject) => {
-      response.data.pipe(writer);
-      let error = null;
-      writer.on('error', err => {
-        error = err;
-        writer.close();
-        reject(err);
-      });
-      writer.on('close', () => {
-        if (!error) {
-          resolve(true);
-        }
-      });
-    }).catch((error) => {
-      console.log(error)
-      reject(error)
-    })
+async function execShellCommand(cmd) {
+  const exec = require('child_process').exec;
+  return new Promise((resolve, reject) => {
+   exec(cmd, (error, stdout, stderr) => {
+    if (error) {
+     console.warn(error);
+    }
+    resolve(stdout? stdout : stderr);
+   });
   });
-}
+ }
 
 // Find latest version
 axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/main/stigs.json`).then(({ data }) => {
@@ -51,8 +36,8 @@ axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/
         } else {
           console.log(stig)
           // Download the latest STIG
-          exec(`wget -O /github/workspace/update.xccdf ${stig.url}`)
-          exec('saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf')
+          console.log(await execShellCommand(`wget -O /github/workspace/update.xccdf ${stig.url}`))
+          console.log(await execShellCommand('saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf'))
         }
       } else {
         console.log(`No new version available.`);
