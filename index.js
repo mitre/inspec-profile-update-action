@@ -12,7 +12,7 @@ const profile = process.env.profile
 
 let foundProfile = false
 
-export async function downloadFile(fileUrl, outputLocationPath) {
+async function downloadFile(fileUrl, outputLocationPath) {
   const writer = fs.createWriteStream(outputLocationPath);
 
   return axios.get(fileUrl, { responseType: 'stream' }).then(response => {
