@@ -14,7 +14,10 @@ let foundProfile = false
 async function downloadFile(fileUrl, outputLocationPath) {
   const writer = fs.createWriteStream(outputLocationPath);
 
-  return axios.get(fileUrl, { responseType: 'stream' }).then(response => {
+  return axios.get(fileUrl, { responseType: 'stream', headers: {
+    // Required to disable OPTIONS request sent to github
+    'Access-Control-Max-Age': '86400',
+  }}).then(response => {
     return new Promise((resolve, reject) => {
       response.data.pipe(writer);
       let error = null;
