@@ -38,9 +38,8 @@ axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/
                     throw new Error("profile.json is missing. Please generate one with `inspec profile . > profile.json`")
                 } else {
                     console.log(stig)
-                    // Download the latest STIG
-                    //   console.log(await execShellCommand(`wget -O /github/workspace/update.xccdf ${stig.url}`))
-                    //   console.log(await execShellCommand('saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf'))
+                    await execShellCommand(`wget -O /github/workspace/update.xccdf ${stig.url}`)
+                    await execShellCommand('saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf')
                 }
             } else {
                 console.log(`No new version available.`);
