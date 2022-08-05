@@ -30,7 +30,7 @@ axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/
                     console.log(execSync(`wget -O /github/workspace/update.xccdf ${stig.file}`))
 
                     execSync('mkdir /github/workspace/revisions/')
-                    console.log(execSync('ls -lah /github/workspace/`'))
+                    console.log(execSync('ls -lah /github/workspace/'))
                     if (process.env.identifier === 'group') {
                         console.log(execSync(`saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf --useGroupID --logLevel debug --report "/github/workspace/revisions/${version.trim()}-to-${stig.version}.md"`))
                     } else if (process.env.identifier === 'stig') {
