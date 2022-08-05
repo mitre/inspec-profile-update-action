@@ -27,20 +27,17 @@ axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/
                 if (!fs.existsSync('/github/workspace/profile.json')) {
                     throw new Error("profile.json is missing. Please generate one with `inspec profile . > profile.json`")
                 } else {
-                    console.log(stig)
                     console.log(execSync(`wget -O /github/workspace/update.xccdf ${stig.file}`))
 
-                    if (!fs.existsSync('/github/workspace/revisions')) {
-                        fs.mkdirSync('/github/workspace/revisions/')
-                    }
+                    execSync('mkdir /github/workspace/revisions/')
                     if (process.env.identifier === 'group') {
-                        console.log(execSync(`saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf --useGroupID --logLevel debug --report "/github/workspace/revisions/${version.trim()}-to-${stig.version}"`))
+                        console.log(execSync(`saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf --useGroupID --logLevel debug --report "/github/workspace/revisions/${version.trim()}-to-${stig.version}.md"`))
                     } else if (process.env.identifier === 'stig') {
-                        console.log(execSync(`saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf --useStigID --logLevel debug --report "/github/workspace/revisions/${version.trim()}-to-${stig.version}"`))
+                        console.log(execSync(`saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf --useStigID --logLevel debug --report "/github/workspace/revisions/${version.trim()}-to-${stig.version}.md"`))
                     } else if (process.env.identifier === 'cis') {
-                        console.log(execSync(`saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf --useCISId --logLevel debug --report "/github/workspace/revisions/${version.trim()}-to-${stig.version}"`))
+                        console.log(execSync(`saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf --useCISId --logLevel debug --report "/github/workspace/revisions/${version.trim()}-to-${stig.version}.md"`))
                     } else {
-                        console.log(execSync(`saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf --useVulnerabilityId --logLevel debug --report "/github/workspace/revisions/${version.trim()}-to-${stig.version}"`))
+                        console.log(execSync(`saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf --useVulnerabilityId --logLevel debug --report "/github/workspace/revisions/${version.trim()}-to-${stig.version}.md"`))
                     }
                     
                 }
