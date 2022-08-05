@@ -1,5 +1,5 @@
 const {
-    exec
+    execSync
 } = require('child_process');
 const axios = require('axios');
 const fs = require('fs');
@@ -13,16 +13,6 @@ const profile = process.env.profile
 
 let foundProfile = false
 
-async function execShellCommand(cmd) {
-    return new Promise((resolve, reject) => {
-        exec(cmd, (error, stdout, stderr) => {
-            if (error) {
-                console.warn(error);
-            }
-            resolve(stdout ? stdout : stderr);
-        });
-    });
-}
 
 // Find latest version
 axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/main/stigs.json`).then(({
@@ -38,8 +28,8 @@ axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/
                     throw new Error("profile.json is missing. Please generate one with `inspec profile . > profile.json`")
                 } else {
                     console.log(stig)
-                    await execShellCommand(`wget -O /github/workspace/update.xccdf ${stig.url}`)
-                    await execShellCommand('saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf')
+                    console.log(execSync(`wget -O /github/workspace/update.xccdf ${stig.url}`))
+                    console.log(execSync('saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf'))
                 }
             } else {
                 console.log(`No new version available.`);
