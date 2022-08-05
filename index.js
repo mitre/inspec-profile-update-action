@@ -28,7 +28,7 @@ axios.get(`https://raw.githubusercontent.com/mitre/inspec-profile-update-action/
                     throw new Error("profile.json is missing. Please generate one with `inspec profile . > profile.json`")
                 } else {
                     console.log(stig)
-                    console.log(execSync(`wget -O /github/workspace/update.xccdf ${stig.url}`))
+                    console.log(execSync(`wget -O /github/workspace/update.xccdf ${stig.file}`))
                     console.log(execSync('saf generate delta -i /github/workspace/ /github/workspace/profile.json /github/workspace/update.xccdf'))
                 }
             } else {
