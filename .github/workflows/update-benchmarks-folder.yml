@@ -17,8 +17,8 @@ jobs:
         run: |
           sudo apt install python3 python3-pip
           sudo pip3 install -r requirements.txt
-          python3 getBenchmarks.py
-          python3 downloadBenchmarks.py
+          python3 getStigs.py
+          python3 downloadStigs.py
           cd tmp
           bash extract.sh
           cd ..
