@@ -5,8 +5,8 @@ do
     find . -name "*.zip" -print0 | while read -d $'\0' file
     do
         echo $file
-        unzip -d tmp -o $file
-        rm -f $file
+        unzip -d tmp -o "$file"
+        rm -f "$file"
     done
 done
 
