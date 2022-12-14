@@ -10,4 +10,4 @@ with open('stigs.json') as json_file:
 for stig in stigs:
     # Download ZIP from DISA
     if 'scc' not in stig['url'].lower():
-        os.system(f"wget {stig['url']} -O tmp/stigs/{stig['id']}.zip")
+        os.system(f"wget {stig['url']} -O tmp/input/{stig['id']}.zip")
