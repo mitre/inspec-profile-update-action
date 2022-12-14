@@ -1,0 +1,24 @@
+
+on: [push]
+
+jobs:
+  test_action:
+    runs-on: ubuntu-latest
+    name: Test inpec-profile-update action
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v3
+      # Update profile
+      - name: Updates profile
+        uses: mitre/inspec-profile-update-action@main
+        # Set env variables
+        env:
+          profile: 16c9eab2-69c5-434b-acc6-b2b92b2fc861
+      # Create new branch
+      - name: Push changes to new PR
+        uses: peter-evans/create-pull-request@v4
+        with:
+          branch: update-profile
+          delete-branch: true
