@@ -55,7 +55,7 @@ for stig in data:
     html += f"""
         <td><a href="{stig['url']}">Download</a></td>
         <td>{stig['size']}</td>
-        <td><a href="actions/{stig['id']}.yml">View Action</a></td>
+        <td><a href="actions/{stig['id']}.yml">Download Action</a></td>
     </tr>"""
 html += "</table>"
 
