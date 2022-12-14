@@ -1,0 +1,29 @@
+# Daily run
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  push: # For testing
+    branches:
+      - master
+  
+jobs:
+  update_stigs:
+    runs-on: ubuntu-latest
+    name: Update STIGs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Update STIGs
+        run: |
+          apt install python3 python3-pip
+          pip3 install -r requirements.txt
+          python3 getStigs.py
+      # Copy changes to stigs.json from main to hosted
+      - name: Copy changes to hosted
+        run: |
+          git checkout hosted
+          git checkout main stigs.json
+      - name: Commit changes
+        run: |
+          git config --local user.name "Automated Update"
+          git config --local user.email "automated@mitre.org"
