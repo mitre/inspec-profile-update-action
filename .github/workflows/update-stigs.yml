@@ -18,6 +18,10 @@ jobs:
           sudo apt install python3 python3-pip
           sudo pip3 install -r requirements.txt
           python3 getStigs.py
+      - name: Configure git
+        run: |
+          git config --local user.name "Automated Update"
+          git config --local user.email "automated@mitre.org"
       - name: Copy changes to hosted
         run: |
           git fetch
@@ -26,8 +30,7 @@ jobs:
           git add stigs.json
       - name: Commit changes
         run: |
-          git config --local user.name "Automated Update"
-          git config --local user.email "automated@mitre.org"
+          git commit -m "Update STIGs"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
