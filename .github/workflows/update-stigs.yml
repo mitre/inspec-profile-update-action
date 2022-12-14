@@ -15,8 +15,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Update STIGs
         run: |
-          apt install python3 python3-pip
-          pip3 install -r requirements.txt
+          sudo apt install python3 python3-pip
+          sudo pip3 install -r requirements.txt
           python3 getStigs.py
       # Copy changes to stigs.json from main to hosted
       - name: Copy changes to hosted
