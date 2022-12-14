@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Google_Android_9-x_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2022-08-29">accepted</status><title>Google Android 9.x Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 27 Oct 2022</plain-text><plain-text id="generator">3.4.0.34222</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>2</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-228278" selected="true" /><select idref="V-228279" selected="true" /><select idref="V-228280" selected="true" /><select idref="V-228281" selected="true" /><select idref="V-228282" selected="true" /><select idref="V-228283" selected="true" /><select idref="V-228284" selected="true" /><select idref="V-228285" selected="true" /><select idref="V-228286" selected="true" /><select idref="V-228287" selected="true" /><select idref="V-228288" selected="true" /><select idref="V-228289" selected="true" /><select idref="V-228290" selected="true" /><select idref="V-228291" selected="true" /><select idref="V-228292" selected="true" /><select idref="V-228293" selected="true" /><select idref="V-228294" selected="true" /><select idref="V-228295" selected="true" /><select idref="V-228296" selected="true" /><select idref="V-228297" selected="true" /><select idref="V-228298" selected="true" /><select idref="V-228299" selected="true" /><select idref="V-228300" selected="true" /><select idref="V-228301" selected="true" /><select idref="V-228302" selected="true" /><select idref="V-228303" selected="true" /><select idref="V-228304" selected="true" /><select idref="V-228305" selected="true" /><select idref="V-228306" selected="true" /><select idref="V-228307" selected="true" /><select idref="V-228308" selected="true" /><select idref="V-228309" selected="true" /><select idref="V-228310" selected="true" /><select idref="V-254524" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-228278" selected="true" /><select idref="V-228279" selected="true" /><select idref="V-228280" selected="true" /><select idref="V-228281" selected="true" /><select idref="V-228282" selected="true" /><select idref="V-228283" selected="true" /><select idref="V-228284" selected="true" /><select idref="V-228285" selected="true" /><select idref="V-228286" selected="true" /><select idref="V-228287" selected="true" /><select idref="V-228288" selected="true" /><select idref="V-228289" selected="true" /><select idref="V-228290" selected="true" /><select idref="V-228291" selected="true" /><select idref="V-228292" selected="true" /><select idref="V-228293" selected="true" /><select idref="V-228294" selected="true" /><select idref="V-228295" selected="true" /><select idref="V-228296" selected="true" /><select idref="V-228297" selected="true" /><select idref="V-228298" selected="true" /><select idref="V-228299" selected="true" /><select idref="V-228300" selected="true" /><select idref="V-228301" selected="true" /><select idref="V-228302" selected="true" /><select idref="V-228303" selected="true" /><select idref="V-228304" selected="true" /><select idref="V-228305" selected="true" /><select idref="V-228306" selected="true" /><select idref="V-228307" selected="true" /><select idref="V-228308" selected="true" /><select idref="V-228309" selected="true" /><select idref="V-228310" selected="true" /><select idref="V-254524" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-228278" selected="true" /><select idref="V-228279" selected="true" /><select idref="V-228280" selected="true" /><select idref="V-228281" selected="true" /><select idref="V-228282" selected="true" /><select idref="V-228283" selected="true" /><select idref="V-228284" selected="true" /><select idref="V-228285" selected="true" /><select idref="V-228286" selected="true" /><select idref="V-228287" selected="true" /><select idref="V-228288" selected="true" /><select idref="V-228289" selected="true" /><select idref="V-228290" selected="true" /><select idref="V-228291" selected="true" /><select idref="V-228292" selected="true" /><select idref="V-228293" selected="true" /><select idref="V-228294" selected="true" /><select idref="V-228295" selected="true" /><select idref="V-228296" selected="true" /><select idref="V-228297" selected="true" /><select idref="V-228298" selected="true" /><select idref="V-228299" selected="true" /><select idref="V-228300" selected="true" /><select idref="V-228301" selected="true" /><select idref="V-228302" selected="true" /><select idref="V-228303" selected="true" /><select idref="V-228304" selected="true" /><select idref="V-228305" selected="true" /><select idref="V-228306" selected="true" /><select idref="V-228307" selected="true" /><select idref="V-228308" selected="true" /><select idref="V-228309" selected="true" /><select idref="V-228310" selected="true" /><select idref="V-254524" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-228278" selected="true" /><select idref="V-228279" selected="true" /><select idref="V-228280" selected="true" /><select idref="V-228281" selected="true" /><select idref="V-228282" selected="true" /><select idref="V-228283" selected="true" /><select idref="V-228284" selected="true" /><select idref="V-228285" selected="true" /><select idref="V-228286" selected="true" /><select idref="V-228287" selected="true" /><select idref="V-228288" selected="true" /><select idref="V-228289" selected="true" /><select idref="V-228290" selected="true" /><select idref="V-228291" selected="true" /><select idref="V-228292" selected="true" /><select idref="V-228293" selected="true" /><select idref="V-228294" selected="true" /><select idref="V-228295" selected="true" /><select idref="V-228296" selected="true" /><select idref="V-228297" selected="true" /><select idref="V-228298" selected="true" /><select idref="V-228299" selected="true" /><select idref="V-228300" selected="true" /><select idref="V-228301" selected="true" /><select idref="V-228302" selected="true" /><select idref="V-228303" selected="true" /><select idref="V-228304" selected="true" /><select idref="V-228305" selected="true" /><select idref="V-228306" selected="true" /><select idref="V-228307" selected="true" /><select idref="V-228308" selected="true" /><select idref="V-228309" selected="true" /><select idref="V-228310" selected="true" /><select idref="V-254524" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-228278" selected="true" /><select idref="V-228279" selected="true" /><select idref="V-228280" selected="true" /><select idref="V-228281" selected="true" /><select idref="V-228282" selected="true" /><select idref="V-228283" selected="true" /><select idref="V-228284" selected="true" /><select idref="V-228285" selected="true" /><select idref="V-228286" selected="true" /><select idref="V-228287" selected="true" /><select idref="V-228288" selected="true" /><select idref="V-228289" selected="true" /><select idref="V-228290" selected="true" /><select idref="V-228291" selected="true" /><select idref="V-228292" selected="true" /><select idref="V-228293" selected="true" /><select idref="V-228294" selected="true" /><select idref="V-228295" selected="true" /><select idref="V-228296" selected="true" /><select idref="V-228297" selected="true" /><select idref="V-228298" selected="true" /><select idref="V-228299" selected="true" /><select idref="V-228300" selected="true" /><select idref="V-228301" selected="true" /><select idref="V-228302" selected="true" /><select idref="V-228303" selected="true" /><select idref="V-228304" selected="true" /><select idref="V-228305" selected="true" /><select idref="V-228306" selected="true" /><select idref="V-228307" selected="true" /><select idref="V-228308" selected="true" /><select idref="V-228309" selected="true" /><select idref="V-228310" selected="true" /><select idref="V-254524" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-228278" selected="true" /><select idref="V-228279" selected="true" /><select idref="V-228280" selected="true" /><select idref="V-228281" selected="true" /><select idref="V-228282" selected="true" /><select idref="V-228283" selected="true" /><select idref="V-228284" selected="true" /><select idref="V-228285" selected="true" /><select idref="V-228286" selected="true" /><select idref="V-228287" selected="true" /><select idref="V-228288" selected="true" /><select idref="V-228289" selected="true" /><select idref="V-228290" selected="true" /><select idref="V-228291" selected="true" /><select idref="V-228292" selected="true" /><select idref="V-228293" selected="true" /><select idref="V-228294" selected="true" /><select idref="V-228295" selected="true" /><select idref="V-228296" selected="true" /><select idref="V-228297" selected="true" /><select idref="V-228298" selected="true" /><select idref="V-228299" selected="true" /><select idref="V-228300" selected="true" /><select idref="V-228301" selected="true" /><select idref="V-228302" selected="true" /><select idref="V-228303" selected="true" /><select idref="V-228304" selected="true" /><select idref="V-228305" selected="true" /><select idref="V-228306" selected="true" /><select idref="V-228307" selected="true" /><select idref="V-228308" selected="true" /><select idref="V-228309" selected="true" /><select idref="V-228310" selected="true" /><select idref="V-254524" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-228278" selected="true" /><select idref="V-228279" selected="true" /><select idref="V-228280" selected="true" /><select idref="V-228281" selected="true" /><select idref="V-228282" selected="true" /><select idref="V-228283" selected="true" /><select idref="V-228284" selected="true" /><select idref="V-228285" selected="true" /><select idref="V-228286" selected="true" /><select idref="V-228287" selected="true" /><select idref="V-228288" selected="true" /><select idref="V-228289" selected="true" /><select idref="V-228290" selected="true" /><select idref="V-228291" selected="true" /><select idref="V-228292" selected="true" /><select idref="V-228293" selected="true" /><select idref="V-228294" selected="true" /><select idref="V-228295" selected="true" /><select idref="V-228296" selected="true" /><select idref="V-228297" selected="true" /><select idref="V-228298" selected="true" /><select idref="V-228299" selected="true" /><select idref="V-228300" selected="true" /><select idref="V-228301" selected="true" /><select idref="V-228302" selected="true" /><select idref="V-228303" selected="true" /><select idref="V-228304" selected="true" /><select idref="V-228305" selected="true" /><select idref="V-228306" selected="true" /><select idref="V-228307" selected="true" /><select idref="V-228308" selected="true" /><select idref="V-228309" selected="true" /><select idref="V-228310" selected="true" /><select idref="V-254524" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-228278" selected="true" /><select idref="V-228279" selected="true" /><select idref="V-228280" selected="true" /><select idref="V-228281" selected="true" /><select idref="V-228282" selected="true" /><select idref="V-228283" selected="true" /><select idref="V-228284" selected="true" /><select idref="V-228285" selected="true" /><select idref="V-228286" selected="true" /><select idref="V-228287" selected="true" /><select idref="V-228288" selected="true" /><select idref="V-228289" selected="true" /><select idref="V-228290" selected="true" /><select idref="V-228291" selected="true" /><select idref="V-228292" selected="true" /><select idref="V-228293" selected="true" /><select idref="V-228294" selected="true" /><select idref="V-228295" selected="true" /><select idref="V-228296" selected="true" /><select idref="V-228297" selected="true" /><select idref="V-228298" selected="true" /><select idref="V-228299" selected="true" /><select idref="V-228300" selected="true" /><select idref="V-228301" selected="true" /><select idref="V-228302" selected="true" /><select idref="V-228303" selected="true" /><select idref="V-228304" selected="true" /><select idref="V-228305" selected="true" /><select idref="V-228306" selected="true" /><select idref="V-228307" selected="true" /><select idref="V-228308" selected="true" /><select idref="V-228309" selected="true" /><select idref="V-228310" selected="true" /><select idref="V-254524" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-228278" selected="true" /><select idref="V-228279" selected="true" /><select idref="V-228280" selected="true" /><select idref="V-228281" selected="true" /><select idref="V-228282" selected="true" /><select idref="V-228283" selected="true" /><select idref="V-228284" selected="true" /><select idref="V-228285" selected="true" /><select idref="V-228286" selected="true" /><select idref="V-228287" selected="true" /><select idref="V-228288" selected="true" /><select idref="V-228289" selected="true" /><select idref="V-228290" selected="true" /><select idref="V-228291" selected="true" /><select idref="V-228292" selected="true" /><select idref="V-228293" selected="true" /><select idref="V-228294" selected="true" /><select idref="V-228295" selected="true" /><select idref="V-228296" selected="true" /><select idref="V-228297" selected="true" /><select idref="V-228298" selected="true" /><select idref="V-228299" selected="true" /><select idref="V-228300" selected="true" /><select idref="V-228301" selected="true" /><select idref="V-228302" selected="true" /><select idref="V-228303" selected="true" /><select idref="V-228304" selected="true" /><select idref="V-228305" selected="true" /><select idref="V-228306" selected="true" /><select idref="V-228307" selected="true" /><select idref="V-228308" selected="true" /><select idref="V-228309" selected="true" /><select idref="V-228310" selected="true" /><select idref="V-254524" selected="true" /></Profile><Group id="V-228278"><title>PP-MDF-301010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228278r494903_rule" weight="10.0" severity="medium"><version>GOOG-09-000100</version><title>The Google Android Pie must be configured to enforce a minimum password length of six characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. The ability to crack a password is a function of how many attempts an adversary is permitted, how quickly an adversary can do each attempt, and the size of the password space. The longer the minimum length of the password is, the larger the password space. Having a too-short minimum password length significantly reduces password strength, increasing the chance of password compromise and resulting device and data compromise.
+
+SFR ID: FMT_SMF_EXT.1.1 #1a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106409</ident><ident system="http://cyber.mil/legacy">V-97305</ident><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-30496r494902_fix">Configure the Google Android device to enforce a minimum password length of six characters.
+
+On the MDM console:
+1. Open password requirements.
+2. Open device password section.
+3. Enter in the number of characters as "6".</fixtext><fix id="F-30496r494902_fix" /><check system="C-30511r494901_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the mobile device is enforcing a minimum password length of six characters.
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console:
+1. Open password requirements
+2. Open device password section
+3. Ensure the minimum password length is set to "6" characters
+
+On the Android Pie device, do the following:
+
+1. Open Settings &gt; Security &amp; location &gt; Screen lock
+2. Enter current password
+3. Tap on "Password"
+4. Verify Password length listed is at least 6
+
+If the device password length is not set to six characters or more on MDM console or on the Android Pie device, this is a finding.</check-content></check></Rule></Group><Group id="V-228279"><title>PP-MDF-301020</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228279r494906_rule" weight="10.0" severity="medium"><version>GOOG-09-000200</version><title>The Google Android Pie must be configured to not allow passwords that include more than two repeating or sequential characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. Passwords that contain repeating or sequential characters are significantly easier to guess than those that do not contain repeating or sequential characters. Therefore, disallowing repeating or sequential characters increases password strength and decreases risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #1b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106411</ident><ident system="http://cyber.mil/legacy">V-97307</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30497r494905_fix">Configure the Google Android device to prevent passwords from containing more than two repeating or sequential characters.
+
+On the MDM console:
+1.  Open password requirements
+2.  Open device password section
+3.  Set password quality to "Numeric (Complex)"
+
+Note: Alphabetic, Alphanumeric, and Complex are also acceptable selections but these selections will cause the user to select a complex password, which is not required by the STIG.</fixtext><fix id="F-30497r494905_fix" /><check system="C-30512r494904_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the mobile device is prohibiting passwords with more than two repeating or sequential characters.  
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console, do the following:
+
+On the MDM console:
+1.  Open password requirements
+2.  Open device password section
+3.  Ensure the password quality is set to "Numeric (Complex)"
+
+On the Android Pie device, do the following:
+
+1.  Open Settings &gt;&gt; Security &amp; location &gt;&gt; Screen lock
+2.  Enter current password
+3.  Tap on "Password"
+4.  Verify Password complexity requirements are listed: Ascending, descending, or repeated sequence of digits isn't allowed
+
+If the MDM console device policy is set to a password with more than two repeating or sequential characters or, on the Android Pie device, the device policy is set to a password with more than two repeating or sequential characters, this is a finding.
+
+Note: Alphabetic, Alphanumeric, and Complex are also acceptable selections but these selections will cause the user to select a complex password, which is not required by the STIG.</check-content></check></Rule></Group><Group id="V-228280"><title>PP-MDF-301030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228280r494909_rule" weight="10.0" severity="medium"><version>GOOG-09-000300</version><title>The Google Android Pie must be configured to enable a screen-lock policy that will lock the display after a period of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen-lock timeout helps protect the device from unauthorized access. Devices without a screen-lock timeout provide an opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device and possibly access to DoD networks.
+
+SFR ID: FMT_SMF_EXT.1.1 #2a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106413</ident><ident system="http://cyber.mil/legacy">V-97309</ident><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-30498r494908_fix">Configure the Google Android device to enable a screen-lock policy that will lock the display after a period of inactivity.
+
+On the MDM Console:
+1. Open password requirements.
+2. Open device password section.
+3. Set "Device Lock Timeout" to any number desired. Units are in Minutes.</fixtext><fix id="F-30498r494908_fix" /><check system="C-30513r494907_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the mobile device is enforcing a screen-lock policy that will lock the display after a period of inactivity.
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console, do the following:
+1. Open password requirements
+2. Open device password section
+3. Ensure "Device Lock Timeout" is set to any number desired. Units are in Minutes.
+
+On the Android Pie device, do the following:
+1. Open settings &gt;&gt; Security &amp; location 
+2. Click the "gear" icon next to "Screen lock"
+3. Ensure "Automatically lock" is set at a required time
+
+If the MDM console device policy is not set to enable a screen-lock policy that will lock the display after a period of inactivity or on the Android Pie device, the device policy is not set to enable a screen-lock policy that will lock the display after a period of inactivity, this is a finding.</check-content></check></Rule></Group><Group id="V-228281"><title>PP-MDF-301040</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228281r494912_rule" weight="10.0" severity="medium"><version>GOOG-09-000400</version><title>The Google Android Pie must be configured to lock the display after 15 minutes (or less) of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen lock timeout must be set to a value that helps protect the device from unauthorized access. Having a too-long timeout would increase the window of opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device. The maximum timeout period of 15 minutes has been selected to balance functionality and security; shorter timeout periods may be appropriate depending on the risks posed to the mobile device.
+
+SFR ID: FMT_SMF_EXT.1.1 #2b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106415</ident><ident system="http://cyber.mil/legacy">V-97311</ident><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-30499r494911_fix">Configure the Google Android device to lock the device display after 15 minutes (or less) of inactivity.
+
+On the MDM Console:
+1. Open password requirements.
+2. Open device password section.
+3. Set "Device Lock Timeout" to any number between 1 and 15.</fixtext><fix id="F-30499r494911_fix" /><check system="C-30514r494910_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the mobile device has the screen lock timeout set to 15 minutes or less.
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console, do the following:
+
+1. Open passcode requirements
+2. Open device passcode section
+3. Ensure "Device Lock Timeout" to any number between 1 and 15
+
+On the Android Pie device, do the following:
+1. Open settings &gt;&gt; Security &amp; location 
+2. Click the "gear" icon next to "Screen lock"
+3. Ensure "Automatically lock" is set to between 0 and 15 minutes
+
+If the MDM console device policy is not set to 15 minutes or less for the screen lock timeout or on the Android Pie device, the device policy is not set to 15 minutes or less for the screen lock timeout, this is a finding.</check-content></check></Rule></Group><Group id="V-228282"><title>PP-MDF-301050</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228282r494915_rule" weight="10.0" severity="low"><version>GOOG-09-000500</version><title>The Google Android Pie must be configured to not allow more than 10 consecutive failed authentication attempts.</title><description>&lt;VulnDiscussion&gt;The more attempts an adversary has to guess a password, the more likely the adversary will enter the correct password and gain access to resources on the device. Setting a limit on the number of attempts mitigates this risk. Setting the limit at 10 or less gives authorized users the ability to make a few mistakes when entering the password but still provides adequate protection against dictionary or brute force attacks on the password.
+
+SFR ID: FMT_SMF_EXT.1.1 #2c, FIA_AFL_EXT.1.5&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106417</ident><ident system="http://cyber.mil/legacy">V-97313</ident><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-30500r494914_fix">Configure the Google Android device to allow only 10 or fewer consecutive failed authentication attempts.
+
+On the MDM Console:
+1. Open password requirements.
+2. Open device password section.
+3. Set "Maximum Number of Failed Attempts" to a number between 1 and 10.</fixtext><fix id="F-30500r494914_fix" /><check system="C-30515r494913_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the mobile device has the maximum number of consecutive failed authentication attempts set at 10 or fewer. 
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+On the MDM console, do the following:
+
+1. Open password requirements.
+2. Open device password section.
+3. Review the policy configuration that was pushed down to the device and ensure the "Maximum Number of Failed Attempts" is set between 1 and 10.
+
+On the Android Pie device, do the following:
+1. Open Setting &gt;&gt; Security &amp; location &gt;&gt; Managed device info 
+2. Verify "Failed password attempts before deleting all device data" is set to 10 or fewer attempts .
+
+If the MDM console device policy is not set to the maximum number of consecutive failed authentication attempts at 10 or fewer or on the Android Pie device, the device policy is not set to the maximum number of consecutive failed authentication attempts at 10 or fewer, this is a finding.</check-content></check></Rule></Group><Group id="V-228283"><title>PP-MDF-301080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228283r852692_rule" weight="10.0" severity="medium"><version>GOOG-09-000800</version><title>The Google Android Pie must be configured to enforce an application installation policy by specifying one or more authorized application repositories, including [selection: DoD-approved commercial app repository, MDM server, mobile application store].</title><description>&lt;VulnDiscussion&gt;Forcing all applications to be installed from authorized application repositories can prevent unauthorized and malicious applications from being installed and executed on mobile devices. Allowing such installations and executions could cause a compromise of DoD data accessible by these unauthorized/malicious applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #8a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106419</ident><ident system="http://cyber.mil/legacy">V-97315</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001806</ident><fixtext fixref="F-30501r494917_fix">Configure the Google Android device to disable unauthorized application repositories.
+
+On the MDM Console:
+1. Open restrictions section.
+2. Open Restrictions Section.
+3. Set Allow "Google Play" (Uses only Managed Google Play).
+4. Set Disallow "Install unknown sources".</fixtext><fix id="F-30501r494917_fix" /><check system="C-30516r494916_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the mobile device has only approved application repositories (DoD-approved commercial app repository, MDM server, and/or mobile application store).
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console, do the following:
+1. Open restrictions section.
+2. Open Restrictions Section.
+3. Set Allow "Google Play" (Uses only Managed Google Play).
+4. Ensure that Disallow is set for "Install unknown sources".
+
+On the Google device, do the following:
+1. Open Settings &gt;&gt; Apps and notifications &gt;&gt; Advanced &gt;&gt; Special app access
+2. Open Install unknown apps .
+3. Ensure the list of apps is blank or if an app is on the list, "Disabled by admin" is listed under the app name.
+
+If the MDM console device policy is not set to allow connections to only approved application repositories or on the Android Pie device, the device policy is not set to allow connections to only approved application repositories, this is a finding.</check-content></check></Rule></Group><Group id="V-228284"><title>PP-MDF-301090</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228284r852693_rule" weight="10.0" severity="medium"><version>GOOG-09-001000</version><title>The Google Android Pie must be configured to enforce an application installation policy by specifying an application whitelist that restricts applications by the following characteristics: [selection: list of digital signatures, cryptographic hash values, names, application version].</title><description>&lt;VulnDiscussion&gt;The application whitelist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core and preinstalled applications, or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications. 
+
+Core application: Any application integrated into the OS by the OS or MD vendors.
+
+Pre-installed application: Additional non-core applications included in the OS build by the OS vendor, MD vendor, or wireless carrier.
+
+Requiring all authorized applications to be in an application whitelist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the whitelist. Failure to configure an application whitelist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications.
+
+The application whitelist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core applications (included in the OS by the OS vendor) and pre-installed applications (provided by the MD vendor and wireless carrier), or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #8b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106421</ident><ident system="http://cyber.mil/legacy">V-97317</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001806</ident><fixtext fixref="F-30502r494920_fix">Configure the Google Android device to use an application whitelist.
+
+On the MDM Console:
+1. Go to the Android app catalog for managed Google Play.
+2. Select apps to be available (only approved apps).
+3. Push updated policy to the device.
+
+NOTE: Managed Google Play is always a Whitelisted App Store.</fixtext><fix id="F-30502r494920_fix" /><check system="C-30517r494919_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the mobile device has an application whitelist configured. Verify all applications listed on the whitelist have been approved by the Approving Official (AO).
+
+This validation procedure is performed only on the MDM Administration Console.
+
+On the MDM console, do the following:
+1. Go to the Android app catalog for managed Google Play.
+2. Verify all selected apps are AO approved.
+
+NOTE: Managed Google Play is always a Whitelisted App Store.
+
+If on the MDM console the list of selected Managed Google Play apps included non-approved apps, this is a finding.
+
+(Note: The application whitelist will include approved core applications (included in the OS by the OS vendor) and pre-installed applications (provided by the MD vendor and wireless carrier), or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications.) For Google Android, there are no pre-installed applications.</check-content></check></Rule></Group><Group id="V-228285"><title>PP-MDF-301100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228285r852694_rule" weight="10.0" severity="medium"><version>GOOG-09-001100</version><title>The Google Android Pie whitelist must be configured to not include applications with the following characteristics: - back up MD data to non-DoD cloud servers (including user and application access to cloud backup services); - transmit MD diagnostic data to non-DoD servers; - voice assistant application if available when MD is locked; - voice dialing application if available when MD is locked; - allows synchronization of data or applications between devices associated with user; and - allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs or printers.</title><description>&lt;VulnDiscussion&gt;Requiring all authorized applications to be in an application whitelist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the whitelist. Failure to configure an application whitelist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications. Applications with the listed characteristics have features that can cause the compromise of sensitive DoD data or have features with no known application in the DoD environment.
+
+Application note: The application whitelist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core and preinstalled applications, or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications.
+
+Core application: Any application integrated into the OS by the OS or MD vendors.
+
+Pre-installed application: Additional non-core applications included in the OS build by the OS vendor, MD vendor, or wireless carrier.
+
+SFR ID: FMT_SMF_EXT.1.1 #8b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106423</ident><ident system="http://cyber.mil/legacy">V-97319</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001806</ident><fixtext fixref="F-30503r494923_fix">Configure the Google Android device application whitelist to exclude applications with the following characteristics:
+
+- back up MD data to non-DoD cloud servers (including user and application access to cloud backup services);
+- transmit MD diagnostic data to non-DoD servers;
+- voice assistant application if available when MD is locked;
+- voice dialing application if available when MD is locked;
+- allows synchronization of data or applications between devices associated with user;
+- payment processing; and
+- allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+
+On the MDM Console:
+1. Go to the Android app catalog for managed Google Play.
+2. Before selecting an app, review the app details and privacy policy to ensure the app does not include prohibited characteristics.</fixtext><fix id="F-30503r494923_fix" /><check system="C-30518r494922_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the mobile device has an application whitelist configured and that the application whitelist does not include applications with the following characteristics:
+
+- back up MD data to non-DoD cloud servers (including user and application access to cloud backup services);
+- transmit MD diagnostic data to non-DoD servers;
+- voice assistant application if available when MD is locked;
+- voice dialing application if available when MD is locked;
+- allows synchronization of data or applications between devices associated with user;
+- payment processing; and
+- allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+
+This validation procedure is performed only on the MDM Administration Console.
+
+On the MDM console, do the following:
+
+1. Review the list of selected Managed Google Play apps.
+2. Review the details and privacy policy of each selected app to ensure the app does not include prohibited characteristics.
+
+If the MDM console device policy includes applications with unauthorized characteristics, this is a finding.</check-content></check></Rule></Group><Group id="V-228286"><title>PP-MDF-301110</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228286r852695_rule" weight="10.0" severity="low"><version>GOOG-09-001400</version><title>The Google Android Pie must be configured to disable Bluetooth or configured via User Based Enforcement (UBE) to allow Bluetooth for only HSP (Headset Profile), HFP (HandsFree Profile), or SPP (Serial Port Profile) capable devices.</title><description>&lt;VulnDiscussion&gt;Some Bluetooth profiles provide the capability for remote transfer of sensitive DoD data without encryption or otherwise do not meet DoD IT security policies and therefore should be disabled.
+
+SFR ID: FMT_SMF_EXT.1.1 #18h&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106425</ident><ident system="http://cyber.mil/legacy">V-97321</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001761</ident><fixtext fixref="F-30504r494926_fix">Configure the Google Android device to disable Bluetooth or if the AO has approved the use of Bluetooth (for example, for car handsfree use), train the user to connect to only authorized Bluetooth devices using only HSP, HFP, or SPP Bluetooth capable devices (User Based Enforcement (UBE)).
+
+To disable Bluetooth use the following procedure:
+On the MDM Console: 
+1. Open restrictions section.
+2. Toggle "Disallow Bluetooth" to on.
+
+The user training requirement is satisfied in requirement GOOG-09-008700.</fixtext><fix id="F-30504r494926_fix" /><check system="C-30519r494925_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Determine if the AO has approved the use of Bluetooth at the site.
+
+If the AO has not approved the use of Bluetooth, verify Bluetooth has been disabled:
+On the MDM console, do the following:
+
+1. Open restrictions Section.
+2. Ensure "Disallow Bluetooth" is set.
+
+On the Android Pie device, do the following:
+
+1. Go to Settings &gt;&gt; Connected Devices &gt;&gt; Connection Preferences &gt;&gt; Bluetooth
+2. Ensure that it's set to Off and you cannot toggle it to On.
+
+If the AO has approved the use of Bluetooth, on the Google Android Pie device do the following:
+
+1. Go to Settings &gt;&gt; Connected Devices
+2. Verify only approved Bluetooth connected devices using approved profiles are listed.
+
+If the AO has not approved the use of Bluetooth, and Bluetooth use is not disabled via an MDM managed device policy, this is a finding.
+If the AO has approved the use of Bluetooth, and Bluetooth devices using unauthorized Bluetooth profiles are listed on the device under "Connected devices", this is a finding.</check-content></check></Rule></Group><Group id="V-228287"><title>PP-MDF-301120</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228287r617474_rule" weight="10.0" severity="medium"><version>GOOG-09-001600</version><title>The Google Android Pie must be configured to not display the following (work profile) notifications when the device is locked: [selection: - email notifications - calendar appointments - contact associated with phone call notification - text message notification - other application-based notifications - all notifications].</title><description>&lt;VulnDiscussion&gt;Many mobile devices display notifications on the lock screen so that users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. When they are available on the lock screen, an adversary can see them merely by being in close physical proximity to the device. Configuring the Google Android device to not send notifications to the lock screen mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #19&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106427</ident><ident system="http://cyber.mil/legacy">V-97323</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30505r494929_fix">Configure the Google Android device to not display (work profile) notifications when the device is locked.
+
+On the MDM console:
+
+1. Open restrictions section.
+2. Open Work Managed Section.
+3. Set "Unredacted Notifications" to Disallow.</fixtext><fix id="F-30505r494929_fix" /><check system="C-30520r494928_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device settings to determine if the Google Android device displays (work container) notifications on the lock screen. Notifications of incoming phone calls are acceptable even when the device is locked. 
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console, do the following:
+
+1. Open restrictions Section.
+2. Open Work Managed Section.
+3. Ensure "Unredacted Notifications" is set to Disallow.
+
+On the Android Pie device, do the following:
+
+1. Go to Settings &gt;&gt; Security &amp; location
+2. Tap on Lock screen preferences.
+3. Ensure "Hide sensitive work content" is listed under "When work profile is locked".
+
+If the MDM console device policy allows work notifications on the lock screen or the Android Pie device allows work notifications on the lock screen, this is a finding.</check-content></check></Rule></Group><Group id="V-228288"><title>PP-MDF-301150</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228288r617455_rule" weight="10.0" severity="medium"><version>GOOG-09-002300</version><title>Google Android Pie must be configured to disable trust agents. Note: This requirement is not applicable (NA) for specific biometric authentication factors included in the products Common Criteria evaluation.</title><description>&lt;VulnDiscussion&gt;Trust agents allow a user to unlock a mobile device without entering a passcode when the mobile device is, for example, connected to a user-selected Bluetooth device or in a user-selected location. This technology would allow unauthorized users to have access to DoD sensitive data if compromised. By not permitting the use of non-password authentication mechanisms, users are forced to use passcodes that meet DoD passcode requirements.
+
+SFR ID: FMT_SMF_EXT.1.1 #23, FIA_UAU.5.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106429</ident><ident system="http://cyber.mil/legacy">V-97325</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-30506r494932_fix">Configure Google Android Pie to disable trust agents. 
+
+On the MDM console:
+1. Open Lock screen restrictions section.
+2. Set "Disable trust agents" to on.</fixtext><fix id="F-30506r494932_fix" /><check system="C-30521r494931_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that trust agents are disabled. 
+
+This procedure is performed on both the MDM Administration console and the Google Android Pie device. 
+
+On the MDM console:
+1. Open restrictions section.
+2. Set "Disable trust agents" to on.
+
+On the Google Android Pie device: 
+1. Open Settings. 
+2. Tap "Security &amp; location". 
+3. Tap "Advanced". 
+4. Tap "Trust agents". 
+5. Verify that all listed trust agents are disabled and cannot be enabled. 
+
+If on the MDM console "disable trust agents" is not selected, or on the Android Pie device a trust agent can be enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-228289"><title>PP-MDF-301170</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228289r494936_rule" weight="10.0" severity="medium"><version>GOOG-09-002800</version><title>The Google Android Pie must be configured to disable developer modes.</title><description>&lt;VulnDiscussion&gt;Developer modes expose features of the Google Android device that are not available during standard operation. An adversary may leverage a vulnerability inherent in a developer mode to compromise the confidentiality, integrity, and availability of DoD sensitive information. Disabling developer modes mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #26&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106431</ident><ident system="http://cyber.mil/legacy">V-97327</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-30507r494935_fix">Configure the Google Android device to disable developer modes.
+
+On the MDM Console:
+1. Open restrictions section.
+2. Open Restrictions section.
+3. Set "Debugging Features" to Disallow.</fixtext><fix id="F-30507r494935_fix" /><check system="C-30522r494934_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine whether a developer mode is enabled.
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console, do the following:
+
+1. Open restrictions section.
+2. Open Restrictions section.
+3. Confirm that "Debugging Features" is set to Disallow.
+
+On the Android Pie device, do the following:
+
+1. Go to Settings &gt;&gt; System
+2. Ensure Developer Options is not listed.
+
+If the MDM console device policy is not set to disable developer mode or on the Android Pie device, the device policy is not set to disable developer mode, this is a finding.</check-content></check></Rule></Group><Group id="V-228290"><title>PP-MDF-301200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228290r494939_rule" weight="10.0" severity="low"><version>GOOG-09-003400</version><title>The Google Android Pie must be configured to display the DoD advisory warning message at start-up or each time the user unlocks the device.</title><description>&lt;VulnDiscussion&gt;The Google Android Pie is required to display the DoD-approved system use notification message or banner before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. Required banners help ensure that DoD can audit and monitor the activities of mobile device users without legal restriction.
+
+System use notification messages can be displayed when individuals first access or unlock the mobile device. The banner must be implemented as a "click-through" banner at device unlock (to the extent permitted by the operating system). A "click-through" banner prevents further activity on the information system unless and until the user executes a positive action to manifest agreement by clicking on a box indicating "OK."
+
+The approved DoD text must be used exactly as required in the KS referenced in DoDI 8500.01. For devices accommodating banners of 1300 characters, the banner text is: 
+
+You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. 
+By using this IS (which includes any device attached to this IS), you consent to the following conditions: 
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. 
+-At any time, the USG may inspect and seize data stored on this IS. 
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose. 
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. 
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.
+
+For devices with severe character limitations, the banner text is: 
+
+I've read &amp; consent to terms in IS user agreem't.
+
+The administrator must configure the banner text exactly as written without any changes.
+
+SFR ID: FMT_SMF_EXT.1.1 #36&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106433</ident><ident system="http://cyber.mil/legacy">V-97329</ident><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-30508r494938_fix">Configure the DoD warning banner by either of the following methods (required text is found in the Vulnerability Description):
+
+1. By placing the DoD warning banner text in the user agreement signed by each Google Android device device user (preferred method).
+2. By configuring the warning banner text on the MDM console and installing the banner on each managed mobile device.
+
+On the MDM Console:
+Enable "Lock Screen Message" and enter the banner text.</fixtext><fix id="F-30508r494938_fix" /><check system="C-30523r494937_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>The DoD warning banner can be displayed by either of the following methods (required text is found in the Vulnerability Description):
+
+1. By placing the DoD warning banner text in the user agreement signed by each Google Android device device user (preferred method).
+2. By configuring the warning banner text on the MDM console and installing the banner on each managed mobile device.
+
+Determine which method is used at the Google Android device device site and follow the appropriate validation procedure below.
+
+Validation Procedure for Method #1:
+Review the signed user agreements for several Google Android device device users and verify the agreement includes the required DoD warning banner text.
+
+Validation Procedure for Method #2:
+On the MDM console, do the following:
+Ensure "Lock Screen Message" and the appropriate banner text is included.
+
+If, for Method #1, the required warning banner text is not on all signed user agreements reviewed, or for Method #2, the MDM console device policy is not set to display a warning banner with the appropriate designated wording or on the Android Pie device, the device policy is not set to display a warning banner with the appropriate designated wording, this is a finding.</check-content></check></Rule></Group><Group id="V-228291"><title>PP-MDF-301210</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228291r617456_rule" weight="10.0" severity="medium"><version>GOOG-09-003500</version><title>The Google Android Pie must be configured to disable USB mass storage mode.</title><description>&lt;VulnDiscussion&gt;USB mass storage mode enables the transfer of data and software from one device to another. This software can include malware. When USB mass storage is enabled on a mobile device, it becomes a potential vector for malware and unauthorized data exfiltration. Prohibiting USB mass storage mode mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #39a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106435</ident><ident system="http://cyber.mil/legacy">V-97331</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-30509r494941_fix">Configure the Google Android device to disable USB mass storage mode.
+
+On the MDM console:
+
+1. Open Device Restrictions.
+2. Open Restrictions Settings.
+3. Select "Disallow usb file transfer".</fixtext><fix id="F-30509r494941_fix" /><check system="C-30524r494940_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the mobile device has a USB mass storage mode and whether it has been disabled. 
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console, do the following:
+
+1. Open Device Restrictions.
+2. Open Restrictions Settings.
+3. Ensure "Disallow usb file transfer" is selected.
+
+On the Android Pie device, do the following:
+
+1. Plug in USB cable into Android Pie device and connect to a non-DoD network-managed PC. 
+2. Go to Settings &gt;&gt; Connected devices &gt;&gt; USB
+3. Ensure No data transfer is selected.
+
+If the MDM console device policy is not set to disable USB mass storage mode or on the Android Pie device, the device policy is not set to disable USB mass storage mode, this is a finding.</check-content></check></Rule></Group><Group id="V-228292"><title>PP-MDF-301220</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228292r617477_rule" weight="10.0" severity="medium"><version>GOOG-09-003700</version><title>The Google Android Pie must be configured to not allow backup of [all applications, configuration data] to locally connected systems.</title><description>&lt;VulnDiscussion&gt;Data on mobile devices is protected by numerous mechanisms, including user authentication, access control, and cryptography. When the data is backed up to an external system (either locally connected or cloud-based), many if not all of these mechanisms are no longer present. This leaves the backed-up data vulnerable to attack. Disabling backup to external systems mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106437</ident><ident system="http://cyber.mil/legacy">V-97333</ident><ident system="http://cyber.mil/cci">CCI-000097</ident><fixtext fixref="F-30510r494944_fix">Configure the Google Android device to disable backup to locally connected systems.
+
+NOTE: On Restrictions, the backup features for Google are not in the framework.
+
+On the MDM console:
+
+1. Open Device Restrictions.
+2. Open Restrictions Settings.
+3. Select "Disallow usb file transfer".</fixtext><fix id="F-30510r494944_fix" /><check system="C-30525r494943_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the capability to back up to a locally connected system has been disabled. 
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console, do the following:
+
+1.  Open Device Restrictions.
+2.  Open Restrictions Settings.
+3.  Ensure "Disallow usb file transfer" is selected.
+
+On the Android Pie device, do the following:
+
+1. Plug in USB cable into Android Pie device and connect to a non-DoD network-managed PC. 
+2. Go to Settings &gt;&gt; Connected devices &gt;&gt; USB
+3. Ensure No data transfer is selected.
+
+If the MDM console device policy is not set to disable the capability to back up to a locally connected system or on the Android Pie device, the device policy is not set to disable the capability to back up to a locally connected system, this is a finding.</check-content></check></Rule></Group><Group id="V-228293"><title>PP-MDF-301230</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228293r852696_rule" weight="10.0" severity="medium"><version>GOOG-09-003900</version><title>The Google Android Pie must be configured to not allow backup of all applications and configuration data to remote systems.</title><description>&lt;VulnDiscussion&gt;Backups to remote systems (including cloud backup) can leave data vulnerable to breach on the external systems, which often offer less protection than the Google Android device. Where the remote backup involves a cloud-based solution, the backup capability is often used to synchronize data across multiple devices. In this case, DoD devices may synchronize DoD sensitive information to a user's personal device or other unauthorized computers that are vulnerable to breach. Disallowing remote backup mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106439</ident><ident system="http://cyber.mil/legacy">V-97335</ident><ident system="http://cyber.mil/cci">CCI-002338</ident><fixtext fixref="F-30511r494947_fix">Configure the Google Android device to disable backup to remote systems (including commercial clouds).
+
+NOTE: On a Restrictions, data in the work profile cannot be backed up by default.
+
+On the MDM console:
+
+1. Open Device Restrictions.
+2. Open Restrictions Settings.
+3. Ensure "Enable backup service" is not selected.</fixtext><fix id="F-30511r494947_fix" /><check system="C-30526r494946_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the capability to back up to a remote system has been disabled. 
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console, do the following:
+
+1. Open Device Restrictions.
+2. Open Restrictions Settings.
+3. Ensure "Disallow backup servicer" is not selected.
+
+On the Android Pie device, do the following:
+
+1. Go to Settings &gt;&gt; System.
+2. Ensure Backup is set to "Off".
+
+If the MDM console device policy is not set to disable the capability to back up to a remote system or on the Android Pie device, the device policy is not set to disable the capability to back up to a remote system, this is a finding.</check-content></check></Rule></Group><Group id="V-228294"><title>PP-MDF-301260</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228294r852697_rule" weight="10.0" severity="medium"><version>GOOG-09-004500</version><title>The Google Android Pie must be configured to disable exceptions to the access control policy that prevents application processes from accessing all data stored by other application processes.</title><description>&lt;VulnDiscussion&gt;App data sharing gives apps the ability to access the data of other apps for enhanced user functionality. However, sharing also poses a significant risk that unauthorized users or apps will obtain access to DoD sensitive information. To mitigate this risk, there are data sharing restrictions. If a user is allowed to make exceptions to the data sharing restriction policy, the user could enable unauthorized sharing of data, leaving it vulnerable to breach. Limiting the granting of exceptions to either the Administrator or common application developer mitigates this risk.
+
+Copy/paste of data between applications in different application processes or groups of application processes is considered an exception to the access control policy and therefore, the Administrator must be able to enable/disable the feature. Other exceptions include allowing any data or application sharing between process groups.
+
+SFR ID: FMT_SMF_EXT.1.1 #42, FDP_ACF_EXT.1.2&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106441</ident><ident system="http://cyber.mil/legacy">V-97337</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-002191</ident><fixtext fixref="F-30512r494950_fix">Configure the Google Android Pie to enable the access control policy that prevents [selection: application processes, groups of application processes] from accessing [selection: all, private] data stored by other [selection: application processes, groups of application processes].
+
+NOTE: All application data is inherently sandboxed and isolated from other applications. In order to disable copy/paste on the MDM Console:
+
+1. Open restrictions settings.
+2. Open user restrictions.
+3. Select "Disallow cross profile copy/paste".
+4. Select "Disallow sharing data into the profile".</fixtext><fix id="F-30512r494950_fix" /><check system="C-30527r494949_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review documentation on the Google Android device and inspect the configuration on the Google Android device to verify the access control policy that prevents [selection: application processes] from accessing [selection: all] data stored by other [selection: application processes] is enabled.
+
+This validation procedure is performed only on the MDM Administration Console. 
+
+On the MDM console, do the following:
+
+1. Open restrictions settings.
+2. Open user restrictions.
+3. Ensure "Disallow cross profile copy/paste" is selected.
+4. Ensure "Disallow sharing data into the profile" is selected.
+
+If the MDM console device policy is not set to disable data sharing between profiles, this is a finding.</check-content></check></Rule></Group><Group id="V-228295"><title>PP-MDF-301280</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228295r852698_rule" weight="10.0" severity="medium"><version>GOOG-09-004700</version><title>The Google Android Pie must be configured to disable multi-user modes.</title><description>&lt;VulnDiscussion&gt;Multi-user mode allows multiple users to share a mobile device by providing a degree of separation between user data. To date, no mobile device with multi-user mode features meets DoD requirements for access control, data separation, and non-repudiation for user accounts. In addition, the MDFPP does not include design requirements for multi-user account services. Disabling multi-user mode mitigates the risk of not meeting DoD multi-user account security policies.
+
+SFR ID: FMT_SMF_EXT.1.1 #47b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106443</ident><ident system="http://cyber.mil/legacy">V-97339</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-002110</ident><fixtext fixref="F-30513r494953_fix">Configure the Google Android Pie to disable multi-user modes.
+
+On the MDM console:
+
+1. Open the restrictions settings.
+2. Open user settings.
+3. Select "Disallow Add User".</fixtext><fix id="F-30513r494953_fix" /><check system="C-30528r494952_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review documentation on the Google Android device and inspect the configuration on the Google Android device to disable multi-user modes.
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console, do the following:
+
+1. Open the restrictions settings.
+2. Open user settings.
+3. Confirm "Disallow Add User" is selected.
+
+On the Android Pie device, do the following:
+
+1. Go to Settings &gt;&gt; System &gt;&gt; Advanced &gt;&gt; Multiple users
+2. Ensure that there is no option to add a user.
+
+If the MDM console device policy is not set to disable multi-user modes or on the Android Pie device, the device policy is not set to disable multi-user modes, this is a finding.</check-content></check></Rule></Group><Group id="V-228296"><title>PP-MDF-302370</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228296r852699_rule" weight="10.0" severity="medium"><version>GOOG-09-005505</version><title>The Google Android Pie must be configured to enable audit logging.</title><description>&lt;VulnDiscussion&gt;Audit logs enable monitoring of security-relevant events and subsequent forensics when breaches occur. To be useful, Administrators must have the ability to view the audit logs.
+
+SFR ID: FMT_SMF_EXT.1.1 #32&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106445</ident><ident system="http://cyber.mil/legacy">V-97341</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-30514r494956_fix">Configure the Google Android Pie to enable audit logging.
+
+On the MDM console:
+
+1. Open the restrictions settings.
+2. Open user settings.
+3. Select "Enable security logging".
+4. Select "Enable network logging".</fixtext><fix id="F-30514r494956_fix" /><check system="C-30529r494955_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review documentation on the Google Android device and inspect the configuration on the Google Android device to enable audit logging.
+
+This validation procedure is performed on only on the MDM Administration Console. 
+
+On the MDM console, do the following:
+
+1. Open the restrictions settings.
+2. Open user settings.
+3. Select "Enable security logging".
+4. Select "Enable network logging".
+
+If the MDM console device policy is not set to enable audit logging, this is a finding.</check-content></check></Rule></Group><Group id="V-228297"><title>PP-MDF-301420</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228297r494960_rule" weight="10.0" severity="low"><version>GOOG-09-006100</version><title>The Google Android Pie must be configured to generate audit records for the following auditable events: detected integrity violations.</title><description>&lt;VulnDiscussion&gt;Audit logs enable monitoring of security-relevant events and subsequent forensics when breaches occur. They help identify attacks so that breaches can either be prevented or limited in their scope. They facilitate analysis to improve performance and security. The Requirement Statement lists key events that the system must generate an audit record for.
+
+Application note: Requirement applies only to integrity violation detections that can be logged by the audit logging component.
+
+SFR ID: FMT_SMF_EXT.1.1 #37&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106447</ident><ident system="http://cyber.mil/legacy">V-97343</ident><ident system="http://cyber.mil/cci">CCI-000169</ident><fixtext fixref="F-30515r494959_fix">Configure the Google Android device to generate audit records for the following auditable events: detected integrity violations.
+
+On the MDM console, do the following:
+
+On the MDM Console:
+1. Go to Policy management.
+2. Enable Security Logging.</fixtext><fix id="F-30515r494959_fix" /><check system="C-30530r494958_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Google Android device configuration settings to determine if the mobile device is configured to generate audit records for the following auditable events: detected integrity violations.
+
+This validation procedure is performed only on the MDM Administration Console. 
+
+On the MDM console, do the following:
+1. Go to Policy management.
+2. Confirm Security Logging is enabled.
+
+If the MDM console device policy is not set to enable security logging, this is a finding.</check-content></check></Rule></Group><Group id="V-228298"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228298r494963_rule" weight="10.0" severity="medium"><version>GOOG-09-008700</version><title>Google Android Pie users must complete required training.</title><description>&lt;VulnDiscussion&gt;The security posture of Google devices requires the device user to configure several required policy rules on their device. User-Based Enforcement (UBE) is required for these controls. In addition, if the Authorizing Official (AO) has approved the use of an unmanaged personal space, the user must receive training on risks. If a user is not aware of their responsibilities and does not comply with UBE requirements, the security posture of the Google mobile device may become compromised and DoD sensitive data may become compromised.
+
+SFR ID: NA&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106449</ident><ident system="http://cyber.mil/legacy">V-97345</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30516r494962_fix">Have all Google device users complete training on the following topics. Users should acknowledge that they have reviewed training via a signed User Agreement or similar written record. 
+
+Training topics: 
+
+- Operational security concerns introduced by unmanaged applications/unmanaged personal space, including applications using global positioning system (GPS) tracking. 
+- Need to ensure no DoD data is saved to the personal space or transmitted from a personal app (for example, from personal email). 
+- If the Purebred key management app is used, users are responsible for maintaining positive control of their credentialed device at all times. The DoD PKI certificate policy requires subscribers to maintain positive control of the devices that contain private keys and to report any loss of control so the credentials can be revoked. Upon device retirement, turn-in, or reassignment, ensure that a factory data reset is performed prior to device hand-off. Follow mobility service provider decommissioning procedures as applicable. 
+- How to configure the following UBE controls (users must configure the control) on the Google device: 
+ **Secure use of Calendar Alarm 
+ **Local screen mirroring and Mirroring procedures (authorized/not authorized for use) 
+ **Do not upload DoD contacts via smart call and caller ID services 
+ **Do not remove DoD intermediate and root PKI digital certificates 
+ **Disable Wi-Fi Sharing 
+ **Do not configure a DoD network (work) VPN profile on any third-party VPN client installed in the personal space 
+ **If Bluetooth connections are approved for mobile device, types of allowed connections (for example car handsfree, but not Bluetooth wireless keyboard)
+- AO guidance on acceptable use and restrictions, if any, on downloading and installing personal apps and data (music, photos, etc.) in the Google device personal space.</fixtext><fix id="F-30516r494962_fix" /><check system="C-30531r494961_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review a sample of site User Agreements for Google device users or similar training records and training course content. 
+
+Verify that Google device users have completed the required training. The intent is that required training is renewed on a periodic basis in a time period determined by the AO. 
+
+If any Google device user has not completed the required training, this is a finding.</check-content></check></Rule></Group><Group id="V-228299"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228299r494966_rule" weight="10.0" severity="medium"><version>GOOG-09-008800</version><title>Google Android Pie must be configured to enforce that Wi-Fi Sharing is disabled.</title><description>&lt;VulnDiscussion&gt;Wi-Fi Sharing is an optional configuration of Wi-Fi Tethering/Mobile Hotspot, which allows the device to share its Wi-Fi connection with other wirelessly connected devices instead of its mobile (cellular) connection. 
+
+Wi-Fi Sharing grants the "other" device access to a corporate Wi-Fi network and may possibly bypass the network access control mechanisms. This risk can be partially mitigated by requiring the use of a preshared key for personal hotspots.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106451</ident><ident system="http://cyber.mil/legacy">V-97347</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30517r494965_fix">Configure Google Android Pie to disable Wi-Fi Sharing. 
+
+Mobile Hotspot must be enabled in order to enable Wi-Fi Sharing. If the AO has not approved Mobile Hotspot, and it has been disabled on the MDM console, no further action is needed. If Mobile Hotspot is being used, use the following procedure to disable Wi-Fi Sharing: 
+
+On the MDM console:
+1. Open the User restrictions setting.
+2. Set "Disallow config tethering" to on.</fixtext><fix id="F-30517r494965_fix" /><check system="C-30532r494964_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm Wi-Fi Sharing is disabled. 
+
+Mobile Hotspot must be enabled in order to enable Wi-Fi Sharing. If the Authorizing Official (AO) has not approved Mobile Hotspot, and it has been verified as disabled on the MDM console, no further action is needed. If Mobile Hotspot is being used, use the following procedure to verify Wi-Fi Sharing is disabled: 
+
+On the MDM console:
+1. Open the User restrictions setting.
+2. Verify "Disallow config tethering" to on.
+
+On the Google Android Pie device, do the following: 
+1. Open Settings. 
+2. Tap "Networks &amp; internet". 
+3. Verify that "Hotspots &amp; tethering" is disabled. 
+
+If on the Google Android Pie device "Wi-Fi sharing" is enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-228300"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228300r494969_rule" weight="10.0" severity="medium"><version>GOOG-09-009000</version><title>Google Android Pie must have the DoD root and intermediate PKI certificates installed.</title><description>&lt;VulnDiscussion&gt;DoD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the root and intermediate certificates are not available, an adversary could falsely sign a certificate in such a way that it could not be detected. Providing access to the DoD root and intermediate PKI certificates greatly diminishes the risk of this attack.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106453</ident><ident system="http://cyber.mil/legacy">V-97349</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30518r494968_fix">Configure Google Android Pie to install DoD root and intermediate certificates. 
+
+On the MDM console upload DoD root and intermediate certificates as part of a device and/or work profile
+
+The current DoD root and intermediate PKI certificates may be obtained in self-extracting zip files at http://cyber.mil/pki-pke (for NIPRNet).</fixtext><fix id="F-30518r494968_fix" /><check system="C-30533r494967_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that the DoD root and intermediate PKI certificates are installed. 
+
+This procedure is performed on both the MDM Administration console and the Google Android Pie device. 
+
+The current DoD root and intermediate PKI certificates may be obtained in self-extracting zip files at http://cyber.mil/pki-pke (for NIPRNet). 
+
+On the MDM console verify that the DoD root and intermediate certificates are part of a device and/or work profile that is being pushed down to the devices.
+
+On the Google Android Pie device, do the following: 
+1. Open Settings. 
+2. Tap "Security &amp; Location". 
+3. Tap on "Advanced".
+4. Tap on "Encryption &amp; credentials".
+5. Tap on "Trusted credentials".
+6. Verify that DoD root and intermediate PKI certificates are listed under the user tab.
+
+If on the MDM console the DoD root and intermediate certificates are not listed in a profile, or on the Google Android Pie device does not list the DoD root and intermediate certificates under the user tab, this is a finding.</check-content></check></Rule></Group><Group id="V-228301"><title>PP-MDF-992000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228301r494972_rule" weight="10.0" severity="medium"><version>GOOG-09-009100</version><title>Google Android Pie must allow only the administrator (MDM) to install/remove DoD root and intermediate PKI certificates.</title><description>&lt;VulnDiscussion&gt;DoD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the user is allowed to remove root and intermediate certificates, the user could allow an adversary to falsely sign a certificate in such a way that it could not be detected. Restricting the ability to remove DoD root and intermediate PKI certificates to the Administrator mitigates this risk.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106455</ident><ident system="http://cyber.mil/legacy">V-97351</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><fixtext fixref="F-30519r494971_fix">Configure Google Android Pie to prevent a user from removing DoD root and intermediate PKI certificates.
+
+On the MDM console:
+1. Open the User restrictions setting.
+2. Set "Disallow config credentials" to on for the work profile.</fixtext><fix id="F-30519r494971_fix" /><check system="C-30534r494970_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review the device configuration to confirm that the user is unable to remove DoD root and intermediate PKI certificates.
+
+On the MDM console:
+1. Open the User restrictions setting.
+2. Verify that "Disallow config credentials" to on for the work profile.
+
+On the Google Android Pie device, do the following: 
+1. Open Settings. 
+2. Tap "Security &amp; Location". 
+3. Tap on "Advanced".
+4. Tap on "Encryption &amp; credentials".
+5. Tap on "Trusted credentials".
+6. Verify that the user is unable to untrust or remove any work certificates.
+
+If on the Google Android Pie device the user is able to remove certificates, this is a finding.</check-content></check></Rule></Group><Group id="V-228302"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228302r494975_rule" weight="10.0" severity="medium"><version>GOOG-09-009200</version><title>The Google Android Pie Work Profile must be configured to prevent users from adding personal email accounts to the work email app.</title><description>&lt;VulnDiscussion&gt;If the user is able to add a personal email account (POP3, IMAP, EAS) to the work email app, it could be used to forward sensitive DoD data to unauthorized recipients. Restricting email account addition to the administrator or restricting email account addition to whitelisted accounts mitigates this vulnerability.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106457</ident><ident system="http://cyber.mil/legacy">V-97353</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30520r494974_fix">Configure Google Android Pie Work Profile to prevent users from adding personal email accounts to the work email app. 
+
+On the MDM console, for the Work Profile, do the following: 
+1. Open the User restrictions setting.
+2. Set "Disallow modify accounts" to on.
+
+Refer to the MDM documentation to determine how to provision users' work email accounts for the work email app.</fixtext><fix id="F-30520r494974_fix" /><check system="C-30535r494973_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review the Google Android Pie Work Profile configuration settings to confirm that users are prevented from adding personal email accounts to the work email app. 
+
+This procedure is performed on both the MDM Administrator console and the Google Android Pie device. 
+
+On the MDM console:
+1. Open the User restrictions setting.
+2. Verify that "Disallow add accounts" is set to on.
+
+On the Google Android Pie device, do the following: 
+1. Open Settings. 
+2. Tap "Accounts". 
+3. Verify that "Add account" is grayed out under the Work section.
+
+If on the MDM console the restriction to "Disallow add accounts" is not set or on the Google Android Pie device the user is able to add an account, this is a finding.</check-content></check></Rule></Group><Group id="V-228303"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228303r494978_rule" weight="10.0" severity="medium"><version>GOOG-09-009400</version><title>Google Android Pie work profile must be configured to enforce the system application disable list.</title><description>&lt;VulnDiscussion&gt;The system application disable list controls user access to/execution of all core and preinstalled applications. 
+
+Core application: Any application integrated into Google Android Pie by Google. 
+
+Preinstalled application: Additional noncore applications included in the Google Android Pie build by Google or the wireless carrier. 
+
+Some system applications can compromise DoD data or upload users' information to non-DoD-approved servers. A user must be blocked from using such applications that exhibit behavior that can result in compromise of DoD data or DoD user information. 
+
+The site administrator must analyze all preinstalled applications on the device and disable all applications not approved for DoD use by configuring the system application disable list.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106459</ident><ident system="http://cyber.mil/legacy">V-97355</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30521r494977_fix">Configure Google Android Pie Work Profile to enforce the system application disable list. 
+
+The required configuration is the default configuration when the device is enrolled. If the device configuration is changed, use the following procedure to bring the device back into compliance:
+
+On the MDM, configure a list of approved Google core and preinstalled apps in the core app white list.</fixtext><fix id="F-30521r494977_fix" /><check system="C-30536r494976_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review the Google Android Pie Work Profile configuration settings to confirm the system application disable list is enforced. This setting is enforced by default. What needs to happen is to verify only approved system apps have been placed on the core whitelist.
+
+This procedure is performed on the MDM Administrator console. 
+
+Review the system app white list and verify only approved apps are on the list.
+
+If on the MDM console the system app white list contains unapproved core apps, this is a finding.</check-content></check></Rule></Group><Group id="V-228304"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228304r494981_rule" weight="10.0" severity="medium"><version>GOOG-09-009600</version><title>Google Android Pie must be provisioned as a fully managed device and configured to create a work profile.</title><description>&lt;VulnDiscussion&gt;The Android Enterprise Work Profile is the designated application group for the COPE use case.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106461</ident><ident system="http://cyber.mil/legacy">V-97357</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30522r494980_fix">Configure Google Android Pie in a Corporate Owned Work Managed configuration.
+
+On the MDM console, configure the default enrollment as Corporate Owned Work Managed.
+
+Refer to the MDM documentation to determine how to configure the device to enroll as Corporate Owned Work Managed.</fixtext><fix id="F-30522r494980_fix" /><check system="C-30537r494979_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review that Google Android Pie is configured as Corporate Owned Work Managed.
+
+This procedure is performed on both the MDM Administrator console and the Google Android Pie device. 
+
+On the MDM console, verify that the default enrollment is set to Corporate Owned Work Managed.
+
+On the Google Android Pie device, do the following: 
+1. Go to the application drawer.
+2. Ensure that you see a Personal and a Work Tab.
+
+If on the MDM console the account the default enrollment is set to Corporate Owned Work Managed or on the Google Android Pie device the user does not see a Work tab, this is a finding.</check-content></check></Rule></Group><Group id="V-228305"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228305r494984_rule" weight="10.0" severity="medium"><version>GOOG-09-009800</version><title>Google Android Pie work profile must be configured to disable automatic completion of work space Internet browser text input.</title><description>&lt;VulnDiscussion&gt;The autofill functionality in the web browser allows the user to complete a form that contains sensitive information, such as personally identifiable information (PII), without previous knowledge of the information. By allowing the use of autofill functionality, an adversary who learns a user's Google Android Pie device password, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the autofill feature to provide information unknown to the adversary. By disabling the autofill functionality, the risk of an adversary gaining further information about the device's user or compromising other systems is significantly mitigated.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106463</ident><ident system="http://cyber.mil/legacy">V-97359</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30523r494983_fix">Configure Chrome Browser in Google Android Pie Work Profile to disable autofill.
+
+On the MDM console, for the Work Profile, do the following: 
+1. Open the Chrome Browser Settings.
+2. Set "Enable autofill" to off.
+
+Refer to the MDM documentation to determine how to configure Chrome Browser Settings.</fixtext><fix id="F-30523r494983_fix" /><check system="C-30538r494982_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review Chrome Browser in Google Android Pie Work Profile autofill setting.
+
+This procedure is performed only on the MDM Administrator console. 
+
+On the MDM console, for the Work Profile, do the following: 
+1. Open the Chrome Browser Settings.
+2. Verify "Enable autofill" is set to off.
+
+If on the MDM console autofill is set to on in the Chrome Browser Settings, this is a finding.</check-content></check></Rule></Group><Group id="V-228306"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228306r494987_rule" weight="10.0" severity="medium"><version>GOOG-09-010000</version><title>Google Android Pie Work Profile must be configured to disable the autofill services.</title><description>&lt;VulnDiscussion&gt;The autofill services allow the user to complete text inputs that could contain sensitive information, such as personally identifiable information (PII), without previous knowledge of the information. By allowing the use of autofill services, an adversary who learns a user's Google Android Pie device password, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the autofill services to provide information unknown to the adversary. By disabling the autofill services, the risk of an adversary gaining further information about the device's user or compromising other systems is significantly mitigated. 
+
+Examples of apps that offer autofill services include Samsung Pass, Google, Dashlane, LastPass, and 1Password.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106465</ident><ident system="http://cyber.mil/legacy">V-97361</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30524r494986_fix">Configure Google Android Pie Workspace to disable the autofill services. 
+
+On the MDM console, in the Android work profile restrictions, select "disallow autofill".</fixtext><fix id="F-30524r494986_fix" /><check system="C-30539r494985_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review the Google Android Pie Workspace configuration settings to confirm that autofill services are disabled. 
+
+This procedure is performed only on the MDM Administration console. 
+
+On the MDM console, for the Workspace, in the "Android user restrictions" group, under the work profile, verify that "disallow autofill" is selected. 
+
+If on the MDM console "disallow autofill" is selected, this is a finding.</check-content></check></Rule></Group><Group id="V-228307"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228307r494990_rule" weight="10.0" severity="medium"><version>GOOG-09-010200</version><title>Google Android Pie must be configured to disallow configuration of date and time.</title><description>&lt;VulnDiscussion&gt;Determining the correct time a particular application event occurred on a system is critical when conducting forensic analysis and investigating system events. 
+
+Periodically synchronizing internal clocks with an authoritative time source is necessary to correctly correlate the timing of events that occur across the enterprise. The three authoritative time sources for Google Android Pie are an authoritative time server that is synchronized with redundant United States Naval Observatory (USNO) time servers as designated for the appropriate DoD network (NIPRNet or SIPRNet), or the Global Positioning System (GPS), or the wireless carrier. 
+
+Time stamps generated by the audit system in Google Android Pie must include both date and time. The time may be expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106467</ident><ident system="http://cyber.mil/legacy">V-97363</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30525r494989_fix">Configure Google Android Pie Work Profile to set auto network time.
+
+On the MDM console, in the Android user restrictions section, select "Set auto (network) time required" to on".</fixtext><fix id="F-30525r494989_fix" /><check system="C-30540r494988_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review the Google Android Pie Work Profile configuration settings to confirm that autofill services are disabled. 
+
+This procedure is performed on both the MDM Administration console and the Google Android Pie device. 
+
+On the MDM console, verify that "Set auto (network) time required" to on".
+
+On the Google Android Pie device, do the following: 
+1. Open Settings. 
+2. Tap "System". 
+3. Tap "Date &amp; times". 
+4. Verify that "Automatic date &amp; time" is grayed out.
+
+If on the MDM console "Set auto (network) time required" to on", or on the Google Android Pie device "Automatic date &amp; time" is grayed out, this is a finding.</check-content></check></Rule></Group><Group id="V-228308"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228308r494993_rule" weight="10.0" severity="medium"><version>GOOG-09-010400</version><title>Google Android Pie must configured to disallow outgoing beam.</title><description>&lt;VulnDiscussion&gt;Outgoing beam allows transfer of data through near field communication (NFC) and Bluetooth by touching two unlocked devices together. If it were enabled, sensitive DoD data could be transmitted. 
+
+Because of the security risks of sharing sensitive DoD data, users must not be able to allow outgoing beam.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106469</ident><ident system="http://cyber.mil/legacy">V-97365</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><fixtext fixref="F-30526r494992_fix">Configure Google Android Pie device to disallow outgoing beam. 
+
+On the MDM console, in the Android user restrictions section, select "Disallow outgoing beam" to on.</fixtext><fix id="F-30526r494992_fix" /><check system="C-30541r494991_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review the Google Android Pie device configuration settings to confirm that outgoing beam is disallowed. 
+
+This procedure is performed on both the MDM Administration console and the Google Android Pie device. 
+
+On the MDM console, in the Android user restrictions section, select "Disallow outgoing beam" to on".
+
+On the Google Android Pie device, do the following: 
+1. Open Settings. 
+2. Tap "Connected devices". 
+3. Tap "Connection preferences". 
+4. Verify that "Android Beam" is off and grayed out.
+
+If on the MDM console "Disallow outgoing beam" is not set to on, or on the Google Android Pie device "Android Beam" is not off and grayed out, this is a finding.</check-content></check></Rule></Group><Group id="V-228309"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228309r494996_rule" weight="10.0" severity="high"><version>GOOG-09-010800</version><title>Google Android Pie devices must have the latest available Google Android Pie operating system installed.</title><description>&lt;VulnDiscussion&gt;Required security features are not available in earlier operating system versions. In addition, there may be known vulnerabilities in earlier versions.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106471</ident><ident system="http://cyber.mil/legacy">V-97367</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30527r494995_fix">Install the latest released version of the Google Android Pie operating system on all managed Google devices. For Google Android Pie, version PQ3A.190605.003.A3 must be installed (it is the NIAP approved version) Note: This version of Android can only be installed on Pixel 3 devices purchased directly from Google. 
+
+Note: In Google Android devicet cases, operating system updates are released by the wireless carrier (for example, Sprint, T-Mobile, Verizon Wireless, and ATT).</fixtext><fix id="F-30527r494995_fix" /><check system="C-30542r494994_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that the Google Android devicet recently released version of Google Android Pie is installed. For Google Android Pie, version PQ3A.190605.003.A3 must be installed (it is the NIAP approved version). Note: This version of Android can only be installed on Pixel 3 devices purchased directly from Google. 
+
+This procedure is performed on both the MDM console and the Google Android Pie device. 
+
+In the MDM management console, review the version of Google Android Pie installed on a sample of managed devices. This procedure will vary depending on the MDM product. 
+
+On the Google Android Pie device, to see the installed operating system version: 
+1. Open Settings. 
+2. Tap "About phone". 
+3. Verify "Build number". 
+
+If the installed version of the Android operating system on any reviewed Samsung devices is not the latest released by the wireless carrier, this is a finding. 
+
+Google's Android operating system patch website: https://source.android.com/security/bulletin/</check-content></check></Rule></Group><Group id="V-228310"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-228310r494999_rule" weight="10.0" severity="high"><version>GOOG-09-010900</version><title>Google Android Pie devices must have a NIAP validated Google Android Pie operating system installed.</title><description>&lt;VulnDiscussion&gt;Required security features are not available in earlier operating system versions. In addition, there may be known vulnerabilities in earlier versions.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106473</ident><ident system="http://cyber.mil/legacy">V-97369</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-30528r494998_fix">Install the latest released version of the Google Android Pie operating system on all managed Google devices. For Google Android Pie, version PQ3A.190605.003.A3 must be installed (it is the NIAP approved version). Note: This version of Android can only be installed on Pixel 3 devices purchased directly from Google. 
+
+Note: In Google Android devicet cases, operating system updates are released by the wireless carrier (for example, Sprint, T-Mobile, Verizon Wireless, and ATT).</fixtext><fix id="F-30528r494998_fix" /><check system="C-30543r494997_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that version PQ3A.190605.003.A3is installed (it is the NIAP approved version). Note: This version of Android can only be installed on Pixel 3 devices purchased directly from Google. 
+
+This procedure is performed on both the MDM console and the Google Android Pie device. 
+
+In the MDM management console, review the version of Google Android Pie installed on a sample of managed devices. 
+
+On the Google Android Pie device, to see the installed operating system version: 
+1. Open Settings. 
+2. Tap "About phone". 
+3. Verify "Build number". 
+
+If the installed version of the Android operating system on any reviewed Samsung devices is not the latest released by the wireless carrier, this is a finding. 
+
+Google's Android operating system patch website: https://source.android.com/security/bulletin/ 
+
+If the installed version of the Android Pie operating system is not the NIAP approved version, this is a finding.</check-content></check></Rule></Group><Group id="V-254524"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254524r858431_rule" weight="10.0" severity="high"><version>GOOG-09-999999</version><title>All Google Android 9 installations must be removed.</title><description>&lt;VulnDiscussion&gt;Google Android 9 is no longer supported by Apple and therefore, may contain security vulnerabilities.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 9-x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 9-x</dc:subject><dc:identifier>4220</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-57957r858430_fix">Remove all installations of Google Android 9.</fixtext><fix id="F-57957r858430_fix" /><check system="C-58008r858429_chk"><check-content-ref href="Google_Android_9-x_STIG.xml" name="M" /><check-content>Verify there are no installations of Google Android 9 at the site.
+
+If Google Android 9 is being used at the site, this is a finding.</check-content></check></Rule></Group></Benchmark>

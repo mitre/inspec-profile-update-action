@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="FN_FortiGate_Firewall_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2022-09-12">accepted</status><title>Fortinet FortiGate Firewall Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 3 Benchmark Date: 27 Oct 2022</plain-text><plain-text id="generator">3.4.0.34222</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-234133" selected="true" /><select idref="V-234134" selected="true" /><select idref="V-234135" selected="true" /><select idref="V-234136" selected="true" /><select idref="V-234137" selected="true" /><select idref="V-234138" selected="true" /><select idref="V-234139" selected="true" /><select idref="V-234140" selected="true" /><select idref="V-234141" selected="true" /><select idref="V-234142" selected="true" /><select idref="V-234143" selected="true" /><select idref="V-234144" selected="true" /><select idref="V-234145" selected="true" /><select idref="V-234146" selected="true" /><select idref="V-234147" selected="true" /><select idref="V-234148" selected="true" /><select idref="V-234149" selected="true" /><select idref="V-234150" selected="true" /><select idref="V-234151" selected="true" /><select idref="V-234152" selected="true" /><select idref="V-234153" selected="true" /><select idref="V-234154" selected="true" /><select idref="V-234155" selected="true" /><select idref="V-234156" selected="true" /><select idref="V-234157" selected="true" /><select idref="V-234158" selected="true" /><select idref="V-234159" selected="true" /><select idref="V-234160" selected="true" /><select idref="V-234161" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-234133" selected="true" /><select idref="V-234134" selected="true" /><select idref="V-234135" selected="true" /><select idref="V-234136" selected="true" /><select idref="V-234137" selected="true" /><select idref="V-234138" selected="true" /><select idref="V-234139" selected="true" /><select idref="V-234140" selected="true" /><select idref="V-234141" selected="true" /><select idref="V-234142" selected="true" /><select idref="V-234143" selected="true" /><select idref="V-234144" selected="true" /><select idref="V-234145" selected="true" /><select idref="V-234146" selected="true" /><select idref="V-234147" selected="true" /><select idref="V-234148" selected="true" /><select idref="V-234149" selected="true" /><select idref="V-234150" selected="true" /><select idref="V-234151" selected="true" /><select idref="V-234152" selected="true" /><select idref="V-234153" selected="true" /><select idref="V-234154" selected="true" /><select idref="V-234155" selected="true" /><select idref="V-234156" selected="true" /><select idref="V-234157" selected="true" /><select idref="V-234158" selected="true" /><select idref="V-234159" selected="true" /><select idref="V-234160" selected="true" /><select idref="V-234161" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-234133" selected="true" /><select idref="V-234134" selected="true" /><select idref="V-234135" selected="true" /><select idref="V-234136" selected="true" /><select idref="V-234137" selected="true" /><select idref="V-234138" selected="true" /><select idref="V-234139" selected="true" /><select idref="V-234140" selected="true" /><select idref="V-234141" selected="true" /><select idref="V-234142" selected="true" /><select idref="V-234143" selected="true" /><select idref="V-234144" selected="true" /><select idref="V-234145" selected="true" /><select idref="V-234146" selected="true" /><select idref="V-234147" selected="true" /><select idref="V-234148" selected="true" /><select idref="V-234149" selected="true" /><select idref="V-234150" selected="true" /><select idref="V-234151" selected="true" /><select idref="V-234152" selected="true" /><select idref="V-234153" selected="true" /><select idref="V-234154" selected="true" /><select idref="V-234155" selected="true" /><select idref="V-234156" selected="true" /><select idref="V-234157" selected="true" /><select idref="V-234158" selected="true" /><select idref="V-234159" selected="true" /><select idref="V-234160" selected="true" /><select idref="V-234161" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-234133" selected="true" /><select idref="V-234134" selected="true" /><select idref="V-234135" selected="true" /><select idref="V-234136" selected="true" /><select idref="V-234137" selected="true" /><select idref="V-234138" selected="true" /><select idref="V-234139" selected="true" /><select idref="V-234140" selected="true" /><select idref="V-234141" selected="true" /><select idref="V-234142" selected="true" /><select idref="V-234143" selected="true" /><select idref="V-234144" selected="true" /><select idref="V-234145" selected="true" /><select idref="V-234146" selected="true" /><select idref="V-234147" selected="true" /><select idref="V-234148" selected="true" /><select idref="V-234149" selected="true" /><select idref="V-234150" selected="true" /><select idref="V-234151" selected="true" /><select idref="V-234152" selected="true" /><select idref="V-234153" selected="true" /><select idref="V-234154" selected="true" /><select idref="V-234155" selected="true" /><select idref="V-234156" selected="true" /><select idref="V-234157" selected="true" /><select idref="V-234158" selected="true" /><select idref="V-234159" selected="true" /><select idref="V-234160" selected="true" /><select idref="V-234161" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-234133" selected="true" /><select idref="V-234134" selected="true" /><select idref="V-234135" selected="true" /><select idref="V-234136" selected="true" /><select idref="V-234137" selected="true" /><select idref="V-234138" selected="true" /><select idref="V-234139" selected="true" /><select idref="V-234140" selected="true" /><select idref="V-234141" selected="true" /><select idref="V-234142" selected="true" /><select idref="V-234143" selected="true" /><select idref="V-234144" selected="true" /><select idref="V-234145" selected="true" /><select idref="V-234146" selected="true" /><select idref="V-234147" selected="true" /><select idref="V-234148" selected="true" /><select idref="V-234149" selected="true" /><select idref="V-234150" selected="true" /><select idref="V-234151" selected="true" /><select idref="V-234152" selected="true" /><select idref="V-234153" selected="true" /><select idref="V-234154" selected="true" /><select idref="V-234155" selected="true" /><select idref="V-234156" selected="true" /><select idref="V-234157" selected="true" /><select idref="V-234158" selected="true" /><select idref="V-234159" selected="true" /><select idref="V-234160" selected="true" /><select idref="V-234161" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-234133" selected="true" /><select idref="V-234134" selected="true" /><select idref="V-234135" selected="true" /><select idref="V-234136" selected="true" /><select idref="V-234137" selected="true" /><select idref="V-234138" selected="true" /><select idref="V-234139" selected="true" /><select idref="V-234140" selected="true" /><select idref="V-234141" selected="true" /><select idref="V-234142" selected="true" /><select idref="V-234143" selected="true" /><select idref="V-234144" selected="true" /><select idref="V-234145" selected="true" /><select idref="V-234146" selected="true" /><select idref="V-234147" selected="true" /><select idref="V-234148" selected="true" /><select idref="V-234149" selected="true" /><select idref="V-234150" selected="true" /><select idref="V-234151" selected="true" /><select idref="V-234152" selected="true" /><select idref="V-234153" selected="true" /><select idref="V-234154" selected="true" /><select idref="V-234155" selected="true" /><select idref="V-234156" selected="true" /><select idref="V-234157" selected="true" /><select idref="V-234158" selected="true" /><select idref="V-234159" selected="true" /><select idref="V-234160" selected="true" /><select idref="V-234161" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-234133" selected="true" /><select idref="V-234134" selected="true" /><select idref="V-234135" selected="true" /><select idref="V-234136" selected="true" /><select idref="V-234137" selected="true" /><select idref="V-234138" selected="true" /><select idref="V-234139" selected="true" /><select idref="V-234140" selected="true" /><select idref="V-234141" selected="true" /><select idref="V-234142" selected="true" /><select idref="V-234143" selected="true" /><select idref="V-234144" selected="true" /><select idref="V-234145" selected="true" /><select idref="V-234146" selected="true" /><select idref="V-234147" selected="true" /><select idref="V-234148" selected="true" /><select idref="V-234149" selected="true" /><select idref="V-234150" selected="true" /><select idref="V-234151" selected="true" /><select idref="V-234152" selected="true" /><select idref="V-234153" selected="true" /><select idref="V-234154" selected="true" /><select idref="V-234155" selected="true" /><select idref="V-234156" selected="true" /><select idref="V-234157" selected="true" /><select idref="V-234158" selected="true" /><select idref="V-234159" selected="true" /><select idref="V-234160" selected="true" /><select idref="V-234161" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-234133" selected="true" /><select idref="V-234134" selected="true" /><select idref="V-234135" selected="true" /><select idref="V-234136" selected="true" /><select idref="V-234137" selected="true" /><select idref="V-234138" selected="true" /><select idref="V-234139" selected="true" /><select idref="V-234140" selected="true" /><select idref="V-234141" selected="true" /><select idref="V-234142" selected="true" /><select idref="V-234143" selected="true" /><select idref="V-234144" selected="true" /><select idref="V-234145" selected="true" /><select idref="V-234146" selected="true" /><select idref="V-234147" selected="true" /><select idref="V-234148" selected="true" /><select idref="V-234149" selected="true" /><select idref="V-234150" selected="true" /><select idref="V-234151" selected="true" /><select idref="V-234152" selected="true" /><select idref="V-234153" selected="true" /><select idref="V-234154" selected="true" /><select idref="V-234155" selected="true" /><select idref="V-234156" selected="true" /><select idref="V-234157" selected="true" /><select idref="V-234158" selected="true" /><select idref="V-234159" selected="true" /><select idref="V-234160" selected="true" /><select idref="V-234161" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-234133" selected="true" /><select idref="V-234134" selected="true" /><select idref="V-234135" selected="true" /><select idref="V-234136" selected="true" /><select idref="V-234137" selected="true" /><select idref="V-234138" selected="true" /><select idref="V-234139" selected="true" /><select idref="V-234140" selected="true" /><select idref="V-234141" selected="true" /><select idref="V-234142" selected="true" /><select idref="V-234143" selected="true" /><select idref="V-234144" selected="true" /><select idref="V-234145" selected="true" /><select idref="V-234146" selected="true" /><select idref="V-234147" selected="true" /><select idref="V-234148" selected="true" /><select idref="V-234149" selected="true" /><select idref="V-234150" selected="true" /><select idref="V-234151" selected="true" /><select idref="V-234152" selected="true" /><select idref="V-234153" selected="true" /><select idref="V-234154" selected="true" /><select idref="V-234155" selected="true" /><select idref="V-234156" selected="true" /><select idref="V-234157" selected="true" /><select idref="V-234158" selected="true" /><select idref="V-234159" selected="true" /><select idref="V-234160" selected="true" /><select idref="V-234161" selected="true" /></Profile><Group id="V-234133"><title>SRG-NET-000019-FW-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234133r611399_rule" weight="10.0" severity="high"><version>FNFG-FW-000005</version><title>The FortiGate firewall must use filters that use packet headers and packet attributes, including source and destination IP addresses and ports.</title><description>&lt;VulnDiscussion&gt;Information flow control regulates where information is allowed to travel within a network and between interconnected networks. Blocking or restricting detected harmful or suspicious communications between interconnected networks enforces approved authorizations for controlling the flow of traffic.
+
+The firewall that filters traffic outbound to interconnected networks with different security policies must be configured with filters (i.e., rules, access control lists [ACLs], screens, and policies) that permit, restrict, or block traffic based on organization-defined traffic authorizations. Filtering must include packet header and packet attribute information, such as IP addresses and port numbers.
+
+Configure filters to perform certain actions when packets match specified attributes, including the following actions:
+
+- Apply a policy
+- Accept, reject, or discard the packets
+- Classify the packets based on their source address
+- Evaluate the next term in the filter
+- Increment a packet counter
+- Set the packets’ loss priority
+- Specify an IPsec SA (if IPsec is used in the implementation)
+- Specify the forwarding path
+- Write an alert or message to the system log.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-37283r611398_fix">The fix can be performed on FortiGate GUI or CLI. 
+Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Click +Create New to configure application specific policies, with Action set to ACCEPT.
+4. Configure Logging Options to log All Sessions.
+5. Confirm each Policy is Enabled.
+6. Click OK.
+
+or
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. For IPv4 policy, run the following command:
+     # config firewall policy
+     #   edit {policyid}
+     #        set srcintf {interface_name_ext}
+     #        set dstintf {interface_name_int}
+     #        set srcaddr {address_a}
+     #        set dstaddr {address_b}
+     #        set schedule {always}
+     #        set service {HTTPS}
+     #        set action {accept}
+     #        set logtraffic all
+     # end
+
+For IPv6 policy, run the following command: 
+     # config firewall policy6
+     #  edit {policyid}
+     #        set srcintf {interface_name_ext}
+     #        set dstintf {interface_name_int}
+     #        set srcaddr {address_a}
+     #        set dstaddr {address_b}
+     #        set schedule {always}
+     #        set service {HTTPS}
+     #        set action {accept}
+     #        set logtraffic all
+     # end
+
+The {} indicate the object is defined by the organization policy. The firewall performs IP integrity header checking on all incoming packets to verify if the protocol packet is a valid TCP, UDP, ICMP, SCTP, or GRE length. Stateful inspection is done to verify TCP SYN and FIN flags are set as needed.</fixtext><fix id="F-37283r611398_fix" /><check system="C-37318r611397_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify there are no policies configured with source and destination interface set to "any", and source and destination address set to "all" and the Action set to ACCEPT.
+
+If there are policies configured with source and destination interface set to "any", and source and destination address set to "all" and the Action set to ACCEPT, this is a finding.</check-content></check></Rule></Group><Group id="V-234134"><title>SRG-NET-000061-FW-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234134r611402_rule" weight="10.0" severity="medium"><version>FNFG-FW-000015</version><title>The FortiGate firewall must use organization-defined filtering rules that apply to the monitoring of remote access traffic for the traffic from the VPN access points.</title><description>&lt;VulnDiscussion&gt;Remote access devices (such as those providing remote access to network devices and information systems) that lack automated capabilities increase risk and make remote user access management difficult at best.
+
+Remote access is access to DoD non-public information systems by an authorized user (or an information system) communicating through an external, non-organization-controlled network.
+
+Automated monitoring of remote access sessions allows organizations to detect cyberattacks and ensure ongoing compliance with remote access policies by auditing connection activities of remote access capabilities from a variety of information system components (e.g., servers, workstations, notebook computers, smart phones, and tablets).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000067</ident><fixtext fixref="F-37284r611401_fix">This fix can be performed on the FortiGate GUI or on the CLI. 
+Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Click +Create New to configure new ingress and egress SSL-VPN- or IPSec-VPN-related policies that meet the organization-defined filtering rules.
+4. Configure Logging Options to log All Sessions (for most verbose logging).
+5. Confirm each created Policy is Enabled.
+6. Click OK.
+
+or
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # config firewall policy
+     #   edit 0
+     #        set srcintf {vpn_interface}
+     #        set dstintf {interface_1}
+     #        set srcaddr {address_a}
+     #        set dstaddr {address_b}
+     #        set schedule {always}
+     #        set service {services required by site policy}
+     #        set action {accept}
+     #        set logtraffic enable
+     #    next
+     # end
+3. Create opposite (ingress or egress) policy as required.
+
+The {} indicate the object is defined by the organization policy.</fixtext><fix id="F-37284r611401_fix" /><check system="C-37319r611400_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>If FortiGate is not configured to support VPN access, this requirement is Not Applicable.
+
+Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify all VPN-related policies are configured with organization-defined filtering rules.
+4. For each VPN-related policy, verify the logging option is configured to log All Sessions (for most verbose logging).
+
+If there are no VPN policies configured with organization-defined filtering rules, this is a finding.</check-content></check></Rule></Group><Group id="V-234135"><title>SRG-NET-000074-FW-000009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234135r611405_rule" weight="10.0" severity="medium"><version>FNFG-FW-000020</version><title>The FortiGate firewall must generate traffic log entries containing information to establish what type of events occurred.</title><description>&lt;VulnDiscussion&gt;Without establishing what type of event occurred, it would be difficult to establish, correlate, and investigate the events leading up to an outage or attack.
+
+Audit event content that may be necessary to satisfy this requirement includes, for example, time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, filenames involved, and access control or flow control rules invoked.
+
+Associating event types with detected events in the network element logs provides a means of investigating an attack, recognizing resource utilization or capacity thresholds, or identifying an improperly configured network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000130</ident><fixtext fixref="F-37285r611404_fix">This fix can be performed on the FortiGate GUI or on the CLI. 
+Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Click All for the Event Logging and Local Traffic Log options (for most verbose logging), or Click Customize and choose granular logging options to meet organization needs.
+4. Click Apply.
+
+In addition to these log settings, configure individual firewall policies with the most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. For each policy, configure Logging Options to log All Sessions (for most verbose logging).
+4. Confirm each created Policy is Enabled.
+5. Click OK.
+
+or
+
+1. Open a CLI console.
+2. Run the following command:
+     # config log eventfilter
+     #    set event enable
+     #    set system enable
+     #    set endpoint enable
+     #    set user enable
+     #    set security-rating enable
+     # end
+     # config firewall policy
+     #   edit 0
+     #        set srcintf {interface_name_1}
+     #        set dstintf {interface_name_2}
+     #        set srcaddr {address_a}
+     #        set dstaddr {address_b}
+     #        set schedule {always}
+     #        set service {service required by site policy}
+     #        set action {accept}
+     #        set logtraffic enable
+     #    next
+     # end
+
+The {} indicate the object is defined by the organization policy.</fixtext><fix id="F-37285r611404_fix" /><check system="C-37320r611403_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Local Traffic.
+3. Verify events are generated containing date, time, alert level related to System and Local Traffic Log.
+
+In addition to System log settings, verify that individual firewall policies are configured with most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify all Policy rules are configured with Logging Options set to log All Sessions (for most verbose logging).
+
+If there are no events generated containing date, time, alert level, user, message type, and other information, this is a finding.</check-content></check></Rule></Group><Group id="V-234136"><title>SRG-NET-000075-FW-000010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234136r611408_rule" weight="10.0" severity="medium"><version>FNFG-FW-000025</version><title>The FortiGate firewall must generate traffic log entries containing information to establish when (date and time) the events occurred.</title><description>&lt;VulnDiscussion&gt;Without establishing when events occurred, it is impossible to establish, correlate, and investigate the events leading up to an outage or attack.
+
+To compile an accurate risk assessment and provide forensic analysis of network traffic patterns, it is essential for security personnel to know when flow control events occurred (date and time) within the infrastructure.
+
+Associating event types with detected events in the network traffic logs provides a means of investigating an attack, recognizing resource utilization or capacity thresholds, or identifying an improperly configured network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000131</ident><fixtext fixref="F-37286r611407_fix">This fix can be performed on the FortiGate GUI or on the CLI. 
+Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Click All for the Event Logging and Local Traffic Log options (for most verbose logging), or Click Customize and choose granular logging options to meet organization needs.
+4. Click Apply.
+
+In addition to these log settings, configure individual firewall policies with the most suitable Logging Options.
+ 
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. For each policy, configure Logging Options to log All Sessions (for most verbose logging).
+4. Confirm each created Policy is Enabled.
+5. Click OK.
+
+or
+
+1. Open a CLI console.
+2. Run the following command:
+     # config log eventfilter
+     #    set event enable
+     #    set system enable
+     #    set endpoint enable
+     #    set user enable
+     #    set security-rating enable
+     # end
+     # config firewall policy
+     #   edit 0
+     #        set srcintf {interface_name_1}
+     #        set dstintf {interface_name_2}
+     #        set srcaddr {address_a}
+     #        set dstaddr {address_b}
+     #        set schedule {always}
+     #        set service {service required by site policy}
+     #        set action {accept}
+     #        set logtraffic enable
+     #    next
+     # end
+
+The {} indicate the object is defined by the organization policy.</fixtext><fix id="F-37286r611407_fix" /><check system="C-37321r611406_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Events, or Local Traffic.
+3. Verify events are generated containing date, time, and alert level related to System and Local Traffic Log.
+
+In addition to System log settings, verify individual firewall policies are configured with most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify all Policy rules are configured with Logging Options set to log All Sessions (for most verbose logging).
+
+If the log events do not contain information to establish date and time, this is a finding.</check-content></check></Rule></Group><Group id="V-234137"><title>SRG-NET-000076-FW-000011</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234137r611411_rule" weight="10.0" severity="medium"><version>FNFG-FW-000030</version><title>The FortiGate firewall must generate traffic log entries containing information to establish the network location where the events occurred.</title><description>&lt;VulnDiscussion&gt;Without establishing where events occurred, it is impossible to establish, correlate, and investigate the events leading up to an outage or attack.
+
+To compile an accurate risk assessment and provide forensic analysis, it is essential for security personnel to know where events occurred, such as network element components, modules, device identifiers, node names, and functionality. 
+
+Associating information about where the event occurred within the network provides a means of investigating an attack, recognizing resource utilization or capacity thresholds, or identifying an improperly configured network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000132</ident><fixtext fixref="F-37287r611410_fix">This fix can be performed on the FortiGate GUI or on the CLI. 
+Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Click All for the Event Logging and Local Traffic Log options (for most verbose logging), or Click Customize and choose granular logging options to meet organization needs.
+4. Scroll to UUIDs in Traffic Log and toggle Policy and Address buttons to enable.
+5. Click Apply.
+
+In addition to these log settings, configure individual firewall policies with the most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. For each policy, configure Logging Options to log All Sessions (for most verbose logging).
+4. Confirm each created Policy is Enabled.
+5. Click OK.
+
+or
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # config log eventfilter
+     #    set event enable
+     #    set system enable
+     #    set endpoint enable
+     #    set user enable
+     #    set security-rating enable
+     # end
+3. For each configured policy set the following: 
+     # config firewall {policy|policy6}
+     #   edit {policyid}
+     #       set logtraffic enable
+     # end
+
+The {} indicate the object is defined by the organization policy.</fixtext><fix id="F-37287r611410_fix" /><check system="C-37322r611409_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Forward Traffic, or Local Traffic.
+3. Double-click on an Event to view Log Details.
+4. Verify traffic log events contain source and destination IP addresses, and interfaces.
+
+In addition to System log settings, verify that individual firewall policies are configured with most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify all Policy rules are configured with Logging Options set to log All Sessions (for most verbose logging).
+
+If the traffic log events do not contain source and destination IP addresses, or interfaces, this is a finding.</check-content></check></Rule></Group><Group id="V-234138"><title>SRG-NET-000077-FW-000012</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234138r611414_rule" weight="10.0" severity="low"><version>FNFG-FW-000035</version><title>The FortiGate firewall must generate traffic log entries containing information to establish the source of the events, such as the source IP address at a minimum.</title><description>&lt;VulnDiscussion&gt;Without establishing the source of the event, it is impossible to establish, correlate, and investigate the events leading up to an outage or attack. In order to compile an accurate risk assessment and provide forensic analysis, security personnel need to know the source of the event.
+
+In addition to logging where events occur within the network, the traffic log events must also identify sources of events, such as IP addresses, processes, and node or device names.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000133</ident><fixtext fixref="F-37288r611413_fix">This fix can be performed on the FortiGate GUI or on the CLI. 
+Log in to the FortiGate GUI with Super- or Log-and-Report-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Click All for the Event Logging and Local Traffic Log options (for most verbose logging), or Click Customize and choose granular logging options to meet organization needs.
+4. Scroll to UUIDs in Traffic Log and toggle Policy and Address buttons to enable.
+5. Click Apply.
+
+In addition to these log settings, configure individual firewall policies with the most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. For each policy, configure Logging Options to log All Sessions (for most verbose logging).
+4. Confirm each created Policy is Enabled.
+5. Click OK.
+
+or
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # config log eventfilter
+     #    set event enable
+     #    set system enable
+     #    set endpoint enable
+     #    set user enable
+     #    set security-rating enable
+     # end
+     # config firewall policy
+     #   edit 0
+     #        set srcintf {interface_name_1}
+     #        set dstintf {interface_name_2}
+     #        set srcaddr {address_a}
+     #        set dstaddr {address_b}
+     #        set schedule {always}
+     #        set service {services required by site policy}
+     #        set action {accept}
+     #        set logtraffic enable
+     #    next
+     # end
+
+The {} indicate the object is defined by the organization policy.</fixtext><fix id="F-37288r611413_fix" /><check system="C-37323r611412_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Forward Traffic or Local Traffic.
+3. Double-click on an Event to view Log Details.
+4. Verify traffic log events contain source and destination IP addresses, and interfaces.
+
+In addition to System log settings, verify that individual IPv4 policies are configured with most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify all Policy rules are configured with Logging Options set to log All Sessions (for most verbose logging).
+
+If the log events do not contain IP address of source devices, this is a finding.</check-content></check></Rule></Group><Group id="V-234139"><title>SRG-NET-000078-FW-000013</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234139r611417_rule" weight="10.0" severity="medium"><version>FNFG-FW-000040</version><title>The FortiGate firewall must generate traffic log entries containing information to establish the outcome of the events, such as, at a minimum, the success or failure of the application of the firewall rule.</title><description>&lt;VulnDiscussion&gt;Without information about the outcome of events, security personnel cannot make an accurate assessment as to whether an attack was successful or if changes were made to the security state of the network.
+
+Event outcomes can include indicators of event success or failure and event-specific results. They also provide a means to measure the impact of an event and help authorized personnel to determine the appropriate response.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000134</ident><fixtext fixref="F-37289r611416_fix">This fix can be performed on the FortiGate GUI or on the CLI. 
+Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Click All for the Event Logging and Local Traffic Log options (for most verbose logging), or Click Customize and choose granular logging options to meet organization needs.
+4. Scroll to UUID in Traffic Log and toggle Policy and Address buttons to enable.
+5. Click Apply.
+
+In addition to these log settings, configure individual firewall policies with the most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. For each policy, configure Logging Options to log All Sessions (for most verbose logging).
+4. Confirm each created Policy is Enabled.
+5. Click OK.
+
+or
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # config log eventfilter
+     #    set event enable
+     #    set system enable
+     #    set endpoint enable
+     #    set user enable
+     #    set security-rating enable
+     # end
+     # config firewall policy
+     #   edit 0
+     #        set srcintf {interface_name_1}
+     #        set dstintf {interface_name_2}
+     #        set srcaddr {address_a}
+     #        set dstaddr {address_b}
+     #        set schedule {always}
+     #        set service {services required by site policy}
+     #        set action {accept}
+     #        set logtraffic enable
+     #    next
+     # end
+
+The {} indicate the object is defined by the organization policy.</fixtext><fix id="F-37289r611416_fix" /><check system="C-37324r611415_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Forward Traffic or Local Traffic.
+3. Double-click on an Event to view Log Details.
+4. Verify log events contain status information like success or failure of the application of the firewall rule.
+
+In addition to System log settings, verify that individual IPv4 policies are configured with most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify all Policy rules are configured with Logging Options set to log All Sessions (for most verbose logging).
+
+If the log events do not contain status information, like success or failure of the application of the firewall rule, this is a finding.</check-content></check></Rule></Group><Group id="V-234140"><title>SRG-NET-000089-FW-000019</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234140r863251_rule" weight="10.0" severity="medium"><version>FNFG-FW-000045</version><title>In the event that communication with the central audit server is lost, the FortiGate firewall must continue to queue traffic log records locally.</title><description>&lt;VulnDiscussion&gt;It is critical that when the network element is at risk of failing to process traffic logs as required, it takes action to mitigate the failure. Audit processing failures include software/hardware errors, failures in the audit capturing mechanisms, and audit storage capacity being reached or exceeded. Responses to audit failure depend on the nature of the failure mode.
+
+In accordance with DoD policy, the traffic log must be sent to a central audit server. When logging functions are lost, system processing cannot be shut down because firewall availability is an overriding concern given the role of the firewall in the enterprise. The system should either be configured to log events to an alternative server or queue log records locally. Upon restoration of the connection to the central audit server, action should be taken to synchronize the local log data with the central audit server.
+
+If the central audit server uses User Datagram Protocol (UDP) communications instead of a connection-oriented protocol such as TCP, a method for detecting a lost connection must be implemented.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000140</ident><fixtext fixref="F-37290r863250_fix">For audit log resilience, it is required to log to the local FortiGate disk and a central audit server, or two central audit servers. To do this, log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. For Local Log setting options, toggle the Disk setting to right.
+
+To add a syslog server:
+5. For Remote Logging and Archiving, toggle the Send logs to syslog setting and enter the appropriate IP address.
+6. Click Apply to save the settings.
+
+or
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # config log disk setting
+     #    set status enable
+     #    set diskfull overwrite
+     # end
+     # config log syslogd setting
+     #    set status enable
+     #    set server {IP Address}
+     #    set mode reliable
+     # end</fixtext><fix id="F-37290r863250_fix" /><check system="C-37325r863249_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Verify at least two logging options are configured. It can be any combination of local and/or remote logging.
+
+Via the GUI:
+
+Login via the FortiGate GUI with super-admin privileges. 
+
+- Navigate to Log and Report.
+- Navigate to Log Settings.
+- Verify the FortiGate Local Log disk settings.
+- Verify the Remote and Archiving settings.
+
+or
+
+Via the CLI:
+
+Open a CLI console via SSH or from the "CLI Console" button in the GUI.
+
+Run the following commands to verify which logging settings are enabled:
+
+# show full-configuration log disk setting | grep -i 'status\|diskfull'
+- The output should indicate enabled.
+
+# show full-configuration log fortianalyzer setting | grep -i 'status\|server'
+# show full-configuration log fortianalyzer2 setting | grep -i 'status\|server'
+# show full-configuration log fortianalyzer3 setting | grep -i 'status\|server'
+# show full-configuration log syslogd setting | grep -i 'status\|server'
+# show full-configuration log syslogd2 setting | grep -i 'status\|server'
+# show full-configuration log syslogd3 setting | grep -i 'status\|server'
+# show full-configuration log syslogd4 setting | grep -i 'status\|server'
+- The output should indicate enabled and an IP address.
+
+If the FortiGate is not logging to at least two locations (local and remote OR remote(x2) only), this is a finding.</check-content></check></Rule></Group><Group id="V-234141"><title>SRG-NET-000098-FW-000021</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234141r835165_rule" weight="10.0" severity="medium"><version>FNFG-FW-000050</version><title>The FortiGate firewall must protect traffic log records from unauthorized access while in transit to the central audit server.</title><description>&lt;VulnDiscussion&gt;Auditing and logging are key components of any security architecture. Logging the actions of specific events provides a means to investigate an attack, recognize resource utilization or capacity thresholds, or identify an improperly configured firewall. Thus, it is imperative that the collected log data be secured and access be restricted to authorized personnel. Methods of protection may include encryption or logical separation.
+
+This does not apply to traffic logs generated on behalf of the device itself (management). Some devices store traffic logs separately from the system logs.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000162</ident><fixtext fixref="F-37291r835164_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+First, upload the CA certificate that issued the Syslog server certificate.
+1. Click System.
+2. Click Certificates.
+3. Click Import, then CA Certificate.
+4. Specify File, and click + Upload.
+5. Choose the CA Certificate to upload from the local hard drive.
+6. Click OK.
+
+Then, configure a TLS-enabled syslog connection:
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # config log syslogd setting
+     #    set status enable
+     #    set server {SYSLOG SERVER IP ADDRESS} 
+     #    set mode reliable
+     #    set enc-algorithm {HIGH-MEDIUM | HIGH}
+     #    set certificate (Optional - Select local certificate if Syslog server is challenging client [FortiGate] for authentication)
+     # end
+
+Note: The server IP address must be on the site's management network.</fixtext><fix id="F-37291r835164_fix" /><check system="C-37326r835163_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privileges.
+
+1. Open a CLI console via SSH or from the GUI widget.
+2. Run the following command:
+     # show full-configuration log syslogd setting
+The output should include:
+     set server {123.123.123.123}
+     set mode reliable
+     set enc-algorithm {medium-high | high}
+
+If the syslogd mode is not set to reliable, this is a finding.
+If the set enc-algorithm is not set to high or medium-high, this is a finding.</check-content></check></Rule></Group><Group id="V-234142"><title>SRG-NET-000099-FW-000161</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234142r611426_rule" weight="10.0" severity="medium"><version>FNFG-FW-000055</version><title>The FortiGate firewall must protect the traffic log from unauthorized modification of local log records.</title><description>&lt;VulnDiscussion&gt;If audit data were to become compromised, forensic analysis and discovery of the true source of potentially malicious system activity would be impossible to achieve.
+
+To ensure the veracity of audit data, the information system and/or the application must protect audit information from unauthorized modification. This can be achieved through multiple methods, which will depend on system architecture and design. Some commonly employed methods include ensuring log files receive the proper file system permissions and limiting log data locations.
+
+Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity.
+
+This does not apply to traffic logs generated on behalf of the device itself (management). Traffic logs and Management logs are separate on FortiGate.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000163</ident><fixtext fixref="F-37292r611425_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click System.
+2. Click Admin Profiles.
+3. Click +Create New (Admin Profile).
+4. Assign a meaningful name to the Profile.
+5. Set Log and Report access permissions to None.
+6. Click OK to save this Profile.
+
+Then, 
+1. Click System.
+2. Click Administrators.
+3. Click the Administrator that is not allowed access to log records.
+4. Assign the Admin Profile that was created above.
+5. Click OK to save.
+
+Repeat this process to remove log access for all Administrators without an organizational need to modify log settings.</fixtext><fix id="F-37292r611425_fix" /><check system="C-37327r611424_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with an administrator that has no Log and Report access.
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     $ config log setting
+
+3. Ensure that the command fails. 
+
+If an Administrator without Log and Report privileges can configure log settings, this is a finding.</check-content></check></Rule></Group><Group id="V-234143"><title>SRG-NET-000100-FW-000023</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234143r611429_rule" weight="10.0" severity="high"><version>FNFG-FW-000060</version><title>The FortiGate firewall must protect the traffic log from unauthorized deletion of local log files and log records.</title><description>&lt;VulnDiscussion&gt;If audit data were to become compromised, forensic analysis and discovery of the true source of potentially malicious system activity would be impossible to achieve.
+
+To ensure the veracity of audit data, the information system and/or the application must protect audit information from unauthorized modification. This can be achieved through multiple methods, which will depend on system architecture and design. Some commonly employed methods include ensuring log files receive the proper file system permissions and limiting log data locations.
+
+Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity.
+
+This does not apply to traffic logs generated on behalf of the device itself (management). Traffic logs and Management logs are separate on FortiGate.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000164</ident><fixtext fixref="F-37293r611428_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click System.
+2. Click Admin Profiles.
+3. Click +Create New (Admin Profile).
+4. Assign a meaningful name to the Profile.
+5. Set Log and Report access permissions to None.
+6. Click OK to save this Profile.
+
+Then, 
+1. Click System.
+2. Click Administrators.
+3. Click the Administrator that is not allowed access to log settings.
+4. Assign the Admin Profile that was created above.
+5. Click OK to save.
+
+Repeat this process to remove log access for all Administrators without an organizational need to modify log records.</fixtext><fix id="F-37293r611428_fix" /><check system="C-37328r611427_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with an administrator that has no Log and Report access.
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     $ execute log delete
+
+3. Ensure that the command fails.
+
+If an Administrator without Log and Report privileges can delete locally stored logs, this is a finding.</check-content></check></Rule></Group><Group id="V-234144"><title>SRG-NET-000131-FW-000025</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234144r611432_rule" weight="10.0" severity="medium"><version>FNFG-FW-000065</version><title>The FortiGate firewall must disable or remove unnecessary network services and functions that are not used as part of its role in the architecture.</title><description>&lt;VulnDiscussion&gt;Network devices are capable of providing a wide variety of functions (capabilities or processes) and services. Some of these functions and services are installed and enabled by default. The organization must determine which functions and services are required to perform the content filtering and other necessary core functionality for each component of the firewall. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Some services may be security related, but based on the firewall’s role in the architecture, must not be installed on the same hardware. For example, the device may serve as a router, VPN, or other perimeter services. However, if these functions are not part of the documented role of the firewall in the enterprise or branch architecture, the software and licenses must not be installed on the device. This mitigates the risk of exploitation of unconfigured services or services that are not kept updated with security fixes. If left unsecured, these services may provide a threat vector.
+
+Some services are not authorized for combination with the firewall and individual policy must be in place to instruct the administrator to remove these services. Examples of these services are Network Time Protocol (NTP), domain name server (DNS), email server, FTP server, web server, and Dynamic Host Configuration Protocol (DHCP). 
+
+Only remove unauthorized services. This control is not intended to restrict the use of firewalls with multiple authorized roles.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-37294r611431_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # config system interface
+     #    edit {interface-name}
+     #    get | grep enable
+     #    get | grep allowaccess
+Disable each service in {} that needs to be removed using:
+     # config system interface
+     #    edit {interface-name}
+     #    set {service} disable
+     # end</fixtext><fix id="F-37294r611431_fix" /><check system="C-37329r611430_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # show full-configuration system interface
+3. Review configuration for unnecessary services.
+
+If unnecessary services are configured, this is a finding.</check-content></check></Rule></Group><Group id="V-234145"><title>SRG-NET-000192-FW-000029</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234145r611435_rule" weight="10.0" severity="medium"><version>FNFG-FW-000070</version><title>The FortiGate firewall must block outbound traffic containing denial-of-service (DoS) attacks to protect against the use of internal information systems to launch any DoS attacks against other networks or endpoints.</title><description>&lt;VulnDiscussion&gt;DoS attacks can take multiple forms but have the common objective of overloading or blocking a network or host to deny or seriously degrade performance. If the network does not provide safeguards against DoS attacks, network resources will be unavailable to users.
+
+Installation of a firewall at key boundaries in the architecture mitigates the risk of DoS attacks. These attacks can be detected by matching observed communications traffic with patterns of known attacks and monitoring for anomalies in traffic volume/type.
+
+The firewall must include protection against DoS attacks that originate from inside the enclave that can affect either internal or external systems. These attacks may use legitimate or rogue endpoints from inside the enclave. These attacks can be simple "floods" of traffic to saturate circuits or devices, malware that consumes CPU and memory on a device or causes it to crash, or a configuration issue that disables or impairs the proper function of a device. For example, an accidental or deliberate misconfiguration of a routing table can misdirect traffic for multiple networks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001094</ident><fixtext fixref="F-37295r611434_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 DoS Policy or IPv6 DoS Policy.
+3. Click +Create New.
+4. Select the Incoming Interface.
+5. Select Source and Destination addresses.
+6. Select the Service.
+7. Enable desired L3 and L4 anomalies and thresholds.
+8. Ensure the Enable this policy is toggled to right.
+9. Click OK.
+10. Ensure a policy is created for each interface where there is potential risk of DoS.</fixtext><fix id="F-37295r611434_fix" /><check system="C-37330r611433_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Policy and Objects.
+2. Go to IPv4 DoS Policy.
+3. Verify different DoS policies that include Incoming Interface, Source Address, Destination Address, and Services have been created.
+4. Verify the DoS policies are configured to block L3 and L4 anomalies.
+
+If the DoS policies are not configured to block the outbound traffic, this is a finding.</check-content></check></Rule></Group><Group id="V-234146"><title>SRG-NET-000193-FW-000030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234146r611438_rule" weight="10.0" severity="medium"><version>FNFG-FW-000075</version><title>The FortiGate firewall implementation must manage excess bandwidth to limit the effects of packet flooding types of denial-of-service (DoS) attacks.</title><description>&lt;VulnDiscussion&gt;A firewall experiencing a DoS attack will not be able to handle production traffic load. The high utilization and CPU caused by a DoS attack will also have an effect on control keep-alives and timers used for neighbor peering resulting in route flapping and will eventually black hole production traffic.
+
+The device must be configured to contain and limit a DoS attack's effect on the device's resource utilization. The use of redundant components and load balancing are examples of mitigating "flood-type" DoS attacks through increased capacity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001095</ident><fixtext fixref="F-37296r611437_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 DoS Policy or IPv6 DoS Policy.
+3. Click +Create New.
+4. Select the Incoming Interface.
+5. Select Source and Destination addresses.
+6. Select the Service.
+7. Enable desired L3 and L4 anomalies and thresholds.
+8. Ensure the Enable this policy is toggle to right.
+9. Click OK.
+10. Ensure a policy is created for each interface where there is potential risk of DoS.</fixtext><fix id="F-37296r611437_fix" /><check system="C-37331r611436_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Policy and Objects.
+2. Go to IPv4 DoS Policy.
+3. Verify different DoS policies that include Incoming Interface, Source Address, Destination Address, and Services have been created.
+4. Verify the DoS policies are configured to block L3 and L4 anomalies.
+
+If the DoS policies are not configured to block excess traffic, this is a finding.</check-content></check></Rule></Group><Group id="V-234147"><title>SRG-NET-000205-FW-000040</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234147r628789_rule" weight="10.0" severity="medium"><version>FNFG-FW-000085</version><title>The FortiGate firewall must filter traffic destined to the internal enclave in accordance with the specific traffic that is approved and registered in the Ports, Protocols, and Services Management (PPSM) Category Assurance List (CAL), Vulnerability Assessments (VAs) for that the enclave.</title><description>&lt;VulnDiscussion&gt;The enclave's internal network contains the servers where mission-critical data and applications reside. Malicious traffic can enter from an external boundary or originate from a compromised host internally.
+
+Vulnerability assessments must be reviewed by the SA and protocols must be approved by the IA staff before entering the enclave. 
+
+Firewall filters (e.g., rules, access control lists [ACLs], screens, and policies) are the first line of defense in a layered security approach. They permit authorized packets and deny unauthorized packets based on port or service type. They enhance the posture of the network by not allowing packets to even reach a potential target within the security domain. The filters provided are highly susceptible ports and services that should be blocked or limited as much as possible without adversely affecting customer requirements. Auditing packets attempting to penetrate the network but stopped by the firewall filters will allow network administrators to broaden their protective ring and more tightly define the scope of operation. 
+
+If the perimeter is in a deny-by-default posture and what is allowed through the filter is in accordance with the PPSM CAL and VAs for the enclave, and if the permit rule is explicitly defined with explicit ports and protocols allowed, then all requirements related to the database being blocked would be satisfied.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001097</ident><fixtext fixref="F-37297r611440_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Click +Create New.
+4. Name the policy, select Incoming and Outgoing Interfaces.
+5. Create policies with authorized sources and destinations.
+6. Set action to ACCEPT.
+7. Ensure the Enable this policy is toggled to right.
+8. Click OK.
+9. Ensure a policy is created for each interface.
+
+Traffic is denied by default and policies must be configured to allow traffic that meets PPSM CAL and VA guidelines.</fixtext><fix id="F-37297r611440_fix" /><check system="C-37332r611439_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # show firewall policy
+     # show firewall policy6
+
+Ensure policies are created that only allow approved traffic that is in accordance with the PPSM CAL and VAs for the enclave. 
+
+If configured policies allow traffic that is not allowed per the PPSM CAL and VAs for the enclave, this is a finding.</check-content></check></Rule></Group><Group id="V-234148"><title>SRG-NET-000235-FW-000133</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234148r611444_rule" weight="10.0" severity="medium"><version>FNFG-FW-000090</version><title>The FortiGate firewall must fail to a secure state if the firewall filtering functions fail unexpectedly.</title><description>&lt;VulnDiscussion&gt;Firewalls that fail suddenly and with no incorporated failure state planning may leave the hosting system available but with a reduced security protection. Failure to a known safe state helps prevent systems from failing to a state that may cause unauthorized access to make changes to the firewall filtering functions. 
+
+This applies to the configuration of the gateway or network traffic security function of the device. Abort refers to stopping the firewall filtering function before it has finished naturally. The term abort refers to both requested and unexpected terminations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001190</ident><fixtext fixref="F-37298r611443_fix">FortiGate will inherently fail closed upon a power failure. Additionally, the FortiOS kernel enters conserve mode when memory use reaches the red threshold (default 88 percent memory use). When the red threshold is reached, FortiOS functions that react to conserve mode, such as the antivirus transparent proxy, apply conserve mode based on configured conserve mode settings. Additionally, FortiOS generates conserve mode log messages and SNMP traps, and a conserve mode banner appears on the GUI. If memory use reaches the extreme threshold (95 percent memory used), new sessions are dropped and red threshold conserve mode actions continue.
+
+Conserve mode actions for filtering are configured as follows:
+
+Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # config ips global
+     #    set fail-open disable
+     # end
+     # config system global
+     #    set av-failopen off
+     #    set av-failopen-session disable
+     # end</fixtext><fix id="F-37298r611443_fix" /><check system="C-37333r611442_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # show ips global | grep -i fail-open
+     # show system global | grep -i failopen
+
+If ips fail-open is set to enable or av-failopen is not set to off or av-failopen-session is not set to disable, this is a finding.</check-content></check></Rule></Group><Group id="V-234149"><title>SRG-NET-000333-FW-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234149r863248_rule" weight="10.0" severity="medium"><version>FNFG-FW-000100</version><title>The FortiGate firewall must send traffic log entries to a central audit server for management and configuration of the traffic log entries.</title><description>&lt;VulnDiscussion&gt;Without the ability to centrally manage the content captured in the traffic log entries, identification, troubleshooting, and correlation of suspicious behavior would be difficult and could lead to a delayed or incomplete analysis of an ongoing attack.
+
+The DoD requires centralized management of all network component audit record content. Network components requiring centralized traffic log management must have the ability to support centralized management. The content captured in traffic log entries must be managed from a central location (necessitating automation). Centralized management of traffic log records and logs provides for efficiency in maintenance and management of records, as well as the backup and archiving of those records. 
+
+Ensure at least one syslog server is configured on the firewall.
+
+If the product inherently has the ability to store log records locally, the local log must also be secured. However, this requirement is not met since it calls for a use of a central audit server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-37299r835166_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Go to Remote Logging and Archiving.
+
+If using FortiAnalyzer:
+4. Toggle Send logs to FortiAnalyzer/FortiManager to the right.
+5. Configure FortiAnalyzer/FortiManager with designated IP address.
+6. Configure Upload Option, SSL encrypt log transmission and Allow access to FortiGate REST API per the organizational requirement.
+
+If using a central syslog server:
+7. Toggle Send logs to syslog to the right.
+8. Configure syslog settings with designated IP Address/FQDN.
+9. Click Apply.
+
+or
+
+Log in to the FortiGate GUI with Super-Admin privilege.
+
+Open a CLI console, via SSH or available from the GUI.
+
+If using FortiAnalyzer, run the following command:
+     # config log fortianalyzer setting
+     #    set status enable
+     #    set server {IP address}
+     # end
+
+If using central syslog Server, run the following command:
+     # config log syslogd setting
+     #    set status enable
+     #    set server {IP address}
+     # end</fixtext><fix id="F-37299r835166_fix" /><check system="C-37334r611445_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Under Remote Logging and Archiving, verify FortiAnalyzer and/or syslog settings are enabled and configured with IP addresses of central FortiAnalyzer or Syslog server(s).
+
+or
+
+Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # show full-configuration log syslogd setting | grep -i status
+ Check output for: 
+          set status enable
+3. Run the following command:
+      # show full-configuration log fortianalyzer setting | grep -i status
+    check output for: 
+          set status enable
+
+If the FortiGate is not configured to send traffic logs to a central audit server, this is a finding.</check-content></check></Rule></Group><Group id="V-234150"><title>SRG-NET-000335-FW-000017</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234150r852960_rule" weight="10.0" severity="medium"><version>FNFG-FW-000105</version><title>If communication with the central audit server is lost, the FortiGate firewall must generate a real-time alert to, at a minimum, the SCA and ISSO.</title><description>&lt;VulnDiscussion&gt;Without a real-time alert (less than a second), security personnel may be unaware of an impending failure of the audit functions and system operation may be adversely impacted. Alerts provide organizations with urgent messages. Automated alerts can be conveyed in a variety of ways, including via a regularly monitored console, telephonically, via electronic mail, via text message, or via websites.
+
+Log processing failures include software/hardware errors, failures in the log capturing mechanisms, and log storage capacity being reached or exceeded. Most firewalls use UDP to send audit records to the server and cannot tell if the server has received the transmission, thus the site must either implement a connection-oriented communications solution (e.g., TCP) or implement a heartbeat with the central audit server and send an alert if it is unreachable.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001858</ident><fixtext fixref="F-37300r611449_fix">To create real-time alerts when FortiAnalyzer is the central audit server, log in to the FortiGate GUI with Super-Admin privilege. If not using FortiAnalyzer, skip ahead to the central log server steps. 
+
+1. Click Security Fabric.
+2. Click Automation.
+3. Click +Create New (Automation Stitch).
+4. For Trigger, select FortiOS Event Log.
+5. For Event field, Click + (and choose a specific event type).
+6. For Action, select Email, specify recipients, and Email subject.
+7. Click OK.
+
+The following are all relevant Event Log entries for loss of communication with the central audit server. For most complete coverage, configure an Automation Stitch for each of the Event Log entries below:
+
+-FortiAnalyzer connection down
+-FortiAnalyzer connection failed
+-FortiAnalyzer log access failed
+-Log Upload Error
+
+To create real-time alerts when using a syslog server as the central audit server, log in to the FortiGate GUI with Super-Admin privilege.
+
+To ensure Feature visibility: 
+1. Click System.
+2. Click Feature Visibility.
+3. Under Additional Features, toggle the switch to enable Load Balance.
+4. Click Apply.
+
+To configure the alert: 
+1. Click Policies &amp; Objects.
+2. Click Health Check.
+3. Click +Create New.
+4. Name the Health Check.
+5. For Type, select TCP.
+6. For Interval, type {5}.
+7. For Timeout, type {1}.
+8. For Retry, type {1}.
+9. For Port, type {514}.
+10. Click OK.
+11. Click Virtual Servers.
+12. Click +Create New.
+13. Name the Virtual Server.
+14. For Type, select TCP.
+15. For Interface, select any unused internal interface.
+16. For Virtual Server IP, type any unused IP.
+17. For Virtual Server Port, type {514}.
+18. For Health Check, select the Health Check that was created in steps 1-10.
+19. In Real Servers, click +Create New.
+20. In New Real Server IP Address, type the IP address of the syslog server.
+21. For port, type {514}.
+22. Click OK to close New Real Server window.
+23. Click OK to close Edit Virtual Server.
+24. Click Security Fabric.
+25. Click Automation.
+26. Click +Create New (Automation Stitch).
+27. For Trigger, select FortiOS Event Log.
+28. For Event field, click + and choose "VIP real server down".
+29. For Action, select Email, specify recipients, and Email subject.
+30. Click OK.</fixtext><fix id="F-37300r611449_fix" /><check system="C-37335r611448_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Security Fabric.
+2. Click Automation.
+3. Verify Automation Stitches are configured to send alerts related to loss of communication with the central audit server.
+4. For each Automation Stitch, verify a valid Action Email has been configured.
+
+If there are no organization-specific Automation Stitches defined to trigger on loss of communication with the central audit server, this is a finding.</check-content></check></Rule></Group><Group id="V-234151"><title>SRG-NET-000362-FW-000028</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234151r852961_rule" weight="10.0" severity="high"><version>FNFG-FW-000110</version><title>The FortiGate firewall must employ filters that prevent or limit the effects of all types of commonly known denial-of-service (DoS) attacks, including flooding, packet sweeps, and unauthorized port scanning.</title><description>&lt;VulnDiscussion&gt;Not configuring a key boundary security protection device such as the firewall against commonly known attacks is an immediate threat to the protected enclave because they are easily implemented by those with little skill. Directions for the attack are obtainable on the internet and in hacker groups. Without filtering enabled for these attacks, the firewall will allow these attacks beyond the protected boundary.
+
+Configure the perimeter and internal boundary firewall to guard against the three general methods of well-known DoS attacks: flooding attacks, protocol sweeping attacks, and unauthorized port scanning.
+
+Flood attacks occur when the host receives too much traffic to buffer and slows down or crashes. Popular flood attacks include ICMP flood and SYN flood. A TCP flood attack of SYN packets initiating connection requests can overwhelm the device until it can no longer process legitimate connection requests, resulting in DoS. An ICMP flood can overload the device with so many echo requests (ping requests) that it expends all its resources responding and can no longer process valid network traffic, also resulting in DoS. An attacker might use session table floods and SYN-ACK-ACK proxy floods to fill up the session table of a host.
+
+In an IP address sweep attack, an attacker sends ICMP echo requests (pings) to multiple destination addresses. If a target host replies, the reply reveals the target’s IP address to the attacker. In a TCP sweep attack, an attacker sends TCP SYN packets to the target device as part of the TCP handshake. If the device responds to those packets, the attacker gets an indication that a port in the target device is open, which makes the port vulnerable to attack. In a UDP sweep attack, an attacker sends UDP packets to the target device. If the device responds to those packets, the attacker gets an indication that a port in the target device is open, which makes the port vulnerable to attack.
+
+In a port scanning attack, an unauthorized application is used to scan the host devices for available services and open ports for subsequent use in an attack. This type of scanning can be used as a DoS attack when the probing packets are sent excessively.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-37301r611452_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 DoS Policy or IPv6 DoS Policy.
+3. Click +Create New.
+4. Configure DoS policies that include Incoming Interface, Source Address, Destination Address, and Services.
+5. Configure Action and Threshold for L3 and L4 anomalies per site policies.
+6. Click OK.</fixtext><fix id="F-37301r611452_fix" /><check system="C-37336r611451_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 DoS Policy.
+3. Verify different DoS policies that include Incoming Interface, Source Address, Destination Address, and Services have been created.
+4. Double-.click on each policy.
+5. Verify the DS policies are configured with appropriate thresholds for L3 and L4 anomalies.
+
+If the DoS policies are not configured to filter packets associated with flooding, packet sweeps, and unauthorized port scanning, this is a finding.</check-content></check></Rule></Group><Group id="V-234152"><title>SRG-NET-000364-FW-000031</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234152r852962_rule" weight="10.0" severity="medium"><version>FNFG-FW-000115</version><title>The FortiGate firewall must apply ingress filters to traffic that is inbound to the network through any active external interface.</title><description>&lt;VulnDiscussion&gt;Unrestricted traffic to the trusted networks may contain malicious traffic that poses a threat to an enclave or to other connected networks. Additionally, unrestricted traffic may transit a network, which uses bandwidth and other resources.
+
+Firewall filters control the flow of network traffic and ensure the flow of traffic is only allowed from authorized sources to authorized destinations. Networks with different levels of trust (e.g., the internet) must be kept separated.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><fixtext fixref="F-37302r611455_fix">Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click the Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Click +Create New.
+4. Name the policy, select Incoming and Outgoing Interfaces.
+5. Create the policies with authorized sources and destinations.
+6. Create the policies with Action set to either DENY or ACCEPT.
+7. Ensure the Enable this policy is toggled to right.
+8. Click OK.
+9. Ensure a policy is created for each interface.</fixtext><fix id="F-37302r611455_fix" /><check system="C-37337r611454_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click the Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify the policies are configured for all Interfaces.
+4. Verify the polices are configured with Action set either to DENY or ACCEPT based on the organizational requirement.
+
+If a Firewall Policy is not applied to all interfaces, this is a finding.</check-content></check></Rule></Group><Group id="V-234153"><title>SRG-NET-000364-FW-000032</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234153r852963_rule" weight="10.0" severity="medium"><version>FNFG-FW-000120</version><title>The FortiGate firewall must apply egress filters to traffic outbound from the network through any internal interface.</title><description>&lt;VulnDiscussion&gt;If outbound communications traffic is not filtered, hostile activity intended to harm other networks or packets from networks destined to unauthorized networks may not be detected and prevented.
+
+Access control policies and access control lists implemented on devices, such as firewalls, that control the flow of network traffic ensure the flow of traffic is only allowed from authorized sources to authorized destinations. Networks with different levels of trust (e.g., the internet) must be kept separated.
+
+This requirement addresses the binding of the egress filter to the interface/zone rather than the content of the egress filter.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><fixtext fixref="F-37303r611458_fix">Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click the Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Click +Create New.
+4. Name the policy and select Incoming and Outgoing Interfaces.
+5. Create the policies with authorized sources and destinations.
+6. Create the policies with Action set to either DENY or ACCEPT.
+7. Ensure the Enable this policy is toggled to right.
+8. Click OK.</fixtext><fix id="F-37303r611458_fix" /><check system="C-37338r611457_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click the Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify the policies are configured for each Outgoing Interface.
+4. Verify polices are configured with Action set either to DENY or ACCEPT based on the organizational requirement.
+
+If the Firewall Policies are not applied to all outbound interfaces, this is a finding.</check-content></check></Rule></Group><Group id="V-234154"><title>SRG-NET-000364-FW-000035</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234154r852965_rule" weight="10.0" severity="medium"><version>FNFG-FW-000125</version><title>When employed as a premise firewall, FortiGate must block all outbound management traffic.</title><description>&lt;VulnDiscussion&gt;The management network must still have its own subnet in order to enforce control and access boundaries provided by layer 3 network nodes such as routers and firewalls. Management traffic between the managed network elements and the management network is routed via the same links and nodes as that used for production or operational traffic. 
+
+Safeguards must be implemented to ensure the management traffic does not leak past the managed network's premise equipment. If a firewall is located behind the premise router, all management traffic must be blocked at that point, with the exception of management traffic destined to premise equipment.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><fixtext fixref="F-37304r852964_fix">Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Click +Create New.
+4. Name the policy.
+5. For the Incoming Interface, select the interface related to the Management Network.
+6. For the Outgoing Interface, select an EGRESS interface.
+7. For the Source, select the Management Network IP range.
+8. For the Destination and Service, select ALL.
+9. Configure the Policy Action to DENY.
+10. Ensure the Enable this policy is toggled to right.
+11. Click OK.
+
+Repeat these steps for each EGRESS interface.</fixtext><fix id="F-37304r852964_fix" /><check system="C-37339r611460_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>If FortiGate is not employed as a premise firewall, this requirement is Not Applicable.
+
+Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify there are Policies in which the Incoming Interface is the Management Network, and the Outgoing Interface is an EGRESS interface.
+4. Verify these polices are configured with Action set to DENY.
+
+If there are not DENY Policies where the Incoming Interface is the Management Network, and the Outgoing Interface is an EGRESS interface, this is a finding.</check-content></check></Rule></Group><Group id="V-234155"><title>SRG-NET-000364-FW-000036</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234155r852966_rule" weight="10.0" severity="medium"><version>FNFG-FW-000130</version><title>The FortiGate firewall must restrict traffic entering the VPN tunnels to the management network to only the authorized management packets based on destination address.</title><description>&lt;VulnDiscussion&gt;Protect the management network with a filtering firewall configured to block unauthorized traffic. This requirement is similar to the out-of-band management (OOBM) model, in which the production network is managed in-band. The management network could also be housed at a Network Operations Center (NOC) that is located locally or remotely at a single or multiple interconnected sites. 
+
+NOC interconnectivity, as well as connectivity between the NOC and the managed networks’ premise routers, would be enabled using either provisioned circuits or VPN technologies such as IPsec tunnels or MPLS VPN services.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><fixtext fixref="F-37305r611464_fix">Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Click +Create New.
+4. Name the policy.
+5. For the Incoming Interface, select the tunnel from which a host is connecting to the management network.
+6. For the Outgoing Interface, select the interface connected to the management network.
+7. For the Source, select the address object or group of authorized management hosts.
+8. For the Destination, select assets in the management network, and approved Network Services.
+9. Configure the Policy Action to Accept.
+10. Ensure Enable this policy is toggled to right.
+11. Click OK.
+
+Repeat these steps for each Management Network host and associated Service.</fixtext><fix id="F-37305r611464_fix" /><check system="C-37340r611463_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>If FortiGate is not configured to support VPN access, this requirement is Not Applicable.
+
+Log in to the FortiGate GUI with Super- or Firewall Policy-Admin privilege.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify there are Policies where the Incoming Interface is a management-related VPN Tunnel interface, and the Outgoing Interface is the Management Network interface.
+4. Verify such policies with Action IPSEC meet organization requirements to only allow connectivity to specific, authorized Management Network hosts and ensure that traffic is encrypted through the IPsec tunnel.
+5. Verify at least one of these polices are configured with Action set to DENY.
+
+If there are not DENY Policies in which the Incoming Interface is a management-related VPN Tunnel interface, and the Outgoing Interface is the Management Network interface, this is a finding.
+
+If there are no IPSEC Policies for which the Incoming Interface is a management-related VPN Tunnel interface, and the Outgoing Interface is the Management Network interface that meets organization requirements, this is a finding.</check-content></check></Rule></Group><Group id="V-234156"><title>SRG-NET-000364-FW-000040</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234156r611468_rule" weight="10.0" severity="medium"><version>FNFG-FW-000135</version><title>The FortiGate firewall must be configured to inspect all inbound and outbound traffic at the application layer.</title><description>&lt;VulnDiscussion&gt;Application inspection enables the firewall to control traffic based on different parameters that exist within the packets such as enforcing application-specific message and field length. Inspection provides improved protection against application-based attacks by restricting the types of commands allowed for the applications. Application inspection enforces conformance against published RFCs.
+
+Some applications embed an IP address in the packet that needs to match the source address that is normally translated when it goes through the firewall. Enabling application inspection for a service that embeds IP addresses, the firewall translates embedded addresses and updates any checksum or other fields that are affected by the translation. Enabling application inspection for a service that uses dynamically assigned ports, the firewall monitors sessions to identify the dynamic port assignments, and permits data exchange on these ports for the duration of the specific session.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-37306r611467_fix">Fix can be performed on FortiGate CLI. For any modified or missing session-helpers, log in to the FortiGate console via SSH or console access and run the following commands:
+
+   # config system session-helper
+   #    edit {integer}
+   #    set name {name of protocol}
+   #    set protocol {protocol number}
+   #    set port {port number}
+   # next
+   # end</fixtext><fix id="F-37306r611467_fix" /><check system="C-37341r611466_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate CLI with Super-Admin privilege, and then run the command:
+# show system session-helper.
+
+Review the output and ensure it matches the following:
+config system session-helper
+    edit 1
+        set name pptp
+        set protocol 6
+        set port 1723
+    next
+    edit 2
+        set name h323
+        set protocol 6
+        set port 1720
+    next
+    edit 3
+        set name ras
+        set protocol 17
+        set port 1719
+    next
+    edit 4
+        set name tns
+        set protocol 6
+        set port 1521
+    next
+    edit 5
+        set name tftp
+        set protocol 17
+        set port 69
+    next
+    edit 6
+        set name rtsp
+        set protocol 6
+        set port 554
+    next
+    edit 7
+        set name rtsp
+        set protocol 6
+        set port 7070
+    next
+    edit 8
+        set name rtsp
+        set protocol 6
+        set port 8554
+    next
+    edit 9
+        set name ftp
+        set protocol 6
+        set port 21
+    next
+    edit 10
+        set name mms
+        set protocol 6
+        set port 1863
+    next
+    edit 11
+        set name pmap
+        set protocol 6
+        set port 111
+    next
+    edit 12
+        set name pmap
+        set protocol 17
+        set port 111
+    next
+    edit 13
+        set name sip
+        set protocol 17
+        set port 5060
+    next
+    edit 14
+        set name dns-udp
+        set protocol 17
+        set port 53
+    next
+    edit 15
+        set name rsh
+        set protocol 6
+        set port 514
+    next
+    edit 16
+        set name rsh
+        set protocol 6
+        set port 512
+    next
+    edit 17
+        set name dcerpc
+        set protocol 6
+        set port 135
+    next
+    edit 18
+        set name dcerpc
+        set protocol 17
+        set port 135
+    next
+    edit 19
+        set name mgcp
+        set protocol 17
+        set port 2427
+    next
+    edit 20
+        set name mgcp
+        set protocol 17
+        set port 2727
+    next
+end
+
+If the output does not match, this is a finding.</check-content></check></Rule></Group><Group id="V-234157"><title>SRG-NET-000364-FW-000042</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234157r611471_rule" weight="10.0" severity="medium"><version>FNFG-FW-000145</version><title>The FortiGate firewall must be configured to restrict it from accepting outbound packets that contain an illegitimate address in the source address field via an egress filter or by enabling Unicast Reverse Path Forwarding (uRPF).</title><description>&lt;VulnDiscussion&gt;A compromised host in an enclave can be used by a malicious platform to launch cyberattacks on third parties. This is a common practice in "botnets", which are a collection of compromised computers using malware to attack other computers or networks. Denial-of-Service (DoS) attacks frequently leverage IP source address spoofing to send packets to multiple hosts that, in turn, send return traffic to the hosts with the forged IP addresses. This can generate significant amounts of traffic. Therefore, protection measures to counteract IP source address spoofing must be taken. When uRPF is enabled in strict mode, the packet must be received on the interface that the device would use to forward the return packet, thereby mitigating IP source address spoofing.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-37307r611470_fix">This fix can be performed via the CLI of the FortiGate.
+
+1. Open a CLI console via SSH or from the GUI.
+2. Run the following commands:
+     # config system settings
+     #    set asymroute disable
+     #    set asymroute-icmp disable
+     #    set asymroute6 disable
+     #    set asymroute6-icmp disable
+     # end</fixtext><fix id="F-37307r611470_fix" /><check system="C-37342r611469_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>The FortiGate has RPF enabled by default, but it can be disabled for IPv4, IPv4 ICMP, IPv6, and IPv6-ICMP with the "set asymroute enable" commands. Log in to the FortiGate CLI with Super-Admin privilege, and then run the command:
+# get system settings | grep asymroute
+
+Unless this device is intentionally setup for asymmetric routing, if any of the settings are set to "enable" this is a finding.</check-content></check></Rule></Group><Group id="V-234158"><title>SRG-NET-000392-FW-000042</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234158r852967_rule" weight="10.0" severity="low"><version>FNFG-FW-000150</version><title>The FortiGate firewall must generate an alert that can be forwarded to, at a minimum, the Information System Security Officer (ISSO) and Information System Security Manager (ISSM) when denial-of-service (DoS) incidents are detected.</title><description>&lt;VulnDiscussion&gt;Without an alert, security personnel may be unaware of major detection incidents that require immediate action, and this delay may result in the loss or compromise of information.
+
+The firewall generates an alert that notifies designated personnel of the Indicators of Compromise (IOCs), which require real-time alerts. These messages should include a severity-level indicator or code as an indicator of the criticality of the incident. These indicators reflect the occurrence of a compromise or a potential compromise.
+
+Since these incidents require immediate action, these messages are assigned a critical or level 1 priority/severity, depending on the system's priority schema.
+
+CJCSM 6510.01B, "Cyber Incident Handling Program", lists nine Cyber Incident and Reportable Event Categories. DoD has determined that categories identified by CJCSM 6510.01B Major Indicators (category 1, 2, 4, or 7 detection events) will require an alert when an event is detected.
+
+Alerts may be transmitted, for example, telephonically, by electronic mail messages, or by text messaging. The firewall must either send the alert to a management console that is actively monitored by authorized personnel or use a messaging capability to send the alert directly to designated personnel.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002664</ident><fixtext fixref="F-37308r611473_fix">Syslog server is used to send alerts for DoS incidents. To enable syslog, log in to the FortiGate GUI with Super-Admin privileges.
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # config log syslogd setting
+     #    set status enable
+     #    set server {IP address of site syslog server}
+     #    set mode {reliable}
+     #    set enc-algorithm {high-medium | high}
+     #    set port {server listen port}
+     #    set facility syslog
+     #    set source-ip {source IP address}
+     #    set max-log-rate {value between 1 and 100000}
+     #    set certificate {certificate string}
+     # end</fixtext><fix id="F-37308r611473_fix" /><check system="C-37343r611472_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>The firewall must be configured to send events to a syslog server. Anomaly events, such as a DoS attack are sent with a severity of critical. The syslog server will notify the ISSO and ISSM. To verify the syslog configuration, log in to the FortiGate GUI with Super-Admin privileges.
+
+1. Open a CLI console, via SSH or available from the GUI.
+2. Run the following command:
+     # show full-configuration log syslogd setting | grep -i  'mode\|server' 
+The output should be:     
+     set server {123.123.123.123}
+     set mode reliable
+
+To ensure a secure connection, a certificate must be loaded, encryption enabled, and the SSL version set. To verify, while still in the CLI, run the following command:
+     # get log syslogd setting
+Check for the following:
+     set enc-algorithm {MEDIUM-HIGH | HIGH}
+     set certificate
+
+If the syslogd is not configured to send logs to a central syslog server, this is a finding.</check-content></check></Rule></Group><Group id="V-234159"><title>SRG-NET-000399-FW-000008</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234159r611477_rule" weight="10.0" severity="medium"><version>FNFG-FW-000155</version><title>The FortiGate firewall must allow authorized users to record a packet-capture-based IP, traffic type (TCP, UDP, or ICMP), or protocol.</title><description>&lt;VulnDiscussion&gt;Without the ability to capture, record, and log content related to a user session, investigations into suspicious user activity would be hampered.
+
+This configuration ensures the ability to select specific sessions to capture in order to support general auditing/incident investigation or to validate suspected misuse.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001462</ident><fixtext fixref="F-37309r611476_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+Create a Packet Capture Filter 
+1. Click Network.
+2. Click Packet Capture.
+3. Click +Create New.
+4. Select an interface from the drop down menu.
+5. Specify the maximum number of packets to capture.
+6. Enable Filters to configure filtering based upon Host (addresses), Port, VLAN, or Protocol.
+7. Click OK.
+
+Then, 
+1. Select a packet filter from the list of packet capture filters.
+2. Right-click on the selected filter.
+3. Click Start.
+4. Click OK.
+The packet capture continues until either the configured number of packets is reached, or the administrator stops the packet capture. The administrator must download the packet capture for viewing with an external application, like Wireshark or tcpdump.</fixtext><fix id="F-37309r611476_fix" /><check system="C-37344r611475_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Network.
+2. Click Packet Capture.
+3. Verify different Packet Capture Filters are configured and that capture packets based on interface, host, VLAN, or protocol.
+
+If FortiGate does not allow an authorized administrator to capture packets based on interface, host, VLAN, or protocol, this is a finding.</check-content></check></Rule></Group><Group id="V-234160"><title>SRG-NET-000492-FW-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234160r611480_rule" weight="10.0" severity="medium"><version>FNFG-FW-000160</version><title>The FortiGate firewall must generate traffic log records when traffic is denied, restricted, or discarded.</title><description>&lt;VulnDiscussion&gt;Without generating log records that log usage of objects by subjects and other objects, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.
+
+Security objects are data objects that are controlled by security policy and bound to security attributes.
+
+The firewall must not forward traffic unless it is explicitly permitted via security policy. Logging for firewall security-related sources such as screens and security policies must be configured separately. To ensure security objects such as firewall filters (i.e., rules, access control lists [ACLs], screens, and policies) send events to a syslog server and local logs, security logging must be configured on each firewall term.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000172</ident><fixtext fixref="F-37310r611479_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Configure the Log Settings for Forward Traffic Log to ALL.
+4. Click Apply.
+
+In addition to these log settings, configure individual firewall policies with the most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. For each policy, configure Logging Options for Log Allowed Traffic to log All Sessions (for most verbose logging).
+4. Ensure the Enable this policy is toggled to right.
+5. Configure the Implicit Deny Policy to Log Violation Traffic.
+6. Click OK.</fixtext><fix id="F-37310r611479_fix" /><check system="C-37345r611478_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Verify the Log Settings for Event Logging is configured to ALL.
+
+In addition to System log settings, verify that individual firewall policies are configured with the most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify all Policy rules are configured with Logging Options set to Log All Sessions (for most verbose logging).
+4. Verify the Implicit Deny Policy is configured to Log Violation Traffic.
+
+If the Traffic Log setting is not configured to ALL, and the Implicit Deny Policies are not configured to LOG VIOLATION TRAFFIC, this is a finding.</check-content></check></Rule></Group><Group id="V-234161"><title>SRG-NET-000493-FW-000007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-234161r611483_rule" weight="10.0" severity="medium"><version>FNFG-FW-000165</version><title>The FortiGate firewall must generate traffic log records when attempts are made to send packets between security zones that are not authorized to communicate.</title><description>&lt;VulnDiscussion&gt;Without generating log records specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.
+
+Access for different security levels maintains separation between resources (particularly stored data) of different security domains.
+
+The firewall can be configured to use security zones configured with different security policies based on risk and trust levels. These zones can be leveraged to prevent traffic from one zone from sending packets to another zone. For example, information from certain IP sources will be rejected if the destination matches specified security zones that are not authorized.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Fortinet FortiGate Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Fortinet FortiGate Firewall</dc:subject><dc:identifier>5258</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000172</ident><fixtext fixref="F-37311r611482_fix">Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Configure the Log Settings for Local Traffic Log to ALL.
+4. Click Apply.
+
+In addition to these log settings, configure individual firewall policies with the most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Click +Create New to configure organization specific policies, with Action set to DENY.
+4. Configure Logging Options to log All Sessions (for most verbose logging).
+5. Ensure Enable this policy is toggled to right.
+6. Click Implicit Deny Policy.
+7. Click Edit.
+8. Select Log Violation Traffic.
+9. Click OK.</fixtext><fix id="F-37311r611482_fix" /><check system="C-37346r611481_chk"><check-content-ref href="Fortinet_FortiGate_Firewall_STIG.xml" name="M" /><check-content>Log in to the FortiGate GUI with Super-Admin privilege.
+
+1. Click Log and Report.
+2. Click Log Settings.
+3. Verify the Log Settings for Event Logging and Local Traffic Log are configured to ALL.
+
+In addition to System log settings, verify individual firewall policies are configured with the most suitable Logging Options.
+
+1. Click Policy and Objects.
+2. Click IPv4 or IPv6 Policy.
+3. Verify all Policy rules are configured with Logging Options set to Log All Sessions (for most verbose logging).
+4. Verify the Implicit Deny Policy is configured to Log Violation Traffic.
+
+If the Traffic Log setting is not configured to ALL, and the Implicit Deny Policies are not configured to LOG VIOLATION TRAFFIC, this is a finding.</check-content></check></Rule></Group></Benchmark>
