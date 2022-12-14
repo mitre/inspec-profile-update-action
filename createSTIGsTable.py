@@ -40,7 +40,14 @@ for stig in data:
 
 html = ""
 
-html += "<table>"
+html += """
+<html>
+    <head>
+        <link rel="stylesheet" href="site/styles.css">
+        <title>STIGs List</title>
+    </head>
+<table>"""
+
 html += "<tr><th>STIG ID</th><th>Name</th><th>Version</th><th>URL</th><th>Size</th><th>Action</th></tr>"
 for stig in data:
     html += f"""
