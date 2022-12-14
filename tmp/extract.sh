@@ -19,3 +19,4 @@ done
 rm -rf tmp
 
 mv ./stigs/U*xccdf.xml ../benchmarks/DISA/
+rm -rf stigs

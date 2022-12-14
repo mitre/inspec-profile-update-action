@@ -1,0 +1,37 @@
+# Run  daily
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  push: # For testing
+    branches:
+      - main
+
+jobs:
+  update_benchmarks:
+    runs-on: ubuntu-latest
+    name: Update Benchmarks
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Update Benchmarks
+        run: |
+          sudo apt install python3 python3-pip
+          sudo pip3 install -r requirements.txt
+          python3 getBenchmarks.py
+          python3 downloadBenchmarks.py
+          cd tmp
+          bash extract.sh
+          cd ..
+      - name: Configure git
+        run: |
+          git config --local user.name "Automated Update"
+          git config --local user.email "
+      - name: Commit changes to main
+        run: |
+          git add benchmarks
+          git commit -m "Update Benchmarks"
+      - name: Push changes to main
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
