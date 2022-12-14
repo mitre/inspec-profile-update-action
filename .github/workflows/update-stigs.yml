@@ -21,6 +21,7 @@ jobs:
       # Copy changes to stigs.json from main to hosted
       - name: Copy changes to hosted
         run: |
+          git fetch
           git checkout hosted
           git checkout main stigs.json
       - name: Commit changes
