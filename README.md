@@ -1,7 +1,6 @@
 # inspec-profile-update-action
 Automattically update InSpec profiles using the latest version of DISA STIGs and CIS Benchmarks.
 
-
 ### NOTICE
 
 © 2022 The MITRE Corporation.
