@@ -5,7 +5,6 @@ import re
 import json
 import uuid
 import re
-import urllib.request
 
 url = "https://public.cyber.mil/stigs/downloads/"
 
@@ -57,8 +56,7 @@ for row in table.find_all('tr'):
             for idx, knownURL in enumerate(knownURLs):
                 knownURLWithNoVersion = re.sub(r'V\d(\d?)(\d?)(\d?)(\d?)R\d(\d?)(\d?)(\d?)(\d?)', '', knownURL)
                 if SequenceMatcher(None, hrefWithNoVersion, knownURLWithNoVersion).ratio() > 0.99:
-                    print("Found a duplicate: " + href)
-                    print("Similar to: " + knownURL)
+                    # print(f"Similarity: {SequenceMatcher(None, hrefWithNoVersion, knownURLWithNoVersion).ratio()} {hrefWithNoVersion} -> {knownURLWithNoVersion}")
                     knownIndex = idx
                     newStig = False
                     break
@@ -68,20 +66,60 @@ for row in table.find_all('tr'):
                     #print(f"Downloading {name}: {href}")
                     #urllib.request.urlretrieve(href, "tmp/" + getFilenameFromURL(href))
                     # Get version from the file name e.g "U_IBM_MaaS360_with_Watson_v10-x_MDM_V1R2_STIG.zip"
-                    version = re.search(r'V\d(\d?)(\d?)(\d?)(\d?)R\d(\d?)(\d?)(\d?)(\d?)', href).group(0)
-                    if version:
+                    version = re.search(r'V\d(\d?)(\d?)(\d?)(\d?)R\d(\d?)(\d?)(\d?)(\d?)', href)
+                    if version is not None:
                         stigs.append({
                             'id': str(uuid.uuid4()),
                             'name': name,
                             'url': href,
                             'size': size,
-                            'version': version
+                            'version': version.group(0)
                         })
+                    else:
+                        print(f"Version not found in {href}")
+                        # Attempt to get version number from name, e.g "Ver 1, Rel 1"
+                        version = re.search(r'Ver (\d?)(\d?)(\d?)(\d?), Rel (\d?)(\d?)(\d?)(\d?)', name)
+                        if version is not None:
+                            versionNumber = f"V{version.group(1)}{version.group(2)}{version.group(3)}{version.group(4)}R{version.group(5)}{version.group(6)}{version.group(7)}{version.group(8)}"
+                            print(f"Version found in {href} as {versionNumber}")
+                            stigs.append({
+                                'id': str(uuid.uuid4()),
+                                'name': name,
+                                'url': href,
+                                'size': size,
+                                'version': versionNumber
+                            })
+                        else:
+                            stigs.append({
+                                'id': str(uuid.uuid4()),
+                                'name': name,
+                                'url': href,
+                                'size': size
+                            })
             else:
-                stigs[knownIndex]['url'] = href
-                stigs[knownIndex]['size'] = size
-                stigs[knownIndex]['version'] = version
-                stigs[knownIndex]['name'] = name
+                version = re.search(r'V\d(\d?)(\d?)(\d?)(\d?)R\d(\d?)(\d?)(\d?)(\d?)', href)
+                if version is not None:
+                    stigs[knownIndex]['url'] = href
+                    stigs[knownIndex]['size'] = size
+                    stigs[knownIndex]['version'] = version.group(0)
+                    stigs[knownIndex]['name'] = name
+                elif version is None:
+                    version = re.search(r'Ver (\d?)(\d?)(\d?)(\d?), Rel (\d?)(\d?)(\d?)(\d?)', name)
+                    if version is not None:
+                        versionNumber = f"V{version.group(1)}{version.group(2)}{version.group(3)}{version.group(4)}R{version.group(5)}{version.group(6)}{version.group(7)}{version.group(8)}"
+                        print(f"Version found in '{name}' as {versionNumber}")
+                        stigs[knownIndex]['url'] = href
+                        stigs[knownIndex]['size'] = size
+                        stigs[knownIndex]['version'] = versionNumber
+                        stigs[knownIndex]['name'] = name
+                    else:
+                        # I've seen DISA remove the version number from the URL, so we need to remove it from the existing STIG if it's no longer there.
+                        print(f"Version not found in {href}")
+                        stigs[knownIndex]['url'] = href
+                        stigs[knownIndex]['size'] = size
+                        stigs[knownIndex]['name'] = name
+                        if 'version' in stigs[knownIndex]:
+                            del stigs[knownIndex]['version']
 
     except KeyboardInterrupt:
         exit()
