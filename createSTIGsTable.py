@@ -37,3 +37,27 @@ for stig in data:
 
     with open(f"actions/{stig['id']}.yml", "w") as f:
         f.write(yml)
+
+html = ""
+
+html += "<table>"
+html += "<tr><th>STIG ID</th><th>Name</th><th>Version</th><th>URL</th><th>Size</th><th>Action</th></tr>"
+for stig in data:
+    html += f"""
+    <tr>
+        <td>{stig['id']}</td>
+        <td>{stig['name']}</td>
+        """
+    if 'version' in stig:
+        html += f"""<td>{stig['version']}</td>"""
+    else:
+        html += f"""<td></td>"""
+    html += f"""
+        <td><a href="{stig['url']}">Download</a></td>
+        <td>{stig['size']}</td>
+        <td><a href="actions/{stig['id']}.yml">View Action</a></td>
+    </tr>"""
+html += "</table>"
+
+with open("index.html", "w") as f:
+    f.write(html)
