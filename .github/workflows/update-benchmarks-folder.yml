@@ -17,11 +17,7 @@ jobs:
         run: |
           sudo apt install python3 python3-pip
           sudo pip3 install -r requirements.txt
-          python3 getStigs.py
-          python3 downloadStigs.py
-          cd tmp
-          bash extract.sh
-          cd ..
+          python3 python3 update.py
       - name: Configure git
         run: |
           git config --local user.name "Automated Update"
