@@ -1,0 +1,54 @@
+# Run  daily
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  push: # For testing
+    branches:
+      - main
+
+jobs:
+  update_benchmarks:
+    runs-on: ubuntu-latest
+    name: Update Benchmarks
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Update Benchmarks
+        run: |
+          sudo apt install python3 python3-pip
+          sudo pip3 install -r requirements.txt
+          python3 update.py
+      - name: Configure git
+        run: |
+          git config --local user.name "Automated Update"
+          git config --local user.email "automated@mitre.org"
+      - name: Commit changes to main
+        run: |
+          git add benchmarks
+          git commit -m "Update Benchmarks"
+      - name: Push changes to main
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+      # Commit changes to hosted
+      - name: Copy changes to hosted
+        run: |
+          git fetch
+          git checkout hosted
+          git checkout main stigs.json
+          git checkout main actions
+          git checkout main index.html
+          git checkout main site
+          git add stigs.json
+          git add actions
+          git add site
+          git add index.html
+      - name: Commit changes
+        run: |
+          git commit -m "Update Hosted Website"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: hosted

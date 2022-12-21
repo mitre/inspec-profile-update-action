@@ -222,7 +222,7 @@ def getProfileIDFromProfileXMLs():
             # Get the ID from the root
             if 'id' in root.attrib:
                 if '/' not in root.attrib['id']:
-                    stig['vanity_id'] = root.attrib['id']
+                    stig['id'] = root.attrib['id']
             else:
                 print(f"No ID found for {fileName}")
     
@@ -234,65 +234,34 @@ def pageGenerator():
     os.system("rm -rf actions/*")
 
     for stig in stigs:
-        if 'vanity_id' in stig:
-            yml = f"""
-    on: [push]
-
-    jobs:
-    test_action:
-        runs-on: ubuntu-latest
-        name: Test inpec-profile-update action
-        steps:
-        # To use this repository's private action,
-        # you must check out the repository
-        - name: Checkout
-            uses: actions/checkout@v3
-        # Update profile
-        - name: Updates profile
-            uses: mitre/inspec-profile-update-action@main
-            # Set env variables
-            env:
-            profile: {stig['vanity_id']}
-        # Create new branch
-        - name: Push changes to new PR
-            uses: peter-evans/create-pull-request@v4
-            with:
-            branch: update-profile
-            delete-branch: true"""
         
-            print(f"Generating action for {stig['vanity_id']}...")
+        yml = f"""
+on: [push]
 
-            with open(f"actions/{stig['vanity_id']}.yml", "w") as f:
-                f.write(yml)
-        
-        else:
-            yml = f"""
-    on: [push]
+jobs:
+test_action:
+    runs-on: ubuntu-latest
+    name: Test inpec-profile-update action
+    steps:
+    # To use this repository's private action,
+    # you must check out the repository
+    - name: Checkout
+        uses: actions/checkout@v3
+    # Update profile
+    - name: Updates profile
+        uses: mitre/inspec-profile-update-action@main
+        # Set env variables
+        env:
+        profile: {stig['id']}
+    # Create new branch
+    - name: Push changes to new PR
+        uses: peter-evans/create-pull-request@v4
+        with:
+        branch: update-profile
+        delete-branch: true"""
 
-    jobs:
-    test_action:
-        runs-on: ubuntu-latest
-        name: Test inpec-profile-update action
-        steps:
-        # To use this repository's private action,
-        # you must check out the repository
-        - name: Checkout
-            uses: actions/checkout@v3
-        # Update profile
-        - name: Updates profile
-            uses: mitre/inspec-profile-update-action@main
-            # Set env variables
-            env:
-            profile: {stig['id']}
-        # Create new branch
-        - name: Push changes to new PR
-            uses: peter-evans/create-pull-request@v4
-            with:
-            branch: update-profile
-            delete-branch: true"""
-
-            with open(f"actions/{stig['id']}.yml", "w") as f:
-                f.write(yml)
+        with open(f"actions/{stig['id']}.yml", "w") as f:
+            f.write(yml)
 
     html = """
     <html>
@@ -302,18 +271,11 @@ def pageGenerator():
         </head>
     <table>"""
 
-    html += "<tr><th>STIG ID</th><th>Vanity ID</th><th>Name</th><th>Version</th><th>URL</th><th>Size</th><th>Action</th></tr>"
+    html += "<tr><th>STIG ID</th><th>Name</th><th>Version</th><th>URL</th><th>Size</th><th>Action</th></tr>"
     for stig in stigs:
         html += f"""
         <tr>
             <td>{stig['id']}</td>
-            """
-
-        if 'vanity_id' in stig:
-            html += f"""<td>{stig['vanity_id']}</td>"""
-        else:
-            html += f"""<td></td>"""
-        html += f"""
             <td>{stig['name']}</td>
             """
         if 'version' in stig:
