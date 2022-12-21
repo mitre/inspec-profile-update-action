@@ -36,15 +36,13 @@ jobs:
       - name: Copy changes to hosted
         run: |
           git fetch
+          git stash
           git checkout hosted
-          git checkout main stigs.json
-          git checkout main actions
-          git checkout main index.html
-          git checkout main site
-          git add stigs.json
-          git add actions
-          git add site
-          git add index.html
+          git stash apply
+          git add stigs.json || true
+          git add actions || true
+          git add site || true
+          git add index.html || true
       - name: Commit changes
         run: |
           git commit -m "Update Hosted Website"
