@@ -25,7 +25,8 @@ jobs:
       - name: Commit changes to main
         run: |
           git add benchmarks
-          git commit -m "Update Benchmarks"
+          git add stigs.json
+          git commit -m "Update Benchmarks" || true
       - name: Push changes to main
         uses: ad-m/github-push-action@master
         with:
