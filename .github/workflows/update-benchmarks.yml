@@ -32,22 +32,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
-      # Commit changes to hosted
-      - name: Copy changes to hosted
-        run: |
-          git fetch
-          git stash
-          git checkout hosted
-          git stash apply
-          git add stigs.json || true
-          git add actions || true
-          git add site || true
-          git add index.html || true
-      - name: Commit changes
-        run: |
-          git commit -m "Update Hosted Website"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: hosted
