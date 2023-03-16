@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="VMW_vSphere_7-0_vCA_Perfcharts_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2023-02-21">accepted</status><title>VMware vSphere 7.0 vCenter Appliance Perfcharts Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 07 Mar 2023</plain-text><plain-text id="generator">3.4.0.34222</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256611" selected="true" /><select idref="V-256612" selected="true" /><select idref="V-256613" selected="true" /><select idref="V-256614" selected="true" /><select idref="V-256615" selected="true" /><select idref="V-256616" selected="true" /><select idref="V-256617" selected="true" /><select idref="V-256618" selected="true" /><select idref="V-256619" selected="true" /><select idref="V-256620" selected="true" /><select idref="V-256621" selected="true" /><select idref="V-256622" selected="true" /><select idref="V-256623" selected="true" /><select idref="V-256624" selected="true" /><select idref="V-256625" selected="true" /><select idref="V-256626" selected="true" /><select idref="V-256627" selected="true" /><select idref="V-256628" selected="true" /><select idref="V-256629" selected="true" /><select idref="V-256630" selected="true" /><select idref="V-256631" selected="true" /><select idref="V-256632" selected="true" /><select idref="V-256633" selected="true" /><select idref="V-256634" selected="true" /><select idref="V-256635" selected="true" /><select idref="V-256636" selected="true" /><select idref="V-256637" selected="true" /><select idref="V-256638" selected="true" /><select idref="V-256639" selected="true" /><select idref="V-256640" selected="true" /><select idref="V-256641" selected="true" /><select idref="V-256642" selected="true" /><select idref="V-256643" selected="true" /><select idref="V-256644" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256611" selected="true" /><select idref="V-256612" selected="true" /><select idref="V-256613" selected="true" /><select idref="V-256614" selected="true" /><select idref="V-256615" selected="true" /><select idref="V-256616" selected="true" /><select idref="V-256617" selected="true" /><select idref="V-256618" selected="true" /><select idref="V-256619" selected="true" /><select idref="V-256620" selected="true" /><select idref="V-256621" selected="true" /><select idref="V-256622" selected="true" /><select idref="V-256623" selected="true" /><select idref="V-256624" selected="true" /><select idref="V-256625" selected="true" /><select idref="V-256626" selected="true" /><select idref="V-256627" selected="true" /><select idref="V-256628" selected="true" /><select idref="V-256629" selected="true" /><select idref="V-256630" selected="true" /><select idref="V-256631" selected="true" /><select idref="V-256632" selected="true" /><select idref="V-256633" selected="true" /><select idref="V-256634" selected="true" /><select idref="V-256635" selected="true" /><select idref="V-256636" selected="true" /><select idref="V-256637" selected="true" /><select idref="V-256638" selected="true" /><select idref="V-256639" selected="true" /><select idref="V-256640" selected="true" /><select idref="V-256641" selected="true" /><select idref="V-256642" selected="true" /><select idref="V-256643" selected="true" /><select idref="V-256644" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256611" selected="true" /><select idref="V-256612" selected="true" /><select idref="V-256613" selected="true" /><select idref="V-256614" selected="true" /><select idref="V-256615" selected="true" /><select idref="V-256616" selected="true" /><select idref="V-256617" selected="true" /><select idref="V-256618" selected="true" /><select idref="V-256619" selected="true" /><select idref="V-256620" selected="true" /><select idref="V-256621" selected="true" /><select idref="V-256622" selected="true" /><select idref="V-256623" selected="true" /><select idref="V-256624" selected="true" /><select idref="V-256625" selected="true" /><select idref="V-256626" selected="true" /><select idref="V-256627" selected="true" /><select idref="V-256628" selected="true" /><select idref="V-256629" selected="true" /><select idref="V-256630" selected="true" /><select idref="V-256631" selected="true" /><select idref="V-256632" selected="true" /><select idref="V-256633" selected="true" /><select idref="V-256634" selected="true" /><select idref="V-256635" selected="true" /><select idref="V-256636" selected="true" /><select idref="V-256637" selected="true" /><select idref="V-256638" selected="true" /><select idref="V-256639" selected="true" /><select idref="V-256640" selected="true" /><select idref="V-256641" selected="true" /><select idref="V-256642" selected="true" /><select idref="V-256643" selected="true" /><select idref="V-256644" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256611" selected="true" /><select idref="V-256612" selected="true" /><select idref="V-256613" selected="true" /><select idref="V-256614" selected="true" /><select idref="V-256615" selected="true" /><select idref="V-256616" selected="true" /><select idref="V-256617" selected="true" /><select idref="V-256618" selected="true" /><select idref="V-256619" selected="true" /><select idref="V-256620" selected="true" /><select idref="V-256621" selected="true" /><select idref="V-256622" selected="true" /><select idref="V-256623" selected="true" /><select idref="V-256624" selected="true" /><select idref="V-256625" selected="true" /><select idref="V-256626" selected="true" /><select idref="V-256627" selected="true" /><select idref="V-256628" selected="true" /><select idref="V-256629" selected="true" /><select idref="V-256630" selected="true" /><select idref="V-256631" selected="true" /><select idref="V-256632" selected="true" /><select idref="V-256633" selected="true" /><select idref="V-256634" selected="true" /><select idref="V-256635" selected="true" /><select idref="V-256636" selected="true" /><select idref="V-256637" selected="true" /><select idref="V-256638" selected="true" /><select idref="V-256639" selected="true" /><select idref="V-256640" selected="true" /><select idref="V-256641" selected="true" /><select idref="V-256642" selected="true" /><select idref="V-256643" selected="true" /><select idref="V-256644" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256611" selected="true" /><select idref="V-256612" selected="true" /><select idref="V-256613" selected="true" /><select idref="V-256614" selected="true" /><select idref="V-256615" selected="true" /><select idref="V-256616" selected="true" /><select idref="V-256617" selected="true" /><select idref="V-256618" selected="true" /><select idref="V-256619" selected="true" /><select idref="V-256620" selected="true" /><select idref="V-256621" selected="true" /><select idref="V-256622" selected="true" /><select idref="V-256623" selected="true" /><select idref="V-256624" selected="true" /><select idref="V-256625" selected="true" /><select idref="V-256626" selected="true" /><select idref="V-256627" selected="true" /><select idref="V-256628" selected="true" /><select idref="V-256629" selected="true" /><select idref="V-256630" selected="true" /><select idref="V-256631" selected="true" /><select idref="V-256632" selected="true" /><select idref="V-256633" selected="true" /><select idref="V-256634" selected="true" /><select idref="V-256635" selected="true" /><select idref="V-256636" selected="true" /><select idref="V-256637" selected="true" /><select idref="V-256638" selected="true" /><select idref="V-256639" selected="true" /><select idref="V-256640" selected="true" /><select idref="V-256641" selected="true" /><select idref="V-256642" selected="true" /><select idref="V-256643" selected="true" /><select idref="V-256644" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256611" selected="true" /><select idref="V-256612" selected="true" /><select idref="V-256613" selected="true" /><select idref="V-256614" selected="true" /><select idref="V-256615" selected="true" /><select idref="V-256616" selected="true" /><select idref="V-256617" selected="true" /><select idref="V-256618" selected="true" /><select idref="V-256619" selected="true" /><select idref="V-256620" selected="true" /><select idref="V-256621" selected="true" /><select idref="V-256622" selected="true" /><select idref="V-256623" selected="true" /><select idref="V-256624" selected="true" /><select idref="V-256625" selected="true" /><select idref="V-256626" selected="true" /><select idref="V-256627" selected="true" /><select idref="V-256628" selected="true" /><select idref="V-256629" selected="true" /><select idref="V-256630" selected="true" /><select idref="V-256631" selected="true" /><select idref="V-256632" selected="true" /><select idref="V-256633" selected="true" /><select idref="V-256634" selected="true" /><select idref="V-256635" selected="true" /><select idref="V-256636" selected="true" /><select idref="V-256637" selected="true" /><select idref="V-256638" selected="true" /><select idref="V-256639" selected="true" /><select idref="V-256640" selected="true" /><select idref="V-256641" selected="true" /><select idref="V-256642" selected="true" /><select idref="V-256643" selected="true" /><select idref="V-256644" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256611" selected="true" /><select idref="V-256612" selected="true" /><select idref="V-256613" selected="true" /><select idref="V-256614" selected="true" /><select idref="V-256615" selected="true" /><select idref="V-256616" selected="true" /><select idref="V-256617" selected="true" /><select idref="V-256618" selected="true" /><select idref="V-256619" selected="true" /><select idref="V-256620" selected="true" /><select idref="V-256621" selected="true" /><select idref="V-256622" selected="true" /><select idref="V-256623" selected="true" /><select idref="V-256624" selected="true" /><select idref="V-256625" selected="true" /><select idref="V-256626" selected="true" /><select idref="V-256627" selected="true" /><select idref="V-256628" selected="true" /><select idref="V-256629" selected="true" /><select idref="V-256630" selected="true" /><select idref="V-256631" selected="true" /><select idref="V-256632" selected="true" /><select idref="V-256633" selected="true" /><select idref="V-256634" selected="true" /><select idref="V-256635" selected="true" /><select idref="V-256636" selected="true" /><select idref="V-256637" selected="true" /><select idref="V-256638" selected="true" /><select idref="V-256639" selected="true" /><select idref="V-256640" selected="true" /><select idref="V-256641" selected="true" /><select idref="V-256642" selected="true" /><select idref="V-256643" selected="true" /><select idref="V-256644" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256611" selected="true" /><select idref="V-256612" selected="true" /><select idref="V-256613" selected="true" /><select idref="V-256614" selected="true" /><select idref="V-256615" selected="true" /><select idref="V-256616" selected="true" /><select idref="V-256617" selected="true" /><select idref="V-256618" selected="true" /><select idref="V-256619" selected="true" /><select idref="V-256620" selected="true" /><select idref="V-256621" selected="true" /><select idref="V-256622" selected="true" /><select idref="V-256623" selected="true" /><select idref="V-256624" selected="true" /><select idref="V-256625" selected="true" /><select idref="V-256626" selected="true" /><select idref="V-256627" selected="true" /><select idref="V-256628" selected="true" /><select idref="V-256629" selected="true" /><select idref="V-256630" selected="true" /><select idref="V-256631" selected="true" /><select idref="V-256632" selected="true" /><select idref="V-256633" selected="true" /><select idref="V-256634" selected="true" /><select idref="V-256635" selected="true" /><select idref="V-256636" selected="true" /><select idref="V-256637" selected="true" /><select idref="V-256638" selected="true" /><select idref="V-256639" selected="true" /><select idref="V-256640" selected="true" /><select idref="V-256641" selected="true" /><select idref="V-256642" selected="true" /><select idref="V-256643" selected="true" /><select idref="V-256644" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256611" selected="true" /><select idref="V-256612" selected="true" /><select idref="V-256613" selected="true" /><select idref="V-256614" selected="true" /><select idref="V-256615" selected="true" /><select idref="V-256616" selected="true" /><select idref="V-256617" selected="true" /><select idref="V-256618" selected="true" /><select idref="V-256619" selected="true" /><select idref="V-256620" selected="true" /><select idref="V-256621" selected="true" /><select idref="V-256622" selected="true" /><select idref="V-256623" selected="true" /><select idref="V-256624" selected="true" /><select idref="V-256625" selected="true" /><select idref="V-256626" selected="true" /><select idref="V-256627" selected="true" /><select idref="V-256628" selected="true" /><select idref="V-256629" selected="true" /><select idref="V-256630" selected="true" /><select idref="V-256631" selected="true" /><select idref="V-256632" selected="true" /><select idref="V-256633" selected="true" /><select idref="V-256634" selected="true" /><select idref="V-256635" selected="true" /><select idref="V-256636" selected="true" /><select idref="V-256637" selected="true" /><select idref="V-256638" selected="true" /><select idref="V-256639" selected="true" /><select idref="V-256640" selected="true" /><select idref="V-256641" selected="true" /><select idref="V-256642" selected="true" /><select idref="V-256643" selected="true" /><select idref="V-256644" selected="true" /></Profile><Group id="V-256611"><title>SRG-APP-000001-WSR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256611r888324_rule" weight="10.0" severity="medium"><version>VCPF-70-000001</version><title>Performance Charts must limit the amount of time that each Transport Control Protocol (TCP) connection is kept alive.</title><description>&lt;VulnDiscussion&gt;Denial of service (DoS) is one threat against web servers. Many DoS attacks attempt to consume web server resources in such a way that no more resources are available to satisfy legitimate requests. 
+
+In Tomcat, the "connectionTimeout" attribute sets the number of milliseconds the server will wait after accepting a connection for the request Uniform Resource Identifier (URI) line to be presented. This timeout will also be used when reading the request body (if any). This prevents idle sockets that are not sending HTTP requests from consuming system resources and potentially denying new connections.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-60229r888323_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Navigate to each of the &lt;Connector&gt; nodes.
+
+Configure each &lt;Connector&gt; node with the value:
+
+connectionTimeout="20000"
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60229r888323_fix" /><check system="C-60286r888322_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Service/Connector/@connectionTimeout' /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Expected result:
+
+connectionTimeout="20000"
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256612"><title>SRG-APP-000001-WSR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256612r888327_rule" weight="10.0" severity="medium"><version>VCPF-70-000002</version><title>Performance Charts must limit the number of concurrent connections permitted.</title><description>&lt;VulnDiscussion&gt;Resource exhaustion can occur when an unlimited number of concurrent requests are allowed on a website, facilitating a denial-of-service attack. Unless the number of requests is controlled, the web server can consume enough system resources to cause a system crash.
+
+Mitigating this kind of attack will include limiting the number of concurrent HTTP/HTTPS requests. In Tomcat, each incoming request requires a thread for the duration of that request. If more simultaneous requests are received than can be handled by the currently available request processing threads, additional threads will be created up to the value of the "maxThreads" attribute.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-60230r888326_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Navigate to the &lt;Executor&gt; mode with the name of "tomcatThreadPool" and configure with the value 'maxThreads="300"'.
+
+Note: The &lt;Executor&gt; node should be configured as follows:
+
+&lt;Executor maxThreads="300" minSpareThreads="50" name="tomcatThreadPool" namePrefix="tomcat-http--"/&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60230r888326_fix" /><check system="C-60287r888325_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Service/Executor/@maxThreads' /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Expected result:
+
+maxThreads="300"
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256613"><title>SRG-APP-000001-WSR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256613r888330_rule" weight="10.0" severity="medium"><version>VCPF-70-000003</version><title>Performance Charts must limit the maximum size of a POST request.</title><description>&lt;VulnDiscussion&gt;The "maxPostSize" value is the maximum size in bytes of the POST that will be handled by the container FORM URL parameter parsing. Limit its size to reduce exposure to a denial-of-service attack. If "maxPostSize" is not set, the default value of 2097152 (2MB) is used. Performance Charts is configured in its shipping state to not set a value for "maxPostSize".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-60231r888329_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Navigate to each of the &lt;Connector&gt; nodes.
+
+Remove any configuration for "maxPostSize".
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60231r888329_fix" /><check system="C-60288r888328_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Service/Connector/@maxPostSize' /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Expected result:
+
+XPath set is empty
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256614"><title>SRG-APP-000001-WSR-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256614r888333_rule" weight="10.0" severity="medium"><version>VCPF-70-000004</version><title>Performance Charts must protect cookies from cross-site scripting (XSS).</title><description>&lt;VulnDiscussion&gt;Cookies are a common way to save session state over the HTTP(S) protocol. If an attacker can compromise session data stored in a cookie, they are better able to launch an attack against the server and its applications.
+
+When a cookie is tagged with the "HttpOnly" flag, it tells the browser that this particular cookie should only be accessed by the originating server. Any attempt to access the cookie from client script is strictly forbidden.
+
+Satisfies: SRG-APP-000001-WSR-000002, SRG-APP-000439-WSR-000154&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-60232r888332_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/webapps/statsreport/WEB-INF/web.xml
+
+Navigate to the &lt;session-config&gt; node and configure it as follows:
+
+&lt;session-config&gt;
+  &lt;cookie-config&gt;
+    &lt;http-only&gt;true&lt;/http-only&gt;
+    &lt;secure&gt;true&lt;/secure&gt;
+  &lt;/cookie-config&gt;
+  &lt;session-timeout&gt;30&lt;/session-timeout&gt;
+&lt;/session-config&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60232r888332_fix" /><check system="C-60289r888331_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --format /usr/lib/vmware-perfcharts/tc-instance/webapps/statsreport/WEB-INF/web.xml | sed '2 s/xmlns=".*"//g' | xmllint --xpath '/web-app/session-config/cookie-config/http-only' -
+
+Expected result:
+
+&lt;http-only&gt;true&lt;/http-only&gt;
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256615"><title>SRG-APP-000016-WSR-000005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256615r888336_rule" weight="10.0" severity="medium"><version>VCPF-70-000005</version><title>Performance Charts must record user access in a format that enables monitoring of remote access.</title><description>&lt;VulnDiscussion&gt;Remote access can be exploited by an attacker to compromise the server. By recording all remote access activities, it will be possible to determine the attacker's location, intent, and degree of success.
+
+Tomcat can be configured with an "AccessLogValve", a component that can be inserted into the request processing pipeline to provide robust access logging. The "AccessLogValve" creates log files in the same format as those created by standard web servers. When "AccessLogValve" is properly configured, log files will contain all the forensic information necessary in the case of a security incident.
+
+Satisfies: SRG-APP-000016-WSR-000005, SRG-APP-000089-WSR-000047, SRG-APP-000093-WSR-000053, SRG-APP-000095-WSR-000056, SRG-APP-000096-WSR-000057, SRG-APP-000097-WSR-000058, SRG-APP-000098-WSR-000059, SRG-APP-000098-WSR-000060, SRG-APP-000099-WSR-000061, SRG-APP-000100-WSR-000064, SRG-APP-000374-WSR-000172, SRG-APP-000375-WSR-000171&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000067</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000132</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><ident system="http://cyber.mil/cci">CCI-000169</ident><ident system="http://cyber.mil/cci">CCI-001462</ident><ident system="http://cyber.mil/cci">CCI-001487</ident><ident system="http://cyber.mil/cci">CCI-001889</ident><ident system="http://cyber.mil/cci">CCI-001890</ident><fixtext fixref="F-60233r888335_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Inside the &lt;Host&gt; node, find the "AccessLogValve" &lt;Valve&gt; node and replace the "pattern" element as follows:
+
+pattern="%h %{X-Forwarded-For}i %l %u %t &amp;quot;%r&amp;quot; %s %b &amp;quot;%{User-Agent}i&amp;quot;"
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60233r888335_fix" /><check system="C-60290r888334_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --format /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml | sed '2 s/xmlns=".*"//g' |  xmllint --xpath '/Server/Service/Engine/Host/Valve[@className="org.apache.catalina.valves.AccessLogValve"]/@pattern' -
+
+Expected result:
+
+pattern="%h %{X-Forwarded-For}i %l %u %t &amp;quot;%r&amp;quot; %s %b &amp;quot;%{User-Agent}i&amp;quot;"
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256616"><title>SRG-APP-000089-WSR-000047</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256616r888339_rule" weight="10.0" severity="medium"><version>VCPF-70-000006</version><title>Performance Charts must generate log records for system startup and shutdown.</title><description>&lt;VulnDiscussion&gt;Logging must be started as soon as possible when a service starts and when a service is stopped. Many forms of suspicious actions can be detected by analyzing logs for unexpected service starts and stops. Also, by starting to log immediately after a service starts, it becomes more difficult for suspicious activity to go unlogged.
+
+On the vCenter Server Appliance (VCSA), the "vmware-vmon" service starts up the Java virtual machines (JVMs) for various vCenter processes, including Performance Charts, and the individual json config files control the early JVM logging. Ensuring these json files are configured correctly enables early Java "stdout" and "stderr" logging.
+
+Satisfies: SRG-APP-000089-WSR-000047, SRG-APP-000092-WSR-000055&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000169</ident><ident system="http://cyber.mil/cci">CCI-001464</ident><fixtext fixref="F-60234r888338_fix">Navigate to and open:
+
+/etc/vmware/vmware-vmon/svcCfgfiles/perfcharts.json
+
+Below the last line of the "PreStartCommandArg" block, add the following line:
+
+"StreamRedirectFile" : "%VMWARE_LOG_DIR%/vmware/perfcharts/vmware-perfcharts-runtime.log",
+
+Restart the appliance for changes to take effect.</fixtext><fix id="F-60234r888338_fix" /><check system="C-60291r888337_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# grep StreamRedirectFile /etc/vmware/vmware-vmon/svcCfgfiles/perfcharts.json
+
+Expected result:
+
+"StreamRedirectFile" : "%VMWARE_LOG_DIR%/vmware/perfcharts/vmware-perfcharts-runtime.log",
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256617"><title>SRG-APP-000118-WSR-000068</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256617r888342_rule" weight="10.0" severity="medium"><version>VCPF-70-000007</version><title>Performance Charts log files must only be modifiable by privileged users.</title><description>&lt;VulnDiscussion&gt;Log data is essential in the investigation of events. The accuracy of the information is always pertinent. One of the first steps an attacker will undertake is the modification or deletion of log records to cover tracks and prolong discovery. The web server must protect the log data from unauthorized modification. Performance Charts restricts all modification of log files by default, but this configuration must be verified.
+
+Satisfies: SRG-APP-000118-WSR-000068, SRG-APP-000119-WSR-000069, SRG-APP-000120-WSR-000070&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000162</ident><ident system="http://cyber.mil/cci">CCI-000163</ident><ident system="http://cyber.mil/cci">CCI-000164</ident><fixtext fixref="F-60235r888341_fix">At the command prompt, run the following commands:
+
+# chmod o-w &lt;file&gt;
+# chown perfcharts:users &lt;file&gt;
+
+Note: Substitute &lt;file&gt; with the listed file.</fixtext><fix id="F-60235r888341_fix" /><check system="C-60292r888340_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# find /storage/log/vmware/perfcharts/ -xdev -type f -a '(' -perm -o+w -o -not -user perfcharts -o -not -group users ')' -exec ls -ld {} \;
+
+If any files are returned, this is a finding.</check-content></check></Rule></Group><Group id="V-256618"><title>SRG-APP-000131-WSR-000051</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256618r888345_rule" weight="10.0" severity="medium"><version>VCPF-70-000008</version><title>Performance Charts application files must be verified for their integrity.</title><description>&lt;VulnDiscussion&gt;Verifying the Security Token Service application code is unchanged from its shipping state is essential for file validation and nonrepudiation of Performance Charts. There is no reason the MD5 hash of the RPM original files should be changed after installation, excluding configuration files.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001749</ident><fixtext fixref="F-60236r888344_fix">Reinstall the vCenter Server Appliance (VCSA) or roll back to a backup. VMware does not support modifying the Performance Charts installation files manually.</fixtext><fix id="F-60236r888344_fix" /><check system="C-60293r888343_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# rpm -V VMware-perfcharts|grep "^..5......"|grep -v -E "\.properties|\.conf|\.xml|\.password"
+
+If any files are returned, this is a finding.</check-content></check></Rule></Group><Group id="V-256619"><title>SRG-APP-000131-WSR-000073</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256619r888348_rule" weight="10.0" severity="medium"><version>VCPF-70-000009</version><title>Performance Charts must only run one webapp.</title><description>&lt;VulnDiscussion&gt;VMware ships Performance Charts on the vCenter Server Appliance (VCSA)with one webapp. Any other path is potentially malicious and must be removed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001749</ident><fixtext fixref="F-60237r888347_fix">For each unexpected directory returned in the check, run the following command:
+
+# rm /usr/lib/vmware-perfcharts/tc-instance/webapps/&lt;NAME&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60237r888347_fix" /><check system="C-60294r888346_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# ls -A /usr/lib/vmware-perfcharts/tc-instance/webapps
+
+Expected result:
+
+statsreport
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256620"><title>SRG-APP-000141-WSR-000015</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256620r888351_rule" weight="10.0" severity="medium"><version>VCPF-70-000010</version><title>Performance Charts must not be configured with unsupported realms.</title><description>&lt;VulnDiscussion&gt;Performance Charts performs user authentication at the application level and not through Tomcat. Depending on the vCenter Server Appliance (VCSA) version, Performance Charts may come configured with a "UserDatabaseRealm". This should be removed as part of eliminating unnecessary features.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60238r888350_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Remove the &lt;Realm&gt; node returned in the check.
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60238r888350_fix" /><check system="C-60295r888349_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# grep UserDatabaseRealm /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+If the command produces any output, this is a finding.</check-content></check></Rule></Group><Group id="V-256621"><title>SRG-APP-000141-WSR-000075</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256621r888354_rule" weight="10.0" severity="medium"><version>VCPF-70-000011</version><title>Performance Charts must be configured to limit access to internal packages.</title><description>&lt;VulnDiscussion&gt;The "package.access" entry in the "catalina.properties" file implements access control at the package level. When properly configured, a Security Exception will be reported if an errant or malicious webapp attempts to access the listed internal classes directly or if a new class is defined under the protected packages. 
+
+Performance Charts comes preconfigured with the appropriate packages defined in "package.access", and this configuration must be maintained.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60239r888353_fix">Navigate to and open:
+
+/usr/lib/vmware-sso/vmware-sts/conf/catalina.properties
+
+Ensure the "package.access" line is configured as follows:
+
+package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat.
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60239r888353_fix" /><check system="C-60296r888352_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# grep "package.access" /usr/lib/vmware-perfcharts/tc-instance/conf/catalina.properties
+
+Expected result:
+
+package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat.
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256622"><title>SRG-APP-000141-WSR-000081</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256622r888357_rule" weight="10.0" severity="medium"><version>VCPF-70-000012</version><title>Performance Charts must have Multipurpose Internet Mail Extensions (MIMEs) that invoke operating system shell programs disabled.</title><description>&lt;VulnDiscussion&gt;MIME mappings tell Performance Charts what type of program various file types and extensions are and what external utilities or programs are needed to execute the file type. By ensuring various shell script MIME types are not included in "web.xml", the server is protected against malicious users tricking the server into executing shell command files.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60240r888356_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/web.xml
+
+Remove any and all of the following nodes lines:
+
+&lt;mime-type&gt;application/x-csh&lt;/mime-type&gt;
+&lt;mime-type&gt;application/x-shar&lt;/mime-type&gt;
+&lt;mime-type&gt;application/x-sh&lt;/mime-type&gt;
+&lt;mime-type&gt;application/x-ksh&lt;/mime-type&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts
+
+Note: Delete the entire mime-mapping node for the target mime-type.
+
+Example:
+
+&lt;mime-mapping&gt;
+    &lt;extension&gt;sh&lt;/extension&gt;
+    &lt;mime-type&gt;application/x-sh&lt;/mime-type&gt;
+&lt;/mime-mapping&gt;</fixtext><fix id="F-60240r888356_fix" /><check system="C-60297r888355_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# grep -En '(x-csh&lt;)|(x-sh&lt;)|(x-shar&lt;)|(x-ksh&lt;)' /usr/lib/vmware-perfcharts/tc-instance/conf/web.xml
+
+If the command produces any output, this is a finding.</check-content></check></Rule></Group><Group id="V-256623"><title>SRG-APP-000141-WSR-000083</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256623r888360_rule" weight="10.0" severity="medium"><version>VCPF-70-000013</version><title>Performance Charts must have mappings set for Java servlet pages.</title><description>&lt;VulnDiscussion&gt;Resource mapping is the process of tying a particular file type to a process in the web server that can serve that type of file to a requesting client and identify which file types are not to be delivered to a client.
+
+By not specifying which files can and cannot be served to a user, the web server could deliver to a user web server configuration files, log files, password files, etc. 
+
+Because Tomcat is a Java-based web server, the main file extension used is *.jsp. This check ensures the *.jsp and *.jspx file types have been properly mapped to servlets.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60241r888359_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/web.xml
+
+Inside the &lt;web-app&gt; parent node, add the following:
+
+&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;jsp&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;*.jsp&lt;/url-pattern&gt;
+    &lt;url-pattern&gt;*.jspx&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60241r888359_fix" /><check system="C-60298r888358_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command: 
+
+# xmllint --format /usr/lib/vmware-perfcharts/tc-instance/conf/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '/web-app/servlet-mapping/servlet-name[text()="jsp"]/parent::servlet-mapping' -
+
+Expected result:
+
+&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;jsp&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;*.jsp&lt;/url-pattern&gt;
+    &lt;url-pattern&gt;*.jspx&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256624"><title>SRG-APP-000141-WSR-000085</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256624r888363_rule" weight="10.0" severity="medium"><version>VCPF-70-000014</version><title>Performance Charts must not have the Web Distributed Authoring (WebDAV) servlet installed.</title><description>&lt;VulnDiscussion&gt;WebDAV is an extension to the HTTP protocol that, when developed, was meant to allow users to create, change, and move documents on a server, typically a web server or web share. WebDAV is not widely used and has serious security concerns because it may allow clients to modify unauthorized files on the web server and must therefore be disabled.
+
+Tomcat uses the "org.apache.catalina.servlets.WebdavServlet" servlet to provide WebDAV services. Because the WebDAV service has been found to have an excessive number of vulnerabilities, this servlet must not be installed. Performance Charts does not configure WebDAV by default.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60242r888362_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/web.xml
+
+Find the &lt;servlet-name&gt;webdav&lt;/servlet-name&gt; node and remove the entire parent &lt;servlet&gt; block.
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60242r888362_fix" /><check system="C-60299r888361_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command: 
+
+# grep -n 'webdav' /usr/lib/vmware-perfcharts/tc-instance/conf/web.xml
+
+If the command produces any output, this is a finding.</check-content></check></Rule></Group><Group id="V-256625"><title>SRG-APP-000141-WSR-000086</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256625r888366_rule" weight="10.0" severity="medium"><version>VCPF-70-000015</version><title>Performance Charts must be configured with memory leak protection.</title><description>&lt;VulnDiscussion&gt;The Java Runtime environment can cause a memory leak or lock files under certain conditions. Without memory leak protection, Performance Chart can continue to consume system resources, which will lead to "OutOfMemoryErrors" when reloading web applications.
+
+Memory leaks occur when JRE code uses the context class loader to load a singleton. This will cause a memory leak if a web application class loader happens to be the context class loader at the time. The "JreMemoryLeakPreventionListener" class is designed to initialize these singletons when Tomcat's common class loader is the context class loader. Proper use of JRE memory leak protection will ensure the hosted application does not consume system resources and cause an unstable environment.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60243r888365_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Navigate to the &lt;Server&gt; node.
+
+Add '&lt;Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener"/&gt;' to the &lt;Server&gt; node.
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60243r888365_fix" /><check system="C-60300r888364_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command: 
+
+# grep JreMemoryLeakPreventionListener /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Expected result:
+
+&lt;Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener"/&gt;
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256626"><title>SRG-APP-000141-WSR-000087</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256626r888369_rule" weight="10.0" severity="medium"><version>VCPF-70-000016</version><title>Performance Charts must not have any symbolic links in the web content directory tree.</title><description>&lt;VulnDiscussion&gt;A web server is designed to deliver content and execute scripts or applications on the request of a client or user. Containing user requests to files in the directory tree of the hosted web application and limiting the execution of scripts and applications guarantees the user is not accessing information protected outside the application's realm.
+
+By checking that no symbolic links exist in the document root, the web server is protected from users jumping outside the hosted application directory tree and gaining access to the other directories, including the system root.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60244r888368_fix">At the command prompt, run the following command:
+
+Note: Replace &lt;file_name&gt; for the name of any files that were returned.
+
+# unlink &lt;file_name&gt;
+
+Repeat the command for each file that was returned.</fixtext><fix id="F-60244r888368_fix" /><check system="C-60301r888367_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# find /usr/lib/vmware-perfcharts/tc-instance/webapps/ -type l -ls
+
+If the command produces any output, this is a finding.</check-content></check></Rule></Group><Group id="V-256627"><title>SRG-APP-000211-WSR-000030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256627r888372_rule" weight="10.0" severity="medium"><version>VCPF-70-000017</version><title>Performance Charts directory tree must have permissions in an out-of-the-box state.</title><description>&lt;VulnDiscussion&gt;Accounts on a web server are to be kept to a minimum. Only administrators, web managers, developers, auditors, and web authors require accounts on the machine hosting the web server. The resources to which these accounts have access must also be closely monitored and controlled. Performance Charts files must be adequately protected with correct permissions as applied out of the box.
+
+Satisfies: SRG-APP-000211-WSR-000030, SRG-APP-000380-WSR-000072&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001082</ident><ident system="http://cyber.mil/cci">CCI-001813</ident><fixtext fixref="F-60245r888371_fix">At the command prompt, run the following command:
+
+# chown root:root &lt;file_name&gt;
+
+Repeat the command for each file that was returned.
+
+Note: Replace &lt;file_name&gt; for the name of the file that was returned.</fixtext><fix id="F-60245r888371_fix" /><check system="C-60302r888370_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# find /usr/lib/vmware-perfcharts/tc-instance/webapps/ -xdev -type f -a '(' -not -user root -a -not -user perfcharts -o -not -group root ')' -exec ls -la {} \;
+
+If the command produces any output, this is a finding.</check-content></check></Rule></Group><Group id="V-256628"><title>SRG-APP-000225-WSR-000140</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256628r888375_rule" weight="10.0" severity="medium"><version>VCPF-70-000018</version><title>Performance Charts must fail to a known safe state if system initialization fails, shutdown fails, or aborts fail.</title><description>&lt;VulnDiscussion&gt;Determining a safe state for failure and weighing that against a potential denial of service for users depends on what type of application the web server is hosting. For Performance Charts, it is preferable that the service abort startup on any initialization failure rather than continuing in a degraded, and potentially insecure, state.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001190</ident><fixtext fixref="F-60246r888374_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/catalina.properties
+
+Add or change the following line:
+
+org.apache.catalina.startup.EXIT_ON_INIT_FAILURE=true
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60246r888374_fix" /><check system="C-60303r888373_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command line, run the following command:
+
+# grep EXIT_ON_INIT_FAILURE /usr/lib/vmware-perfcharts/tc-instance/conf/catalina.properties
+
+Expected result:
+
+org.apache.catalina.startup.EXIT_ON_INIT_FAILURE = true
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256629"><title>SRG-APP-000246-WSR-000149</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256629r888378_rule" weight="10.0" severity="medium"><version>VCPF-70-000019</version><title>Performance Charts must limit the number of allowed connections.</title><description>&lt;VulnDiscussion&gt;Limiting the number of established connections to Performance Charts is a basic denial-of-service protection. Servers where the limit is too high or unlimited could run out of system resources and negatively affect system availability.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001094</ident><fixtext fixref="F-60247r888377_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Configure the &lt;Connector&gt; node with the value:
+
+acceptCount="300"
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60247r888377_fix" /><check system="C-60304r888376_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Service/Connector/@acceptCount' /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Expected result:
+
+acceptCount="300"
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256630"><title>SRG-APP-000251-WSR-000157</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256630r888381_rule" weight="10.0" severity="medium"><version>VCPF-70-000020</version><title>Performance Charts must set "URIEncoding" to UTF-8.</title><description>&lt;VulnDiscussion&gt;Invalid user input occurs when a user inserts data or characters into a hosted application's data entry field and the hosted application is unprepared to process that data. This results in unanticipated application behavior, potentially leading to an application compromise. Invalid user input is one of the primary methods employed when attempting to compromise an application. 
+
+An attacker can also enter Unicode characters into hosted applications in an effort to break out of the document home or root home directory or to bypass security checks. 
+
+Performance Charts must be configured to use a consistent character set via the "URIEncoding" attribute on the Connector nodes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001310</ident><fixtext fixref="F-60248r888380_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Configure the &lt;Connector&gt; node with the value 'URIEncoding="UTF-8"'.
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60248r888380_fix" /><check system="C-60305r888379_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Service/Connector/@URIEncoding' /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Expected result:
+
+URIEncoding="UTF-8"
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256631"><title>SRG-APP-000251-WSR-000157</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256631r888384_rule" weight="10.0" severity="medium"><version>VCPF-70-000021</version><title>Performance Charts must use the "setCharacterEncodingFilter" filter.</title><description>&lt;VulnDiscussion&gt;Invalid user input occurs when a user inserts data or characters into a hosted application's data entry field and the hosted application is unprepared to process that data. This results in unanticipated application behavior, potentially leading to an application compromise. Invalid user input is one of the primary methods employed when attempting to compromise an application. 
+
+An attacker can also enter Unicode characters into hosted applications in an effort to break out of the document home or root home directory or to bypass security checks.
+
+VMware uses the standard Tomcat "SetCharacterEncodingFilter" to provide a layer of defense against character encoding attacks. Filters are Java objects that performs filtering tasks on the request to a resource (a servlet or static content), the response from a resource, or both.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001310</ident><fixtext fixref="F-60249r888383_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/webapps/statsreport/WEB-INF/web.xml
+
+Configure the &lt;web-app&gt; node with the child nodes listed below:
+
+&lt;filter-mapping&gt;
+    &lt;filter-name&gt;setCharacterEncodingFilter&lt;/filter-name&gt;
+    &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;
+
+   &lt;filter&gt;
+      &lt;filter-name&gt;setCharacterEncodingFilter&lt;/filter-name&gt;
+      &lt;filter-class&gt;
+         org.apache.catalina.filters.SetCharacterEncodingFilter
+      &lt;/filter-class&gt;
+      &lt;init-param&gt;
+         &lt;param-name&gt;encoding&lt;/param-name&gt;
+         &lt;param-value&gt;UTF-8&lt;/param-value&gt;
+      &lt;/init-param&gt;
+      &lt;init-param&gt;
+         &lt;param-name&gt;ignore&lt;/param-name&gt;
+         &lt;param-value&gt;true&lt;/param-value&gt;
+      &lt;/init-param&gt;
+      &lt;async-supported&gt;true&lt;/async-supported&gt;
+   &lt;/filter&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60249r888383_fix" /><check system="C-60306r888382_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+#  xmllint --format /usr/lib/vmware-perfcharts/tc-instance/webapps/statsreport/WEB-INF/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '/web-app/filter-mapping/filter-name[text()="setCharacterEncodingFilter"]/parent::filter-mapping' -
+
+Expected result:
+
+&lt;filter-mapping&gt;
+    &lt;filter-name&gt;setCharacterEncodingFilter&lt;/filter-name&gt;
+    &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;
+
+If the output is does not match the expected result, this is a finding.
+
+At the command prompt, run the following command:
+
+# xmllint --format /usr/lib/vmware-perfcharts/tc-instance/webapps/statsreport/WEB-INF/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '/web-app/filter/filter-name[text()="setCharacterEncodingFilter"]/parent::filter' -
+
+Expected result:
+
+   &lt;filter&gt;
+      &lt;filter-name&gt;setCharacterEncodingFilter&lt;/filter-name&gt;
+      &lt;filter-class&gt;
+         org.apache.catalina.filters.SetCharacterEncodingFilter
+      &lt;/filter-class&gt;
+      &lt;init-param&gt;
+         &lt;param-name&gt;encoding&lt;/param-name&gt;
+         &lt;param-value&gt;UTF-8&lt;/param-value&gt;
+      &lt;/init-param&gt;
+      &lt;init-param&gt;
+         &lt;param-name&gt;ignore&lt;/param-name&gt;
+         &lt;param-value&gt;true&lt;/param-value&gt;
+      &lt;/init-param&gt;
+      &lt;async-supported&gt;true&lt;/async-supported&gt;
+   &lt;/filter&gt;
+
+If the output is does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256632"><title>SRG-APP-000266-WSR-000142</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256632r888387_rule" weight="10.0" severity="medium"><version>VCPF-70-000022</version><title>Performance Charts must set the welcome-file node to a default web page.</title><description>&lt;VulnDiscussion&gt;Enumeration techniques, such as URL parameter manipulation, rely on being able to obtain information about the web server's directory structure by locating directories without default pages. In this scenario, the web server will display to the user a listing of the files in the directory being accessed.
+
+By having a default hosted application web page, the anonymous web user will not obtain directory browsing information or an error message that reveals the server type and version. Ensuring every document directory has an "index.jsp" (or equivalent) file is one approach to mitigating the vulnerability.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-60250r888386_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/web.xml
+
+Add the following section under the &lt;web-apps&gt; node:
+
+&lt;welcome-file-list&gt;
+    &lt;welcome-file&gt;index.html&lt;/welcome-file&gt;
+    &lt;welcome-file&gt;index.htm&lt;/welcome-file&gt;
+    &lt;welcome-file&gt;index.jsp&lt;/welcome-file&gt;
+&lt;/welcome-file-list&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60250r888386_fix" /><check system="C-60307r888385_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+ 
+# xmllint --format /usr/lib/vmware-perfcharts/tc-instance/conf/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '/web-app/welcome-file-list' -
+
+Expected result:
+
+&lt;welcome-file-list&gt;
+    &lt;welcome-file&gt;index.html&lt;/welcome-file&gt;
+    &lt;welcome-file&gt;index.htm&lt;/welcome-file&gt;
+    &lt;welcome-file&gt;index.jsp&lt;/welcome-file&gt;
+  &lt;/welcome-file-list&gt;
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256633"><title>SRG-APP-000266-WSR-000142</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256633r888390_rule" weight="10.0" severity="medium"><version>VCPF-70-000023</version><title>Performance Charts must not show directory listings.</title><description>&lt;VulnDiscussion&gt;Enumeration techniques, such as URL parameter manipulation, rely on being able to obtain information about the web server's directory structure by locating directories without default pages. In this scenario, the web server will display to the user a listing of the files in the directory being accessed. Ensuring directory listing is disabled is one approach to mitigating the vulnerability.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-60251r888389_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/web.xml
+
+Set the &lt;param-value&gt; to "false" in all &lt;param-name&gt;listing&lt;/param-name&gt; nodes.
+
+Note: The setting should look like the following:
+
+&lt;init-param&gt;
+      &lt;param-name&gt;listings&lt;/param-name&gt;
+      &lt;param-value&gt;false&lt;/param-value&gt;
+&lt;/init-param&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60251r888389_fix" /><check system="C-60308r888388_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --format /usr/lib/vmware-perfcharts/tc-instance/conf/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '//param-name[text()="listings"]/parent::init-param' -
+
+Expected result:
+
+&lt;init-param&gt;
+      &lt;param-name&gt;listings&lt;/param-name&gt;
+      &lt;param-value&gt;false&lt;/param-value&gt;
+&lt;/init-param&gt;
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256634"><title>SRG-APP-000266-WSR-000159</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256634r888393_rule" weight="10.0" severity="medium"><version>VCPF-70-000024</version><title>Performance Charts must be configured to show error pages with minimal information.</title><description>&lt;VulnDiscussion&gt;Web servers will often display error messages to client users, including enough information to aid in the debugging of the error. The information given back in error messages may display the web server type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any backends being used for data storage.
+
+This information could be used by an attacker to blueprint what type of attacks might be successful. Therefore, Performance Charts must be configured with a catchall error handler that redirects to a standard "error.jsp".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-60252r888392_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/webapps/statsreport/WEB-INF/web.xml
+
+Add the following section under the &lt;web-apps&gt; node:
+
+&lt;error-page&gt;
+    &lt;exception-type&gt;java.lang.Throwable&lt;/exception-type&gt;
+    &lt;location&gt;/http_error.jsp&lt;/location&gt;
+&lt;/error-page&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60252r888392_fix" /><check system="C-60309r888391_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+#  xmllint --format /usr/lib/vmware-perfcharts/tc-instance/webapps/statsreport/WEB-INF/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '/web-app/error-page/exception-type["text()=java.lang.Throwable"]/parent::error-page' -
+
+Expected result:
+
+&lt;error-page&gt;
+    &lt;exception-type&gt;java.lang.Throwable&lt;/exception-type&gt;
+    &lt;location&gt;/http_error.jsp&lt;/location&gt;
+&lt;/error-page&gt;
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256635"><title>SRG-APP-000266-WSR-000159</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256635r888396_rule" weight="10.0" severity="medium"><version>VCPF-70-000025</version><title>Performance Charts must be configured to not show error reports.</title><description>&lt;VulnDiscussion&gt;Web servers will often display error messages to client users, including enough information to aid in the debugging of the error. The information given back in error messages may display the web server type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any backends being used for data storage.
+
+This information could be used by an attacker to blueprint what type of attacks might be successful. Therefore, Performance Charts must be configured with a catchall error handler that redirects to a standard "error.jsp".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-60253r888395_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Locate the following Host block:
+
+&lt;Host ...&gt;
+...
+&lt;/Host&gt;
+
+Inside this block, add the following on a new line:
+
+&lt;Valve className="org.apache.catalina.valves.ErrorReportValve" showServerInfo="false" showReport="false"/&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60253r888395_fix" /><check system="C-60310r888394_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Service/Engine/Host/Valve[@className="org.apache.catalina.valves.ErrorReportValve"]' /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Expected result:
+
+&lt;Valve className="org.apache.catalina.valves.ErrorReportValve" showServerInfo="false" showReport="false"/&gt;
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256636"><title>SRG-APP-000266-WSR-000159</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256636r888399_rule" weight="10.0" severity="medium"><version>VCPF-70-000026</version><title>Performance Charts must hide the server version.</title><description>&lt;VulnDiscussion&gt;Web servers will often display error messages to client users, including enough information to aid in the debugging of the error. The information given back in error messages may display the web server type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any backends being used for data storage.
+
+This information could be used by an attacker to blueprint what type of attacks might be successful. Therefore, Performance Charts must be configured with a catchall error handler that redirects to a standard "error.jsp".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-60254r888398_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Configure the &lt;Connector&gt; node with the following value:
+
+server="Anonymous"
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60254r888398_fix" /><check system="C-60311r888397_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Service/Connector/@server' /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Expected result:
+
+server="Anonymous"
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256637"><title>SRG-APP-000266-WSR-000160</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256637r888402_rule" weight="10.0" severity="medium"><version>VCPF-70-000027</version><title>Performance Charts must not enable support for TRACE requests.</title><description>&lt;VulnDiscussion&gt;"TRACE" is a technique for a user to request internal information about Tomcat. This is useful during product development but should not be enabled in production.
+
+Allowing an attacker to conduct a TRACE operation against Performance Charts will expose information that would be useful to perform a more targeted attack. Performance Charts provides the "allowTrace" parameter as means to disable responding to TRACE requests.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-60255r888401_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+Locate and navigate to 'allowTrace="true"'.
+
+Remove the 'allowTrace="true"' setting.
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60255r888401_fix" /><check system="C-60312r888400_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# grep allowTrace /usr/lib/vmware-perfcharts/tc-instance/conf/server.xml
+
+If "allowTrace" is set to "true", this is a finding.
+
+If no line is returned, this is not a finding.</check-content></check></Rule></Group><Group id="V-256638"><title>SRG-APP-000266-WSR-000160</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256638r888405_rule" weight="10.0" severity="medium"><version>VCPF-70-000028</version><title>Performance Charts must have the debug option turned off.</title><description>&lt;VulnDiscussion&gt;Information needed by an attacker to begin looking for possible vulnerabilities in a web server includes any information about the web server and plug-ins or modules being used. When debugging or trace information is enabled in a production web server, information about the web server, such as web server type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any backends being used for data storage may be displayed. Because this information may be placed in logs and general messages during normal operation of the web server, an attacker does not need to cause an error condition to gain this information.
+
+The Performance Charts Service can be configured to set the debugging level. By setting the debugging level to zero, no debugging information will be provided to a malicious user.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-60256r888404_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/web.xml
+
+Navigate to all &lt;debug&gt; nodes that are not set to "0".
+
+Set the &lt;param-value&gt; to "0" in all &lt;param-name&gt;debug&lt;/param-name&gt; nodes.
+
+Note: The debug setting should look like the following:
+
+&lt;init-param&gt;
+      &lt;param-name&gt;debug&lt;/param-name&gt;
+      &lt;param-value&gt;0&lt;/param-value&gt;
+&lt;/init-param&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60256r888404_fix" /><check system="C-60313r888403_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+ 
+# xmllint --format /usr/lib/vmware-perfcharts/tc-instance/conf/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '//param-name[text()="debug"]/parent::init-param' -
+
+Expected result:
+
+&lt;init-param&gt;
+      &lt;param-name&gt;debug&lt;/param-name&gt;
+      &lt;param-value&gt;0&lt;/param-value&gt;
+&lt;/init-param&gt;
+
+If the output of the command does not match the expected result, this is a finding.
+
+If no lines is returned, this is not a finding.</check-content></check></Rule></Group><Group id="V-256639"><title>SRG-APP-000357-WSR-000150</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256639r888408_rule" weight="10.0" severity="medium"><version>VCPF-70-000029</version><title>Performance Charts must properly configure log sizes and rotation.</title><description>&lt;VulnDiscussion&gt;To ensure the logging mechanism used by the web server has sufficient storage capacity in which to write the logs, the logging mechanism must be able to allocate log record storage capacity. Performance Charts properly sizes and configures log rotation during installation. This default configuration must be verified.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001849</ident><fixtext fixref="F-60257r888407_fix">Navigate to and open:
+
+/etc/vmware-perfcharts/log4j.properties
+
+Ensure the appender.rolling entries are configured as follows:
+
+appender.rolling.type = RollingFile
+appender.rolling.name = FileLog
+appender.rolling.fileName = /var/log/vmware/perfcharts/stats.log
+appender.rolling.filePattern = /var/log/vmware/perfcharts/stats-%i.log
+appender.rolling.policies.type = Policies
+appender.rolling.policies.size.type = SizeBasedTriggeringPolicy
+appender.rolling.policies.size.size = 5MB
+appender.rolling.strategy.type = DefaultRolloverStrategy
+appender.rolling.strategy.max = 10
+appender.rolling.layout.type = PatternLayout
+appender.rolling.layout.pattern = %d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} [%t %-5p %c] %m%n
+appender.rolling.level = info
+
+Note: This fix is currently only applicable to 7.0 U2+ and is different in older versions.</fixtext><fix id="F-60257r888407_fix" /><check system="C-60314r888406_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# rpm -V VMware-perfcharts|grep log4j|grep "^..5......"
+
+If the command returns any output, this is a finding.</check-content></check></Rule></Group><Group id="V-256640"><title>SRG-APP-000358-WSR-000163</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256640r888411_rule" weight="10.0" severity="medium"><version>VCPF-70-000030</version><title>Rsyslog must be configured to monitor and ship Performance Charts log files.</title><description>&lt;VulnDiscussion&gt;Performance Charts produces several logs that must be offloaded from the originating system. This information can then be used for diagnostic purposes, forensics purposes, or other purposes relevant to ensuring the availability and integrity of the hosted application.
+
+Satisfies: SRG-APP-000358-WSR-000163, SRG-APP-000125-WSR-000071&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001348</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-60258r888410_fix">Navigate to and open:
+
+/etc/vmware-syslog/vmware-services-perfcharts.conf
+
+Create the file if it does not exist.
+
+Set the contents of the file as follows:
+
+#stats
+input(type="imfile"
+      File="/var/log/vmware/perfcharts/stats.log"
+      Tag="perfcharts-stats"
+      Severity="info"
+      Facility="local0")
+#localhost_access_log
+input(type="imfile"
+      File="/var/log/vmware/perfcharts/localhost_access_log.txt"
+      Tag="perfcharts-localhost_access"
+      Severity="info"
+      Facility="local0")
+#vmware-perfcharts-gc.log
+input(type="imfile"
+      File="/var/log/vmware/perfcharts/vmware-perfcharts-gc.log.*.current"
+      Tag="perfcharts-gc"
+      Severity="info"
+      Facility="local0")
+#vmware-perfcharts-runtime.log
+input(type="imfile"
+      File="/var/log/vmware/perfcharts/vmware-perfcharts-runtime.log.std*"
+      Tag="perfcharts-runtime"
+      Severity="info"
+      Facility="local0")</fixtext><fix id="F-60258r888410_fix" /><check system="C-60315r888409_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# rpm -V VMware-visl-integration|grep vmware-services-perfcharts.conf|grep "^..5......"
+
+If the command returns any output, this is a finding.</check-content></check></Rule></Group><Group id="V-256641"><title>SRG-APP-000383-WSR-000175</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256641r888414_rule" weight="10.0" severity="medium"><version>VCPF-70-000031</version><title>Performance Charts must be configured with the appropriate ports.</title><description>&lt;VulnDiscussion&gt;Web servers provide numerous processes, features, and functionalities that use TCP/IP ports. Some of these processes may be deemed unnecessary or too unsecure to run on a production system. The ports that Performance Charts listens on are configured in the "catalina.properties" file and must be verified as accurate to their shipping state.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001762</ident><fixtext fixref="F-60259r888413_fix">Navigate to and open:
+
+/etc/vmware-eam/catalina.properties
+
+Navigate to the ports specification section.
+
+Add or modify the following lines:
+
+bio.http.port=13080
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60259r888413_fix" /><check system="C-60316r888412_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# grep '^bio\.' /usr/lib/vmware-perfcharts/tc-instance/conf/catalina.properties
+
+Expected result:
+
+bio.http.port=13080
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256642"><title>SRG-APP-000435-WSR-000147</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256642r888417_rule" weight="10.0" severity="medium"><version>VCPF-70-000032</version><title>Performance Charts must disable the shutdown port.</title><description>&lt;VulnDiscussion&gt;An attacker has at least two reasons to stop a web server. The first is to cause a denial of service, and the second is to put in place changes the attacker made to the web server configuration.
+
+If the Tomcat shutdown port feature is enabled, a shutdown signal can be sent to Performance Charts through this port. To ensure availability, the shutdown port must be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-60260r888416_fix">Navigate to and open:
+
+/etc/vmware-eam/catalina.properties
+
+Navigate to the ports specification section.
+
+Add or modify the following line:
+
+base.shutdown.port=-1
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60260r888416_fix" /><check system="C-60317r888415_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# grep base.shutdown.port /usr/lib/vmware-perfcharts/tc-instance/conf/catalina.properties
+
+Expected result:
+
+base.shutdown.port=-1
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256643"><title>SRG-APP-000439-WSR-000155</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256643r888420_rule" weight="10.0" severity="medium"><version>VCPF-70-000033</version><title>Performance Charts must set the secure flag for cookies.</title><description>&lt;VulnDiscussion&gt;The secure flag is an option that can be set by the application server when sending a new cookie to the user within an HTTP response. The purpose of the secure flag is to prevent cookies from being observed by unauthorized parties due to the transmission of a cookie in clear text.
+
+By setting the secure flag, the browser will prevent the transmission of a cookie over an unencrypted channel. The Performance Charts is configured to only be accessible over a Transport Layer Security (TLS) tunnel, but this cookie flag is still a recommended best practice.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-60261r888419_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/webapps/statsreport/WEB-INF/web.xml
+
+Navigate to the &lt;session-config&gt; node and configure it as follows:
+
+&lt;session-config&gt;
+    &lt;cookie-config&gt;
+      &lt;http-only&gt;true&lt;/http-only&gt;
+      &lt;secure&gt;true&lt;/secure&gt;
+    &lt;/cookie-config&gt;
+    &lt;session-timeout&gt;6&lt;/session-timeout&gt;
+&lt;/session-config&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60261r888419_fix" /><check system="C-60318r888418_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+ 
+# xmllint --format /usr/lib/vmware-perfcharts/tc-instance/webapps/statsreport/WEB-INF/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '/web-app/session-config/cookie-config/secure' -
+
+Expected result:
+
+&lt;secure&gt;true&lt;/secure&gt;
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256644"><title>SRG-APP-000516-WSR-000174</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256644r888423_rule" weight="10.0" severity="medium"><version>VCPF-70-000034</version><title>Performance Charts default servlet must be set to "readonly".</title><description>&lt;VulnDiscussion&gt;The default servlet (or DefaultServlet) is a special servlet provided with Tomcat that is called when no other suitable page is found in a particular folder. The DefaultServlet serves static resources as well as directory listings. The DefaultServlet is configured by default with the "readonly" parameter set to "true" where HTTP commands such as PUT and DELETE are rejected.
+
+Changing this to "false" allows clients to delete or modify static resources on the server and to upload new resources. DefaultServlet "readonly" must be set to "true", either literally or by absence (default).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA Perfcharts</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA Perfcharts</dc:subject><dc:identifier>5522</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-60262r888422_fix">Navigate to and open:
+
+/usr/lib/vmware-perfcharts/tc-instance/conf/web.xml
+
+Navigate to the /&lt;web-apps&gt;/&lt;servlet&gt;/&lt;servlet-name&gt;default&lt;/servlet-name&gt;/ node and remove the following node:
+
+&lt;init-param&gt;
+      &lt;param-name&gt;readonly&lt;/param-name&gt;
+      &lt;param-value&gt;false&lt;/param-value&gt;
+&lt;/init-param&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart perfcharts</fixtext><fix id="F-60262r888422_fix" /><check system="C-60319r888421_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_Perfcharts_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --format /usr/lib/vmware-perfcharts/tc-instance/conf/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '/web-app/servlet/servlet-name[text()="default"]/../init-param/param-name[text()="readonly"]/../param-value[text()="false"]' -
+
+Expected result:
+
+XPath set is empty
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group></Benchmark>
