@@ -1,0 +1,65 @@
+control 'WDNS-22-000057_rule' do
+  title 'The Windows DNS secondary servers must request data origin authentication verification from the primary server when requesting name/address resolution.'
+  desc "If data origin authentication and data integrity verification are not performed, the resultant response could be forged, it may have come from a poisoned cache, the packets could have been intercepted without the resolver's knowledge, or resource records could have been removed that would result in query failure or denial of service. Data origin authentication must be performed to thwart these types of attacks.
+
+Each client of name resolution services either performs this validation on its own or has authenticated channels to trusted validation providers. Information systems that provide name and address resolution services for local clients include, for example, recursive resolving or caching DNS servers. DNS client resolvers either perform validation of DNSSEC signatures, or clients use authenticated channels to recursive resolvers that perform such validations."
+  desc 'check', 'Note: This check is not applicable for Windows 2022 DNS Servers that host only Active Directory-integrated zones or for Windows 2022 DNS Servers on a classified network.
+
+Validate this check from either a Windows 8 client or a Windows 2008 or higher server, authenticated as a Domain Administrator or Local Administrator.
+
+Determine a valid host in the zone.
+
+Open the Windows PowerShell prompt on the Windows 10 or higher client.
+
+Issue the following command:
+(Replace www.zonename.mil with a FQDN of a valid host in the zone being validated. Replace ###.###.###.### with the FQDN or IP address of the Windows 2022 DNS Server hosting the signed zone.)
+
+resolve-dnsname www.zonename.mil -server ###.###.###.### -dnssecok <enter>
+
+Note: It is important to use the -server switch followed by the DNS server name/IP address.
+
+The result should show the "A" record results.
+
+In addition, the results should show QueryType: RRSIG with an expiration, date signed, signer, and signature, similar to the following:
+
+Name: www.zonename.mil
+QueryType: RRSIG
+TTL: 189
+Section: Answer
+TypeCovered: CNAME
+Algorithm: 8
+LabelCount: 3
+OriginalTtl: 300
+Expiration: 11/21/2022 10:22:28 PM
+Signed: 10/22/2022 10:22:28 PM
+Signer: zonename.mil
+Signature: {87, 232, 34, 134...}
+
+Name: origin-www.zonename.mil
+QueryType: A
+TTL: 201
+Section: Answer
+IP4Address: ###.###.###.###
+
+If the results do not show the RRSIG and signature information, this is a finding.'
+  desc 'fix', 'Sign or re-sign the hosted zone(s) on the DNS server being validated.
+
+Log on to the DNS server using the Domain Admin or Enterprise Admin account or Local Administrator account.
+
+Press the Windows key + R and execute "dnsmgmt.msc".
+
+On the opened DNS Manager snap-in from the left pane, expand the server name for the DNS server and then expand "Forward Lookup Zones".
+
+From the expanded list, right-click to select the zone (repeat for each hosted zone), point to DNSSEC, and then click "Sign the Zone" using either approved saved parameters or approved custom parameters.'
+  impact 0.5
+  tag check_id: 'C-WDNS-22-000057_chk'
+  tag severity: 'medium'
+  tag gid: 'WDNS-22-000057'
+  tag rid: 'WDNS-22-000057_rule'
+  tag stig_id: 'WDNS-22-000057'
+  tag gtitle: 'SRG-APP-000423-DNS-000056'
+  tag fix_id: 'F-WDNS-22-000057_fix'
+  tag 'documentable'
+  tag cci: ['CCI-002465']
+  tag nist: ['SC-21']
+end
