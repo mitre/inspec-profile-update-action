@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="MOT_Android_9-x_COBO_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2020-10-16">accepted</status><title>Motorola Android 9.x COBO Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 14 Oct 2020</plain-text><plain-text id="generator">3.1.1.36225</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-230110" selected="true" /><select idref="V-230111" selected="true" /><select idref="V-230112" selected="true" /><select idref="V-230113" selected="true" /><select idref="V-230114" selected="true" /><select idref="V-230115" selected="true" /><select idref="V-230116" selected="true" /><select idref="V-230117" selected="true" /><select idref="V-230118" selected="true" /><select idref="V-230120" selected="true" /><select idref="V-230121" selected="true" /><select idref="V-230122" selected="true" /><select idref="V-230123" selected="true" /><select idref="V-230124" selected="true" /><select idref="V-230125" selected="true" /><select idref="V-230128" selected="true" /><select idref="V-230129" selected="true" /><select idref="V-230130" selected="true" /><select idref="V-230131" selected="true" /><select idref="V-230132" selected="true" /><select idref="V-230133" selected="true" /><select idref="V-230139" selected="true" /><select idref="V-230140" selected="true" /><select idref="V-230141" selected="true" /><select idref="V-230142" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-230110" selected="true" /><select idref="V-230111" selected="true" /><select idref="V-230112" selected="true" /><select idref="V-230113" selected="true" /><select idref="V-230114" selected="true" /><select idref="V-230115" selected="true" /><select idref="V-230116" selected="true" /><select idref="V-230117" selected="true" /><select idref="V-230118" selected="true" /><select idref="V-230120" selected="true" /><select idref="V-230121" selected="true" /><select idref="V-230122" selected="true" /><select idref="V-230123" selected="true" /><select idref="V-230124" selected="true" /><select idref="V-230125" selected="true" /><select idref="V-230128" selected="true" /><select idref="V-230129" selected="true" /><select idref="V-230130" selected="true" /><select idref="V-230131" selected="true" /><select idref="V-230132" selected="true" /><select idref="V-230133" selected="true" /><select idref="V-230139" selected="true" /><select idref="V-230140" selected="true" /><select idref="V-230141" selected="true" /><select idref="V-230142" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-230110" selected="true" /><select idref="V-230111" selected="true" /><select idref="V-230112" selected="true" /><select idref="V-230113" selected="true" /><select idref="V-230114" selected="true" /><select idref="V-230115" selected="true" /><select idref="V-230116" selected="true" /><select idref="V-230117" selected="true" /><select idref="V-230118" selected="true" /><select idref="V-230120" selected="true" /><select idref="V-230121" selected="true" /><select idref="V-230122" selected="true" /><select idref="V-230123" selected="true" /><select idref="V-230124" selected="true" /><select idref="V-230125" selected="true" /><select idref="V-230128" selected="true" /><select idref="V-230129" selected="true" /><select idref="V-230130" selected="true" /><select idref="V-230131" selected="true" /><select idref="V-230132" selected="true" /><select idref="V-230133" selected="true" /><select idref="V-230139" selected="true" /><select idref="V-230140" selected="true" /><select idref="V-230141" selected="true" /><select idref="V-230142" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-230110" selected="true" /><select idref="V-230111" selected="true" /><select idref="V-230112" selected="true" /><select idref="V-230113" selected="true" /><select idref="V-230114" selected="true" /><select idref="V-230115" selected="true" /><select idref="V-230116" selected="true" /><select idref="V-230117" selected="true" /><select idref="V-230118" selected="true" /><select idref="V-230120" selected="true" /><select idref="V-230121" selected="true" /><select idref="V-230122" selected="true" /><select idref="V-230123" selected="true" /><select idref="V-230124" selected="true" /><select idref="V-230125" selected="true" /><select idref="V-230128" selected="true" /><select idref="V-230129" selected="true" /><select idref="V-230130" selected="true" /><select idref="V-230131" selected="true" /><select idref="V-230132" selected="true" /><select idref="V-230133" selected="true" /><select idref="V-230139" selected="true" /><select idref="V-230140" selected="true" /><select idref="V-230141" selected="true" /><select idref="V-230142" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-230110" selected="true" /><select idref="V-230111" selected="true" /><select idref="V-230112" selected="true" /><select idref="V-230113" selected="true" /><select idref="V-230114" selected="true" /><select idref="V-230115" selected="true" /><select idref="V-230116" selected="true" /><select idref="V-230117" selected="true" /><select idref="V-230118" selected="true" /><select idref="V-230120" selected="true" /><select idref="V-230121" selected="true" /><select idref="V-230122" selected="true" /><select idref="V-230123" selected="true" /><select idref="V-230124" selected="true" /><select idref="V-230125" selected="true" /><select idref="V-230128" selected="true" /><select idref="V-230129" selected="true" /><select idref="V-230130" selected="true" /><select idref="V-230131" selected="true" /><select idref="V-230132" selected="true" /><select idref="V-230133" selected="true" /><select idref="V-230139" selected="true" /><select idref="V-230140" selected="true" /><select idref="V-230141" selected="true" /><select idref="V-230142" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-230110" selected="true" /><select idref="V-230111" selected="true" /><select idref="V-230112" selected="true" /><select idref="V-230113" selected="true" /><select idref="V-230114" selected="true" /><select idref="V-230115" selected="true" /><select idref="V-230116" selected="true" /><select idref="V-230117" selected="true" /><select idref="V-230118" selected="true" /><select idref="V-230120" selected="true" /><select idref="V-230121" selected="true" /><select idref="V-230122" selected="true" /><select idref="V-230123" selected="true" /><select idref="V-230124" selected="true" /><select idref="V-230125" selected="true" /><select idref="V-230128" selected="true" /><select idref="V-230129" selected="true" /><select idref="V-230130" selected="true" /><select idref="V-230131" selected="true" /><select idref="V-230132" selected="true" /><select idref="V-230133" selected="true" /><select idref="V-230139" selected="true" /><select idref="V-230140" selected="true" /><select idref="V-230141" selected="true" /><select idref="V-230142" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-230110" selected="true" /><select idref="V-230111" selected="true" /><select idref="V-230112" selected="true" /><select idref="V-230113" selected="true" /><select idref="V-230114" selected="true" /><select idref="V-230115" selected="true" /><select idref="V-230116" selected="true" /><select idref="V-230117" selected="true" /><select idref="V-230118" selected="true" /><select idref="V-230120" selected="true" /><select idref="V-230121" selected="true" /><select idref="V-230122" selected="true" /><select idref="V-230123" selected="true" /><select idref="V-230124" selected="true" /><select idref="V-230125" selected="true" /><select idref="V-230128" selected="true" /><select idref="V-230129" selected="true" /><select idref="V-230130" selected="true" /><select idref="V-230131" selected="true" /><select idref="V-230132" selected="true" /><select idref="V-230133" selected="true" /><select idref="V-230139" selected="true" /><select idref="V-230140" selected="true" /><select idref="V-230141" selected="true" /><select idref="V-230142" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-230110" selected="true" /><select idref="V-230111" selected="true" /><select idref="V-230112" selected="true" /><select idref="V-230113" selected="true" /><select idref="V-230114" selected="true" /><select idref="V-230115" selected="true" /><select idref="V-230116" selected="true" /><select idref="V-230117" selected="true" /><select idref="V-230118" selected="true" /><select idref="V-230120" selected="true" /><select idref="V-230121" selected="true" /><select idref="V-230122" selected="true" /><select idref="V-230123" selected="true" /><select idref="V-230124" selected="true" /><select idref="V-230125" selected="true" /><select idref="V-230128" selected="true" /><select idref="V-230129" selected="true" /><select idref="V-230130" selected="true" /><select idref="V-230131" selected="true" /><select idref="V-230132" selected="true" /><select idref="V-230133" selected="true" /><select idref="V-230139" selected="true" /><select idref="V-230140" selected="true" /><select idref="V-230141" selected="true" /><select idref="V-230142" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-230110" selected="true" /><select idref="V-230111" selected="true" /><select idref="V-230112" selected="true" /><select idref="V-230113" selected="true" /><select idref="V-230114" selected="true" /><select idref="V-230115" selected="true" /><select idref="V-230116" selected="true" /><select idref="V-230117" selected="true" /><select idref="V-230118" selected="true" /><select idref="V-230120" selected="true" /><select idref="V-230121" selected="true" /><select idref="V-230122" selected="true" /><select idref="V-230123" selected="true" /><select idref="V-230124" selected="true" /><select idref="V-230125" selected="true" /><select idref="V-230128" selected="true" /><select idref="V-230129" selected="true" /><select idref="V-230130" selected="true" /><select idref="V-230131" selected="true" /><select idref="V-230132" selected="true" /><select idref="V-230133" selected="true" /><select idref="V-230139" selected="true" /><select idref="V-230140" selected="true" /><select idref="V-230141" selected="true" /><select idref="V-230142" selected="true" /></Profile><Group id="V-230110"><title>GOOG-09-000100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230110r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-000100</version><title>The Motorola Android Pie must be configured to enforce a minimum password length of six characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. The ability to crack a password is a function of how many attempts an adversary is permitted, how quickly an adversary can do each attempt, and the size of the password space. The longer the minimum length of the password is, the larger the password space. Having a too-short minimum password length significantly reduces password strength, increasing the chance of password compromise and resulting in device and data compromise.
+
+SFR ID: FMT_SMF_EXT.1.1 #1a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-32403r538327_fix">Configure the Motorola Android device to enforce a minimum password length of six characters.
+
+On the MDM console: 
+1. Open password requirements.
+2. Open device password section.
+3. Enter the number of characters as "6".</fixtext><fix id="F-32403r538327_fix" /><check system="C-32425r538326_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the mobile device is enforcing a minimum password length of six characters.
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console: 
+1. Open password requirements.
+2. Open device password section.
+3. Verify the minimum password length is set to "6" characters.
+
+On the Android Pie device: 
+1. Open Settings &gt;&gt; Security &amp; location &gt;&gt; Screen lock.
+2. Enter current password.
+3. Tap on "Password".
+4. Verify Password length listed is at least "6".
+
+If the device password length is not set to six characters or more on the MDM console or the Android Pie device, this is a finding.</check-content></check></Rule></Group><Group id="V-230111"><title>GOOG-09-000200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230111r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-000200</version><title>The Motorola Android Pie must be configured to not allow passwords that include more than two repeating or sequential characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. Passwords that contain repeating or sequential characters are significantly easier to guess than those that do not contain repeating or sequential characters. Therefore, disallowing repeating or sequential characters increases password strength and decreases risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #1b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-32404r538330_fix">Configure the Motorola Android device to prevent passwords from containing more than two repeating or sequential characters.
+
+On the MDM console: 
+1. Open password requirements.
+2. Open device password section.
+3. Set password quality to "Complex".</fixtext><fix id="F-32404r538330_fix" /><check system="C-32426r538329_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the mobile device is prohibiting passwords with more than two repeating or sequential characters. 
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console: 
+1. Open password requirements.
+2. Open device password section.
+3. Verify the password quality is set to "Complex".
+
+On the Android Pie device: 
+1. Open Settings &gt;&gt; Security &amp; location &gt;&gt; Screen lock.
+2. Enter current password.
+3. Tap on "Password".
+4. Verify Password complexity requirements are listed: must contain at least one letter, one numeric digit, one special symbol.
+
+If the MDM console device policy is set to a password with more than two repeating or sequential characters, or on the Android Pie device, the device policy is set to a password with more than two repeating or sequential characters, this is a finding.</check-content></check></Rule></Group><Group id="V-230112"><title>GOOG-09-000300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230112r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-000300</version><title>The Motorola Android Pie must be configured to enable a screen lock policy that will lock the display after a period of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen lock timeout helps protect the device from unauthorized access. Devices without a screen lock timeout provide an opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device and possibly access to DoD networks.
+
+SFR ID: FMT_SMF_EXT.1.1 #2a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-32405r538333_fix">Configure the Motorola Android device to enable a screen lock policy that will lock the display after a period of inactivity.
+
+On the MDM console: 
+1. Open password requirements.
+2. Open device password section.
+3. Set "Device Lock Timeout" to any number desired. Units are in minutes.</fixtext><fix id="F-32405r538333_fix" /><check system="C-32427r538332_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the mobile device is enforcing a screen lock policy that will lock the display after a period of inactivity.
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console: 
+1. Open password requirements.
+2. Open device password section.
+3. Verify "Device Lock Timeout" is set to any number desired. Units are in minutes.
+
+On the Android Pie device: 
+1. Open Settings &gt;&gt; Security &amp; location.
+2. Click the gear icon next to "Screen lock".
+3. Verify "Automatically lock" is set to a required time.
+
+If the MDM console device policy is not set to enable a screen lock policy that will lock the display after a period of inactivity, or on the Android Pie device, the device policy is not set to enable a screen lock policy that will lock the display after a period of inactivity, this is a finding.</check-content></check></Rule></Group><Group id="V-230113"><title>GOOG-09-000400</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230113r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-000400</version><title>The Motorola Android Pie must be configured to lock the display after 15 minutes (or less) of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen lock timeout must be set to a value that helps protect the device from unauthorized access. Having a too-long timeout would increase the window of opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device. The maximum timeout period of 15 minutes has been selected to balance functionality and security; shorter timeout periods may be appropriate depending on the risks posed to the mobile device.
+
+SFR ID: FMT_SMF_EXT.1.1 #2b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-32406r538336_fix">Configure the Motorola Android device to lock the device display after 15 minutes (or less) of inactivity.
+
+On the MDM console: 
+1. Open password requirements.
+2. Open device password section.
+3. Set "Device Lock Timeout" to any number between 1 and 15.</fixtext><fix id="F-32406r538336_fix" /><check system="C-32428r538335_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the mobile device has the screen lock timeout set to 15 minutes or less.
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console: 
+1. Open passcode requirements.
+2. Open device passcode section.
+3. Verify "Device Lock Timeout" is set to any number between 1 and 15.
+
+On the Android Pie device: 
+1. Open Settings &gt;&gt; Security &amp; location.
+2. Click the gear icon next to "Screen lock".
+3. Verify "Automatically lock" is set to between 0 and 15 minutes.
+
+If the MDM console device policy is not set to 15 minutes or less for the screen lock timeout, or on the Android Pie device, the device policy is not set to 15 minutes or less for the screen lock timeout, this is a finding.</check-content></check></Rule></Group><Group id="V-230114"><title>GOOG-09-000500</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230114r569707_rule" weight="10.0" severity="low"><version>MOTO-09-000500</version><title>The Motorola Android Pie must be configured to not allow more than 10 consecutive failed authentication attempts.</title><description>&lt;VulnDiscussion&gt;The more attempts an adversary has to guess a password, the more likely the adversary will enter the correct password and gain access to resources on the device. Setting a limit on the number of attempts mitigates this risk. Setting the limit at 10 or less gives authorized users the ability to make a few mistakes when entering the password but still provides adequate protection against dictionary or brute force attacks on the password.
+
+SFR ID: FMT_SMF_EXT.1.1 #2c, FIA_AFL_EXT.1.5&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-32407r538339_fix">Configure the Motorola Android device to allow only 10 or fewer consecutive failed authentication attempts.
+
+On the MDM console: 
+1. Open password requirements.
+2. Open device password section.
+3. Set "Maximum Number of Failed Attempts" to a number between 1 and 10.</fixtext><fix id="F-32407r538339_fix" /><check system="C-32429r538338_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the mobile device has the maximum number of consecutive failed authentication attempts set at 10 or fewer. 
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console: 
+1. Open password requirements.
+2. Open device password section.
+3. Review the policy configuration that was pushed down to the device and verify the "Maximum Number of Failed Attempts" is set to between 1 and 10.
+
+On the Android Pie device: 
+1. Open Setting &gt;&gt; Security &amp; location &gt;&gt; Managed device info. 
+2. Verify "Failed password attempts before deleting all device data" is set to 10 or fewer attempts.
+
+If the MDM console device policy is not set to the maximum number of consecutive failed authentication attempts at 10 or fewer or on the Android Pie device, the device policy is not set to the maximum number of consecutive failed authentication attempts at 10 or fewer, this is a finding.</check-content></check></Rule></Group><Group id="V-230115"><title>GOOG-09-000800</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230115r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-000800</version><title>The Motorola Android Pie must be configured to enforce an application installation policy by specifying one or more authorized application repositories, including [selection: DoD-approved commercial app repository, MDM server, mobile application store].</title><description>&lt;VulnDiscussion&gt;Forcing all applications to be installed from authorized application repositories can prevent unauthorized and malicious applications from being installed and executed on mobile devices. Allowing such installations and executions could cause a compromise of DoD data accessible by these unauthorized/malicious applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #8a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001806</ident><fixtext fixref="F-32408r538342_fix">Configure the Motorola Android device to disable unauthorized application repositories.
+
+On the MDM console: 
+1. Open Restrictions section.
+2. Set Allow "Google Play" (Uses only Managed Google Play).
+3. Set Disallow "Install unknown sources".</fixtext><fix id="F-32408r538342_fix" /><check system="C-32430r538341_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the mobile device has only approved application repositories (DoD-approved commercial app repository, MDM server, and/or mobile application store).
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console: 
+1. Open Restrictions section.
+2. Set Allow "Google Play" (Uses only Managed Google Play).
+3. Verify that Disallow is set for "Install unknown sources".
+
+On the Android Pie device: 
+1. Open Settings &gt;&gt; Apps and notifications &gt;&gt; Advanced &gt;&gt; Special app access.
+2. Open "Install unknown apps".
+3. Verify the list of apps is blank or if an app is on the list, "Disabled by admin" is listed under the app name.
+
+If the MDM console device policy is not set to allow connections to only approved application repositories, or on the Android Pie device, the device policy is not set to allow connections to only approved application repositories, this is a finding.</check-content></check></Rule></Group><Group id="V-230116"><title>GOOG-09-001000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230116r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-001000</version><title>The Motorola Android Pie must be configured to enforce an application installation policy by specifying an application whitelist that restricts applications by the following characteristics: [selection: list of digital signatures, cryptographic hash values, names, application version].</title><description>&lt;VulnDiscussion&gt;The application whitelist, in addition to controlling the installation of applications on the mobile device (MD), must control user access/execution of all core and preinstalled applications, or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications. 
+
+Core application: Any application integrated into the OS by the OS or MD vendors.
+
+Pre-installed application: Additional non-core applications included in the operating system (OS) build by the OS vendor, MD vendor, or wireless carrier.
+
+Requiring all authorized applications to be in an application whitelist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the whitelist. Failure to configure an application whitelist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications.
+
+The application whitelist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core applications (included in the OS by the OS vendor) and pre-installed applications (provided by the MD vendor and wireless carrier), or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #8b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001806</ident><fixtext fixref="F-32409r538345_fix">Configure the Motorola Android device to use an application whitelist.
+
+On the MDM console: 
+1. Go to the Android app catalog for managed Google Play.
+2. Select apps to be available (only approved apps).
+3. Push updated policy to the device.
+
+NOTE: Managed Google Play is always a Whitelisted App Store.</fixtext><fix id="F-32409r538345_fix" /><check system="C-32431r538344_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the mobile device has an application whitelist configured. Verify all applications listed on the whitelist have been approved by the Approving Official (AO).
+
+This validation procedure is performed only on the MDM Administration Console.
+
+On the MDM console: 
+1. Go to the Android app catalog for managed Google Play.
+2. Verify all selected apps are AO approved.
+
+NOTE: Managed Google Play is always a Whitelisted App Store.
+
+If on the MDM console the list of selected Managed Google Play apps includes non-approved apps, this is a finding.
+
+NOTE: The application whitelist will include approved core applications (included in the OS by the OS vendor) and pre-installed applications (provided by the MD vendor and wireless carrier), or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications. For Google Android, there are no pre-installed applications.</check-content></check></Rule></Group><Group id="V-230117"><title>GOOG-09-001100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230117r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-001100</version><title>The Motorola Android Pie whitelist must be configured to not include applications with the following characteristics: 
+
+- back up MD data to non-DoD cloud servers (including user and application access to cloud backup services); 
+- transmit MD diagnostic data to non-DoD servers; 
+- voice assistant application if available when MD is locked; 
+- voice dialing application if available when MD is locked; 
+- allows synchronization of data or applications between devices associated with user; and 
+- allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs or printers.</title><description>&lt;VulnDiscussion&gt;Requiring all authorized applications to be in an application whitelist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the whitelist. Failure to configure an application whitelist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications. Applications with the listed characteristics have features that can cause the compromise of sensitive DoD data or have features with no known application in the DoD environment.
+
+Application note: The application whitelist, in addition to controlling the installation of applications on the mobile device (MD), must control user access/execution of all core and preinstalled applications, or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications.
+
+Core application: Any application integrated into the operating system (OS) by the OS or MD vendors.
+
+Pre-installed application: Additional non-core applications included in the OS build by the OS vendor, MD vendor, or wireless carrier.
+
+SFR ID: FMT_SMF_EXT.1.1 #8b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001806</ident><fixtext fixref="F-32410r538348_fix">Configure the Motorola Android device application whitelist to exclude applications with the following characteristics:
+
+- back up MD data to non-DoD cloud servers (including user and application access to cloud backup services);
+- transmit MD diagnostic data to non-DoD servers;
+- voice assistant application if available when MD is locked;
+- voice dialing application if available when MD is locked;
+- allows synchronization of data or applications between devices associated with user;
+- payment processing; and
+- allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+
+On the MDM console: 
+1. Go to the Android app catalog for managed Google Play.
+2. Before selecting an app, review the app details and privacy policy to ensure the app does not include prohibited characteristics.</fixtext><fix id="F-32410r538348_fix" /><check system="C-32432r538347_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the mobile device has an application whitelist configured and that the application whitelist does not include applications with the following characteristics:
+
+- back up MD data to non-DoD cloud servers (including user and application access to cloud backup services);
+- transmit MD diagnostic data to non-DoD servers;
+- voice assistant application if available when MD is locked;
+- voice dialing application if available when MD is locked;
+- allows synchronization of data or applications between devices associated with user;
+- payment processing; and
+- allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+
+This validation procedure is performed only on the MDM Administration Console.
+
+On the MDM console: 
+1. Review the list of selected Managed Google Play apps.
+2. Review the details and privacy policy of each selected app to verify the app does not include prohibited characteristics.
+
+If the MDM console device policy includes applications with unauthorized characteristics, this is a finding.</check-content></check></Rule></Group><Group id="V-230118"><title>GOOG-09-001400</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230118r569707_rule" weight="10.0" severity="low"><version>MOTO-09-001400</version><title>The Motorola Android Pie must be configured to disable Bluetooth or configured via User Based Enforcement (UBE) to allow Bluetooth for only HSP (Headset Profile), HFP (HandsFree Profile), or SPP (Serial Port Profile) capable devices.</title><description>&lt;VulnDiscussion&gt;Some Bluetooth profiles provide the capability for remote transfer of sensitive DoD data without encryption or otherwise do not meet DoD IT security policies and therefore must be disabled.
+
+SFR ID: FMT_SMF_EXT.1.1 #18h&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001761</ident><fixtext fixref="F-32411r538351_fix">Configure the Motorola Android device to disable Bluetooth or, if the AO has approved the use of Bluetooth (for example, for car hands-free use), train the user to connect to only authorized Bluetooth devices using only HSP, HFP, or SPP Bluetooth capable devices (User Based Enforcement (UBE).
+
+To disable Bluetooth, use the following procedure.
+
+On the MDM console: 
+1. Open Restrictions section.
+2. Toggle "Disallow Bluetooth" to "On".
+
+The user training requirement is satisfied in requirement MOTO-09-008700.</fixtext><fix id="F-32411r538351_fix" /><check system="C-32433r538350_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Determine if the AO has approved the use of Bluetooth at the site.
+
+If the AO has not approved the use of Bluetooth, verify Bluetooth has been disabled.
+
+On the MDM console: 
+1. Open Restrictions section.
+2. Verify "Disallow Bluetooth" is set.
+
+On the Android Pie device: 
+1. Go to Settings &gt;&gt; Connected Devices &gt;&gt; Connection Preferences &gt;&gt; Bluetooth.
+2. Verify this is set to "Off" and cannot be toggled to "On".
+
+If the AO has approved the use of Bluetooth, on the Android Pie device: 
+1. Go to Settings &gt;&gt; Connected Devices.
+2. Verify only approved Bluetooth-connected devices using approved profiles are listed.
+
+If the AO has not approved the use of Bluetooth, and Bluetooth use is not disabled via an MDM managed device policy, this is a finding.
+
+If the AO has approved the use of Bluetooth, and Bluetooth devices using unauthorized Bluetooth profiles are listed on the device under "Connected devices", this is a finding.</check-content></check></Rule></Group><Group id="V-230120"><title>GOOG-09-002300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230120r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-002300</version><title>Motorola Android Pie must be configured to disable trust agents. 
+ 
+Note: This requirement is not applicable (NA) for specific biometric authentication factors included in the product's Common Criteria evaluation.</title><description>&lt;VulnDiscussion&gt;Trust agents allow a user to unlock a mobile device without entering a passcode when the mobile device is, for example, connected to a user-selected Bluetooth device or in a user-selected location. If compromised, this technology would allow unauthorized users to have access to DoD sensitive data. Not permitting the use of non-password authentication mechanisms forces users to use passcodes that meet DoD passcode requirements.
+
+SFR ID: FMT_SMF_EXT.1.1 #23, FIA_UAU.5.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-32413r538357_fix">Configure Motorola Android Pie to disable trust agents. 
+ 
+On the MDM console: 
+1. Open Lock screen restrictions section.
+2. Set "Disable trust agents" to on.</fixtext><fix id="F-32413r538357_fix" /><check system="C-32435r538356_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that trust agents are disabled. 
+ 
+This procedure is performed on both the MDM Administration console and the Motorola Android Pie device. 
+ 
+On the MDM console: 
+1. Open Restrictions section.
+2. Set "Disable trust agents" to "On".
+
+On the Android Pie device: 
+1. Open Settings. 
+2. Tap "Security &amp; location". 
+3. Tap "Advanced". 
+4. Tap "Trust agents". 
+5. Verify that all listed trust agents are disabled and cannot be enabled. 
+ 
+If on the MDM console "disable trust agents" is not selected, or on the Android Pie device a trust agent can be enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-230121"><title>GOOG-09-002800</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230121r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-002800</version><title>The Motorola Android Pie must be configured to disable developer modes.</title><description>&lt;VulnDiscussion&gt;Developer modes expose features of the Motorola Android device that are not available during standard operation. An adversary may leverage a vulnerability inherent in a developer mode to compromise the confidentiality, integrity, and availability of DoD sensitive information. Disabling developer modes mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #26&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-32414r538360_fix">Configure the Motorola Android device to disable developer modes.
+
+On the MDM console: 
+1. Open Restrictions section.
+2. Set "Debugging Features" to "Disallow".</fixtext><fix id="F-32414r538360_fix" /><check system="C-32436r538359_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine whether a developer mode is enabled.
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console: 
+1. Open Restrictions section.
+2. Verify "Debugging Features" is set to "Disallow".
+
+On the Android Pie device: 
+1. Go to Settings &gt;&gt; System.
+2. Verify "Developer Options" is not listed.
+
+If the MDM console device policy is not set to disable developer mode, or on the Android Pie device, the device policy is not set to disable developer mode, this is a finding.</check-content></check></Rule></Group><Group id="V-230122"><title>GOOG-09-003400</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230122r569707_rule" weight="10.0" severity="low"><version>MOTO-09-003400</version><title>The Motorola Android Pie must be configured to display the DoD advisory warning message at startup or each time the user unlocks the device.</title><description>&lt;VulnDiscussion&gt;Android Pie is required to display the DoD-approved system use notification message or banner before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. Required banners help ensure that DoD can audit and monitor the activities of mobile device users without legal restriction.
+
+System use notification messages can be displayed when individuals first access or unlock the mobile device. The banner must be implemented as a "click-through" banner at device unlock (to the extent permitted by the operating system). A "click-through" banner prevents further activity on the information system unless and until the user executes a positive action to manifest agreement by clicking on a box indicating "OK".
+
+The approved DoD text must be used exactly as required in the KS referenced in DoDI 8500.01. For devices accommodating banners of 1300 characters, the banner text is: 
+
+You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. 
+By using this IS (which includes any device attached to this IS), you consent to the following conditions: 
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. 
+-At any time, the USG may inspect and seize data stored on this IS. 
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose. 
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. 
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.
+
+For devices with severe character limitations, the banner text is: 
+
+I've read &amp; consent to terms in IS user agreem't.
+
+The Administrator must configure the banner text exactly as written without any changes.
+
+SFR ID: FMT_SMF_EXT.1.1 #36&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-32415r538363_fix">Configure the DoD warning banner by either of the following methods (required text is found in the Vulnerability Discussion):
+
+1. By placing the DoD warning banner text in the user agreement signed by each Motorola Android device user (preferred method).
+2. By configuring the warning banner text on the MDM console and installing the banner on each managed mobile device.
+
+On the MDM console: 
+Enable "Lock Screen Message" and enter the banner text.</fixtext><fix id="F-32415r538363_fix" /><check system="C-32437r538362_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>The DoD warning banner can be displayed by either of the following methods (required text is found in the Vulnerability Discussion):
+
+1. By placing the DoD warning banner text in the user agreement signed by each Motorola Android device user (preferred method).
+2. By configuring the warning banner text on the MDM console and installing the banner on each managed mobile device.
+
+Determine which method is used at the Motorola Android device site and follow the appropriate validation procedure below.
+
+Validation Procedure for Method #1: 
+Review the signed user agreements for several Motorola Android device users and verify the agreement includes the required DoD warning banner text.
+
+Validation Procedure for Method #2:
+On the MDM console, ensure "Lock Screen Message" is set and the appropriate banner text is included.
+
+If, for Method #1, the required warning banner text is not on all signed user agreements reviewed, or for Method #2, the MDM console device policy is not set to display a warning banner with the appropriate designated wording or on the Android Pie device, the device policy is not set to display a warning banner with the appropriate designated wording, this is a finding.</check-content></check></Rule></Group><Group id="V-230123"><title>GOOG-09-003500</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230123r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-003500</version><title>The Motorola Android Pie must be configured to disable USB mass storage mode.</title><description>&lt;VulnDiscussion&gt;USB mass storage mode enables the transfer of data and software from one device to another. This software can include malware. When USB mass storage is enabled on a mobile device, it becomes a potential vector for malware and unauthorized data exfiltration. Prohibiting USB mass storage mode mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #39a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-32416r538366_fix">Configure the Motorola Android device to disable USB mass storage mode.
+
+On the MDM console: 
+1. Open Device Restrictions.
+2. Open Restrictions settings.
+3. Select "Disallow usb file transfer".</fixtext><fix id="F-32416r538366_fix" /><check system="C-32438r538365_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the mobile device has a USB mass storage mode and whether it has been disabled. 
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console: 
+1. Open Device Restrictions.
+2. Open Restrictions settings.
+3. Verify "Disallow usb file transfer" is selected.
+
+On the Android Pie device: 
+1. Plug USB cable into Android Pie device and connect to a non-DoD network-managed PC. 
+2. Go to Settings &gt;&gt; Connected devices &gt;&gt; USB.
+3. Verify "No data transfer" is selected.
+
+If the MDM console device policy is not set to disable USB mass storage mode, or on the Android Pie device, the device policy is not set to disable USB mass storage mode, this is a finding.</check-content></check></Rule></Group><Group id="V-230124"><title>GOOG-09-003700</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230124r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-003700</version><title>The Motorola Android Pie must be configured to not allow backup of [all applications, configuration data] to locally connected systems.</title><description>&lt;VulnDiscussion&gt;Data on mobile devices is protected by numerous mechanisms, including user authentication, access control, and cryptography. When the data is backed up to an external system (either locally connected or cloud-based), many if not all of these mechanisms are no longer present. This leaves the backed-up data vulnerable to attack. Disabling backup to external systems mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000097</ident><fixtext fixref="F-32417r538369_fix">Configure the Motorola Android device to disable backup to locally connected systems.
+
+NOTE: On Restrictions, the backup features for Motorola are not in the framework.
+
+On the MDM console: 
+1. Open Device Restrictions.
+2. Open Restrictions settings.
+3. Select "Disallow usb file transfer".</fixtext><fix id="F-32417r538369_fix" /><check system="C-32439r538368_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the capability to back up to a locally connected system has been disabled. 
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console: 
+1. Open Device Restrictions.
+2. Open Restrictions settings.
+3. Verify "Disallow usb file transfer" is selected.
+
+On the Android Pie device: 
+1. Plug USB cable into Android Pie device and connect to a non-DoD network-managed PC. 
+2. Go to Settings &gt;&gt; Connected devices &gt;&gt; USB.
+3. Verify "No data transfer" is selected.
+
+If the MDM console device policy is not set to disable the capability to back up to a locally connected system, or on the Android Pie device, the device policy is not set to disable the capability to back up to a locally connected system, this is a finding.</check-content></check></Rule></Group><Group id="V-230125"><title>GOOG-09-003900</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230125r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-003900</version><title>The Motorola Android Pie must be configured to not allow backup of all applications and configuration data to remote systems.</title><description>&lt;VulnDiscussion&gt;Backups to remote systems (including cloud backup) can leave data vulnerable to breach on the external systems, which often offer less protection than the Android device. Where the remote backup involves a cloud-based solution, the backup capability is often used to synchronize data across multiple devices. In this case, DoD devices may synchronize DoD sensitive information to a user's personal device or other unauthorized computers that are vulnerable to breach. Disallowing remote backup mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002338</ident><fixtext fixref="F-32418r538372_fix">Configure the Motorola Android device to disable backup to remote systems (including commercial clouds).
+
+NOTE: On Restrictions, data in the work profile cannot be backed up by default.
+
+On the MDM console: 
+1. Open Device Restrictions.
+2. Open Restrictions settings.
+3. Ensure "Enable backup service" is not selected.</fixtext><fix id="F-32418r538372_fix" /><check system="C-32440r538371_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the capability to back up to a remote system has been disabled. 
+
+This validation procedure is performed on both the MDM Administration Console and the Android Pie device. 
+
+On the MDM console: 
+1. Open Device Restrictions.
+2. Open Restrictions settings.
+3. Verify "Disallow backup service" is not selected.
+
+On the Android Pie device: 
+1. Go to Settings &gt;&gt; System.
+2. Verify "Backup" is set to "Off".
+
+If the MDM console device policy is not set to disable the capability to back up to a remote system, or on the Android Pie device, the device policy is not set to disable the capability to back up to a remote system, this is a finding.</check-content></check></Rule></Group><Group id="V-230128"><title>GOOG-09-005505</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230128r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-005505</version><title>The Motorola Android Pie must be configured to enable audit logging.</title><description>&lt;VulnDiscussion&gt;Audit logs enable monitoring of security-relevant events and subsequent forensics when breaches occur. For the logs to be useful, Administrators must have the ability to view the audit logs.
+
+SFR ID: FMT_SMF_EXT.1.1 #32&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-32421r538381_fix">Configure the Motorola Android Pie to enable audit logging.
+
+On the MDM console: 
+1. Open the Restrictions settings.
+2. Open User settings.
+3. Select "Enable security logging".
+4. Select "Enable network logging".</fixtext><fix id="F-32421r538381_fix" /><check system="C-32443r538380_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review documentation on the Motorola Android device and inspect the configuration on the Motorola Android device to enable audit logging.
+
+This validation procedure is performed on only on the MDM Administration Console. 
+
+On the MDM console: 
+1. Open the Restrictions settings.
+2. Open User settings.
+3. Select "Enable security logging".
+4. Select "Enable network logging".
+
+If the MDM console device policy is not set to enable audit logging, this is a finding.</check-content></check></Rule></Group><Group id="V-230129"><title>GOOG-09-006100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230129r569707_rule" weight="10.0" severity="low"><version>MOTO-09-006100</version><title>The Motorola Android Pie must be configured to generate audit records for the following auditable events: detected integrity violations.</title><description>&lt;VulnDiscussion&gt;Audit logs enable monitoring of security-relevant events and subsequent forensics when breaches occur. They help identify attacks so that breaches can either be prevented or limited in their scope. They facilitate analysis to improve performance and security. The Requirement Statement lists key events for which the system must generate an audit record.
+
+Application note: Requirement applies only to integrity violation detections that can be logged by the audit logging component.
+
+SFR ID: FMT_SMF_EXT.1.1 #37&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000169</ident><fixtext fixref="F-32422r538384_fix">Configure the Motorola Android device to generate audit records for the following auditable events: detected integrity violations.
+
+On the MDM console: 
+1. Go to Policy management.
+2. Enable "Security Logging".</fixtext><fix id="F-32422r538384_fix" /><check system="C-32444r538383_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review Motorola Android device configuration settings to determine if the mobile device is configured to generate audit records for the following auditable events: detected integrity violations.
+
+This validation procedure is performed only on the MDM Administration Console. 
+
+On the MDM console: 
+1. Go to Policy management.
+2. Verify "Security Logging" is enabled.
+
+If the MDM console device policy is not set to enable security logging, this is a finding.</check-content></check></Rule></Group><Group id="V-230130"><title>GOOG-09-008700</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230130r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-008700</version><title>Motorola Android Pie users must complete required training.</title><description>&lt;VulnDiscussion&gt;The security posture of Google devices requires the device user to configure several required policy rules on their device. User-Based Enforcement (UBE) is required for these controls. In addition, if the Authorizing Official (AO) has approved the use of an unmanaged personal space, the user must receive training on risks. If a user is not aware of their responsibilities and does not comply with UBE requirements, the security posture of the mobile device may become compromised and DoD sensitive data may become compromised.
+
+SFR ID: NA&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-32423r538387_fix">Have all Motorola device users complete training on the following topics. Users should acknowledge that they have reviewed training via a signed User Agreement or similar written record. 
+ 
+Training topics: 
+ 
+- Operational security concerns introduced by unmanaged applications/unmanaged personal space, including applications using global positioning system (GPS) tracking. 
+- Need to ensure no DoD data is saved to the personal space or transmitted from a personal app (for example, from personal email). 
+- If the Purebred key management app is used, users are responsible for maintaining positive control of their credentialed device at all times. The DoD PKI certificate policy requires subscribers to maintain positive control of the devices that contain private keys and to report any loss of control so the credentials can be revoked. Upon device retirement, turn-in, or reassignment, ensure that a factory data reset is performed prior to device handoff. Follow mobility service provider decommissioning procedures as applicable. 
+- How to configure the following UBE controls (users must configure the control) on the Motorola device: 
+ **Secure use of Calendar Alarm. 
+ **Local screen mirroring and Mirroring procedures (authorized/not authorized for use).
+ **Do not upload DoD contacts via smart call and caller ID services. 
+ **Do not remove DoD intermediate and root PKI digital certificates. 
+ **Disable Wi-Fi Sharing. 
+ **Do not configure a DoD network (work) VPN profile on any third-party VPN client installed in the personal space.
+ **If Bluetooth connections are approved for mobile device, types of allowed connections (for example car hands free but not Bluetooth wireless keyboard).
+- AO guidance on acceptable use and restrictions, if any, on downloading and installing personal apps and data (music, photos, etc.) in the Motorola device personal space.
+
+Motorola provides an Administrative Guide for the LEX L11 device to NIAP customers (refer to https://www.niap-ccevs.org/MMO/Product/st_vid11002-agd.pdf). The guide includes procedures for configuring Common Criteria on the Motorola Solutions, Inc. LEX L11 device.</fixtext><fix id="F-32423r538387_fix" /><check system="C-32445r538386_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review a sample of site User Agreements for Motorola device users or similar training records and training course content. 
+ 
+Verify that Motorola device users have completed the required training. The intent is that required training is renewed on a periodic basis in a time period determined by the AO. 
+ 
+If any Motorola device user has not completed the required training, this is a finding.</check-content></check></Rule></Group><Group id="V-230131"><title>GOOG-09-008800</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230131r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-008800</version><title>Motorola Android Pie must be configured to enforce that Wi-Fi Sharing is disabled.</title><description>&lt;VulnDiscussion&gt;Wi-Fi Sharing is an optional configuration of Wi-Fi Tethering/Mobile Hotspot, which allows the device to share its Wi-Fi connection with other wirelessly connected devices instead of its mobile (cellular) connection. 
+ 
+Wi-Fi Sharing grants the "other" device access to a corporate Wi-Fi network and may possibly bypass the network access control mechanisms. This risk can be partially mitigated by requiring the use of a preshared key for personal hotspots.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-32424r538390_fix">Configure Motorola Android Pie to disable Wi-Fi Sharing. 
+ 
+Mobile Hotspot must be enabled in order to enable Wi-Fi Sharing. If the AO has not approved Mobile Hotspot, and it has been disabled on the MDM console, no further action is needed. If Mobile Hotspot is being used, use the following procedure to disable Wi-Fi Sharing: 
+
+On the MDM console: 
+1. Open the User restrictions setting.
+2. Set "Disallow config tethering" to "On".</fixtext><fix id="F-32424r538390_fix" /><check system="C-32446r538389_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm Wi-Fi Sharing is disabled. 
+ 
+Mobile Hotspot must be enabled in order to enable Wi-Fi Sharing. If the Authorizing Official (AO) has not approved Mobile Hotspot, and it has been verified as disabled on the MDM console, no further action is needed. If Mobile Hotspot is being used, use the following procedure to verify Wi-Fi Sharing is disabled: 
+
+On the MDM console: 
+1. Open the User restrictions setting.
+2. Verify "Disallow config tethering" is set to "On".
+
+On the Android Pie device: 
+1. Open Settings. 
+2. Tap "Networks &amp; internet". 
+3. Verify that "Hotspots &amp; tethering" is disabled. 
+ 
+If On the Android Pie device "Wi-Fi sharing" is enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-230132"><title>GOOG-09-009000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230132r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-009000</version><title>Motorola Android Pie must have the DoD root and intermediate PKI certificates installed.</title><description>&lt;VulnDiscussion&gt;DoD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the root and intermediate certificates are not available, an adversary could falsely sign a certificate in such a way that it could not be detected. Providing access to the DoD root and intermediate PKI certificates greatly diminishes the risk of this attack.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-32425r538393_fix">Configure Motorola Android Pie to install DoD root and intermediate certificates. 
+ 
+On the MDM console, upload DoD root and intermediate certificates as part of a device and/or work profile.
+ 
+The current DoD root and intermediate PKI certificates may be obtained in self-extracting zip files at http://cyber.mil/pki-pke (for NIPRNet).</fixtext><fix id="F-32425r538393_fix" /><check system="C-32447r538392_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that the DoD root and intermediate PKI certificates are installed. 
+ 
+This procedure is performed on both the MDM Administration console and the Motorola Android Pie device. 
+ 
+The current DoD root and intermediate PKI certificates may be obtained in self-extracting zip files at http://cyber.mil/pki-pke (for NIPRNet). 
+ 
+On the MDM console, verify that the DoD root and intermediate certificates are part of a device and/or work profile that is being pushed down to the devices.
+ 
+On the Android Pie device: 
+1. Open Settings. 
+2. Tap "Security &amp; Location". 
+3. Tap on "Advanced".
+4. Tap on "Encryption &amp; credentials".
+5. Tap on "Trusted credentials".
+6. Verify that DoD root and intermediate PKI certificates are listed under the user tab.
+ 
+If on the MDM console the DoD root and intermediate certificates are not listed in a profile, or the Motorola Android Pie device does not list the DoD root and intermediate certificates under the user tab, this is a finding.</check-content></check></Rule></Group><Group id="V-230133"><title>GOOG-09-009100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230133r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-009100</version><title>Motorola Android Pie must allow only the Administrator (MDM) to install/remove DoD root and intermediate PKI certificates.</title><description>&lt;VulnDiscussion&gt;DoD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the user is allowed to remove root and intermediate certificates, the user could allow an adversary to falsely sign a certificate in such a way that it could not be detected. Restricting the ability to remove DoD root and intermediate PKI certificates to the Administrator mitigates this risk.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><fixtext fixref="F-32426r538396_fix">Configure Motorola Android Pie to prevent a user from removing DoD root and intermediate PKI certificates.
+
+On the MDM console: 
+1. Open the User restrictions setting.
+2. Set "Disallow config credentials" to "On" for the work profile.</fixtext><fix id="F-32426r538396_fix" /><check system="C-32448r538395_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review the device configuration to confirm that the user is unable to remove DoD root and intermediate PKI certificates.
+
+On the MDM console: 
+1. Open the User restrictions setting.
+2. Verify that "Disallow config credentials" is set to "On" for the work profile.
+
+On the Android Pie device: 
+1. Open Settings. 
+2. Tap "Security &amp; Location". 
+3. Tap on "Advanced".
+4. Tap on "Encryption &amp; credentials".
+5. Tap on "Trusted credentials".
+6. Verify that the user is unable to untrust or remove any work certificates.
+ 
+If on the Motorola Android Pie device the user is able to remove certificates, this is a finding.</check-content></check></Rule></Group><Group id="V-230139"><title>GOOG-09-010200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230139r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-010200</version><title>Motorola Android Pie must be configured to disallow configuration of date and time.</title><description>&lt;VulnDiscussion&gt;Determining the correct time a particular application event occurred on a system is critical when conducting forensic analysis and investigating system events. 
+ 
+Periodically synchronizing internal clocks with an authoritative time source is necessary to correctly correlate the timing of events that occur across the enterprise. The three authoritative time sources for Android Pie are an authoritative time server that is synchronized with redundant United States Naval Observatory (USNO) time servers as designated for the appropriate DoD network (NIPRNet or SIPRNet), the Global Positioning System (GPS), or the wireless carrier. 
+ 
+Time stamps generated by the audit system in Android Pie must include both date and time. The time may be expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-32432r538414_fix">Configure Motorola Android Pie Work Profile to set auto network time.
+ 
+On the MDM console, in the Android user restrictions section, set "Set auto (network) time required" to "On".</fixtext><fix id="F-32432r538414_fix" /><check system="C-32454r538413_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review the Motorola Android Pie Work Profile to confirm that user configuration of date and time is not allowed. 
+ 
+This procedure is performed on both the MDM Administration console and the Motorola Android Pie device. 
+ 
+On the MDM console, verify that "Set auto (network) time required" is set to "On".
+ 
+On the Android Pie device: 
+1. Open Settings. 
+2. Tap "System". 
+3. Tap "Date &amp; times". 
+4. Verify that "Automatic date &amp; time" is grayed out.
+ 
+If on the MDM console "Set auto (network) time required" is not set to "On", or on the Motorola Android Pie device, "Automatic date &amp; time" is grayed out, this is a finding.</check-content></check></Rule></Group><Group id="V-230140"><title>GOOG-09-010400</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230140r569707_rule" weight="10.0" severity="medium"><version>MOTO-09-010400</version><title>Motorola Android Pie must be configured to disallow outgoing beam.</title><description>&lt;VulnDiscussion&gt;Outgoing beam allows transfer of data through near field communication (NFC) and Bluetooth by touching two unlocked devices together. If it were enabled, sensitive DoD data could be transmitted. 
+ 
+Because of the security risks of sharing sensitive DoD data, users must not be able to allow outgoing beam.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><fixtext fixref="F-32433r538417_fix">Configure the Motorola Android Pie device to disallow outgoing beam. 
+ 
+On the MDM console, in the Android user restrictions section, set "Disallow outgoing beam" to "On".</fixtext><fix id="F-32433r538417_fix" /><check system="C-32455r538416_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review the Motorola Android Pie device configuration settings to confirm that outgoing beam is disallowed. 
+ 
+This procedure is performed on both the MDM Administration console and the Motorola Android Pie device. 
+ 
+On the MDM console, in the Android user restrictions section, verify that "Disallow outgoing beam" is set to "On".
+ 
+On the Android Pie device: 
+1. Open Settings. 
+2. Tap "Connected devices". 
+3. Tap "Connection preferences". 
+4. Verify that "Android Beam" is off and grayed out.
+ 
+If on the MDM console "Disallow outgoing beam" is not set to "On", or on the Motorola Android Pie device "Android Beam" is not off and grayed out, this is a finding.</check-content></check></Rule></Group><Group id="V-230141"><title>GOOG-09-010800</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230141r569707_rule" weight="10.0" severity="high"><version>MOTO-09-010800</version><title>Motorola Android Pie devices must have the latest available Motorola Android Pie operating system installed.</title><description>&lt;VulnDiscussion&gt;Required security features are not available in earlier operating system versions. In addition, there may be known vulnerabilities in earlier versions.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-32434r538420_fix">Install the latest released version of the Motorola Android Pie operating system on all managed Motorola devices. 
+
+For Motorola Android Pie, LEXL11 current version: PIE.L11_P_30.22.01 uses latest Google Android 9.0 version (and Security Patches) as provided by Qualcomm (chipset vendor) based on Android OS 9.0. Linux Kernel version is 4.4.153.
+ </fixtext><fix id="F-32434r538420_fix" /><check system="C-32456r538419_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that the most recently released version of Motorola Android Pie is installed. 
+
+For Motorola Android Pie, LEXL11 current version: 
+PIE.L11_P_30.22.01 uses latest Google Android 9.0 version (and Security Patches) as provided by Qualcomm (chipset vendor) based on Android OS 9.0. Linux Kernel version is 4.4.153.
+
+This procedure is performed on both the MDM console and the Motorola Android Pie device. 
+ 
+In the MDM management console, review the version of Motorola Android Pie installed on a sample of managed devices. This procedure will vary depending on the MDM product. 
+ 
+On the Android Pie device, to see the installed operating system version: 
+1. Open Settings. 
+2. Tap "About phone". 
+3. Verify "Build number". 
+ 
+If the installed version of the Android operating system on any reviewed Motorola devices is not the latest released by the wireless carrier, this is a finding.</check-content></check></Rule></Group><Group id="V-230142"><title>GOOG-09-010900</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-230142r569707_rule" weight="10.0" severity="high"><version>MOTO-09-010900</version><title>Motorola Android Pie devices must have a NIAP-validated Motorola Android Pie operating system installed.</title><description>&lt;VulnDiscussion&gt;Required security features are not available in earlier operating system versions. In addition, there may be known vulnerabilities in earlier versions.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Motorola Android 9.x COBO STIG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Motorola Android 9.x COBO STIG</dc:subject><dc:identifier>5234</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-32435r538423_fix">Install the latest released version of the Motorola Android Pie operating system on all managed Motorola devices. 
+
+For Motorola Android Pie, LEXL11 NIAP-approved build number (based on Android OS 9.0) is PIE.L11_P_R30.21.10, and Kernel version is 4.4.153. See: https://www.niap-ccevs.org/Product/Compliant.cfm?PID=11002
+
+LEX L11 current version: PIE.L11_P_30.22.01 is based on the LEX L11 NIAP version, with small additions. The changes are dedicated to support Verizon Wireless and AT&amp;T carriers' requirements only.</fixtext><fix id="F-32435r538423_fix" /><check system="C-32457r538422_chk"><check-content-ref href="Motorola_Android_9.x_COBO_STIG_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that version LEXL11 NIAP-approved build number (based on Android OS 9.0) is PIE.L11_P_R30.21.10 and Kernel version is 4.4.153. See: https://www.niap-ccevs.org/Product/Compliant.cfm?PID=11002
+ 
+This procedure is performed on both the MDM console and the Motorola Android Pie device. 
+ 
+In the MDM management console, review the version of Motorola Android Pie installed on a sample of managed devices. 
+ 
+On the Android Pie device, to see the installed operating system version: 
+1. Open Settings. 
+2. Tap "About phone". 
+3. Verify "Build number". 
+ 
+If the installed version of the Android operating system on any reviewed Motorola device is not the latest released by the wireless carrier, this is a finding. 
+
+See Motorola's Android operating system patch website: https://source.android.com/security/bulletin/ 
+ 
+If the installed version of the Android Pie operating system is not the NIAP-approved version, this is a finding.</check-content></check></Rule></Group></Benchmark>

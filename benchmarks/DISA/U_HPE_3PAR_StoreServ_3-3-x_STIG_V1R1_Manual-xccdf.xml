@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="HPE_3PAR_StoreServ_3.3.x_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2022-10-13">accepted</status><title>HPE 3PAR StoreServ 3.3.x Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 09 Nov 2022</plain-text><plain-text id="generator">3.4.0.34222</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-255270" selected="true" /><select idref="V-255271" selected="true" /><select idref="V-255272" selected="true" /><select idref="V-255273" selected="true" /><select idref="V-255274" selected="true" /><select idref="V-255275" selected="true" /><select idref="V-255276" selected="true" /><select idref="V-255277" selected="true" /><select idref="V-255278" selected="true" /><select idref="V-255279" selected="true" /><select idref="V-255280" selected="true" /><select idref="V-255281" selected="true" /><select idref="V-255282" selected="true" /><select idref="V-255283" selected="true" /><select idref="V-255284" selected="true" /><select idref="V-255285" selected="true" /><select idref="V-255286" selected="true" /><select idref="V-255287" selected="true" /><select idref="V-255288" selected="true" /><select idref="V-255289" selected="true" /><select idref="V-255290" selected="true" /><select idref="V-255291" selected="true" /><select idref="V-255292" selected="true" /><select idref="V-255293" selected="true" /><select idref="V-255294" selected="true" /><select idref="V-255295" selected="true" /><select idref="V-255296" selected="true" /><select idref="V-255297" selected="true" /><select idref="V-255298" selected="true" /><select idref="V-255299" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-255270" selected="true" /><select idref="V-255271" selected="true" /><select idref="V-255272" selected="true" /><select idref="V-255273" selected="true" /><select idref="V-255274" selected="true" /><select idref="V-255275" selected="true" /><select idref="V-255276" selected="true" /><select idref="V-255277" selected="true" /><select idref="V-255278" selected="true" /><select idref="V-255279" selected="true" /><select idref="V-255280" selected="true" /><select idref="V-255281" selected="true" /><select idref="V-255282" selected="true" /><select idref="V-255283" selected="true" /><select idref="V-255284" selected="true" /><select idref="V-255285" selected="true" /><select idref="V-255286" selected="true" /><select idref="V-255287" selected="true" /><select idref="V-255288" selected="true" /><select idref="V-255289" selected="true" /><select idref="V-255290" selected="true" /><select idref="V-255291" selected="true" /><select idref="V-255292" selected="true" /><select idref="V-255293" selected="true" /><select idref="V-255294" selected="true" /><select idref="V-255295" selected="true" /><select idref="V-255296" selected="true" /><select idref="V-255297" selected="true" /><select idref="V-255298" selected="true" /><select idref="V-255299" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-255270" selected="true" /><select idref="V-255271" selected="true" /><select idref="V-255272" selected="true" /><select idref="V-255273" selected="true" /><select idref="V-255274" selected="true" /><select idref="V-255275" selected="true" /><select idref="V-255276" selected="true" /><select idref="V-255277" selected="true" /><select idref="V-255278" selected="true" /><select idref="V-255279" selected="true" /><select idref="V-255280" selected="true" /><select idref="V-255281" selected="true" /><select idref="V-255282" selected="true" /><select idref="V-255283" selected="true" /><select idref="V-255284" selected="true" /><select idref="V-255285" selected="true" /><select idref="V-255286" selected="true" /><select idref="V-255287" selected="true" /><select idref="V-255288" selected="true" /><select idref="V-255289" selected="true" /><select idref="V-255290" selected="true" /><select idref="V-255291" selected="true" /><select idref="V-255292" selected="true" /><select idref="V-255293" selected="true" /><select idref="V-255294" selected="true" /><select idref="V-255295" selected="true" /><select idref="V-255296" selected="true" /><select idref="V-255297" selected="true" /><select idref="V-255298" selected="true" /><select idref="V-255299" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-255270" selected="true" /><select idref="V-255271" selected="true" /><select idref="V-255272" selected="true" /><select idref="V-255273" selected="true" /><select idref="V-255274" selected="true" /><select idref="V-255275" selected="true" /><select idref="V-255276" selected="true" /><select idref="V-255277" selected="true" /><select idref="V-255278" selected="true" /><select idref="V-255279" selected="true" /><select idref="V-255280" selected="true" /><select idref="V-255281" selected="true" /><select idref="V-255282" selected="true" /><select idref="V-255283" selected="true" /><select idref="V-255284" selected="true" /><select idref="V-255285" selected="true" /><select idref="V-255286" selected="true" /><select idref="V-255287" selected="true" /><select idref="V-255288" selected="true" /><select idref="V-255289" selected="true" /><select idref="V-255290" selected="true" /><select idref="V-255291" selected="true" /><select idref="V-255292" selected="true" /><select idref="V-255293" selected="true" /><select idref="V-255294" selected="true" /><select idref="V-255295" selected="true" /><select idref="V-255296" selected="true" /><select idref="V-255297" selected="true" /><select idref="V-255298" selected="true" /><select idref="V-255299" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-255270" selected="true" /><select idref="V-255271" selected="true" /><select idref="V-255272" selected="true" /><select idref="V-255273" selected="true" /><select idref="V-255274" selected="true" /><select idref="V-255275" selected="true" /><select idref="V-255276" selected="true" /><select idref="V-255277" selected="true" /><select idref="V-255278" selected="true" /><select idref="V-255279" selected="true" /><select idref="V-255280" selected="true" /><select idref="V-255281" selected="true" /><select idref="V-255282" selected="true" /><select idref="V-255283" selected="true" /><select idref="V-255284" selected="true" /><select idref="V-255285" selected="true" /><select idref="V-255286" selected="true" /><select idref="V-255287" selected="true" /><select idref="V-255288" selected="true" /><select idref="V-255289" selected="true" /><select idref="V-255290" selected="true" /><select idref="V-255291" selected="true" /><select idref="V-255292" selected="true" /><select idref="V-255293" selected="true" /><select idref="V-255294" selected="true" /><select idref="V-255295" selected="true" /><select idref="V-255296" selected="true" /><select idref="V-255297" selected="true" /><select idref="V-255298" selected="true" /><select idref="V-255299" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-255270" selected="true" /><select idref="V-255271" selected="true" /><select idref="V-255272" selected="true" /><select idref="V-255273" selected="true" /><select idref="V-255274" selected="true" /><select idref="V-255275" selected="true" /><select idref="V-255276" selected="true" /><select idref="V-255277" selected="true" /><select idref="V-255278" selected="true" /><select idref="V-255279" selected="true" /><select idref="V-255280" selected="true" /><select idref="V-255281" selected="true" /><select idref="V-255282" selected="true" /><select idref="V-255283" selected="true" /><select idref="V-255284" selected="true" /><select idref="V-255285" selected="true" /><select idref="V-255286" selected="true" /><select idref="V-255287" selected="true" /><select idref="V-255288" selected="true" /><select idref="V-255289" selected="true" /><select idref="V-255290" selected="true" /><select idref="V-255291" selected="true" /><select idref="V-255292" selected="true" /><select idref="V-255293" selected="true" /><select idref="V-255294" selected="true" /><select idref="V-255295" selected="true" /><select idref="V-255296" selected="true" /><select idref="V-255297" selected="true" /><select idref="V-255298" selected="true" /><select idref="V-255299" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-255270" selected="true" /><select idref="V-255271" selected="true" /><select idref="V-255272" selected="true" /><select idref="V-255273" selected="true" /><select idref="V-255274" selected="true" /><select idref="V-255275" selected="true" /><select idref="V-255276" selected="true" /><select idref="V-255277" selected="true" /><select idref="V-255278" selected="true" /><select idref="V-255279" selected="true" /><select idref="V-255280" selected="true" /><select idref="V-255281" selected="true" /><select idref="V-255282" selected="true" /><select idref="V-255283" selected="true" /><select idref="V-255284" selected="true" /><select idref="V-255285" selected="true" /><select idref="V-255286" selected="true" /><select idref="V-255287" selected="true" /><select idref="V-255288" selected="true" /><select idref="V-255289" selected="true" /><select idref="V-255290" selected="true" /><select idref="V-255291" selected="true" /><select idref="V-255292" selected="true" /><select idref="V-255293" selected="true" /><select idref="V-255294" selected="true" /><select idref="V-255295" selected="true" /><select idref="V-255296" selected="true" /><select idref="V-255297" selected="true" /><select idref="V-255298" selected="true" /><select idref="V-255299" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-255270" selected="true" /><select idref="V-255271" selected="true" /><select idref="V-255272" selected="true" /><select idref="V-255273" selected="true" /><select idref="V-255274" selected="true" /><select idref="V-255275" selected="true" /><select idref="V-255276" selected="true" /><select idref="V-255277" selected="true" /><select idref="V-255278" selected="true" /><select idref="V-255279" selected="true" /><select idref="V-255280" selected="true" /><select idref="V-255281" selected="true" /><select idref="V-255282" selected="true" /><select idref="V-255283" selected="true" /><select idref="V-255284" selected="true" /><select idref="V-255285" selected="true" /><select idref="V-255286" selected="true" /><select idref="V-255287" selected="true" /><select idref="V-255288" selected="true" /><select idref="V-255289" selected="true" /><select idref="V-255290" selected="true" /><select idref="V-255291" selected="true" /><select idref="V-255292" selected="true" /><select idref="V-255293" selected="true" /><select idref="V-255294" selected="true" /><select idref="V-255295" selected="true" /><select idref="V-255296" selected="true" /><select idref="V-255297" selected="true" /><select idref="V-255298" selected="true" /><select idref="V-255299" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-255270" selected="true" /><select idref="V-255271" selected="true" /><select idref="V-255272" selected="true" /><select idref="V-255273" selected="true" /><select idref="V-255274" selected="true" /><select idref="V-255275" selected="true" /><select idref="V-255276" selected="true" /><select idref="V-255277" selected="true" /><select idref="V-255278" selected="true" /><select idref="V-255279" selected="true" /><select idref="V-255280" selected="true" /><select idref="V-255281" selected="true" /><select idref="V-255282" selected="true" /><select idref="V-255283" selected="true" /><select idref="V-255284" selected="true" /><select idref="V-255285" selected="true" /><select idref="V-255286" selected="true" /><select idref="V-255287" selected="true" /><select idref="V-255288" selected="true" /><select idref="V-255289" selected="true" /><select idref="V-255290" selected="true" /><select idref="V-255291" selected="true" /><select idref="V-255292" selected="true" /><select idref="V-255293" selected="true" /><select idref="V-255294" selected="true" /><select idref="V-255295" selected="true" /><select idref="V-255296" selected="true" /><select idref="V-255297" selected="true" /><select idref="V-255298" selected="true" /><select idref="V-255299" selected="true" /></Profile><Group id="V-255270"><title>SRG-OS-000095-GPOS-00049</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255270r870129_rule" weight="10.0" severity="medium"><version>HP3P-33-001001</version><title>The HPE 3PAR OS must be configured to disable nonessential web-services.</title><description>&lt;VulnDiscussion&gt;It is detrimental for operating systems to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+The HPE 3PAR OS does not, by default, operate nonessential services. The web-services component must be configured for it to start. If it is not required by the mission, then it must be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-58887r870128_fix">If web services functionality is not required, stop and disable web-services:
+
+cli% stopwsapi -f</fixtext><fix id="F-58887r870128_fix" /><check system="C-58943r870127_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify the state of the Optional capabilities on the array.
+
+cli% showwsapi
+
+If the service state is not "Disabled", and the web-services functionality is not being used, this is a finding.
+
+If web services functionality is required, this is not applicable.</check-content></check></Rule></Group><Group id="V-255271"><title>SRG-OS-000126-GPOS-00066</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255271r870132_rule" weight="10.0" severity="medium"><version>HP3P-33-001003</version><title>The HPE 3PAR OS must be configured to terminate all network connections associated with a communications session at the end of the session, or after 10 minutes of inactivity.</title><description>&lt;VulnDiscussion&gt;Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. In addition, quickly terminating an idle session will also free up resources committed by the managed network element.
+
+If a maintenance session or connection remains open after maintenance is completed, it may be hijacked by an attacker and used to compromise or damage the system.
+
+Nonlocal maintenance and diagnostic activities are those activities conducted by individuals communicating through a network, either an external network (e.g., the internet) or an internal network. Local maintenance and diagnostic activities are those activities carried out by individuals physically present at the information system or information system component and not communicating across a network connection.
+
+Under normal circumstances, a service user would log out of the array when maintenance is complete, and the session/connection would be terminated. Setting an acceptable inactivity timeout will guarantee that sessions cannot remain idle if they were not cleanly terminated.
+
+Satisfies: SRG-OS-000126-GPOS-00066, SRG-OS-000163-GPOS-00072, SRG-OS-000279-GPOS-00109&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000879</ident><ident system="http://cyber.mil/cci">CCI-001133</ident><ident system="http://cyber.mil/cci">CCI-002361</ident><fixtext fixref="F-58888r870131_fix">Set the SessionTimeout value to 10 minutes:
+
+cli% setsys SessionTimeout 10m</fixtext><fix id="F-58888r870131_fix" /><check system="C-58944r870130_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify the current SessionTimeout setting:
+
+cli% showsys -param
+
+Find the line in the output for SessionTimeout, if the value is not "00:10:00", this is a finding.</check-content></check></Rule></Group><Group id="V-255272"><title>SRG-OS-000033-GPOS-00014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255272r870135_rule" weight="10.0" severity="high"><version>HP3P-33-001100</version><title>The HPE 3PAR OS must be configured to restrict the encryption algorithms and protocols to comply with DOD-approved encryption to protect the confidentiality and integrity of remote access sessions.</title><description>&lt;VulnDiscussion&gt;Without confidentiality protection mechanisms, unauthorized individuals may gain access to sensitive information via a remote access session.
+
+Remote access is access to DOD nonpublic information systems by an authorized user (or an information system) communicating through an external, non-organization-controlled network. Remote access methods include, for example, dial-up, broadband, and wireless.
+
+Encryption provides a means to secure the remote connection to prevent unauthorized access to the data traversing the remote access connection (e.g., RDP), thereby providing a degree of confidentiality. The encryption strength of a mechanism is selected based on the security categorization of the information.
+
+The HPE 3PAR OS supports communication security in compliance with DOD requirements. These include TLS1.2 protocols, encryption supplied by a FIPS140-2 library, and using specific cipher suites in a subset of the CNSA guidelines. Configuration is required to restrict the available algorithms to a subset of those approved by the DOD.
+
+Satisfies: SRG-OS-000033-GPOS-00014, SRG-OS-000096-GPOS-00050, SRG-OS-000112-GPOS-00057, SRG-OS-000250-GPOS-00093, SRG-OS-000480-GPOS-00227, SRG-OS-000393-GPOS-00173, SRG-OS-000394-GPOS-00174, SRG-OS-000423-GPOS-00187, SRG-OS-000424-GPOS-00188, SRG-OS-000425-GPOS-00189, SRG-OS-000426-GPOS-00190, SRG-OS-000297-GPOS-00115, SRG-OS-000074-GPOS-00042&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-000197</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000382</ident><ident system="http://cyber.mil/cci">CCI-001453</ident><ident system="http://cyber.mil/cci">CCI-002314</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><ident system="http://cyber.mil/cci">CCI-002420</ident><ident system="http://cyber.mil/cci">CCI-002421</ident><ident system="http://cyber.mil/cci">CCI-002422</ident><ident system="http://cyber.mil/cci">CCI-002890</ident><ident system="http://cyber.mil/cci">CCI-003123</ident><fixtext fixref="F-58889r870134_fix">To disable all unencrypted ports, use the command:
+
+cli%  setnet disableports yes
+
+To confirm the operation, enter
+"cli%  y"
+and press "Enter".</fixtext><fix id="F-58889r870134_fix" /><check system="C-58945r870133_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify that insecure ports are disabled.
+
+cli%  setnet disableports yes
+
+To confirm the operation, enter
+"cli%  y"
+and press "Enter".
+
+If an error is reported, this is a finding.
+
+If available, a port scan can also verify that only secure ports are open. From a command shell on a Linux workstation in the operational environment, enter the following command:
+cli%  nmap -sT -sU -sV --version-all -vv -p1 -65535 &lt;ip address of storage system&gt; 
+
+If any Port is listed other than SSHD(22), NTP(123), SNMP(161,162), 3PAR Mgmt Intfc (5783), CIM (5989/configurable), or WSAPI (8088/configurable), this is a finding.</check-content></check></Rule></Group><Group id="V-255273"><title>SRG-OS-000120-GPOS-00061</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255273r870138_rule" weight="10.0" severity="high"><version>HP3P-33-001103</version><title>The HPE 3PAR OS must be configured to initialize its FIPS module to use mechanisms meeting the requirements of applicable federal laws, Executive orders, directives, policies, regulations, standards, and guidance for authentication to a cryptographic module.</title><description>&lt;VulnDiscussion&gt;Unapproved mechanisms used for authentication to the cryptographic module are not verified and therefore cannot be relied upon to provide confidentiality or integrity, and DOD data may be compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><fixtext fixref="F-58890r870137_fix">To initialize the FIPS module use:
+
+cli% controlsecurity fips enable
+
+Warning: Enabling FIPS mode requires restarting all system management interfaces, which will terminate ALL existing connections including this one.
+When that happens, you must reconnect to continue.
+Continue enabling FIPS mode (yes/no)?
+yes
+
+After reconnecting, verify FIPS mode with:
+cli% controlsecurity fips status</fixtext><fix id="F-58890r870137_fix" /><check system="C-58946r870136_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify the status of FIPS operation mode:
+
+cli% controlsecurity fips status
+
+If the output indicates FIPS mode is disabled, this is a finding.
+
+If the output shows CIM is disabled, and CIM is an essential service for the mission, this is a finding.
+
+If the output shows VASA is disabled, and VASA is an essential service for the mission, this is a finding.
+
+If the output shows WSAPI is disabled, and WSAPI is an essential service for the mission, this is a finding.
+
+If the output shows any other service status as Disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-255274"><title>SRG-OS-000404-GPOS-00183</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255274r870141_rule" weight="10.0" severity="medium"><version>HP3P-33-001200</version><title>The HPE 3PAR OS must be configured to implement cryptographic mechanisms to prevent the unauthorized modification or disclosure of all information at rest on all operating system components.</title><description>&lt;VulnDiscussion&gt;Operating systems handling data requiring data-at-rest protections must employ cryptographic mechanisms to prevent unauthorized disclosure and modification of the information at rest.
+
+Selection of a cryptographic mechanism is based on the need to protect the integrity of organizational information. The strength of the mechanism is commensurate with the security category and/or classification of the information. Organizations have the flexibility to either encrypt all information on storage devices (i.e., full disk encryption) or encrypt specific data structures (e.g., files, records, or fields).
+
+The HPE 3PAR OS protects data at rest through the use of Self-Encrypting Drives, and a licensed feature that takes ownership of them. The feature requires an authorized installer to install and activate it.
+
+Satisfies: SRG-OS-000404-GPOS-00183, SRG-OS-000405-GPOS-00184&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002475</ident><ident system="http://cyber.mil/cci">CCI-002476</ident><fixtext fixref="F-58891r870140_fix">Contact an authorized service partner to install and configure the encryption license feature.</fixtext><fix id="F-58891r870140_fix" /><check system="C-58947r870139_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Review the requirements by the Information Owner to discover whether the system stores sensitive or classified information.
+
+If the system does not store sensitive or classified information, this requirement is not applicable.
+
+If the system does store sensitive or classified information, use the following command to display the state of encryption:
+
+cli% controlencryption status
+
+If Licensed, Enabled, or BackupSaved is not "Yes", or Keystore is not "EKM", this is a finding.</check-content></check></Rule></Group><Group id="V-255275"><title>SRG-OS-000046-GPOS-00022</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255275r870144_rule" weight="10.0" severity="medium"><version>HP3P-33-001300</version><title>The HPE 3PAR OS must be configured to send SNMP alerts to alert in the event of an audit processing failure.</title><description>&lt;VulnDiscussion&gt;It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without this notification, the security personnel may be unaware of an impending failure of the audit capability, and system operation may be adversely affected.
+
+The HPE 3PAR OS will send an SNMP trap event on any failure of audit components (failure to write a record, failure to send to remote syslog server, etc.). All of these conditions are automatically recovered Q20 in the short term. Configuration of the SNMP consumer is required to facilitate collection of these events.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000139</ident><fixtext fixref="F-58892r870143_fix">To configure SNMPv3 alert notifications, use this sequence of operations.
+
+Create and enable an SNMPv3 user, and create associated keys for authentication and privacy:
+cli% createuser 3parsnmpuser all browse
+Enter the password and confirm
+
+cli%  createsnmpuser 3parsnmpuser
+at the prompt, enter the password
+at the next prompt, re-enter the password.
+
+Add the IP address of the SNMPv3 trap recipient, where permissions of the account are used:
+cli%  addsnmpmgr -version 3 -snmpuser 3parsnmpuser  &lt;ip address&gt;</fixtext><fix id="F-58892r870143_fix" /><check system="C-58948r870142_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify an SNMPv3 user account is configured:
+cli%  showsnmpuser
+
+Username                        | AuthProtocol    | PrivProtocol
+3parsnmpuser                | HMAC SHA 96   |   CFB128 AES 128
+
+If the output is not displayed in the above format, this is a finding.
+
+Identify the SNMP trap recipient and report SNMP configuration:
+
+cli%  showsnmpmgr
+
+  HostIP                                            | Port  | SNMPVersion  | User
+ &lt;snmp trap recipient IP&gt;        | 162    | 3                            | 3parsnmpuser
+
+If the SNMP trap recipient IP address is incorrect, this is a finding.
+
+If the SNMP port is not "162", this is a finding.
+
+If the SNMP version is not "3", this is a finding.
+
+If the SNMP user ID is incorrect, this is a finding.
+
+Generate a test trap:
+cli%  checksnmp
+
+Trap sent to the following managers:
+&lt; IP address of trap recipient&gt;
+
+If the response does not indicate a trap was successfully sent, this is a finding.</check-content></check></Rule></Group><Group id="V-255276"><title>SRG-OS-000344-GPOS-00135</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255276r870147_rule" weight="10.0" severity="medium"><version>HP3P-33-001301</version><title>The HPE 3PAR OS must provide an immediate real-time alert to the System Administrator (SA) and Information System Security Officer (ISSO), at a minimum, of all audit failure events requiring real-time alerts.</title><description>&lt;VulnDiscussion&gt;It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without a real-time alert, security personnel may be unaware of an impending failure of the audit capability and system operation may be adversely affected.
+
+Alerts provide organizations with urgent messages. Real-time alerts provide these messages immediately (i.e., the time from event detection to alert occurs in seconds or less).
+
+In HPE 3PAR OS all event logging responsibility is shared among the clustered nodes. If one node should panic, a surviving node will issue an SNMP trap, and take over event log management, recording the failure messages from the panic'ing node. If the panic'ing node was also the network owner (responsible for communications with outside entities such as the SIEM system), another node will take over the network ownership. Any messages not yet sent will be sent to the SIEM system at this time. When the panic'd node reboots, it will simply rejoin the cluster as a participant.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001858</ident><fixtext fixref="F-58893r870146_fix">Configure SNMPV3 notifications.
+
+Create an SNMPV3 user, and create associated keys for authentication and privacy.
+
+cli% createsnmpuser &lt;someusername&gt;
+where "&lt;someusername&gt;" is the desired username, and then enter a password at the prompts.
+
+Add the SNMP trap recipient and the user just created.
+
+cli%  addsnmpmgr -version 3 -snmpuser &lt;someusername&gt; &lt;ipaddress&gt;
+where "&lt;someusername&gt;" is the user created above, and "&lt;ipaddress&gt;" is the address of the SNMPV3 trap recipient.
+
+Generate a test trap:
+cli% checksnmp
+
+Verify that a trap was received by the manager specified.</fixtext><fix id="F-58893r870146_fix" /><check system="C-58949r870145_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify that an SNMPV3 user account is configured:
+
+cli% showsnmpuser
+
+Username                        | AuthProtocol    | PrivProtocol
+&lt;someusername&gt;   | HMAC SHA 96   |   CFB128 AES 128
+
+If the output is not in the above format, this is a finding.
+
+Verify the SNMP trap recipient and SNMP configuration:
+
+cli% showsnmpmgr
+
+If the HostIP identified is not correct, this is a finding.
+
+If the port is not 162, this is a finding.
+
+If the version is not 3, this is a finding.
+
+If the username does not match the user from above, this is a finding.
+
+Send a test trap and verify it is received:
+
+cli% checksnmp
+
+If the response does not indicate a trap was successfully sent, this is a finding.</check-content></check></Rule></Group><Group id="V-255277"><title>SRG-OS-000355-GPOS-00143</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255277r870150_rule" weight="10.0" severity="medium"><version>HP3P-33-001400</version><title>The HPE 3PAR OS must, for networked systems, compare internal information system clocks at least every 24 hours with a server that is synchronized to one of the redundant United States Naval Observatory (USNO) time servers, or a time server designated for the appropriate DOD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS).</title><description>&lt;VulnDiscussion&gt;Inaccurate time stamps make it more difficult to correlate events and can lead to an inaccurate analysis. Determining the correct time a particular event occurred on a system is critical when conducting forensic analysis and investigating system events. Sources outside the configured acceptable allowance (drift) may be inaccurate.
+
+Synchronizing internal information system clocks provides uniformity of time stamps for information systems with multiple system clocks and systems connected over a network.
+
+Organizations should consider endpoints that may not have regular access to the authoritative time server (e.g., mobile, teleworking, and tactical endpoints).
+
+The HPE 3PAR OS maintains an internal synchronization of node clocks, and aligns that with an NTP client always running on the network owner node when configured as shown.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001891</ident><fixtext fixref="F-58894r870149_fix">Enable NTP with:
+
+cli% setnet ntp -add &lt;server ip address&gt;
+
+This command can be used multiple times to specify multiple NTP Servers.</fixtext><fix id="F-58894r870149_fix" /><check system="C-58950r870148_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify NTP is operational:
+cli% shownet
+
+If any of the NTP Server lines in the output show an incorrect NTP Server address, this is a finding.
+
+If only one NTP Server line is present, and it indicates "None" for the address, this is a finding.</check-content></check></Rule></Group><Group id="V-255278"><title>SRG-OS-000001-GPOS-00001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255278r870153_rule" weight="10.0" severity="medium"><version>HP3P-33-001500</version><title>The HPE 3PAR OS must be configured for centralized account management functions via LDAP.</title><description>&lt;VulnDiscussion&gt;Enterprise environments make account management challenging and complex. A manual process for account management functions adds the risk of a potential oversight or other errors.
+
+A comprehensive account management process that includes automation helps to ensure accounts designated as requiring attention are consistently and promptly addressed. Examples include, but are not limited to, using automation to take action on multiple accounts designated as inactive, suspended or terminated, or by disabling accounts located in noncentralized account stores such as multiple servers. This requirement applies to all account types, including individual/user, shared, group, system, guest/anonymous, emergency, developer/manufacturer/vendor, temporary, and service.
+
+The automated mechanisms may reside within the operating system itself or may be offered by other infrastructure providing automated account management capabilities. Automated mechanisms may be composed of differing technologies that, when placed together, contain an overall automated mechanism supporting an organization's automated account management requirements.
+
+Account management functions include assigning group or role membership; identifying account type; specifying user access authorizations (i.e., privileges); account removal, update, or termination; and administrative alerts. The use of automated mechanisms can include, for example, using email or text messaging to automatically notify account managers when users are terminated or transferred; using the information system to monitor account usage; and using automated telephonic notification to report atypical system account usage.
+
+The HPE 3PAR OS supports external account management via communication with LDAP-enabled technologies (OpenLDAP and Active Directory). Configuration is required to establish the external management relationship. Internally defined roles (SUPER, SERVICE, EDIT, BROWSE) are mapped to centrally defined user groups. Administrators attempting to log in are checked first against local accounts (for emergency purposes). If no local account exists, the central account management system is checked. Users that are successfully authenticated, are then checked for membership in the mapped groups to establish their authorization to access the system, if any, and at what role level.
+
+Satisfies: SRG-OS-000001-GPOS-00001, SRG-OS-000104-GPOS-00051, SRG-OS-000042-GPOS-00021&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-000135</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-58895r870152_fix">If Active Directory is in use, this requirement is not applicable.
+
+Use this series of commands to configure LDAP:
+
+cli% setauthparam -f ldap-type &lt;type&gt;  where type is RHDS or OPEN.
+cli%  setauthparam -f ldap-server        &lt;ldap server IP address&gt;
+cli%  setauthparam -f ldap-server-hn    &lt;fully qualified domain name of ldap server, such as ldapserver.thisdomain.com&gt;
+cli% setauthparam -f binding            simple
+cli% setauthparam -f ldap-StartTLS      require
+cli% setauthparam -f groups-dn          ou=Groups,dc=thisdomain,dc=com
+cli% setauthparam -f user-dn-base       ou=People,dc=thisdomain,dc=com
+cli% setauthparam -f user-attr          uid
+cli% setauthparam -f group-obj          groupofuniquenames
+cli% setauthparam -f group-name-attr    cn
+cli% setauthparam -f member-attr        uniqueMember
+cli% setauthparam -f browse-map          &lt;customer-assigned name of browse role&gt;   &lt;customer-assigned name of "browse" group&gt; 
+cli% setauthparam -f edit-map          &lt;customer-assigned name of edit role&gt;   &lt;customer-assigned name of "edit" group&gt;
+cli% setauthparam -f service-map      &lt;customer-assigned name of service role&gt;   &lt;customer-assigned name of "service" group&gt;
+cli% setauthparam -f super-map          &lt;customer-assigned name of super role&gt;   &lt;customer-assigned name of "super" group&gt;</fixtext><fix id="F-58895r870152_fix" /><check system="C-58951r870151_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Determine if the system is configured for external account management.
+Enter the command
+"cli% showauthparam"
+
+If the result returns an error, or these fields of the output are not configured, this is a finding.
+ldap-server              &lt;ip address of LDAP server&gt; 
+ldap-server-hn      &lt;host name of LDAP server&gt;
+ldap-type &lt;RHDS | OPEN&gt;
+
+If ldap-type is "MSAD", this requirement is not applicable.
+
+If the resulting Parameters DO NOT include the following group parameters, this is a finding.
+groups-dn
+group-obj 
+group-name-attr
+
+Next, verify that the LDAP authentication is operational by entering the command:
+cli%  checkpassword  &lt;username&gt;
+Enter the password for &lt;username&gt;
+
+If the username and password used in checkpassword are known to be valid LDAP credentials, and the following text is NOT displayed at the end of the resulting output, this is a finding.
+
+user &lt;username&gt;   is authenticated and authorized
+
+Note: checkpassword will fail even if LDAP is properly configured, if the username and password are not entered correctly.</check-content></check></Rule></Group><Group id="V-255279"><title>SRG-OS-000123-GPOS-00064</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255279r870156_rule" weight="10.0" severity="medium"><version>HP3P-33-001501</version><title>The HPE 3PAR OS must be configured to have only one emergency account that can be accessed without LDAP and that has full administrator privileges.</title><description>&lt;VulnDiscussion&gt;While LDAP allows the storage system to support stronger authentication, and provides additional auditing, it also places a dependency on an external entity in the operational environment. The existence of a single local account with a strong password means that administrators can continue to access the storage system in event the LDAP system is temporarily unavailable.
+
+A non-LDAP enabled emergency administrator account is required in the event that LDAP fails. This account will allow the organization to successfully administer the system during an LDAP outage. Once LDAP services have been restored, the password for this account must be changed and stored in a DOD approved safe.
+
+The product requires at least one local account to be present. However, the administrator must still manually remove all other local accounts, except for the emergency account, after the product has been configured for operation.
+
+The 3paradm account is a user bootstrap account. During installation, the user must use it to create a new local super user account. Once that is done, the 3paradm account must be removed.
+
+The 3parsvc account is used internally by the system.
+
+The 3parsnmp account was created in the fix text for HP3P-33-001300.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001682</ident><fixtext fixref="F-58896r870155_fix">Display users
+cli% showuser
+
+Remove all accounts except:
+--3paradm (or other customer-created "super" role account)
+--3parsnmpuser
+--3parsvc
+
+Use the command:
+cli% removeuser &lt;username&gt;
+and confirm the operation with "y".</fixtext><fix id="F-58896r870155_fix" /><check system="C-58952r870154_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify that only essential local accounts are configured.
+cli% showuser
+
+If the output shows users other than the three accounts below, this is a finding.
+--3paradm (or some other customer chosen account with "super" role)
+--3parsnmpuser
+--3parsvc</check-content></check></Rule></Group><Group id="V-255280"><title>SRG-OS-000078-GPOS-00046</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255280r870282_rule" weight="10.0" severity="medium"><version>HP3P-33-001505</version><title>The HPE 3PAR OS must be configured to enforce a minimum 15-character password length.</title><description>&lt;VulnDiscussion&gt;The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised.
+
+Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password. Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.
+
+The HPE 3PAR OS can be configured to have 15 characters (or more) for minimum password length. This setting affects local user accounts only, and only has an impact when a password is changed.
+
+Password length for externally managed users is enforced by the external identity management system (LDAP/AD). This is a dependency on HP3P-33-001500/HP3P-33-101500. The HPE 3PAR OS does not supply an interface for modification of passwords maintained by external identity management systems.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-58897r870158_fix">Configure the minimum password length for a value of "15":
+
+cli%  setpassword -minlen 15
+
+Note: The user must have super-admin privileges to perform this action.</fixtext><fix id="F-58897r870158_fix" /><check system="C-58953r870157_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify that the minimum password length is 15 characters:
+
+cli% showsys -d
+
+Verify that the line containing the string "Minimum PW length" shows "15" for the length. If it is not, this is a finding.</check-content></check></Rule></Group><Group id="V-255281"><title>SRG-OS-000023-GPOS-00006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255281r870162_rule" weight="10.0" severity="medium"><version>HP3P-33-001600</version><title>The HPE 3PAR OS must be configured to display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system.</title><description>&lt;VulnDiscussion&gt;Display of a standardized and approved use notification before granting access to the operating system ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+The banner must be formatted in accordance with applicable DOD policy. Use the following verbiage for operating systems that can accommodate banners of 1300 characters:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."
+
+Satisfies: SRG-OS-000023-GPOS-00006, SRG-OS-000228-GPOS-00088&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><ident system="http://cyber.mil/cci">CCI-001384</ident><ident system="http://cyber.mil/cci">CCI-001385</ident><ident system="http://cyber.mil/cci">CCI-001386</ident><ident system="http://cyber.mil/cci">CCI-001387</ident><ident system="http://cyber.mil/cci">CCI-001388</ident><fixtext fixref="F-58898r870161_fix">To configure the login banner, enter the command:
+
+cli%  setbanner -all
+
+Paste the following text:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+To complete the configuration, press "Enter" twice.</fixtext><fix id="F-58898r870161_fix" /><check system="C-58954r870160_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify that the login banner is configured.
+Enter the following command:
+
+cli%  showbanner -all
+
+CLI banner:
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+SSH banner:
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+If the system does not display a graphical logon banner, or the banner does not match the Standard Mandatory DOD Notice and Consent Banner, this is a finding.</check-content></check></Rule></Group><Group id="V-255282"><title>SRG-OS-000341-GPOS-00132</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255282r870165_rule" weight="10.0" severity="medium"><version>HP3P-33-001700</version><title>The HPE 3PAR operating system must be configured to allocate audit record storage capacity to store at least one week of audit records, even though all audit records are immediately sent to a centralized audit record storage system (SIEM).</title><description>&lt;VulnDiscussion&gt;To ensure operating systems have a sufficient storage capacity in which to write the audit logs, operating systems need to be able to allocate audit record storage capacity.
+
+The task of allocating audit record storage capacity is usually performed during initial installation of the operating system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001849</ident><fixtext fixref="F-58899r870164_fix">Enter the following command to configure the audit logging capacity for the maximum storage value:
+cli%  setsys EventLogSize 4M</fixtext><fix id="F-58899r870164_fix" /><check system="C-58955r870163_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>To verify the logging capacity is set to the maximum value of "4", enter the following command:
+cli%  showsys -param
+
+In the resulting list of configured parameters and values, if the following line does not appear, this is a finding.
+cli%  EventLogSize : 4M</check-content></check></Rule></Group><Group id="V-255283"><title>SRG-OS-000359-GPOS-00146</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255283r870168_rule" weight="10.0" severity="medium"><version>HP3P-33-001701</version><title>The HPE 3PAR OS must record time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).</title><description>&lt;VulnDiscussion&gt;If time stamps are not consistently applied and there is no common time reference, it is difficult to perform forensic analysis.
+
+Time stamps generated by the operating system include date and time. Time is commonly expressed in UTC, a modern continuation of GMT, or local time with an offset from UTC.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001890</ident><fixtext fixref="F-58900r870167_fix">Configure the time zone by first identifying the time zone indicator:
+
+cli% setdate -tzlist
+
+Then configure the timezone with:
+
+cli% setdate -tz &lt;timezone identifier from above&gt;
+
+If UTC is to be used, complete the operation with:
+
+cli% setdate -tz Etc/UTC
+
+Verify the timezone is set with:
+cli% showdate</fixtext><fix id="F-58900r870167_fix" /><check system="C-58956r870166_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>To verify the time zone is configured, enter:
+
+cli% showdate
+
+If the time zone field is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-255284"><title>SRG-OS-000342-GPOS-00133</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255284r870171_rule" weight="10.0" severity="medium"><version>HP3P-33-002052</version><title>The HPE 3PAR OS must be configured to offload audit records onto a different system or media from the system being audited.</title><description>&lt;VulnDiscussion&gt;Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
+
+Offloading is a common process in information systems with limited audit storage capacity.
+
+Satisfies: SRG-OS-000342-GPOS-00133, SRG-OS-000479-GPOS-00224&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-58901r870170_fix">Configure the remote syslog host:
+
+cli% setsys RemoteSyslogSecurityHost &lt;hostname&gt; &lt;address-spec&gt; [:port]
+
+The hostname, and address are both required. If both IPv4 and IPv6 addresses are supplied, the IPv6 address must be enclosed in []. The default port is 6514 utilizing TLS.
+
+Import the ca certificate that will have signed the syslog server:
+
+cli% importcert syslog-sec-server -ca stdin
+
+Copy and paste the PEM format of the appropriate CA as instructed.
+
+Configure the system to utilize remote syslog:
+
+cli% setsys RemoteSyslog 1</fixtext><fix id="F-58901r870170_fix" /><check system="C-58957r870169_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify offloading of security syslog events with 
+
+cli% showsys -d
+
+Find the output section "Remote Syslog Status".
+
+If "Active" is not "1", this is a finding.
+
+If "Security Server" is not defined, this is a finding.
+
+If "Security Connection" is not "TLS", this is a finding.</check-content></check></Rule></Group><Group id="V-255285"><title>SRG-OS-000396-GPOS-00176</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255285r870174_rule" weight="10.0" severity="medium"><version>HP3P-33-002069</version><title>The HPE 3PAR OS must be configured to implement NIST FIPS-validated cryptography for the following: To provision digital signatures, to generate cryptographic hashes, and to protect unclassified information requiring confidentiality and cryptographic protection in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards.</title><description>&lt;VulnDiscussion&gt;Use of weak or untested encryption algorithms undermines the purposes of utilizing encryption to protect data. The operating system must implement cryptographic modules adhering to the higher standards approved by the federal government, since this provides assurance they have been tested and validated.
+
+The HPE 3PAR OS can be configured to use FIPS validated cryptographic methods for communications secrecy. It also has an encryption license feature that controls the handling of Self-Encrypting backend drives, which requires an authorized service provider for install and activation.
+
+Satisfies: SRG-OS-000396-GPOS-00176, SRG-OS-000478-GPOS-00223&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-58902r870173_fix">Set the communications encryption module into fips mode:
+
+cli% controlsecurity fips enable
+
+If the mission stores classified information, contact an authorized service provider to install and configure the licensed encryption feature.</fixtext><fix id="F-58902r870173_fix" /><check system="C-58958r870172_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify the status of the FIPS communication library:
+
+cli% controlsecurity fips status
+
+If the line "FIPS Mode:" is not "Enabled", this is a finding.
+
+If any of the service lines for CLI, EKM, LDAP, SNMP, SSH, or SYSLOG are Disabled, this is a finding.
+
+If CIM, VASA, or WSAPI are "Disabled", and the mission requires any of these services, this is a finding.
+
+Review the requirements by the Information Owner to determine if the system will store sensitive or classified information.
+
+If the mission does not store sensitive, or classified information, the remainder of the check is not applicable.
+
+If the mission stores classified data, check the status of backend drive encryption:
+
+cli% controlencryption status
+
+If Licensed, Enabled, or BackupSaved are "no", or the keystore is not EKM, this is a finding.</check-content></check></Rule></Group><Group id="V-255286"><title>SRG-OS-000068-GPOS-00036</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255286r870281_rule" weight="10.0" severity="high"><version>HP3P-33-004002</version><title>The HPE 3PAR OS must map the authenticated identity to the user account for PKI-based authentication.</title><description>&lt;VulnDiscussion&gt;Without mapping the certificate used to authenticate to the user account, the ability to determine the identity of the individual user or group will not be available for forensic analysis.
+
+PKI authentication is performed by the HPE 3PAR SSMC, and the authenticated user's identity is extracted from the certificate and forwarded to the HPE 3PAR OS over a mutually authenticated TLS channel. The HPE 3PAR OS then queries/authorizes the identity in the external Account Management system (LDAP/AD), and authorizes the individual as appropriate based on that. The ldap-2fa-cert-field is used to tell the SSMC which field to extract from the user certificate. The ldap-2fa-object-attr is used to search the account management system for an account with a matching attribute.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000187</ident><fixtext fixref="F-58903r870176_fix">To configure the two factor authentication parameters (2fa) to support PKI based authentication/authorization:
+
+cli% setauthparam -f ldap-2fa-cert-field &lt;name of certificate field containing user identity string&gt;
+
+cli% setauthparam -f ldap-2fa-object-attr &lt;attribute in ldap object corresponding to cert field value&gt;</fixtext><fix id="F-58903r870176_fix" /><check system="C-58959r870175_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify that the two factor authentication (2fa) parameters are set:
+
+cli% showauthparam
+If there is an error, or the output does not contain the following, this is a finding. 
+ldap-2fa-cert-field &lt;fieldName&gt;
+ldap-2fa-object-attr &lt;ldap object corresponding to cert field&gt;</check-content></check></Rule></Group><Group id="V-255287"><title>SRG-OS-000403-GPOS-00182</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255287r870180_rule" weight="10.0" severity="medium"><version>HP3P-33-004020</version><title>The HPE 3PAR OS must be configured to only allow the use of DOD PKI-established certificate authorities for authentication in the establishment of protected sessions to the operating system.</title><description>&lt;VulnDiscussion&gt;Untrusted Certificate Authorities (CA) can issue certificates, but they may be issued by organizations or individuals that seek to compromise DOD systems or by organizations with insufficient security controls. If the CA used for verifying the certificate is not a DOD-approved CA, trust of this CA has not been established.
+
+The DOD will only accept PKI-certificates obtained from a DOD-approved internal or external certificate authority. Reliance on CAs for the establishment of secure sessions includes, for example, the use of SSL/TLS certificates.
+
+The HPE 3PAR OS can be configured to use only defined CA(s) for specific purposes. There is no default set of CA certificates included in the product.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002470</ident><fixtext fixref="F-58904r870179_fix">Create a CSR to be signed by an appropriate CA:
+
+cli% createcert unified-server -csr -CN &lt;common name&gt; -SAN &lt;DNS:somednsname or  IP:someipaddress&gt;
+
+Copy the output and give it to the CA for signing.
+
+Install the root CA certificate bundle:
+
+cli% importcert unified-server -ca stdin
+
+Copy and paste the ca bundle contents as instructed.
+
+Install the signed certificate from the ca:
+
+cli% importcert unified-server stdin
+
+Copy and paste the PEM format signed certificate contents as instructed.</fixtext><fix id="F-58904r870179_fix" /><check system="C-58960r870178_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Check that a signed certificate and CA certificate have been imported:
+
+cli% showcert -service unified-server
+
+If the output does not contain DOD PKI certificates of at least two lines of output, one of type "cert" and one of type "rootca", this is a finding.</check-content></check></Rule></Group><Group id="V-255288"><title>SRG-OS-000001-GPOS-00001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255288r870183_rule" weight="10.0" severity="medium"><version>HP3P-33-101500</version><title>The HPE 3PAR OS must provide automated mechanisms for supporting account management functions via AD.</title><description>&lt;VulnDiscussion&gt;Enterprise environments make account management challenging and complex. A manual process for account management functions adds the risk of a potential oversight or other errors.
+
+A comprehensive account management process that includes automation helps to ensure accounts designated as requiring attention are consistently and promptly addressed. Examples include, but are not limited to, using automation to take action on multiple accounts designated as inactive, suspended or terminated, or by disabling accounts located in noncentralized account stores such as multiple servers. This requirement applies to all account types, including individual/user, shared, group, system, guest/anonymous, emergency, developer/manufacturer/vendor, temporary, and service.
+
+The automated mechanisms may reside within the operating system itself or may be offered by other infrastructure providing automated account management capabilities. Automated mechanisms may be composed of differing technologies that, when placed together, contain an overall automated mechanism supporting an organization's automated account management requirements.
+
+Account management functions include: Assigning group or role membership; identifying account type; specifying user access authorizations (i.e., privileges); account removal, update, or termination; and administrative alerts. The use of automated mechanisms can include, for example: Using email or text messaging to automatically notify account managers when users are terminated or transferred; using the information system to monitor account usage; and using automated telephonic notification to report atypical system account usage.
+
+The HPE 3PAR OS supports external account management via communication with LDAP-enabled technologies (OpenLDAP and Active Directory). Configuration is required to establish the external management relationship. Internally defined roles (SUPER, SERVICE, EDIT, BROWSE) are mapped to centrally defined user groups. Administrators attempting to log in are checked first against local accounts (for emergency purposes). If no local account exists, the central account management system is checked. Users that are successfully authenticated, are then checked for membership in the mapped groups to establish their authorization to access the system, if any, and at what role level.
+
+Satisfies: SRG-OS-000001-GPOS-00001, SRG-OS-000042-GPOS-00021, SRG-OS-000104-GPOS-00051&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-000135</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-58905r870182_fix">Use this series of commands to configure AD:
+
+cli% setauthparam -f ldap-type MSAD
+cli%  setauthparam -f ldap-server        &lt;AD server IP address&gt;
+cli% setauthparam -f binding            simple
+cli% setauthparam -f ldap-StartTLS      require
+cli% setauthparam -f kerberos-realm    &lt;kerberos realm, such as  WIN2K12FOREST.THISDOMAIN.COM&gt;
+cli% setauthparam -f ldap-server-hn     &lt;fully qualified domain name of AD server, such as adserver.thisdomain.com&gt;
+cli% setauthparam -f accounts-dn        CN=Users,DC=win2k12forest,DC=thisdomain,DC=com
+cli% setauthparam -f user-dn-base       CN=Users,DC=win2k12forest,DC=thisdomain,DC=com
+cli% setauthparam -f user-attr          WIN2K12FOREST\\
+cli% setauthparam -f account-obj        user
+cli% setauthparam -f account-name-attr  sAMAccountName
+cli% setauthparam -f memberof-attr      memberOf
+cli% setauthparam -f browse-map         "CN=&lt;customer-assigned name of browse role&gt;,CN=Users,DC=win2k12forest,DC=thisdomain,DC=com"
+cli% setauthparam -f edit-map           "CN=&lt;customer-assigned name of edit role&gt;,CN=Users,DC=win2k12forest,DC=thisdomain,DC=com"
+cli% setauthparam -f service-map        "CN=&lt;customer-assigned name of service role&gt;,CN=Users,DC=win2k12forest,DC=thisdomain,DC=com"
+cli% setauthparam -f super-map          "CN=&lt;customer-assigned name of super role&gt;,CN=Users,DC=win2k12forest,DC=thisdomain,DC=com"</fixtext><fix id="F-58905r870182_fix" /><check system="C-58961r870181_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Check with the Information Owner to verify if Active Directory will be used for Centralized Account Management.
+
+If Active Directory will not be used, this requirement is not applicable.
+
+Determine if the system is configured for Active Directory (AD). 
+
+Enter the command:
+cli% showauthparam
+
+If the result returns an error, or these fields of the output are not configured, this is a finding.
+ldap-server              &lt;ip address of AD server&gt; 
+ldap-server-hn      &lt;host name of AD server&gt;
+
+If the resulting Parameters include: group parameters
+groups-dn
+group-obj
+group-name-attr
+this requirement is not applicable.
+
+Next, verify that the AD authentication is operational by entering the command
+cli%  checkpassword  &lt;username&gt;
+Enter the password for &lt;username&gt;
+
+If the username and password used in checkpassword are known to be valid AD credentials, and the following text is NOT displayed at the end of the resulting output, this is a finding:
+
+user &lt;username&gt;   is authenticated and authorized
+
+Note: checkpassword will fail even if AD is properly configured, if the username and password are not entered correctly.</check-content></check></Rule></Group><Group id="V-255289"><title>SRG-OS-000403-GPOS-00182</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255289r870186_rule" weight="10.0" severity="medium"><version>HP3P-33-104020</version><title>The HPE 3PAR OS syslog-sec-client must be configured to perform mutual TLS authentication using a CA-signed client certificate.</title><description>&lt;VulnDiscussion&gt;Untrusted Certificate Authorities (CA) can issue certificates, but they may be issued by organizations or individuals that seek to compromise DOD systems or by organizations with insufficient security controls. If the CA used for verifying the certificate is not a DOD-approved CA, trust of this CA has not been established.
+
+The DOD will only accept PKI-certificates obtained from a DOD-approved internal or external certificate authority. Reliance on CAs for the establishment of secure sessions includes, for example, the use of SSL/TLS certificates.
+
+The HPE 3PAR OS can be configured to use only defined CA(s) for specific purposes. There is no default set of CA certificates included in the product.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002470</ident><fixtext fixref="F-58906r870185_fix">Check with the Information Owner to verify that TLS mutual authentication is required by the remote syslog server.
+
+If TLS mutual authentication is not required, this requirement is not applicable.
+
+Create a CSR to be signed by an appropriate CA:
+
+cli% createcert syslog-sec-client -csr -CN &lt;common name&gt; -SAN &lt;DNS:somednsname or IP:someipaddress&gt;
+
+Copy the output and give it to the CA for signing.
+
+Install the root CA certificate bundle:
+
+cli% importcert syslog-sec-client -ca stdin
+
+Copy and paste the ca bundle contents as instructed.
+
+Install the signed certificate from the ca:
+
+cli% importcert sysloc-sec-client stdin
+
+Copy and paste the PEM format signed certificate contents as instructed.
+
+The syslog-sec-client service will be restarted.</fixtext><fix id="F-58906r870185_fix" /><check system="C-58962r870184_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Check with the Information Owner to verify if Mutual Authentication is required by the syslog server.
+
+If mutual TLS authentication is not required, this requirement is not applicable.
+
+Check that a signed client certificate and CA certificate have been imported for the syslog-sec-client service:
+
+cli% showcert -service syslog-sec-client
+
+If the output does not contain DOD PKI certificates of at least two lines of output, one of type "cert" and one of type "rootca", this is a finding.</check-content></check></Rule></Group><Group id="V-255290"><title>SRG-OS-000095-GPOS-00049</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255290r870189_rule" weight="10.0" severity="medium"><version>HP3P-33-111001</version><title>The HPE 3PAR OS must be configured to disable nonessential Common Information Model services.</title><description>&lt;VulnDiscussion&gt;It is detrimental for operating systems to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+The HPE 3PAR OS does not, by default, operate nonessential services. The Common Information Model services component must be configured for it to start. If it is not required by the mission, then it must be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-58907r870188_fix">Verify with the Information Owner whether mission objectives require CIM functionality.
+
+If CIM services functionality is not part of the mission requirements, stop and disable "cimserver":
+
+cli% stopcim -f
+
+cli%  setcim -f -http disable -https disable</fixtext><fix id="F-58907r870188_fix" /><check system="C-58963r870187_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Check with the Information Owner to verify if the mission objectives require CIM functionality.
+
+If the mission requirements include CIM service capabilities, this requirement is not applicable.
+
+If mission requirements do not include CIM, then verify the state of the CIM services capabilities on the array:
+
+cli% showcim
+
+If the service state is not "Disabled", this is a finding.</check-content></check></Rule></Group><Group id="V-255291"><title>SRG-OS-000033-GPOS-00014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255291r870192_rule" weight="10.0" severity="high"><version>HP3P-33-111100</version><title>The HPE 3PAR OS CIMserver process must be configured to use approved encryption and communications protocols to protect the confidentiality of remote access sessions.</title><description>&lt;VulnDiscussion&gt;Without confidentiality protection mechanisms, unauthorized individuals may gain access to sensitive information via a remote access session.
+
+Remote access is access to DOD nonpublic information systems by an authorized user (or an information system) communicating through an external, non-organization-controlled network. Remote access methods include, for example, dial-up, broadband, and wireless.
+
+Encryption provides a means to secure the remote connection to prevent unauthorized access to the data traversing the remote access connection (e.g., RDP), thereby providing a degree of confidentiality. The encryption strength of a mechanism is selected based on the security categorization of the information.
+
+The Common Information Model (CIM) protocol, and its associated Service Location Protocol (SLP) represent an additional, optional, management protocol for monitoring and controlling some aspects of the Storage Array. These settings limit the server to communications using TLS1.2.
+
+Satisfies: SRG-OS-000033-GPOS-00014, SRG-OS-000096-GPOS-00050, SRG-OS-000112-GPOS-00057, SRG-OS-000074-GPOS-00042&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-000197</ident><ident system="http://cyber.mil/cci">CCI-000382</ident><ident system="http://cyber.mil/cci">CCI-001941</ident><fixtext fixref="F-58908r870191_fix">Verify if CIMserver is configured to run.
+Use the command:
+"cli% showcim"
+
+If the Server column shows "Disabled", this is not applicable.
+
+Temporarily stop the server using the command: "cli% stopcim -f"
+
+Disable the HTTP listener, and enable the HTTPS listener, using the command: 
+cli% setcim -http disable -https enable
+
+Set the TLS policy to utilize only TLS1.2 with the following command:
+cli% setcim -pol tls_strict
+
+Restart the CIMserver using the command:
+cli% startcim</fixtext><fix id="F-58908r870191_fix" /><check system="C-58964r870190_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>If the mission does not require CIM functionality this requirement is not applicable.
+
+Verify if CIMserver is configured to run.
+Use the command:
+"cli% showcim"
+
+If the Server column shows "Disabled", this is not applicable.
+
+If the HTTP column shows "Enabled", this is a finding.
+
+If the HTTPS column shows "Disabled", this is a finding.
+
+Use the command:
+"cli% showcim -pol" to display advanced configuration policies.
+
+If the output contains "no_tls_strict", this is a finding.</check-content></check></Rule></Group><Group id="V-255292"><title>SRG-OS-000120-GPOS-00061</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255292r870195_rule" weight="10.0" severity="high"><version>HP3P-33-111103</version><title>The HPE 3PAR OS cimserver process must be properly configured to operate in FIPS mode in order to use mechanisms meeting the requirements of applicable federal laws, executive orders, directives, policies, regulations, standards, and guidance for authentication to a cryptographic module.</title><description>&lt;VulnDiscussion&gt;Unapproved mechanisms that are used for authentication to the cryptographic module are not verified and therefore cannot be relied upon to provide confidentiality or integrity, and DOD data may be compromised.
+
+The HPE 3PAR OS cimserver utilizes a vendor-affirmed FIPS module and operates OpenSSL in FIPS mode when configured as described. If the service is not enabled in FIPS mode, it is incorrectly configured.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><fixtext fixref="F-58909r870194_fix">Stop the cimserver process:
+cli% stopcim -f
+
+Reconfigure the cimserver to use only HTTPS on TLSV1.2
+cli% setcim -f -http disable
+cli% setcim -f -https enable
+cli% setcim -f -pol tls_strict
+
+Restart the cimserver process:
+cli% startcim -f
+
+Wait up to five minutes for CIM to start up and verify it is Enabled/Active 
+cli% showcim
+
+Once CIM is active, verify FIPS mode:
+cli% controlsecurity fips status
+
+If CIM is "Disabled", this is an error that requires a service escalation.</fixtext><fix id="F-58909r870194_fix" /><check system="C-58965r870193_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>If the mission does not require CIM functionality, this requirement is not applicable.
+
+Verify cim is configured:
+cli% showcim
+
+If there is an error, this is a finding.
+
+If the output indicates the service is "Disabled", the state is "Inactive", HTTP is "Enabled", or HTTPS is "Disabled", this is a finding.
+
+Check the FIPS status
+cli% controlsecurity fips status
+
+If there is an error, or CIM shows as "Disabled", this is a finding.</check-content></check></Rule></Group><Group id="V-255293"><title>SRG-OS-000403-GPOS-00182</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255293r870283_rule" weight="10.0" severity="medium"><version>HP3P-33-114020</version><title>The HPE 3PAR OS must be configured to only use DOD PKI established certificate authorities for authentication in the establishment of protected sessions to the operating system with an External Key Manager.</title><description>&lt;VulnDiscussion&gt;Untrusted Certificate Authorities (CA) can issue certificates, but they may be issued by organizations or individuals that seek to compromise DOD systems or by organizations with insufficient security controls. If the CA used for verifying the certificate is not a DOD-approved CA, trust of this CA has not been established.
+
+The DOD will only accept PKI-certificates obtained from a DOD-approved internal or external certificate authority. Reliance on CAs for the establishment of secure sessions includes, for example, the use of SSL/TLS certificates.
+
+The HPE 3PAR OS can be configured to  use only defined CA(s) for specific purposes. There is no default set of CA certificates included in the product.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002470</ident><fixtext fixref="F-58910r870197_fix">Create a CSR to be signed by an appropriate CA:
+
+cli% createcert ekm-server -csr -CN &lt;common name&gt; -SAN &lt;DNS:somednsname or IP:someipaddress&gt;
+
+Copy the output and give it to the CA for signing.
+
+Install the root CA certificate bundle:
+
+cli% importcert ekm-server -ca stdin
+
+Copy and paste the ca bundle contents as instructed.
+
+install the signed certificate from the ca:
+cli% importcert ekm-server stdin
+Copy and paste the PEM format signed certificate contents as instructed.
+
+The fipsvr process will be restarted.</fixtext><fix id="F-58910r870197_fix" /><check system="C-58966r870196_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Check that a signed client certificate and CA certificate have been imported for the ekm-server service:
+
+cli% showcert -service ekm-server
+
+If the output does not contain DOD PKI certificates of at least two lines of output, one of type "cert" and one of type "rootca", this is a finding.</check-content></check></Rule></Group><Group id="V-255294"><title>SRG-OS-000095-GPOS-00049</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255294r870201_rule" weight="10.0" severity="medium"><version>HP3P-33-121001</version><title>The HPE 3PAR OS must be configured to disable nonessential VASA VVol services.</title><description>&lt;VulnDiscussion&gt;It is detrimental for operating systems to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+The HPE 3PAR OS does not, by default, operate nonessential services. The VASA VVol Provider service component must be configured for it to start. If it is not required by the mission, then it must be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-58911r870200_fix">Verify with the Information Owner whether VASA VVol functionality is required by the mission objectives.
+
+If the mission requires VASA VVol functionality, this requirement is not applicable.
+
+If VASA VVol services functionality is not required by the mission, stop the VASA provider:
+
+cli% stopvasa -f</fixtext><fix id="F-58911r870200_fix" /><check system="C-58967r870199_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Check with the Information Owner whether the mission objectives require VASA VVol functionality.
+
+If the mission requirements include VASA VVol functionality, this requirement is not applicable.
+
+If mission requirements do not include this functionality, verify the state of the VASA VVol services capabilities on the array:
+
+cli% showvasa
+
+If the state is "enabled", this is a finding.</check-content></check></Rule></Group><Group id="V-255295"><title>SRG-OS-000033-GPOS-00014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255295r870204_rule" weight="10.0" severity="high"><version>HP3P-33-121100</version><title>The HPE 3PAR OS WSAPI process must be configured to use approved encryption and communications protocols to protect the confidentiality of remote access sessions.</title><description>&lt;VulnDiscussion&gt;Without confidentiality protection mechanisms, unauthorized individuals may gain access to sensitive information via a remote access session.
+
+Remote access is access to DOD nonpublic information systems by an authorized user (or an information system) communicating through an external, non-organization-controlled network. Remote access methods include, for example, dial-up, broadband, and wireless.
+
+Encryption provides a means to secure the remote connection to prevent unauthorized access to the data traversing the remote access connection (e.g., RDP), thereby providing a degree of confidentiality. The encryption strength of a mechanism is selected based on the security categorization of the information.
+
+The WSAPI provides an, optional, REST interface for programmatic monitoring and control of the array operations and configuration. These configuration settings confine the server to using only TLS1.2.
+
+Satisfies: SRG-OS-000033-GPOS-00014, SRG-OS-000096-GPOS-00050, SRG-OS-000112-GPOS-00057, SRG-OS-000074-GPOS-00042&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-000197</ident><ident system="http://cyber.mil/cci">CCI-000382</ident><ident system="http://cyber.mil/cci">CCI-001941</ident><fixtext fixref="F-58912r870203_fix">Verify if WSAPI is configured to run. Use the command:
+cli% showwsapi -d
+
+If "Service State" shows "Disabled", this is not applicable.
+
+Temporarily stop the WSAPI server with the command:
+cli% stopwsapi -f
+
+To disable the HTTP listener, and enable the HTTPS listener, use the command:
+cli% setwsapi -http disable -https enable
+
+To set the TLS policy to TLSv1.2 only, use the command:
+cli% setwsapi -pol tls_strict
+
+Restart the server with the following command:
+cli% startwsapi</fixtext><fix id="F-58912r870203_fix" /><check system="C-58968r870202_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>If the mission does not require WSAPI functionality, this requirement is not applicable.
+
+Verify if WSAPI is configured to run.
+Use the command:
+cli% showwsapi -d
+
+If "Service State" shows "Disabled", this is not applicable.
+
+If "HTTP State" shows "Enabled", this is a finding.
+
+If "HTTPS State" shows "Disabled", this is a finding.
+
+If "Policy" contains "no_tls_strict", this is a finding.</check-content></check></Rule></Group><Group id="V-255296"><title>SRG-OS-000120-GPOS-00061</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255296r870207_rule" weight="10.0" severity="high"><version>HP3P-33-121103</version><title>The HPE 3PAR OS WSAPI process must be properly configured to operate in FIPS mode in order to use mechanisms meeting the requirements of applicable federal laws, executive orders, directives, policies, regulations, standards, and guidance for authentication to a cryptographic module.</title><description>&lt;VulnDiscussion&gt;Unapproved mechanisms that are used for authentication to the cryptographic module are not verified and therefore cannot be relied upon to provide confidentiality or integrity, and DOD data may be compromised.
+
+The HPE 3PAR OS cimserver utilizes a vendor-affirmed FIPS module and operates OpenSSL in FIPS mode when configured as described. If the service is not enabled in FIPS mode it is incorrectly configured.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><fixtext fixref="F-58913r870206_fix">Stop the WSAPI process:
+cli% stopwsapi -f
+
+Reconfigure the WSAPI to use only HTTPS on TLSV1.2:
+cli% setwsapi -f -http disable
+cli% setwsapi -f -https enable
+cli% setwsapi -f -pol tls_strict
+
+Restart the WSAPI process:
+cli% startwsapi -f
+
+Wait up to five minutes for WSAPI to start up and verify it is Enabled/Active:
+cli% showwsapi
+
+Once WSAPI is active, verify FIPS mode:
+cli% controlsecurity fips status
+
+If WSAPI is "Disabled", this is an error that requires a service escalation.</fixtext><fix id="F-58913r870206_fix" /><check system="C-58969r870205_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>If the mission does not require WSAPI functionality, this requirement is not applicable.
+
+Verify if WSAPI is configured to run.
+Use the command:
+cli% showwsapi -d
+
+If "service State" shows "Disabled", this is not applicable.
+
+If "HTTP State" shows "Enabled", this is a finding.
+
+If "HTTPS State" shows "Disabled", this is a finding.
+
+If "Policy" contains "no_tls_strict", this is a finding.</check-content></check></Rule></Group><Group id="V-255297"><title>SRG-OS-000403-GPOS-00182</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255297r870210_rule" weight="10.0" severity="medium"><version>HP3P-33-124020</version><title>The HPE 3PAR OS must be configured to perform mutual TLS authentication using a CA-signed client certificate when communicating with an External Key Manager.</title><description>&lt;VulnDiscussion&gt;Untrusted Certificate Authorities (CA) can issue certificates, but they may be issued by organizations or individuals that seek to compromise DOD systems or by organizations with insufficient security controls. If the CA used for verifying the certificate is not a DOD-approved CA, trust of this CA has not been established.
+
+The DOD will only accept PKI-certificates obtained from a DOD-approved internal or external certificate authority. Reliance on CAs for the establishment of secure sessions includes, for example, the use of SSL/TLS certificates.
+
+The HPE 3PAR OS can be configured to use only defined CA(s) for specific purposes. There is no default set of CA certificates included in the product.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002470</ident><fixtext fixref="F-58914r870209_fix">Check with the Information Owner to verify that TLS mutual authentication is required by the EKM server.
+
+If TLS mutual authentication is not required, this requirement is not applicable.
+
+Create a CSR to be signed by an appropriate CA:
+
+cli% createcert ekm-client -csr -CN &lt;common name&gt; -SAN &lt;DNS:somednsname or IP:someipaddress&gt;
+
+Copy the output and give it to the CA for signing.
+
+Install the root CA certificate bundle:
+
+cli% importcert ekm-client -ca stdin
+
+Copy and paste the ca bundle contents as instructed.
+
+Install the signed certificate from the ca:
+cli% importcert ekm-client stdin
+Copy and paste the PEM format signed certificate contents as instructed.
+
+The fipsvr process will be restarted.</fixtext><fix id="F-58914r870209_fix" /><check system="C-58970r870208_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Check with the Information Owner to verify if Mutual Authentication is required by the EKM server.
+
+If mutual TLS authentication is not required, this requirement is not applicable.
+
+Check that a signed client certificate and CA certificate have been imported for the ekm-client service:
+
+cli% showcert -service ekm-client
+
+If the output does not contain DOD PKI certificates of at least two lines of output, one of type "cert" and one of type "rootca", this is a finding.</check-content></check></Rule></Group><Group id="V-255298"><title>SRG-OS-000095-GPOS-00049</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255298r870284_rule" weight="10.0" severity="medium"><version>HP3P-33-131001</version><title>The HPE 3PAR OS must be configured to disable nonessential Remote Copy services.</title><description>&lt;VulnDiscussion&gt;It is detrimental for operating systems to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+The HPE 3PAR OS does not, by default, operate nonessential services. The Remote Copy services component must be configured for it to start. If it is not required by the mission, then it must be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-58915r870212_fix">Verify with the Information Owner that the mission objectives do not require remote copy.
+
+If Remote Copy is not required by the mission, forcibly stop the functionality, and clear the configuration:
+
+cli% stoprcopy -f -clear</fixtext><fix id="F-58915r870212_fix" /><check system="C-58971r870284_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Verify with the Information Owner that the mission objectives exclude Remote Copy functionality.
+
+If Remote Copy is required by the mission, this requirement is not applicable.
+
+If Remote Copy is not required by the mission, verify the state of RC functionality: 
+
+cli% showrcopy
+
+If the output is an error and indicates the system is not licensed for Remote Copy, this is not a finding.
+
+If the output indicates "Remote Copy is not configured for this system", this is not a finding.
+
+If the output indicates any other status, this is a finding.</check-content></check></Rule></Group><Group id="V-255299"><title>SRG-OS-000403-GPOS-00182</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-255299r870216_rule" weight="10.0" severity="medium"><version>HP3P-33-134020</version><title>The HPE 3PAR OS must be configured to only use DOD PKI established certificate authorities for authentication in the establishment of protected sessions to the operating system with a centralized account management server.</title><description>&lt;VulnDiscussion&gt;Untrusted Certificate Authorities (CA) can issue certificates, but they may be issued by organizations or individuals that seek to compromise DOD systems or by organizations with insufficient security controls. If the CA used for verifying the certificate is not a DOD-approved CA, trust of this CA has not been established.
+
+The DOD will only accept PKI certificates obtained from a DOD-approved internal or external certificate authority. Reliance on CAs for the establishment of secure sessions includes, for example, the use of SSL/TLS certificates.
+
+The HPE 3PAR OS can be configured to use only defined CA(s) for specific purposes. There is no default set of CA certificates included in the product.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE 3PAR StoreServ 3.3.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE 3PAR StoreServ 3.3.x</dc:subject><dc:identifier>5498</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002470</ident><fixtext fixref="F-58916r870215_fix">Create a CSR to be signed by an appropriate CA:
+
+cli% createcert ldap -csr -CN &lt;common name&gt; -SAN &lt;DNS:somednsname or IP:someipaddress&gt;
+
+Copy the output and give it to the CA for signing.
+
+Install the root CA certificate bundle:
+
+cli% importcert ldap -ca stdin
+Copy and paste the ca bundle contents as instructed.
+
+Install the signed certificate from the ca:
+cli% importcert ldap stdin
+Copy and paste the PEM format signed certificate contents as instructed.
+
+The fipsvr process will be restarted.</fixtext><fix id="F-58916r870215_fix" /><check system="C-58972r870214_chk"><check-content-ref href="HPE_3PAR_StoreServ_3.3.x_STIG.xml" name="M" /><check-content>Check that a signed client certificate and CA certificate have been imported for the ldap service:
+
+cli% showcert -service ldap
+
+If the output does not contain DOD PKI certificates of at least two lines of output, one of type "cert" and one of type "rootca", this is a finding.</check-content></check></Rule></Group></Benchmark>

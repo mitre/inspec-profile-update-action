@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="HYCU_for_Nutanix_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2021-08-03">accepted</status><title>HYCU for Nutanix Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 03 Aug 2021</plain-text><plain-text id="generator">3.2.2.36079</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-246819" selected="true" /><select idref="V-246820" selected="true" /><select idref="V-246821" selected="true" /><select idref="V-246822" selected="true" /><select idref="V-246823" selected="true" /><select idref="V-246824" selected="true" /><select idref="V-246825" selected="true" /><select idref="V-246826" selected="true" /><select idref="V-246827" selected="true" /><select idref="V-246828" selected="true" /><select idref="V-246829" selected="true" /><select idref="V-246830" selected="true" /><select idref="V-246831" selected="true" /><select idref="V-246832" selected="true" /><select idref="V-246833" selected="true" /><select idref="V-246834" selected="true" /><select idref="V-246835" selected="true" /><select idref="V-246836" selected="true" /><select idref="V-246837" selected="true" /><select idref="V-246838" selected="true" /><select idref="V-246839" selected="true" /><select idref="V-246840" selected="true" /><select idref="V-246841" selected="true" /><select idref="V-246842" selected="true" /><select idref="V-246843" selected="true" /><select idref="V-246844" selected="true" /><select idref="V-246845" selected="true" /><select idref="V-246846" selected="true" /><select idref="V-246847" selected="true" /><select idref="V-246848" selected="true" /><select idref="V-246849" selected="true" /><select idref="V-246850" selected="true" /><select idref="V-246851" selected="true" /><select idref="V-246852" selected="true" /><select idref="V-246853" selected="true" /><select idref="V-246854" selected="true" /><select idref="V-246855" selected="true" /><select idref="V-246856" selected="true" /><select idref="V-246857" selected="true" /><select idref="V-246858" selected="true" /><select idref="V-246859" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-246819" selected="true" /><select idref="V-246820" selected="true" /><select idref="V-246821" selected="true" /><select idref="V-246822" selected="true" /><select idref="V-246823" selected="true" /><select idref="V-246824" selected="true" /><select idref="V-246825" selected="true" /><select idref="V-246826" selected="true" /><select idref="V-246827" selected="true" /><select idref="V-246828" selected="true" /><select idref="V-246829" selected="true" /><select idref="V-246830" selected="true" /><select idref="V-246831" selected="true" /><select idref="V-246832" selected="true" /><select idref="V-246833" selected="true" /><select idref="V-246834" selected="true" /><select idref="V-246835" selected="true" /><select idref="V-246836" selected="true" /><select idref="V-246837" selected="true" /><select idref="V-246838" selected="true" /><select idref="V-246839" selected="true" /><select idref="V-246840" selected="true" /><select idref="V-246841" selected="true" /><select idref="V-246842" selected="true" /><select idref="V-246843" selected="true" /><select idref="V-246844" selected="true" /><select idref="V-246845" selected="true" /><select idref="V-246846" selected="true" /><select idref="V-246847" selected="true" /><select idref="V-246848" selected="true" /><select idref="V-246849" selected="true" /><select idref="V-246850" selected="true" /><select idref="V-246851" selected="true" /><select idref="V-246852" selected="true" /><select idref="V-246853" selected="true" /><select idref="V-246854" selected="true" /><select idref="V-246855" selected="true" /><select idref="V-246856" selected="true" /><select idref="V-246857" selected="true" /><select idref="V-246858" selected="true" /><select idref="V-246859" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-246819" selected="true" /><select idref="V-246820" selected="true" /><select idref="V-246821" selected="true" /><select idref="V-246822" selected="true" /><select idref="V-246823" selected="true" /><select idref="V-246824" selected="true" /><select idref="V-246825" selected="true" /><select idref="V-246826" selected="true" /><select idref="V-246827" selected="true" /><select idref="V-246828" selected="true" /><select idref="V-246829" selected="true" /><select idref="V-246830" selected="true" /><select idref="V-246831" selected="true" /><select idref="V-246832" selected="true" /><select idref="V-246833" selected="true" /><select idref="V-246834" selected="true" /><select idref="V-246835" selected="true" /><select idref="V-246836" selected="true" /><select idref="V-246837" selected="true" /><select idref="V-246838" selected="true" /><select idref="V-246839" selected="true" /><select idref="V-246840" selected="true" /><select idref="V-246841" selected="true" /><select idref="V-246842" selected="true" /><select idref="V-246843" selected="true" /><select idref="V-246844" selected="true" /><select idref="V-246845" selected="true" /><select idref="V-246846" selected="true" /><select idref="V-246847" selected="true" /><select idref="V-246848" selected="true" /><select idref="V-246849" selected="true" /><select idref="V-246850" selected="true" /><select idref="V-246851" selected="true" /><select idref="V-246852" selected="true" /><select idref="V-246853" selected="true" /><select idref="V-246854" selected="true" /><select idref="V-246855" selected="true" /><select idref="V-246856" selected="true" /><select idref="V-246857" selected="true" /><select idref="V-246858" selected="true" /><select idref="V-246859" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-246819" selected="true" /><select idref="V-246820" selected="true" /><select idref="V-246821" selected="true" /><select idref="V-246822" selected="true" /><select idref="V-246823" selected="true" /><select idref="V-246824" selected="true" /><select idref="V-246825" selected="true" /><select idref="V-246826" selected="true" /><select idref="V-246827" selected="true" /><select idref="V-246828" selected="true" /><select idref="V-246829" selected="true" /><select idref="V-246830" selected="true" /><select idref="V-246831" selected="true" /><select idref="V-246832" selected="true" /><select idref="V-246833" selected="true" /><select idref="V-246834" selected="true" /><select idref="V-246835" selected="true" /><select idref="V-246836" selected="true" /><select idref="V-246837" selected="true" /><select idref="V-246838" selected="true" /><select idref="V-246839" selected="true" /><select idref="V-246840" selected="true" /><select idref="V-246841" selected="true" /><select idref="V-246842" selected="true" /><select idref="V-246843" selected="true" /><select idref="V-246844" selected="true" /><select idref="V-246845" selected="true" /><select idref="V-246846" selected="true" /><select idref="V-246847" selected="true" /><select idref="V-246848" selected="true" /><select idref="V-246849" selected="true" /><select idref="V-246850" selected="true" /><select idref="V-246851" selected="true" /><select idref="V-246852" selected="true" /><select idref="V-246853" selected="true" /><select idref="V-246854" selected="true" /><select idref="V-246855" selected="true" /><select idref="V-246856" selected="true" /><select idref="V-246857" selected="true" /><select idref="V-246858" selected="true" /><select idref="V-246859" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-246819" selected="true" /><select idref="V-246820" selected="true" /><select idref="V-246821" selected="true" /><select idref="V-246822" selected="true" /><select idref="V-246823" selected="true" /><select idref="V-246824" selected="true" /><select idref="V-246825" selected="true" /><select idref="V-246826" selected="true" /><select idref="V-246827" selected="true" /><select idref="V-246828" selected="true" /><select idref="V-246829" selected="true" /><select idref="V-246830" selected="true" /><select idref="V-246831" selected="true" /><select idref="V-246832" selected="true" /><select idref="V-246833" selected="true" /><select idref="V-246834" selected="true" /><select idref="V-246835" selected="true" /><select idref="V-246836" selected="true" /><select idref="V-246837" selected="true" /><select idref="V-246838" selected="true" /><select idref="V-246839" selected="true" /><select idref="V-246840" selected="true" /><select idref="V-246841" selected="true" /><select idref="V-246842" selected="true" /><select idref="V-246843" selected="true" /><select idref="V-246844" selected="true" /><select idref="V-246845" selected="true" /><select idref="V-246846" selected="true" /><select idref="V-246847" selected="true" /><select idref="V-246848" selected="true" /><select idref="V-246849" selected="true" /><select idref="V-246850" selected="true" /><select idref="V-246851" selected="true" /><select idref="V-246852" selected="true" /><select idref="V-246853" selected="true" /><select idref="V-246854" selected="true" /><select idref="V-246855" selected="true" /><select idref="V-246856" selected="true" /><select idref="V-246857" selected="true" /><select idref="V-246858" selected="true" /><select idref="V-246859" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-246819" selected="true" /><select idref="V-246820" selected="true" /><select idref="V-246821" selected="true" /><select idref="V-246822" selected="true" /><select idref="V-246823" selected="true" /><select idref="V-246824" selected="true" /><select idref="V-246825" selected="true" /><select idref="V-246826" selected="true" /><select idref="V-246827" selected="true" /><select idref="V-246828" selected="true" /><select idref="V-246829" selected="true" /><select idref="V-246830" selected="true" /><select idref="V-246831" selected="true" /><select idref="V-246832" selected="true" /><select idref="V-246833" selected="true" /><select idref="V-246834" selected="true" /><select idref="V-246835" selected="true" /><select idref="V-246836" selected="true" /><select idref="V-246837" selected="true" /><select idref="V-246838" selected="true" /><select idref="V-246839" selected="true" /><select idref="V-246840" selected="true" /><select idref="V-246841" selected="true" /><select idref="V-246842" selected="true" /><select idref="V-246843" selected="true" /><select idref="V-246844" selected="true" /><select idref="V-246845" selected="true" /><select idref="V-246846" selected="true" /><select idref="V-246847" selected="true" /><select idref="V-246848" selected="true" /><select idref="V-246849" selected="true" /><select idref="V-246850" selected="true" /><select idref="V-246851" selected="true" /><select idref="V-246852" selected="true" /><select idref="V-246853" selected="true" /><select idref="V-246854" selected="true" /><select idref="V-246855" selected="true" /><select idref="V-246856" selected="true" /><select idref="V-246857" selected="true" /><select idref="V-246858" selected="true" /><select idref="V-246859" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-246819" selected="true" /><select idref="V-246820" selected="true" /><select idref="V-246821" selected="true" /><select idref="V-246822" selected="true" /><select idref="V-246823" selected="true" /><select idref="V-246824" selected="true" /><select idref="V-246825" selected="true" /><select idref="V-246826" selected="true" /><select idref="V-246827" selected="true" /><select idref="V-246828" selected="true" /><select idref="V-246829" selected="true" /><select idref="V-246830" selected="true" /><select idref="V-246831" selected="true" /><select idref="V-246832" selected="true" /><select idref="V-246833" selected="true" /><select idref="V-246834" selected="true" /><select idref="V-246835" selected="true" /><select idref="V-246836" selected="true" /><select idref="V-246837" selected="true" /><select idref="V-246838" selected="true" /><select idref="V-246839" selected="true" /><select idref="V-246840" selected="true" /><select idref="V-246841" selected="true" /><select idref="V-246842" selected="true" /><select idref="V-246843" selected="true" /><select idref="V-246844" selected="true" /><select idref="V-246845" selected="true" /><select idref="V-246846" selected="true" /><select idref="V-246847" selected="true" /><select idref="V-246848" selected="true" /><select idref="V-246849" selected="true" /><select idref="V-246850" selected="true" /><select idref="V-246851" selected="true" /><select idref="V-246852" selected="true" /><select idref="V-246853" selected="true" /><select idref="V-246854" selected="true" /><select idref="V-246855" selected="true" /><select idref="V-246856" selected="true" /><select idref="V-246857" selected="true" /><select idref="V-246858" selected="true" /><select idref="V-246859" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-246819" selected="true" /><select idref="V-246820" selected="true" /><select idref="V-246821" selected="true" /><select idref="V-246822" selected="true" /><select idref="V-246823" selected="true" /><select idref="V-246824" selected="true" /><select idref="V-246825" selected="true" /><select idref="V-246826" selected="true" /><select idref="V-246827" selected="true" /><select idref="V-246828" selected="true" /><select idref="V-246829" selected="true" /><select idref="V-246830" selected="true" /><select idref="V-246831" selected="true" /><select idref="V-246832" selected="true" /><select idref="V-246833" selected="true" /><select idref="V-246834" selected="true" /><select idref="V-246835" selected="true" /><select idref="V-246836" selected="true" /><select idref="V-246837" selected="true" /><select idref="V-246838" selected="true" /><select idref="V-246839" selected="true" /><select idref="V-246840" selected="true" /><select idref="V-246841" selected="true" /><select idref="V-246842" selected="true" /><select idref="V-246843" selected="true" /><select idref="V-246844" selected="true" /><select idref="V-246845" selected="true" /><select idref="V-246846" selected="true" /><select idref="V-246847" selected="true" /><select idref="V-246848" selected="true" /><select idref="V-246849" selected="true" /><select idref="V-246850" selected="true" /><select idref="V-246851" selected="true" /><select idref="V-246852" selected="true" /><select idref="V-246853" selected="true" /><select idref="V-246854" selected="true" /><select idref="V-246855" selected="true" /><select idref="V-246856" selected="true" /><select idref="V-246857" selected="true" /><select idref="V-246858" selected="true" /><select idref="V-246859" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-246819" selected="true" /><select idref="V-246820" selected="true" /><select idref="V-246821" selected="true" /><select idref="V-246822" selected="true" /><select idref="V-246823" selected="true" /><select idref="V-246824" selected="true" /><select idref="V-246825" selected="true" /><select idref="V-246826" selected="true" /><select idref="V-246827" selected="true" /><select idref="V-246828" selected="true" /><select idref="V-246829" selected="true" /><select idref="V-246830" selected="true" /><select idref="V-246831" selected="true" /><select idref="V-246832" selected="true" /><select idref="V-246833" selected="true" /><select idref="V-246834" selected="true" /><select idref="V-246835" selected="true" /><select idref="V-246836" selected="true" /><select idref="V-246837" selected="true" /><select idref="V-246838" selected="true" /><select idref="V-246839" selected="true" /><select idref="V-246840" selected="true" /><select idref="V-246841" selected="true" /><select idref="V-246842" selected="true" /><select idref="V-246843" selected="true" /><select idref="V-246844" selected="true" /><select idref="V-246845" selected="true" /><select idref="V-246846" selected="true" /><select idref="V-246847" selected="true" /><select idref="V-246848" selected="true" /><select idref="V-246849" selected="true" /><select idref="V-246850" selected="true" /><select idref="V-246851" selected="true" /><select idref="V-246852" selected="true" /><select idref="V-246853" selected="true" /><select idref="V-246854" selected="true" /><select idref="V-246855" selected="true" /><select idref="V-246856" selected="true" /><select idref="V-246857" selected="true" /><select idref="V-246858" selected="true" /><select idref="V-246859" selected="true" /></Profile><Group id="V-246819"><title>SRG-APP-000001-NDM-000200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246819r768121_rule" weight="10.0" severity="medium"><version>HYCU-AC-000001</version><title>The HYCU 4.1 application and server must limit the number of concurrent sessions to an organization-defined number for each administrator account and/or administrator account type.</title><description>&lt;VulnDiscussion&gt;Device management includes the ability to control the number of administrators and management sessions that manage a device. Limiting the number of allowed administrators and sessions per administrator based on account type, role, or access type is helpful in limiting risks related to DoS attacks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-50205r768120_fix">The Web UI will only always allow one user session at a time.
+
+For CLI, configure the operating system to limit the max number of concurrent sessions to 1 by adding the following line to "/etc/security/limits.conf":
+hycu            hard    maxlogins       1</fixtext><fix id="F-50205r768120_fix" /><check system="C-50251r768119_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>In the HYCU Web UI, only one logon can be used at a time.
+
+If the previous connection is not logged upon logging on to the Web UI again with the same credentials, this is a finding.
+
+Log on to the HYCU VM console. To check number of allowed concurrent session connections, grep file "/etc/security/limits.conf" by executing the following command:
+grep maxlogins /etc/security/limits.conf
+
+Verify the following line exists:
+hycu            hard    maxlogins       1
+
+If the "maxlogins" value is not set to 1 or is missing, this is a finding.</check-content></check></Rule></Group><Group id="V-246820"><title>SRG-APP-000003-NDM-000202</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246820r768124_rule" weight="10.0" severity="medium"><version>HYCU-AC-000002</version><title>The HYCU 4.1 application and server must initiate a session lock after a 15-minute period of inactivity.</title><description>&lt;VulnDiscussion&gt;A session lock is a temporary network device or administrator-initiated action taken when the administrator stops work but does not log out of the network device. Rather than relying on the user to manually lock their management session prior to vacating the vicinity, network devices need to be able to identify when a management session has idled and take action to initiate the session lock. Once invoked, the session lock must remain in place until the administrator reauthenticates. No other system activity aside from reauthentication must unlock the management session.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-50206r768123_fix">Log on to the VM console and use the following command to edit the "sshd_config" file:
+vi /etc/ssh/sshd_config
+ClientAliveInterval 15m          # 15 minutes
+ClientAliveCountMax 0           # 0 times
+
+Web UI by default performs an automatic logout after 15 minutes of user inactivity. Do the following to further tweak the inactivity timeout if required:
+
+If the "config.properties" file is not yet created, copy the "config.properties.template" file to become the "config.properties" file by typing:
+cp /opt/grizzly/config.properties.template /opt/grizzly/config.properties
+
+Edit the "/opt/grizzly/config.properties" file by running:
+sudo vi /opt/grizzly/config.properties
+
+Locate the following setting:
+# api.session.expiration.minutes=15 #int
+
+Change the number from 15 to the desired value, uncomment the line by removing the #, and save the file by typing:
+:wq!
+
+Restart the grizzly service by running:
+service grizzly restart</fixtext><fix id="F-50206r768123_fix" /><check system="C-50252r768122_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the VM console.
+
+grep ClientAliveInterval /etc/ssh/sshd_config 
+
+If "ClientAliveInterval" is missing or commented out, this is a finding.
+
+If "ClientAliveInterval" exists and is configured to less than 15 minutes, this is a finding.
+
+Log on to the Web UI console and leave the session open. Determine if the VM console session locks after 15 minutes. 
+
+If it does not, this is a finding. 
+
+The Web UI will also time out automatically after 15 minutes of user inactivity. 
+
+If the Web UI session does not log out the inactive user, this is a finding.</check-content></check></Rule></Group><Group id="V-246821"><title>SRG-APP-000317-NDM-000282</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246821r768127_rule" weight="10.0" severity="medium"><version>HYCU-AC-000003</version><title>The HYCU server must terminate shared/group account credentials when members leave the group.</title><description>&lt;VulnDiscussion&gt;A shared/group account credential is a shared form of authentication that allows multiple individuals to access the network device using a single account. If shared/group account credentials are not terminated when individuals leave the group, the user that left the group can still gain access even though they are no longer authorized. There may also be instances when specific user actions need to be performed on the network device without unique administrator identification or authentication. Examples of credentials include passwords and group membership certificates.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002142</ident><fixtext fixref="F-50207r768126_fix">Within the HYCU Web UI, remove the users or groups that no longer need access.
+ 
+If any AD users or groups have been left within the HYCU Web UI in the Self-Service menu, remove users that are no longer needed from their respective AD groups.</fixtext><fix id="F-50207r768126_fix" /><check system="C-50253r768125_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Within the HYCU Web UI in the Self-Service menu, check for users or groups that no longer need access.
+
+If any old or unused accounts or groups exist, this is a finding.</check-content></check></Rule></Group><Group id="V-246822"><title>SRG-APP-000033-NDM-000212</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246822r768130_rule" weight="10.0" severity="high"><version>HYCU-AC-000004</version><title>The HYCU 4.1 Application must enforce the assigned privilege level for each administrator and authorizations for access to all commands relative to the privilege level in accordance with applicable policy for the device.</title><description>&lt;VulnDiscussion&gt;To mitigate the risk of unauthorized access to sensitive information by entities that have been issued certificates by DoD-approved PKIs, all DoD systems must be properly configured to incorporate access control methods that do not rely solely on the possession of a certificate for access. Successful authentication must not automatically give an entity access to an asset or security boundary. Authorization procedures and controls must be implemented to ensure each authenticated entity also has a validated and current authorization. Authorization is the process of determining whether an entity, once authenticated, is permitted to access a specific asset. Network devices use access control policies and enforcement mechanisms to implement this requirement.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-50208r768129_fix">Apply the appropriate user role to the required user from one of the predefined and non-changeable roles: Administrator, Backup Operator, Restore Operator, Backup and Restore Operator, or Viewer.</fixtext><fix id="F-50208r768129_fix" /><check system="C-50254r768128_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Review the Self-Service menu within HYCU to view accounts and user roles (Administrator, Backup Operator, Restore Operator, Backup and Restore Operator, or Viewer).
+
+User roles have a predefined and non-changeable set of user privileges. To check exact set of privileges of each user, navigate to Self-Service context in the HYCU UI.
+
+Click on the question mark in the upper-right corner, followed by "Help with This Page". Scroll down to the "User Roles" section.
+
+If users can perform more functions than those specified for their role, this is a finding.</check-content></check></Rule></Group><Group id="V-246823"><title>SRG-APP-000328-NDM-000286</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246823r768133_rule" weight="10.0" severity="medium"><version>HYCU-AC-000005</version><title>If the HYCU Server or Web UI uses discretionary access control, the network device must enforce organization-defined discretionary access control policies over defined subjects and objects.</title><description>&lt;VulnDiscussion&gt;Discretionary Access Control (DAC) is based on the notion that individual network administrators are "owners" of objects and therefore have discretion over who should be authorized to access the object and in which mode (e.g., read or write). Ownership is usually acquired as a consequence of creating the object or via specified ownership assignment. DAC allows the owner to determine who will have access to objects they control. An example of DAC includes user-controlled file permissions.
+
+Satisfies: SRG-APP-000328-NDM-000286, SRG-APP-000329-NDM-000287&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-002165</ident><ident system="http://cyber.mil/cci">CCI-002169</ident><fixtext fixref="F-50209r768132_fix">Ensure the correct RBAC controls and access are applied properly within the HYCU Web UI's Self-Service menu. Avoid granting too much access to any particular user or group. 
+
+Ensure that any needed DACLs are also being applied to and enforced on any OUs or groups in Active Directory that are being leveraged within the HYCU Web UI Self-Service menu. 
+
+For the HYCU VM console, administrators should only allow access to anyone else deemed to be qualified as a server administrator for the system. 
+
+To check for any unauthorized users, run the following command within the HYCU Web console: 
+cat /etc/passwd
+
+Use the "userdel" command to remove any unauthorized users.</fixtext><fix id="F-50209r768132_fix" /><check system="C-50255r768131_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>HYCU offers the capability to leverage RBAC controls within the Web UI's Self-Service menu. The organization would need to generate and document its own specific requirements around using RBAC in HYCU. 
+
+For the HYCU VM console, administrators should only allow access to anyone else deemed to be qualified as a server administrator for the system. 
+
+Review the groups and accounts within Web UI's Self-Service menu.
+
+If any RBAC setting does not meet the organization's own guidelines, this is a finding.</check-content></check></Rule></Group><Group id="V-246824"><title>SRG-APP-000038-NDM-000213</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246824r768136_rule" weight="10.0" severity="medium"><version>HYCU-AC-000006</version><title>The HYCU virtual machine must enforce approved authorizations for controlling the flow of management information within the network device based on information flow control policies.</title><description>&lt;VulnDiscussion&gt;A mechanism to detect and prevent unauthorized communication flow must be configured or provided as part of the system design. If management information flow is not enforced based on approved authorizations, the network device may become compromised. Information flow control regulates where management information is allowed to travel within a network device. The flow of all management information must be monitored and controlled so it does not introduce any unacceptable risk to the network device or data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><fixtext fixref="F-50210r768135_fix">Enable the firewall by executing the following commands:
+sudo systemctl enable firewalld
+
+sudo systemctl start firewalld</fixtext><fix id="F-50210r768135_fix" /><check system="C-50256r768134_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>By default, HYCU firewall is locked and enabled. The firewall only permits DHCP, SMB, and access to the web UI port 8443.
+
+Verify the firewall is running by executing the following command:
+sudo firewall-cmd --state
+
+If service is not running, this is a finding.
+
+Determine which services and ports are open by executing the following command:
+sudo firewall-cmd --list-all
+
+Output should show the following two lines:
+'services: cockpit dhcpv6-client iscsi-target samba ssh'
+'ports: 8443/tcp'
+
+If more services than those listed above are open, this is a finding.</check-content></check></Rule></Group><Group id="V-246825"><title>SRG-APP-000343-NDM-000289</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246825r768139_rule" weight="10.0" severity="medium"><version>HYCU-AC-000007</version><title>The HYCU server and Web UI must audit the execution of privileged functions.</title><description>&lt;VulnDiscussion&gt;Misuse of privileged functions, either intentionally or unintentionally by authorized users, or by unauthorized external entities that have compromised information system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Auditing the use of privileged functions is one way to detect such misuse and identify the risk from insider threats and the advanced persistent threat.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-50211r768138_fix">Log on to the HYCU VM console and load the STIG audit rules by using the following commands:
+
+1. cp /usr/share/doc/audit/rules/10-base-config.rules /usr/share/doc/audit/rules/30-stig.rules /usr/share/doc/audit/rules/31-privileged.rules /usr/share/doc/audit/rules/99-finalize.rules /etc/audit/rules.d/
+
+2. augenrules --load</fixtext><fix id="F-50211r768138_fix" /><check system="C-50257r768137_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Check the contents of the "/var/log/audit/audit.log" file.
+
+HYCU also maintains Event (Audit) information in the HYCU Web UI Events menu.
+
+Verify the audit log contains records showing when the execution of privileged functions occurred.
+
+If the audit log is not configured or does not have the required contents, this is a finding.</check-content></check></Rule></Group><Group id="V-246826"><title>SRG-APP-000065-NDM-000214</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246826r768142_rule" weight="10.0" severity="medium"><version>HYCU-AC-000008</version><title>The HYCU VM console must be configured to enforce the limit of three consecutive invalid logon attempts, after which time it must block any logon attempt for 15 minutes.</title><description>&lt;VulnDiscussion&gt;By limiting the number of failed logon attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute-forcing, is reduced.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-50212r768141_fix">Go to the "/etc/pam.d/" folder.
+
+Move the current configuration and make new copies to be edited by executing the following commands:
+sudo mv password-auth password-auth-as
+
+sudo mv system-auth system-auth-as
+
+sudo cp password-auth-as password-auth
+
+sudo cp system-auth-as system-auth
+
+Edit the files "password-auth" and "system-auth".
+
+Add the lines:
+auth        required                                     pam_faillock.so preauth silent audit deny=3 even_deny_root fail_interval=60 unlock_time=900
+ after line 
+auth        required                                     pam_env.so
+
+Add:
+auth        required                                     pam_faillock.so authfail audit unlock_time=900
+after
+auth        sufficient                                   pam_unix.so nullok try_first_pass
+
+Add:
+account     required                                     pam_faillock.so
+before 
+account     required                                     pam_unix.so
+
+The files "system-auth" and "password-auth" are identical, so the procedure can be done on one of the files and copied to the second one.
+
+Restart sssd service:
+sudo systemctl restart sssd.service</fixtext><fix id="F-50212r768141_fix" /><check system="C-50258r768140_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU VM console and go to the "/etc/pam.d/" folder. Verify that "password-auth" and "system-auth" contain the following three lines, and the values for deny and unlock_time are as shown.
+
+Commands:
+sudo grep pam_faillock.so /etc/pam.d/password-auth
+sudo grep pam_faillock.so /etc/pam.d/system-auth
+
+Both should displays the following three lines:
+auth        required                                     pam_faillock.so preauth silent audit deny=3 even_deny_root fail_interval=60 unlock_time=900
+auth        required                                     pam_faillock.so authfail audit unlock_time=900
+account     required                                     pam_faillock.so
+
+If the required content is not present, this is a finding.</check-content></check></Rule></Group><Group id="V-246827"><title>SRG-APP-000068-NDM-000215</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246827r790581_rule" weight="10.0" severity="medium"><version>HYCU-AC-000009</version><title>The HYCU VM console must display the Standard Mandatory DoD Notice and Consent Banner before granting access to the device.</title><description>&lt;VulnDiscussion&gt;Display of the DoD-approved use notification before granting access to the network device ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-50213r768144_fix">The GUI logon page welcome message and look of the logon can be changed by following the procedure below:
+
+1. Open a remote session to the HYCU backup controller:
+ssh hycu@&lt;HYCUBackupControllerIPAddress&gt;
+
+2. Copy custom images to the custom-images folder at the following location:
+/opt/grizzly/www/webapp/resources/
+
+3. Open the "customBranding.json" file from the following location:
+/opt/grizzly/www/webapp/
+
+4. In the "customBranding.json file", do the following:
+a. To modify the images, specify the names of the custom files added to the custom-images folder. The logon page image recommended size is 1574x1920.
+b. To modify the welcome message, replace "customWelcomeTitle" and "customWelcomeSubtitle" with the desired text.
+
+5. Perform a hard reload of the HYCU Web UI page in the web browser.
+
+The console and ssh logon can be configured to display the DoD banner by modifying "/etc/issue" with the required text and editing the "/etc/ssh/sshd_config" file to uncomment the banner keyword and configure it to point to "/etc/issue" as shown below:
+banner=/etc/issue</fixtext><fix id="F-50213r768144_fix" /><check system="C-50259r790580_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU VM console and verify the banner setting is in use in the "/etc/ssh/sshd_config" file by executing the following command:
+grep Banner /etc/ssh/sshd_config
+
+If the banner is not set to "/etc/issue.net", this is a finding.
+
+Verify "/etc/issue" contains valid DoD notice text by executing the following command:
+sudo cat /etc/issue
+
+If the DoD notice is not present in the "/etc/issue" file, this is a finding.
+
+Open the HYCU Web UI logon page and verify the mandatory notice is present on the welcome page.
+
+If the mandatory notice is not present at the HYCU Web UI welcome page, this is a finding.</check-content></check></Rule></Group><Group id="V-246828"><title>SRG-APP-000069-NDM-000216</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246828r768148_rule" weight="10.0" severity="medium"><version>HYCU-AC-000010</version><title>The HYCU VM console must retain the Standard Mandatory DoD Notice and Consent Banner on the screen until the administrator acknowledges the usage conditions and takes explicit actions to log on for further access.</title><description>&lt;VulnDiscussion&gt;The banner must be acknowledged by the administrator prior to the device allowing the administrator access to the network device. This provides assurance that the administrator has seen the message and accepted the conditions for access. If the consent banner is not acknowledged by the administrator, DoD will not comply with system use notifications required by law.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000050</ident><fixtext fixref="F-50214r768147_fix">The GUI logon page welcome message and look of the logon can be changed by following the procedure below:
+
+1. Open a remote session to the HYCU backup controller:
+ssh hycu@&lt;HYCUBackupControllerIPAddress&gt;
+
+2. Copy custom images to the custom-images folder at the following location:
+/opt/grizzly/www/webapp/resources/
+
+3. Open the "customBranding.json" file from the following location:
+/opt/grizzly/www/webapp/
+
+4. In the customBranding.json file, do the following:
+a. To modify the images, specify the names of the custom files added to the custom-images folder. The logon page image recommended size is 1574x1920.
+b. To modify the welcome message, replace "customWelcomeTitle" and "customWelcomeSubtitle" with the desired text.
+
+5. Perform a hard reload of the HYCU Web UI page in the web browser.
+
+The console and ssh logon can be configured to display the DoD banner by modifying "/etc/issue.net" with the required text and editing the "/etc/ssh/sshd_config" file to uncomment the banner keyword and configure it to point to "/etc/issue" as shown below:
+banner=/etc/issue.net</fixtext><fix id="F-50214r768147_fix" /><check system="C-50260r768146_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU VM console and verify the banner setting is in use in the "/etc/ssh/sshd_config" file by executing the following command:
+grep Banner /etc/ssh/sshd_config
+
+If the banner is not set to "/etc/issue.net", this is a finding.
+
+Verify "/etc/issue.net" contains valid DoD notice text by executing the following command:
+sudo cat /etc/issue.net
+
+If DoD Notice is not present in the "/etc/issue.net" file, this is a finding.
+
+Open the HYCU Web UI logon page and verify the mandatory notice is present on the Welcome page.
+
+If the mandatory notice is not present at HYCU Web UI welcome page, this is a finding.</check-content></check></Rule></Group><Group id="V-246829"><title>SRG-APP-000516-NDM-000317</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246829r790582_rule" weight="10.0" severity="medium"><version>HYCU-AC-000011</version><title>The HYCU VM/server must be configured to disable SSH.</title><description>&lt;VulnDiscussion&gt;It is detrimental for applications to provide functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Examples of non-essential capabilities include but are not limited to software packages, tools, and demonstration software not related to requirements or providing a wide array of functionality not required for every mission but that cannot be disabled.
+
+Remote access using SSH is not required for administration as all administrative tasks can be performed either through the web interface or local console. SSH must be disabled to limit exposure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-50215r768150_fix">Stop the SSHD daemon:
+$ sudo systemctl stop sshd
+
+Disable the SSHD daemon:
+$ sudo systemctl disable sshd
+
+Note: The service must be stopped before it can be disabled.</fixtext><fix id="F-50215r768150_fix" /><check system="C-50261r768149_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Verify the SSHD daemon has been disabled using the following command:
+$ sudo systemctl status sshd
+
+Loaded: loaded (/usr/lib/systemd/system/sshd.service; disabled)
+
+Active: inactive (dead)
+
+If the SSHD daemon is not disabled and inactive or is not documented and approved for use, this is a finding.</check-content></check></Rule></Group><Group id="V-246830"><title>SRG-APP-000080-NDM-000220</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246830r768242_rule" weight="10.0" severity="high"><version>HYCU-AU-000001</version><title>The HYCU VM console and HYCU Web UI must be configured to use an authentication server for authenticating users prior to granting access to protect against an individual (or process acting on behalf of an individual) falsely denying having performed organization-defined requirements.</title><description>&lt;VulnDiscussion&gt;Centralized management of authentication settings increases the security of remote and nonlocal access methods. This control is a particularly important protection against the insider threat. This requirement supports non-repudiation of actions taken by an individual and is required in order to maintain the integrity of the configuration management process. With robust centralized management, audit records for administrator account access to the organization's network devices can be more readily analyzed for trends and anomalies. The alternative method of defining administrator accounts on each device exposes the device configuration to remote access authentication attacks and system administrators with multiple authenticators for each network device.
+
+Satisfies: SRG-APP-000080-NDM-000220, SRG-APP-000149-NDM-000247, SRG-APP-000175-NDM-000262, SRG-APP-000177-NDM-000263, SRG-APP-000516-NDM-000336&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000166</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><ident system="http://cyber.mil/cci">CCI-000765</ident><fixtext fixref="F-50216r768153_fix">Log on to the HYCU Web UI, select the gear menu, and choose the "Active Directory" option.
+
+Configure Active Directory by specifying needed LDAP strings to allow HYCU to use AD users and groups for access to the Web UI.
+
+When using certificate authentication using client certificate or smart card (CAC authentication), ensure "Service Account" is specified in the Active Directory configuration and "Enable Certification Authentication" is enabled.</fixtext><fix id="F-50216r768153_fix" /><check system="C-50262r768152_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Configure Active Directory authentication by adding one or more Active Directories as authentication sources in HYCU. 
+
+This allows users to log on to the HYCU web user interface with their Active Directory domain accounts or, if certificate authentication is enabled, with a client certificate or a smart card (CAC authentication).
+
+Log on to the HYCU Web UI, select the gear menu, and then choose the Active Directory option.
+
+Verify that at least one Active Directory authentication server is configured. 
+
+If no Active Directory is configured, this is a finding.
+
+When using certificate authentication using client certificate or smart card (CAC authentication), verify "Enable Certification Authentication" is enabled. 
+
+If "Enable Certification Authentication" is not enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-246831"><title>SRG-APP-000091-NDM-000223</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246831r768157_rule" weight="10.0" severity="medium"><version>HYCU-AU-000002</version><title>The HYCU server must generate audit records when successful/unsuccessful attempts to access privileges occur.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. 
+
+Audit records can be generated from various components within the information system (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000172</ident><fixtext fixref="F-50217r768156_fix">Configure the operating system to generate audit records when successful/unsuccessful attempts to access privileges occur.
+
+Log on to the HYCU VM console and run the following command:
+chkconfig auditd on
+
+Log on to the HYCU VM console and load the STIG audit rules by using the following commands:
+
+1. sudo cp /usr/share/audit/sample-rules/10-base-config.rules /usr/share/audit/sample-rules/30-stig.rules /usr/share/audit/sample-rules/31-privileged.rules /usr/share/audit/sample-rules/99-finalize.rules /etc/audit/rules.d/
+
+2. sudo augenrules --load</fixtext><fix id="F-50217r768156_fix" /><check system="C-50263r768155_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>HYCU Web UI user access accounts cannot be edited, only removed and readded from/to user groups in the Web UI Self-Service menu.
+
+After adding a user to a group, log on to the HYCU Web UI, navigate into Events context, and search for message of category "USER_GROUP" and text "Successfully added user to group". Events cannot be modified. 
+
+Log on to the VM console and run the following command:
+chkconfig auditd 
+
+If the Audit Service is not in a running state, this is a finding. 
+
+Verify the operating system generates audit records when successful/unsuccessful attempts to access privileges occur. 
+
+If it does not, this is a finding.</check-content></check></Rule></Group><Group id="V-246832"><title>SRG-APP-000495-NDM-000318</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246832r768160_rule" weight="10.0" severity="medium"><version>HYCU-AU-000003</version><title>The HYCU server must generate audit records when successful/unsuccessful attempts to modify or delete administrator privileges occur.</title><description>&lt;VulnDiscussion&gt;This requirement addresses the configuration of network devices to mitigate the impact of DoS attacks that have occurred or are ongoing on device availability. For each network device, known and potential DoS attacks must be identified and solutions for each type implemented. A variety of technologies exist to limit or, in some cases, eliminate the effects of DoS attacks (e.g., limiting processes or restricting the number of sessions the device opens at one time). Employing increased capacity and bandwidth, combined with service redundancy, may reduce the susceptibility to some DoS attacks.
+
+Satisfies: SRG-APP-000495-NDM-000318, SRG-APP-000499-NDM-000319&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000172</ident><fixtext fixref="F-50218r768159_fix">Log on to the HYCU VM console and load the STIG audit rules by using the following commands:
+
+1. cp /usr/share/doc/audit/rules/10-base-config.rules /usr/share/doc/audit/rules/30-stig.rules /usr/share/doc/audit/rules/31-privileged.rules /usr/share/doc/audit/rules/99-finalize.rules /etc/audit/rules.d/
+
+2. augenrules --load</fixtext><fix id="F-50218r768159_fix" /><check system="C-50264r768158_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Check the contents of the "/var/log/audit/audit.log" file.
+
+HYCU also maintains Event (Audit) information in the "HYCU Web UI Events" menu. 
+
+Verify the audit log contains records showing successful/unsuccessful attempts to modify or delete administrator privileges.
+
+If the audit log is not configured or does not have required contents, this is a finding.</check-content></check></Rule></Group><Group id="V-246833"><title>SRG-APP-000503-NDM-000320</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246833r768163_rule" weight="10.0" severity="medium"><version>HYCU-AU-000005</version><title>The HYCU server must generate audit records when successful/unsuccessful logon attempts occur.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000172</ident><fixtext fixref="F-50219r768162_fix">Log on to the HYCU VM console and load the STIG audit rules by using the following commands:
+
+1. cp /usr/share/doc/audit/rules/10-base-config.rules /usr/share/doc/audit/rules/30-stig.rules /usr/share/doc/audit/rules/31-privileged.rules /usr/share/doc/audit/rules/99-finalize.rules /etc/audit/rules.d/
+
+2. augenrules --load</fixtext><fix id="F-50219r768162_fix" /><check system="C-50265r768161_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Check the contents of the "/var/log/audit/audit.log" file.
+
+HYCU also maintains Event (Audit) information in the "HYCU Web UI Events" menu. 
+
+Verify the audit log contains records showing when successful/unsuccessful logon attempts occur.
+
+If the audit log is not configured or does not have required contents, this is a finding.</check-content></check></Rule></Group><Group id="V-246834"><title>SRG-APP-000504-NDM-000321</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246834r768166_rule" weight="10.0" severity="medium"><version>HYCU-AU-000006</version><title>The HYCU server must generate audit records for privileged activities or other system-level access.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.
+
+Audit records can be generated from various components within the network device (e.g., module or policy filter).
+
+Satisfies: SRG-APP-000504-NDM-000321, SRG-APP-000506-NDM-000323, SRG-APP-000516-NDM-000334&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000169</ident><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-50220r768165_fix">Audit logging is enabled by default within the HYCU VM console. If an administrator disabled it, reenable it by logging on to the HYCU VM console and running the following command:
+chkconfig auditd on
+
+Use the following command to review the logs:
+cat /var/log/secure | less 
+
+Use the "/" character to search the log or timeframe for any undesired/unapproved changes.</fixtext><fix id="F-50220r768165_fix" /><check system="C-50266r768164_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the VM console and run the following command:
+chkconfig auditd 
+
+If the Audit Service is not in a running state, this is a finding. 
+
+Also, if no logs are present in the "/var/log/secure directory", this is a finding.</check-content></check></Rule></Group><Group id="V-246835"><title>SRG-APP-000096-NDM-000226</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246835r768169_rule" weight="10.0" severity="medium"><version>HYCU-AU-000009</version><title>The HYCU server must produce audit records containing information to establish when events occurred, where events occurred, the source of the event, the outcome of the event, and identity of any individual or process associated with the event.</title><description>&lt;VulnDiscussion&gt;It is essential for security personnel to know what is being done, what was attempted, where it was done, when it was done, and by whom it was done in order to compile an accurate risk assessment. Logging the date and time of each detected event provides a means of investigating an attack; recognizing resource utilization or capacity thresholds; or identifying an improperly configured network device. In order to establish and correlate the series of events leading up to an outage or attack, it is imperative the date and time are recorded in all log records. 
+
+In order to compile an accurate risk assessment and provide forensic analysis, it is essential for security personnel to know where events occurred, such as device hardware components, device software modules, session identifiers, filenames, host names, and functionality.
+
+In order to compile an accurate risk assessment and provide forensic analysis, it is essential for security personnel to know the source of the event. The source may be a component, module, or process within the device or an external session, administrator, or device. 
+
+Without information about the outcome of events, security personnel cannot make an accurate assessment as to whether an attack was successful or if changes were made to the security state of the system.
+
+Event outcomes can include indicators of event success or failure and event-specific results (e.g., the security state of the device after the event occurred). As such, they also provide a means to measure the impact of an event and help authorized personnel to determine the appropriate response.
+
+Satisfies: SRG-APP-000096-NDM-000226, SRG-APP-000097-NDM-000227, SRG-APP-000098-NDM-000228, SRG-APP-000099-NDM-000229, SRG-APP-000100-NDM-000230&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000132</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><fixtext fixref="F-50221r768168_fix">Log on to the HYCU VM console and load the STIG audit rules by using the following commands:
+
+1. cp /usr/share/doc/audit/rules/10-base-config.rules /usr/share/doc/audit/rules/30-stig.rules /usr/share/doc/audit/rules/31-privileged.rules /usr/share/doc/audit/rules/99-finalize.rules /etc/audit/rules.d/
+
+2. augenrules --load</fixtext><fix id="F-50221r768168_fix" /><check system="C-50267r768167_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Check the contents of the "/var/log/audit/audit.log" file.
+
+HYCU also maintains Event (Audit) information in the "HYCU Web UI Events" menu. 
+
+Verify the audit log contains records for:
+- When (date and time) of events occurred
+- Where events occurred
+- The source of the event(s)
+- The outcome of the event(s)
+- The identity of any individual or process associated with the event(s)
+
+If the audit log is not configured or does not have required contents, this is a finding.</check-content></check></Rule></Group><Group id="V-246836"><title>SRG-APP-000100-NDM-000230</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246836r768172_rule" weight="10.0" severity="medium"><version>HYCU-AU-000013</version><title>The HYCU server must generate audit records containing information that establishes the identity of any individual or process associated with the event.</title><description>&lt;VulnDiscussion&gt;Without information that establishes the identity of the subjects (i.e., administrators or processes acting on behalf of administrators) associated with the events, security personnel cannot determine responsibility for the potentially harmful event.
+
+Event identifiers (if authenticated or otherwise known) include, but are not limited to, user database tables, primary key values, user names, or process identifiers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001487</ident><fixtext fixref="F-50222r768171_fix">Log on to the HYCU VM console and load the STIG audit rules by using the following commands. 
+
+1. cp /usr/share/doc/audit/rules/10-base-config.rules /usr/share/doc/audit/rules/30-stig.rules /usr/share/doc/audit/rules/31-privileged.rules /usr/share/doc/audit/rules/99-finalize.rules /etc/audit/rules.d/
+
+2. augenrules --load</fixtext><fix id="F-50222r768171_fix" /><check system="C-50268r768170_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Check the contents of the "/var/log/audit/audit.log" file.
+
+HYCU also maintains Event (Audit) information in the "HYCU Web UI Events" menu. 
+
+Verify the audit log contains records showing the identity of an individual or process associated with the event.
+
+If the audit log is not configured or does not have required contents, this is a finding.</check-content></check></Rule></Group><Group id="V-246837"><title>SRG-APP-000101-NDM-000231</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246837r768175_rule" weight="10.0" severity="medium"><version>HYCU-AU-000014</version><title>The HYCU Server must generate audit records containing the full-text recording of privileged commands.</title><description>&lt;VulnDiscussion&gt;Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough information. 
+
+Organizations consider limiting the additional audit information to only that information explicitly needed for specific audit requirements. The additional information required is dependent on the type of information (i.e., sensitivity of the data and the environment within which it resides). At a minimum, the organization must audit full-text recording of privileged commands. The organization must maintain audit trails in sufficient detail to reconstruct events to determine the cause and impact of compromise.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000135</ident><fixtext fixref="F-50223r768174_fix">Log on to the HYCU VM console and load the STIG audit rules by using the following commands. 
+
+1. cp /usr/share/doc/audit/rules/10-base-config.rules /usr/share/doc/audit/rules/30-stig.rules /usr/share/doc/audit/rules/31-privileged.rules /usr/share/doc/audit/rules/99-finalize.rules /etc/audit/rules.d/
+
+2. augenrules --load</fixtext><fix id="F-50223r768174_fix" /><check system="C-50269r768173_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Check the contents of the "/var/log/audit/audit.log" file.
+
+HYCU also maintains Event (Audit) information in the "HYCU Web UI Events" menu. 
+
+Verify the audit log contains records showing full-text recording of privileged commands.
+
+If the audit log is not configured or does not have required contents, this is a finding.</check-content></check></Rule></Group><Group id="V-246838"><title>SRG-APP-000095-NDM-000225</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246838r768178_rule" weight="10.0" severity="medium"><version>HYCU-AU-000015</version><title>The HYCU server must initiate session auditing upon startup and produce audit log records containing sufficient information to establish what type of event occurred.</title><description>&lt;VulnDiscussion&gt;It is essential for security personnel to know what is being done, what was attempted, where it was done, when it was done, and by whom it was done in order to compile an accurate risk assessment. Associating event types with detected events in the application and audit logs provides a means of investigating an attack; recognizing resource utilization or capacity thresholds; or identifying an improperly configured network device. Without this capability, it would be difficult to establish, correlate, and investigate the events leading up to an outage or attack. If auditing is enabled late in the startup process, the actions of some start-up processes may not be audited. Some audit systems also maintain state information only available if auditing is enabled before a given process is created.
+
+Satisfies: SRG-APP-000095-NDM-000225, SRG-APP-000319-NDM-000283, SRG-APP-000353-NDM-000292, SRG-APP-000495-NDM-000318, SRG-APP-000499-NDM-000319, SRG-APP-000503-NDM-000320, SRG-APP-000504-NDM-000321, SRG-APP-000505-NDM-000322, SRG-APP-000092-NDM-000224&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000018</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-001403</ident><ident system="http://cyber.mil/cci">CCI-001404</ident><ident system="http://cyber.mil/cci">CCI-001405</ident><ident system="http://cyber.mil/cci">CCI-001464</ident><ident system="http://cyber.mil/cci">CCI-001914</ident><ident system="http://cyber.mil/cci">CCI-002130</ident><fixtext fixref="F-50224r768177_fix">Audit logging is enabled by default within the HYCU VM console. If an administrator disabled it, reenable it by logging on to the HYCU VM console and running the following command:
+chkconfig auditd on
+
+Use the following command to review the logs:
+cat /var/log/secure | less  
+
+Use the "/" character to search the log or timeframe for any undesired/unapproved changes.
+
+Log on to the HYCU VM console and load the STIG audit rules by using the following commands: 
+
+1. sudo cp /usr/share/audit/sample-rules/10-base-config.rules /usr/share/audit/sample-rules/30-stig.rules /usr/share/audit/sample-rules/31-privileged.rules /usr/share/audit/sample-rules/99-finalize.rules /etc/audit/rules.d/
+
+2. sudo augenrules --load</fixtext><fix id="F-50224r768177_fix" /><check system="C-50270r768176_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>The Grizzly logs and Web UI events capture these activities.
+
+Log on to the VM console and run the following command:
+chkconfig auditd 
+
+If the Audit Service is not in a running state, this is a finding. 
+
+Check the contents of the "/var/log/audit/audit.log" file.
+ 
+If the audit log does not have the required contents, this is a finding.</check-content></check></Rule></Group><Group id="V-246839"><title>SRG-APP-000357-NDM-000293</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246839r768181_rule" weight="10.0" severity="medium"><version>HYCU-AU-000016</version><title>The HYCU server must allocate audit record storage capacity in accordance with organization-defined audit record storage requirements.</title><description>&lt;VulnDiscussion&gt;To ensure network devices have a sufficient storage capacity in which to write the audit logs, they must be able to allocate audit record storage capacity. The task of allocating audit record storage capacity is usually performed during initial device setup if it can be modified.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001849</ident><fixtext fixref="F-50225r768180_fix">Configure the operating system to enforce log rotation and restrict log file size to an organization-defined value by editing "/etc/audit/auditd.conf" files using the following command:
+sudo vi /etc/audit/auditd.conf
+
+Add or modify the following lines to have the required value:
+max_log_file_action = ROTATION
+max_log_file = 6</fixtext><fix id="F-50225r768180_fix" /><check system="C-50271r768179_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU VM console. 
+
+To verify audit logs size is restricted, check for the value of the "max_log_file_action" option in "/etc/audit/auditd.conf" with the following command:
+sudo grep max_log_file_action /etc/audit/auditd.conf
+
+If the "max_log_file_action" value is not set to "ROTATION", this is a finding.</check-content></check></Rule></Group><Group id="V-246840"><title>SRG-APP-000515-NDM-000325</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246840r768184_rule" weight="10.0" severity="medium"><version>HYCU-AU-000017</version><title>The HYCU server must be configured to conduct backups of system-level information when changes occur and to offload audit records onto a different system or media.</title><description>&lt;VulnDiscussion&gt;Information system backup is a critical step in maintaining data assurance and availability. Information system and security-related documentation contains information pertaining to system configuration and security settings. If this information were not backed up, and a system failure were to occur, the security settings would be difficult to reconfigure quickly and accurately. Maintaining a backup of information system and security-related documentation provides for a quicker recovery time when system outages occur.
+
+System-level information includes default and customized settings and security attributes, including ACLs that relate to the network device configuration, as well as software required for the execution and operation of the device. Information system backup is a critical step in ensuring system integrity and availability. If the system fails and there is no backup of the system-level information, a denial-of-service condition is possible for all who use this critical network component.
+
+Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
+
+Offloading is a common process in information systems with limited audit storage capacity.
+
+Satisfies: SRG-APP-000515-NDM-000325, SRG-APP-000516-NDM-000340, SRG-APP-000516-NDM-000341&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000537</ident><ident system="http://cyber.mil/cci">CCI-000539</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-50226r768183_fix">Log on to the HYCU Web UI, go to the "Virtual Machines" menu, and apply a backup policy to the HYCU Server to back it up. 
+
+Any documentation/configuration files stored on the HYCU server will be backed up as a result.</fixtext><fix id="F-50226r768183_fix" /><check system="C-50272r768182_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Verify that HYCU is backing itself up by logging on to the HYCU Web UI and checking the HYCU Controller widget at the HYCU Dashboard. 
+
+If the message "Controller VM is not protected" is found and highlighted with orange, this is a finding.</check-content></check></Rule></Group><Group id="V-246841"><title>SRG-APP-000360-NDM-000295</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246841r768187_rule" weight="10.0" severity="medium"><version>HYCU-AU-000018</version><title>The HYCU Web UI must generate an immediate real-time alert of all audit failure events requiring real-time alerts.</title><description>&lt;VulnDiscussion&gt;It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without a real-time alert, security personnel may be unaware of an impending failure of the audit capability and system operation may be adversely affected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001858</ident><fixtext fixref="F-50227r768186_fix">Log on to the HYCU Web UI and go to the "Events" menu and open "Email Notifications".
+ 
+Ensure that all the appropriate/relevant categories are selected and that the "Status" includes failures.
+ 
+Add a "Subject" for the Email Notifications and email address for necessary auditors or HYCU administrators.</fixtext><fix id="F-50227r768186_fix" /><check system="C-50273r768185_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU Web UI and review the Events menu and Email Notifications to verify that all appropriate/relevant audit failure events are included in the "Category" drop-down menu. 
+
+If these events are not shown (reference a recent event capturing a login to HYCU for validation), this is a finding.</check-content></check></Rule></Group><Group id="V-246842"><title>SRG-APP-000373-NDM-000298</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246842r768190_rule" weight="10.0" severity="medium"><version>HYCU-AU-000019</version><title>The HYCU server must be configured to synchronize internal information system clocks using redundant authoritative time sources.</title><description>&lt;VulnDiscussion&gt;The loss of connectivity to a particular authoritative time source will result in the loss of time synchronization (free-run mode) and increasingly inaccurate time stamps on audit events and other functions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001893</ident><fixtext fixref="F-50228r768189_fix">Verify time synchronization by logging on to the HYCU console and executing the following command:
+sudo systemctl start chronyd
+
+Additional assistance can be found at: https://support.hycu.com/hc/en-us/articles/115005424345-HYCU-system-time</fixtext><fix id="F-50228r768189_fix" /><check system="C-50274r768188_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>HYCU is a VM that synchronizes time with the Nutanix or VMware platform as part of maintenance task using the "chronyd" daemon.
+
+To verify the service is up and running, execute the following command:
+systemctl status chronyd
+
+If service is not active (running), this is a finding.</check-content></check></Rule></Group><Group id="V-246843"><title>SRG-APP-000120-NDM-000237</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246843r768193_rule" weight="10.0" severity="medium"><version>HYCU-AU-000020</version><title>The HYCU server must protect audit information from unauthorized deletion.</title><description>&lt;VulnDiscussion&gt;Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity.
+
+If audit data were to become compromised, then forensic analysis and discovery of the true source of potentially malicious system activity is impossible to achieve. 
+
+To ensure the veracity of audit data, the network device must protect audit information from unauthorized deletion. This requirement can be achieved through multiple methods, which will depend upon system architecture and design. Some commonly employed methods include: ensuring log files receive the proper file system permissions utilizing file system protections, restricting access, and backing up log data to ensure log data is retained. 
+
+Network devices providing a user interface to audit data will leverage user permissions and roles identifying the user accessing the data and the corresponding rights the user enjoys in order to make access decisions regarding the deletion of audit data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000164</ident><fixtext fixref="F-50229r768192_fix">Change the mode of the audit log files with the following command:
+# chmod 0600 [audit_file]
+
+Change the owner and group owner of the audit log files with the following command:
+# chown root:root [audit_file]</fixtext><fix id="F-50229r768192_fix" /><check system="C-50275r768191_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Verify the operating system audit records have proper permissions and ownership.
+
+Log on to the HYCU console and list the full permissions and ownership of the audit log files with the following command:
+# sudo ls -la /var/log/audit
+total 4512
+drwx------. 2 root root 23 Apr 25 16:53 .
+drwxr-xr-x. 17 root root 4096 Aug 9 13:09 ..
+-rw-------. 1 root root 8675309 Aug 9 12:54 audit.log
+
+Audit logs must be mode 0600 or less permissive. If any are more permissive, this is a finding.
+
+The owner and group owner of all audit log files must both be "root". If any other owner or group owner is listed, this is a finding.</check-content></check></Rule></Group><Group id="V-246844"><title>SRG-APP-000121-NDM-000238</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246844r768196_rule" weight="10.0" severity="medium"><version>HYCU-AU-000021</version><title>The HYCU server must protect audit tools from unauthorized access, modification, and deletion.</title><description>&lt;VulnDiscussion&gt;Protecting audit data also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operation on audit data.
+
+Network devices providing tools to interface with audit data will leverage user permissions and roles identifying the user accessing the tools and the corresponding rights the user enjoys in order to make access decisions regarding the access to audit tools.
+
+Audit tools include, but are not limited to, vendor-provided and open source audit tools needed to successfully view and manipulate audit information system activity and records. Audit tools include custom queries and report generators.
+
+Satisfies: SRG-APP-000121-NDM-000238, SRG-APP-000122-NDM-000239, SRG-APP-000123-NDM-000240&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001493</ident><ident system="http://cyber.mil/cci">CCI-001494</ident><ident system="http://cyber.mil/cci">CCI-001495</ident><fixtext fixref="F-50230r768195_fix">Change the mode of the audit log files with the following command:
+# chmod 0640 [audit_file]
+
+Change the owner and group owner of the audit files with the following command:
+# chown root:root [audit_file]</fixtext><fix id="F-50230r768195_fix" /><check system="C-50276r768194_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Verify the operating system audit tools and config files have proper permissions and ownership.
+
+Log on to the HYCU console and list the full permissions and ownership of the audit folder with the following command:
+sudo ls  -al /etc/audit
+
+Folder and files must be owned by root and the following permissions must be set: 
+drwxr-x---.   4 root root  126 Mar 15 10:16 .
+drwxr-xr-x. 106 root root 8192 May  6 13:58 ..
+-rw-r-----.   1 root root  751 Apr 24  2020 audisp-remote.conf
+-rw-r-----.   1 root root  856 Apr 24  2020 auditd.conf
+-rw-r-----.   1 root root  107 Feb  3 13:18 audit.rules
+-rw-r-----.   1 root root  127 Apr 24  2020 audit-stop.rules
+drwxr-x---.   2 root root   67 Mar 15 10:16 plugins.d
+drwxr-x---.   2 root root   25 Feb  3 13:13 rules.d
+
+Audit files must be mode 0640 or less permissive. If any are more permissive, this is a finding.
+
+The owner and group owner of all audit files must both be "root". If any other owner or group owner is listed, this is a finding.</check-content></check></Rule></Group><Group id="V-246845"><title>SRG-APP-000516-NDM-000351</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246845r790585_rule" weight="10.0" severity="high"><version>HYCU-AU-000025</version><title>The HYCU appliance must be running a release that is currently supported by the vendor.</title><description>&lt;VulnDiscussion&gt;Network devices running an unsupported operating system lack current security fixes required to mitigate the risks associated with recent vulnerabilities.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-50231r790584_fix">Perform upgrade to the supported HYCU version following upgrade section of user manual.</fixtext><fix id="F-50231r790584_fix" /><check system="C-50277r790583_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Verify that the HYCU device is running a supported version.
+
+In the HYCU Web UI, on top bar in the right corner click on question mark icon &gt;&gt; About. The About menu shows the running version of HYCU.
+
+If HYCU version is not on the list of supported versions, as specified in the End-of-Life Milestones and Dates, this is a finding.
+
+Note: The HYCU support portal specifies the HYCU end of life policies. Visit https://www.hycu.com/wp-content/uploads/2017/03/HYCU-EOL-policy-Milestones-and-Dates.pdf to determine if the system is utilizing a supported version.</check-content></check></Rule></Group><Group id="V-246846"><title>SRG-APP-000516-NDM-000351</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246846r768202_rule" weight="10.0" severity="medium"><version>HYCU-AU-000026</version><title>The HYCU server must back up audit records at least every seven days onto a different system or system component than the system or component being audited.</title><description>&lt;VulnDiscussion&gt;Protection of log data includes assuring log data is not accidentally lost or deleted. Regularly backing up audit records to a different system or onto separate media than the system being audited helps to assure, in the event of a catastrophic system failure, the audit records will be retained.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-50232r768201_fix">Log on to the HYCU Web UI. Under the "Policies" menu, create a new Policy with "Backup Every" setting set to seven days or less. 
+
+Assign this policy to the HYCU Controller VM from the "Virtual Machines" menu by left-clicking the HYCU controller VM, and then the "Policies" icon (top right), and then selecting the configured policy and left-clicking "Assign".</fixtext><fix id="F-50232r768201_fix" /><check system="C-50278r768200_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to HYCU's Web UI and verify that a backup policy, with "Backup Every" setting set to seven days or less, has been applied to the HYCU Controller VM. 
+
+Navigate to the "Virtual Machines" menu, and in the table list of Virtual Machines, identify the assigned policy in the "Policy" column of the "HYCU VM" row. 
+
+Navigate to the "Policy" menu, left-click the assigned policy, and review "Detailed view".
+
+Verify "Backup Every" setting is set to seven days or less. 
+
+If "Policy" is not assigned to the HYCU Controller VM or assigned policy has "Backup Every" setting set to more than seven days, this is a finding.
+
+Verify HYCU Controller VM backups are successful and are taken every seven days or less. 
+
+Navigate to the "Virtual Machines" menu and left-click "HYCU Controller VM" to reveal all the existing backups (restore points). 
+
+Verify dates between restore points are no longer than seven days.
+
+If the HYCU Controller VM does not have any restore points visible, or if time between restore points is more than seven days, this is a finding.</check-content></check></Rule></Group><Group id="V-246847"><title>SRG-APP-000516-NDM-000344</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246847r768205_rule" weight="10.0" severity="medium"><version>HYCU-CM-000003</version><title>The HYCU server must obtain its public key certificates from an appropriate certificate policy through an approved service provider.</title><description>&lt;VulnDiscussion&gt;For user certificates, each organization obtains certificates from an approved, shared service provider, as required by OMB policy. For federal agencies operating a legacy public key infrastructure cross-certified with the Federal Bridge Certification Authority at medium assurance or higher, this Certification Authority will suffice.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001159</ident><fixtext fixref="F-50233r768204_fix">Log on to the HYCU Web UI and generate a CSR within the gear menu and "SSL Certificates" menu.
+ 
+Submit this CSR to a DoD PKI authority to have a new certificate created. 
+
+Note: By default, HYCU is configured with a self-signed certificate, but this can be replaced with a DoD-issued certificate. This certificate can be configured by logging on to the HYCU Web UI, going to the gear menu and "SSL Certificates" menu, and importing the DoD-issued certificate.</fixtext><fix id="F-50233r768204_fix" /><check system="C-50279r768203_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Open a new HYCU Web UI browser tab and verify there is no warning prompt before proceeding to the Web UI logon page. 
+
+If a warning appears in the web browser stating "Not secure", this is a finding.</check-content></check></Rule></Group><Group id="V-246848"><title>SRG-APP-000142-NDM-000245</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246848r768208_rule" weight="10.0" severity="high"><version>HYCU-CM-000004</version><title>The network device must be configured to prohibit the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services.</title><description>&lt;VulnDiscussion&gt;In order to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable unused or unnecessary physical and logical ports/protocols on information systems.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-50234r768207_fix">Enable the firewall by logging on to the HYCU console and executing the following commands:
+sudo systemctl enable firewalld
+
+sudo systemctl start firewalld</fixtext><fix id="F-50234r768207_fix" /><check system="C-50280r768206_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>The HYCU firewall is, by default, locked and enabled. Only the required/necessary services and ports are running on the HYCU Server.
+
+Verify the firewall is running by executing the following command:
+sudo firewall-cmd --state
+
+If the service is not running, this is a finding.
+
+Determine which services and ports are open by executing the following command: 
+sudo firewall-cmd --list-all
+
+Output should show following two lines:
+'services: cockpit dhcpv6-client iscsi-target samba ssh'
+'ports: 8443/tcp'
+
+If more services than these are open, this is a finding.</check-content></check></Rule></Group><Group id="V-246849"><title>SRG-APP-000156-NDM-000250</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246849r768211_rule" weight="10.0" severity="medium"><version>HYCU-IA-000001</version><title>The network device must implement replay-resistant authentication mechanisms for network access to privileged accounts.</title><description>&lt;VulnDiscussion&gt;A replay attack may enable an unauthorized user to gain access to the application. Authentication sessions between the authenticator and the application validating the user credentials must not be vulnerable to a replay attack.
+
+An authentication process resists replay attacks if it is impractical to achieve a successful authentication by recording and replaying a previous authentication message. 
+
+Techniques used to address this include protocols using nonces (e.g., numbers generated for a specific one-time use) or challenges (e.g., TLS, WS_Security). Additional techniques include time-synchronous or challenge-response one-time authenticators.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001941</ident><fixtext fixref="F-50235r768210_fix">Log on to the HYCU console and configure SSH to use the SSH-2 protocol by editing the Protocol variable in the file "/etc/ssh/sshd_config".</fixtext><fix id="F-50235r768210_fix" /><check system="C-50281r768209_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>The use of SSH-2 protocol for network/remote access prevents replay attacks. The SSH-2 protocol is the standard for the SSH daemon in CentOS 8 used by HYCU.
+
+To determine the SSH version in use, log on to the HYCU console and execute the following command:
+ssh -v localhost
+
+If the output does not show remote protocol version 2.0 in use, this is a finding.
+
+HYCU web access uses TLS, which addresses this threat. HYCU web access cannot be configured not to use TLS.</check-content></check></Rule></Group><Group id="V-246850"><title>SRG-APP-000395-NDM-000347</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246850r768214_rule" weight="10.0" severity="medium"><version>HYCU-IA-000002</version><title>The HYCU server must authenticate Network Time Protocol sources using authentication that is cryptographically based.</title><description>&lt;VulnDiscussion&gt;If Network Time Protocol is not authenticated, an attacker can introduce a rogue NTP server. This rogue server can then be used to send incorrect time information to network devices, which will make log timestamps inaccurate and affect scheduled actions. NTP authentication is used to prevent this tampering by authenticating the time source.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001967</ident><fixtext fixref="F-50236r768213_fix">Enable synchronization by logging on to the HYCU console and executing the following command:
+sudo systemctl start chronyd</fixtext><fix id="F-50236r768213_fix" /><check system="C-50282r768212_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>HYCU is a VM that synchronizes time with the Nutanix or VMware platform as part of the maintenance task using the "chronyd" daemon.
+
+To verify the service is synchronizing the NTP servers from Nutanix as part of maintenance task, log on to the HYCU console and edit the "/etc/chrony.conf" configuration file by executing the following command: 
+sudo vi /etc/chrony.conf
+
+Change the last line in the file showing the value of server variable to an incorrect IP and save the file (:wq!).
+
+Trigger the maintenance task by restarting HYCU services with the following command:
+sudo systemctl restart grizzly
+
+If the value of the server variable inside the "/etc/chrony.conf" file is not fixed to match Nutanix NTP servers, this is a finding.</check-content></check></Rule></Group><Group id="V-246851"><title>SRG-APP-000166-NDM-000254</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246851r768217_rule" weight="10.0" severity="medium"><version>HYCU-IA-000003</version><title>The HYCU server must enforce password complexity by requiring that at least one uppercase character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex passwords helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password is, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords should only be used when MFA using PKI is not available, and for the account of last resort and root account.
+
+Satisfies: SRG-APP-000166-NDM-000254, SRG-APP-000167-NDM-000255, SRG-APP-000168-NDM-000256, SRG-APP-000169-NDM-000257&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000192</ident><ident system="http://cyber.mil/cci">CCI-000193</ident><ident system="http://cyber.mil/cci">CCI-000194</ident><ident system="http://cyber.mil/cci">CCI-000205</ident><ident system="http://cyber.mil/cci">CCI-001619</ident><fixtext fixref="F-50237r768216_fix">Configure the operating system to enforce a minimum class setting.
+
+Add the following line to "/etc/security/pwquality.conf" (or modify the line to have the required value):
+minclass = 5</fixtext><fix id="F-50237r768216_fix" /><check system="C-50283r768215_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU VM console. Check for the value of the "minlen" option in "/etc/security/pwquality.conf" with the following command:
+grep minclass /etc/security/pwquality.conf 
+
+If the minclass value is not set to "5", this is a finding.</check-content></check></Rule></Group><Group id="V-246852"><title>SRG-APP-000164-NDM-000252</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246852r768220_rule" weight="10.0" severity="medium"><version>HYCU-IA-000004</version><title>The network device must enforce a minimum 15-character password length.</title><description>&lt;VulnDiscussion&gt;Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password.
+
+The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised. Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.
+
+Satisfies: SRG-APP-000164-NDM-000252, SRG-APP-000343-NDM-000289&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000205</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-50238r768219_fix">Configure the operating system to enforce a minimum class setting.
+
+Add the following line to "/etc/security/pwquality.conf" (or modify the line to have the required value).
+minlen = 15</fixtext><fix id="F-50238r768219_fix" /><check system="C-50284r768218_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Check for the value of the "minlen" option in "/etc/security/pwquality.conf" with the following command.
+grep minlen /etc/security/pwquality.conf 
+
+If the minlen value is not set to "15", this is a finding.</check-content></check></Rule></Group><Group id="V-246853"><title>SRG-APP-000170-NDM-000329</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246853r768223_rule" weight="10.0" severity="medium"><version>HYCU-IA-000005</version><title>The HYCU server must require that when a password is changed, the characters are changed in at least eight of the positions within the password.</title><description>&lt;VulnDiscussion&gt;If the application allows the user to consecutively reuse extensive portions of passwords, this increases the chances of password compromise by increasing the window of opportunity for attempts at guessing and brute-force attacks.
+
+The number of changed characters refers to the number of changes required with respect to the total number of positions in the current password. In other words, characters may be the same within the two passwords; however, the positions of the like characters must be different.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords should only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000195</ident><fixtext fixref="F-50239r768222_fix">Configure the operating system to enforce a minimum class setting.
+
+Add the following line to "/etc/security/pwquality.conf" (or modify the line to have the required value).
+minclass = 5</fixtext><fix id="F-50239r768222_fix" /><check system="C-50285r768221_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU VM console. Check for the value of the "minclass" option in "/etc/security/pwquality.conf" with the following command:
+grep mincla /etc/security/pwquality.conf 
+
+If the minclass value is not set to "5", this is a finding.</check-content></check></Rule></Group><Group id="V-246854"><title>SRG-APP-000080-NDM-000345</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246854r768226_rule" weight="10.0" severity="medium"><version>HYCU-IA-000006</version><title>The HYCU VM console must not have any default manufacturer passwords when deployed.</title><description>&lt;VulnDiscussion&gt;Virtual Machines not protected with strong password schemes provide the opportunity for anyone to crack the password and gain access to the device, which can result in loss of availability, confidentiality, or integrity of network traffic. Many default vendor passwords are well known or are easily guessed; therefore, not removing them prior to deploying the network device into production provides an opportunity for a malicious user to gain unauthorized access to the device.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002041</ident><fixtext fixref="F-50240r768225_fix">Log on to the HYCU VM console with the following username and password:
+Username: "hycu" 
+Password: "hycu/4u"
+
+Run the passwd command to change the default password.
+ 
+In the HYCU Web UI, log on and change the password by selecting the Admin account in the upper-right corner and changing the password. You will be logged off and prompted to log on with the updated credentials.</fixtext><fix id="F-50240r768225_fix" /><check system="C-50286r768224_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU VM console. 
+
+Log on to the HYCU Web UI with the following default credentials: 
+Username: "hycu"
+Password: "hycu/4u"
+
+Log on to the HYCU Web UI with the following default credentials:
+Username: "admin"
+Password: "admin"
+
+If the logon with either of the default credentials is successful, this is a finding.</check-content></check></Rule></Group><Group id="V-246855"><title>SRG-APP-000400-NDM-000313</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246855r768229_rule" weight="10.0" severity="medium"><version>HYCU-IA-000007</version><title>The HYCU server must prohibit the use of cached authenticators after an organization-defined time period.</title><description>&lt;VulnDiscussion&gt;Some authentication implementations can be configured to use cached authenticators.
+
+If cached authentication information is out-of-date, the validity of the authentication information may be questionable.
+
+The organization-defined time period should be established for each device depending on the nature of the device; for example, a device with just a few administrators in a facility with spotty network connectivity may merit a longer caching time period than a device with many administrators.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002007</ident><fixtext fixref="F-50241r768228_fix">Log on to the HYCU VM console and run the following command:
+grep Defaults /etc/sudoers
+
+Verify the "Defaults" value is set to "env_reset,timestamp_timeout=0".
+
+If it is not set, run sudo vi /etc/sudoers and configure the timeout value to "0" by adding/editing the following line into the file and saving it:
+Defaults  env_reset,timestamp_timeout=0</fixtext><fix id="F-50241r768228_fix" /><check system="C-50287r768227_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU VM console and run the following command:
+grep Defaults /etc/sudoers
+
+Verify the "Defaults" value is set to "env_reset,timestamp_timeout=0".
+
+If the "Defaults" value is not set to "env_reset,timestamp_timeout=0", this is a finding.</check-content></check></Rule></Group><Group id="V-246856"><title>SRG-APP-000179-NDM-000265</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246856r768232_rule" weight="10.0" severity="high"><version>HYCU-IA-000008</version><title>The HYCU server must use FIPS-validated algorithms for authentication to a cryptographic module and Keyed-Hash Message Authentication Code (HMAC) to protect the integrity and confidentiality of remote maintenance sessions.</title><description>&lt;VulnDiscussion&gt;Unapproved algorithms used by the cryptographic module are not validated and therefore cannot be relied on to provide confidentiality or integrity, and DoD data may be compromised.
+
+Remote maintenance and diagnostic activities are activities conducted by individuals communicating through an external network (e.g., the internet) or an internal network. 
+
+FIPS 140-2 is the current standard for validating that mechanisms used to access cryptographic modules utilize authentication that meets DoD requirements. However, authentication algorithms must configure security processes to use only FIPS-approved and NIST-recommended authentication algorithms.
+
+This requires the use of secure protocols instead of their unsecured counterparts, such as SSH instead of telnet, SCP instead of FTP, and HTTPS instead of HTTP. If unsecured protocols (lacking cryptographic mechanisms) are used for sessions, the contents of those sessions will be susceptible to eavesdropping, potentially putting sensitive data (including administrator passwords) at risk of compromise and potentially allowing hijacking of maintenance sessions.
+
+Currently, HMAC is the only FIPS-approved algorithm for generating and verifying message/data authentication codes in accordance with FIPS 198-1. Products that are FIPS 140-2 validated will have an HMAC that meets specification; however, the option must be configured for use as the only message authentication code used for authentication to cryptographic modules.
+
+Satisfies: SRG-APP-000179-NDM-000265, SRG-APP-000411-NDM-000330, SRG-APP-000412-NDM-000331&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><ident system="http://cyber.mil/cci">CCI-002890</ident><ident system="http://cyber.mil/cci">CCI-003123</ident><fixtext fixref="F-50242r768231_fix">Stop the HYCU web server: 
+sudo systemctl stop grizzly.service
+
+Enable FIPS-compliant mode: 
+sudo /opt/grizzly/bin/enable_fips.sh
+
+Reboot the HYCU virtual machines:
+shutdown -r now</fixtext><fix id="F-50242r768231_fix" /><check system="C-50288r768230_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>When FIPS mode is enabled, the HYCU application will use FIPS-compliant behavior. Validation of FIPS status can be done using the following commands:
+'cat /proc/sys/crypto/fips_enabled' 
+
+If command output does not show "1", this is a finding.
+
+'fips-mode-setup --check'
+
+If command output does not show "FIPS mode is enabled", this is a finding.
+
+'update-crypto-policies --show'
+
+If command output does not show "FIPS", this is a finding.</check-content></check></Rule></Group><Group id="V-246857"><title>SRG-APP-000190-NDM-000267</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246857r768243_rule" weight="10.0" severity="high"><version>HYCU-SC-000001</version><title>The HYCU server and Web UI must terminate all network connections associated with a device management session at the end of the session, or the session must be terminated after 15 minutes of inactivity except to fulfill documented and validated mission requirements.</title><description>&lt;VulnDiscussion&gt;Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. In addition, quickly terminating an idle session will also free up resources committed by the managed network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001133</ident><fixtext fixref="F-50243r768234_fix">Configure the operating system to enforce timeout settings.
+
+Add the following line to "/home/hycu/.bashrc" (or modify the line to have the required value):
+TMOUT=900
+
+Add the following line to "/etc/ssh/sshd_config" (or modify the line to have the required value):
+ClientAliveInterval 900
+
+Edit the "/opt/grizzly/config.properties" file by running:
+sudo vi /opt/grizzly/config.properties
+
+Add the following line or modify the line to have the required value:
+api.session.expiration.minutes=15
+
+Save the file by typing:
+:wq!</fixtext><fix id="F-50243r768234_fix" /><check system="C-50289r768233_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU VM console. For console connections, check for the value of the "TMOUT" option in "/home/hycu/.bashrc" with the following command:
+grep TMOUT /home/hycu/.bashrc
+
+If the "TMOUT" value is not set to 900 or less, this is a finding.
+
+For SSH connections, check for the value of the "ClientAliveInterval" option in "/etc/ssh/sshd_config" with the following command:
+grep ClientAliveInterval /etc/ssh/sshd_config
+
+If the "ClientAliveInterval" value is not set to 15 or less, this is a finding.
+
+For UI connections, run the following command to check configured HYCU session timeout:
+cat /opt/grizzly/config.properties | grep api.session.expiration.minutes
+
+If not configured at "15" or less, this is a finding.</check-content></check></Rule></Group><Group id="V-246858"><title>SRG-APP-000224-NDM-000270</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246858r768238_rule" weight="10.0" severity="medium"><version>HYCU-SC-000002</version><title>The network device must generate unique session identifiers using a FIPS 140-2 approved random number generator.</title><description>&lt;VulnDiscussion&gt;Sequentially generated session IDs can be easily guessed by an attacker. Employing the concept of randomness in the generation of unique session identifiers helps to protect against brute-force attacks to determine future session identifiers.
+
+Unique session IDs address man-in-the-middle attacks, including session hijacking or insertion of false information into a session. If the attacker is unable to identify or guess the session information related to pending application traffic, they will have more difficulty in hijacking the session or otherwise manipulating valid sessions.
+
+This requirement is applicable to devices that use a web interface for device management.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001188</ident><fixtext fixref="F-50244r768237_fix">Stop the HYCU web server: 
+sudo systemctl stop grizzly.service
+
+Enable FIPS-compliant mode: 
+sudo /opt/grizzly/bin/enable_fips.sh
+
+Reboot the HYCU virtual machines:
+shutdown -r now</fixtext><fix id="F-50244r768237_fix" /><check system="C-50290r768236_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>When FIPS mode is enabled, HYCU will use FIPS-compliant behavior. Validation of FIPS status can be done using the following commands:
+'cat /proc/sys/crypto/fips_enabled' 
+
+If command output does not show "1", this is a finding.
+
+'fips-mode-setup --check'
+
+If command output does not show "FIPS mode is enabled", this is a finding.
+
+'update-crypto-policies --show'
+
+If command output does not show "FIPS", this is a finding.</check-content></check></Rule></Group><Group id="V-246859"><title>SRG-APP-000516-NDM-000350</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-246859r768241_rule" weight="10.0" severity="high"><version>HYCU-SI-000001</version><title>The HYCU Web UI must be configured to send log data to a central log server for forwarding alerts to the administrators and the ISSO.</title><description>&lt;VulnDiscussion&gt;The aggregation of log data kept on a syslog server can be used to detect attacks and trigger an alert to the appropriate security personnel. The stored log data can used to detect weaknesses in security that enable the network IA team to find and address these weaknesses before breaches can occur. Reviewing these logs, whether before or after a security breach, are important in showing whether someone is an internal employee or an outside threat.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HYCU for Nutanix</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HYCU for Nutanix</dc:subject><dc:identifier>5411</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002605</ident><fixtext fixref="F-50245r768240_fix">Log on to the HYCU Web UI and verify that an SMTP server is configured under the gear menu and "SMTP Server Settings". 
+
+Within the "Events" menu, click on the email notifications button and configure the items to be sent in an email notification. Ensure the correct email address is used for the individual(s) who will need to receive the notifications. 
+
+To ship/send logs from the HYCU VM to a central logging server (e.g., Splunk, SolarWinds), engage with the log server vendor and HYCU Support. In the absence of another third-party solution, consider setting up a Rsyslog Server and make HYCU a client. 
+
+To configure an Rsyslog client:
+
+# in addition to existing settings (output to local log files),
+
+# send logs to remote host, too
+
+[root@hycuserver ~]#  vi /etc/rsyslog.conf
+# add to the end
+
+action(type="omfwd"
+       queue.filename="fwdRule_customerloggingservername.local"
+       queue.maxdiskspace="1g"
+       queue.saveonshutdown="on"
+       queue.type="LinkedList"
+       action.resumeRetryCount="-1"
+       Target="fwdRule_customerloggingservername.local" Port="514" Protocol="tcp")
+
+# for the case to send specific facility logs
+
+# for example, set [authpriv]
+
+[root@hycuserver ~]#  vi /etc/rsyslog.conf
+# comment put existing line if you do not want to output to local filesystem
+
+#authpriv.*                   /var/log/secure
+authpriv.* action(type="omfwd"
+       queue.filename="fwdRule_fwdRule_customerloggingservername.local"
+       queue.maxdiskspace="1g"
+       queue.saveonshutdown="on"
+       queue.type="LinkedList"
+       action.resumeRetryCount="-1"
+       Target="fwdRule_customerloggingservername.local" Port="514" Protocol="tcp")
+
+[root@hycuserver ~]#  systemctl restart rsyslog</fixtext><fix id="F-50245r768240_fix" /><check system="C-50291r768239_chk"><check-content-ref href="HYCU_for_Nutanix_STIG.xml" name="M" /><check-content>Log on to the HYCU Web UI and verify that an SMTP server is configured under the gear menu and SMTP Server Settings. 
+
+Verify that Email Notifications have been enabled to send predetermined alerts to an ISSO and/or HYCU Admin.
+ 
+Verify that HYCU VM logs are being set to a central logging server by way of a mechanism that is specific to the customer's central logging server. 
+
+If Auditors and Security Ops teams are not receiving email notifications or logs from HYCU, this is a finding.</check-content></check></Rule></Group></Benchmark>

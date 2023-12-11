@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="VMW_vRealize_Automation_7-x_HA_Proxy_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2018-10-12">accepted</status><title>VMW vRealize Automation 7.x HA Proxy Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 28 Sep 2018</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-89139" selected="true" /><select idref="V-89141" selected="true" /><select idref="V-89143" selected="true" /><select idref="V-89145" selected="true" /><select idref="V-89147" selected="true" /><select idref="V-89149" selected="true" /><select idref="V-89151" selected="true" /><select idref="V-89153" selected="true" /><select idref="V-89155" selected="true" /><select idref="V-89157" selected="true" /><select idref="V-89159" selected="true" /><select idref="V-89161" selected="true" /><select idref="V-89163" selected="true" /><select idref="V-89165" selected="true" /><select idref="V-89167" selected="true" /><select idref="V-89169" selected="true" /><select idref="V-89171" selected="true" /><select idref="V-89173" selected="true" /><select idref="V-89175" selected="true" /><select idref="V-89177" selected="true" /><select idref="V-89179" selected="true" /><select idref="V-89181" selected="true" /><select idref="V-89183" selected="true" /><select idref="V-89185" selected="true" /><select idref="V-89187" selected="true" /><select idref="V-89189" selected="true" /><select idref="V-89191" selected="true" /><select idref="V-89193" selected="true" /><select idref="V-89195" selected="true" /><select idref="V-89197" selected="true" /><select idref="V-89199" selected="true" /><select idref="V-89201" selected="true" /><select idref="V-89203" selected="true" /><select idref="V-89205" selected="true" /><select idref="V-89207" selected="true" /><select idref="V-89209" selected="true" /><select idref="V-89211" selected="true" /><select idref="V-89213" selected="true" /><select idref="V-89215" selected="true" /><select idref="V-89217" selected="true" /><select idref="V-90297" selected="true" /><select idref="V-90299" selected="true" /><select idref="V-90301" selected="true" /><select idref="V-90303" selected="true" /><select idref="V-90305" selected="true" /><select idref="V-90307" selected="true" /><select idref="V-90309" selected="true" /><select idref="V-90311" selected="true" /><select idref="V-90313" selected="true" /><select idref="V-90315" selected="true" /><select idref="V-90317" selected="true" /><select idref="V-90319" selected="true" /><select idref="V-90321" selected="true" /><select idref="V-90323" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-89139" selected="true" /><select idref="V-89141" selected="true" /><select idref="V-89143" selected="true" /><select idref="V-89145" selected="true" /><select idref="V-89147" selected="true" /><select idref="V-89149" selected="true" /><select idref="V-89151" selected="true" /><select idref="V-89153" selected="true" /><select idref="V-89155" selected="true" /><select idref="V-89157" selected="true" /><select idref="V-89159" selected="true" /><select idref="V-89161" selected="true" /><select idref="V-89163" selected="true" /><select idref="V-89165" selected="true" /><select idref="V-89167" selected="true" /><select idref="V-89169" selected="true" /><select idref="V-89171" selected="true" /><select idref="V-89173" selected="true" /><select idref="V-89175" selected="true" /><select idref="V-89177" selected="true" /><select idref="V-89179" selected="true" /><select idref="V-89181" selected="true" /><select idref="V-89183" selected="true" /><select idref="V-89185" selected="true" /><select idref="V-89187" selected="true" /><select idref="V-89189" selected="true" /><select idref="V-89191" selected="true" /><select idref="V-89193" selected="true" /><select idref="V-89195" selected="true" /><select idref="V-89197" selected="true" /><select idref="V-89199" selected="true" /><select idref="V-89201" selected="true" /><select idref="V-89203" selected="true" /><select idref="V-89205" selected="true" /><select idref="V-89207" selected="true" /><select idref="V-89209" selected="true" /><select idref="V-89211" selected="true" /><select idref="V-89213" selected="true" /><select idref="V-89215" selected="true" /><select idref="V-89217" selected="true" /><select idref="V-90297" selected="true" /><select idref="V-90299" selected="true" /><select idref="V-90301" selected="true" /><select idref="V-90303" selected="true" /><select idref="V-90305" selected="true" /><select idref="V-90307" selected="true" /><select idref="V-90309" selected="true" /><select idref="V-90311" selected="true" /><select idref="V-90313" selected="true" /><select idref="V-90315" selected="true" /><select idref="V-90317" selected="true" /><select idref="V-90319" selected="true" /><select idref="V-90321" selected="true" /><select idref="V-90323" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-89139" selected="true" /><select idref="V-89141" selected="true" /><select idref="V-89143" selected="true" /><select idref="V-89145" selected="true" /><select idref="V-89147" selected="true" /><select idref="V-89149" selected="true" /><select idref="V-89151" selected="true" /><select idref="V-89153" selected="true" /><select idref="V-89155" selected="true" /><select idref="V-89157" selected="true" /><select idref="V-89159" selected="true" /><select idref="V-89161" selected="true" /><select idref="V-89163" selected="true" /><select idref="V-89165" selected="true" /><select idref="V-89167" selected="true" /><select idref="V-89169" selected="true" /><select idref="V-89171" selected="true" /><select idref="V-89173" selected="true" /><select idref="V-89175" selected="true" /><select idref="V-89177" selected="true" /><select idref="V-89179" selected="true" /><select idref="V-89181" selected="true" /><select idref="V-89183" selected="true" /><select idref="V-89185" selected="true" /><select idref="V-89187" selected="true" /><select idref="V-89189" selected="true" /><select idref="V-89191" selected="true" /><select idref="V-89193" selected="true" /><select idref="V-89195" selected="true" /><select idref="V-89197" selected="true" /><select idref="V-89199" selected="true" /><select idref="V-89201" selected="true" /><select idref="V-89203" selected="true" /><select idref="V-89205" selected="true" /><select idref="V-89207" selected="true" /><select idref="V-89209" selected="true" /><select idref="V-89211" selected="true" /><select idref="V-89213" selected="true" /><select idref="V-89215" selected="true" /><select idref="V-89217" selected="true" /><select idref="V-90297" selected="true" /><select idref="V-90299" selected="true" /><select idref="V-90301" selected="true" /><select idref="V-90303" selected="true" /><select idref="V-90305" selected="true" /><select idref="V-90307" selected="true" /><select idref="V-90309" selected="true" /><select idref="V-90311" selected="true" /><select idref="V-90313" selected="true" /><select idref="V-90315" selected="true" /><select idref="V-90317" selected="true" /><select idref="V-90319" selected="true" /><select idref="V-90321" selected="true" /><select idref="V-90323" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-89139" selected="true" /><select idref="V-89141" selected="true" /><select idref="V-89143" selected="true" /><select idref="V-89145" selected="true" /><select idref="V-89147" selected="true" /><select idref="V-89149" selected="true" /><select idref="V-89151" selected="true" /><select idref="V-89153" selected="true" /><select idref="V-89155" selected="true" /><select idref="V-89157" selected="true" /><select idref="V-89159" selected="true" /><select idref="V-89161" selected="true" /><select idref="V-89163" selected="true" /><select idref="V-89165" selected="true" /><select idref="V-89167" selected="true" /><select idref="V-89169" selected="true" /><select idref="V-89171" selected="true" /><select idref="V-89173" selected="true" /><select idref="V-89175" selected="true" /><select idref="V-89177" selected="true" /><select idref="V-89179" selected="true" /><select idref="V-89181" selected="true" /><select idref="V-89183" selected="true" /><select idref="V-89185" selected="true" /><select idref="V-89187" selected="true" /><select idref="V-89189" selected="true" /><select idref="V-89191" selected="true" /><select idref="V-89193" selected="true" /><select idref="V-89195" selected="true" /><select idref="V-89197" selected="true" /><select idref="V-89199" selected="true" /><select idref="V-89201" selected="true" /><select idref="V-89203" selected="true" /><select idref="V-89205" selected="true" /><select idref="V-89207" selected="true" /><select idref="V-89209" selected="true" /><select idref="V-89211" selected="true" /><select idref="V-89213" selected="true" /><select idref="V-89215" selected="true" /><select idref="V-89217" selected="true" /><select idref="V-90297" selected="true" /><select idref="V-90299" selected="true" /><select idref="V-90301" selected="true" /><select idref="V-90303" selected="true" /><select idref="V-90305" selected="true" /><select idref="V-90307" selected="true" /><select idref="V-90309" selected="true" /><select idref="V-90311" selected="true" /><select idref="V-90313" selected="true" /><select idref="V-90315" selected="true" /><select idref="V-90317" selected="true" /><select idref="V-90319" selected="true" /><select idref="V-90321" selected="true" /><select idref="V-90323" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-89139" selected="true" /><select idref="V-89141" selected="true" /><select idref="V-89143" selected="true" /><select idref="V-89145" selected="true" /><select idref="V-89147" selected="true" /><select idref="V-89149" selected="true" /><select idref="V-89151" selected="true" /><select idref="V-89153" selected="true" /><select idref="V-89155" selected="true" /><select idref="V-89157" selected="true" /><select idref="V-89159" selected="true" /><select idref="V-89161" selected="true" /><select idref="V-89163" selected="true" /><select idref="V-89165" selected="true" /><select idref="V-89167" selected="true" /><select idref="V-89169" selected="true" /><select idref="V-89171" selected="true" /><select idref="V-89173" selected="true" /><select idref="V-89175" selected="true" /><select idref="V-89177" selected="true" /><select idref="V-89179" selected="true" /><select idref="V-89181" selected="true" /><select idref="V-89183" selected="true" /><select idref="V-89185" selected="true" /><select idref="V-89187" selected="true" /><select idref="V-89189" selected="true" /><select idref="V-89191" selected="true" /><select idref="V-89193" selected="true" /><select idref="V-89195" selected="true" /><select idref="V-89197" selected="true" /><select idref="V-89199" selected="true" /><select idref="V-89201" selected="true" /><select idref="V-89203" selected="true" /><select idref="V-89205" selected="true" /><select idref="V-89207" selected="true" /><select idref="V-89209" selected="true" /><select idref="V-89211" selected="true" /><select idref="V-89213" selected="true" /><select idref="V-89215" selected="true" /><select idref="V-89217" selected="true" /><select idref="V-90297" selected="true" /><select idref="V-90299" selected="true" /><select idref="V-90301" selected="true" /><select idref="V-90303" selected="true" /><select idref="V-90305" selected="true" /><select idref="V-90307" selected="true" /><select idref="V-90309" selected="true" /><select idref="V-90311" selected="true" /><select idref="V-90313" selected="true" /><select idref="V-90315" selected="true" /><select idref="V-90317" selected="true" /><select idref="V-90319" selected="true" /><select idref="V-90321" selected="true" /><select idref="V-90323" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-89139" selected="true" /><select idref="V-89141" selected="true" /><select idref="V-89143" selected="true" /><select idref="V-89145" selected="true" /><select idref="V-89147" selected="true" /><select idref="V-89149" selected="true" /><select idref="V-89151" selected="true" /><select idref="V-89153" selected="true" /><select idref="V-89155" selected="true" /><select idref="V-89157" selected="true" /><select idref="V-89159" selected="true" /><select idref="V-89161" selected="true" /><select idref="V-89163" selected="true" /><select idref="V-89165" selected="true" /><select idref="V-89167" selected="true" /><select idref="V-89169" selected="true" /><select idref="V-89171" selected="true" /><select idref="V-89173" selected="true" /><select idref="V-89175" selected="true" /><select idref="V-89177" selected="true" /><select idref="V-89179" selected="true" /><select idref="V-89181" selected="true" /><select idref="V-89183" selected="true" /><select idref="V-89185" selected="true" /><select idref="V-89187" selected="true" /><select idref="V-89189" selected="true" /><select idref="V-89191" selected="true" /><select idref="V-89193" selected="true" /><select idref="V-89195" selected="true" /><select idref="V-89197" selected="true" /><select idref="V-89199" selected="true" /><select idref="V-89201" selected="true" /><select idref="V-89203" selected="true" /><select idref="V-89205" selected="true" /><select idref="V-89207" selected="true" /><select idref="V-89209" selected="true" /><select idref="V-89211" selected="true" /><select idref="V-89213" selected="true" /><select idref="V-89215" selected="true" /><select idref="V-89217" selected="true" /><select idref="V-90297" selected="true" /><select idref="V-90299" selected="true" /><select idref="V-90301" selected="true" /><select idref="V-90303" selected="true" /><select idref="V-90305" selected="true" /><select idref="V-90307" selected="true" /><select idref="V-90309" selected="true" /><select idref="V-90311" selected="true" /><select idref="V-90313" selected="true" /><select idref="V-90315" selected="true" /><select idref="V-90317" selected="true" /><select idref="V-90319" selected="true" /><select idref="V-90321" selected="true" /><select idref="V-90323" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-89139" selected="true" /><select idref="V-89141" selected="true" /><select idref="V-89143" selected="true" /><select idref="V-89145" selected="true" /><select idref="V-89147" selected="true" /><select idref="V-89149" selected="true" /><select idref="V-89151" selected="true" /><select idref="V-89153" selected="true" /><select idref="V-89155" selected="true" /><select idref="V-89157" selected="true" /><select idref="V-89159" selected="true" /><select idref="V-89161" selected="true" /><select idref="V-89163" selected="true" /><select idref="V-89165" selected="true" /><select idref="V-89167" selected="true" /><select idref="V-89169" selected="true" /><select idref="V-89171" selected="true" /><select idref="V-89173" selected="true" /><select idref="V-89175" selected="true" /><select idref="V-89177" selected="true" /><select idref="V-89179" selected="true" /><select idref="V-89181" selected="true" /><select idref="V-89183" selected="true" /><select idref="V-89185" selected="true" /><select idref="V-89187" selected="true" /><select idref="V-89189" selected="true" /><select idref="V-89191" selected="true" /><select idref="V-89193" selected="true" /><select idref="V-89195" selected="true" /><select idref="V-89197" selected="true" /><select idref="V-89199" selected="true" /><select idref="V-89201" selected="true" /><select idref="V-89203" selected="true" /><select idref="V-89205" selected="true" /><select idref="V-89207" selected="true" /><select idref="V-89209" selected="true" /><select idref="V-89211" selected="true" /><select idref="V-89213" selected="true" /><select idref="V-89215" selected="true" /><select idref="V-89217" selected="true" /><select idref="V-90297" selected="true" /><select idref="V-90299" selected="true" /><select idref="V-90301" selected="true" /><select idref="V-90303" selected="true" /><select idref="V-90305" selected="true" /><select idref="V-90307" selected="true" /><select idref="V-90309" selected="true" /><select idref="V-90311" selected="true" /><select idref="V-90313" selected="true" /><select idref="V-90315" selected="true" /><select idref="V-90317" selected="true" /><select idref="V-90319" selected="true" /><select idref="V-90321" selected="true" /><select idref="V-90323" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-89139" selected="true" /><select idref="V-89141" selected="true" /><select idref="V-89143" selected="true" /><select idref="V-89145" selected="true" /><select idref="V-89147" selected="true" /><select idref="V-89149" selected="true" /><select idref="V-89151" selected="true" /><select idref="V-89153" selected="true" /><select idref="V-89155" selected="true" /><select idref="V-89157" selected="true" /><select idref="V-89159" selected="true" /><select idref="V-89161" selected="true" /><select idref="V-89163" selected="true" /><select idref="V-89165" selected="true" /><select idref="V-89167" selected="true" /><select idref="V-89169" selected="true" /><select idref="V-89171" selected="true" /><select idref="V-89173" selected="true" /><select idref="V-89175" selected="true" /><select idref="V-89177" selected="true" /><select idref="V-89179" selected="true" /><select idref="V-89181" selected="true" /><select idref="V-89183" selected="true" /><select idref="V-89185" selected="true" /><select idref="V-89187" selected="true" /><select idref="V-89189" selected="true" /><select idref="V-89191" selected="true" /><select idref="V-89193" selected="true" /><select idref="V-89195" selected="true" /><select idref="V-89197" selected="true" /><select idref="V-89199" selected="true" /><select idref="V-89201" selected="true" /><select idref="V-89203" selected="true" /><select idref="V-89205" selected="true" /><select idref="V-89207" selected="true" /><select idref="V-89209" selected="true" /><select idref="V-89211" selected="true" /><select idref="V-89213" selected="true" /><select idref="V-89215" selected="true" /><select idref="V-89217" selected="true" /><select idref="V-90297" selected="true" /><select idref="V-90299" selected="true" /><select idref="V-90301" selected="true" /><select idref="V-90303" selected="true" /><select idref="V-90305" selected="true" /><select idref="V-90307" selected="true" /><select idref="V-90309" selected="true" /><select idref="V-90311" selected="true" /><select idref="V-90313" selected="true" /><select idref="V-90315" selected="true" /><select idref="V-90317" selected="true" /><select idref="V-90319" selected="true" /><select idref="V-90321" selected="true" /><select idref="V-90323" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-89139" selected="true" /><select idref="V-89141" selected="true" /><select idref="V-89143" selected="true" /><select idref="V-89145" selected="true" /><select idref="V-89147" selected="true" /><select idref="V-89149" selected="true" /><select idref="V-89151" selected="true" /><select idref="V-89153" selected="true" /><select idref="V-89155" selected="true" /><select idref="V-89157" selected="true" /><select idref="V-89159" selected="true" /><select idref="V-89161" selected="true" /><select idref="V-89163" selected="true" /><select idref="V-89165" selected="true" /><select idref="V-89167" selected="true" /><select idref="V-89169" selected="true" /><select idref="V-89171" selected="true" /><select idref="V-89173" selected="true" /><select idref="V-89175" selected="true" /><select idref="V-89177" selected="true" /><select idref="V-89179" selected="true" /><select idref="V-89181" selected="true" /><select idref="V-89183" selected="true" /><select idref="V-89185" selected="true" /><select idref="V-89187" selected="true" /><select idref="V-89189" selected="true" /><select idref="V-89191" selected="true" /><select idref="V-89193" selected="true" /><select idref="V-89195" selected="true" /><select idref="V-89197" selected="true" /><select idref="V-89199" selected="true" /><select idref="V-89201" selected="true" /><select idref="V-89203" selected="true" /><select idref="V-89205" selected="true" /><select idref="V-89207" selected="true" /><select idref="V-89209" selected="true" /><select idref="V-89211" selected="true" /><select idref="V-89213" selected="true" /><select idref="V-89215" selected="true" /><select idref="V-89217" selected="true" /><select idref="V-90297" selected="true" /><select idref="V-90299" selected="true" /><select idref="V-90301" selected="true" /><select idref="V-90303" selected="true" /><select idref="V-90305" selected="true" /><select idref="V-90307" selected="true" /><select idref="V-90309" selected="true" /><select idref="V-90311" selected="true" /><select idref="V-90313" selected="true" /><select idref="V-90315" selected="true" /><select idref="V-90317" selected="true" /><select idref="V-90319" selected="true" /><select idref="V-90321" selected="true" /><select idref="V-90323" selected="true" /></Profile><Group id="V-89139"><title>SRG-APP-000108-WSR-000166</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99789r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000085</version><title>HAProxy must use a logging mechanism that is configured to alert the ISSO and SA in the event of a processing failure.</title><description>&lt;VulnDiscussion&gt;An accurate and current audit trail is essential for maintaining a record of system activity. If the logging system fails, the SA must be notified and must take prompt action to correct the problem. Minimally, the system must log this event and the SA will receive this notification during the daily system log review. If feasible, active alerting (such as e-mail or paging) should be employed consistent with the site's established operations management systems and procedures.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000139</ident><fixtext fixref="F-95881r1_fix">Ensure logging failures result in warnings to the ISSO and SA at a minimum.</fixtext><fix id="F-95881r1_fix" /><check system="C-88831r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Interview the ISSO.
+
+Determine if logging failure events are monitored, and warnings provided to the ISSO.
+
+If logging failure events do not provide warnings in accordance with organization policies, this is a finding.
+
+If alerts are not sent or the web server is not configured to use a dedicated logging tool that meets this requirement, this is a finding.</check-content></check></Rule></Group><Group id="V-89141"><title>SRG-APP-000118-WSR-000068</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99791r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000095</version><title>HAProxy log files must not be accessible to unauthorized users.</title><description>&lt;VulnDiscussion&gt;The HAProxy log files provide audit data useful to the discovery of suspicious behavior. The log files may contain usernames and passwords in clear text as well as other information that could aid a malicious user with unauthorized access attempts to the database. Generation and protection of these files helps support security monitoring efforts.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000162</ident><fixtext fixref="F-95883r1_fix">At the command prompt, execute the following command:
+
+sed -i "/^[^#]*UMASK/ c\UMASK 077" /etc/login.defs</fixtext><fix id="F-95883r1_fix" /><check system="C-88833r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+ls -la /var/log/vmware/vcac/vcac-config.log
+
+If the log file has permissions more permissive than "640", this is a finding.</check-content></check></Rule></Group><Group id="V-89143"><title>SRG-APP-000119-WSR-000069</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99793r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000100</version><title>HAProxy log files must be protected from unauthorized modification.</title><description>&lt;VulnDiscussion&gt;Log data is essential in the investigation of events. If log data were to become compromised, then competent forensic analysis and discovery of the true source of potentially malicious system activity would be difficult, if not impossible, to achieve. In addition, access to log records provides information an attacker could potentially use to their advantage since each event record might contain communication ports, protocols, services, trust relationships, user names, etc.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000163</ident><fixtext fixref="F-95885r1_fix">At the command prompt, execute the following command:
+
+sed -i "/^[^#]*UMASK/ c\UMASK 077" /etc/login.defs</fixtext><fix id="F-95885r1_fix" /><check system="C-88835r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+ls -la /var/log/vmware/vcac/vcac-config.log
+
+If the log file has permissions more permissive than "640", this is a finding.</check-content></check></Rule></Group><Group id="V-89145"><title>SRG-APP-000120-WSR-000070</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99795r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000105</version><title>HAProxy log files must be protected from unauthorized deletion.</title><description>&lt;VulnDiscussion&gt;Log data is essential in the investigation of events. If log data were to become compromised, then competent forensic analysis and discovery of the true source of potentially malicious system activity would be difficult, if not impossible, to achieve. In addition, access to log records provides information an attacker could potentially use to their advantage since each event record might contain communication ports, protocols, services, trust relationships, user names, etc.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000164</ident><fixtext fixref="F-95887r1_fix">At the command prompt, execute the following command:
+
+sed -i "/^[^#]*UMASK/ c\UMASK 077" /etc/login.defs</fixtext><fix id="F-95887r1_fix" /><check system="C-88837r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+ls -la /var/log/vmware/vcac/vcac-config.log
+
+If the log file has permissions more permissive than "640", this is a finding.</check-content></check></Rule></Group><Group id="V-89147"><title>SRG-APP-000125-WSR-000071</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99797r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000110</version><title>HAProxy log files must be backed up onto a different system or media.</title><description>&lt;VulnDiscussion&gt;Log data is essential in the investigation of events. If log data were to become compromised, then competent forensic analysis and discovery of the true source of potentially malicious system activity would be difficult, if not impossible, to achieve. In addition, access to log records provides information an attacker could potentially use to their advantage since each event record might contain communication ports, protocols, services, trust relationships, user names, etc.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001348</ident><fixtext fixref="F-95889r1_fix">Ensure log data and records are being backed up to a different system or separate media.</fixtext><fix id="F-95889r1_fix" /><check system="C-88839r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Interview the ISSO.
+
+Determine whether log data and records are being backed up to a different system or separate media.
+
+If log data and records are not being backed up to a different system or separate media, this is a finding.</check-content></check></Rule></Group><Group id="V-89149"><title>SRG-APP-000131-WSR-000051</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99799r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000115</version><title>HAProxy files must be verified for their integrity (checksums) before being added to the build systems.</title><description>&lt;VulnDiscussion&gt;Being able to verify that a patch, upgrade, certificate, etc., being added to the web server is unchanged from the producer of the file is essential for file validation and non-repudiation of the information.
+
+The HAProxy web server files on vRA must be part of a documented build process. Checksums of the production files must be available to verify their integrity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001749</ident><fixtext fixref="F-95891r1_fix">Ensure web server files are verified or validated before being implemented the production environment.</fixtext><fix id="F-95891r1_fix" /><check system="C-88841r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Interview the ISSO.
+
+Determine whether web server files are verified/validated before being implemented into the production environment.
+
+If the web server files are not verified or validated before being implemented into the production environment, this is a finding.</check-content></check></Rule></Group><Group id="V-89151"><title>SRG-APP-000131-WSR-000073</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99801r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000120</version><title>HAProxy expansion modules must be verified for their integrity (checksums) before being added to the build systems.</title><description>&lt;VulnDiscussion&gt;Being able to verify that a patch, upgrade, certificate, etc., being added to the web server is unchanged from the producer of the file is essential for file validation and non-repudiation of the information.
+
+Expansion that are installed on the production HAProxy web server on vRA must be part of a documented build process. Checksums of the production files must be available to verify their integrity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001749</ident><fixtext fixref="F-95893r1_fix">Ensure expansion modules are fully reviewed, tested, and signed before being implemented into the production environment.</fixtext><fix id="F-95893r1_fix" /><check system="C-88843r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Interview the ISSO.
+
+Determine whether expansion modules are being fully reviewed, tested, and signed before being implemented into the production environment.
+
+If the expansion modules are not being fully reviewed, tested, and signed before being implemented into the production environment, this is a finding.</check-content></check></Rule></Group><Group id="V-89153"><title>SRG-APP-000141-WSR-000075</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99803r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000130</version><title>HAProxy must limit access to the statistics feature.</title><description>&lt;VulnDiscussion&gt;A web server can provide many features, services, and processes. Some of these may be deemed unnecessary or too unsecure to be accessible on a production DoD system. 
+
+HAProxy provide a statistics page, which will display web browser statistics from any web browser if HAProxy has not been configured to connect the server statistics to a UNIX socket.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-95895r1_fix">Uninstall or deactivate features, services, and processes not needed by the web server for operation.</fixtext><fix id="F-95895r1_fix" /><check system="C-88845r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep 'stats socket' /etc/haproxy/haproxy.cfg
+
+If the command does not return the line below, this is a finding.
+
+stats socket /var/run/haproxy.sock mode 600 level admin</check-content></check></Rule></Group><Group id="V-89155"><title>SRG-APP-000141-WSR-000077</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99805r1_rule" severity="high" weight="10.0"><version>VRAU-HA-000140</version><title>HAProxy must not contain any documentation, sample code, example applications, and tutorials.</title><description>&lt;VulnDiscussion&gt;Web server documentation, sample code, example applications, and tutorials may be an exploitable threat to a web server because this type of code has not been evaluated and approved. A production web server must only contain components that are operationally necessary (e.g., compiled code, scripts, web-content, etc.). 
+
+Any documentation, sample code, example applications, and tutorials must be removed from a production web server. To make certain that the documentation and code are not installed or uninstalled completely; the web server must offer an option as part of the installation process to exclude these packages or to uninstall the packages if necessary.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-95897r1_fix">Remove all listed files and directories.</fixtext><fix id="F-95897r1_fix" /><check system="C-88847r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+ls /usr/share/doc/packages/haproxy
+
+The command should report that there is no such file or directory. 
+
+If the command shows any files or directories, this is a finding.</check-content></check></Rule></Group><Group id="V-89157"><title>SRG-APP-000141-WSR-000086</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99807r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000175</version><title>HAProxy must be run in a chroot jail.</title><description>&lt;VulnDiscussion&gt;Chroot is an operation that changes the apparent root directory for the current running process and their children. A program that is run in such a modified environment cannot access files and commands outside that environmental directory tree. This modified environment is called a chroot jail.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-95899r2_fix">Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to and configure the globals section with the following value:
+
+'chroot /var/lib/haproxy'</fixtext><fix id="F-95899r2_fix" /><check system="C-88849r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep 'chroot' /etc/haproxy/haproxy.cfg
+
+If the value "/var/lib/haproxy" is not listed, this is a finding.</check-content></check></Rule></Group><Group id="V-89159"><title>SRG-APP-000142-WSR-000089</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99809r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000185</version><title>HAProxy frontend servers must be bound to a specific port.</title><description>&lt;VulnDiscussion&gt;The web server must be configured to listen on a specified IP address and port. Without specifying an IP address and port for the web server to utilize, the web server will listen on all IP addresses available to the hosting server. If the web server has multiple IP addresses, i.e., a management IP address, the web server will also accept connections on the management IP address.
+
+Accessing the hosted application through an IP address normally used for non-application functions opens the possibility of user access to resources, utilities, files, ports, and protocols that are protected on the desired application IP address.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000382</ident><fixtext fixref="F-95901r1_fix">Navigate to and open the following files:
+
+/etc/haproxy/conf.d/20-vcac.cfg
+/etc/haproxy/conf.d/30-vro-config.cfg
+
+Configure each frontend to be bound to at least one port.</fixtext><fix id="F-95901r1_fix" /><check system="C-88851r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open the following files:
+
+/etc/haproxy/conf.d/20-vcac.cfg
+/etc/haproxy/conf.d/30-vro-config.cfg
+
+Verify that each frontend is bound to at least one port. Below is an example binding:
+
+frontend https-in-vro-config
+    bind :8283
+
+If each frontend is not bound to at least one port, this is a finding.</check-content></check></Rule></Group><Group id="V-89161"><title>SRG-APP-000172-WSR-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99811r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000190</version><title>HAProxy must use SSL/TLS protocols in order to secure passwords during transmission from the client.</title><description>&lt;VulnDiscussion&gt;Data used to authenticate, especially passwords, needs to be protected at all times, and encryption is the standard method for protecting authentication data during transmission. Even when data is passed through a load balancer, data used to authenticate users must be sent via SSL/TLS.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000197</ident><fixtext fixref="F-95903r1_fix">Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to and configure the "frontend https-in" section with the following two values:  
+
+bind 0.0.0.0:80
+redirect scheme https if !{ ssl_fc }</fixtext><fix id="F-95903r1_fix" /><check system="C-88853r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command line execute the following command:
+
+cat /etc/haproxy/conf.d/20-vcac.cfg | awk '$0 ~ /bind.*:80/ || $0 ~ /redirect.*ssl_fc/ {print}'
+
+If the command does not return the two lines below, this is a finding.
+
+bind 0.0.0.0:80
+redirect scheme https if !{ ssl_fc }</check-content></check></Rule></Group><Group id="V-89163"><title>SRG-APP-000175-WSR-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99813r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000195</version><title>HAProxy must perform RFC 5280-compliant certification path validation if PKI is being used.</title><description>&lt;VulnDiscussion&gt;The DoD standard for authentication is DoD-approved PKI certificates. A certificate’s certification path is the path from the end entity certificate to a trusted root certification authority (CA). Certification path validation is necessary for a relying party to make an informed decision regarding acceptance of an end entity certificate. Certification path validation includes checks such as certificate issuer trust, time validity and revocation status for each certificate in the certification path. Revocation status information for CA and subject certificates in a certification path is commonly provided via certificate revocation lists (CRLs) or online certificate status protocol (OCSP) responses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000185</ident><fixtext fixref="F-95905r1_fix">Install validated RFC 5280-compliant certificates.</fixtext><fix id="F-95905r1_fix" /><check system="C-88855r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Interview the ISSO.
+
+Review HAProxy configuration to verify that certificates being provided by the web server are validated, RFC 5280-compliant certificates. If PKI is not being used, this is NA. 
+
+If certificates are not validated, RFC 5280-compliant certificates, this is a finding.</check-content></check></Rule></Group><Group id="V-89165"><title>SRG-APP-000176-WSR-000096</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99815r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000200</version><title>HAProxys private key must have access restricted.</title><description>&lt;VulnDiscussion&gt;HAProxy's private key is used to prove the identity of the server to clients and securely exchange the shared secret key used to encrypt communications between the web server and clients.
+
+Only authenticated system administrators or the designated PKI Sponsor for the web server must have access to the web server's private key. 
+
+By gaining access to the private key, an attacker can pretend to be an authorized server and decrypt the encrypted traffic between a client and the web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000186</ident><fixtext fixref="F-95907r1_fix">At the command prompt, execute the following command:s:
+
+chmod 600 /etc/apache2/server.pem</fixtext><fix id="F-95907r1_fix" /><check system="C-88857r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+ls -al /etc/apache2/server.pem
+
+If the permissions on the file are not "600", this is a finding.</check-content></check></Rule></Group><Group id="V-89167"><title>SRG-APP-000179-WSR-000111</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99817r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000210</version><title>HAProxy must be configured to use only FIPS 140-2 approved ciphers.</title><description>&lt;VulnDiscussion&gt;Use of cryptography to provide confidentiality and non-repudiation is not effective unless strong methods are employed with its use. Many earlier encryption methods and modules have been broken and/or overtaken by increasing computing power. The NIST FIPS 140-2 cryptographic standards provide proven methods and strengths to employ cryptography effectively.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000803</ident><fixtext fixref="F-95909r2_fix">Navigate to and open the following files:
+
+/etc/haproxy/conf.d/30-vro-config.cfg 
+/etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to the frontend section in each file.
+
+Configure the bind keyword file with this cipher list: 
+
+'FIPS: +3DES:!aNULL'</fixtext><fix id="F-95909r2_fix" /><check system="C-88859r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep -E 'bind.*ssl' /etc/haproxy/conf.d/30-vro-config.cfg /etc/haproxy/conf.d/20-vcac.cfg
+
+If the return value for SSL cipher list is not set to "FIPS: +3DES:!aNULL", this is a finding.</check-content></check></Rule></Group><Group id="V-89169"><title>SRG-APP-000211-WSR-000031</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99819r1_rule" severity="high" weight="10.0"><version>VRAU-HA-000225</version><title>HAProxy must prohibit anonymous users from editing system files.</title><description>&lt;VulnDiscussion&gt;Allowing anonymous users the capability to change the web server or the hosted application will not generate proper log information that can then be used for forensic reporting in the case of a security issue. Allowing anonymous users to make changes will also grant change capabilities to anybody without forcing a user to authenticate before the changes can be made.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001082</ident><fixtext fixref="F-95911r1_fix">Navigate to and remove anonymous permissions for any listed files.</fixtext><fix id="F-95911r1_fix" /><check system="C-88861r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+ls -alR /etc/haproxy /var/lib/haproxy /usr/sbin/haproxy | grep -E '^-' | awk '{print $1}' | cut -c9 | grep w
+
+If the command returns any value, this is a finding.</check-content></check></Rule></Group><Group id="V-89171"><title>SRG-APP-000225-WSR-000074</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99821r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000275</version><title>The HAProxy baseline must be documented and maintained.</title><description>&lt;VulnDiscussion&gt;Without maintenance of a baseline of current HAProxy software, monitoring for changes cannot be complete and unauthorized changes to the software can go undetected. Changes to HAProxy could be the result of intentional or unintentional actions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001190</ident><fixtext fixref="F-95913r1_fix">Develop, document, and implement baseline procedures that include all HAProxy software files and directories.
+
+Update the baseline after new installations, upgrades, or maintenance activities that include changes to the software baseline.</fixtext><fix id="F-95913r1_fix" /><check system="C-88863r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Have the appliance administrator and/or ISSO provide the HAProxy software baseline procedures, implementation evidence, and a list of files and directories included in the baseline procedure for completeness.
+
+If baseline procedures do not exist, not implemented reliably, or are not complete, this is a finding.</check-content></check></Rule></Group><Group id="V-89173"><title>SRG-APP-000225-WSR-000140</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99823r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000280</version><title>HAProxy must be configured to validate the configuration files during start and restart events.</title><description>&lt;VulnDiscussion&gt;Failure in a known state can address safety or security in accordance with the mission/business needs of the organization. Failure in a known secure state helps prevent a loss of confidentiality, integrity, or availability in the event of a failure of the information system or a component of the system. Failure in a known safe state helps prevent systems from failing to a state that may cause loss of data or unauthorized access to system resources. Applications or systems that fail suddenly and with no incorporated failure state planning may leave the hosting system available but with a reduced security protection capability. Preserving information system state information also facilitates system restart and return to the operational mode of the organization with less disruption of mission/business processes. An example is a firewall that blocks all traffic rather than allowing all traffic when a firewall component fails. This prevents an attacker from forcing a failure of the system in order to obtain access. 
+
+Web servers must fail to a known consistent state. Validating the server's configuration file during start and restart events can help to minimize the risk of an unexpected server failure during system start.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001190</ident><fixtext fixref="F-95915r2_fix">Navigate to and open /etc/init.d/haproxy
+
+Navigate to the "start)" code block. Add the value "haproxy_check" before the line with the value "/sbin/startproc". 
+
+Navigate to the "restart)" code block. Add the value "haproxy_check" before the line with the value "$0 stop".</fixtext><fix id="F-95915r2_fix" /><check system="C-88865r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep -E '\s(start|restart)\)' -A 7 /etc/init.d/haproxy
+
+If the command "haproxy_check" is not shown in the "start)" and the "restart)" code blocks, this is a finding.</check-content></check></Rule></Group><Group id="V-89175"><title>SRG-APP-000246-WSR-000149</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99825r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000300</version><title>HAProxy must limit the amount of time that half-open connections are kept alive.</title><description>&lt;VulnDiscussion&gt;A web server can limit the ability of the web server being used in a DoS attack through several methods. The methods employed will depend upon the hosted applications and their resource needs for proper operation. 
+
+An example setting that could be used to limit the ability of the web server being used in a DoS attack is to limit the amount of time that a half-open connection is kept alive.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001094</ident><fixtext fixref="F-95917r1_fix">Navigate to and open /etc/haproxy/haproxy.cfg   
+
+Configure the haproxy.cfg file with the following value in the defaults section: 
+
+'timeout client-fin 30s'.</fixtext><fix id="F-95917r1_fix" /><check system="C-88867r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep 'timeout client-fin' /etc/haproxy/haproxy.cfg
+
+If the return value for "timeout client-fin" list is not set to "30s", this is a finding.</check-content></check></Rule></Group><Group id="V-89177"><title>SRG-APP-000266-WSR-000159</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99827r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000315</version><title>HAProxy must provide default error files.</title><description>&lt;VulnDiscussion&gt;Information needed by an attacker to begin looking for possible vulnerabilities in a web server includes any information about the web server, backend systems being accessed, and plug-ins or modules being used. 
+
+Web servers will often display error messages to client users displaying enough information to aid in the debugging of the error. The information given back in error messages may display the web server type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any backends being used for data storage. 
+
+This information could be used by an attacker to blueprint what type of attacks might be successful. The information given to users must be minimized to not aid in the blueprinting of the web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001312</ident><fixtext fixref="F-95919r2_fix">Create error pages for each of the HTTP status codes below:
+
+400, 403, 408, 500, 502, 503, 504
+
+Navigate to and open /etc/haproxy/haproxy.cfg. Navigate to the "defaults" section.
+
+Add the following lines:
+
+        errorfile 400 /path/to/errorPage/for/400.http
+        errorfile 403 /path/to/errorPage/for/403.http
+        errorfile 408 /path/to/errorPage/for/408.http
+        errorfile 500 /path/to/errorPage/for/500.http
+        errorfile 502 /path/to/errorPage/for/502.http
+        errorfile 503 /path/to/errorPage/for/503.http
+        errorfile 504 /path/to/errorPage/for/504.http</fixtext><fix id="F-95919r2_fix" /><check system="C-88869r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep 'errorfile' /etc/haproxy/haproxy.cfg
+
+If the return value for "errorfile" does not list error pages for the following HTTP status codes, this is a finding.
+
+400, 403, 408, 500, 502, 503, 504</check-content></check></Rule></Group><Group id="V-89179"><title>SRG-APP-000266-WSR-000160</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99829r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000320</version><title>HAProxy must not be started with the debug switch.</title><description>&lt;VulnDiscussion&gt;Information needed by an attacker to begin looking for possible vulnerabilities in a web server includes any information about the web server and plug-ins or modules being used. When debugging or trace information is enabled in a production web server, information about the web server, such as web server type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any backends being used for data storage may be displayed. Since this information may be placed in logs and general messages during normal operation of the web server, an attacker does not need to cause an error condition to gain this information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001312</ident><fixtext fixref="F-95921r1_fix">Restart the HAProxy without the debug command line argument, which is "-d".</fixtext><fix id="F-95921r1_fix" /><check system="C-88871r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+ps aux | grep '[h]aproxy' | grep '\s\-d\s'
+
+If the command returns any value, this is a finding.</check-content></check></Rule></Group><Group id="V-89181"><title>SRG-APP-000295-WSR-000012</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99831r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000325</version><title>HAProxy must set an absolute timeout on sessions.</title><description>&lt;VulnDiscussion&gt;Leaving sessions open indefinitely is a major security risk. An attacker can easily use an already authenticated session to access the hosted application as the previously authenticated user. By closing sessions after an absolute period of time, the user is forced to re-authenticate guaranteeing the session is still in use. Enabling an absolute timeout for sessions closes sessions that are still active. Examples would be a runaway process accessing the web server or an attacker using a hijacked session to slowly probe the web server.
+
+HAProxy provides a 'tune.ssl.lifetime' parameter, which will set an absolute timeout on SSL sessions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002361</ident><fixtext fixref="F-95923r1_fix">Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the "globals" section
+
+Add the value 'tune.ssl.lifetime 20m'</fixtext><fix id="F-95923r1_fix" /><check system="C-88873r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep 'tune.ssl.lifetime' /etc/haproxy/haproxy.cfg
+
+If the command returns any value, this is a finding.</check-content></check></Rule></Group><Group id="V-89183"><title>SRG-APP-000295-WSR-000134</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99833r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000330</version><title>HAProxy must set an inactive timeout on sessions.</title><description>&lt;VulnDiscussion&gt;Leaving sessions open indefinitely is a major security risk. An attacker can easily use an already authenticated session to access the hosted application as the previously authenticated user. By closing sessions after a set period of inactivity, the web server can make certain that those sessions that are not closed through the user logging out of an application are eventually closed. 
+
+Acceptable values are "5" minutes for high-value applications, "10" minutes for medium-value applications, and "20" minutes for low-value applications.
+
+HAProxy provides an appsession parameter, which will invalidate an inactive cookie after a configurable amount of time.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002361</ident><fixtext fixref="F-95925r2_fix">Navigate to and open the following files:
+
+/etc/haproxy/conf.d/30-vro-config.cfg 
+/etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to each backend section that sets a cookie in each file.
+
+Configure the backend with the following:
+
+appsession &lt;cookie&gt; len 64 timeout 5m
+
+Note: The value for &lt;cookie&gt; is defined in the "cookie" option for each backend and may be different.</fixtext><fix id="F-95925r2_fix" /><check system="C-88875r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open the following files:
+
+/etc/haproxy/conf.d/20-vcac.cfg
+/etc/haproxy/conf.d/30-vro-config.cfg
+
+Verify that each backend that sets a cookie is configured with the following:
+
+appsession &lt;cookie&gt; len 64 timeout 5m
+
+Note: The value for &lt;cookie&gt; is defined in the "cookie" option for each backend and may be different.
+
+If the "appsession" option is not present or is not configured as shown, this is a finding.</check-content></check></Rule></Group><Group id="V-89185"><title>SRG-APP-000315-WSR-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99835r1_rule" severity="high" weight="10.0"><version>VRAU-HA-000335</version><title>HAProxy must redirect all http traffic to use https.</title><description>&lt;VulnDiscussion&gt;Remote access to the web server is any access that communicates through an external, non-organization-controlled network. Remote access can be used to access hosted applications or to perform management functions.
+
+A web server can be accessed remotely and must be able to enforce remote access policy requirements or work in conjunction with enterprise tools designed to enforce policy requirements. 
+
+vRA can be configured to redirect unencrypted, http port 80, traffic to use the encrypted, https port 443.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002314</ident><fixtext fixref="F-95927r1_fix">Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to the "frontend https-in" section. 
+
+In the "frontend https-in" section, add the 'redirect scheme https if !{ ssl_fc }' option before all 'acl' options.</fixtext><fix id="F-95927r1_fix" /><check system="C-88877r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep 'redirect scheme https' /etc/haproxy/conf.d/20-vcac.cfg
+
+Note: the command should return this line:
+
+'redirect scheme https if !{ ssl_fc }'
+
+If the command does not return the expected line, this is a finding.</check-content></check></Rule></Group><Group id="V-89187"><title>SRG-APP-000315-WSR-000004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99837r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000340</version><title>HAProxy must restrict inbound connections from nonsecure zones.</title><description>&lt;VulnDiscussion&gt;Remote access to the web server is any access that communicates through an external, non-organization-controlled network. Remote access can be used to access hosted applications or to perform management functions. A web server can be accessed remotely and must be capable of restricting access from what the DoD defines as nonsecure zones. Nonsecure zones are defined as any IP, subnet, or region that is defined as a threat to the organization. The nonsecure zones must be defined for public web servers logically located in a DMZ, as well as private web servers with perimeter protection devices. By restricting access from nonsecure zones, through internal web server access list, the web server can stop or slow denial of service (DoS) attacks on the web server.
+
+As the web server for the vRA Virtual Appliance Management Interface (vAMI), Lighttpd is the primary remote access management system for vRA. Lighttpd must be configured to restrict inbound connections from nonsecure zones. To accomplish this, the SSL engine must be enabled. The SSL engine forces Lighttpd to only listen via secure protocols.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002314</ident><fixtext fixref="F-95929r1_fix">Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to and configure the "frontend https-in" section with the following three values:  
+
+bind 0.0.0.0:80
+bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+redirect scheme https if !{ ssl_fc }
+
+Note: Ensure the redirection statement appears before all 'acl' statements.</fixtext><fix id="F-95929r1_fix" /><check system="C-88879r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to the "frontend https-in" section. 
+
+Review the "frontend https-in" section.
+
+Verify that the port 443 binding has the "ssl" keyword.
+
+Verify that port 80 is binded.
+
+Verify that non-ssl traffic is redirected to port 443.
+
+Note: Ports are binded with this statement: 'bind 0.0.0.0:&lt;port&gt;', where &lt;port&gt; is the binded port.
+
+Note: Non-ssl traffic is redirected with this statement: 'redirect scheme https if !{ ssl_fc }'
+
+Note: Ensure the redirection statement appears before all 'acl' statements.
+
+If the port 443 binding is missing the "ssl" keyword, OR port 80 is NOT binded, OR non-ssl traffic is NOT being redirected to port 443, this is a finding.</check-content></check></Rule></Group><Group id="V-89189"><title>SRG-APP-000357-WSR-000150</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99839r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000360</version><title>HAProxy must be configured to use syslog.</title><description>&lt;VulnDiscussion&gt;There are many aspects of appropriate web server logging for security. Storage capacity must be adequate. ISSO and SA must receive warnings and alerts when storage capacity is filled to 75%.
+
+Writing events to a centralized management audit system offers many benefits to the enterprise over having dispersed logs. Centralized management of audit records and logs provides for efficiency in maintenance and management of records, enterprise analysis of events, and backup and archiving of event records enterprise-wide. The web server and related components are required to be capable of writing logs to centralized audit log servers.
+
+This requirement can be met by configuring the web server to utilize a dedicated log tool that meets this requirement.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001849</ident><fixtext fixref="F-95931r2_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.
+
+Configure the "globals" section with the following: 
+
+log 127.0.0.1 local0
+
+Configure the "defaults" section with both of the following:
+
+log     global
+option  httplog
+
+Navigate to and open the following files:
+
+/etc/haproxy/conf.d/30-vro-config.cfg 
+/etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to each frontend section.
+
+Remove any log options from each frontend.</fixtext><fix id="F-95931r2_fix" /><check system="C-88881r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the "globals" section.
+
+Verify that the "globals" section contains the "log" keyword, and that the "log" option contains the local0 syslog facility as its parameter.
+
+If properly configured, the "globals" section will contain the following:
+
+global
+ log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the "defaults" section.
+
+Verify that the "defaults" section contains the "log" keyword with the global value.
+
+Verify that an option keyword has been configured with the "httplog" value.
+
+If properly configured, the "defaults" section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open the following files:
+
+/etc/haproxy/conf.d/30-vro-config.cfg 
+/etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to the each frontend section.
+
+Verify that the "log" keyword has not been set for each frontend.  
+
+If the "log" keyword is present in a frontend, this is a finding.
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility.  
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging start and stop events to the log file.  
+
+If the log file is not recording HAProxy start and stop events, this is a finding.</check-content></check></Rule></Group><Group id="V-89191"><title>SRG-APP-000358-WSR-000063</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99841r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000365</version><title>HAProxy must not impede the ability to write specified log record content to an audit log server.</title><description>&lt;VulnDiscussion&gt;Writing events to a centralized management audit system offers many benefits to the enterprise over having dispersed logs. Centralized management of audit records and logs provides for efficiency in maintenance and management of records, enterprise analysis of events, and backup and archiving of event records enterprise-wide. The web server and related components are required to be capable of writing logs to centralized audit log servers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001851</ident><fixtext fixref="F-95933r2_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.  Configure the globals section with the following:
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog</fixtext><fix id="F-95933r2_fix" /><check system="C-88883r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the "globals" section.
+
+Verify that the "globals" section contains the "log" keyword, and that the "log" option contains the local0 syslog facility as its parameter.
+
+If properly configured, the "globals" section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the "defaults" section.
+
+Verify that the "defaults" section contains the "log" keyword with the global value.
+
+Verify that an option keyword has been configured with the "httplog" value.
+
+If properly configured, the "defaults" section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open the following files:
+
+/etc/haproxy/conf.d/30-vro-config.cfg 
+/etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to the each frontend section.
+
+Verify that the "log" keyword has not been set for each frontend.  
+
+If the "log" keyword is present in a frontend, this is a finding.
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility.  
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging start and stop events to the log file.  
+
+If the log file is not recording HAProxy start and stop events, this is a finding.</check-content></check></Rule></Group><Group id="V-89193"><title>SRG-APP-000358-WSR-000163</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99843r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000370</version><title>HAProxy must be configurable to integrate with an organizations security infrastructure.</title><description>&lt;VulnDiscussion&gt;A web server will typically utilize logging mechanisms for maintaining a historical log of activity that occurs within a hosted application. This information can then be used for diagnostic purposes, forensics purposes, or other purposes relevant to ensuring the availability and integrity of the hosted application. While it is important to log events identified as being critical and relevant to security, it is equally important to notify the appropriate personnel in a timely manner so they are able to respond to events as they occur. Manual review of the web server logs may not occur in a timely manner, and each event logged is open to interpretation by a reviewer. By integrating the web server into an overall or organization-wide log review, a larger picture of events can be viewed, and analysis can be done in a timely and reliable manner.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001851</ident><fixtext fixref="F-95935r2_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.  Configure the globals section with the following:
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog</fixtext><fix id="F-95935r2_fix" /><check system="C-88885r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the "globals" section.
+
+Verify that the "globals" section contains the "log" keyword, and that the "log" option contains the local0 syslog facility as its parameter.
+
+If properly configured, the "globals" section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the "defaults" section.
+
+Verify that the "defaults" section contains the "log" keyword with the global value.
+
+Verify that an option keyword has been configured with the "httplog" value.
+
+If properly configured, the "defaults" section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open the following files:
+
+/etc/haproxy/conf.d/30-vro-config.cfg 
+/etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to the each frontend section.
+
+Verify that the "log" keyword has not been set for each frontend.  
+
+If the "log" keyword is present in a frontend, this is a finding.
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility.  
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging start and stop events to the log file.  
+
+If the log file is not recording HAProxy start and stop events, this is a finding.</check-content></check></Rule></Group><Group id="V-89195"><title>SRG-APP-000374-WSR-000172</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99845r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000380</version><title>HAProxy must use the httplog option.</title><description>&lt;VulnDiscussion&gt;If time stamps are not consistently applied and there is no common time reference, it is difficult to perform forensic analysis across multiple devices and log records.
+
+Time stamps generated by the web server include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001890</ident><fixtext fixref="F-95937r2_fix">Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the defaults section.
+
+Add "option httplog" to the "defaults" section.</fixtext><fix id="F-95937r2_fix" /><check system="C-88887r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep -E  'option\s+httplog' /etc/haproxy/haproxy.cfg
+
+If the command does not return a line, this is a finding.</check-content></check></Rule></Group><Group id="V-89197"><title>SRG-APP-000380-WSR-000072</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99847r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000390</version><title>HAProxy libraries, and configuration files must only be accessible to privileged users.</title><description>&lt;VulnDiscussion&gt;A web server can be modified through parameter modification, patch installation, upgrades to the web server or modules, and security parameter changes. With each of these changes, there is the potential for an adverse effect such as a DoS, web server instability, or hosted application instability.
+
+To limit changes to the web server and limit exposure to any adverse effects from the changes, files such as the web server application files, libraries, and configuration files must have permissions and ownership set properly to only allow privileged users access.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001813</ident><fixtext fixref="F-95939r1_fix">Navigate to any listed files with incorrect permissions or ownership and set them in accordance with site policy.</fixtext><fix id="F-95939r1_fix" /><check system="C-88889r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+ 
+ls -alR /etc/haproxy /etc/init.d/haproxy /usr/sbin/haproxy
+ 
+If any configuration or application files have permissions greater than "750" or are not owned by "root", this is a finding.</check-content></check></Rule></Group><Group id="V-89199"><title>SRG-APP-000383-WSR-000175</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99849r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000395</version><title>HAProxy psql-local frontend must be bound to port 5433.</title><description>&lt;VulnDiscussion&gt;Web servers provide numerous processes, features, and functionalities that utilize TCP/IP ports. Some of these processes may be deemed unnecessary or too unsecure to run on a production system.
+
+The HAProxy load balancer in the vRA appliance listens to port 5433 on behalf of the PostgreSQL service.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001762</ident><fixtext fixref="F-95941r1_fix">Navigate to and open /etc/haproxy/conf.d/10-psql.cfg
+
+Navigate to and configure the "frontend psql-local" section with the following value:  
+
+bind 127.0.0.1:5433</fixtext><fix id="F-95941r1_fix" /><check system="C-88891r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+ 
+grep 'bind' /etc/haproxy/conf.d/10-psql.cfg
+ 
+If the value for bind is not set to 5433, this is a finding.</check-content></check></Rule></Group><Group id="V-89201"><title>SRG-APP-000383-WSR-000175</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99851r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000400</version><title>HAProxy vcac frontend must be bound to ports 80 and 443.</title><description>&lt;VulnDiscussion&gt;Web servers provide numerous processes, features, and functionalities that utilize TCP/IP ports. Some of these processes may be deemed unnecessary or too unsecure to run on a production system.
+
+The HAProxy load balancer in the vRA appliance listens to ports 80 and 443 on behalf of the vcac service.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001762</ident><fixtext fixref="F-95943r1_fix">Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to and configure the "frontend https-in" section with the following two values:  
+
+bind 0.0.0.0:80
+bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</fixtext><fix id="F-95943r1_fix" /><check system="C-88893r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+ 
+grep 'bind' /etc/haproxy/conf.d/20-vcac.cfg
+ 
+If two lines are not returned, this is a finding. 
+
+If the values for bind are not set to "80" and to "443", this is a finding.</check-content></check></Rule></Group><Group id="V-89203"><title>SRG-APP-000383-WSR-000175</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99853r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000405</version><title>HAProxy vro frontend must be bound to the correct port 8283.</title><description>&lt;VulnDiscussion&gt;Web servers provide numerous processes, features, and functionalities that utilize TCP/IP ports. Some of these processes may be deemed unnecessary or too unsecure to run on a production system.
+
+The HAProxy load balancer in the vRA appliance listens to ports 8283 on behalf of the vro configuration service.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001762</ident><fixtext fixref="F-95945r1_fix">Navigate to and open /etc/haproxy/conf.d/30-vro-config.cfg
+
+Navigate to and configure the "frontend https-in-vro-config" section with the following value:  
+
+bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</fixtext><fix id="F-95945r1_fix" /><check system="C-88895r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+ 
+grep 'bind' /etc/haproxy/conf.d/30-vro-config.cfg
+ 
+If the value for bind is not set to "8283", this is a finding.</check-content></check></Rule></Group><Group id="V-89205"><title>SRG-APP-000416-WSR-000118</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99855r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000410</version><title>HAProxy must be configured with FIPS 140-2 compliant ciphers for https connections.</title><description>&lt;VulnDiscussion&gt;Transport Layer Security (TLS) is optional for a public web server. However, if authentication is being performed, then the use of the TLS protocol is required. 
+
+Without the use of TLS, the authentication data would be transmitted unencrypted and would become vulnerable to disclosure. Using TLS along with DoD PKI certificates for encryption of the authentication data protects the information from being accessed by all parties on the network. To further protect the authentication data, the web server must use a FIPS 140-2 approved TLS version and all non-FIPS-approved SSL versions must be disabled. 
+
+FIPS 140-2 approved TLS versions include TLS V1.0 or greater. NIST SP 800-52 specifies the preferred configurations for government systems.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002450</ident><fixtext fixref="F-95947r1_fix">Navigate to and open /etc/haproxy/conf.d/30-vro-config.cfg
+
+Navigate to and configure the "frontend https-in-vro-config" section with the following value:  
+
+bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+
+Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to and configure the "frontend https-in" section with the following value:  
+
+bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</fixtext><fix id="F-95947r1_fix" /><check system="C-88897r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+ 
+grep -En 'ciphers' /etc/haproxy/conf.d/*.cfg
+ 
+If two lines are not returned, this is a finding. 
+
+If the values for "ciphers" are not set to "FIPS:+3DES:!aNULL", this is a finding.</check-content></check></Rule></Group><Group id="V-89207"><title>SRG-APP-000435-WSR-000147</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99857r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000425</version><title>HAProxy must be protected from being stopped by a non-privileged user.</title><description>&lt;VulnDiscussion&gt;An attacker has at least two reasons to stop a web server. The first is to cause a DoS, and the second is to put in place changes the attacker made to the web server configuration. 
+
+To prohibit an attacker from stopping the HAProxy process must be owned by "root".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002385</ident><fixtext fixref="F-95949r1_fix">Restart the HAProxy service as "root".</fixtext><fix id="F-95949r1_fix" /><check system="C-88899r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+ps aux -U root | grep '[h]aproxy'
+
+If the command does not return a line, this is a finding.</check-content></check></Rule></Group><Group id="V-89209"><title>SRG-APP-000439-WSR-000151</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99859r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000435</version><title>HAProxy must be configured to use SSL/TLS.</title><description>&lt;VulnDiscussion&gt;Data exchanged between the user and the web server can range from static display data to credentials used to log into the hosted application. Even when data appears to be static, the non-displayed logic in a web page may expose business logic or trusted system relationships. The integrity of all the data being exchanged between the user and web server must always be trusted. To protect the integrity and trust, encryption methods should be used to protect the complete communication session.
+
+In order to protect the integrity and confidentiality of the remote sessions, HAProxy uses SSL/TLS.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002418</ident><fixtext fixref="F-95951r1_fix">Navigate to and open /etc/haproxy/conf.d/30-vro-config.cfg
+
+Navigate to and configure the "frontend https-in-vro-config" section with the following value:  
+
+bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+
+Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to and configure the "frontend https-in" section with the following value:  
+
+bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</fixtext><fix id="F-95951r1_fix" /><check system="C-88901r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command line execute the following command:
+
+grep -En '\sssl\s' /etc/haproxy/conf.d/*.cfg
+
+If the command does not return the two lines below, this is a finding.
+
+/etc/haproxy/conf.d/20-vcac.cfg:4:    bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+/etc/haproxy/conf.d/30-vro-config.cfg:2:    bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</check-content></check></Rule></Group><Group id="V-89211"><title>SRG-APP-000439-WSR-000156</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99861r1_rule" severity="high" weight="10.0"><version>VRAU-HA-000460</version><title>HAProxy must set the no-sslv3 value on all client ports.</title><description>&lt;VulnDiscussion&gt;Transport Layer Security (TLS) is a required transmission protocol for a web server hosting controlled information. The use of TLS provides confidentiality of data in transit between the web server and client. FIPS 140-2 approved TLS versions must be enabled and non-FIPS-approved SSL versions must be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002418</ident><fixtext fixref="F-95953r1_fix">Navigate to and open /etc/haproxy/conf.d/30-vro-config.cfg
+
+Navigate to and configure the "frontend https-in-vro-config" section with the following value:  
+
+bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+
+Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to and configure the "frontend https-in" section with the following value:  
+
+bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</fixtext><fix id="F-95953r1_fix" /><check system="C-88903r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep -EnR '\bbind\b.*\bssl\b' /etc/haproxy
+
+Verify that each returned line contains the no-sslv3 value.
+
+If any lines do not have this value, this is a finding.</check-content></check></Rule></Group><Group id="V-89213"><title>SRG-APP-000439-WSR-000188</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99863r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000465</version><title>HAProxy must remove all export ciphers.</title><description>&lt;VulnDiscussion&gt;During the initial setup of a Transport Layer Security (TLS) connection to the web server, the client sends a list of supported cipher suites in order of preference. The web server will reply with the cipher suite it will use for communication from the client list. If an attacker can intercept the submission of cipher suites to the web server and place, as the preferred cipher suite, a weak export suite, the encryption used for the session becomes easy for the attacker to break, often within minutes to hours.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002418</ident><fixtext fixref="F-95955r1_fix">Navigate to and open /etc/haproxy/conf.d/30-vro-config.cfg
+
+Navigate to and configure the "frontend https-in-vro-config" section with the following value:  
+
+bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+
+Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to and configure the "frontend https-in" section with the following value:  
+
+bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</fixtext><fix id="F-95955r1_fix" /><check system="C-88905r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command line execute the following command:
+
+grep -En '\sssl\s' /etc/haproxy/conf.d/*.cfg
+
+If the command does not return the two lines below, this is a finding.
+
+/etc/haproxy/conf.d/20-vcac.cfg:4:    bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+/etc/haproxy/conf.d/30-vro-config.cfg:2:    bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</check-content></check></Rule></Group><Group id="V-89215"><title>SRG-APP-000456-WSR-000187</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99865r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000480</version><title>HAProxy must have the latest approved security-relevant software updates installed.</title><description>&lt;VulnDiscussion&gt;All vRA components, to include Lighttpd, are under VMware configuration management control. The CM process ensures that all patches, functions, and modules have been thoroughly tested before being introduced into the production version.
+
+By using the most current version of Lighttpd, the Lighttpd server will always be using the most stable and known baseline.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002605</ident><fixtext fixref="F-95957r2_fix">Ensure HAProxy has the latest approved security-relevant software updates and the updates are installed within the identified time period.</fixtext><fix id="F-95957r2_fix" /><check system="C-88907r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Interview the ISSO.
+
+Determine whether HAProxy has the latest approved security-relevant software updates and updates are installed within the identified time period. 
+
+If the latest approved security-relevant software updates are not installed or installed within the identified time period, this is a finding.</check-content></check></Rule></Group><Group id="V-89217"><title>SRG-APP-000516-WSR-000174</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-99867r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000490</version><title>HAProxy must set the maxconn value.</title><description>&lt;VulnDiscussion&gt;Limiting the total number of connections that a server is allowed to open prevents an attacker from overloading a web server. Overloading the server will prevent it from managing other tasks besides serving web requests.
+
+This setting works together with per-client limits to mitigate against DDoS attacks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-95959r1_fix">Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the "globals" section and add the following line:
+
+maxconn 32768</fixtext><fix id="F-95959r1_fix" /><check system="C-88909r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command line execute the following command:
+ 
+grep maxconn /etc/haproxy/haproxy.cfg
+ 
+If the "maxconn" value is not set to "32768", this is a finding.</check-content></check></Rule></Group><Group id="V-90297"><title>SRG-APP-000001-WSR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100947r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000005</version><title>HAProxy must limit the amount of time that an http request can be received.</title><description>&lt;VulnDiscussion&gt;Resource exhaustion can occur when an unlimited number of concurrent requests are allowed on a web site, facilitating a denial of service attack. Mitigating this kind of attack will include limiting the parameter values associated with keepalive, (i.e., a parameter used to limit the amount of time a connection may be inactive).
+
+HAProxy provides an http-request timeout parameter that set the maximum allowed time to wait for a complete HTTP request. Setting this parameter will mitigate slowloris DoS attacks. Slowloris tries to keep many connections to the target web server open and hold them open as long as possible. It accomplishes this by opening connections to the target web server and sending a partial request. Periodically, it will send subsequent HTTP headers, adding to—but never completing—the request.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000054</ident><fixtext fixref="F-97039r1_fix">Navigate to and open /etc/haproxy/haproxy.cfg   
+
+Configure the haproxy.cfg file with the following value in the global section: 
+
+'timeout http-request 5000'</fixtext><fix id="F-97039r1_fix" /><check system="C-89989r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command prompt, execute the following command:
+
+grep 'timeout http-request' /etc/haproxy/haproxy.cfg
+
+If the value of ''timeout http-request" is not set to "5000", is commented out, or is missing, this is a finding.</check-content></check></Rule></Group><Group id="V-90299"><title>SRG-APP-000001-WSR-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100949r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000010</version><title>HAProxy must enable cookie-based persistence in a backend.</title><description>&lt;VulnDiscussion&gt;Session management is the practice of protecting the bulk of the user authorization and identity information. As a load balancer, HAProxy must participate in session management in order to set the session management cookie. Additionally, HAProxy must also ensure that the backend server which started the session with the client is forwarded subsequent requests from the client.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000054</ident><fixtext fixref="F-97041r1_fix">Navigate to and open the following files:
+
+/etc/haproxy/conf.d/20-vcac.cfg
+/etc/haproxy/conf.d/30-vro-config.cfg
+
+Configure each backend with the following value:
+
+'cookie JSESSIONID prefix'</fixtext><fix id="F-97041r1_fix" /><check system="C-89991r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open the following files:
+
+/etc/haproxy/conf.d/20-vcac.cfg
+/etc/haproxy/conf.d/30-vro-config.cfg
+
+Verify that each backend is configured with the following:
+
+cookie JSESSIONID prefix
+
+If "cookie" is not set for each backend, this is a finding.</check-content></check></Rule></Group><Group id="V-90301"><title>SRG-APP-000014-WSR-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100951r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000015</version><title>HAProxy must be configured with FIPS 140-2 compliant ciphers for https connections.</title><description>&lt;VulnDiscussion&gt;Transport Layer Security (TLS) is optional for a public web server. However, if authentication is being performed, then the use of the TLS protocol is required. 
+
+Without the use of TLS, the authentication data would be transmitted unencrypted and would become vulnerable to disclosure. Using TLS along with DoD PKI certificates for encryption of the authentication data protects the information from being accessed by all parties on the network. To further protect the authentication data, the web server must use a FIPS 140-2 approved TLS version and all non-FIPS-approved SSL versions must be disabled. 
+
+FIPS 140-2 approved TLS versions include TLS V1.0 or greater. NIST SP 800-52 specifies the preferred configurations for government systems.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000068</ident><fixtext fixref="F-97043r1_fix">Navigate to and open the following files:
+
+/etc/haproxy/conf.d/20-vcac.cfg
+/etc/haproxy/conf.d/30-vro-config.cfg
+
+Configure the bind option for each frontend with the following ciphers parameter:
+
+'ciphers FIPS:+3DES:!aNULL'.</fixtext><fix id="F-97043r1_fix" /><check system="C-89993r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open the following files:
+
+/etc/haproxy/conf.d/20-vcac.cfg
+/etc/haproxy/conf.d/30-vro-config.cfg
+
+Verify that each frontend is configured with the following:
+
+bind :&lt;port&gt; ssl crt &lt;pemfile&gt; ciphers FIPS:+3DES:!aNULL no-sslv3
+
+Note: &lt;port&gt; and &lt;pemfile&gt; will be different for each frontend.
+
+If the ciphers listed are not as shown above, this is a finding.</check-content></check></Rule></Group><Group id="V-90303"><title>SRG-APP-000015-WSR-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100953r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000020</version><title>HAProxy must be configured to use TLS for https connections.</title><description>&lt;VulnDiscussion&gt;Data exchanged between the user and the web server can range from static display data to credentials used to log into the hosted application. Even when data appears to be static, the non-displayed logic in a web page may expose business logic or trusted system relationships. The integrity of all the data being exchanged between the user and web server must always be trusted. To protect the integrity and trust, encryption methods should be used to protect the complete communication session.
+
+In order to protect the integrity and confidentiality of the remote sessions, HAProxy uses SSL/TLS.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001453</ident><fixtext fixref="F-97045r1_fix">Navigate to and open the following files:
+
+/etc/haproxy/conf.d/20-vcac.cfg
+/etc/haproxy/conf.d/30-vro-config.cfg
+
+Configure the bind option for each frontend with the "ssl" parameter.</fixtext><fix id="F-97045r1_fix" /><check system="C-89995r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open the following files:
+
+/etc/haproxy/conf.d/20-vcac.cfg
+/etc/haproxy/conf.d/30-vro-config.cfg
+
+Verify that each frontend is configured with the following:
+
+bind :&lt;port&gt; ssl crt &lt;pemfile&gt; ciphers FIPS:+3DES:!aNULL no-sslv3
+
+Note: &lt;port&gt; and &lt;pemfile&gt; will be different for each frontend.
+
+If "ssl" is not set for the bind option for each frontend, this is a finding.</check-content></check></Rule></Group><Group id="V-90305"><title>SRG-APP-000016-WSR-000005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100955r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000025</version><title>HAProxy must be configured to use syslog.</title><description>&lt;VulnDiscussion&gt;Remote access to the web server is any access that communicates through an external, non-organization-controlled network. Remote access can be used to access hosted applications or to perform management functions. 
+
+By providing remote access information to an external monitoring system, the organization can monitor for cyber attacks and monitor compliance with remote access policies. The organization can also look at data organization wide and determine an attack or anomaly is occurring on the organization which might not be noticed if the data were kept local to the web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000067</ident><fixtext fixref="F-97047r1_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.
+
+Configure the globals section with the following: 
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog
+
+Navigate to and open the following files:
+
+/etc/haproxy/conf.d/30-vro-config.cfg 
+/etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to each frontend section.
+
+Remove any log options from each frontend.</fixtext><fix id="F-97047r1_fix" /><check system="C-89997r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the globals section.
+
+Verify that the globals section contains the log keyword, and that the log option contains the local0 syslog facility as its parameter.
+
+If properly configured, the globals section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the defaults section.
+
+Verify that the defaults section contains the log keyword with the global value.
+
+Verify that an option keyword has been configured with the httplog value.
+
+If properly configured, the "globals" section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open the following files:
+
+/etc/haproxy/conf.d/30-vro-config.cfg 
+/etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to the each frontend section.
+
+Verify that the log keyword has not been set for each frontend. 
+
+If the log keyword is resent in a frontend, this is a finding.
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility. 
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging start and stop events to the log file. 
+
+If the log file is not recording HAProxy start and stop events, this is a finding.</check-content></check></Rule></Group><Group id="V-90307"><title>SRG-APP-000089-WSR-000047</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100957r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000035</version><title>HAProxy must generate log records for system startup and shutdown.</title><description>&lt;VulnDiscussion&gt;Logging must be comprehensive to be useful for both intrusion monitoring and security investigations. Recording the start and stop events of HAProxy will provide useful information to investigators.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000169</ident><fixtext fixref="F-97049r1_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.
+
+Configure the globals section with the following: 
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog</fixtext><fix id="F-97049r1_fix" /><check system="C-89999r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the globals section.
+
+Verify that the globals section contains the log keyword, and that the log option contains the local0 syslog facility as its parameter.
+
+If properly configured, the globals section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the defaults section.
+
+Verify that the defaults section contains the log keyword with the global value.
+
+Verify that an option keyword has been configured with the httplog value.
+
+If properly configured, the globals section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility. 
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging start and stop events to the log file. 
+
+If the log file is not recording HAProxy start and stop events, this is a finding.</check-content></check></Rule></Group><Group id="V-90309"><title>SRG-APP-000095-WSR-000056</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100959r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000050</version><title>HAProxy must log what type of events occurred.</title><description>&lt;VulnDiscussion&gt;Ascertaining the correct type of event that occurred is important during forensic analysis. The correct determination of the event and when it occurred is important in relation to other events that happened at that same time. 
+
+Without sufficient information establishing what type of log event occurred, investigation into the cause of event is severely hindered. Log record content that may be necessary to satisfy the requirement of this control includes, but is not limited to, time stamps, source and destination IP addresses, user/process identifiers, event descriptions, application-specific events, success/fail indications, file names involved, access control, or flow control rules invoked.
+
+When configured for httplog, HAProxy logs uses the Common Log Format (CLF). The CLF format, a World Wide Web Consortium standard, captures the type of web server event in addition to other useful information. This will enable forensic analysis of server events in case of a malicious event.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000130</ident><fixtext fixref="F-97051r1_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.
+
+Configure the globals section with the following: 
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog</fixtext><fix id="F-97051r1_fix" /><check system="C-90001r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the globals section.
+
+Verify that the globals section contains the log keyword, and that the log option contains the local0 syslog facility as its parameter.
+
+If properly configured, the globals section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the defaults section.
+
+Verify that the defaults section contains the log keyword with the global value.
+
+Verify that an option keyword has been configured with the httplog value.
+
+If properly configured, the globals section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility. 
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging the type of events to the log file. 
+
+If the log file is not recording the type of events, this is a finding.</check-content></check></Rule></Group><Group id="V-90311"><title>SRG-APP-000096-WSR-000057</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100961r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000055</version><title>HAProxy must log when events occurred.</title><description>&lt;VulnDiscussion&gt;Ascertaining when an event occurred is important during forensic analysis. The correct determination of the event and when it occurred is important in relation to other events that happened at that same time. 
+
+Without sufficient information establishing when an event occurred, investigation into the cause of event is severely hindered. Log record content that may be necessary to satisfy the requirement of this control includes, but is not limited to, time stamps, source and destination IP addresses, user/process identifiers, event descriptions, application-specific events, success/fail indications, file names involved, access control, or flow control rules invoked.
+
+When configured for httplog, HAProxy logs uses the Common Log Format (CLF). The CLF format, a World Wide Web Consortium standard, captures the time of a web server event in addition to other useful information. This will enable forensic analysis of server events in case of a malicious event.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000131</ident><fixtext fixref="F-97053r1_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.
+
+Configure the globals section with the following: 
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog</fixtext><fix id="F-97053r1_fix" /><check system="C-90003r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the globals section.
+
+Verify that the globals section contains the log keyword, and that the log option contains the local0 syslog facility as its parameter.
+
+If properly configured, the globals section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the defaults section.
+
+Verify that the defaults section contains the log keyword with the global value.
+
+Verify that an option keyword has been configured with the httplog value.
+
+If properly configured, the globals section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility. 
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging the time of events to the log file. 
+
+If the log file is not recording the time of events, this is a finding.</check-content></check></Rule></Group><Group id="V-90313"><title>SRG-APP-000097-WSR-000058</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100963r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000060</version><title>HAProxy must log where events occurred.</title><description>&lt;VulnDiscussion&gt;Ascertaining where an event occurred is important during forensic analysis. The correct determination of the event and where on the web server it occurred is important in relation to other events that happened at that same time. 
+
+Without sufficient information establishing where an event occurred, investigation into the cause of event is severely hindered. Log record content that may be necessary to satisfy the requirement of this control includes, but is not limited to, time stamps, source and destination IP addresses, user/process identifiers, event descriptions, application-specific events, success/fail indications, file names involved, access control, or flow control rules invoked.
+
+When configured for httplog, HAProxy logs uses the Common Log Format (CLF). The CLF format, a World Wide Web Consortium standard, captures the local resource that was the target of a web server event in addition to other useful information. This will enable forensic analysis of server events in case of a malicious event.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000132</ident><fixtext fixref="F-97055r1_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.
+
+Configure the globals section with the following: 
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog</fixtext><fix id="F-97055r1_fix" /><check system="C-90005r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the globals section.
+
+Verify that the globals section contains the log keyword, and that the log option contains the local0 syslog facility as its parameter.
+
+If properly configured, the globals section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the defaults section.
+
+Verify that the defaults section contains the log keyword with the global value.
+
+Verify that an option keyword has been configured with the httplog value.
+
+If properly configured, the globals section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility. 
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging where on the web server resources were requested to the log file. 
+
+If the log file is not recording where the events occurred, this is a finding.</check-content></check></Rule></Group><Group id="V-90315"><title>SRG-APP-000098-WSR-000059</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100965r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000065</version><title>HAProxy must log the source of events.</title><description>&lt;VulnDiscussion&gt;Ascertaining the source of an event is important during forensic analysis. The correct determination of the event and what client requested the resource is important in relation to other events that happened at that same time. 
+
+Without sufficient information establishing the source of an event, investigation into the cause of event is severely hindered. Log record content that may be necessary to satisfy the requirement of this control includes, but is not limited to, time stamps, source and destination IP addresses, user/process identifiers, event descriptions, application-specific events, success/fail indications, file names involved, access control, or flow control rules invoked.
+
+When configured for httplog, HAProxy logs uses the Common Log Format (CLF). The CLF format, a World Wide Web Consortium standard, captures the client IP address that requested the web server event in addition to other useful information. This will enable forensic analysis of server events in case of a malicious event.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000133</ident><fixtext fixref="F-97057r1_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.
+
+Configure the globals section with the following: 
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog</fixtext><fix id="F-97057r1_fix" /><check system="C-90007r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the globals section.
+
+Verify that the globals section contains the log keyword, and that the log option contains the local0 syslog facility as its parameter.
+
+If properly configured, the globals section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the defaults section.
+
+Verify that the defaults section contains the log keyword with the global value.
+
+Verify that an option keyword has been configured with the httplog value.
+
+If properly configured, the globals section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility. 
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging the source of the event to the log file. 
+
+If the log file is not recording the source of the event, this is a finding.</check-content></check></Rule></Group><Group id="V-90317"><title>SRG-APP-000099-WSR-000061</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100967r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000075</version><title>HAProxy must log the outcome of events.</title><description>&lt;VulnDiscussion&gt;Ascertaining the outcome of an event is important during forensic analysis. The correct determination of the event and its outcome is important in relation to other events that happened at that same time. 
+
+Without sufficient information establishing the outcome of an event, investigation into the cause of event is severely hindered. Log record content that may be necessary to satisfy the requirement of this control includes, but is not limited to, time stamps, source and destination IP addresses, user/process identifiers, event descriptions, application-specific events, success/fail indications, file names involved, access control, or flow control rules invoked.
+
+When configured for httplog, HAProxy logs uses the Common Log Format (CLF). The CLF format, a World Wide Web Consortium standard, captures the success or failure of the web server event in addition to other useful information. This will enable forensic analysis of server events in case of a malicious event.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000134</ident><fixtext fixref="F-97059r1_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.
+
+Configure the globals section with the following: 
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog</fixtext><fix id="F-97059r1_fix" /><check system="C-90009r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the globals section.
+
+Verify that the globals section contains the log keyword, and that the log option contains the local0 syslog facility as its parameter.
+
+If properly configured, the globals section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the defaults section.
+
+Verify that the defaults section contains the log keyword with the global value.
+
+Verify that an option keyword has been configured with the httplog value.
+
+If properly configured, the globals section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility. 
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging the outcome of web server events to the log file. 
+
+If the log file is not recording the outcome of events, this is a finding.</check-content></check></Rule></Group><Group id="V-90319"><title>SRG-APP-000100-WSR-000064</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100969r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000080</version><title>HAProxy must log the session ID from the request headers.</title><description>&lt;VulnDiscussion&gt;Ascertaining the identity of the requestor of an event is important during forensic analysis. The correct determination of identity of the requestor of the event and its outcome is important in relation to other events that happened at that same time. 
+
+Without sufficient information establishing the identity of the requestor of an event, investigation into the cause of event is severely hindered. Log record content that may be necessary to satisfy the requirement of this control includes, but is not limited to, time stamps, source and destination IP addresses, user/process identifiers, event descriptions, application-specific events, success/fail indications, file names involved, access control, or flow control rules invoked.
+
+When configured for httplog, HAProxy logs uses the Common Log Format (CLF). The CLF format, a World Wide Web Consortium standard, captures the request headers of the web server event in addition to other useful information. This will enable forensic analysis of server events in case of a malicious event.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001487</ident><fixtext fixref="F-97061r1_fix">Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.
+
+Configure the globals section with the following: 
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog</fixtext><fix id="F-97061r1_fix" /><check system="C-90013r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the globals section.
+
+Verify that the globals section contains the log keyword, and that the log option contains the local0 syslog facility as its parameter.
+
+If properly configured, the globals section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the defaults section.
+
+Verify that the defaults section contains the log keyword with the global value.
+
+Verify that an option keyword has been configured with the httplog value.
+
+If properly configured, the globals section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility. 
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging request headers to include session ID to the log file. 
+
+If the log file is not recording the session ID from the request headers, this is a finding.</check-content></check></Rule></Group><Group id="V-90321"><title>SRG-APP-000439-WSR-000152</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100971r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000440</version><title>HAProxy session IDs must be sent to the client using SSL/TLS.</title><description>&lt;VulnDiscussion&gt;The HTTP protocol is a stateless protocol. To maintain a session, a session identifier is used. The session identifier is a piece of data that is used to identify a session and a user. If the session identifier is compromised by an attacker, the session can be hijacked. By encrypting the session identifier, the identifier becomes more difficult for an attacker to hijack, decrypt, and use before the session has expired.
+
+In order to protect the integrity and confidentiality of the remote sessions, HAProxy uses SSL/TLS.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002418</ident><fixtext fixref="F-97063r1_fix">Navigate to and open /etc/haproxy/conf.d/30-vro-config.cfg
+
+Navigate to and configure the "frontend https-in-vro-config" section with the following value:  
+
+bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+
+Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to and configure the "frontend https-in" section with the following value:  
+
+bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</fixtext><fix id="F-97063r1_fix" /><check system="C-90015r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command line execute the following command:
+
+grep -En '\sssl\s' /etc/haproxy/conf.d/*.cfg
+
+If the command does not return the two lines below, this is a finding.
+
+/etc/haproxy/conf.d/20-vcac.cfg:4:    bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+/etc/haproxy/conf.d/30-vro-config.cfg:2:    bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</check-content></check></Rule></Group><Group id="V-90323"><title>SRG-APP-000442-WSR-000182</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-100973r1_rule" severity="medium" weight="10.0"><version>VRAU-HA-000475</version><title>HAProxy must maintain the confidentiality and integrity of information during reception.</title><description>&lt;VulnDiscussion&gt;Data exchanged between the user and the web server can range from static display data to credentials used to log into the hosted application. Even when data appears to be static, the non-displayed logic in a web page may expose business logic or trusted system relationships. The integrity of all the data being exchanged between the user and web server must always be trusted. To protect the integrity and trust, encryption methods should be used to protect the complete communication session.
+
+In order to protect the integrity and confidentiality of the remote sessions, HAProxy uses SSL/TLS.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vRealize Automation 7.x HAProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vRealize Automation 7.x HAProxy</dc:subject><dc:identifier>3455</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002422</ident><fixtext fixref="F-97065r1_fix">Navigate to and open /etc/haproxy/conf.d/30-vro-config.cfg
+
+Navigate to and configure the "frontend https-in-vro-config" section with the following value:  
+
+bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+
+Navigate to and open /etc/haproxy/conf.d/20-vcac.cfg
+
+Navigate to and configure the "frontend https-in" section with the following value:  
+
+bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</fixtext><fix id="F-97065r1_fix" /><check system="C-90017r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_vRealize_Automation_7-x_HA_Proxy_STIG.xml" /><check-content>At the command line execute the following command:
+
+grep -En '\sssl\s' /etc/haproxy/conf.d/*.cfg
+
+If the command does not return the two lines below, this is a finding.
+
+/etc/haproxy/conf.d/20-vcac.cfg:4:    bind 0.0.0.0:443 ssl crt /etc/apache2/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3
+/etc/haproxy/conf.d/30-vro-config.cfg:2:    bind :8283 ssl crt /opt/vmware/etc/lighttpd/server.pem ciphers FIPS:+3DES:!aNULL no-sslv3</check-content></check></Rule></Group></Benchmark>

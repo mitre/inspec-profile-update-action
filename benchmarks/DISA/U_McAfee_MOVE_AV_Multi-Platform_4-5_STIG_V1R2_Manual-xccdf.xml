@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="McAfee_MOVE_AV_Multi-Platform_4-5_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2018-07-09">accepted</status><title>McAfee MOVE AV Multi-Platform 4.5 Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 27 Jul 2018</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-78509" selected="true" /><select idref="V-78511" selected="true" /><select idref="V-78513" selected="true" /><select idref="V-78515" selected="true" /><select idref="V-78517" selected="true" /><select idref="V-78519" selected="true" /><select idref="V-78521" selected="true" /><select idref="V-78523" selected="true" /><select idref="V-78525" selected="true" /><select idref="V-78527" selected="true" /><select idref="V-78529" selected="true" /><select idref="V-78531" selected="true" /><select idref="V-78533" selected="true" /><select idref="V-78535" selected="true" /><select idref="V-78537" selected="true" /><select idref="V-78539" selected="true" /><select idref="V-78541" selected="true" /><select idref="V-78543" selected="true" /><select idref="V-78545" selected="true" /><select idref="V-78547" selected="true" /><select idref="V-78549" selected="true" /><select idref="V-78551" selected="true" /><select idref="V-78553" selected="true" /><select idref="V-78555" selected="true" /><select idref="V-78557" selected="true" /><select idref="V-78559" selected="true" /><select idref="V-78561" selected="true" /><select idref="V-78563" selected="true" /><select idref="V-78565" selected="true" /><select idref="V-78567" selected="true" /><select idref="V-78569" selected="true" /><select idref="V-78571" selected="true" /><select idref="V-78573" selected="true" /><select idref="V-78575" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-78509" selected="true" /><select idref="V-78511" selected="true" /><select idref="V-78513" selected="true" /><select idref="V-78515" selected="true" /><select idref="V-78517" selected="true" /><select idref="V-78519" selected="true" /><select idref="V-78521" selected="true" /><select idref="V-78523" selected="true" /><select idref="V-78525" selected="true" /><select idref="V-78527" selected="true" /><select idref="V-78529" selected="true" /><select idref="V-78531" selected="true" /><select idref="V-78533" selected="true" /><select idref="V-78535" selected="true" /><select idref="V-78537" selected="true" /><select idref="V-78539" selected="true" /><select idref="V-78541" selected="true" /><select idref="V-78543" selected="true" /><select idref="V-78545" selected="true" /><select idref="V-78547" selected="true" /><select idref="V-78549" selected="true" /><select idref="V-78551" selected="true" /><select idref="V-78553" selected="true" /><select idref="V-78555" selected="true" /><select idref="V-78557" selected="true" /><select idref="V-78559" selected="true" /><select idref="V-78561" selected="true" /><select idref="V-78563" selected="true" /><select idref="V-78565" selected="true" /><select idref="V-78567" selected="true" /><select idref="V-78569" selected="true" /><select idref="V-78571" selected="true" /><select idref="V-78573" selected="true" /><select idref="V-78575" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-78509" selected="true" /><select idref="V-78511" selected="true" /><select idref="V-78513" selected="true" /><select idref="V-78515" selected="true" /><select idref="V-78517" selected="true" /><select idref="V-78519" selected="true" /><select idref="V-78521" selected="true" /><select idref="V-78523" selected="true" /><select idref="V-78525" selected="true" /><select idref="V-78527" selected="true" /><select idref="V-78529" selected="true" /><select idref="V-78531" selected="true" /><select idref="V-78533" selected="true" /><select idref="V-78535" selected="true" /><select idref="V-78537" selected="true" /><select idref="V-78539" selected="true" /><select idref="V-78541" selected="true" /><select idref="V-78543" selected="true" /><select idref="V-78545" selected="true" /><select idref="V-78547" selected="true" /><select idref="V-78549" selected="true" /><select idref="V-78551" selected="true" /><select idref="V-78553" selected="true" /><select idref="V-78555" selected="true" /><select idref="V-78557" selected="true" /><select idref="V-78559" selected="true" /><select idref="V-78561" selected="true" /><select idref="V-78563" selected="true" /><select idref="V-78565" selected="true" /><select idref="V-78567" selected="true" /><select idref="V-78569" selected="true" /><select idref="V-78571" selected="true" /><select idref="V-78573" selected="true" /><select idref="V-78575" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-78509" selected="true" /><select idref="V-78511" selected="true" /><select idref="V-78513" selected="true" /><select idref="V-78515" selected="true" /><select idref="V-78517" selected="true" /><select idref="V-78519" selected="true" /><select idref="V-78521" selected="true" /><select idref="V-78523" selected="true" /><select idref="V-78525" selected="true" /><select idref="V-78527" selected="true" /><select idref="V-78529" selected="true" /><select idref="V-78531" selected="true" /><select idref="V-78533" selected="true" /><select idref="V-78535" selected="true" /><select idref="V-78537" selected="true" /><select idref="V-78539" selected="true" /><select idref="V-78541" selected="true" /><select idref="V-78543" selected="true" /><select idref="V-78545" selected="true" /><select idref="V-78547" selected="true" /><select idref="V-78549" selected="true" /><select idref="V-78551" selected="true" /><select idref="V-78553" selected="true" /><select idref="V-78555" selected="true" /><select idref="V-78557" selected="true" /><select idref="V-78559" selected="true" /><select idref="V-78561" selected="true" /><select idref="V-78563" selected="true" /><select idref="V-78565" selected="true" /><select idref="V-78567" selected="true" /><select idref="V-78569" selected="true" /><select idref="V-78571" selected="true" /><select idref="V-78573" selected="true" /><select idref="V-78575" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-78509" selected="true" /><select idref="V-78511" selected="true" /><select idref="V-78513" selected="true" /><select idref="V-78515" selected="true" /><select idref="V-78517" selected="true" /><select idref="V-78519" selected="true" /><select idref="V-78521" selected="true" /><select idref="V-78523" selected="true" /><select idref="V-78525" selected="true" /><select idref="V-78527" selected="true" /><select idref="V-78529" selected="true" /><select idref="V-78531" selected="true" /><select idref="V-78533" selected="true" /><select idref="V-78535" selected="true" /><select idref="V-78537" selected="true" /><select idref="V-78539" selected="true" /><select idref="V-78541" selected="true" /><select idref="V-78543" selected="true" /><select idref="V-78545" selected="true" /><select idref="V-78547" selected="true" /><select idref="V-78549" selected="true" /><select idref="V-78551" selected="true" /><select idref="V-78553" selected="true" /><select idref="V-78555" selected="true" /><select idref="V-78557" selected="true" /><select idref="V-78559" selected="true" /><select idref="V-78561" selected="true" /><select idref="V-78563" selected="true" /><select idref="V-78565" selected="true" /><select idref="V-78567" selected="true" /><select idref="V-78569" selected="true" /><select idref="V-78571" selected="true" /><select idref="V-78573" selected="true" /><select idref="V-78575" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-78509" selected="true" /><select idref="V-78511" selected="true" /><select idref="V-78513" selected="true" /><select idref="V-78515" selected="true" /><select idref="V-78517" selected="true" /><select idref="V-78519" selected="true" /><select idref="V-78521" selected="true" /><select idref="V-78523" selected="true" /><select idref="V-78525" selected="true" /><select idref="V-78527" selected="true" /><select idref="V-78529" selected="true" /><select idref="V-78531" selected="true" /><select idref="V-78533" selected="true" /><select idref="V-78535" selected="true" /><select idref="V-78537" selected="true" /><select idref="V-78539" selected="true" /><select idref="V-78541" selected="true" /><select idref="V-78543" selected="true" /><select idref="V-78545" selected="true" /><select idref="V-78547" selected="true" /><select idref="V-78549" selected="true" /><select idref="V-78551" selected="true" /><select idref="V-78553" selected="true" /><select idref="V-78555" selected="true" /><select idref="V-78557" selected="true" /><select idref="V-78559" selected="true" /><select idref="V-78561" selected="true" /><select idref="V-78563" selected="true" /><select idref="V-78565" selected="true" /><select idref="V-78567" selected="true" /><select idref="V-78569" selected="true" /><select idref="V-78571" selected="true" /><select idref="V-78573" selected="true" /><select idref="V-78575" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-78509" selected="true" /><select idref="V-78511" selected="true" /><select idref="V-78513" selected="true" /><select idref="V-78515" selected="true" /><select idref="V-78517" selected="true" /><select idref="V-78519" selected="true" /><select idref="V-78521" selected="true" /><select idref="V-78523" selected="true" /><select idref="V-78525" selected="true" /><select idref="V-78527" selected="true" /><select idref="V-78529" selected="true" /><select idref="V-78531" selected="true" /><select idref="V-78533" selected="true" /><select idref="V-78535" selected="true" /><select idref="V-78537" selected="true" /><select idref="V-78539" selected="true" /><select idref="V-78541" selected="true" /><select idref="V-78543" selected="true" /><select idref="V-78545" selected="true" /><select idref="V-78547" selected="true" /><select idref="V-78549" selected="true" /><select idref="V-78551" selected="true" /><select idref="V-78553" selected="true" /><select idref="V-78555" selected="true" /><select idref="V-78557" selected="true" /><select idref="V-78559" selected="true" /><select idref="V-78561" selected="true" /><select idref="V-78563" selected="true" /><select idref="V-78565" selected="true" /><select idref="V-78567" selected="true" /><select idref="V-78569" selected="true" /><select idref="V-78571" selected="true" /><select idref="V-78573" selected="true" /><select idref="V-78575" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-78509" selected="true" /><select idref="V-78511" selected="true" /><select idref="V-78513" selected="true" /><select idref="V-78515" selected="true" /><select idref="V-78517" selected="true" /><select idref="V-78519" selected="true" /><select idref="V-78521" selected="true" /><select idref="V-78523" selected="true" /><select idref="V-78525" selected="true" /><select idref="V-78527" selected="true" /><select idref="V-78529" selected="true" /><select idref="V-78531" selected="true" /><select idref="V-78533" selected="true" /><select idref="V-78535" selected="true" /><select idref="V-78537" selected="true" /><select idref="V-78539" selected="true" /><select idref="V-78541" selected="true" /><select idref="V-78543" selected="true" /><select idref="V-78545" selected="true" /><select idref="V-78547" selected="true" /><select idref="V-78549" selected="true" /><select idref="V-78551" selected="true" /><select idref="V-78553" selected="true" /><select idref="V-78555" selected="true" /><select idref="V-78557" selected="true" /><select idref="V-78559" selected="true" /><select idref="V-78561" selected="true" /><select idref="V-78563" selected="true" /><select idref="V-78565" selected="true" /><select idref="V-78567" selected="true" /><select idref="V-78569" selected="true" /><select idref="V-78571" selected="true" /><select idref="V-78573" selected="true" /><select idref="V-78575" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-78509" selected="true" /><select idref="V-78511" selected="true" /><select idref="V-78513" selected="true" /><select idref="V-78515" selected="true" /><select idref="V-78517" selected="true" /><select idref="V-78519" selected="true" /><select idref="V-78521" selected="true" /><select idref="V-78523" selected="true" /><select idref="V-78525" selected="true" /><select idref="V-78527" selected="true" /><select idref="V-78529" selected="true" /><select idref="V-78531" selected="true" /><select idref="V-78533" selected="true" /><select idref="V-78535" selected="true" /><select idref="V-78537" selected="true" /><select idref="V-78539" selected="true" /><select idref="V-78541" selected="true" /><select idref="V-78543" selected="true" /><select idref="V-78545" selected="true" /><select idref="V-78547" selected="true" /><select idref="V-78549" selected="true" /><select idref="V-78551" selected="true" /><select idref="V-78553" selected="true" /><select idref="V-78555" selected="true" /><select idref="V-78557" selected="true" /><select idref="V-78559" selected="true" /><select idref="V-78561" selected="true" /><select idref="V-78563" selected="true" /><select idref="V-78565" selected="true" /><select idref="V-78567" selected="true" /><select idref="V-78569" selected="true" /><select idref="V-78571" selected="true" /><select idref="V-78573" selected="true" /><select idref="V-78575" selected="true" /></Profile><Group id="V-78509"><title>MV45-COP-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93215r1_rule" severity="medium" weight="10.0"><version>MV45-COP-000001</version><title>The McAfee MOVE AV Common Options policy must be configured to report all events to the Windows Event Log.</title><description>&lt;VulnDiscussion&gt;Forensic identification is the practice of identifying infected hosts by looking for evidence of recent infections. The evidence may be very recent (only a few minutes old) or not so recent (hours or days old); the older the information is, the less accurate it is likely to be. The most obvious sources of evidence are those that are designed to identify malware activity, such as anti-virus software, content filtering (e.g., anti-spam measures), IPS, and SIEM technologies. The logs of security applications might contain detailed records of suspicious activity and might also indicate whether a security compromise occurred or was prevented.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001489</ident><fixtext fixref="F-85243r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Click "Show Advanced".
+
+Under "Events", select the "Log event to Windows Application log" check box.
+
+Click "Save".</fixtext><fix id="F-85243r1_fix" /><check system="C-78071r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus Common 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Click "Show Advanced".
+
+Under "Events", verify the "Log event to Windows Application log" check box is selected.
+
+If the "Log event to Windows Application log" check box is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78511"><title>MV45-COP-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93217r1_rule" severity="medium" weight="10.0"><version>MV45-COP-000002</version><title>The McAfee MOVE AV Common Options policy must be configured to send all events to the HBSS ePO server.</title><description>&lt;VulnDiscussion&gt;Forensic identification is the practice of identifying infected hosts by looking for evidence of recent infections. The evidence may be very recent (only a few minutes old) or not so recent (hours or days old); the older the information is, the less accurate it is likely to be. The most obvious sources of evidence are those that are designed to identify malware activity, such as anti-virus software, content filtering (e.g., anti-spam measures), IPS, and SIEM technologies. The logs of security applications might contain detailed records of suspicious activity and might also indicate whether a security compromise occurred or was prevented.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001489</ident><fixtext fixref="F-85245r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus Common 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Click "Show Advanced".
+
+Under "Events", select the "Send events to McAfee ePO" check box.
+
+Click "Save".</fixtext><fix id="F-85245r1_fix" /><check system="C-78073r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus Common 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Click "Show Advanced".
+
+Under "Events", verify the "Send events to McAfee ePO" check box is selected.
+
+If the "Send events to McAfee ePO" check box is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78513"><title>MV45-COP-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93219r1_rule" severity="medium" weight="10.0"><version>MV45-COP-000003</version><title>The McAfee MOVE AV Common Options policy must be configured to not rotate log files until they reach at least 10 MB in size.</title><description>&lt;VulnDiscussion&gt;Forensic identification is the practice of identifying infected hosts by looking for evidence of recent infections. The evidence may be very recent (only a few minutes old) or not so recent (hours or days old); the older the information is, the less accurate it is likely to be. The most obvious sources of evidence are those that are designed to identify malware activity, such as anti-virus software, content filtering (e.g., anti-spam measures), IPS, and SIEM technologies. The logs of security applications might contain detailed records of suspicious activity and might also indicate whether a security compromise occurred or was prevented.
+
+While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. To avoid the risk of logs growing to the size of impacting the operating system, the log size and number of log files will be restricted but must be large enough to retain forensic value.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001489</ident><fixtext fixref="F-85247r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus Common 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Click "Show Advanced".
+
+Under "Logging", set the "Rotate log file content when the file size reaches" value to "10" MB or greater.
+
+Click "Save".</fixtext><fix id="F-85247r1_fix" /><check system="C-78075r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus Common 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Click "Show Advanced".
+
+Under "Logging", verify the "Rotate log file content when the file size reaches" field is set to "10" MB or greater.
+
+If the "Rotate log file content when the file size reaches" field is not set to "10" MB or greater, this is a finding.</check-content></check></Rule></Group><Group id="V-78515"><title>MV45-COP-000004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93221r1_rule" severity="high" weight="10.0"><version>MV45-COP-000004</version><title>The McAfee MOVE AV Common Options policy must be configured to enable self-protection.</title><description>&lt;VulnDiscussion&gt;The self-protection feature defends files, services, and registry keys on virtual machines and will ensure uninterrupted protection.
+
+Self-protection on the McAfee MOVE SVM is provided by the SVM's VirusScan Enterprise Access Protection configuration.
+
+The self-protection feature is controlled by the IntegrityEnabled configuration parameter. By default, the parameter is set to "0x7", and all components of the feature are enabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85249r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus Common 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Under "Self-Protection", select the "Enable Self-Protection" and "Enable Self-Protection for MOVE CLI" check boxes.
+
+Click "Save".</fixtext><fix id="F-85249r1_fix" /><check system="C-78077r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus Common 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Under "Self-Protection", confirm "Enable Self-Protection" and "Enable Self-Protection for MOVE CLI" check boxes are both selected.
+
+If either "Enable Self-Protection" or "Enable Self-Protection for MOVE CLI" check boxes are not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78517"><title>MV45-GEN-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93223r1_rule" severity="medium" weight="10.0"><version>MV45-GEN-000001</version><title>All other anti-virus products must be removed from the virtual machine while the McAfee AV Client is running.</title><description>&lt;VulnDiscussion&gt;Organizations should deploy anti-virus software on all hosts for which satisfactory anti-virus software is available. Anti-virus software should be installed as soon after operating system installation as possible and then updated with the latest anti-virus software patches (to eliminate any known vulnerabilities in the anti-virus software itself). 
+
+To support the security of the host, the anti-virus software should be configured and maintained properly so it continues to be effective at detecting and stopping malware. 
+
+McAfee MOVE AV Client will not function properly with other anti-virus products installed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-85251r1_fix">Click on Start &gt;&gt; Control Panel. Choose "Uninstall a program" under the "Programs" section.
+
+Locate the installed antivirus product, other than the McAfee MOVE AV Client, and choose to uninstall it.</fixtext><fix id="F-85251r1_fix" /><check system="C-78079r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the system to which the McAfee MOVE Client is installed. In the taskbar, right-click the red McAfee Agent shield and select "About". 
+
+Ensure neither the "McAfee VirusScan Enterprise + AntiSpyware Enterprise" nor the "Symantec Plugin" is listed as an installed product. 
+
+Access "services.msc" and review the services running on the system. 
+
+Ensure no other antivirus products are installed. 
+
+If either the "McAfee VirusScan Enterprise + AntiSpyware Enterprise" or the "Symantec Plugin" is listed as an installed product in the McAfee Agent "About" dialog box, this is a finding.
+
+If neither the "McAfee VirusScan Enterprise + AntiSpyware Enterprise" nor the "Symantec Plugin" is listed as an installed product, but another antivirus product is shown as running as a service on this system, this is a finding.</check-content></check></Rule></Group><Group id="V-78519"><title>MV45-GEN-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93225r1_rule" severity="medium" weight="10.0"><version>MV45-GEN-000002</version><title>The McAfee MOVE AV policies must be configured with and managed by the HBSS ePO server.</title><description>&lt;VulnDiscussion&gt;Organizations should use centrally managed anti-virus software that is controlled and monitored regularly by anti-virus administrators, who are also typically responsible for acquiring, testing, approving, and delivering anti-virus signature and software updates throughout the organization. Users should not be able to disable or delete anti-virus software from their hosts, nor should they be able to alter critical settings. Anti-virus administrators should perform continuous monitoring to confirm that hosts are using current anti-virus software and that the software is configured properly. Implementing all of these recommendations should strongly support an organization in having a strong and consistent anti-virus deployment across the organization.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85253r1_fix">Access the ePO server. From the system tree, select the "Systems" tab and find and click on the asset to which the "MOVE AV [Multi-Platform] Client 4.5.0" needs to be deployed to open its properties.
+
+If the asset is not in the ePO server system tree, configure a task to deploy the McAfee Agent to the asset to which the "MOVE AV [Multi-Platform] Client 4.5.0" will be deployed and proceed to next step.
+
+If the asset is in the ePO server system tree, click on the asset to which the "MOVE AV [Multi-Platform] Client 4.5.0" needs to be deployed to open its properties.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Client Task Catalog.
+
+Select "Product Deployment" in the "Client Task Types" menu and then select &gt;&gt; Actions &gt;&gt; New Task.
+
+Select "Product Deployment" from the list and then click "OK" to open the "Client Task Builder" wizard.
+
+Type a name for the task being created and add any descriptive information in the "Description" field.
+
+Ensure that "Windows" is the only target platform selected.
+
+For "Products and components":
+For "client", select "MOVE AV [Multi-Platform] Client 4.5.0" from the drop-down list.
+Set the "action" to "Install".
+Set the "language" to "Language Neutral".
+Set the "branch" to "Current".
+
+Leave the "Command line" setting blank.
+
+Review the task settings and click "Save".
+
+Assign the newly created task to the asset being reviewed.
+
+Send a wake-up call to the asset being reviewed.</fixtext><fix id="F-85253r1_fix" /><check system="C-78081r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>On the system being reviewed, first confirm the system has a McAfee Agent deployed and running. 
+
+Click "Start" and type "services.msc" in the "Search programs and files" search bar.
+
+Review the services running on the system. 
+
+Ensure the "McAfee Agent Common Services" and "McAfee Agent Service" are listed as services and have a status of "Started". 
+
+If the system does not have the McAfee Agent deployed to it, this is a finding. 
+
+If the McAfee Agent is running on the system, confirm the system has the "MOVE AV [Multi-Platform] Client 4.5.0" policies being enforced by ePO.
+
+Navigate to the directory to which the McAfee Agent is installed (default is C:\Program Files\McAfee\Agent). 
+
+Open the McAfee Agent status monitor by executing the following command: 
+
+cmdagent /s 
+
+In the McAfee Agent Monitor, click the "Collect and Send Props" button. Review the "Agent Subsystem" status lines and ensure there is a status for "Agent started performing ASCI", followed by a sequence of status lines showing the "Agent is sending PROPS VERSION package to ePO server" and "Agent communication session closed". These status lines will confirm the system is making a successful connection to the ePO server.
+
+Click the "Enforce Policies" button. In the McAfee Agent Monitor, review the "Management" status lines and ensure one shows a status of enforcing policies for the McAfee Move Client 4.5.
+
+If McAfee Agent Status Monitor shows successful "Agent Subsystem" status lines of "Agent started performing ASCI", followed by a sequence of status lines showing the "Agent is sending PROPS VERSION package to ePO server" and "Agent communication session closed" but the "Management" status line does not show it is enforcing policies for the McAfee MOVE Client 4.5, this is a finding.</check-content></check></Rule></Group><Group id="V-78521"><title>MV45-GEN-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93227r1_rule" severity="high" weight="10.0"><version>MV45-GEN-000003</version><title>The admin password for the McAfee MOVE AV Security Virtual Machine (SVM) must be changed from the default.</title><description>&lt;VulnDiscussion&gt;The preconfigured Security Virtual Appliance (SVA) comes with a default password for the "SVAadmin" account. This account has root privileges to the Linux operating system of the appliance. By not changing the password from the default, the appliance will be subject to access by unauthorized individuals.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002418</ident><fixtext fixref="F-85255r1_fix">If the McAfee SVM was deployed manually, physically log into the McAfee SVM and change the password from the default.
+
+If the McAfee SVM was deployed with VMware vCNS or VMWare NSX, access the McAfee ePO console. 
+
+From the Menu, select Automation &gt;&gt; MOVE AntiVirus Deployment.
+
+Under General &gt;&gt; General Configuration &gt;&gt; SVM Configuration (Agentless Only), populate the "Password" with a unique password. Confirm the password.
+
+Click "Save".</fixtext><fix id="F-85255r1_fix" /><check system="C-78083r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>If the McAfee SVM was deployed manually, physically log into the McAfee SVM and confirm password has been changed from default.
+
+If the password has not been changed from the default, this is a finding.
+
+If the McAfee SVM was deployed with VMware vCNS or VMWare NSX, access the McAfee ePO console. 
+
+From the Menu, select Automation &gt;&gt; MOVE AntiVirus Deployment.
+
+Under General &gt;&gt; General Configuration &gt;&gt; SVM Configuration (Agentless Only), verify the "Password" shows as configured. It will be masked.
+
+Verify with the System Administrator that the password has been changed from the default password. 
+
+If "Password" does not show as configured and has not been changed from the default password, this is a finding.</check-content></check></Rule></Group><Group id="V-78523"><title>MV45-GEN-000004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93229r1_rule" severity="high" weight="10.0"><version>MV45-GEN-000004</version><title>The McAfee VirusScan Enterprise Access Protection rules must be used for self-protection of the files and folder of the McAfee Security Virtual Manager (SVM).</title><description>&lt;VulnDiscussion&gt;The VirusScan Enterprise Access Protection rules will defend files, services, and registry keys on the McAfee Security Virtual Manager (SVM).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85257r1_fix">The McAfee MOVE AV [Multi-Platform] SVM does not have a built-in protection mechanism. In order to protect the McAfee MOVE AV [Multi-Platform] SVM's files, services, and registry keys, the McAfee VirusScan Enterprise Access Protection features are used. 
+
+From the ePO server console System Tree, select the "Systems" tab, find and click on the asset representing the McAfee MOVE SVM to open its properties, select "Actions", select "Agent", and select "Modify Policies on a Single System". 
+
+From the product drop-down list, select "VirusScan Enterprise 8.8.x". Click "Access Protection Policies" policy to open the properties. From the "Settings for:" drop-down list, select "Server". 
+
+In the "Access protection rules:" settings, under "Categories", click "User-defined Rules", click "New". 
+
+Choose "File/Folder Blocking Rule" to create the rule identified as the File protection rule. Specify an appropriate Rule name: (i.e., McAfee MOVE SVM File and Folder Protection). 
+
+Enter the path to which the McAfee MOVE SVM has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server\**) in the "File or folder name to block:" section. 
+
+Select the "Write access to files", "New files being created", and "Files being deleted" under the "File actions to prevent:" section. Click "OK". 
+
+After the rule is created, select the "Block" and "Report" check boxes. 
+
+Click "Save".
+
+Configure an additional rule for the registry protection of the following registry paths:
+
+Under "Block/Report/Rules", ensure rules are configured for registry protection for the following registry paths:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mvserver
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mvserver\Parameters
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mvserver\Parameters\ODS</fixtext><fix id="F-85257r1_fix" /><check system="C-78085r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>The McAfee MOVE AV [Multi-Platform] SVM does not have a built-in protection mechanism. In order to protect the McAfee MOVE AV [Multi-Platform] SVM's files, services, and registry keys, the McAfee VirusScan Enterprise Access Protection features are used. 
+
+From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE SVM to open its properties, select "Actions", select "Agent", and select "Modify Policies on a Single System". 
+
+From the product drop-down list, select "VirusScan Enterprise 8.8.x". Click on the "Access Protection Policies" policy to open the properties. From the "Settings for:" drop-down list, select "Server". 
+
+In the "Access protection rules:" settings, under "Categories", click to select the "User-defined Rules". 
+
+Under "Block/Report/Rules", ensure rules are configured for McAfee MOVE SVM protection. 
+
+If multiple User-defined rules are created, consult with the System Administration to determine the rules for the purpose of this requirement. 
+
+For the File/Folder Access Protection rule created to protect the MOVE AV Server folder, ensure both the "Block" and "Report" check boxes are selected. 
+
+Select the rule and click "Edit". 
+
+Ensure the path to which the McAfee MOVE SVM has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server\**) is reflected in the "File or folder name to block:" section. 
+
+Ensure "Write access to files", "New files being created", and "Files being deleted" are selected under the "File actions to prevent:" section. 
+
+If a File/Folder Blocking rule does not exist to protect the path to which the McAfee MOVE SVM Server has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server), this is a finding. 
+
+On the system designated as the McAfee MOVE SVM Server, access the local McAfee VirusScan Enterprise Console. 
+
+Under the "Task" column, right-click on "Access Protection", select "Properties". 
+
+In the "Access protection rules:" settings, under "Categories", click "User-defined Rules". 
+
+Under "Block/Report/Rules", ensure rules are configured for McAfee MOVE SVM protection. 
+
+If multiple User-defined rules are created, consult with the System Administration to determine the rules for the purpose of this requirement. 
+
+For the File/Folder Access Protection rule created to protect the MOVE AV Server folder, ensure both the "Block" and "Report" check boxes are selected. 
+
+Select the rule, click "Edit". 
+
+Ensure "mvserver.exe" is reflected under the "Processes to exclude:" section. 
+
+Ensure the path to which the McAfee MOVE SVM has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server\**) is reflected in the "File or folder name to block:" section. 
+
+Ensure "Write access to files", "New files being created", and "Files being deleted" are selected under the "File actions to prevent:" section. 
+
+If a File/Folder Blocking rule does not exist to protect the path to which the McAfee MOVE SVM Server has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server), this is a finding.
+
+In the "Access protection rules:" settings, under "Categories", click "User-defined Rules".
+
+Under "Block/Report/Rules", ensure rules are configured for registry protection for the following registry paths:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mvserver
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mvserver\Parameters
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mvserver\Parameters\ODS
+
+If a registry protection rule does not exist to protect the specified registry paths, this is a finding.</check-content></check></Rule></Group><Group id="V-78525"><title>MV45-OAS-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93231r1_rule" severity="high" weight="10.0"><version>MV45-OAS-000001</version><title>The McAfee MOVE AV On Access Scan Policy must be configured to enable protection.</title><description>&lt;VulnDiscussion&gt;Anti-virus software should be installed as soon after operating system installation as possible and then updated with the latest signatures and anti-virus software patches (to eliminate any known vulnerabilities in the anti-virus software itself). The anti-virus software should then perform a complete scan of the host to identify any potential infections. To support the security of the host, the anti-virus software should be configured and maintained properly so it continues to be effective at detecting and stopping malware. Anti-virus software is most effective when its signatures are fully up to date. Accordingly, antivirus software should be kept current with the latest signature and software updates to improve malware detection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85259r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "On-access scan", select the "Enable on-access scan" check box.
+
+Click "Save".</fixtext><fix id="F-85259r1_fix" /><check system="C-78093r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "On-access scan", verify the "Enable on-access scan" check box is selected.
+
+If the "Enable on-access scan" check box is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78527"><title>MV45-OAS-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93233r1_rule" severity="medium" weight="10.0"><version>MV45-OAS-000002</version><title>The McAfee MOVE AV On Access Scan Policy must be configured with a scan timeout of 45 seconds or more.</title><description>&lt;VulnDiscussion&gt;This setting configures the amount of time, in seconds, to wait for a scan to complete. The default setting is 45 seconds. This is the duration for which a McAfee MOVE AV Agent will wait for scan response of a file from the Security Virtual Machine (SVM). Typically, file scans are very fast. However, file scans may take longer due to large file size, file type, or heavy load on the SVM. If the file scan takes longer than the scan timeout limit, the file access is allowed and a scan timeout event is generated. Setting the timeout too low may result in scans of a file terminating before the scan is completed, resulting in malware potentially going undetected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85261r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select the On Access Scan policy to be configured.
+
+Under "Scan", set "Specify maximum time for each file scan" to "45" seconds or more.
+
+Click "Save".</fixtext><fix id="F-85261r1_fix" /><check system="C-78095r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "Scan", verify "Specify maximum time for each file scan" is set to "45" seconds or more.
+
+If "Specify maximum time for each file scan" is not set to "45" seconds or more, this is a finding.</check-content></check></Rule></Group><Group id="V-78529"><title>MV45-OAS-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93235r1_rule" severity="medium" weight="10.0"><version>MV45-OAS-000003</version><title>The McAfee MOVE AV On Access Scan Policy must be configured to cache scan results for files smaller than 40 MB.</title><description>&lt;VulnDiscussion&gt;This setting configures the maximum file size (in MB) up to which scan results should be cached. The default setting is 40 MB. Files smaller than this threshold are copied completely to the Security Virtual Machine (SVM) and scanned. If the file is found to be clean, its scan result is cached based on its SHA 1 checksum for faster future access. Files larger than this size threshold are transferred in chunks that are requested by the SVM and scanned. Setting that threshold higher could impact the performance of the scan processes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85263r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select the On Access Scan policy to be configured.
+
+Under "Scan", set "Cache scan results for files smaller than" to "40" MB or smaller.
+
+Click "Save".</fixtext><fix id="F-85263r1_fix" /><check system="C-78097r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "Scan", verify the "Cache scan results for files smaller than" is set to "40" MB or smaller.
+
+If "Cache scan results for files smaller than" is not set to "40" MB or less, this is a finding.</check-content></check></Rule></Group><Group id="V-78531"><title>MV45-OAS-000004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93237r1_rule" severity="medium" weight="10.0"><version>MV45-OAS-000004</version><title>The McAfee MOVE AV On Access Scan Policy must be configured to scan when writing to disk.</title><description>&lt;VulnDiscussion&gt;Anti-virus software is the most commonly used technical control for malware threat mitigation. Real-time scanning of files as they are written to disk is a crucial first line of defense from malware attacks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85267r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Select the On Access Scan policy to be configured.
+
+Under "Scan", select the "When writing to disk" check box.
+
+Click "Save".</fixtext><fix id="F-85267r1_fix" /><check system="C-78101r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "Scan", verify the "When writing to disk" check box is selected.
+
+If the "When writing to disk" check box is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78533"><title>MV45-OAS-000005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93239r1_rule" severity="medium" weight="10.0"><version>MV45-OAS-000005</version><title>The McAfee MOVE AV On Access Scan Policy must be configured to scan when reading from disk.</title><description>&lt;VulnDiscussion&gt;Anti-virus software is the most commonly used technical control for malware threat mitigation. Real-time scanning of files as they are read from disk is a crucial first line of defense from malware attacks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85269r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Select the On Access Scan policy to be configured.
+
+Under "Scan", select the "When reading from disk" check box.
+
+Click "Save".</fixtext><fix id="F-85269r1_fix" /><check system="C-78103r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "Scan", verify the "When reading from disk" check box is selected.
+
+If the "When reading from disk" check box is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78535"><title>MV45-OAS-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93241r1_rule" severity="medium" weight="10.0"><version>MV45-OAS-000006</version><title>The McAfee MOVE AV On Access Scan Policy must be configured to scan all file types.</title><description>&lt;VulnDiscussion&gt;When scanning for malware, excluding specific file types will increase the risk of a malware-infected file going undetected. By configuring anti-virus software to scan all file types, the scanner has a higher success rate at detecting and eradicating malware.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85271r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "File Types to Scan", select the "All files" radio button.
+
+Click "Save".</fixtext><fix id="F-85271r1_fix" /><check system="C-78105r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "File Types to Scan", verify the "All files" radio button is selected.
+
+If the File Types to Scan "All files" radio button is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78537"><title>MV45-OAS-000007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93243r1_rule" severity="medium" weight="10.0"><version>MV45-OAS-000007</version><title>Path or file exclusions configured in McAfee MOVE AV On Access Scan Policy must be formally documented by the System Administrator and approved by the ISSO/ISSM.</title><description>&lt;VulnDiscussion&gt;When scanning for malware, excluding specific file types will increase the risk of a malware-infected file going undetected. By configuring anti-virus software to scan all file types, the scanner has a higher success rate at detecting and eradicating malware. Excluding files, paths, and processes from being scanned expands the potential for malware to be allowed onto the information system. While it is recognized that some file types might need to be excluded for operational reasons and/or because there is protection afforded to those files through a different mechanism, allowing those exclusions should always be vetted, documented, and approved before applying.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-85273r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "Exclusions", remove any Path Exclusions that have been configured other than the following and that have not been formally documented by the System Administrator and approved by the ISSO/ISSM:
+
+**\McAfee\Common Framework\
+**\Program Files\McAfee\Agent\
+*.log
+
+Click "Save".</fixtext><fix id="F-85273r1_fix" /><check system="C-78107r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "Exclusions", verify no Path Exclusions have been configured other than the following:
+
+**\McAfee\Common Framework\
+**\Program Files\McAfee\Agent\
+*.log
+
+If any Path Exclusions are configured and those Path Exclusions have not been formally documented by the System Administrator and approved by the ISSO/ISSM, this is a finding.</check-content></check></Rule></Group><Group id="V-78539"><title>MV45-OAS-000008</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93245r1_rule" severity="medium" weight="10.0"><version>MV45-OAS-000008</version><title>Process exclusions configured in McAfee MOVE AV On Access Scan Policy must be formally documented by the System Administrator and approved by the ISSO/ISSM.</title><description>&lt;VulnDiscussion&gt;When scanning for malware, excluding specific file types will increase the risk of a malware-infected file going undetected. By configuring anti-virus software to scan all file types, the scanner has a higher success rate at detecting and eradicating malware. Excluding files, paths, and processes from being scanned expands the potential for malware to be allowed onto the information system. While it is recognized that some file types might need to be excluded for operational reasons and/or because there is protection afforded to those files through a different mechanism, allowing those exclusions should always be vetted, documented, and approved before applying.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-85275r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "Exclusions", remove any Process Exclusions that have been configured other than the following:
+
+%WINDIR%\system32\mssearch.exe
+UserProfileManager.exe
+%WINDIR%\system32\searchindexer.exe
+%WINDIR%\system32\mssdmn.exe
+%WINDIR%\system32\winfs\winfs.exe
+%WINDIR%\system32\mssfh.exe
+
+Click "Save".</fixtext><fix id="F-85275r1_fix" /><check system="C-78109r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Under "Exclusions", verify no Process Exclusions have been configured other than the following:
+
+%WINDIR%\system32\mssearch.exe
+UserProfileManager.exe
+%WINDIR%\system32\searchindexer.exe
+%WINDIR%\system32\mssdmn.exe
+%WINDIR%\system32\winfs\winfs.exe
+%WINDIR%\system32\mssfh.exe
+
+If any Process Exclusions are configured and those Process Exclusions have not been formally documented by the System Administrator and approved by the ISSO/ISSM, this is a finding.</check-content></check></Rule></Group><Group id="V-78541"><title>MV45-OAS-000009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93247r1_rule" severity="medium" weight="10.0"><version>MV45-OAS-000009</version><title>The McAfee MOVE AV On Access Scan policy must be configured to delete files automatically and quarantine as the first response of a threat detection.</title><description>&lt;VulnDiscussion&gt;Malware incident containment has two major components: stopping the spread of malware and preventing further damage to hosts. Disinfecting a file is generally preferable to quarantining it because the malware is removed and the original file restored; however, many infected files cannot be disinfected. The primary goal of eradication is to remove malware from infected hosts.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85277r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured "On Access Scan" policy.
+
+Click "Actions".
+
+Under "Threat detection first response", select "Delete files automatically and quarantine" from the drop-down list.
+
+Click "Save".</fixtext><fix id="F-85277r1_fix" /><check system="C-78111r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Access Scan".
+
+Select each configured On Access Scan policy.
+
+Click "Actions".
+
+Under "Threat detection first response", verify "Delete files automatically and quarantine" is selected.
+
+If "Threat detection first response" is not set to "Delete files automatically and quarantine", this is a finding.</check-content></check></Rule></Group><Group id="V-78543"><title>MV45-ODS-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93249r1_rule" severity="medium" weight="10.0"><version>MV45-ODS-000001</version><title>The McAfee MOVE AV On Demand Scan policy must be configured to enable on-demand scan.</title><description>&lt;VulnDiscussion&gt;Anti-virus software is the most commonly used technical control for malware threat mitigation. Anti-virus software on hosts should be configured to scan all hard drives and folders regularly to identify any file system infections and to scan any removable media, if applicable, before media is inserted into the system. Not scheduling a regular scan of the hard drives of a system and/or not configuring the scan to scan all files and running processes introduces a higher risk of threats going undetected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-85279r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "On-demand Scan", select the "Enable on-demand scan" check box.
+
+Click "Save".</fixtext><fix id="F-85279r1_fix" /><check system="C-78113r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "On-demand Scan", verify the "Enable on-demand scan" check box is selected.
+
+If the "Enable on-demand scan" check box is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78545"><title>MV45-ODS-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93251r1_rule" severity="medium" weight="10.0"><version>MV45-ODS-000002</version><title>The McAfee MOVE AV On Demand Scan policy must be configured to enforce a maximum time for each file scan of no less than 45 seconds.</title><description>&lt;VulnDiscussion&gt;This setting configures the amount of time, in seconds, to wait for a scan to complete. The default setting is 45 seconds. This is the duration for which a McAfee MOVE AV Agent will wait for scan response of a file from the Security Virtual Machine (SVM). Typically, file scans are very fast. However, file scans may take longer due to large file size, file type, or heavy load on the SVM. If the file scan takes longer than the scan timeout limit, the file access is allowed and a scan timeout event is generated. Setting the timeout too low may result in scans of a file terminating before the scan is completed, resulting in malware potentially going undetected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-85281r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "On-demand Scan", configure the "Specify maximum time for each file scan" for "45" seconds or more.
+
+Click "Save".</fixtext><fix id="F-85281r1_fix" /><check system="C-78115r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "On-demand Scan", verify the "Specify maximum time for each file scan" is configured for "45" seconds or more.
+
+If "Specify maximum time for each file scan" is not configured for "45" seconds or more, this is a finding.</check-content></check></Rule></Group><Group id="V-78547"><title>MV45-ODS-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93253r1_rule" severity="medium" weight="10.0"><version>MV45-ODS-000003</version><title>The McAfee MOVE AV On Demand Scan policy must be explicitly configured to stop an on-demand scan after an organization-specific period.</title><description>&lt;VulnDiscussion&gt;This setting configures the maximum time, in minutes, for on-demand scanning. The default setting is 150 minutes. Typically, file scans are very fast. However, file scans may take longer due to large file size, file type, or heavy load on the Security Virtual Machine (SVM). For cases where an on-demand scan will take longer, an organization should determine the maximum amount of time for its on-demand scanning and explicitly configure this setting.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-85283r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "On-demand Scan", configure "On-demand scan will stop after" for 150 minutes or less.
+
+Click "Save".</fixtext><fix id="F-85283r1_fix" /><check system="C-78117r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "On-demand Scan", verify "On-demand scan will stop after" is configured for "150" minutes or less.
+
+If "On-demand scan will stop after" is not configured for "150" minutes or less, this is a finding.</check-content></check></Rule></Group><Group id="V-78549"><title>MV45-ODS-000004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93255r1_rule" severity="medium" weight="10.0"><version>MV45-ODS-000004</version><title>The McAfee MOVE AV On Demand Scan policy must be configured to cache scan results for files smaller than 40 MB.</title><description>&lt;VulnDiscussion&gt;This setting configures the maximum file size (in MB) up to which scan results should be cached. The default setting is 40 MB. Files smaller than this threshold are copied completely to the Security Virtual Machine (SVM) and scanned. If the file is found to be clean, its scan result is cached based on its SHA 1 checksum for faster future access. Files larger than this size threshold are transferred in chunks that are requested by the SVM and scanned. Setting that threshold higher could impact the performance of the scan processes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-85285r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "On-demand Scan", configure "Cache scan results for files smaller than" for 40 MB or smaller.
+
+Click "Save".</fixtext><fix id="F-85285r1_fix" /><check system="C-78119r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "On-demand Scan", verify "Cache scan results for files smaller than" is configured for 40 MB or smaller.
+
+If "Cache scan results for files smaller than" is not configured for 40 MB or smaller, this is a finding.</check-content></check></Rule></Group><Group id="V-78551"><title>MV45-ODS-000005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93257r1_rule" severity="medium" weight="10.0"><version>MV45-ODS-000005</version><title>The McAfee MOVE AV On Demand Scan policy must be configured to delete files automatically and quarantine as the first response of a threat detection.</title><description>&lt;VulnDiscussion&gt;Malware incident containment has two major components: stopping the spread of malware and preventing further damage to hosts. Disinfecting a file is generally preferable to quarantining it because the malware is removed and the original file restored; however, many infected files cannot be disinfected. The primary goal of eradication is to remove malware from infected hosts. Deleting files found to contain malware, while also moving them to quarantine, will allow the files to be rendered useless but are recoverable in the event of false positive.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-85287r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "Actions", configure the "Threat detection first response" for "Delete files automatically and quarantine".
+
+Click "Save".</fixtext><fix id="F-85287r1_fix" /><check system="C-78121r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "Actions", verify the "Threat detection first response" is configured for "Delete files automatically and quarantine".
+
+If the "Threat detection first response" is not configured for "Delete files automatically and quarantine", this is a finding.</check-content></check></Rule></Group><Group id="V-78553"><title>MV45-ODS-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93259r1_rule" severity="medium" weight="10.0"><version>MV45-ODS-000006</version><title>The McAfee MOVE AV On Demand Scan policy must be configured to scan all file types.</title><description>&lt;VulnDiscussion&gt;When scanning for malware, excluding specific file types will increase the risk of a malware-infected file going undetected. By configuring anti-virus software to scan all file types, the scanner has a higher success rate at detecting and eradicating malware.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-85289r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "File Type to Scan", select the "All files" radio button.
+
+Click "Save".</fixtext><fix id="F-85289r1_fix" /><check system="C-78123r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "File Type to Scan", verify "All files" is selected.
+
+If "All files" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78555"><title>MV45-ODS-000007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93261r1_rule" severity="medium" weight="10.0"><version>MV45-ODS-000007</version><title>Path Exclusions configured in the McAfee MOVE AV On Demand Scan policy must be formally documented by the System Administrator and approved by the ISSO/ISSM.</title><description>&lt;VulnDiscussion&gt;When scanning for malware, excluding specific file types will increase the risk of a malware-infected file going undetected. By configuring anti-virus software to scan all file types, the scanner has a higher success rate at detecting and eradicating malware. Excluding files, paths, and processes from being scanned expands the potential for malware to be allowed onto the information system. While it is recognized that some file types might need to be excluded for operational reasons and/or because there is protection afforded to those files through a different mechanism, allowing those exclusions should always be vetted, documented, and approved before applying.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-85291r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "Exclusions", remove any Path Exclusions, other than the following paths, that have not been formally documented by the System Administrator and approved by the ISSO/ISSM:
+
+**\McAfee\Common Framework\
+**\Program Files\McAfee\Agent\
+*.log
+
+Click "Save".</fixtext><fix id="F-85291r1_fix" /><check system="C-78125r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "Exclusions", verify the "Path Exclusions" include only the following paths:
+
+**\McAfee\Common Framework\
+**\Program Files\McAfee\Agent\
+*.log
+
+If any Path Exclusions are included other than those specified above, and the exclusions have not been formally documented by the System Administrator and approved by the ISSO/ISSM, this is a finding.</check-content></check></Rule></Group><Group id="V-78557"><title>MV45-ODS-000008</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93263r1_rule" severity="medium" weight="10.0"><version>MV45-ODS-000008</version><title>The McAfee MOVE AV On-Demand Scan interval must be set to no more than every seven days.</title><description>&lt;VulnDiscussion&gt;Anti-virus software is the most commonly used technical control for malware threat mitigation. Anti-virus software on hosts should be configured to scan all hard drives and folders regularly to identify any file system infections and to scan any removable media, if applicable, before media is inserted into the system. Not scheduling a regular scan of the hard drives of a system and/or not configuring the scan to scan all files and running processes introduces a higher risk of threats going undetected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-85293r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "On-demand Scan", configure the "Run on-demand scan for every _ days" to "7" days or less.
+
+Click "Save".</fixtext><fix id="F-85293r1_fix" /><check system="C-78127r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "On Demand Scan".
+
+Select each configured On Demand Scan policy.
+
+Click "Show Advanced".
+
+Under "On-demand Scan", verify the "Run on-demand scan for every _ days" is configured to "7" days or less.
+
+If the "Run on-demand scan for every _ days" is not configured to "7" days or less, this is a finding.</check-content></check></Rule></Group><Group id="V-78559"><title>MV45-OPT-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93265r2_rule" severity="medium" weight="10.0"><version>MV45-OPT-000001</version><title>The McAfee MOVE AV Options Policy must be configured with the location of quarantine to ensure consistency across all systems.</title><description>&lt;VulnDiscussion&gt;The quarantine on each system represents a potential danger should the files contained within the quarantine be executed inadvertently. 
+
+To centrally manage the quarantine on all systems, the quarantine should always be configured the same across all systems, which will allow management to better control access to those locations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85295r2_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Under "Quarantine Manager", configure the Quarantine Directory to &lt;SYSTEM_DRIVE&gt;\Quarantine, or another location authorized by the ISSM.
+
+Click "Save".  
+</fixtext><fix id="F-85295r2_fix" /><check system="C-78129r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Under "Quarantine Manager", verify the Quarantine Directory is set to &lt;SYSTEM_DRIVE&gt;\Quarantine or another location authorized by the ISSM.
+
+If the Quarantine Directory is not set to &lt;SYSTEM_DRIVE&gt;\Quarantine, or another location authorized by the ISSM, this is a finding.".
+</check-content></check></Rule></Group><Group id="V-78561"><title>MV45-OPT-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93267r1_rule" severity="medium" weight="10.0"><version>MV45-OPT-000002</version><title>The McAfee MOVE AV Options Policy must be configured to automatically delete quarantined data after a time period of no more than 28 days.</title><description>&lt;VulnDiscussion&gt;The quarantine on each system represents a potential danger should the files contained within the quarantine be executed inadvertently. Deleting the quarantine contents on a regular basis will alleviate the ability of malware from being executed. An organization's incident response policy should also contain steps in removing quarantined items after their forensic value has been depleted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85297r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Under "Quarantine Manager", set the value for "Specify the maximum number of days to keep quarantine data" to "28" days or less.
+
+Click "Save".</fixtext><fix id="F-85297r1_fix" /><check system="C-78131r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "Options".
+
+Select each configured Options policy.
+
+Under "Quarantine Manager", verify the value for "Specify the maximum number of days to keep quarantine data" is set to "28" days or less.
+
+If the value for "Specify the maximum number of days to keep quarantine data" is not set to "28" days or less, this is a finding.</check-content></check></Rule></Group><Group id="V-78563"><title>MV45-SVM-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93269r1_rule" severity="medium" weight="10.0"><version>MV45-SVM-000001</version><title>The McAfee MOVE AV SVM Settings policy ODS scan interval must be set to no more than every seven days.</title><description>&lt;VulnDiscussion&gt;Anti-virus software is the mostly commonly used technical control for malware threat mitigation. Anti-virus software on hosts should be configured to scan all hard drives and folders regularly to identify any file system infections and to scan any removable media, if applicable, before media is inserted into the system. Not scheduling a regular scan of the hard drives of a system and/or not configuring the scan to scan all files and running processes introduces a higher risk of threats going undetected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-85299r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "SVM Settings".
+
+Select each configured SVM Settings policy.
+
+Click "Show Advanced".
+
+Under "ODS Scheduler", select the "Scan" option. 
+
+In the schedule, configure scan dates to accomplish at least weekly scanning.
+
+Click "Save".</fixtext><fix id="F-85299r1_fix" /><check system="C-78133r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "SVM Settings".
+
+Select each configured SVM Settings policy.
+
+Click "Show Advanced".
+
+Under "ODS Scheduler", verify the "Scan" option is selected. 
+
+Review the schedule and verify a schedule of at least weekly is configured.
+
+If the ODS Scheduler "Scan" option is not selected or the schedule is not configured for at least weekly, this is a finding.</check-content></check></Rule></Group><Group id="V-78565"><title>MV45-SVM-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93271r1_rule" severity="medium" weight="10.0"><version>MV45-SVM-000002</version><title>The McAfee MOVE AV SVM must have McAfee VirusScan Enterprise installed.</title><description>&lt;VulnDiscussion&gt;Organizations should deploy anti-virus software on all hosts for which satisfactory anti-virus software is available. Anti-virus software should be installed as soon after OS installation as possible and then updated with the latest signatures and anti-virus software patches (to eliminate any known vulnerabilities in the anti-virus software itself). To support the security of the host, the anti-virus software should be configured and maintained properly so it continues to be effective at detecting and stopping malware. Anti-virus software is most effective when its signatures are fully up to date. Accordingly, anti-virus software should be kept current with the latest signature and software updates to improve malware detection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002605</ident><fixtext fixref="F-85301r1_fix">Access the ePO server. From the system tree, select the "Systems" tab and find and click on the asset representing the McAfee MOVE SVM to open its properties. Click on Actions &gt;&gt; Agent &gt;&gt; Modify Tasks on a Single System. 
+
+Click Actions &gt;&gt; New Client Task Assignment. 
+
+Under "Product", select "McAfee Agent".
+
+Under "Task Type", select "Product Deployment".
+
+Under "Task Name", select "Create New Task". 
+
+Next to "Task Name", enter "Deploy VSE to MOVE SVM".
+ 
+Next to "Target Platforms", ensure only Windows is selected. 
+
+In the drop-down box for "Products and components", select "VirusScan Enterprise 8.8.0.x" and ensure the drop-down box for "Action" is set to Install.
+
+Click "Save". 
+
+Click "Next". 
+
+For the "Schedule status:", select "Enabled". 
+
+Configure the schedule variable in accordance with local Change Control policy and click "Next". 
+
+On the "Summary" tab, click "Save" and then "Close". 
+
+Back at the "Systems Information" screen, click on the "Wake Up Agents" button. 
+
+In the "Wake Up McAfee Agent" screen, for the "Force policy update:" settings, select the "Force complete policy and task update" check box. 
+
+Click "OK".</fixtext><fix id="F-85301r1_fix" /><check system="C-78135r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the server designated as the McAfee MOVE SVM. In the taskbar, right-click the red McAfee Agent shield and select "About". 
+
+Under "McAfee Agent", ensure "Last agent-to-server communication:" is within the time period designated by the "Agent to Server Communication Interval". 
+
+Ensure the "McAfee VirusScan Enterprise + AntiSpyware Enterprise" is listed as an installed product. 
+
+Ensure the version number is "8.8.0" or higher. 
+
+To use an alternative method for validating: From the ePO server console system tree, select the "Systems tab" and find and click on the asset representing the McAfee MOVE SVM to open its properties. 
+
+Under the "System Properties" tab, ensure the "Last communication" is within the time period designated by the "Agent-to-Server Communication Interval:" under the "McAfee Agent" tab. 
+
+Under the "System Properties" tab, next to the "Installed Products" field, ensure VirusScan Enterprise 8.8.0.x is listed as an installed product. 
+
+Ensure the "Product Version" for VirusScan Enterprise is listed as "8.8.0" or higher. 
+
+If VirusScan Enterprise 8.8.0 or higher is not installed and/or the "Last communication" to the ePO server is not within the specified Agent-to-Server Communication interval, this is a finding.</check-content></check></Rule></Group><Group id="V-78567"><title>MV45-SVM-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93273r1_rule" severity="medium" weight="10.0"><version>MV45-SVM-000003</version><title>The McAfee MOVE AV SVM must be managed by the HBSS ePO server.</title><description>&lt;VulnDiscussion&gt;Organizations should use centrally managed anti-virus software that is controlled and monitored regularly by anti-virus administrators, who are also typically responsible for acquiring, testing, approving, and delivering anti-virus signature and software updates throughout the organization. Users should not be able to disable or delete anti-virus software from their hosts, nor should they be able to alter critical settings. Anti-virus administrators should perform continuous monitoring to confirm that hosts are using current anti-virus software and that the software is configured properly. Implementing all of these recommendations should strongly support an organization in having a strong and consistent anti-virus deployment across the organization.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-85303r1_fix">Access the ePO server. From the system tree, select the "Systems tab" and find and click on the asset representing the McAfee MOVE SVM to open its properties. 
+
+If the asset representing the McAfee MOVE SVM is not in the ePO server system tree, configure a task to deploy the McAfee Agent to the system designated as the McAfee MOVE SVM.
+
+Once the system is communicating with the ePO server and is in the ePO server system tree, find and click on the asset representing the McAfee MOVE SVM to open its properties. 
+
+Click on Actions &gt;&gt; Agent &gt;&gt; Modify Tasks on a Single System. 
+
+Click on "Actions" and select "New Client Task Assignment". 
+
+Under "Product", select "McAfee Agent". 
+
+Under "Task Type", select "Product Deployment".
+
+Under "Task Name", select "Create New Task." 
+
+Next to "Task Name", enter "Deploy MOVE to the SVM". 
+
+Next to "Target Platforms", ensure only "Windows" is selected. 
+
+In the drop-down box for "Products and components", select "MOVE AV [Multi-Platform] SVM 4.5x" and ensure the drop-down box for "Action" is set to "Install". 
+
+Click "Save". 
+
+Click "Next".
+ 
+For the "Schedule status:", select "Enabled". 
+
+Configure the schedule variable in accordance with local Change Control policy and click "Next". 
+
+On "Summary" tab, click "Save" and then "Close". 
+
+Back at the "System Information" screen, click on the "Wake Up Agents" button. 
+
+In the "Wake Up McAfee Agent" screen, for the "Force policy update:" settings, place a check in the "Force complete policy and task update" check box. 
+
+Click "OK".</fixtext><fix id="F-85303r1_fix" /><check system="C-78137r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the server designated as the McAfee MOVE SVM. In the taskbar, right-click the red McAfee Agent shield and select "McAfee Agent Status Monitor". 
+
+Click the "Collect and Send Props" button. This will perform the ASCI, send the PROPS VERSION package to the ePO, and close the session. 
+
+Click the "Enforce Policies" button. In the McAfee Agent Monitor, review the Management status lines and ensure one shows a status of "Enforcing Policies for DC_AM_4000" and "Enforcing Policies for DC_GS_4000". This status lines will confirm the system is enforcing policies for the McAfee MOVE AV SVM. 
+
+If the system does not show "Agent started performing ASCI", followed by a sequence of status lines showing the "Agent is sending PROPS VERSION package to ePO server" and "Agent communication session closed", or does not show a Management status line of "Enforcing Policies for DC_AM_4000" and "Enforcing Policies for DC_GS_4000", this is a finding.</check-content></check></Rule></Group><Group id="V-78569"><title>MV45-SVM-000004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93275r1_rule" severity="medium" weight="10.0"><version>MV45-SVM-000004</version><title>The McAfee MOVE AV SVM must be configured with a static Internet Protocol (IP) address.</title><description>&lt;VulnDiscussion&gt;Security management devices must be configured to ensure consistent and uninterrupted connectivity to/from the systems they manage/control. Otherwise, the security management device will be less than effective.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-85305r1_fix">In accordance with local operational procedures, assign a static IP address to the server designated as the McAfee MOVE SVM.</fixtext><fix id="F-85305r1_fix" /><check system="C-78139r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the server designated as the McAfee MOVE SVM.
+
+Access Network properties. 
+
+From listed Network adapters, right-click on the active adapter and select "Properties". 
+
+Highlight "Internet Protocol Version 4 (TCP/IPv4)" and click on the "Properties" button. 
+
+On the "General" tab, ensure "Use the following IP address:" is selected and the "IP address:", "Subnet mask:", and "Default gateway:" are all populated. 
+
+If the IPv4 protocol has not been configured to use a static IP address, subnet mask, and default gateway, this is a finding.</check-content></check></Rule></Group><Group id="V-78571"><title>MV45-SVM-000005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93277r1_rule" severity="medium" weight="10.0"><version>MV45-SVM-000005</version><title>The McAfee MOVE AV SVM Settings policy must be configured to scan for potentially unwanted programs.</title><description>&lt;VulnDiscussion&gt;Due to the ability of malware to mutate after infection, standard anti-virus signatures may not be able to catch new strains or variants of the malware. Typically, these strains and variants will share unique characteristics with others in their virus family. By using a generic signature to detect the shared characteristics, using wildcards where differences lie, the generic signature can detect viruses even if they are padded with extra, meaningless code. This method of detection is heuristic detection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85307r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "SVM Settings".
+
+Select each configured SVM Settings policy.
+
+Click "Show Advanced".
+
+Under "Scanning Options", select the "Enable scanning for potentially unwanted programs" check box. 
+
+Click "Save".</fixtext><fix id="F-85307r1_fix" /><check system="C-78141r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "SVM Settings".
+
+Select each configured SVM Settings policy.
+
+Click "Show Advanced".
+
+Under "Scanning Options", verify the "Enable scanning for potentially unwanted programs" check box is selected. 
+
+If the check box for "Enable scanning for potentially unwanted programs" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78573"><title>MV45-SVM-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93279r1_rule" severity="medium" weight="10.0"><version>MV45-SVM-000006</version><title>The McAfee MOVE AV SVM Settings policy must be configured to scan for Multipurpose Internet Mail Extensions (MIME)-encoded files.</title><description>&lt;VulnDiscussion&gt;Multipurpose Internet Mail Extensions (MIME) encoded files can be crafted to hide a malicious payload. When the MIME encoded file is presented to software that decodes the MIME encoded files, such as an email client, the malware is released. Scanning these files as part of the regularly scheduled scans tasks will mitigate this risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85309r1_fix">Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "SVM Settings".
+
+Select each configured SVM Settings policy.
+
+Click "Show Advanced".
+
+Under "Scanning Options", select the "Enabled scanning for MIME-encoded files" check box.
+
+Click "Save".</fixtext><fix id="F-85309r1_fix" /><check system="C-78143r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "SVM Settings".
+
+Select each configured SVM Settings policy.
+
+Click "Show Advanced".
+
+Under "Scanning Options", verify the "Enabled scanning for MIME-encoded files" check box is selected.
+
+If the "Enabled scanning for MIME-encoded files" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-78575"><title>MV45-SVM-000007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-93281r1_rule" severity="medium" weight="10.0"><version>MV45-SVM-000007</version><title>The McAfee MOVE AV SVM Settings policy must be configured to use McAfee Global Threat Intelligence file reputation with a sensitivity level of medium or higher.</title><description>&lt;VulnDiscussion&gt;Anti-virus software vendors use collective intelligence from sensors and cross-vector intelligence from web, email, and network threats to compile scores that reflect the likelihood of whether a file in question is malware. The collective intelligence is constantly being updated, more frequently than the typical daily anti-virus signature files. With File Reputation lookup, a more real-time response to potential malicious code is realized than with the local-running anti-virus software, since by querying the cloud-based database when a file appears to be suspicious, up-to-the-minute intelligence is provided. This type of protection reduces the threat protection time period from days to milliseconds, increases malware detection rates, and reduces downtime and remediation costs associated with malware attacks. Using File Reputation lookup is mandated by USCYBERCOM on DoD systems.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 4.5</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 4.5</dc:subject><dc:identifier>3233</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-85311r1_fix">NOTE: This requirement is Not Applicable on the classified network.
+
+Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "SVM Settings".
+
+Select each configured SVM Settings policy.
+
+Click "Show Advanced".
+
+Under McAfee GTI, select the "Enable McAfee GTI" check box. Select "Medium" or higher for sensitivity level.
+
+Click "Save".</fixtext><fix id="F-85311r1_fix" /><check system="C-78145r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE_AV_Multi-Platform_4-5_STIG.xml" /><check-content>NOTE: This requirement is Not Applicable on the classified network.
+
+Access the McAfee ePO console.
+
+Select Menu &gt;&gt; Policy &gt;&gt; Policy Catalog and then select "MOVE AntiVirus 4.5.0" from the Product list.
+
+From the Category list, select "SVM Settings".
+
+Select each configured SVM Settings policy.
+
+Click "Show Advanced".
+
+Under McAfee GTI, verify the "Enable McAfee GTI" check box is selected with a sensitivity level of "Medium" or higher.
+
+If the "Enable McAfee GTI" check box is not selected or sensitivity level is lower than "Medium", this is a finding.</check-content></check></Rule></Group></Benchmark>
