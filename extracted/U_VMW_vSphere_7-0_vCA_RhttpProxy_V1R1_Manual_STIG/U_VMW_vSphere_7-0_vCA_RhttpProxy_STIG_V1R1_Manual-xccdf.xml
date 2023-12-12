@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="VMW_vSphere_7-0_vCA_RhttpProxy_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2023-02-21">accepted</status><title>VMware vSphere 7.0 vCenter Appliance RhttpProxy Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 07 Mar 2023</plain-text><plain-text id="generator">3.4.0.34222</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256737" selected="true" /><select idref="V-256738" selected="true" /><select idref="V-256739" selected="true" /><select idref="V-256740" selected="true" /><select idref="V-256741" selected="true" /><select idref="V-256742" selected="true" /><select idref="V-256743" selected="true" /><select idref="V-256744" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256737" selected="true" /><select idref="V-256738" selected="true" /><select idref="V-256739" selected="true" /><select idref="V-256740" selected="true" /><select idref="V-256741" selected="true" /><select idref="V-256742" selected="true" /><select idref="V-256743" selected="true" /><select idref="V-256744" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256737" selected="true" /><select idref="V-256738" selected="true" /><select idref="V-256739" selected="true" /><select idref="V-256740" selected="true" /><select idref="V-256741" selected="true" /><select idref="V-256742" selected="true" /><select idref="V-256743" selected="true" /><select idref="V-256744" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256737" selected="true" /><select idref="V-256738" selected="true" /><select idref="V-256739" selected="true" /><select idref="V-256740" selected="true" /><select idref="V-256741" selected="true" /><select idref="V-256742" selected="true" /><select idref="V-256743" selected="true" /><select idref="V-256744" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256737" selected="true" /><select idref="V-256738" selected="true" /><select idref="V-256739" selected="true" /><select idref="V-256740" selected="true" /><select idref="V-256741" selected="true" /><select idref="V-256742" selected="true" /><select idref="V-256743" selected="true" /><select idref="V-256744" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256737" selected="true" /><select idref="V-256738" selected="true" /><select idref="V-256739" selected="true" /><select idref="V-256740" selected="true" /><select idref="V-256741" selected="true" /><select idref="V-256742" selected="true" /><select idref="V-256743" selected="true" /><select idref="V-256744" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256737" selected="true" /><select idref="V-256738" selected="true" /><select idref="V-256739" selected="true" /><select idref="V-256740" selected="true" /><select idref="V-256741" selected="true" /><select idref="V-256742" selected="true" /><select idref="V-256743" selected="true" /><select idref="V-256744" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256737" selected="true" /><select idref="V-256738" selected="true" /><select idref="V-256739" selected="true" /><select idref="V-256740" selected="true" /><select idref="V-256741" selected="true" /><select idref="V-256742" selected="true" /><select idref="V-256743" selected="true" /><select idref="V-256744" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256737" selected="true" /><select idref="V-256738" selected="true" /><select idref="V-256739" selected="true" /><select idref="V-256740" selected="true" /><select idref="V-256741" selected="true" /><select idref="V-256742" selected="true" /><select idref="V-256743" selected="true" /><select idref="V-256744" selected="true" /></Profile><Group id="V-256737"><title>SRG-APP-000001-WSR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256737r889149_rule" weight="10.0" severity="medium"><version>VCRP-70-000001</version><title>Envoy must drop connections to disconnected clients.</title><description>&lt;VulnDiscussion&gt;Envoy client connections that are established but no longer connected can consume resources that might otherwise be required by active connections. It is a best practice to terminate connections that are no longer connected to an active client. 
+ 
+Envoy is hard coded to drop connections after three minutes of idle time. The absence of any "tcpKeepAliveTimeSec" settings means this default is in effect. This configuration must be verified and maintained.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA RhttpProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA RhttpProxy</dc:subject><dc:identifier>5526</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-60355r889148_fix">Navigate to and open: 
+ 
+/etc/vmware-rhttpproxy/config.xml 
+ 
+Locate the &lt;config&gt;/&lt;envoy&gt;/&lt;L4Filter&gt; block and configure &lt;tcpKeepAliveTimeSec&gt; as follows: 
+ 
+&lt;tcpKeepAliveTimeSec&gt;180&lt;/tcpKeepAliveTimeSec&gt; 
+ 
+Restart the service for changes to take effect. 
+ 
+# vmon-cli --restart rhttpproxy</fixtext><fix id="F-60355r889148_fix" /><check system="C-60412r889147_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_RhttpProxy_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command: 
+ 
+# xmllint --xpath '/config/envoy/L4Filter/tcpKeepAliveTimeSec/text()' /etc/vmware-rhttpproxy/config.xml 
+ 
+Expected result: 
+ 
+180 
+ 
+or 
+ 
+XPath set is empty 
+ 
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256738"><title>SRG-APP-000001-WSR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256738r889152_rule" weight="10.0" severity="medium"><version>VCRP-70-000002</version><title>Envoy must set a limit on established connections.</title><description>&lt;VulnDiscussion&gt;Envoy client connections must be limited to preserve system resources and continue servicing connections without interruption. Without a limit set, the system would be vulnerable to a trivial denial-of-service attack where connections are created en masse and vCenter resources are entirely consumed. 
+ 
+Envoy comes hard coded with a tested and supported value for "maxHttpsConnections" that must be verified and maintained.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA RhttpProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA RhttpProxy</dc:subject><dc:identifier>5526</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-60356r889151_fix">Navigate to and open: 
+ 
+/etc/vmware-rhttpproxy/config.xml 
+ 
+Locate the &lt;config&gt;/&lt;envoy&gt;/&lt;L4Filter&gt; block and configure &lt;maxHttpsConnections&gt; as follows: 
+ 
+&lt;maxHttpsConnections&gt;2048&lt;/maxHttpsConnections&gt; 
+ 
+Restart the service for changes to take effect. 
+ 
+# vmon-cli --restart rhttpproxy</fixtext><fix id="F-60356r889151_fix" /><check system="C-60413r889150_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_RhttpProxy_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command: 
+ 
+# xmllint --xpath '/config/envoy/L4Filter/maxHttpsConnections/text()' /etc/vmware-rhttpproxy/config.xml 
+ 
+Expected result: 
+ 
+2048 
+ 
+or 
+ 
+XPath set is empty 
+ 
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256739"><title>SRG-APP-000014-WSR-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256739r889155_rule" weight="10.0" severity="medium"><version>VCRP-70-000003</version><title>Envoy must be configured to operate in FIPS mode.</title><description>&lt;VulnDiscussion&gt;Envoy ships with FIPS 140-2 validated OpenSSL cryptographic libraries and is configured by default to run in FIPS mode. This module is used for all cryptographic operations performed by Envoy, including protection of data-in-transit over the client Transport Layer Security (TLS) connection.
+
+Satisfies: SRG-APP-000014-WSR-000006, SRG-APP-000179-WSR-000111, SRG-APP-000416-WSR-000118, SRG-APP-000439-WSR-000188, SRG-APP-000179-WSR-000110&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA RhttpProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA RhttpProxy</dc:subject><dc:identifier>5526</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-000803</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-60357r889154_fix">Navigate to and open: 
+ 
+/etc/vmware-rhttpproxy/config.xml 
+ 
+Locate the &lt;config&gt;/&lt;vmacore&gt;/&lt;ssl&gt; block and configure &lt;fips&gt; as follows: 
+ 
+&lt;fips&gt;true&lt;/fips&gt; 
+ 
+Restart the service for changes to take effect. 
+ 
+# vmon-cli --restart rhttpproxy</fixtext><fix id="F-60357r889154_fix" /><check system="C-60414r889153_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_RhttpProxy_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command: 
+ 
+# xmllint --xpath '/config/vmacore/ssl/fips' /etc/vmware-rhttpproxy/config.xml 
+ 
+Expected result: 
+ 
+&lt;fips&gt;true&lt;/fips&gt; 
+ 
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256740"><title>SRG-APP-000015-WSR-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256740r889158_rule" weight="10.0" severity="medium"><version>VCRP-70-000004</version><title>Envoy must use only Transport Layer Security (TLS) 1.2 for the protection of client connections.</title><description>&lt;VulnDiscussion&gt;Envoy can be configured to support TLS 1.0, 1.1, and 1.2. Due to intrinsic problems in TLS 1.0 and TLS 1.1, they are disabled by default. The &lt;protocol&gt; block in the rhttpproxy configuration is commented out by default, and this configuration forces TLS 1.2. 
+ 
+The block may also be set to "tls1.2" in certain upgrade scenarios, but the effect is the same. Uncommenting the block and enabling older protocols is possible; therefore, TLS 1.2 restriction must be verified and maintained.
+
+Satisfies: SRG-APP-000015-WSR-000014, SRG-APP-000172-WSR-000104, SRG-APP-000439-WSR-000151, SRG-APP-000439-WSR-000152, SRG-APP-000439-WSR-000156, SRG-APP-000441-WSR-000181, SRG-APP-000442-WSR-000182&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA RhttpProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA RhttpProxy</dc:subject><dc:identifier>5526</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000197</ident><ident system="http://cyber.mil/cci">CCI-001453</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><ident system="http://cyber.mil/cci">CCI-002420</ident><ident system="http://cyber.mil/cci">CCI-002422</ident><fixtext fixref="F-60358r889157_fix">Navigate to and open: 
+ 
+/etc/vmware-rhttpproxy/config.xml 
+ 
+Locate the &lt;config&gt;/&lt;vmacore&gt;/&lt;ssl&gt; block and configure &lt;protocols&gt; as follows: 
+ 
+&lt;protocols&gt;tls1.2&lt;/protocols&gt; 
+ 
+Restart the service for changes to take effect. 
+ 
+# vmon-cli --restart rhttpproxy</fixtext><fix id="F-60358r889157_fix" /><check system="C-60415r889156_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_RhttpProxy_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command: 
+ 
+# xmllint --xpath '/config/vmacore/ssl/protocols' /etc/vmware-rhttpproxy/config.xml 
+ 
+Expected result: 
+ 
+XPath set is empty 
+ 
+or 
+ 
+&lt;protocols&gt;tls1.2&lt;/protocols&gt; 
+ 
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256741"><title>SRG-APP-000176-WSR-000096</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256741r889161_rule" weight="10.0" severity="medium"><version>VCRP-70-000005</version><title>The Envoy private key file must be protected from unauthorized access.</title><description>&lt;VulnDiscussion&gt;Envoy's private key is used to prove the identity of the server to clients and securely exchange the shared secret key used to encrypt communications between the web server and clients. 
+ 
+By gaining access to the private key, an attacker can pretend to be an authorized server and decrypt the Transport Layer Security (TLS) traffic between a client and the web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA RhttpProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA RhttpProxy</dc:subject><dc:identifier>5526</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000186</ident><fixtext fixref="F-60359r889160_fix">At the command prompt, run the following commands: 
+ 
+# chmod 600 /etc/vmware-rhttpproxy/ssl/rui.key 
+# chown root:root /etc/vmware-rhttpproxy/ssl/rui.key</fixtext><fix id="F-60359r889160_fix" /><check system="C-60416r889159_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_RhttpProxy_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At  the command prompt, run the following command: 
+ 
+# stat -c "%n permissions are %a, is owned by %U and group owned by %G" /etc/vmware-rhttpproxy/ssl/rui.key 
+ 
+Expected result: 
+ 
+/etc/vmware-rhttpproxy/ssl/rui.key permissions are 600, is owned by root and group owned by root 
+ 
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256742"><title>SRG-APP-000315-WSR-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256742r889164_rule" weight="10.0" severity="medium"><version>VCRP-70-000006</version><title>Envoy must exclusively use the HTTPS protocol for client connections.</title><description>&lt;VulnDiscussion&gt;Remotely accessing vCenter via Envoy involves sensitive information going over the wire. To protect the confidentiality and integrity of these communications, Envoy must be configured to use an encrypted session of HTTPS rather than plain-text HTTP. The Secure Sockets Layer (SSL) configuration block inside the rhttpproxy configuration must be present and correctly configured to safely enable Transport Layer Security (TLS).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA RhttpProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA RhttpProxy</dc:subject><dc:identifier>5526</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002314</ident><fixtext fixref="F-60360r889163_fix">Navigate to and open: 
+ 
+/etc/vmware-rhttpproxy/config.xml 
+ 
+Locate the first &lt;ssl&gt; block and set its content to the following: 
+ 
+&lt;ssl&gt; 
+    &lt;!-- The server private key file --&gt; 
+    &lt;privateKey&gt;/etc/vmware-rhttpproxy/ssl/rui.key&lt;/privateKey&gt; 
+    &lt;!-- The server side certificate file --&gt; 
+    &lt;certificate&gt;/etc/vmware-rhttpproxy/ssl/rui.crt&lt;/certificate&gt; 
+    &lt;!-- vecs server name. Currently vecs runs on all node types. --&gt; 
+    &lt;vecsServerName&gt;localhost&lt;/vecsServerName&gt; 
+&lt;/ssl&gt; 
+ 
+Restart the service for changes to take effect. 
+ 
+# vmon-cli --restart rhttpproxy</fixtext><fix id="F-60360r889163_fix" /><check system="C-60417r889162_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_RhttpProxy_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command: 
+ 
+# xmllint --xpath '/config/ssl' /etc/vmware-rhttpproxy/config.xml 
+ 
+Expected result: 
+ 
+&lt;ssl&gt; 
+    &lt;!-- The server private key file --&gt; 
+    &lt;privateKey&gt;/etc/vmware-rhttpproxy/ssl/rui.key&lt;/privateKey&gt; 
+    &lt;!-- The server side certificate file --&gt; 
+    &lt;certificate&gt;/etc/vmware-rhttpproxy/ssl/rui.crt&lt;/certificate&gt; 
+    &lt;!-- vecs server name. Currently vecs runs on all node types. --&gt; 
+    &lt;vecsServerName&gt;localhost&lt;/vecsServerName&gt; 
+  &lt;/ssl&gt; 
+ 
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-256743"><title>SRG-APP-000358-WSR-000063</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256743r889167_rule" weight="10.0" severity="medium"><version>VCRP-70-000007</version><title>Envoy (rhttpproxy) log files must be shipped via syslog to a central log server.</title><description>&lt;VulnDiscussion&gt;Envoy produces several logs that must be offloaded from the originating system. This information can then be used for diagnostic purposes, forensics purposes, or other purposes relevant to ensuring the availability and integrity of the hosted application. 
+ 
+Envoy (rhttpproxy) rsyslog configuration is included in the "VMware-visl-integration" package and unpacked to "/etc/vmware-syslog/vmware-services-rhttpproxy.conf". Ensuring the package hashes are as expected also ensures the shipped rsyslog configuration is present and unmodified.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA RhttpProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA RhttpProxy</dc:subject><dc:identifier>5526</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-60361r889166_fix">Navigate to and open: 
+ 
+/etc/vmware-syslog/vmware-services-rhttpproxy.conf 
+ 
+Create the file if it does not exist. 
+ 
+Set the contents of the file as follows: 
+ 
+#rhttpproxy log 
+input(type="imfile" 
+      File="/var/log/vmware/rhttpproxy/rhttpproxy.log" 
+      Tag="rhttpproxy-main" 
+      Severity="info" 
+      Facility="local0")</fixtext><fix id="F-60361r889166_fix" /><check system="C-60418r889165_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_RhttpProxy_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command: 
+ 
+# rpm -V VMware-visl-integration|grep vmware-services-rhttpproxy.conf|grep "^..5......" 
+ 
+If the command returns any output, this is a finding.</check-content></check></Rule></Group><Group id="V-256744"><title>SRG-APP-000358-WSR-000063</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256744r889170_rule" weight="10.0" severity="medium"><version>VCRP-70-000008</version><title>Envoy log files must be shipped via syslog to a central log server.</title><description>&lt;VulnDiscussion&gt;Envoy rsyslog configuration is included in the "VMware-visl-integration" package and unpacked to "/etc/vmware-syslog/vmware-services-envoy.conf". Ensuring the package hashes are as expected also ensures the shipped rsyslog configuration is present and unmodified.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 7.0 vCA RhttpProxy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 7.0 vCA RhttpProxy</dc:subject><dc:identifier>5526</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-60362r889169_fix">Navigate to and open: 
+ 
+/etc/vmware-syslog/vmware-services-envoy.conf 
+ 
+Create the file if it does not exist. 
+ 
+Set the contents of the file as follows: 
+ 
+#envoy service log 
+input(type="imfile" 
+      File="/var/log/vmware/envoy/envoy.log" 
+      Tag="envoy-main" 
+      Severity="info" 
+      Facility="local0") 
+#envoy access log 
+input(type="imfile" 
+      File="/var/log/vmware/envoy/envoy-access.log" 
+      Tag="envoy-access" 
+      Severity="info" 
+      Facility="local0")</fixtext><fix id="F-60362r889169_fix" /><check system="C-60419r889168_chk"><check-content-ref href="U_VMW_vSphere_7-0_vCA_RhttpProxy_STIG_V1R1_Manual-xccdf.xml" name="M" /><check-content>At the command prompt, run the following command: 
+ 
+# rpm -V VMware-visl-integration|grep vmware-services-envoy.conf|grep "^..5......" 
+ 
+If the command returns any output, this is a finding.</check-content></check></Rule></Group></Benchmark>

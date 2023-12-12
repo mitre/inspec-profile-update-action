@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Jamf_Pro_v10-x_EMM_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2023-05-23">accepted</status><title>Jamf Pro v10.x EMM Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 26 Jul 2023</plain-text><plain-text id="generator">3.4.0.34222</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>2</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-241790" selected="true" /><select idref="V-241791" selected="true" /><select idref="V-241792" selected="true" /><select idref="V-241793" selected="true" /><select idref="V-241794" selected="true" /><select idref="V-241795" selected="true" /><select idref="V-241796" selected="true" /><select idref="V-241797" selected="true" /><select idref="V-241798" selected="true" /><select idref="V-241799" selected="true" /><select idref="V-241800" selected="true" /><select idref="V-241801" selected="true" /><select idref="V-241802" selected="true" /><select idref="V-241803" selected="true" /><select idref="V-241804" selected="true" /><select idref="V-241805" selected="true" /><select idref="V-241806" selected="true" /><select idref="V-241807" selected="true" /><select idref="V-241808" selected="true" /><select idref="V-241809" selected="true" /><select idref="V-241810" selected="true" /><select idref="V-241811" selected="true" /><select idref="V-241812" selected="true" /><select idref="V-241813" selected="true" /><select idref="V-241814" selected="true" /><select idref="V-241815" selected="true" /><select idref="V-241816" selected="true" /><select idref="V-241817" selected="true" /><select idref="V-241818" selected="true" /><select idref="V-257255" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-241790" selected="true" /><select idref="V-241791" selected="true" /><select idref="V-241792" selected="true" /><select idref="V-241793" selected="true" /><select idref="V-241794" selected="true" /><select idref="V-241795" selected="true" /><select idref="V-241796" selected="true" /><select idref="V-241797" selected="true" /><select idref="V-241798" selected="true" /><select idref="V-241799" selected="true" /><select idref="V-241800" selected="true" /><select idref="V-241801" selected="true" /><select idref="V-241802" selected="true" /><select idref="V-241803" selected="true" /><select idref="V-241804" selected="true" /><select idref="V-241805" selected="true" /><select idref="V-241806" selected="true" /><select idref="V-241807" selected="true" /><select idref="V-241808" selected="true" /><select idref="V-241809" selected="true" /><select idref="V-241810" selected="true" /><select idref="V-241811" selected="true" /><select idref="V-241812" selected="true" /><select idref="V-241813" selected="true" /><select idref="V-241814" selected="true" /><select idref="V-241815" selected="true" /><select idref="V-241816" selected="true" /><select idref="V-241817" selected="true" /><select idref="V-241818" selected="true" /><select idref="V-257255" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-241790" selected="true" /><select idref="V-241791" selected="true" /><select idref="V-241792" selected="true" /><select idref="V-241793" selected="true" /><select idref="V-241794" selected="true" /><select idref="V-241795" selected="true" /><select idref="V-241796" selected="true" /><select idref="V-241797" selected="true" /><select idref="V-241798" selected="true" /><select idref="V-241799" selected="true" /><select idref="V-241800" selected="true" /><select idref="V-241801" selected="true" /><select idref="V-241802" selected="true" /><select idref="V-241803" selected="true" /><select idref="V-241804" selected="true" /><select idref="V-241805" selected="true" /><select idref="V-241806" selected="true" /><select idref="V-241807" selected="true" /><select idref="V-241808" selected="true" /><select idref="V-241809" selected="true" /><select idref="V-241810" selected="true" /><select idref="V-241811" selected="true" /><select idref="V-241812" selected="true" /><select idref="V-241813" selected="true" /><select idref="V-241814" selected="true" /><select idref="V-241815" selected="true" /><select idref="V-241816" selected="true" /><select idref="V-241817" selected="true" /><select idref="V-241818" selected="true" /><select idref="V-257255" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-241790" selected="true" /><select idref="V-241791" selected="true" /><select idref="V-241792" selected="true" /><select idref="V-241793" selected="true" /><select idref="V-241794" selected="true" /><select idref="V-241795" selected="true" /><select idref="V-241796" selected="true" /><select idref="V-241797" selected="true" /><select idref="V-241798" selected="true" /><select idref="V-241799" selected="true" /><select idref="V-241800" selected="true" /><select idref="V-241801" selected="true" /><select idref="V-241802" selected="true" /><select idref="V-241803" selected="true" /><select idref="V-241804" selected="true" /><select idref="V-241805" selected="true" /><select idref="V-241806" selected="true" /><select idref="V-241807" selected="true" /><select idref="V-241808" selected="true" /><select idref="V-241809" selected="true" /><select idref="V-241810" selected="true" /><select idref="V-241811" selected="true" /><select idref="V-241812" selected="true" /><select idref="V-241813" selected="true" /><select idref="V-241814" selected="true" /><select idref="V-241815" selected="true" /><select idref="V-241816" selected="true" /><select idref="V-241817" selected="true" /><select idref="V-241818" selected="true" /><select idref="V-257255" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-241790" selected="true" /><select idref="V-241791" selected="true" /><select idref="V-241792" selected="true" /><select idref="V-241793" selected="true" /><select idref="V-241794" selected="true" /><select idref="V-241795" selected="true" /><select idref="V-241796" selected="true" /><select idref="V-241797" selected="true" /><select idref="V-241798" selected="true" /><select idref="V-241799" selected="true" /><select idref="V-241800" selected="true" /><select idref="V-241801" selected="true" /><select idref="V-241802" selected="true" /><select idref="V-241803" selected="true" /><select idref="V-241804" selected="true" /><select idref="V-241805" selected="true" /><select idref="V-241806" selected="true" /><select idref="V-241807" selected="true" /><select idref="V-241808" selected="true" /><select idref="V-241809" selected="true" /><select idref="V-241810" selected="true" /><select idref="V-241811" selected="true" /><select idref="V-241812" selected="true" /><select idref="V-241813" selected="true" /><select idref="V-241814" selected="true" /><select idref="V-241815" selected="true" /><select idref="V-241816" selected="true" /><select idref="V-241817" selected="true" /><select idref="V-241818" selected="true" /><select idref="V-257255" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-241790" selected="true" /><select idref="V-241791" selected="true" /><select idref="V-241792" selected="true" /><select idref="V-241793" selected="true" /><select idref="V-241794" selected="true" /><select idref="V-241795" selected="true" /><select idref="V-241796" selected="true" /><select idref="V-241797" selected="true" /><select idref="V-241798" selected="true" /><select idref="V-241799" selected="true" /><select idref="V-241800" selected="true" /><select idref="V-241801" selected="true" /><select idref="V-241802" selected="true" /><select idref="V-241803" selected="true" /><select idref="V-241804" selected="true" /><select idref="V-241805" selected="true" /><select idref="V-241806" selected="true" /><select idref="V-241807" selected="true" /><select idref="V-241808" selected="true" /><select idref="V-241809" selected="true" /><select idref="V-241810" selected="true" /><select idref="V-241811" selected="true" /><select idref="V-241812" selected="true" /><select idref="V-241813" selected="true" /><select idref="V-241814" selected="true" /><select idref="V-241815" selected="true" /><select idref="V-241816" selected="true" /><select idref="V-241817" selected="true" /><select idref="V-241818" selected="true" /><select idref="V-257255" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-241790" selected="true" /><select idref="V-241791" selected="true" /><select idref="V-241792" selected="true" /><select idref="V-241793" selected="true" /><select idref="V-241794" selected="true" /><select idref="V-241795" selected="true" /><select idref="V-241796" selected="true" /><select idref="V-241797" selected="true" /><select idref="V-241798" selected="true" /><select idref="V-241799" selected="true" /><select idref="V-241800" selected="true" /><select idref="V-241801" selected="true" /><select idref="V-241802" selected="true" /><select idref="V-241803" selected="true" /><select idref="V-241804" selected="true" /><select idref="V-241805" selected="true" /><select idref="V-241806" selected="true" /><select idref="V-241807" selected="true" /><select idref="V-241808" selected="true" /><select idref="V-241809" selected="true" /><select idref="V-241810" selected="true" /><select idref="V-241811" selected="true" /><select idref="V-241812" selected="true" /><select idref="V-241813" selected="true" /><select idref="V-241814" selected="true" /><select idref="V-241815" selected="true" /><select idref="V-241816" selected="true" /><select idref="V-241817" selected="true" /><select idref="V-241818" selected="true" /><select idref="V-257255" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-241790" selected="true" /><select idref="V-241791" selected="true" /><select idref="V-241792" selected="true" /><select idref="V-241793" selected="true" /><select idref="V-241794" selected="true" /><select idref="V-241795" selected="true" /><select idref="V-241796" selected="true" /><select idref="V-241797" selected="true" /><select idref="V-241798" selected="true" /><select idref="V-241799" selected="true" /><select idref="V-241800" selected="true" /><select idref="V-241801" selected="true" /><select idref="V-241802" selected="true" /><select idref="V-241803" selected="true" /><select idref="V-241804" selected="true" /><select idref="V-241805" selected="true" /><select idref="V-241806" selected="true" /><select idref="V-241807" selected="true" /><select idref="V-241808" selected="true" /><select idref="V-241809" selected="true" /><select idref="V-241810" selected="true" /><select idref="V-241811" selected="true" /><select idref="V-241812" selected="true" /><select idref="V-241813" selected="true" /><select idref="V-241814" selected="true" /><select idref="V-241815" selected="true" /><select idref="V-241816" selected="true" /><select idref="V-241817" selected="true" /><select idref="V-241818" selected="true" /><select idref="V-257255" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-241790" selected="true" /><select idref="V-241791" selected="true" /><select idref="V-241792" selected="true" /><select idref="V-241793" selected="true" /><select idref="V-241794" selected="true" /><select idref="V-241795" selected="true" /><select idref="V-241796" selected="true" /><select idref="V-241797" selected="true" /><select idref="V-241798" selected="true" /><select idref="V-241799" selected="true" /><select idref="V-241800" selected="true" /><select idref="V-241801" selected="true" /><select idref="V-241802" selected="true" /><select idref="V-241803" selected="true" /><select idref="V-241804" selected="true" /><select idref="V-241805" selected="true" /><select idref="V-241806" selected="true" /><select idref="V-241807" selected="true" /><select idref="V-241808" selected="true" /><select idref="V-241809" selected="true" /><select idref="V-241810" selected="true" /><select idref="V-241811" selected="true" /><select idref="V-241812" selected="true" /><select idref="V-241813" selected="true" /><select idref="V-241814" selected="true" /><select idref="V-241815" selected="true" /><select idref="V-241816" selected="true" /><select idref="V-241817" selected="true" /><select idref="V-241818" selected="true" /><select idref="V-257255" selected="true" /></Profile><Group id="V-241790"><title>PP-MDM-412003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241790r879612_rule" weight="10.0" severity="medium"><version>JAMF-10-000040</version><title>When the Jamf Pro EMM server cannot establish a connection to determine the validity of a certificate, the server must not have the option to accept the certificate.</title><description>&lt;VulnDiscussion&gt;When a Jamf Pro EMM server accepts an unverified certificate, it may be trusting a malicious actor. For example, messages signed with an invalid certificate may contain links to malware, which could lead to the installation or distribution of that malware on DoD information systems, leading to compromise of DoD sensitive information and other attacks.
+
+SFR ID: FIA_X509_EXT.2.2&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108671</ident><ident system="http://cyber.mil/legacy">V-99567</ident><ident system="http://cyber.mil/cci">CCI-000185</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001310</ident><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-45025r685123_fix">Configure the Jamf Pro EMM server to not accept a certificate if the certificate cannot be validated.
+
+1. Open the Jamf Pro EMM console.
+2. Open "Settings".
+3. Select "User-Initiated Enrollment".
+4. Under the General tab, select "Use a third-party signing certificate".
+5. Drag and drop the DoD p12 certificate.
+6. Click "Save".</fixtext><fix id="F-45025r685123_fix" /><check system="C-45066r685122_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Validate the Jamf Pro EMM server has been configured to not accept a certificate if the certificate cannot be validated.
+
+1. Open the Jamf Pro EMM console.
+2. Open "Settings".
+3. Select "User-Initiated Enrollment".
+4. Under the General tab, verify "Use a third-party signing certificate" is selected.
+5. Verify the name and certificate extension of the DoD p12 certificate is listed.
+
+If the Jamf Pro EMM server has been not been configured to not accept a certificate if the certificate cannot be validated, this is a finding.</check-content></check></Rule></Group><Group id="V-241791"><title>PP-MDM-411047</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241791r879513_rule" weight="10.0" severity="medium"><version>JAMF-10-000460</version><title>The Jamf Pro EMM server or platform must be configured to initiate a session lock after a 15-minute period of inactivity.</title><description>&lt;VulnDiscussion&gt;A session time-out lock is a temporary action taken when a user (MDM system administrator) stops work and moves away from the immediate physical vicinity of the information system but does not log out because of the temporary nature of the absence. Rather than relying on the user to manually lock their application session prior to vacating the vicinity, applications need to be able to identify when a user's application session has idled and take action to initiate the session lock.
+
+The session lock is implemented at the point where session activity can be determined and/or controlled. This is typically at the operating system level and results in a system lock but may be at the application level where the application interface window is secured instead.
+
+SFR ID: FMT_SMF.1.1(2) i&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108675</ident><ident system="http://cyber.mil/legacy">V-99571</ident><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-45026r685126_fix">Perform the following procedure to configure the Jamf session lock to lock after a 15-minute period of inactivity.
+
+Configuring the Variable in the JAMF web.xml File
+
+On the  Jamf Pro EMM host server, open the web.xml file:
+
+If using macOS, the web.xml file is located at the following filepath:
+/Library/JSS/Tomcat/webapps/ROOT/WEB-INF/
+
+If using Windows, the web.xml file is located at the following filepath:
+C:\Program Files\JSS\Tomcat\webapps\ROOT\WEB-INF\
+
+If using Linux, the web.xml file is located at the following filepath:
+/usr/local/jss/tomcat/webapps/ROOT/WEB-INF/
+
+Locate the following setting:
+&lt;session-config&gt;
+&lt;session-timeout&gt;1&lt;/session-timeout&gt; 
+&lt;/session-config&gt;
+
+Ensure that the code is not commented out. If the code is commented out, remove the comment tags &lt;!--  --&gt;  that encase the code.
+
+Modify the session-timeout to a value from 1 to 15.
+Note: Session timeout is in minutes.
+
+Restart Tomcat after modifying anything within the web.xml file.
+See Starting and Stopping Tomcat for instructions in the Jamf admin guide.</fixtext><fix id="F-45026r685126_fix" /><check system="C-45067r685125_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify the Jamf Pro EMM server or platform is configured to initiate a session lock after a 15-minute period of inactivity.
+
+Review the variable in the Jamf Pro web.xml file.
+
+On the Jamf Pro host server, open the web.xml file:
+
+If using macOS, the web.xml file is located at the following filepath:
+/Library/JSS/Tomcat/webapps/ROOT/WEB-INF/
+
+If using Windows, the web.xml file is located at the following filepath:
+C:\Program Files\JSS\Tomcat\webapps\ROOT\WEB-INF\
+
+If using Linux, the web.xml file is located at the following filepath:
+/usr/local/jss/tomcat/webapps/ROOT/WEB-INF/
+
+Locate the following setting:
+&lt;session-config&gt;
+&lt;session-timeout&gt;15&lt;/session-timeout&gt; 
+&lt;/session-config&gt;
+
+Ensure that the code is not commented out. If the code is commented out, remove the comment tags &lt;!--  --&gt; that encase the code.
+Note: Session timeout is in minutes.
+
+If the code is commented out or session-timeout is not configured to "15" minutes or less, this is a finding.</check-content></check></Rule></Group><Group id="V-241792"><title>PP-MDM-411051</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241792r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-000480</version><title>The Jamf Pro EMM server must be configured with an enterprise certificate for signing policies (if function is not automatically implemented during Jamf Pro EMM server install).</title><description>&lt;VulnDiscussion&gt;It is critical that only authorized certificates are used for key activities such as code signing for system software updates, code signing for integrity verification, and policy signing. Otherwise, there is no assurance that a malicious actor has not inserted itself in the process of packaging the code or policy. For example, messages signed with an invalid certificate may contain links to malware, which could lead to the installation or distribution of that malware on DoD information systems, leading to compromise of DoD sensitive information and other attacks. Therefore, the Jamf Pro EMM server must have the capability to configure the enterprise certificate.
+
+SFR ID: FMT_SMF.1.1(2) i, FMT_POL_EXT.1.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108677</ident><ident system="http://cyber.mil/legacy">V-99573</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-45027r685129_fix">Configure the following settings within the Jamf Pro EMM server for ensuring an authorized DoD certificate is used for signing enrollment and configuration profiles:
+
+1. Open Jamf Pro server.
+2. Open "Settings".
+3. Open "PKI Certificates".
+4. Select "Management Certificate Template" tab.
+5. Select "External CA" tab.
+6. Select "Edit".
+7. Select to use SCEP-enabled external CA for computer and mobile device enrollment.
+8. Enter all the applicable settings to connect this server to SCEP/Entrust enabled CA.
+9. Select "Save".
+10. At the bottom of the External CA screen, select "Change Signing and CA Certificates".
+11. Follow onscreen instructions to upload the signing and CA certificates for Jamf Pro to use.
+
+Jamf Pro is now set to use an External CA for signing all communication to mobile devices.</fixtext><fix id="F-45027r685129_fix" /><check system="C-45068r685128_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify Jamf Pro is utilizing an External CA for signing communication to mobile devices:
+
+1. Open Jamf Pro server.
+2. Open "Settings".
+3. Select "PKI Certificates".
+4. Select "Management Certificate Template".
+5. Select "External CA" tab.
+6. Verify the "Use a SCEP-enabled external CA for computer and mobile device enrollment" is enabled.
+7. Verify that the Signing Certificate is listed at the bottom of the page.
+
+If these settings are confirmed, Jamf Pro is set to use an external CA.
+
+If Jamf Pro is not configured to use an External CA for signing communication to mobile devices, this is a finding.</check-content></check></Rule></Group><Group id="V-241793"><title>PP-MDM-411054</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241793r879731_rule" weight="10.0" severity="medium"><version>JAMF-10-000520</version><title>The Jamf Pro EMM server must be configured to transfer Jamf Pro EMM server logs to another server for storage, analysis, and reporting.
+
+Note: Jamf Pro EMM server logs include logs of MDM events and logs transferred to the Jamf Pro EMM server by MDM agents of managed devices.</title><description>&lt;VulnDiscussion&gt;Audit logs enable monitoring of security-relevant events and subsequent forensics when breaches occur. Since the Jamf Pro EMM server has limited capability to store mobile device log files and perform analysis and reporting of mobile device log files, the Jamf Pro EMM server must have the capability to transfer log files to an audit log management server.
+
+SFR ID: FMT_SMF.1.1(2) i, FAU_STG_EXT.1.1(1)&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108679</ident><ident system="http://cyber.mil/legacy">V-99575</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-45028r685132_fix">Configure the Jamf Pro EMM server to enable syslog:
+
+1. Open Jamf Pro server.
+2. Open "Settings".
+3. Select "Change Management".
+4. Click "Edit".
+5. Configure the settings for Syslog Server.
+6. Click "Save".</fixtext><fix id="F-45028r685132_fix" /><check system="C-45069r685131_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify the Jamf Pro EMM server is enabled to push syslog:
+
+1. Open Jamf Pro server.
+2. Open "Settings".
+3. Select "Change Management".
+4. Verify the settings for Syslog Server (log file transfer to the syslog server).
+
+If the Jamf Pro EMM server is not configured to enable syslog, this is a finding.</check-content></check></Rule></Group><Group id="V-241794"><title>PP-MDM-411056</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241794r879547_rule" weight="10.0" severity="low"><version>JAMF-10-000550</version><title>The Jamf Pro EMM server must be configured to display the required DoD warning banner upon administrator logon.
+
+Note: This requirement is not applicable if the TOE platform is selected in FTA_TAB.1.1 in the Security Target (ST).</title><description>&lt;VulnDiscussion&gt;Note: The advisory notice and consent warning message is not required if the general purpose OS or network device displays an advisory notice and consent warning message when the administrator logs on to the general purpose OS or network device prior to accessing the Jamf Pro EMM server or Jamf Pro EMM server platform.
+
+Before granting access to the system, the Jamf Pro EMM server/server platform is required to display the DoD-approved system use notification message or banner that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. This ensures the legal requirements for auditing and monitoring are met.
+
+The approved DoD text must be used as specified in the KS referenced in DoDI 8500.01.
+
+The non-bracketed text below must be used without any changes as the warning banner. 
+ 
+[A. Use this banner for desktops, laptops, and other devices accommodating banners of 1300 characters. The banner shall be implemented as a click-through banner at logon (to the extent permitted by the operating system), meaning it prevents further activity on the information system unless and until the user executes a positive action to manifest agreement by clicking on a box indicating “OK.”]
+ 
+You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. 
+By using this IS (which includes any device attached to this IS), you consent to the following conditions: 
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. 
+-At any time, the USG may inspect and seize data stored on this IS. 
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose. 
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. 
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.
+
+SFR ID: FMT_SMF.1.1(2) d&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108681</ident><ident system="http://cyber.mil/legacy">V-99577</ident><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-45029r685135_fix">Configure the Jamf Pro EMM server for customized login page:
+
+Go to  /path/to/JSS/Tomcat/webapps/ROOT/WEB-INF/frontend&gt;&gt;Open the login.jsp with a text editor application.
+
+Scroll to the bottom of the page by the line "&lt;input type="submit" class="button" value="log in" /&gt;"
+Under the &lt;/div&gt; create a new line and paste the following:
+
+NOTE: Anything under "style" and "body" can be customized to fit your environments needs.&lt;head&gt;
+        &lt;style&gt;
+                p {margin-top:1em}
+                p {margin-bottom:0em}
+                p {color:red}
+                p {text-align:center}
+                p {font-family:courier}
+                p {font-size:100%}
+        &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        &lt;p&gt;""Place DoD warning banner first line here""&lt;/p&gt;
+        &lt;p&gt;""place second (or next) line here""&lt;/p&gt;
+&lt;/body&gt;
+
+Restart Tomcat for changes to take effect.</fixtext><fix id="F-45029r685135_fix" /><check system="C-45070r685134_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify the Jamf Pro EMM server for customized login page:
+
+Go to /path/to/JSS/Tomcat/webapps/ROOT/WEB-INF/frontend folder.
+
+Find the login.jsp.
+
+Locate new &lt;body&gt; content related to customized text for DoD classification.
+
+Verify the DoD warning banner text is correct.
+
+If the Jamf Pro EMM server is not configured to display DoD warning banner when the system administrator logs on to the server, this is a finding.</check-content></check></Rule></Group><Group id="V-241795"><title>PP-MDM-411058</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241795r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-000610</version><title>The Jamf Pro EMM server must be configured to have at least one user in the following Administrator roles: Server primary administrator, security configuration administrator, device user group administrator, auditor.</title><description>&lt;VulnDiscussion&gt;Having several administrative roles for the Jamf Pro EMM server supports separation of duties. This allows administrator-level privileges to be granted granularly, such as giving application management privileges to one group and security policy privileges to another group. This helps prevent administrators from intentionally or inadvertently altering other settings and configurations they may not understand or approve of, which can weaken overall security and increase the risk of compromise.
+
+- Server primary administrator: Responsible for server installation, initial configuration, and maintenance functions. Responsible for the setup and maintenance of security configuration administrator and auditor accounts. Responsible for the maintenance of applications in the MAS.
+- Security configuration administrator: Responsible for security configuration of the server, defining device user groups, setup and maintenance of device user group administrator accounts, and defining privileges of device user group administrators.
+- Device user group administrator: Responsible for maintenance of mobile device accounts, including setup, change of account configurations, and account deletion. Responsible for defining which apps user groups or individual users have access to in the MAS. Can only perform administrative functions assigned by the security configuration administrator.
+- Auditor: Responsible for reviewing and maintaining server and mobile device audit logs.
+
+SFR ID: FMT_SMR.1.1(1)&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108683</ident><ident system="http://cyber.mil/legacy">V-99579</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-002226</ident><ident system="http://cyber.mil/cci">CCI-002227</ident><fixtext fixref="F-45030r685138_fix">Administrator and Audit level permission groups are configured by default within Jamf Pro server. 
+
+Configure the additional group permissions by:
+
+1. Open Jamf Pro server.
+2. Open "Settings".
+3. Select "Jamf Pro User Accounts and Groups".
+4. Select "New".
+5. Select "Create Standard Group", click "Next".
+6. Fill out all the necessary information for creating the group including the privilege set.
+7. Click "Save".
+8. Repeat for each group of permissions that are needed.
+
+Once completed, Jamf Pro EMM server will have the appropriate group level permissions available for applying to individual user accounts or AD groups.</fixtext><fix id="F-45030r685138_fix" /><check system="C-45071r685137_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Administrator and Audit level permission groups are configured by default within Jamf Pro server. 
+
+Verify the additional group permissions by:
+
+1. Open Jamf Pro server.
+2. Open "Settings".
+3. Select "Jamf Pro User Accounts and Groups".
+4. View the necessary information for each group has been created with appropriate privilege sets.
+
+Jamf Pro EMM server will have the appropriate group level permissions available for applying to individual user accounts or AD groups.
+
+If required administrator roles have not been set up on the server, this is a finding.</check-content></check></Rule></Group><Group id="V-241796"><title>PP-MDM-414002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241796r879522_rule" weight="10.0" severity="medium"><version>JAMF-10-000670</version><title>The Jamf Pro EMM server must be configured to leverage the MDM platform user accounts and groups for Jamf Pro EMM server user identification and CAC authentication.</title><description>&lt;VulnDiscussion&gt;A comprehensive account management process that includes automation helps to ensure the accounts designated as requiring attention are consistently and promptly addressed. If an attacker compromises an account, the entire Jamf Pro EMM server infrastructure is at risk. Providing automated support functions for the management of accounts will ensure only active accounts will be granted access with the proper authorization levels. These objectives are best achieved by configuring the Jamf Pro EMM server to leverage an enterprise authentication mechanism (e.g., Microsoft Active Directory Kerberos).
+
+SFR ID: FIA&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108685</ident><ident system="http://cyber.mil/legacy">V-99581</ident><ident system="http://cyber.mil/cci">CCI-000015</ident><fixtext fixref="F-45031r685141_fix">Implement one of the following options:
+
+Option #1. Connect Jamf Pro EMM to an Authentication Gateway Service (AGS) which connects to the DoD Identity Access Management (IdAM) environment that uses CAC authentication. Note: Jamf requires AGS to support SAML.
+
+- Set up AGS / IdAM environment.
+- Connect the Jamf pro EMM to the AGS:
+1. Open "Settings".
+2. Select "SSO" (Single Sign-on).
+3. Select "Edit".
+4. Enable Single Sign-on Authentication.
+5. Complete the appropriate settings to connect Jamf Pro EMM to the AGS using SAML-based protocol.
+6. Click "Save".
+
+Note: If Option #1 is used, requirements JAMF-10-100700 to JAMF-10-10820 are Not Applicable and requirement JAMF-10-200040 is Applicable - Configurable.
+
+Option #2. Implement strong password policy for admin local accounts. Configure the server password policy (JAMF-10-100700 to JAMF-10-10820).
+
+Note: If Option #2 is used, requirement JAMF-10-200040 is Not Applicable.</fixtext><fix id="F-45031r685141_fix" /><check system="C-45072r685140_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Interview the site ISSM. 
+
+Determine if the site has connected Jamf Pro EMM to an Authentication Gateway Service (AGS) which connects to the DoD Identity Access Management (IdAM) environment that uses CAC authentication. 
+
+- If YES, verify the AGS implementation has been reviewed using the Application Layer Gateway SRG. Verify the Jamf Pro EMM server is configured to connect to the AGS:
+1. Go to the server console.
+2. Open "Settings".
+3. Select "SSO" (Single Sign-on).
+4. Verify Single Sign-on Authentication is enabled and connection to the AGS using SAML-based protocol is set up.
+
+- If NO, verify strong password controls for the administrator local accounts are in place. (Verified by JAMF-10-100700 to JAMF-10-100820.)
+
+If Jamf Pro EMM is not connected Jamf Pro EMM to an Authentication Gateway Service (AGS) which connects to your DoD Identity Access Management (IdAM) environment that utilizes CAC authentication or has not been configured to use strong password controls for the administrator local accounts, this is a finding.</check-content></check></Rule></Group><Group id="V-241797"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241797r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-000685</version><title>Authentication of Jamf Pro EMM server accounts must be configured so they are implemented either via an Authentication Gateway Service (AGS) which connects to the site DoD Identity Access Management (IdAM) environment that utilizes CAC authentication or via strong password controls for the administrator local accounts.</title><description>&lt;VulnDiscussion&gt;A comprehensive account management process that includes automation helps to ensure the accounts designated as requiring attention are consistently and promptly addressed. If an attacker compromises an account, the entire Jamf Pro EMM server infrastructure is at risk. Providing automated support functions for the management of accounts will ensure only active accounts will be granted access with the proper authorization levels. These objectives are best achieved by configuring the Jamf Pro EMM server to leverage an enterprise authentication mechanism (e.g., Microsoft Active Directory Kerberos).
+
+SFR ID: FIA&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108687</ident><ident system="http://cyber.mil/legacy">V-99583</ident><ident system="http://cyber.mil/cci">CCI-000015</ident><fixtext fixref="F-45032r685144_fix">Implement one of the following options:
+
+Option #1. Connect Jamf Pro EMM to an Authentication Gateway Service (AGS) which connects to the DoD Identity Access Management (IdAM) environment that uses CAC authentication. Note: Jamf requires AGS to support SAML.
+
+- Set up AGS/IdAM environment.
+- Connect the Jamf pro EMM to the AGS:
+1. Open "Settings".
+2. Select "SSO" (Single Sign-on).
+3. Select "Edit".
+4. Enable Single Sign-on Authentication.
+5. Complete the appropriate settings to connect Jamf Pro EMM to the AGS using SAML-based protocol.
+6. Click "Save".
+
+Note: If Option #1 is used, requirements JAMF-10-100700 to JAMF-10-10820 are Not Applicable and requirement JAMF-10-200040 is Applicable - Configurable.
+
+Option #2. Implement strong password policy for admin local accounts. Configure the server password policy (JAMF-10-100700 to JAMF-10-10820).
+
+Note: If Option #2 is used, requirement JAMF-10-200040 is Not Applicable.</fixtext><fix id="F-45032r685144_fix" /><check system="C-45073r685143_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Interview the site ISSM. 
+
+Determine if the site has connected Jamf Pro EMM to an Authentication Gateway Service (AGS) which connects to the DoD Identity Access Management (IdAM) environment that uses CAC authentication. 
+
+- If YES, verify the AGS implementation has been reviewed using the Application Layer Gateway SRG. Verify the Jamf Pro EMM server is configured to connect to the AGS:
+1. Go to the server console.
+2. Open "Settings".
+3. Select "SSO" (Single Sign-on).
+4. Verify Single Sign-on Authentication is enabled and connection to the AGS using SAML-based protocol is set up.
+
+- If NO, verify strong password controls for the administrator local accounts are in place. (Verified by JAMF-10-100700 to JAMF-10-100820.)
+
+If Jamf Pro EMM is not connected to an Authentication Gateway Service (AGS) which connects to the DoD Identity Access Management (IdAM) environment that uses CAC authentication or has not been configured to use strong password controls for the administrator local accounts, this is a finding.</check-content></check></Rule></Group><Group id="V-241798"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241798r879887_rule" weight="10.0" severity="high"><version>JAMF-10-000700</version><title>Jamf Pro EMM must be maintained at a supported version.</title><description>&lt;VulnDiscussion&gt;The MDM/EMM vendor maintains specific product versions for a specific period of time. MDM/EMM server versions no longer supported by the vendor will not receive security updates for new vulnerabilities which leaves them subject to exploitation.
+
+SFR ID: FPT_TUD_EXT.1.1, FPT_TUD_EXT.1.2&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108701</ident><ident system="http://cyber.mil/legacy">V-99597</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-45033r685147_fix">Update the Jamf Pro EMM to a supported version (see list below) or newer version.
+v10.18 (End of Support Date: TBD
+v10.17 (TBD)
+v10.16 (TBD)
+v10.15 (TBD)
+v10.14 (TBD)
+v10.13.1 (TBD)</fixtext><fix id="F-45033r685147_fix" /><check system="C-45074r685146_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify the installed version of Jamf Pro EMM is currently supported.
+
+On the Jamf Pro console do the following to determine the version number of the server:
+1. Log in to the console.
+2. View the version number listed in the upper left corner.
+
+List of current supported versions:
+v10.18 (End of Support Date: TBD
+v10.17 (TBD)
+v10.16 (TBD)
+v10.15 (TBD)
+v10.14 (TBD)
+v10.13.1 (TBD)
+
+If the displayed Jamf Pro server version is not currently supported or is not a newer version than on the list above, this is a finding.</check-content></check></Rule></Group><Group id="V-241799"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241799r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100060</version><title>The default mysql_secure_installation must be installed.</title><description>&lt;VulnDiscussion&gt;The mysql_secure_installation configuration of MySQL adds several important configuration settings that block several attack vectors. The My SQL application could be exploited by an adversary without mysql_secure_installation.
+
+SFR ID: FMT_SMF.1(2)b. / CM-7(1)(b)
+
+Satisfies: SRG-APP-000383&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108703</ident><ident system="http://cyber.mil/legacy">V-99599</ident><ident system="http://cyber.mil/cci">CCI-001762</ident><fixtext fixref="F-45034r685150_fix">Install the mysql_secure_installation. 
+
+1. Install MySQL.
+2. Using the Jamf Pro Security Recommendations document, go to the path based on the host operating system and execute the appropriate mysql_secure_installation script.</fixtext><fix id="F-45034r685150_fix" /><check system="C-45075r685149_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify the mysql_secure_installation has been installed on the Jamf host server. 
+
+1. Log in to MySQL. Execute the "show databases;" command.
+- Verify that the database named "Test" is not shown in output of the command.
+
+2. Verify the root account has a string representing the password and not a blank value.
+- select * from mysql.user;
+
+3. Verify the anonymous users have been removed and verify the user field contains a user name.
+- select * from mysql.user;
+
+All three steps must be correct to indicate mysql_secure_installation has been executed.
+
+If the mysql_secure_installation has not been installed on the Jamf host server, this is a finding.</check-content></check></Rule></Group><Group id="V-241800"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241800r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100080</version><title>A unique database name and a unique MySQL user with a secure password must be created for use in Jamf Pro EMM.</title><description>&lt;VulnDiscussion&gt;If the default MySQL database name and password are not changed an adversary could gain unauthorized access to the application which could lead to the compromise of sensitive DoD data.
+
+SFR ID: FMT_SMF.1(2)b. / IA-5(1)(c)
+
+Satisfies: SRG-APP-000171&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108705</ident><ident system="http://cyber.mil/legacy">V-99601</ident><ident system="http://cyber.mil/cci">CCI-000196</ident><fixtext fixref="F-45035r685153_fix">Create a unique database name and a unique MySQL user with a secure password. The procedure is found in the following Jamf Knowledge Base article:
+
+https://www.jamf.com/jamf-nation/articles/542/title</fixtext><fix id="F-45035r685153_fix" /><check system="C-45076r685152_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify a unique database name and a unique MySQL user with a secure password have been created for use in Jamf Pro EMM.
+
+1. Execute the show databases command.
+- Ensure at least one database name other than the default databases exits. The default databases are:
+infomation_schema
+mysql
+performance_schema
+sys
+
+2. Verify there is a unique MySQL user.
+- In MySQL, run select * mysql.user;
+- Look for a user that is not Root or one of the other MySQL service accounts.
+
+Both of these steps must be correct.
+
+If a unique database name and a unique MySQL user with a secure password have not been created, this is a finding.</check-content></check></Rule></Group><Group id="V-241801"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241801r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100100</version><title>Separate MySQL user accounts with limited privileges must be created within Jamf Pro EMM.</title><description>&lt;VulnDiscussion&gt;If separate MySQL accounts with limited privileges are not created an adversary could gain unauthorized access to the application or gain access unauthorized features which could lead to the compromise of sensitive DoD data.
+
+SFR ID: FMT_SMF.1(2)b. / CM-6 b
+
+Satisfies: SRG-APP-000516&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108707</ident><ident system="http://cyber.mil/legacy">V-99603</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-45036r685156_fix">Create separate MySQL user accounts with limited privileges within Jamf Pro EMM.
+
+The procedures for creating user accounts and assigning account privileges are found in the following Jamf Knowledge Base articles:
+
+MySQL 8.0: https://dev.mysql.com/doc/refman/8.0/en/creating-accounts.html
+MySQL 5.7: https://dev.mysql.com/doc/refman/5.7/en/creating-accounts.html
+
+Following is a list MySQL privileges that are required for different types of environments:
+- For a standalone web application or the master node in clustered environments:
+INSERT, SELECT, UPDATE, DELETE, CREATE, DROP, ALTER, INDEX, LOCK TABLES
+
+- For a child node in clustered environments: 
+INSERT, SELECT, UPDATE, DELETE, DROP, LOCK TABLES
+
+- To view connections from cluster nodes with different MySQL users:
+PROCESS
+
+Note: The "PROCESS" privilege requires the use of "*.*".</fixtext><fix id="F-45036r685156_fix" /><check system="C-45077r685155_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify separate MySQL user accounts with limited privileges have been created within Jamf Pro EMM.
+
+In MySQL, execute the following command: 
+show grants for username@localhost;
+
+Verify the privileges match what is in the Jamf Knowledge Base article.
+
+If separate MySQL user accounts with limited privileges have not been created within Jamf Pro EMM, this is a finding.</check-content></check></Rule></Group><Group id="V-241802"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241802r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100110</version><title>MySQL database backups must be scheduled in Jamf Pro EMM.</title><description>&lt;VulnDiscussion&gt;Database backups are a recognized best practice to protect against key data loss and possible adverse impacts to the mission of the organization.
+
+SFR ID: FMT_SMF.1(2)b. / CM-6 b
+
+Satisfies: SRG-APP-000516&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108709</ident><ident system="http://cyber.mil/legacy">V-99605</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-45037r685159_fix">Schedule MySQL of database backups in Jamf Pro EMM. 
+
+The procedure is found in the following Jamf Knowledge Base article:
+
+https://www.jamf.com/jamf-nation/articles/579/title</fixtext><fix id="F-45037r685159_fix" /><check system="C-45078r685158_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify MySQL of database backups have been scheduled in Jamf Pro EMM.
+
+1. Open "Jamf Server Tools".
+2. Click "Scheduled Backups" in the sidebar.
+3. Verify backups are scheduled.
+
+ If MySQL of database backups have not been scheduled in Jamf Pro EMM, this is a finding.</check-content></check></Rule></Group><Group id="V-241803"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241803r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100120</version><title>The MySQL DatabasePassword key must be removed or set to a blank value in the database configuration file in Jamf Pro EMM.</title><description>&lt;VulnDiscussion&gt;If the database password is not removed or set to a blank value in the configuration file, the user is not forced to enter the password, which would allow an adversary to access to access the database.
+
+SFR ID: FMT_SMF.1(2)b. / CM-5(10)
+
+Satisfies: SRG-APP-000380&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108711</ident><ident system="http://cyber.mil/legacy">V-99607</ident><ident system="http://cyber.mil/cci">CCI-001813</ident><fixtext fixref="F-45038r685162_fix">Remove the MySQL &lt;DatabasePassword&gt; key or set to a blank value in Jamf Pro EMM.
+
+If the database password is removed from the configuration file, the database password must be entered manually for the Jamf Pro EMM server web app during startup. In a clustered environment, the database password must be entered manually for each individual node.
+
+Note: Default values are included below for reference only. Use unique values in production environments.
+
+&lt;Database&gt;
+...
+&lt;DatabaseName&gt;jamfsoftware&lt;/DatabaseName&gt;
+&lt;DatabaseUser&gt;jamfsoftware&lt;/DatabaseUser&gt;
+&lt;DatabasePassword&gt;&lt;/DatabasePassword&gt;
+...
+&lt;/Database&gt;</fixtext><fix id="F-45038r685162_fix" /><check system="C-45079r685161_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify the MySQL &lt;DatabasePassword&gt; key has been removed or set to a blank value in Jamf Pro EMM.
+
+1. On the Jamf Pro server, navigate to the JSS/Tomcat/webapps/ROOT/WEB-INF/xml.
+2. Find the "Database.xml" file and open it in a text editor.
+3. Find the &lt;DatabasePassword&gt;.
+4. Verify that there is no password.
+
+If the MySQL &lt;DatabasePassword&gt; key has not been removed or not set to a blank value, this is a finding.</check-content></check></Rule></Group><Group id="V-241804"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241804r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100700</version><title>The Jamf Pro EMM local accounts password must be configured with length of 15 characters.</title><description>&lt;VulnDiscussion&gt;The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised.
+
+Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password. The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised. 
+
+Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.
+
+SFR ID: FMT_SMF.1(2)b. / IA-5 (1) (a)
+
+Satisfies: SRG-APP-000164&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108713</ident><ident system="http://cyber.mil/legacy">V-99609</ident><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-45039r685165_fix">To configure the length of the local accounts password, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Click "Edit".
+7. Set "Minimum Password Length" to "15".</fixtext><fix id="F-45039r685165_fix" /><check system="C-45080r685164_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>To verify the length of the local accounts password, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Verify "Minimum Password Length" is set to "15".
+
+If the "Minimum Password Length" is not set to "15", this is a finding.</check-content></check></Rule></Group><Group id="V-241805"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241805r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100710</version><title>The Jamf Pro EMM local accounts must be configured with at least one lowercase character.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+SFR ID: FMT_SMF.1(2)b. / IA-5 (1) (a)
+
+Satisfies: SRG-APP-000167&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108715</ident><ident system="http://cyber.mil/legacy">V-99611</ident><ident system="http://cyber.mil/cci">CCI-000193</ident><fixtext fixref="F-45040r685168_fix">To configure the "Require lowercase character" of the local accounts password, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Click "Edit".
+7. Select "Require lowercase character"</fixtext><fix id="F-45040r685168_fix" /><check system="C-45081r685167_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>To verify the "Require lowercase character" of the local accounts password is selected, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Verify "Require lowercase character" is selected.
+
+If "Require lowercase character" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-241806"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241806r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100720</version><title>The Jamf Pro EMM local accounts must be configured with at least one uppercase character.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password is, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+SFR ID: FMT_SMF.1(2)b. / IA-5 (1) (a)
+
+Satisfies: SRG-APP-000166&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108717</ident><ident system="http://cyber.mil/legacy">V-99613</ident><ident system="http://cyber.mil/cci">CCI-000192</ident><fixtext fixref="F-45041r685171_fix">To configure the "Require uppercase character" of the local accounts password, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Click "Edit".
+7. Select "Require uppercase character".</fixtext><fix id="F-45041r685171_fix" /><check system="C-45082r685170_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>To verify the "Require uppercase character" of the local accounts password is selected, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Verify "Require uppercase character" is selected.
+
+If "Require uppercase character" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-241807"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241807r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100730</version><title>The Jamf Pro EMM local accounts must be configured with at least one number.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+SFR ID: FMT_SMF.1(2)b. / IA-5 (1) (a)
+
+Satisfies: SRG-APP-000168&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108719</ident><ident system="http://cyber.mil/legacy">V-99615</ident><ident system="http://cyber.mil/cci">CCI-000194</ident><fixtext fixref="F-45042r685174_fix">To configure the "Require number" of the local accounts password, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Click "Edit".
+7. Select "Require number".</fixtext><fix id="F-45042r685174_fix" /><check system="C-45083r685173_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>To verify the "Require number" of the local accounts password is selected, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Verify "Require number" is selected.
+
+If "Require number" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-241808"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241808r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100740</version><title>The Jamf Pro EMM local accounts must be configured with at least one special character.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+Password complexity is one factor in determining how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised. 
+
+Special characters are those characters that are not alphanumeric. Examples include: ~ ! @ # $ % ^ *.
+
+SFR ID: FMT_SMF.1(2)b. / IA-5 (1) (a)
+
+Satisfies: SRG-APP-000169&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108721</ident><ident system="http://cyber.mil/legacy">V-99617</ident><ident system="http://cyber.mil/cci">CCI-001619</ident><fixtext fixref="F-45043r685177_fix">To configure the "Require special character" of the local accounts password, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Click "Edit".
+7. Select "Require special character".</fixtext><fix id="F-45043r685177_fix" /><check system="C-45084r685176_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>To verify the "Require special character" of the local accounts password is selected, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Verify "Require special character" is selected.
+
+If "Require special character" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-241809"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241809r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100750</version><title>The Jamf Pro EMM local accounts must be configured with password minimum lifetime of 24 hours.</title><description>&lt;VulnDiscussion&gt;Enforcing a minimum password lifetime helps prevent repeated password changes to defeat the password reuse or history enforcement requirement.
+
+Restricting this setting limits the user's ability to change their password. Passwords need to be changed at specific policy based intervals; however, if the application allows the user to immediately and continually change their password, then the password could be repeatedly changed in a short period of time to defeat the organization's policy regarding password reuse.
+
+SFR ID: FMT_SMF.1(2)b. / IA-5 (1) (d)
+
+Satisfies: SRG-APP-000173&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108723</ident><ident system="http://cyber.mil/legacy">V-99619</ident><ident system="http://cyber.mil/cci">CCI-000198</ident><fixtext fixref="F-45044r685180_fix">To configure the "Minimum Password Age" to "1" day for the local accounts password, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Click "Edit".
+7. Set the "Minimum Password Age" to "1" day.</fixtext><fix id="F-45044r685180_fix" /><check system="C-45085r685179_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>To verify the "Minimum password Age" of "1" day for the local accounts password is set, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Verify "Minimum Password Age" is set to "1" day.
+
+If the "Minimum Password Age" is not set to "1" day, this is a finding.</check-content></check></Rule></Group><Group id="V-241810"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241810r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100770</version><title>The Jamf Pro EMM local accounts must be configured with password maximum lifetime of 3 months.</title><description>&lt;VulnDiscussion&gt;Any password, no matter how complex, can eventually be cracked. Therefore, passwords need to be changed at specific intervals. 
+
+One method of minimizing this risk is to use complex passwords and periodically change them. If the application does not limit the lifetime of passwords and force users to change their passwords, there is the risk that the system and/or application passwords could be compromised. 
+
+This requirement does not include emergency administration accounts which are meant for access to the application in case of failure. These accounts are not required to have maximum password lifetime restrictions.
+
+SFR ID: FMT_SMF.1(2)b. / IA-5 (1) (d)
+
+Satisfies: SRG-APP-000174&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108725</ident><ident system="http://cyber.mil/legacy">V-99621</ident><ident system="http://cyber.mil/cci">CCI-000174</ident><fixtext fixref="F-45045r685183_fix">To configure the "password maximum lifetime" of "3" months for the local account's password, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Click "Edit".
+7. Set the "password maximum lifetime" of "3" months.</fixtext><fix id="F-45045r685183_fix" /><check system="C-45086r685182_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>To verify the "password maximum lifetime" of "3" months for the local account's password is set, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Verify "password maximum lifetime" of "3" months.
+
+If the "password maximum lifetime" for local account's password is not set to "3" months, this is a finding.</check-content></check></Rule></Group><Group id="V-241811"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241811r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100780</version><title>The Jamf Pro EMM local accounts must prohibit password reuse for a minimum of five generations.</title><description>&lt;VulnDiscussion&gt;Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+To meet password policy requirements, passwords need to be changed at specific policy-based intervals. 
+
+If the information system or application allows the user to consecutively reuse their password when that password has exceeded its defined lifetime, the end result is a password that is not changed as per policy requirements.
+
+SFR ID: FMT_SMF.1(2)b. / IA-5 (1) (e)
+
+Satisfies: SRG-APP-000165&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108727</ident><ident system="http://cyber.mil/legacy">V-99623</ident><ident system="http://cyber.mil/cci">CCI-000200</ident><fixtext fixref="F-45046r685186_fix">Note: This requirement is NA if Option #1 is selected in requirement JAMF-10-000685.
+
+To configure the "Password History" of the local accounts password to a minimum of "5" generations, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Set the "Password History" to "5" or more.</fixtext><fix id="F-45046r685186_fix" /><check system="C-45087r685185_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>To verify the local accounts "Password History" is set to a minimum of "5" generations, do the following:
+
+1. Open the Jamf Pro EMM console.
+2. Click "Settings".
+3. Click "System Settings".
+4. Click "Jamf Pro System User Accounts &amp; Groups".
+5. Click "Password Policy".
+6. Verify "Password History" to "5" or more.
+
+If "Password History" is not set to "5" or more, this is a finding.</check-content></check></Rule></Group><Group id="V-241812"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241812r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100800</version><title>The Jamf Pro EMM must automatically disable accounts after a 35 day period of account inactivity (local accounts).</title><description>&lt;VulnDiscussion&gt;Attackers that are able to exploit an inactive account can potentially obtain and maintain undetected access to an application. Owners of inactive accounts will not notice if unauthorized access to their user account has been obtained. Applications need to track periods of user inactivity and disable accounts after 35 days of inactivity. Such a process greatly reduces the risk that accounts will be hijacked, leading to a data compromise. 
+
+To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to off-load those access control functions and focus on core application features and functionality. 
+
+This policy does not apply to either emergency accounts or infrequently used accounts. Infrequently used accounts are local login administrator accounts used by system administrators when network or normal logon/access is not available. Emergency accounts are administrator accounts created in response to crisis situations.
+
+SFR ID: FMT_SMF.1(2)b. / AC-2(3)
+
+Satisfies: SRG-APP-000025&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108729</ident><ident system="http://cyber.mil/legacy">V-99625</ident><ident system="http://cyber.mil/cci">CCI-000017</ident><fixtext fixref="F-45047r685189_fix">Note: There is no setting on the Jamf Pro EMM console to implement this requirement. 
+
+A script should be used to periodically check when each local account was last accessed by the user and disable the account if there is a 35-day or more period of account inactivity. The script should be developed by the site or provided by Jamf.</fixtext><fix id="F-45047r685189_fix" /><check system="C-45088r685188_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Interview the site Jamf Pro EMM system administrator. Confirm a script is used to periodically check when each local account was last accessed by the user and disable the account if there is a 35-day or more period of account inactivity.
+
+If a script is not used to periodically check when each local account was last accessed by the user and disable the account or if there is a 35-day or more period of account inactivity, this is a finding.</check-content></check></Rule></Group><Group id="V-241813"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241813r879887_rule" weight="10.0" severity="medium"><version>JAMF-10-100810</version><title>The Jamf Pro EMM must enforce the limit of three consecutive invalid logon attempts by a user.</title><description>&lt;VulnDiscussion&gt;By limiting the number of failed login attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute forcing, is reduced. Limits are imposed by locking the account.
+
+SFR ID: FMT_SMF.1(2)b. / IA-7-a
+
+Satisfies: SRG-APP-000065&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108731</ident><ident system="http://cyber.mil/legacy">V-99627</ident><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-45048r685192_fix">To configure the Jamf Pro EMM server to lock after three consecutive invalid logon attempts by a user, do the following:
+
+1. Open "Settings".
+2. Select "Jamf Pro User Accounts &amp; Groups".
+3. Select “Password Policy” in the upper right corner.
+4. Select "Edit".
+5. Under “Account Lockout”, select the drop-down menu to change the number of failed attempts before lockout to "3".
+6. Select “Save”.</fixtext><fix id="F-45048r685192_fix" /><check system="C-45089r685191_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>To verify the Jamf Pro EMM enforces a limit of three consecutive invalid logon attempts by a user, do the following:
+
+1. Log in to the Jamf Pro EMM console.
+2. Open "Settings".
+3. Select "Jamf Pro User Accounts &amp; Groups".
+4. Select "Password Policy" in the upper right corner.
+5. Verify that under "Account Lockout" the number of failed attempts before lockout is set to "3" or less.
+
+If the Jamf Pro EMM does not limit the number of consecutive invalid logon attempts by a user to "3" or less, this is a finding.</check-content></check></Rule></Group><Group id="V-241814"><title>PP-MDM-431004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241814r879588_rule" weight="10.0" severity="medium"><version>JAMF-10-200010</version><title>The Jamf Pro EMM server platform must be protected by a DoD-approved firewall.</title><description>&lt;VulnDiscussion&gt;Most information systems are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Unneeded services and processes provide additional threat vectors and avenues of attack to the information system. The MDM server is a critical component of the mobility architecture and must be configured to enable only those ports, protocols, and services (PPS) necessary to support functionality. All others must be expressly disabled or removed. A DoD-approved firewall implements the required network restrictions. A host-based firewall is appropriate where the MDM server runs on a standalone platform. Network firewalls or other architectures may be preferred where the MDM server runs in a cloud or virtualized solution.
+
+SFR ID: FMT_SMF.1.1(2) b / CM-7b
+
+Satisfies: SRG-APP-000142&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108689</ident><ident system="http://cyber.mil/legacy">V-99585</ident><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-45049r685195_fix">Install a DoD-approved firewall on the Jamf Pro EMM server.</fixtext><fix id="F-45049r685195_fix" /><check system="C-45090r685194_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Review the Jamf Pro EMM server platform configuration to determine whether a DoD-approved firewall is installed or if the platform operating system provides a firewall service that can restrict both inbound and outbound traffic by TCP/UDP port and IP address.
+
+If there is not a host-based firewall present on the Jamf Pro EMM server platform, this is a finding.</check-content></check></Rule></Group><Group id="V-241815"><title>PP-MDM-431005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241815r879588_rule" weight="10.0" severity="medium"><version>JAMF-10-200020</version><title>The firewall protecting the Jamf Pro EMM server platform must be configured to restrict all network traffic to and from all addresses with the exception of ports, protocols, and IP address ranges required to support Jamf Pro EMM server and platform functions.</title><description>&lt;VulnDiscussion&gt;Most information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations. Since MDM server is a critical component of the mobility architecture and must be configured to enable only those ports, protocols, and services (PPS) necessary to support functionality, all others must be expressly disabled or removed. A firewall installed on the MDM server provides a protection mechanism to ensure unwanted service requests do not reach the MDM server and outbound traffic is limited to only MDM server functionality.
+
+SFR ID: FMT_SMF.1.1(2) b / CM-7b
+
+Satisfies: SRG-APP-000142&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108691</ident><ident system="http://cyber.mil/legacy">V-99587</ident><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-45050r685198_fix">Configure the firewall on the Jamf Pro EMM server to only permit ports, protocols, and IP address ranges necessary for operation.</fixtext><fix id="F-45050r685198_fix" /><check system="C-45091r685197_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Ask the Jamf Pro EMM server administrator for a list of ports, protocols, and IP address ranges necessary to support Jamf Pro EMM server and platform functionality. A list can usually be found in the STIG Supplemental document or Jamf Pro EMM product documentation.
+
+Compare the list against the configuration of the firewall and identify discrepancies.
+
+If the host-based firewall is not configured to support only those ports, protocols, and IP address ranges necessary for operation, this is a finding.</check-content></check></Rule></Group><Group id="V-241816"><title>PP-MDM-431006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241816r879588_rule" weight="10.0" severity="medium"><version>JAMF-10-200030</version><title>The firewall protecting the Jamf Pro EMM server platform must be configured so that only DoD-approved ports, protocols, and services are enabled. (See the DoD Ports, Protocols, Services Management [PPSM] Category Assurance Levels [CAL] list for DoD-approved ports, protocols, and services).</title><description>&lt;VulnDiscussion&gt;All ports, protocols, and services used on DoD networks must be approved and registered via the DoD PPSM process. This is to ensure that a risk assessment has been completed before a new port, protocol, or service is configured on a DoD network and has been approved by proper DoD authorities. Otherwise, the new port, protocol, or service could cause a vulnerability to the DoD network, which could be exploited by an adversary.
+
+SFR ID: FMT_SMF.1.1(2) b / CM-7b
+
+Satisfies: SRG-APP-000142&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108693</ident><ident system="http://cyber.mil/legacy">V-99589</ident><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-45051r685201_fix">Turn off any ports, protocols, and services on the Jamf Pro EMM server host-based firewall that are not on the DoD PPSM CAL list.</fixtext><fix id="F-45051r685201_fix" /><check system="C-45092r685200_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Ask the Jamf Pro EMM server administrator for a list of ports, protocols, and services that have been configured on the host-based firewall of the Jamf Pro EMM server or generate the list by inspecting the firewall. Verify all allowed ports, protocols, and services are included on the DoD PPSM CAL list.
+
+If any allowed ports, protocols, and services on the Jamf Pro EMM server host-based firewall are not included on the DoD PPSM CAL list, this is a finding.</check-content></check></Rule></Group><Group id="V-241817"><title>PP-MDM-431007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241817r879589_rule" weight="10.0" severity="medium"><version>JAMF-10-200040</version><title>All Jamf Pro EMM server local accounts created during application installation and configuration must be disabled.</title><description>&lt;VulnDiscussion&gt;A comprehensive account management process that includes automation helps to ensure the accounts designated as requiring attention are consistently and promptly addressed. If an attacker compromises an account, the entire Jamf Pro EMM server infrastructure is at risk. Providing automated support functions for the management of accounts will ensure only active accounts will be granted access with the proper authorization levels. These objectives are best achieved by configuring the Jamf Pro EMM server to leverage an enterprise authentication mechanism (e.g., Microsoft Active Directory Kerberos).
+
+SFR ID: FMT_SMF.1.1(2) b / IA-5(1)(a)
+
+Satisfies: SRG-APP-000148&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108697</ident><ident system="http://cyber.mil/legacy">V-99593</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-45052r685204_fix">Disable all local accounts on the Jamf Pro EMM server with the following procedure. Note: The server service account should not be disabled.
+
+1. Open "Settings".
+2. Select "Jamf Pro User Accounts &amp; Groups".
+3. Select the user/accounts that need to be disabled.
+4. Upon selection, click on the "Edit" button.
+5. Change the "Access Status" to "Disabled".
+6. Click "Save".
+7. Repeat steps 3-6 for all local accounts.</fixtext><fix id="F-45052r685204_fix" /><check system="C-45093r685203_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify all local accounts on the Jamf Pro EMM server have been disabled. Note: the server service account is not disabled.
+
+1. Log in to the Jamf pro EMM console.
+2. Open "Settings".
+3. Verify all Jamf Pro User Accounts &amp; Groups have been disabled.
+
+If all local accounts on the Jamf Pro EMM server have not been disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-241818"><title>PP-MDM-431009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-241818r916416_rule" weight="10.0" severity="high"><version>JAMF-10-200065</version><title>The Jamf Pro EMM server must connect to [Authentication Gateway Service (AGS)] with an authenticated and secure (encrypted) connection to protect the confidentiality and integrity of transmitted information.</title><description>&lt;VulnDiscussion&gt;Without protection of the transmitted information, confidentiality and integrity may be compromised since unprotected communications can be intercepted and either read or altered. 
+
+This requirement applies only to those applications that are either distributed or can allow access to data non-locally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, TLS VPNs, or IPsec.
+
+Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of organizational information can be accomplished by physical means (e.g., employing physical distribution systems) or by logical means (e.g., employing cryptographic techniques). If physical means of protection are employed, then logical means (cryptography) do not have to be employed, and vice versa.
+
+SFR ID: FMT_SMF.1.1(2) b / SC-8, SC-8 (1), SC-8 (2)
+
+Satisfies: SRG-APP-000439, SRG-APP-000440&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-108695</ident><ident system="http://cyber.mil/legacy">V-99591</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><ident system="http://cyber.mil/cci">CCI-002420</ident><ident system="http://cyber.mil/cci">CCI-002421</ident><ident system="http://cyber.mil/cci">CCI-002422</ident><fixtext fixref="F-45053r685207_fix">Confirm the Administrator has configured the AGS to connect to the Jamf Pro EMM server using the TLS connection.</fixtext><fix id="F-45053r685207_fix" /><check system="C-45094r685206_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Talk to the site Administrator to confirm the AGS has been configured to connect to the Jamf Pro EMM server using the TLS connection or confirm during a review of the AGS.
+
+If the AGS has not been configured to connect to the Jamf Pro EMM server using a TLS connection, this is a finding.</check-content></check></Rule></Group><Group id="V-257255"><title>PP-MDM-411046</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-257255r916639_rule" weight="10.0" severity="medium"><version>JAMF-10-000440</version><title>The Jamf Pro EMM server must configure the MDM Agent/platform to enable the DOD required device enrollment restrictions allowed for enrollment [specific device model].</title><description>&lt;VulnDiscussion&gt;Good configuration management of a mobile device is a key capability for maintaining the mobile device’s security baseline. Restricting network access to only authorized devices is a key configuration management attribute. Device type is a key way to specify mobile devices that can be adequately secured.
+
+SFR ID: FMT_SMF.1.1(2) b, FIA_ENR_EXT.1.2&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Jamf Pro v10-x EMM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Jamf Pro v10-x EMM</dc:subject><dc:identifier>5357</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-99569</ident><ident system="http://cyber.mil/legacy">SV-108673</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-60881r916635_fix">Build Smart Device Group that matches DOD requirements and said groups are within exclusions of Configuration Profiles, Mobile Device Apps, etc.
+
+1. Open Jamf Pro admin interface.
+2. Select "Devices".
+3. Select "Smart Device Groups".
+4. Select "New".
+5. Enter a name for the group.
+6. Select "Criteria".
+7. Select "Add" to add new Model, Model Identifier, or Model Number.
+8. Continue to add all models that satisfy this requirement.
+9. Select "Save".
+
+Add this Smart Device Group to any Configuration Profile, Mobile Device Apps as an Exception Scope.</fixtext><fix id="F-60881r916635_fix" /><check system="C-60939r916636_chk"><check-content-ref href="Jamf_Pro_v10-x_EMM_STIG.xml" name="M" /><check-content>Verify device enrollment restrictions are set up to limit enrollment by iOS device.
+
+1. Open Jamf Pro admin interface.
+2. Select "Devices".
+3. Select "Smart Device Groups".
+4. Select desired device group.
+5. Verify approved model numbers are listed.
+
+If device enrollment restrictions are not set up, this is a finding.</check-content></check></Rule></Group></Benchmark>

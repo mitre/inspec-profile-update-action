@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_CSSMTP_for_TSS_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2022-10-10">accepted</status><title>z/OS CSSMTP for TSS Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 6 Benchmark Date: 23 Nov 2022</plain-text><plain-text id="generator">3.4.0.34222</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>6</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224666" selected="true" /><select idref="V-224667" selected="true" /><select idref="V-224668" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224666" selected="true" /><select idref="V-224667" selected="true" /><select idref="V-224668" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224666" selected="true" /><select idref="V-224667" selected="true" /><select idref="V-224668" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224666" selected="true" /><select idref="V-224667" selected="true" /><select idref="V-224668" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224666" selected="true" /><select idref="V-224667" selected="true" /><select idref="V-224668" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224666" selected="true" /><select idref="V-224667" selected="true" /><select idref="V-224668" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224666" selected="true" /><select idref="V-224667" selected="true" /><select idref="V-224668" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224666" selected="true" /><select idref="V-224667" selected="true" /><select idref="V-224668" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224666" selected="true" /><select idref="V-224667" selected="true" /><select idref="V-224668" selected="true" /></Profile><Group id="V-224666"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224666r868756_rule" weight="10.0" severity="medium"><version>ZSMTT001</version><title>IBM Communications Server Simple Mail Transfer Protocol (CSSMTP) STC data sets must be properly protected.</title><description>&lt;VulnDiscussion&gt;IBM Communications Server Simple Mail Transfer Protocol (CSSMTP) STC data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CSSMTP for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CSSMTP for TSS</dc:subject><dc:identifier>4183</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-89727</ident><ident system="http://cyber.mil/legacy">V-17067</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-26343r868755_fix">Ensure that WRITE and/or greater access to the IBM Communications Server Simple Mail Transfer Protocol (CSSMTP) STC data sets are limited to systems programmers and CSSMTP STC and/or batch jobs only. READ access can be given to auditors at the ISSOs discretion.
+
+The installing Systems Programmer will identify and document the product data sets and categorize them according to who will have what type of access and if required which type of access is logged. The installing systems programmer will identify any additional groups requiring access to specific data sets, and once documented the installing systems programmer will work with the ISSO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Note: The data sets and/or data set prefixes identified below are examples of a possible installation. The actual data sets and/or prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific. 
+
+
+The following commands are provided as an example for implementing data set controls: 
+
+TSS PERMIT(audtaudt) DSN(SYS3.TCPIP.CSSMTP.) ACCESS(R)
+TSS PERMIT(syspaudt) DSN(SYS3.TCPIP.CSSMTP.) ACCESS(R)
+TSS PERMIT(tstcaudt) DSN(SYS3.TCPIP.CSSMTP.) ACCESS(R)
+TSS PERMIT(icststc) DSN(SYS3.TCPIP.CSSMTP.) ACCESS(R)
+TSS PERMIT(syspaudt) DSN(SYS3.TCPIP.CSSMTP.) ACCESS(ALL)
+TSS PERMIT(tstcaudt) DSN(SYS3.TCPIP.CSSMTP.) ACCESS(ALL)
+TSS PERMIT(icststc) DSN(SYS3.TCPIP.CSSMTP.) ACCESS(ALL)
+</fixtext><fix id="F-26343r868755_fix" /><check system="C-26355r868754_chk"><check-content-ref href="zOS_CSSMTP_for_TSS_STIG.xml" name="M" /><check-content>Examine the running started task for CSSMTP.
+
+Verify that access to the IBM Communications Server Simple Mail Transfer Protocol (CSSMTP) STC data sets are properly restricted. The data sets to be protected are identified in the data set referenced in the DD statements of the CSSMTP started task(s) and/or batch job(s). 
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(SMTPSTC)
+
+Automated Analysis:
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZSMT0001)
+
+If the following guidance is true, this is not a finding.
+
+___ The TSS data set access authorizations restrict READ access to auditors.
+
+___ The TSS data set access authorizations restrict WRITE and/or greater access to systems programming personnel.
+
+___ The TSS data set access authorizations restrict WRITE and/or greater access to the product STC(s) and/or batch job(s).</check-content></check></Rule></Group><Group id="V-224667"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224667r519874_rule" weight="10.0" severity="medium"><version>ZSMTT030</version><title>IBM CSSMTP Started Task name is not properly identified and/or defined to the system ACP.</title><description>&lt;VulnDiscussion&gt;IBM CSSMTP requires a started task that will be restricted to certain resources, datasets and other system functions. By defining the started task as a userid to the system ACP, It allows the ACP to control the access and authorized users that require these capabilities. Failure to properly control these capabilities, could compromise of the operating system environment, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CSSMTP for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CSSMTP for TSS</dc:subject><dc:identifier>4183</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-37481</ident><ident system="http://cyber.mil/legacy">V-17452</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26344r519873_fix">The IBM CSSMTP system programmer and the IAO will ensure that a product's Started Task(s) is properly identified and/or defined to the System ACP. 
+
+If the product requires a Started Task, verify that it is properly defined to the System ACP with the proper attributes.
+
+Most installation manuals will indicate how the Started Task is identified and any additional attributes that must be specified.
+
+A sample is provided here:
+
+TSS CREATE(CSSMTP) TYPE(USER) -
+	NAME('IBM CSSMTP') DEPT(xxxx) - 
+ 	FAC(STC) -
+	PASS(xxxxxxxx,0) -
+	SOURCE(INTRDR) NOSUSPEND</fixtext><fix id="F-26344r519873_fix" /><check system="C-26356r519872_chk"><check-content-ref href="zOS_CSSMTP_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following report produced by the TSS Data Collection:
+
+-	TSSCMDS.RPT(@ACIDS)
+
+Review each IBM CSSMTP STC/Batch ACID(s) for the following:
+
+___	Defined with Facility of STC (the TSS FACILITY Matrix Table entry defined for this product), and/or BATCH for CSSMTP.
+
+___	Is sourced to the INTRDR.</check-content></check></Rule></Group><Group id="V-224668"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224668r519877_rule" weight="10.0" severity="medium"><version>ZSMTT032</version><title>IBM CSSMTP Started task(s) must be properly defined to the Started Task Table ACID for Top Secret.</title><description>&lt;VulnDiscussion&gt;Access to product resources should be restricted to only those individuals responsible for the application connectivity and who have a requirement to access these resources.  Improper control of product resources could potentially compromise the operating system, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CSSMTP for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CSSMTP for TSS</dc:subject><dc:identifier>4183</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-37484</ident><ident system="http://cyber.mil/legacy">V-17454</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26345r519876_fix">The IBM CSSMTP system programmer and the IAO will ensure that a product's started task(s) is (are) properly identified and/or defined to the System ACP. 
+
+A unique ACID must be assigned for the IBM CSSMTP started task(s) thru a corresponding STC table entry.
+
+The following sample set of commands is shown here as a guideline:
+
+TSS ADD(STC) PROCNAME(CSSMTP) ACID(CSSMTP)</fixtext><fix id="F-26345r519876_fix" /><check system="C-26357r519875_chk"><check-content-ref href="zOS_CSSMTP_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following report produced by the TSS Data Collection:
+
+-	TSSCMDS.RPT(#STC)
+
+Automated Analysis
+Refer to the following report produced by the TSS Data Collection:
+
+-	PDI(ZSMT0032)
+
+Verify that the IBM CSSMTP started task(s) is (are) defined in the TSS STC record.</check-content></check></Rule></Group></Benchmark>

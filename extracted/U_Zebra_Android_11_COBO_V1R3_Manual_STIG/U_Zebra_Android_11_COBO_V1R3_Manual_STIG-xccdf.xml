@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Zebra_Android_11_COBO_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2023-08-28">accepted</status><title>Zebra Android 11 COBO Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil. </description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 3 Benchmark Date: 25 Oct 2023</plain-text><plain-text id="generator">3.4.1.22916</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252850" selected="true" /><select idref="V-252851" selected="true" /><select idref="V-252852" selected="true" /><select idref="V-252853" selected="true" /><select idref="V-252854" selected="true" /><select idref="V-252855" selected="true" /><select idref="V-252856" selected="true" /><select idref="V-252857" selected="true" /><select idref="V-252858" selected="true" /><select idref="V-252859" selected="true" /><select idref="V-252860" selected="true" /><select idref="V-252861" selected="true" /><select idref="V-252862" selected="true" /><select idref="V-252863" selected="true" /><select idref="V-252864" selected="true" /><select idref="V-252865" selected="true" /><select idref="V-252866" selected="true" /><select idref="V-252867" selected="true" /><select idref="V-252868" selected="true" /><select idref="V-252869" selected="true" /><select idref="V-252870" selected="true" /><select idref="V-252871" selected="true" /><select idref="V-252872" selected="true" /><select idref="V-252873" selected="true" /><select idref="V-252874" selected="true" /><select idref="V-252875" selected="true" /><select idref="V-252876" selected="true" /><select idref="V-252877" selected="true" /><select idref="V-252878" selected="true" /><select idref="V-252879" selected="true" /><select idref="V-252880" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252850" selected="true" /><select idref="V-252851" selected="true" /><select idref="V-252852" selected="true" /><select idref="V-252853" selected="true" /><select idref="V-252854" selected="true" /><select idref="V-252855" selected="true" /><select idref="V-252856" selected="true" /><select idref="V-252857" selected="true" /><select idref="V-252858" selected="true" /><select idref="V-252859" selected="true" /><select idref="V-252860" selected="true" /><select idref="V-252861" selected="true" /><select idref="V-252862" selected="true" /><select idref="V-252863" selected="true" /><select idref="V-252864" selected="true" /><select idref="V-252865" selected="true" /><select idref="V-252866" selected="true" /><select idref="V-252867" selected="true" /><select idref="V-252868" selected="true" /><select idref="V-252869" selected="true" /><select idref="V-252870" selected="true" /><select idref="V-252871" selected="true" /><select idref="V-252872" selected="true" /><select idref="V-252873" selected="true" /><select idref="V-252874" selected="true" /><select idref="V-252875" selected="true" /><select idref="V-252876" selected="true" /><select idref="V-252877" selected="true" /><select idref="V-252878" selected="true" /><select idref="V-252879" selected="true" /><select idref="V-252880" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252850" selected="true" /><select idref="V-252851" selected="true" /><select idref="V-252852" selected="true" /><select idref="V-252853" selected="true" /><select idref="V-252854" selected="true" /><select idref="V-252855" selected="true" /><select idref="V-252856" selected="true" /><select idref="V-252857" selected="true" /><select idref="V-252858" selected="true" /><select idref="V-252859" selected="true" /><select idref="V-252860" selected="true" /><select idref="V-252861" selected="true" /><select idref="V-252862" selected="true" /><select idref="V-252863" selected="true" /><select idref="V-252864" selected="true" /><select idref="V-252865" selected="true" /><select idref="V-252866" selected="true" /><select idref="V-252867" selected="true" /><select idref="V-252868" selected="true" /><select idref="V-252869" selected="true" /><select idref="V-252870" selected="true" /><select idref="V-252871" selected="true" /><select idref="V-252872" selected="true" /><select idref="V-252873" selected="true" /><select idref="V-252874" selected="true" /><select idref="V-252875" selected="true" /><select idref="V-252876" selected="true" /><select idref="V-252877" selected="true" /><select idref="V-252878" selected="true" /><select idref="V-252879" selected="true" /><select idref="V-252880" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252850" selected="true" /><select idref="V-252851" selected="true" /><select idref="V-252852" selected="true" /><select idref="V-252853" selected="true" /><select idref="V-252854" selected="true" /><select idref="V-252855" selected="true" /><select idref="V-252856" selected="true" /><select idref="V-252857" selected="true" /><select idref="V-252858" selected="true" /><select idref="V-252859" selected="true" /><select idref="V-252860" selected="true" /><select idref="V-252861" selected="true" /><select idref="V-252862" selected="true" /><select idref="V-252863" selected="true" /><select idref="V-252864" selected="true" /><select idref="V-252865" selected="true" /><select idref="V-252866" selected="true" /><select idref="V-252867" selected="true" /><select idref="V-252868" selected="true" /><select idref="V-252869" selected="true" /><select idref="V-252870" selected="true" /><select idref="V-252871" selected="true" /><select idref="V-252872" selected="true" /><select idref="V-252873" selected="true" /><select idref="V-252874" selected="true" /><select idref="V-252875" selected="true" /><select idref="V-252876" selected="true" /><select idref="V-252877" selected="true" /><select idref="V-252878" selected="true" /><select idref="V-252879" selected="true" /><select idref="V-252880" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252850" selected="true" /><select idref="V-252851" selected="true" /><select idref="V-252852" selected="true" /><select idref="V-252853" selected="true" /><select idref="V-252854" selected="true" /><select idref="V-252855" selected="true" /><select idref="V-252856" selected="true" /><select idref="V-252857" selected="true" /><select idref="V-252858" selected="true" /><select idref="V-252859" selected="true" /><select idref="V-252860" selected="true" /><select idref="V-252861" selected="true" /><select idref="V-252862" selected="true" /><select idref="V-252863" selected="true" /><select idref="V-252864" selected="true" /><select idref="V-252865" selected="true" /><select idref="V-252866" selected="true" /><select idref="V-252867" selected="true" /><select idref="V-252868" selected="true" /><select idref="V-252869" selected="true" /><select idref="V-252870" selected="true" /><select idref="V-252871" selected="true" /><select idref="V-252872" selected="true" /><select idref="V-252873" selected="true" /><select idref="V-252874" selected="true" /><select idref="V-252875" selected="true" /><select idref="V-252876" selected="true" /><select idref="V-252877" selected="true" /><select idref="V-252878" selected="true" /><select idref="V-252879" selected="true" /><select idref="V-252880" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252850" selected="true" /><select idref="V-252851" selected="true" /><select idref="V-252852" selected="true" /><select idref="V-252853" selected="true" /><select idref="V-252854" selected="true" /><select idref="V-252855" selected="true" /><select idref="V-252856" selected="true" /><select idref="V-252857" selected="true" /><select idref="V-252858" selected="true" /><select idref="V-252859" selected="true" /><select idref="V-252860" selected="true" /><select idref="V-252861" selected="true" /><select idref="V-252862" selected="true" /><select idref="V-252863" selected="true" /><select idref="V-252864" selected="true" /><select idref="V-252865" selected="true" /><select idref="V-252866" selected="true" /><select idref="V-252867" selected="true" /><select idref="V-252868" selected="true" /><select idref="V-252869" selected="true" /><select idref="V-252870" selected="true" /><select idref="V-252871" selected="true" /><select idref="V-252872" selected="true" /><select idref="V-252873" selected="true" /><select idref="V-252874" selected="true" /><select idref="V-252875" selected="true" /><select idref="V-252876" selected="true" /><select idref="V-252877" selected="true" /><select idref="V-252878" selected="true" /><select idref="V-252879" selected="true" /><select idref="V-252880" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252850" selected="true" /><select idref="V-252851" selected="true" /><select idref="V-252852" selected="true" /><select idref="V-252853" selected="true" /><select idref="V-252854" selected="true" /><select idref="V-252855" selected="true" /><select idref="V-252856" selected="true" /><select idref="V-252857" selected="true" /><select idref="V-252858" selected="true" /><select idref="V-252859" selected="true" /><select idref="V-252860" selected="true" /><select idref="V-252861" selected="true" /><select idref="V-252862" selected="true" /><select idref="V-252863" selected="true" /><select idref="V-252864" selected="true" /><select idref="V-252865" selected="true" /><select idref="V-252866" selected="true" /><select idref="V-252867" selected="true" /><select idref="V-252868" selected="true" /><select idref="V-252869" selected="true" /><select idref="V-252870" selected="true" /><select idref="V-252871" selected="true" /><select idref="V-252872" selected="true" /><select idref="V-252873" selected="true" /><select idref="V-252874" selected="true" /><select idref="V-252875" selected="true" /><select idref="V-252876" selected="true" /><select idref="V-252877" selected="true" /><select idref="V-252878" selected="true" /><select idref="V-252879" selected="true" /><select idref="V-252880" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252850" selected="true" /><select idref="V-252851" selected="true" /><select idref="V-252852" selected="true" /><select idref="V-252853" selected="true" /><select idref="V-252854" selected="true" /><select idref="V-252855" selected="true" /><select idref="V-252856" selected="true" /><select idref="V-252857" selected="true" /><select idref="V-252858" selected="true" /><select idref="V-252859" selected="true" /><select idref="V-252860" selected="true" /><select idref="V-252861" selected="true" /><select idref="V-252862" selected="true" /><select idref="V-252863" selected="true" /><select idref="V-252864" selected="true" /><select idref="V-252865" selected="true" /><select idref="V-252866" selected="true" /><select idref="V-252867" selected="true" /><select idref="V-252868" selected="true" /><select idref="V-252869" selected="true" /><select idref="V-252870" selected="true" /><select idref="V-252871" selected="true" /><select idref="V-252872" selected="true" /><select idref="V-252873" selected="true" /><select idref="V-252874" selected="true" /><select idref="V-252875" selected="true" /><select idref="V-252876" selected="true" /><select idref="V-252877" selected="true" /><select idref="V-252878" selected="true" /><select idref="V-252879" selected="true" /><select idref="V-252880" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-252850" selected="true" /><select idref="V-252851" selected="true" /><select idref="V-252852" selected="true" /><select idref="V-252853" selected="true" /><select idref="V-252854" selected="true" /><select idref="V-252855" selected="true" /><select idref="V-252856" selected="true" /><select idref="V-252857" selected="true" /><select idref="V-252858" selected="true" /><select idref="V-252859" selected="true" /><select idref="V-252860" selected="true" /><select idref="V-252861" selected="true" /><select idref="V-252862" selected="true" /><select idref="V-252863" selected="true" /><select idref="V-252864" selected="true" /><select idref="V-252865" selected="true" /><select idref="V-252866" selected="true" /><select idref="V-252867" selected="true" /><select idref="V-252868" selected="true" /><select idref="V-252869" selected="true" /><select idref="V-252870" selected="true" /><select idref="V-252871" selected="true" /><select idref="V-252872" selected="true" /><select idref="V-252873" selected="true" /><select idref="V-252874" selected="true" /><select idref="V-252875" selected="true" /><select idref="V-252876" selected="true" /><select idref="V-252877" selected="true" /><select idref="V-252878" selected="true" /><select idref="V-252879" selected="true" /><select idref="V-252880" selected="true" /></Profile><Group id="V-252850"><title>PP-MDF-301010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252850r820477_rule" weight="10.0" severity="medium"><version>ZEBR-11-000100</version><title>Zebra Android 11 must be configured to enforce a minimum password length of six characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. The ability to crack a password is a function of how many attempts an adversary is permitted, how quickly an adversary can do each attempt, and the size of the password space. The longer the minimum length of the password is, the larger the password space. Having a too-short minimum password length significantly reduces password strength, increasing the chance of password compromise and resulting device and data compromise.
+
+SFR ID: FMT_SMF_EXT.1.1 #1a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-56256r820476_fix">Configure the Zebra Android 11 device to enforce a minimum password length of six characters.
+
+On the EMM console:
+1. Open "Password constraints".
+2. Select "Personal Profile".
+3. Open "Minimum password quality".
+4. Choose "Numeric Complex", "Alphabetic", "Alphanumeric", or "Complex".
+5. Open "Minimum password length".
+6. Enter in the number of characters as "6".</fixtext><fix id="F-56256r820476_fix" /><check system="C-56306r820475_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device is enforcing a minimum password length of six characters.
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM console:
+1. Open "Password constraints".
+2. Select "Personal Profile".
+3. Open "Minimum password quality".
+4. Check that "Numeric Complex", "Alphabetic, Alphanumeric", or "Complex" is selected.
+5. Verify that "Minimum password length" is "6".
+
+On the Android 11 device, do the following:
+
+1. Open Settings &gt;&gt; Security &gt;&gt; Screen lock.
+2. Enter current password.
+3. Tap "Password or PIN".
+4. Verify Password length listed is at least "6".
+
+If the device password length is not set to six characters or more on EMM console or on the Android 11 device, this is a finding.</check-content></check></Rule></Group><Group id="V-252851"><title>PP-MDF-301020</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252851r820480_rule" weight="10.0" severity="medium"><version>ZEBR-11-000200</version><title>Zebra Android 11 must be configured to not allow passwords that include more than four repeating or sequential characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. Passwords that contain repeating or sequential characters are significantly easier to guess than those that do not contain repeating or sequential characters. Therefore, disallowing repeating or sequential characters increases password strength and decreases risk. The numeric (complex) setting allows the use of a numeric only keyboard for passwords and enforces the repeating or sequential characters limitation.
+
+SFR ID: FMT_SMF_EXT.1.1 #1b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56257r820479_fix">Configure the Zebra Android 11 device to prevent passwords from containing more than four repeating or sequential characters.
+
+On the EMM console:
+1. Open "Password constraints".
+2. Select "Personal Profile".
+3. Set password quality to "Numeric (Complex)".
+
+Note: Alphabetic, Alphanumeric, and Complex are also acceptable selections, but these selections will cause the user to select a complex password, which is not required by the STIG.</fixtext><fix id="F-56257r820479_fix" /><check system="C-56307r820478_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device is prohibiting passwords with more than four repeating or sequential characters.
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device.
+
+On the EMM console, do the following:
+1. Open "Password constraints".
+2. Select "Personal Profile".
+3. Verify that quality is set to "Numeric (Complex)".
+
+On the Android 11 device, do the following:
+1. Open Settings &gt;&gt; Security &gt;&gt; Screen lock.
+2. Enter current password.
+3. Tap "Password".
+4. Try to enter a new PIN or Password with repeating numbers or characters.
+5. Verify Password complexity requirements are listed: Ascending, descending, or repeated sequence of digits is not allowed.
+
+If the EMM console device policy is set to a password with more than four repeating or sequential characters or on the Android 11 device, the device policy is set to a password with more than four repeating or sequential characters, this is a finding.
+
+Note: Alphabetic, Alphanumeric, and Complex are also acceptable selections, but these selections will cause the user to select a complex password, which is not required by the STIG.</check-content></check></Rule></Group><Group id="V-252852"><title>PP-MDF-301030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252852r820483_rule" weight="10.0" severity="medium"><version>ZEBR-11-000300</version><title>Zebra Android 11 must be configured to enable a screen-lock policy that will lock the display after a period of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen-lock timeout helps protect the device from unauthorized access. Devices without a screen-lock timeout provide an opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device and possibly access to DoD networks.
+
+SFR ID: FMT_SMF_EXT.1.1 #2a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-56258r820482_fix">Configure the Zebra Android 11 device to enable a screen-lock policy that will lock the display after a period of inactivity.
+
+On the EMM Console:
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Set "Max time to screen lock" to any number desired. The units are in seconds.</fixtext><fix id="F-56258r820482_fix" /><check system="C-56308r820481_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device is enforcing a screen-lock policy that will lock the display after a period of inactivity.
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM Console:
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Verify that "Max time to screen lock" is set to any number desired. The units are in seconds.
+
+On the Android 11 device, do the following:
+1. Open Settings &gt;&gt; Display.
+2. Tap "Screen timeout".
+3. Ensure the Screen timeout value is set to the desired value and cannot be set to a larger value.
+
+If the EMM console device policy is not set to enable a screen-lock policy that will lock the display after a period of inactivity or on the Android 11 device, the device policy is not set to enable a screen-lock policy that will lock the display after a period of inactivity, this is a finding.</check-content></check></Rule></Group><Group id="V-252853"><title>PP-MDF-301040</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252853r820486_rule" weight="10.0" severity="medium"><version>ZEBR-11-000400</version><title>Zebra Android 11 must be configured to lock the display after 15 minutes (or less) of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen lock timeout must be set to a value that helps protect the device from unauthorized access. Having a too-long timeout would increase the window of opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device. The maximum timeout period of 15 minutes has been selected to balance functionality and security; shorter timeout periods may be appropriate depending on the risks posed to the mobile device.
+
+SFR ID: FMT_SMF_EXT.1.1 #2b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-56259r820485_fix">Configure the Zebra Android 11 device to lock the device display after 15 minutes (or less) of inactivity.
+
+On the EMM Console:
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Set "Max time to screen lock" to any number between 1 and 15 (minutes).</fixtext><fix id="F-56259r820485_fix" /><check system="C-56309r820484_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device has the screen lock timeout set to 15 minutes or less.
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM Console:
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Verify that "Max time to screen lock" is set to any number between 1 and 900. Units are in seconds; therefore, 900 represents 15 minutes.
+
+On the Android 11 device, do the following:
+1. Open Settings &gt;&gt; Display.
+2. Tap "Screen timeout".
+3. Ensure the Screen timeout value is set between 1 and 15 (minutes).
+
+If the EMM console device policy is not set to 15 minutes or less for the screen lock timeout or on the Android 11 device, the device policy is not set to 15 minutes or less for the screen lock timeout, this is a finding.</check-content></check></Rule></Group><Group id="V-252854"><title>PP-MDF-301050</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252854r820489_rule" weight="10.0" severity="low"><version>ZEBR-11-000500</version><title>Zebra Android 11 must be configured to not allow more than 10 consecutive failed authentication attempts.</title><description>&lt;VulnDiscussion&gt;The more attempts an adversary has to guess a password, the more likely the adversary will enter the correct password and gain access to resources on the device. Setting a limit on the number of attempts mitigates this risk. Setting the limit at 10 or less gives authorized users the ability to make a few mistakes when entering the password, but still provides adequate protection against dictionary or brute force attacks on the password.
+
+SFR ID: FMT_SMF_EXT.1.1 #2c, FIA_AFL_EXT.1.5&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-56260r820488_fix">Configure the Zebra Android 11 device to allow only 10 or fewer consecutive failed authentication attempts.
+
+On the EMM Console:
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Set "Max password failures for local wipe" to a number between 1 and 10.</fixtext><fix id="F-56260r820488_fix" /><check system="C-56310r820487_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device has the maximum number of consecutive failed authentication attempts set at 10 or fewer. 
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM Console:
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Verify that "Max password failures for local wipe" is set to a number between 1 and 10.
+
+On the Android 11 device, do the following:
+1. Lock the device screen.
+2. Attempt to unlock the screen and validate that the device autowipes after specified number of invalid entries.
+
+If the EMM console device policy is not set to the maximum number of consecutive failed authentication attempts at 10 or fewer, or if on the Android 11 device the device policy is not set to the maximum number of consecutive failed authentication attempts at 10 or fewer, this is a finding.</check-content></check></Rule></Group><Group id="V-252855"><title>PP-MDF-301080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252855r820492_rule" weight="10.0" severity="medium"><version>ZEBR-11-000800</version><title>Zebra Android 11 must be configured to enforce an application installation policy by specifying one or more authorized application repositories, including [selection: DoD-approved commercial app repository, EMM server, mobile application store].</title><description>&lt;VulnDiscussion&gt;Forcing all applications to be installed from authorized application repositories can prevent unauthorized and malicious applications from being installed and executed on mobile devices. Allowing such installations and executions could cause a compromise of DoD data accessible by these unauthorized/malicious applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #8a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001806</ident><fixtext fixref="F-56261r820491_fix">Configure the Zebra Android 11 device to disable unauthorized application repositories.
+
+On the EMM Console:
+1. Open "Set user restrictions".
+2. Toggle "Disallow install unknown sources" to "On".
+3. Toggle "Disallow installs from unknown sources globally" to "On".</fixtext><fix id="F-56261r820491_fix" /><check system="C-56311r820490_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device has only approved application repositories (DoD-approved commercial app repository, EMM server, and/or mobile application store).
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM Console:
+1. Open "Set user restrictions".
+2. Verify that "Disallow install unknown sources" is toggled to "On".
+3. Verify that "Disallow installs from unknown sources globally" is toggled to "On".
+
+On the Zebra device, do the following:
+1. Open Settings &gt;&gt; Apps and notifications &gt;&gt; Advanced &gt;&gt; Special app access.
+2. Open Install unknown apps.
+3. Ensure the list of apps is blank or if an app is on the list, "Disabled by admin" is listed under the app name.
+
+If the EMM console device policy is not set to allow connections to "Only approved application repositories" or on the Android 11 device, the device policy is not set to allow connections to "Only approved application repositories, this is a finding.</check-content></check></Rule></Group><Group id="V-252856"><title>PP-MDF-301090</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252856r820495_rule" weight="10.0" severity="medium"><version>ZEBR-11-001000</version><title>Zebra Android 11 must be configured to enforce an application installation policy by specifying an application allow list that restricts applications by the following characteristics: [selection: list of digital signatures, cryptographic hash values, names, application version].</title><description>&lt;VulnDiscussion&gt;The application allow list, in addition to controlling the installation of applications on the MD, must control user access/execution of all core and preinstalled applications, or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications. 
+
+Core application: Any application integrated into the OS by the OS or MD vendors.
+
+Pre-installed application: Additional non-core applications included in the OS build by the OS vendor, MD vendor, or wireless carrier.
+
+Requiring all authorized applications to be in an application allow list prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the allow list. Failure to configure an application allow list properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications.
+
+The application allow list, in addition to controlling the installation of applications on the MD, must control user access/execution of all core applications (included in the OS by the OS vendor) and pre-installed applications (provided by the MD vendor and wireless carrier), or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #8b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001806</ident><fixtext fixref="F-56262r820494_fix">Configure the Zebra Android 11 device to use an application allow list.
+
+On the EMM Console:
+1. Go to the Android app catalog for managed Google Play.
+2. Select apps to be available (only approved apps).
+3. Push updated policy to the device.
+
+Note: Managed Google Play is an allowed App Store.</fixtext><fix id="F-56262r820494_fix" /><check system="C-56312r820493_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device has an application allow list configured. Verify all applications listed on the allow list have been approved by the Approving Official (AO).
+
+On the EMM console, do the following:
+1. Go to the Android app catalog for managed Google Play.
+2. Verify all selected apps are AO approved.
+
+On the Android 11 device, do the following:
+1. Open the managed Google Play store.
+2. Verify that only the approved apps are visible.
+
+Note: Managed Google Play is an allowed App Store.
+
+If the EMM console list of selected Managed Google Play apps includes non-approved apps, this is a finding.
+
+Note: The application allow list will include approved core applications (included in the OS by the OS vendor) and pre-installed applications (provided by the MD vendor and wireless carrier), or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications. For Zebra Android, there are no pre-installed applications.</check-content></check></Rule></Group><Group id="V-252857"><title>PP-MDF-301100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252857r820498_rule" weight="10.0" severity="medium"><version>ZEBR-11-001100</version><title>Zebra Android 11 allow list must be configured to not include applications with the following characteristics: 
+
+- back up MD data to non-DoD cloud servers (including user and application access to cloud backup services);
+- transmit MD diagnostic data to non-DoD servers;
+- voice assistant application if available when MD is locked;
+- voice dialing application if available when MD is locked;
+- allows synchronization of data or applications between devices associated with user; and
+- allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs or printers.</title><description>&lt;VulnDiscussion&gt;Requiring all authorized applications to be in an application allow list prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the allow list. Failure to configure an application allow list properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications. Applications with the listed characteristics have features that can cause the compromise of sensitive DoD data or have features with no known application in the DoD environment.
+
+Application Note: The application allow list, in addition to controlling the installation of applications on the MD, must control user access/execution of all core and preinstalled applications, or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications.
+
+Core application: Any application integrated into the OS by the OS or MD vendors.
+
+Pre-installed application: Additional non-core applications included in the OS build by the OS vendor, MD vendor, or wireless carrier.
+
+SFR ID: FMT_SMF_EXT.1.1 #8b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001806</ident><fixtext fixref="F-56263r820497_fix">Configure the Zebra Android 11 device application allow list to exclude applications with the following characteristics:
+
+- back up MD data to non-DoD cloud servers (including user and application access to cloud backup services);
+- transmit MD diagnostic data to non-DoD servers;
+- voice assistant application if available when MD is locked;
+- voice dialing application if available when MD is locked;
+- allows synchronization of data or applications between devices associated with user;
+- payment processing; and
+- allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+
+On the EMM Console:
+1. Go to the Android app catalog for managed Google Play.
+2. Before selecting an app, review the app details and privacy policy to ensure the app does not include prohibited characteristics.</fixtext><fix id="F-56263r820497_fix" /><check system="C-56313r820496_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device has an application allow list configured and that the application allow list does not include applications with the following characteristics:
+
+- back up MD data to non-DoD cloud servers (including user and application access to cloud backup services);
+- transmit MD diagnostic data to non-DoD servers;
+- voice assistant application if available when MD is locked;
+- voice dialing application if available when MD is locked;
+- allows synchronization of data or applications between devices associated with user;
+- payment processing; and
+- allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+
+This validation procedure is performed only on the EMM Administration Console.
+
+On the EMM console, do the following:
+1. Review the list of selected Managed Google Play apps.
+2. Review the details and privacy policy of each selected app to ensure the app does not include prohibited characteristics.
+
+If the EMM console device policy includes applications with unauthorized characteristics, this is a finding.</check-content></check></Rule></Group><Group id="V-252858"><title>PP-MDF-301110</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252858r820501_rule" weight="10.0" severity="low"><version>ZEBR-11-001400</version><title>Zebra Android 11 must be configured to disable Bluetooth or configured via User Based Enforcement (UBE) to allow Bluetooth for only Headset Profile (HSP), HandsFree Profile (HFP), and Serial Port Profile (SPP).</title><description>&lt;VulnDiscussion&gt;Some Bluetooth profiles provide the capability for remote transfer of sensitive DoD data without encryption or otherwise do not meet DoD IT security policies and therefore should be disabled.
+
+SFR ID: FMT_SMF_EXT.1.1 #18h&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001761</ident><fixtext fixref="F-56264r820500_fix">Configure the Zebra Android 11 device to disable Bluetooth or if the AO has approved the use of Bluetooth (for example, for car hands-free use), train the user to connect to only authorized Bluetooth devices using only HSP, HFP, or SPP profiles.
+
+To disable Bluetooth use the following procedure:
+On the EMM Console:
+1. Open "User restrictions on parent" section.
+2. Toggle "Disallow Bluetooth" to "On".
+
+The user training requirement is satisfied in requirement ZEBR-11-008700.</fixtext><fix id="F-56264r820500_fix" /><check system="C-56314r820499_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Determine if the AO has approved the use of Bluetooth at the site.
+
+If the AO has not approved the use of Bluetooth, verify Bluetooth has been disabled:
+
+On the EMM console, do the following:
+1. Open "User restrictions on parent" section.
+2. Verify that "Disallow Bluetooth" is toggled to "On".
+
+On the Android 11 device, do the following:
+1. Go to Settings &gt;&gt; Connected Devices &gt;&gt; Connection Preferences &gt;&gt; Bluetooth.
+2. Ensure that it is set to "Off" and cannot be toggled to "On".
+
+If the AO has approved the use of Bluetooth, on the Zebra Android 11 device do the following:
+1. Go to Settings &gt;&gt; Connected Devices.
+2. Verify only approved Bluetooth connected devices using approved profiles are listed.
+
+If the AO has not approved the use of Bluetooth, and Bluetooth use is not disabled via an EMM-managed device policy, this is a finding.
+
+If the AO has approved the use of Bluetooth, and Bluetooth devices using unauthorized Bluetooth profiles are listed on the device under "Connected devices", this is a finding.</check-content></check></Rule></Group><Group id="V-252859"><title>PP-MDF-301120</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252859r820504_rule" weight="10.0" severity="medium"><version>ZEBR-11-001600</version><title>Zebra Android 11 must be configured to not display the following (work profile) notifications when the device is locked: [selection:
+
+- email notifications 
+- calendar appointments 
+- contact associated with phone call notification 
+- text message notification
+- other application-based notifications
+- all notifications].</title><description>&lt;VulnDiscussion&gt;Many mobile devices display notifications on the lock screen so that users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. When they are available on the lock screen, an adversary can see them merely by being in close physical proximity to the device. Configuring the Zebra Android device to not send notifications to the lock screen mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #19&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56265r820503_fix">Configure the Zebra Android 11 device to not display (work profile) notifications when the device is locked.
+
+On the EMM console:
+1. Open "Lock screen restrictions" section.
+2. Select "Work Profile".
+3. Toggle "Disable Unredacted Notifications".</fixtext><fix id="F-56265r820503_fix" /><check system="C-56315r820502_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device settings to determine if the Zebra Android device displays (work container) notifications on the lock screen. Notifications of incoming phone calls are acceptable even when the device is locked. 
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM console, do the following:
+1. Open "Lock screen restrictions" section.
+2. Select "Work Profile".
+3. Verify that "Disable Unredacted Notifications" is toggled to "On".
+
+On the Android 11 device, do the following:
+1. Go to Settings &gt;&gt; Display &gt;&gt; Advanced. 
+2. Tap on Lock screen display.
+3. Ensure "Hide sensitive work content" is listed under "When work profile is locked".
+
+If the EMM console device policy allows work notifications on the lock screen, or the Android 11 device allows work notifications on the lock screen, this is a finding.</check-content></check></Rule></Group><Group id="V-252860"><title>PP-MDF-301150</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252860r820507_rule" weight="10.0" severity="medium"><version>ZEBR-11-002300</version><title>Zebra Android 11 must be configured to disable trust agents.</title><description>&lt;VulnDiscussion&gt;Trust agents allow a user to unlock a mobile device without entering a passcode when the mobile device is, for example, connected to a user-selected Bluetooth device or in a user-selected location. This technology would allow unauthorized users to have access to DoD sensitive data if compromised. By not permitting the use of non-password authentication mechanisms, users are forced to use passcodes that meet DoD passcode requirements.
+
+SFR ID: FMT_SMF_EXT.1.1 #23, FIA_UAU.5.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-56266r820506_fix">Configure Zebra Android 11 device to disable trust agents. 
+ 
+On the EMM console:
+1. Open "Lock screen restrictions" section.
+2. Select "Personal Profile".
+3. Toggle "Disable trust agents" to "On".
+4. Select "Work Profile".
+5. Toggle "Disable trust agents" to "On".</fixtext><fix id="F-56266r820506_fix" /><check system="C-56316r820505_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that trust agents are disabled. 
+ 
+This procedure is performed on both the EMM Administration console and the Zebra Android 11 device. 
+ 
+On the EMM console:
+1. Open "Lock screen restrictions" section.
+2. Select "Personal Profile".
+3. Verify that "Disable trust agents" is toggled to "On".
+4. Select "Work Profile".
+5. Verify that "Disable trust agents" is toggled to "On".
+
+On the Zebra Android 11 device: 
+1. Open "Settings". 
+2. Tap "Security". 
+3. Tap "Advanced". 
+4. Tap "Trust agents". 
+5. Verify that all listed trust agents are disabled and cannot be enabled. 
+ 
+If on the EMM console "disable trust agents" is not selected, or on the Android 11 device a trust agent can be enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-252861"><title>PP-MDF-301170</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252861r820510_rule" weight="10.0" severity="medium"><version>ZEBR-11-002800</version><title>Zebra Android 11 must be configured to disable developer modes.</title><description>&lt;VulnDiscussion&gt;Developer modes expose features of the Zebra Android device that are not available during standard operation. An adversary may leverage a vulnerability inherent in a developer mode to compromise the confidentiality, integrity, and availability of DoD sensitive information. Disabling developer modes mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #26&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-56267r820509_fix">Configure the Zebra Android 11 device to disable developer modes.
+
+On the EMM Console:
+1. Open "Set user restrictions" section.
+2. Toggle "Disallow debugging features" to "On".
+3. Open "Set user restrictions on parent" section.
+4. Toggle "Disallow debugging features" to "On".</fixtext><fix id="F-56267r820509_fix" /><check system="C-56317r820508_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine whether a developer mode is enabled.
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM Console:
+1. Open "Set user restrictions" section.
+2. Verify that "Disallow debugging features" is toggled to "On".
+3. Open "Set user restrictions on parent" section.
+4. Verify that "Disallow debugging features" is toggled to "On".
+
+On the Android 11 device, do the following:
+
+1. Go to Settings &gt;&gt; System.
+2. Ensure "Developer Options" is not listed.
+3. Go to Settings &gt;&gt; About Phone.
+4. Tap on the "Build Number" to try to enable "Developer Options" and validate that action is blocked.
+
+If the EMM console device policy is not set to disable developer mode or on the Android 11 device, the device policy is not set to disable developer mode, this is a finding.</check-content></check></Rule></Group><Group id="V-252862"><title>PP-MDF-301200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252862r820513_rule" weight="10.0" severity="low"><version>ZEBR-11-003400</version><title>Zebra Android 11 must be configured to display the DoD advisory warning message at start-up or each time the user unlocks the device.</title><description>&lt;VulnDiscussion&gt;The Zebra Android 11 is required to display the DoD-approved system use notification message or banner before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. Required banners help ensure that DoD can audit and monitor the activities of mobile device users without legal restriction.
+
+System use notification messages can be displayed when individuals first access or unlock the mobile device. The banner must be implemented as a "click-through" banner at device unlock (to the extent permitted by the operating system). A "click-through" banner prevents further activity on the information system unless and until the user executes a positive action to manifest agreement by clicking on a box indicating "OK."
+
+The approved DoD text must be used exactly as required in the KS referenced in DoDI 8500.01. For devices accommodating banners of 1300 characters, the banner text is: 
+
+You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. 
+By using this IS (which includes any device attached to this IS), you consent to the following conditions: 
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. 
+-At any time, the USG may inspect and seize data stored on this IS. 
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose. 
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. 
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.
+
+For devices with severe character limitations, the banner text is: 
+
+I've read &amp; consent to terms in IS user agreem't.
+
+The administrator must configure the banner text exactly as written without any changes.
+
+SFR ID: FMT_SMF_EXT.1.1 #36&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-56268r820512_fix">Configure the DoD warning banner by either of the following methods (required text is found in the Vulnerability Discussion):
+
+1. By placing the DoD warning banner text in the user agreement signed by each Zebra Android 11 device user (preferred method).
+2. By configuring the warning banner text on the EMM console and installing the banner on each managed mobile device.
+
+On the EMM Console:
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Select "Lock screen message".
+4. Enter in message.</fixtext><fix id="F-56268r820512_fix" /><check system="C-56318r820511_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>The DoD warning banner can be displayed by either of the following methods (required text is found in the Vulnerability Discussion):
+
+1. By placing the DoD warning banner text in the user agreement signed by each Zebra Android device user (preferred method).
+2. By configuring the warning banner text on the EMM console and installing the banner on each managed mobile device.
+
+Determine which method is used at the Zebra Android device site and follow the appropriate validation procedure below.
+
+Validation Procedure for Method #1:
+Review the signed user agreements for several Zebra Android device users and verify the agreement includes the required DoD warning banner text.
+
+Validation Procedure for Method #2:
+On the EMM Console:
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Select "Lock screen message".
+4. Verify message.
+
+If, for Method #1, the required warning banner text is not on all signed user agreements reviewed, or for Method #2, the EMM console device policy is not set to display a warning banner with the appropriate designated wording or on the Android 11 device, the device policy is not set to display a warning banner with the appropriate designated wording, this is a finding.</check-content></check></Rule></Group><Group id="V-252863"><title>PP-MDF-301210</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252863r820516_rule" weight="10.0" severity="medium"><version>ZEBR-11-003500</version><title>Zebra Android 11 must be configured to disable USB mass storage mode.</title><description>&lt;VulnDiscussion&gt;USB mass storage mode enables the transfer of data and software from one device to another. This software can include malware. When USB mass storage is enabled on a mobile device, it becomes a potential vector for malware and unauthorized data exfiltration. Prohibiting USB mass storage mode mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #39a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-56269r820515_fix">Configure the Zebra Android 11 device to disable USB mass storage mode.
+
+On the EMM console:
+1. Open "User restrictions on parent".
+2. Toggle "Disallow USB file transfer".</fixtext><fix id="F-56269r820515_fix" /><check system="C-56319r820514_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device has a USB mass storage mode and whether it has been disabled. 
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM console, do the following:
+1. Open "User restrictions on parent".
+2. Verify that "Disallow USB file transfer" is toggled to "On".
+
+On the Android 11 device, do the following:
+1. Plug a USB cable into Android 11 device and connect to a non-DoD network-managed PC. 
+2. Go to Settings &gt;&gt; Connected devices &gt;&gt; USB.
+3. Ensure "No data transfer" is selected.
+
+If the EMM console device policy is not set to disable USB mass storage mode or on the Android 11 device, the device policy is not set to disable USB mass storage mode, this is a finding.</check-content></check></Rule></Group><Group id="V-252864"><title>PP-MDF-301220</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252864r820519_rule" weight="10.0" severity="medium"><version>ZEBR-11-003700</version><title>Zebra Android 11 must be configured to not allow backup of [all applications, configuration data] to locally connected systems.</title><description>&lt;VulnDiscussion&gt;Data on mobile devices is protected by numerous mechanisms, including user authentication, access control, and cryptography. When the data is backed up to an external system (either locally connected or cloud-based), many if not all of these mechanisms are no longer present. This leaves backed-up data vulnerable to attack. Disabling backup to external systems mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000097</ident><fixtext fixref="F-56270r820518_fix">Configure the Zebra Android 11 device to disable backup to locally connected systems.
+
+Note: On Restrictions, the backup features for Zebra are not in the framework.
+
+On the EMM console:
+1. Open "Device owner management" section.
+2. Toggle "Enable backup service" to "Off".
+3. Open "User restrictions on parent".
+4. Select "Disallow USB file transfer".</fixtext><fix id="F-56270r820518_fix" /><check system="C-56320r820517_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the capability to back up to a locally connected system has been disabled. 
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM console, do the following:
+1. Open "Device owner management" section.
+2. Verify that "Enable backup service" is toggled to "Off".
+3. Open "User restrictions on parent".
+4. Verify that "Disallow USB file transfer" is toggled to "On".
+
+On the Android 11 device, do the following:
+1. Plug a USB cable into Android 11 device and connect to a non-DoD network-managed PC. 
+2. Go to Settings &gt;&gt; Connected devices &gt;&gt; USB.
+3. Ensure “No data transfer” is selected.
+
+If the EMM console device policy is not set to disable the capability to back up to a locally connected system or on the Android 11 device, the device policy is not set to disable the capability to back up to a locally connected system, this is a finding.</check-content></check></Rule></Group><Group id="V-252865"><title>PP-MDF-301230</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252865r820522_rule" weight="10.0" severity="medium"><version>ZEBR-11-003900</version><title>Zebra Android 11 must be configured to not allow backup of all applications and configuration data to remote systems.</title><description>&lt;VulnDiscussion&gt;Backups to remote systems (including cloud backup) can leave data vulnerable to breach on the external systems, which often offer less protection than the Zebra Android device. Where the remote backup involves a cloud-based solution, the backup capability is often used to synchronize data across multiple devices. In this case, DoD devices may synchronize DoD sensitive information to a user's personal device or other unauthorized computers that are vulnerable to breach. Disallowing remote backup mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002338</ident><fixtext fixref="F-56271r820521_fix">Configure the Zebra Android 11 device to disable backup to remote systems (including commercial clouds).
+
+Note: On a Restriction, data in the work profile cannot be backed up by default.
+
+On the EMM console:
+1. Open "Set user restrictions".
+2. Ensure "Enable backup service" is not selected.
+
+Note: Since personal accounts cannot be added to the work profile (GOOG-11-009200), this control only impacts personal profile accounts. Site can allow backup based on local policy.</fixtext><fix id="F-56271r820521_fix" /><check system="C-56321r820520_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the capability to back up to a remote system has been disabled. 
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM console, do the following:
+1. Open "User restrictions".
+2. Verify that "Disallow backup service" is toggled to "Off".
+
+On the Android 11 device, do the following:
+1. Go to Settings &gt;&gt; System.
+2. Ensure Backup is set to "Off".
+
+If the EMM console device policy is not set to disable the capability to back up to a remote system or on the Android 11 device, the device policy is not set to disable the capability to back up to a remote system, this is a finding.</check-content></check></Rule></Group><Group id="V-252866"><title>PP-MDF-301280</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252866r820525_rule" weight="10.0" severity="medium"><version>ZEBR-11-004700</version><title>Zebra Android 11 must be configured to disable multi-user modes.</title><description>&lt;VulnDiscussion&gt;Multi-user mode allows multiple users to share a mobile device by providing a degree of separation between user data. To date, no mobile device with multi-user mode features meets DoD requirements for access control, data separation, and non-repudiation for user accounts. In addition, the MDFPP does not include design requirements for multi-user account services. Disabling multi-user mode mitigates the risk of not meeting DoD multi-user account security policies.
+
+SFR ID: FMT_SMF_EXT.1.1 #47b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-002110</ident><fixtext fixref="F-56272r820524_fix">Configure the Zebra Android 11 device to disable multi-user modes.
+
+On the EMM console:
+1. Open "Set user restrictions".
+2. Toggle "Disallow modify accounts" to "On".</fixtext><fix id="F-56272r820524_fix" /><check system="C-56322r820523_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review documentation on the Zebra Android device and inspect the configuration on the Zebra Android device to disable multi-user modes.
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM console, do the following:
+1. Open "Set user restrictions".
+2. Verify that "Disallow modify accounts" is toggled to "On".
+
+On the Android 11 device, do the following:
+1. Go to Settings &gt;&gt; Accounts&gt;&gt; Work.
+2. Validate that "Add Account" is grayed out.
+
+If the EMM console device policy is not set to disable multi-user modes or on the Android 11 device, the device policy is not set to disable multi-user modes, this is a finding.</check-content></check></Rule></Group><Group id="V-252867"><title>PP-MDF-302340</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252867r820528_rule" weight="10.0" severity="low"><version>ZEBR-11-005200</version><title>Zebra Android 11 must allow only the Administrator (EMM) to perform the following management function: Enable/disable location services.</title><description>&lt;VulnDiscussion&gt;If a user is able to configure the security setting, the user could inadvertently or maliciously set it to a value that poses unacceptable risk to DoD information systems. An adversary could exploit vulnerabilities created by the weaker configuration to compromise DoD sensitive information.
+
+SFR ID: FMT_MOF_EXT.1.2 #22&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-56273r820527_fix">Configure the Zebra Android 11 device to enable/disable location services.
+
+On the EMM console:
+1. Open "Set user restrictions on parent".
+2. Toggle "Disallow config location" to "On".
+3. Toggle "Disallow share location" to "On".</fixtext><fix id="F-56273r820527_fix" /><check system="C-56323r820526_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device has location services on/off.
+
+This validation procedure is performed on both the EMM Administration Console and the Android 11 device. 
+
+On the EMM console, do the following:
+1. Open "Set user restrictions on parent".
+2. Verify that "Disallow config location" is toggled to "On".
+3. Verify that "Disallow share location" is toggled to "On".
+
+On the Zebra device, do the following:
+1. Open Settings &gt;&gt; Location.
+2. Validate that Location Services is "off" for Work.
+
+If the mobile device has location services enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-252868"><title>PP-MDF-302370</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252868r820531_rule" weight="10.0" severity="medium"><version>ZEBR-11-005505</version><title>Zebra Android 11 must be configured to enable audit logging.</title><description>&lt;VulnDiscussion&gt;Audit logs enable monitoring of security-relevant events and subsequent forensics when breaches occur. To be useful, Administrators must have the ability to view the audit logs.
+
+SFR ID: FMT_SMF_EXT.1.1 #32&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-56274r820530_fix">Configure the Zebra Android 11 device to enable audit logging.
+
+On the EMM console:
+1. Open "Device owner management" section.
+2. Toggle "Enable security logging" to "On".</fixtext><fix id="F-56274r820530_fix" /><check system="C-56324r820529_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review documentation on the Zebra Android device and inspect the configuration on the Zebra Android device to enable audit logging.
+
+This validation procedure is performed on only on the EMM Administration Console. 
+
+On the EMM console, do the following:
+1. Open "Device owner management" section.
+2. Verify that "Enable security logging" is toggled to "On".
+
+If the EMM console device policy is not set to enable audit logging, this is a finding.</check-content></check></Rule></Group><Group id="V-252869"><title>PP-MDF-301420</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252869r820534_rule" weight="10.0" severity="low"><version>ZEBR-11-006100</version><title>Zebra Android 11 must be configured to generate audit records for the following auditable events: Detected integrity violations.</title><description>&lt;VulnDiscussion&gt;Audit logs enable monitoring of security-relevant events and subsequent forensics when breaches occur. They help identify attacks so that breaches can either be prevented or limited in their scope. They facilitate analysis to improve performance and security. The Requirement Statement lists key events that the system must generate an audit record for.
+
+Application Note: Requirement applies only to integrity violation detections that can be logged by the audit logging component.
+
+SFR ID: FMT_SMF_EXT.1.1 #37&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000169</ident><fixtext fixref="F-56275r820533_fix">Configure the Zebra Android 11 device to generate audit records for the following auditable events: Detected integrity violations.
+
+On the EMM console:
+1. Open "Device owner management" section.
+2. Toggle "Enable security logging" to "On".</fixtext><fix id="F-56275r820533_fix" /><check system="C-56325r820532_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Zebra Android device configuration settings to determine if the mobile device is configured to generate audit records for the following auditable events: Detected integrity violations.
+
+This validation procedure is performed only on the EMM Administration Console. 
+
+On the EMM console:
+1. Open "Device owner management" section.
+2. Verify that "Enable security logging" is toggled to "On".
+
+If the EMM console device policy is not set to enable security logging, this is a finding.</check-content></check></Rule></Group><Group id="V-252870"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252870r820537_rule" weight="10.0" severity="medium"><version>ZEBR-11-008700</version><title>Zebra Android 11 users must complete required training.</title><description>&lt;VulnDiscussion&gt;The security posture of Zebra devices requires the device user to configure several required policy rules on their device. User-Based Enforcement (UBE) is required for these controls. In addition, if the Authorizing Official (AO) has approved the use of an unmanaged personal space, the user must receive training on risks. If a user is not aware of their responsibilities and does not comply with UBE requirements, the security posture of the Zebra mobile device may become compromised and DoD sensitive data may become compromised.
+
+SFR ID: NA&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56276r820536_fix">All Zebra device users must complete training on the following training topics (users must acknowledge that they have reviewed training via a signed User Agreement or similar written record): 
+ 
+- Operational security concerns introduced by unmanaged applications/unmanaged personal space, including applications using global positioning system (GPS) tracking. 
+- Need to ensure no DoD data is saved to the personal space or transmitted from a personal app (for example, from personal email). (NA for COBO deployment)
+- If the Purebred key management app is used, users are responsible for maintaining positive control of their credentialed device at all times. The DoD PKI certificate policy requires subscribers to maintain positive control of the devices that contain private keys and to report any loss of control so the credentials can be revoked. Upon device retirement, turn-in, or reassignment, ensure that a factory data reset is performed prior to device hand-off. Follow mobility service provider decommissioning procedures as applicable.
+- How to configure the following UBE controls (users must configure the control) on the Zebra device: 
+  **Secure use of Calendar Alarm 
+  **Local screen mirroring and mirroring procedures (authorized/not authorized for use) 
+  **Do not upload DoD contacts via smart call and caller ID services 
+  **Do not remove DoD intermediate and root PKI digital certificates 
+  **Disable Wi-Fi Sharing 
+  **Do not configure a DoD network (work) VPN profile on any third-party VPN client installed in the personal space 
+  **If Bluetooth connections are approved for mobile device, types of allowed connections (for example car hands-free, but not Bluetooth wireless keyboard)
+  **How to perform a full device wipe
+- AO guidance on acceptable use and restrictions, if any, on downloading and installing personal apps and data (music, photos, etc.) in the Zebra device personal space.</fixtext><fix id="F-56276r820536_fix" /><check system="C-56326r820535_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review a sample of site User Agreements for Zebra device users or similar training records and training course content. 
+ 
+Verify that Zebra device users have completed the required training. The intent is that required training is renewed periodically in a time period determined by the AO. 
+ 
+If any Zebra device user has not completed the required training, this is a finding.</check-content></check></Rule></Group><Group id="V-252871"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252871r820540_rule" weight="10.0" severity="medium"><version>ZEBR-11-008800</version><title>Zebra Android 11 must be configured to enforce that Wi-Fi Sharing is disabled.</title><description>&lt;VulnDiscussion&gt;Wi-Fi Sharing is an optional configuration of Wi-Fi Tethering/Mobile Hotspot, which allows the device to share its Wi-Fi connection with other wirelessly connected devices instead of its mobile (cellular) connection. 
+ 
+Wi-Fi Sharing grants the "other" device access to a corporate Wi-Fi network and may possibly bypass the network access control mechanisms. This risk can be partially mitigated by requiring the use of a preshared key for personal hotspots.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56277r820539_fix">Configure Zebra Android 11 device to disable Wi-Fi Sharing. 
+ 
+Mobile Hotspot must be enabled to enable Wi-Fi Sharing. If the AO has not approved Mobile Hotspot, and it has been disabled on the EMM console, no further action is needed. If Mobile Hotspot is being used, use the following procedure to disable Wi-Fi Sharing: 
+
+On the EMM console:
+1. Open "Set user restrictions on parent".
+2. Toggle "Disallow config tethering" to "On".</fixtext><fix id="F-56277r820539_fix" /><check system="C-56327r820538_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm Wi-Fi Sharing is disabled. 
+ 
+Mobile Hotspot must be enabled to enable Wi-Fi Sharing. If the Authorizing Official (AO) has not approved Mobile Hotspot, and it has been verified as disabled on the EMM console, no further action is needed. If Mobile Hotspot is being used, use the following procedure to verify Wi-Fi Sharing is disabled: 
+
+On the EMM console:
+1. Open "Set user restrictions on parent".
+2. Verify that "Disallow config tethering" is toggled to "On".
+
+On the Zebra Android 11 device, do the following: 
+1. Open Settings. 
+2. Tap "Networks &amp; internet". 
+3. Verify that "Hotspots &amp; tethering" is disabled. 
+ 
+If on the Zebra Android 11 device "Wi-Fi sharing" is enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-252872"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252872r820543_rule" weight="10.0" severity="medium"><version>ZEBR-11-009000</version><title>Zebra Android 11 must have the DoD root and intermediate PKI certificates installed.</title><description>&lt;VulnDiscussion&gt;DoD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the root and intermediate certificates are not available, an adversary could falsely sign a certificate in such a way that it could not be detected. Providing access to the DoD root and intermediate PKI certificates greatly diminishes the risk of this attack.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56278r820542_fix">Configure Zebra Android 11 device to install DoD root and intermediate certificates. 
+ 
+On the EMM console upload DoD root and intermediate certificates as part of a device and/or work profile.
+ 
+The current DoD root and intermediate PKI certificates may be obtained in self-extracting zip files at http://cyber.mil/pki-pke (for NIPRNet).</fixtext><fix id="F-56278r820542_fix" /><check system="C-56328r820541_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that the DoD root and intermediate PKI certificates are installed.
+ 
+This procedure is performed on both the EMM Administration console and the Zebra Android 11 device. 
+ 
+The current DoD root and intermediate PKI certificates may be obtained in self-extracting zip files at http://cyber.mil/pki-pke (for NIPRNet). 
+ 
+On the EMM console verify that the DoD root and intermediate certificates are part of a device and/or work profile that is being pushed down to the devices.
+ 
+On the Zebra Android 11 device, do the following: 
+1. Open "Settings". 
+2. Tap "Security". 
+3. Tap "Advanced".
+4. Tap "Encryption &amp; credentials".
+5. Tap "Trusted credentials".
+6. Verify that DoD root and intermediate PKI certificates are listed under the User tab in the Work section.
+ 
+If on the EMM console the DoD root and intermediate certificates are not listed in a profile, or the Zebra Android 11 device does not list the DoD root and intermediate certificates under the user tab, this is a finding.</check-content></check></Rule></Group><Group id="V-252873"><title>PP-MDF-992000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252873r820546_rule" weight="10.0" severity="medium"><version>ZEBR-11-009100</version><title>Zebra Android 11 must allow only the administrator (EMM) to install/remove DoD root and intermediate PKI certificates.</title><description>&lt;VulnDiscussion&gt;DoD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the user is allowed to remove root and intermediate certificates, the user could allow an adversary to falsely sign a certificate in such a way that it could not be detected. Restricting the ability to remove DoD root and intermediate PKI certificates to the Administrator mitigates this risk.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><fixtext fixref="F-56279r820545_fix">Configure Zebra Android 11 device to prevent a user from removing DoD root and intermediate PKI certificates.
+
+On the EMM console:
+1. Open "Set user restrictions".
+2. Toggle "Disallow config credentials" to "On".</fixtext><fix id="F-56279r820545_fix" /><check system="C-56329r820544_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review the device configuration to confirm that the user is unable to remove DoD root and intermediate PKI certificates.
+
+On the EMM console:
+1. Open "Set user restrictions".
+2. Verify that "Disallow config credentials" is toggled to "On".
+
+On the Zebra Android 11 device, do the following: 
+1. Open "Settings". 
+2. Tap "Security". 
+3. Tap "Advanced".
+4. Tap "Encryption &amp; credentials".
+5. Tap "Trusted credentials".
+6. Verify that the user is unable to untrust or remove any work certificates.
+ 
+If on the Zebra Android 11 device the user is able to remove certificates, this is a finding.</check-content></check></Rule></Group><Group id="V-252874"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252874r820549_rule" weight="10.0" severity="medium"><version>ZEBR-11-009400</version><title>Zebra Android 11 work profile must be configured to enforce the system application disable list.</title><description>&lt;VulnDiscussion&gt;The system application disable list controls user access to/execution of all core and preinstalled applications. 
+ 
+Core application: Any application integrated into Zebra Android 11 by Zebra. 
+ 
+Preinstalled application: Additional noncore applications included in the Zebra Android 11 build by Google or the wireless carrier. 
+ 
+Some system applications can compromise DoD data or upload users' information to non-DoD-approved servers. A user must be blocked from using such applications that exhibit behavior that can result in compromise of DoD data or DoD user information. 
+ 
+The site administrator must analyze all preinstalled applications on the device and disable all applications not approved for DoD use by configuring the system application disable list.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56280r820548_fix">Configure Zebra Android 11 device Work to enforce the system application disable list. 
+
+The required configuration is the default configuration when the device is enrolled. If the device configuration is changed, use the following procedure to bring the device back into compliance:
+
+On the EMM console:
+1. Open "Apps management" section.
+2. Select "Hide apps on parent".
+3. Enter package names of apps.
+
+Configure a list of approved Zebra core and preinstalled apps in the core app allow list.</fixtext><fix id="F-56280r820548_fix" /><check system="C-56330r820547_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review the Zebra Android 11 Work Profile configuration settings to confirm the system application disable list is enforced. This setting is enforced by default. Verify only approved system apps have been placed on the core allow list.
+ 
+This procedure is performed on the EMM Administrator console. 
+ 
+Review the system app allow list and verify only approved apps are on the list.
+
+1. Open "Apps management" section.
+2. Select "Hide apps on parent".
+3. Verify package names of apps.
+
+If on the EMM console the system app allow list contains unapproved core apps, this is a finding.</check-content></check></Rule></Group><Group id="V-252875"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252875r820552_rule" weight="10.0" severity="medium"><version>ZEBR-11-009800</version><title>Zebra Android 11 work profile must be configured to disable automatic completion of work space internet browser text input.</title><description>&lt;VulnDiscussion&gt;The autofill functionality in the web browser allows the user to complete a form that contains sensitive information, such as personally identifiable information (PII), without previous knowledge of the information. By allowing the use of autofill functionality, an adversary who learns a user's Zebra Android 11 device password, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the autofill feature to provide information unknown to the adversary. By disabling the autofill functionality, the risk of an adversary gaining further information about the device's user or compromising other systems is significantly mitigated.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56281r820551_fix">Configure Chrome Browser in Zebra Android 11 device Work Profile to disable autofill.
+ 
+On the EMM console:
+1. Open "Managed Configurations" section.
+2. Select the Chrome Browser version from the work profile.
+3. Ensure "SearchSuggestEnabled" is turned off.
+
+Refer to the EMM documentation to determine how to configure Chrome Browser Settings.</fixtext><fix id="F-56281r820551_fix" /><check system="C-56331r820550_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review Chrome Browser in Zebra Android 11 Work Profile autofill setting.
+
+This procedure is performed only on the EMM Administrator console. 
+ 
+On the EMM console:
+1. Open "Managed Configurations" section.
+2. Select the Chrome Browser version from the work profile.
+3.Verify that "SearchSuggestEnabled" is turned off.
+ 
+If on the EMM console autofill is set to "On" in the Chrome Browser Settings, this is a finding.</check-content></check></Rule></Group><Group id="V-252876"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252876r820555_rule" weight="10.0" severity="medium"><version>ZEBR-11-010000</version><title>Zebra Android 11 Work Profile must be configured to disable the autofill services.</title><description>&lt;VulnDiscussion&gt;The autofill services allow the user to complete text inputs that could contain sensitive information, such as personally identifiable information (PII), without previous knowledge of the information. By allowing the use of autofill services, an adversary who learns a user's Zebra Android 11 device password, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the autofill services to provide information unknown to the adversary. By disabling the autofill services, the risk of an adversary gaining further information about the device's user or compromising other systems is significantly mitigated. 
+ 
+Examples of apps that offer autofill services include Samsung Pass, Google, Dashlane, LastPass, and 1Password.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56282r820554_fix">Configure Zebra Android 11 device work profile to disable the autofill services. 
+ 
+On the EMM console:
+1. Open "Set user restrictions".
+2. Toggle "Disable autofill" to "On".</fixtext><fix id="F-56282r820554_fix" /><check system="C-56332r820553_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review the Zebra Android 11 work profile configuration settings to confirm that autofill services are disabled. 
+ 
+This procedure is performed only on the EMM Administration console. 
+ 
+On the EMM console:
+1. Open "Set user restrictions".
+2. Verify that "Disable autofill" is toggled to "On".
+ 
+If on the EMM console "disallow autofill" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-252877"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252877r820558_rule" weight="10.0" severity="medium"><version>ZEBR-11-010200</version><title>Zebra Android 11 must be configured to disallow configuration of date and time.</title><description>&lt;VulnDiscussion&gt;Determining the correct time a particular application event occurred on a system is critical when conducting forensic analysis and investigating system events. 
+ 
+Periodically synchronizing internal clocks with an authoritative time source is necessary to correctly correlate the timing of events that occur across the enterprise. The three authoritative time sources for Zebra Android 11 are an authoritative time server that is synchronized with redundant United States Naval Observatory (USNO) time servers as designated for the appropriate DoD network (NIPRNet or SIPRNet), the Global Positioning System (GPS), or the wireless carrier. 
+ 
+Time stamps generated by the audit system in Zebra Android 11 must include both date and time. The time may be expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56283r820557_fix">Configure Zebra Android 11 work Profile to set auto network time.
+ 
+On the EMM console:
+1. Open "Set user restrictions on parent".
+2. Toggle "Disallow config date time" to "On".</fixtext><fix id="F-56283r820557_fix" /><check system="C-56333r820556_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review the Zebra Android 11 Work Profile configuration settings to confirm that autofill services are disabled. 
+ 
+This procedure is performed on both the EMM Administration console and the Zebra Android 11 device. 
+ 
+On the EMM console:
+1. Open "Set user restrictions on parent".
+2. Verify that "Disallow config date time" is toggled to "On".
+ 
+On the Zebra Android 11 device, do the following: 
+1. Open "Settings". 
+2. Tap "System". 
+3. Tap "Date &amp; time". 
+4. Validate that "Use network-provided time" is grayed out.
+ 
+If on the EMM console "Disallow config date time" is not set to "On", or on the Zebra Android 11 device "User network-provided time" is not grayed out, this is a finding.</check-content></check></Rule></Group><Group id="V-252878"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252878r820561_rule" weight="10.0" severity="high"><version>ZEBR-11-010800</version><title>Zebra Android 11 devices must have the latest available Zebra Android 11 operating system installed.</title><description>&lt;VulnDiscussion&gt;Required security features are not available in earlier operating system versions. In addition, there may be known vulnerabilities in earlier versions.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56284r820560_fix">Install the latest released version of the Zebra Android 11 operating system on all managed Zebra devices.
+ 
+Note: Zebra Android device operating system updates are released directly by Zebra or can be distributed via the EMM.</fixtext><fix id="F-56284r820560_fix" /><check system="C-56334r820559_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm the Zebra Android device has the most recently released version of Zebra Android 11 installed. 
+ 
+This procedure is performed on both the EMM console and the Zebra Android 11 device.
+ 
+In the EMM management console, review the version of Zebra Android 11 installed on a sample of managed devices. This procedure will vary depending on the EMM product. 
+ 
+On the Zebra Android 11 device, to see the installed operating system version: 
+1. Open "Settings". 
+2. Tap "About phone". 
+3. Verify "Build number". 
+ 
+If the installed version of the Android operating system on any reviewed Zebra devices is not the latest released by Zebra, this is a finding.</check-content></check></Rule></Group><Group id="V-252879"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252879r820564_rule" weight="10.0" severity="low"><version>ZEBR-11-011000</version><title>Zebra Android 11 devices must be configured to disable the use of third-party keyboards.</title><description>&lt;VulnDiscussion&gt;Many third-party keyboard applications are known to contain malware.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56285r820563_fix">Configure Zebra Android 11 device to disallow the use of third-party keyboards. 
+ 
+On the EMM console, configure application allow list for Google Play that does not have any third-party keyboards.</fixtext><fix id="F-56285r820563_fix" /><check system="C-56335r820562_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that no third-party keyboards are enabled. 
+ 
+This procedure is performed on the EMM console.
+ 
+On the EMM console, configure application allow list for Google Play that does not have any third-party keyboards. 
+
+If third-party keyboards are allowed, this is a finding.</check-content></check></Rule></Group><Group id="V-252880"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-252880r820567_rule" weight="10.0" severity="low"><version>ZEBR-11-011100</version><title>Zebra Android 11 devices must be configured to enable Common Criteria Mode (CC Mode).</title><description>&lt;VulnDiscussion&gt;The CC Mode feature is a superset of other features and behavioral changes that are mandatory MDFPP requirements. If CC mode is not implemented, the device will not be operating in the NIAP-certified compliant CC Mode of operation.
+
+CC Mode implements the following behavioral/functional changes: How the Bluetooth and Wi-Fi keys are stored using different types of encryption.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Zebra Android 11 COBO</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Zebra Android 11 COBO</dc:subject><dc:identifier>5468</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-56286r820566_fix">Configure Zebra Android 11 device to implement CC Mode. 
+ 
+On the EMM console, enable "CC Mode".</fixtext><fix id="F-56286r820566_fix" /><check system="C-56336r820565_chk"><check-content-ref href="U_Zebra_Android_11_COBO_V1R3_Manual_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm CC mode is enabled. 
+ 
+This procedure is performed on the EMM console.
+ 
+In the EMM management console, verify CC Mode has been enabled.
+
+If CC mode is not enabled, this is a finding.</check-content></check></Rule></Group></Benchmark>

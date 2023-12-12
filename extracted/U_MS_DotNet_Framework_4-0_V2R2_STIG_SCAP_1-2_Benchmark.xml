@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_mil.disa.stig_collection_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark" schematron-version="1.2" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/windows-definitions-schema.xsd http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd">
+  <data-stream id="scap_mil.disa.stig_datastream_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark" use-case="CONFIGURATION" scap-version="1.2" timestamp="2022-12-30T20:19:59">
+    <dictionaries>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-cpe-dictionary.xml" xlink:href="#scap_mil.disa.stig_comp_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-cpe-dictionary.xml">
+        <cat:catalog xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+          <cat:uri name="U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml" uri="#scap_mil.disa.stig_cref_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml" />
+        </cat:catalog>
+      </component-ref>
+    </dictionaries>
+    <checklists>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-xccdf.xml" xlink:href="#scap_mil.disa.stig_comp_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-xccdf.xml">
+        <cat:catalog xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+          <cat:uri name="U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" uri="#scap_mil.disa.stig_cref_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+        </cat:catalog>
+      </component-ref>
+    </checklists>
+    <checks>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" xlink:href="#scap_mil.disa.stig_comp_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml" xlink:href="#scap_mil.disa.stig_comp_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml" />
+    </checks>
+  </data-stream>
+  <component id="scap_mil.disa.stig_comp_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-cpe-dictionary.xml" timestamp="2022-12-30T20:19:59">
+    <cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0">
+      <cpe-item name="cpe:/a:microsoft:.net_framework:4.0">
+        <title>Microsoft .NET Framework 4.0</title>
+        <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml">oval:mil.disa.fso.dotnet:def:1</check>
+      </cpe-item>
+    </cpe-list>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-xccdf.xml" timestamp="2022-12-30T20:19:59">
+    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="xccdf_mil.disa.stig_benchmark_MS_Dot_Net_Framework" xml:lang="en" style="SCAP_1.2">
+      <xccdf:status date="2020-12-11">accepted</xccdf:status>
+      <xccdf:title>Microsoft DotNet Framework 4.0 STIG SCAP Benchmark</xccdf:title>
+      <xccdf:description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</xccdf:description>
+      <xccdf:notice id="terms-of-use" xml:lang="en" />
+      <xccdf:front-matter xml:lang="en" />
+      <xccdf:rear-matter xml:lang="en" />
+      <xccdf:reference href="https://cyber.mil">
+        <dc:publisher>DISA</dc:publisher>
+        <dc:source>STIG.DOD.MIL</dc:source>
+      </xccdf:reference>
+      <xccdf:plain-text id="release-info">Release: 2.2 Benchmark Date: 26 Jan 2023</xccdf:plain-text>
+      <xccdf:plain-text id="generator">3.2.1.41666</xccdf:plain-text>
+      <xccdf:plain-text id="conventionsVersion">1.10.0</xccdf:plain-text>
+      <xccdf:platform idref="cpe:/a:microsoft:.net_framework:4.0" />
+      <xccdf:version update="http://iase.disa.mil/stigs">002.002</xccdf:version>
+      <xccdf:metadata>
+        <dc:creator>DISA</dc:creator>
+        <dc:publisher>DISA</dc:publisher>
+        <dc:contributor>DISA</dc:contributor>
+        <dc:source>STIG.DOD.MIL</dc:source>
+      </xccdf:metadata>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Classified">
+        <xccdf:title>I - Mission Critical Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225223" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225230" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225235" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225238" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Public">
+        <xccdf:title>I - Mission Critical Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225223" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225230" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225235" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225238" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Sensitive">
+        <xccdf:title>I - Mission Critical Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225223" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225230" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225235" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225238" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Classified">
+        <xccdf:title>II - Mission Support Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225223" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225230" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225235" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225238" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Public">
+        <xccdf:title>II - Mission Support Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225223" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225230" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225235" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225238" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Sensitive">
+        <xccdf:title>II - Mission Support Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225223" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225230" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225235" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225238" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Classified">
+        <xccdf:title>III - Administrative Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225223" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225230" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225235" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225238" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Public">
+        <xccdf:title>III - Administrative Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225223" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225230" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225235" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225238" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Sensitive">
+        <xccdf:title>III - Administrative Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225223" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225230" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225235" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-225238" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_CAT_I_Only">
+        <xccdf:title>CAT I Only</xccdf:title>
+        <xccdf:description>This profile only includes rules that are Severity Category I.</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-225223r615940_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-225230r615940_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-225235r615940_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-225238r615940_rule" selected="false" />
+      </xccdf:Profile>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-225223">
+        <xccdf:title>SRG-APP-000175</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-225223r615940_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">APPNET0031</xccdf:version>
+          <xccdf:title>Digital signatures assigned to strongly named assemblies must be verified.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;A strong name consists of the assembly's identity, simple text name, version number, and culture information (if provided)—plus a public key and a digital signature.  Strong names serve to identify the author of the code.  If digital signatures used to sign strong name assemblies are not verified, any self signed code can be impersonated.  This can lead to a loss of system integrity. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Microsoft DotNet Framework 4-0</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Microsoft DotNet Framework 4-0</dc:subject>
+            <dc:identifier>4213</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-7438</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-7055</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000185</xccdf:ident>
+          <xccdf:fixtext fixref="F-26910r467985_fix">Use regedit to remove the values stored in Windows registry key HKLM\Software\Microsoft\StrongName\Verification. There should be no assemblies or hash values listed under this registry key.
+
+All assemblies must require strong name verification in a production environment.
+
+Strong name assemblies that do not require verification in a development or test environment must have documented approvals from the IAO.</xccdf:fixtext>
+          <xccdf:fix id="F-26910r467985_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.fso.dotnet:def:2" href="U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-225230">
+        <xccdf:title>SRG-APP-000635</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-225230r615940_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">APPNET0062</xccdf:version>
+          <xccdf:title>The .NET CLR must be configured to use FIPS approved encryption modules.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;FIPS encryption is configured via .NET configuration files.  There are numerous configuration files that affect different aspects of .Net behavior.  The .NET config files are described below.
+ 
+Machine Configuration Files:
+The machine configuration file, Machine.config, contains settings that apply to an entire computer. This file is located in the %SYSTEMROOT%\Microsoft.NET\Framework\v4.0.30319\Config directory for 32 bit .NET 4 installations and %SYSTEMROOT%\Microsoft.NET\Framework64\v4.0.30319\Config for 64 bit systems.   Machine.config contains configuration settings for machine-wide assembly binding, built-in remoting channels, and ASP.NET.
+
+Application Configuration Files:
+Application configuration files contain settings specific to an application. If checking these files, a .NET review of a specific .NET application is most likely being conducted. These files contain configuration settings that the Common Language Runtime reads (such as assembly binding policy, remoting objects, and so on), and settings that the application can read. 
+
+The name and location of the application configuration file depends on the application's host, which can be one of the following: 
+
+Executable–hosted application configuration files. 
+
+The configuration file for an application hosted by the executable host is in the same directory as the application. The name of the configuration file is the name of the application with a .config extension. For example, an application called myApp.exe can be associated with a configuration file called myApp.exe.config. 
+
+Internet Explorer-hosted application configuration files. 
+
+If an application hosted in Internet Explorer has a configuration file, the location of this file is specified in a &lt;link&gt; tag with the following syntax.
+
+&lt;link rel="ConfigurationFileName" href="location"&gt;
+
+In this tag, "location" represents a URL that point to the configuration file. This sets the application base. The configuration file must be located on the same web site as the application. 
+
+.NET 4.0 allows the CLR runtime to be configured to ignore FIPS encryption requirements.  If the CLR is not configured to use FIPS encryption modules, insecure encryption modules might be employed which could introduce an application confidentiality or integrity issue.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Microsoft DotNet Framework 4-0</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Microsoft DotNet Framework 4-0</dc:subject>
+            <dc:identifier>4213</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-40966</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-30926</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-002450</xccdf:ident>
+          <xccdf:fixtext fixref="F-26917r468006_fix">Examine the .NET CLR configuration files to find the runtime element and then the "enforceFIPSPolicy" element.
+
+Example:
+&lt;configuration&gt; 
+  &lt;runtime&gt; 
+                &lt;enforceFIPSPolicy enabled="true|false" /&gt;
+  &lt;/runtime&gt;
+&lt;/configuration&gt;
+
+Delete the "enforceFIPSPolicy" runtime element, change the setting to "true" or there must be documented IAO approvals for the FIPS setting.</xccdf:fixtext>
+          <xccdf:fix id="F-26917r468006_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.fso.dotnet:def:9" href="U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-225235">
+        <xccdf:title>SRG-APP-000095</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-225235r615940_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">APPNET0067</xccdf:version>
+          <xccdf:title>Event tracing for Windows (ETW) for Common Language Runtime events must be enabled.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Event tracing captures information about applications utilizing the .NET CLR and the .NET CLR itself. This includes security oriented information, such as Strong Name and Authenticode verification.  
+
+Beginning with Windows Vista, ETW is enabled by default however, the .Net CLR and .Net applications can be configured to not utilize Event Tracing. If ETW event tracing is disabled, critical events that occurred within the runtime will not be captured in event logs.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Microsoft DotNet Framework 4-0</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Microsoft DotNet Framework 4-0</dc:subject>
+            <dc:identifier>4213</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-41075</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-31026</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000130</xccdf:ident>
+          <xccdf:fixtext fixref="F-26922r468021_fix">Open Windows explorer and search for all .NET config files including application config files (*.exe.config).
+
+Examine the configuration settings for 
+&lt;etwEnable enabled="false" /&gt;.
+
+Enable ETW Tracing by setting the etwEnable flag to "true" or obtain documented IAO approvals.</xccdf:fixtext>
+          <xccdf:fix id="F-26922r468021_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.fso.dotnet:def:12" href="U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-225238">
+        <xccdf:title>SRG-APP-000383</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-225238r615940_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">APPNET0075</xccdf:version>
+          <xccdf:title>Disable TLS RC4 cipher in .Net</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Use of the RC4 cipher in TLS could allow an attacker to perform man-in-the-middle attacks and recover plaintext from encrypted sessions. Applications that target .Net version 4.x running on multiple Windows versions could be vulnerable to these types of attacks. The registry settings in this requirement will prevent .Net applications that target the 4.x framework from selecting and utilizing the Schannel.dll RC4 cipher for TLS connections. Applications that use TLS when connecting to remote systems will perform a handshake and negotiate the TLS version and cipher that is to be used between the client and the server. This is standard protocol for all TLS connections. If the server and client are not configured to use the same TLS version and cipher, the TLS connection may fail. Applications should be tested with these registry settings prior to production implementation of the fix in order to avoid application outages.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Microsoft DotNet Framework 4-0</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Microsoft DotNet Framework 4-0</dc:subject>
+            <dc:identifier>4213</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-96209</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-81495</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001762</xccdf:ident>
+          <xccdf:fixtext fixref="F-26925r612667_fix">Use regedit to access the following registry key.
+
+For 32-bit systems:
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319\
+
+For 64-bit systems: 
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319\
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319\
+
+Modify or create the following Windows registry value: SchUseStrongCrypto
+
+Set SchUseStrongCrypto to a REG_DWORD value of “1”.</xccdf:fixtext>
+          <xccdf:fix id="F-26925r612667_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.fso.dotnet:def:16" href="U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+    </xccdf:Benchmark>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" timestamp="2022-12-30T20:19:59">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+      <generator>
+        <oval:product_name>repotool</oval:product_name>
+        <oval:schema_version>5.10</oval:schema_version>
+        <oval:timestamp>2022-12-30T20:19:59</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition id="oval:mil.disa.fso.dotnet:def:2" version="1" class="compliance">
+          <metadata>
+            <title>APPNET0031 No Strong Name Verification</title>
+            <affected family="windows">
+              <platform>Microsoft Windows XP</platform>
+              <platform>Microsoft Windows Server 2003</platform>
+              <platform>Microsoft Windows Vista</platform>
+              <platform>Microsoft Windows Server 2008</platform>
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+            </affected>
+            <description>Digital signatures assigned to strongly named assemblies must be verified.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="No assemblies or hash values under HKLM\Software\Microsoft\StrongName\Verification" test_ref="oval:mil.disa.fso.dotnet:tst:200" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.fso.dotnet:def:9" version="3" class="compliance">
+          <metadata>
+            <title>APPNET0062</title>
+            <affected family="windows">
+              <platform>Microsoft Windows 10</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2016</platform>
+              <platform>Microsoft Windows Server 2019</platform>
+            </affected>
+            <description>The .NET CLR must be configured to use FIPS approved encryption modules.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.fso.dotnet:tst:900" comment="Verifies application configiguration files are configured to use FIPS approved encryption modules" />
+            <criterion test_ref="oval:mil.disa.fso.dotnet:tst:901" comment="Verifies machine configiguration files are configured to use FIPS approved encryption modules" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.fso.dotnet:def:12" version="4" class="compliance">
+          <metadata>
+            <title>APPNET0067</title>
+            <affected family="windows">
+              <platform>Microsoft Windows 10</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2016</platform>
+              <platform>Microsoft Windows Server 2019</platform>
+            </affected>
+            <description>Event tracing for Windows (ETW) for Common Language Runtime events must be enabled.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.fso.dotnet:tst:1200" comment="Verifies Event tracing for Windows (ETW) for Common Language Runtime events is enabled for application configiguration files" />
+            <criterion test_ref="oval:mil.disa.fso.dotnet:tst:1201" comment="Verifies Event tracing for Windows (ETW) for Common Language Runtime events is enabled for machine configiguration files" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.fso.dotnet:def:16" version="1" class="compliance">
+          <metadata>
+            <title>Disable TLS RC4 cipher in .Net</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008</platform>
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows 10</platform>
+              <platform>Microsoft Windows Server 2016</platform>
+            </affected>
+            <description>Use of the RC4 cipher in TLS could allow an attacker to perform man-in-the-middle attacks and recover plaintext from encrypted sessions. Applications that target .Net version 4.x running on multiple Windows versions could be vulnerable to these types of attacks. The registry settings in this requirement will prevent .Net applications that target the 4.x framework from selecting and utilizing the Schannel.dll RC4 cipher for TLS connections. Applications that use TLS when connecting to remote systems will perform a handshake and negotiate the TLS version and cipher that is to be used between the client and the server. This is standard protocol for all TLS connections. If the server and client are not configured to use the same TLS version and cipher, the TLS connection may fail. Applications should be tested with these registry settings prior to production implementation of the fix in order to avoid application outages.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.dotnet:tst:1600" comment="32-bit on 32 bit or 64 bit on 64 bit system registry key exists and is configure correctly" />
+            <criteria operator="OR">
+              <criterion test_ref="oval:mil.disa.fso.dotnet:tst:1601" comment="Is a 32 bit system" />
+              <criterion test_ref="oval:mil.disa.fso.dotnet:tst:1602" comment="32-bit applications on a 64-bit system regkey exists and is configured correctly" />
+            </criteria>
+          </criteria>
+        </definition>
+      </definitions>
+      <tests>
+        <windows-def:registry_test xmlns:windows-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:tst:200" version="1" comment="No assemblies or hash values under HKLM\Software\Microsoft\StrongName\Verification" check_existence="none_exist" check="all">
+          <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:200" />
+        </windows-def:registry_test>
+        <xmlfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.dotnet:tst:900" version="3" comment="Application configiguration files are configured to use FIPS approved encryption modules" check_existence="any_exist" check="all">
+          <object object_ref="oval:mil.disa.fso.dotnet:obj:900" />
+          <state state_ref="oval:mil.disa.fso.dotnet:ste:900" />
+        </xmlfilecontent_test>
+        <xmlfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.dotnet:tst:901" version="2" comment="Machine configiguration files are configured to use FIPS approved encryption modules" check_existence="any_exist" check="all">
+          <object object_ref="oval:mil.disa.fso.dotnet:obj:901" />
+          <state state_ref="oval:mil.disa.fso.dotnet:ste:900" />
+        </xmlfilecontent_test>
+        <xmlfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.dotnet:tst:1200" version="3" comment="Event tracing for Windows (ETW) for Common Language Runtime events is enabled for application configiguration files" check_existence="any_exist" check="all">
+          <object object_ref="oval:mil.disa.fso.dotnet:obj:1200" />
+          <state state_ref="oval:mil.disa.fso.dotnet:ste:1200" />
+        </xmlfilecontent_test>
+        <xmlfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.dotnet:tst:1201" version="2" comment="Event tracing for Windows (ETW) for Common Language Runtime events is enabled for machine configiguration files" check_existence="any_exist" check="all">
+          <object object_ref="oval:mil.disa.fso.dotnet:obj:1201" />
+          <state state_ref="oval:mil.disa.fso.dotnet:ste:1200" />
+        </xmlfilecontent_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:tst:1600" version="1" check="all" comment="SchUseStrongCrypto key for applications that match the bitness of the system" check_existence="at_least_one_exists">
+          <object object_ref="oval:mil.disa.fso.dotnet:obj:1600" />
+          <state state_ref="oval:mil.disa.fso.dotnet:ste:1600" />
+        </registry_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:tst:1601" version="1" check="all" check_existence="at_least_one_exists" comment="32-bit operating system check">
+          <object object_ref="oval:mil.disa.fso.dotnet:obj:1601" />
+          <state state_ref="oval:mil.disa.fso.dotnet:ste:1601" />
+        </wmi57_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:tst:1602" version="1" check="all" check_existence="at_least_one_exists" comment="SchUseStrongCrypto key for 32 bit applications on a 64 bit system">
+          <object object_ref="oval:mil.disa.fso.dotnet:obj:1602" />
+          <state state_ref="oval:mil.disa.fso.dotnet:ste:1600" />
+        </registry_test>
+      </tests>
+      <objects>
+        <windows-def:registry_object xmlns:windows-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:200" version="1">
+          <windows-def:behaviors recurse_direction="down" max_depth="-1" />
+          <windows-def:hive datatype="string">HKEY_LOCAL_MACHINE</windows-def:hive>
+          <windows-def:key datatype="string">SOFTWARE\Microsoft\StrongName\Verification</windows-def:key>
+          <windows-def:name datatype="string" operation="pattern match">.*</windows-def:name>
+        </windows-def:registry_object>
+        <xmlfilecontent_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.dotnet:obj:900" version="4" comment="*.exe.config enforceFIPSPolicy/@enabled">
+          <filepath datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.dotnet:var:903" />
+          <xpath datatype="string" operation="equals">count(/configuration/runtime/enforceFIPSPolicy/@enabled) = 0 or /configuration/runtime/enforceFIPSPolicy/@enabled = "true"</xpath>
+        </xmlfilecontent_object>
+        <xmlfilecontent_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.dotnet:obj:901" version="2" comment="machine.config enforceFIPSPolicy/@enabled">
+          <behaviors recurse_direction="down" max_depth="-1" />
+          <path datatype="string" operation="equals" var_ref="oval:mil.disa.fso.dotnet:var:900" var_check="at least one" />
+          <filename datatype="string" operation="case insensitive equals">machine.config</filename>
+          <xpath datatype="string" operation="equals">count(/configuration/runtime/enforceFIPSPolicy/@enabled) = 0 or /configuration/runtime/enforceFIPSPolicy/@enabled = "true"</xpath>
+        </xmlfilecontent_object>
+        <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:902" version="3" comment="All *.exe.config files">
+          <behaviors recurse_direction="down" max_depth="-1" />
+          <path datatype="string" operation="equals" var_ref="oval:mil.disa.fso.windows:var:439700" var_check="at least one" />
+          <filename datatype="string" operation="pattern match">^.*\.[Ee][Xx][Ee]\.[Cc][Oo][Nn][Ff][Ii][Gg]$</filename>
+        </file_object>
+        <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:903" version="4" comment="*.exe.config files without WinSxS and LCU">
+          <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="COMPLEMENT">
+            <object_reference>oval:mil.disa.fso.dotnet:obj:902</object_reference>
+            <object_reference>oval:mil.disa.fso.dotnet:obj:908</object_reference>
+          </set>
+        </file_object>
+        <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:904" version="3" comment="WinSxS *.exe.config files">
+          <behaviors recurse_direction="down" max_depth="-1" />
+          <path datatype="string" operation="equals" var_ref="oval:mil.disa.fso.dotnet:var:902" var_check="at least one" />
+          <filename datatype="string" operation="pattern match">^.*\.[Ee][Xx][Ee]\.[Cc][Oo][Nn][Ff][Ii][Gg]$</filename>
+        </file_object>
+        <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:905" version="3" comment="C:\Windows.old\Windows\WinSxS *.exe.config files">
+          <behaviors recurse_direction="down" max_depth="-1" />
+          <path datatype="string" operation="equals">C:\Windows.Old\Windows\WinSxS</path>
+          <filename datatype="string" operation="pattern match">^.*\.[Ee][Xx][Ee]\.[Cc][Oo][Nn][Ff][Ii][Gg]$</filename>
+        </file_object>
+        <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:906" version="2" comment="excluded WinSxS *.exe.config files">
+          <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+            <object_reference>oval:mil.disa.fso.dotnet:obj:904</object_reference>
+            <object_reference>oval:mil.disa.fso.dotnet:obj:905</object_reference>
+          </set>
+        </file_object>
+        <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:907" version="1" comment="servicing\LCU *.exe.config files">
+          <behaviors recurse_direction="down" max_depth="-1" />
+          <path datatype="string" operation="equals" var_ref="oval:mil.disa.fso.dotnet:var:904" var_check="at least one" />
+          <filename datatype="string" operation="pattern match">^.*\.[Ee][Xx][Ee]\.[Cc][Oo][Nn][Ff][Ii][Gg]$</filename>
+        </file_object>
+        <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:908" version="1" comment="excluded WinSxS and LCU *.exe.config files">
+          <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+            <object_reference>oval:mil.disa.fso.dotnet:obj:906</object_reference>
+            <object_reference>oval:mil.disa.fso.dotnet:obj:907</object_reference>
+          </set>
+        </file_object>
+        <xmlfilecontent_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.dotnet:obj:1200" version="3" comment="*.exe.config etwEnable/@enabled true or nonexistant">
+          <filepath datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.dotnet:var:903" />
+          <xpath datatype="string" operation="equals">count(/configuration/runtime/etwEnable/@enabled) = 0 or /configuration/runtime/etwEnable/@enabled = "true"</xpath>
+        </xmlfilecontent_object>
+        <xmlfilecontent_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.dotnet:obj:1201" version="2" comment="machine.config etwEnable/@enabled true or nonexistant">
+          <path datatype="string" operation="equals" var_ref="oval:mil.disa.fso.dotnet:var:900" var_check="at least one" />
+          <filename datatype="string" operation="case insensitive equals">machine.config</filename>
+          <xpath datatype="string" operation="equals">count(/configuration/runtime/etwEnable/@enabled) = 0 or /configuration/runtime/etwEnable/@enabled = "true"</xpath>
+        </xmlfilecontent_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:1600" version="1" comment="SchUseStrongCrypto key for applications that match the bitness of the system">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">SOFTWARE\Microsoft\.NETFramework\v4.0.30319</key>
+          <name datatype="string">SchUseStrongCrypto</name>
+        </registry_object>
+        <wmi57_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:1601" version="1" comment="Is this a 32-bit system">
+          <namespace datatype="string">root\cimv2</namespace>
+          <wql datatype="string">SELECT OSArchitecture from win32_operatingsystem</wql>
+        </wmi57_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:1602" version="1" comment="SchUseStrongCrypto key for 32 bit applications on a 64 bit system">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319</key>
+          <name datatype="string">SchUseStrongCrypto</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:388601" version="2" comment="System Root Directory Registry Object">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
+          <name datatype="string">SystemRoot</name>
+        </registry_object>
+        <wmi_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:439702" version="1" comment="All 'Local Disk' Volumes">
+          <namespace datatype="string">root\cimv2</namespace>
+          <wql datatype="string">SELECT name FROM win32_logicaldisk WHERE drivetype=3</wql>
+        </wmi_object>
+      </objects>
+      <states>
+        <xmlfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.dotnet:ste:900" version="2" comment="enforceFIPSPolicy/@enabled = false">
+          <value_of datatype="boolean" operation="equals">true</value_of>
+        </xmlfilecontent_state>
+        <xmlfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.dotnet:ste:1200" version="2" comment="etwEnable/@enabled = true">
+          <value_of datatype="boolean" operation="equals">true</value_of>
+        </xmlfilecontent_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:ste:1600" version="1" comment="reg_dword value set to 1">
+          <type datatype="string" operation="equals">reg_dword</type>
+          <value datatype="int" operation="equals">1</value>
+        </registry_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:ste:1601" version="1" comment="32 bit operating system">
+          <result datatype="record" operation="equals">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" name="osarchitecture" datatype="string">32-bit</field>
+          </result>
+        </wmi57_state>
+      </states>
+      <variables>
+        <local_variable id="oval:mil.disa.fso.dotnet:var:900" version="1" comment=".NET config directory" datatype="string">
+          <concat>
+            <object_component item_field="value" object_ref="oval:mil.disa.fso.windows:obj:388601" />
+            <variable_component var_ref="oval:mil.disa.fso.dotnet:var:901" />
+          </concat>
+        </local_variable>
+        <constant_variable id="oval:mil.disa.fso.dotnet:var:901" version="1" comment=".NET config path components" datatype="string">
+          <value>\Microsoft.NET\Framework\v4.0.30319\Config</value>
+          <value>\Microsoft.NET\Framework64\v4.0.30319\Config</value>
+        </constant_variable>
+        <local_variable id="oval:mil.disa.fso.dotnet:var:902" version="5" comment="WinSXS directory" datatype="string">
+          <concat>
+            <end character="\">
+              <object_component item_field="value" object_ref="oval:mil.disa.fso.windows:obj:388601" />
+            </end>
+            <literal_component>WinSxS</literal_component>
+          </concat>
+        </local_variable>
+        <local_variable id="oval:mil.disa.fso.dotnet:var:903" version="2" comment="exe.config files, filtered" datatype="string">
+          <object_component object_ref="oval:mil.disa.fso.dotnet:obj:903" item_field="filepath" />
+        </local_variable>
+        <local_variable id="oval:mil.disa.fso.dotnet:var:904" version="1" comment="LCU directory" datatype="string">
+          <concat>
+            <end character="\">
+              <object_component item_field="value" object_ref="oval:mil.disa.fso.windows:obj:388601" />
+            </end>
+            <literal_component>servicing\LCU</literal_component>
+          </concat>
+        </local_variable>
+        <local_variable id="oval:mil.disa.fso.windows:var:439700" version="1" datatype="string" comment="All 'local disk' volumes, in X:\ format">
+          <end character="\">
+            <object_component object_ref="oval:mil.disa.fso.windows:obj:439702" item_field="result" />
+          </end>
+        </local_variable>
+      </variables>
+    </oval_definitions>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_MS_DotNet_Framework_4-0_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml" timestamp="2022-12-30T20:19:59">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+      <generator>
+        <oval:product_name>repotool</oval:product_name>
+        <oval:schema_version>5.10</oval:schema_version>
+        <oval:timestamp>2022-12-30T20:19:59</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition id="oval:mil.disa.fso.dotnet:def:1" version="2" class="inventory">
+          <metadata>
+            <title>Microsoft .NET Framework 4.0 is installed</title>
+            <affected family="windows">
+              <platform>Microsoft Windows XP</platform>
+              <platform>Microsoft Windows Server 2003</platform>
+              <platform>Microsoft Windows Vista</platform>
+              <platform>Microsoft Windows Server 2008</platform>
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft .NET Framework 4.0</platform>
+              <product>Microsoft .NET Framework</product>
+            </affected>
+            <reference source="CPE" ref_id="cpe:/a:microsoft:.net_framework:4.0" />
+            <description>Microsoft .NET Framework 4.0 is installed</description>
+          </metadata>
+          <criteria operator="OR">
+            <criterion comment=".NET Framework 4.0 Client version is installed" test_ref="oval:mil.disa.fso.dotnet:tst:100" />
+            <criterion comment=".NET Framework 4.0 Full version is installed" test_ref="oval:mil.disa.fso.dotnet:tst:101" />
+          </criteria>
+        </definition>
+      </definitions>
+      <tests>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:tst:100" version="1" comment=".NET Framework 4.0 Client version is installed" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.fso.dotnet:obj:100" />
+          <state state_ref="oval:mil.disa.fso.dotnet:ste:100" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:tst:101" version="1" comment=".NET Framework 4.0 Full version is installed" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.fso.dotnet:obj:101" />
+          <state state_ref="oval:mil.disa.fso.dotnet:ste:100" />
+        </registry_test>
+      </tests>
+      <objects>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:100" version="1" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client\\Install">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client</key>
+          <name datatype="string">Install</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:101" version="1" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\\Install">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</key>
+          <name datatype="string">Install</name>
+        </registry_object>
+      </objects>
+      <states>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:ste:100" version="1">
+          <value datatype="int">1</value>
+        </registry_state>
+      </states>
+    </oval_definitions>
+  </component>
+</data-stream-collection>

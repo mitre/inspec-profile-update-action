@@ -1,0 +1,1974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_mil.disa.stig_collection_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark" schematron-version="1.2" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/windows-definitions-schema.xsd http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd">
+  <data-stream id="scap_mil.disa.stig_datastream_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark" use-case="CONFIGURATION" scap-version="1.2" timestamp="2022-09-28T14:45:09">
+    <dictionaries>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-cpe-dictionary.xml" xlink:href="#scap_mil.disa.stig_comp_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-cpe-dictionary.xml">
+        <cat:catalog xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+          <cat:uri name="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml" uri="#scap_mil.disa.stig_cref_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml" />
+        </cat:catalog>
+      </component-ref>
+    </dictionaries>
+    <checklists>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-xccdf.xml" xlink:href="#scap_mil.disa.stig_comp_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-xccdf.xml">
+        <cat:catalog xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+          <cat:uri name="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" uri="#scap_mil.disa.stig_cref_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+        </cat:catalog>
+      </component-ref>
+    </checklists>
+    <checks>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" xlink:href="#scap_mil.disa.stig_comp_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml" xlink:href="#scap_mil.disa.stig_comp_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml" />
+    </checks>
+  </data-stream>
+  <component id="scap_mil.disa.stig_comp_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-cpe-dictionary.xml" timestamp="2022-09-28T14:45:09">
+    <cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0">
+      <cpe-item name="cpe:/a:adobe:acrobat_reader_dc:::~~continuous~windows~~">
+        <title>Adobe Acrobat Reader DC Continuous Track</title>
+        <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml">oval:mil.disa.stig.adobe.reader:def:1</check>
+      </cpe-item>
+    </cpe-list>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-xccdf.xml" timestamp="2022-09-28T14:45:09">
+    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="xccdf_mil.disa.stig_benchmark_Adobe_Acrobat_Reader_DC_Continuous_Track_STIG" xml:lang="en" style="SCAP_1.2">
+      <xccdf:status date="2021-06-22">accepted</xccdf:status>
+      <xccdf:title>Adobe Acrobat Reader DC Continuous Track STIG SCAP Benchmark</xccdf:title>
+      <xccdf:description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</xccdf:description>
+      <xccdf:notice id="terms-of-use" xml:lang="en" />
+      <xccdf:front-matter xml:lang="en" />
+      <xccdf:rear-matter xml:lang="en" />
+      <xccdf:reference href="https://cyber.mil">
+        <dc:publisher>DISA</dc:publisher>
+        <dc:source>STIG.DOD.MIL</dc:source>
+      </xccdf:reference>
+      <xccdf:plain-text id="release-info">Release: 2.2 Benchmark Date: 27 Oct 2022</xccdf:plain-text>
+      <xccdf:plain-text id="generator">3.2.2.36079</xccdf:plain-text>
+      <xccdf:plain-text id="conventionsVersion">1.10.0</xccdf:plain-text>
+      <xccdf:platform idref="cpe:/a:adobe:acrobat_reader_dc:::~~continuous~windows~~" />
+      <xccdf:version update="http://iase.disa.mil/stigs">002.002</xccdf:version>
+      <xccdf:metadata>
+        <dc:creator>DISA</dc:creator>
+        <dc:publisher>DISA</dc:publisher>
+        <dc:contributor>DISA</dc:contributor>
+        <dc:source>STIG.DOD.MIL</dc:source>
+      </xccdf:metadata>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Classified">
+        <xccdf:title>I - Mission Critical Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213168" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213169" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213170" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213171" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213172" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213173" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213174" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213175" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213176" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213177" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213178" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213179" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213180" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213181" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213182" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213183" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213184" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213185" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213186" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213187" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213188" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213189" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Public">
+        <xccdf:title>I - Mission Critical Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213168" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213169" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213170" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213171" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213172" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213173" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213174" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213175" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213176" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213177" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213178" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213179" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213180" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213181" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213182" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213183" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213184" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213185" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213186" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213187" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213188" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213189" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Sensitive">
+        <xccdf:title>I - Mission Critical Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213168" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213169" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213170" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213171" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213172" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213173" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213174" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213175" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213176" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213177" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213178" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213179" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213180" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213181" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213182" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213183" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213184" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213185" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213186" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213187" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213188" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213189" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Classified">
+        <xccdf:title>II - Mission Support Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213168" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213169" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213170" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213171" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213172" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213173" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213174" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213175" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213176" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213177" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213178" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213179" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213180" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213181" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213182" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213183" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213184" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213185" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213186" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213187" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213188" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213189" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Public">
+        <xccdf:title>II - Mission Support Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213168" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213169" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213170" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213171" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213172" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213173" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213174" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213175" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213176" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213177" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213178" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213179" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213180" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213181" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213182" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213183" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213184" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213185" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213186" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213187" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213188" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213189" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Sensitive">
+        <xccdf:title>II - Mission Support Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213168" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213169" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213170" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213171" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213172" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213173" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213174" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213175" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213176" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213177" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213178" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213179" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213180" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213181" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213182" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213183" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213184" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213185" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213186" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213187" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213188" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213189" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Classified">
+        <xccdf:title>III - Administrative Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213168" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213169" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213170" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213171" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213172" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213173" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213174" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213175" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213176" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213177" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213178" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213179" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213180" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213181" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213182" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213183" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213184" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213185" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213186" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213187" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213188" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213189" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Public">
+        <xccdf:title>III - Administrative Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213168" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213169" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213170" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213171" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213172" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213173" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213174" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213175" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213176" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213177" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213178" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213179" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213180" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213181" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213182" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213183" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213184" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213185" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213186" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213187" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213188" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213189" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Sensitive">
+        <xccdf:title>III - Administrative Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213168" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213169" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213170" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213171" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213172" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213173" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213174" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213175" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213176" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213177" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213178" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213179" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213180" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213181" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213182" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213183" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213184" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213185" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213186" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213187" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213188" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-213189" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_CAT_I_Only">
+        <xccdf:title>CAT I Only</xccdf:title>
+        <xccdf:description>This profile only includes rules that are Severity Category I.</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213168r395811_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213169r395811_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213170r395811_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213171r395811_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213172r395811_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213173r395811_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213174r395811_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213175r395811_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213176r395850_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213177r766574_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213178r395853_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213179r395853_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213180r395853_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213181r395853_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213182r395853_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213183r395853_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213184r395853_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213185r395853_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213186r395853_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213187r395853_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213188r400006_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-213189r400006_rule" selected="false" />
+      </xccdf:Profile>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213168">
+        <xccdf:title>SRG-APP-000112</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213168r395811_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000005</xccdf:version>
+          <xccdf:title>Adobe Reader DC must enable Enhanced Security in a Standalone Application.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;PDFs have evolved from static pages to complex documents with features such as interactive forms, multimedia content, scripting, and other capabilities. These features leave PDFs vulnerable to malicious scripts or actions that can damage the computer or steal data. The Enhanced security feature protects the computer against these threats by blocking or selectively permitting actions for trusted locations and files.
+
+Enhanced Security determines if a PDF is viewed within a standalone application. A threat to users of Adobe Reader DC is opening a PDF file that contains malicious executable content.
+
+Enhanced Security “hardens” the application against risky actions: prevents cross domain access, prohibits script and data injection, blocks stream access to XObjects, silent printing, and execution of high privilege JavaScript.
+
+Satisfies: SRG-APP-000112, SRG-APP-000206, SRG-APP-000207, SRG-APP-000209, SRG-APP-000210&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64919</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79409</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001166</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001169</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001170</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001662</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001695</xccdf:ident>
+          <xccdf:fixtext fixref="F-14401r276723_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown
+
+Value Name: bEnhancedSecurityStandalone
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14401r276723_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:10" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213169">
+        <xccdf:title>SRG-APP-000112</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213169r395811_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000010</xccdf:version>
+          <xccdf:title>Adobe Reader DC must enable Enhanced Security in a Browser.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;PDFs have evolved from static pages to complex documents with features such as interactive forms, multimedia content, scripting, and other capabilities. These features leave PDFs vulnerable to malicious scripts or actions that can damage the computer or steal data. The Enhanced security feature protects the computer against these threats by blocking or selectively permitting actions for trusted locations and files.
+
+Enhanced Security determines if a PDF is viewed within a browser application. A threat to users of Adobe Reader DC is opening a PDF file that contains malicious executable content.
+
+Enhanced Security “hardens” the application against risky actions: prevents cross domain access, prohibits script and data injection, blocks stream access to XObjects, silent printing, and execution of high privilege JavaScript.
+
+Satisfies: SRG-APP-000112, SRG-APP-000206, SRG-APP-000207, SRG-APP-000209, SRG-APP-000210&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79411</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64921</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001166</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001169</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001170</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001662</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001695</xccdf:ident>
+          <xccdf:fixtext fixref="F-14402r276726_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown
+
+Value Name: bEnhancedSecurityInBrowser
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14402r276726_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:11" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213170">
+        <xccdf:title>SRG-APP-000112</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213170r395811_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000015</xccdf:version>
+          <xccdf:title>Adobe Reader DC must enable Protected Mode.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;A threat to users of Adobe Reader DC is opening a PDF file that contains malicious executable content.
+
+Protected mode provides a sandbox capability that prevents malicious PDF files from launching arbitrary executable files, writing to system directories or the Windows registry.
+
+This isolation of the PDFs reduces the risk of security breaches in areas outside the sandbox.
+
+Satisfies: SRG-APP-000112, SRG-APP-000206, SRG-APP-000207, SRG-APP-000209, SRG-APP-000210&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79413</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64923</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001166</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001169</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001170</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001662</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001695</xccdf:ident>
+          <xccdf:fixtext fixref="F-14403r276729_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown
+
+Value Name: bProtectedMode
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14403r276729_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:12" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213171">
+        <xccdf:title>SRG-APP-000112</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213171r395811_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000020</xccdf:version>
+          <xccdf:title>Adobe Reader DC must enable Protected View.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;A threat to users of Adobe Reader DC is opening a PDF file that contains malicious executable content.
+
+Protected view restricts Adobe Reader DC functionality, within a sandbox, when a PDF is opened from an untrusted source.
+
+This isolation of the PDFs reduces the risk of security breaches in areas outside the sandbox.
+
+Satisfies: SRG-APP-000112, SRG-APP-000206, SRG-APP-000207, SRG-APP-000209, SRG-APP-000210&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79415</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64925</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001166</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001169</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001170</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001662</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001695</xccdf:ident>
+          <xccdf:fixtext fixref="F-14404r276732_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown
+
+Value Name: iProtectedView
+Type: REG_DWORD
+Value: 2</xccdf:fixtext>
+          <xccdf:fix id="F-14404r276732_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:13" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213172">
+        <xccdf:title>SRG-APP-000112</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213172r395811_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000025</xccdf:version>
+          <xccdf:title>Adobe Reader DC must Block Websites.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Clicking any link to the Internet poses a potential security risk. Malicious websites can transfer harmful content or silently gather data. Acrobat Reader documents can connect to websites which can pose a potential threat to DoD systems and that functionality must be blocked. However, PDF document workflows that are trusted (e.g., DoD-created) can benefit from leveraging legitimate website access with minimal risk. Therefore, the ISSO may approve of website access and accept the risk if the access provides benefit and is a trusted site or the risk associated with accessing the site has been mitigated.
+
+Adobe Reader must block access to all websites that are not specifically allowed by ISSO risk acceptance.
+
+Satisfies: SRG-APP-000112, SRG-APP-000206, SRG-APP-000207, SRG-APP-000209, SRG-APP-000210&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79417</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64927</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001166</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001169</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001170</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001662</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001695</xccdf:ident>
+          <xccdf:fixtext fixref="F-14405r276735_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path:
+\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cDefaultLaunchURLPerms
+
+Value Name: iURLPerms
+Type: REG_DWORD
+Value: 1
+
+If configuring system to allow access to websites, obtain documented ISSO approvals and risk acceptance and set “iURLPerms” to “0”.</xccdf:fixtext>
+          <xccdf:fix id="F-14405r276735_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:14" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213173">
+        <xccdf:title>SRG-APP-000112</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213173r395811_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000030</xccdf:version>
+          <xccdf:title>Adobe Reader DC must block access to Unknown Websites.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Because Internet access is a potential security risk, clicking any unknown website link to the Internet poses a potential security risk.
+
+Malicious websites can transfer harmful content or silently gather data.
+
+Satisfies: SRG-APP-000112, SRG-APP-000206, SRG-APP-000207, SRG-APP-000209, SRG-APP-000210&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79419</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64929</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001166</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001169</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001170</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001662</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001695</xccdf:ident>
+          <xccdf:fixtext fixref="F-14406r276738_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cDefaultLaunchURLPerms
+
+Value Name: iUnknownURLPerms
+Type: REG_DWORD
+Value: 3</xccdf:fixtext>
+          <xccdf:fix id="F-14406r276738_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:15" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213174">
+        <xccdf:title>SRG-APP-000112</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213174r395811_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000035</xccdf:version>
+          <xccdf:title>Adobe Reader DC must prevent opening files other than PDF or FDF.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Attachments represent a potential security risk because they can contain malicious content, open other dangerous files, or launch applications. Certainly file types such as .bin, .exe, .bat, and so on will be recognized as threats.
+
+This feature prevents users from opening or launching file types other than PDF or FDF and disables the menu option.
+
+Satisfies: SRG-APP-000112, SRG-APP-000206, SRG-APP-000207, SRG-APP-000209, SRG-APP-000210&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79421</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64931</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001166</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001169</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001170</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001662</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001695</xccdf:ident>
+          <xccdf:fixtext fixref="F-14407r276741_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown
+
+Value Name: iFileAttachmentPerms
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14407r276741_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:16" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213175">
+        <xccdf:title>SRG-APP-000112</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213175r395811_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000045</xccdf:version>
+          <xccdf:title>Adobe Reader DC must block Flash Content.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Flash content is commonly hosted on a web page, but it can also be embedded in PDF and other documents. Flash could be used to surreptitious install malware on the end-users computer.
+
+Flash Content restricts Adobe Reader DC not to play Flash content within a PDF.
+
+Satisfies: SRG-APP-000112, SRG-APP-000206, SRG-APP-000207, SRG-APP-000209, SRG-APP-000210&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79423</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64933</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001166</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001169</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001170</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001662</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001695</xccdf:ident>
+          <xccdf:fixtext fixref="F-14408r276744_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown
+
+Value Name: bEnableFlash
+Type: REG_DWORD
+Value: 0</xccdf:fixtext>
+          <xccdf:fix id="F-14408r276744_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:17" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213176">
+        <xccdf:title>SRG-APP-000133</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213176r395850_rule" weight="10.0" severity="low">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000050</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable the ability to change the Default Handler.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Allowing user to make changes to an application case cause a security risk.
+
+When the Default PDF Handler is disabled, the end users will not be able to change the default PDF viewer.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79425</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64935</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001499</xccdf:ident>
+          <xccdf:fixtext fixref="F-14409r276747_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown
+
+Value Name: bDisablePDFHandlerSwitching
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14409r276747_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:18" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213177">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213177r766574_rule" weight="10.0" severity="low">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000055</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable the Adobe Send and Track plugin for Outlook.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;When enabled, Adobe Send and Track button appears in Outlook. When an email is composed it enables the ability to send large files as public links through Outlook. The attached files can be uploaded to the Adobe Document Cloud and public links to the files are inserted in the email body.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79427</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64937</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14410r766573_fix">Configure the following registry value:
+
+Note: The Key Name "cCloud" is not created by default in the Adobe Reader DC install and must be created.
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cCloud
+
+Value Name: bAdobeSendPluginToggle
+Type: REG_DWORD
+Value: 1
+
+Configure the policy value for Computer Configuration &gt; Administrative Templates &gt; Adobe Reader DC Continuous &gt; Preferences &gt; 'Send and Track plugin' to 'Disabled'.</xccdf:fixtext>
+          <xccdf:fix id="F-14410r766573_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:19" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213178">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213178r395853_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000060</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable all service access to Document Cloud Services.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;By default, Adobe online services are tightly integrated in Adobe Reader DC. With the integration of Adobe Document Cloud, disabling this feature prevents the risk of additional attack vectors.
+
+Within Adobe Reader DC, the Adobe Cloud resources require a paid subscription for each service.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79429</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64939</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14411r276753_fix">Configure the following registry value:
+
+Note: The Key Name "cServices" is not created by default in the Adobe Reader DC install and must be created.
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices
+
+Value Name: bToggleAdobeDocumentServices
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14411r276753_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:20" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213179">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213179r395853_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000065</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable Cloud Synchronization.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;By default, Adobe online services are tightly integrated in Adobe Reader DC. When the Adobe Cloud synchronization is disabled it prevents the synchronization of desktop preferences across devices on which the user is signed in with an Adobe ID (including phones).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79431</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64941</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14412r276756_fix">Configure the following registry value:
+
+Note: The Key Name "cServices" is not created by default in the Adobe Reader DC install and must be created.
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices
+
+Value Name: bTogglePrefsSync
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14412r276756_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:21" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213180">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213180r395853_rule" weight="10.0" severity="low">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000070</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable the Adobe Repair Installation.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;When Repair Installation is disabled the user does not have the option (Help Menu) or functional to repair an Adobe Reader DC install.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79433</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64943</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14413r276759_fix">"Configure the following registry value:
+
+For 32 bit:
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Adobe\Acrobat Reader\DC\Installer 
+
+For 64 bit:
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \SOFTWARE\Wow6432Node\Adobe\Acrobat Reader\DC\Installer
+
+Value Name: DisableMaintenance
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14413r276759_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:22" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213181">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213181r395853_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000075</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable 3rd Party Web Connectors.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;When 3rd Party Web Connectors are disabled it prevents the configuration of Adobe Reader DC access to third party services for file storage.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79435</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64945</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14414r276762_fix">Configure the following registry value:
+
+Note: The Key Name "cServices" is not created by default in the Adobe Reader DC install and must be created.
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices
+
+Value Name: bToggleWebConnectors
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14414r276762_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:23" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213182">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213182r395853_rule" weight="10.0" severity="low">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000080</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable Acrobat Upsell.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Products that don't provide the full set of features by default provide the user the opportunity to upgrade. Acrobat Upsell displays message which encourage the user to upgrade the product. For example, Reader users can purchase additional tools and features, and Acrobat Reader users can upgrade to Acrobat Professional.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-80539</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-66049</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14415r276765_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown
+
+Value Name: bAcroSuppressUpsell
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14415r276765_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:37" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213183">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213183r395853_rule" weight="10.0" severity="low">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000085</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable Adobe Send for Signature.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;The Adobe Document Cloud sign service allows users to send documents online for signature and sign from anywhere or any device. The signed documents are stored in the Adobe Cloud. The Adobe Document Cloud sign service is a paid subscription.
+
+When Adobe Send for Signature is disabled users will not be allowed to utilize the Adobe Document Cloud sign function.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79437</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64947</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14416r276768_fix">Configure the following registry value:
+
+Note: The Key Name "cServices" is not created by default in the Adobe Reader DC install and must be created.
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices
+
+Value Name: bToggleAdobeSign
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14416r276768_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:24" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213184">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213184r395853_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000090</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable access to Webmail.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;When Webmail is disabled the user cannot configure a webmail account to send an open PDF document as an attachment. Users should have the ability to send documents as Microsoft Outlook attachments. The difference is that Outlook must be configured by the administrator on the local machine.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79439</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64949</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14417r276771_fix">Configure the following registry value:
+
+Note: The Key Name "cWebmailProfiles" is not created by default in the Adobe Reader DC install and must be created.
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cWebmailProfiles
+
+Value Name: bDisableWebmail
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14417r276771_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:25" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213185">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213185r395853_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000100</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable Online SharePoint Access.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Disabling SharePoint disables or removes the user’s ability to add a SharePoint account access controls the application's ability to detect that a file came from a SharePoint server, and disables the check-out prompt.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79441</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64951</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14418r276774_fix">Configure the following registry value:
+
+Note: The Key Name "cSharePoint" is not created by default in the Adobe Reader DC install and must be created.
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cSharePoint
+
+Value Name: bDisableSharePointFeatures
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14418r276774_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:26" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213186">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213186r395853_rule" weight="10.0" severity="low">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000115</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable the Adobe Welcome Screen.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;The Adobe Reader DC Welcome screen can be distracting and also has online links to the Adobe quick tips website, tutorials, blogs and community forums.
+
+When the Adobe Reader DC Welcome screen is disabled the Welcome screen will not be populated on application startup.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79443</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64953</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14419r276777_fix">Configure the following registry value:
+
+Note: The Key Name "cWelcomeScreen" is not created by default in the Adobe Reader DC install and must be created.
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cWelcomeScreen
+
+Value Name: bShowWelcomeScreen
+Type: REG_DWORD
+Value: 0</xccdf:fixtext>
+          <xccdf:fix id="F-14419r276777_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:27" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213187">
+        <xccdf:title>SRG-APP-000141</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213187r395853_rule" weight="10.0" severity="low">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000120</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable Service Upgrades.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;By default, Adobe online services are tightly integrated into Adobe Reader DC. Disabling Service Upgrades disables both updates to the product's web-plugin components as well as all services without exception, including any online sign-in screen.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-79445</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-64955</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000381</xccdf:ident>
+          <xccdf:fixtext fixref="F-14420r276780_fix">Configure the following registry value:
+
+Note: The Key Name "cServices" is not created by default in the Adobe Reader DC install and must be created.
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices
+
+Value Name: bUpdater
+Type: REG_DWORD
+Value: 0</xccdf:fixtext>
+          <xccdf:fix id="F-14420r276780_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:28" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213188">
+        <xccdf:title>SRG-APP-000380</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213188r400006_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000315</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable the ability to add Trusted Files and Folders.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Privileged Locations allow the user to selectively trust files, folders, and hosts to bypass some security restrictions, such as enhanced security and protected view. By default, the user can create privileged locations through the GUI.
+
+Disabling Trusted Files and Folders disables and locks the end user's ability to add folders and files as a privileged location prevents them from assigning trust and thereby exempting that location from enhanced security restrictions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-80157</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-65667</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001813</xccdf:ident>
+          <xccdf:fixtext fixref="F-14421r276783_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown
+
+Value Name: bDisableTrustedFolders
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14421r276783_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:30" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-213189">
+        <xccdf:title>SRG-APP-000380</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-213189r400006_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">ARDC-CN-000320</xccdf:version>
+          <xccdf:title>Adobe Reader DC must disable the ability to elevate IE Trusts to Privileged Locations.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Privileged Locations allow the user to selectively trust files, folders, and hosts to bypass some security restrictions, such as enhanced security and protected view. By default, the user can create privileged locations through the GUI.
+
+Disabling IE Trusts to Privileged Locations disables and locks the end user's ability to treat IE trusted sites as a privileged location prevents them from assigning trust and thereby exempting that location from enhanced security restrictions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Adobe Acrobat Reader DC Continuous Track</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Adobe Acrobat Reader DC Continuous Track</dc:subject>
+            <dc:identifier>3975</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-80159</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-65669</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001813</xccdf:ident>
+          <xccdf:fixtext fixref="F-14422r276786_fix">Configure the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown
+
+Value Name: bDisableTrustedSites
+Type: REG_DWORD
+Value: 1</xccdf:fixtext>
+          <xccdf:fix id="F-14422r276786_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.adobe.reader:def:31" href="U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+    </xccdf:Benchmark>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-oval.xml" timestamp="2022-09-28T14:45:09">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+      <generator>
+        <oval:product_name>repotool</oval:product_name>
+        <oval:schema_version>5.10</oval:schema_version>
+        <oval:timestamp>2022-09-28T14:45:09</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:10" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must enable Enhanced Security in a Standalone Application.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must enable Enhanced Security in a Standalone Application.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:1000" comment="bEnhancedSecurityStandalone == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:11" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must enable Enhanced Security in a Browser.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must enable Enhanced Security in a Browser.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:1100" comment="bEnhancedSecurityInBrowser == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:12" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must enable Protected Mode.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must enable Protected Mode.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:1200" comment="bProtectedMode == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:13" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must enable Protected View.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must enable Protected View.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:1300" comment="iProtectedView == 2" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:14" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must Block Websites.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must Block Websites.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:1400" comment="iURLPerms == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:15" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must block access to Unknown Websites.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must block access to Unknown Websites.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:1500" comment="iUnknownURLPerms == 3" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:16" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must prevent opening files other than PDF or FDF.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must prevent opening files other than PDF or FDF.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:1600" comment="iFileAttachmentPerms == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:17" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must block Flash Content.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must block Flash Content.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:1700" comment="bEnableFlash == 0" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:18" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable the ability to change the Default Handler.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable the ability to change the Default Handler.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:1800" comment="bDisablePDFHandlerSwitching == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:19" version="3" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable the Adobe Send and Track plugin for Outlook.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable the Adobe Send and Track plugin for Outlook.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:1900" comment="bAdobeSendPluginToggle == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:20" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable all service access to Document Cloud Services.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable all service access to Document Cloud Services.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2000" comment="bToggleAdobeDocumentServices == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:21" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable Cloud Synchronization.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable Cloud Synchronization.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2100" comment="bTogglePrefsSync == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:22" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable the Adobe Repair Installation.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable the Adobe Repair Installation.</description>
+          </metadata>
+          <criteria operator="OR">
+            <criteria operator="AND">
+              <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2202" comment="Adobe Acrobat DC ENU_GUID key, 32-bit exists" />
+              <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2200" comment="DisableMaintenance == 1, 32-bit" />
+            </criteria>
+            <criteria operator="AND">
+              <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2203" comment="Adobe Acrobat DC ENU_GUID key, 64-bit exists" />
+              <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2201" comment="DisableMaintenance == 1, 64-bit" />
+            </criteria>
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:23" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable 3rd Party Web Connectors.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable 3rd Party Web Connectors.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2300" comment="bToggleWebConnectors == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:24" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable Adobe Send for Signature.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable Adobe Send for Signature.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2400" comment="bToggleAdobeSign == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:25" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable access to Webmail.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable access to Webmail.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2500" comment="bDisableWebmail == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:26" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable Online SharePoint Access.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable Online SharePoint Access.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2600" comment="bDisableSharePointFeatures == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:27" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable the Adobe Welcome Screen.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable the Adobe Welcome Screen.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2700" comment="bShowWelcomeScreen == 0" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:28" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable Service Upgrades.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable Service Upgrades.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:2800" comment="bUpdater == 0" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:30" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable the ability to add Trusted Files and Folders.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable the ability to add Trusted Files and Folders.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:3000" comment="bDisableTrustedFolders == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:31" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable the ability to elevate IE Trusts to Privileged Locations.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable the ability to elevate IE Trusts to Privileged Locations.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:3100" comment="bDisableTrustedSites == 1" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.adobe.reader:def:37" version="2" class="compliance">
+          <metadata>
+            <title>Adobe Reader DC must disable Acrobat Upsell.</title>
+            <affected family="windows">
+              <platform>Microsoft Windows Server 2008 R2</platform>
+              <platform>Microsoft Windows Server 2012</platform>
+              <platform>Microsoft Windows Server 2012 R2</platform>
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows 8.1</platform>
+              <platform>Microsoft Windows 10</platform>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <description>Adobe Reader DC must disable Acrobat Upsell.</description>
+          </metadata>
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:3700" comment="bAcroSuppressUpsell == 1" />
+          </criteria>
+        </definition>
+      </definitions>
+      <tests>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:1000" version="1" comment="bEnhancedSecurityStandalone == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:1000" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:1000" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:1100" version="1" comment="bEnhancedSecurityInBrowser == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:1100" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:1100" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:1200" version="1" comment="bProtectedMode == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:1200" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:1200" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:1300" version="1" comment="iProtectedView == 2" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:1300" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:1300" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:1400" version="1" comment="iURLPerms == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:1400" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:1400" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:1500" version="1" comment="iUnknownURLPerms == 3" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:1500" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:1500" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:1600" version="1" comment="iFileAttachmentPerms == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:1600" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:1600" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:1700" version="1" comment="bEnableFlash == 0" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:1700" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:1700" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:1800" version="1" comment="bDisablePDFHandlerSwitching == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:1800" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:1800" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:1900" version="2" comment="bAdobeSendPluginToggle == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:1900" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:1900" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2000" version="1" comment="bToggleAdobeDocumentServices == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:2000" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:2000" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2100" version="1" comment="bTogglePrefsSync == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:2100" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:2100" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2200" version="1" comment="DisableMaintenance == 1, 32-bit" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:2200" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:2200" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2201" version="1" comment="DisableMaintenance == 1, 64-bit" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:2201" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:2200" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2202" version="1" comment="Adobe Acrobat DC ENU_GUID key, 32-bit exists" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:101" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2203" version="1" comment="Adobe Acrobat DC ENU_GUID key, 64-bit exists" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:102" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2300" version="1" comment="bToggleWebConnectors == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:2300" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:2300" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2400" version="1" comment="bToggleAdobeSign == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:2400" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:2400" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2500" version="1" comment="bDisableWebmail == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:2500" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:2500" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2600" version="1" comment="bDisableSharePointFeatures == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:2600" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:2600" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2700" version="1" comment="bShowWelcomeScreen == 0" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:2700" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:2700" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:2800" version="1" comment="bUpdater == 0" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:2800" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:2800" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:3000" version="1" comment="bDisableTrustedFolders == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:3000" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:3000" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:3100" version="1" comment="bDisableTrustedSites == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:3100" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:3100" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:3700" version="1" comment="bAcroSuppressUpsell == 1" check_existence="at_least_one_exists" check="all">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:3700" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:3700" />
+        </registry_test>
+      </tests>
+      <objects>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC ENU_GUID key, 32-bit system" id="oval:mil.disa.stig.adobe.reader:obj:101" version="2">
+          <hive>HKEY_LOCAL_MACHINE</hive>
+          <key>SOFTWARE\Adobe\Acrobat Reader\DC\Installer</key>
+          <name>ENU_GUID</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC ENU_GUID key, 64-bit system" id="oval:mil.disa.stig.adobe.reader:obj:102" version="2">
+          <hive>HKEY_LOCAL_MACHINE</hive>
+          <key>SOFTWARE\WOW6432Node\Adobe\Acrobat Reader\DC\Installer</key>
+          <name>ENU_GUID</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:1000" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</key>
+          <name datatype="string">bEnhancedSecurityStandalone</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:1100" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</key>
+          <name datatype="string">bEnhancedSecurityInBrowser</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:1200" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</key>
+          <name datatype="string">bProtectedMode</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:1300" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</key>
+          <name datatype="string">iProtectedView</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:1400" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cDefaultLaunchURLPerms</key>
+          <name datatype="string">iURLPerms</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:1500" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cDefaultLaunchURLPerms</key>
+          <name datatype="string">iUnknownURLPerms</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:1600" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</key>
+          <name datatype="string">iFileAttachmentPerms</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:1700" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</key>
+          <name datatype="string">bEnableFlash</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:1800" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</key>
+          <name datatype="string">bDisablePDFHandlerSwitching</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:1900" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cCloud</key>
+          <name datatype="string">bAdobeSendPluginToggle</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:2000" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices</key>
+          <name datatype="string">bToggleAdobeDocumentServices</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:2100" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices</key>
+          <name datatype="string">bTogglePrefsSync</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:2200" version="1" comment="DisableMaintenance, 32-bit">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Adobe\Acrobat Reader\DC\Installer</key>
+          <name datatype="string">DisableMaintenance</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:2201" version="1" comment="DisableMaintenance, 64-bit">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">SOFTWARE\Wow6432Node\Adobe\Acrobat Reader\DC\Installer</key>
+          <name datatype="string">DisableMaintenance</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:2300" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices</key>
+          <name datatype="string">bToggleWebConnectors</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:2400" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices</key>
+          <name datatype="string">bToggleAdobeSign</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:2500" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cWebmailProfiles</key>
+          <name datatype="string">bDisableWebmail</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:2600" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cSharePoint</key>
+          <name datatype="string">bDisableSharePointFeatures</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:2700" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cWelcomeScreen</key>
+          <name datatype="string">bShowWelcomeScreen</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:2800" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices</key>
+          <name datatype="string">bUpdater</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:3000" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</key>
+          <name datatype="string">bDisableTrustedFolders</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:3100" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</key>
+          <name datatype="string">bDisableTrustedSites</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:3700" version="1">
+          <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+          <key datatype="string">Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</key>
+          <name datatype="string">bAcroSuppressUpsell</name>
+        </registry_object>
+      </objects>
+      <states>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:1000" version="1" comment="bEnhancedSecurityStandalone == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:1100" version="1" comment="bEnhancedSecurityInBrowser == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:1200" version="1" comment="bProtectedMode == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:1300" version="1" comment="iProtectedView == 2 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">2</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:1400" version="1" comment="iURLPerms == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:1500" version="1" comment="iUnknownURLPerms == 3 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">3</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:1600" version="1" comment="iFileAttachmentPerms == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:1700" version="1" comment="bEnableFlash == 0 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">0</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:1800" version="1" comment="bDisablePDFHandlerSwitching == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:1900" version="2" comment="bAdobeSendPluginToggle == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:2000" version="1" comment="bToggleAdobeDocumentServices == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:2100" version="1" comment="bTogglePrefsSync == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:2200" version="1" comment="DisableMaintenance == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:2300" version="1" comment="bToggleWebConnectors == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:2400" version="1" comment="bToggleAdobeSign == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:2500" version="1" comment="bDisableWebmail == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:2600" version="1" comment="bDisableSharePointFeatures == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:2700" version="1" comment="bShowWelcomeScreen == 0 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">0</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:2800" version="1" comment="bUpdater == 0 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">0</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:3000" version="1" comment="bDisableTrustedFolders == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:3100" version="1" comment="bDisableTrustedSites == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:3700" version="1" comment="bAcroSuppressUpsell == 1 (reg_dword)">
+          <type>reg_dword</type>
+          <value datatype="int">1</value>
+        </registry_state>
+      </states>
+    </oval_definitions>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_Adobe_Acrobat_Reader_DC_Continuous_V2R2_STIG_SCAP_1-2_Benchmark-cpe-oval.xml" timestamp="2022-09-28T14:45:09">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+      <generator>
+        <oval:product_name>repotool</oval:product_name>
+        <oval:schema_version>5.10</oval:schema_version>
+        <oval:timestamp>2022-09-28T14:45:09</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition class="inventory" id="oval:mil.disa.stig.adobe.reader:def:1" version="6">
+          <metadata>
+            <title>Adobe Acrobat Reader DC Continuous Track</title>
+            <affected family="windows">
+              <product>Adobe Acrobat Reader DC Continuous Track</product>
+              <product>Adobe Acrobat Reader DC</product>
+            </affected>
+            <reference ref_id="cpe:/a:adobe:acrobat_reader_dc:::~~continuous~windows~~" source="CPE" />
+            <description>Adobe Acrobat Reader DC Continuous Track is installed</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Adobe Acrobat DC Continuous Track is installed" test_ref="oval:mil.disa.stig.adobe.reader:tst:100" />
+            <criterion comment="Adobe Acrobat DC ENU_GUID key exists" test_ref="oval:mil.disa.stig.adobe.reader:tst:101" />
+          </criteria>
+        </definition>
+      </definitions>
+      <tests>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="Adobe Acrobat DC Continuous Track is installed" id="oval:mil.disa.stig.adobe.reader:tst:100" version="1">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:103" />
+          <state state_ref="oval:mil.disa.stig.adobe.reader:ste:100" />
+        </registry_test>
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="Adobe Acrobat DC ENU_GUID key exists" id="oval:mil.disa.stig.adobe.reader:tst:101" version="2">
+          <object object_ref="oval:mil.disa.stig.adobe.reader:obj:100" />
+        </registry_test>
+      </tests>
+      <objects>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC ENU_GUID key, 32 and 64-bit systems" id="oval:mil.disa.stig.adobe.reader:obj:100" version="2">
+          <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+            <object_reference>oval:mil.disa.stig.adobe.reader:obj:106</object_reference>
+            <object_reference>oval:mil.disa.stig.adobe.reader:obj:107</object_reference>
+          </set>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC ENU_GUID key, 32-bit system" id="oval:mil.disa.stig.adobe.reader:obj:101" version="2">
+          <hive>HKEY_LOCAL_MACHINE</hive>
+          <key>SOFTWARE\Adobe\Acrobat Reader\DC\Installer</key>
+          <name>ENU_GUID</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC ENU_GUID key, 64-bit system" id="oval:mil.disa.stig.adobe.reader:obj:102" version="2">
+          <hive>HKEY_LOCAL_MACHINE</hive>
+          <key>SOFTWARE\WOW6432Node\Adobe\Acrobat Reader\DC\Installer</key>
+          <name>ENU_GUID</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Version of Adobe Acrobat DC installed, 32 and 64-bit systems" id="oval:mil.disa.stig.adobe.reader:obj:103" version="1">
+          <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+            <object_reference>oval:mil.disa.stig.adobe.reader:obj:104</object_reference>
+            <object_reference>oval:mil.disa.stig.adobe.reader:obj:105</object_reference>
+          </set>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Version of Adobe Acrobat DC installed, 32-bit system" id="oval:mil.disa.stig.adobe.reader:obj:104" version="1">
+          <hive>HKEY_LOCAL_MACHINE</hive>
+          <key var_check="all" var_ref="oval:mil.disa.stig.adobe.reader:var:100" />
+          <name>DisplayVersion</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Version of Adobe Acrobat DC installed, 64-bit system" id="oval:mil.disa.stig.adobe.reader:obj:105" version="1">
+          <hive>HKEY_LOCAL_MACHINE</hive>
+          <key var_check="all" var_ref="oval:mil.disa.stig.adobe.reader:var:101" />
+          <name>DisplayVersion</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC ENU_GUID key, 32 and 64-bit systems" id="oval:mil.disa.stig.adobe.reader:obj:106" version="1">
+          <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+            <object_reference>oval:mil.disa.stig.adobe.reader:obj:101</object_reference>
+            <object_reference>oval:mil.disa.stig.adobe.reader:obj:102</object_reference>
+          </set>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC ENU_GUID key, 32 and 64-bit systems" id="oval:mil.disa.stig.adobe.reader:obj:107" version="1">
+          <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+            <object_reference>oval:mil.disa.stig.adobe.reader:obj:108</object_reference>
+            <object_reference>oval:mil.disa.stig.adobe.reader:obj:109</object_reference>
+          </set>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC ENU_GUID key, 32-bit system" id="oval:mil.disa.stig.adobe.reader:obj:108" version="1">
+          <hive>HKEY_LOCAL_MACHINE</hive>
+          <key>SOFTWARE\Adobe\Adobe Acrobat\DC\Installer</key>
+          <name>ENU_GUID</name>
+        </registry_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC ENU_GUID key, 64-bit system" id="oval:mil.disa.stig.adobe.reader:obj:109" version="1">
+          <hive>HKEY_LOCAL_MACHINE</hive>
+          <key>SOFTWARE\WOW6432Node\Adobe\Adobe Acrobat\DC\Installer</key>
+          <name>ENU_GUID</name>
+        </registry_object>
+      </objects>
+      <states>
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Version track ID is 20" id="oval:mil.disa.stig.adobe.reader:ste:100" version="1">
+          <value operation="pattern match">^\d+\.\d+\.20</value>
+        </registry_state>
+      </states>
+      <variables>
+        <local_variable comment="Adobe Acrobat DC Key, 32-bit systems" datatype="string" id="oval:mil.disa.stig.adobe.reader:var:100" version="1">
+          <concat>
+            <literal_component>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\</literal_component>
+            <object_component item_field="value" object_ref="oval:mil.disa.stig.adobe.reader:obj:100" />
+          </concat>
+        </local_variable>
+        <local_variable comment="Adobe Acrobat DC Key, 64-bit systems" datatype="string" id="oval:mil.disa.stig.adobe.reader:var:101" version="1">
+          <concat>
+            <literal_component>SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\</literal_component>
+            <object_component item_field="value" object_ref="oval:mil.disa.stig.adobe.reader:obj:100" />
+          </concat>
+        </local_variable>
+      </variables>
+    </oval_definitions>
+  </component>
+</data-stream-collection>

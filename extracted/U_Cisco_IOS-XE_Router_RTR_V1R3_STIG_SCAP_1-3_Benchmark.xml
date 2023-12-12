@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_mil.disa.stig_collection_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark" schematron-version="1.3" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://oval.mitre.org/XMLSchema/oval-common-5 https://github.com/OVALProject/Language/tree/5.11.2/schemas/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://github.com/OVALProject/Language/tree/5.11.2/schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe https://github.com/OVALProject/Language/tree/5.11.2/schemas/iosxe-definitions-schema.xsd http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.3/scap-source-data-stream_1.3.xsd">
+  <data-stream id="scap_mil.disa.stig_datastream_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark" use-case="CONFIGURATION" scap-version="1.3" timestamp="2023-03-28T17:40:32">
+    <dictionaries>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-cpe-dictionary.xml" xlink:href="#scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-cpe-dictionary.xml">
+        <cat:catalog xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+          <cat:uri name="U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-cpe-oval.xml" uri="#scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-cpe-oval.xml" />
+        </cat:catalog>
+      </component-ref>
+    </dictionaries>
+    <checklists>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-xccdf.xml" xlink:href="#scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-xccdf.xml">
+        <cat:catalog xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+          <cat:uri name="U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" uri="#scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" />
+        </cat:catalog>
+      </component-ref>
+    </checklists>
+    <checks>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" xlink:href="#scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" />
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-cpe-oval.xml" xlink:href="#scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-cpe-oval.xml" />
+    </checks>
+  </data-stream>
+  <component id="scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-cpe-dictionary.xml" timestamp="2023-03-28T17:40:32">
+    <cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0">
+      <cpe-item name="cpe:/o:cisco:ios_xe:-">
+        <title>Cisco IOS-XE</title>
+        <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-cpe-oval.xml">oval:mil.disa.stig.cisco.iosxe:def:1</check>
+      </cpe-item>
+    </cpe-list>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-xccdf.xml" timestamp="2023-03-28T17:40:32">
+    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="xccdf_mil.disa.stig_benchmark_Cisco_IOS-XE_Router_RTR_STIG" xml:lang="en" style="SCAP_1.3">
+      <xccdf:status date="2023-02-28">accepted</xccdf:status>
+      <xccdf:title>Cisco IOS XE Router RTR STIG SCAP Benchmark</xccdf:title>
+      <xccdf:description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</xccdf:description>
+      <xccdf:notice id="terms-of-use" xml:lang="en" />
+      <xccdf:front-matter xml:lang="en" />
+      <xccdf:rear-matter xml:lang="en" />
+      <xccdf:reference href="https://cyber.mil">
+        <dc:publisher>DISA</dc:publisher>
+        <dc:source>STIG.DOD.MIL</dc:source>
+      </xccdf:reference>
+      <xccdf:plain-text id="release-info">Release: 1.3 Benchmark Date: 27 Apr 2023</xccdf:plain-text>
+      <xccdf:plain-text id="generator">3.4.0.34222</xccdf:plain-text>
+      <xccdf:plain-text id="conventionsVersion">1.10.0</xccdf:plain-text>
+      <xccdf:platform idref="cpe:/o:cisco:ios_xe:-" />
+      <xccdf:version update="http://iase.disa.mil/stigs">001.003</xccdf:version>
+      <xccdf:metadata>
+        <dc:creator>DISA</dc:creator>
+        <dc:publisher>DISA</dc:publisher>
+        <dc:contributor>DISA</dc:contributor>
+        <dc:source>STIG.DOD.MIL</dc:source>
+      </xccdf:metadata>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Classified">
+        <xccdf:title>I - Mission Critical Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216700" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216727" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216733" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-217001" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230039" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230042" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Public">
+        <xccdf:title>I - Mission Critical Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216700" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216727" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216733" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-217001" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230039" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230042" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Sensitive">
+        <xccdf:title>I - Mission Critical Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216700" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216727" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216733" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-217001" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230039" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230042" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Classified">
+        <xccdf:title>II - Mission Support Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216700" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216727" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216733" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-217001" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230039" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230042" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Public">
+        <xccdf:title>II - Mission Support Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216700" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216727" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216733" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-217001" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230039" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230042" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Sensitive">
+        <xccdf:title>II - Mission Support Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216700" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216727" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216733" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-217001" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230039" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230042" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Classified">
+        <xccdf:title>III - Administrative Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216700" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216727" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216733" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-217001" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230039" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230042" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Public">
+        <xccdf:title>III - Administrative Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216700" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216727" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216733" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-217001" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230039" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230042" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Sensitive">
+        <xccdf:title>III - Administrative Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216700" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216727" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-216733" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-217001" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230039" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-230042" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_CAT_I_Only">
+        <xccdf:title>CAT I Only</xccdf:title>
+        <xccdf:description>This profile only includes rules that are Severity Category I.</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-216700r531086_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-216727r855833_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-216733r531086_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-217001r855844_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-230039r647454_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-230042r647455_rule" selected="false" />
+      </xccdf:Profile>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-216700">
+        <xccdf:title>SRG-NET-000512-RTR-000004</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-216700r531086_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-RT-000620</xccdf:version>
+          <xccdf:title>The Cisco MPLS router must be configured to have TTL Propagation disabled.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;The head end of the label-switched path (LSP), the label edge router (LER) will decrement the IP packet's time-to-live (TTL) value by one and then copy the value to the MPLS TTL field. At each label-switched router (LSR) hop, the MPLS TTL value is decremented by one. The MPLS router that pops the label (either the penultimate LSR or the egress LER) will copy the packet's MPLS TTL value to the IP TTL field and decrement it by one.
+
+This TTL propagation is the default behavior. Because the MPLS TTL is propagated from the IP TTL, a traceroute will list every hop in the path, be it routed or label switched, thereby exposing core nodes. With TTL propagation disabled, LER decrements the IP packet's TTL value by one and then places a value of 255 in the packet's MPLS TTL field, which is then decremented by one as the packet passes through each LSR in the MPLS core. Because the MPLS TTL never drops to zero, none of the LSP hops triggers an ICMP TTL exceeded message, and consequently, these hops are not recorded in a traceroute. Hence, nodes within the MPLS core cannot be discovered by an attacker.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router RTR</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router RTR</dc:subject>
+            <dc:identifier>4028</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-106111</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96973</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000366</xccdf:ident>
+          <xccdf:fixtext fixref="F-17931r288046_fix">Configure the MPLS router to disable TTL propagation as shown in the example below:
+
+R5(config)#no mpls ip propagate-ttl</xccdf:fixtext>
+          <xccdf:fix id="F-17931r288046_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:160" href="U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-216727">
+        <xccdf:title>SRG-NET-000362-RTR-000123</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-216727r855833_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-RT-000890</xccdf:version>
+          <xccdf:title>The Cisco multicast Designated Router (DR) must be configured to set the shortest-path tree (SPT) threshold to infinity to minimalize source-group (S, G) state within the multicast topology where Any Source Multicast (ASM) is deployed.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;ASM can have many sources for the same groups (many-to-many). For many receivers, the path via the RP may not be ideal compared with the shortest path from the source to the receiver. By default, the last-hop router will initiate a switch from the shared tree to a source-specific SPT to obtain lower latencies. This is accomplished by the last-hop router sending an (S, G) Protocol Independent Multicast (PIM) Join toward S (the source).
+
+When the last-hop router begins to receive traffic for the group from the source via the SPT, it will send a PIM Prune message to the RP for the (S, G). The RP will then send a Prune message toward the source. The SPT switchover becomes a scaling issue for large multicast topologies that have many receivers and many sources for many groups because (S, G) entries require more memory than (*, G). Hence, it is imperative to minimize the amount of (S, G) state to be maintained by increasing the threshold that determines when the SPT switchover occurs.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router RTR</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router RTR</dc:subject>
+            <dc:identifier>4028</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-106165</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-97027</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-002385</xccdf:ident>
+          <xccdf:fixtext fixref="F-17958r288124_fix">Configure the DR to increase the SPT threshold or set it to infinity to minimalize (S, G) state within the multicast topology where ASM is deployed.
+
+R3(config)#ip pim spt-threshold infinity</xccdf:fixtext>
+          <xccdf:fix id="F-17958r288124_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:169" href="U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-216733">
+        <xccdf:title>SRG-NET-000512-RTR-000011</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-216733r531086_rule" weight="10.0" severity="low">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-RT-000950</xccdf:version>
+          <xccdf:title>The Cisco Multicast Source Discovery Protocol (MSDP) router must be configured to use a loopback address as the source address when originating MSDP traffic.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Using a loopback address as the source address offers a multitude of uses for security, access, management, and scalability of MSDP routers. It is easier to construct appropriate ingress filters for router management plane traffic destined to the network management subnet since the source addresses will be from the range used for loopback interfaces instead of a larger range of addresses used for physical interfaces. Log information recorded by authentication and syslog servers will record the router’s loopback address instead of the numerous physical interface addresses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router RTR</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router RTR</dc:subject>
+            <dc:identifier>4028</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-106177</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-97039</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000366</xccdf:ident>
+          <xccdf:fixtext fixref="F-17964r288142_fix">Configure the router to use its loopback address is used as the source address when sending MSDP packets.
+
+R2(config)#ip msdp peer x.44.2.34 connect-source lo12 remote-as nn</xccdf:fixtext>
+          <xccdf:fix id="F-17964r288142_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:173" href="U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-217001">
+        <xccdf:title>SRG-NET-000205-RTR-000016</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-217001r855844_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-RT-000750</xccdf:version>
+          <xccdf:title>The Cisco PE router must be configured to ignore or drop all packets with any IP options.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Packets with IP options are not fast-switched and therefore must be punted to the router processor. Hackers who initiate denial of service (DoS) attacks on routers commonly send large streams of packets with IP options. Dropping the packets with IP options reduces the load of IP options packets on the router. The end result is a reduction in the effects of the DoS attack on the router and on downstream routers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router RTR</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router RTR</dc:subject>
+            <dc:identifier>4028</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-106137</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96999</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-002403</xccdf:ident>
+          <xccdf:fixtext fixref="F-18229r288166_fix">Configure the router to ignore or drop all packets with IP options as shown in the examples below:
+
+R4(config)#ip options ignore 
+
+or
+
+R4(config)#ip options drop</xccdf:fixtext>
+          <xccdf:fix id="F-18229r288166_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:178" href="U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-230039">
+        <xccdf:title>SRG-NET-000512-RTR-000012</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-230039r647454_rule" weight="10.0" severity="low">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-RT-000236</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to advertise a hop limit of at least 32 in Router Advertisement messages for IPv6 stateless auto-configuration deployments.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;The Neighbor Discovery protocol allows a hop limit value to be advertised by routers in a Router Advertisement message being used by hosts instead of the standardized default value. If a very small value was configured and advertised to hosts on the LAN segment, communications would fail due to the hop limit reaching zero before the packets sent by a host reached its destination.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router RTR</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router RTR</dc:subject>
+            <dc:identifier>4028</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000366</xccdf:ident>
+          <xccdf:fixtext fixref="F-32329r647424_fix">Configure the router to advertise a hop limit of at least 32 in Router Advertisement messages.
+
+R1(config)#ipv6 hop-limit 128</xccdf:fixtext>
+          <xccdf:fix id="F-32329r647424_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:180" href="U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-230042">
+        <xccdf:title>SRG-NET-000512-RTR-000013</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-230042r647455_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-RT-000237</xccdf:version>
+          <xccdf:title>The Cisco router must not be configured to use IPv6 Site Local Unicast addresses.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;As currently defined, site local addresses are ambiguous and can be present in multiple sites. The address itself does not contain any indication of the site to which it belongs. The use of site-local addresses has the potential to adversely affect network security through leaks, ambiguity, and potential misrouting as documented in section 2 of RFC3879. RFC3879 formally deprecates the IPv6 site-local unicast prefix FEC0::/10 as defined in RFC3513.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router RTR</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router RTR</dc:subject>
+            <dc:identifier>4028</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000366</xccdf:ident>
+          <xccdf:fixtext fixref="F-32330r569546_fix">Configure the router using only authorized IPv6 addresses.</xccdf:fixtext>
+          <xccdf:fix id="F-32330r569546_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:181" href="U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+    </xccdf:Benchmark>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-oval.xml" timestamp="2023-03-28T17:40:32">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+      <generator>
+        <oval:product_name>repotool</oval:product_name>
+        <oval:schema_version>5.11.2</oval:schema_version>
+        <oval:timestamp>2023-03-28T17:40:32</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition class="compliance" id="oval:mil.disa.stig.cisco.iosxe:def:160" version="1">
+          <metadata>
+            <title>CISC-RT-000620 - The Cisco MPLS router must be configured to have TTL Propagation disabled.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>The head end of the label-switched path (LSP), the label edge router (LER) will decrement the IP packet's time-to-live (TTL) value by one and then copy the value to the MPLS TTL field. At each label-switched router (LSR) hop, the MPLS TTL value is decremented by one. The MPLS router that pops the label (either the penultimate LSR or the egress LER) will copy the packet's MPLS TTL value to the IP TTL field and decrement it by one.
+
+This TTL propagation is the default behavior. Because the MPLS TTL is propagated from the IP TTL, a traceroute will list every hop in the path, be it routed or label switched, thereby exposing core nodes. With TTL propagation disabled, LER decrements the IP packet's TTL value by one and then places a value of 255 in the packet's MPLS TTL field, which is then decremented by one as the packet passes through each LSR in the MPLS core. Because the MPLS TTL never drops to zero, none of the LSP hops triggers an ICMP TTL exceeded message, and consequently, these hops are not recorded in a traceroute. Hence, nodes within the MPLS core cannot be discovered by an attacker.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="no mpls ip propagate-ttl" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:16000" />
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:mil.disa.stig.cisco.iosxe:def:169" version="1">
+          <metadata>
+            <title>CISC-RT-000890 - The Cisco multicast Designated Router (DR) must be configured to set the shortest-path tree (SPT) threshold to infinity to minimalize source-group (S, G) state within the multicast topology where Any Source Multicast (ASM) is deployed.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>ASM can have many sources for the same groups (many-to-many). For many receivers, the path via the RP may not be ideal compared with the shortest path from the source to the receiver. By default, the last-hop router will initiate a switch from the shared tree to a source-specific SPT to obtain lower latencies. This is accomplished by the last-hop router sending an (S, G) Protocol Independent Multicast (PIM) Join toward S (the source).
+
+When the last-hop router begins to receive traffic for the group from the source via the SPT, it will send a PIM Prune message to the RP for the (S, G). The RP will then send a Prune message toward the source. The SPT switchover becomes a scaling issue for large multicast topologies that have many receivers and many sources for many groups because (S, G) entries require more memory than (*, G). Hence, it is imperative to minimize the amount of (S, G) state to be maintained by increasing the threshold that determines when the SPT switchover occurs.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="ip pim spt-threshold is set to inifinity or greater than 0" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:16900" />
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:mil.disa.stig.cisco.iosxe:def:173" version="2">
+          <metadata>
+            <title>CISC-RT-000950 - The Cisco Multicast Source Discovery Protocol (MSDP) router must be configured to use a loopback address as the source address when originating MSDP traffic.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Using a loopback address as the source address offers a multitude of uses for security, access, management, and scalability of MSDP routers. It is easier to construct appropriate ingress filters for router management plane traffic destined to the network management subnet since the source addresses will be from the range used for loopback interfaces instead of a larger range of addresses used for physical interfaces. Log information recorded by authentication and syslog servers will record the router’s loopback address instead of the numerous physical interface addresses.</description>
+          </metadata>
+          <criteria operator="OR">
+            <criterion comment="The loopback interface is used as the source address for all MSDP packets generated by the router." test_ref="oval:mil.disa.stig.cisco.iosxe:tst:17300" />
+            <criterion comment="The router is not a MSDP router" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:17301" />
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:mil.disa.stig.cisco.iosxe:def:178" version="1">
+          <metadata>
+            <title>CISC-RT-000750 - The Cisco PE router must be configured to ignore or drop all packets with any IP options.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Packets with IP options are not fast-switched and therefore must be punted to the router processor. Hackers who initiate denial of service (DoS) attacks on routers commonly send large streams of packets with IP options. Dropping the packets with IP options reduces the load of IP options packets on the router. The end result is a reduction in the effects of the DoS attack on the router and on downstream routers.</description>
+          </metadata>
+          <criteria operator="OR">
+            <criterion comment="ip options drop" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:17800" />
+            <criterion comment="ip options ignore" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:17801" />
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:mil.disa.stig.cisco.iosxe:def:180" version="1">
+          <metadata>
+            <title>CISC-RT-000236 - The Cisco router must be configured to advertise a hop limit of at least 32 in Router Advertisement messages for IPv6 stateless auto-configuration deployments.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>The Neighbor Discovery protocol allows a hop limit value to be advertised by routers in a Router Advertisement message being used by hosts instead of the standardized default value. If a very small value was configured and advertised to hosts on the LAN segment, communications would fail due to the hop limit reaching zero before the packets sent by a host reached its destination.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="ipv6 hop-limit nn" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:18000" />
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:mil.disa.stig.cisco.iosxe:def:181" version="1">
+          <metadata>
+            <title>CISC-RT-000237 - The Cisco router must not be configured to use IPv6 Site Local Unicast addresses.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>As currently defined, site local addresses are ambiguous and can be present in multiple sites. The address itself does not contain any indication of the site to which it belongs. The use of site-local addresses has the potential to adversely affect network security through leaks, ambiguity, and potential misrouting as documented in section 2 of RFC3879. RFC3879 formally deprecates the IPv6 site-local unicast prefix FEC0::/10 as defined in RFC3513.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="FEC0::/10 IPv6 addresses are not defined" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:18100" negate="true" />
+          </criteria>
+        </definition>
+      </definitions>
+      <tests>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:16000" version="1" check_existence="at_least_one_exists" check="all" comment="no mpls ip propagate-ttl">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:10900" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:16000" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:16900" version="1" check_existence="at_least_one_exists" check="all" comment="ip pim spt-threshold is set to inifinity or greater than 0" state_operator="OR">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:10900" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:16900" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:16901" />
+        </line_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:17300" version="1" check_existence="at_least_one_exists" check="all" comment="the loopback interface is used as the source address for all MSDP packets generated by the router.">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:17300" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:17300" />
+        </global_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:17301" version="1" check_existence="none_exist" check="all" comment="The router does not function as a MSDP router.">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:17301" />
+        </global_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:17800" version="1" check_existence="at_least_one_exists" check="all" comment="Check for ip options drop.">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:10900" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:17800" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:17801" version="1" check_existence="at_least_one_exists" check="all" comment="Check for ip options ignore.">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:10900" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:17801" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:18000" version="1" check_existence="at_least_one_exists" check="all" comment="Check for ip options drop.">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:10900" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:18000" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:18100" version="1" check_existence="at_least_one_exists" check="all" comment="Check for ip options drop.">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:10900" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:18100" />
+        </line_test>
+      </tests>
+      <objects>
+        <line_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:10900" version="1" comment="show running-config">
+          <show_subcommand datatype="string">show running-config</show_subcommand>
+        </line_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:17300" version="1" comment="all ip msdp peer X connect-source lines">
+          <global_command datatype="string" operation="pattern match">ip msdp peer \S+ connect-source \S+\d+(?:| remote-as \d+)</global_command>
+        </global_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:17301" version="1" comment="ip msdp peer {ip address} remote-as {xx} lines">
+          <global_command datatype="string" operation="pattern match">ip msdp peer \S+ remote-as \d+</global_command>
+        </global_object>
+      </objects>
+      <states>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:16000" version="1" comment="no mpls ip propagate-ttl">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*no\s+mpls\s+ip\s+propagate\-ttl\s*[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:16900" version="1" comment="ip pim spt-threshold infinity">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip pim spt-threshold infinity[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:16901" version="1" comment="ip pim spt-threshold 1 or greater">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip pim spt-threshold [1-9]\d*[\r\n]</config_line>
+        </line_state>
+        <global_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:17300" version="1" comment="ip msdp peer x.x.x.x connect-source Loopbackn remote-as nn">
+          <global_command datatype="string" operation="pattern match">ip msdp peer \S+ connect-source Loopback\d+(?:| remote-as \d+)</global_command>
+        </global_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:17800" version="1" comment="ip options drop">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip options drop[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:17801" version="1" comment="ip options ignore">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip options ignore[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:18000" version="1" comment="ipv6 hop-limit is 32 or greater">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ipv6 hop\-limit (?:\d\d\d|3[2-9]|[4-9][0-9])[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:18100" version="1" comment="FEC0::/10 IPv6 addresses">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ipv6 address (?:[fF][eE](?:[cC][\dabcdefABCDEF]|[defDEF][\dabcdefABCDEF])\:[abcdefABCDEF\d\:]+|[fF][eE][cC]0\:\:\/10)\s*[\r\n]</config_line>
+        </line_state>
+      </states>
+    </oval_definitions>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_RTR_V1R3_STIG_SCAP_1-3_Benchmark-cpe-oval.xml" timestamp="2023-03-28T17:40:32">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+      <generator>
+        <oval:product_name>repotool</oval:product_name>
+        <oval:schema_version>5.11.2</oval:schema_version>
+        <oval:timestamp>2023-03-28T17:40:32</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition class="inventory" id="oval:mil.disa.stig.cisco.iosxe:def:1" version="1">
+          <metadata>
+            <title>The system is running Cisco IOS-XE.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <reference ref_id="cpe:/o:cisco:ios_xe" source="CPE" />
+            <description>The system is running Cisco IOS-XE.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="IOS-XE" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:100" />
+          </criteria>
+        </definition>
+      </definitions>
+      <tests>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:100" version="1" check_existence="at_least_one_exists" check="all" comment="show version shows correct version">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:100" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:100" />
+        </line_test>
+      </tests>
+      <objects>
+        <line_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:100" version="1" comment="show login">
+          <show_subcommand datatype="string">show version</show_subcommand>
+        </line_object>
+      </objects>
+      <states>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:100" version="1" comment="login block-for">
+          <config_line datatype="string" operation="pattern match">Cisco IOS[ -]XE [Ss]oftware</config_line>
+        </line_state>
+      </states>
+    </oval_definitions>
+  </component>
+</data-stream-collection>

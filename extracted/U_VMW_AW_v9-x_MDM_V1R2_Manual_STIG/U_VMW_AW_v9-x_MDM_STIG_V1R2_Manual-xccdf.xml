@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="VMW_AW_v9-x_MDM_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2020-02-24">accepted</status><title>VMware AirWatch v9.x MDM Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="https://public.cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 24 Apr 2020</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71627" selected="true" /><select idref="V-71629" selected="true" /><select idref="V-71631" selected="true" /><select idref="V-71633" selected="true" /><select idref="V-71635" selected="true" /><select idref="V-71637" selected="true" /><select idref="V-71645" selected="true" /><select idref="V-99999" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71627" selected="true" /><select idref="V-71629" selected="true" /><select idref="V-71631" selected="true" /><select idref="V-71633" selected="true" /><select idref="V-71635" selected="true" /><select idref="V-71637" selected="true" /><select idref="V-71645" selected="true" /><select idref="V-99999" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71627" selected="true" /><select idref="V-71629" selected="true" /><select idref="V-71631" selected="true" /><select idref="V-71633" selected="true" /><select idref="V-71635" selected="true" /><select idref="V-71637" selected="true" /><select idref="V-71645" selected="true" /><select idref="V-99999" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71627" selected="true" /><select idref="V-71629" selected="true" /><select idref="V-71631" selected="true" /><select idref="V-71633" selected="true" /><select idref="V-71635" selected="true" /><select idref="V-71637" selected="true" /><select idref="V-71645" selected="true" /><select idref="V-99999" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71627" selected="true" /><select idref="V-71629" selected="true" /><select idref="V-71631" selected="true" /><select idref="V-71633" selected="true" /><select idref="V-71635" selected="true" /><select idref="V-71637" selected="true" /><select idref="V-71645" selected="true" /><select idref="V-99999" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71627" selected="true" /><select idref="V-71629" selected="true" /><select idref="V-71631" selected="true" /><select idref="V-71633" selected="true" /><select idref="V-71635" selected="true" /><select idref="V-71637" selected="true" /><select idref="V-71645" selected="true" /><select idref="V-99999" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71627" selected="true" /><select idref="V-71629" selected="true" /><select idref="V-71631" selected="true" /><select idref="V-71633" selected="true" /><select idref="V-71635" selected="true" /><select idref="V-71637" selected="true" /><select idref="V-71645" selected="true" /><select idref="V-99999" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71627" selected="true" /><select idref="V-71629" selected="true" /><select idref="V-71631" selected="true" /><select idref="V-71633" selected="true" /><select idref="V-71635" selected="true" /><select idref="V-71637" selected="true" /><select idref="V-71645" selected="true" /><select idref="V-99999" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-71627" selected="true" /><select idref="V-71629" selected="true" /><select idref="V-71631" selected="true" /><select idref="V-71633" selected="true" /><select idref="V-71635" selected="true" /><select idref="V-71637" selected="true" /><select idref="V-71645" selected="true" /><select idref="V-99999" selected="true" /></Profile><Group id="V-71627"><title>PP-MDM-202105</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86251r1_rule" severity="medium" weight="10.0"><version>VMAW-09-000080</version><title>The AirWatch MDM Server must be configured with the Administrator roles:
+a. MD user
+b. Server primary administrator
+c. Security configuration administrator
+d. Device user group administrator
+e. Auditor.</title><description>&lt;VulnDiscussion&gt;Having several roles for the MDM Server supports separation of duties. This allows administrator-level privileges to be granted granularly, such as giving application management privileges to one group and security policy privileges to another group. This helps prevent administrators from intentionally or inadvertently altering other settings and configurations they may not understand or approve of, which can weaken overall security and increase the risk of compromise.
+
+Server primary administrator: responsible for server installation, initial configuration, and maintenance functions. Responsible for the setup and maintenance of Security configuration administrator and Auditor accounts. (Note: Many of these responsibilities are not AirWatch MDM Server Roles, but Host Operating System roles) 
+
+-Security configuration administrator: responsible for security configuration of the server, setting up and maintenance of mobile device security policies, defining device user groups, setup and maintenance of device user group administrator accounts, and defining privileges of device user group administrators. (Note: Many of these responsibilities are not AirWatch MDM Server Roles, but Host Operating System roles) 
+
+-Device user group administrator: responsible for maintenance of mobile device accounts, including setup, change of account configurations, and account deletion. Can only perform administrative functions assigned by the Security configuration administrator. 
+
+-Auditor: responsible for reviewing and maintaining server and mobile device audit logs. (Note: Many of these responsibilities are not AirWatch MDM Server Roles, but Host Operating System roles)
+
+SFR ID: FMT_SMR.1.1(1) Refinement&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target AirWatch MDM 9.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>AirWatch MDM 9.x</dc:subject><dc:identifier>3103</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-77953r4_fix">Some DoD Roles are created managed by Server OS. Server OS Security Target and STIGs should be referenced for these items.
+
+AirWatch Roles are full customizable by the Organization with hundreds of Actions available to choose Read or Edit capabilities, can be edited to match DoD Titles and responsibilities.
+
+On the AirWatch console complete the following procedure to create custom Organization specified roles:
+
+1. Enter the administration console.
+2. Choose “Accounts”.
+3. Choose “Administrators”.
+4. Choose “Roles”.
+5. Choose “Add Roles”.
+6. Type DoD-Approved Title in “Name” block, and summary of Role in “Description” block.
+7. In “Categories”, navigate to appropriate responsibilities and Choose Responsibility. See the Vulnerability Description for the required responsibilities for each role.
+8. In “Accounts”, select proper Read or Edit functions for each action item.
+9. Choose “Save”.
+
+On the AirWatch console complete the following procedure to create a local AirWatch Administrator and associate with a custom Organization specified role:
+
+1. Enter the administration console.
+2. Choose “Accounts”.
+3. Choose “Administrators”.
+4. Choose "List View".
+5. Choose "Add".
+6. Choose "Add Admin".
+7. To create local AirWatch Admin, fill out required user information on "Basic" Tab. To import Active Directory user (Admin will use Active Directory credentials to access MDM Console), choose "Directory" tab, enter User Name, and choose "Check User".
+8. Choose "Roles" tab.
+9. Click in "Organization Group" box and choose Organization Group level of AirWatch MDM Console the Administrator will have Role privileges to manage.
+10. Click in "Role" box, and choose customer organizational role to assign Admin.
+11. Choose "Save".</fixtext><fix id="F-77953r4_fix" /><check system="C-71957r4_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_AW_v9-x_MDM_STIG.xml" /><check-content>Review the AirWatch MDM Server configuration settings, and verify the server is configured with the Administrator roles:
+
+a. MD user;
+b. Server primary administrator;
+c. Security configuration administrator;
+d. Device user group administrator; and 
+e. Auditor. 
+
+AirWatch Roles are fully customizable by the Organization with hundreds of Actions available to choose Read or Edit capabilities, can be edited to match DoD Titles and responsibilities.
+
+On the AirWatch console complete the following procedure to verify permissions assigned to a custom organization role:
+
+1. Enter the administration console.
+2. Choose “Accounts”.
+3. Choose “Administrators”.
+4. Choose “Roles”.
+5. Verify all required DoD roles are listed.
+6. Choose each DoD role inturn.
+7. In “Categories”, navigate to appropriate responsibilities and Choose responsibility.
+8. In “Accounts”, verify proper Read or Edit functions for each action item. See the Vulnerability Description for the required responsibilities for each role.
+
+On the AirWatch console complete the following procedure to verify that users are assigned to particular Roles:
+
+1. Enter the administration console.
+2. Choose “Accounts”.
+3. Choose “Administrators”.
+4. Choose "List View".
+5. In "Username" column, verify user name.
+6. In "Role" column, verify there is an authorized Administrator assigned to each organization required role.
+
+If each required administrator role is not set up on the MDM console or each required role is not assigned required responsibilities or at least one user is not assigned to each role, this is a finding.</check-content></check></Rule></Group><Group id="V-71629"><title>PP-MDM-201101</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86253r1_rule" severity="low" weight="10.0"><version>VMAW-09-100010</version><title>The AirWatch MDM Agent must be configured for the periodicity of reachability events for six hours or less.</title><description>&lt;VulnDiscussion&gt;Mobile devices that do not enforce security policy or verify the status of the device are vulnerable to a variety of attacks. The key security function of MDM technology is to distribute mobile device security polices in such a manner that they are enforced on managed mobile devices. To accomplish this function, the AirWatch MDM Agent must verify the status and other key information of the managed device and report that status to the MDM server periodically.
+
+SFR ID: FMT_SMF_EXT.3.2&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target AirWatch MDM 9.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>AirWatch MDM 9.x</dc:subject><dc:identifier>3103</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002696</ident><fixtext fixref="F-77955r3_fix">Configure the AirWatch MDM Agent periodicity of reachable events to six hours or less.
+
+On the AirWatch console do the following: 
+
+1. Log into the AirWatch MDM Administration console.
+2. Choose "Groups and Settings".
+3. Choose "All Settings".
+4. Choose "Devices and Users".
+5. Choose "Android".
+6. Choose "Agent Settings".
+7. Set options "Heartbeat Interval", "Data Sample Interval", "Data Transmit Interval", "Profile Refresh Interval", and "Application List Interval" to six hours or less.
+8.Click "Save".
+9. Choose "Apple".
+10. Choose "MDM Sample Schedule".
+11. Set options "Device Information Sample", "Application List Sample", "Certificate List Sample", "Profile List Sample", 'Provisioning Profile List Sample", "Restriction List Sample", "Security Information Sample", "Managed App List Sample", "MDM Agent Sample", and "Non-Compliant Device Sample" to six hours or less.
+12. Click "Save".</fixtext><fix id="F-77955r3_fix" /><check system="C-71959r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_AW_v9-x_MDM_STIG.xml" /><check-content>Review the AirWatch MDM Agent documentation and configuration settings to determine if the periodicity of reachable events is set to six hours or less.
+
+On the AirWatch console complete the following procedure:
+
+1. Log into the AirWatch MDM Administration console.
+2. Choose "Groups and Settings".
+3. Choose "All Settings".
+4. Choose "Devices and Users".
+5. Choose "Android".
+6. Choose "Agent Settings".
+7. Verify that options "Heartbeat Interval", "Data Sample Interval", "Data Transmit Interval", "Profile Refresh Interval", and "Application List Interval" are set to six hours or less.
+8. Choose "Apple".
+9. Choose "MDM Sample Schedule".
+10. Verify that options "Device Information Sample", "Application List Sample", "Certificate List Sample", "Profile List Sample", 'Provisioning Profile List Sample", "Restriction List Sample", "Security Information Sample", "Managed App List Sample", "MDM Agent Sample", and "Non-Compliant Device Sample" are set to six hours or less.
+
+If on the AirWatch console the above noted settings are not configured to six hours or less, this is a finding.</check-content></check></Rule></Group><Group id="V-71631"><title>PP-MDM-202005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86255r1_rule" severity="medium" weight="10.0"><version>VMAW-09-100060</version><title>The AirWatch MDM Agent must be configured to alert via the trusted channel to the MDM server for the following event: failure to install an application from the MAS server.</title><description>&lt;VulnDiscussion&gt;Audit logs and alerts enable monitoring of security-relevant events and subsequent forensics when breaches occur. They help identify when the security posture of the device is not as expected, including when critical or security relevant applications have not fully installed on mobile devices under management of the MDM platform. This enables the MDM administrator to take an appropriate remedial action.
+
+SFR ID: FAU_ALT_EXT.2.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target AirWatch MDM 9.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>AirWatch MDM 9.x</dc:subject><dc:identifier>3103</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000169</ident><fixtext fixref="F-77957r4_fix">Configure the AirWatch MDM Agent to alert via the trusted channel to the MDM server for the following event: alert for failure to install an application.
+
+On the AirWatch console complete the following procedure to create a Required Application List, and a conjunctive Compliance Policy that is set to Alert the Administrator (will additionally create "Event" in AirWatch console "Event Log"):
+
+1. Log into the AirWatch MDM Administration console.
+2. Choose "Apps and Books".
+3. Choose "Application Settings".
+4. Choose "App Groups".
+5. Choose "Add Group".
+6. Set "Type" to "Required" and select applicable "Platform". (i.e., iOS or Android)
+7. Give Organization defined "Name" for list.
+8. Choose "Add Application".
+9. Enter Application Names and Application ID's as defined by the Organization.
+10. Choose "Next".
+11. Set "Assignment" criteria as necessary to include all Organization defined user and/or device groups.
+12. Choose "Finish".
+13. Choose "Devices". 
+14. Choose "Compliance Policies".
+15. Choose "List View".
+16. Choose "Add".
+17. Choose "Platform" (i.e., iOS or Android).
+18. In "Rules" tab boxes, choose "Application List", and "Does Not Contain Required App(s)".
+19. Choose "Next".
+20. In "Actions" tab boxes, choose "Notify", "Send Email to Administrator", and enter Organization defined Administrators in "To:" box.
+21. Choose "Next".
+22. Add "Assigned Groups" of users/devices as defined by the Organization.
+23. Choose "Next".
+24. Choose "Finish and Activate".</fixtext><fix id="F-77957r4_fix" /><check system="C-71961r4_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_AW_v9-x_MDM_STIG.xml" /><check-content>Note: This procedure is the same as the procedure for VMAW-09-100080 and only has to be completed one time.
+
+Review the AirWatch MDM Agent configuration settings and verify the Agent is configured to alert via the trusted channel to the MDM server for the following event: alert for failure to install an application.
+
+On the AirWatch console complete the following procedure to ensure a Required Application List is created properly, and a conjunctive Compliance Policy is set to alert the Administrator (will additionally create an "Event" in the AirWatch console "Event Log"). There are two parts to this verification: 1) to verify that a Required Applications List was created properly, and 2) to verify that a conjunctive compliance policy is established: 
+
+1. Log into the AirWatch MDM Administration console.
+2. Choose "Apps and Books".
+3. Choose "Application Settings".
+4. Choose "App Groups".
+5. Under "Name" column, click on appropriate App Group List. (Get a list of app groups from the MDM Administrator.)
+6. Verify on "List" tab that all organization required applications and versions are listed.
+7. Choose "Cancel".
+8. Choose "Devices". 
+9. Choose "Compliance Policies".
+10. Choose "List View".
+11. Under "Description" column, look for policy with the description of: "Application List".
+12. Click on policy name.
+13. On "Rules" tab, ensure boxes are selected for "Application List" and "Does Not Contain Required App(s)".
+14. On "Actions" tab, ensure boxes are selected for "Notify", "Send Email to Administrator", and all organization assigned Administrators are listed in "To:" box (Note: With this set, the MDM Server Audit Function will also now record the Event automatically).
+
+If under the "List" tab all organization required applications and versions are not listed; or on the "Rules" tab boxes are not selected for "Application List" and "Does Not Contain Required App(s)"; or on the "Actions" tab boxes are not selected for "Notify", "Send Email to Administrator", and all organization assigned Administrators are listed in "To:" box, this is a finding.</check-content></check></Rule></Group><Group id="V-71633"><title>PP-MDM-202007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86257r1_rule" severity="medium" weight="10.0"><version>VMAW-09-100080</version><title>The AirWatch MDM Agent must be configured to alert via the trusted channel to the MDM server for the following event: failure to update an application from the MAS server.</title><description>&lt;VulnDiscussion&gt;Audit logs and alerts enable monitoring of security-relevant events and subsequent forensics when breaches occur. They help identify when the security posture of the device is not as expected, including when a critical or security relevant application was not properly updated on mobile devices under management of the MDM platform. This enables the MDM administrator to take an appropriate remedial action.
+
+SFR ID: FAU_ALT_EXT.2.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target AirWatch MDM 9.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>AirWatch MDM 9.x</dc:subject><dc:identifier>3103</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000169</ident><fixtext fixref="F-77959r3_fix">Configure the AirWatch MDM Agent to alert via the trusted channel to the MDM server for the following event: alert for failure to update an application.
+
+On the AirWatch console complete the following procedure to create a Required Application List, and a conjunctive Compliance Policy that is set to Alert the Administrator (will additionally create "Event" in AirWatch console "Event Log"):
+
+1. Log into the AirWatch MDM Administration console.
+2. Choose "Apps and Books".
+3. Choose "Application Settings".
+4. Choose "App Groups".
+5. Choose "Add Group".
+6. Set "Type" to "Required" and select applicable "Platform" (i.e., iOS or Android).
+7. Give Organization defined "Name" for list.
+8. Choose "Add Application".
+9. Enter Application Names and Application ID's as defined by the Organization.
+10. Choose "Next".
+11. Set "Assignment" criteria as necessary to include all Organization defined user and/or device groups.
+12. Choose "Finish".
+13. Choose "Devices". 
+14. Choose "Compliance Policies".
+15. Choose "List View".
+16. Choose "Add".
+17. Choose "Platform" (i.e., iOS or Android).
+18. In "Rules" tab boxes, choose "Application List", and "Does Not Contain Required App(s)".
+19. Choose "Next".
+20. In "Actions" tab boxes, choose "Notify", "Send Email to Administrator", and enter Organization defined Administrators in "To:" box.
+21. Choose "Next".
+22. Add "Assigned Groups" of users/devices as defined by the Organization.
+23. Choose "Next".
+24. Choose "Finish and Activate".</fixtext><fix id="F-77959r3_fix" /><check system="C-71963r4_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_AW_v9-x_MDM_STIG.xml" /><check-content>Note: This procedure is the same as the procedure for VMAW-09-100060 and only has to be completed one time.
+
+Review the AirWatch MDM Agent configuration settings and verify the Agent is configured to alert via the trusted channel to the MDM server for the following event: alert for failure to update an application.
+
+On the AirWatch console complete the following procedure to ensure a Required Application List is created properly, and a conjunctive Compliance Policy is set to Alert the Administrator (will additionally create "Event" in AirWatch console "Event Log"). There are two parts to this verification: 1) to verify that a Required Applications List was created properly, and 2) to verify that a conjunctive compliance policy is established: 
+
+1. Log into the AirWatch MDM Administration console.
+2. Choose "Apps and Books".
+3. Choose "Application Settings".
+4. Choose "App Groups".
+5. Under "Name" column, click on appropriate App Group List. (Get a list of app groups from MDM Administrator.)
+6. Verify on "List" tab that all organization required applications and versions are listed.
+7. Choose "Cancel".
+8. Choose "Devices". 
+9. Choose "Compliance Policies".
+10. Choose "List View".
+11. Under "Description" column, look for the policy with the description of "Application List".
+12. Click on policy name.
+13. On "Rules" tab, ensure boxes are selected. for "Application List" and "Does Not Contain Required App(s)".
+14. On "Actions" tab, ensure boxes are selected for "Notify", "Send Email to Administrator", and all organization assigned Administrators are listed in "To:" box. (Note: With this set, the MDM Server Audit Function will also now record the Event automatically)
+
+If under the "List" tab all organization required applications and versions are not listed; or on the "Rules" tab boxes are not selected for "Application List" and "Does Not Contain Required App(s)"; or on the "Actions" tab boxes are not selected for "Notify", "Send Email to Administrator", and all organization assigned Administrators are listed in "To:" box, this is a finding.</check-content></check></Rule></Group><Group id="V-71635"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86259r1_rule" severity="medium" weight="10.0"><version>VMAW-09-200040</version><title>The AirWatch MDM Server platform must be protected by a DoD-approved firewall.</title><description>&lt;VulnDiscussion&gt;Most information systems are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Unneeded services and processes provide additional threat vectors and avenues of attack to the information system. The AirWatch MDM Server is a critical component of the mobility architecture and must be configured to only those ports, protocols, and services (PPS) necessary to support functionality, all others must be expressly disabled or removed. A DoD-approved firewall implements the required network restrictions. A host-based firewall is appropriate where the AirWatch MDM Server runs on a standalone platform. Network firewalls or other architectures may be preferred where the AirWatch MDM Server runs in a cloud or virtualized solution.
+
+SFR ID: FMT_SMF.1.1(1) Refinement&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target AirWatch MDM 9.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>AirWatch MDM 9.x</dc:subject><dc:identifier>3103</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000382</ident><fixtext fixref="F-77961r1_fix">Install a DoD-approved firewall to protect the network segment the AirWatch MDM server is installed on.</fixtext><fix id="F-77961r1_fix" /><check system="C-71965r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_AW_v9-x_MDM_STIG.xml" /><check-content>Review the network configuration of the network segment the AirWatch MDM server appliance is installed on to determine whether a DoD-approved firewall is installed to filter all IP traffic to/from the MDM appliance.
+
+If there is not a firewall present on the network segment the AirWatch MDM server appliance is installed on, or if it is not configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments, this is a finding.</check-content></check></Rule></Group><Group id="V-71637"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86261r1_rule" severity="medium" weight="10.0"><version>VMAW-09-200050</version><title>The firewall protecting the AirWatch MDM Server platform must be configured to restrict all network traffic to and from all addresses with the exception of ports, protocols, and IP address ranges required to support AirWatch MDM Server and platform functions.</title><description>&lt;VulnDiscussion&gt;Most information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations. Since AirWatch MDM Server is a critical component of the mobility architecture and must be configured to only those ports, protocols, and services (PPS) necessary to support functionality, all others must be expressly disabled or removed. A firewall installed on the AirWatch MDM Server provides a protection mechanism to ensure unwanted service requests do not reach the AirWatch MDM Server and outbound traffic is limited to only AirWatch MDM Server functionality.
+
+SFR ID: FMT_SMF.1.1(1) Refinement&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target AirWatch MDM 9.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>AirWatch MDM 9.x</dc:subject><dc:identifier>3103</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000382</ident><fixtext fixref="F-77963r1_fix">Configure the DoD-approved firewall to deny all except for ports listed in the STIG Supplemental document.</fixtext><fix id="F-77963r1_fix" /><check system="C-71967r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_AW_v9-x_MDM_STIG.xml" /><check-content>Ask the AirWatch MDM server administrator for a list of ports, protocols and IP address ranges necessary to support MDM server and platform functionality (should also be listed in the STIG Supplemental Procedures document).
+
+Review the host-based firewall and determine if only required ports, protocols and IP address ranges necessary to support MDM server and platform functionality are turned on.
+
+If the network firewall protecting the AirWatch MDM is not configured to support only those ports, protocols, and IP address ranges necessary for operation, this is a finding.</check-content></check></Rule></Group><Group id="V-71645"><title>PP-MDM-204101 PP-MDM-204102</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-86269r1_rule" severity="medium" weight="10.0"><version>VMAW-09-000550</version><title>The AirWatch MDM Server must leverage the MDM Platform user accounts and groups for AirWatch MDM Server user identification and authentication and the MDM Platform accounts must be implemented via an enterprise directory service.</title><description>&lt;VulnDiscussion&gt;A comprehensive account management process that includes automation helps to ensure the accounts designated as requiring attention are consistently and promptly addressed. If an attacker compromises an account, the entire MDM Server infrastructure is at risk. Providing automated support functions for the management of accounts will ensure only active accounts will be granted access with the proper authorization levels. These objectives are best achieved by configuring the AirWatch MDM Server to leverage an enterprise authentication mechanism (e.g., Microsoft Active Directory Kerberos).
+
+SFR ID: FIA&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target AirWatch MDM 9.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>AirWatch MDM 9.x</dc:subject><dc:identifier>3103</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000015</ident><fixtext fixref="F-77971r2_fix">Configure the AirWatch MDM Server to leverage an enterprise authentication mechanism.
+
+On the AirWatch console complete the following procedure to leverage an enterprise authentication mechanism, and configure users to leverage directory service accounts for enrollment:
+
+1. Follow steps on pages 9-18 of "VMware AirWatch Directory Services" guide artifact to connect AirWatch MDM Server application to enterprise authentication mechanism.
+2. Log into the AirWatch MDM Administration console.
+3. Choose "Groups and Settings".
+4. Choose "All Settings".
+5. Under "Devices and Users" heading, choose "General".
+6. Choose "Enrollment".
+7. On "Authentication Modes" setting, check the box labeled "Directory" and uncheck all other options.
+8. Choose "Save".</fixtext><fix id="F-77971r2_fix" /><check system="C-71975r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_AW_v9-x_MDM_STIG.xml" /><check-content>On the AirWatch console complete the following procedure to ensure that the AirWatch MDM Server is configured to leverage an enterprise authentication mechanism, and that AirWatch users can only use directory accounts to enroll into the AirWatch MDM Server:
+
+1. For MDM Server Platform configuration, refer to "VMware AirWatch Directory Services Integration" guide artifact, pages 9-18.
+2. Log into the AirWatch MDM Administration console.
+3. Choose "Groups and Settings".
+4. Choose "All Settings".
+5. Under "System" heading, choose "Enterprise Integration".
+6. Choose "Directory Services".
+7. Under "Server" tab, verify directory service connection information.
+8. Under "User" tab, verify User Group connection information.
+9. Under "Group" tab, verify Group connection information.
+10. Choose "X" to close screen.
+11. Choose "Groups and Settings".
+12. Choose "All Settings".
+13. Under "Devices and Users" heading choose "General".
+14. Choose "Enrollment".
+15. On "Authentication Modes" setting, verify only the box titled "Directory" is selected.
+
+If on the AirWatch MDM server console "Directory" is not selected as the authentication mode, this is a finding.</check-content></check></Rule></Group><Group id="V-99999"><title>PP-MDM-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-109103r1_rule" severity="high" weight="10.0"><version>VMAW-09-999999</version><title>Only authorized versions of AirWatch Console/Workspace One UEM Console must be used.</title><description>&lt;VulnDiscussion&gt;AirWatch Console/Workspace One UEM Console version 9.7 and earlier releases are no longer supported by VMware and therefore, may contain security vulnerabilities. AirWatch Console/Workspace One UEM Console version 9.7 and earlier releases are not authorized within the DoD.
+
+CCI: CCI-000366&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target AirWatch MDM 9.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>AirWatch MDM 9.x</dc:subject><dc:identifier>3103</dc:identifier></reference><fixtext fixref="F-105683r1_fix">Remove all AirWatch Console/Workspace One UEM Console version 9.7 and earlier releases.</fixtext><fix id="F-105683r1_fix" /><check system="C-98849r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_VMW_AW_v9-x_MDM_STIG.xml" /><check-content>Interview ISSO and site MDM system administrator.
+
+Verify the site is not using AirWatch Console/Workspace One UEM Console version 9.7 and earlier releases.
+
+If the site is using AirWatch Console/Workspace One UEM Console version 9.7 and earlier releases, this is a finding.
+</check-content></check></Rule></Group></Benchmark>

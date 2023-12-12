@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2015-09-17T10:58:40</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="inventory" id="oval:mil.disa.fso.solaris:def:3" version="1">
+      <metadata>
+        <title>Sun Solaris 9</title>
+        <affected family="unix">
+          <platform>Sun Solaris 9</platform>
+        </affected>
+        <reference ref_id="cpe:/o:sun:sunos:5.9:-:sparc" source="CPE" />
+        <description>The operating system installed on the system is Sun Solaris 9 SPARC</description>
+      </metadata>
+      <criteria>
+        <criterion comment="Installed operating system is part of the Unix family" test_ref="oval:mil.disa.fso.solaris:tst:300" />
+        <criterion comment="Installed operating system is Solaris 9" test_ref="oval:mil.disa.fso.solaris:tst:301" />
+        <criterion comment="System architecture is SPARC" test_ref="oval:mil.disa.fso.solaris:tst:302" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check_existence="at_least_one_exists" id="oval:mil.disa.fso.solaris:tst:300" version="1" check="only one" comment="installed operating system is part of the Unix family">
+      <object object_ref="oval:mil.disa.fso.solaris:obj:300" />
+      <state state_ref="oval:mil.disa.fso.solaris:ste:300" />
+    </family_test>
+    <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.solaris:tst:301" version="1" comment="Installed operating system is Solaris 9" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.fso.solaris:obj:301" />
+      <state state_ref="oval:mil.disa.fso.solaris:ste:301" />
+    </uname_test>
+    <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.solaris:tst:302" version="1" comment="System architecture is SPARC" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.fso.solaris:obj:301" />
+      <state state_ref="oval:mil.disa.fso.solaris:ste:302" />
+    </uname_test>
+  </tests>
+  <objects>
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.solaris:obj:300" version="1" comment="The family object" />
+    <uname_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.solaris:obj:301" version="1" comment="The uname object" />
+  </objects>
+  <states>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.solaris:ste:300" version="1">
+      <family>unix</family>
+    </family_state>
+    <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.solaris:ste:301" version="1">
+      <os_release>5.9</os_release>
+    </uname_state>
+    <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.solaris:ste:302" version="1" comment="System architecture is SPARC">
+      <processor_type operation="pattern match">[Ss][Pp][Aa][Rr][Cc]</processor_type>
+    </uname_state>
+  </states>
+</oval_definitions>
+

@@ -1,0 +1,1468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?>
+<Benchmark xmlns="http://checklists.nist.gov/xccdf/1.1" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="UC_Endpoint_SRG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+  <status date="2023-07-27">draft</status>
+  <title>Unified Communications Endpoint Security Requirements Guide</title>
+  <description>This Security Requirements Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description>
+  <notice id="terms-of-use" xml:lang="en" />
+  <reference href="http://iase.disa.mil">
+    <dc:publisher>DISA, Field Security Operations</dc:publisher>
+    <dc:source>STIG.DOD.MIL</dc:source>
+  </reference>
+  <plain-text id="release-info">Release: 0.1 Benchmark Date: 17 Oct 2023</plain-text>
+  <version>1</version>
+  <Profile id="MAC-1_Public">
+    <title>I - Mission Critical Public</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="SRG-NET-000029-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000041-VVEP-00020" selected="true" />
+    <select idref="SRG-NET-000042-VVEP-00021" selected="true" />
+    <select idref="SRG-NET-000048-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000049-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000053-VVEP-00009" selected="true" />
+    <select idref="SRG-NET-000074-VVEP-00022" selected="true" />
+    <select idref="SRG-NET-000075-VVEP-00023" selected="true" />
+    <select idref="SRG-NET-000076-VVEP-00024" selected="true" />
+    <select idref="SRG-NET-000077-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000078-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000113-VVEP-00027" selected="true" />
+    <select idref="SRG-NET-000503-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000504-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000505-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000522-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000400-VVEP-00033" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00103" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000131-VVEP-00056" selected="true" />
+    <select idref="SRG-NET-000132-VVEP-00059" selected="true" />
+    <select idref="SRG-NET-000138-VVEP-00029" selected="true" />
+    <select idref="SRG-NET-000140-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000213-VVEP-00028" selected="true" />
+    <select idref="SRG-NET-000230-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00108" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00107" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00106" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00104" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000530-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000079-VVEP-00026" selected="true" />
+    <select idref="SRG-NET-000236-VVEP-00043" selected="true" />
+    <select idref="SRG-NET-000334-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000511-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000147-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000518-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000519-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000371-VVEP-00037" selected="true" />
+    <select idref="SRG-NET-000352-VVEP-00038" selected="true" />
+    <select idref="SRG-NET-000353-VVEP-00042" selected="true" />
+  </Profile>
+  <Profile id="MAC-1_Sensitive">
+    <title>I - Mission Critical Sensitive</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="SRG-NET-000029-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000041-VVEP-00020" selected="true" />
+    <select idref="SRG-NET-000042-VVEP-00021" selected="true" />
+    <select idref="SRG-NET-000048-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000049-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000053-VVEP-00009" selected="true" />
+    <select idref="SRG-NET-000074-VVEP-00022" selected="true" />
+    <select idref="SRG-NET-000075-VVEP-00023" selected="true" />
+    <select idref="SRG-NET-000076-VVEP-00024" selected="true" />
+    <select idref="SRG-NET-000077-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000078-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000113-VVEP-00027" selected="true" />
+    <select idref="SRG-NET-000503-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000504-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000505-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000522-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000400-VVEP-00033" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00103" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000131-VVEP-00056" selected="true" />
+    <select idref="SRG-NET-000132-VVEP-00059" selected="true" />
+    <select idref="SRG-NET-000138-VVEP-00029" selected="true" />
+    <select idref="SRG-NET-000140-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000213-VVEP-00028" selected="true" />
+    <select idref="SRG-NET-000230-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00108" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00107" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00106" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00104" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000530-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000079-VVEP-00026" selected="true" />
+    <select idref="SRG-NET-000236-VVEP-00043" selected="true" />
+    <select idref="SRG-NET-000334-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000511-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000147-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000518-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000519-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000371-VVEP-00037" selected="true" />
+    <select idref="SRG-NET-000352-VVEP-00038" selected="true" />
+    <select idref="SRG-NET-000353-VVEP-00042" selected="true" />
+  </Profile>
+  <Profile id="MAC-1_Classified">
+    <title>I - Mission Critical Classified</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="SRG-NET-000029-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000041-VVEP-00020" selected="true" />
+    <select idref="SRG-NET-000042-VVEP-00021" selected="true" />
+    <select idref="SRG-NET-000048-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000049-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000053-VVEP-00009" selected="true" />
+    <select idref="SRG-NET-000074-VVEP-00022" selected="true" />
+    <select idref="SRG-NET-000075-VVEP-00023" selected="true" />
+    <select idref="SRG-NET-000076-VVEP-00024" selected="true" />
+    <select idref="SRG-NET-000077-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000078-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000113-VVEP-00027" selected="true" />
+    <select idref="SRG-NET-000503-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000504-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000505-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000522-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000400-VVEP-00033" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00103" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000131-VVEP-00056" selected="true" />
+    <select idref="SRG-NET-000132-VVEP-00059" selected="true" />
+    <select idref="SRG-NET-000138-VVEP-00029" selected="true" />
+    <select idref="SRG-NET-000140-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000213-VVEP-00028" selected="true" />
+    <select idref="SRG-NET-000230-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00108" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00107" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00106" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00104" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000530-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000079-VVEP-00026" selected="true" />
+    <select idref="SRG-NET-000236-VVEP-00043" selected="true" />
+    <select idref="SRG-NET-000334-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000511-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000147-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000518-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000519-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000371-VVEP-00037" selected="true" />
+    <select idref="SRG-NET-000352-VVEP-00038" selected="true" />
+    <select idref="SRG-NET-000353-VVEP-00042" selected="true" />
+  </Profile>
+  <Profile id="MAC-2_Public">
+    <title>II - Mission Support Public</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="SRG-NET-000029-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000041-VVEP-00020" selected="true" />
+    <select idref="SRG-NET-000042-VVEP-00021" selected="true" />
+    <select idref="SRG-NET-000048-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000049-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000053-VVEP-00009" selected="true" />
+    <select idref="SRG-NET-000074-VVEP-00022" selected="true" />
+    <select idref="SRG-NET-000075-VVEP-00023" selected="true" />
+    <select idref="SRG-NET-000076-VVEP-00024" selected="true" />
+    <select idref="SRG-NET-000077-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000078-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000113-VVEP-00027" selected="true" />
+    <select idref="SRG-NET-000503-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000504-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000505-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000522-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000400-VVEP-00033" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00103" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000131-VVEP-00056" selected="true" />
+    <select idref="SRG-NET-000132-VVEP-00059" selected="true" />
+    <select idref="SRG-NET-000138-VVEP-00029" selected="true" />
+    <select idref="SRG-NET-000140-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000213-VVEP-00028" selected="true" />
+    <select idref="SRG-NET-000230-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00108" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00107" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00106" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00104" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000530-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000079-VVEP-00026" selected="true" />
+    <select idref="SRG-NET-000236-VVEP-00043" selected="true" />
+    <select idref="SRG-NET-000334-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000511-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000147-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000518-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000519-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000371-VVEP-00037" selected="true" />
+    <select idref="SRG-NET-000352-VVEP-00038" selected="true" />
+    <select idref="SRG-NET-000353-VVEP-00042" selected="true" />
+  </Profile>
+  <Profile id="MAC-2_Sensitive">
+    <title>II - Mission Support Sensitive</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="SRG-NET-000029-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000041-VVEP-00020" selected="true" />
+    <select idref="SRG-NET-000042-VVEP-00021" selected="true" />
+    <select idref="SRG-NET-000048-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000049-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000053-VVEP-00009" selected="true" />
+    <select idref="SRG-NET-000074-VVEP-00022" selected="true" />
+    <select idref="SRG-NET-000075-VVEP-00023" selected="true" />
+    <select idref="SRG-NET-000076-VVEP-00024" selected="true" />
+    <select idref="SRG-NET-000077-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000078-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000113-VVEP-00027" selected="true" />
+    <select idref="SRG-NET-000503-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000504-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000505-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000522-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000400-VVEP-00033" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00103" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000131-VVEP-00056" selected="true" />
+    <select idref="SRG-NET-000132-VVEP-00059" selected="true" />
+    <select idref="SRG-NET-000138-VVEP-00029" selected="true" />
+    <select idref="SRG-NET-000140-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000213-VVEP-00028" selected="true" />
+    <select idref="SRG-NET-000230-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00108" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00107" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00106" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00104" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000530-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000079-VVEP-00026" selected="true" />
+    <select idref="SRG-NET-000236-VVEP-00043" selected="true" />
+    <select idref="SRG-NET-000334-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000511-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000147-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000518-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000519-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000371-VVEP-00037" selected="true" />
+    <select idref="SRG-NET-000352-VVEP-00038" selected="true" />
+    <select idref="SRG-NET-000353-VVEP-00042" selected="true" />
+  </Profile>
+  <Profile id="MAC-2_Classified">
+    <title>II - Mission Support Classified</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="SRG-NET-000029-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000041-VVEP-00020" selected="true" />
+    <select idref="SRG-NET-000042-VVEP-00021" selected="true" />
+    <select idref="SRG-NET-000048-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000049-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000053-VVEP-00009" selected="true" />
+    <select idref="SRG-NET-000074-VVEP-00022" selected="true" />
+    <select idref="SRG-NET-000075-VVEP-00023" selected="true" />
+    <select idref="SRG-NET-000076-VVEP-00024" selected="true" />
+    <select idref="SRG-NET-000077-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000078-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000113-VVEP-00027" selected="true" />
+    <select idref="SRG-NET-000503-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000504-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000505-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000522-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000400-VVEP-00033" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00103" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000131-VVEP-00056" selected="true" />
+    <select idref="SRG-NET-000132-VVEP-00059" selected="true" />
+    <select idref="SRG-NET-000138-VVEP-00029" selected="true" />
+    <select idref="SRG-NET-000140-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000213-VVEP-00028" selected="true" />
+    <select idref="SRG-NET-000230-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00108" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00107" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00106" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00104" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000530-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000079-VVEP-00026" selected="true" />
+    <select idref="SRG-NET-000236-VVEP-00043" selected="true" />
+    <select idref="SRG-NET-000334-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000511-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000147-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000518-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000519-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000371-VVEP-00037" selected="true" />
+    <select idref="SRG-NET-000352-VVEP-00038" selected="true" />
+    <select idref="SRG-NET-000353-VVEP-00042" selected="true" />
+  </Profile>
+  <Profile id="MAC-3_Public">
+    <title>III - Administrative Public</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="SRG-NET-000029-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000041-VVEP-00020" selected="true" />
+    <select idref="SRG-NET-000042-VVEP-00021" selected="true" />
+    <select idref="SRG-NET-000048-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000049-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000053-VVEP-00009" selected="true" />
+    <select idref="SRG-NET-000074-VVEP-00022" selected="true" />
+    <select idref="SRG-NET-000075-VVEP-00023" selected="true" />
+    <select idref="SRG-NET-000076-VVEP-00024" selected="true" />
+    <select idref="SRG-NET-000077-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000078-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000113-VVEP-00027" selected="true" />
+    <select idref="SRG-NET-000503-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000504-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000505-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000522-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000400-VVEP-00033" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00103" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000131-VVEP-00056" selected="true" />
+    <select idref="SRG-NET-000132-VVEP-00059" selected="true" />
+    <select idref="SRG-NET-000138-VVEP-00029" selected="true" />
+    <select idref="SRG-NET-000140-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000213-VVEP-00028" selected="true" />
+    <select idref="SRG-NET-000230-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00108" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00107" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00106" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00104" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000530-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000079-VVEP-00026" selected="true" />
+    <select idref="SRG-NET-000236-VVEP-00043" selected="true" />
+    <select idref="SRG-NET-000334-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000511-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000147-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000518-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000519-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000371-VVEP-00037" selected="true" />
+    <select idref="SRG-NET-000352-VVEP-00038" selected="true" />
+    <select idref="SRG-NET-000353-VVEP-00042" selected="true" />
+  </Profile>
+  <Profile id="MAC-3_Sensitive">
+    <title>III - Administrative Sensitive</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="SRG-NET-000029-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000041-VVEP-00020" selected="true" />
+    <select idref="SRG-NET-000042-VVEP-00021" selected="true" />
+    <select idref="SRG-NET-000048-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000049-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000053-VVEP-00009" selected="true" />
+    <select idref="SRG-NET-000074-VVEP-00022" selected="true" />
+    <select idref="SRG-NET-000075-VVEP-00023" selected="true" />
+    <select idref="SRG-NET-000076-VVEP-00024" selected="true" />
+    <select idref="SRG-NET-000077-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000078-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000113-VVEP-00027" selected="true" />
+    <select idref="SRG-NET-000503-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000504-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000505-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000522-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000400-VVEP-00033" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00103" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000131-VVEP-00056" selected="true" />
+    <select idref="SRG-NET-000132-VVEP-00059" selected="true" />
+    <select idref="SRG-NET-000138-VVEP-00029" selected="true" />
+    <select idref="SRG-NET-000140-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000213-VVEP-00028" selected="true" />
+    <select idref="SRG-NET-000230-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00108" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00107" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00106" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00104" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000530-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000079-VVEP-00026" selected="true" />
+    <select idref="SRG-NET-000236-VVEP-00043" selected="true" />
+    <select idref="SRG-NET-000334-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000511-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000147-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000518-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000519-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000371-VVEP-00037" selected="true" />
+    <select idref="SRG-NET-000352-VVEP-00038" selected="true" />
+    <select idref="SRG-NET-000353-VVEP-00042" selected="true" />
+  </Profile>
+  <Profile id="MAC-3_Classified">
+    <title>III - Administrative Classified</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="SRG-NET-000029-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000041-VVEP-00020" selected="true" />
+    <select idref="SRG-NET-000042-VVEP-00021" selected="true" />
+    <select idref="SRG-NET-000048-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000049-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000053-VVEP-00009" selected="true" />
+    <select idref="SRG-NET-000074-VVEP-00022" selected="true" />
+    <select idref="SRG-NET-000075-VVEP-00023" selected="true" />
+    <select idref="SRG-NET-000076-VVEP-00024" selected="true" />
+    <select idref="SRG-NET-000077-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000078-VVEP-00025" selected="true" />
+    <select idref="SRG-NET-000113-VVEP-00027" selected="true" />
+    <select idref="SRG-NET-000503-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000504-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000505-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000522-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000400-VVEP-00033" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000015-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00100" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00103" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000512-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000131-VVEP-00056" selected="true" />
+    <select idref="SRG-NET-000132-VVEP-00059" selected="true" />
+    <select idref="SRG-NET-000138-VVEP-00029" selected="true" />
+    <select idref="SRG-NET-000140-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000213-VVEP-00028" selected="true" />
+    <select idref="SRG-NET-000230-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00108" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00102" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00107" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00106" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00104" selected="true" />
+    <select idref="SRG-NET-000018-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000530-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000079-VVEP-00026" selected="true" />
+    <select idref="SRG-NET-000236-VVEP-00043" selected="true" />
+    <select idref="SRG-NET-000334-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000511-VVEP-00010" selected="true" />
+    <select idref="SRG-NET-000147-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000518-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000519-VVEP-00101" selected="true" />
+    <select idref="SRG-NET-000371-VVEP-00037" selected="true" />
+    <select idref="SRG-NET-000352-VVEP-00038" selected="true" />
+    <select idref="SRG-NET-000353-VVEP-00042" selected="true" />
+  </Profile>
+  <Group id="SRG-NET-000029-VVEP-00010">
+    <title>SRG-NET-000029-VVEP-00010</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000029-VVEP-00010_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000029-VVEP-00010</version>
+      <title>The Unified Communications Endpoint must be configured to apply 802.1Q VLAN tags to signaling and media traffic.</title>
+      <description>&lt;VulnDiscussion&gt;When Unified Communications Endpoints do not dynamically assign 802.1Q VLAN tags as data is created and combined, it is possible the VLAN tags will not correctly reflect the data type with which they are associated. VLAN tags are used as security attributes. These attributes are typically associated with signaling and media streams within the application and are used to enable the implementation of access control and flow control policies. Security labels for packets may include traffic flow information (e.g., source, destination, protocol combination), traffic classification based on QoS markings for preferred treatment, and VLAN identification.
+
+Virtualized networking is used to separate voice video traffic from other types of traffic, such as data, management, and other special types. VLANs provide segmentation at layer 2. Virtual Routing and Forwarding (VRF) provides segmentation at layer 3 and works with Multiprotocol Label Switching (MPLS) for enterprise and WAN environments. When VRF is used without MPLS, it is referred to as VRF lite. For Voice Video systems, subnets, VLANs, and VRFs are used to separate media and signaling streams from all other traffic.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000027</ident>
+      <fixtext fixref="F-SRG-NET-000029-VVEP-00010_fix">Configure the Unified Communications Endpoint to apply 802.1Q VLAN tags to signaling and media traffic.</fixtext>
+      <fix id="F-SRG-NET-000029-VVEP-00010_fix" />
+      <check system="C-SRG-NET-000029-VVEP-00010_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint is configured to apply 802.1Q VLAN tags to signaling and media traffic. 
+
+If the Unified Communications Endpoint does not apply 802.1Q VLAN tags to signaling and media traffic, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000041-VVEP-00020">
+    <title>SRG-NET-000041-VVEP-00020</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000041-VVEP-00020_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000041-VVEP-00020</version>
+      <title>The Unified Communications Endpoint must be configured to display the Standard Mandatory DOD Notice and Consent Banner before granting access to the network.</title>
+      <description>&lt;VulnDiscussion&gt;Display of a standardized and approved use notification before granting access to the network ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist. This requirement applies to network elements that have the concept of a user account and have the logon function residing on the network element.
+
+The banner must be formatted in accordance with DTM-08-060. Use the following verbiage for network elements that can accommodate banners of 1300 characters:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+ 
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000048</ident>
+      <fixtext fixref="F-SRG-NET-000041-VVEP-00020_fix">Configure the Unified Communications Endpoint to display the Standard Mandatory DOD Notice and Consent Banner before granting access to the network.</fixtext>
+      <fix id="F-SRG-NET-000041-VVEP-00020_fix" />
+      <check system="C-SRG-NET-000041-VVEP-00020_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>If the Unified Communications Endpoint is not configured to display the Standard Mandatory DOD Notice and Consent Banner before granting access to the network, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000042-VVEP-00021">
+    <title>SRG-NET-000042-VVEP-00021</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000042-VVEP-00021_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000042-VVEP-00021</version>
+      <title>The Unified Communications Endpoint must be configured to retain the Standard Mandatory DOD Notice and Consent Banner on the screen until users acknowledge the usage conditions and take explicit actions to log on for further access.</title>
+      <description>&lt;VulnDiscussion&gt;The banner must be acknowledged by the user prior to allowing the user access to the network. This provides assurance that the user has seen the message and accepted the conditions for access. If the consent banner is not acknowledged by the user, DOD will not be in compliance with system use notifications required by law. 
+
+To establish acceptance of the application usage policy, a click-through banner at application logon is required. The network element must prevent further activity until the user executes a positive action to manifest agreement by clicking on a box indicating "OK". 
+
+This requirement applies to network elements that have the concept of a user account and have the logon function residing on the network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000050</ident>
+      <fixtext fixref="F-SRG-NET-000042-VVEP-00021_fix">Configure the Unified Communications Endpoint to retain the Standard Mandatory DOD Notice and Consent Banner on the screen until users acknowledge the usage conditions and take explicit actions to log on for further access.</fixtext>
+      <fix id="F-SRG-NET-000042-VVEP-00021_fix" />
+      <check system="C-SRG-NET-000042-VVEP-00021_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>If the Unified Communications Endpoint is not configured to retain the Standard Mandatory DOD Notice and Consent Banner on the screen until users take explicit actions to log on for further access, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000048-VVEP-00100">
+    <title>SRG-NET-000048-VVEP-00100</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000048-VVEP-00100_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000048-VVEP-00100</version>
+      <title>The Unified Communications Endpoint must notify the user, upon successful logon (access) to the network element, of the date and time of the last logon (access).</title>
+      <description>&lt;VulnDiscussion&gt;Users need to be aware of activity that occurs regarding their account. Providing users with information regarding the date and time of their last successful login allows the user to determine if any unauthorized activity has occurred and gives them an opportunity to notify administrators. 
+
+This applies to network elements that have the concept of a user account and have the login function residing on the network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000052</ident>
+      <fixtext fixref="F-SRG-NET-000048-VVEP-00100_fix">Configure the Unified Communications Endpoint to notify the user, upon successful logon (access) to the network element, of the date and time of the last logon (access).</fixtext>
+      <fix id="F-SRG-NET-000048-VVEP-00100_fix" />
+      <check system="C-SRG-NET-000048-VVEP-00100_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify that the Unified Communications Endpoint notifies the user, upon successful logon (access) to the network element, of the date and time of the last logon (access).
+
+If the Unified Communications Endpoint does not notify the user, upon successful logon (access) to the network element, of the date and time of the last logon (access), this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000049-VVEP-00100">
+    <title>SRG-NET-000049-VVEP-00100</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000049-VVEP-00100_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000049-VVEP-00100</version>
+      <title>The Unified Communications Endpoint must notify the user, upon successful logon (access), of the number of unsuccessful logon (access) attempts since the last successful logon (access).</title>
+      <description>&lt;VulnDiscussion&gt;Users need to be aware of activity that occurs regarding their account. Providing users with information regarding the number of unsuccessful attempts that were made to login to their account allows the user to determine if any unauthorized activity has occurred and gives them an opportunity to notify administrators.
+
+This applies to network elements that have the concept of a user account and have the login function residing on the network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000053</ident>
+      <fixtext fixref="F-SRG-NET-000049-VVEP-00100_fix">Configure the Unified Communications Endpoint to notify the user, upon successful logon (access), of the number of unsuccessful logon (access) attempts since the last successful logon (access).</fixtext>
+      <fix id="F-SRG-NET-000049-VVEP-00100_fix" />
+      <check system="C-SRG-NET-000049-VVEP-00100_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify that the Unified Communications Endpoint notifies the user, upon successful logon (access), of the number of unsuccessful logon (access) attempts since the last successful logon (access).
+
+If the Unified Communications Endpoint does not notify the user, upon successful logon (access), of the number of unsuccessful logon (access) attempts since the last successful logon (access), this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000053-VVEP-00009">
+    <title>SRG-NET-000053-VVEP-00009</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000053-VVEP-00009_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000053-VVEP-00009</version>
+      <title>The Unified Communications Endpoint must be configured to limit the number of concurrent sessions to an organizationally defined number.</title>
+      <description>&lt;VulnDiscussion&gt;Unified Communications Endpoint management includes the ability to control the number of user sessions and limiting the number of allowed user sessions helps limit risk related to DoS attacks. Unified Communications Endpoint sessions occur peer-to-peer for media streams and client-server with session managers. For those endpoints that conference together multiple streams, the limit may be increased according to policy but a limit must still exist.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000054</ident>
+      <fixtext fixref="F-SRG-NET-000053-VVEP-00009_fix">Configure the Unified Communications Endpoint to limit the number of concurrent sessions to the limit set by local policy.</fixtext>
+      <fix id="F-SRG-NET-000053-VVEP-00009_fix" />
+      <check system="C-SRG-NET-000053-VVEP-00009_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint is configured to limit the number of concurrent sessions to an organizationally defined number.
+
+If the Unified Communications Endpoint is not configured to limit the number of concurrent sessions to the limit set by local policy, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000074-VVEP-00022">
+    <title>SRG-NET-000074-VVEP-00022</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000074-VVEP-00022_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000074-VVEP-00022</version>
+      <title>The Unified Communications Endpoint must be configured to produce session (call detail) records containing what type of connection occurred.</title>
+      <description>&lt;VulnDiscussion&gt;Session records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing session records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing session records provide supplemental confirmation of monitored events. Unified Communications Endpoints that communicate beyond these defined environments must generate session records.
+
+Session record content that may be necessary to satisfy this requirement includes, for example, type of connection, connection origination, time stamps, outcome, user identities, and user identifiers. Additionally, an adversary must not be able to modify or delete session records. Detailed records are typically produced by the session manager but can be augmented by nontelephone endpoint records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000130</ident>
+      <fixtext fixref="F-SRG-NET-000074-VVEP-00022_fix">Configure the Unified Communications Endpoint to produce session records containing what type of connection occurred.</fixtext>
+      <fix id="F-SRG-NET-000074-VVEP-00022_fix" />
+      <check system="C-SRG-NET-000074-VVEP-00022_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint produces session records containing what type of connection occurred. The record must include the session type (voice/direct, voice/conference, video/direct, video/conference, etc.), the specific protocols used for control and media traffic (SIP/SRTP, H.323, etc.), and the type of endpoint (mobile, telephone, codec, etc.).
+
+If the Unified Communications Endpoint does not produce session records containing what type of connection occurred, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000075-VVEP-00023">
+    <title>SRG-NET-000075-VVEP-00023</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000075-VVEP-00023_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000075-VVEP-00023</version>
+      <title>The Unified Communications Endpoint must be configured to produce session (call detail) records containing when (date and time) the connection occurred.</title>
+      <description>&lt;VulnDiscussion&gt;Session records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing session records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing session records provide supplemental confirmation of monitored events. Unified Communications Endpoints that communicate beyond these defined environments must generate session records.
+
+Session record content that may be necessary to satisfy this requirement includes, for example, type of connection, connection origination, time stamps, outcome, user identities, and user identifiers. Additionally, an adversary must not be able to modify or delete session records. Detailed records are typically produced by the session manager but can be augmented by nontelephone endpoint records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000131</ident>
+      <fixtext fixref="F-SRG-NET-000075-VVEP-00023_fix">Configure the Unified Communications Endpoint to produce session records containing the date and time when the connection occurred.</fixtext>
+      <fix id="F-SRG-NET-000075-VVEP-00023_fix" />
+      <check system="C-SRG-NET-000075-VVEP-00023_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint produces session records containing when the connection occurred. The record must include session start/join/leave/stop times.
+
+If the Unified Communications Endpoint does not produce session records containing the date and time when the connection occurred, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000076-VVEP-00024">
+    <title>SRG-NET-000076-VVEP-00024</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000076-VVEP-00024_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000076-VVEP-00024</version>
+      <title>The Unified Communications Endpoint must be configured to produce session (call detail) records containing where the connection occurred.</title>
+      <description>&lt;VulnDiscussion&gt;Session records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing session records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing session records provide supplemental confirmation of monitored events. Unified Communications Endpoints that communicate beyond these defined environments must generate session records.
+
+Session record content that may be necessary to satisfy this requirement includes, for example, type of connection, connection origination, time stamps, outcome, user identities, and user identifiers. Additionally, an adversary must not be able to modify or delete session records. Detailed records are typically produced by the session manager but can be augmented by nontelephone endpoint records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000132</ident>
+      <fixtext fixref="F-SRG-NET-000076-VVEP-00024_fix">Configure the Unified Communications Endpoint to produce session records containing where the connection occurred.</fixtext>
+      <fix id="F-SRG-NET-000076-VVEP-00024_fix" />
+      <check system="C-SRG-NET-000076-VVEP-00024_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint produces session records containing where the connection occurred. The record must include IP addresses and port numbers.
+
+If the Unified Communications Endpoint does not produce session records containing where the connection occurred, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000077-VVEP-00025">
+    <title>SRG-NET-000077-VVEP-00025</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000077-VVEP-00025_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000077-VVEP-00025</version>
+      <title>The Unified Communications Endpoint must be configured to produce session (call detail) records containing the source of the connection.</title>
+      <description>&lt;VulnDiscussion&gt;Session records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing session records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing session records provide supplemental confirmation of monitored events. Unified Communications Endpoints that communicate beyond these defined environments must generate session records.
+
+Session record content that may be necessary to satisfy this requirement includes, for example, type of connection, connection origination, time stamps, outcome, user identities, and user identifiers. Additionally, an adversary must not be able to modify or delete session records. Detailed records are typically produced by the session manager but can be augmented by nontelephone endpoint records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000133</ident>
+      <fixtext fixref="F-SRG-NET-000077-VVEP-00025_fix">Configure the Unified Communications Endpoint to produce session records containing the source of the connection.</fixtext>
+      <fix id="F-SRG-NET-000077-VVEP-00025_fix" />
+      <check system="C-SRG-NET-000077-VVEP-00025_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint produces session records containing the source of the connection. 
+
+If the Unified Communications Endpoint does not produce session records containing the source of the connection, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000078-VVEP-00025">
+    <title>SRG-NET-000078-VVEP-00025</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000078-VVEP-00025_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000078-VVEP-00025</version>
+      <title>The Unified Communications Endpoint must be configured to produce session (call detail) records containing the outcome of the connection.</title>
+      <description>&lt;VulnDiscussion&gt;Session records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing session records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing session records provide supplemental confirmation of monitored events. Unified Communications Endpoints that communicate beyond these defined environments must generate session records.
+
+Session record content that may be necessary to satisfy this requirement includes, for example, type of connection, connection origination, time stamps, outcome, user identities, and user identifiers. Additionally, an adversary must not be able to modify or delete session records. Detailed records are typically produced by the session manager but can be augmented by nontelephone endpoint records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000134</ident>
+      <fixtext fixref="F-SRG-NET-000078-VVEP-00025_fix">Configure the Unified Communications Endpoint to produce session records containing the outcome of the connection.</fixtext>
+      <fix id="F-SRG-NET-000078-VVEP-00025_fix" />
+      <check system="C-SRG-NET-000078-VVEP-00025_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint produces session records containing the outcome of the connection. Outcomes of the connection would include call completed, conference completed, destination busy, network busy, etc. 
+
+If the Unified Communications Endpoint does not produce session records containing the outcome of the connection, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000113-VVEP-00027">
+    <title>SRG-NET-000113-VVEP-00027</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000113-VVEP-00027_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000113-VVEP-00027</version>
+      <title>The Unified Communications Endpoint must be configured to provide session (call detail) record generation capability.</title>
+      <description>&lt;VulnDiscussion&gt;Session records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing session records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing session records provide supplemental confirmation of monitored events. Unified Communications Endpoints that communicate beyond these defined environments must generate session records.
+
+Session records for Voice Video systems are generally handled in a similar fashion to audit records for other systems and are used for billing, usage analysis, and record support for actions taken. Detailed records are typically produced by the session manager but can be augmented by nontelephone endpoint records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000169</ident>
+      <fixtext fixref="F-SRG-NET-000113-VVEP-00027_fix">Configure the Unified Communications Endpoint to provide session record generation capability.</fixtext>
+      <fix id="F-SRG-NET-000113-VVEP-00027_fix" />
+      <check system="C-SRG-NET-000113-VVEP-00027_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint provides session record generation capability. 
+
+If the Unified Communications Endpoint does not provide session record generation capability, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000503-VVEP-00010">
+    <title>SRG-NET-000503-VVEP-00010</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000503-VVEP-00010_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000503-VVEP-00010</version>
+      <title>The Unified Communications Endpoint must generate audit records when successful/unsuccessful logon attempts occur.</title>
+      <description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident, or identify those responsible for one. 
+
+Audit records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing audit records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing audit records provide supplemental confirmation of monitored events. Unified Communications Endpoints that communicate beyond these defined environments must generate audit records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000172</ident>
+      <fixtext fixref="F-SRG-NET-000503-VVEP-00010_fix">Configure the Unified Communications Endpoint to generate audit records when successful/unsuccessful logon attempts occur.</fixtext>
+      <fix id="F-SRG-NET-000503-VVEP-00010_fix" />
+      <check system="C-SRG-NET-000503-VVEP-00010_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint generates audit records when successful/unsuccessful logon attempts occur.
+
+If the Unified Communications Endpoint does not generate audit records when successful/unsuccessful logon attempts occur, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000504-VVEP-00010">
+    <title>SRG-NET-000504-VVEP-00010</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000504-VVEP-00010_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000504-VVEP-00010</version>
+      <title>The Unified Communications Endpoint must generate audit records for privileged activities or other system-level access.</title>
+      <description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident, or identify those responsible for one. 
+
+Audit records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing audit records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing audit records provide supplemental confirmation of monitored events. Unified Communications Endpoints that communicate beyond these defined environments must generate audit records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000172</ident>
+      <fixtext fixref="F-SRG-NET-000504-VVEP-00010_fix">Configure the Unified Communications Endpoint to generate audit records for privileged activities or other system-level access.</fixtext>
+      <fix id="F-SRG-NET-000504-VVEP-00010_fix" />
+      <check system="C-SRG-NET-000504-VVEP-00010_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint generates audit records for privileged activities or other system-level access.
+
+If the Unified Communications Endpoint does not generate audit records for privileged activities or other system-level access, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000505-VVEP-00010">
+    <title>SRG-NET-000505-VVEP-00010</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000505-VVEP-00010_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000505-VVEP-00010</version>
+      <title>The Unified Communications Endpoint must generate audit records showing starting and ending time for user access to the system.</title>
+      <description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident, or identify those responsible for one. 
+
+Audit records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing audit records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing audit records provide supplemental confirmation of monitored events. Unified Communications Endpoints that communicate beyond these defined environments must generate audit records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000172</ident>
+      <fixtext fixref="F-SRG-NET-000505-VVEP-00010_fix">Configure the Unified Communications Endpoint to generate audit records showing starting and ending time for user access to the system.</fixtext>
+      <fix id="F-SRG-NET-000505-VVEP-00010_fix" />
+      <check system="C-SRG-NET-000505-VVEP-00010_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint generates audit records showing starting and ending time for user access to the system.
+
+If the Unified Communications Endpoint does not generate audit records showing starting and ending time for user access, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000522-VVEP-00010">
+    <title>SRG-NET-000522-VVEP-00010</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000522-VVEP-00010_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000522-VVEP-00010</version>
+      <title>For accounts using password or PINs for authentication, the Unified Communications Endpoint must store only cryptographic representations of passwords.</title>
+      <description>&lt;VulnDiscussion&gt;If passwords and PINs are not encrypted when stored, they may be read if the storage location is compromised. 
+
+Note that DOD requires the use two-factor, CAC-enabled authentication and the use of passwords incurs a permanent finding. Passwords should be used only in limited situations.
+
+Examples of situations where a user ID and password might be used include:
+
+- When the user does not use a CAC and is not a current DOD employee, member of the military, or DOD contractor.
+
+- When a user has been officially designated as temporarily unable to present a CAC for some reason (lost, damaged, not yet issued, broken card reader) (i.e., Temporary Exception User) and to satisfy urgent organizational needs must be temporarily permitted to use user ID/password authentication until the problem with CAC use has been remedied.
+
+- When the application is publicly available and/or hosting publicly releasable data requiring some degree of need-to-know protection.
+
+If the password is already encrypted and not a plaintext password, this meets this requirement. Implementation of this requirement requires configuration of FIPS-approved cipher block algorithm and block cipher modes for encryption. This method uses a one-way hashing encryption algorithm with a salt value to validate a user's password without having to store the actual password. Performance and time required to access are factors that must be considered, and the one-way hash is the most feasible means of securing the password and providing an acceptable measure of password security.
+
+Verify the user knows a password is performed using a password verifier. In its simplest form, a password verifier is a computational function that is capable of creating a hash of a password and determining if the value provided by the user matches the hash. A more secure version of verifying a user knowing a password is to store the result of an iterating hash function and a large random salt value as follows:
+
+H0 = H(pwd, H(salt))
+Hn = H(Hn-1,H(salt))
+
+In the above, "n" is a cryptographically strong random [*3] number. "Hn" is stored along with the salt. When the application wishes to verify that the user knows a password, it simply repeats the process and compares "Hn" with the stored "Hn". A salt is essentially a fixed-length cryptographically strong random value.
+
+Another method is using a keyed hash message authentication code (HMAC). HMAC calculates a message authentication code via a cryptographic hash function used in conjunction with an encryption key. The key must be protected as with any private key.
+
+This requirement applies to all accounts including authentication server; Authentication, Authorization, and Accounting (AAA), and local accounts, including the root account, and the account of last resort.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000196</ident>
+      <fixtext fixref="F-SRG-NET-000522-VVEP-00010_fix">Configure the Unified Communications Endpoint, when using passwords or PINs for authentication, to store cryptographic representations of passwords.</fixtext>
+      <fix id="F-SRG-NET-000522-VVEP-00010_fix" />
+      <check system="C-SRG-NET-000522-VVEP-00010_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint, when using passwords or PINs for authentication, stores cryptographic representations of passwords. 
+
+If the Unified Communications Endpoint, when using passwords or PINs for authentication, does not store cryptographic representations of passwords, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000400-VVEP-00033">
+    <title>SRG-NET-000400-VVEP-00033</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000400-VVEP-00033_rule" severity="high" weight="10.0">
+      <version>SRG-NET-000400-VVEP-00033</version>
+      <title>The Unified Communications Endpoint, when using passwords or PINs for authentication or authorization, must be configured to cryptographically protect the PIN or password.</title>
+      <description>&lt;VulnDiscussion&gt;Passwords need to be protected at all times and encryption is the standard method for protecting passwords. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised.
+
+This does not apply to authentication for the purpose of configuring the device itself (management).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000197</ident>
+      <fixtext fixref="F-SRG-NET-000400-VVEP-00033_fix">Configure the Unified Communications Endpoint, when using passwords or PINs for authentication or authorization, to cryptographically protect the transmission.</fixtext>
+      <fix id="F-SRG-NET-000400-VVEP-00033_fix" />
+      <check system="C-SRG-NET-000400-VVEP-00033_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint, when using passwords or PINs for authentication or authorization, cryptographically protects the transmission. 
+
+If the Unified Communications Endpoint, when using passwords or PINs for authentication or authorization, does not cryptographically protect the transmission, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000015-VVEP-00101">
+    <title>SRG-NET-000015-VVEP-00101</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000015-VVEP-00101_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000015-VVEP-00101</version>
+      <title>The Unified Communications Endpoint must be configured to prevent the configuration or display of configuration settings without the use of a PIN or password.</title>
+      <description>&lt;VulnDiscussion&gt;Many Unified Communications Endpoints can set or display configuration settings in the instrument itself. This presents a risk if a user obtains information such as the IP addresses and URLs of system components. This obtained information could be used to facilitate an attack on the system. Therefore, these devices should be considered a target to be defended against such individuals that would collect voice network information for illicit purposes. To mitigate information gathering by the adversaries, measures must be taken to protect this information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000213</ident>
+      <fixtext fixref="F-SRG-NET-000015-VVEP-00101_fix">Configure the Unified Communications Endpoint to prevent the configuration or display of configuration settings without the use of a PIN or password.</fixtext>
+      <fix id="F-SRG-NET-000015-VVEP-00101_fix" />
+      <check system="C-SRG-NET-000015-VVEP-00101_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint is configured to prevent the configuration or display of configuration settings without the use of a PIN or password.
+
+If the Unified Communications Endpoint does not prevent the configuration or display of configuration settings without the use of a PIN or password, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000015-VVEP-00102">
+    <title>SRG-NET-000015-VVEP-00102</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000015-VVEP-00102_rule" severity="high" weight="10.0">
+      <version>SRG-NET-000015-VVEP-00102</version>
+      <title>The Unified Communications Endpoint must be configured to register with a Unified Communications Session Manager.</title>
+      <description>&lt;VulnDiscussion&gt;For most VoIP systems, registration is the process of centrally recording the user ID, endpoint MAC address, service/policy profile with 2 stage authentication prior to authorizing the establishment of the session and user service. The event of successful registration creates the session record immediately. VC systems register using a similar process with a gatekeeper. Without enforcing registration, an adversary could impersonate a legitimate device on the Voice Video network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000213</ident>
+      <fixtext fixref="F-SRG-NET-000015-VVEP-00102_fix">Configure the Unified Communications Endpoint to register with a Unified Communications Session Manager.</fixtext>
+      <fix id="F-SRG-NET-000015-VVEP-00102_fix" />
+      <check system="C-SRG-NET-000015-VVEP-00102_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint registers with a Unified Communications Session Manager.
+
+If the Unified Communications Endpoint does not register with a Unified Communications Session Manager, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000015-VVEP-00100">
+    <title>SRG-NET-000015-VVEP-00100</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000015-VVEP-00100_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000015-VVEP-00100</version>
+      <title>The Unified Communications Endpoint must not be configured with any vendor default accounts, PINs, or passwords to access configuration settings.</title>
+      <description>&lt;VulnDiscussion&gt;Many Unified Communications Endpoints can set or display configuration settings in the instrument itself. This presents a risk if a user obtains information such as the IP addresses and URLs of system components. This obtained information could be used to facilitate an attack on the system. Therefore, these devices should be considered a target to be defended against individuals that would collect voice network information for illicit purposes. To mitigate information gathering by the adversaries, measures must be taken to protect this information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000213</ident>
+      <fixtext fixref="F-SRG-NET-000015-VVEP-00100_fix">Configure the Unified Communications Endpoint to not use the default PIN or password to access configuration settings.</fixtext>
+      <fix id="F-SRG-NET-000015-VVEP-00100_fix" />
+      <check system="C-SRG-NET-000015-VVEP-00100_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint does not use the default PIN or password to access configuration settings.
+
+If the Unified Communications Endpoint uses the default PIN or password to access configuration settings, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000512-VVEP-00100">
+    <title>SRG-NET-000512-VVEP-00100</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000512-VVEP-00100_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000512-VVEP-00100</version>
+      <title>The Unified Communications Endpoint must be configured in accordance with the security configuration settings based on DOD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.</title>
+      <description>&lt;VulnDiscussion&gt;Configuring the network element to implement organization-wide security implementation guides and security checklists ensures compliance with federal standards and establishes a common security baseline across DOD that reflects the most restrictive security posture consistent with operational requirements. 
+
+Configuration settings are the set of parameters that can be changed that affect the security posture and/or functionality of the network element. Security-related parameters are those parameters impacting the security state of the network element, including the parameters required to satisfy other security control requirements. For the network element, security-related parameters include settings for network traffic management configurations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000366</ident>
+      <fixtext fixref="F-SRG-NET-000512-VVEP-00100_fix">Configure the Unified Communications Endpoint in accordance with the security configuration settings based on DOD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.</fixtext>
+      <fix id="F-SRG-NET-000512-VVEP-00100_fix" />
+      <check system="C-SRG-NET-000512-VVEP-00100_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify that the Unified Communications Endpoint is configured in accordance with the security configuration settings based on DOD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.
+
+If the Unified Communications Endpoint is not configured in accordance with the security configuration settings based on DOD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000512-VVEP-00103">
+    <title>SRG-NET-000512-VVEP-00103</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000512-VVEP-00103_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000512-VVEP-00103</version>
+      <title>The Unified Communications Endpoint must be configured to disable any auto answer features.</title>
+      <description>&lt;VulnDiscussion&gt;A Unified Communications Endpoint set to automatically answer a call with audio or video capabilities enabled risks transmitting information not intended for the caller. In the event a Unified Communications Endpoint automatically answered a call during a classified meeting or discussion, potentially sensitive or classified information could be transmitted. The auto-answer feature must not be activated by a user unless the feature is required to satisfy mission requirements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000366</ident>
+      <fixtext fixref="F-SRG-NET-000512-VVEP-00103_fix">Configure the Unified Communications Endpoint to disable auto answer features.</fixtext>
+      <fix id="F-SRG-NET-000512-VVEP-00103_fix" />
+      <check system="C-SRG-NET-000512-VVEP-00103_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint is configured to disable any auto answer features. 
+
+If the Unified Communications Endpoint is not configured to disable auto answer features, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000512-VVEP-00102">
+    <title>SRG-NET-000512-VVEP-00102</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000512-VVEP-00102_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000512-VVEP-00102</version>
+      <title>The Unified Communications Endpoint must be configured to dynamically implement configuration file changes.</title>
+      <description>&lt;VulnDiscussion&gt;Configuration management includes the management of security features and assurances through control of changes made to device hardware, software, and firmware throughout the life cycle of a product. Secure configuration management relies on performance and functional attributes of products to determine the appropriate security features and assurances used to measure a system configuration state. When configuration changes are made, it is critical for those changes to be implemented by the Unified Communications Endpoint as quickly as possible. This ensures that Unified Communications Endpoints communicate using the correct address books, session managers, gateways, and border elements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000366</ident>
+      <fixtext fixref="F-SRG-NET-000512-VVEP-00102_fix">Configure the Unified Communications Endpoint to dynamically implement configuration file changes.</fixtext>
+      <fix id="F-SRG-NET-000512-VVEP-00102_fix" />
+      <check system="C-SRG-NET-000512-VVEP-00102_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint dynamically implements configuration file changes. 
+
+If the Unified Communications Endpoint does not dynamically implement configuration file changes, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000512-VVEP-00101">
+    <title>SRG-NET-000512-VVEP-00101</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000512-VVEP-00101_rule" severity="high" weight="10.0">
+      <version>SRG-NET-000512-VVEP-00101</version>
+      <title>The Unified Communications Endpoint must be configured with a firmware release supported by the vendor.</title>
+      <description>&lt;VulnDiscussion&gt;Operating a device with outdated firmware may leave the device with unmitigated security vulnerabilities. Vendors routinely update and patch firmware to address vulnerabilities. Operating with current supported firmware mitigates the vulnerabilities known by the vendor.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000366</ident>
+      <fixtext fixref="F-SRG-NET-000512-VVEP-00101_fix">Install a currently supported firmware release supplied by the vendor onto the Unified Communications Endpoint.</fixtext>
+      <fix id="F-SRG-NET-000512-VVEP-00101_fix" />
+      <check system="C-SRG-NET-000512-VVEP-00101_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the firmware release installed on the Unified Communications Endpoint is currently supported by the vendor.
+
+If the firmware release installed on the Unified Communications Endpoint is not currently supported by the vendor, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000131-VVEP-00056">
+    <title>SRG-NET-000131-VVEP-00056</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000131-VVEP-00056_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000131-VVEP-00056</version>
+      <title>The Unified Communications Endpoint must be configured to disable or remove nonessential capabilities.</title>
+      <description>&lt;VulnDiscussion&gt;It is detrimental for Unified Communications Endpoints when unnecessary features are enabled by default. Often these features are enabled by default with functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Network elements are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000381</ident>
+      <fixtext fixref="F-SRG-NET-000131-VVEP-00056_fix">Configure the Unified Communications Endpoint to disable or remove nonessential capabilities.</fixtext>
+      <fix id="F-SRG-NET-000131-VVEP-00056_fix" />
+      <check system="C-SRG-NET-000131-VVEP-00056_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint is configured to disable or remove nonessential capabilities. Nonessential capabilities would include peer services and other functions not directly pertaining to Unified Communications Endpoint functionality.
+
+If the Unified Communications Endpoint cannot be configured to disable or remove nonessential capabilities, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000132-VVEP-00059">
+    <title>SRG-NET-000132-VVEP-00059</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000132-VVEP-00059_rule" severity="high" weight="10.0">
+      <version>SRG-NET-000132-VVEP-00059</version>
+      <title>The Unified Communications Endpoint must be configured to only use ports, protocols, and services allowed per the Ports, Protocols, and Services Management (PPSM) Category Assurance List (CAL) and Vulnerability Assessments (VAs).</title>
+      <description>&lt;VulnDiscussion&gt;In order to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable or restrict unused or unnecessary physical and logical ports/protocols on information systems.
+
+Network elements are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., VPN and IPS); however, doing so increases risk over limiting the services provided by any one component. 
+
+To support the requirements and principles of least functionality, the network element must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved to conduct official business or to address authorized quality of life issues.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000382</ident>
+      <fixtext fixref="F-SRG-NET-000132-VVEP-00059_fix">Configure the Unified Communications Endpoint to only use ports, protocols, and services allowed per the PPSM CAL and VAs.</fixtext>
+      <fix id="F-SRG-NET-000132-VVEP-00059_fix" />
+      <check system="C-SRG-NET-000132-VVEP-00059_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint only uses ports, protocols, and services allowed per the PPSM CAL and VAs. If the Unified Communications Endpoint uses ports, protocols, and services not allowed per the PPSM CAL and VAs, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000138-VVEP-00029">
+    <title>SRG-NET-000138-VVEP-00029</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000138-VVEP-00029_rule" severity="high" weight="10.0">
+      <version>SRG-NET-000138-VVEP-00029</version>
+      <title>The Unified Communications Endpoint must be configured to uniquely identify participating users.</title>
+      <description>&lt;VulnDiscussion&gt;To assure accountability and prevent unauthenticated access, users must be identified to prevent potential misuse and compromise of the system. The Unified Communications Endpoint must display the source of an incoming call and the participant's identity to aid the user in deciding whether to answer a call. The information potentially at risk is that which can be seen in the physical area of the Unified Communications Endpoint or carried by the conference in which it is participating. 
+
+This does not apply to authentication for the purpose of configuring the device itself (i.e., device management).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000764</ident>
+      <fixtext fixref="F-SRG-NET-000138-VVEP-00029_fix">Configure the Unified Communications Endpoint to uniquely identify participating users.</fixtext>
+      <fix id="F-SRG-NET-000138-VVEP-00029_fix" />
+      <check system="C-SRG-NET-000138-VVEP-00029_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint uniquely identifies participating users. Identification must be visible and displayed locally.
+
+If the Unified Communications Endpoint does not uniquely identify participating users, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000140-VVEP-00010">
+    <title>SRG-NET-000140-VVEP-00010</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000140-VVEP-00010_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000140-VVEP-00010</version>
+      <title>The Unified Communications Endpoint must use multifactor authentication for network access to nonprivileged accounts.</title>
+      <description>&lt;VulnDiscussion&gt;To ensure accountability and prevent unauthenticated access, nonprivileged users must use multifactor authentication to prevent potential misuse and compromise of the system. 
+
+Multifactor authentication uses two or more factors to achieve authentication. 
+
+Factors include:
+(i) Something you know (e.g., password/PIN); 
+(ii) Something you have (e.g., cryptographic identification device, token); or 
+(iii) Something you are (e.g., biometric). 
+
+The DOD CAC with DOD-approved PKI is an example of multifactor authentication. 
+
+Multifactor authentication is implemented most often with software type endpoints, as this can be implemented at the operating system level. More recent advances in hardware may allow implementation at the hardware endpoint.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-000766</ident>
+      <fixtext fixref="F-SRG-NET-000140-VVEP-00010_fix">Configure the Unified Communications Endpoint to use multifactor authentication for network access to nonprivileged accounts.</fixtext>
+      <fix id="F-SRG-NET-000140-VVEP-00010_fix" />
+      <check system="C-SRG-NET-000140-VVEP-00010_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint uses multifactor authentication for network access to nonprivileged accounts.
+
+If the Unified Communications Endpoint does not use multifactor authentication for network access to nonprivileged accounts, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000213-VVEP-00028">
+    <title>SRG-NET-000213-VVEP-00028</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000213-VVEP-00028_rule" severity="high" weight="10.0">
+      <version>SRG-NET-000213-VVEP-00028</version>
+      <title>The Unified Communications Endpoint must be configured to terminate all network connections associated with a communications session at the end of the session.</title>
+      <description>&lt;VulnDiscussion&gt;Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. In addition, quickly terminating an idle session will also free up resources committed by the managed network element. 
+
+Terminating network connections associated with communications sessions includes, for example, de-allocating associated TCP/IP address/port pairs at the operating system level, and de-allocating networking assignments at the application level if multiple application sessions are using a single, operating system level network connection. 
+
+This requirement applies to any network element that tracks individual sessions (e.g., stateful inspection firewall, ALG, or VPN).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001133</ident>
+      <fixtext fixref="F-SRG-NET-000213-VVEP-00028_fix">Configure the Unified Communications Endpoint to terminate all network connections associated with a communications session at the end of the session.</fixtext>
+      <fix id="F-SRG-NET-000213-VVEP-00028_fix" />
+      <check system="C-SRG-NET-000213-VVEP-00028_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint terminates all network connections associated with a communications session at the end of the session. 
+
+If the Unified Communications Endpoint does not terminate all network connections associated with a communications session at the end of the session, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000230-VVEP-00101">
+    <title>SRG-NET-000230-VVEP-00101</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000230-VVEP-00101_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000230-VVEP-00101</version>
+      <title>The Unified Communications Endpoint must be configured to use FIPS-validated SHA-2 or higher to protect the authenticity of communications sessions.</title>
+      <description>&lt;VulnDiscussion&gt;Authenticity protection provides protection against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions.
+
+Although allowed by SP800-131Ar2 for some applications, SHA-1 is considered a compromised hashing standard and is being phased out of use by industry and government standards. Unless required for legacy use, DOD systems should not be configured to use SHA-2 for integrity of remote access sessions.
+
+This requirement focuses on communications protection for the application session rather than for the network packet and establishes grounds for confidence at both ends of communications sessions in ongoing identities of other parties and in the validity of information transmitted. Depending on the required degree of confidentiality and integrity, web services/SOA will require the use of mutual authentication (two-way/bidirectional).
+
+This requirement applies only to network elements that act as an intermediary for individual sessions (e.g., proxy, ALG, or SSL VPN).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001184</ident>
+      <fixtext fixref="F-SRG-NET-000230-VVEP-00101_fix">Configure the Unified Communications Endpoint to use SHA-2 or greater to protect the authenticity of communications sessions.</fixtext>
+      <fix id="F-SRG-NET-000230-VVEP-00101_fix" />
+      <check system="C-SRG-NET-000230-VVEP-00101_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint is configured to use FIPS-validated SHA-2 or higher to protect the authenticity of communications sessions.
+
+If the Unified Communications Endpoint is not configured with SHA-2 or greater, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000018-VVEP-00108">
+    <title>SRG-NET-000018-VVEP-00108</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000018-VVEP-00108_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000018-VVEP-00108</version>
+      <title>The Unified Communications Endpoint must be configured to disable the Far End Camera Control feature if supported.</title>
+      <description>&lt;VulnDiscussion&gt;Many VTC endpoints support Far End Camera Control (FECC). This feature uses H.281 protocol, which must be supported by both VTUs. Typically, this is only available during an active VTC session but could be available if the VTU is compromised or if a call is automatically answered. Allowing another conference attendee to take control of the camera can place the confidentiality of nonconference-related information at risk. FECC should be disabled to prevent the control of the near end camera by the far end unless required to satisfy validated mission requirements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001368</ident>
+      <fixtext fixref="F-SRG-NET-000018-VVEP-00108_fix">Perform the following tasks:
+Configure the CODEC to disable far end camera control.
+OR
+Document and validate the mission requirements that require far end camera control to be enabled and obtain AO approval. Maintain the requirement and approval documentation for review by auditors.</fixtext>
+      <fix id="F-SRG-NET-000018-VVEP-00108_fix" />
+      <check system="C-SRG-NET-000018-VVEP-00108_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Ensure far end camera control is disabled unless required to satisfy validated, approved, and documented mission requirements. 
+
+Note: The documented and validated mission requirements along with their approval(s) are maintained by the ISSO for inspection by auditors. Such approval is obtained from the AO or ISSM responsible for the VTU(s) or system. 
+
+Note: During APL testing, this is a finding in the event this requirement is not supported by the VTU. i.e., far end camera control must be able to be disabled or the feature must not be supported.
+
+Determine if remote monitoring is required and approved to meet mission requirements. Have the ISSO or SA demonstrate compliance with the requirement.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000018-VVEP-00102">
+    <title>SRG-NET-000018-VVEP-00102</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000018-VVEP-00102_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000018-VVEP-00102</version>
+      <title>The Unified Communications Endpoint must be configured to integrate into the implemented 802.1x network access control system.</title>
+      <description>&lt;VulnDiscussion&gt;IEEE 802.1x is a protocol used to control access to LAN services via a network access switchport or wireless access point that requires a device or user to authenticate to the network element and become authorized by the authentication server before accessing the network. This standard is used to activate the network access switchport limiting traffic to a specific VLAN or install traffic filters. Implementing 802.1x port security on each access switchport denies all other MAC users, which eliminates the security risk of additional users attaching to a switch to bypass authentication. The hardware Unified Communications Endpoint must be an 802.1x supplicant and integrate into the 802.1x access control system. When 802.1x is used, all devices connecting to the LAN are required to use 802.1x.
+
+MAC Authentication Bypass is permitted by the Unified Communications Requirements Guide when the endpoint does not support 802.1x or required by mission continuity of operation requirements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001368</ident>
+      <fixtext fixref="F-SRG-NET-000018-VVEP-00102_fix">Configure the Unified Communications Endpoint to integrate into the implemented 802.1x network access control system.</fixtext>
+      <fix id="F-SRG-NET-000018-VVEP-00102_fix" />
+      <check system="C-SRG-NET-000018-VVEP-00102_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint is configured to integrate into the implemented 802.1x network access control system. 
+
+If the Unified Communications Endpoint does not integrate into the implemented 802.1x network access control system, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000018-VVEP-00107">
+    <title>SRG-NET-000018-VVEP-00107</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000018-VVEP-00107_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000018-VVEP-00107</version>
+      <title>The Unified Communications Endpoint must be configured to use a voice video VLAN, separate from all other VLANs.</title>
+      <description>&lt;VulnDiscussion&gt;Virtualized networking is used to separate voice video traffic from other types of traffic, such as data, management, and other special types. VLANs provide segmentation at layer 2. Virtual Routing and Forwarding (VRF) provides segmentation at layer 3 and works with Multiprotocol Label Switching (MPLS) for enterprise and WAN environments. When VRF is used without MPLS, it is referred to as VRF lite. For Voice Video systems, subnets, VLANs, and VRFs are used to separate media and signaling streams from all other traffic.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001368</ident>
+      <fixtext fixref="F-SRG-NET-000018-VVEP-00107_fix">Configure the Unified Communications Endpoint to use a voice video VLAN separate from all other VLANs.</fixtext>
+      <fix id="F-SRG-NET-000018-VVEP-00107_fix" />
+      <check system="C-SRG-NET-000018-VVEP-00107_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint is configured to use a voice video VLAN separate from all other VLANs. For networks with both VoIP and videoconferencing, best practice is to have a separate voice VLAN and video VLAN.
+
+If the Unified Communications Endpoint does not use a voice video VLAN separate from all other VLANs, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000018-VVEP-00106">
+    <title>SRG-NET-000018-VVEP-00106</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000018-VVEP-00106_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000018-VVEP-00106</version>
+      <title>The Unified Communications Endpoint not supporting 802.1x must be configured to use MAC Authentication Bypass (MAB) on the access switchport.</title>
+      <description>&lt;VulnDiscussion&gt;IEEE 802.1x is a protocol used to control access to LAN services via a network access switchport or wireless access point that requires a device or user to authenticate to the network element and become authorized by the authentication server before accessing the network. This standard is used to activate the network access switchport limiting traffic to a specific VLAN or install traffic filters. Implementing 802.1x port security on each access switchport denies all other MAC users, which eliminates the security risk of additional users attaching to a switch to bypass authentication. The hardware Unified Communications Endpoint must be an 802.1x supplicant and integrate into the 802.1x access control system. When 802.1x is used, all devices connecting to the LAN are required to use 802.1x.
+
+A Unified Communications Endpoint with a PC port may break 802.1x LAN access control mechanisms when the network access switchport is authorized during the Unified Communications Endpoint authentication to the network. This condition may permit devices connected to the PC port to access the LAN. Daisy chaining devices on a single LAN drop protected by 802.1x must be prohibited unless the PC port is an 802.1x authenticator and configured to work with an approved authentication server. Disabling the PC port requires the network access switchports are configured with the appropriate VLAN for the VVoIP or VTC traffic and placing the disabled PC port traffic on the unused VLAN. MAC Address Bypass (MAB) is a possible mitigation for this vulnerability.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001368</ident>
+      <fixtext fixref="F-SRG-NET-000018-VVEP-00106_fix">Configure the Unified Communications Endpoint not supporting 802.1x to use MAB on the access switchport.</fixtext>
+      <fix id="F-SRG-NET-000018-VVEP-00106_fix" />
+      <check system="C-SRG-NET-000018-VVEP-00106_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint not supporting 802.1x is configured to use MAB on the access switchport. 
+
+If the Unified Communications Endpoint not supporting 802.1x is not configured to use MAB on the access switchport, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000018-VVEP-00104">
+    <title>SRG-NET-000018-VVEP-00104</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000018-VVEP-00104_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000018-VVEP-00104</version>
+      <title>The Unified Communications Endpoint PC port must be configured to connect to an 802.1x supplicant or the PC port must be disabled.</title>
+      <description>&lt;VulnDiscussion&gt;IEEE 802.1x is a protocol used to control access to LAN services via a network access switchport or wireless access point that requires a device or user to authenticate to the network element and become authorized by the authentication server before accessing the network. This standard is used to activate the network access switchport limiting traffic to a specific VLAN or install traffic filters. Implementing 802.1x port security on each access switchport denies all other MAC users, which eliminates the security risk of additional users attaching to a switch to bypass authentication. The hardware Unified Communications Endpoint must be an 802.1x supplicant and integrate into the 802.1x access control system. When 802.1x is used, all devices connecting to the LAN are required to use 802.1x.
+
+A Unified Communications Endpoint with a PC port may break 802.1x LAN access control mechanisms when the network access switchport is authorized during the Unified Communications Endpoint authentication to the network. This condition may permit devices connected to the PC port to access the LAN. The access switchport can be configured in one of the following modes: single-host, multi-host, or multi-domain. Single-host allows only one device to authenticate, and only packets from this devices MAC address will be allowed, dropping all other packets. Multi-host mode requires one host to authenticate but once this is done, all packets regardless of source MAC address will be allowed. For both the PC attached to the PC port and the Unified Communications Endpoint to authenticate separately, multi-domain authentication on the access switchport must be configured. This divides the switchport into a data and a voice domain. In this case if more than one device attempts authorization on either the voice or the data domain of a port, the switchport goes into an error disable state. Disabling the PC port requires the network access switchports are configured with the appropriate VLAN for the VVoIP or VTC traffic and placing the disabled PC port traffic on the unused VLAN. MAC Address Bypass (MAB) is a possible mitigation for this vulnerability.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001368</ident>
+      <fixtext fixref="F-SRG-NET-000018-VVEP-00104_fix">Configure the Unified Communications Endpoint PC port to connect to an 802.1x supplicant in the implemented 802.1x network access control system or be disabled.</fixtext>
+      <fix id="F-SRG-NET-000018-VVEP-00104_fix" />
+      <check system="C-SRG-NET-000018-VVEP-00104_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint PC port is configured to connect to an 802.1x supplicant or is disabled. 
+
+If the Unified Communications Endpoint PC port is disabled, this is not a finding. If the Unified Communications Endpoint PC port is not disabled and is not an 802.1x authenticator, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000018-VVEP-00101">
+    <title>SRG-NET-000018-VVEP-00101</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000018-VVEP-00101_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000018-VVEP-00101</version>
+      <title>The Unified Communications Endpoint PC port must be configured to maintain VLAN separation from the voice video VLAN, or be disabled.</title>
+      <description>&lt;VulnDiscussion&gt;Virtualized networking is used to separate voice video traffic from other types of traffic, such as data, management, and other special types. VLANs provide segmentation at layer 2. Virtual Routing and Forwarding (VRF) provides segmentation at layer 3 and works with Multiprotocol Label Switching (MPLS) for enterprise and WAN environments. When VRF is used without MPLS, it is referred to as VRF lite. For Voice Video systems, subnets, VLANs, and VRFs are used to separate media and signaling streams from all other traffic.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001368</ident>
+      <fixtext fixref="F-SRG-NET-000018-VVEP-00101_fix">Configure the Unified Communications Endpoint PC port to maintain VLAN separation from the voice video VLAN or be disabled.</fixtext>
+      <fix id="F-SRG-NET-000018-VVEP-00101_fix" />
+      <check system="C-SRG-NET-000018-VVEP-00101_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the  Unified Communications Endpoint PC port is configured to maintain VLAN separation from the voice video VLAN or is disabled. For networks with both VoIP and videoconferencing, best practice is to have a separate voice VLAN and video VLAN.
+
+If the  Unified Communications Endpoint PC port is disabled, this is not a finding. If the  Unified Communications Endpoint PC port does not maintain VLAN separation from the voice video VLAN, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000530-VVEP-00101">
+    <title>SRG-NET-000530-VVEP-00101</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000530-VVEP-00101_rule" severity="high" weight="10.0">
+      <version>SRG-NET-000530-VVEP-00101</version>
+      <title>The Unified Communications Endpoint must prohibit client negotiation to TLS 1.1, TLS 1.0, SSL 2.0, or SSL 3.0.</title>
+      <description>&lt;VulnDiscussion&gt;Using older unauthorized versions or incorrectly configuring protocol negotiation makes the gateway vulnerable to known and unknown attacks that exploit vulnerabilities in this protocol.
+
+This requirement applies to TLS gateways (also known as SSL gateways), web servers, and web applications. Application protocols such as HTTPS and DNSSEC use TLS as the underlying security protocol and thus are in scope for this requirement. NIST SP 800-52 provides guidance for client negotiation on either DOD-only or public-facing servers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001453</ident>
+      <fixtext fixref="F-SRG-NET-000530-VVEP-00101_fix">Configure the Unified Communications Endpoint to prohibit client negotiation to TLS 1.1, TLS 1.0, SSL 2.0, or SSL 3.0.</fixtext>
+      <fix id="F-SRG-NET-000530-VVEP-00101_fix" />
+      <check system="C-SRG-NET-000530-VVEP-00101_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint prohibits client negotiation to TLS 1.1, TLS 1.0, SSL 2.0, and SSL 3.0.
+
+If the Unified Communications Endpoint does not prohibit client negotiation to TLS 1.1, TLS 1.0, SSL 2.0, and SSL 3.0, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000079-VVEP-00026">
+    <title>SRG-NET-000079-VVEP-00026</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000079-VVEP-00026_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000079-VVEP-00026</version>
+      <title>The Unified Communications Endpoint must be configured to produce session (call detail) records containing the identity of all users.</title>
+      <description>&lt;VulnDiscussion&gt;Without information that establishes the identity of the subjects (i.e., users or processes acting on behalf of users) associated with the events, security personnel cannot determine responsibility for the potentially harmful event.
+
+Audit records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing audit records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing audit records provide supplemental confirmation of monitored events. Unified Communications Endpoints that communicate beyond these defined environments must generate audit records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001487</ident>
+      <fixtext fixref="F-SRG-NET-000079-VVEP-00026_fix">Configure the Unified Communications Endpoint to produce session records containing the identity of all users on the call.</fixtext>
+      <fix id="F-SRG-NET-000079-VVEP-00026_fix" />
+      <check system="C-SRG-NET-000079-VVEP-00026_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint produces session records containing the identity of all users on the call. 
+
+If the Unified Communications Endpoint does not produce session records containing the identity of all users on the call, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000236-VVEP-00043">
+    <title>SRG-NET-000236-VVEP-00043</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000236-VVEP-00043_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000236-VVEP-00043</version>
+      <title>In the event of a device failure, Unified Communications Endpoints must preserve any information necessary to determine cause of failure and return to operations with least disruption to service.</title>
+      <description>&lt;VulnDiscussion&gt;Failure in a known state can address safety or security in accordance with the mission needs of the organization. Failure to a known secure state helps prevent a loss of confidentiality, integrity, or availability in the event of a failure of the information system or a component of the system. Preserving network element state information helps to facilitate network element restart and return to the operational mode of the organization with less disruption to mission-essential processes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001665</ident>
+      <fixtext fixref="F-SRG-NET-000236-VVEP-00043_fix">Configure the Unified Communications Endpoint, in the event of device failure, to preserve any information necessary to determine cause of failure. Also configure the Unified Communications Endpoint to return to operations with least disruption to service.</fixtext>
+      <fix id="F-SRG-NET-000236-VVEP-00043_fix" />
+      <check system="C-SRG-NET-000236-VVEP-00043_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify that in the event of device failure, the Unified Communications Endpoint preserves any information necessary to determine cause of failure and return to operations with least disruption to service.
+
+If the Unified Communications Endpoint does not preserve any information necessary to determine cause of failure, this is a finding. 
+
+If the Unified Communications Endpoint does not return to operations with least disruption to service after device failure, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000334-VVEP-00010">
+    <title>SRG-NET-000334-VVEP-00010</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000334-VVEP-00010_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000334-VVEP-00010</version>
+      <title>The Unified Communications Endpoint must offload audit records onto a different system or media than the system being audited.</title>
+      <description>&lt;VulnDiscussion&gt;Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
+
+Offloading is a common process in information systems with limited audit storage capacity. 
+
+Audit records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing audit records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing audit records provide supplemental confirmation of monitored events. Unified Communications Endpoints that support audit records must support offloading.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001851</ident>
+      <fixtext fixref="F-SRG-NET-000334-VVEP-00010_fix">Configure the Unified Communications Endpoint to offload audit records to a different system or media.</fixtext>
+      <fix id="F-SRG-NET-000334-VVEP-00010_fix" />
+      <check system="C-SRG-NET-000334-VVEP-00010_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint offloads audit records onto a different system or media.
+
+If the Unified Communications Endpoint does not offload audit records to a different system or media, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000511-VVEP-00010">
+    <title>SRG-NET-000511-VVEP-00010</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000511-VVEP-00010_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000511-VVEP-00010</version>
+      <title>The Unified Communications Endpoint must, at a minimum, offload interconnected systems in real-time and offload standalone systems weekly.</title>
+      <description>&lt;VulnDiscussion&gt;Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
+
+Offloading is a common process in information systems with limited audit storage capacity. 
+
+Audit records are commonly produced by session management and border elements. Many Unified Communications Endpoints are not capable of providing audit records and instead rely on session management and border elements. Unified Communications Endpoints capable of producing audit records provide supplemental confirmation of monitored events. Unified Communications Endpoints that support audit records must support offloading.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001851</ident>
+      <fixtext fixref="F-SRG-NET-000511-VVEP-00010_fix">Configure the Unified Communications Endpoint to offload audit records in real time or weekly.</fixtext>
+      <fix id="F-SRG-NET-000511-VVEP-00010_fix" />
+      <check system="C-SRG-NET-000511-VVEP-00010_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint offloads audit records in real time or weekly.
+
+If the Unified Communications Endpoint does not offload audit records in real time or weekly, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000147-VVEP-00101">
+    <title>SRG-NET-000147-VVEP-00101</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000147-VVEP-00101_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000147-VVEP-00101</version>
+      <title>The Unified Communications Endpoint must be configured to implement replay-resistant authentication mechanisms for network access.</title>
+      <description>&lt;VulnDiscussion&gt;A replay attack may enable an unauthorized user to gain access to the application. Authentication sessions between the authenticator and the application validating the user credentials must not be vulnerable to a replay attack.
+
+An authentication process resists replay attacks if it is impractical to achieve a successful authentication by recording and replaying a previous authentication message. 
+
+A nonprivileged account is any operating system account with authorizations of a nonprivileged user. 
+
+Techniques used to address this include protocols using nonces (e.g., numbers generated for a specific one time use) or challenges (e.g., TLS, WS_Security). Additional techniques include time-synchronous or challenge-response one-time authenticators. 
+
+This requirement only applies to components where this is specific to the function of the device or has the concept of an organizational user (e.g., VPN, proxy capability). This does not apply to authentication for the purpose of configuring the device itself (i.e., device management).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-001942</ident>
+      <fixtext fixref="F-SRG-NET-000147-VVEP-00101_fix">Configure the Unified Communications Endpoint to implement replay-resistant authentication mechanisms for network access.</fixtext>
+      <fix id="F-SRG-NET-000147-VVEP-00101_fix" />
+      <check system="C-SRG-NET-000147-VVEP-00101_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint implements replay-resistant authentication mechanisms for network access. 
+
+If the Unified Communications Endpoint does not implement replay-resistant authentication mechanisms for network access, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000518-VVEP-00101">
+    <title>SRG-NET-000518-VVEP-00101</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000518-VVEP-00101_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000518-VVEP-00101</version>
+      <title>The Unified Communications Endpoint must provide a logout capability for user-initiated communications sessions.</title>
+      <description>&lt;VulnDiscussion&gt;If a user cannot explicitly end a session, the session may remain open and be exploited by an attacker; this is referred to as a zombie session.
+
+However, for some types of interactive sessions including, for example, remote login, information systems typically send logout messages as final messages prior to terminating sessions.
+
+This applies to network elements that have the concept of a user account and have the login function residing on the network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-002363</ident>
+      <fixtext fixref="F-SRG-NET-000518-VVEP-00101_fix">Configure the Unified Communications Endpoint to provide a logout capability for user-initiated communications sessions.</fixtext>
+      <fix id="F-SRG-NET-000518-VVEP-00101_fix" />
+      <check system="C-SRG-NET-000518-VVEP-00101_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint provides a logout capability for user-initiated communications sessions.
+
+If the Unified Communications Endpoint does not provide a logout capability for user-initiated communications sessions, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000519-VVEP-00101">
+    <title>SRG-NET-000519-VVEP-00101</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000519-VVEP-00101_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000519-VVEP-00101</version>
+      <title>The Unified Communications Endpoint must display an explicit logout message to users indicating the reliable termination of communications sessions.</title>
+      <description>&lt;VulnDiscussion&gt;If a user cannot explicitly end a session, the session may remain open and be exploited by an attacker; this is referred to as a zombie session. Users need to be aware of whether or not the session has been terminated.
+
+Logout messages for access, for example, can be displayed after authenticated sessions have been terminated. However, for some types of interactive sessions including, for example, remote login, information systems typically send logout messages as final messages prior to terminating sessions.
+ 
+This applies to network elements that have the concept of a user account and have the login function residing on the network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-002364</ident>
+      <fixtext fixref="F-SRG-NET-000519-VVEP-00101_fix">Configure the Unified Communications Endpoint to display an explicit logout message to users indicating the termination of communications sessions.</fixtext>
+      <fix id="F-SRG-NET-000519-VVEP-00101_fix" />
+      <check system="C-SRG-NET-000519-VVEP-00101_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint displays an explicit logout message to users indicating the termination of communications sessions.
+
+If the Unified Communications Endpoint does not display an explicit logout message to users, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000371-VVEP-00037">
+    <title>SRG-NET-000371-VVEP-00037</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000371-VVEP-00037_rule" severity="high" weight="10.0">
+      <version>SRG-NET-000371-VVEP-00037</version>
+      <title>The Unified Communications Endpoint must be configured to use FIPS compliant algorithms for network traffic.</title>
+      <description>&lt;VulnDiscussion&gt;Without protection of the transmitted information, confidentiality and integrity may be compromised as unprotected communications can be intercepted and either read or altered. TLS can be used to secure SIP and SCCP signaling by configuring the session manager in a secure mode.
+
+DOD-to-DOD voice communications are generally considered to contain sensitive information and therefore DOD voice and data traffic crossing the unclassified DISN must be encrypted. Cryptographic mechanisms such as Media Access Control Security (MACsec) implemented to protect information include cryptographic hash functions that have common application in digital signatures, checksums, and message authentication codes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-002418</ident>
+      <fixtext fixref="F-SRG-NET-000371-VVEP-00037_fix">Configure the Unified Communications Endpoint to use encryption for network traffic.</fixtext>
+      <fix id="F-SRG-NET-000371-VVEP-00037_fix" />
+      <check system="C-SRG-NET-000371-VVEP-00037_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint uses encryption for network traffic. 
+
+If the Unified Communications Endpoint does not use encryption for network traffic, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000352-VVEP-00038">
+    <title>SRG-NET-000352-VVEP-00038</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000352-VVEP-00038_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000352-VVEP-00038</version>
+      <title>The Unified Communications Endpoint must be configured to use cryptographic algorithms approved by NSA to protect NSS when transporting classified traffic across an unclassified network.</title>
+      <description>&lt;VulnDiscussion&gt;Use of weak or untested encryption algorithms undermines the purposes of using encryption to protect data.
+
+NIST cryptographic algorithms are approved by NSA to protect NSS. Based on an analysis of the impact of quantum computing, cryptographic algorithms specified by CNSSP-15 and approved for use in products in the CSfC program have been changed to more stringent protocols and configured with increased bit sizes and other secure characteristics to protect against quantum computing threats. The Commercial National Security Algorithm Suite (CNSA Suite) replaces Suite B.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-002450</ident>
+      <fixtext fixref="F-SRG-NET-000352-VVEP-00038_fix">Configure the Unified Communications Endpoint processing classified information over public networks to implement NSA-approved cryptography.</fixtext>
+      <fix id="F-SRG-NET-000352-VVEP-00038_fix" />
+      <check system="C-SRG-NET-000352-VVEP-00038_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint processing classified information over public networks implements NSA-approved cryptography. 
+
+If the Unified Communications Endpoint processing classified information over public networks does not implement NSA-approved cryptography, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SRG-NET-000353-VVEP-00042">
+    <title>SRG-NET-000353-VVEP-00042</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SRG-NET-000353-VVEP-00042_rule" severity="medium" weight="10.0">
+      <version>SRG-NET-000353-VVEP-00042</version>
+      <title>The Unified Communications Endpoint must provide an explicit indication of current participants in all Videoconference (VC)-based and IP-based online meetings and conferences.</title>
+      <description>&lt;VulnDiscussion&gt;Providing an explicit indication of current participants in teleconferences helps to prevent unauthorized individuals from participating in collaborative teleconference sessions without the explicit knowledge of other participants. Teleconferences allow groups of users to collaborate and exchange information. Without knowing who is in attendance, information could be compromised. 
+
+Network elements that provide a teleconference capability must provide a clear indication of who is attending the meeting, thus providing all attendees with the capability to clearly identify users who are in attendance.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <ident system="http://iase.disa.mil/cci">CCI-002453</ident>
+      <fixtext fixref="F-SRG-NET-000353-VVEP-00042_fix">Configure the Unified Communications Endpoint provides an explicit indication of current participants in all VC-based and IP-based online meetings and conferences.</fixtext>
+      <fix id="F-SRG-NET-000353-VVEP-00042_fix" />
+      <check system="C-SRG-NET-000353-VVEP-00042_chk">
+        <check-content-ref name="M" href="VMS_XCCDF_Benchmark_SRG.xml" />
+        <check-content>Verify the Unified Communications Endpoint provides an explicit indication of current participants in all VC-based and IP-based online meetings and conferences. This excludes audio-only teleconferences using traditional telephony.
+
+If the Unified Communications Endpoint does not provide an explicit indication of current participants in all VC-based and IP-based online meetings and conferences, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+</Benchmark>

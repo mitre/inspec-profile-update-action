@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Arista_DCS-7000_Series_L2S_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2016-03-29">accepted</status><title>Arista MLS DCS-7000 Series L2S Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 22 Apr 2016</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60813" selected="true" /><select idref="V-60821" selected="true" /><select idref="V-60823" selected="true" /><select idref="V-60825" selected="true" /><select idref="V-60827" selected="true" /><select idref="V-60829" selected="true" /><select idref="V-60831" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60813" selected="true" /><select idref="V-60821" selected="true" /><select idref="V-60823" selected="true" /><select idref="V-60825" selected="true" /><select idref="V-60827" selected="true" /><select idref="V-60829" selected="true" /><select idref="V-60831" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60813" selected="true" /><select idref="V-60821" selected="true" /><select idref="V-60823" selected="true" /><select idref="V-60825" selected="true" /><select idref="V-60827" selected="true" /><select idref="V-60829" selected="true" /><select idref="V-60831" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60813" selected="true" /><select idref="V-60821" selected="true" /><select idref="V-60823" selected="true" /><select idref="V-60825" selected="true" /><select idref="V-60827" selected="true" /><select idref="V-60829" selected="true" /><select idref="V-60831" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60813" selected="true" /><select idref="V-60821" selected="true" /><select idref="V-60823" selected="true" /><select idref="V-60825" selected="true" /><select idref="V-60827" selected="true" /><select idref="V-60829" selected="true" /><select idref="V-60831" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60813" selected="true" /><select idref="V-60821" selected="true" /><select idref="V-60823" selected="true" /><select idref="V-60825" selected="true" /><select idref="V-60827" selected="true" /><select idref="V-60829" selected="true" /><select idref="V-60831" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60813" selected="true" /><select idref="V-60821" selected="true" /><select idref="V-60823" selected="true" /><select idref="V-60825" selected="true" /><select idref="V-60827" selected="true" /><select idref="V-60829" selected="true" /><select idref="V-60831" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60813" selected="true" /><select idref="V-60821" selected="true" /><select idref="V-60823" selected="true" /><select idref="V-60825" selected="true" /><select idref="V-60827" selected="true" /><select idref="V-60829" selected="true" /><select idref="V-60831" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-60813" selected="true" /><select idref="V-60821" selected="true" /><select idref="V-60823" selected="true" /><select idref="V-60825" selected="true" /><select idref="V-60827" selected="true" /><select idref="V-60829" selected="true" /><select idref="V-60831" selected="true" /></Profile><Group id="V-60813"><title>SRG-NET-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75269r1_rule" severity="medium" weight="10.0"><version>AMLS-L2-000100</version><title>The Arista Multilayer Switch must enforce approved authorizations for controlling the flow of information within the network based on organization-defined information flow control policies.</title><description>&lt;VulnDiscussion&gt;Information flow control regulates where information is allowed to travel within a network and between interconnected networks. The flow of all network traffic must be monitored and controlled so it does not introduce any unacceptable risk to the network infrastructure or data. 
+
+A few examples of flow control restrictions include: keeping export-controlled information from being transmitted in the clear to the Internet and blocking information marked as classified but which is being transported to an unapproved destination. Information flow control policies and enforcement mechanisms are commonly employed by organizations to control the flow of information between designated sources and destinations (e.g., networks, individuals, devices) within information systems.
+
+Enforcement occurs, for example, in boundary protection devices (e.g., gateways, routers, guards, encrypted tunnels, and firewalls) that employ rule sets or establish configuration settings that restrict information system services, provide a packet filtering capability based on header information, or provide a message filtering capability based on message content (e.g., implementing key word searches or using document characteristics).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series L2S</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series L2S</dc:subject><dc:identifier>2821</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001368</ident><fixtext fixref="F-66499r1_fix">Configure the switch to use spanning-tree protocol for Layer-2 connections.
+
+The version of spanning-tree protocol as well as the VLANs upon which it is enabled must be determined according to organizational use and site policy.
+
+For full configuration examples, refer to the Arista Configuration Manual, Chapter 20.</fixtext><fix id="F-66499r1_fix" /><check system="C-61735r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_L2S_STIG.xml" /><check-content>Verify the use of Spanning-Tree Protocol for information flow control via the "show spanning-tree" command.
+
+Alternatively, from the output of the "show running-config" command, review the configuration for "spanning-tree mode" statement, and verify the line "spanning-tree disabled" is not present for production VLANs.
+
+If spanning-tree is not used for controlling the flow of information, this is a finding.</check-content></check></Rule></Group><Group id="V-60821"><title>SRG-NET-000019</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75277r1_rule" severity="medium" weight="10.0"><version>AMLS-L2-000110</version><title>The Arista Multilayer Switch must enforce approved authorizations for controlling the flow of information between interconnected systems based on organization-defined information flow control policies.</title><description>&lt;VulnDiscussion&gt;Information flow control regulates where information is allowed to travel within a network and between interconnected networks. The flow of all network traffic must be monitored and controlled so it does not introduce any unacceptable risk to the network infrastructure or data. 
+
+Examples of flow control restrictions include blocking outside traffic claiming to be from within the organization, and not passing any web requests to the Internet not from the internal web proxy. Additional examples of restrictions include: keeping export-controlled information from being transmitted in the clear to the Internet, and blocking information marked as classified, but which is being transported to an unapproved destination. Information flow control policies and enforcement mechanisms are commonly employed by organizations to control the flow of information between designated sources and destinations (e.g., networks, individuals, and devices) within information systems.
+
+Enforcement occurs, for example, in boundary protection devices (e.g., gateways, routers, guards, encrypted tunnels, and firewalls) that employ rule sets or establish configuration settings that restrict information system services, provide a packet filtering capability based on header information, or provide a message filtering capability based on message content (e.g., implementing key word searches or using document characteristics).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series L2S</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series L2S</dc:subject><dc:identifier>2821</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001414</ident><fixtext fixref="F-66531r1_fix">Configure an Access Control List to control information flow between connected networks.
+Configuration Example
+configure
+mac access-list STIG
+ permit [src mac] [src mask] [dst mac] [dst mask]/[any] [protocol]
+exit</fixtext><fix id="F-66531r1_fix" /><check system="C-61767r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_L2S_STIG.xml" /><check-content>Verify the use of MAC Access Control Lists to prevent unintended information flow between network segments. 
+
+For network boundary interfaces, verify the use of an access control list by entering "show mac access-list summary" to validate the use of an access control list on the interface. 
+
+Verify the access control list restricts network traffic as intended by entering "show mac access-list [name]" and substituting the name of the access control list for the bracketed variable.
+
+If there is no access control list configured, or if the access control list does not prevent unintended flow of information between network segments, this is a finding.</check-content></check></Rule></Group><Group id="V-60823"><title>SRG-NET-000148</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75279r1_rule" severity="medium" weight="10.0"><version>AMLS-L2-000120</version><title>The Arista Multilayer Switch must uniquely identify all network-connected endpoint devices before establishing any connection.</title><description>&lt;VulnDiscussion&gt;Without identifying devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity.
+
+For distributed architectures (e.g., service-oriented architectures), the decisions regarding the validation of identification claims may be made by services separate from the services acting on those decisions. In such situations, it is necessary to provide the identification decisions (as opposed to the actual identifiers) to the services that need to act on those decisions.
+
+This requirement applies to applications that connect either locally, remotely, or through a network to an endpoint device (including, but not limited to, workstations, printers, servers (outside a datacenter), VoIP Phones, and VTC CODECs). Gateways and SOA applications are examples of where this requirement would apply.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series L2S</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series L2S</dc:subject><dc:identifier>2821</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000778</ident><fixtext fixref="F-66533r1_fix">Configure 802.1X on the switch, using the following mandatory parameters for all applicable interfaces. Replace the bracketed variable with the applicable value.
+
+config
+interface Ethernet[X]
+ switchport access vlan [Y]
+ dot1x pae authenticator
+ dot1x reauthentication
+ dot1x port-control auto
+ dot1x host-mode single-host
+ dot1x timeout quiet-period [value]
+ dot1x timeout reauth-period [value]
+ dot1x max-reauth-req [value]
+
+For the global configuration, include the following command statements from the global configuration mode interface:
+
+logging level DOT1X informational
+aaa authentication dot1x default group radius
+dot1x system-auth-control</fixtext><fix id="F-66533r1_fix" /><check system="C-61769r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_L2S_STIG.xml" /><check-content>Verify that the network device uniquely identifies network-connected endpoint devices. This requirement is not applicable to Arista switches when not used as an access switch.
+
+802.1X must be configured on any interface where there is an applicable endpoint device connected. This is demonstrated by viewing the running-config via the "show dot1x all" command and validating the following lines are present in the configuration:
+
+Dot1X Information for Ethernet[X]
+--------------------------------------------
+PortControl : auto
+HostMode : single-host
+QuietPeriod : [value]
+TxPeriod : [value]
+ReauthPeriod : 3600 seconds
+MaxReauthReq : 2
+
+!
+
+802.1X must also be globally enabled on the switch using the "dot1x system-auth-control" command from the configuration mode interface. When this is configured, the following line will be visible in the running-config:
+
+dot1x-system-auth-control
+
+802.1X is dependent on a properly configured RADIUS server for authentication. Refer to the RADIUS configuration example for validation of properly configured AAA services. Additionally, the user must specify to use the RADIUS server as an 802.1X authenticator with the "aaa authentication dot1x default group [radius]" command from the configuration mode interface, replacing the bracketed variable with either the group name of the RADIUS server group or leaving it as is to authenticate against all RADIUS servers. When properly configured, the following line is visible in the running-config:
+
+aaa authentication dot1x default group radius
+
+If 802.1X is not configured on necessary ports or is not globally enabled on the switch, or if it is not set to authenticate supplicants via RADIUS, this is a finding.</check-content></check></Rule></Group><Group id="V-60825"><title>SRG-NET-000151</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75281r1_rule" severity="medium" weight="10.0"><version>AMLS-L2-000130</version><title>The Arista Multilayer Switch must authenticate all endpoint devices before establishing a network connection using bidirectional authentication that is cryptographically based.</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity on the network. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk (e.g., remote connections).
+
+Bidirectional authentication solutions include, but are not limited to, IEEE 802.1x and Extensible Authentication Protocol (EAP) and Radius server with EAP-Transport Layer Security (TLS) authentication.
+ 
+A network connection is any connection with a device that communicates through a network (e.g., local area network, wide area network, or the Internet).
+
+Authentication must use a form of cryptography to ensure a high level of trust and authenticity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series L2S</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series L2S</dc:subject><dc:identifier>2821</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001967</ident><fixtext fixref="F-66535r1_fix">Configure 802.1X on the switch, using the following mandatory parameters for all applicable interfaces. Replace the bracketed variable with the applicable value.
+
+config
+interface Ethernet[X]
+ switchport access vlan [Y]
+ dot1x pae authenticator
+ dot1x reauthentication
+ dot1x port-control auto
+ dot1x host-mode single-host
+ dot1x timeout quiet-period [value]
+ dot1x timeout reauth-period [value]
+ dot1x max-reauth-req [value]
+
+For the global configuration, include the following command statements from the global configuration mode interface:
+
+logging level DOT1X informational
+aaa authentication dot1x default group radius
+dot1x system-auth-control</fixtext><fix id="F-66535r1_fix" /><check system="C-61771r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_L2S_STIG.xml" /><check-content>Verify that the network device uniquely identifies network-connected endpoint devices. This requirement is not applicable to Arista switches when not used as an access switch.
+
+802.1X must be configured on any interface where there is an applicable endpoint device connected. This is demonstrated by viewing the running-config via the "show dot1x all" command and validating the following lines are present in the configuration:
+
+Dot1X Information for Ethernet[X]
+--------------------------------------------
+PortControl : auto
+HostMode : single-host
+QuietPeriod : [value]
+TxPeriod : [value]
+ReauthPeriod : 3600 seconds
+MaxReauthReq : 2
+
+!
+
+802.1X must also be globally enabled on the switch using the "dot1x system-auth-control" command from the configuration mode interface. When this is configured, the following line will be visible in the running-config:
+
+dot1x-system-auth-control
+
+802.1X is dependent on a properly configured RADIUS server for authentication. Refer to the RADIUS configuration example for validation of properly configured AAA services. Additionally, the user must specify to use the RADIUS server as an 802.1X authenticator with the "aaa authentication dot1x default group [radius]" command from the configuration mode interface, replacing the bracketed variable with either the group name of the RADIUS server group, or leaving it as is to authenticate against all RADIUS servers. When properly configured, the following line is visible in the running-config:
+
+aaa authentication dot1x default group radius
+
+If 802.1X is not configured on necessary ports, or is not globally enabled on the switch, or if it is not set to authenticate supplicants via RADIUS, this is a finding.</check-content></check></Rule></Group><Group id="V-60827"><title>SRG-NET-000151</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75283r1_rule" severity="medium" weight="10.0"><version>AMLS-L2-000140</version><title>The Arista Multilayer Switch must re-authenticate all endpoint devices every 60 minutes or less.</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity on the network. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk (e.g., remote connections).
+
+Bidirectional authentication solutions include, but are not limited to, IEEE 802.1x and Extensible Authentication Protocol (EAP) and Radius server with EAP-Transport Layer Security (TLS) authentication.
+ 
+A network connection is any connection with a device that communicates through a network (e.g., local area network, wide area network, or the Internet).
+
+Authentication must use a form of cryptography to ensure a high level of trust and authenticity. Re-authentication must occur to ensure session security.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series L2S</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series L2S</dc:subject><dc:identifier>2821</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001967</ident><fixtext fixref="F-66537r1_fix">Configure 802.1X on the switch, including the following mandatory parameters in the interface configuration mode:
+
+config
+interface Ethernet[X]
+ dot1x reauthentication
+ dot1x timeout reauth-period 3600</fixtext><fix id="F-66537r1_fix" /><check system="C-61773r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_L2S_STIG.xml" /><check-content>This requirement only applies to devices required to employ 802.1X authentication.
+
+Verify that the network device uniquely identifies network-connected endpoint devices and re-authenticates devices every 60 minutes or less. This can be viewed via the "show dot1x all" command. Under the interface configuration for the .1X connected port, the following statements must be present:
+
+ReauthPeriod : 3600 seconds
+
+If the device does not require re-authentication, or if the re-authentication period is longer than 60 minutes, this is a finding.</check-content></check></Rule></Group><Group id="V-60829"><title>SRG-NET-000338</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75285r1_rule" severity="medium" weight="10.0"><version>AMLS-L2-000150</version><title>The Arista Multilayer Switch must re-authenticate 802.1X connected devices every hour.</title><description>&lt;VulnDiscussion&gt;Without re-authentication, users may access resources or perform tasks for which they do not have authorization. 
+
+In addition to the re-authentication requirements associated with session locks, organizations may require re-authentication of individuals and/or devices in other situations, including (but not limited to) the following circumstances:
+
+(i) When authenticators change; 
+(ii) When roles change; 
+(iii) When security categories of information systems change; 
+(iv) When the execution of privileged functions occurs; 
+(v) After a fixed period of time; or
+(vi) Periodically.
+
+Within the DoD, the minimum circumstances requiring re-authentication are privilege escalation and role changes. 
+
+This requirement only applies to components where this is specific to the function of the device or has the concept of user authentication (e.g., VPN or ALG capability). This does not apply to authentication for the purpose of configuring the device itself (i.e., device management).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series L2S</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series L2S</dc:subject><dc:identifier>2821</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002039</ident><fixtext fixref="F-66539r1_fix">Configure 802.1X on the switch, using the following mandatory parameters for all applicable interfaces. Replace the bracketed variable with the applicable value.
+
+config
+interface Ethernet[X]
+ switchport access vlan [Y]
+ dot1x pae authenticator
+ dot1x reauthentication
+ dot1x port-control auto
+ dot1x host-mode single-host
+ dot1x timeout quiet-period [value]
+ dot1x timeout reauth-period 3600
+ dot1x max-reauth-req [value]
+
+For the global configuration, include the following command statements from the global configuration mode interface:
+
+logging level DOT1X informational
+aaa authentication dot1x default group radius
+dot1x system-auth-control</fixtext><fix id="F-66539r1_fix" /><check system="C-61775r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_L2S_STIG.xml" /><check-content>This requirement only applies to devices required to employ 802.1X.
+
+Verify the Arista Multilayer Switch re-authenticates 802.1X connected devices every hour. If the Arista Multilayer Switch does not re-authenticate 802.1X connected devices, this is a finding.
+
+ This can be viewed via the "show dot1x all" command. Under the interface configuration for the .1X connected port, the following statements must be present:
+
+ReauthPeriod : 3600 seconds
+
+If the device does not require re-authentication, or if the re-authentication period is longer than 60 minutes, this is a finding.</check-content></check></Rule></Group><Group id="V-60831"><title>SRG-NET-000343</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-75287r1_rule" severity="medium" weight="10.0"><version>AMLS-L2-000160</version><title>The Arista Multilayer Switch must authenticate 802.1X connected devices before establishing any connection.</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity.
+
+For distributed architectures (e.g., service-oriented architectures), the decisions regarding the validation of authentication claims may be made by services separate from the services acting on those decisions. In such situations, it is necessary to provide authentication decisions (as opposed to the actual authenticators) to the services that need to act on those decisions.
+
+This requirement applies to applications that connect either locally, remotely, or through a network to an endpoint device (including, but not limited to, workstations, printers, servers (outside a datacenter), VoIP Phones, and VTC CODECs). Gateways and SOA applications are examples of where this requirement would apply. 
+
+Device authentication is a solution enabling an organization to manage devices. It is an additional layer of authentication ensuring only specific pre-authorized devices can access the system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Arista DCS-7000 series L2S</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Arista DCS-7000 series L2S</dc:subject><dc:identifier>2821</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001958</ident><fixtext fixref="F-66541r1_fix">Configure 802.1X on the switch, using the following mandatory parameters for all applicable interfaces. Replace the bracketed variable with the applicable value.
+
+config
+interface Ethernet[X]
+ switchport access vlan [Y]
+ dot1x pae authenticator
+ dot1x reauthentication
+ dot1x port-control auto
+ dot1x host-mode single-host
+ dot1x timeout quiet-period [value]
+ dot1x timeout reauth-period 3600
+ dot1x max-reauth-req [value]
+
+For the global configuration, include the following command statements from the global configuration mode interface:
+
+logging level DOT1X informational
+aaa authentication dot1x default group radius
+dot1x system-auth-control</fixtext><fix id="F-66541r1_fix" /><check system="C-61777r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Arista_DCS-7000_Series_L2S_STIG.xml" /><check-content>This requirement only applies to devices required to employ 802.1X.
+
+Verify that the network device uniquely identifies network-connected endpoint devices. This requirement is not applicable to Arista switches when not used as an access switch.
+
+802.1X must be configured on any interface where there is an applicable endpoint device connected. This is demonstrated by viewing the running-config via the "show dot1x all" command and validating the following lines are present in the configuration:
+
+Dot1X Information for Ethernet[X]
+--------------------------------------------
+PortControl : auto
+HostMode : single-host
+QuietPeriod : [value]
+TxPeriod : [value]
+ReauthPeriod : 3600 seconds
+MaxReauthReq : 2
+
+!
+
+802.1X must also be globally enabled on the switch using the "dot1x system-auth-control" command from the configuration mode interface. When this is configured, the following line will be visible in the running-config:
+
+dot1x-system-auth-control
+
+802.1X is dependent on a properly configured RADIUS server for authentication. Refer to the RADIUS configuration example for validation of properly configured AAA services. Additionally, the user must specify to use the RADIUS server as an 802.1X authenticator with the "aaa authentication dot1x default group [radius]" command from the configuration mode interface, replacing the bracketed variable with either the group name of the RADIUS server group or leaving it as is to authenticate against all RADIUS servers. When properly configured, the following line is visible in the running-config:
+
+aaa authentication dot1x default group radius
+
+If 802.1X is not configured on necessary ports or is not globally enabled on the switch, or if it is not set to authenticate supplicants via RADIUS, this is a finding.</check-content></check></Rule></Group></Benchmark>

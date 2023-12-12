@@ -1,0 +1,1485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_mil.disa.stig_collection_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark" schematron-version="1.3" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://oval.mitre.org/XMLSchema/oval-common-5 https://github.com/OVALProject/Language/tree/5.11.2/schemas/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://github.com/OVALProject/Language/tree/5.11.2/schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://github.com/OVALProject/Language/tree/5.11.2/schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe https://github.com/OVALProject/Language/tree/5.11.2/schemas/iosxe-definitions-schema.xsd http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.3/scap-source-data-stream_1.3.xsd">
+  <data-stream id="scap_mil.disa.stig_datastream_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark" use-case="CONFIGURATION" scap-version="1.3" timestamp="2023-03-28T17:40:30">
+    <dictionaries>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-cpe-dictionary.xml" xlink:href="#scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-cpe-dictionary.xml">
+        <cat:catalog xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+          <cat:uri name="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-cpe-oval.xml" uri="#scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-cpe-oval.xml" />
+        </cat:catalog>
+      </component-ref>
+    </dictionaries>
+    <checklists>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-xccdf.xml" xlink:href="#scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-xccdf.xml">
+        <cat:catalog xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+          <cat:uri name="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" uri="#scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+        </cat:catalog>
+      </component-ref>
+    </checklists>
+    <checks>
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" xlink:href="#scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+      <component-ref xmlns:xlink="http://www.w3.org/1999/xlink" id="scap_mil.disa.stig_cref_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-cpe-oval.xml" xlink:href="#scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-cpe-oval.xml" />
+    </checks>
+  </data-stream>
+  <component id="scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-cpe-dictionary.xml" timestamp="2023-03-28T17:40:30">
+    <cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0">
+      <cpe-item name="cpe:/o:cisco:ios_xe:-">
+        <title>Cisco IOS-XE</title>
+        <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-cpe-oval.xml">oval:mil.disa.stig.cisco.iosxe:def:1</check>
+      </cpe-item>
+    </cpe-list>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-xccdf.xml" timestamp="2023-03-28T17:40:30">
+    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="xccdf_mil.disa.stig_benchmark_Cisco_IOS-XE_Router_NDM_STIG" xml:lang="en" style="SCAP_1.3">
+      <xccdf:status date="2023-02-17">accepted</xccdf:status>
+      <xccdf:title>Cisco IOS XE Router NDM STIG SCAP Benchmark</xccdf:title>
+      <xccdf:description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</xccdf:description>
+      <xccdf:notice id="terms-of-use" xml:lang="en" />
+      <xccdf:front-matter xml:lang="en" />
+      <xccdf:rear-matter xml:lang="en" />
+      <xccdf:reference href="https://cyber.mil">
+        <dc:publisher>DISA</dc:publisher>
+        <dc:source>STIG.DOD.MIL</dc:source>
+      </xccdf:reference>
+      <xccdf:plain-text id="release-info">Release: 1.7 Benchmark Date: 27 Apr 2023</xccdf:plain-text>
+      <xccdf:plain-text id="generator">3.4.0.34222</xccdf:plain-text>
+      <xccdf:plain-text id="conventionsVersion">1.10.0</xccdf:plain-text>
+      <xccdf:platform idref="cpe:/o:cisco:ios_xe:-" />
+      <xccdf:version update="http://iase.disa.mil/stigs">001.007</xccdf:version>
+      <xccdf:metadata>
+        <dc:creator>DISA</dc:creator>
+        <dc:publisher>DISA</dc:publisher>
+        <dc:contributor>DISA</dc:contributor>
+        <dc:source>STIG.DOD.MIL</dc:source>
+      </xccdf:metadata>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Classified">
+        <xccdf:title>I - Mission Critical Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215808" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215809" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215810" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215811" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215813" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215815" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215817" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215819" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215820" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215821" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215822" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215823" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215832" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215834" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215838" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215844" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215845" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215848" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215849" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215850" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Public">
+        <xccdf:title>I - Mission Critical Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215808" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215809" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215810" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215811" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215813" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215815" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215817" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215819" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215820" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215821" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215822" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215823" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215832" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215834" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215838" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215844" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215845" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215848" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215849" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215850" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Sensitive">
+        <xccdf:title>I - Mission Critical Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215808" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215809" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215810" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215811" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215813" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215815" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215817" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215819" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215820" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215821" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215822" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215823" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215832" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215834" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215838" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215844" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215845" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215848" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215849" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215850" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Classified">
+        <xccdf:title>II - Mission Support Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215808" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215809" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215810" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215811" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215813" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215815" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215817" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215819" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215820" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215821" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215822" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215823" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215832" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215834" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215838" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215844" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215845" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215848" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215849" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215850" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Public">
+        <xccdf:title>II - Mission Support Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215808" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215809" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215810" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215811" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215813" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215815" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215817" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215819" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215820" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215821" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215822" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215823" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215832" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215834" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215838" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215844" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215845" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215848" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215849" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215850" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Sensitive">
+        <xccdf:title>II - Mission Support Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215808" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215809" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215810" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215811" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215813" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215815" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215817" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215819" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215820" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215821" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215822" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215823" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215832" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215834" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215838" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215844" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215845" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215848" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215849" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215850" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Classified">
+        <xccdf:title>III - Administrative Classified</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215808" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215809" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215810" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215811" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215813" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215815" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215817" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215819" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215820" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215821" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215822" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215823" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215832" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215834" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215838" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215844" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215845" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215848" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215849" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215850" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Public">
+        <xccdf:title>III - Administrative Public</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215808" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215809" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215810" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215811" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215813" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215815" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215817" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215819" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215820" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215821" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215822" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215823" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215832" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215834" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215838" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215844" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215845" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215848" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215849" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215850" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Sensitive">
+        <xccdf:title>III - Administrative Sensitive</xccdf:title>
+        <xccdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215808" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215809" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215810" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215811" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215813" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215815" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215817" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215819" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215820" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215821" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215822" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215823" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215832" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215834" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215838" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215844" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215845" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215848" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215849" selected="true" />
+        <xccdf:select idref="xccdf_mil.disa.stig_group_V-215850" selected="true" />
+      </xccdf:Profile>
+      <xccdf:Profile id="xccdf_mil.disa.stig_profile_CAT_I_Only">
+        <xccdf:title>CAT I Only</xccdf:title>
+        <xccdf:description>This profile only includes rules that are Severity Category I.</xccdf:description>
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215808r879525_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215809r879526_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215810r879527_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215811r879528_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215813r879546_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215815r879554_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215817r879564_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215819r879569_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215820r879577_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215821r879578_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215822r879586_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215834r879696_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215838r879746_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215848r879870_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215849r879874_rule" selected="false" />
+        <xccdf:select idref="xccdf_mil.disa.stig_rule_SV-215850r879875_rule" selected="false" />
+      </xccdf:Profile>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215808">
+        <xccdf:title>SRG-APP-000026-NDM-000208</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215808r879525_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000090</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to automatically audit account creation.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Upon gaining access to a network device, an attacker will often first attempt to create a persistent method of reestablishing access. One way to accomplish this is to create a new account. Notification of account creation helps to mitigate this risk. Auditing account creation provides the necessary reconciliation that account management procedures are being followed. Without this audit trail, personnel without the proper authorization may gain access to critical network nodes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105335</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96197</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000018</xccdf:ident>
+          <xccdf:fixtext fixref="F-17045r287464_fix">Configure the router to log account creation using the following commands:
+
+R4(config)#archive
+R4(config-archive)#log config
+R4(config-archive-log-cfg)#logging enable
+R4(config-archive-log-cfg)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17045r287464_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:101" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215809">
+        <xccdf:title>SRG-APP-000027-NDM-000209</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215809r879526_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000100</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to automatically audit account modification.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Since the accounts in the network device are privileged or system-level accounts, account management is vital to the security of the network device. Account management by a designated authority ensures access to the network device is being controlled in a secure manner by granting access to only authorized personnel with the appropriate and necessary privileges. Auditing account modification along with an automatic notification to appropriate individuals will provide the necessary reconciliation that account management procedures are being followed. If modifications to management accounts are not audited, reconciliation of account management procedures cannot be tracked.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105337</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96199</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001403</xccdf:ident>
+          <xccdf:fixtext fixref="F-17046r287467_fix">Configure the router to log account modification using the following commands:
+
+R4(config)#archive
+R4(config-archive)#log config
+R4(config-archive-log-cfg)#logging enable
+R4(config-archive-log-cfg)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17046r287467_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:102" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215810">
+        <xccdf:title>SRG-APP-000028-NDM-000210</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215810r879527_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000110</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to automatically audit account disabling actions.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Account management, as a whole, ensures access to the network device is being controlled in a secure manner by granting access to only authorized personnel. Auditing account disabling actions will support account management procedures. When device management accounts are disabled, user or service accessibility may be affected. Auditing also ensures authorized active accounts remain enabled and available for use when required.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105339</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96201</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001404</xccdf:ident>
+          <xccdf:fixtext fixref="F-17047r287470_fix">Configure the router to log account disabling using the following commands:
+
+R4(config)#archive
+R4(config-archive)#log config
+R4(config-archive-log-cfg)#logging enable
+R4(config-archive-log-cfg)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17047r287470_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:103" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215811">
+        <xccdf:title>SRG-APP-000029-NDM-000211</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215811r879528_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000120</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to automatically audit account removal actions.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Account management, as a whole, ensures access to the network device is being controlled in a secure manner by granting access to only authorized personnel. Auditing account removal actions will support account management procedures. When device management accounts are terminated, user or service accessibility may be affected. Auditing also ensures authorized active accounts remain enabled and available for use when required.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105341</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96203</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001405</xccdf:ident>
+          <xccdf:fixtext fixref="F-17048r287473_fix">Configure the router to log account removal using the following commands:
+
+R4(config)#archive
+R4(config-archive)#log config
+R4(config-archive-log-cfg)#logging enable
+R4(config-archive-log-cfg)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17048r287473_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:104" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215813">
+        <xccdf:title>SRG-APP-000065-NDM-000214</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215813r879546_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000150</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to enforce the limit of three consecutive invalid logon attempts, after which time it must lock out the user account from accessing the device for 15 minutes.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;By limiting the number of failed logon attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute-forcing, is reduced.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105345</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96207</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000044</xccdf:ident>
+          <xccdf:fixtext fixref="F-17050r287479_fix">Configure the Cisco router to enforce the limit of three consecutive invalid logon attempts as shown in the example below.
+
+R2(config)#login block-for 900 attempts 3 within 120</xccdf:fixtext>
+          <xccdf:fix id="F-17050r287479_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:106" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215815">
+        <xccdf:title>SRG-APP-000080-NDM-000220</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215815r879554_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000210</xccdf:version>
+          <xccdf:title>The Cisco device must be configured to audit all administrator activity.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;This requirement supports non-repudiation of actions taken by an administrator and is required in order to maintain the integrity of the configuration management process. All configuration changes to the network device are logged, and administrators authenticate with two-factor authentication before gaining administrative access. Together, these processes will ensure the administrators can be held accountable for the configuration changes they implement.
+
+To meet this requirement, the network device must log administrator access and activity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105355</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96217</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000166</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-002234</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000172</xccdf:ident>
+          <xccdf:fixtext fixref="F-17052r287485_fix">Configure the router to log administrator activity as shown in the example below.
+
+R1(config)#logging userinfo
+R1(config)#archive
+R1(config-archive)#log config
+R1(config-archive-log-cfg)#logging enable
+R1(config-archive-log-cfg)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17052r287485_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:108" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215817">
+        <xccdf:title>SRG-APP-000096-NDM-000226</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215817r879564_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000280</xccdf:version>
+          <xccdf:title>The Cisco router must produce audit records containing information to establish when (date and time) the events occurred.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;It is essential for security personnel to know what is being done, what was attempted, where it was done, when it was done, and by whom it was done in order to compile an accurate risk assessment. Logging the date and time of each detected event provides a means of investigating an attack; recognizing resource utilization or capacity thresholds; or identifying an improperly configured network device. In order to establish and correlate the series of events leading up to an outage or attack, it is imperative the date and time are recorded in all log records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105361</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96223</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000131</xccdf:ident>
+          <xccdf:fixtext fixref="F-17054r287491_fix">Configure the router to include the date and time on all log records as shown in the example below.
+
+R1(config)#service timestamps log datetime localtime</xccdf:fixtext>
+          <xccdf:fix id="F-17054r287491_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:110" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215819">
+        <xccdf:title>SRG-APP-000101-NDM-000231</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215819r879569_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000330</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to generate audit records containing the full-text recording of privileged commands.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough information. 
+
+Organizations consider limiting the additional audit information to only that information explicitly needed for specific audit requirements. The additional information required is dependent on the type of information (i.e., sensitivity of the data and the environment within which it resides). At a minimum, the organization must audit full-text recording of privileged commands. The organization must maintain audit trails in sufficient detail to reconstruct events to determine the cause and impact of compromise.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105365</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96227</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000135</xccdf:ident>
+          <xccdf:fixtext fixref="F-17056r287497_fix">Configure the Cisco router to log all configuration changes as shown in the example below.
+
+R4(config)#archive
+R4(config-archive)#log config
+R4(config-archive-log-cfg)#logging enable
+R4(config-archive-log-cfg)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17056r287497_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:112" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215820">
+        <xccdf:title>SRG-APP-000119-NDM-000236</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215820r879577_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000380</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to protect audit information from unauthorized modification.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit network device activity.
+
+If audit data were to become compromised, then forensic analysis and discovery of the true source of potentially malicious system activity is impossible to achieve. 
+
+To ensure the veracity of audit data, the network device must protect audit information from unauthorized modification. 
+
+This requirement can be achieved through multiple methods, which will depend upon system architecture and design. Some commonly employed methods include ensuring log files receive the proper file system permissions and limiting log data locations. 
+
+Network devices providing a user interface to audit data will leverage user permissions and roles identifying the user accessing the data and the corresponding rights that the user enjoys in order to make access decisions regarding the modification of audit data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105369</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96231</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000163</xccdf:ident>
+          <xccdf:fixtext fixref="F-17057r287500_fix">If persistent logging is enabled, configure the router to only allow administrators with privilege level "15" access to the file system as shown in the example below.
+
+R4(config)#file privilege 15</xccdf:fixtext>
+          <xccdf:fix id="F-17057r287500_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:113" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215821">
+        <xccdf:title>SRG-APP-000120-NDM-000237</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215821r879578_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000390</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to protect audit information from unauthorized deletion.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity.
+
+If audit data were to become compromised, then forensic analysis and discovery of the true source of potentially malicious system activity is impossible to achieve. 
+
+To ensure the veracity of audit data, the network device must protect audit information from unauthorized deletion. This requirement can be achieved through multiple methods, which will depend upon system architecture and design. Some commonly employed methods include: ensuring log files receive the proper file system permissions utilizing file system protections, restricting access, and backing up log data to ensure log data is retained. 
+
+Network devices providing a user interface to audit data will leverage user permissions and roles identifying the user accessing the data and the corresponding rights the user enjoys in order to make access decisions regarding the deletion of audit data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105371</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96233</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000164</xccdf:ident>
+          <xccdf:fixtext fixref="F-17058r287503_fix">If persistent logging is enabled, configure the router to only allow administrators with privilege level "15" access to the file system as shown in the example below.
+
+R4(config)#file privilege 15</xccdf:fixtext>
+          <xccdf:fix id="F-17058r287503_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:114" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215822">
+        <xccdf:title>SRG-APP-000133-NDM-000244</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215822r879586_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000460</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to limit privileges to change the software resident within software libraries.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Changes to any software components of the network device can have significant effects on the overall security of the network. Therefore, only qualified and authorized individuals should be allowed administrative access to the network device for implementing any changes or upgrades. If the network device were to enable non-authorized users to make changes to software libraries, those changes could be implemented without undergoing testing, validation, and approval.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105375</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96237</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001499</xccdf:ident>
+          <xccdf:fixtext fixref="F-17059r287506_fix">Configure the router to only allow administrators with privilege level "15" access to the file system as shown in the example below.
+
+R4(config)#file privilege 15</xccdf:fixtext>
+          <xccdf:fix id="F-17059r287506_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:115" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215823">
+        <xccdf:title>SRG-APP-000142-NDM-000245</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215823r892394_rule" weight="10.0" severity="high">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000470</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to prohibit the use of all unnecessary and nonsecure functions and services.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Network devices are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., email and web services); however, doing so increases risk over limiting the services provided by any one component. 
+
+To support the requirements and principles of least functionality, the network device must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved. Some network devices have capabilities enabled by default; if these capabilities are not necessary, they must be disabled. If a particular capability is used, then it must be documented and approved.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105377</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96239</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000382</xccdf:ident>
+          <xccdf:fixtext fixref="F-17060r892393_fix">Disable the following services if enabled as shown in the example below.
+
+R2(config)#no boot network
+R2(config)#no ip boot server
+R2(config)#no ip bootp server
+R2(config)#no ip dns server
+R2(config)#no ip identd
+R2(config)#no ip finger
+R2(config)#no ip http server
+R2(config)#no ip rcmd rcp-enable
+R2(config)#no ip rcmd rsh-enable
+R2(config)#no service config
+R2(config)#no service finger
+R2(config)#no service tcp-small-servers
+R2(config)#no service udp-small-servers
+R2(config)#no service pad
+R2(config)#no service call-home
+R2(config)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17060r892393_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:116" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215832">
+        <xccdf:title>SRG-APP-000171-NDM-000258</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215832r879608_rule" weight="10.0" severity="high">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000620</xccdf:version>
+          <xccdf:title>The Cisco router must only store cryptographic representations of passwords.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Passwords need to be protected at all times, and encryption is the standard method for protecting passwords. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised.
+
+Network devices must enforce cryptographic representations of passwords when storing passwords in databases, configuration files, and log files. Passwords must be protected at all times; using a strong one-way hashing encryption algorithm with a salt is the standard method for providing a means to validate a password without having to store the actual password.
+
+Performance and time required to access are factors that must be considered, and the one way hash is the most feasible means of securing the password and providing an acceptable measure of password security. If passwords are stored in clear text, they can be plainly read and easily compromised.
+
+In many instances, verifying the user knows a password is performed using a password verifier. In its simplest form, a password verifier is a computational function that is capable of creating a hash of a password and determining if the value provided by the user matches the stored hash.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105403</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96265</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000196</xccdf:ident>
+          <xccdf:fixtext fixref="F-17069r287536_fix">Configure the router to encrypt all passwords.
+
+R4(config)#service password-encryption 
+R4(config)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17069r287536_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:125" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215834">
+        <xccdf:title>SRG-APP-000319-NDM-000283</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215834r879696_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-000880</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to automatically audit account enabling actions.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Once an attacker establishes initial access to a system, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to simply enable a new or disabled account. Notification of account enabling is one method for mitigating this risk. A comprehensive account management process will ensure an audit trail which documents the creation of application user accounts and notifies administrators and Information System Security Officers (ISSO). Such a process greatly reduces the risk that accounts will be surreptitiously created and provides logging that can be used for forensic purposes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105423</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96285</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-002130</xccdf:ident>
+          <xccdf:fixtext fixref="F-17071r287542_fix">Configure the router to log account enabling using the following commands:
+
+R4(config)#archive
+R4(config-archive)#log config
+R4(config-archive-log-cfg)#logging enable
+R4(config-archive-log-cfg)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17071r287542_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:126" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215838">
+        <xccdf:title>SRG-APP-000373-NDM-000298</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215838r879746_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-001030</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to synchronize its clock with the primary and secondary time sources using redundant authoritative time sources.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;The loss of connectivity to a particular authoritative time source will result in the loss of time synchronization (free-run mode) and increasingly inaccurate time stamps on audit events and other functions. 
+
+Multiple time sources provide redundancy by including a secondary source. Time synchronization is usually a hierarchy; clients synchronize time to a local source while that source synchronizes its time to a more accurate source. The network device must utilize an authoritative time server and/or be configured to use redundant authoritative time sources. This requirement is related to the comparison done in CCI-001891.
+
+DoD-approved solutions consist of a combination of a primary and secondary time source using a combination or multiple instances of the following: a time server designated for the appropriate DoD network (NIPRNet/SIPRNet); United States Naval Observatory (USNO) time servers; and/or the Global Positioning System (GPS). The secondary time source must be located in a different geographic region than the primary time source.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105441</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96303</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001889</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001890</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001893</xccdf:ident>
+          <xccdf:fixtext fixref="F-17075r287554_fix">Configure the Cisco router to synchronize its clock with redundant authoritative time sources as shown in the example below.
+
+R2(config)#ntp server x.x.x.x
+R2(config)#ntp server y.y.y.y</xccdf:fixtext>
+          <xccdf:fix id="F-17075r287554_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:129" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215844">
+        <xccdf:title>SRG-APP-000411-NDM-000330</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215844r879784_rule" weight="10.0" severity="high">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-001200</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to use FIPS-validated Keyed-Hash Message Authentication Code (HMAC) to protect the integrity of remote maintenance sessions.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Unapproved mechanisms that are used for authentication to the cryptographic module are not verified and therefore cannot be relied upon to provide confidentiality or integrity, and DoD data may be compromised.
+
+Nonlocal maintenance and diagnostic activities are those activities conducted by individuals communicating through a network, either an external network (e.g., the Internet) or an internal network. 
+
+Currently, HMAC is the only FIPS-approved algorithm for generating and verifying message/data authentication codes in accordance with FIPS 198-1. Products that are FIPS 140-2 validated will have an HMAC that meets specification; however, the option must be configured for use as the only message authentication code used for authentication to cryptographic modules.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105465</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96327</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-002890</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-001941</xccdf:ident>
+          <xccdf:fixtext fixref="F-17081r835121_fix">Configure SSH to use FIPS-validated HMAC for remote maintenance sessions as shown in the following example:
+
+SSH Example
+
+R1(config)#ip ssh version 2
+R1(config)#ip ssh server algorithm mac hmac-sha2-256</xccdf:fixtext>
+          <xccdf:fix id="F-17081r835121_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:133" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215845">
+        <xccdf:title>SRG-APP-000412-NDM-000331</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215845r879785_rule" weight="10.0" severity="high">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-001210</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to implement cryptographic mechanisms to protect the confidentiality of remote maintenance sessions.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;This requires the use of secure protocols instead of their unsecured counterparts, such as SSH instead of telnet, SCP instead of FTP, and HTTPS instead of HTTP. If unsecured protocols (lacking cryptographic mechanisms) are used for sessions, the contents of those sessions will be susceptible to eavesdropping, potentially putting sensitive data (including administrator passwords) at risk of compromise and potentially allowing hijacking of maintenance sessions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105467</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96329</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-003123</xccdf:ident>
+          <xccdf:fixtext fixref="F-17082r860790_fix">Configure the Cisco router to implement cryptographic mechanisms to protect the confidentiality of remote maintenance sessions using a FIPS 140-2 approved algorithm as shown in the examples below.
+
+SSH Example
+
+R1(config)#ip ssh server algorithm encryption aes256-ctr aes192-ctr aes128-ctr</xccdf:fixtext>
+          <xccdf:fix id="F-17082r860790_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:134" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215848">
+        <xccdf:title>SRG-APP-000499-NDM-000319</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215848r879870_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-001250</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to generate log records when administrator privileges are deleted.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.
+
+Audit records can be generated from various components within the network device (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105473</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96335</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000172</xccdf:ident>
+          <xccdf:fixtext fixref="F-17085r287584_fix">Configure the Cisco router to generate log records when administrator privileges are deleted as shown in the example below.
+
+R4(config)#archive
+R4(config-archive)#log config
+R4(config-archive-log-cfg)#logging enable
+R4(config-archive-log-cfg)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17085r287584_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:136" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215849">
+        <xccdf:title>SRG-APP-000503-NDM-000320</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215849r879874_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-001260</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to generate audit records when successful/unsuccessful logon attempts occur.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.
+
+Audit records can be generated from various components within the network device (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105475</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96337</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000172</xccdf:ident>
+          <xccdf:fixtext fixref="F-17086r287587_fix">Configure the Cisco router to generate audit records when successful/unsuccessful logon attempts occur as shown in the example below.
+
+R5(config)#login on-failure log
+R5(config)#login on-success log</xccdf:fixtext>
+          <xccdf:fix id="F-17086r287587_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:137" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+      <xccdf:Group id="xccdf_mil.disa.stig_group_V-215850">
+        <xccdf:title>SRG-APP-000504-NDM-000321</xccdf:title>
+        <xccdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</xccdf:description>
+        <xccdf:Rule id="xccdf_mil.disa.stig_rule_SV-215850r879875_rule" weight="10.0" severity="medium">
+          <xccdf:version update="http://iase.disa.mil/stigs">CISC-ND-001270</xccdf:version>
+          <xccdf:title>The Cisco router must be configured to generate log records for privileged activities.</xccdf:title>
+          <xccdf:description>&lt;VulnDiscussion&gt;Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.
+
+Audit records can be generated from various components within the network device (e.g., module or policy filter).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</xccdf:description>
+          <xccdf:reference>
+            <dc:title>DPMS Target Cisco IOS XE Router NDM</dc:title>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:type>DPMS Target</dc:type>
+            <dc:subject>Cisco IOS XE Router NDM</dc:subject>
+            <dc:identifier>4020</dc:identifier>
+          </xccdf:reference>
+          <xccdf:ident system="http://cyber.mil/legacy">SV-105477</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/legacy">V-96339</xccdf:ident>
+          <xccdf:ident system="http://cyber.mil/cci">CCI-000172</xccdf:ident>
+          <xccdf:fixtext fixref="F-17087r287590_fix">Configure the Cisco router to generate log records for privileged activities as shown in the example below.
+
+R4(config)#archive
+R4(config-archive)#log config
+R4(config-archive-log-cfg)#logging enable
+R4(config-archive-log-cfg)#end</xccdf:fixtext>
+          <xccdf:fix id="F-17087r287590_fix" />
+          <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <xccdf:check-content-ref name="oval:mil.disa.stig.cisco.iosxe:def:138" href="U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" />
+          </xccdf:check>
+        </xccdf:Rule>
+      </xccdf:Group>
+    </xccdf:Benchmark>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-oval.xml" timestamp="2023-03-28T17:40:30">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+      <generator>
+        <oval:product_name>repotool</oval:product_name>
+        <oval:schema_version>5.11.2</oval:schema_version>
+        <oval:timestamp>2023-03-28T17:40:30</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:101" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000090 - The Cisco router must be configured to automatically audit account creation.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Upon gaining access to a network device, an attacker will often first attempt to create a persistent method of reestablishing access. One way to accomplish this is to create a new account. Notification of account creation helps to mitigate this risk. Auditing account creation provides the necessary reconciliation that account management procedures are being followed. Without this audit trail, personnel without the proper authorization may gain access to critical network nodes.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10100" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:102" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000100 - The Cisco router must be configured to automatically audit account modification.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Since the accounts in the network device are privileged or system-level accounts, account management is vital to the security of the network device. Account management by a designated authority ensures access to the network device is being controlled in a secure manner by granting access to only authorized personnel with the appropriate and necessary privileges. Auditing account modification along with an automatic notification to appropriate individuals will provide the necessary reconciliation that account management procedures are being followed. If modifications to management accounts are not audited, reconciliation of account management procedures cannot be tracked.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10100" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:103" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000110 - The Cisco router must be configured to automatically audit account disabling actions.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Account management, as a whole, ensures access to the network device is being controlled in a secure manner by granting access to only authorized personnel. Auditing account disabling actions will support account management procedures. When device management accounts are disabled, user or service accessibility may be affected. Auditing also ensures authorized active accounts remain enabled and available for use when required.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10100" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:104" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000120 - The Cisco router must be configured to automatically audit account removal actions.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Account management, as a whole, ensures access to the network device is being controlled in a secure manner by granting access to only authorized personnel. Auditing account removal actions will support account management procedures. When device management accounts are terminated, user or service accessibility may be affected. Auditing also ensures authorized active accounts remain enabled and available for use when required.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10100" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:106" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000150 - The Cisco router must be configured to enforce the limit of three consecutive invalid logon attempts, after which time it must lock out the user account from accessing the device for 15 minutes.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>By limiting the number of failed logon attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute-forcing, is reduced.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10600" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:108" class="compliance" version="2">
+          <metadata>
+            <title>CISC-ND-000210 - The Cisco device must be configured to audit all administrator activity.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>This requirement supports non-repudiation of actions taken by an administrator and is required in order to maintain the integrity of the configuration management process. All configuration changes to the network device are logged, and administrators authenticate with two-factor authentication before gaining administrative access. Together, these processes will ensure the administrators can be held accountable for the configuration changes they implement. To meet this requirement, the network device must log administrator access and activity.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10100" />
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10800" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:110" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000280 - The Cisco router must produce audit records containing information to establish when (date and time) the events occurred.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>It is essential for security personnel to know what is being done, what was attempted, where it was done, when it was done, and by whom it was done in order to compile an accurate risk assessment. Logging the date and time of each detected event provides a means of investigating an attack; recognizing resource utilization or capacity thresholds; or identifying an improperly configured network device. In order to establish and correlate the series of events leading up to an outage or attack, it is imperative the date and time are recorded in all log records.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11000" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:112" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000330 - The Cisco router must be configured to generate audit records containing the full-text recording of privileged commands.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Reconstruction of harmful events or forensic analysis is not possible if audit records do not contain enough information. Organizations consider limiting the additional audit information to only that information explicitly needed for specific audit requirements. The additional information required is dependent on the type of information (i.e., sensitivity of the data and the environment within which it resides). At a minimum, the organization must audit full-text recording of privileged commands. The organization must maintain audit trails in sufficient detail to reconstruct events to determine the cause and impact of compromise.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10100" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:113" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000380 - The Cisco router must be configured to protect audit information from unauthorized modification.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit network device activity. If audit data were to become compromised, then forensic analysis and discovery of the true source of potentially malicious system activity is impossible to achieve. To ensure the veracity of audit data, the network device must protect audit information from unauthorized modification. This requirement can be achieved through multiple methods, which will depend upon system architecture and design. Some commonly employed methods include ensuring log files receive the proper file system permissions and limiting log data locations. Network devices providing a user interface to audit data will leverage user permissions and roles identifying the user accessing the data and the corresponding rights that the user enjoys in order to make access decisions regarding the modification of audit data.</description>
+          </metadata>
+          <criteria operator="OR">
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11300" negate="true" />
+            <criteria operator="OR">
+              <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11500" negate="true" />
+              <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11501" />
+            </criteria>
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:114" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000390 - The Cisco router must be configured to protect audit information from unauthorized deletion.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity. If audit data were to become compromised, then forensic analysis and discovery of the true source of potentially malicious system activity is impossible to achieve. To ensure the veracity of audit data, the network device must protect audit information from unauthorized deletion. This requirement can be achieved through multiple methods, which will depend upon system architecture and design. Some commonly employed methods include: ensuring log files receive the proper file system permissions utilizing file system protections, restricting access, and backing up log data to ensure log data is retained. Network devices providing a user interface to audit data will leverage user permissions and roles identifying the user accessing the data and the corresponding rights the user enjoys in order to make access decisions regarding the deletion of audit data.</description>
+          </metadata>
+          <criteria operator="OR">
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11300" negate="true" />
+            <criteria operator="OR">
+              <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11500" negate="true" />
+              <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11501" />
+            </criteria>
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:115" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000460 - The Cisco router must be configured to limit privileges to change the software resident within software libraries.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Changes to any software components of the network device can have significant effects on the overall security of the network. Therefore, only qualified and authorized individuals should be allowed administrative access to the network device for implementing any changes or upgrades. If the network device were to enable non-authorized users to make changes to software libraries, those changes could be implemented without undergoing testing, validation, and approval.</description>
+          </metadata>
+          <criteria operator="OR">
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11500" negate="true" />
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11501" />
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:mil.disa.stig.cisco.iosxe:def:116" version="3">
+          <metadata>
+            <title>CISC-ND-000470 - The Cisco router must be configured to prohibit the use of all unnecessary and nonsecure functions and services.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Network devices are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., email and web services); however, doing so increases risk over limiting the services provided by any one component. 
+
+To support the requirements and principles of least functionality, the network device must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved. Some network devices have capabilities enabled by default; if these capabilities are not necessary, they must be disabled. If a particular capability is used, then it must be documented and approved.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="boot network" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11600" />
+            <criterion comment="ip boot server" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11601" />
+            <criterion comment="ip bootp server" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11602" />
+            <criterion comment="ip dns server" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11603" />
+            <criterion comment="ip identd" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11604" />
+            <criterion comment="ip finger" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11605" />
+            <criterion comment="no ip http server" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11606" />
+            <criterion comment="ip rcmd rcp-enable" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11607" />
+            <criterion comment="ip rcmd rsh-enable" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11608" />
+            <criterion comment="service config" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11609" />
+            <criterion comment="service finger" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11610" />
+            <criterion comment="service tcp-small-servers" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11611" />
+            <criterion comment="service udp-small-servers" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11612" />
+            <criteria comment="service pad is not enabled" operator="OR">
+              <criterion comment="no service pad" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11613" />
+              <criterion comment="'service pad' is missing" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11614" />
+            </criteria>
+            <criteria comment="service call-home is not enabled" operator="OR">
+              <criterion comment="'service call-home' is missing" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11615" />
+              <criterion comment="no service call-home" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:11616" />
+            </criteria>
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:125" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000620 - The Cisco router must only store cryptographic representations of passwords.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Passwords need to be protected at all times, and encryption is the standard method for protecting passwords. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised. Network devices must enforce cryptographic representations of passwords when storing passwords in databases, configuration files, and log files. Passwords must be protected at all times; using a strong one-way hashing encryption algorithm with a salt is the standard method for providing a means to validate a password without having to store the actual password. Performance and time required to access are factors that must be considered, and the one way hash is the most feasible means of securing the password and providing an acceptable measure of password security. If passwords are stored in clear text, they can be plainly read and easily compromised. In many instances, verifying the user knows a password is performed using a password verifier. In its simplest form, a password verifier is a computational function that is capable of creating a hash of a password and determining if the value provided by the user matches the stored hash.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:12500" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:126" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-000880 - The Cisco router must be configured to automatically audit account enabling actions.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Once an attacker establishes initial access to a system, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to simply enable a new or disabled account. Notification of account enabling is one method for mitigating this risk. A comprehensive account management process will ensure an audit trail which documents the creation of application user accounts and notifies administrators and Information System Security Officers (ISSO). Such a process greatly reduces the risk that accounts will be surreptitiously created and provides logging that can be used for forensic purposes.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10100" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:129" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-001030 - The Cisco router must be configured to synchronize its clock with the primary and secondary time sources using redundant authoritative time sources.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>The loss of connectivity to a particular authoritative time source will result in the loss of time synchronization (free-run mode) and increasingly inaccurate time stamps on audit events and other functions. Multiple time sources provide redundancy by including a secondary source. Time synchronization is usually a hierarchy; clients synchronize time to a local source while that source synchronizes its time to a more accurate source. The network device must utilize an authoritative time server and/or be configured to use redundant authoritative time sources. This requirement is related to the comparison done in CCI-001891. DoD-approved solutions consist of a combination of a primary and secondary time source using a combination or multiple instances of the following: a time server designated for the appropriate DoD network (NIPRNet/SIPRNet); United States Naval Observatory (USNO) time servers; and/or the Global Positioning System (GPS). The secondary time source must be located in a different geographic region than the primary time source.</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:12900" />
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:mil.disa.stig.cisco.iosxe:def:133" version="2">
+          <metadata>
+            <title>CISC-ND-001200 - The Cisco router must be configured to use FIPS-validated Keyed-Hash Message Authentication Code (HMAC) to protect the integrity of remote maintenance sessions.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Unapproved mechanisms that are used for authentication to the cryptographic module are not verified and therefore cannot be relied upon to provide confidentiality or integrity, and DoD data may be compromised.
+
+Nonlocal maintenance and diagnostic activities are those activities conducted by individuals communicating through a network, either an external network (e.g., the Internet) or an internal network. 
+
+Currently, HMAC is the only FIPS-approved algorithm for generating and verifying message/data authentication codes in accordance with FIPS 198-1. Products that are FIPS 140-2 validated will have an HMAC that meets specification; however, the option must be configured for use as the only message authentication code used for authentication to cryptographic modules.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="ip ssh version 2" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:13300" />
+            <criterion comment="ip ssh server algorithm mac hmac-sha2-256 or stronger FIPS-validated algorithms" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:13301" />
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:mil.disa.stig.cisco.iosxe:def:134" version="3">
+          <metadata>
+            <title>CISC-ND-001210 - The Cisco router must be configured to implement cryptographic mechanisms to protect the confidentiality of remote maintenance sessions.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>This requires the use of secure protocols instead of their unsecured counterparts, such as SSH instead of telnet, SCP instead of FTP, and HTTPS instead of HTTP. If unsecured protocols (lacking cryptographic mechanisms) are used for sessions, the contents of those sessions will be susceptible to eavesdropping, potentially putting sensitive data (including administrator passwords) at risk of compromise and potentially allowing hijacking of maintenance sessions.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="ip ssh version 2" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:13300" />
+            <criterion comment="ip ssh server algorithm encryption FIPS-validated algorithms" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:13400" />
+            <criterion comment="ip ssh server algorithm encryption 3DES or -cbc algorithms" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:13401" negate="true" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:136" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-001250 - The Cisco router must be configured to generate log records when administrator privileges are deleted.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the network device (e.g., module or policy filter).</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10100" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:137" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-001260 - The Cisco router must be configured to generate audit records when successful/unsuccessful logon attempts occur.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the network device (e.g., module or policy filter).</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:13700" />
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:13900" />
+          </criteria>
+        </definition>
+        <definition id="oval:mil.disa.stig.cisco.iosxe:def:138" class="compliance" version="1">
+          <metadata>
+            <title>CISC-ND-001270 - The Cisco router must be configured to generate log records for privileged activities.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <description>Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. Audit records can be generated from various components within the network device (e.g., module or policy filter).</description>
+          </metadata>
+          <criteria>
+            <criterion test_ref="oval:mil.disa.stig.cisco.iosxe:tst:10100" />
+          </criteria>
+        </definition>
+      </definitions>
+      <tests>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" comment="Check for archive - log config - logging enable" check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:10100" version="4">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:10100" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:10100" />
+        </line_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" comment="limit of three consecutive invalid logon attempts" check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:10600" version="1">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:10600" />
+        </global_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" comment="logging userinfo" check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:10800" version="1">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:10800" />
+        </global_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" comment="Audit records contain the date and time of when the events occurred." check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:11000" version="2">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11000" />
+        </global_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" comment="Check for persistent logging" check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:11300" version="1">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11300" />
+        </global_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" comment="Check for file privilege" check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:11500" version="1">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11500" />
+        </global_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" comment="Check for file privilege 15" check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:11501" version="1">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11501" />
+        </global_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11600" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="boot network">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11600" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11601" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="ip boot server">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11601" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11602" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="ip bootp server">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11602" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11603" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="ip dns server">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11603" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11604" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="ip identd">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11604" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11605" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="ip finger">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11605" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11606" version="1" check_existence="at_least_one_exists" check="all" comment="no ip http server">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11606" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11607" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="ip rcmd rcp-enable">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11607" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11608" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="ip rcmd rsh-enable">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11608" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11609" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="service config">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11609" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11610" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="service finger">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11610" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11611" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="service tcp-small-servers">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11611" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11612" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="service udp-small-servers">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11612" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11613" version="1" check_existence="at_least_one_exists" check="all" comment="no service pad">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11613" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11614" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="'service pad' is missing">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11614" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11615" version="1" check_existence="at_least_one_exists" check="none satisfy" comment="'service call-home' is missing">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11615" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:11616" version="1" check_existence="at_least_one_exists" check="all" comment="no service call-home">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:11600" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:11616" />
+        </line_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" comment="configuration contains service password-encryption" check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:12500" version="1">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:12500" />
+        </global_test>
+        <variable_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="At least two NTP servers are configured" check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:12900" version="2">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:12901" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:12900" />
+        </variable_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:13300" version="1" check_existence="at_least_one_exists" check="all" comment="ip ssh version 2">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:13300" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:13300" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:13301" version="2" check_existence="at_least_one_exists" check="all" comment="ip ssh server algorithm mac hmac-sha2-256 or stronger FIPS-validated algorithms">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:13300" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:13301" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:13400" version="3" check_existence="at_least_one_exists" check="all" comment="ip ssh server algorithm encryption FIPS-validated algorithms">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:13400" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:13400" />
+        </line_test>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:13401" version="1" check_existence="at_least_one_exists" check="all" comment="ip ssh server algorithm encryption 3des or -cbc algorithms">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:13400" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:13401" />
+        </line_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" comment="generate audit records when unsuccessful logon attempts occur" check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:13700" version="1">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:13700" />
+        </global_test>
+        <global_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" comment="generate audit records when successful logon attempts occur" check="all" id="oval:mil.disa.stig.cisco.iosxe:tst:13900" version="2">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:13900" />
+        </global_test>
+      </tests>
+      <objects>
+        <line_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:10100" version="5">
+          <show_subcommand>show running-config</show_subcommand>
+        </line_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:10600" version="2">
+          <global_command operation="pattern match">^login[ \t]+block-for[ \t]+\d+[ \t]+attempts[ \t]+(?:1|2|3)[ \t]+within[ \t]+\d+[ \t]*$</global_command>
+        </global_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:10800" version="1">
+          <global_command>logging userinfo</global_command>
+        </global_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:11000" version="2">
+          <global_command operation="pattern match">^service[ \t]+timestamps[ \t]+log[ \t]+datetime(?:[ \t]+localtime|[ \t]+msec|[ \t]+show-timezone|[ /t]+year){0,4}[ \t]*$</global_command>
+        </global_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:11300" version="1">
+          <global_command operation="pattern match">^logging[ \t]+persistent\b</global_command>
+        </global_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:11500" version="1">
+          <global_command operation="pattern match">^file[ \t]+privilege</global_command>
+        </global_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:11501" version="1">
+          <global_command operation="pattern match">^file[ \t]+privilege[ \t]+15[ \t]*$</global_command>
+        </global_object>
+        <line_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:11600" version="1" comment="show running-config">
+          <show_subcommand datatype="string">show running-config</show_subcommand>
+        </line_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:12500" version="1">
+          <global_command>service password-encryption</global_command>
+        </global_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:12900" version="2">
+          <global_command operation="pattern match">^ntp[ \t]+server[ \t]+\S+[ \t]*</global_command>
+        </global_object>
+        <variable_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.stig.cisco.iosxe:obj:12901" version="1">
+          <var_ref>oval:mil.disa.stig.cisco.iosxe:var:12900</var_ref>
+        </variable_object>
+        <line_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:13300" version="1" comment="show running-config">
+          <show_subcommand datatype="string">show running-config</show_subcommand>
+        </line_object>
+        <line_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:13400" version="1" comment="show running-config">
+          <show_subcommand datatype="string">show running-config</show_subcommand>
+        </line_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:13700" version="1">
+          <global_command>login on-failure log</global_command>
+        </global_object>
+        <global_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:13900" version="1">
+          <global_command>login on-success log</global_command>
+        </global_object>
+      </objects>
+      <states>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:10100" version="3">
+          <config_line operation="pattern match">\narchive\n log config\n(  \S+[^\n]*\n)*  logging enable\n</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11600" version="1" comment="boot network">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*boot network[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11601" version="1" comment="ip boot server">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip boot server[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11602" version="1" comment="ip bootp server">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip bootp server[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11603" version="1" comment="ip dns server">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip dns server[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11604" version="1" comment="ip identd">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip identd[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11605" version="1" comment="ip finger">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip finger[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11606" version="1" comment="no ip http server">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*no ip http server[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11607" version="1" comment="ip rcmd rcp-enable">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip rcmd rcp-enable[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11608" version="1" comment="ip rcmd rsh-enable">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip rcmd rsh-enable[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11609" version="1" comment="service config">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*service config[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11610" version="1" comment="service finger">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*service finger[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11611" version="1" comment="service tcp-small-servers">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*service tcp-small-servers[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11612" version="1" comment="service udp-small-servers">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*service udp-small-servers[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11613" version="1" comment="no service pad">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*no service pad[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11614" version="1" comment="service pad">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*service pad[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11615" version="1" comment="service call-home">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*service call-home[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:11616" version="1" comment="no service call-home">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*no service call-home[\r\n]</config_line>
+        </line_state>
+        <variable_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.stig.cisco.iosxe:ste:12900" version="2">
+          <value operation="greater than or equal" datatype="int">2</value>
+        </variable_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:13300" version="1" comment="ip ssh version 2">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip ssh version 2[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:13301" version="4" comment="ip ssh server algorithm mac hmac-sha2-256, hmac-sha2-512, hmac-sha2-256-etm@openssh.com, and/or hmac-sha2-512-etm@openssh">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip ssh server algorithm mac(?: hmac-sha2-256| hmac-sha2-512| hmac-sha2-256-etm@openssh\.com| hmac-sha2-512-etm@openssh\.com)+[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:13400" version="3" comment="ip ssh server algorithm encryption ...">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip ssh server algorithm encryption .+[\r\n]</config_line>
+        </line_state>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:13401" version="1" comment="ip ssh server algorithm encryption 3des or -cbc">
+          <config_line datatype="string" operation="pattern match">[\r\n]\s*ip ssh server algorithm encryption(?: .+-cbc.*| .*3des-.+)+[\r\n]</config_line>
+        </line_state>
+      </states>
+      <variables>
+        <local_variable comment="Number of NTP servers configured" datatype="int" id="oval:mil.disa.stig.cisco.iosxe:var:12900" version="1">
+          <count>
+            <object_component object_ref="oval:mil.disa.stig.cisco.iosxe:obj:12900" item_field="global_command" />
+          </count>
+        </local_variable>
+      </variables>
+    </oval_definitions>
+  </component>
+  <component id="scap_mil.disa.stig_comp_U_Cisco_IOS-XE_Router_NDM_V1R7_STIG_SCAP_1-3_Benchmark-cpe-oval.xml" timestamp="2023-03-28T17:40:30">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+      <generator>
+        <oval:product_name>repotool</oval:product_name>
+        <oval:schema_version>5.11.2</oval:schema_version>
+        <oval:timestamp>2023-03-28T17:40:30</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition class="inventory" id="oval:mil.disa.stig.cisco.iosxe:def:1" version="1">
+          <metadata>
+            <title>The system is running Cisco IOS-XE.</title>
+            <affected family="ios">
+              <platform>Cisco IOS-XE</platform>
+            </affected>
+            <reference ref_id="cpe:/o:cisco:ios_xe" source="CPE" />
+            <description>The system is running Cisco IOS-XE.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="IOS-XE" test_ref="oval:mil.disa.stig.cisco.iosxe:tst:100" />
+          </criteria>
+        </definition>
+      </definitions>
+      <tests>
+        <line_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:tst:100" version="1" check_existence="at_least_one_exists" check="all" comment="show version shows correct version">
+          <object object_ref="oval:mil.disa.stig.cisco.iosxe:obj:100" />
+          <state state_ref="oval:mil.disa.stig.cisco.iosxe:ste:100" />
+        </line_test>
+      </tests>
+      <objects>
+        <line_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:obj:100" version="1" comment="show login">
+          <show_subcommand datatype="string">show version</show_subcommand>
+        </line_object>
+      </objects>
+      <states>
+        <line_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" id="oval:mil.disa.stig.cisco.iosxe:ste:100" version="1" comment="login block-for">
+          <config_line datatype="string" operation="pattern match">Cisco IOS[ -]XE [Ss]oftware</config_line>
+        </line_state>
+      </states>
+    </oval_definitions>
+  </component>
+</data-stream-collection>
