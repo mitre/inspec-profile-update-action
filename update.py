@@ -22,31 +22,47 @@ HEADERS = {
 DOWNLOAD_DIR = "downloads"
 EXTRACT_DIR = "extracted"
 DB_FILE = "stigs.db"
-EXCLUDE_KEYWORDS = ['scc', 'library', '.msi.zip', 'srg_stig_applicability_guide', 'STIGApplicabilityGuide']
+EXCLUDE_KEYWORDS = ['scc', 'library', '.msi.zip', 'srg_stig_applicability_guide', 'stigapplicabilityguide', 'stigviewer', 'u_cci_list']
+OUTPUT_JSON = 'stigs_data.json'
+OUTPUT_DOWNLOAD_JSON = 'stigs_download_data.json'
 
-extracted_rows = []
+EXTRACTED_ROWS = []
 
 # Function to download and extract STIGs and SRGs
 def download_and_extract_stigs():
-    global extracted_rows
+    download_results = []
     response = requests.get(URL, HEADERS, verify=False)
     soup = BeautifulSoup(response.content, 'html.parser')
 
     # Find all rows in the table and download links
     rows = soup.find_all('tr')
     for row in rows:
-        cols = row.find_all('td')
-        if len(cols) == 3:
-            title = cols[0].get_text(strip=True)
-            size = cols[1].get_text(strip=True)
-            datePublished = cols[2].get_text(strip=True)
-            url = cols[0].find('a')['href']
-            extracted_rows.append((title, size, datePublished, url))
-            # url = cols[0].find('a')['href'].endswith('.zip')
+        title_col = row.find('td', class_='title_column')
+        size_col = row.find('td', class_='size_column')
+        updated_col = row.find('td', class_='updated_column')
 
-            # Check if the url contains the excluded keywords
-            if not any(keyword in url for keyword in EXCLUDE_KEYWORDS):
-                zip_filename = os.path.join(DOWNLOAD_DIR, url.split('/')[-1])
+        if title_col and size_col and updated_col:
+            title = title_col.get_text(strip=True)
+            size = size_col.get_text(strip=True)
+            datePublished = updated_col.get_text(strip=True)
+            anchor = title_col.find('a')
+
+            if anchor and 'href' in anchor.attrs:
+                url = anchor['href']
+            else:
+                url = 'None'
+
+            download_results.append({
+                'title': title,
+                'size': size,
+                'datePublished': datePublished,
+                'url': url,
+            })
+
+            # Check if the url contains the excluded keywords, and the file is only a zip file
+            if url.lower().endswith('.zip') and not any(keyword in url.lower() for keyword in EXCLUDE_KEYWORDS):
+                EXTRACTED_ROWS.append((title, size, datePublished, url))
+                zip_filename = os.path.join(DOWNLOAD_DIR, url.split('/')[-1])                
 
                 # Check if the file already exists
                 if not os.path.exists(zip_filename):
@@ -65,28 +81,79 @@ def download_and_extract_stigs():
             else:
                 print(f"Skipping excluded file: {title} - {url}")
 
-def parse_xml_and_extract_info():
-    global extracted_rows
-    for xml_file in os.listdir(EXTRACT_DIR):
-        if xml_file.endswith('.xml'):
-            # Match the XML file to its metadata
-            metadata = next((row for row in extracted_rows if row[3].endswith(xml_file)), None)
-            if metadata:
-                title, size, datePublished, url = metadata
-                print("Table Data:")
-                print(f"Title: {title}, Size: {size}, Date Published: {datePublished}, URL: {url}")
-                current_benchmark = pyscap.xccdf.Benchmark.parse(os.path.join(EXTRACT_DIR, xml_file))
-                pytitle = current_benchmark.title
-                pyremark = current_benchmark.remark
-                pyvenor = current_benchmark.vendor
-                pyfamily = current_benchmark.family
-                pymodel = current_benchmark.model
-                pylevel = current_benchmark.level
-                pyverison = current_benchmark.version
-                pyversionrange = current_benchmark.version_range
-                print("pyscap data:")
-                print(f"Title: {pytitle}, Remark: {pyremark}, Vendor: {pyvenor}, Family: {pyfamily}, Model: {pymodel}, Level: {pylevel}, Version: {pyverison}, Version Range: {pyversionrange}")
+    with open(OUTPUT_DOWNLOAD_JSON, 'w') as outfile:
+        json.dump(download_results, outfile, indent=4)
 
+# Function to recrusively find XML files in the directory
+def find_xml_files(directory):
+    xml_files = []
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.xml'):
+                xml_files.append(os.path.join(root, file))
+    return xml_files
+    
+
+# Function to parse and extract info from the xml
+def parse_xml_and_extract_info():
+    results = []
+    xml_files = find_xml_files(EXTRACT_DIR)
+
+    # Load metadata from the download process json file that was created
+    with open(OUTPUT_DOWNLOAD_JSON, 'r') as infile:
+        download_data = json.load(infile)
+
+    for xml_file in xml_files:
+        # Match the XML file to its metadata
+        filename = os.path.basename(xml_file)
+        # Matcher to identify the xml filename
+        xml_core_identifier = re.sub(r'(_STIG_|_SRG_|_Manual|-xccdf|.xml)', '', filename).replace('_', '')
+        metadata = next((item for item in download_data if xml_core_identifier in item['url'].replace('_', '').replace('.zip', '')), None)
+        # metadata = next((item for item in download_data if item['url'].endswith(filename)), None)
+        if metadata:
+            title, size, datePublished, url = metadata
+            # print("Table Data:")
+            # print(f"Title: {title}, Size: {size}, Date Published: {datePublished}, URL: {url}")
+            print('XML File: ')
+            print(xml_file)
+            current_benchmark = pyscap.xccdf.Benchmark.parse(xml_file)
+            print("-------------------")
+            print("Read benchmark")
+            pytitle = current_benchmark.title
+            print(pytitle)
+            pyremark = current_benchmark.remark
+            print(pyremark)
+            pyvendor = current_benchmark.vendor
+            print(pyvendor)
+            pyfamily = current_benchmark.family
+            print(pyfamily)
+            pymodel = current_benchmark.model
+            print(pymodel)
+            pylevel = current_benchmark.level
+            print(pylevel)
+            pyversion = current_benchmark.version
+            print(pyversion)
+            pyversionrange = current_benchmark.version_range
+            print(pyversionrange)
+            # print("pyscap data:")
+            # print(f"Title: {pytitle}, Remark: {pyremark}, Vendor: {pyvendor}, Family: {pyfamily}, Model: {pymodel}, Level: {pylevel}, Version: {pyversion}, Version Range: {pyversionrange}")
+            results.append({
+                'title': title,
+                'size': size,
+                'datePublished': datePublished,
+                'url': url,
+                'pyScapTitle': pytitle,
+                'pyRemark': pyremark,
+                'pyvendor': pyvendor,
+                'pyfamily': pyfamily,
+                'pymodel': pymodel,
+                'pylevel': pylevel,
+                'pyversion': pyversion,
+                'pyversionrange': pyversionrange,
+            })
+
+    with open(OUTPUT_JSON, 'w') as outfile:
+        json.dump(results, outfile, indent=4)
 
     #         # Store in SQLite database
     #         store_in_db(filename, title, name, url, size, version)
