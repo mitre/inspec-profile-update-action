@@ -10,7 +10,7 @@ from stig_parser import convert_stig
 file = "U_CAN_Ubuntu_20-04_LTS_V1R5_STIG.zip"
 json_results = convert_stig(file)
 
-#import ipdb; ipdb.set_trace()
+# import ipdb; ipdb.set_trace()
 
 print("Processing STIG: " + file )
 print(json_results['Title'] + " Version: " + json_results['Version'] + " Release: " + json_results['Release'])
