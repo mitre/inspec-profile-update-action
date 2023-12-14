@@ -22,7 +22,6 @@ CREATE TABLE "Artifact"(
   id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
   name VARCHAR NOT NULL,
   location VARCHAR NOT NULL,
-  type INTEGER NOT NULL,
   created_at DATE NOT NULL,
   secondary_location VARCHAR,
   raw_data BLOB,
