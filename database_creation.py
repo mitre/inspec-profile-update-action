@@ -5,7 +5,7 @@ import libsql_client
 
 
 async def main():
-    url = os.getenv("URL", "file:secruity_guidance.db")
+    url = os.getenv("URL", "file:security_guidance.db")
     async with libsql_client.create_client(url) as client:
         await client.batch(
             [
