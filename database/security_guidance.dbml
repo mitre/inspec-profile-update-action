@@ -1,0 +1,64 @@
+Table Organization {
+  organization_id int [pk, increment, not null]
+  short_name varchar [not null]
+  uri varchar
+  email varchar
+  long_name varchar [not null]
+}
+
+Table artifact_types {
+  type_name varchar [not null]
+  artifact_type_id int [pk, increment, not null]
+  description text
+}
+
+Table benchmark_type {
+  short_name varchar [not null]
+  description text [not null]
+  benchmark_type_id int [pk, increment, not null]
+  long_name varchar [not null]
+}
+
+Table Artifact {
+  artifact_id int [pk, increment, not null]
+  name varchar [not null]
+  location varchar [not null]
+  created_at date [not null]
+  secondary_location varchar
+  raw_data blob
+  type_id int [not null, ref: > artifact_types.artifact_type_id]
+  organization_id int [not null, ref: > Organization.organization_id]
+}
+
+Table Products {
+  short_name varchar [not null]
+  version real [not null]
+  author_id int [not null]
+  release int [not null]
+  long_name varchar [not null]
+  product_id int [pk, not null]
+  organization_id int [not null, ref: > Organization.organization_id]
+}
+
+Table Statuses {
+  status_id int [pk, increment, not null]
+  name varchar [not null]
+}
+
+Table Benchmarks {
+  benchmark_id int [pk, increment, not null]
+  version smallint [not null]
+  release smallint [not null]
+  release_date date [not null]
+  status_id int [not null, ref: > Statuses.status_id]
+  type_id int [not null, ref: > benchmark_type.benchmark_type_id]
+  product_id int [not null, ref: > Products.product_id]
+  author_id int [not null, ref: > Organization.organization_id]
+  sponsor_id int [not null, ref: > Organization.organization_id]
+}
+
+Table benchmark_artifacts {
+  default int2
+  benchmark_id int [pk, not null, ref: > Benchmarks.benchmark_id]
+  artifact_id int [pk, not null, ref: > Artifact.artifact_id]
+}
