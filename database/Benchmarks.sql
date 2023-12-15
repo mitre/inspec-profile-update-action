@@ -47,17 +47,16 @@ CREATE TABLE "Benchmarks"(
   version SMALLINT NOT NULL,
   "release" SMALLINT NOT NULL,
   release_date DATE NOT NULL,
-  status_id INTEGER NOT NULL,
   type_id INTEGER NOT NULL,
   product_id INT NOT NULL,
   author_id INTEGER NOT NULL,
   sponsor_id INTEGER NOT NULL,
-  status_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  CONSTRAINT "status_id_Benchmarks" FOREIGN KEY (status_id) REFERENCES "Statuses" (status_id),
+  status_id INTEGER NOT NULL,
   CONSTRAINT "benchmark_type_id_Benchmarks" FOREIGN KEY (type_id) REFERENCES benchmark_type (benchmark_type_id),
   CONSTRAINT "product_id_Benchmarks" FOREIGN KEY (product_id) REFERENCES "Products" (product_id),
   CONSTRAINT "organization_id_Benchmarks" FOREIGN KEY (author_id) REFERENCES "Organization" (organization_id),
-  CONSTRAINT "organization_id_Benchmarks" FOREIGN KEY (sponsor_id) REFERENCES "Organization" (organization_id)
+  CONSTRAINT "organization_id_Benchmarks" FOREIGN KEY (sponsor_id) REFERENCES "Organization" (organization_id),
+  CONSTRAINT "status_id_Benchmarks" FOREIGN KEY (status_id) REFERENCES "Statuses" (status_id)
 );
 
 CREATE TABLE benchmark_artifacts(
