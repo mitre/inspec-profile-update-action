@@ -3,7 +3,7 @@ CREATE TABLE "Organization"(
   short_name VARCHAR NOT NULL,
   uri VARCHAR,
   email VARCHAR,
-  full_name VARCHAR NOT NULL
+  long_name VARCHAR NOT NULL
 );
 
 CREATE TABLE artifact_types
