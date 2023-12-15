@@ -1,75 +1,70 @@
 CREATE TABLE "Organization"(
-  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  name VARCHAR NOT NULL,
+  organization_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  short_name VARCHAR NOT NULL,
   uri VARCHAR,
   email VARCHAR,
-  CONSTRAINT "Authors_ak_1" UNIQUE(name)
+  full_name VARCHAR NOT NULL
 );
 
-CREATE INDEX organization_index ON "Organization"(id);
-  
-CREATE TABLE artifact_types(type VARCHAR NOT NULL, PRIMARY KEY(type));
+CREATE TABLE artifact_types
+  (type_name VARCHAR NOT NULL, artifact_type_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, description TEXT);
 
 CREATE TABLE benchmark_type(
-  type VARCHAR NOT NULL,
+  short_name VARCHAR NOT NULL,
   description TEXT NOT NULL,
-  organization_name VARCHAR NOT NULL,
-  PRIMARY KEY(type),
-  CONSTRAINT name_benchmark_type FOREIGN KEY (organization_name) REFERENCES "Organization" (name)
+  benchmark_type_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  long_name VARCHAR NOT NULL
 );
 
 CREATE TABLE "Artifact"(
-  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  artifact_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
   name VARCHAR NOT NULL,
   location VARCHAR NOT NULL,
   created_at DATE NOT NULL,
   secondary_location VARCHAR,
   raw_data BLOB,
-  type VARCHAR NOT NULL,
-  author_name VARCHAR NOT NULL,
-  CONSTRAINT "type_Artifact" FOREIGN KEY (type) REFERENCES artifact_types (type),
-  CONSTRAINT "name_Artifact" FOREIGN KEY (author_name) REFERENCES "Organization" (name)
+  type_id INTEGER NOT NULL,
+  organization_id INTEGER NOT NULL,
+  CONSTRAINT "type_Artifact" FOREIGN KEY (type_id) REFERENCES artifact_types (artifact_type_id),
+  CONSTRAINT "organization_id_Artifact" FOREIGN KEY (organization_id) REFERENCES "Organization" (organization_id)
 );
 
 CREATE TABLE "Products"(
-  name VARCHAR NOT NULL,
+  short_name VARCHAR NOT NULL,
   version REAL NOT NULL,
   author_id INT NOT NULL,
-  "release" INT,
-  PRIMARY KEY(name, version),
-  CONSTRAINT "id_Products" FOREIGN KEY (author_id) REFERENCES "Organization" (id)
+  "release" INT NOT NULL,
+  long_name VARCHAR NOT NULL,
+  product_id INT NOT NULL,
+  organization_id INTEGER NOT NULL,
+  CONSTRAINT "organization_id_Products" FOREIGN KEY (organization_id) REFERENCES "Organization" (organization_id)
 );
 
-CREATE TABLE "Statuses"(
-  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  name VARCHAR NOT NULL,
-  CONSTRAINT "Statuses_ak_1" UNIQUE(id),
-  CONSTRAINT "Statuses_ak_2" UNIQUE(name)
-);
+CREATE TABLE "Statuses"(status_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR NOT NULL);
 
 CREATE TABLE "Benchmarks"(
-  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  benchmark_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
   version SMALLINT NOT NULL,
   "release" SMALLINT NOT NULL,
   release_date DATE NOT NULL,
-  type VARCHAR NOT NULL,
-  product_name VARCHAR NOT NULL,
-  product_version REAL NOT NULL,
-  status VARCHAR NOT NULL,
-  organization_name VARCHAR NOT NULL,
-  sponsor_name VARCHAR,
-  CONSTRAINT type_type FOREIGN KEY (type) REFERENCES benchmark_type (type),
-  CONSTRAINT "Products_Benchmarks" FOREIGN KEY (product_name, product_version) REFERENCES "Products" (name, version),
-  CONSTRAINT "name_Benchmarks" FOREIGN KEY (status) REFERENCES "Statuses" (name),
-  CONSTRAINT "name_Benchmarks" FOREIGN KEY (organization_name) REFERENCES "Organization" (name),
-  CONSTRAINT "name_Benchmarks" FOREIGN KEY (sponsor_name) REFERENCES "Organization" (name)
+  status_id INTEGER NOT NULL,
+  type_id INTEGER NOT NULL,
+  product_id INT NOT NULL,
+  author_id INTEGER NOT NULL,
+  sponsor_id INTEGER NOT NULL,
+  status_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  CONSTRAINT "status_id_Benchmarks" FOREIGN KEY (status_id) REFERENCES "Statuses" (status_id),
+  CONSTRAINT "benchmark_type_id_Benchmarks" FOREIGN KEY (type_id) REFERENCES benchmark_type (benchmark_type_id),
+  CONSTRAINT "product_id_Benchmarks" FOREIGN KEY (product_id) REFERENCES "Products" (product_id),
+  CONSTRAINT "organization_id_Benchmarks" FOREIGN KEY (author_id) REFERENCES "Organization" (organization_id),
+  CONSTRAINT "organization_id_Benchmarks" FOREIGN KEY (sponsor_id) REFERENCES "Organization" (organization_id)
 );
 
 CREATE TABLE benchmark_artifacts(
+  "default" INT2,
   benchmark_id INTEGER NOT NULL,
   artifact_id INTEGER NOT NULL,
-  "default" INT2,
   PRIMARY KEY(benchmark_id, artifact_id),
-  CONSTRAINT id_benchmark_references FOREIGN KEY (benchmark_id) REFERENCES "Benchmarks" (id),
-  CONSTRAINT id_benchmark_reference FOREIGN KEY (artifact_id) REFERENCES "Artifact" (id)
+  CONSTRAINT benchmark_id_benchmark_artifacts FOREIGN KEY (benchmark_id) REFERENCES "Benchmarks" (benchmark_id),
+  CONSTRAINT artifact_id_benchmark_artifacts FOREIGN KEY (artifact_id) REFERENCES "Artifact" (artifact_id)
 );
