@@ -1,5 +1,12 @@
+Project MITRE_SAF_Security_Guidance {
+  database_type: 'SQLite'
+  Note: '''
+    # Security Guidance Database
+    **markdown content here**
+  '''
+}
 Table Organization {
-  organization_id int [pk, increment, not null]
+  organization_id int [pk, increment, not null, note: "organization identifier"]
   short_name varchar [not null]
   uri varchar
   email varchar
@@ -41,8 +48,24 @@ Table Products {
 }
 
 Table Statuses {
-  status_id int [pk, increment, not null]
-  name varchar [not null]
+  status_id int [
+    pk, 
+    increment, 
+    not null, 
+    note: 'Primary Key for the status.']
+  name varchar [
+    not null, 
+    note: 'Text based name of the status.']
+  
+  Note: '''
+    # Statuses Table
+    Collection of statuses that show the current working state of the Benchmark or Artifact. 
+    
+    Valid entries are:
+      - 'Draft', WIP', 'In Review'
+      - 'Published', 'Final'
+      - 'Sunset'
+  '''
 }
 
 Table Benchmarks {
@@ -55,10 +78,47 @@ Table Benchmarks {
   product_id int [not null, ref: > Products.product_id]
   author_id int [not null, ref: > Organization.organization_id]
   sponsor_id int [not null, ref: > Organization.organization_id]
+
+    
+  Note: '''
+    # Benchmarks Table
+    Collection of Benchmarks that are stored in the database. A benchmark has a `benchmark_id` `version`, `release`, `release_date`.
+    
+    A Benchmarks `status`, `type`, `product`, `author` and `sponsor` all come from entries in the supporting database tables.
+
+    ### Table Constraints
+    #### [Must be added on the SQL Code side until DBML supports them]
+    1. A Benchmark should only belong to one Author, Product, Version, Release
+    2. A Benchmark may have an Author, Product, Version, Release with different Status
+    3. A Benchmark usually should not hae a (Product, Version, Release, Status ...) with different Authors or Sponsors
+
+    ### Column Constraints
+    #### [Must be added on the SQL Code side until DBML supports them]
+    - (`benchmark_id`,`product_id`,'version','release') [BPVR] is UNIQUE 
+  '''
 }
 
 Table benchmark_artifacts {
-  default int2
-  benchmark_id int [pk, not null, ref: > Benchmarks.benchmark_id]
-  artifact_id int [pk, not null, ref: > Artifact.artifact_id]
+  
+  default int2 [note: 'Marks the artifact as the `default` (0,NULL or 1) for the Benchmark.']
+  benchmark_id int [pk, not null, ref: > Benchmarks.benchmark_id, note: '`benchmark_id` the artifact relates to.']
+  artifact_id int [pk, not null, ref: > Artifact.artifact_id, note: '`artifact_id` we are linking to the referenced Benchmark.']
+  
+  Note: '''
+    # benchmark_artifacts table
+    #### [Linking Table between Benchmark and Artifact]
+
+    Collection of artifacts associated with a Benchmark by (`benchmark_id`,`artifact_id`).
+
+    ### Table Properties
+    - `default`: An `INT(2)` to mark an artifact as the `default` or `primary` Artifact related to this Benchmark.
+
+    ### Table Constraints:  
+    #### [Must be added on the SQL Code side until DBML supports them]
+     - (`benchmark_id`,`artifact_id`,'default') is UNIQUE as only one artifact can be the 'default' artifact for a given Benchmark.
+    
+    ### Column Constraints:  
+    #### [Must be added on the SQL Code side until DBML supports them]
+     - (`benchmark_id`,`artifact_id`) is UNIQUE since an Artifact can only belong to one Benchmark.
+  '''
 }
