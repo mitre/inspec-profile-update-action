@@ -91,23 +91,6 @@
 					"fk": true
 				},
 				{
-					"id": "a63e9906-c1c8-47b8-b628-23fd92b1ffe5",
-					"name": "product_id",
-					"datatype": "INT",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "[autoincrement] The int id of the product related to the benchmak",
-					"defaultvalue": "",
-					"data": "1,2,3",
-					"after": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": "",
-					"fk": true
-				},
-				{
 					"id": "ff9f083a-372b-499b-8dc8-fdcf0fdc822e",
 					"name": "author_id",
 					"datatype": "INTEGER",
@@ -160,6 +143,23 @@
 					},
 					"estimatedSize": "",
 					"fk": true
+				},
+				{
+					"id": "e63e3fd6-0c07-4793-8e50-2b9041d02b3a",
+					"name": "Products_product_id",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "[autoincrement] The int id of the product",
+					"defaultvalue": "",
+					"data": "1,2,3",
+					"after": "",
+					"sqlite": {
+						"autoincrement": true
+					},
+					"estimatedSize": "",
+					"fk": true
 				}
 			],
 			"relations": [
@@ -206,15 +206,6 @@
 						{
 							"id": "4ebcc84d-fdcb-453e-8d69-005dd0704c7b",
 							"colid": "b00c4bcd-d3ba-4d03-bdcd-cd72c2e48b07",
-							"sqlite": {
-								"desc": false,
-								"collate": "",
-								"expression": ""
-							}
-						},
-						{
-							"id": "e8cf594f-88ce-4b11-81a2-cc598be224b0",
-							"colid": "a63e9906-c1c8-47b8-b628-23fd92b1ffe5",
 							"sqlite": {
 								"desc": false,
 								"collate": "",
@@ -936,7 +927,7 @@
 				{
 					"id": "83427e84-109d-43a2-9c15-a1d3c444ebaa",
 					"name": "product_id",
-					"datatype": "INT",
+					"datatype": "INTEGER",
 					"param": "",
 					"pk": true,
 					"nn": true,
@@ -1044,7 +1035,7 @@
 					"isPk": true,
 					"cols": [
 						{
-							"id": "a4289a34-9f2c-4b9c-bd69-53487fc254b3",
+							"id": "03f9e1e7-8fcb-47b6-80d2-5f48d98d7a92",
 							"colid": "83427e84-109d-43a2-9c15-a1d3c444ebaa"
 						}
 					]
@@ -1269,9 +1260,9 @@
 			"c_cch": "",
 			"cols": [
 				{
-					"id": "67bf027e-9999-405b-b2ab-8ea0bf9c1a9b",
+					"id": "57d1aa03-3765-40c8-a275-4b9317290baa",
 					"parentcol": "83427e84-109d-43a2-9c15-a1d3c444ebaa",
-					"childcol": "a63e9906-c1c8-47b8-b628-23fd92b1ffe5"
+					"childcol": "e63e3fd6-0c07-4793-8e50-2b9041d02b3a"
 				}
 			],
 			"generate": true,
@@ -1471,7 +1462,7 @@
 		"replaceSpace": "_",
 		"color": "transparent",
 		"sideSelections": true,
-		"isDirty": false,
+		"isDirty": true,
 		"storedin": {
 			"major": 7,
 			"minor": 5,
@@ -1482,7 +1473,7 @@
 			"minor": 5,
 			"extra": 1
 		},
-		"writeFileParam": false,
+		"writeFileParam": true,
 		"authorName": "The Security Automation Frameowrk Team",
 		"companyDetails": "The MITRE Coroporation",
 		"companyUrl": "https://saf.mitre.org",
@@ -1500,7 +1491,7 @@
 			"keywordCase": "upper",
 			"identiferCase": "lower"
 		},
-		"lastSaved": 1702778284055
+		"lastSaved": 1702779462159
 	},
 	"otherObjects": {},
 	"diagrams": {

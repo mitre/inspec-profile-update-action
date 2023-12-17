@@ -47,7 +47,7 @@ CREATE TABLE "Organization"(
   CREATE UNIQUE INDEX unique_org_short_and_long_name ON "Organization"(long_name, short_name);
   
 CREATE TABLE "Products"(
-  product_id INT NOT NULL,
+  product_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
   long_name VARCHAR NOT NULL,
   short_name VARCHAR NOT NULL,
   version REAL NOT NULL,
@@ -56,7 +56,9 @@ CREATE TABLE "Products"(
   CONSTRAINT product_has_a_owner FOREIGN KEY (owner_id) REFERENCES "Organization" (organization_id) ON DELETE Restrict ON UPDATE Cascade
 );
 
-CREATE TABLE "Statuses"(status_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR NOT NULL);
+CREATE TABLE "Statuses"(
+  status_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+  name VARCHAR NOT NULL);
 
   CREATE UNIQUE INDEX unique_status_id_name ON "Statuses"(status_id, name);
   
