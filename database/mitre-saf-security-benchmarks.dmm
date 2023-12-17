@@ -115,7 +115,7 @@
 					"pk": false,
 					"nn": true,
 					"comment": "Integer id of the organization that authored the benchmark",
-					"defaultvalue": "",
+					"defaultvalue": "0",
 					"data": "1,2,3",
 					"after": "",
 					"collation": "",
@@ -131,9 +131,9 @@
 					"datatype": "INTEGER",
 					"param": "",
 					"pk": false,
-					"nn": true,
+					"nn": false,
 					"comment": "Integer id of the organization that supported the development of the benchmark",
-					"defaultvalue": "",
+					"defaultvalue": "0",
 					"data": "1,2,3",
 					"after": "",
 					"collation": "",
@@ -184,7 +184,55 @@
 					]
 				}
 			],
-			"indexes": [],
+			"indexes": [
+				{
+					"id": "9e02440e-8b59-43c9-ab67-a0610b707796",
+					"name": "unique_product_version_release_owner",
+					"unique": true,
+					"sqlite": {
+						"expression": "",
+						"desc": ""
+					},
+					"cols": [
+						{
+							"id": "656e8c24-f389-47e4-8c5c-ce006d40d5d1",
+							"colid": "f428635d-6ccc-4a7f-8649-0c02987ec283",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						},
+						{
+							"id": "4ebcc84d-fdcb-453e-8d69-005dd0704c7b",
+							"colid": "b00c4bcd-d3ba-4d03-bdcd-cd72c2e48b07",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						},
+						{
+							"id": "e8cf594f-88ce-4b11-81a2-cc598be224b0",
+							"colid": "a63e9906-c1c8-47b8-b628-23fd92b1ffe5",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						},
+						{
+							"id": "e875a7c1-abb1-4853-96c1-efcb53d00ec5",
+							"colid": "ff9f083a-372b-499b-8dc8-fdcf0fdc822e",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						}
+					]
+				}
+			],
 			"embeddable": false,
 			"generate": true,
 			"generateCustomCode": true,
@@ -203,38 +251,6 @@
 			"desc": "Describes the kind of benchmark to include:\n  - Security Technical Implementation Gudie (stig)\n  - Security Requirements Guide (srg)\n  - Center for Internet Security Benchmark (cis)\n  - Vendor Guidance (vendor)",
 			"estimatedSize": "",
 			"cols": [
-				{
-					"id": "6684e545-9261-4248-8a02-b11526e64fd8",
-					"name": "short_name",
-					"datatype": "VARCHAR",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "The short name name of the benchmark type",
-					"defaultvalue": "",
-					"data": "\"stig\", \"cis\", \"srg\", \"AWS-BP\", 'RH-BP'",
-					"after": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": ""
-				},
-				{
-					"id": "e2f74eb2-b3b5-4c54-87ab-e131faee5c35",
-					"name": "description",
-					"datatype": "TEXT",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "The full text description of the guidane type",
-					"defaultvalue": "",
-					"data": "'A Security Technical Implementation Guide ....' , 'A Center for Internet Security Benchmark.....'",
-					"after": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": ""
-				},
 				{
 					"id": "2df4ebdd-61f4-4cbc-b21e-7abd97d92e3d",
 					"name": "benchmark_type_id",
@@ -266,6 +282,38 @@
 						"autoincrement": false
 					},
 					"estimatedSize": ""
+				},
+				{
+					"id": "6684e545-9261-4248-8a02-b11526e64fd8",
+					"name": "short_name",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "The short name name of the benchmark type",
+					"defaultvalue": "",
+					"data": "\"stig\", \"cis\", \"srg\", \"AWS-BP\", 'RH-BP'",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "e2f74eb2-b3b5-4c54-87ab-e131faee5c35",
+					"name": "description",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "The full text description of the guidane type",
+					"defaultvalue": "",
+					"data": "'A Security Technical Implementation Guide ....' , 'A Center for Internet Security Benchmark.....'",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
 				}
 			],
 			"relations": [
@@ -285,7 +333,48 @@
 					]
 				}
 			],
-			"indexes": [],
+			"indexes": [
+				{
+					"id": "d82b592a-fecc-4798-ba01-e42d057b718e",
+					"name": "unique_bt_long_name",
+					"unique": true,
+					"sqlite": {
+						"expression": "",
+						"desc": ""
+					},
+					"cols": [
+						{
+							"id": "2bca5342-ed5c-43e9-9f4a-8ed1d78b3470",
+							"colid": "e799c237-5417-437d-a4aa-c2da58ff5de2",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						}
+					]
+				},
+				{
+					"id": "840721a4-1a2c-42da-8e27-c6d88e083a00",
+					"name": "unique_bt_short_name",
+					"unique": true,
+					"sqlite": {
+						"expression": "",
+						"desc": ""
+					},
+					"cols": [
+						{
+							"id": "f4df0e64-f531-492e-9773-75d4fc9b92ca",
+							"colid": "6684e545-9261-4248-8a02-b11526e64fd8",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						}
+					]
+				}
+			],
 			"embeddable": false,
 			"generate": true,
 			"generateCustomCode": true,
@@ -318,6 +407,22 @@
 					"collation": "",
 					"sqlite": {
 						"autoincrement": true
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "25edc163-dc64-4451-b8b5-010934342c35",
+					"name": "long_name",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "The full text name of the author, vendor or agency.",
+					"defaultvalue": "",
+					"data": "'MITRE Security Automation Framework', 'Defense Information Systems Agency', 'Defense Counterintelligence Services Agency', 'National Geospatial-Intelligence Agency'",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
 					},
 					"estimatedSize": ""
 				},
@@ -368,22 +473,6 @@
 						"autoincrement": false
 					},
 					"estimatedSize": ""
-				},
-				{
-					"id": "25edc163-dc64-4451-b8b5-010934342c35",
-					"name": "long_name",
-					"datatype": "VARCHAR",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "The full text name of the author, vendor or agency.",
-					"defaultvalue": "",
-					"data": "'MITRE Security Automation Framework', 'Defense Information Systems Agency', 'Defense Counterintelligence Services Agency', 'National Geospatial-Intelligence Agency'",
-					"after": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": ""
 				}
 			],
 			"relations": [
@@ -406,7 +495,37 @@
 					]
 				}
 			],
-			"indexes": [],
+			"indexes": [
+				{
+					"id": "35afc829-703b-42de-b22a-d9436fb46d23",
+					"name": "unique_org_short_and_long_name",
+					"unique": true,
+					"sqlite": {
+						"expression": "",
+						"desc": ""
+					},
+					"cols": [
+						{
+							"id": "1dcd45b7-dd08-4d1b-9928-706379479dd0",
+							"colid": "25edc163-dc64-4451-b8b5-010934342c35",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						},
+						{
+							"id": "fea50942-9291-4517-a05c-6f8453bb3658",
+							"colid": "cee2c943-546c-4f5c-a4c3-9483a4e03410",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						}
+					]
+				}
+			],
 			"embeddable": false,
 			"generate": true,
 			"generateCustomCode": true,
@@ -443,6 +562,41 @@
 					"estimatedSize": ""
 				},
 				{
+					"id": "23ae68f2-9c16-41af-bc28-13cd4eab9a71",
+					"name": "type_id",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "4c828330-0377-4eee-a133-32a062c1f18b",
+					"name": "owner_id",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "Integer id of the creator  or owner of the artifact",
+					"defaultvalue": "",
+					"data": "1,2,3",
+					"after": "",
+					"collation": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
 					"id": "4491f4ac-a271-44c9-96b8-91373e4deab9",
 					"name": "name",
 					"datatype": "VARCHAR",
@@ -475,22 +629,6 @@
 					"estimatedSize": ""
 				},
 				{
-					"id": "ecaa1880-06fc-4554-b8f4-2e3fdc71c029",
-					"name": "created_at",
-					"datatype": "DATE",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"after": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": ""
-				},
-				{
 					"id": "568f380a-7d3b-4363-80a1-8459c0de6473",
 					"name": "secondary_location",
 					"datatype": "VARCHAR",
@@ -500,6 +638,22 @@
 					"comment": "[optional] A file path, uri or other location you can find the reference besides the default location.",
 					"defaultvalue": "",
 					"data": "'my_other/place/file.zip'",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "ecaa1880-06fc-4554-b8f4-2e3fdc71c029",
+					"name": "created_at",
+					"datatype": "DATE",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
 					"after": "",
 					"sqlite": {
 						"autoincrement": false
@@ -521,41 +675,6 @@
 						"autoincrement": false
 					},
 					"estimatedSize": ""
-				},
-				{
-					"id": "23ae68f2-9c16-41af-bc28-13cd4eab9a71",
-					"name": "type_id",
-					"datatype": "INTEGER",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"after": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": "",
-					"fk": true
-				},
-				{
-					"id": "4c828330-0377-4eee-a133-32a062c1f18b",
-					"name": "organization_id",
-					"datatype": "INTEGER",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "Integer id of the creator  or owner of the artifact",
-					"defaultvalue": "",
-					"data": "1,2,3",
-					"after": "",
-					"collation": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": "",
-					"fk": true
 				}
 			],
 			"relations": [
@@ -597,22 +716,6 @@
 			"estimatedSize": "",
 			"cols": [
 				{
-					"id": "16db22ec-71fe-45af-a622-ff81a5c8500a",
-					"name": "default",
-					"datatype": "INT2",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "[optional] Boolean like indicator of if this artifact is the 'primary artifact' for the Benchmark it belongs to.",
-					"defaultvalue": "",
-					"data": "0.1,NULL",
-					"after": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": ""
-				},
-				{
 					"id": "51e1ca41-0019-4f28-828a-baea406e7692",
 					"name": "benchmark_id",
 					"datatype": "INTEGER",
@@ -647,6 +750,22 @@
 					},
 					"estimatedSize": "",
 					"fk": true
+				},
+				{
+					"id": "16db22ec-71fe-45af-a622-ff81a5c8500a",
+					"name": "is_default",
+					"datatype": "INT2",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "[optional] Boolean like indicator of if this artifact is the 'primary artifact' for the Benchmark it belongs to.",
+					"defaultvalue": "0",
+					"data": "0.1,NULL",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
 				}
 			],
 			"relations": [
@@ -671,7 +790,46 @@
 					]
 				}
 			],
-			"indexes": [],
+			"indexes": [
+				{
+					"id": "5064de45-9c89-47c3-bb15-651ed06dc65a",
+					"name": "unique_benchmark_artificat_default",
+					"unique": true,
+					"sqlite": {
+						"desc": "Allows only one artifact to be the default artifact related to a benchmark.",
+						"expression": ""
+					},
+					"cols": [
+						{
+							"id": "3c7c92e4-6d00-45a6-81e1-1950c4cb2c33",
+							"colid": "51e1ca41-0019-4f28-828a-baea406e7692",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						},
+						{
+							"id": "7b92bb84-b8f3-4a5d-8e26-bc45d2177da3",
+							"colid": "75e75cd3-b681-43db-8506-a9d3dea7c1de",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						},
+						{
+							"id": "47dbec11-89b2-4298-a665-0195c52ee348",
+							"colid": "16db22ec-71fe-45af-a622-ff81a5c8500a",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						}
+					]
+				}
+			],
 			"embeddable": false,
 			"generate": true,
 			"generateCustomCode": true,
@@ -691,22 +849,6 @@
 			"estimatedSize": "",
 			"cols": [
 				{
-					"id": "77f4d932-64bb-4cb8-a6d4-6511cac8493a",
-					"name": "type_name",
-					"datatype": "VARCHAR",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "The simple name of the artifact",
-					"defaultvalue": "",
-					"data": "XCCDF Benchmark, SRG Benchmark, InSpec Profile, HDF Profile JOSN, Zip Archieve,",
-					"after": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": ""
-				},
-				{
 					"id": "a4c26fa6-5af9-4d31-96ab-5b068fe82fd9",
 					"name": "artifact_type_id",
 					"datatype": "INTEGER",
@@ -719,6 +861,22 @@
 					"after": "",
 					"sqlite": {
 						"autoincrement": true
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "77f4d932-64bb-4cb8-a6d4-6511cac8493a",
+					"name": "type_name",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "The simple name of the artifact",
+					"defaultvalue": "",
+					"data": "XCCDF Benchmark, SRG Benchmark, InSpec Profile, HDF Profile JOSN, Zip Archieve,",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
 					},
 					"estimatedSize": ""
 				},
@@ -776,6 +934,38 @@
 			"estimatedSize": "",
 			"cols": [
 				{
+					"id": "83427e84-109d-43a2-9c15-a1d3c444ebaa",
+					"name": "product_id",
+					"datatype": "INT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "[autoincrement] The int id of the product",
+					"defaultvalue": "",
+					"data": "1,2,3",
+					"after": "",
+					"sqlite": {
+						"autoincrement": true
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "7a5090f4-bee9-46a5-9cbf-b9b97cb5dbb7",
+					"name": "long_name",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "The long name of the product, many products have longer formal name, such as: VMware Identity Manager 3.3.x DoD STIG Compliance and Automation or VMware Cloud Foundation 5.x. - if there is no difference it is expected 'short_name' and 'full_name' wil be the same.",
+					"defaultvalue": "",
+					"data": "'Identity Manager', 'Cloud Foundation', 'vSphere'",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				},
+				{
 					"id": "058e47d0-7551-4777-95d1-738dc4381129",
 					"name": "short_name",
 					"datatype": "VARCHAR",
@@ -808,24 +998,6 @@
 					"estimatedSize": ""
 				},
 				{
-					"id": "0750946d-1961-48f7-a05f-ad3ca3c6619f",
-					"name": "author_id",
-					"datatype": "INT",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "Integer id of the author of the benchmark",
-					"defaultvalue": "",
-					"data": "1,2,3",
-					"after": "",
-					"collation": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": "",
-					"fk": false
-				},
-				{
 					"id": "db0e76c4-1a99-4c6f-a92d-ae2e44a085c0",
 					"name": "release",
 					"datatype": "INT",
@@ -842,40 +1014,8 @@
 					"estimatedSize": ""
 				},
 				{
-					"id": "7a5090f4-bee9-46a5-9cbf-b9b97cb5dbb7",
-					"name": "long_name",
-					"datatype": "VARCHAR",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "The long name of the product, many products have longer formal name, such as: VMware Identity Manager 3.3.x DoD STIG Compliance and Automation or VMware Cloud Foundation 5.x. - if there is no difference it is expected 'short_name' and 'full_name' wil be the same.",
-					"defaultvalue": "",
-					"data": "'Identity Manager', 'Cloud Foundation', 'vSphere'",
-					"after": "",
-					"sqlite": {
-						"autoincrement": false
-					},
-					"estimatedSize": ""
-				},
-				{
-					"id": "83427e84-109d-43a2-9c15-a1d3c444ebaa",
-					"name": "product_id",
-					"datatype": "INT",
-					"param": "",
-					"pk": true,
-					"nn": true,
-					"comment": "[autoincrement] The int id of the product",
-					"defaultvalue": "",
-					"data": "1,2,3",
-					"after": "",
-					"sqlite": {
-						"autoincrement": true
-					},
-					"estimatedSize": ""
-				},
-				{
 					"id": "af7e3f56-16b2-463c-afa0-3393593014d8",
-					"name": "organization_id",
+					"name": "owner_id",
 					"datatype": "INTEGER",
 					"param": "",
 					"pk": false,
@@ -981,7 +1121,37 @@
 					]
 				}
 			],
-			"indexes": [],
+			"indexes": [
+				{
+					"id": "e8d18d0a-bb20-41b5-a5d9-23412c13ea64",
+					"name": "unique_status_id_name",
+					"unique": true,
+					"sqlite": {
+						"desc": "Ensures that the tuple (status_id, name) is unique in the table, so we can only have one status name called 'abc'",
+						"expression": ""
+					},
+					"cols": [
+						{
+							"id": "f2b7cf54-ddf3-49ca-8636-1b7c92a690f3",
+							"colid": "4bc8e5d6-ec2c-44a7-940c-d75199f981af",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						},
+						{
+							"id": "10dbae4d-1479-4a8a-b3fa-db595935b2af",
+							"colid": "2bbc6494-a884-4eca-8769-d8aedfc02637",
+							"sqlite": {
+								"desc": false,
+								"collate": "",
+								"expression": ""
+							}
+						}
+					]
+				}
+			],
 			"embeddable": false,
 			"generate": true,
 			"generateCustomCode": true,
@@ -998,7 +1168,7 @@
 		"ab7e56b9-8aa7-429c-97ac-d4e117244aec": {
 			"id": "ab7e56b9-8aa7-429c-97ac-d4e117244aec",
 			"visible": true,
-			"name": "type_Artifact",
+			"name": "artifact_has_a_type",
 			"desc": "",
 			"type": "identifying",
 			"parent_key": "db251232-ef40-4eb6-92ff-67f608e7f6f6",
@@ -1020,19 +1190,21 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": "",
-			"relationColor": "transparent"
+			"relationColor": "transparent",
+			"ri_pd": "Restrict",
+			"ri_pu": "Cascade"
 		},
 		"fd560202-d9f1-4e3a-8133-4d207466a3c0": {
 			"id": "fd560202-d9f1-4e3a-8133-4d207466a3c0",
 			"visible": true,
-			"name": "organization_id_Products",
+			"name": "product_has_a_owner",
 			"desc": "",
 			"type": "identifying",
 			"parent_key": "b056d86c-a62c-465f-ac96-9374f6e41b3f",
 			"parent": "510cb49c-1f0e-4203-bd5d-80c96e661f5e",
 			"child": "52cf2433-451e-4ba0-8b3d-8624bd967ffb",
 			"c_mp": "true",
-			"c_mch": "true",
+			"c_mch": "false",
 			"c_p": "one",
 			"c_ch": "many",
 			"c_cp": "",
@@ -1047,12 +1219,14 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": "",
-			"relationColor": "transparent"
+			"relationColor": "transparent",
+			"ri_pd": "Restrict",
+			"ri_pu": "Cascade"
 		},
 		"6465776d-da1f-414e-a12c-32ac13b66909": {
 			"id": "6465776d-da1f-414e-a12c-32ac13b66909",
 			"visible": true,
-			"name": "benchmark_type_id_Benchmarks",
+			"name": "benchmark_has_a_type",
 			"desc": "",
 			"type": "identifying",
 			"parent_key": "28a111ff-8ee7-4a1b-8ad5-6ceee0ba3098",
@@ -1074,12 +1248,14 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": "",
-			"relationColor": "transparent"
+			"relationColor": "transparent",
+			"ri_pd": "Restrict",
+			"ri_pu": "Cascade"
 		},
 		"8440ea26-76c0-4269-9597-a6995d857b68": {
 			"id": "8440ea26-76c0-4269-9597-a6995d857b68",
 			"visible": true,
-			"name": "product_id_Benchmarks",
+			"name": "benchmark_has_a_product",
 			"desc": "",
 			"type": "identifying",
 			"parent_key": "91648061-8fe5-45d6-a841-129186f7cdc0",
@@ -1088,7 +1264,7 @@
 			"c_mp": "true",
 			"c_mch": "true",
 			"c_p": "one",
-			"c_ch": "many",
+			"c_ch": "one",
 			"c_cp": "",
 			"c_cch": "",
 			"cols": [
@@ -1101,12 +1277,14 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": "",
-			"relationColor": "transparent"
+			"relationColor": "transparent",
+			"ri_pd": "Restrict",
+			"ri_pu": "Cascade"
 		},
 		"e12f9a4e-1035-45c0-bd66-a0b32b825758": {
 			"id": "e12f9a4e-1035-45c0-bd66-a0b32b825758",
 			"visible": true,
-			"name": "organization_id_Benchmarks",
+			"name": "benchmark_has_an_author",
 			"desc": "",
 			"type": "identifying",
 			"parent_key": "b056d86c-a62c-465f-ac96-9374f6e41b3f",
@@ -1128,19 +1306,21 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": "",
-			"relationColor": "transparent"
+			"relationColor": "transparent",
+			"ri_pd": "Restrict",
+			"ri_pu": "Cascade"
 		},
 		"3627acdc-20c5-462a-9096-da39cd6b9ed8": {
 			"id": "3627acdc-20c5-462a-9096-da39cd6b9ed8",
 			"visible": true,
-			"name": "organization_id_Benchmarks",
+			"name": "benmark_has_a_sponsor",
 			"desc": "",
 			"type": "identifying",
 			"parent_key": "b056d86c-a62c-465f-ac96-9374f6e41b3f",
 			"parent": "510cb49c-1f0e-4203-bd5d-80c96e661f5e",
 			"child": "c8ba4433-bd1b-468b-b33e-d5c50f1f2b40",
-			"c_mp": "true",
-			"c_mch": "true",
+			"c_mp": "false",
+			"c_mch": "false",
 			"c_p": "one",
 			"c_ch": "many",
 			"c_cp": "",
@@ -1155,12 +1335,14 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": "",
-			"relationColor": "transparent"
+			"relationColor": "transparent",
+			"ri_pd": "Restrict",
+			"ri_pu": "Cascade"
 		},
 		"a2782a52-3d03-4937-8ccf-9e0a994db294": {
 			"id": "a2782a52-3d03-4937-8ccf-9e0a994db294",
 			"visible": true,
-			"name": "benchmark_id_benchmark_artifacts",
+			"name": "benchmark_has_an_artifact",
 			"desc": "",
 			"type": "identifying",
 			"parent_key": "fa60d456-7fef-4426-9a1d-b938566b8d9b",
@@ -1182,12 +1364,14 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": "",
-			"relationColor": "transparent"
+			"relationColor": "transparent",
+			"ri_pd": "Cascade",
+			"ri_pu": "Cascade"
 		},
 		"4624830c-2ee0-4972-b189-2657e9b7998b": {
 			"id": "4624830c-2ee0-4972-b189-2657e9b7998b",
 			"visible": true,
-			"name": "artifact_id_benchmark_artifacts",
+			"name": "artifact_belongs_to_benchmark",
 			"desc": "",
 			"type": "identifying",
 			"parent_key": "3f97f355-6d9f-4714-8099-5b17c5f57130",
@@ -1209,12 +1393,14 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": "",
-			"relationColor": "transparent"
+			"relationColor": "transparent",
+			"ri_pd": "Cascade",
+			"ri_pu": "Cascade"
 		},
 		"46831da2-6151-4803-a00f-c8b7a0fb5cf4": {
 			"id": "46831da2-6151-4803-a00f-c8b7a0fb5cf4",
 			"visible": true,
-			"name": "organization_id_Artifact",
+			"name": "artifact_has_a_owner",
 			"desc": "",
 			"type": "identifying",
 			"parent_key": "b056d86c-a62c-465f-ac96-9374f6e41b3f",
@@ -1236,12 +1422,14 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": "",
-			"relationColor": "transparent"
+			"relationColor": "transparent",
+			"ri_pu": "Cascade",
+			"ri_pd": "Restrict"
 		},
 		"22f19dfb-22c4-4bd4-9522-2e26dc83c101": {
 			"id": "22f19dfb-22c4-4bd4-9522-2e26dc83c101",
 			"visible": true,
-			"name": "status_id_Benchmarks",
+			"name": "benchmark_has_a_status",
 			"desc": "",
 			"type": "identifying",
 			"parent_key": "83c53cd8-165d-4d51-b67e-8c74146d2572",
@@ -1263,16 +1451,18 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": "",
-			"relationColor": "transparent"
+			"relationColor": "transparent",
+			"ri_pu": "Cascade",
+			"ri_pd": "Restrict"
 		}
 	},
 	"notes": {},
 	"lines": {},
 	"model": {
-		"name": "Benchmarks",
+		"name": "MITRE SAF Security Benchmarks",
 		"id": "5c30763e-cd89-4cee-8ae6-ff0aee49e72e",
 		"activeDiagram": "1bdbbea3-d7c8-4cfb-a10a-8e33bd65a392",
-		"desc": "",
+		"desc": "The Security Benchmarks databse is a collection of Government, Industry and Vendor Security Guidance Benchmarks and their artiefacts.",
 		"path": "",
 		"type": "SQLITE",
 		"version": 1,
@@ -1281,7 +1471,7 @@
 		"replaceSpace": "_",
 		"color": "transparent",
 		"sideSelections": true,
-		"isDirty": true,
+		"isDirty": false,
 		"storedin": {
 			"major": 7,
 			"minor": 5,
@@ -1290,37 +1480,37 @@
 		"laststoredin": {
 			"major": 7,
 			"minor": 5,
-			"extra": 0
+			"extra": 1
 		},
 		"writeFileParam": false,
-		"authorName": "",
-		"companyDetails": "",
-		"companyUrl": "",
+		"authorName": "The Security Automation Frameowrk Team",
+		"companyDetails": "The MITRE Coroporation",
+		"companyUrl": "https://saf.mitre.org",
 		"def_coltopk": true,
 		"sqlSettings": {
-			"wrapLines": true,
+			"wrapLines": false,
 			"wrapOffset": "120",
 			"indent": true,
 			"indentationString": "spaces",
-			"indentationSize": 2,
+			"indentationSize": "2",
 			"limitItemsOnLine": true,
-			"maxListItemsOnLine": 3,
+			"maxListItemsOnLine": "2",
 			"statementDelimiter": ";",
 			"routineDelimiter": ";",
 			"keywordCase": "upper",
-			"identiferCase": "original"
+			"identiferCase": "lower"
 		},
-		"lastSaved": 1702605064746
+		"lastSaved": 1702778284055
 	},
 	"otherObjects": {},
 	"diagrams": {
 		"1bdbbea3-d7c8-4cfb-a10a-8e33bd65a392": {
-			"name": "Security Guidance",
+			"name": "MITRE SAF Security Guidance",
 			"description": "",
 			"id": "1bdbbea3-d7c8-4cfb-a10a-8e33bd65a392",
 			"keysgraphics": true,
-			"linegraphics": "detailed",
-			"zoom": 1,
+			"linegraphics": "basic",
+			"zoom": 1.1,
 			"background": "transparent",
 			"lineColor": "transparent",
 			"isOpen": true,
@@ -1328,7 +1518,7 @@
 			"diagramItems": {
 				"c8ba4433-bd1b-468b-b33e-d5c50f1f2b40": {
 					"referencedItemId": "c8ba4433-bd1b-468b-b33e-d5c50f1f2b40",
-					"x": 361,
+					"x": 495,
 					"y": 30,
 					"gHeight": 240,
 					"gWidth": 350,
@@ -1341,9 +1531,9 @@
 				},
 				"ae252854-db26-47df-9077-04e929b84447": {
 					"referencedItemId": "ae252854-db26-47df-9077-04e929b84447",
-					"x": 947,
-					"y": 30,
-					"gHeight": 99,
+					"x": 978,
+					"y": 74,
+					"gHeight": 146,
 					"gWidth": 255,
 					"color": "#ffffff",
 					"background": "#03a9f4",
@@ -1354,10 +1544,10 @@
 				},
 				"510cb49c-1f0e-4203-bd5d-80c96e661f5e": {
 					"referencedItemId": "510cb49c-1f0e-4203-bd5d-80c96e661f5e",
-					"x": 967,
-					"y": 391,
-					"gHeight": 117,
-					"gWidth": 232,
+					"x": 543,
+					"y": 578,
+					"gHeight": 146,
+					"gWidth": 253,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": false,
@@ -1367,8 +1557,8 @@
 				},
 				"6e2bb99e-5664-4222-b085-611dca238bf8": {
 					"referencedItemId": "6e2bb99e-5664-4222-b085-611dca238bf8",
-					"x": 357,
-					"y": 425,
+					"x": 138,
+					"y": 370,
 					"gHeight": 171,
 					"gWidth": 258,
 					"color": "#ffffff",
@@ -1380,10 +1570,10 @@
 				},
 				"e4cfe7e8-661f-462c-b51e-401688f089aa": {
 					"referencedItemId": "e4cfe7e8-661f-462c-b51e-401688f089aa",
-					"x": 353,
-					"y": 294,
-					"gHeight": 81,
-					"gWidth": 225,
+					"x": 136,
+					"y": 88,
+					"gHeight": 110,
+					"gWidth": 262,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": false,
@@ -1393,8 +1583,8 @@
 				},
 				"6aecb762-1a99-493f-987c-133569ac56d9": {
 					"referencedItemId": "6aecb762-1a99-493f-987c-133569ac56d9",
-					"x": 359,
-					"y": 639,
+					"x": 150,
+					"y": 604,
 					"gHeight": 81,
 					"gWidth": 231,
 					"color": "#ffffff",
@@ -1406,10 +1596,10 @@
 				},
 				"52cf2433-451e-4ba0-8b3d-8624bd967ffb": {
 					"referencedItemId": "52cf2433-451e-4ba0-8b3d-8624bd967ffb",
-					"x": 976,
-					"y": 171,
-					"gHeight": 153,
-					"gWidth": 232,
+					"x": 708,
+					"y": 369,
+					"gHeight": 135,
+					"gWidth": 217,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": false,
@@ -1419,9 +1609,9 @@
 				},
 				"3042578a-ef8c-490f-86e5-4cebe82acc7d": {
 					"referencedItemId": "3042578a-ef8c-490f-86e5-4cebe82acc7d",
-					"x": 45,
-					"y": 101,
-					"gHeight": 63,
+					"x": 430,
+					"y": 370,
+					"gHeight": 92,
 					"gWidth": 196,
 					"color": "#ffffff",
 					"background": "#03a9f4",
@@ -1446,7 +1636,7 @@
 			"showEstimatedSize": false,
 			"showSchemaContainer": true,
 			"showEmbeddedInParents": true,
-			"showCardinalityCaptions": true,
+			"showCardinalityCaptions": false,
 			"showColumns": true,
 			"showColumnDataTypes": true,
 			"showSampleData": false,
@@ -1457,28 +1647,31 @@
 			"descriptionsColor": "transparent",
 			"embeddedSpacing": "2",
 			"showMainIcon": true,
-			"showLabels": true
+			"showLabels": true,
+			"boxSpacing": "2",
+			"boxAlign": "center"
 		}
 	},
+	"diagramsOrder": [],
 	"order": [
-		"510cb49c-1f0e-4203-bd5d-80c96e661f5e",
-		"6aecb762-1a99-493f-987c-133569ac56d9",
-		"ae252854-db26-47df-9077-04e929b84447",
 		"6e2bb99e-5664-4222-b085-611dca238bf8",
+		"c8ba4433-bd1b-468b-b33e-d5c50f1f2b40",
+		"510cb49c-1f0e-4203-bd5d-80c96e661f5e",
 		"52cf2433-451e-4ba0-8b3d-8624bd967ffb",
 		"3042578a-ef8c-490f-86e5-4cebe82acc7d",
-		"c8ba4433-bd1b-468b-b33e-d5c50f1f2b40",
+		"6aecb762-1a99-493f-987c-133569ac56d9",
 		"e4cfe7e8-661f-462c-b51e-401688f089aa",
-		"ab7e56b9-8aa7-429c-97ac-d4e117244aec",
-		"fd560202-d9f1-4e3a-8133-4d207466a3c0",
+		"ae252854-db26-47df-9077-04e929b84447",
+		"4624830c-2ee0-4972-b189-2657e9b7998b",
+		"a2782a52-3d03-4937-8ccf-9e0a994db294",
 		"6465776d-da1f-414e-a12c-32ac13b66909",
-		"8440ea26-76c0-4269-9597-a6995d857b68",
+		"46831da2-6151-4803-a00f-c8b7a0fb5cf4",
 		"e12f9a4e-1035-45c0-bd66-a0b32b825758",
 		"3627acdc-20c5-462a-9096-da39cd6b9ed8",
-		"a2782a52-3d03-4937-8ccf-9e0a994db294",
-		"4624830c-2ee0-4972-b189-2657e9b7998b",
-		"46831da2-6151-4803-a00f-c8b7a0fb5cf4",
-		"22f19dfb-22c4-4bd4-9522-2e26dc83c101"
+		"fd560202-d9f1-4e3a-8133-4d207466a3c0",
+		"8440ea26-76c0-4269-9597-a6995d857b68",
+		"22f19dfb-22c4-4bd4-9522-2e26dc83c101",
+		"ab7e56b9-8aa7-429c-97ac-d4e117244aec"
 	],
 	"collapsedTreeItems": [],
 	"reverseStats": {}

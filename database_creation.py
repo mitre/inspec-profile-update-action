@@ -7,9 +7,10 @@ import libsql_client
 async def main():
     url = os.getenv("URL", "file:security_guidance.db")
     async with libsql_client.create_client(url) as client:
+        #import ipdb; ipdb.set_trace()
         await client.batch(
             [
-                """
+            """
             CREATE TABLE "Organization"(
             organization_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
             short_name VARCHAR NOT NULL,
