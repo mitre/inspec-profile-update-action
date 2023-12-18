@@ -1,4 +1,4 @@
-# BenchmarkRepository.py
+# repository.py
 from datetime import date
 from sqlalchemy.orm import Session
 from SecurityGuidance import Benchmarks
@@ -121,11 +121,7 @@ class BenchmarksRepository:
             else:
                 print("No benchmark found with the given ID")
         """
-        return (
-            self.session.query(Benchmarks)
-            .filter(Benchmarks.benchmark_id == benchmark_id)
-            .first()
-        )
+        return self.session.query(Benchmarks).filter(Benchmarks.benchmark_id == benchmark_id).first()
 
     def get_all_benchmarks(self):
         """
@@ -328,36 +324,6 @@ class BenchmarkStatusRepository:
         """
         return self.session.query(BenchmarkStatus).all()
 
-
-class SecurityGuidance:
-    @staticmethod
-    def get_column_by_id(session, Table, Column, id):
-        """
-        This function retrieves a specific column value for a record in a table, given the record's ID.
-
-        Args:
-            session (sqlalchemy.orm.Session): The session object used to execute database queries.
-            Table (sqlalchemy.ext.declarative.api.DeclarativeMeta): The SQLAlchemy model class representing the table.
-            Column (sqlalchemy.sql.schema.Column): The column in the table that you want to retrieve.
-            id (int): The ID of the record you want to retrieve.
-
-        Returns:
-            Any: The value of the specified column for the record with the given ID. If no such record exists, returns None.
-
-        Usage:
-            from sqlalchemy.orm import Session
-            # create a new session
-            session = Session()
-            # get the name of the status with ID 1
-            name = SecurityGuidanceUtils.get_column_by_id(session, Statuses, Statuses.name, 1)
-            print(name)
-        """
-        result = session.query(Column).filter(Table.status_id == id).first()
-        if result is not None:
-            return result[0]
-        else:
-            return None
-
     @staticmethod
     def add_benchmark_artifact(session, benchmark_id, artifact_id, is_default):
         """
@@ -393,9 +359,7 @@ class SecurityGuidance:
             None
         """
         benchmark_artifact = (
-            session.query(BenchmarkArtifacts)
-            .filter_by(benchmark_id=benchmark_id, artifact_id=artifact_id)
-            .first()
+            session.query(BenchmarkArtifacts).filter_by(benchmark_id=benchmark_id, artifact_id=artifact_id).first()
         )
         if benchmark_artifact is not None:
             benchmark_artifact.is_default = is_default
@@ -451,9 +415,7 @@ class SecurityGuidance:
         Returns:
             Artifact: The retrieved Artifact, or None if no Artifact with the given ID exists.
         """
-        return (
-            session.query(Artifact).filter(Artifact.artifact_id == artifact_id).first()
-        )
+        return session.query(Artifact).filter(Artifact.artifact_id == artifact_id).first()
 
     def create_benchmark(
         session: Session,
@@ -507,15 +469,9 @@ class SecurityGuidance:
         Returns:
             Benchmarks: The retrieved Benchmark, or None if no Benchmark with the given ID exists.
         """
-        return (
-            session.query(Benchmarks)
-            .filter(Benchmarks.benchmark_id == benchmark_id)
-            .first()
-        )
+        return session.query(Benchmarks).filter(Benchmarks.benchmark_id == benchmark_id).first()
 
-    def create_organization(
-        session: Session, long_name: str, short_name: str, uri: str, email: str
-    ):
+    def create_organization(session: Session, long_name: str, short_name: str, uri: str, email: str):
         """
         Creates a new Organization and adds it to the database.
 
@@ -529,9 +485,7 @@ class SecurityGuidance:
         Returns:
             None
         """
-        organization = Organization(
-            long_name=long_name, short_name=short_name, uri=uri, email=email
-        )
+        organization = Organization(long_name=long_name, short_name=short_name, uri=uri, email=email)
         session.add(organization)
         session.commit()
 
@@ -546,11 +500,7 @@ class SecurityGuidance:
         Returns:
             Organization: The retrieved Organization, or None if no Organization with the given ID exists.
         """
-        return (
-            session.query(Organization)
-            .filter(Organization.organization_id == organization_id)
-            .first()
-        )
+        return session.query(Organization).filter(Organization.organization_id == organization_id).first()
 
     def create_product(
         session: Session,
@@ -624,15 +574,9 @@ class SecurityGuidance:
         Returns:
             ArtifactTypes: The retrieved ArtifactType, or None if no ArtifactType with the given ID exists.
         """
-        return (
-            session.query(ArtifactTypes)
-            .filter(ArtifactTypes.artifact_type_id == artifact_type_id)
-            .first()
-        )
+        return session.query(ArtifactTypes).filter(ArtifactTypes.artifact_type_id == artifact_type_id).first()
 
-    def create_benchmark_artifact(
-        session: Session, benchmark_id: int, artifact_id: int, is_default: bool
-    ):
+    def create_benchmark_artifact(session: Session, benchmark_id: int, artifact_id: int, is_default: bool):
         """
         Creates a new BenchmarkArtifact and adds it to the database.
 
@@ -651,9 +595,7 @@ class SecurityGuidance:
         session.add(benchmark_artifact)
         session.commit()
 
-    def get_benchmark_artifact_by_ids(
-        session: Session, benchmark_id: int, artifact_id: int
-    ):
+    def get_benchmark_artifact_by_ids(session: Session, benchmark_id: int, artifact_id: int):
         """
         Retrieves a BenchmarkArtifact from the database by its benchmark and artifact IDs.
 
@@ -674,9 +616,7 @@ class SecurityGuidance:
             .first()
         )
 
-    def create_benchmark_type(
-        session: Session, long_name: str, short_name: str, description: str
-    ):
+    def create_benchmark_type(session: Session, long_name: str, short_name: str, description: str):
         """
         Creates a new BenchmarkType and adds it to the database.
 
@@ -689,9 +629,7 @@ class SecurityGuidance:
         Returns:
             None
         """
-        benchmark_type = BenchmarkType(
-            long_name=long_name, short_name=short_name, description=description
-        )
+        benchmark_type = BenchmarkType(long_name=long_name, short_name=short_name, description=description)
         session.add(benchmark_type)
         session.commit()
 
@@ -718,11 +656,7 @@ class SecurityGuidance:
             else:
                 print("No benchmark type found with the given ID.")
         """
-        return (
-            session.query(BenchmarkType)
-            .filter(BenchmarkType.benchmark_type_id == benchmark_type_id)
-            .first()
-        )
+        return session.query(BenchmarkType).filter(BenchmarkType.benchmark_type_id == benchmark_type_id).first()
 
 
 class ArtifactsRepository:

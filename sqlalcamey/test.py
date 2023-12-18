@@ -38,13 +38,7 @@ def process_stig(stig, type="zip"):
             print(os.getcwd())
 
     print("Processing STIG: " + stig)
-    print(
-        json_results["Title"]
-        + " Version: "
-        + json_results["Version"]
-        + " Release: "
-        + json_results["Release"]
-    )
+    print(json_results["Title"] + " Version: " + json_results["Version"] + " Release: " + json_results["Release"])
     print("\n")
 
     return json_results

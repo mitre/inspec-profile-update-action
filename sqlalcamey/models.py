@@ -1,7 +1,6 @@
 from sqlalchemy import Column, Integer, String, Date, ForeignKey, Boolean, Float, Text
-from sqlalchemy.orm import relationship
+# from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import Session
 
 Base = declarative_base()
 
@@ -157,9 +156,7 @@ class BenchmarkArtifacts(Base):
 
     __tablename__ = "benchmark_artifacts"
 
-    benchmark_id = Column(
-        Integer, ForeignKey("Benchmarks.benchmark_id"), primary_key=True
-    )
+    benchmark_id = Column(Integer, ForeignKey("Benchmarks.benchmark_id"), primary_key=True)
     artifact_id = Column(Integer, ForeignKey("Artifact.artifact_id"), primary_key=True)
     is_default = Column(Boolean)
 

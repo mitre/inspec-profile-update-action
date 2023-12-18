@@ -157,9 +157,7 @@ class BenchmarkArtifacts(Base):
 
     __tablename__ = "benchmark_artifacts"
 
-    benchmark_id = Column(
-        Integer, ForeignKey("Benchmarks.benchmark_id"), primary_key=True
-    )
+    benchmark_id = Column(Integer, ForeignKey("Benchmarks.benchmark_id"), primary_key=True)
     artifact_id = Column(Integer, ForeignKey("Artifact.artifact_id"), primary_key=True)
     is_default = Column(Boolean)
 
