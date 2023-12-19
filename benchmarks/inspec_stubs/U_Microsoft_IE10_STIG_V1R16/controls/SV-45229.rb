@@ -1,0 +1,21 @@
+control 'SV-45229' do
+  title 'Internet Explorer Processes for MK protocol must be enforced (IExplore).'
+  desc 'The MK Protocol Security Restriction policy setting reduces attack surface area by blocking the seldom used MK protocol. Some older web applications use the MK protocol to retrieve information from compressed files. Because the MK protocol is not widely used, it should be blocked wherever it is not needed. Setting this policy to Enabled; blocks the MK protocol for Windows Explorer and Internet Explorer, which causes resources that use the MK protocol to fail. Disabling this setting allows applications to use the MK protocol API. This guide recommends you configure this setting to Enabled to block the MK protocol unless specifically needed in the environment. Note: Because resources that use the MK protocol will fail when deploying this setting, ensure none of the applications use the MK protocol.'
+  desc 'check', 'The policy value for Computer Configuration -> Administrative Templates -> Windows Components -> Internet Explorer -> Security Features -> MK Protocol Security Restriction -> "Internet Explorer Processes" must be "Enabled". 
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: HKLM\\Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL 
+
+Criteria: If the value iexplore.exe is REG_SZ = 1, this is not a finding.'
+  desc 'fix', 'Set the policy value for Computer Configuration -> Administrative Templates -> Windows Components -> Internet Explorer -> Security Features -> MK Protocol Security Restriction -> "Internet Explorer Processes" to "Enabled".'
+  impact 0.5
+  ref 'DPMS Target IE Version 10'
+  tag check_id: 'C-42577r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-15551'
+  tag rid: 'SV-45229r1_rule'
+  tag stig_id: 'DTBI605'
+  tag gtitle: 'DTBI605 - MK Protocol - IExplore'
+  tag fix_id: 'F-38625r1_fix'
+  tag 'documentable'
+  tag responsibility: 'System Administrator'
+end

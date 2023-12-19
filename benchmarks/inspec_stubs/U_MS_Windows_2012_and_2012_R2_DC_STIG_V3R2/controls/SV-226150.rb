@@ -1,0 +1,27 @@
+control 'SV-226150' do
+  title 'Remote access to the Plug and Play interface must be disabled for device installation.'
+  desc 'Remote access to the Plug and Play interface could potentially allow connections by unauthorized devices.  This setting configures remote access to the Plug and Play interface and must be disabled.'
+  desc 'check', 'If the following registry value does not exist or is not configured as specified, this is a finding:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \\Software\\Policies\\Microsoft\\Windows\\DeviceInstall\\Settings\\
+
+Value Name: AllowRemoteRPC
+
+Type: REG_DWORD
+Value: 0'
+  desc 'fix', 'Configure the policy value for Computer Configuration -> Administrative Templates -> System -> Device Installation -> "Allow remote access to the Plug and Play interface" to "Disabled".'
+  impact 0.5
+  ref 'DPMS Target Windows Server 2012-2012 R2 Domain Controller'
+  tag check_id: 'C-27852r475773_chk'
+  tag severity: 'medium'
+  tag gid: 'V-226150'
+  tag rid: 'SV-226150r569184_rule'
+  tag stig_id: 'WN12-CC-000019'
+  tag gtitle: 'SRG-OS-000095-GPOS-00049'
+  tag fix_id: 'F-27840r475774_fix'
+  tag 'documentable'
+  tag legacy: ['V-15700', 'SV-53094']
+  tag cci: ['CCI-000381']
+  tag nist: ['CM-7 a']
+end

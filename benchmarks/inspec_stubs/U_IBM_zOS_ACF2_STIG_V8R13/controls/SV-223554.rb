@@ -1,0 +1,43 @@
+control 'SV-223554' do
+  title 'IBM z/OS SMF collection files (i.e., SYS1.MANx) access must be limited to appropriate users and/or batch jobs that perform SMF dump processing.'
+  desc 'SMF data collection is the system activity journaling facility of the z/OS system. Unauthorized access could result in the compromise of logging and recording of the operating system environment, ACF2, and customer data.
+
+Unauthorized disclosure of audit records can reveal system and configuration data to attackers, thus compromising its confidentiality.
+
+Audit information includes all information (e.g., audit records, audit settings, audit reports) needed to successfully audit operating system activity.
+
+'
+  desc 'check', 'Refer to the SMFPRMxx member in SYS1.PARMLIB. Determine the SMF and/or Logstream data set name.
+
+If the following statements are true, this is not a finding.
+
+- The ACF2 data set rules for the SMF data collection files (e.g., SYS1.MAN* or IFASMF.SYS1.*) restrict ALLOCATE access to only z/OS systems programming personnel.
+- The ACF2 data set rules for the SMF data collection files (e.g., SYS1.MAN* or IFASMF.SYS1.*) restrict WRITE access to z/OS systems programming personnel and/or batch jobs that perform SMF dump processing and others as approved by the ISSM.
+- The ACF2 data set rules for the SMF data collection files (e.g., SYS1.MAN* or IFASMF.SYS1.*) restrict READ access to auditors and others approved by the ISSM.
+- The ACF2 data set rules for SMF data collection files (e.g., SYS1.MAN* or IFASMF.SYS1.*) specify that all (i.e., failures and successes) WRITE and/or ALLOCATE access is logged.'
+  desc 'fix', 'Ensure that WRITE or greater authority to SMF collection files is limited to only systems programming staff and and/or batch jobs that perform SMF dump processing, access can be granted to others as determined by ISSM.
+ 
+Ensure that read access is limited to auditors.
+
+READ access may be granted to others as determined by the ISSM.
+
+Ensure the accesses are being logged.
+
+Ensure that all (i.e., failures and successes) WRITE and/or ALLOCATE access are logged.
+
+Ensure read access failures are logged.'
+  impact 0.5
+  ref 'DPMS Target IBM zOS ACF2'
+  tag check_id: 'C-25227r918613_chk'
+  tag severity: 'medium'
+  tag gid: 'V-223554'
+  tag rid: 'SV-223554r919119_rule'
+  tag stig_id: 'ACF2-OS-000180'
+  tag gtitle: 'SRG-OS-000057-GPOS-00027'
+  tag fix_id: 'F-25215r918614_fix'
+  tag satisfies: ['SRG-OS-000057-GPOS-00027', 'SRG-OS-000058-GPOS-00028', 'SRG-OS-000059-GPOS-00029', 'SRG-OS-000256-GPOS-00097', 'CCI-001494', 'SRG-OS-000257-GPOS-00098', 'SRG-OS-000258-GPOS-00099', 'SRG-OS-000080-GPOS-00048', 'SRG-OS-000206-GPOS-00084', 'SRG-OS-000324-GPOS-00125']
+  tag 'documentable'
+  tag legacy: ['V-97813', 'SV-106917']
+  tag cci: ['CCI-000162', 'CCI-000163', 'CCI-000164', 'CCI-000213', 'CCI-001314', 'CCI-001493', 'CCI-001494', 'CCI-001495', 'CCI-002235']
+  tag nist: ['AU-9 a', 'AU-9 a', 'AU-9 a', 'AC-3', 'SI-11 b', 'AU-9 a', 'AU-9', 'AU-9', 'AC-6 (10)']
+end

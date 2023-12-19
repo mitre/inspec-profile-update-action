@@ -1,0 +1,48 @@
+control 'SV-258483' do
+  title 'Google Android 13 must be configured to not display the following (work profile) notifications when the device is locked: [selection:
+a. email notifications 
+b. calendar appointments 
+c. contact associated with phone call notification 
+d. text message notification
+e. other application-based notifications
+f. all notifications].'
+  desc 'Many mobile devices display notifications on the lock screen so that users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. When they are available on the lock screen, an adversary can see them merely by being in close physical proximity to the device. Configuring the mobile operating system (MOS) to not send notifications to the lock screen mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #18'
+  desc 'check', 'Review managed Google Android 13 device settings to determine if the Google Android 13 device displays (work profile) notifications on the lock screen. Notifications of incoming phone calls are acceptable even when the device is locked. 
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM console:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Verify that "Disable unredacted notifications" is toggled to "ON".
+
+On the managed Google Android 13 device:
+
+1. Go to Settings >> Display >> Lock screen.
+2. Tap on "When work profile is locked".
+3. Verify that "Hide sensitive work content" is selected.
+
+If the EMM console device policy allows work notifications on the lock screen, or the managed Google Android 13 device allows work notifications on the lock screen, this is a finding.'
+  desc 'fix', 'Configure the Google Android 13 device to not display (work profile) notifications when the device is locked.
+
+On the EMM console:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Toggle "Disable unredacted notifications".'
+  impact 0.5
+  ref 'DPMS Target Google Android 13 BYOAD'
+  tag check_id: 'C-62223r929263_chk'
+  tag severity: 'medium'
+  tag gid: 'V-258483'
+  tag rid: 'SV-258483r929265_rule'
+  tag stig_id: 'GOOG-13-706800'
+  tag gtitle: 'PP-MDF-333080'
+  tag fix_id: 'F-62132r929264_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000060']
+  tag nist: ['AC-11 (1)']
+end

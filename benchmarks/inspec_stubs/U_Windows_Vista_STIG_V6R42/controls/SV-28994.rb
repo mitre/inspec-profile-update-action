@@ -1,0 +1,23 @@
+control 'SV-28994' do
+  title 'Minimum password age does not meet minimum requirements.'
+  desc 'Permitting passwords to be changed in immediate succession within the same day, allows users to cycle passwords through their history database.  This enables users to effectively negate the purpose of mandating periodic password changes.'
+  desc 'check', 'Analyze the system using the Security Configuration and Analysis snap-in.
+Expand the Security Configuration and Analysis tree view.
+Navigate to Account Policies -> Password Policy.
+
+If the value for the “Minimum password age” is less than one day, then this is a finding.'
+  desc 'fix', 'Configure the Minimum Password Age so that it is a minimum of "1".'
+  impact 0.5
+  ref 'DPMS Target Windows Vista'
+  tag check_id: 'C-3223r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-1105'
+  tag rid: 'SV-28994r1_rule'
+  tag gtitle: 'Minimum Password Age'
+  tag fix_id: 'F-6574r1_fix'
+  tag 'documentable'
+  tag third_party_tools: 'HK'
+  tag responsibility: 'System Administrator'
+  tag cci: ['CCI-000198']
+  tag nist: ['IA-5 (1) (d)']
+end
