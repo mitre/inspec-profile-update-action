@@ -1,97 +1,108 @@
-CREATE TABLE "Artifact"(
-  artifact_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  type_id INTEGER NOT NULL,
-  owner_id INTEGER NOT NULL,
-  name VARCHAR NOT NULL,
-  location VARCHAR NOT NULL,
-  secondary_location VARCHAR,
-  created_at DATE NOT NULL,
-  raw_data BLOB,
-  CONSTRAINT artifact_has_a_type FOREIGN KEY (type_id) REFERENCES artifact_types (artifact_type_id) ON DELETE Restrict ON UPDATE Cascade,
-  CONSTRAINT artifact_has_a_owner FOREIGN KEY (owner_id) REFERENCES "Organization" (organization_id) ON DELETE Restrict ON UPDATE Cascade
-);
+-- Create "Artifact" table
+CREATE TABLE
+    `Artifact` (
+        `artifact_id` integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+        `type_id` integer NOT NULL,
+        `owner_id` integer NOT NULL,
+        `name` varchar NOT NULL,
+        `location` varchar NOT NULL,
+        `secondary_location` varchar NULL,
+        `created_at` date NOT NULL,
+        `raw_data` BLOB NULL,
+        CONSTRAINT `artifact_has_a_type` FOREIGN KEY (`type_id`) REFERENCES `artifact_types` (`artifact_type_id`) ON UPDATE CASCADE ON DELETE RESTRICT,
+        CONSTRAINT `artifact_has_a_owner` FOREIGN KEY (`owner_id`) REFERENCES `Organization` (`organization_id`) ON UPDATE CASCADE ON DELETE RESTRICT
+    );
 
-CREATE TABLE "Benchmarks"(
-  benchmark_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  version SMALLINT NOT NULL,
-  "release" SMALLINT NOT NULL,
-  release_date DATE NOT NULL,
-  type_id INTEGER NOT NULL,
-  product_id INT NOT NULL,
-  author_id INTEGER NOT NULL DEFAULT 0,
-  sponsor_id INTEGER DEFAULT 0,
-  status_id INTEGER NOT NULL,
-  CONSTRAINT benchmark_has_a_type FOREIGN KEY (type_id) REFERENCES benchmark_type (benchmark_type_id) ON DELETE Restrict ON UPDATE Cascade,
-  CONSTRAINT benchmark_has_a_product FOREIGN KEY (product_id) REFERENCES "Products" (product_id) ON DELETE Restrict ON UPDATE Cascade,
-  CONSTRAINT benchmark_has_an_author FOREIGN KEY (author_id) REFERENCES "Organization" (organization_id) ON DELETE Restrict ON UPDATE Cascade,
-  CONSTRAINT benmark_has_a_sponsor FOREIGN KEY (sponsor_id) REFERENCES "Organization" (organization_id) ON DELETE Restrict ON UPDATE Cascade,
-  CONSTRAINT benchmark_has_a_status FOREIGN KEY (status_id) REFERENCES "Statuses" (status_id) ON DELETE Restrict ON UPDATE Cascade
-);
+-- Create "Benchmarks" table
+CREATE TABLE
+    `Benchmarks` (
+        `benchmark_id` integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+        `version` smallint NOT NULL,
+        `release` smallint NOT NULL,
+        `release_date` date NOT NULL,
+        `type_id` integer NOT NULL,
+        `product_id` int NOT NULL,
+        `author_id` integer NOT NULL DEFAULT 0,
+        `sponsor_id` integer NULL DEFAULT 0,
+        `status_id` integer NOT NULL,
+        CONSTRAINT `benchmark_has_a_type` FOREIGN KEY (`type_id`) REFERENCES `benchmark_type` (`benchmark_type_id`) ON UPDATE CASCADE ON DELETE RESTRICT,
+        CONSTRAINT `benchmark_has_a_product` FOREIGN KEY (`product_id`) REFERENCES `Products` (`product_id`) ON UPDATE CASCADE ON DELETE RESTRICT,
+        CONSTRAINT `benchmark_has_an_author` FOREIGN KEY (`author_id`) REFERENCES `Organization` (`organization_id`) ON UPDATE CASCADE ON DELETE RESTRICT,
+        CONSTRAINT `benmark_has_a_sponsor` FOREIGN KEY (`sponsor_id`) REFERENCES `Organization` (`organization_id`) ON UPDATE CASCADE ON DELETE RESTRICT,
+        CONSTRAINT `benchmark_has_a_status` FOREIGN KEY (`status_id`) REFERENCES `Statuses` (`status_id`) ON UPDATE CASCADE ON DELETE RESTRICT
+    );
 
-  CREATE UNIQUE INDEX unique_product_version_release_owner ON "Benchmarks"(
-    version,
-    "release",
-    product_id,
-    author_id
-  );
-  
-  
-CREATE TABLE "Organization"(
-  organization_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  long_name VARCHAR NOT NULL,
-  short_name VARCHAR NOT NULL,
-  uri VARCHAR,
-  email VARCHAR
-);
+-- Create index "unique_product_version_release_owner" to table: "Benchmarks"
+CREATE UNIQUE INDEX `unique_product_version_release_owner` ON `Benchmarks` (`version`, `release`, `product_id`, `author_id`);
 
-  CREATE UNIQUE INDEX unique_org_short_and_long_name ON "Organization"(long_name, short_name);
-  
-CREATE TABLE "Products"(
-  product_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  long_name VARCHAR NOT NULL,
-  short_name VARCHAR NOT NULL,
-  version REAL NOT NULL,
-  "release" INT NOT NULL,
-  owner_id INTEGER NOT NULL,
-  CONSTRAINT product_has_a_owner FOREIGN KEY (owner_id) REFERENCES "Organization" (organization_id) ON DELETE Restrict ON UPDATE Cascade
-);
+-- Create "Organization" table
+CREATE TABLE
+    `Organization` (
+        `organization_id` integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+        `long_name` varchar NOT NULL,
+        `short_name` varchar NOT NULL,
+        `uri` varchar NULL,
+        `email` varchar NULL
+    );
 
-CREATE TABLE "Statuses"(
-  status_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
-  name VARCHAR NOT NULL);
+-- Create index "unique_org_short_and_long_name" to table: "Organization"
+CREATE UNIQUE INDEX `unique_org_short_and_long_name` ON `Organization` (`long_name`, `short_name`);
 
-  CREATE UNIQUE INDEX unique_status_id_name ON "Statuses"(status_id, name);
-  
-CREATE TABLE artifact_types(
-  artifact_type_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  type_name VARCHAR NOT NULL,
-  description TEXT
-);
+-- Create "Products" table
+CREATE TABLE
+    `Products` (
+        `product_id` integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+        `long_name` varchar NOT NULL,
+        `short_name` varchar NOT NULL,
+        `version` real NOT NULL,
+        `release` int NOT NULL,
+        `owner_id` integer NOT NULL,
+        CONSTRAINT `product_has_a_owner` FOREIGN KEY (`owner_id`) REFERENCES `Organization` (`organization_id`) ON UPDATE CASCADE ON DELETE RESTRICT
+    );
 
-CREATE TABLE benchmark_artifacts(
-  benchmark_id INTEGER NOT NULL,
-  artifact_id INTEGER NOT NULL,
-  is_default INT2 DEFAULT 0,
-  PRIMARY KEY(benchmark_id, artifact_id),
-  CONSTRAINT benchmark_has_an_artifact FOREIGN KEY (benchmark_id) REFERENCES "Benchmarks" (benchmark_id) ON DELETE Cascade ON UPDATE Cascade,
-  CONSTRAINT artifact_belongs_to_benchmark FOREIGN KEY (artifact_id) REFERENCES "Artifact" (artifact_id) ON DELETE Cascade ON UPDATE Cascade
-);
+-- Create "Statuses" table
+CREATE TABLE
+    `Statuses` (
+        `status_id` integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+        `name` varchar NOT NULL
+    );
 
-  CREATE UNIQUE INDEX unique_benchmark_artificat_default ON benchmark_artifacts(
-    benchmark_id,
-    artifact_id,
-    is_default
-  );
-  
-  
-CREATE TABLE benchmark_type(
-  benchmark_type_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  long_name VARCHAR NOT NULL,
-  short_name VARCHAR NOT NULL,
-  description TEXT NOT NULL
-);
+-- Create index "unique_status_id_name" to table: "Statuses"
+CREATE UNIQUE INDEX `unique_status_id_name` ON `Statuses` (`status_id`, `name`);
 
-  CREATE UNIQUE INDEX unique_bt_long_name ON benchmark_type(long_name);
-  
-  CREATE UNIQUE INDEX unique_bt_short_name ON benchmark_type(short_name);
-  
+-- Create "artifact_types" table
+CREATE TABLE
+    `artifact_types` (
+        `artifact_type_id` integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+        `type_name` varchar NOT NULL,
+        `description` text NULL
+    );
+
+-- Create "benchmark_artifacts" table
+CREATE TABLE
+    `benchmark_artifacts` (
+        `benchmark_id` integer NOT NULL,
+        `artifact_id` integer NOT NULL,
+        `is_default` int2 NULL DEFAULT 0,
+        PRIMARY KEY (`benchmark_id`, `artifact_id`),
+        CONSTRAINT `benchmark_has_an_artifact` FOREIGN KEY (`benchmark_id`) REFERENCES `Benchmarks` (`benchmark_id`) ON UPDATE CASCADE ON DELETE CASCADE,
+        CONSTRAINT `artifact_belongs_to_benchmark` FOREIGN KEY (`artifact_id`) REFERENCES `Artifact` (`artifact_id`) ON UPDATE CASCADE ON DELETE CASCADE
+    );
+
+-- Create index "unique_benchmark_artificat_default" to table: "benchmark_artifacts"
+CREATE UNIQUE INDEX `unique_benchmark_artificat_default` ON `benchmark_artifacts` (`benchmark_id`, `artifact_id`, `is_default`);
+
+-- Create "benchmark_type" table
+CREATE TABLE
+    `benchmark_type` (
+        `benchmark_type_id` integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+        `long_name` varchar NOT NULL,
+        `short_name` varchar NOT NULL,
+        `description` text NOT NULL
+    );
+
+-- Create index "unique_bt_long_name" to table: "benchmark_type"
+CREATE UNIQUE INDEX `unique_bt_long_name` ON `benchmark_type` (`long_name`);
+
+-- Create index "unique_bt_short_name" to table: "benchmark_type"
+CREATE UNIQUE INDEX `unique_bt_short_name` ON `benchmark_type` (`short_name`);

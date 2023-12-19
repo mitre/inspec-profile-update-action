@@ -1,7 +1,18 @@
-from sqlalchemy import Column, Integer, String, Date, ForeignKey, Boolean, Float, Text
-from sqlalchemy.orm import relationship
+from sqlalchemy import (
+    Column,
+    Integer,
+    String,
+    Date,
+    ForeignKey,
+    Boolean,
+    Float,
+    Text,
+    LargeBinary,
+)
+
+# from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
@@ -24,14 +35,40 @@ class Artifact(Base):
 
     __tablename__ = "Artifact"
 
-    artifact_id = Column(Integer, primary_key=True)
-    type_id = Column(Integer, ForeignKey("artifact_types.artifact_type_id"))
-    owner_id = Column(Integer, ForeignKey("Organization.organization_id"))
-    name = Column(String)
-    location = Column(String)
+    artifact_id = Column(Integer, primary_key=True, autoincrement=True)
+    type_id = Column(
+        Integer, ForeignKey("artifact_types.artifact_type_id"), nullable=False
+    )
+    owner_id = Column(
+        Integer, ForeignKey("Organization.organization_id"), nullable=False
+    )
+    name = Column(String, nullable=False)
+    location = Column(String, nullable=False)
     secondary_location = Column(String)
-    created_at = Column(Date)
-    raw_data = Column(Text)
+    created_at = Column(Date, nullable=False)
+    raw_data = Column(LargeBinary)
+
+    # Define relationships
+    artifact_type = relationship("ArtifactType", back_populates="artifacts")
+    organization = relationship("Organization", back_populates="artifacts")
+
+
+class ArtifactTypes(Base):
+    """
+    SQLAlchemy model class that represents the artifact_types table.
+
+    Attributes:
+        __tablename__ (str): The name of the table this class represents.
+        artifact_type_id (sqlalchemy.sql.schema.Column): The primary key column of the table.
+        type_name (sqlalchemy.sql.schema.Column): Column for the name of the artifact type.
+        description (sqlalchemy.sql.schema.Column): Column for the description of the artifact type.
+    """
+
+    __tablename__ = "artifact_types"
+
+    artifact_type_id = Column(Integer, primary_key=True)
+    type_name = Column(String)
+    description = Column(Text)
 
 
 class Benchmarks(Base):
@@ -62,6 +99,46 @@ class Benchmarks(Base):
     author_id = Column(Integer, ForeignKey("Organization.organization_id"))
     sponsor_id = Column(Integer, ForeignKey("Organization.organization_id"))
     status_id = Column(Integer, ForeignKey("Statuses.status_id"))
+
+
+class BenchmarkArtifacts(Base):
+    """
+    SQLAlchemy model class that represents the benchmark_artifacts table.
+
+    Attributes:
+        __tablename__ (str): The name of the table this class represents.
+        benchmark_id (sqlalchemy.sql.schema.Column): Foreign key column referencing the Benchmarks table, part of the composite primary key.
+        artifact_id (sqlalchemy.sql.schema.Column): Foreign key column referencing the Artifact table, part of the composite primary key.
+        is_default (sqlalchemy.sql.schema.Column): Column indicating if the artifact is the default one for the benchmark.
+    """
+
+    __tablename__ = "benchmark_artifacts"
+
+    benchmark_id = Column(
+        Integer, ForeignKey("Benchmarks.benchmark_id"), primary_key=True
+    )
+    artifact_id = Column(Integer, ForeignKey("Artifact.artifact_id"), primary_key=True)
+    is_default = Column(Boolean)
+
+
+class BenchmarkType(Base):
+    """
+    SQLAlchemy model class that represents the benchmark_type table.
+
+    Attributes:
+        __tablename__ (str): The name of the table this class represents.
+        benchmark_type_id (sqlalchemy.sql.schema.Column): The primary key column of the table.
+        long_name (sqlalchemy.sql.schema.Column): Column for the long name of the benchmark type.
+        short_name (sqlalchemy.sql.schema.Column): Column for the short name of the benchmark type.
+        description (sqlalchemy.sql.schema.Column): Column for the description of the benchmark type.
+    """
+
+    __tablename__ = "benchmark_type"
+
+    benchmark_type_id = Column(Integer, primary_key=True)
+    long_name = Column(String)
+    short_name = Column(String)
+    description = Column(Text)
 
 
 class Organization(Base):
@@ -124,59 +201,3 @@ class Statuses(Base):
 
     status_id = Column(Integer, primary_key=True)
     name = Column(String)
-
-
-class ArtifactTypes(Base):
-    """
-    SQLAlchemy model class that represents the artifact_types table.
-
-    Attributes:
-        __tablename__ (str): The name of the table this class represents.
-        artifact_type_id (sqlalchemy.sql.schema.Column): The primary key column of the table.
-        type_name (sqlalchemy.sql.schema.Column): Column for the name of the artifact type.
-        description (sqlalchemy.sql.schema.Column): Column for the description of the artifact type.
-    """
-
-    __tablename__ = "artifact_types"
-
-    artifact_type_id = Column(Integer, primary_key=True)
-    type_name = Column(String)
-    description = Column(Text)
-
-
-class BenchmarkArtifacts(Base):
-    """
-    SQLAlchemy model class that represents the benchmark_artifacts table.
-
-    Attributes:
-        __tablename__ (str): The name of the table this class represents.
-        benchmark_id (sqlalchemy.sql.schema.Column): Foreign key column referencing the Benchmarks table, part of the composite primary key.
-        artifact_id (sqlalchemy.sql.schema.Column): Foreign key column referencing the Artifact table, part of the composite primary key.
-        is_default (sqlalchemy.sql.schema.Column): Column indicating if the artifact is the default one for the benchmark.
-    """
-
-    __tablename__ = "benchmark_artifacts"
-
-    benchmark_id = Column(Integer, ForeignKey("Benchmarks.benchmark_id"), primary_key=True)
-    artifact_id = Column(Integer, ForeignKey("Artifact.artifact_id"), primary_key=True)
-    is_default = Column(Boolean)
-
-
-class BenchmarkType(Base):
-    """
-    SQLAlchemy model class that represents the benchmark_type table.
-
-    Attributes:
-        __tablename__ (str): The name of the table this class represents.
-        benchmark_type_id (sqlalchemy.sql.schema.Column): The primary key column of the table.
-        long_name (sqlalchemy.sql.schema.Column): Column for the long name of the benchmark type.
-        short_name (sqlalchemy.sql.schema.Column): Column for the short name of the benchmark type.
-        description (sqlalchemy.sql.schema.Column): Column for the description of the benchmark type.
-    """
-
-    __tablename__ = "benchmark_type"
-
-    benchmark_type_id = Column(Integer, primary_key=True)
-    long_name = Column(String)
-    short_name = Column(String)
-    description = Column(Text)
