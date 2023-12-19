@@ -1,0 +1,32 @@
+control 'SV-81567' do
+  title 'Firewall rules must be configured on the Tanium Server for Client-to-Server communications.'
+  desc "In addition to the client-to-server TCP communication that takes place over port 17472, Tanium Clients also communicate to other Tanium-managed computers over port 17472. The Tanium environment can perform hundreds or thousands of times faster than other security or systems management tools because the Tanium Clients communicate in secure, linearly-controlled peer-to-peer rings. Because clients dynamically communicate with other nearby agents based on proximity and latency, rings tend to form automatically to match a customer's topology--endpoints in California will form one ring while endpoints in Germany will form a separate ring. 
+
+https://kb.tanium.com/Port_Configuration_v6.5"
+  desc 'check', 'Consult with the Tanium System Administrator to verify which firewall is being used as a host-based firewall on the Tanium Server.
+
+Access the host-based firewall configuration on the Tanium Server.
+
+Validate rules exist, as required, to include:
+Between Tanium Clients or Zone Clients over TCP port 17472, bi-directionally.
+
+If a host-based firewall rule does not exist to allow TCP port 17472, bi-directionally, this is a finding.
+
+Consult with the network firewall administrator and validate rules exist for the following:
+Allow TCP traffic on port 17472 from any computer to be managed on a local area network to any other computer to be managed on the same local area network.
+
+If a network firewall rule does not exist to allow TCP port 17472 from any managed computer to any other managed computer on the same local area network, this is a finding.'
+  desc 'fix', 'Configure host-based and network firewall rules as required, to include Tanium Clients or Zone Clients over TCP port 17472, bi-directionally and  Allow TCP traffic on port 17472 from any computer to be managed on a local area network to any other computer to be managed on the same local area network.'
+  impact 0.5
+  ref 'DPMS Target Tanium 6.5'
+  tag check_id: 'C-67713r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-67077'
+  tag rid: 'SV-81567r1_rule'
+  tag stig_id: 'TANS-SV-000017'
+  tag gtitle: 'SRG-APP-000142'
+  tag fix_id: 'F-73177r1_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000382']
+  tag nist: ['CM-7 b']
+end

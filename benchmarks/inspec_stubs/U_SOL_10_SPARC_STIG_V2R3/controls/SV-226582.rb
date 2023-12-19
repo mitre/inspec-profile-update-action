@@ -1,0 +1,20 @@
+control 'SV-226582' do
+  title 'The system must be checked weekly for unauthorized setgid files, as well as, unauthorized modification to authorized setgid files.'
+  desc 'Files with the setgid bit set will allow anyone running these files to be temporarily assigned the group id of the file. While many system files depend on these attributes for proper operation, security problems can result if setgid is assigned to programs that allow reading and writing of files, or shell escapes.'
+  desc 'check', 'Determine if a weekly automated or manual process is used to generate a list of setgid files on the system and compare it with the prior list.  If no such process is in place, this is a finding.'
+  desc 'fix', 'Establish a weekly automated or manual process to generate a list of setgid files on the system and compare it with the prior list.  To create a list of setgid files use the following command.
+# find / -perm -2000 > setgid-file-list'
+  impact 0.5
+  ref 'DPMS Target Solaris 10 SPARC'
+  tag check_id: 'C-28743r483158_chk'
+  tag severity: 'medium'
+  tag gid: 'V-226582'
+  tag rid: 'SV-226582r854420_rule'
+  tag stig_id: 'GEN002460'
+  tag gtitle: 'SRG-OS-000363'
+  tag fix_id: 'F-28731r483159_fix'
+  tag 'documentable'
+  tag legacy: ['SV-804', 'V-804']
+  tag cci: ['CCI-001744']
+  tag nist: ['CM-3 (5)']
+end

@@ -1,0 +1,28 @@
+control 'SV-218220' do
+  title 'Graphical desktop environments provided by the system must automatically lock after 15 minutes of inactivity and the system must require users to re-authenticate to unlock the environment.  Applications requiring continuous, real-time screen display (i.e., network management products) require the following and need to be documented with the IAO.  -The logon session does not have administrator rights.  -The display station (i.e., keyboard, monitor, etc.) is located in a controlled access area.'
+  desc 'If graphical desktop sessions do not lock the session after 15 minutes of inactivity, requiring re-authentication to resume operations, the system or individual data could be compromised by an alert intruder who could exploit the oversight.  This requirement applies to graphical desktop environments provided by the system to locally attached displays and input devices as well as to graphical desktop environments provided to remote systems, including thin clients.'
+  desc 'check', 'If the "xorg-x11-server-Xorg" package is not installed, this is not applicable.
+
+For the Gnome screen saver, check the idle_activation_enabled flag.
+
+Procedure:
+# gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory --get /apps/gnome-screensaver/idle_activation_enabled
+
+If this does not return "true" and a documented exception has not been made by the IAO, this is a finding.'
+  desc 'fix', 'For the Gnome screen saver, set the idle_activation_enabled flag.
+Procedure:
+# gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory --type bool --set /apps/gnome-screensaver/idle_activation_enabled true'
+  impact 0.5
+  ref 'DPMS Target Oracle Linux 5'
+  tag check_id: 'C-19695r568564_chk'
+  tag severity: 'medium'
+  tag gid: 'V-218220'
+  tag rid: 'SV-218220r603259_rule'
+  tag stig_id: 'GEN000500'
+  tag gtitle: 'SRG-OS-000029-GPOS-00010'
+  tag fix_id: 'F-19693r568565_fix'
+  tag 'documentable'
+  tag legacy: ['V-4083', 'SV-63405']
+  tag cci: ['CCI-000057']
+  tag nist: ['AC-11 a']
+end

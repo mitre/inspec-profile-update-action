@@ -1,0 +1,48 @@
+control 'SV-256354' do
+  title 'The vCenter Server must not configure all port groups to virtual local area network (VLAN) values reserved by upstream physical switches.'
+  desc "Certain physical switches reserve certain VLAN IDs for internal purposes and often disallow traffic configured to these values. For example, Cisco Catalyst switches typically reserve VLANs 1001 to 1024 and 4094, while Nexus switches typically reserve 3968 to 4094.
+
+Check with the documentation for the organization's specific switch. Using a reserved VLAN might result in a denial of service on the network."
+  desc 'check', 'If distributed switches are not used, this is not applicable.
+
+From the vSphere Client, go to Networking.
+
+Select a distributed switch >> distributed port group >> Configure >> Settings >> Policies. 
+
+Review the port group VLAN tags and verify they are not set to a reserved VLAN ID.
+
+or
+
+From a PowerCLI command prompt while connected to the vCenter server, run the following command:
+
+Get-VDPortgroup | select Name, VlanConfiguration
+
+If any port group is configured with a reserved VLAN ID, this is a finding.'
+  desc 'fix', 'From the vSphere Client, go to Networking.
+
+Select a distributed switch >> distributed port group >> Configure >> Settings >> Policies.
+
+Click "Edit".
+
+Click the "VLAN" tab. Change the VLAN ID to an unreserved VLAN ID.
+
+Click "OK".
+
+or
+
+From a PowerCLI command prompt while connected to the vCenter server, run the following command:
+
+Get-VDPortgroup "portgroup name" | Set-VDVlanConfiguration -VlanId "New VLAN#"'
+  impact 0.5
+  ref 'DPMS Target VMware vSphere 7.0 vCenter'
+  tag check_id: 'C-60029r885671_chk'
+  tag severity: 'medium'
+  tag gid: 'V-256354'
+  tag rid: 'SV-256354r885673_rule'
+  tag stig_id: 'VCSA-70-000274'
+  tag gtitle: 'SRG-APP-000516'
+  tag fix_id: 'F-59972r885672_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end

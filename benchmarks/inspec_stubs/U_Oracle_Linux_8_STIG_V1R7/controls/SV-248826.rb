@@ -1,0 +1,46 @@
+control 'SV-248826' do
+  title 'OL 8 must enable mitigations against processor-based vulnerabilities.'
+  desc 'It is detrimental for operating systems to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Operating systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions).
+
+Examples of non-essential capabilities include, but are not limited to, games, software packages, tools, and demonstration software not related to requirements or providing a wide array of functionality not required for every mission, but which cannot be disabled.
+
+Verify the operating system is configured to disable non-essential capabilities. The most secure way of ensuring a non-essential capability is disabled is to not have the capability installed.
+
+Kernel page-table isolation is a kernel feature that mitigates the Meltdown security vulnerability and hardens the kernel against attempts to bypass kernel address space layout randomization (KASLR).'
+  desc 'check', 'Verify OL 8 enables kernel page-table isolation with the following commands:
+
+$ sudo grub2-editenv list | grep pti
+
+kernelopts=root=/dev/mapper/ol-root ro crashkernel=auto resume=/dev/mapper/ol-swap rd.lvm.lv=ol/root rd.lvm.lv=ol/swap rhgb quiet fips=1 audit=1 audit_backlog_limit=8192 pti=on boot=UUID=8d171156-cd61-421c-ba41-1c021ac29e82
+
+If the "pti" entry does not equal "on", is missing, or the line is commented out, this is a finding.
+
+Check that kernel page-table isolation is enabled by default to persist in kernel updates: 
+
+$ sudo grep pti /etc/default/grub
+
+GRUB_CMDLINE_LINUX="pti=on"
+
+If "pti" is not set to "on", is missing or commented out, this is a finding.'
+  desc 'fix', 'Configure OL 8 to enable kernel page-table isolation with the following command:
+
+$ sudo grubby --update-kernel=ALL --args="pti=on"
+
+Add or modify the following line in "/etc/default/grub" to ensure the configuration survives kernel updates:
+
+GRUB_CMDLINE_LINUX="pti=on"'
+  impact 0.3
+  ref 'DPMS Target Oracle Linux 8'
+  tag check_id: 'C-52260r780042_chk'
+  tag severity: 'low'
+  tag gid: 'V-248826'
+  tag rid: 'SV-248826r780044_rule'
+  tag stig_id: 'OL08-00-040004'
+  tag gtitle: 'SRG-OS-000095-GPOS-00049'
+  tag fix_id: 'F-52214r780043_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000381']
+  tag nist: ['CM-7 a']
+end

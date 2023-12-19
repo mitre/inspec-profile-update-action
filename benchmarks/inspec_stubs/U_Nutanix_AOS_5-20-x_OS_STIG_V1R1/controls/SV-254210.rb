@@ -1,0 +1,30 @@
+control 'SV-254210' do
+  title 'Nutanix AOS must enforce password complexity by requiring that at least one numeric character be used.'
+  desc 'Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determines how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.'
+  desc 'check', 'Confirm Nutanix AOS is configured to require complex passwords.
+Note: The value to require a number of numeric characters to be set is expressed as a negative number in "/etc/security/pwquality.conf".
+
+Check the value for "dcredit" in "/etc/security/pwquality.conf" with the following command:
+
+$ sudo grep dcredit /etc/security/pwquality.conf 
+dcredit = -1
+
+If the value of "dcredit" is not set to a negative value, this is a finding.'
+  desc 'fix', 'Configure the complex password requirements by running the following command:
+
+$ sudo salt-call state.sls security/CVM/pamCVM'
+  impact 0.5
+  ref 'DPMS Target Nutanix AOS 5.20.x OS'
+  tag check_id: 'C-57695r846716_chk'
+  tag severity: 'medium'
+  tag gid: 'V-254210'
+  tag rid: 'SV-254210r846718_rule'
+  tag stig_id: 'NUTX-OS-001250'
+  tag gtitle: 'SRG-OS-000071-GPOS-00039'
+  tag fix_id: 'F-57646r846717_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000194']
+  tag nist: ['IA-5 (1) (a)']
+end

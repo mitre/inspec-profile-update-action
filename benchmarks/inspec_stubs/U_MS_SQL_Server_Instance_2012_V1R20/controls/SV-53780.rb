@@ -1,0 +1,48 @@
+control 'SV-53780' do
+  title 'SQL Server must enforce access control policies to restrict the Alter any credential permission to only authorized roles.'
+  desc "The concept of least privilege must be applied to SQL Server processes, ensuring that the processes operate at privilege levels no higher than necessary to accomplish required organizational missions and/or functions. Organizations consider the creation of additional processes, roles, and SQL Server accounts as necessary to achieve least privilege. Organizations also apply least privilege concepts to the design, development, implementation, and operations of SQL Server and the OS.
+
+Unauthorized access to sensitive data or SQL Server control may compromise the confidentiality of personnel privacy, threaten national security, compromise a variety of other sensitive operations, or lead to a loss of system control. Access controls are best managed by defining requirements based on distinct job functions and assigning access based on the job function assigned to the individual user.
+
+SQL Server's 'Alter any credential' permission is a high server-level privilege that must only be granted to individual administration accounts through roles. If the 'Alter any credential' permission is granted to roles that are unauthorized to have this privilege, then this access must be removed.
+
+Additionally, the permission must not be denied to a role, because that could disable a user's legitimate access via another role.
+
+The fix for this vulnerability specifies the use of REVOKE.  Be aware that revoking a permission that is currently denied to a role or user does not necessarily disable the permission.  If the user or role can inherent the permission from another role, revoking the denied permission from the user or the first role can effectively enable the inherited permission."
+  desc 'check', "Obtain the list of roles that are authorized for the SQL Server 'Alter any credential' permission and what 'Grant', 'Grant With', and/or 'Deny' privilege is authorized. Obtain the list of roles with that permission by running the following query:
+
+SELECT 
+       who.name AS [Principal Name],
+       who.type_desc AS [Principal Type],
+       who.is_disabled AS [Principal Is Disabled],
+       what.state_desc AS [Permission State],
+       what.permission_name AS [Permission Name]
+FROM 
+       sys.server_permissions what 
+       INNER JOIN sys.server_principals who
+              ON who.principal_id = what.grantee_principal_id
+WHERE
+       what.permission_name = 'Alter any credential' 
+AND    who.type_desc = 'SERVER_ROLE'
+ORDER BY
+       who.name
+;
+GO 
+
+If any role has 'Grant', 'With Grant' or 'Deny' privileges on this permission and users with that role are not authorized to have the permission, this is a finding."
+  desc 'fix', "Remove the 'Alter any credential' permission access from the role that is not authorized by executing the following query:
+
+
+REVOKE Alter any credential TO <'role name'>"
+  impact 0.5
+  ref 'DPMS Target SQL Server Installation 2012'
+  tag check_id: 'C-47866r3_chk'
+  tag severity: 'medium'
+  tag gid: 'V-41298'
+  tag rid: 'SV-53780r3_rule'
+  tag stig_id: 'SQL2-00-002800'
+  tag gtitle: 'SRG-APP-000035-DB-000007'
+  tag fix_id: 'F-46689r1_fix'
+  tag cci: ['CCI-003014']
+  tag nist: ['AC-3 (3)']
+end

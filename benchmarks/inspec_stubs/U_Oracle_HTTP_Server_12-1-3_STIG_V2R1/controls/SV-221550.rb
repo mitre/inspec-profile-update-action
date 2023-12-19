@@ -1,0 +1,34 @@
+control 'SV-221550' do
+  title 'OHS must have the permissions set properly via the Directory directive accompanying the ErrorDocument directives to minimize improper access to the warning and error messages displayed to clients.'
+  desc 'Information needed by an attacker to begin looking for possible vulnerabilities in a web server includes any information about the web server, backend systems being accessed, and plug-ins or modules being used. 
+
+Web servers will often display error messages to client users displaying enough information to aid in the debugging of the error. The information given back in error messages may display the web server type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any backends being used for data storage. 
+
+This information could be used by an attacker to blueprint what type of attacks might be successful. The information given to users must be minimized to not aid in the blueprinting of the web server.'
+  desc 'check', '1. Open $DOMAIN_HOME/config/fmwconfig/components/OHS/<componentName>/httpd.conf and every.conf file (e.g., ssl.conf) included in it with an editor.
+2. Search for the "Directory "${ORACLE_INSTANCE}/config/fmwconfig/components/${COMPONENT_TYPE}/instances/${COMPONENT_NAME}/error"" directive at the OHS server and virtual host configuration scopes.
+3. If the directive is omitted, this is a finding.
+4. Validate that the folder where the directive is pointing is valid. If the folder is not valid, this is a finding.'
+  desc 'fix', '1. Open $DOMAIN_HOME/config/fmwconfig/components/OHS/<componentName>/httpd.conf and every.conf file (e.g., ssl.conf) included in it with an editor.
+2. Search for the "<Directory> "${ORACLE_INSTANCE}/config/fmwconfig/components/${COMPONENT_TYPE}/instances/${COMPONENT_NAME}/error"" directive at the OHS server and virtual host configuration scopes.
+3. Set the "<Directory>" directive to "${ORACLE_INSTANCE}/config/fmwconfig/components/${COMPONENT_TYPE}/instances/${COMPONENT_NAME}/error"", add the directive if it does not exist.
+4a. Within the "<Directory> "${ORACLE_INSTANCE}/config/fmwconfig/components/${COMPONENT_TYPE}/instances/${COMPONENT_NAME}/error"" directive, set the "AllowOverride" directive to "None", add the directive if it does not exist.
+4b. Within the "<Directory> "${ORACLE_INSTANCE}/config/fmwconfig/components/${COMPONENT_TYPE}/instances/${COMPONENT_NAME}/error"" directive, set the "Options" directive to "None", add the directive if it does not exist.
+4c. Within the "<Directory> "${ORACLE_INSTANCE}/config/fmwconfig/components/${COMPONENT_TYPE}/instances/${COMPONENT_NAME}/error"" directive, set the "Order" directive to "allow, deny", add the directive if it does not exist.
+4d. Within the "<Directory> "${ORACLE_INSTANCE}/config/fmwconfig/components/${COMPONENT_TYPE}/instances/${COMPONENT_NAME}/error"" directive, set the "Allow" directive to "from all", add the directive if it does not exist.
+4e. Within the "<Directory> "${ORACLE_INSTANCE}/config/fmwconfig/components/${COMPONENT_TYPE}/instances/${COMPONENT_NAME}/error"" directive, set the "<LimitExcept>" directive to "GET POST", add the directive if it does not exist.
+4e1. Within the "<LimitExcept GET POST>" directive, set the "Deny" directive to "from all", add the directive if it does not exist.'
+  impact 0.5
+  ref 'DPMS Target Oracle HTTP Server 12.1.3'
+  tag check_id: 'C-23265r415329_chk'
+  tag severity: 'medium'
+  tag gid: 'V-221550'
+  tag rid: 'SV-221550r415331_rule'
+  tag stig_id: 'OH12-1X-000350'
+  tag gtitle: 'SRG-APP-000266-WSR-000159'
+  tag fix_id: 'F-23254r415330_fix'
+  tag 'documentable'
+  tag legacy: ['SV-78975', 'V-64485']
+  tag cci: ['CCI-001312']
+  tag nist: ['SI-11 a']
+end

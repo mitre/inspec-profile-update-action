@@ -1,0 +1,20 @@
+control 'SV-7465' do
+  title 'SAN components are not configured with fixed IP addresses.'
+  desc 'Without fixed IP address filtering or restricting of access based on IP addressing will not function correctly allowing unauthorized access to SAN components or creating a denial of service by blocking legitimate traffic from authorized components.  The storage administrator will ensure that all SAN components are configured to use static IP addresses.'
+  desc 'check', 'The reviewer with the assistance of the SA will verify that all SAN components are configured with fixed IP addresses.'
+  desc 'fix', 'Configure all SAN components to have fixed IP addresses.'
+  impact 0.5
+  ref 'DPMS Target SANS Storage Device'
+  ref 'DPMS Target SANS Switch'
+  tag check_id: 'C-4374r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-7081'
+  tag rid: 'SV-7465r1_rule'
+  tag stig_id: 'SAN04.025.00'
+  tag gtitle: 'SAN Fixed IP Required.'
+  tag fix_id: 'F-6781r1_fix'
+  tag 'documentable'
+  tag potential_impacts: 'If this is not done in a coordinated manner with all access lists a denial of service could be created.'
+  tag responsibility: 'System Administrator'
+  tag ia_controls: 'DCBP-1'
+end

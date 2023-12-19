@@ -1,0 +1,26 @@
+control 'SV-78633' do
+  title 'OHS must have the SSLFIPS directive enabled to protect the integrity of remote sessions in accordance with the categorization of data hosted by the web server.'
+  desc 'Data exchanged between the user and the web server can range from static display data to credentials used to log into the hosted application. Even when data appears to be static, the non-displayed logic in a web page may expose business logic or trusted system relationships. The integrity of all the data being exchanged between the user and web server must always be trusted. To protect the integrity and trust, encryption methods should be used to protect the complete communication session.'
+  desc 'check', '1. As required, open $DOMAIN_HOME/config/fmwconfig/components/OHS/<componentName>/ssl.conf with an editor.
+
+2. Search for the "SSLFIPS" directive at the OHS server configuration scope.
+
+3. If the directive is omitted or is not set to "On", this is a finding.'
+  desc 'fix', '1. Open $DOMAIN_HOME/config/fmwconfig/components/OHS/<componentName>/ssl.conf with an editor.
+
+2. Search for the "SSLFIPS" directive at the OHS server configuration scope.
+
+3. Set the "SSLFIPS" directive to "On", add the directive if it does not exist.'
+  impact 0.7
+  ref 'DPMS Target Oracle HTTP Server (OHS) 12.1.x'
+  tag check_id: 'C-64893r1_chk'
+  tag severity: 'high'
+  tag gid: 'V-64143'
+  tag rid: 'SV-78633r1_rule'
+  tag stig_id: 'OH12-1X-000012'
+  tag gtitle: 'SRG-APP-000015-WSR-000014'
+  tag fix_id: 'F-70071r1_fix'
+  tag 'documentable'
+  tag cci: ['CCI-001453']
+  tag nist: ['AC-17 (2)']
+end

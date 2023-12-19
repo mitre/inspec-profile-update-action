@@ -1,0 +1,61 @@
+control 'SV-242580' do
+  title 'The Cisco ISE must verify host-based IDS/IPS software is authorized and running on posture required clients defined in the NAC System Security Plan (SSP) prior to granting trusted network access.'
+  desc "Automated policy assessments must reflect the organization's current security policy so entry control decisions will happen only where remote endpoints meet the organization's security requirements. If the remote endpoints are allowed to connect to the organization's network without passing minimum-security controls, they become a threat to the entire network."
+  desc 'check', 'Verify that the posture policy will verify that a host-based IPS is running.
+
+1. Navigate to Work Center >> Posture >> Posture Policy.
+2. Look over the enabled posture policies analyzing all the conditions.
+3. Review the Requirements listed on polices that the posture required clients will use.
+4. Navigate to Work Centers >> Posture >> Policy Elements.
+5. Review the Requirements applied in the posture policy to ensure there is one with a firewall condition applied.
+6. Review the Firewall condition ensuring it is configured to verify that the client firewall is enabled.
+
+If there is not a firewall condition tied to a requirement that is applied to an applicable posture policy, this is a finding.'
+  desc 'fix', 'Configure the posture policy to verify that a host-based IPS is running.
+
+1. Navigate to Work Centers >> Posture >> Policy Elements.
+
+2. Create Host Intrusion Prevention Condition.
+a. Expand "Conditions" on the left of the page.
+b. Choose "Firewall Condition".
+c. Choose "Add".
+d. Define a Name.
+e. Select the applicable Compliance Module.
+f. Select the Operating System.
+g. Select "McAfee" for the vendor of firewall.
+h. Check "enable".
+i. Select "McAfee Host Intrusion Prevention" in the product list.
+j. Choose "Save".
+
+3. Create Requirements.
+a. Choose "Requirements" on the left of the page.
+b. Choose the drop-down located next to "Edit" on the right side of the page where you want the requirement inserted.
+c. Choose "Insert new Requirement".
+d. Define a Name.
+e. Select the Operating System.
+f. Select the applicable Compliance Module.
+g. Select the Posture Type.
+h. Select the Condition previously configured.
+i. Select the Remediation Action of "Message Text Only" and type in a message to display.
+j. Choose "Done".
+k. Choose "Save".
+
+4. Edit the Posture Policy.
+a. Navigate to Work Centers >> Posture >> Posture Policy.
+b. Find the Posture Policy that will be applied to the posture required endpoints.
+c. Select the Requirement ensuring there is a green check box to the left of the name indicating it is a mandatory requirement.
+d. Choose "Done".
+e. Choose "Save".'
+  impact 0.7
+  ref 'DPMS Target Cisco ISE NAC'
+  tag check_id: 'C-45855r714048_chk'
+  tag severity: 'high'
+  tag gid: 'V-242580'
+  tag rid: 'SV-242580r714050_rule'
+  tag stig_id: 'CSCO-NC-000060'
+  tag gtitle: 'SRG-NET-000015-NAC-000020'
+  tag fix_id: 'F-45812r714049_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000213']
+  tag nist: ['AC-3']
+end
