@@ -1,3 +1,11 @@
+/// The datasource block defines the database connection.
+/// In this case, we're using SQLite as the provider and the database file is `test.db`.
+datasource db {
+  provider = "sqlite"
+  /// The url field points to the location of the database file.
+  /// If the file doesn't exist, Prisma will create it when you run `prisma migrate dev` or `prisma db push`.
+  url      = "file:./test.db"
+}
 /// The Artifact model represents a single artifact.
 /// Each artifact has a unique identifier, a type_id, an owner_id, a name, a location, 
 /// a secondary location (optional), a creation timestamp, and raw data (optional).
