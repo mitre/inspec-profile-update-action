@@ -1,0 +1,286 @@
+/// The Artifact model represents a single artifact.
+/// Each artifact has a unique identifier, a type_id, an owner_id, a name, a location, 
+/// a secondary location (optional), a creation timestamp, and raw data (optional).
+/// The model has relations to the ArtifactTypes and Organization models.
+model Artifact {
+  /// The unique identifier for an artifact.
+  artifact_id Int @id @default(autoincrement())
+
+  /// The unique identifier for the type of the artifact.
+  /// see ArtifactTypes to understand the expected types
+  type_id Int
+
+  /// The unique identifier for the owner of the artifact.
+  owner_id Int
+
+  /// The name of the artifact.
+  name String
+
+  /// The primary location of the artifact.
+  /// example: 'http://...','<filepath>','s3://location'
+  location String
+
+  /// The secondary location of the artifact, if any.
+  /// example: backup location, or alt download site
+  secondary_location String @default("")
+
+  /// The timestamp when the artifact was created.
+  /// Usually a 'published date' style concept, not 'disk/upload create time'
+  created_at DateTime
+
+  /// The raw data of the artifact, if any.
+  raw_data Bytes @default("")
+
+  /// The relation to the ArtifactTypes model.
+  artifact_types ArtifactTypes @relation(fields: [type_id], references: [artifact_type_id])
+
+  /// The relation to the Organization model.
+  Organization       Organization         @relation(fields: [owner_id], references: [organization_id])
+  BenchmarkArtifacts BenchmarkArtifacts[]
+}
+
+/// The Benchmarks model represents the different benchmarks.
+/// Each benchmark has a unique identifier, a version number, a release number,
+/// a release date, type_id, product_id, author_id, sponsor_id (optional) and status_id.
+model Benchmarks {
+  /// The unique identifier for a benchmark.
+  benchmark_id Int @id @default(autoincrement())
+
+  /// The version number of the benchmark.
+  version Int
+
+  /// The release number of the benchmark.
+  release Int
+
+  /// The release date of the benchmark.
+  release_date DateTime
+
+  /// The unique identifier for the type of the benchmark.
+  type_id Int
+
+  /// The unique identifier for the product associated with the benchmark.
+  product_id Int
+
+  /// The unique identifier for the author of the benchmark.
+  author_id Int @default(0)
+
+  /// The unique identifier for the sponsor of the benchmark.
+  sponsor_id Int @default(0)
+
+  /// The unique identifier for the status of the benchmark.
+  status_id Int
+
+  /// The relation to the BenchmarkType model.
+  benchmark_type BenchmarkType @relation(fields: [type_id], references: [benchmark_type_id])
+
+  /// The relation to the Products model.
+  Products Products @relation(fields: [product_id], references: [product_id])
+
+  /// The relation to the Organization model for the author.
+  Author Organization @relation("AuthorRelation", fields: [author_id], references: [organization_id])
+
+  /// The relation to the Organization model for the sponsor.
+  Sponsor Organization @relation("SponsorRelation", fields: [sponsor_id], references: [organization_id])
+
+  /// The relation to the Statuses model.
+  Status Statuses @relation(fields: [status_id], references: [status_id])
+
+  /// The relation to the BenchmarkArtifacts model.
+  /// This field represents a list of all BenchmarkArtifacts associated with this model.
+  BenchmarkArtifacts BenchmarkArtifacts[]
+
+  /// A unique constraint ensuring that the combination of version, release, product_id, and author_id is unique.
+  @@unique([version, release, product_id, author_id], name: "unique_product_version_release_owner")
+}
+
+/// The Organization model represents different organizations.
+/// Each organization has a unique identifier, a long name, a short name, a URI, and an email.
+/// An organization can be an author or a sponsor of multiple benchmarks.
+/// A unique constraint ensures that the combination of long_name and short_name is unique.
+model Organization {
+  /// The unique identifier for an organization.
+  organization_id Int @id @default(autoincrement())
+
+  /// The long name of the organization.
+  /// example: 
+  /// - 'The MITRE Corporation',
+  /// - 'Broadcom/VMWare Corporation',
+  /// - 'Defense Information Systems Agency'
+  /// - 'International Business Machines, Corporation'
+  long_name String
+
+  /// The short name of the organization.
+  /// example: 'MITRE','VMWare','DISA', IBM
+  short_name String
+
+  /// The URI of the organization.
+  uri String @default("None")
+
+  /// The email of the organization.
+  email String @default("None")
+
+  /// The benchmarks for which the organization is the author.
+  Authors Benchmarks[] @relation("AuthorRelation")
+
+  /// The benchmarks for which the organization is the sponsor.
+  Sponsors Benchmarks[] @relation("SponsorRelation")
+
+  /// The artifacts owned by the organization.
+  Artifact Artifact[]
+
+  /// The products owned by the organization.
+  Products Products[]
+
+  /// A unique constraint ensuring that the combination of long_name and short_name is unique.
+  @@unique([long_name, short_name], name: "unique_org_short_and_long_name")
+}
+
+///
+/// The Products model represents the different products.
+/// Each product has a unique identifier, a long name, a short name,
+/// a version number, and a release number.
+///
+/// A product is owned by an Organization and is organized at the version level. 
+/// Sometimes vendors organize benchmarks only at the version level but sometimes 
+// they can do it at the version + release level.
+///
+/// - Owner: 'RedHat', 
+/// - name: 'Enterprise Linux', 
+/// - version: '7', 
+/// - [optional] release: '4'
+/// 
+/// Some Products are tracked at the Major version only and then version should be 'x' or ''
+/// Postres SQL 12.x, for example
+///
+model Products {
+  /// The unique identifier for a product.
+  product_id Int @id @default(autoincrement())
+
+  /// The long name of the product.
+  /// examples: 'Identity Manager', 'Cloud Foundation', 'vSphere'
+  long_name String
+
+  /// The short name of the product.
+  /// examples: 'RHEL', 'VCF', 'VIDM', 'vSphere'
+  /// These will also be used in 'hash / search keys' to help identify products 
+  short_name String
+
+  /// The version number of the product.
+  version Float
+
+  /// The release number of the product.
+  release Int
+
+  /// The unique identifier for the organization that owns the product.
+  owner_id Int
+
+  /// The relation to the Organization model.
+  /// This field represents the Organization that owns this Product.
+  Organization Organization @relation(fields: [owner_id], references: [organization_id])
+
+  /// The relation to the Benchmarks model.
+  /// This field represents a list of all Benchmarks associated with this Product.
+  Benchmarks Benchmarks[]
+}
+
+/// The Statuses model represents the different statuses that can be assigned.
+/// Each status has a unique identifier and a name.
+/// A unique constraint ensures that the combination of status_id and name is unique.
+model Statuses {
+  /// The unique identifier for a status.
+  status_id Int @id @default(autoincrement())
+
+  /// The name of the status.
+  /// example: 'final', 'draft', 'in-review', 'sunset'
+  name String
+
+  /// The relation to the Benchmarks model.
+  /// This field represents a list of all Benchmarks associated with this Status.
+  Benchmarks Benchmarks[]
+
+  /// A unique constraint ensuring that the combination of status_id and name is unique.
+  @@unique([status_id, name], name: "unique_status_id_name")
+}
+
+/// The ArtifactTypes model represents the different types of artifacts.
+/// Each artifact type has a unique identifier, a name, and a description.
+model ArtifactTypes {
+  /// The unique identifier for an artifact type.
+  artifact_type_id Int @id @default(autoincrement())
+
+  /// The name of the artifact type.
+  /// example: XCCDF-File, JSON-File, Zip-Archieve, tar.gz-File, XML-File, SCAP-File
+  type_name String
+
+  /// A description of the artifact type.
+  description String @default("")
+
+  /// The relation to the Artifact model.
+  /// This field represents a list of all Artifacts associated with this ArtifactType.
+  Artifact Artifact[]
+}
+
+/// The BenchmarkArtifacts model represents the relationship between benchmarks and artifacts.
+/// Each BenchmarkArtifacts record has a unique identifier for a benchmark and an artifact.
+/// A flag indicates if the artifact is the default for the benchmark.
+/// The model has relations to the Benchmarks and Artifact models.
+/// The composite primary key for the BenchmarkArtifacts model is a combination of benchmark_id and artifact_id.
+/// A unique constraint ensures that a benchmark can only have one default artifact.
+model BenchmarkArtifacts {
+  /// The unique identifier for a benchmark.
+  benchmark_id Int @default(0)
+
+  /// The unique identifier for an artifact.
+  artifact_id Int @default(0)
+
+  /// A flag indicating if the artifact is the default for the benchmark.
+  /// If we move to a real database this should be a BOOL
+  is_default Int @default(0)
+
+  /// The relation to the Benchmarks model.
+  Benchmarks Benchmarks @relation(fields: [benchmark_id], references: [benchmark_id])
+
+  /// The relation to the Artifact model.
+  Artifact Artifact @relation(fields: [artifact_id], references: [artifact_id])
+
+  /// The composite primary key for the BenchmarkArtifacts model.
+  @@id([benchmark_id, artifact_id])
+  /// A unique constraint ensuring that a benchmark can only have one default artifact.
+  @@unique([benchmark_id, artifact_id, is_default], name: "unique_benchmark_artifact_default")
+}
+
+/// The BenchmarkType model represents the different types of benchmarks.
+/// Each benchmark type has a unique identifier, a long name, a short name, and a description.
+/// The 'long_name' is likely a registered trademark, so it should be unique.
+/// The 'short_name' is intended to be used as a lookup key, so it should also be unique.
+/// Each BenchmarkType should have a unique combination of 'short_name' and 'long_name'.
+model BenchmarkType {
+  /// The unique identifier for a benchmark type.
+  benchmark_type_id Int @id @default(autoincrement())
+
+  /// The long name of the benchmark type.
+  /// example: 
+  /// - 'Security Technical Implementation Guide'
+  /// - 'Center for Internet Security Benchmark'
+  /// - 'Vendor Security/Administration Guide'
+  /// - 'Best Practice Guide'
+  long_name String
+
+  /// The short name of the benchmark type.
+  /// example: 'STIG','CIS','Vendor', 'BP'
+  short_name String
+
+  /// A description of the benchmark type.
+  description String
+
+  /// The relation to the Benchmarks model.
+  /// This field represents a list of all Benchmarks associated with this BenchmarkType.
+  Benchmarks Benchmarks[]
+
+  /// The 'long_name' is likely a registered trademark, so it should be unique.
+  @@unique([long_name], name: "unique_bt_long_name")
+  /// The 'short_name' is intended to be used as a lookup key, so it should also be unique.
+  @@unique([short_name], name: "unique_bt_short_name")
+  /// Each Benchmark should have a unique combination of 'short_name' and 'long_name'.
+  @@unique([long_name, short_name], name: "unique_long_short_name")
+}

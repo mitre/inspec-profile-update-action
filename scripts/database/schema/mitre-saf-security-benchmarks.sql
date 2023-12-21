@@ -83,6 +83,7 @@ CREATE TABLE
     `benchmark_artifacts` (
         `benchmark_id` integer NOT NULL,
         `artifact_id` integer NOT NULL,
+        -- this should become a BOOL if we move off sqlite
         `is_default` int2 NULL DEFAULT 0,
         PRIMARY KEY (`benchmark_id`, `artifact_id`),
         CONSTRAINT `benchmark_has_an_artifact` FOREIGN KEY (`benchmark_id`) REFERENCES `Benchmarks` (`benchmark_id`) ON UPDATE CASCADE ON DELETE CASCADE,
@@ -106,3 +107,6 @@ CREATE UNIQUE INDEX `unique_bt_long_name` ON `benchmark_type` (`long_name`);
 
 -- Create index "unique_bt_short_name" to table: "benchmark_type"
 CREATE UNIQUE INDEX `unique_bt_short_name` ON `benchmark_type` (`short_name`);
+
+-- Create index "unique_long_short_name" on table: "benchmark_type"
+CREATE UNIQUE INDEX unique_long_short_name ON `benchmark_type` (`long_name`, `short_name`);
