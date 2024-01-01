@@ -3,11 +3,12 @@ from bs4 import BeautifulSoup
 from difflib import SequenceMatcher
 import re
 import os
+import shutil
+import tempfile
 import xml.etree.ElementTree as ET
 from io import BytesIO
 import zipfile
 from stig_parser import convert_stig
-import sqlite3
 
 URL = "https://public.cyber.mil/stigs/downloads/"
 HEADERS = {
@@ -27,7 +28,6 @@ EXTRACTED_ROWS = []
 
 # Function to download and extract STIGs and SRGs
 def download_and_extract_stigs():
-    download_results = []
     response = requests.get(URL, HEADERS, verify=False)
     soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -51,17 +51,11 @@ def download_and_extract_stigs():
 
             # Check if the url contains the excluded keywords, and the file is only a zip file
             if url.lower().endswith('.zip') and not any(keyword in url.lower() for keyword in EXCLUDE_KEYWORDS):
-                download_results.append({
-                'title': title,
-                'size': size,
-                'datePublished': datePublished,
-                'url': url,
-                })
-                EXTRACTED_ROWS.append((title, size, datePublished, url))
+                existing_artifact = session.query(Artifact).filter(Artifact.location == url).first()
                 zip_filename = os.path.join(DOWNLOAD_DIR, url.split('/')[-1])               
 
                 # Check if the file already exists
-                if not os.path.exists(zip_filename):
+                if not existing_artifact:
                     print(f"Downloading {title} - {url}")
                     zip_response = requests.get(url)
 
@@ -71,31 +65,50 @@ def download_and_extract_stigs():
                         f.write(zip_response.content)
                         json_results = convert_stig(zip_filename)
 
-                        print("Processing STIG: " + zip_filename )
-                        print(json_results['Title'] + " Version: " + json_results['Version'] + " Release: " + json_results['Release'] + " Benchmark Date: " + json_results['BenchmarkDate'] + " Source: " + json_results['Source'])
-                        print("\n")
+                        urlTitle = title
+                        urlsize = size
+                        urldatePublished = datePublished
+                        urlUrl = url
+                        id = json_results['Id']
+                        title = json_results['Title']
+                        status = json_results['Status']
+                        description = json_results['Description']
+                        version = json_results['Version']
+                        release = json_results['Release']
+                        benchmarkDate = json_results['BenchmarkDate']
+                        releaseInfo = json_results['ReleaseInfo']
+                        publisher = json_results['Publisher']
+                        source = json_results['Source']
+                        notice = json_results['Notice']
 
-                        insert_data_into_db()
+                        insert_benchmark_data(id, title, status, description, version, release, benchmarkDate, publisher, source, notice, urlUrl)
                 
-                # Extract only the XML files from the zip file
-                with zipfile.ZipFile(zip_filename) as zip_ref:
-                    for file in zip_ref.namelist():
-                        if file.endswith('.xml'):
-                            zip_ref.extract(file, EXTRACT_DIR)
+                    # Extract only the XML files from the zip file
+                    with zipfile.ZipFile(zip_filename) as zip_ref:
+                        for file in zip_ref.namelist():
+                            if file.endswith('.xml'):
+                                # Create a temporary directory
+                                with tempfile.TemporaryDirectory() as temp_dir:
+                                    zip_ref.extract(file, temp_dir)
+                                    # Move the file to the desired directory
+                                    shutil.move(os.path.join(temp_dir, file), os.path.join(EXTRACT_DIR, os.path.basename(file)))
             else:
                 print(f"Skipping excluded file: {title} - {url}")
     
-def insert_data_into_db(title, size, datePublished, url, longName, description, version, release, source, publisher, shortName):
-    conn = sqlite3.connect(SQLITE_DB_FILE)
-    cursor = conn.cursor()
-
-    # SQL query to insert data
-    query = "INSERT INTO my_table (title, size, datePublished, url, longName, description, version, release, source, publisher, shortName) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
-    cursor.execute(query, (title, size, datePublished, url, longName, description, version, release, source, publisher, shortName))
-
-    # Commit changes and close connection
-    conn.commit()
-    conn.close()
+def insert_benchmark_data(id, title, status, description, version, release, datePublished, publisher, source, notice, url):
+    new_benchmark = Benchmark(version=version, release=release, release_date=datePublished)
+    new_product = Products(long_name=title, short_name=id, version=version, release=release)
+    new_organizaiton = Organization(short_name=publisher)
+    new_statuses = Statuses(name=status)
+    new_artifact = Artifact(name=title, location=url)
+    new_artifact_type = ArtifactTypes(type_name=title, description=description)
+    session.add(new_benchmark)
+    session.add(new_product)
+    session.add(new_organizaiton)
+    session.add(new_statuses)
+    session.add(new_artifact)
+    session.add(new_artifact_type)
+    session.commit()
 
 def main():
     if not os.path.exists(DOWNLOAD_DIR):
