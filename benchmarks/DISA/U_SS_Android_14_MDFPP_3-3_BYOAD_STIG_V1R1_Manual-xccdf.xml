@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="SS_Android_14_MDFPP_3-3_BYOAD_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-02-21">accepted</status><title>Samsung Android 14 MDFPP 3.3 BYOAD Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 13 Mar 2024</plain-text><plain-text id="generator">3.4.1.22916</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-260439" selected="true" /><select idref="V-260440" selected="true" /><select idref="V-260441" selected="true" /><select idref="V-260442" selected="true" /><select idref="V-260443" selected="true" /><select idref="V-260444" selected="true" /><select idref="V-260445" selected="true" /><select idref="V-260446" selected="true" /><select idref="V-260447" selected="true" /><select idref="V-260448" selected="true" /><select idref="V-260449" selected="true" /><select idref="V-260450" selected="true" /><select idref="V-260451" selected="true" /><select idref="V-260452" selected="true" /><select idref="V-260453" selected="true" /><select idref="V-260454" selected="true" /><select idref="V-260455" selected="true" /><select idref="V-260456" selected="true" /><select idref="V-260457" selected="true" /><select idref="V-260458" selected="true" /><select idref="V-260459" selected="true" /><select idref="V-260460" selected="true" /><select idref="V-260461" selected="true" /><select idref="V-260462" selected="true" /><select idref="V-260463" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-260439" selected="true" /><select idref="V-260440" selected="true" /><select idref="V-260441" selected="true" /><select idref="V-260442" selected="true" /><select idref="V-260443" selected="true" /><select idref="V-260444" selected="true" /><select idref="V-260445" selected="true" /><select idref="V-260446" selected="true" /><select idref="V-260447" selected="true" /><select idref="V-260448" selected="true" /><select idref="V-260449" selected="true" /><select idref="V-260450" selected="true" /><select idref="V-260451" selected="true" /><select idref="V-260452" selected="true" /><select idref="V-260453" selected="true" /><select idref="V-260454" selected="true" /><select idref="V-260455" selected="true" /><select idref="V-260456" selected="true" /><select idref="V-260457" selected="true" /><select idref="V-260458" selected="true" /><select idref="V-260459" selected="true" /><select idref="V-260460" selected="true" /><select idref="V-260461" selected="true" /><select idref="V-260462" selected="true" /><select idref="V-260463" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-260439" selected="true" /><select idref="V-260440" selected="true" /><select idref="V-260441" selected="true" /><select idref="V-260442" selected="true" /><select idref="V-260443" selected="true" /><select idref="V-260444" selected="true" /><select idref="V-260445" selected="true" /><select idref="V-260446" selected="true" /><select idref="V-260447" selected="true" /><select idref="V-260448" selected="true" /><select idref="V-260449" selected="true" /><select idref="V-260450" selected="true" /><select idref="V-260451" selected="true" /><select idref="V-260452" selected="true" /><select idref="V-260453" selected="true" /><select idref="V-260454" selected="true" /><select idref="V-260455" selected="true" /><select idref="V-260456" selected="true" /><select idref="V-260457" selected="true" /><select idref="V-260458" selected="true" /><select idref="V-260459" selected="true" /><select idref="V-260460" selected="true" /><select idref="V-260461" selected="true" /><select idref="V-260462" selected="true" /><select idref="V-260463" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-260439" selected="true" /><select idref="V-260440" selected="true" /><select idref="V-260441" selected="true" /><select idref="V-260442" selected="true" /><select idref="V-260443" selected="true" /><select idref="V-260444" selected="true" /><select idref="V-260445" selected="true" /><select idref="V-260446" selected="true" /><select idref="V-260447" selected="true" /><select idref="V-260448" selected="true" /><select idref="V-260449" selected="true" /><select idref="V-260450" selected="true" /><select idref="V-260451" selected="true" /><select idref="V-260452" selected="true" /><select idref="V-260453" selected="true" /><select idref="V-260454" selected="true" /><select idref="V-260455" selected="true" /><select idref="V-260456" selected="true" /><select idref="V-260457" selected="true" /><select idref="V-260458" selected="true" /><select idref="V-260459" selected="true" /><select idref="V-260460" selected="true" /><select idref="V-260461" selected="true" /><select idref="V-260462" selected="true" /><select idref="V-260463" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-260439" selected="true" /><select idref="V-260440" selected="true" /><select idref="V-260441" selected="true" /><select idref="V-260442" selected="true" /><select idref="V-260443" selected="true" /><select idref="V-260444" selected="true" /><select idref="V-260445" selected="true" /><select idref="V-260446" selected="true" /><select idref="V-260447" selected="true" /><select idref="V-260448" selected="true" /><select idref="V-260449" selected="true" /><select idref="V-260450" selected="true" /><select idref="V-260451" selected="true" /><select idref="V-260452" selected="true" /><select idref="V-260453" selected="true" /><select idref="V-260454" selected="true" /><select idref="V-260455" selected="true" /><select idref="V-260456" selected="true" /><select idref="V-260457" selected="true" /><select idref="V-260458" selected="true" /><select idref="V-260459" selected="true" /><select idref="V-260460" selected="true" /><select idref="V-260461" selected="true" /><select idref="V-260462" selected="true" /><select idref="V-260463" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-260439" selected="true" /><select idref="V-260440" selected="true" /><select idref="V-260441" selected="true" /><select idref="V-260442" selected="true" /><select idref="V-260443" selected="true" /><select idref="V-260444" selected="true" /><select idref="V-260445" selected="true" /><select idref="V-260446" selected="true" /><select idref="V-260447" selected="true" /><select idref="V-260448" selected="true" /><select idref="V-260449" selected="true" /><select idref="V-260450" selected="true" /><select idref="V-260451" selected="true" /><select idref="V-260452" selected="true" /><select idref="V-260453" selected="true" /><select idref="V-260454" selected="true" /><select idref="V-260455" selected="true" /><select idref="V-260456" selected="true" /><select idref="V-260457" selected="true" /><select idref="V-260458" selected="true" /><select idref="V-260459" selected="true" /><select idref="V-260460" selected="true" /><select idref="V-260461" selected="true" /><select idref="V-260462" selected="true" /><select idref="V-260463" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-260439" selected="true" /><select idref="V-260440" selected="true" /><select idref="V-260441" selected="true" /><select idref="V-260442" selected="true" /><select idref="V-260443" selected="true" /><select idref="V-260444" selected="true" /><select idref="V-260445" selected="true" /><select idref="V-260446" selected="true" /><select idref="V-260447" selected="true" /><select idref="V-260448" selected="true" /><select idref="V-260449" selected="true" /><select idref="V-260450" selected="true" /><select idref="V-260451" selected="true" /><select idref="V-260452" selected="true" /><select idref="V-260453" selected="true" /><select idref="V-260454" selected="true" /><select idref="V-260455" selected="true" /><select idref="V-260456" selected="true" /><select idref="V-260457" selected="true" /><select idref="V-260458" selected="true" /><select idref="V-260459" selected="true" /><select idref="V-260460" selected="true" /><select idref="V-260461" selected="true" /><select idref="V-260462" selected="true" /><select idref="V-260463" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-260439" selected="true" /><select idref="V-260440" selected="true" /><select idref="V-260441" selected="true" /><select idref="V-260442" selected="true" /><select idref="V-260443" selected="true" /><select idref="V-260444" selected="true" /><select idref="V-260445" selected="true" /><select idref="V-260446" selected="true" /><select idref="V-260447" selected="true" /><select idref="V-260448" selected="true" /><select idref="V-260449" selected="true" /><select idref="V-260450" selected="true" /><select idref="V-260451" selected="true" /><select idref="V-260452" selected="true" /><select idref="V-260453" selected="true" /><select idref="V-260454" selected="true" /><select idref="V-260455" selected="true" /><select idref="V-260456" selected="true" /><select idref="V-260457" selected="true" /><select idref="V-260458" selected="true" /><select idref="V-260459" selected="true" /><select idref="V-260460" selected="true" /><select idref="V-260461" selected="true" /><select idref="V-260462" selected="true" /><select idref="V-260463" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-260439" selected="true" /><select idref="V-260440" selected="true" /><select idref="V-260441" selected="true" /><select idref="V-260442" selected="true" /><select idref="V-260443" selected="true" /><select idref="V-260444" selected="true" /><select idref="V-260445" selected="true" /><select idref="V-260446" selected="true" /><select idref="V-260447" selected="true" /><select idref="V-260448" selected="true" /><select idref="V-260449" selected="true" /><select idref="V-260450" selected="true" /><select idref="V-260451" selected="true" /><select idref="V-260452" selected="true" /><select idref="V-260453" selected="true" /><select idref="V-260454" selected="true" /><select idref="V-260455" selected="true" /><select idref="V-260456" selected="true" /><select idref="V-260457" selected="true" /><select idref="V-260458" selected="true" /><select idref="V-260459" selected="true" /><select idref="V-260460" selected="true" /><select idref="V-260461" selected="true" /><select idref="V-260462" selected="true" /><select idref="V-260463" selected="true" /></Profile><Group id="V-260439"><title>PP-MDF-993300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260439r950896_rule" weight="10.0" severity="medium"><version>KNOX-14-710010</version><title>Samsung Android must be enrolled as a BYOD device.</title><description>&lt;VulnDiscussion&gt;The Work profile is the designated application group for the BYOD use case.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64076r950895_fix">Enroll the Samsung Android devices in a DOD-approved use case.
+
+On the management tool, configure the default enrollment as "Work profile for personally-owned devices".
+
+Refer to the management tool documentation to determine how to configure the device enrollment.</fixtext><fix id="F-64076r950895_fix" /><check system="C-64169r950894_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android devices are enrolled in a DOD-approved use case.
+
+This validation procedure is performed on both the management tool Administration Console and the Samsung Android device. 
+
+On the management tool, verify the default enrollment is set to "Work profile for personally-owned devices".
+
+On the Samsung Android device: 
+1. Open Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Device admin apps.
+2. Verify the management tool Agent is listed.
+3. Go to the app drawer.
+4. Verify a "Personal" and "Work" tab are present.
+
+If on the management tool the default enrollment is not set as "Work profile for personally-owned devices", or on the Samsung Android device the "Personal" and "Work" tabs are not present or the management tool Agent is not listed, this is a finding.</check-content></check></Rule></Group><Group id="V-260440"><title>PP-MDF-333160</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260440r953769_rule" weight="10.0" severity="low"><version>KNOX-14-710020</version><title>Samsung Android must be configured to display the DOD advisory warning message at startup or each time the user unlocks the device.</title><description>&lt;VulnDiscussion&gt;Before granting access to the system, the mobile operating system is required to display the DOD-approved system use notification message or banner that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. Required banners help ensure that DOD can audit and monitor the activities of mobile device users without legal restriction.
+
+System use notification messages can be displayed when individuals first access or unlock the mobile device. The banner must be implemented as a "click-through" banner at device unlock (to the extent permitted by the operating system). A "click-through" banner prevents further activity on the information system unless and until the user executes a positive action to manifest agreement by clicking on a box indicating "OK."
+
+The approved DOD text must be used exactly as required in the Knowledge Service referenced in DODI 8500.01. For devices accommodating banners of 1300 characters, the banner text is: 
+
+You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. 
+By using this IS (which includes any device attached to this IS), you consent to the following conditions: 
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. 
+-At any time, the USG may inspect and seize data stored on this IS. 
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose. 
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. 
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE, or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. Refer to User Agreement for details.
+
+For devices with severe character limitations, the banner text is: 
+
+I've read &amp; consent to terms in IS user agreem't.
+
+The Administrator must configure the banner text exactly as written without any changes.
+
+SFR ID: FMT_SMF_EXT.1.1 #36&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-64077r953769_fix">Configure the DOD warning banner by either of the following methods (required text is found in the Vulnerability Description):
+
+Place the DOD warning banner in the user agreement signed by each Samsung Android device user (preferred method).
+
+Note: It is not possible for the EMM to force a warning banner be placed on the device screen when using "work profile for employee-owned devices (BYOD)".</fixtext><fix id="F-64077r953769_fix" /><check system="C-64170r953768_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>The DOD warning banner can be displayed using the following method (required text is found in the Vulnerability Discussion):
+
+Place the DOD warning banner in the user agreement signed by each Samsung Android device user (preferred method).
+Note: It is not possible for the EMM to force a warning banner be placed on the device screen when using "work profile for employee-owned devices (BYOD)" deployment mode.
+
+Review the signed user agreements for several Samsung Android device users and verify the agreement includes the required DOD warning banner text.
+
+If the required warning banner text is not on all signed user agreements reviewed, this is a finding.</check-content></check></Rule></Group><Group id="V-260441"><title>PP-MDF-333025</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260441r950902_rule" weight="10.0" severity="medium"><version>KNOX-14-710030</version><title>Samsung Android must be configured to not allow passwords that include more than four repeating or sequential characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. Passwords that contain repeating or sequential characters are significantly easier to guess than those that do not. Therefore, disallowing repeating or sequential characters increases password strength and decreases risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #1b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000195</ident><fixtext fixref="F-64078r950901_fix">Configure the Samsung Android devices to disallow passwords containing more than four repeating or sequential characters.
+
+On the management tool, in the device password policies, set "minimum password quality" to "Numeric(Complex)" or better.
+
+If the management tool does not support "Numeric(Complex)" but does support "Numeric", Knox Platform for Enterprise (KPE) can be used to achieve STIG compliance. In this case, configure this policy with value "Numeric" and use an additional KPE policy (innately by the management tool or via KSP) "Maximum Numeric Sequence Length" with value "4".</fixtext><fix id="F-64078r950901_fix" /><check system="C-64171r950900_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android devices' Work Environment is disallowing passwords containing more than four repeating or sequential characters.
+
+This validation procedure is performed on both the management tool and the Samsung Android device.
+
+On the management tool, in the device password policies, verify "minimum password quality" is set to "Numeric(Complex)" or better.
+
+On the Samsung Android device, confirm if the user has "One Lock" enabled (Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Work profile security &gt;&gt; Use one lock).
+
+If "One Lock" is enabled:
+1. Open Settings &gt;&gt; Lock screen &gt;&gt; Screen lock type.
+2. Enter current password. 
+3. Tap "PIN". 
+4. Verify that PINs with more than four repeating or sequential numbers are not accepted.
+
+If "One Lock" is disabled:
+1. Open Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Work profile security &gt;&gt; Work profile lock type.
+2. Enter current password. 
+3. Tap "PIN". 
+4. Verify that PINs with more than four repeating or sequential numbers are not accepted.
+
+If on the management tool "minimum password quality" is not set to "Numeric(Complex)" or better, or on the Samsung Android device a password with more than four repeating or sequential numbers is accepted, this is a finding.</check-content></check></Rule></Group><Group id="V-260442"><title>PP-MDF-333024</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260442r950905_rule" weight="10.0" severity="medium"><version>KNOX-14-710050</version><title>Samsung Android must be configured to enforce a minimum password length of six characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. The ability to crack a password is a function of how many attempts an adversary is permitted, how quickly an adversary can complete each attempt, and the size of the password space. The longer the minimum length of the password is, the larger the password space. Having a too-short minimum password length significantly reduces password strength, increasing the chance of password compromise and resulting device and data compromise.
+
+SFR ID: FMT_SMF_EXT.1.1 #1a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-64079r950904_fix">Configure the Samsung Android devices to enforce a minimum password length of six characters.
+
+On the management tool, in the device password policies, set "minimum password length" to "6".</fixtext><fix id="F-64079r950904_fix" /><check system="C-64172r950903_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android devices' Work Environment is enforcing a minimum password length of six characters.
+
+This validation procedure is performed on both the management tool and the Samsung Android device.
+
+On the management tool, in the Work Environment password policies, verify "minimum password length" is set to "6".
+
+On the Samsung Android device, confirm if the user has "One Lock" enabled (Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Work profile security &gt;&gt; Use one lock).
+
+If "One Lock" is enabled:
+1. Open Settings &gt;&gt; Lock screen &gt;&gt; Screen lock type.
+2. Enter current password.
+3. Tap "PIN".
+4. Verify the text "PIN must contain at least", followed by a value of at least "6 digits", appears above the PIN entry.
+
+If "One Lock" is disabled:
+1. Open Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Work profile security &gt;&gt; Work profile lock type.
+2. Enter current password.
+3. Tap "PIN".
+4. Verify the text "PIN must contain at least", followed by a value of at least "6 digits", appears above the PIN entry.
+
+If on the management tool "minimum password length" is not set to "6", or on the Samsung Android device the text "PIN must contain at least" is followed by a value of less than "6 digits", this is a finding.</check-content></check></Rule></Group><Group id="V-260443"><title>PP-MDF-333040</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260443r950908_rule" weight="10.0" severity="medium"><version>KNOX-14-710060</version><title>Samsung Android must be configured to not allow more than 10 consecutive failed authentication attempts.</title><description>&lt;VulnDiscussion&gt;The more attempts an adversary has to guess a password, the more likely the adversary will enter the correct password and gain access to resources on the device. Setting a limit on the number of attempts mitigates this risk. Setting the limit at 10 or fewer attempts gives authorized users the ability to make a few mistakes when entering the password but still provides adequate protection against dictionary or brute force attacks on the password.
+
+SFR ID: FMT_SMF_EXT.1.1 #2c, FIA_AFL_EXT.1.5&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-64080r950907_fix">Configure the Samsung Android devices to allow only 10 or fewer consecutive failed authentication attempts.
+
+On the management tool, in the device password policies, set "max password failures for local wipe" to "10" attempts or fewer.
+
+A device password must be set for "max password failures for local wipe" to become active.</fixtext><fix id="F-64080r950907_fix" /><check system="C-64173r950906_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android devices' Work Environment is allowing only 10 or fewer consecutive failed authentication attempts.
+
+This validation procedure is performed on both the management tool and the Samsung Android device.
+
+On the management tool, in the device password policies, verify "max password failures for local wipe" is set to "10" attempts or less.
+
+On the Samsung Android device, confirm if the user has "One Lock" enabled (Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Work profile security &gt;&gt; Use one lock).
+
+If "One Lock" is enabled:
+1. Lock the device.
+2. Make attempts to unlock the Device with incorrect PIN and validate that the device reports that if you do not enter the correct PIN within the next few attempts that a wipe will occur.
+
+If "One Lock" is disabled:
+1. Wait for the Work profile to Lock (determined by Auto lock work profile configuration) - or reboot the Device.
+2. Attempt to unlock the Work profile with an incorrect PIN and validate that the device reports "9" or less attempts left.
+
+If on the management tool "max password failures for local wipe" is not set to "10" attempts or less, or on the Samsung Android device - after making incorrect PIN entry attempts - it does not report that the device will wipe, this is a finding.</check-content></check></Rule></Group><Group id="V-260444"><title>PP-MDF-333026</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260444r950911_rule" weight="10.0" severity="medium"><version>KNOX-14-710070</version><title>Samsung Android must be configured to lock the display after 15 minutes (or less) of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen lock timeout must be set to a value that helps protect the device from unauthorized access. Having a too-long timeout would increase the window of opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device. The maximum timeout period of 15 minutes has been selected to balance functionality and security; shorter timeout periods may be appropriate depending on the risks posed to the mobile device.
+
+Satisfies: PP-MDF-333026,PP-MDF-333030
+
+SFR ID: FMT_SMF_EXT.1.1 #2a, 2bb&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-64081r950910_fix">Configure the Samsung Android devices to lock the device display after 15 minutes (or less) of inactivity.
+
+On the management tool, in the device password policies, set "max time to screen lock" to "15 minutes" or less.
+
+A device password must be set for "max time to screen lock" to become active.</fixtext><fix id="F-64081r950910_fix" /><check system="C-64174r950909_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android devices' Work Environment is locking the device display after 15 minutes (or less) of inactivity.
+
+This validation procedure is performed on both the management tool and the Samsung Android device.
+
+On the management tool, in the Work environment password policies, verify "max time to screen lock" is set to "15 minutes" or less.
+
+On the Samsung Android device, confirm if the user has "One Lock" enabled (Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Work profile security &gt;&gt; Use one lock).
+
+If "One Lock" is enabled:
+1. Open Settings &gt;&gt; Lock screen.
+2. Verify "Secure lock settings" is present and tap it.
+3. Enter current password.
+4. Tap "Auto lock when screen turns off".
+5. Verify the listed timeout values are 15 minutes or less.
+
+If "One Lock" is disabled:
+1. Open Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Work profile security &gt;&gt; Auto lock work profile.
+2. Verify the listed timeout values are 15 minutes or less.
+
+If on the management tool "max time to screen lock" is not set to "15 minutes" or less, or on the Samsung Android device the listed Screen timeout values include durations of more than 15 minutes, this is a finding.</check-content></check></Rule></Group><Group id="V-260445"><title>PP-MDF-333110</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260445r953770_rule" weight="10.0" severity="medium"><version>KNOX-14-710080</version><title>Samsung Android must be configured to disable authentication mechanisms providing user access to protected data other than a Password Authentication Factor: Face recognition.</title><description>&lt;VulnDiscussion&gt;The biometric factor can be used to authenticate the user to unlock the mobile device. Unapproved/evaluated biometric mechanisms could allow unauthorized users to have access to DOD sensitive data if compromised. By not permitting the use of unapproved/evaluated biometric authentication mechanisms, this risk is mitigated.
+
+SFR ID: FMT_SMF_EXT.1.1 #22, FIA_UAU.5.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000767</ident><fixtext fixref="F-64082r950913_fix">Note: This requirement is not applicable for specific biometric authentication factors included in the product's Common Criteria evaluation.
+
+Configure the Samsung Android devices to disable Face Recognition.
+
+On the management tool, in the device restrictions, set "Face Recognition" to "Disable".</fixtext><fix id="F-64082r950913_fix" /><check system="C-64175r953770_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Note: This requirement is not applicable for specific biometric authentication factors included in the product's Common Criteria evaluation.
+
+Review the configuration to determine if the Samsung Android devices' Work Environment is disabling Face Recognition.
+
+This validation procedure is performed on both the management tool and the Samsung Android device.
+
+Face recognition is not a feature available for unlocking the Work profile unless "One Lock" is used.
+
+Otherwise, on the management tool, in the Work Environment restrictions, verify that "Face" is set to "Disable".
+
+On the Samsung Android device, confirm if the user has "One Lock" enabled (Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Work profile security &gt;&gt; Use one lock).
+
+If "One Lock" is enabled:
+1. Open Settings &gt;&gt; Lock screen &gt;&gt; Screen lock type.
+2. Enter current password.
+3. Verify that "Face" is disabled and cannot be enabled.
+
+The disablement of Face cannot be verified while "One Lock" is disabled, as they are not an available feature for Work profiles. To verify, the Admin would need to temporarily enable "One Lock" for the purpose of testing only and follow the above instruction. After testing, the User would have to reset their Work profile password when "One Lock" was turned off again.
+
+If on the management tool "Face" is not set to "Disable", or on the Samsung Android device "Face" can be enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-260446"><title>PP-MDF-333030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260446r953771_rule" weight="10.0" severity="medium"><version>KNOX-14-710090</version><title>Samsung Android must be configured to enable a screen-lock policy that will lock the display after a period of inactivity - Disable trust agents.</title><description>&lt;VulnDiscussion&gt;The screen lock timeout must be set to a value that helps protect the device from unauthorized access. Having a too-long timeout would increase the window of opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device. The maximum timeout period of 15 minutes has been selected to balance functionality and security; shorter timeout periods may be appropriate depending on the risks posed to the mobile device.
+
+SFR ID: FMT_SMF_EXT.1.1 #2a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000767</ident><fixtext fixref="F-64083r950916_fix">Configure the Samsung Android devices to disable Trust Agents.
+
+On the management tool, in the device restrictions, set "Trust Agents" to "Disable".</fixtext><fix id="F-64083r950916_fix" /><check system="C-64176r953771_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android devices' Work Environment is disabling Trust Agents.
+
+This validation procedure is performed on both the management tool and the Samsung Android device.
+
+On the management tool, in the device restrictions, verify that "Trust Agents" are set to "Disable".
+
+On the Samsung Android device, confirm if the user has "One Lock" enabled (Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Work profile security &gt;&gt; Use one lock).
+
+If "One Lock" is enabled:
+1. Open Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Trust agents.
+2. Verify that all listed Trust Agents are disabled and cannot be enabled.
+
+The disablement of Trust Agents cannot be verified while "One Lock" is disabled, as they are not an available feature for Work profiles. To verify, the Admin would need to temporarily enable "One Lock" for the purpose of testing only and follow the above instruction. After testing, the User would have to reset their Work profile password when "One Lock" was turned off again.
+
+If on the management tool "Trust Agents" are not set to "Disable", or on the Samsung Android device a "Trust Agent" can be enabled, this is a finding.
+
+Note: If the management tool has been correctly configured but a Trust Agent is still enabled, configure the "List of approved apps listed in managed Google Play" to disable it; refer to KNOX-14-710190.
+
+Exception: Trust Agents may be used if the Authorizing Official (AO) allows a screen lock timeout after four hours (or more) of inactivity. This may be applicable to tactical use case.</check-content></check></Rule></Group><Group id="V-260447"><title>PP-MDF-993300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260447r950920_rule" weight="10.0" severity="medium"><version>KNOX-14-710180</version><title>Samsung Android's Work profile must have the DOD root and intermediate PKI certificates installed.</title><description>&lt;VulnDiscussion&gt;DOD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the root and intermediate certificates are not available, an adversary could falsely sign a certificate in such a way that it could not be detected. Providing access to the DOD root and intermediate PKI certificates greatly diminishes the risk of this attack.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64084r950919_fix">Install the DOD root and intermediate PKI certificates into the Samsung Android devices' Work profile.
+
+The current DOD root and intermediate PKI certificates may be obtained in self-extracting zip files at https://cyber.mil/pki-pke (for NIPRNet).
+
+On the management tool, in the Work profile policy management, install the DOD root and intermediate PKI certificates.</fixtext><fix id="F-64084r950919_fix" /><check system="C-64177r950918_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android's Work profile has the DOD root and intermediate PKI certificates installed.
+
+This validation procedure is performed on both the management tool and the Samsung Android device.
+
+The current DOD root and intermediate PKI certificates may be obtained in self-extracting zip files at https://cyber.mil/pki-pke (for NIPRNet).
+
+On the management tool, in the Work profile policy management, verify the DOD root and intermediate PKI certificates are installed.
+
+On the Samsung Android device: 
+1. Open Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; View security certificates.
+2. In the User tab, verify the DOD root and intermediate PKI certificates are listed in the Work profile.
+
+If on the management tool the DOD root and intermediate PKI certificates are not listed in the Work profile, or on the Samsung Android device the DOD root and intermediate PKI certificates are not listed in the Work profile, this is a finding.</check-content></check></Rule></Group><Group id="V-260448"><title>PP-MDF-333060</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260448r950923_rule" weight="10.0" severity="medium"><version>KNOX-14-710190</version><title>Samsung Android's Work profile must be configured to enforce an application installation policy by specifying an application allowlist that restricts applications by the following characteristics: Names.</title><description>&lt;VulnDiscussion&gt;The application allowlist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core and preinstalled applications, or the MD must provide an alternate method of restricting user access/execution to core and preinstalled applications. 
+
+Core application: Any application integrated into the OS by the OS or MD vendors.
+
+Preinstalled application: Additional noncore applications included in the OS build by the OS vendor, MD vendor, or wireless carrier.
+
+Requiring all authorized applications to be in an application allowlist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the allowlist. Failure to configure an application allowlist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DOD data accessible by these applications.
+
+The application allowlist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core applications (included in the OS by the OS vendor) and preinstalled applications (provided by the MD vendor and wireless carrier), or the MD must provide an alternate method of restricting user access/execution to core and preinstalled applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #8b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001764</ident><fixtext fixref="F-64085r950922_fix">Configure the Work profile on Samsung Android devices to allow users to install only applications that have been approved by the AO.
+
+In addition to any local policy, the AO must not approve applications that have certain prohibited characteristic; these are covered in KNOX-14-710200.
+
+On the management tool, in the app catalog for managed Google Play, add each AO-approved app to be available.
+
+Note: Managed Google Play is an allowed App Store.</fixtext><fix id="F-64085r950922_fix" /><check system="C-64178r950921_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Work profile on the Samsung Android device is allowing users to install only applications that have been approved by the Authorizing Official (AO).
+
+This validation procedure is performed only on the management tool.
+
+On the management tool, in the app catalog for managed Google Play, verify that only AO-approved apps are available.
+
+If on the management tool the app catalog for managed Google Play includes non-AO-approved apps, this is a finding.</check-content></check></Rule></Group><Group id="V-260449"><title>PP-MDF-333070</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260449r950926_rule" weight="10.0" severity="medium"><version>KNOX-14-710200</version><title>Samsung Android's Work profile must be configured to not allow installation of applications with the following characteristics: 
+
+- Back up MD data to non-DOD cloud servers (including user and application access to cloud backup services);
+- Transmit MD diagnostic data to non-DOD servers;
+- Voice assistant application if available when MD is locked;
+- Voice dialing application if available when MD is locked;
+- Allows synchronization of data or applications between devices associated with user; and
+- Allows unencrypted (or encrypted but not FIPS 140-3 validated) data sharing with other MDs or printers.
+- Apps which backup their own data to a remote system.</title><description>&lt;VulnDiscussion&gt;Requiring all authorized applications to be in an application allowlist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the allowlist. Failure to configure an application allowlist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DOD data accessible by these applications. Applications with the listed characteristics have features that can cause the compromise of sensitive DOD data or have features with no known application in the DOD environment.
+
+Application note: The application allowlist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core and preinstalled applications, or the MD must provide an alternate method of restricting user access/execution to core and preinstalled applications.
+
+Core application: Any application integrated into the OS by the OS or MD vendors.
+
+Preinstalled application: Additional noncore applications included in the OS build by the OS vendor, MD vendor, or wireless carrier.
+
+SFR ID: FMT_SMF_EXT.1.1 #8b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000803</ident><fixtext fixref="F-64086r950925_fix">The Authorizing Official (AO) must not approve applications with the following characteristics for installation by users in the Work profile:
+
+- Back up MD data to non-DOD cloud servers (including user and application access to cloud backup services);
+- Transmit MD diagnostic data to non-DOD servers;
+- Voice assistant application if available when MD is locked;
+- Voice dialing application if available when MD is locked;
+- Allows synchronization of data or applications between devices associated with user;
+- Payment processing; and
+- Allows unencrypted (or encrypted but not FIPS 140-3 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+- Apps which backup their own data to a remote system.
+
+Implement managed Google Play (refer to requirement KNOX-14-710190).</fixtext><fix id="F-64086r950925_fix" /><check system="C-64179r950924_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Verify requirement KNOX-14-710190 (managed Google Play) has been implemented. Verify the application allowlist does not include applications with the following characteristics:
+
+- Back up MD data to non-DOD cloud servers (including user and application access to cloud backup services);
+- Transmit MD diagnostic data to non-DOD servers;
+- Voice assistant application if available when MD is locked;
+- Voice dialing application if available when MD is locked;
+- Allows synchronization of data or applications between devices associated with user;
+- Payment processing; and
+- Allows unencrypted (or encrypted but not FIPS 140-3 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+- Apps which backup their own data to a remote system. If managed Google Play has not been implemented, this is a finding.
+
+This validation procedure is performed only on the EMM Administration Console.
+
+On the EMM console:
+
+1. Review the list of selected Managed Google Play apps.
+2. Review the details and privacy policy of each selected app to ensure the app does not include prohibited characteristics.
+
+If the EMM console device policy includes applications with unauthorized characteristics, this is a finding.</check-content></check></Rule></Group><Group id="V-260450"><title>PP-MDF-333080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260450r950929_rule" weight="10.0" severity="medium"><version>KNOX-14-710210</version><title>Samsung Android must be configured to not display the following (Work Environment) notifications when the device is locked: All notifications.</title><description>&lt;VulnDiscussion&gt;Many mobile devices display notifications on the lock screen so that users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. When they are available on the lock screen, an adversary can see them merely by being in close physical proximity to the device. Configuring the MOS to not send notifications to the lock screen mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #18&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000060</ident><fixtext fixref="F-64087r950928_fix">Configure the Samsung Android devices to not display (Work Environment) notifications when the device is locked.
+
+On the management tool, in the Work profile restrictions section, set "Unredacted Notifications" to "Disallow".</fixtext><fix id="F-64087r950928_fix" /><check system="C-64180r950927_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android devices are not displaying (Work Environment) notifications when the device is locked.
+
+Notifications of incoming phone calls are acceptable even when the device is locked.
+
+This validation procedure is performed on both the management tool Administration Console and the Samsung Android device.
+
+On the management tool, in the Work profile restrictions section, verify "Unredacted Notifications" is set to "Disallow".
+
+On the Samsung Android device: 
+1. Open Settings &gt;&gt; Notifications &gt;&gt; Lock screen notifications.
+2. Verify "Sensitive work profile notifications" is disabled.
+
+If on the management tool "Unredacted Notifications" is not set to "Disallow", or on the Samsung Android device "Sensitive work profile notifications" is not disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-260451"><title>PP-MDF-993300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260451r950932_rule" weight="10.0" severity="medium"><version>KNOX-14-710230</version><title>Samsung Android's Work profile must be configured to prevent users from adding personal email accounts to the work email app.</title><description>&lt;VulnDiscussion&gt;If the user is able to add a personal email account (POP3, IMAP, EAS) to the work email app, it could be used to forward sensitive DOD data to unauthorized recipients. Restricting email account addition to the Administrator or to allowlisted accounts mitigates this vulnerability.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64088r950931_fix">Configure the Samsung Android devices to prevent users from adding personal email accounts to the work email app.
+
+On the management tool, in the Work profile restrictions, set "Modify accounts" to "Disallow".</fixtext><fix id="F-64088r950931_fix" /><check system="C-64181r950930_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android devices are preventing users from adding personal email accounts to the work email app.
+
+On the management tool, in the device restrictions section, verify "Modify accounts" is set to "Disallow".
+
+On the Samsung Android device: 
+1. Open Settings &gt;&gt; Accounts and backup &gt;&gt; Manage accounts.
+2. Navigate to the "Work" tab.
+3. Verify no account can be added.
+
+If on the management tool "Modify accounts" is not set to "Disallow", or on the Samsung Android device an account can be added, this is a finding.</check-content></check></Rule></Group><Group id="V-260452"><title>PP-MDF-333250</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260452r953767_rule" weight="10.0" severity="medium"><version>KNOX-14-710240</version><title>Samsung Android's Work profile must be configured to not allow backup of all applications, configuration data to remote systems.- Disable Data Sync Framework.</title><description>&lt;VulnDiscussion&gt;Backups to remote systems (including cloud backup) can leave data vulnerable to breach on the external systems, which often offer less protection than the MOS. Where the remote backup involves a cloud-based solution, the backup capability is often used to synchronize data across multiple devices. In this case, DOD devices may synchronize DOD sensitive information to a user's personal device or other unauthorized computers that are vulnerable to breach. The Data Sync Framework allows apps to synchronize data between the mobile device and other web based services. This uses accounts for services the user has added to the mobile device. Preventing the user from adding accounts to the device mitigates this risk.
+
+For BYOD Work profile data cannot be backed up remotely via Backup Services. Work profile data could be backed up thru adding an account to an app that supports the data sync framework, however, this is mitigated by preventing adding any accounts to the Work profile.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001090</ident><fixtext fixref="F-64089r950934_fix">Disallow modify accounts (refer to requirement KNOX-14-710230).</fixtext><fix id="F-64089r950934_fix" /><check system="C-64182r950933_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Verify requirement KNOX-14-710230 (disallow modify accounts) has been implemented.
+
+If "disallow modify accounts" has not been implemented, this is a finding.</check-content></check></Rule></Group><Group id="V-260453"><title>PP-MDF-333280</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260453r950938_rule" weight="10.0" severity="medium"><version>KNOX-14-710250</version><title>Samsung Android's Work profile must be configured to disable exceptions to the access control policy that prevent application processes and groups of application processes from accessing all data stored by other application processes and groups of application processes.</title><description>&lt;VulnDiscussion&gt;App data sharing gives apps the ability to access the data of other apps for enhanced user functionality. However, sharing also poses a significant risk that unauthorized users or apps will obtain access to DOD sensitive information. To mitigate this risk, there are data sharing restrictions, primarily from sharing data from personal (unmanaged) apps and work (managed) apps. If a user is allowed to make exceptions to the data sharing restriction policy, the user could enable unauthorized sharing of data, leaving it vulnerable to breach. Limiting the granting of exceptions to either the Administrator or common application developer mitigates this risk.
+
+Copy/paste of data between applications in different application processes or groups of application processes is considered an exception to the access control policy and therefore, the Administrator must be able to enable/disable the feature. Other exceptions include allowing any data or application sharing between process groups.
+
+SFR ID: FMT_SMF_EXT.1.1 #42, FDP_ACF_EXT.1.2&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002233</ident><ident system="http://cyber.mil/cci">CCI-002530</ident><fixtext fixref="F-64090r950937_fix">Configure the Samsung Android devices to enable an access control policy that prevents application processes and groups of application processes from accessing all data stored by other application processes and groups of application processes.
+
+On the management tool, in the Work profile restrictions section, set "Cross profile copy/paste" to "Disallow".</fixtext><fix id="F-64090r950937_fix" /><check system="C-64183r950936_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the Samsung documentation and inspect the configuration to verify the Samsung Android devices are enabling an access control policy that prevents application processes and groups of application processes from accessing all data stored by other application processes and groups of application processes.
+
+This validation procedure is performed on both the management tool and the Samsung Android device.
+
+On the management tool, in the Work profile restrictions, set "Cross profile copy/paste" to "Disallow".
+
+On the Samsung Android device: 
+1. Using any Work app, copy text to the clipboard.
+2. Using any Personal app, verify the clipboard text cannot be pasted.
+
+If on the management tool "Cross profile copy/paste" is not set to "Disallow", or on the Samsung Android device the clipboard text can be pasted into a Personal app, this is a finding.</check-content></check></Rule></Group><Group id="V-260454"><title>PP-MDF-333350</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260454r950941_rule" weight="10.0" severity="medium"><version>KNOX-14-710260</version><title>Samsung Android's Work profile must allow only the Administrator (management tool) to perform the following management function: Install/remove DOD root and intermediate PKI certificates.</title><description>&lt;VulnDiscussion&gt;DOD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the user is allowed to remove root and intermediate certificates, the user could allow an adversary to falsely sign a certificate in such a way that it could not be detected. Restricting the ability to remove DOD root and intermediate PKI certificates to the Administrator mitigates this risk.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64091r950940_fix">Configure the Samsung Android devices' Work profile to prevent users from removing DOD root and intermediate PKI certificates.
+
+On the management tool, in the Work profile restrictions, set "Configure credentials" to "Disallow".</fixtext><fix id="F-64091r950940_fix" /><check system="C-64184r950939_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android devices' Work profile is preventing users from removing DOD root and intermediate PKI certificates.
+
+This validation procedure is performed on both the management tool and the Samsung Android device.
+
+On the management tool, in the Work profile restrictions, verify "Configure credentials" is set to "Disallow".
+
+On the Samsung Android device: 
+1. Open Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; View security certificates.
+2. In the System tab, verify no listed certificate in the Work profile can be untrusted.
+3. In the User tab, verify no listed certificate in the Work profile can be removed.
+
+If on the management tool the device "Configure credentials" is not set to "Disallow", or on the Samsung Android device a certificate can be untrusted or removed, this is a finding.</check-content></check></Rule></Group><Group id="V-260455"><title>PP-MDF-333050</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260455r950944_rule" weight="10.0" severity="medium"><version>KNOX-14-710270</version><title>Samsung Android must be configured to enforce an application installation policy by specifying one or more authorized application repositories, including DOD-approved commercial app repository, management tool server, or mobile application store.</title><description>&lt;VulnDiscussion&gt;Forcing all applications to be installed from authorized application repositories can prevent unauthorized and malicious applications from being installed and executed on mobile devices. Allowing such installations and executions could cause a compromise of DOD data accessible by these unauthorized/malicious applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #8a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64092r950943_fix">Configure the Samsung Android devices to disable unauthorized application repositories.
+
+On the management tool, in the Work profile restrictions, set "installs from unknown sources globally" to "Disallow".
+
+Note: Google Play must not be disabled. Disabling Google Play will cause system instability and critical updates will not be received.</fixtext><fix id="F-64092r950943_fix" /><check system="C-64185r950942_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to determine if the Samsung Android devices are disabling unauthorized application repositories.
+
+This validation procedure is performed on both the management tool and the Samsung Android device.
+
+On the management tool, in the Work profile restrictions, verify "installs from unknown sources globally" is set to "Disallow".
+
+On the Samsung Android device:
+1. Open Settings &gt;&gt; Security and privacy &gt;&gt; More security settings &gt;&gt; Install unknown apps.
+2. In the "Personal" tab, verify that each app listed has the status "Disabled" under the app name or no apps are listed.
+3. In the "Work" tab, verify that each app listed has the status "Disabled" under the app name or no apps are listed.
+
+If on the management tool "installs from unknown sources globally" is not set to "Disallow", or on the Samsung Android device an app is listed with a status other than "Disabled", this is a finding.</check-content></check></Rule></Group><Group id="V-260456"><title>PP-MDF-993300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260456r950947_rule" weight="10.0" severity="medium"><version>KNOX-14-710300</version><title>Samsung Android device users must complete required training.</title><description>&lt;VulnDiscussion&gt;The security posture of Samsung devices requires the device user to configure several required policy rules on their device. User-Based Enforcement (UBE) is required for these controls. In addition, if the Authorizing Official (AO) has approved the use of an unmanaged personal space, the user must receive training on risks. If a user is not aware of their responsibilities and does not comply with UBE requirements, the security posture of the Samsung mobile device may become compromised, and DOD sensitive data may become compromised.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64093r950946_fix">Have all Samsung device users complete training on the following topics. Users should acknowledge they have reviewed training via a signed User Agreement or similar written record.
+
+Training topics:
+
+- Operational security concerns introduced by unmanaged applications/unmanaged personal space including applications using Global Positioning System (GPS) tracking.
+- Need to ensure no DOD data is saved to the personal space or transmitted from a personal app (for example, from personal email).
+- If the Purebred key management app is used, users are responsible for maintaining positive control of their credentialed device at all times. The DOD PKI certificate policy requires subscribers to maintain positive control of the devices that contain private keys and report any loss of control so the credentials can be revoked. Upon device retirement, turn-in, or reassignment, ensure a factory data reset is performed prior to device hand-off. Follow Mobility service provider decommissioning procedures as applicable. 
+- How to configure the following UBE controls (users must configure the control) on the Samsung device:
+ **Do not remove DOD intermediate and root PKI digital certificates 
+ **Do not configure a DOD network (work) VPN profile on any third-party VPN client installed in the personal space 
+-How to implement One Lock.
+-Screenshots will not be taken of any “work” related managed data.-Screenshots will not be taken of any “work” related managed data.</fixtext><fix id="F-64093r950946_fix" /><check system="C-64186r950945_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review a sample of site User Agreements for Samsung device users or similar training records and training course content. 
+
+Verify Samsung device users have completed required training. The intent is that required training is renewed on a periodic basis in a time period determined by the AO.
+
+If any Samsung device user has not completed required training, this is a finding.</check-content></check></Rule></Group><Group id="V-260457"><title>PP-MDF-993300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260457r950950_rule" weight="10.0" severity="high"><version>KNOX-14-710310</version><title>The Samsung Android device must have the latest available Samsung Android operating system (OS) installed.</title><description>&lt;VulnDiscussion&gt;Required security features are not available in earlier OS versions. In addition, earlier versions may have known vulnerabilities.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64094r950949_fix">Install the latest released version of Samsung Android OS on all managed Samsung devices. 
+
+Note: In most cases, OS updates are released by the wireless carrier (for example, T-Mobile, Verizon Wireless, and ATT).</fixtext><fix id="F-64094r950949_fix" /><check system="C-64187r950948_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to confirm if the Samsung Android devices have the most recently released version of Samsung Android installed.
+
+This procedure is performed on both the management tool and the Samsung Android device. 
+
+In the management tool management console, review the version of Samsung Android installed on a sample of managed devices. This procedure will vary depending on the management tool product. Refer to the notes below to determine the latest available OS version.
+
+On the Samsung Android device, to determine the installed OS version:
+1. Open Settings.
+2. Tap "About phone".
+3. Tap "Software information".
+
+If the installed version of Android OS on any reviewed Samsung devices is not the latest released by the wireless carrier, this is a finding.
+
+Note: Some wireless carriers list the version of the latest Android OS release by mobile device model online:
+
+ATT: https://www.att.com/devicehowto/dsm.html#!/popular/make/Samsung
+
+Verizon Wireless: https://www.verizonwireless.com/support/software-updates/
+
+Google Android OS patch website: https://source.android.com/security/bulletin/ 
+
+Samsung Android OS patch website: https://security.samsungmobile.com/securityUpdate.smsb</check-content></check></Rule></Group><Group id="V-260458"><title>PP-MDF-331090</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260458r950953_rule" weight="10.0" severity="low"><version>KNOX-14-720070</version><title>Samsung Android 14 must prohibit DOD VPN profiles in the Personal Profile.</title><description>&lt;VulnDiscussion&gt;If DOD VPN profiles are configured in the Personal Profile DOD sensitive data world be at risk of compromise and the DOD network could be at risk of being attacked by malware installed on the device.
+
+SFR ID: FMT_SMF_EXT.1.1 #3&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64095r950952_fix">Do not configure DOD VPN profiles in the Personal Profile.</fixtext><fix id="F-64095r950952_fix" /><check system="C-64188r950951_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the list of VPN profiles in the Personal Profile and determine if any VPN profiles are listed. If so, verify the VPN profiles are not configured with a DOD network VPN profile.
+
+If any VPN profiles are installed in the Personal Profile and they have a DOD network VPN profile configured, this is a finding.
+
+Note: This setting cannot be managed by the MDM administrator and is a User-Based Enforcement (UBE) requirement.</check-content></check></Rule></Group><Group id="V-260459"><title>PP-MDF-993300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260459r950956_rule" weight="10.0" severity="medium"><version>KNOX-14-725010</version><title>The Samsung Android device must be configured to enable Certificate Revocation List (CRL) status checking.</title><description>&lt;VulnDiscussion&gt;A CRL allows a certificate issuer to revoke a certificate for any reason, including improperly issued certificates and compromise of the private keys. Checking the revocation status of the certificate mitigates the risk associated with using a compromised certificate. For this reason, users must not be able to disable this configuration.
+
+Samsung Android can control CRL checking but only using Knox APIs. Alternatively, CRL checking is based on app development best practice.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64096r950955_fix">Configure the Samsung Android devices to enable CRL revocation checks for all applications. These revocation checks must be enabled using the Knox KPE APIs.
+
+On the management tool, in the Certificate Policy restrictions, enable "Revocation Checks" for "All Applications".</fixtext><fix id="F-64096r950955_fix" /><check system="C-64189r950954_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to confirm that revocation checking is enabled. Verify the revocation checklist is set to "All Applications".
+ 
+This procedure is performed on the management tool. 
+
+On the management tool:
+1. Open Certificates Policy &gt;&gt; Revocation section.
+2. Select "Get CRL".
+3. Verify Toast message "Get revocation check: true".
+
+If on the management tool the revocation check is disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-260460"><title>PP-MDF-993300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260460r950959_rule" weight="10.0" severity="medium"><version>KNOX-14-725030</version><title>The Samsung Android device work profile must be configured to enforce the system application disable list.</title><description>&lt;VulnDiscussion&gt;The system application disable list controls user access to/execution of all core and preinstalled applications. 
+ 
+Core application: Any application integrated into Samsung Android 14 by Samsung. 
+ 
+Preinstalled application: Additional noncore applications included in the Samsung Android 14 build by Samsung or the wireless carrier. 
+ 
+Some system applications can compromise DOD data or upload users' information to non-DOD-approved servers. A user must be blocked from using such applications that exhibit behavior that can result in compromise of DOD data or DOD user information. 
+ 
+The site administrator must analyze all preinstalled applications on the device and disable all applications not approved for DOD use by configuring the system application disable list.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64097r950958_fix">Configure the Samsung Android 14 device to enforce the system application disable list. 
+
+The required configuration is the default configuration when the device is enrolled. If the device configuration is changed, use the following procedure to bring the device back into compliance:
+
+On the management tool:
+1. Open "Apps management" section.
+2. Select "Hide apps".
+3. Enter names of apps to hide.
+
+Configure a list of approved Samsung core and preinstalled apps in the core app allowlist.</fixtext><fix id="F-64097r950958_fix" /><check system="C-64190r950957_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the configuration to confirm the system application disable list is enforced. This setting is enforced by default. Verify only approved system apps have been placed on the core allowlist.
+ 
+This procedure is performed on the management tool. 
+ 
+Review the system app allowlist and verify only approved apps are on the list.
+
+On the management tool, in the Apps management section, select "Unhide apps" and verify the names of the apps listed.
+
+If on the management tool the system app allowlist contains unapproved core apps, this is a finding.</check-content></check></Rule></Group><Group id="V-260461"><title>PP-MDF-993300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260461r950962_rule" weight="10.0" severity="medium"><version>KNOX-14-725050</version><title>The Samsung Android device work profile must be configured to disable automatic completion of workspace internet browser text input.</title><description>&lt;VulnDiscussion&gt;The autofill functionality in the web browser allows the user to complete a form that contains sensitive information, such as personally identifiable information (PII), without previous knowledge of the information. By allowing the use of autofill functionality, an adversary who learns a user's Android 14 device password, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the autofill feature to provide information unknown to the adversary. By disabling the autofill functionality, the risk of an adversary gaining further information about the device's user or compromising other systems is significantly mitigated.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64098r950961_fix">Configure the Samsung Android 14 device to disable the autofill functionality.
+
+The required configuration is the default configuration when the device is enrolled. If the device configuration is changed, use the following procedure to bring the device back into compliance:
+
+On the management tool:
+1. Open the "Managed configurations" section.
+2. Select the Chrome Browser version from the work profile.
+3. Ensure "PasswordManagerEnabled" is turned "OFF".
+4. Ensure "AutofillAddressEnabled" is turned "OFF".
+5. Ensure "AutofillCreditCardEnabled" is turned "OFF".</fixtext><fix id="F-64098r950961_fix" /><check system="C-64191r950960_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the work profile Chrome Browser app on the Samsung Android 14 autofill setting.
+
+This validation procedure is performed on the management tool.
+
+On the management tool:
+1. Open "Managed Configurations" section.
+2. Select the Chrome Browser version from the work profile.
+3. Verify "PasswordManagerEnabled" is turned "OFF".
+4. Verify "AutofillAddressEnabled" is turned "OFF".
+5. Verify "AutofillCreditCardEnabled" is turned "OFF".
+
+If on the management tool any of the browser autofill settings are set to "On" in the Chrome Browser Settings, this is a finding.</check-content></check></Rule></Group><Group id="V-260462"><title>PP-MDF-993300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260462r950965_rule" weight="10.0" severity="medium"><version>KNOX-14-725060</version><title>The Samsung Android device work profile must be configured to disable the autofill services.</title><description>&lt;VulnDiscussion&gt;The autofill services allow the user to complete text inputs that could contain sensitive information, such as personally identifiable information (PII), without previous knowledge of the information. By allowing the use of autofill services, an adversary who learns a user's Android 14 device password, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the autofill services to provide information unknown to the adversary. By disabling the autofill services, the risk of an adversary gaining further information about the device's user or compromising other systems is significantly mitigated. 
+ 
+Examples of apps that offer autofill services include Samsung Pass, Google, Dashlane, LastPass, and 1Password.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64099r950964_fix">Configure the Samsung Android 14 device to disable the autofill services.
+
+On the management tool, in the Work profile User restrictions section, set "Disable autofill" to "Enable".</fixtext><fix id="F-64099r950964_fix" /><check system="C-64192r950963_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the Samsung Android 14 work profile configuration settings to confirm that autofill services are disabled. 
+
+This validation procedure is performed on the management tool.
+
+On the management tool:
+1. Open "Set user restrictions".
+2. Verify "Disable autofill" is toggled to "ON".
+
+If on the management tool the "disallow autofill" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-260463"><title>PP-MDF-993300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-260463r950968_rule" weight="10.0" severity="low"><version>KNOX-14-725070</version><title>The Samsung Android device must be configured to disable the use of third-party keyboards.</title><description>&lt;VulnDiscussion&gt;Many third-party keyboard applications are known to contain malware.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Samsung Android 14 MDFPP 3.3 BYOAD</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Samsung Android 14 MDFPP 3.3 BYOAD</dc:subject><dc:identifier>5593</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-64100r950967_fix">Configure the Samsung Android 14 device to disallow the use of third-party keyboards. 
+ 
+On the management tool:
+1. Open "Input methods".
+2. Tap "Set input methods".
+3. Select only the approved keyboard.
+
+Additionally, Administrators can configure application allowlists for Google Play that do not have any third-party keyboards for user installation.</fixtext><fix id="F-64100r950967_fix" /><check system="C-64193r950966_chk"><check-content-ref href="U_SS_Android_14_MDFPP_3-3_BYOAD_STIG_V1R0-1_Manual-xccdf.xml" name="M" /><check-content>Review the managed Samsung Android 14 configuration settings to confirm that no third-party keyboards are enabled.
+ 
+This procedure is performed on the management tool.
+ 
+On the management tool:
+1. Open "Input methods".
+2. Tap "Set input methods".
+3. Verify only the approved keyboards are selected.
+
+If third-party keyboards are allowed, this is a finding.</check-content></check></Rule></Group></Benchmark>
