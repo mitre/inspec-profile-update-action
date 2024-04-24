@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="RGS_RKE2_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-02-25">accepted</status><title>Rancher Government Solutions RKE2 Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 5 Benchmark Date: 24 Apr 2024</plain-text><plain-text id="generator">3.4.1.22916</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254553" selected="true" /><select idref="V-254554" selected="true" /><select idref="V-254555" selected="true" /><select idref="V-254556" selected="true" /><select idref="V-254557" selected="true" /><select idref="V-254558" selected="true" /><select idref="V-254559" selected="true" /><select idref="V-254560" selected="true" /><select idref="V-254561" selected="true" /><select idref="V-254562" selected="true" /><select idref="V-254563" selected="true" /><select idref="V-254564" selected="true" /><select idref="V-254565" selected="true" /><select idref="V-254566" selected="true" /><select idref="V-254567" selected="true" /><select idref="V-254568" selected="true" /><select idref="V-254569" selected="true" /><select idref="V-254570" selected="true" /><select idref="V-254571" selected="true" /><select idref="V-254572" selected="true" /><select idref="V-254573" selected="true" /><select idref="V-254574" selected="true" /><select idref="V-254575" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254553" selected="true" /><select idref="V-254554" selected="true" /><select idref="V-254555" selected="true" /><select idref="V-254556" selected="true" /><select idref="V-254557" selected="true" /><select idref="V-254558" selected="true" /><select idref="V-254559" selected="true" /><select idref="V-254560" selected="true" /><select idref="V-254561" selected="true" /><select idref="V-254562" selected="true" /><select idref="V-254563" selected="true" /><select idref="V-254564" selected="true" /><select idref="V-254565" selected="true" /><select idref="V-254566" selected="true" /><select idref="V-254567" selected="true" /><select idref="V-254568" selected="true" /><select idref="V-254569" selected="true" /><select idref="V-254570" selected="true" /><select idref="V-254571" selected="true" /><select idref="V-254572" selected="true" /><select idref="V-254573" selected="true" /><select idref="V-254574" selected="true" /><select idref="V-254575" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254553" selected="true" /><select idref="V-254554" selected="true" /><select idref="V-254555" selected="true" /><select idref="V-254556" selected="true" /><select idref="V-254557" selected="true" /><select idref="V-254558" selected="true" /><select idref="V-254559" selected="true" /><select idref="V-254560" selected="true" /><select idref="V-254561" selected="true" /><select idref="V-254562" selected="true" /><select idref="V-254563" selected="true" /><select idref="V-254564" selected="true" /><select idref="V-254565" selected="true" /><select idref="V-254566" selected="true" /><select idref="V-254567" selected="true" /><select idref="V-254568" selected="true" /><select idref="V-254569" selected="true" /><select idref="V-254570" selected="true" /><select idref="V-254571" selected="true" /><select idref="V-254572" selected="true" /><select idref="V-254573" selected="true" /><select idref="V-254574" selected="true" /><select idref="V-254575" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254553" selected="true" /><select idref="V-254554" selected="true" /><select idref="V-254555" selected="true" /><select idref="V-254556" selected="true" /><select idref="V-254557" selected="true" /><select idref="V-254558" selected="true" /><select idref="V-254559" selected="true" /><select idref="V-254560" selected="true" /><select idref="V-254561" selected="true" /><select idref="V-254562" selected="true" /><select idref="V-254563" selected="true" /><select idref="V-254564" selected="true" /><select idref="V-254565" selected="true" /><select idref="V-254566" selected="true" /><select idref="V-254567" selected="true" /><select idref="V-254568" selected="true" /><select idref="V-254569" selected="true" /><select idref="V-254570" selected="true" /><select idref="V-254571" selected="true" /><select idref="V-254572" selected="true" /><select idref="V-254573" selected="true" /><select idref="V-254574" selected="true" /><select idref="V-254575" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254553" selected="true" /><select idref="V-254554" selected="true" /><select idref="V-254555" selected="true" /><select idref="V-254556" selected="true" /><select idref="V-254557" selected="true" /><select idref="V-254558" selected="true" /><select idref="V-254559" selected="true" /><select idref="V-254560" selected="true" /><select idref="V-254561" selected="true" /><select idref="V-254562" selected="true" /><select idref="V-254563" selected="true" /><select idref="V-254564" selected="true" /><select idref="V-254565" selected="true" /><select idref="V-254566" selected="true" /><select idref="V-254567" selected="true" /><select idref="V-254568" selected="true" /><select idref="V-254569" selected="true" /><select idref="V-254570" selected="true" /><select idref="V-254571" selected="true" /><select idref="V-254572" selected="true" /><select idref="V-254573" selected="true" /><select idref="V-254574" selected="true" /><select idref="V-254575" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254553" selected="true" /><select idref="V-254554" selected="true" /><select idref="V-254555" selected="true" /><select idref="V-254556" selected="true" /><select idref="V-254557" selected="true" /><select idref="V-254558" selected="true" /><select idref="V-254559" selected="true" /><select idref="V-254560" selected="true" /><select idref="V-254561" selected="true" /><select idref="V-254562" selected="true" /><select idref="V-254563" selected="true" /><select idref="V-254564" selected="true" /><select idref="V-254565" selected="true" /><select idref="V-254566" selected="true" /><select idref="V-254567" selected="true" /><select idref="V-254568" selected="true" /><select idref="V-254569" selected="true" /><select idref="V-254570" selected="true" /><select idref="V-254571" selected="true" /><select idref="V-254572" selected="true" /><select idref="V-254573" selected="true" /><select idref="V-254574" selected="true" /><select idref="V-254575" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254553" selected="true" /><select idref="V-254554" selected="true" /><select idref="V-254555" selected="true" /><select idref="V-254556" selected="true" /><select idref="V-254557" selected="true" /><select idref="V-254558" selected="true" /><select idref="V-254559" selected="true" /><select idref="V-254560" selected="true" /><select idref="V-254561" selected="true" /><select idref="V-254562" selected="true" /><select idref="V-254563" selected="true" /><select idref="V-254564" selected="true" /><select idref="V-254565" selected="true" /><select idref="V-254566" selected="true" /><select idref="V-254567" selected="true" /><select idref="V-254568" selected="true" /><select idref="V-254569" selected="true" /><select idref="V-254570" selected="true" /><select idref="V-254571" selected="true" /><select idref="V-254572" selected="true" /><select idref="V-254573" selected="true" /><select idref="V-254574" selected="true" /><select idref="V-254575" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254553" selected="true" /><select idref="V-254554" selected="true" /><select idref="V-254555" selected="true" /><select idref="V-254556" selected="true" /><select idref="V-254557" selected="true" /><select idref="V-254558" selected="true" /><select idref="V-254559" selected="true" /><select idref="V-254560" selected="true" /><select idref="V-254561" selected="true" /><select idref="V-254562" selected="true" /><select idref="V-254563" selected="true" /><select idref="V-254564" selected="true" /><select idref="V-254565" selected="true" /><select idref="V-254566" selected="true" /><select idref="V-254567" selected="true" /><select idref="V-254568" selected="true" /><select idref="V-254569" selected="true" /><select idref="V-254570" selected="true" /><select idref="V-254571" selected="true" /><select idref="V-254572" selected="true" /><select idref="V-254573" selected="true" /><select idref="V-254574" selected="true" /><select idref="V-254575" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254553" selected="true" /><select idref="V-254554" selected="true" /><select idref="V-254555" selected="true" /><select idref="V-254556" selected="true" /><select idref="V-254557" selected="true" /><select idref="V-254558" selected="true" /><select idref="V-254559" selected="true" /><select idref="V-254560" selected="true" /><select idref="V-254561" selected="true" /><select idref="V-254562" selected="true" /><select idref="V-254563" selected="true" /><select idref="V-254564" selected="true" /><select idref="V-254565" selected="true" /><select idref="V-254566" selected="true" /><select idref="V-254567" selected="true" /><select idref="V-254568" selected="true" /><select idref="V-254569" selected="true" /><select idref="V-254570" selected="true" /><select idref="V-254571" selected="true" /><select idref="V-254572" selected="true" /><select idref="V-254573" selected="true" /><select idref="V-254574" selected="true" /><select idref="V-254575" selected="true" /></Profile><Group id="V-254553"><title>SRG-APP-000014-CTR-000035</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254553r954686_rule" weight="10.0" severity="high"><version>CNTR-R2-000010</version><title>Rancher RKE2 must protect authenticity of communications sessions with the use of FIPS-validated 140-2 or 140-3 security requirements for cryptographic modules.</title><description>&lt;VulnDiscussion&gt;Use strong TLS settings.
+
+RKE2 uses FIPS validated BoringCrypto modules. RKE2 Server can prohibit the use of SSL and unauthorized versions of TLS protocols to properly secure communication. There is a lot of traffic between RKE2 nodes to deploy, update, and delete resources so it is important to set strong TLS settings on top of this default feature. It is also important to use approved cypher suites. This ensures the protection of the transmitted information, confidentiality, and integrity so that the attacker cannot read or alter this communication.
+
+The use of unsupported protocol exposes vulnerabilities to the Kubernetes by rogue traffic interceptions, man-in-the-middle attacks, and impersonation of users or services from the container platform runtime, registry, and key store.
+
+To enable the enforcement of minimum version of TLS and cipher suites to be used by the various components of RKE2, the settings "tls-min-version" and "tls-cipher-suites" must be set.
+
+Further documentation of the FIPS modules can be found here: https://docs.rke2.io/security/fips_support.
+
+Satisfies: SRG-APP-000014-CTR-000035, SRG-APP-000014-CTR-000040, SRG-APP-000219-CTR-000550, SRG-APP-000441-CTR-001090, SRG-APP-000442-CTR-001095, SRG-APP-000514-CTR-001315, SRG-APP-000560-CTR-001340, SRG-APP-000605-CTR-001380, SRG-APP-000610-CTR-001385, SRG-APP-000635-CTR-001405, SRG-APP-000645-CTR-001410&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-000185</ident><ident system="http://cyber.mil/cci">CCI-000382</ident><ident system="http://cyber.mil/cci">CCI-000803</ident><ident system="http://cyber.mil/cci">CCI-001184</ident><ident system="http://cyber.mil/cci">CCI-001453</ident><ident system="http://cyber.mil/cci">CCI-002420</ident><ident system="http://cyber.mil/cci">CCI-002422</ident><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-57986r859228_fix">Use strong TLS settings.
+
+Edit the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, to contain the following:
+
+kube-controller-manager-arg: 
+- "tls-min-version=VersionTLS12" [or higher]
+- "tls-cipher-suites=TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+kube-scheduler-arg: 
+- "tls-min-version=VersionTLS12"
+- "tls-cipher-suites=TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+kube-apiserver-arg: 
+- "tls-min-version=VersionTLS12"
+- "tls-cipher-suites=TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+
+Once configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-57986r859228_fix" /><check system="C-58037r894450_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content> Use strong TLS settings. 
+
+On an RKE2 server, run each command: 
+
+/bin/ps -ef | grep kube-apiserver | grep -v grep
+
+/bin/ps -ef | grep kube-controller-manager | grep -v grep 
+
+/bin/ps -ef | grep kube-scheduler | grep -v grep
+
+For each, look for the existence of tls-min-version (use this command for an aid "| grep tls-min-version"): 
+If the setting "tls-min-version" is not configured or it is set to "VersionTLS10" or "VersionTLS11", this is a finding.
+
+For each, look for the existence of the tls-cipher-suites. 
+If "tls-cipher-suites" is not set for all servers, or does not contain the following, this is a finding: 
+
+--tls-cipher-suites=TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384,
+TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA,
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, 
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA,
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, 
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305, 
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256,
+TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, 
+124 | P a g eTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305,
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_RSA_WITH_3DES_EDE_CBC_SHA,
+TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, 
+TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384</check-content></check></Rule></Group><Group id="V-254554"><title>SRG-APP-000023-CTR-000055</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254554r954692_rule" weight="10.0" severity="medium"><version>CNTR-R2-000030</version><title>RKE2 must use a centralized user management solution to support account management functions.</title><description>&lt;VulnDiscussion&gt;The Kubernetes Controller Manager is a background process that embeds core control loops regulating cluster system state through the API Server. Every process executed in a pod has an associated service account. By default, service accounts use the same credentials for authentication. Implementing the default settings poses a high risk to the Kubernetes Controller Manager. Setting the use-service-account-credential value lowers the attack surface by generating unique service accounts settings for each controller instance.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><fixtext fixref="F-57987r918225_fix">Edit the RKE2 Configuration File /etc/rancher/rke2/config.yaml on the RKE2 Control Plane and set the following "kube-controller-manager-arg" argument:
+- use-service-account-credentials=true
+
+Once the configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-57987r918225_fix" /><check system="C-58038r859230_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure use-service-account-credentials argument is set correctly.
+
+Run this command on the RKE2 Control Plane:
+/bin/ps -ef | grep kube-controller-manager | grep -v grep
+
+If --use-service-account-credentials argument is not set to "true" or is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-254555"><title>SRG-APP-000026-CTR-000070</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254555r954698_rule" weight="10.0" severity="medium"><version>CNTR-R2-000060</version><title>Rancher RKE2 components must be configured in accordance with the security configuration settings based on DOD security configuration or implementation guidance, including SRGs, STIGs, NSA configuration guides, CTOs, and DTMs.</title><description>&lt;VulnDiscussion&gt;Once an attacker establishes access to a system, the attacker often attempts to create a persistent method of re-establishing access. One way to accomplish this is for the attacker to modify an existing account. Auditing of account creation is one method for mitigating this risk. A comprehensive account management process will ensure an audit trail documents the creation of application user accounts and, as required, notifies administrators and/or application when accounts are created. Such a process greatly reduces the risk that accounts will be surreptitiously created and provides logging that can be used for forensic purposes.
+
+Within Rancher RKE2, audit data can be generated from any of the deployed container platform components. This audit data is important when there are issues, such as security incidents, that must be investigated. To make the audit data worthwhile for the investigation of events, it is necessary to know where within the container platform the event occurred.
+
+To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to offload those access control functions and focus on core application features and functionality.
+
+Satisfies: SRG-APP-000026-CTR-000070, SRG-APP-000027-CTR-000075, SRG-APP-000028-CTR-000080, SRG-APP-000092-CTR-000165, SRG-APP-000095-CTR-000170, SRG-APP-000096-CTR-000175, SRG-APP-000097-CTR-000180, SRG-APP-000098-CTR-000185, SRG-APP-000099-CTR-000190, SRG-APP-000100-CTR-000195, SRG-APP-000101-CTR-000205, SRG-APP-000319-CTR-000745, SRG-APP-000320-CTR-000750, SRG-APP-000343-CTR-000780, SRG-APP-000358-CTR-000805, SRG-APP-000374-CTR-000865, SRG-APP-000375-CTR-000870, SRG-APP-000381-CTR-000905, SRG-APP-000409-CTR-000990, SRG-APP-000492-CTR-001220, SRG-APP-000493-CTR-001225, SRG-APP-000494-CTR-001230, SRG-APP-000495-CTR-001235, SRG-APP-000496-CTR-001240, SRG-APP-000497-CTR-001245, SRG-APP-000498-CTR-001250, SRG-APP-000499-CTR-001255, SRG-APP-000500-CTR-001260, SRG-APP-000501-CTR-001265, SRG-APP-000502-CTR-001270, SRG-APP-000503-CTR-001275, SRG-APP-000504-CTR-001280, SRG-APP-000505-CTR-001285, SRG-APP-000506-CTR-001290, SRG-APP-000507-CTR-001295, SRG-APP-000508-CTR-001300, SRG-APP-000509-CTR-001305, SRG-APP-000510-CTR-001310, SRG-APP-000516-CTR-000790, SRG-APP-00516-CTR-001325&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000018</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000132</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><ident system="http://cyber.mil/cci">CCI-000135</ident><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001403</ident><ident system="http://cyber.mil/cci">CCI-001404</ident><ident system="http://cyber.mil/cci">CCI-001464</ident><ident system="http://cyber.mil/cci">CCI-001487</ident><ident system="http://cyber.mil/cci">CCI-001814</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><ident system="http://cyber.mil/cci">CCI-001889</ident><ident system="http://cyber.mil/cci">CCI-001890</ident><ident system="http://cyber.mil/cci">CCI-002130</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><ident system="http://cyber.mil/cci">CCI-002884</ident><fixtext fixref="F-57988r940051_fix">Audit logging and policies:
+
+Edit the /etc/rancher/rke2/config.yaml file, and enable the audit policy:
+audit-policy-file: /etc/rancher/rke2/audit-policy.yaml
+
+1. Edit the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, so that it contains required configuration.
+
+--audit-policy-file= Path to the file that defines the audit policy configuration. (Example: /etc/rancher/rke2/audit-policy.yaml)
+--audit-log-mode=blocking-strict
+
+If configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server
+
+2. Edit the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, so that it contains required configuration.
+
+If using RKE2 v1.24 or older, set:
+
+profile: cis-1.6
+
+If using RKE2 v1.25 or newer, set:
+
+profile: cis-1.23
+
+If configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server
+
+3. Edit the audit policy file, by default located at /etc/rancher/rke2/audit-policy.yaml to look like below:
+
+apiVersion: audit.k8s.io/v1
+kind: Policy
+metadata:
+  name: rke2-audit-policy
+rules:
+  - level: Metadata
+    resources:
+    - group: ""
+      resources: ["secrets"]
+  - level: RequestResponse
+    resources:
+    - group: ""
+      resources: ["*"]
+
+If configuration files are updated on a host, restart the RKE2 Service. Run the command "systemctl restart rke2-server" for server hosts and "systemctl restart rke2-agent" for agent hosts.</fixtext><fix id="F-57988r940051_fix" /><check system="C-58039r940050_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Audit logging and policies:
+
+1. On all hosts running RKE2 Server, run the command:
+/bin/ps -ef | grep kube-apiserver | grep -v grep
+
+If --audit-policy-file is not set, this is a finding.
+If --audit-log-mode is not = "blocking-strict", this is a finding.
+
+2. Ensure the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, contains CIS profile setting. Run the following command:
+cat /etc/rancher/rke2/config.yaml 
+
+If a value for profile is not found, this is a finding. (Example: "profile: cis-1.6" )
+
+3. Check the contents of the audit-policy file.
+By default, RKE2 expects the audit-policy file to be located at /etc/rancher/rke2/audit-policy.yaml; however, this location can be overridden in the /etc/rancher/rke2/config.yaml file with argument 'kube-apiserver-arg: "audit-policy-file=/etc/rancher/rke2/audit-policy.yaml"'.
+
+If the audit policy file does not exist or does not look like the following, this is a finding.
+
+apiVersion: audit.k8s.io/v1
+kind: Policy
+metadata:
+  name: rke2-audit-policy
+rules:
+  - level: Metadata
+    resources:
+    - group: ""
+      resources: ["secrets"]
+  - level: RequestResponse
+    resources:
+    - group: ""
+      resources: ["*"]</check-content></check></Rule></Group><Group id="V-254556"><title>SRG-APP-000033-CTR-000090</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254556r954708_rule" weight="10.0" severity="medium"><version>CNTR-R2-000100</version><title>The Kubernetes Controller Manager must have secure binding.</title><description>&lt;VulnDiscussion&gt;Limiting the number of attack vectors and implementing authentication and encryption on the endpoints available to external sources is paramount when securing the overall Kubernetes cluster. The Controller Manager API service exposes port 10252/TCP by default for health and metrics information use. This port does not encrypt or authenticate connections. If this port is exposed externally, an attacker can use this port to attack the entire Kubernetes cluster. By setting the bind address to only localhost (i.e., 127.0.0.1), only those internal services that require health and metrics information can access the Control Manager API.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-57989r918227_fix">Edit the RKE2 Configuration File /etc/rancher/rke2/config.yaml on the RKE2 Control Plane and set the following "kube-controller-manager-arg" argument:
+- bind-address=127.0.0.1
+
+Once the configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-57989r918227_fix" /><check system="C-58040r859236_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure bind-address is set correctly. 
+
+Run this command on the RKE2 Control Plane:
+/bin/ps -ef | grep kube-controller-manager | grep -v grep
+
+If --bind-address is not set to "127.0.0.1" or is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-254557"><title>SRG-APP-000033-CTR-000090</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254557r954708_rule" weight="10.0" severity="medium"><version>CNTR-R2-000110</version><title>The Kubernetes Kubelet must have anonymous authentication disabled.</title><description>&lt;VulnDiscussion&gt;RKE2 registry is used to store images and is the keeper of truth for trusted images within the platform. To guarantee the images' integrity, access to the registry must be limited to those individuals who need to perform tasks to the images such as the update, creation, or deletion. Without this control access, images can be deleted that are in use by RKE2 causing a denial of service (DoS), and images can be modified or introduced without going through the testing and validation process allowing for the intentional or unintentional introduction of containers with flaws and vulnerabilities.
+
+By allowing anonymous connections, the controls put in place to secure the Kubelet can be bypassed. Setting anonymous authentication to "false" also disables unauthenticated requests from kubelets.
+
+While there are instances where anonymous connections may be needed (e.g., health checks) and Role-Based Access Controls (RBAC) are in place to limit the anonymous access, this access must be disabled and only enabled when necessary.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-57990r940053_fix">Edit the Kubernetes Kubelet file etc/rancher/rke2/config.yaml on the RKE2 Control Plane and set the following:
+--anonymous-auth=false
+
+Once configuration file is updated, restart the RKE2 Agent. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-57990r940053_fix" /><check system="C-58041r859239_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure anonymous-auth is set correctly so anonymous requests will be rejected.
+
+Run this command on each node:
+/bin/ps -ef | grep kubelet | grep -v grep
+
+If --anonymous-auth is set to "true" or is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-254558"><title>SRG-APP-000033-CTR-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254558r954708_rule" weight="10.0" severity="high"><version>CNTR-R2-000120</version><title>The Kubernetes API server must have the insecure port flag disabled.</title><description>&lt;VulnDiscussion&gt;By default, the API server will listen on two ports. One port is the secure port and the other port is called the "localhost port". This port is also called the "insecure port", port 8080. Any requests to this port bypass authentication and authorization checks. If this port is left open, anyone who gains access to the host on which the master is running can bypass all authorization and authentication mechanisms put in place, and have full control over the entire cluster.
+
+Close the insecure port by setting the API server's --insecure-port flag to "0", ensuring that the --insecure-bind-address is not set.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-57991r894456_fix">Edit the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, to contain the following:
+
+kube-apiserver-arg:
+- insecure-port=0
+
+Once configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-57991r894456_fix" /><check system="C-58042r894455_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure insecure-port is set correctly.
+
+If running v1.20 through v1.23, this is default configuration so no change is necessary if not configured. 
+If running v1.24, this check is Not Applicable.
+
+Run this command on the RKE2 Control Plane:
+/bin/ps -ef | grep kube-apiserver | grep -v grep
+
+If --insecure-port is not set to "0" or is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-254559"><title>SRG-APP-000033-CTR-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254559r954708_rule" weight="10.0" severity="high"><version>CNTR-R2-000130</version><title>The Kubernetes Kubelet must have the read-only port flag disabled.</title><description>&lt;VulnDiscussion&gt;Kubelet serves a small REST API with read access to port 10255. The read-only port for Kubernetes provides no authentication or authorization security control. Providing unrestricted access on port 10255 exposes Kubernetes pods and containers to malicious attacks or compromise. Port 10255 is deprecated and should be disabled. 
+
+Close the read-only-port by setting the API server's read-only port flag to "0".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-57992r940056_fix">Edit the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, to contain the following:
+kubelet-arg:
+--read-only-port=0
+
+If configuration files are updated on a host, restart the RKE2 Service. Run the command "systemctl restart rke2-server" for server hosts and "systemctl restart rke2-agent" for agent hosts.</fixtext><fix id="F-57992r940056_fix" /><check system="C-58043r940055_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure read-only-port is set correctly so anonymous requests will be rejected.
+
+Run this command on each node:
+/bin/ps -ef | grep kubelet | grep -v grep
+
+If --read-only-port is not set to "0" or is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-254560"><title>SRG-APP-000033-CTR-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254560r954708_rule" weight="10.0" severity="high"><version>CNTR-R2-000140</version><title>The Kubernetes API server must have the insecure bind address not set.</title><description>&lt;VulnDiscussion&gt;By default, the API server will listen on two ports and addresses. One address is the secure address and the other address is called the "insecure bind" address and is set by default to localhost. Any requests to this address bypass authentication and authorization checks. If this insecure bind address is set to localhost, anyone who gains access to the host on which the master is running can bypass all authorization and authentication mechanisms put in place and have full control over the entire cluster.
+
+Close or set the insecure bind address by setting the API server's --insecure-bind-address flag to an IP or leave it unset and ensure that the --insecure-bind-port is not set.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-57993r918230_fix">If running rke2 Kubernetes version &gt; 1.20, this requirement is NA.
+
+Upgrade to a supported version of RKE2 Kubernetes.</fixtext><fix id="F-57993r918230_fix" /><check system="C-58044r918229_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>If running rke2 Kubernetes version &gt; 1.20, this requirement is not applicable (NA).
+
+Ensure insecure-bind-address is set correctly. 
+
+Run the command:
+ps -ef | grep kube-apiserver
+
+If the setting insecure-bind-address is found and set to "localhost", this is a finding.</check-content></check></Rule></Group><Group id="V-254561"><title>SRG-APP-000033-CTR-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254561r954708_rule" weight="10.0" severity="high"><version>CNTR-R2-000150</version><title>The Kubernetes kubelet must enable explicit authorization.</title><description>&lt;VulnDiscussion&gt;Kubelet is the primary agent on each node. The API server communicates with each kubelet to perform tasks such as starting/stopping pods. By default, kubelets allow all authenticated requests, even anonymous ones, without requiring any authorization checks from the API server. This default behavior bypasses any authorization controls put in place to limit what users may perform within the Kubernetes cluster. To change this behavior, the default setting of AlwaysAllow for the authorization mode must be set to "Webhook".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-57994r918233_fix">Edit the RKE2 Configuration File /etc/rancher/rke2/config.yaml on every RKE2 node and set the following "kubelet-arg" argument:
+
+- authorization-mode=Webhook
+
+Once the configuration file is updated, restart the RKE2 Server or Agent. Run the command:
+systemctl restart rke2-server or systemctl restart rke2-agent</fixtext><fix id="F-57994r918233_fix" /><check system="C-58045r918232_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure authorization-mode is set correctly in the kubelet on each rke2 node.
+
+Run this command on each node:
+/bin/ps -ef | grep kubelet | grep -v grep
+
+If --authorization-mode is not set to "Webhook" or is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-254562"><title>SRG-APP-000033-CTR-000100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254562r954708_rule" weight="10.0" severity="high"><version>CNTR-R2-000160</version><title>The Kubernetes API server must have anonymous authentication disabled.</title><description>&lt;VulnDiscussion&gt;The Kubernetes API Server controls Kubernetes via an API interface. A user who has access to the API essentially has root access to the entire Kubernetes cluster. To control access, users must be authenticated and authorized. By allowing anonymous connections, the controls put in place to secure the API can be bypassed.
+
+Setting anonymous authentication to "false" also disables unauthenticated requests from kubelets.
+
+While there are instances where anonymous connections may be needed (e.g., health checks) and Role-Based Access Controls (RBAC) are in place to limit the anonymous access, this access should be disabled, and only enabled when necessary.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-57995r918235_fix">Edit the RKE2 Configuration File /etc/rancher/rke2/config.yaml on the RKE2 Control Plane and set the following "kube-apiserver-arg" argument:
+
+- anonymous-auth=false
+
+Once the configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-57995r918235_fix" /><check system="C-58046r859254_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure anonymous-auth argument is set correctly.
+
+Run this command on the RKE2 Control Plane:
+/bin/ps -ef | grep kube-apiserver | grep -v grep
+
+If --anonymous-auth is set to "true" or is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-254563"><title>SRG-APP-000100-CTR-000200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254563r954784_rule" weight="10.0" severity="medium"><version>CNTR-R2-000320</version><title>All audit records must identify any containers associated with the event within Rancher RKE2.</title><description>&lt;VulnDiscussion&gt;Ensure that the --audit-log-maxage argument is set to 30 or as appropriate.
+
+Retaining logs for at least 30 days ensures that you can go back in time and investigate or correlate any events. Set your audit log retention period to 30 days or as per your business requirements.
+Result: Pass&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001487</ident><fixtext fixref="F-57996r918237_fix">Edit the RKE2 Configuration File /etc/rancher/rke2/config.yaml on the RKE2 Control Plane and set the following "kube-apiserver-arg" argument:
+
+- audit-log-maxage=30
+
+Once the configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-57996r918237_fix" /><check system="C-58047r859257_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure audit-log-maxage is set correctly.
+
+Run the below command on the RKE2 Control Plane:
+/bin/ps -ef | grep kube-apiserver | grep -v grep
+
+If --audit-log-maxage argument is not set to at least 30 or is not configured, this is a finding. 
+(By default, RKE2 sets the --audit-log-maxage argument parameter to 30.)</check-content></check></Rule></Group><Group id="V-254564"><title>SRG-APP-000133-CTR-000300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254564r954820_rule" weight="10.0" severity="medium"><version>CNTR-R2-000520</version><title>Configuration and authentication files for Rancher RKE2 must be protected.</title><description>&lt;VulnDiscussion&gt;There are various configuration files, logs, access credentials, and other files stored on the host filesystem that contain sensitive information. 
+
+These files could potentially put at risk, along with other specific workloads and components:
+- API server.
+- proxy.
+- scheduler.
+- controller.
+- etcd.
+- Kubernetes administrator account information.
+- audit log access, modification, and deletion.
+- application access, modification, and deletion.
+- container runtime files.
+
+If an attacker can gain access to these files, changes can be made to open vulnerabilities and bypass user authorizations inherent within Kubernetes with RBAC implemented. It is crucial to ensure user permissions are enforced down through to the operating system. Protecting file permissions will ensure that if a nonprivileged user gains access to the system they will still not be able to access protected information from the cluster API, cluster configuration, and sensitive cluster information. This control relies on the underlying operating system also having been properly configured to allow only least privileged access to perform required operations.
+
+Satisfies: SRG-APP-000133-CTR-000300, SRG-APP-000133-CTR-000295, SRG-APP-000133-CTR-000305, SRG-APP-000133-CTR-000310&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-57997r940059_fix">File system permissions:
+1. Fix permissions of the files in /etc/rancher/rke2:
+cd /etc/rancher/rke2
+chmod 0600 ./*
+chown root:root ./*
+ls -l
+
+2. Fix permissions of the files in /var/lib/rancher/rke2:
+cd /var/lib/rancher/rke2
+chown root:root ./*
+ls -l
+
+3. Fix permissions of the files and directories in /var/lib/rancher/rke2/agent:
+cd /var/lib/rancher/rke2/agent
+chown root:root ./*
+chmod 0700 pod-manifests
+chmod 0700 etc
+find . -maxdepth 1 -type f -name "*.kubeconfig" -exec chmod 0640 {} \;
+find . -maxdepth 1 -type f -name "*.crt" -exec chmod 0600 {} \;
+find . -maxdepth 1 -type f -name "*.key" -exec chmod 0600 {} \;
+ls -l
+
+4. Fix permissions of the files in /var/lib/rancher/rke2/bin:
+cd /var/lib/rancher/rke2/agent/bin
+chown root:root ./*
+chmod 0750 ./*
+ls -l
+
+5. Fix permissions directory of /var/lib/rancher/rke2/data:
+cd /var/lib/rancher/rke2/agent
+chown root:root data
+chmod 0750 data
+ls -l
+
+6. Fix permissions of files in /var/lib/rancher/rke2/data:
+cd /var/lib/rancher/rke2/data
+chown root:root ./*
+chmod 0640 ./*
+ls -l
+
+7. Fix permissions in /var/lib/rancher/rke2/server:
+cd /var/lib/rancher/rke2/server
+chown root:root ./*
+chmod 0700 cred
+chmod 0700 db
+chmod 0700 tls
+chmod 0750 manifests
+chmod 0750 logs
+chmod 0600 token
+ls -l
+
+Edit the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, to contain the following:
+
+write-kubeconfig-mode: "0640"
+
+Once the configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-57997r940059_fix" /><check system="C-58048r942453_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>File system permissions:
+1. Ensure correct permissions of the files in /etc/rancher/rke2
+cd /etc/rancher/rke2
+ls -l
+
+all owners are root:root
+all permissions are 0600
+
+2. Ensure correct permissions of the files in /var/lib/rancher/rke2
+cd /var/lib/rancher/rke2
+ls -l 
+
+all owners are root:root
+
+3. Ensure correct permissions of the files and directories in /var/lib/rancher/rke2/agent
+cd /var/lib/rancher/rke2/agent
+ls -l
+
+owners and group are root:root
+
+File permissions set to 0640 for the following:
+rke2controller.kubeconfig
+kubelet.kubeconfig
+kubeproxy.kubeconfig
+
+Certificate file permissions set to 0600
+client-ca.crt
+client-kubelet.crt
+client-kube-proxy.crt
+client-rke2-controller.crt
+server-ca.crt
+serving-kubelet.crt
+
+Key file permissions set to 0600
+client-kubelet.key
+serving-kubelet.key
+client-rke2-controller.key
+client-kube-proxy.key
+
+The directory permissions to 0700 
+pod-manifests
+etc 
+
+4. Ensure correct permissions of the files in /var/lib/rancher/rke2/bin
+cd /var/lib/rancher/rke2/bin
+ls -l
+
+all owners are root:root
+all files are 0750
+
+5. Ensure correct permissions of the directory /var/lib/rancher/rke2/data
+cd /var/lib/rancher/rke2
+ls -l
+
+all owners are root:root
+permissions are 0750
+
+6. Ensure correct permissions of each file in /var/lib/rancher/rke2/data 
+cd /var/lib/rancher/rke2/data
+ls -l
+
+all owners are root:root
+all files are 0640
+
+7. Ensure correct permissions of /var/lib/rancher/rke2/server
+cd /var/lib/rancher/rke2/server
+ls -l 
+
+all owners are root:root
+
+The following directories are set to 0700
+cred
+db
+tls 
+
+The following directories are set to 0750
+manifests 
+logs 
+
+The following file is set to 0600
+token 
+
+8. Ensure the RKE2 Server configuration file on all RKE2 Server hosts contain the following:
+(cat /etc/rancher/rke2/config.yaml)
+write-kubeconfig-mode: "0600"
+
+If any of the permissions specified above do not match the required level, this is a finding.</check-content></check></Rule></Group><Group id="V-254565"><title>SRG-APP-000141-CTR-000315</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254565r954822_rule" weight="10.0" severity="medium"><version>CNTR-R2-000550</version><title>Rancher RKE2 must be configured with only essential configurations.</title><description>&lt;VulnDiscussion&gt;It is important to disable any unnecessary components to reduce any potential attack surfaces. 
+
+RKE2 allows disabling the following components:
+- rke2-canal
+- rke2-coredns
+- rke2-ingress-nginx
+- rke2-kube-proxy
+- rke2-metrics-server
+
+If utilizing any of these components presents a security risk, or if any of the components are not required then they can be disabled by using the "disable" flag.
+
+If any of the components are not required, they can be disabled by using the "disable" flag.
+
+Satisfies: SRG-APP-000141-CTR-000315, SRG-APP-000384-CTR-000915&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><ident system="http://cyber.mil/cci">CCI-001764</ident><fixtext fixref="F-57998r918243_fix">Disable unnecessary RKE2 components.
+
+Edit the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, so that it contains a "disable" flag if any default RKE2 components are unnecessary. 
+
+Example:
+disable: rke2-canal
+disable: rke2-coredns
+disable: rke2-ingress-nginx
+disable: rke2-kube-proxy
+disable: rke2-metrics-server
+
+Once the configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-57998r918243_fix" /><check system="C-58049r918242_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure the RKE2 Server configuration file on all RKE2 Server hosts contains a "disable" flag only if there are default RKE2 components that need to be disabled. 
+
+If there are no default components that need to be disabled, this is not a finding.
+
+Run this command on the RKE2 Control Plane:
+cat /etc/rancher/rke2/config.yaml
+
+RKE2 allows disabling the following components. If any of the components are not required, they can be disabled:
+- rke2-canal
+- rke2-coredns
+- rke2-ingress-nginx
+- rke2-kube-proxy
+- rke2-metrics-server
+
+If services not in use are enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-254566"><title>SRG-APP-000142-CTR-000325</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254566r954824_rule" weight="10.0" severity="medium"><version>CNTR-R2-000580</version><title>Rancher RKE2 runtime must enforce ports, protocols, and services that adhere to the PPSM CAL.</title><description>&lt;VulnDiscussion&gt;Ports, protocols, and services within the RKE2 runtime must be controlled and conform to the PPSM CAL. Those ports, protocols, and services that fall outside the PPSM CAL must be blocked by the runtime. Instructions on the PPSM can be found in DOD Instruction 8551.01 Policy.
+
+RKE2 sets most ports and services configuration upon initiation; however, these ports can be changed after the fact to noncompliant configurations. It is important to verify core component configurations for compliance.
+
+API Server, Scheduler, Controller, ETCD, and User Pods should all be checked to ensure proper PPS configuration.
+
+Satisfies: SRG-APP-000142-CTR-000325, SRG-APP-000142-CTR-000330, SRG-APP-000383-CTR-000910&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><ident system="http://cyber.mil/cci">CCI-001762</ident><fixtext fixref="F-57999r940062_fix">Review the documentation covering how to set these PPSs and update this configuration file:
+
+/etc/rancher/rke2/config.yaml
+
+Once configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-57999r940062_fix" /><check system="C-58050r942451_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Check Ports, Protocols, and Services (PPS).
+Change to the /var/lib/rancher/rke2/agent/pod-manifests directory on the Kubernetes RKE2 Control Plane. 
+Run the command:
+grep kube-apiserver.yaml -I -insecure-port
+grep kube-apiserver.yaml -I -secure-port
+grep kube-apiserver.yaml -I -etcd-servers *
+
+Review findings against the most recent PPSM CAL:
+https://cyber.mil/ppsm/cal/
+
+Any manifest and namespace PPS or services configuration not in compliance with PPSM CAL or otherwise approved by the information system security officer (ISSO) is a finding.
+
+If there are any ports, protocols, and services in the system documentation not in compliance with the CAL PPSM or otherwise been approved by the ISSO, this is a finding. Any PPS not set in the system documentation is a finding.
+
+Verify API Server network boundary with the PPS associated with the CAL Assurance Categories. Any PPS not in compliance with the CAL Assurance Category requirements or otherwise approved by the ISSO is a finding.
+
+Review findings against the most recent PPSM CAL:
+https://cyber.mil/ppsm/cal/
+
+Running these commands individually will show what ports are currently configured to be used by each of the core components. Inspect this output and ensure only proper ports are being utilized. If any ports not defined as the proper ports are being used, this is a finding.
+
+/var/lib/rancher/rke2/bin/kubectl get po -n kube-system -l component=kube-controller-manager -o=jsonpath="{.items[*].spec.containers[*].args}"
+
+/var/lib/rancher/rke2/bin/kubectl get po -n kube-system -l component=kube-scheduler -o=jsonpath="{.items[*].spec.containers[*].args}"
+
+/var/lib/rancher/rke2/bin/kubectl get po -n kube-system -l component=kube-apiserver -o=jsonpath="{.items[*].spec.containers[*].args}" | grep tls-min-version
+
+Verify user pods:
+User pods will also need to be inspected to ensure compliance. This will need to be on a case-by-case basis.
+cat /var/lib/rancher/rke2/server/db/etcd/config
+If any ports not defined as the proper ports are being used or otherwise approved by the ISSO, this is a finding.</check-content></check></Rule></Group><Group id="V-254567"><title>SRG-APP-000171-CTR-000435</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254567r954864_rule" weight="10.0" severity="medium"><version>CNTR-R2-000800</version><title>Rancher RKE2 must store only cryptographic representations of passwords.</title><description>&lt;VulnDiscussion&gt;Secrets, such as passwords, keys, tokens, and certificates should not be stored as environment variables. These environment variables are accessible inside RKE2 by the "Get Pod" API call, and by any system, such as CI/CD pipeline, which has access to the definition file of the container. Secrets must be mounted from files or stored within password vaults.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000196</ident><fixtext fixref="F-58000r859270_fix">Any secrets stored as environment variables must be moved to the secret files with the proper protections and enforcements or placed within a password vault.</fixtext><fix id="F-58000r859270_fix" /><check system="C-58051r894460_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>On the RKE2 Control Plane, run the following commands:
+
+kubectl get pods -A
+kubectl get jobs -A
+kubectl get cronjobs -A
+
+This will output all running pods, jobs, and cronjobs. 
+
+Evaluate each of the above commands using the respective commands below:
+
+kubectl get pod -n &lt;namespace&gt; &lt;pod&gt; -o yaml
+kubectl get job -n &lt;namespace&gt; &lt;job&gt; -o yaml
+kubectl get cronjob -n &lt;namespace&gt; &lt;cronjob&gt; -o yaml
+
+If any contain sensitive values as environment variables, this is a finding.</check-content></check></Rule></Group><Group id="V-254568"><title>SRG-APP-000190-CTR-000500</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254568r954892_rule" weight="10.0" severity="medium"><version>CNTR-R2-000890</version><title>Rancher RKE2 must terminate all network connections associated with a communications session at the end of the session, or as follows: for in-band management sessions (privileged sessions), the session must be terminated after five minutes of inactivity.</title><description>&lt;VulnDiscussion&gt;Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. In addition, quickly terminating an idle session will also free up resources committed by the managed network element. 
+
+Terminating network connections associated with communications sessions includes, for example, de-allocating associated TCP/IP address/port pairs at the operating system level, or de-allocating networking assignments at the application level if multiple application sessions are using a single, operating-system-level network connection. This does not mean that the application terminates all sessions or network access; it only ends the inactive session and releases the resources associated with that session.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001133</ident><fixtext fixref="F-58001r894463_fix">Edit the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, to contain the following:
+
+kubelet-arg:
+- streaming-connection-idle-timeout=5m
+
+Once configuration file is updated, restart the RKE2 Agent. Run the command:
+systemctl restart rke2-agent</fixtext><fix id="F-58001r894463_fix" /><check system="C-58052r894462_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure streaming-connection-idle-timeout argument is set correctly.
+
+Run this command on each node:
+/bin/ps -ef | grep kubelet | grep -v grep
+
+If --streaming-connection-idle-timeout is set to &lt; "5m" or the parameter is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-254569"><title>SRG-APP-000233-CTR-000585</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254569r954934_rule" weight="10.0" severity="medium"><version>CNTR-R2-000940</version><title>Rancher RKE2 runtime must isolate security functions from nonsecurity functions.</title><description>&lt;VulnDiscussion&gt;RKE2 runs as isolated as possible.
+
+RKE2 is a container-based Kubernetes distribution. A container image is essentially a complete and executable version of an application, which relies only on the host's OS kernel. Running containers use resource isolation features in the OS kernel, such as cgroups in Linux, to run multiple independent containers on the same OS. Unless part of the core RKE2 system or configured explicitly, containers managed by RKE2 should not have access to host resources.
+
+Proper hardening of the surrounding environment is independent of RKE2 but ensures overall security stature.
+
+When Kubernetes launches a container, there are several mechanisms available to ensure complete deployments:
+- When a primary container process fails it is destroyed rebooted.
+- When Liveness checks fail for the container deployment it is destroyed rebooted.
+- If a readiness check fails at any point after the deployment the container is destroyed rebooted.
+- Kubernetes has the ability to rollback a deployment configuration to a previous state if a deployment fails.
+- Failover traffic to a working replica if any of the previous problems are encountered.
+
+System kernel is responsible for memory, disk, and task management. The kernel provides a gateway between the system hardware and software. Kubernetes requires kernel access to allocate resources to the Control Plane. Threat actors that penetrate the system kernel can inject malicious code or hijack the Kubernetes architecture. It is vital to implement protections through Kubernetes components to reduce the attack surface.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001084</ident><fixtext fixref="F-58002r859276_fix">Edit the Kubernetes Kubelet file etc/rancher/rke2/config.yaml on the RKE2 Control Plane and set the following:
+ --protect-kernel-defaults=true
+
+Once configuration file is updated, restart the RKE2 Agent. Run the command:
+systemctl restart rke2-agent</fixtext><fix id="F-58002r859276_fix" /><check system="C-58053r859275_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure protect-kernel-defaults argument is set correctly.
+
+Run this command on each node:
+/bin/ps -ef | grep kubelet | grep -v grep
+
+If --protect-kernel-defaults is not set to "true" or is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-254570"><title>SRG-APP-000243-CTR-000600</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254570r954946_rule" weight="10.0" severity="medium"><version>CNTR-R2-000970</version><title>Rancher RKE2 runtime must maintain separate execution domains for each container by assigning each container a separate address space to prevent unauthorized and unintended information transfer via shared system resources.</title><description>&lt;VulnDiscussion&gt;Separating user functionality from management functionality is a requirement for all the components within the Kubernetes Control Plane. Without the separation, users may have access to management functions that can degrade the Kubernetes architecture and the services being offered, and can offer a method to bypass testing and validation of functions before introduced into a production environment.
+
+Satisfies: SRG-APP-000243-CTR-000600, SRG-APP-000431-CTR-001065, SRG-APP-000211-CTR-000530, SRG-APP-000243-CTR-000595&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001082</ident><ident system="http://cyber.mil/cci">CCI-001090</ident><ident system="http://cyber.mil/cci">CCI-002530</ident><fixtext fixref="F-58003r940065_fix">System namespaces are reserved and isolated.
+
+A resource cannot move to a new namespace; the resource must be deleted and recreated in the new namespace.
+
+kubectl delete &lt;resource_type&gt; &lt;resource_name&gt;
+kubectl create -f &lt;resource.yaml&gt; --namespace=&lt;user_created_namespace&gt;</fixtext><fix id="F-58003r940065_fix" /><check system="C-58054r942452_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Audit logging and policies:
+
+Edit the /etc/rancher/rke2/config.yaml file and enable the audit policy:
+audit-policy-file: /etc/rancher/rke2/audit-policy.yaml
+
+1. Edit the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, so that it contains required configuration. 
+
+--audit-policy-file= Path to the file that defines the audit policy configuration. (Example: /etc/rancher/rke2/audit-policy.yaml)
+--audit-log-mode=blocking-strict
+
+If the configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server
+
+2. Edit the RKE2 Server configuration file on all RKE2 Server hosts, located at /etc/rancher/rke2/config.yaml, so that it contains required configuration.
+
+If using RKE2 v1.24 or older, set:
+
+profile: cis-1.6
+
+If using RKE2 v1.25 or newer, set:
+
+profile: cis-1.23
+
+If the configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server
+
+3. Edit the audit policy file, by default located at /etc/rancher/rke2/audit-policy.yaml to look like below:
+
+apiVersion: audit.k8s.io/v1
+kind: Policy
+metadata:
+  name: rke2-audit-policy
+rules:
+  - level: Metadata
+    resources:
+    - group: ""
+      resources: ["secrets"]
+  - level: RequestResponse
+    resources:
+    - group: ""
+      resources: ["*"]
+
+If configuration files are updated on a host, restart the RKE2 Service. Run the command "systemctl restart rke2-server" for server hosts and "systemctl restart rke2-agent" for agent hosts.</check-content></check></Rule></Group><Group id="V-254571"><title>SRG-APP-000340-CTR-000770</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254571r955082_rule" weight="10.0" severity="medium"><version>CNTR-R2-001130</version><title>Rancher RKE2 must prevent nonprivileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures.</title><description>&lt;VulnDiscussion&gt;Admission controllers intercept requests to the Kubernetes API before an object is instantiated. Enabling the admissions webhook allows for Kubernetes to apply policies against objects that are to be created, read, updated or deleted.
+
+Admissions controllers can be used for:
+- Prevent pod’s ability to run privileged containers
+- Prevent pod’s ability to use privileged escalation
+- Controlling pod’s access to volume types
+- Controlling pod’s access to host file system
+- Controlling pod’s usage of host networking objects and configuration
+
+Satisfies: SRG-APP-000340-CTR-000770, SRG-APP-000342-CTR-000775&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002233</ident><ident system="http://cyber.mil/cci">CCI-002235</ident><fixtext fixref="F-58004r918246_fix">If using RKE2 v1.24 or older:
+
+On each Control Plane node, create the following policy to a file called restricted.yml.
+
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+name: restricted
+annotations:
+seccomp.security.alpha.kubernetes.io/allowedProfileNames: 'docker/default,runtime/default'
+apparmor.security.beta.kubernetes.io/allowedProfileNames: 'runtime/default'
+seccomp.security.alpha.kubernetes.io/defaultProfileName: 'runtime/default'
+apparmor.security.beta.kubernetes.io/defaultProfileName: 'runtime/default'
+spec:
+privileged: false
+#Required to prevent escalations to root.
+allowPrivilegeEscalation: false
+#This is redundant with non-root + disallow privilege escalation,
+# but we can provide it for defense in depth.
+requiredDropCapabilities:
+- ALL
+# Allow core volume types.
+volumes:
+- 'configMap'
+- 'emptyDir'
+- 'projected'
+- 'secret'
+- 'downwardAPI'
+# Assume that persistentVolumes set up by the cluster admin are safe to use.
+- 'persistentVolumeClaim'
+hostNetwork: false
+hostIPC: false
+hostPID: false
+runAsUser:
+# Require the container to run without root privileges.
+rule: 'MustRunAsNonRoot'
+seLinux:
+# This policy assumes the nodes are using AppArmor rather than SELinux.
+rule: 'RunAsAny'
+supplementalGroups:
+rule: 'MustRunAs'
+ranges:
+# Forbid adding the root group.
+- min: 1
+max: 65535
+fsGroup:
+rule: 'MustRunAs'
+ranges:
+# Forbid adding the root group.
+- min: 1
+max: 65535
+readOnlyRootFilesystem: false
+
+To implement the policy, run the command:
+
+kubectl create -f restricted.yml"
+
+If using RKE v1.25 or newer:
+
+On each Control Plane node, create the file "/etc/rancher/rke2/rke2-pss.yaml" and add the following content:
+
+apiVersion: apiserver.config.k8s.io/v1
+kind: AdmissionConfiguration
+plugins:
+- name: PodSecurity
+  configuration:
+    apiVersion: pod-security.admission.config.k8s.io/v1beta1
+    kind: PodSecurityConfiguration
+    defaults:
+      enforce: "restricted"
+      enforce-version: "latest"
+      audit: "restricted"
+      audit-version: "latest"
+      warn: "restricted"
+      warn-version: "latest"
+    exemptions:
+      usernames: []
+      runtimeClasses: []
+      namespaces: [kube-system, cis-operator-system, tigera-operator]
+
+Ensure the namespace exemptions contain only namespaces requiring access to capabilities outside of the restricted settings above.
+
+Once the file is created, restart the Control Plane nodes with:
+
+systemctl restart rke2-server</fixtext><fix id="F-58004r918246_fix" /><check system="C-58055r918245_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>If using RKE2 v1.24 or older:
+
+On the Server Node, run the command:
+
+kubectl get podsecuritypolicy
+
+For any pod security policies listed, with the exception of system-unrestricted-psp (which is required for core Kubernetes functionality), edit the policy with the command:
+
+kubectl edit podsecuritypolicy policyname
+Where policyname is the name of the policy
+
+Review the runAsUser, supplementalGroups, and fsGroup sections of the policy.
+
+If any of these sections are missing, this is a finding.
+
+If the rule within the runAsUser section is not set to "MustRunAsNonRoot", this is a finding.
+
+If the ranges within the supplementalGroups section has min set to "0" or min is missing, this is a finding.
+
+If the ranges within the fsGroup section have a min set to "0" or the min is missing, this is a finding.
+
+If using RKE2 v1.25 or newer:
+
+On each controlplane node, validate that the file "/etc/rancher/rke2/rke2-pss.yaml" exists and the default configuration settings match the following:
+
+    defaults:
+      audit: restricted
+      audit-version: latest
+      enforce: restricted
+      enforce-version: latest
+      warn: restricted
+      warn-version: latest
+
+If the configuration file differs from the above, this is a finding.</check-content></check></Rule></Group><Group id="V-254572"><title>SRG-APP-000378-CTR-000880</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254572r955575_rule" weight="10.0" severity="medium"><version>CNTR-R2-001270</version><title>Rancher RKE2 must prohibit the installation of patches, updates, and instantiation of container images without explicit privileged status.</title><description>&lt;VulnDiscussion&gt;Controlling access to those users and roles responsible for patching and updating RKE2 reduces the risk of untested or potentially malicious software from being installed within the platform. This access may be separate from the access required to install container images into the registry and those access requirements required to instantiate an image into a service. Explicit privileges (escalated or administrative privileges) provide the regular user with explicit capabilities and control that exceeds the rights of a regular user.
+
+Kubernetes uses the API Server to control communication to the other services that makeup Kubernetes. The use of authorizations and not the default of "AlwaysAllow" enables the Kubernetes functions control to only the groups that need them.
+
+To control access, the API server must have one of the following options set for the authorization mode:
+    --authorization-mode=ABAC Attribute-Based Access Control (ABAC) mode allows a user to configure policies using local files.
+    --authorization-mode=RBAC Role-based access control (RBAC) mode allows a user to create and store policies using the Kubernetes API.
+    --authorization-mode=Webhook
+WebHook is an HTTP callback mode that allows a user to manage authorization using a remote REST endpoint.
+    --authorization-mode=Node 
+Node authorization is a special-purpose authorization mode that specifically authorizes API requests made by kubelets.
+    --authorization-mode=AlwaysDeny 
+This flag blocks all requests. Use this flag only for testing.
+
+Satisfies: SRG-APP-000378-CTR-000880, SRG-APP-000378-CTR-000885&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001812</ident><fixtext fixref="F-58005r859285_fix">Edit the /var/lib/rancher/rke2/agent/pod-manifests/kube-apiserver.yaml file. 
+--authorization-mode=RBAC,Node
+
+Once configuration file is updated, restart the RKE2 Server. Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-58005r859285_fix" /><check system="C-58056r859284_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Ensure authorization-mode is set correctly in the apiserver.
+
+Run this command on the RKE2 Control Plane:
+/bin/ps -ef | grep kube-apiserver | grep -v grep
+
+If  --authorization-mode is not set to "RBAC,Node" or is not configured, this is a finding.
+(By default, RKE2 sets Node,RBAC as the parameter to the --authorization-mode argument.)</check-content></check></Rule></Group><Group id="V-254573"><title>SRG-APP-000429-CTR-001060</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254573r956028_rule" weight="10.0" severity="high"><version>CNTR-R2-001500</version><title>Rancher RKE2 keystore must implement encryption to prevent unauthorized disclosure of information at rest within Rancher RKE2.</title><description>&lt;VulnDiscussion&gt;Encrypting secrets at rest in etcd.
+
+By default, RKE2 will create an encryption key and configuration file and pass these to the Kubernetes API server. The result is that RKE2 automatically encrypts Kubernetes Secret objects when writing them to etcd.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002476</ident><fixtext fixref="F-58006r918248_fix">Enable secrets encryption.
+
+Edit the RKE2 configuration file on all RKE2 servers, located at /etc/rancher/rke2/config.yaml, so that it contains:
+
+secrets-encryption: true</fixtext><fix id="F-58006r918248_fix" /><check system="C-58057r859287_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Review the encryption configuration file.
+
+As root or with root permissions, run the following command:
+view /var/lib/rancher/rke2/server/cred/encryption-config.json
+
+Ensure the RKE2 configuration file on all RKE2 servers, located at /etc/rancher/rke2/config.yaml, does NOT contain:
+
+secrets-encryption: false
+
+If secrets encryption is turned off, this is a finding.</check-content></check></Rule></Group><Group id="V-254574"><title>SRG-APP-000454-CTR-001110</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254574r955723_rule" weight="10.0" severity="medium"><version>CNTR-R2-001580</version><title>Rancher RKE2 must remove old components after updated versions have been installed.</title><description>&lt;VulnDiscussion&gt;Previous versions of Rancher RKE2 components that are not removed after updates have been installed may be exploited by adversaries by causing older components to execute which contain vulnerabilities. When these components are deleted, the likelihood of this happening is removed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002617</ident><fixtext fixref="F-58007r859291_fix">Remove any old pods that are using older images. On the RKE2 Control Plane, run the command:
+
+kubectl delete pod podname
+(Note: "podname" is the name of the pod to delete.)
+
+Run the command:
+systemctl restart rke2-server</fixtext><fix id="F-58007r859291_fix" /><check system="C-58058r859290_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>To view all pods and the images used to create the pods, from the RKE2 Control Plane, run the following command:
+
+kubectl get pods --all-namespaces -o jsonpath="{..image}" | \
+tr -s '[[:space:]]' '\n' | \
+sort | \
+uniq -c
+
+Review the images used for pods running within Kubernetes.
+If there are multiple versions of the same image, this is a finding.</check-content></check></Rule></Group><Group id="V-254575"><title>SRG-APP-000456-CTR-001125</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254575r955727_rule" weight="10.0" severity="medium"><version>CNTR-R2-001620</version><title>Rancher RKE2 registry must contain the latest images with most recent updates and execute within Rancher RKE2 runtime as authorized by IAVM, CTOs, DTMs, and STIGs.</title><description>&lt;VulnDiscussion&gt;Software supporting RKE2, images in the registry must stay up to date with the latest patches, service packs, and hot fixes. Not updating RKE2 and container images will expose the organization to vulnerabilities.
+
+Flaws discovered during security assessments, continuous monitoring, incident response activities, or information system error handling must also be addressed expeditiously.
+
+Organization-defined time periods for updating security-relevant container platform components may vary based on a variety of factors including, for example, the security category of the information system or the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw).
+
+This requirement will apply to software patch management solutions used to install patches across the enclave and to applications themselves that are not part of that patch management solution. For example, many browsers today provide the capability to install their own patch software. Patch criticality, as well as system criticality will vary. Therefore, the tactical situations regarding the patch management process will also vary. This means that the time period utilized must be a configurable parameter. Time frames for application of security-relevant software updates may be dependent upon the Information Assurance Vulnerability Management (IAVM) process.
+
+RKE2 components will be configured to check for and install security-relevant software updates within an identified time period from the availability of the update. RKE2 registry will ensure the images are current. The specific time period will be defined by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target RGS RKE2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>RGS RKE2</dc:subject><dc:identifier>5486</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002605</ident><fixtext fixref="F-58008r859294_fix">Upgrade RKE2 to the supported version. Institute and adhere to the policies and procedures to ensure that patches are consistently applied within the time allowed.</fixtext><fix id="F-58008r859294_fix" /><check system="C-58059r918250_chk"><check-content-ref href="RGS_RKE2_STIG.xml" name="M" /><check-content>Authenticate on the RKE2 Control Plane.
+
+Verify all nodes in the cluster are running a supported version of RKE2 Kubernetes. 
+Run command:
+
+kubectl get nodes
+
+If any nodes are running an unsupported version of RKE2 Kubernetes, this is a finding.
+
+Verify all images running in the cluster are patched to the latest version.
+Run command:
+
+kubectl get pods --all-namespaces -o jsonpath="{.items[*].spec.containers[*].image}" | tr -s '[[:space:]]' '\n' | sort | uniq -c
+
+If any images running in the cluster are not the latest version, this is a finding.
+
+Note: Kubernetes release support levels can be found at: https://kubernetes.io/releases/</check-content></check></Rule></Group></Benchmark>
