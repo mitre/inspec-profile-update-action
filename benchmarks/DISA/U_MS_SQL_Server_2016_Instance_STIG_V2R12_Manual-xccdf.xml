@@ -3230,27 +3230,32 @@ For example, displaying asterisks when a user types in a password or PIN, is an 
 
 Database applications may allow for entry of the account name and password as a visible parameter of the application execution command. This practice must be prohibited and disabled to prevent shoulder surfing.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS SQL Server 2016 Instance</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS SQL Server 2016 Instance</dc:subject><dc:identifier>3993</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-94063</ident><ident system="http://cyber.mil/legacy">V-79357</ident><ident system="http://cyber.mil/cci">CCI-000206</ident><fixtext fixref="F-15261r313922_fix">Configure or modify applications to prohibit display of passwords in clear text.</fixtext><fix id="F-15261r313922_fix" /><check system="C-15263r313921_chk"><check-content-ref href="MS_SQL_Server_2016_Instance_STIG.xml" name="M" /><check-content>Determine whether any applications that access the database allow for entry of the account name and password, or PIN.
 
-If any do, determine whether these applications obfuscate authentication data; if they do not, this is a finding.</check-content></check></Rule></Group><Group id="V-259739"><title>SRG-APP-000456-DB-000400</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259739r947239_rule" weight="10.0" severity="high"><version>SQL6-D0-018300</version><title>Microsoft SQL Server products must be a version supported by the vendor.</title><description>&lt;VulnDiscussion&gt;Unsupported commercial and database systems should not be used because fixes to newly identified bugs will not be implemented by the vendor. The lack of support can result in potential vulnerabilities.
+If any do, determine whether these applications obfuscate authentication data; if they do not, this is a finding.</check-content></check></Rule></Group><Group id="V-259739"><title>SRG-APP-000456-DB-000400</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259739r972858_rule" weight="10.0" severity="high"><version>SQL6-D0-018300</version><title>Microsoft SQL Server products must be a version supported by the vendor.</title><description>&lt;VulnDiscussion&gt;Unsupported commercial and database systems should not be used because fixes to newly identified bugs will not be implemented by the vendor. The lack of support can result in potential vulnerabilities.
 
 Systems at unsupported servicing levels or releases will not receive security updates for new vulnerabilities, which leaves them subject to exploitation.
 
-When maintenance updates and patches are no longer available, the database software is no longer considered supported and should be upgraded or decommissioned.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS SQL Server 2016 Instance</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS SQL Server 2016 Instance</dc:subject><dc:identifier>3993</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-003376</ident><fixtext fixref="F-54571r947239_fix">Remove or decommission all unsupported software products.
+When maintenance updates and patches are no longer available, the database software is no longer considered supported and should be upgraded or decommissioned.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS SQL Server 2016 Instance</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS SQL Server 2016 Instance</dc:subject><dc:identifier>3993</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-003376</ident><fixtext fixref="F-54571r972857_fix">Remove or decommission all unsupported software products.
 
 Upgrade unsupported DBMS or unsupported components to a supported version of the product. 
 
-Oracle supported platforms can be found here:
-https://www.mysql.com/support/supportedplatforms/database.html</fixtext><fix id="F-54571r947239_fix" /><check system="C-54617r947238_chk"><check-content-ref href="MS_SQL_Server_2016_Instance_STIG.xml" name="M" /><check-content>Review the version and release information.
+More information can be found here:
+https://learn.microsoft.com/en-us/sql/sql-server/end-of-support/sql-server-end-of-support-overview?view=sql-server-ver16</fixtext><fix id="F-54571r972857_fix" /><check system="C-54617r972856_chk"><check-content-ref href="MS_SQL_Server_2016_Instance_STIG.xml" name="M" /><check-content>Review the system documentation and interview the database administrator.
 
-To check the version of the installed MySQL, run the following SQL statement:
+Identify all database software components.
 
-select @@version;
+Review the version and release information.
 
-The result will show the version. For example:
-8.0.22-commercial
+Verify the SQL Server version via one of the following methods: 
+Connect to the server by using Object Explorer in SQL Server Management Studio. After Object Explorer is connected, it will show the version information in parentheses, together with the user name that is used to connect to the specific instance of SQL Server.
+
+Or, from SQL Server Management Studio:
+
+SELECT @@VERSION;
+
+More information for finding the version is available at the following link:
+https://learn.microsoft.com/en-us/troubleshoot/sql/releases/find-my-sql-version
 
 Access the vendor website or use other means to verify the version is still supported.
-Oracle lifetime support: 
-https://www.oracle.com/us/assets/lifetime-support-technology-069183.pdf
-Scroll down to Oracle MySQL Releases (approximately page 28).
+https://learn.microsoft.com/en-us/lifecycle/products/sql-server-2016
 
-If the Oracle MySQL version or any of the software components are not supported by the vendor, this is a finding.</check-content></check></Rule></Group></Benchmark>
+If the installed version or any of the software components are not supported by the vendor, this is a finding.</check-content></check></Rule></Group></Benchmark>
