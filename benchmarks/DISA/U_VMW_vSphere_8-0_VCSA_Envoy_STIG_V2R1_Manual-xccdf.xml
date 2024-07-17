@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="VMW_vSphere_8-0_VCSA_Envoy_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-07-11">accepted</status><title>VMware vSphere 8.0 vCenter Appliance Envoy Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 01 Aug 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>2</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259161" selected="true" /><select idref="V-259162" selected="true" /><select idref="V-259163" selected="true" /><select idref="V-259164" selected="true" /><select idref="V-259165" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259161" selected="true" /><select idref="V-259162" selected="true" /><select idref="V-259163" selected="true" /><select idref="V-259164" selected="true" /><select idref="V-259165" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259161" selected="true" /><select idref="V-259162" selected="true" /><select idref="V-259163" selected="true" /><select idref="V-259164" selected="true" /><select idref="V-259165" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259161" selected="true" /><select idref="V-259162" selected="true" /><select idref="V-259163" selected="true" /><select idref="V-259164" selected="true" /><select idref="V-259165" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259161" selected="true" /><select idref="V-259162" selected="true" /><select idref="V-259163" selected="true" /><select idref="V-259164" selected="true" /><select idref="V-259165" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259161" selected="true" /><select idref="V-259162" selected="true" /><select idref="V-259163" selected="true" /><select idref="V-259164" selected="true" /><select idref="V-259165" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259161" selected="true" /><select idref="V-259162" selected="true" /><select idref="V-259163" selected="true" /><select idref="V-259164" selected="true" /><select idref="V-259165" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259161" selected="true" /><select idref="V-259162" selected="true" /><select idref="V-259163" selected="true" /><select idref="V-259164" selected="true" /><select idref="V-259165" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259161" selected="true" /><select idref="V-259162" selected="true" /><select idref="V-259163" selected="true" /><select idref="V-259164" selected="true" /><select idref="V-259165" selected="true" /></Profile><Group id="V-259161"><title>SRG-APP-000118-WSR-000068</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259161r960930_rule" weight="10.0" severity="medium"><version>VCRP-80-000019</version><title>The vCenter Envoy and Rhttpproxy service log files permissions must be set correctly.</title><description>&lt;VulnDiscussion&gt;Log data is essential in the investigation of events. If log data were to become compromised, then competent forensic analysis and discovery of the true source of potentially malicious system activity would be difficult, if not impossible, to achieve. In addition, access to log records provides information an attacker could potentially use to their advantage since each event record might contain communication ports, protocols, services, trust relationships, usernames, etc.
+
+The web server must protect the log data from unauthorized read, write, copy, etc. This can be done by the web server if the web server is also doing the logging function. The web server may also use an external log system. In either case, the logs must be protected from access by nonprivileged users.
+
+Satisfies: SRG-APP-000118-WSR-000068, SRG-APP-000119-WSR-000069, SRG-APP-000120-WSR-000070&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Envoy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Envoy</dc:subject><dc:identifier>5572</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000162</ident><ident system="http://cyber.mil/cci">CCI-000163</ident><ident system="http://cyber.mil/cci">CCI-000164</ident><fixtext fixref="F-62810r935386_fix">At the command prompt, run the following commands for rhttpproxy log files:
+
+# chmod o-w &lt;file&gt;
+# chown rhttpproxy:rhttpproxy &lt;file&gt;
+
+or
+
+At the command prompt, run the following commands for envoy log files:
+
+# chmod o-w &lt;file&gt;
+# chown envoy:envoy &lt;file&gt;</fixtext><fix id="F-62810r935386_fix" /><check system="C-62901r935385_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Envoy_STIG.xml" name="M" /><check-content>At the command prompt, run the following commands:
+
+# find /var/log/vmware/rhttpproxy/ -xdev -type f -a '(' -perm -o+w -o -not -user rhttpproxy -o -not -group rhttpproxy ')' -exec ls -ld {} \;
+# find /var/log/vmware/envoy/ -xdev -type f -a '(' -perm -o+w -o -not -user envoy -o -not -group envoy ')' -exec ls -ld {} \;
+
+If any files are returned, this is a finding.</check-content></check></Rule></Group><Group id="V-259162"><title>SRG-APP-000176-WSR-000096</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259162r961041_rule" weight="10.0" severity="medium"><version>VCRP-80-000040</version><title>The vCenter Envoy service private key file must be protected from unauthorized access.</title><description>&lt;VulnDiscussion&gt;Envoy's private key is used to prove the identity of the server to clients and securely exchange the shared secret key used to encrypt communications between the web server and clients.
+ 
+By gaining access to the private key, an attacker can pretend to be an authorized server and decrypt the Transport Layer Security (TLS) traffic between a client and the web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Envoy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Envoy</dc:subject><dc:identifier>5572</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000186</ident><fixtext fixref="F-62811r935389_fix">At the command prompt, run the following commands:
+
+# chmod 600 /etc/vmware-rhttpproxy/ssl/rui.key
+# chown rhttpproxy:rhttpproxy /etc/vmware-rhttpproxy/ssl/rui.key</fixtext><fix id="F-62811r935389_fix" /><check system="C-62902r935388_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Envoy_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# stat -c "%n permissions are %a, is owned by %U and group owned by %G" /etc/vmware-rhttpproxy/ssl/rui.key
+
+Expected result:
+
+/etc/vmware-rhttpproxy/ssl/rui.key permissions are 600, is owned by rhttpproxy and group owned by rhttpproxy
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-259163"><title>SRG-APP-000358-WSR-000063</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259163r961395_rule" weight="10.0" severity="medium"><version>VCRP-80-000073</version><title>The vCenter Rhttpproxy service log files must be sent to a central log server.</title><description>&lt;VulnDiscussion&gt;Writing events to a centralized management audit system offers many benefits to the enterprise over having dispersed logs. Centralized management of audit records and logs provides for efficiency in maintenance and management of records, enterprise analysis of events, and backup and archiving of event records enterprise-wide. The web server and related components are required to be capable of writing logs to centralized audit log servers.
+
+Satisfies: SRG-APP-000358-WSR-000063, SRG-APP-000125-WSR-000071&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Envoy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Envoy</dc:subject><dc:identifier>5572</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001348</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-62812r935392_fix">Navigate to and open:
+
+/etc/vmware-syslog/vmware-services-rhttpproxy.conf
+
+Create the file if it does not exist.
+
+Set the contents of the file as follows:
+
+#rhttpproxy log
+input(type="imfile"
+      File="/var/log/vmware/rhttpproxy/rhttpproxy.log"
+      Tag="rhttpproxy-main"
+      Severity="info"
+      Facility="local0")
+#rhttpproxy init stdout
+input(type="imfile"
+      File="/var/log/vmware/rhttpproxy/rproxy_init.log.stdout"
+      Tag="rhttpproxy-stdout"
+      Severity="info"
+      Facility="local0")
+#rhttpproxy init stderr
+input(type="imfile"
+      File="/var/log/vmware/rhttpproxy/rproxy_init.log.stderr"
+      Tag="rhttpproxy-stderr"
+      Severity="info"
+      Facility="local0")</fixtext><fix id="F-62812r935392_fix" /><check system="C-62903r935391_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Envoy_STIG.xml" name="M" /><check-content>By default, there is a vmware-services-rhttpproxy.conf rsyslog configuration file that includes the service logs when syslog is configured on vCenter, but it must be verified.
+
+At the command prompt, run the following command:
+
+# cat /etc/vmware-syslog/vmware-services-rhttpproxy.conf
+
+Expected result:
+
+#rhttpproxy log
+input(type="imfile"
+      File="/var/log/vmware/rhttpproxy/rhttpproxy.log"
+      Tag="rhttpproxy-main"
+      Severity="info"
+      Facility="local0")
+#rhttpproxy init stdout
+input(type="imfile"
+      File="/var/log/vmware/rhttpproxy/rproxy_init.log.stdout"
+      Tag="rhttpproxy-stdout"
+      Severity="info"
+      Facility="local0")
+#rhttpproxy init stderr
+input(type="imfile"
+      File="/var/log/vmware/rhttpproxy/rproxy_init.log.stderr"
+      Tag="rhttpproxy-stderr"
+      Severity="info"
+      Facility="local0")
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-259164"><title>SRG-APP-000358-WSR-000063</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259164r961395_rule" weight="10.0" severity="medium"><version>VCRP-80-000097</version><title>The vCenter Envoy service log files must be sent to a central log server.</title><description>&lt;VulnDiscussion&gt;Writing events to a centralized management audit system offers many benefits to the enterprise over having dispersed logs. Centralized management of audit records and logs provides for efficiency in maintenance and management of records, enterprise analysis of events, and backup and archiving of event records enterprise-wide. The web server and related components are required to be capable of writing logs to centralized audit log servers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Envoy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Envoy</dc:subject><dc:identifier>5572</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-62813r935395_fix">Navigate to and open:
+
+/etc/vmware-syslog/vmware-services-envoy.conf
+
+Create the file if it does not exist.
+
+Set the contents of the file as follows:
+
+#envoy service log
+input(type="imfile"
+      File="/var/log/vmware/envoy/envoy.log"
+      Tag="envoy-main"
+      Severity="info"
+      Facility="local0")
+#envoy access log
+input(type="imfile"
+      File="/var/log/vmware/envoy/envoy-access.log"
+      Tag="envoy-access"
+      Severity="info"
+      Facility="local0")
+#envoy init stdout
+input(type="imfile"
+      File="/var/log/vmware/envoy/envoy_init.log.stdout"
+      Tag="envoy-stdout"
+      Severity="info"
+      Facility="local0")
+#envoy init stderr
+input(type="imfile"
+      File="/var/log/vmware/envoy/envoy_init.log.stderr"
+      Tag="envoy-stderr"
+      Severity="info"
+      Facility="local0")</fixtext><fix id="F-62813r935395_fix" /><check system="C-62904r935394_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Envoy_STIG.xml" name="M" /><check-content>By default, there is a vmware-services-envoy.conf rsyslog configuration file that includes the service logs when syslog is configured on vCenter, but it must be verified.
+
+At the command prompt, run the following command:
+
+# cat /etc/vmware-syslog/vmware-services-envoy.conf
+
+Expected result:
+
+#envoy service log
+input(type="imfile"
+      File="/var/log/vmware/envoy/envoy.log"
+      Tag="envoy-main"
+      Severity="info"
+      Facility="local0")
+#envoy access log
+input(type="imfile"
+      File="/var/log/vmware/envoy/envoy-access.log"
+      Tag="envoy-access"
+      Severity="info"
+      Facility="local0")
+#envoy init stdout
+input(type="imfile"
+      File="/var/log/vmware/envoy/envoy_init.log.stdout"
+      Tag="envoy-stdout"
+      Severity="info"
+      Facility="local0")
+#envoy init stderr
+input(type="imfile"
+      File="/var/log/vmware/envoy/envoy_init.log.stderr"
+      Tag="envoy-stderr"
+      Severity="info"
+      Facility="local0")
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-259165"><title>SRG-APP-000001-WSR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259165r960735_rule" weight="10.0" severity="medium"><version>VCRP-80-000098</version><title>The vCenter Envoy service must set a limit on remote connections.</title><description>&lt;VulnDiscussion&gt;Envoy client connections must be limited to preserve system resources and continue servicing connections without interruption. Without a limit set, the system would be vulnerable to a trivial denial-of-service attack where connections are created en masse and vCenter resources are entirely consumed.
+
+Envoy comes hard coded with a tested and supported value for "maxRemoteHttpsConnections" and "maxRemoteHttpConnections" that must be verified and maintained.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Envoy</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Envoy</dc:subject><dc:identifier>5572</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-62814r935398_fix">Navigate to and open:
+
+/etc/vmware-rhttpproxy/config.xml
+
+Locate the &lt;config&gt;/&lt;envoy&gt;/&lt;L4Filter&gt; block and configure it as follows:
+
+&lt;maxRemoteHttpsConnections&gt;2048&lt;/maxRemoteHttpsConnections&gt;
+&lt;maxRemoteHttpConnections&gt;2048&lt;/maxRemoteHttpConnections&gt;
+
+Restart the service for changes to take effect.
+
+# vmon-cli --restart rhttpproxy</fixtext><fix id="F-62814r935398_fix" /><check system="C-62905r935397_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Envoy_STIG.xml" name="M" /><check-content>At the command prompt, run the following commands:
+
+# xmllint --xpath '/config/envoy/L4Filter/maxRemoteHttpsConnections/text()' /etc/vmware-rhttpproxy/config.xml
+# xmllint --xpath '/config/envoy/L4Filter/maxRemoteHttpConnections/text()' /etc/vmware-rhttpproxy/config.xml
+
+Example result:
+
+2048
+
+or
+
+XPath set is empty
+
+If the output is not "2048" or "XPath set it empty", this is a finding.
+
+Note: If "XPath set is empty" is returned the default values are in effect and is 2048.</check-content></check></Rule></Group></Benchmark>

@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="VMW_vSphere_8-0_VCSA_Lookup_Svc_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-07-11">accepted</status><title>VMware vSphere 8.0 vCenter Appliance Lookup Service Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 01 Aug 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>2</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259037" selected="true" /><select idref="V-259038" selected="true" /><select idref="V-259039" selected="true" /><select idref="V-259040" selected="true" /><select idref="V-259041" selected="true" /><select idref="V-259042" selected="true" /><select idref="V-259043" selected="true" /><select idref="V-259044" selected="true" /><select idref="V-259045" selected="true" /><select idref="V-259046" selected="true" /><select idref="V-259047" selected="true" /><select idref="V-259048" selected="true" /><select idref="V-259049" selected="true" /><select idref="V-259050" selected="true" /><select idref="V-259051" selected="true" /><select idref="V-259052" selected="true" /><select idref="V-259053" selected="true" /><select idref="V-259054" selected="true" /><select idref="V-259055" selected="true" /><select idref="V-259056" selected="true" /><select idref="V-259057" selected="true" /><select idref="V-259058" selected="true" /><select idref="V-259059" selected="true" /><select idref="V-259060" selected="true" /><select idref="V-259061" selected="true" /><select idref="V-259062" selected="true" /><select idref="V-259063" selected="true" /><select idref="V-259064" selected="true" /><select idref="V-259065" selected="true" /><select idref="V-259066" selected="true" /><select idref="V-259067" selected="true" /><select idref="V-259068" selected="true" /><select idref="V-259069" selected="true" /><select idref="V-259070" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259037" selected="true" /><select idref="V-259038" selected="true" /><select idref="V-259039" selected="true" /><select idref="V-259040" selected="true" /><select idref="V-259041" selected="true" /><select idref="V-259042" selected="true" /><select idref="V-259043" selected="true" /><select idref="V-259044" selected="true" /><select idref="V-259045" selected="true" /><select idref="V-259046" selected="true" /><select idref="V-259047" selected="true" /><select idref="V-259048" selected="true" /><select idref="V-259049" selected="true" /><select idref="V-259050" selected="true" /><select idref="V-259051" selected="true" /><select idref="V-259052" selected="true" /><select idref="V-259053" selected="true" /><select idref="V-259054" selected="true" /><select idref="V-259055" selected="true" /><select idref="V-259056" selected="true" /><select idref="V-259057" selected="true" /><select idref="V-259058" selected="true" /><select idref="V-259059" selected="true" /><select idref="V-259060" selected="true" /><select idref="V-259061" selected="true" /><select idref="V-259062" selected="true" /><select idref="V-259063" selected="true" /><select idref="V-259064" selected="true" /><select idref="V-259065" selected="true" /><select idref="V-259066" selected="true" /><select idref="V-259067" selected="true" /><select idref="V-259068" selected="true" /><select idref="V-259069" selected="true" /><select idref="V-259070" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259037" selected="true" /><select idref="V-259038" selected="true" /><select idref="V-259039" selected="true" /><select idref="V-259040" selected="true" /><select idref="V-259041" selected="true" /><select idref="V-259042" selected="true" /><select idref="V-259043" selected="true" /><select idref="V-259044" selected="true" /><select idref="V-259045" selected="true" /><select idref="V-259046" selected="true" /><select idref="V-259047" selected="true" /><select idref="V-259048" selected="true" /><select idref="V-259049" selected="true" /><select idref="V-259050" selected="true" /><select idref="V-259051" selected="true" /><select idref="V-259052" selected="true" /><select idref="V-259053" selected="true" /><select idref="V-259054" selected="true" /><select idref="V-259055" selected="true" /><select idref="V-259056" selected="true" /><select idref="V-259057" selected="true" /><select idref="V-259058" selected="true" /><select idref="V-259059" selected="true" /><select idref="V-259060" selected="true" /><select idref="V-259061" selected="true" /><select idref="V-259062" selected="true" /><select idref="V-259063" selected="true" /><select idref="V-259064" selected="true" /><select idref="V-259065" selected="true" /><select idref="V-259066" selected="true" /><select idref="V-259067" selected="true" /><select idref="V-259068" selected="true" /><select idref="V-259069" selected="true" /><select idref="V-259070" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259037" selected="true" /><select idref="V-259038" selected="true" /><select idref="V-259039" selected="true" /><select idref="V-259040" selected="true" /><select idref="V-259041" selected="true" /><select idref="V-259042" selected="true" /><select idref="V-259043" selected="true" /><select idref="V-259044" selected="true" /><select idref="V-259045" selected="true" /><select idref="V-259046" selected="true" /><select idref="V-259047" selected="true" /><select idref="V-259048" selected="true" /><select idref="V-259049" selected="true" /><select idref="V-259050" selected="true" /><select idref="V-259051" selected="true" /><select idref="V-259052" selected="true" /><select idref="V-259053" selected="true" /><select idref="V-259054" selected="true" /><select idref="V-259055" selected="true" /><select idref="V-259056" selected="true" /><select idref="V-259057" selected="true" /><select idref="V-259058" selected="true" /><select idref="V-259059" selected="true" /><select idref="V-259060" selected="true" /><select idref="V-259061" selected="true" /><select idref="V-259062" selected="true" /><select idref="V-259063" selected="true" /><select idref="V-259064" selected="true" /><select idref="V-259065" selected="true" /><select idref="V-259066" selected="true" /><select idref="V-259067" selected="true" /><select idref="V-259068" selected="true" /><select idref="V-259069" selected="true" /><select idref="V-259070" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259037" selected="true" /><select idref="V-259038" selected="true" /><select idref="V-259039" selected="true" /><select idref="V-259040" selected="true" /><select idref="V-259041" selected="true" /><select idref="V-259042" selected="true" /><select idref="V-259043" selected="true" /><select idref="V-259044" selected="true" /><select idref="V-259045" selected="true" /><select idref="V-259046" selected="true" /><select idref="V-259047" selected="true" /><select idref="V-259048" selected="true" /><select idref="V-259049" selected="true" /><select idref="V-259050" selected="true" /><select idref="V-259051" selected="true" /><select idref="V-259052" selected="true" /><select idref="V-259053" selected="true" /><select idref="V-259054" selected="true" /><select idref="V-259055" selected="true" /><select idref="V-259056" selected="true" /><select idref="V-259057" selected="true" /><select idref="V-259058" selected="true" /><select idref="V-259059" selected="true" /><select idref="V-259060" selected="true" /><select idref="V-259061" selected="true" /><select idref="V-259062" selected="true" /><select idref="V-259063" selected="true" /><select idref="V-259064" selected="true" /><select idref="V-259065" selected="true" /><select idref="V-259066" selected="true" /><select idref="V-259067" selected="true" /><select idref="V-259068" selected="true" /><select idref="V-259069" selected="true" /><select idref="V-259070" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259037" selected="true" /><select idref="V-259038" selected="true" /><select idref="V-259039" selected="true" /><select idref="V-259040" selected="true" /><select idref="V-259041" selected="true" /><select idref="V-259042" selected="true" /><select idref="V-259043" selected="true" /><select idref="V-259044" selected="true" /><select idref="V-259045" selected="true" /><select idref="V-259046" selected="true" /><select idref="V-259047" selected="true" /><select idref="V-259048" selected="true" /><select idref="V-259049" selected="true" /><select idref="V-259050" selected="true" /><select idref="V-259051" selected="true" /><select idref="V-259052" selected="true" /><select idref="V-259053" selected="true" /><select idref="V-259054" selected="true" /><select idref="V-259055" selected="true" /><select idref="V-259056" selected="true" /><select idref="V-259057" selected="true" /><select idref="V-259058" selected="true" /><select idref="V-259059" selected="true" /><select idref="V-259060" selected="true" /><select idref="V-259061" selected="true" /><select idref="V-259062" selected="true" /><select idref="V-259063" selected="true" /><select idref="V-259064" selected="true" /><select idref="V-259065" selected="true" /><select idref="V-259066" selected="true" /><select idref="V-259067" selected="true" /><select idref="V-259068" selected="true" /><select idref="V-259069" selected="true" /><select idref="V-259070" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259037" selected="true" /><select idref="V-259038" selected="true" /><select idref="V-259039" selected="true" /><select idref="V-259040" selected="true" /><select idref="V-259041" selected="true" /><select idref="V-259042" selected="true" /><select idref="V-259043" selected="true" /><select idref="V-259044" selected="true" /><select idref="V-259045" selected="true" /><select idref="V-259046" selected="true" /><select idref="V-259047" selected="true" /><select idref="V-259048" selected="true" /><select idref="V-259049" selected="true" /><select idref="V-259050" selected="true" /><select idref="V-259051" selected="true" /><select idref="V-259052" selected="true" /><select idref="V-259053" selected="true" /><select idref="V-259054" selected="true" /><select idref="V-259055" selected="true" /><select idref="V-259056" selected="true" /><select idref="V-259057" selected="true" /><select idref="V-259058" selected="true" /><select idref="V-259059" selected="true" /><select idref="V-259060" selected="true" /><select idref="V-259061" selected="true" /><select idref="V-259062" selected="true" /><select idref="V-259063" selected="true" /><select idref="V-259064" selected="true" /><select idref="V-259065" selected="true" /><select idref="V-259066" selected="true" /><select idref="V-259067" selected="true" /><select idref="V-259068" selected="true" /><select idref="V-259069" selected="true" /><select idref="V-259070" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259037" selected="true" /><select idref="V-259038" selected="true" /><select idref="V-259039" selected="true" /><select idref="V-259040" selected="true" /><select idref="V-259041" selected="true" /><select idref="V-259042" selected="true" /><select idref="V-259043" selected="true" /><select idref="V-259044" selected="true" /><select idref="V-259045" selected="true" /><select idref="V-259046" selected="true" /><select idref="V-259047" selected="true" /><select idref="V-259048" selected="true" /><select idref="V-259049" selected="true" /><select idref="V-259050" selected="true" /><select idref="V-259051" selected="true" /><select idref="V-259052" selected="true" /><select idref="V-259053" selected="true" /><select idref="V-259054" selected="true" /><select idref="V-259055" selected="true" /><select idref="V-259056" selected="true" /><select idref="V-259057" selected="true" /><select idref="V-259058" selected="true" /><select idref="V-259059" selected="true" /><select idref="V-259060" selected="true" /><select idref="V-259061" selected="true" /><select idref="V-259062" selected="true" /><select idref="V-259063" selected="true" /><select idref="V-259064" selected="true" /><select idref="V-259065" selected="true" /><select idref="V-259066" selected="true" /><select idref="V-259067" selected="true" /><select idref="V-259068" selected="true" /><select idref="V-259069" selected="true" /><select idref="V-259070" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-259037" selected="true" /><select idref="V-259038" selected="true" /><select idref="V-259039" selected="true" /><select idref="V-259040" selected="true" /><select idref="V-259041" selected="true" /><select idref="V-259042" selected="true" /><select idref="V-259043" selected="true" /><select idref="V-259044" selected="true" /><select idref="V-259045" selected="true" /><select idref="V-259046" selected="true" /><select idref="V-259047" selected="true" /><select idref="V-259048" selected="true" /><select idref="V-259049" selected="true" /><select idref="V-259050" selected="true" /><select idref="V-259051" selected="true" /><select idref="V-259052" selected="true" /><select idref="V-259053" selected="true" /><select idref="V-259054" selected="true" /><select idref="V-259055" selected="true" /><select idref="V-259056" selected="true" /><select idref="V-259057" selected="true" /><select idref="V-259058" selected="true" /><select idref="V-259059" selected="true" /><select idref="V-259060" selected="true" /><select idref="V-259061" selected="true" /><select idref="V-259062" selected="true" /><select idref="V-259063" selected="true" /><select idref="V-259064" selected="true" /><select idref="V-259065" selected="true" /><select idref="V-259066" selected="true" /><select idref="V-259067" selected="true" /><select idref="V-259068" selected="true" /><select idref="V-259069" selected="true" /><select idref="V-259070" selected="true" /></Profile><Group id="V-259037"><title>SRG-APP-000001-AS-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259037r960735_rule" weight="10.0" severity="medium"><version>VCLU-80-000001</version><title>The vCenter Lookup service must limit the number of maximum concurrent connections permitted.</title><description>&lt;VulnDiscussion&gt;Resource exhaustion can occur when an unlimited number of concurrent requests are allowed on a website, facilitating a denial-of-service attack. Unless the number of requests is controlled, the web server can consume enough system resources to cause a system crash.
+
+Mitigating this kind of attack will include limiting the number of concurrent HTTP/HTTPS requests. In Tomcat, each incoming request requires a thread for the duration of that request. If more simultaneous requests are received than can be handled by the currently available request processing threads, additional threads will be created up to the value of the maxThreads attribute.
+
+Satisfies: SRG-APP-000001-AS-000001, SRG-APP-000435-AS-000163&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-62686r934768_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Navigate to the &lt;Executor&gt; node with the name of tomcatThreadPool and configure with the value "maxThreads="300"".
+
+Note: The &lt;Executor&gt; node should be configured similar to the following:
+
+&lt;Executor maxThreads="300"
+                minSpareThreads="50"
+                name="tomcatThreadPool"
+                namePrefix="tomcat-http--"/&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62686r934768_fix" /><check system="C-62777r934767_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Service/Executor[@name="tomcatThreadPool"]/@maxThreads' /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Expected result:
+
+maxThreads="300"
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-259038"><title>SRG-APP-000033-AS-000024</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259038r960792_rule" weight="10.0" severity="medium"><version>VCLU-80-000005</version><title>The vCenter Lookup service cookies must have secure flag set.</title><description>&lt;VulnDiscussion&gt;The secure flag is an option that can be set by the application server when sending a new cookie to the user within an HTTP Response. The purpose of the secure flag is to prevent cookies from being observed by unauthorized parties due to the transmission of a cookie in clear text.
+
+By setting the secure flag, the browser will prevent the transmission of a cookie over an unencrypted channel.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-62687r934771_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/web.xml
+
+Navigate to the &lt;session-config&gt; node and configure the &lt;secure&gt; setting as follows:
+
+&lt;session-config&gt;
+  &lt;session-timeout&gt;30&lt;/session-timeout&gt;
+  &lt;cookie-config&gt;
+      &lt;http-only&gt;true&lt;/http-only&gt;
+      &lt;secure&gt;true&lt;/secure&gt;
+  &lt;/cookie-config&gt;
+&lt;/session-config&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62687r934771_fix" /><check system="C-62778r934770_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --format /usr/lib/vmware-lookupsvc/conf/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '/web-app/session-config/cookie-config/secure' -
+
+Expected result:
+
+&lt;secure&gt;true&lt;/secure&gt;
+
+If the output of the command does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-259039"><title>SRG-APP-000092-AS-000053</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259039r960888_rule" weight="10.0" severity="medium"><version>VCLU-80-000013</version><title>The vCenter Lookup service must initiate session logging upon startup.</title><description>&lt;VulnDiscussion&gt;Logging must be started as soon as possible when a service starts and as late as possible when a service is stopped. Many forms of suspicious actions can be detected by analyzing logs for unexpected service starts and stops. Also, by starting to log immediately after a service starts, it becomes more difficult for suspicious activity to go unlogged.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001464</ident><fixtext fixref="F-62688r934774_fix">Navigate to and open:
+
+/etc/vmware/vmware-vmon/svcCfgfiles/lookupsvc.json
+
+Below the last line of the "PreStartCommandArg" block, add the following line:
+
+"StreamRedirectFile": "%VMWARE_LOG_DIR%/vmware/lookupsvc/lookupsvc_stream.log",
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62688r934774_fix" /><check system="C-62779r934773_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# grep StreamRedirectFile /etc/vmware/vmware-vmon/svcCfgfiles/lookupsvc.json
+
+Expected output:
+
+"StreamRedirectFile": "%VMWARE_LOG_DIR%/vmware/lookupsvc/lookupsvc_stream.log",
+
+If no log file is specified for the "StreamRedirectFile" setting, this is a finding.</check-content></check></Rule></Group><Group id="V-259040"><title>SRG-APP-000095-AS-000056</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259040r960891_rule" weight="10.0" severity="medium"><version>VCLU-80-000014</version><title>The vCenter Lookup service must produce log records containing sufficient information regarding event details.</title><description>&lt;VulnDiscussion&gt;Remote access can be exploited by an attacker to compromise the server. By recording all remote access activities, it will be possible to determine the attacker's location, intent, and degree of success.
+
+Tomcat can be configured with an "AccessLogValve", a component that can be inserted into the request processing pipeline to provide robust access logging. The "AccessLogValve" creates log files in the same format as those created by standard web servers. When "AccessLogValve" is properly configured, log files will contain all the forensic information necessary in the case of a security incident.
+
+Satisfies: SRG-APP-000095-AS-000056, SRG-APP-000016-AS-000013, SRG-APP-000096-AS-000059, SRG-APP-000097-AS-000060, SRG-APP-000098-AS-000061, SRG-APP-000099-AS-000062, SRG-APP-000100-AS-000063, SRG-APP-000080-AS-000045, SRG-APP-000089-AS-000050, SRG-APP-000090-AS-000051, SRG-APP-000091-AS-000052, SRG-APP-000343-AS-000030, SRG-APP-000375-AS-000211, SRG-APP-000495-AS-000220, SRG-APP-000499-AS-000224, SRG-APP-000503-AS-000228&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000067</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000132</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><ident system="http://cyber.mil/cci">CCI-000166</ident><ident system="http://cyber.mil/cci">CCI-000169</ident><ident system="http://cyber.mil/cci">CCI-000171</ident><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-001487</ident><ident system="http://cyber.mil/cci">CCI-001889</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-62689r934777_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Inside the &lt;Host&gt; node, find the "AccessLogValve" &lt;Valve&gt; node and replace the "pattern" element as follows:
+
+pattern="%t %I [Request] &amp;quot;%{User-Agent}i&amp;quot; %{X-Forwarded-For}i/%h:%{remote}p %l %u to local %{local}p - &amp;quot;%r&amp;quot; %H %m %U%q    [Response] %s - %b bytes    [Perf] process %Dms / commit %Fms / conn [%X]"
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62689r934777_fix" /><check system="C-62780r934776_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Service/Engine/Host/Valve[@className="org.apache.catalina.valves.AccessLogValve"]/@pattern' /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Example result:
+
+pattern="%t %I [Request] &amp;quot;%{User-Agent}i&amp;quot; %{X-Forwarded-For}i/%h:%{remote}p %l %u to local %{local}p - &amp;quot;%r&amp;quot; %H %m %U%q    [Response] %s - %b bytes    [Perf] process %Dms / commit %Fms / conn [%X]"
+
+Required elements:
+
+%h %{X-Forwarded-For}i %l %t %u &amp;quot;%r&amp;quot; %s %b
+
+If the log pattern does not contain the required elements in any order, this is a finding.</check-content></check></Rule></Group><Group id="V-259041"><title>SRG-APP-000118-AS-000078</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259041r960930_rule" weight="10.0" severity="medium"><version>VCLU-80-000025</version><title>The vCenter Lookup service logs folder permissions must be set correctly.</title><description>&lt;VulnDiscussion&gt;Log data is essential in the investigation of events. The accuracy of the information is always pertinent. One of the first steps an attacker will take is the modification or deletion of log records to cover tracks and prolong discovery. The web server must protect the log data from unauthorized modification.
+
+Satisfies: SRG-APP-000118-AS-000078, SRG-APP-000119-AS-000079, SRG-APP-000120-AS-000080&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000162</ident><ident system="http://cyber.mil/cci">CCI-000163</ident><ident system="http://cyber.mil/cci">CCI-000164</ident><fixtext fixref="F-62690r934780_fix">At the command prompt, run the following commands:
+
+# chmod o-w &lt;file&gt;
+# chown lookupsvc:lookupsvc &lt;file&gt;
+
+Note: Substitute &lt;file&gt; with the listed file.</fixtext><fix id="F-62690r934780_fix" /><check system="C-62781r934779_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# find /var/log/vmware/lookupsvc/ -xdev ! -name lookupsvc-init.log ! -name lookupsvc-prestart.log -type f -a '(' -perm -o+w -o -not -user lookupsvc -o -not -group lookupsvc ')' -exec ls -ld {} \;
+
+If any files are returned, this is a finding.</check-content></check></Rule></Group><Group id="V-259042"><title>SRG-APP-000133-AS-000092</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259042r960960_rule" weight="10.0" severity="medium"><version>VCLU-80-000034</version><title>The vCenter Lookup service must limit privileges for creating or modifying hosted application shared files.</title><description>&lt;VulnDiscussion&gt;Application servers have the ability to specify that the hosted applications use shared libraries. The application server must have a capability to divide roles based upon duties wherein one project user (such as a developer) cannot modify the shared library code of another project user. The application server must also be able to specify that nonprivileged users cannot modify any shared library code at all.
+
+Ensuring the Security Lifecycle Listener element is uncommented and sets a minimum Umask value will allow the server to perform a number of security checks when starting and prevent the service from starting if they fail.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-62691r934783_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Navigate to the &lt;Server&gt; node and add or update the "org.apache.catalina.security.SecurityListener" as follows:
+
+&lt;Listener className="org.apache.catalina.security.SecurityListener"/&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62691r934783_fix" /><check system="C-62782r934782_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Listener[@className="org.apache.catalina.security.SecurityListener"]' /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Example result:
+
+&lt;Listener className="org.apache.catalina.security.SecurityListener"/&gt;
+
+If the "org.apache.catalina.security.SecurityListener" listener is not present, this is a finding.
+
+If the "org.apache.catalina.security.SecurityListener" listener is configured with a "minimumUmask" and is not "0007", this is a finding.</check-content></check></Rule></Group><Group id="V-259043"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259043r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000036</version><title>The vCenter Lookup service must disable stack tracing.</title><description>&lt;VulnDiscussion&gt;Stack tracing provides debugging information from the application call stacks when a runtime error is encountered. If stack tracing is left enabled, Tomcat will provide this call stack information to the requestor, which could result in the loss of sensitive information or data that could be used to compromise the system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62692r934786_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Navigate to and locate:
+
+'allowTrace="true"'
+
+Remove the 'allowTrace="true"' setting.
+
+Note: If "allowTrace" is not present, it defaults to "false".
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62692r934786_fix" /><check system="C-62783r934785_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath "//Connector[@allowTrace = 'true']" /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Expected result:
+
+XPath set is empty
+
+If any connectors are returned, this is a finding.</check-content></check></Rule></Group><Group id="V-259044"><title>SRG-APP-000142-AS-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259044r960966_rule" weight="10.0" severity="medium"><version>VCLU-80-000037</version><title>The vCenter Lookup service must be configured to use a specified IP address and port.</title><description>&lt;VulnDiscussion&gt;The server must be configured to listen on a specified IP address and port. Without specifying an IP address and port for server to use, the server will listen on all IP addresses available.
+
+Accessing the hosted application through an IP address normally used for nonapplication functions opens the possibility of user access to resources, utilities, files, ports, and protocols that are protected on the desired application IP address.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-62693r934789_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Navigate to the &lt;Connector&gt; node and configure the port and address as follows:
+
+port="${bio-custom.http.port}"
+address="localhost"
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62693r934789_fix" /><check system="C-62784r934788_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath "//Connector[(@port = '0') or not(@address)]" /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Expected result:
+
+XPath set is empty
+
+If any connectors are returned, this is a finding.</check-content></check></Rule></Group><Group id="V-259045"><title>SRG-APP-000223-AS-000150</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259045r961116_rule" weight="10.0" severity="medium"><version>VCLU-80-000057</version><title>The vCenter Lookup service must be configured to limit data exposure between applications.</title><description>&lt;VulnDiscussion&gt;If RECYCLE_FACADES is true or if a security manager is in use, a new facade object will be created for each request. This reduces the chances that a bug in an application might expose data from one request to another.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001664</ident><fixtext fixref="F-62694r934792_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Update or remove the following line:
+
+org.apache.catalina.connector.RECYCLE_FACADES=true
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62694r934792_fix" /><check system="C-62785r934791_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command line, run the following command:
+
+# grep RECYCLE_FACADES /usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Example result:
+
+org.apache.catalina.connector.RECYCLE_FACADES=true
+
+If "org.apache.catalina.connector.RECYCLE_FACADES" is not set to "true", this is a finding.
+
+If the "org.apache.catalina.connector.RECYCLE_FACADES" setting does not exist, this is not a finding.</check-content></check></Rule></Group><Group id="V-259046"><title>SRG-APP-000225-AS-000166</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259046r961122_rule" weight="10.0" severity="medium"><version>VCLU-80-000062</version><title>The vCenter Lookup service must be configured to fail to a known safe state if system initialization fails.</title><description>&lt;VulnDiscussion&gt;Determining a safe state for failure and weighing that against a potential denial of service for users depends on what type of application the web server is hosting. It is preferable that the service abort startup on any initialization failure rather than continuing in a degraded, and potentially insecure, state.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001190</ident><fixtext fixref="F-62695r934795_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Add or change the following line:
+
+org.apache.catalina.startup.EXIT_ON_INIT_FAILURE=true
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62695r934795_fix" /><check system="C-62786r934794_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command line, run the following command:
+
+# grep EXIT_ON_INIT_FAILURE /usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Example result:
+
+org.apache.catalina.startup.EXIT_ON_INIT_FAILURE=true
+
+If there are no results, or if the "org.apache.catalina.startup.EXIT_ON_INIT_FAILURE" is not set to "true", this is a finding.</check-content></check></Rule></Group><Group id="V-259047"><title>SRG-APP-000251-AS-000165</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259047r961158_rule" weight="10.0" severity="medium"><version>VCLU-80-000065</version><title>The vCenter Lookup service must set URIEncoding to UTF-8.</title><description>&lt;VulnDiscussion&gt;Invalid user input occurs when a user inserts data or characters into a hosted application's data entry field and the hosted application is unprepared to process that data. This results in unanticipated application behavior, potentially leading to an application compromise. Invalid user input is one of the primary methods employed when attempting to compromise an application.
+
+An attacker can also enter Unicode characters into hosted applications in an effort to break out of the document home or root home directory or bypass security checks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001310</ident><fixtext fixref="F-62696r934798_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Configure the &lt;Connector&gt; node with the value:
+
+URIEncoding="UTF-8"
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62696r934798_fix" /><check system="C-62787r934797_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath "//Connector[@URIEncoding != 'UTF-8'] | //Connector[not[@URIEncoding]]" /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Expected result:
+
+XPath set is empty
+
+If any connectors are returned, this is a finding.</check-content></check></Rule></Group><Group id="V-259048"><title>SRG-APP-000266-AS-000169</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259048r961167_rule" weight="10.0" severity="medium"><version>VCLU-80-000067</version><title>The vCenter Lookup service "ErrorReportValve showServerInfo" must be set to "false".</title><description>&lt;VulnDiscussion&gt;The Error Report Valve is a simple error handler for HTTP status codes that will generate and return HTML error pages. It can also be configured to return predefined static HTML pages for specific status codes and/or exception types. Disabling "showServerInfo" will only return the HTTP status code and remove all CSS from the default nonerror-related HTTP responses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-62697r934801_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Locate the following Host block:
+
+&lt;Host ...&gt;
+...
+&lt;/Host&gt;
+
+Inside this block, add or update the following on a new line:
+
+&lt;Valve className="org.apache.catalina.valves.ErrorReportValve" showServerInfo="false" showReport="false"/&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62697r934801_fix" /><check system="C-62788r934800_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath '/Server/Service/Engine/Host/Valve[@className="org.apache.catalina.valves.ErrorReportValve"]' /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Example result:
+
+&lt;Valve className="org.apache.catalina.valves.ErrorReportValve" showServerInfo="false" showReport="false"/&gt;
+
+If the "ErrorReportValve" element is not defined or "showServerInfo" is not set to "false", this is a finding.</check-content></check></Rule></Group><Group id="V-259049"><title>SRG-APP-000295-AS-000263</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259049r1003620_rule" weight="10.0" severity="medium"><version>VCLU-80-000070</version><title>The vCenter Lookup service must set an inactive timeout for sessions.</title><description>&lt;VulnDiscussion&gt;Leaving sessions open indefinitely is a major security risk. An attacker can easily use an already authenticated session to access the hosted application as the previously authenticated user. By closing sessions after a set period of inactivity, the web server can make certain that those sessions that are not closed through the user logging out of an application are eventually closed.
+
+Satisfies: SRG-APP-000295-AS-000263, SRG-APP-000389-AS-000253&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004895</ident><ident system="http://cyber.mil/cci">CCI-002361</ident><fixtext fixref="F-62698r934804_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/web.xml
+
+Navigate to the &lt;session-config&gt; node and configure the &lt;session-timeout&gt; as follows:
+
+&lt;session-config&gt;
+  &lt;session-timeout&gt;30&lt;/session-timeout&gt;
+  &lt;cookie-config&gt;
+      &lt;http-only&gt;true&lt;/http-only&gt;
+      &lt;secure&gt;true&lt;/secure&gt;
+  &lt;/cookie-config&gt;
+&lt;/session-config&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62698r934804_fix" /><check system="C-62789r934803_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --format /usr/lib/vmware-lookupsvc/conf/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '/web-app/session-config/session-timeout' -
+
+Example result:
+
+&lt;session-timeout&gt;30&lt;/session-timeout&gt;
+
+If the value of "session-timeout" is not "30" or less, or is missing, this is a finding.</check-content></check></Rule></Group><Group id="V-259050"><title>SRG-APP-000358-AS-000064</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259050r961395_rule" weight="10.0" severity="medium"><version>VCLU-80-000081</version><title>The vCenter Lookup service must offload log records onto a different system or media from the system being logged.</title><description>&lt;VulnDiscussion&gt;Information system logging capability is critical for accurate forensic analysis. Log record content that may be necessary to satisfy the requirement of this control includes, but is not limited to, time stamps, source and destination IP addresses, user/process identifiers, event descriptions, application-specific events, success/fail indications, filenames involved, and access control or flow control rules invoked.
+
+Offloading is a common process in information systems with limited log storage capacity.
+
+Centralized management of log records provides for efficiency in maintenance and management of records, as well as the backup and archiving of those records. Application servers and their related components are required to offload log records onto a different system or media than the system being logged.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-62699r934807_fix">Navigate to and open:
+
+/etc/vmware-syslog/vmware-services-lookupsvc.conf
+
+Create the file if it does not exist.
+
+Set the contents of the file as follows:
+
+#catalina
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/tomcat/catalina.*.log"
+      Tag="lookupsvc-tc-catalina"
+      Severity="info"
+      Facility="local0")
+#localhost
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/tomcat/localhost.*.log"
+      Tag="lookupsvc-tc-localhost"
+      Severity="info"
+      Facility="local0")
+#localhost_access_log
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/tomcat/localhost_access.log"
+      Tag="lookupsvc-localhost_access"
+      Severity="info"
+      Facility="local0")
+#lookupsvc-init
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/lookupsvc-init.log"
+      Tag="lookupsvc-init"
+      Severity="info"
+      Facility="local0")
+#prestart
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/lookupsvc-prestart.log"
+      Tag="lookupsvc-prestart"
+      Severity="info"
+      Facility="local0")
+#health
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/lookupsvc-health.log"
+      Tag="lookupsvc-health"
+      Severity="info"
+      Facility="local0")
+#lookupserver-default
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/lookupserver-default.log"
+      Tag="lookupsvc-lookupserver-default"
+      Severity="info"
+      Facility="local0")
+#lookupsvc_stream.log.std
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/lookupsvc_stream.log.std*"
+      Tag="lookupsvc-std"
+      Severity="info"
+      Facility="local0")
+#ls-gc
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/vmware-lookupsvc-gc.log.*.current"
+      Tag="lookupsvc-gc"
+      Severity="info"
+      Facility="local0")</fixtext><fix id="F-62699r934807_fix" /><check system="C-62790r934806_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>By default, a vmware-services-lookupsvc.conf rsyslog configuration file that includes the service logs when syslog is configured on vCenter, but it must be verified.
+
+At the command prompt, run the following command:
+
+# cat /etc/vmware-syslog/vmware-services-lookupsvc.conf
+
+Expected result:
+
+#catalina
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/tomcat/catalina.*.log"
+      Tag="lookupsvc-tc-catalina"
+      Severity="info"
+      Facility="local0")
+#localhost
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/tomcat/localhost.*.log"
+      Tag="lookupsvc-tc-localhost"
+      Severity="info"
+      Facility="local0")
+#localhost_access_log
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/tomcat/localhost_access.log"
+      Tag="lookupsvc-localhost_access"
+      Severity="info"
+      Facility="local0")
+#lookupsvc-init
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/lookupsvc-init.log"
+      Tag="lookupsvc-init"
+      Severity="info"
+      Facility="local0")
+#prestart
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/lookupsvc-prestart.log"
+      Tag="lookupsvc-prestart"
+      Severity="info"
+      Facility="local0")
+#health
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/lookupsvc-health.log"
+      Tag="lookupsvc-health"
+      Severity="info"
+      Facility="local0")
+#lookupserver-default
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/lookupserver-default.log"
+      Tag="lookupsvc-lookupserver-default"
+      Severity="info"
+      Facility="local0")
+#lookupsvc_stream.log.std
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/lookupsvc_stream.log.std*"
+      Tag="lookupsvc-std"
+      Severity="info"
+      Facility="local0")
+#ls-gc
+input(type="imfile"
+      File="/var/log/vmware/lookupsvc/vmware-lookupsvc-gc.log.*.current"
+      Tag="lookupsvc-gc"
+      Severity="info"
+      Facility="local0")
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-259051"><title>SRG-APP-000516-AS-000237</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259051r961863_rule" weight="10.0" severity="medium"><version>VCLU-80-000124</version><title>The vCenter Lookup service must enable "STRICT_SERVLET_COMPLIANCE".</title><description>&lt;VulnDiscussion&gt;Strict Servlet Compliance forces Tomcat to adhere to standards specifications including but not limited to RFC2109. RFC2109 sets the standard for HTTP session management. This setting affects several other settings that primarily pertain to cookie headers, cookie values, and sessions. Cookies will be parsed for strict adherence to specifications.
+
+Note that changing a number of these default settings may break some systems, as some browsers are unable to correctly handle the cookie headers that result from a strict adherence to the specifications.
+
+This one setting changes the default values for the following settings:
+
+org.apache.catalina.core.ApplicationContext.GET_RESOURCE_REQUIRE_SLASH
+org.apache.catalina.core.ApplicationDispatcher.WRAP_SAME_OBJECT
+org.apache.catalina.core.StandardHostValve.ACCESS_SESSION
+org.apache.catalina.session.StandardSession.ACTIVITY_CHECK
+org.apache.catalina.session.StandardSession.LAST_ACCESS_AT_START
+org.apache.tomcat.util.http.ServerCookie.ALWAYS_ADD_EXPIRES
+org.apache.tomcat.util.http.ServerCookie.FWD_SLASH_IS_SEPARATOR
+org.apache.tomcat.util.http.ServerCookie.PRESERVE_COOKIE_HEADER
+org.apache.tomcat.util.http.ServerCookie.STRICT_NAMING
+The "resourceOnlyServlets" attribute of any Context element.
+The "tldValidation" attribute of any Context element.
+The "useRelativeRedirects" attribute of any Context element.
+The "xmlNamespaceAware" attribute of any Context element.
+The "xmlValidation" attribute of any Context element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-62700r934810_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Add or change the following line:
+
+org.apache.catalina.STRICT_SERVLET_COMPLIANCE=true
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62700r934810_fix" /><check system="C-62791r934809_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command line, run the following command:
+
+# grep STRICT_SERVLET_COMPLIANCE /usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Example result:
+
+org.apache.catalina.STRICT_SERVLET_COMPLIANCE=true
+
+If there are no results, or if the "org.apache.catalina.STRICT_SERVLET_COMPLIANCE" is not set to "true", this is a finding.</check-content></check></Rule></Group><Group id="V-259052"><title>SRG-APP-000001-AS-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259052r960735_rule" weight="10.0" severity="medium"><version>VCLU-80-000125</version><title>The vCenter Lookup service must limit the amount of time that each Transmission Control Protocol (TCP) connection is kept alive.</title><description>&lt;VulnDiscussion&gt;Denial of service (DoS) is one threat against web servers. Many DoS attacks attempt to consume web server resources in such a way that no more resources are available to satisfy legitimate requests.
+
+In Tomcat, the "connectionTimeout" attribute sets the number of milliseconds the server will wait after accepting a connection for the request Uniform Resource Identifier (URI) line to be presented. This timeout will also be used when reading the request body (if any). This prevents idle sockets that are not sending HTTP requests from consuming system resources and potentially denying new connections.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-62701r934813_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Configure the &lt;Connector&gt; node with the value:
+
+connectionTimeout="60000"
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62701r934813_fix" /><check system="C-62792r934812_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>The connection timeout should not be disabled by setting it to "-1".
+
+At the command prompt, run the following command:
+
+# xmllint --xpath "//Connector[@connectionTimeout = '-1']" /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Expected result:
+
+XPath set is empty
+
+If any connectors are returned, this is a finding.</check-content></check></Rule></Group><Group id="V-259053"><title>SRG-APP-000001-AS-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259053r960735_rule" weight="10.0" severity="medium"><version>VCLU-80-000126</version><title>The vCenter Lookup service must limit the number of times that each Transmission Control Protocol (TCP) connection is kept alive.</title><description>&lt;VulnDiscussion&gt;KeepAlive provides long lived HTTP sessions that allow multiple requests to be sent over the same connection. Enabling KeepAlive mitigates the effects of several types of denial-of-service attacks.
+
+An advantage of KeepAlive is the reduced latency in subsequent requests (no handshaking). However, a disadvantage is that server resources are not available to handle other requests while a connection is maintained between the server and the client.
+
+Tomcat can be configured to limit the number of subsequent requests that one client can submit to the server over an established connection. This limit helps provide a balance between the advantages of KeepAlive, while not allowing any one connection being held too long by any one client.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-62702r934816_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Configure the &lt;Connector&gt; node with the value:
+
+maxKeepAliveRequests="50"
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62702r934816_fix" /><check system="C-62793r934815_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>The connection timeout should not be unlimited by setting it to "-1".
+
+At the command prompt, run the following command:
+
+# xmllint --xpath "//Connector[@maxKeepAliveRequests = '-1']" /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Expected result:
+
+XPath set is empty
+
+If any connectors are returned, this is a finding.</check-content></check></Rule></Group><Group id="V-259054"><title>SRG-APP-000251-AS-000165</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259054r961158_rule" weight="10.0" severity="medium"><version>VCLU-80-000127</version><title>The vCenter Lookup service must configure the "setCharacterEncodingFilter" filter.</title><description>&lt;VulnDiscussion&gt;Invalid user input occurs when a user inserts data or characters into a hosted application's data entry field and the hosted application is unprepared to process that data. This results in unanticipated application behavior, potentially leading to an application compromise. Invalid user input is one of the primary methods employed when attempting to compromise an application.
+
+An attacker can also enter Unicode characters into hosted applications in an effort to break out of the document home or root home directory or to bypass security checks. VMware uses the standard Tomcat "SetCharacterEncodingFilter" to provide a layer of defense against character encoding attacks. Filters are Java objects that perform filtering tasks on the request to a resource (a servlet or static content), on the response from a resource, or both.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001310</ident><fixtext fixref="F-62703r934819_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/web.xml
+
+Configure the &lt;web-app&gt; node with the child nodes listed below:
+
+&lt;filter-mapping&gt;
+  &lt;filter-name&gt;setCharacterEncodingFilter&lt;/filter-name&gt;
+  &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;
+
+&lt;filter&gt;
+  &lt;filter-name&gt;setCharacterEncodingFilter&lt;/filter-name&gt;
+  &lt;filter-class&gt;org.apache.catalina.filters.SetCharacterEncodingFilter&lt;/filter-class&gt;
+  &lt;async-supported&gt;true&lt;/async-supported&gt;
+  &lt;init-param&gt;
+    &lt;param-name&gt;encoding&lt;/param-name&gt;
+    &lt;param-value&gt;UTF-8&lt;/param-value&gt;
+  &lt;/init-param&gt;
+  &lt;init-param&gt;
+    &lt;param-name&gt;ignore&lt;/param-name&gt;
+    &lt;param-value&gt;true&lt;/param-value&gt;
+  &lt;/init-param&gt;
+&lt;/filter&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62703r934819_fix" /><check system="C-62794r934818_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath "//*[contains(text(), 'setCharacterEncodingFilter')]/parent::*" /usr/lib/vmware-lookupsvc/conf/web.xml
+
+Expected result:
+
+&lt;filter-mapping&gt;
+  &lt;filter-name&gt;setCharacterEncodingFilter&lt;/filter-name&gt;
+  &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;
+&lt;filter&gt;
+  &lt;filter-name&gt;setCharacterEncodingFilter&lt;/filter-name&gt;
+  &lt;filter-class&gt;org.apache.catalina.filters.SetCharacterEncodingFilter&lt;/filter-class&gt;
+  &lt;async-supported&gt;true&lt;/async-supported&gt;
+  &lt;init-param&gt;
+    &lt;param-name&gt;encoding&lt;/param-name&gt;
+    &lt;param-value&gt;UTF-8&lt;/param-value&gt;
+  &lt;/init-param&gt;
+  &lt;init-param&gt;
+    &lt;param-name&gt;ignore&lt;/param-name&gt;
+    &lt;param-value&gt;true&lt;/param-value&gt;
+  &lt;/init-param&gt;
+&lt;/filter&gt;
+
+If the output is does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-259055"><title>SRG-APP-000033-AS-000024</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259055r960792_rule" weight="10.0" severity="medium"><version>VCLU-80-000129</version><title>The vCenter Lookup service cookies must have "http-only" flag set.</title><description>&lt;VulnDiscussion&gt;Cookies are a common way to save session state over the HTTP(S) protocol. If attackers can compromise session data stored in a cookie, they are better able to launch an attack against the server and its applications. When a cookie is tagged with the "HttpOnly" flag, it tells the browser this particular cookie should only be accessed by the originating server. Any attempt to access the cookie from client script is strictly forbidden.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-62704r934822_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/web.xml
+
+Navigate to the &lt;session-config&gt; node and configure the &lt;http-only&gt; as follows:
+
+&lt;session-config&gt;
+  &lt;session-timeout&gt;30&lt;/session-timeout&gt;
+  &lt;cookie-config&gt;
+      &lt;http-only&gt;true&lt;/http-only&gt;
+      &lt;secure&gt;true&lt;/secure&gt;
+  &lt;/cookie-config&gt;
+&lt;/session-config&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62704r934822_fix" /><check system="C-62795r934821_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --format /usr/lib/vmware-lookupsvc/conf/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '/web-app/session-config/cookie-config/http-only' -
+
+Expected result:
+
+&lt;http-only&gt;true&lt;/http-only&gt;
+
+If the output does not match the expected result, this is a finding.</check-content></check></Rule></Group><Group id="V-259056"><title>SRG-APP-000033-AS-000024</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259056r960792_rule" weight="10.0" severity="medium"><version>VCLU-80-000130</version><title>The vCenter Lookup service DefaultServlet must be set to "readonly" for "PUT" and "DELETE" commands.</title><description>&lt;VulnDiscussion&gt;The default servlet (or DefaultServlet) is a special servlet provided with Tomcat that is called when no other suitable page is found in a particular folder. The DefaultServlet serves static resources as well as directory listings. The DefaultServlet is configured by default with the "readonly" parameter set to "true" where HTTP commands such as "PUT" and "DELETE" are rejected.
+
+Changing this to "false" allows clients to delete or modify static resources on the server and to upload new resources. DefaultServlet "readonly" must be set to "true", either literally or by absence (default).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-62705r934825_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/web.xml
+
+Navigate to the /&lt;web-apps&gt;/&lt;servlet&gt;/&lt;servlet-class&gt;org.apache.catalina.servlets.DefaultServlet&lt;/servlet-class&gt;/ node and remove the following node:
+
+&lt;init-param&gt;
+      &lt;param-name&gt;readonly&lt;/param-name&gt;
+      &lt;param-value&gt;false&lt;/param-value&gt;
+&lt;/init-param&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62705r934825_fix" /><check system="C-62796r934824_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath "//*[contains(text(), 'DefaultServlet')]/parent::*" /usr/lib/vmware-lookupsvc/conf/web.xml
+
+Example output:
+
+&lt;servlet&gt;
+      &lt;description&gt;File servlet&lt;/description&gt;
+      &lt;servlet-name&gt;FileServlet&lt;/servlet-name&gt;
+      &lt;servlet-class&gt;org.apache.catalina.servlets.DefaultServlet&lt;/servlet-class&gt;
+&lt;/servlet&gt;
+
+If the "readOnly" param-value for the "DefaultServlet" servlet class is set to "false", this is a finding.
+
+If the "readOnly" param-value does not exist, this is not a finding.</check-content></check></Rule></Group><Group id="V-259057"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259057r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000134</version><title>The vCenter Lookup service shutdown port must be disabled.</title><description>&lt;VulnDiscussion&gt;Tomcat by default listens on TCP port 8005 to accept shutdown requests. By connecting to this port and sending the SHUTDOWN command, all applications within Tomcat are halted. The shutdown port is not exposed to the network as it is bound to the loopback interface. Setting the port to "-1" in $CATALINA_BASE/conf/server.xml instructs Tomcat to not listen for the shutdown command.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62706r934828_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Add or modify the setting "base.shutdown.port=-1" in the "catalina.properties" file.
+
+Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Configure the &lt;Server&gt; node with the value:
+
+port="${base.shutdown.port}"
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62706r934828_fix" /><check system="C-62797r934827_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following commands:
+
+# xmllint --xpath "//Server/@port" /usr/lib/vmware-lookupsvc/conf/server.xml
+# grep 'base.shutdown.port' /usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Example results:
+
+port="${base.shutdown.port}"
+base.shutdown.port=-1
+
+If "port" does not equal "${base.shutdown.port}", this is a finding.
+
+If "base.shutdown.port" does not equal "-1", this is a finding.</check-content></check></Rule></Group><Group id="V-259058"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259058r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000136</version><title>The vCenter Lookup service debug parameter must be disabled.</title><description>&lt;VulnDiscussion&gt;Information needed by an attacker to begin looking for possible vulnerabilities in a web server includes any information about the web server and plug-ins or modules being used. When debugging or trace information is enabled in a production web server, information about the web server, such as web server type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any backends being used for data storage may be displayed.
+
+Because this information may be placed in logs and general messages during normal operation of the web server, an attacker does not need to cause an error condition to gain this information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62707r934831_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/web.xml
+
+Navigate to all &lt;debug&gt; nodes that are not set to "0".
+
+Set the &lt;param-value&gt; to "0" in all &lt;param-name&gt;debug&lt;/param-name&gt; nodes.
+
+Note: The debug setting should look like the following:
+
+&lt;init-param&gt;
+      &lt;param-name&gt;debug&lt;/param-name&gt;
+      &lt;param-value&gt;0&lt;/param-value&gt;
+&lt;/init-param&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62707r934831_fix" /><check system="C-62798r934830_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --format /usr/lib/vmware-lookupsvc/conf/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '//param-name[text()="debug"]/parent::init-param' -
+
+Example result:
+
+&lt;init-param&gt;
+      &lt;param-name&gt;debug&lt;/param-name&gt;
+      &lt;param-value&gt;0&lt;/param-value&gt;
+&lt;/init-param&gt;
+
+If the "debug" parameter is specified and is not "0", this is a finding.
+
+If the "debug" parameter does not exist, this is not a finding.</check-content></check></Rule></Group><Group id="V-259059"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259059r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000137</version><title>The vCenter Lookup service directory listings parameter must be disabled.</title><description>&lt;VulnDiscussion&gt;Enumeration techniques, such as URL parameter manipulation, rely on being able to obtain information about the web server's directory structure by locating directories without default pages. In this scenario, the web server will display to the user a listing of the files in the directory being accessed. Ensuring that directory listing is disabled is one approach to mitigating the vulnerability.
+
+In Tomcat, directory listing is disabled by default but can be enabled via the "listings" parameter. Ensure this node is not present to have the default effect.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62708r934834_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/web.xml
+
+Find and remove the entire block returned in the check.
+
+Example:
+
+&lt;init-param&gt;
+      &lt;param-name&gt;listings&lt;/param-name&gt;
+      &lt;param-value&gt;true&lt;/param-value&gt;
+&lt;/init-param&gt;
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62708r934834_fix" /><check system="C-62799r934833_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --format /usr/lib/vmware-lookupsvc/conf/web.xml | sed 's/xmlns=".*"//g' | xmllint --xpath '//param-name[text()="listings"]/parent::init-param' -
+
+Example result:
+
+XPath set is empty
+
+If the "listings" parameter is specified and is not "false", this is a finding.
+
+If the "listings" parameter does not exist, this is not a finding.</check-content></check></Rule></Group><Group id="V-259060"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259060r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000138</version><title>The vCenter Lookup service deployXML attribute must be disabled.</title><description>&lt;VulnDiscussion&gt;The Host element controls deployment. Automatic deployment allows for simpler management but also makes it easier for an attacker to deploy a malicious application. Automatic deployment is controlled by the autoDeploy and deployOnStartup attributes. If both are false, only Contexts defined in server.xml will be deployed, and any changes will require a Tomcat restart.
+
+In a hosted environment where web applications may not be trusted, set the deployXML attribute to "false" to ignore any context.xml packaged with the web application that may try to assign increased privileges to the web application. Note that if the security manager is enabled, the deployXML attribute will default to false.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62709r934837_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Navigate to the &lt;Host&gt; node and configure with the value "deployXML="false"".
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62709r934837_fix" /><check system="C-62800r934836_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath "//Host/@deployXML" /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Expected result:
+
+deployXML="false"
+
+If "deployXML" does not equal "false", this is a finding.</check-content></check></Rule></Group><Group id="V-259061"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259061r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000139</version><title>The vCenter Lookup service must have Autodeploy disabled.</title><description>&lt;VulnDiscussion&gt;Tomcat allows auto-deployment of applications while it is running. This can allow untested or malicious applications to be automatically loaded into production. Autodeploy must be disabled in production.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62710r934840_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Navigate to the &lt;Host&gt; node and configure with the value "autoDeploy="false"".
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62710r934840_fix" /><check system="C-62801r934839_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath "//Host/@autoDeploy" /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Expected result:
+
+autoDeploy="false"
+
+If "autoDeploy" does not equal "false", this is a finding.</check-content></check></Rule></Group><Group id="V-259062"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259062r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000140</version><title>The vCenter Lookup service xpoweredBy attribute must be disabled.</title><description>&lt;VulnDiscussion&gt;Individual connectors can be configured to display the Tomcat information to clients. This information can be used to identify server versions that can be useful to attackers for identifying vulnerable versions of Tomcat. Individual connectors must be checked for the xpoweredBy attribute to ensure they do not pass server information to clients. The default value for xpoweredBy is "false".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62711r934843_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/server.xml
+
+Navigate to the &lt;Connector&gt; node and remove the "xpoweredBy" attribute.
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62711r934843_fix" /><check system="C-62802r934842_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# xmllint --xpath "//Connector/@xpoweredBy" /usr/lib/vmware-lookupsvc/conf/server.xml
+
+Example result:
+
+XPath set is empty
+
+If the "xpoweredBy" parameter is specified and is not "false", this is a finding.
+
+If the "xpoweredBy" parameter does not exist, this is not a finding.</check-content></check></Rule></Group><Group id="V-259063"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259063r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000141</version><title>The vCenter Lookup service example applications must be removed.</title><description>&lt;VulnDiscussion&gt;Tomcat provides example applications, documentation, and other directories in the default installation that do not serve a production use. These files must be deleted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62712r934846_fix">At the command prompt, run the following command:
+
+# rm -rf /var/opt/apache-tomcat/webapps/examples</fixtext><fix id="F-62712r934846_fix" /><check system="C-62803r934845_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# ls -l /var/opt/apache-tomcat/webapps/examples
+
+If the examples folder exists or contains any content, this is a finding.</check-content></check></Rule></Group><Group id="V-259064"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259064r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000142</version><title>The vCenter Lookup service default ROOT web application must be removed.</title><description>&lt;VulnDiscussion&gt;The default ROOT web application includes the version of Tomcat being used, links to Tomcat documentation, examples, FAQs, and mailing lists. The default ROOT web application must be removed from a publicly accessible instance and a more appropriate default page shown to users.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62713r934849_fix">At the command prompt, run the following command:
+
+# rm -rf /var/opt/apache-tomcat/webapps/ROOT/*</fixtext><fix id="F-62713r934849_fix" /><check system="C-62804r934848_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# ls -l /var/opt/apache-tomcat/webapps/ROOT
+
+If the ROOT web application contains any content, this is a finding.</check-content></check></Rule></Group><Group id="V-259065"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259065r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000143</version><title>The vCenter Lookup service default documentation must be removed.</title><description>&lt;VulnDiscussion&gt;Tomcat provides documentation and other directories in the default installation that do not serve a production use. These files must be deleted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62714r934852_fix">At the command prompt, run the following command:
+
+# rm -rf /var/opt/apache-tomcat/webapps/docs</fixtext><fix id="F-62714r934852_fix" /><check system="C-62805r934851_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# ls -l /var/opt/apache-tomcat/webapps/docs
+
+If the "docs" folder exists or contains any content, this is a finding.</check-content></check></Rule></Group><Group id="V-259066"><title>SRG-APP-000380-AS-000088</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259066r961461_rule" weight="10.0" severity="medium"><version>VCLU-80-000144</version><title>The vCenter Lookup service files must have permissions in an out-of-the-box state.</title><description>&lt;VulnDiscussion&gt;As a rule, accounts on a web server are to be kept to a minimum. Only administrators, web managers, developers, auditors, and web authors require accounts on the machine hosting the web server. The resources to which these accounts have access must also be closely monitored and controlled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001813</ident><fixtext fixref="F-62715r934855_fix">At the command prompt, run the following commands:
+
+# chmod o-w &lt;file&gt;
+# chown root:root &lt;file&gt;
+
+Note: Substitute &lt;file&gt; with the listed file.</fixtext><fix id="F-62715r934855_fix" /><check system="C-62806r934854_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# find /usr/lib/vmware-lookupsvc/ -xdev -type f -a '(' -perm -o+w -o -not -user root -o -not -group root ')' -exec ls -ld {} \;
+
+If any files are returned, this is a finding.</check-content></check></Rule></Group><Group id="V-259067"><title>SRG-APP-000516-AS-000237</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259067r961863_rule" weight="10.0" severity="medium"><version>VCLU-80-000151</version><title>The vCenter Lookup service must disable "ALLOW_BACKSLASH".</title><description>&lt;VulnDiscussion&gt;When Tomcat is installed behind a proxy configured to only allow access to certain contexts (web applications), an HTTP request containing "/\../" may allow attackers to work around the proxy restrictions using directory traversal attack methods. If "allow_backslash" is "true", the "\" character will be permitted as a path delimiter. The default value for the setting is "false", but Tomcat must always be configured as if no proxy restricting context access was used, and "allow_backslash" should be set to "false" to prevent directory-traversal-style attacks. This setting can create operability issues with noncompliant clients.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-62716r934858_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Update or remove the following line:
+
+org.apache.catalina.connector.ALLOW_BACKSLASH=false
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62716r934858_fix" /><check system="C-62807r934857_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command line, run the following command:
+
+# grep ALLOW_BACKSLASH /usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Example result:
+
+org.apache.catalina.connector.ALLOW_BACKSLASH=false
+
+If "org.apache.catalina.connector.ALLOW_BACKSLASH" is not set to "false", this is a finding.
+
+If the "org.apache.catalina.connector.ALLOW_BACKSLASH" setting does not exist, this is not a finding.</check-content></check></Rule></Group><Group id="V-259068"><title>SRG-APP-000516-AS-000237</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259068r961863_rule" weight="10.0" severity="medium"><version>VCLU-80-000152</version><title>The vCenter Lookup service must enable "ENFORCE_ENCODING_IN_GET_WRITER".</title><description>&lt;VulnDiscussion&gt;Some clients try to guess the character encoding of text media when the mandated default of ISO-8859-1 should be used. Some browsers will interpret as UTF-7 when the characters are safe for ISO-8859-1. This can create the potential for a XSS attack. To defend against this, enforce_encoding_in_get_writer must be set to true.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-62717r934861_fix">Navigate to and open:
+
+/usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Update or remove the following line:
+
+org.apache.catalina.connector.response.ENFORCE_ENCODING_IN_GET_WRITER=true
+
+Restart the service with the following command:
+
+# vmon-cli --restart lookupsvc</fixtext><fix id="F-62717r934861_fix" /><check system="C-62808r934860_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command line, run the following command:
+
+# grep ENFORCE_ENCODING_IN_GET_WRITER /usr/lib/vmware-lookupsvc/conf/catalina.properties
+
+Example result:
+
+org.apache.catalina.connector.response.ENFORCE_ENCODING_IN_GET_WRITER=true
+
+If "org.apache.catalina.connector.response.ENFORCE_ENCODING_IN_GET_WRITER" is not set to "true", this is a finding.
+
+If the "org.apache.catalina.connector.response.ENFORCE_ENCODING_IN_GET_WRITER" setting does not exist, this is not a finding.</check-content></check></Rule></Group><Group id="V-259069"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259069r960963_rule" weight="10.0" severity="medium"><version>VCLU-80-000154</version><title>The vCenter Lookup service manager webapp must be removed.</title><description>&lt;VulnDiscussion&gt;Tomcat provides management functionality through either a default manager webapp or through local editing of the configuration files. The manager webapp files must be deleted, and administration must be performed through the local editing of the configuration files.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62718r934864_fix">At the command prompt, run the following command:
+
+# rm -rf /var/opt/apache-tomcat/webapps/manager</fixtext><fix id="F-62718r934864_fix" /><check system="C-62809r934863_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# ls -l /var/opt/apache-tomcat/webapps/manager
+
+If the manager folder exists or contains any content, this is a finding.</check-content></check></Rule></Group><Group id="V-259070"><title>SRG-APP-000141-AS-000095</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-259070r1003622_rule" weight="10.0" severity="medium"><version>VCLU-80-000155</version><title>The vCenter Lookup service host-manager webapp must be removed.</title><description>&lt;VulnDiscussion&gt;Tomcat provides host management functionality through either a default host-manager webapp or through local editing of the configuration files. The host-manager webapp files must be deleted, and administration must be performed through the local editing of the configuration files.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target VMware vSphere 8.0 VCSA Lookup Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>VMware vSphere 8.0 VCSA Lookup Service</dc:subject><dc:identifier>5565</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-62719r934867_fix">At the command prompt, run the following command:
+
+# rm -rf /var/opt/apache-tomcat/webapps/host-manager</fixtext><fix id="F-62719r934867_fix" /><check system="C-62810r1003621_chk"><check-content-ref href="VMware_vSphere_8.0_VCSA_Lookup_Service_STIG.xml" name="M" /><check-content>At the command prompt, run the following command:
+
+# ls -l /var/opt/apache-tomcat/webapps/host-manager
+
+If the host-manager folder exists or contains any content, this is a finding.</check-content></check></Rule></Group></Benchmark>
