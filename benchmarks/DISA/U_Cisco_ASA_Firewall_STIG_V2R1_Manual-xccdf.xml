@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Cisco_ASA_FW_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-06-06">accepted</status><title>Cisco ASA Firewall Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 24 Jul 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>2</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-239852" selected="true" /><select idref="V-239853" selected="true" /><select idref="V-239854" selected="true" /><select idref="V-239855" selected="true" /><select idref="V-239856" selected="true" /><select idref="V-239857" selected="true" /><select idref="V-239858" selected="true" /><select idref="V-239859" selected="true" /><select idref="V-239860" selected="true" /><select idref="V-239861" selected="true" /><select idref="V-239862" selected="true" /><select idref="V-239863" selected="true" /><select idref="V-239864" selected="true" /><select idref="V-239865" selected="true" /><select idref="V-239866" selected="true" /><select idref="V-239867" selected="true" /><select idref="V-239868" selected="true" /><select idref="V-239869" selected="true" /><select idref="V-239870" selected="true" /><select idref="V-239871" selected="true" /><select idref="V-239872" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-239852" selected="true" /><select idref="V-239853" selected="true" /><select idref="V-239854" selected="true" /><select idref="V-239855" selected="true" /><select idref="V-239856" selected="true" /><select idref="V-239857" selected="true" /><select idref="V-239858" selected="true" /><select idref="V-239859" selected="true" /><select idref="V-239860" selected="true" /><select idref="V-239861" selected="true" /><select idref="V-239862" selected="true" /><select idref="V-239863" selected="true" /><select idref="V-239864" selected="true" /><select idref="V-239865" selected="true" /><select idref="V-239866" selected="true" /><select idref="V-239867" selected="true" /><select idref="V-239868" selected="true" /><select idref="V-239869" selected="true" /><select idref="V-239870" selected="true" /><select idref="V-239871" selected="true" /><select idref="V-239872" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-239852" selected="true" /><select idref="V-239853" selected="true" /><select idref="V-239854" selected="true" /><select idref="V-239855" selected="true" /><select idref="V-239856" selected="true" /><select idref="V-239857" selected="true" /><select idref="V-239858" selected="true" /><select idref="V-239859" selected="true" /><select idref="V-239860" selected="true" /><select idref="V-239861" selected="true" /><select idref="V-239862" selected="true" /><select idref="V-239863" selected="true" /><select idref="V-239864" selected="true" /><select idref="V-239865" selected="true" /><select idref="V-239866" selected="true" /><select idref="V-239867" selected="true" /><select idref="V-239868" selected="true" /><select idref="V-239869" selected="true" /><select idref="V-239870" selected="true" /><select idref="V-239871" selected="true" /><select idref="V-239872" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-239852" selected="true" /><select idref="V-239853" selected="true" /><select idref="V-239854" selected="true" /><select idref="V-239855" selected="true" /><select idref="V-239856" selected="true" /><select idref="V-239857" selected="true" /><select idref="V-239858" selected="true" /><select idref="V-239859" selected="true" /><select idref="V-239860" selected="true" /><select idref="V-239861" selected="true" /><select idref="V-239862" selected="true" /><select idref="V-239863" selected="true" /><select idref="V-239864" selected="true" /><select idref="V-239865" selected="true" /><select idref="V-239866" selected="true" /><select idref="V-239867" selected="true" /><select idref="V-239868" selected="true" /><select idref="V-239869" selected="true" /><select idref="V-239870" selected="true" /><select idref="V-239871" selected="true" /><select idref="V-239872" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-239852" selected="true" /><select idref="V-239853" selected="true" /><select idref="V-239854" selected="true" /><select idref="V-239855" selected="true" /><select idref="V-239856" selected="true" /><select idref="V-239857" selected="true" /><select idref="V-239858" selected="true" /><select idref="V-239859" selected="true" /><select idref="V-239860" selected="true" /><select idref="V-239861" selected="true" /><select idref="V-239862" selected="true" /><select idref="V-239863" selected="true" /><select idref="V-239864" selected="true" /><select idref="V-239865" selected="true" /><select idref="V-239866" selected="true" /><select idref="V-239867" selected="true" /><select idref="V-239868" selected="true" /><select idref="V-239869" selected="true" /><select idref="V-239870" selected="true" /><select idref="V-239871" selected="true" /><select idref="V-239872" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-239852" selected="true" /><select idref="V-239853" selected="true" /><select idref="V-239854" selected="true" /><select idref="V-239855" selected="true" /><select idref="V-239856" selected="true" /><select idref="V-239857" selected="true" /><select idref="V-239858" selected="true" /><select idref="V-239859" selected="true" /><select idref="V-239860" selected="true" /><select idref="V-239861" selected="true" /><select idref="V-239862" selected="true" /><select idref="V-239863" selected="true" /><select idref="V-239864" selected="true" /><select idref="V-239865" selected="true" /><select idref="V-239866" selected="true" /><select idref="V-239867" selected="true" /><select idref="V-239868" selected="true" /><select idref="V-239869" selected="true" /><select idref="V-239870" selected="true" /><select idref="V-239871" selected="true" /><select idref="V-239872" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-239852" selected="true" /><select idref="V-239853" selected="true" /><select idref="V-239854" selected="true" /><select idref="V-239855" selected="true" /><select idref="V-239856" selected="true" /><select idref="V-239857" selected="true" /><select idref="V-239858" selected="true" /><select idref="V-239859" selected="true" /><select idref="V-239860" selected="true" /><select idref="V-239861" selected="true" /><select idref="V-239862" selected="true" /><select idref="V-239863" selected="true" /><select idref="V-239864" selected="true" /><select idref="V-239865" selected="true" /><select idref="V-239866" selected="true" /><select idref="V-239867" selected="true" /><select idref="V-239868" selected="true" /><select idref="V-239869" selected="true" /><select idref="V-239870" selected="true" /><select idref="V-239871" selected="true" /><select idref="V-239872" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-239852" selected="true" /><select idref="V-239853" selected="true" /><select idref="V-239854" selected="true" /><select idref="V-239855" selected="true" /><select idref="V-239856" selected="true" /><select idref="V-239857" selected="true" /><select idref="V-239858" selected="true" /><select idref="V-239859" selected="true" /><select idref="V-239860" selected="true" /><select idref="V-239861" selected="true" /><select idref="V-239862" selected="true" /><select idref="V-239863" selected="true" /><select idref="V-239864" selected="true" /><select idref="V-239865" selected="true" /><select idref="V-239866" selected="true" /><select idref="V-239867" selected="true" /><select idref="V-239868" selected="true" /><select idref="V-239869" selected="true" /><select idref="V-239870" selected="true" /><select idref="V-239871" selected="true" /><select idref="V-239872" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-239852" selected="true" /><select idref="V-239853" selected="true" /><select idref="V-239854" selected="true" /><select idref="V-239855" selected="true" /><select idref="V-239856" selected="true" /><select idref="V-239857" selected="true" /><select idref="V-239858" selected="true" /><select idref="V-239859" selected="true" /><select idref="V-239860" selected="true" /><select idref="V-239861" selected="true" /><select idref="V-239862" selected="true" /><select idref="V-239863" selected="true" /><select idref="V-239864" selected="true" /><select idref="V-239865" selected="true" /><select idref="V-239866" selected="true" /><select idref="V-239867" selected="true" /><select idref="V-239868" selected="true" /><select idref="V-239869" selected="true" /><select idref="V-239870" selected="true" /><select idref="V-239871" selected="true" /><select idref="V-239872" selected="true" /></Profile><Group id="V-239852"><title>SRG-NET-000019-FW-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239852r665842_rule" weight="10.0" severity="high"><version>CASA-FW-000010</version><title>The Cisco ASA must be configured to filter outbound traffic, allowing only authorized ports and services.</title><description>&lt;VulnDiscussion&gt;Information flow control regulates where information is allowed to travel within a network and between interconnected networks. Blocking or restricting detected harmful or suspicious communications between interconnected networks enforces approved authorizations for controlling the flow of traffic.
+
+The firewall that filters traffic outbound to interconnected networks with different security policies must be configured to permit or block traffic based on organization-defined traffic authorizations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-43044r665841_fix">Step 1: Configure the ingress ACL similar to the example below.
+
+ASA(config)# access-list INSIDE_INextended permit tcp any any eq https
+ASA(config)# access-list INSIDE_INextended permit tcp any any eq http
+ASA(config)# access-list INSIDE_INextended permit tcp any any eq …
+ASA(config)# access-list INSIDE_INextended deny ip any any log      
+
+Step 2: Apply the ACL inbound on all internal interfaces as shown in the example below.
+
+ASA(config)# access-group INSIDE_IN in interface INSIDE
+ASA(config)# end</fixtext><fix id="F-43044r665841_fix" /><check system="C-43085r665840_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the ASA configuration to determine if it only permits outbound traffic using authorized ports and services.
+
+Step 1: Verify that an ingress ACL has been applied to all internal interfaces as shown in the example below.
+
+ interface GigabitEthernet0/0
+ nameif INSIDE
+ security-level 100
+ ip address 10.1.11.1 255.255.255.0
+…
+…
+…
+access-group INSIDE _IN in interface INSIDE 
+
+Step 2: Verify that the ingress ACL only allows outbound traffic using authorized ports and services as shown in the example below.
+
+access-list INSIDE _IN extended permit tcp any any eq www 
+access-list INSIDE _IN extended permit tcp any any eq https 
+access-list INSIDE _IN extended permit tcp any any eq …
+access-list INSIDE _IN extended deny ip any any log
+
+If the ASA is not configured to only allow outbound traffic using authorized ports and services, this is a finding.</check-content></check></Rule></Group><Group id="V-239853"><title>SRG-NET-000019-FW-000004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239853r665845_rule" weight="10.0" severity="medium"><version>CASA-FW-000020</version><title>The Cisco ASA must immediately use updates made to policy enforcement mechanisms such as firewall rules, security policies, and security zones.</title><description>&lt;VulnDiscussion&gt;Information flow policies regarding dynamic information flow control include, for example, allowing or disallowing information flows based on changes to the Ports, Protocols, Services Management (PPSM) Category Assurance Levels (CAL) list, vulnerability assessments, or mission conditions. Changing conditions include changes in the threat environment and detection of potentially harmful or adverse events.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-43045r665844_fix">Remove the command asp rule-engine transactional-commit access-group
+
+ASA(config)# no asp rule-engine transactional-commit access-group</fixtext><fix id="F-43045r665844_fix" /><check system="C-43086r665843_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>By default, when you change a rule-based policy such as access rules, the changes become effective immediately. With transactional model configured, the rules are not active until after compilation.
+
+Review the ASA configuration and verify that the following command is not configured.
+
+asp rule-engine transactional-commit access-group
+
+If transactional-commit access-group has been configured, this is a finding.</check-content></check></Rule></Group><Group id="V-239854"><title>SRG-NET-000061-FW-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239854r665848_rule" weight="10.0" severity="medium"><version>CASA-FW-000030</version><title>The Cisco ASA must be configured to restrict VPN traffic according to organization-defined filtering rules.</title><description>&lt;VulnDiscussion&gt;Remote access devices (such as those providing remote access to network devices and information systems) that lack automated capabilities increase risk and make remote user access management difficult at best.
+
+Remote access is access to DoD non-public information systems by an authorized user (or an information system) communicating through an external, non-organization-controlled network.
+
+Automated monitoring of remote access sessions allows organizations to detect cyberattacks and also ensure ongoing compliance with remote access policies by auditing connection activities of remote access capabilities from a variety of information system components (e.g., servers, workstations, notebook computers, smart phones, and tablets).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000067</ident><fixtext fixref="F-43046r665847_fix">Step 1: Configure the ACL to restrict VPN traffic.
+
+ASA(config)# access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255. host 192.168.1.12 eq http
+ASA(config)# access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255. host 192.168.1.13 eq smtp
+ASA(config)# access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255. host 192.168.1.14 eq ftp
+ASA(config)# access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255. host 192.168.1.14 eq ftp-data
+ASA(config)# access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255.y host 192.168.1.15 eq domain
+ASA(config)# access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255. host 192.168.1.16 eq sqlnet
+ASA(config)# access-list RESTRICT_VPN extended deny ip any any log
+ASA(config)# exit 
+
+Step 2: Apply the VPN filter to the applicable group policy as shown in the example below.
+
+ASA(config)# group-policy VPN_POLICY attributes 
+ASA(config-group-policy)# vpn-filter value RESTRICT_VPN 
+ASA(config-group-policy)# end</fixtext><fix id="F-43046r665847_fix" /><check system="C-43087r665846_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Step 1: Verify that an ACL has been applied to the applicable VPN group policy via the vpn-filter attribute as shown in the example below.
+
+group-policy VPN_POLICY internal
+group-policy VPN_POLICY attributes
+ …
+ …
+ …
+ vpn-filter value RESTRICT_VPN
+
+Step 2: Verify that the filter restricts traffic according to organization-defined filtering rules as shown in the example below.
+
+access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255.0 host 192.168.1.12 eq http 
+access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255.0  host 192.168.1.13 eq smtp 
+access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255.0  host 192.168.1.14 eq ftp 
+access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255.0 host 192.168.1.14 eq ftp-data 
+access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255.0  host 192.168.1.15 eq domain
+access-list RESTRICT_VPN extended permit tcp 10.0.0.0 255.255.255.0  host 192.168.1.16 eq sqlnet
+access-list RESTRICT_VPN extended deny ip any any log
+
+Note: In the example above, assume that the client-assigned IP address pool is 10.10.10.0/24 and the local private network is 192.168.1.0/24.
+
+If the ASA is not configured to restrict VPN traffic according to organization-defined filtering rules, this is a finding.</check-content></check></Rule></Group><Group id="V-239855"><title>SRG-NET-000074-FW-000009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239855r665851_rule" weight="10.0" severity="medium"><version>CASA-FW-000040</version><title>The Cisco ASA must be configured to generate traffic log entries containing information to establish what type of events occurred.</title><description>&lt;VulnDiscussion&gt;Without establishing what type of event occurred, it would be difficult to establish, correlate, and investigate the events leading up to an outage or attack.
+
+Audit event content that may be necessary to satisfy this requirement includes, for example, time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, filenames involved, and access control or flow control rules invoked.
+
+Associating event types with detected events in the network element logs provides a means of investigating an attack, recognizing resource utilization or capacity thresholds, or identifying an improperly configured network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000130</ident><fixtext fixref="F-43047r665850_fix">Configure the ASA to generate traffic log entries containing information to establish what type of events occurred as shown in the example below.
+
+Step 1: Enable logging.
+
+ASA(config)# logging enable
+
+Step 2: Include the log parameter on all deny ACL statements.
+
+ASA(config)# access-list OUTSIDE_OUT extended deny ip any any log</fixtext><fix id="F-43047r665850_fix" /><check system="C-43088r665849_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the ASA configuration to determine if it is compliant with the requirement.
+
+Step 1: Verify that all ACL deny statements have the log parameter defined as shown in the example below.
+
+access-list OUTSIDE_OUT extended deny ip any any log
+
+Step 2: Verify logging is enabled.
+
+logging enable
+
+If the ASA is not configured to generate traffic log entries containing information to establish what type of events occurred, this is a finding.</check-content></check></Rule></Group><Group id="V-239856"><title>SRG-NET-000075-FW-000010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239856r665854_rule" weight="10.0" severity="medium"><version>CASA-FW-000050</version><title>The Cisco ASA must be configured to generate traffic log entries containing information to establish when (date and time) the events occurred.</title><description>&lt;VulnDiscussion&gt;Without establishing when events occurred, it is impossible to establish, correlate, and investigate the events leading up to an outage or attack.
+
+In order to compile an accurate risk assessment, and provide forensic analysis of network traffic patterns, it is essential for security personnel to know when flow control events occurred (date and time) within the infrastructure.
+
+Associating event types with detected events in the network traffic logs provides a means of investigating an attack, recognizing resource utilization or capacity thresholds, or identifying an improperly configured network element.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000131</ident><fixtext fixref="F-43048r665853_fix">Configure the ASA to generate traffic log entries containing information to establish when the events occurred.
+
+ASA(config)# logging timestamp</fixtext><fix id="F-43048r665853_fix" /><check system="C-43089r665852_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Verify that the logging timestamp command has been configured as shown below.
+
+logging enable
+logging timestamp
+
+If the ASA is not configured to generate traffic log entries containing information to establish when the events occurred, this is a finding.</check-content></check></Rule></Group><Group id="V-239857"><title>SRG-NET-000089-FW-000019</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239857r665857_rule" weight="10.0" severity="medium"><version>CASA-FW-000090</version><title>The Cisco ASA must be configured to queue log records locally in the event that the central audit server is down or not reachable.</title><description>&lt;VulnDiscussion&gt;It is critical that when the network element is at risk of failing to process traffic logs as required, it takes action to mitigate the failure. Audit processing failures include software/hardware errors, failures in the audit capturing mechanisms, and audit storage capacity being reached or exceeded. Responses to audit failure depend on the nature of the failure mode.
+
+In accordance with DoD policy, the traffic log must be sent to a central audit server. When logging functions are lost, system processing cannot be shut down because firewall availability is an overriding concern given the role of the firewall in the enterprise. The system should either be configured to log events to an alternative server or queue log records locally. Upon restoration of the connection to the central audit server, action should be taken to synchronize the local log data with the central audit server.
+
+If the central audit server uses User Datagram Protocol (UDP) communications instead of a connection oriented protocol such as TCP, a method for detecting a lost connection must be implemented.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000140</ident><fixtext fixref="F-43049r665856_fix">To continue to allow new connections and queue log records in the event the syslog server is not reachable, configure logging buffered and increase the queue size as shown in the example below.
+
+ASA(config)# logging buffered informational
+ASA(config)# logging queue 8192</fixtext><fix id="F-43049r665856_fix" /><check system="C-43090r665855_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the ASA configuration and verify that logging to the buffer is enabled and that the queue size has been increased as shown in the example below.
+
+logging enable
+logging buffered informational
+logging queue 8192
+logging host NDM_INTERFACE 10.1.22.2 6/1514
+
+Note: Configuring a value of 0 for the queue size will set it to maximum size for the specific platform.
+
+If the ASA is not configured to queue log records locally In the event that the central audit server is down or not reachable, this is a finding.</check-content></check></Rule></Group><Group id="V-239858"><title>SRG-NET-000098-FW-000021</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239858r819136_rule" weight="10.0" severity="medium"><version>CASA-FW-000100</version><title>The Cisco ASA must be configured to use TCP when sending log records to the central audit server.</title><description>&lt;VulnDiscussion&gt;If the default UDP protocol is used for communication between the hosts and devices to the Central Log Server, then log records that do not reach the log server are not detected as a data loss. The use of TCP to transport log records to the log servers improves delivery reliability.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-43050r665859_fix">Configure the ASA to use TCP when sending log records to the syslog server.
+
+ASA(config)# logging host NDM_INTERFACE 10.1.22.2 6/1514
+ASA(config)# logging permit-hostdown</fixtext><fix id="F-43050r665859_fix" /><check system="C-43091r819135_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the ASA configuration and verify it is configured to use TCP as shown in the example below.
+
+logging host NDM_INTERFACE 10.1.22.2 6/1514
+logging permit-hostdown
+
+Note: The command "logging permit-hostdown" must also be configured to ensure that when either the syslog server is down or the log queue is full, new connections to ASA are allowed, to prevent an unintended denial of service. However, log records can be lost if the internal queue fills before restoring the connection to the log server.
+
+If the ASA is not configured to use TCP when sending log records to the central audit server, this is a finding.</check-content></check></Rule></Group><Group id="V-239859"><title>SRG-NET-000131-FW-000025</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239859r665863_rule" weight="10.0" severity="medium"><version>CASA-FW-000130</version><title>The Cisco ASA must be configured to disable or remove unnecessary network services and functions that are not used as part of its role in the architecture.</title><description>&lt;VulnDiscussion&gt;Network devices are capable of providing a wide variety of functions (capabilities or processes) and services. Some of these functions and services are installed and enabled by default. The organization must determine which functions and services are required to perform the content filtering and other necessary core functionality for each component of the firewall. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Some services may be security related but, based on the firewall’s role in the architecture, must not be installed on the same hardware. For example, the device may serve as a router, VPN, or other perimeter services. However, if these functions are not part of the documented role of the firewall in the enterprise or branch architecture, the software and licenses should not be installed on the device. This mitigates the risk of exploitation of unconfigured services or services that are not kept updated with security fixes. If left unsecured, these services may provide a threat vector.
+
+Some services are not authorized for combination with the firewall and individual policy must be in place to instruct the administrator to remove these services. Examples of these services are Network Time Protocol (NTP), domain name server (DNS), email server, FTP server, web server, and Dynamic Host Configuration Protocol (DHCP). 
+
+Only remove unauthorized services. This control is not intended to restrict the use of firewalls with multiple authorized roles.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-43051r665862_fix">Disable features that should not be enabled unless required for operations.
+
+ASA(config)# no http server enable
+ASA(config)# no telnet 10.1.22.2 255.255.255.255 INSIDE
+ASA(config)# end
+
+Note: Telnet must always be disabled.</fixtext><fix id="F-43051r665862_fix" /><check system="C-43092r665861_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Features such as telnet should never be enabled, while other features should only be enabled if required for operations. In the example below, http and telnet service is enabled.
+
+http server enable
+…
+…
+…
+telnet 10.1.22.2 255.255.255.255 INSIDE
+
+Note: The command http server actually enables https and is required for ASDM.
+
+If any unnecessary or non-secure ports, protocols, or services are enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-239860"><title>SRG-NET-000193-FW-000030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239860r991796_rule" weight="10.0" severity="medium"><version>CASA-FW-000150</version><title>The Cisco ASA must be configured to enable threat detection to mitigate risks of denial-of-service (DoS) attacks.</title><description>&lt;VulnDiscussion&gt;A firewall experiencing a DoS attack will not be able to handle production traffic load. The high utilization and CPU caused by a DoS attack will also have an effect on control keep-alives and timers used for neighbor peering, resulting in route flapping and will eventually black-hole production traffic.
+
+The device must be configured to contain and limit a DoS attack's effect on the device's resource utilization. The use of redundant components and load balancing are examples of mitigating "flood-type" DoS attacks through increased capacity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001095</ident><ident system="http://cyber.mil/cci">CCI-004866</ident><fixtext fixref="F-43052r665865_fix">Configure threat detection as shown in the example below.
+
+ASA(config)# threat-detection basic-threat</fixtext><fix id="F-43052r665865_fix" /><check system="C-43093r863228_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>NOTE: When operating the ASA in multi-context mode with a separate IDPS, threat detection cannot be enabled, and this check is Not Applicable.
+
+Review the ASA configuration to determine if threat detection has been enabled.
+
+threat-detection basic-threat
+
+If the ASA has not been configured to enable threat detection to mitigate risks of DoS attacks, this is a finding.</check-content></check></Rule></Group><Group id="V-239861"><title>SRG-NET-000205-FW-000040</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239861r665904_rule" weight="10.0" severity="medium"><version>CASA-FW-000170</version><title>The Cisco ASA perimeter firewall must be configured to filter traffic destined to the enclave in accordance with the specific traffic that is approved and registered in the Ports, Protocols, and Services Management (PPSM)  Category Assurance List (CAL) and vulnerability assessments.</title><description>&lt;VulnDiscussion&gt;The enclave's internal network contains the servers where mission-critical data and applications reside. Malicious traffic can enter from an external boundary or originate from a compromised host internally.
+
+Vulnerability assessments must be reviewed by the SA and protocols must be approved by the IA staff before entering the enclave. 
+
+Firewall filters (e.g., rules, access control lists [ACLs], screens, and policies) are the first line of defense in a layered security approach. They permit authorized packets and deny unauthorized packets based on port or service type. They enhance the posture of the network by not allowing packets to even reach a potential target within the security domain. The filters provided are highly susceptible ports and services that should be blocked or limited as much as possible without adversely affecting customer requirements. Auditing packets attempting to penetrate the network but stopped by the firewall filters will allow network administrators to broaden their protective ring and more tightly define the scope of operation. 
+
+If the perimeter is in a Deny-by-Default posture and what is allowed through the filter is in accordance with the PPSM CAL and VAs for the enclave, and if the permit rule is explicitly defined with explicit ports and protocols allowed, then all requirements related to the database being blocked would be satisfied.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001097</ident><fixtext fixref="F-43053r665868_fix">Step 1: Configure the ingress ACL similar to the example below.
+
+ASA(config)# access-list OUTSIDE_IN extended permit tcp any any eq https
+ASA(config)# access-list OUTSIDE_IN extended permit tcp any any eq http
+ASA(config)# access-list OUTSIDE_IN extended permit tcp any any eq domain
+ASA(config)# access-list OUTSIDE_IN extended permit tcp any any eq ftp   
+ASA(config)# access-list OUTSIDE_IN extended permit tcp any any eq ftp-data
+ASA(config)# access-list OUTSIDE_IN extended permit udp any any eq sip
+ASA(config)# access-list OUTSIDE_IN extended deny ip any any log      
+
+Step 2: Apply the ACL inbound on the external interface as shown in the example below.
+
+ASA(config)# access-group OUTSIDE_IN in interface OUTSIDE 
+ASA(config)# end</fixtext><fix id="F-43053r665868_fix" /><check system="C-43094r665867_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the inbound ACL to verify the ports and services allowed are in accordance with the PPSM CAL.
+
+Review the ASA configuration to determine if it only permits inbound traffic using authorized ports and services.
+
+Step 1: Verify that an ingress ACL has been applied to the external interface as shown in the example below.
+
+ interface GigabitEthernet0/0
+ nameif OUTSIDE
+ security-level 0
+ ip address x.1.11.1 255.255.255.0
+…
+…
+…
+access-group OUTSIDE_IN in interface OUTSIDE
+
+Step 2: Verify that the ingress ACL only allows inbound traffic in accordance with the PPSM CAL as shown in the example below.
+
+access-list OUTSIDE_IN extended permit tcp any any eq www 
+access-list OUTSIDE_IN extended permit tcp any any eq https 
+access-list OUTSIDE_IN extended permit tcp any any eq domain 
+access-list OUTSIDE_IN extended permit tcp any any eq ftp 
+access-list OUTSIDE_IN extended permit tcp any any eq ftp-data 
+access-list OUTSIDE_IN extended permit udp any any eq sip 
+access-list OUTSIDE_IN extended deny ip any any log
+
+If the ASA is not configured to only allow inbound traffic in accordance with the PPSM CAL, this is a finding.</check-content></check></Rule></Group><Group id="V-239862"><title>SRG-NET-000333-FW-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239862r953982_rule" weight="10.0" severity="medium"><version>CASA-FW-000200</version><title>The Cisco ASA must be configured to send log data of denied traffic to a central audit server for analysis.</title><description>&lt;VulnDiscussion&gt;Without the ability to centrally manage the content captured in the traffic log entries, identification, troubleshooting, and correlation of suspicious behavior would be difficult and could lead to a delayed or incomplete analysis of an ongoing attack.
+
+The DoD requires centralized management of all network component audit record content. Network components requiring centralized traffic log management must have the ability to support centralized management. The content captured in traffic log entries must be managed from a central location (necessitating automation). Centralized management of traffic log records and logs provides for efficiency in maintenance and management of records, as well as the backup and archiving of those records. 
+
+Ensure at least one syslog server is configured on the firewall.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001821</ident><fixtext fixref="F-43054r665871_fix">Configure the ASA to send log messages to the syslog server as shown in the example below.
+
+ASA(config)# logging host NDM_INTERFACE 10.1.48.10/1514
+ASA(config)# logging trap notifications 
+ASA(config)# end</fixtext><fix id="F-43054r665871_fix" /><check system="C-43095r665870_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Verify that the ASA is configured to send logs to a syslog server. The configuration should look similar to the example below.
+
+logging trap notifications
+logging host NDM_INTERFACE 10.1.48.10/1514
+
+If the ASA is not configured to send log data to the syslog server, this is a finding.</check-content></check></Rule></Group><Group id="V-239863"><title>SRG-NET-000335-FW-000017</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239863r855805_rule" weight="10.0" severity="medium"><version>CASA-FW-000210</version><title>The Cisco ASA must be configured to generate a real-time alert to organization-defined personnel and/or the firewall administrator in the event communication with the central audit server is lost.</title><description>&lt;VulnDiscussion&gt;Without a real-time alert (less than a second), security personnel may be unaware of an impending failure of the audit functions and system operation may be adversely impacted. Alerts provide organizations with urgent messages. Automated alerts can be conveyed in a variety of ways, including via a regularly monitored console, telephonically, via electronic mail, via text message, or via websites.
+
+Log processing failures include software/hardware errors, failures in the log capturing mechanisms, and log storage capacity being reached or exceeded. Most firewalls use UDP to send audit records to the server and cannot tell if the server has received the transmission, thus the site should either implement a connection-oriented communications solution (e.g., TCP) or implement a heartbeat with the central audit server and send an alert if it is unreachable. The ISSM or ISSO may designate the firewall/system administrator or other authorized personnel to receive the alert within the specified time, validate the alert, and then forward only validated alerts to the ISSM and ISSO.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001858</ident><fixtext fixref="F-43055r665874_fix">Configure the ASA to send an email alert to the organization-defined personnel and/or firewall administrator for syslog messages at severity level 3.
+
+ASA(config)# logging mail 3 
+ASA(config)# logging recipient-address OurFWadmin@mail.mil
+ASA(config)# logging recipient-address OurISSO@mail.mil
+ASA(config)# logging from-address firewall@mail.mil
+ASA(config)# smtp-server 10.1.12.33
+ASA(config)# end</fixtext><fix id="F-43055r665874_fix" /><check system="C-43096r665873_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the ASA configuration to determine if it will send an email alert to organization-defined personnel and/or the firewall administrator if  communication with the central audit server is lost as shown in the example below.
+
+logging enable
+logging host NDM_INTERFACE 10.1.22.2 6/1514
+logging permit-hostdown
+logging mail errors
+logging from-address firewall@mail.mil
+logging recipient-address OurFWadmin@mail.mil level errors
+logging recipient-address OurISSO@mail.mil level errors
+…
+…
+…
+smtp-server 10.1.12.33
+
+Note: Severity level must be set at 3 (errors) or higher as the following message is seen when an ASA loses communication with the syslog server: %ASA-3-201008 or %ASA-3-414003: Disallowing new connections.
+
+If the ASA is not configured to generate a real-time alert to organization-defined personnel and/or the firewall administrator if communication with the central audit server is lost, this is a finding.</check-content></check></Rule></Group><Group id="V-239864"><title>SRG-NET-000362-FW-000028</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239864r891328_rule" weight="10.0" severity="high"><version>CASA-FW-000220</version><title>The Cisco ASA must be configured to implement scanning threat detection.</title><description>&lt;VulnDiscussion&gt;In a port scanning attack, an unauthorized application is used to scan the host devices for available services and open ports for subsequent use in an attack. This type of scanning can be used as a DoS attack when the probing packets are sent excessively.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-43056r665877_fix">Configure scanning threat detection as shown in the example below.
+
+ASA(config)# threat-detection scanning-threat shun</fixtext><fix id="F-43056r665877_fix" /><check system="C-43097r891327_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>NOTE: When operating the ASA in multi-context mode with a separate IDPS, threat detection cannot be enabled and this check is Not Applicable.
+
+Review the ASA configuration to determine if scanning threat detection has been enabled.
+
+threat-detection scanning-threat shun
+
+NOTE: The parameter "shun" is an optional parameter in the Cisco documentation, but is required here to offer additional protection by dropping further connections from the threat.
+
+If the ASA has not been configured to enable scanning threat detection, this is a finding.</check-content></check></Rule></Group><Group id="V-239865"><title>SRG-NET-000364-FW-000031</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239865r991797_rule" weight="10.0" severity="medium"><version>CASA-FW-000230</version><title>The Cisco ASA must be configured to filter inbound traffic on all external interfaces.</title><description>&lt;VulnDiscussion&gt;Unrestricted traffic to the trusted networks may contain malicious traffic that poses a threat to an enclave or to other connected networks. Additionally, unrestricted traffic may transit a network, which uses bandwidth and other resources.
+
+Firewall filters control the flow of network traffic, ensure the flow of traffic is only allowed from authorized sources to authorized destinations. Networks with different levels of trust (e.g., the Internet) must be kept separated.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><ident system="http://cyber.mil/cci">CCI-004891</ident><fixtext fixref="F-43057r665880_fix">Step 1: Configure the ACL to allow specific inbound traffic.
+
+ASA(config)# access-list OUTSIDE_2_DMZ extended permit tcp any host 10.1.33.2 eq www 
+ASA(config)# access-list OUTSIDE_2_DMZ extended permit tcp any host 10.1.33.2 eq https 
+ASA(config)# access-list OUTSIDE_2_DMZ extended permit tcp any host 10.1.33.3 eq ftp 
+ASA(config)# access-list OUTSIDE_2_DMZ extended permit tcp any host 10.1.33.3 eq ftp-data 
+ASA(config)# access-list OUTSIDE_2_DMZ extended deny ip any any log
+
+Step 2: Apply the ACL inbound to the external interface.
+
+ASA(config)#  access-group  OUTSIDE_2_DMZ in interface OUTSIDE</fixtext><fix id="F-43057r665880_fix" /><check system="C-43098r665879_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the ASA configuration to verify that it is filtering inbound traffic on all external interfaces.
+
+access-list OUTSIDE_2_DMZ extended permit tcp any host 10.1.33.2 eq www 
+access-list OUTSIDE_2_DMZ extended permit tcp any host 10.1.33.2 eq https 
+access-list OUTSIDE_2_DMZ extended permit tcp any host 10.1.33.3 eq ftp 
+access-list OUTSIDE_2_DMZ extended permit tcp any host 10.1.33.3 eq ftp-data 
+access-list OUTSIDE_2_DMZ extended deny ip any any log
+…
+…
+…
+access-group  OUTSIDE_2_DMZ in interface OUTSIDE
+
+If the ASA is not configured to filter inbound traffic on all external interfaces, this is a finding.</check-content></check></Rule></Group><Group id="V-239866"><title>SRG-NET-000364-FW-000032</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239866r991798_rule" weight="10.0" severity="medium"><version>CASA-FW-000240</version><title>The Cisco ASA must be configured to filter outbound traffic on all internal interfaces.</title><description>&lt;VulnDiscussion&gt;If outbound communications traffic is not filtered, hostile activity intended to harm other networks or packets from networks destined to unauthorized networks may not be detected and prevented.
+
+Access control policies and access control lists implemented on devices, such as firewalls, that control the flow of network traffic ensure the flow of traffic is only allowed from authorized sources to authorized destinations. Networks with different levels of trust (e.g., the Internet) must be kept separated.
+
+This requirement addresses the binding of the egress filter to the interface/zone rather than the content of the egress filter.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><ident system="http://cyber.mil/cci">CCI-004891</ident><fixtext fixref="F-43058r665883_fix">Step 1: Configure the egress ACL similar to the example below.
+
+ASA(config)# access-list INSIDE_2_OUT extended permit tcp any any eq https
+ASA(config)# access-list INSIDE_2_OUT extended permit tcp any any eq http
+ASA(config)# access-list INSIDE_2_OUT extended permit tcp any any eq domain
+ASA(config)# access-list INSIDE_2_OUT extended permit tcp any any eq ftp   
+ASA(config)# access-list INSIDE_2_OUT extended permit tcp any any eq ftp-data
+ASA(config)# access-list INSIDE_2_OUT extended permit tcp any host 10.1.22.3 eq ssh
+ASA(config)# access-list INSIDE_2_OUT extended deny ip any any log      
+
+Step 2: Apply the ACL inbound on the internal interfaces as shown in the example below.
+
+ASA(config)# access-group INSIDE_2_OUT in interface INSIDE 
+ASA(config)# end</fixtext><fix id="F-43058r665883_fix" /><check system="C-43099r665882_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Step 1: Verify that an ingress ACL has been applied to the internal interface as shown in the example below.
+
+ interface GigabitEthernet0/3
+ nameif INSIDE
+ security-level 100
+ ip address 10.1.11.1 255.255.255.0
+…
+…
+…
+access-group INSIDE_2_OUT in interface INSIDE
+
+Step 2: Verify that the ACL only allows outbound traffic using authorized ports and services as shown in the example below.
+
+access-list INSIDE_2_OUT extended permit tcp any any eq www 
+access-list INSIDE_2_OUT extended permit tcp any any eq https 
+access-list INSIDE_2_OUT extended permit tcp any any eq domain 
+access-list INSIDE_2_OUT extended permit tcp any any eq ftp 
+access-list INSIDE_2_OUT extended permit tcp any any eq ftp-data 
+access-list INSIDE_2_OUT extended permit tcp any host 10.1.22.3 eq ssh
+access-list INSIDE_2_OUT extended deny ip any any log
+
+If the ASA is not configured to filter outbound traffic on all internal interfaces, this is a finding.</check-content></check></Rule></Group><Group id="V-239867"><title>SRG-NET-000364-FW-000035</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239867r891331_rule" weight="10.0" severity="medium"><version>CASA-FW-000250</version><title>The Cisco ASA perimeter firewall must be configured to block all outbound management traffic.</title><description>&lt;VulnDiscussion&gt;The management network must still have its own subnet in order to enforce control and access boundaries provided by Layer 3 network nodes such as routers and firewalls. Management traffic between the managed network elements and the management network is routed via the same links and nodes as that used for production or operational traffic. 
+
+Safeguards must be implemented to ensure that the management traffic does not leak past the managed network's premise equipment. If a firewall is located behind the premise router, all management traffic must be blocked at that point, with the exception of management traffic destined to premise equipment.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><fixtext fixref="F-43059r891330_fix">Step 1: Configure the ingress ACL similar to the example below.
+
+ASA(config)# access-list INSIDE_IN extended deny udp any any eq snmp 
+ASA(config)# access-list INSIDE_IN extended deny udp any any eq snmptrap
+ASA(config)# access-list INSIDE_IN extended deny udp any any eq ntp 
+ASA(config)# access-list INSIDE_IN extended deny udp any any eq syslog
+ASA(config)# access-list INSIDE_IN extended deny tcp any any eq 22 
+ASA(config)# access-list INSIDE_IN extended deny tcp any any eq tacacs
+ASA(config)# access-list INSIDE_IN extended permit ip any any 
+
+Step 2: Apply the ACL inbound on the internal interfaces as shown in the example below.
+
+ASA(config)# access-group INSIDE_IN out interface INSIDE 
+ASA(config)# end</fixtext><fix id="F-43059r891330_fix" /><check system="C-43100r891329_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the ASA configuration to determine if it blocks outbound management traffic.
+
+Step 1: Verify that an ingress ACL has been applied to all internal interfaces as shown in the example below.
+
+ interface GigabitEthernet0/0
+ nameif INSIDE
+ security-level 100
+ ip address x.1.11.1 255.255.255.0
+…
+…
+…
+access-group INSIDE_IN in interface INSIDE
+
+Step 2: Verify that the ingress ACL blocks outbound management traffic as shown in the example below.
+
+access-list INSIDE_IN extended deny udp any any eq snmp 
+access-list INSIDE_IN extended deny udp any any eq snmptrap
+access-list INSIDE_IN extended deny udp any any eq ntp 
+access-list INSIDE_IN extended deny udp any any eq syslog
+access-list INSIDE_IN extended deny tcp any any eq 22 
+access-list INSIDE_IN extended deny tcp any any eq tacacs
+access-list INSIDE_IN extended permit ip any any 
+
+Note: An exception is to allow management traffic destined to perimeter devices. In those cases, configure permit statements for that traffic before the deny statements in the example above.
+
+If the ASA is not configured to block outbound management traffic, this is a finding.</check-content></check></Rule></Group><Group id="V-239868"><title>SRG-NET-000364-FW-000036</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239868r991800_rule" weight="10.0" severity="medium"><version>CASA-FW-000260</version><title>The Cisco ASA must be configured to forward management traffic to the Network Operations Center (NOC) via an IPsec tunnel.</title><description>&lt;VulnDiscussion&gt;When the production network is managed in-band, the management network could be housed at a NOC that is located remotely at single or multiple interconnected sites. NOC interconnectivity, as well as connectivity between the NOC and the managed network, must be enabled using IPsec tunnels to provide the separation and integrity of the managed traffic.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><ident system="http://cyber.mil/cci">CCI-004931</ident><fixtext fixref="F-43060r665889_fix">Step 1: Configure an ISAKMP policy for IKE connection as shown in the example.
+
+ASA1(config)# crypto ikev1 policy 10
+ASA1(config-ikev1-policy)# authentication pre-share
+ASA1(config-ikev1-policy)# encryption aes-256
+ASA1(config-ikev1-policy)# hash sha
+ASA1(config-ikev1-policy)# group 5
+ASA1(config-ikev1-policy)# lifetime 3600
+ASA1(config-ikev1-policy)# exit
+
+Step 2: Enable the IKEv1 policy on the outside interface and identify itself with its IP address.
+
+ASA1(config)# crypto ikev1 enable OUTSIDE
+ASA1(config)# crypto isakmp identity address
+
+Step 3: Configure the tunnel group as shown in the example below.
+
+ASA2(config)# tunnel-group 10.10.10.1 ipsec-attributes
+ASA2(config-tunnel-ipsec)# ikev1 pre-shared-key xxxxxxxxxxxxx 
+
+Step 4: Configure a transform set for encryption and authentication.
+
+crypto ipsec ikev1 transform-set IPSEC_TRANSFORM esp-aes-192 esp-sha-hmac
+
+Step 5: Configure the ACL to define the management traffic that will traverse the tunnel.
+
+ASA1(config)# access-list MANAGEMENT_TRAFFIC extended permit udp any eq snmp 10.2.2.0 255.255.255.0 
+ASA1(config)# access-list MANAGEMENT_TRAFFIC extended permit udp any eq 10.2.2.0 255.255.255.0 snmptrap
+ASA1(config)# access-list MANAGEMENT_TRAFFIC extended permit udp any eq syslog 10.2.2.0 255.255.255.0 
+ASA1(config)# access-list MANAGEMENT_TRAFFIC extended permit tcp any eq ssh 10.2.2.0 255.255.255.0 
+
+Step 6: Configure crypto map and bind to the outside interface as shown in the example below.
+
+ASA1(config)# crypto map IPSEC_CRYPTO_MAP 1 match address MANAGEMENT_TRAFFIC
+ASA1(config)# crypto map IPSEC_CRYPTO_MAP 1 set peer 10.10.10.2
+ASA1(config)# crypto map IPSEC_CRYPTO_MAP 1 set ikev1 transform-set MY_TRANSFORM_SET
+ASA1(config)# crypto map IPSEC_CRYPTO_MAP 1 set security-association lifetime seconds 3600
+ASA1(config)# crypto map IPSEC_CRYPTO_MAP interface OUTSIDE</fixtext><fix id="F-43060r665889_fix" /><check system="C-43101r991799_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Step 1: Verify that an IPsec crypto map has been configured and bound to the outside interface as shown in the example below.
+
+crypto ipsec ikev1 transform-set IPSEC_TRANSFORM esp-aes-192 esp-sha-hmac 
+crypto map IPSEC_CRYPTO_MAP 1 match address MANAGEMENT_TRAFFIC
+crypto map IPSEC_CRYPTO_MAP 1 set peer 10.3.1.1 
+crypto map IPSEC_CRYPTO_MAP 1 set ikev1 transform-set IPSEC_TRANSFORM
+crypto map IPSEC_CRYPTO_MAP 1 set security-association lifetime seconds 3600
+crypto map IPSEC_CRYPTO_MAP interface OUTSIDE
+
+Step 2: Verify the there is a tunnel group configured for the peer defined in the crypto map as shown in the example below.
+
+tunnel-group 10.3.1.1 type ipsec-l2l
+tunnel-group 10.3.1.1 ipsec-attributes
+ ikev1 pre-shared-key *****
+
+Step 3: Verify that an ISAKMP policy for IKE connections has been configured and bound to the outside interface as shown in the example.
+
+crypto isakmp identity address 
+crypto ikev1 enable OUTSIDE
+crypto ikev1 policy 10
+ authentication pre-share
+ encryption aes-256
+ hash sha
+ group 5
+ lifetime 3600
+
+Step 4: Verify that the ACL referenced in the IPsec crypto map includes all applicable management traffic.
+
+access-list MANAGEMENT_TRAFFIC extended permit udp any eq snmp 10.2.2.0 255.255.255.0 
+access-list MANAGEMENT_TRAFFIC extended permit udp any eq 10.2.2.0 255.255.255.0 snmptrap
+access-list MANAGEMENT_TRAFFIC extended permit udp any eq syslog 10.2.2.0 255.255.255.0 
+access-list MANAGEMENT_TRAFFIC extended permit tcp any eq ssh 10.2.2.0 255.255.255.0 
+
+Note: Exception would be allowed for management traffic to and from managed perimeter devices.
+
+If the ASA is not configured to forward management traffic to the NOC via an IPsec tunnel, this is a finding.</check-content></check></Rule></Group><Group id="V-239869"><title>SRG-NET-000364-FW-000040</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239869r665893_rule" weight="10.0" severity="medium"><version>CASA-FW-000270</version><title>The Cisco ASA must be configured to inspect all inbound and outbound traffic at the application layer.</title><description>&lt;VulnDiscussion&gt;Application inspection enables the firewall to control traffic based on different parameters that exist within the packets such as enforcing application-specific message and field length. Inspection provides improved protection against application-based attacks by restricting the types of commands allowed for the applications. Application inspection all enforces conformance against published RFCs.
+
+Some applications embed an IP address in the packet that needs to match the source address that is normally translated when it goes through the firewall. Enabling application inspection for a service that embeds IP addresses, the firewall translates embedded addresses and updates any checksum or other fields that are affected by the translation. Enabling application inspection for a service that uses dynamically assigned ports, the firewall monitors sessions to identify the dynamic port assignments, and permits data exchange on these ports for the duration of the specific session.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-43061r665892_fix">Configure the firewall to inspect all inbound and outbound traffic at the application layer.
+
+ASA(config)# service-policy global_policy global  
+ASA(config)# end</fixtext><fix id="F-43061r665892_fix" /><check system="C-43102r665891_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the firewall configuration to verify that inspection for applications deployed within the network is being performed on all interfaces. The following command should be configured: service-policy global_policy global 
+
+If the firewall is not configured to inspect all inbound and outbound traffic at the application layer, this is a finding.</check-content></check></Rule></Group><Group id="V-239870"><title>SRG-NET-000364-FW-000041</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239870r665896_rule" weight="10.0" severity="medium"><version>CASA-FW-000280</version><title>The Cisco ASA must be configured to inspect all inbound and outbound IPv6 traffic for unknown or out-of-order extension headers.</title><description>&lt;VulnDiscussion&gt;IPv6 packets with unknown extension headers as well as out-of-order headers can create Denial-of-Service attacks for other networking components as well as host devices. IPv6 inspection can check conformance to RFC 2460 enforcing the order extension headers. While routers only need to examine the IPv6 destination address and the Hop-by-Hop Options header, firewalls must recognize and parse through all existing extension headers since the upper-layer protocol information resides in the last header. An attacker is able to chain many extension headers in order to pass firewall and intrusion detections. An attacker can cause a denial of service if an intermediary device or destination host is not capable of processing an extensive or out-of-order chain of extension headers. Hence, it is imperative the firewall is configured to drop packets with unknown or out-of-order headers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-43062r665895_fix">Configure the firewall to inspect all inbound and outbound IPv6 traffic for unknown or out-of-order extension headers.
+
+Step 1 (optional): Configure an IPv6 inspect policy map.
+
+ASA(config)# policy-map type inspect  ipv6 IPV6_MAP 
+ASA(config-pmap)# parameters
+ASA(config-pmap-p)# verify-header type 
+ASA(config-pmap-p)# verify-header order
+ASA(config-pmap-p)# exit
+ASA(config-pmap)# match header hop-by-hop 
+ASA(config-pmap-c)# drop log 
+ASA(config-pmap-c)# exit 
+ASA(config-pmap)# match header routing-type eq 0
+ASA(config-pmap-c)# drop log 
+ASA(config-pmap-c)# exit
+ASA(config-pmap)# match header routing-type eq 1
+ASA(config-pmap-c)# drop log 
+ASA(config-pmap-c)# exit
+ASA(config-pmap)# match header routing-type range 3 255
+ASA(config-pmap-c)# drop log 
+ASA(config-pmap-c)# exit
+
+Note: The verify-header type and verify-header order are enabled by default when the parameters command is configured.
+
+Step 2: Include the inspect ipv6 command in the global policy-map as shown in the example below.
+
+ASA(config)# policy-map global_policy
+ASA(config-pmap)# class inspection_default
+ASA(config-pmap-c)# inspect ipv6
+ASA(config-pmap-c)# end</fixtext><fix id="F-43062r665895_fix" /><check system="C-43103r665894_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the firewall configuration to verify that IPv6 inspection is being performed on all interfaces.
+
+Step 1: Verify that the inspect ipv6 command is configured under the global policy map as shown in the example below.
+
+policy-map global_policy
+ class inspection_default
+  …
+  …
+  …
+  inspect ipv6 IPV6_MAP
+
+Step 2: If a policy map is specified for the inspect ipv6 command, verify the parameters command has been configured. Also verify that the “no verify-header order” and “no verify-header type” sub-command are not configured under the parameters command.
+
+policy-map type inspect ipv6 IPV6_MAP
+ parameters
+ match header hop-by-hop
+  drop log
+match header routing-type eq 0
+  drop log
+match header routing-type eq 1
+  drop log
+match header routing-type range 3 255
+  drop log
+ match header destination-option
+  drop log
+
+Note: If policy map is not specified for the inspect ipv6 command, the default IPv6 inspection policy map is used and the following actions are taken:
+
+1. Allows only known IPv6 extension headers. Non-conforming packets are dropped and logged.
+2. Enforces the order of IPv6 extension headers as defined in the RFC 2460 specification. Non-conforming packets are dropped and logged.
+3. Drops any packet with a routing type header.
+
+Note: This requirement is not applicable if IPv6 is not enabled on any interfaces.
+
+If the firewall is not configured to inspect all inbound and outbound IPv6 traffic for unknown or out-of-order extension headers, this is a finding.</check-content></check></Rule></Group><Group id="V-239871"><title>SRG-NET-000364-FW-000042</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239871r665899_rule" weight="10.0" severity="medium"><version>CASA-FW-000290</version><title>The Cisco ASA must be configured to restrict it from accepting outbound packets that contain an illegitimate address in the source address field via an egress filter or by enabling Unicast Reverse Path Forwarding (uRPF).</title><description>&lt;VulnDiscussion&gt;A compromised host in an enclave can be used by a malicious platform to launch cyberattacks on third parties. This is a common practice in "botnets", which are a collection of compromised computers using malware to attack other computers or networks. Denial-of-Service attacks frequently leverage IP source address spoofing to send packets to multiple hosts that, in turn, will then send return traffic to the hosts with the IP addresses that were forged. This can generate significant amounts of traffic. Therefore, protection measures to counteract IP source address spoofing must be taken. When uRPF is enabled in strict mode, the packet must be received on the interface that the device would use to forward the return packet, thereby mitigating IP source address spoofing.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-43063r665898_fix">Configure the firewall with an egress filter or uRPF on all internal interfaces to restrict the firewall from accepting any outbound packet that contains an illegitimate address in the source field.
+
+URF Example:
+
+ip verify reverse-path interface INSIDE
+
+ACL Example:
+
+Step 1: Configure an object group containing the allowed subnets as shown in the example below.
+
+ASA(config)# object-group network LAN_SUBNETS
+ASA(config-network-object-group)# network-object 10.1.10.0 255.255.255.0
+ASA(config-network-object-group)# network-object 10.1.12.0 255.255.255.0
+ASA(config-network-object-group)# network-object 10.1.13.0 255.255.255.0
+ASA(config-network-object-group)# network-object 10.1.22.0 255.255.255.0
+ASA(config-network-object-group)# exit
+
+Step 2: Configure the ACL.
+
+ASA(config)# access-list INSIDE_IN permit ip object-group LAN_SUBNETS any
+ASA(config)# access-list INSIDE_IN deny ip any any     
+
+Note: Traffic that is permitted must be in compliance with the PPSM.   
+
+Step 3: Apply the ACL inbound on the inside interface.
+
+ASA(config)# access-group INSIDE_IN in interface INSIDE</fixtext><fix id="F-43063r665898_fix" /><check system="C-43104r665897_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>Review the firewall configuration to verify uRPF or an egress filter has been configured on all internal interfaces to restrict the firewall from accepting outbound packets that contain an illegitimate address in the source address field.
+
+URF Example:
+
+ip verify reverse-path interface INSIDE
+
+ACL Example:
+
+Step 1: Verify that an ACL has been applied inbound on the inside interfaces as shown in the example below.
+
+access-group INSIDE_IN in interface INSIDE
+
+Step 2: Verify that the ACL only allows packets from legitimate internal source addresses.
+
+object-group network LAN_SUBNETS
+ network-object 10.1.10.0 255.255.255.0
+ network-object 10.1.12.0 255.255.255.0
+ network-object 10.1.13.0 255.255.255.0
+ network-object 10.1.22.0 255.255.255.0
+…
+…
+…
+access-list INSIDE_IN extended permit ip object-group LAN_SUBNETS any 
+access-list INSIDE_IN extended deny ip any any
+
+Note: Traffic that is permitted must be in compliance with the PPSM.
+
+If uRPF or an egress ACL to restrict the firewall from accepting outbound IP packets that contain an illegitimate address in the source address field has not been configured on all internal interfaces, this is a finding.</check-content></check></Rule></Group><Group id="V-239872"><title>SRG-NET-000392-FW-000042</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-239872r971533_rule" weight="10.0" severity="medium"><version>CASA-FW-000300</version><title>The Cisco ASA must be configured to generate an alert that can be forwarded to organization-defined personnel and/or the firewall administrator when denial-of-service (DoS) incidents are detected.</title><description>&lt;VulnDiscussion&gt;Without an alert, security personnel may be unaware of major detection incidents that require immediate action, and this delay may result in the loss or compromise of information.
+
+The firewall generates an alert that notifies designated personnel of the Indicators of Compromise (IOCs), which require real-time alerts. These messages should include a severity level indicator or code as an indicator of the criticality of the incident. These indicators reflect the occurrence of a compromise or a potential compromise.
+
+Since these incidents require immediate action, these messages are assigned a critical or level 1 priority/severity, depending on the system's priority schema.
+
+CJCSM 6510.01B, "Cyber Incident Handling Program", lists nine Cyber Incident and Reportable Event Categories. DoD has determined that categories identified by CJCSM 6510.01B Major Indicators (category 1, 2, 4, or 7 detection events) will require an alert when an event is detected.
+
+Alerts may be transmitted, for example, telephonically, by electronic mail messages, or by text messaging. The firewall must either send the alert to a management console that is actively monitored by authorized personnel or use a messaging capability to send the alert directly to designated personnel. The ISSM or ISSO may designate the firewall/system administrator or other authorized personnel to receive the alert within the specified time, validate the alert, and then forward only validated alerts to the ISSM and ISSO.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Cisco ASA Firewall</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Cisco ASA Firewall</dc:subject><dc:identifier>5339</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002664</ident><fixtext fixref="F-43064r665901_fix">Step 1: Configure basic and scanning threat detection as shown below.
+
+ASA(config)# threat-detection basic-threat
+ASA(config)# threat-detection scanning-threat
+
+Step 2: Configure the ASA to send an email alert to the organization-defined personnel and/or firewall administrator for syslog messages at severity level 4.
+
+ASA(config)# logging mail 4 
+ASA(config)# logging recipient-address OurFWadmin@mail.mil
+ASA(config)# logging recipient-address OurISSO@mail.mil
+ASA(config)# logging from-address firewall@mail.mil
+ASA(config)# smtp-server 10.1.12.33
+ASA(config)# end
+
+Note: As an alternative to sending email alerts, SNMP traps could be sent to an SIEM that is monitored.</fixtext><fix id="F-43064r665901_fix" /><check system="C-43105r863232_chk"><check-content-ref href="Cisco_ASA_Firewall_STIG.xml" name="M" /><check-content>NOTE: When operating the ASA in multi-context mode with a separate IDPS, threat detection cannot be enabled, and this check is Not Applicable.
+
+Step 1: Verify that basic and scanning threat detection has been configured as shown below.
+
+threat-detection basic-threat
+threat-detection scanning-threat
+
+Step 2: Configure the ASA to send an email to organization-defined personnel and/or the firewall administrator for syslog messages at severity level 4 (warnings) as shown in the example below.
+
+logging mail warnings
+logging from-address firewall@mail.mil
+logging recipient-address OurFWadmin@mail.mil level warnings
+logging recipient-address OurISSO@mail.mil level warnings
+…
+…
+…
+smtp-server 10.1.12.33
+
+Note: When a basic threat is detected, the ASA  generates syslog message %ASA-4-733100. When scanning threat is detected, the ASA  generates syslog message %ASA-4-733101. As an alternative to sending email alerts, SNMP traps could be sent to an SIEM that is monitored.
+
+If the ASA is not configured to generate an alert that can be forwarded to the organization-defined personnel and/or firewall administrator when a threat has been detected, this is a finding.</check-content></check></Rule></Group></Benchmark>
