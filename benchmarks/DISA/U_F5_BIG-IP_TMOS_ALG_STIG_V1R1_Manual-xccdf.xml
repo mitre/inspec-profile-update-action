@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="F5_BIG-IP_TMOS_ALG_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-09-20">accepted</status><title>F5 BIG-IP TMOS ALG Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 26 Sep 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266137" selected="true" /><select idref="V-266138" selected="true" /><select idref="V-266139" selected="true" /><select idref="V-266140" selected="true" /><select idref="V-266141" selected="true" /><select idref="V-266142" selected="true" /><select idref="V-266143" selected="true" /><select idref="V-266144" selected="true" /><select idref="V-266145" selected="true" /><select idref="V-266146" selected="true" /><select idref="V-266147" selected="true" /><select idref="V-266148" selected="true" /><select idref="V-266149" selected="true" /><select idref="V-266150" selected="true" /><select idref="V-266151" selected="true" /><select idref="V-266152" selected="true" /><select idref="V-266153" selected="true" /><select idref="V-266154" selected="true" /><select idref="V-266155" selected="true" /><select idref="V-266156" selected="true" /><select idref="V-266157" selected="true" /><select idref="V-266158" selected="true" /><select idref="V-266159" selected="true" /><select idref="V-266160" selected="true" /><select idref="V-266161" selected="true" /><select idref="V-266162" selected="true" /><select idref="V-266163" selected="true" /><select idref="V-266164" selected="true" /><select idref="V-266165" selected="true" /><select idref="V-266166" selected="true" /><select idref="V-266167" selected="true" /><select idref="V-266168" selected="true" /><select idref="V-266169" selected="true" /><select idref="V-266170" selected="true" /><select idref="V-266171" selected="true" /><select idref="V-266172" selected="true" /><select idref="V-266173" selected="true" /><select idref="V-266174" selected="true" /><select idref="V-266175" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266137" selected="true" /><select idref="V-266138" selected="true" /><select idref="V-266139" selected="true" /><select idref="V-266140" selected="true" /><select idref="V-266141" selected="true" /><select idref="V-266142" selected="true" /><select idref="V-266143" selected="true" /><select idref="V-266144" selected="true" /><select idref="V-266145" selected="true" /><select idref="V-266146" selected="true" /><select idref="V-266147" selected="true" /><select idref="V-266148" selected="true" /><select idref="V-266149" selected="true" /><select idref="V-266150" selected="true" /><select idref="V-266151" selected="true" /><select idref="V-266152" selected="true" /><select idref="V-266153" selected="true" /><select idref="V-266154" selected="true" /><select idref="V-266155" selected="true" /><select idref="V-266156" selected="true" /><select idref="V-266157" selected="true" /><select idref="V-266158" selected="true" /><select idref="V-266159" selected="true" /><select idref="V-266160" selected="true" /><select idref="V-266161" selected="true" /><select idref="V-266162" selected="true" /><select idref="V-266163" selected="true" /><select idref="V-266164" selected="true" /><select idref="V-266165" selected="true" /><select idref="V-266166" selected="true" /><select idref="V-266167" selected="true" /><select idref="V-266168" selected="true" /><select idref="V-266169" selected="true" /><select idref="V-266170" selected="true" /><select idref="V-266171" selected="true" /><select idref="V-266172" selected="true" /><select idref="V-266173" selected="true" /><select idref="V-266174" selected="true" /><select idref="V-266175" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266137" selected="true" /><select idref="V-266138" selected="true" /><select idref="V-266139" selected="true" /><select idref="V-266140" selected="true" /><select idref="V-266141" selected="true" /><select idref="V-266142" selected="true" /><select idref="V-266143" selected="true" /><select idref="V-266144" selected="true" /><select idref="V-266145" selected="true" /><select idref="V-266146" selected="true" /><select idref="V-266147" selected="true" /><select idref="V-266148" selected="true" /><select idref="V-266149" selected="true" /><select idref="V-266150" selected="true" /><select idref="V-266151" selected="true" /><select idref="V-266152" selected="true" /><select idref="V-266153" selected="true" /><select idref="V-266154" selected="true" /><select idref="V-266155" selected="true" /><select idref="V-266156" selected="true" /><select idref="V-266157" selected="true" /><select idref="V-266158" selected="true" /><select idref="V-266159" selected="true" /><select idref="V-266160" selected="true" /><select idref="V-266161" selected="true" /><select idref="V-266162" selected="true" /><select idref="V-266163" selected="true" /><select idref="V-266164" selected="true" /><select idref="V-266165" selected="true" /><select idref="V-266166" selected="true" /><select idref="V-266167" selected="true" /><select idref="V-266168" selected="true" /><select idref="V-266169" selected="true" /><select idref="V-266170" selected="true" /><select idref="V-266171" selected="true" /><select idref="V-266172" selected="true" /><select idref="V-266173" selected="true" /><select idref="V-266174" selected="true" /><select idref="V-266175" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266137" selected="true" /><select idref="V-266138" selected="true" /><select idref="V-266139" selected="true" /><select idref="V-266140" selected="true" /><select idref="V-266141" selected="true" /><select idref="V-266142" selected="true" /><select idref="V-266143" selected="true" /><select idref="V-266144" selected="true" /><select idref="V-266145" selected="true" /><select idref="V-266146" selected="true" /><select idref="V-266147" selected="true" /><select idref="V-266148" selected="true" /><select idref="V-266149" selected="true" /><select idref="V-266150" selected="true" /><select idref="V-266151" selected="true" /><select idref="V-266152" selected="true" /><select idref="V-266153" selected="true" /><select idref="V-266154" selected="true" /><select idref="V-266155" selected="true" /><select idref="V-266156" selected="true" /><select idref="V-266157" selected="true" /><select idref="V-266158" selected="true" /><select idref="V-266159" selected="true" /><select idref="V-266160" selected="true" /><select idref="V-266161" selected="true" /><select idref="V-266162" selected="true" /><select idref="V-266163" selected="true" /><select idref="V-266164" selected="true" /><select idref="V-266165" selected="true" /><select idref="V-266166" selected="true" /><select idref="V-266167" selected="true" /><select idref="V-266168" selected="true" /><select idref="V-266169" selected="true" /><select idref="V-266170" selected="true" /><select idref="V-266171" selected="true" /><select idref="V-266172" selected="true" /><select idref="V-266173" selected="true" /><select idref="V-266174" selected="true" /><select idref="V-266175" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266137" selected="true" /><select idref="V-266138" selected="true" /><select idref="V-266139" selected="true" /><select idref="V-266140" selected="true" /><select idref="V-266141" selected="true" /><select idref="V-266142" selected="true" /><select idref="V-266143" selected="true" /><select idref="V-266144" selected="true" /><select idref="V-266145" selected="true" /><select idref="V-266146" selected="true" /><select idref="V-266147" selected="true" /><select idref="V-266148" selected="true" /><select idref="V-266149" selected="true" /><select idref="V-266150" selected="true" /><select idref="V-266151" selected="true" /><select idref="V-266152" selected="true" /><select idref="V-266153" selected="true" /><select idref="V-266154" selected="true" /><select idref="V-266155" selected="true" /><select idref="V-266156" selected="true" /><select idref="V-266157" selected="true" /><select idref="V-266158" selected="true" /><select idref="V-266159" selected="true" /><select idref="V-266160" selected="true" /><select idref="V-266161" selected="true" /><select idref="V-266162" selected="true" /><select idref="V-266163" selected="true" /><select idref="V-266164" selected="true" /><select idref="V-266165" selected="true" /><select idref="V-266166" selected="true" /><select idref="V-266167" selected="true" /><select idref="V-266168" selected="true" /><select idref="V-266169" selected="true" /><select idref="V-266170" selected="true" /><select idref="V-266171" selected="true" /><select idref="V-266172" selected="true" /><select idref="V-266173" selected="true" /><select idref="V-266174" selected="true" /><select idref="V-266175" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266137" selected="true" /><select idref="V-266138" selected="true" /><select idref="V-266139" selected="true" /><select idref="V-266140" selected="true" /><select idref="V-266141" selected="true" /><select idref="V-266142" selected="true" /><select idref="V-266143" selected="true" /><select idref="V-266144" selected="true" /><select idref="V-266145" selected="true" /><select idref="V-266146" selected="true" /><select idref="V-266147" selected="true" /><select idref="V-266148" selected="true" /><select idref="V-266149" selected="true" /><select idref="V-266150" selected="true" /><select idref="V-266151" selected="true" /><select idref="V-266152" selected="true" /><select idref="V-266153" selected="true" /><select idref="V-266154" selected="true" /><select idref="V-266155" selected="true" /><select idref="V-266156" selected="true" /><select idref="V-266157" selected="true" /><select idref="V-266158" selected="true" /><select idref="V-266159" selected="true" /><select idref="V-266160" selected="true" /><select idref="V-266161" selected="true" /><select idref="V-266162" selected="true" /><select idref="V-266163" selected="true" /><select idref="V-266164" selected="true" /><select idref="V-266165" selected="true" /><select idref="V-266166" selected="true" /><select idref="V-266167" selected="true" /><select idref="V-266168" selected="true" /><select idref="V-266169" selected="true" /><select idref="V-266170" selected="true" /><select idref="V-266171" selected="true" /><select idref="V-266172" selected="true" /><select idref="V-266173" selected="true" /><select idref="V-266174" selected="true" /><select idref="V-266175" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266137" selected="true" /><select idref="V-266138" selected="true" /><select idref="V-266139" selected="true" /><select idref="V-266140" selected="true" /><select idref="V-266141" selected="true" /><select idref="V-266142" selected="true" /><select idref="V-266143" selected="true" /><select idref="V-266144" selected="true" /><select idref="V-266145" selected="true" /><select idref="V-266146" selected="true" /><select idref="V-266147" selected="true" /><select idref="V-266148" selected="true" /><select idref="V-266149" selected="true" /><select idref="V-266150" selected="true" /><select idref="V-266151" selected="true" /><select idref="V-266152" selected="true" /><select idref="V-266153" selected="true" /><select idref="V-266154" selected="true" /><select idref="V-266155" selected="true" /><select idref="V-266156" selected="true" /><select idref="V-266157" selected="true" /><select idref="V-266158" selected="true" /><select idref="V-266159" selected="true" /><select idref="V-266160" selected="true" /><select idref="V-266161" selected="true" /><select idref="V-266162" selected="true" /><select idref="V-266163" selected="true" /><select idref="V-266164" selected="true" /><select idref="V-266165" selected="true" /><select idref="V-266166" selected="true" /><select idref="V-266167" selected="true" /><select idref="V-266168" selected="true" /><select idref="V-266169" selected="true" /><select idref="V-266170" selected="true" /><select idref="V-266171" selected="true" /><select idref="V-266172" selected="true" /><select idref="V-266173" selected="true" /><select idref="V-266174" selected="true" /><select idref="V-266175" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266137" selected="true" /><select idref="V-266138" selected="true" /><select idref="V-266139" selected="true" /><select idref="V-266140" selected="true" /><select idref="V-266141" selected="true" /><select idref="V-266142" selected="true" /><select idref="V-266143" selected="true" /><select idref="V-266144" selected="true" /><select idref="V-266145" selected="true" /><select idref="V-266146" selected="true" /><select idref="V-266147" selected="true" /><select idref="V-266148" selected="true" /><select idref="V-266149" selected="true" /><select idref="V-266150" selected="true" /><select idref="V-266151" selected="true" /><select idref="V-266152" selected="true" /><select idref="V-266153" selected="true" /><select idref="V-266154" selected="true" /><select idref="V-266155" selected="true" /><select idref="V-266156" selected="true" /><select idref="V-266157" selected="true" /><select idref="V-266158" selected="true" /><select idref="V-266159" selected="true" /><select idref="V-266160" selected="true" /><select idref="V-266161" selected="true" /><select idref="V-266162" selected="true" /><select idref="V-266163" selected="true" /><select idref="V-266164" selected="true" /><select idref="V-266165" selected="true" /><select idref="V-266166" selected="true" /><select idref="V-266167" selected="true" /><select idref="V-266168" selected="true" /><select idref="V-266169" selected="true" /><select idref="V-266170" selected="true" /><select idref="V-266171" selected="true" /><select idref="V-266172" selected="true" /><select idref="V-266173" selected="true" /><select idref="V-266174" selected="true" /><select idref="V-266175" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266137" selected="true" /><select idref="V-266138" selected="true" /><select idref="V-266139" selected="true" /><select idref="V-266140" selected="true" /><select idref="V-266141" selected="true" /><select idref="V-266142" selected="true" /><select idref="V-266143" selected="true" /><select idref="V-266144" selected="true" /><select idref="V-266145" selected="true" /><select idref="V-266146" selected="true" /><select idref="V-266147" selected="true" /><select idref="V-266148" selected="true" /><select idref="V-266149" selected="true" /><select idref="V-266150" selected="true" /><select idref="V-266151" selected="true" /><select idref="V-266152" selected="true" /><select idref="V-266153" selected="true" /><select idref="V-266154" selected="true" /><select idref="V-266155" selected="true" /><select idref="V-266156" selected="true" /><select idref="V-266157" selected="true" /><select idref="V-266158" selected="true" /><select idref="V-266159" selected="true" /><select idref="V-266160" selected="true" /><select idref="V-266161" selected="true" /><select idref="V-266162" selected="true" /><select idref="V-266163" selected="true" /><select idref="V-266164" selected="true" /><select idref="V-266165" selected="true" /><select idref="V-266166" selected="true" /><select idref="V-266167" selected="true" /><select idref="V-266168" selected="true" /><select idref="V-266169" selected="true" /><select idref="V-266170" selected="true" /><select idref="V-266171" selected="true" /><select idref="V-266172" selected="true" /><select idref="V-266173" selected="true" /><select idref="V-266174" selected="true" /><select idref="V-266175" selected="true" /></Profile><Group id="V-266137"><title>SRG-NET-000053-ALG-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266137r1024833_rule" weight="10.0" severity="medium"><version>F5BI-AP-300001</version><title>The F5 BIG-IP appliance providing user access control intermediary services must limit the number of concurrent sessions to one or an organization-defined number for each access profile.</title><description>&lt;VulnDiscussion&gt;The "Max In Progress Sessions Per Client IP" setting in an APM Access Profile is a security configuration that limits the number of simultaneous sessions that can be initiated from a single IP address. This is particularly helpful in preventing a session flood, where a hacker might attempt to overwhelm the system by initiating many sessions from a single source. By capping the number of sessions per IP, this setting can help maintain the system's stability and integrity while also providing a layer of protection against such potential attacks.
+
+False positives may result from this setting in networks where users are behind a shared proxy. Sites must conduct operational testing to determine if there are adverse operational impacts. View Log reports to identify recurring IP sources within the user community.
+
+Max In Progress Sessions per Client IP represents the maximum number of sessions that can be in progress for a client IP address. When setting this value, take into account whether users will come from a NAT-ed or proxied client address and, if so, increase the value accordingly.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-69964r1023658_fix">From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the Name of the Access profile.
+5. Under "Settings", set "Max Sessions per User" to "1" or to an organization-defined number.
+6. Update.</fixtext><fix id="F-69964r1023658_fix" /><check system="C-70061r1023657_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide user access control intermediary services, this is not applicable.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the Name of the Access profile.
+5. Under "Settings", verify "Max Sessions per User" is set to "1" or to an organization-defined number.
+
+If the BIG-IP appliance is not configured to limit the number of concurrent sessions for user accounts to 1 or to an organization-defined number, this is a finding.</check-content></check></Rule></Group><Group id="V-266138"><title>SRG-NET-000061-ALG-000009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266138r1024835_rule" weight="10.0" severity="medium"><version>F5BI-AP-300002</version><title>The F5 BIG-IP appliance providing intermediary services for remote access communications traffic must ensure inbound and outbound traffic is monitored for compliance with remote access security policies.</title><description>&lt;VulnDiscussion&gt;Automated monitoring of remote access traffic allows organizations to detect cyberattacks and also ensure ongoing compliance with remote access policies by inspecting connection activities of remote access capabilities.
+
+Remote access methods include both unencrypted and encrypted traffic (e.g., web portals, web content filter, TLS, and webmail). With inbound TLS inspection, the traffic must be inspected prior to being allowed on the enclave's web servers hosting TLS or HTTPS applications. With outbound traffic inspection, traffic must be inspected prior to being forwarded to destinations outside of the enclave, such as external email traffic.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000067</ident><fixtext fixref="F-69965r1024834_fix">From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click on the name of a virtual server.
+5. Security tab &gt;&gt; Policies.
+6. Set "Application Security Policy" to "Enabled".
+7. Select the policy from the drop-down.
+8. Update.
+9. Repeat for additional virtual servers.</fixtext><fix id="F-69965r1024834_fix" /><check system="C-70062r1023660_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not serve as an intermediary for remote access traffic, this is not applicable.
+
+From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Security Policies.
+4. Policies List.
+5. Review the list of policies and confirm they are applied to virtual servers being used for intermediary services for remote access communications traffic.
+
+If the BIG-IP appliance is not configured to ensure inbound and outbound traffic is monitored for compliance with remote access security policies, this is a finding.</check-content></check></Rule></Group><Group id="V-266139"><title>SRG-NET-000062-ALG-000011</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266139r1024837_rule" weight="10.0" severity="high"><version>F5BI-AP-300003</version><title>The F5 BIG-IP appliance providing intermediary services for remote access must use FIPS-validated cryptographic algorithms, including TLS 1.2 at a minimum.</title><description>&lt;VulnDiscussion&gt;Without confidentiality protection mechanisms, unauthorized individuals may gain access to sensitive information via a remote access session.
+
+Remote access is access to DOD nonpublic information systems by an authorized user (or an information system) communicating through an external, non-organization-controlled network. Remote access methods include broadband and wireless connections. Remote access methods include, for example, proxied remote encrypted traffic (e.g., TLS gateways, web content filters, and webmail proxies).
+
+Encryption provides a means to secure the remote connection to prevent unauthorized access to the data traversing the remote access connection, thereby providing a degree of confidentiality. The encryption strength of the mechanism is selected based on the security categorization of the information.
+
+This requirement applies to ALGs providing remote access proxy services as part of its intermediary services (e.g., OWA or SSL VPN gateway).
+
+Satisfies: SRG-NET-000062-ALG-000011, SRG-NET-000062-ALG-000150, SRG-NET-000063-ALG-000012, SRG-NET-000230-ALG-000113, SRG-NET-000355-ALG-000117&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-001453</ident><ident system="http://cyber.mil/cci">CCI-001184</ident><ident system="http://cyber.mil/cci">CCI-002470</ident><fixtext fixref="F-69966r1024836_fix">Client SSL Profile
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Profiles.
+3. SSL.
+4. Client.
+5. Click on the name of the SSL Profile.
+6. Change "Configuration" to "Advanced".
+7. Configure "Ciphers" to use NIST FIPS-validated ciphers.
+8. Click "Update".
+9. Repeat for other SSL Profiles in use.
+
+Virtual Server
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click the name of the virtual server.
+5. Configure "SSL Profile (Client)" to use a NIST FIPS-validated SSL Profile.
+6. Click "Update".
+7. Repeat for other virtual servers.</fixtext><fix id="F-69966r1024836_fix" /><check system="C-70063r1023663_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide intermediary services for remote access (e.g., web content filter, TLS, and webmail), TLS, or application protocols that use TLS (e.g., DNSSEC or HTTPS), this is not applicable.
+
+Client SSL Profile
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Profiles.
+3. SSL.
+4. Client.
+5. Click on the name of the SSL Profile.
+6. Change "Configuration" to "Advanced".
+7. Verify "Ciphers" is configured to use NIST FIPS-validated ciphers.
+8. Repeat for other SSL Profiles in use.
+
+Virtual Server
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click the name of the virtual server.
+5. Verify that the "SSL Profile (Client)" is using a NIST FIPS-validated SSL Profile.
+6. Repeat these steps to review all other virtual servers.
+
+If the BIG-IP appliance is not configured to use TLS 1.2 or higher, this is a finding.</check-content></check></Rule></Group><Group id="V-266140"><title>SRG-NET-000318-ALG-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266140r1024838_rule" weight="10.0" severity="medium"><version>F5BI-AP-300006</version><title>To protect against data mining, the F5 BIG-IP appliance providing content filtering must prevent code injection attacks from being launched against data storage objects, including, at a minimum, databases, database records, queries, and fields.</title><description>&lt;VulnDiscussion&gt;Data mining is the analysis of large quantities of data to discover patterns and is used in intelligence gathering. Failure to prevent attacks launched against organizational information from unauthorized data mining may result in the compromise of information.
+
+Injection attacks allow an attacker to inject code into a program or query or inject malware onto a computer to execute remote commands that can read or modify a database or change data on a website. Web applications frequently access databases to store, retrieve, and update information. An attacker can construct inputs that the database will execute. This is most commonly referred to as a code injection attack. This type of attack includes XPath and LDAP injections.
+
+Compliance requires the ALG to have the capability to prevent code injections. Examples include a Web Application Firewalls (WAFs) or database application gateways.
+
+Satisfies: SRG-NET-000318-ALG-000014, SRG-NET-000319-ALG-000015&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002346</ident><ident system="http://cyber.mil/cci">CCI-002347</ident><fixtext fixref="F-69967r1023667_fix">From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Security Policies.
+4. Policies List.
+5. Click the name of the policy.
+6. Set "Enforcement Mode" to "Blocking".
+7. Select "Attack Signatures".
+8. Click the filter at the top left of the signatures window.
+9. Select "XPath Injection" in the "Attack Type" field and click "Apply".
+10. Select all signatures in the filtered list and click "Enforce".
+11. Click "Enforce" again.
+12. Click the filter at the top left of the signatures window.
+13. Select "LDAP Injection" in the "Attack Type" field and click "Apply".
+14. Select all signatures in the filtered list and click "Enforce".
+15. Click "Enforce" again.
+16. Click "Apply Policy".</fixtext><fix id="F-69967r1023667_fix" /><check system="C-70064r1023666_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the ALG does not perform content filtering as part of the traffic management functions, this is not applicable.
+
+From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Security Policies.
+4. Policies List.
+5. Click the name of the policy.
+6. Verify "Enforcement Mode" is set to "Blocking".
+7. Select "Attack Signatures".
+8. Click the filter at the top left of the signatures window.
+9. Select "XPath Injection" in the "Attack Type" field and click "Apply".
+10. Verify "Block" is checked for all signatures and "Status" is set to "Enforced".
+11. Click the filter at the top left of the signatures window.
+12. Select "LDAP Injection" in the "Attack Type" field and click "Apply".
+13. Verify "Block" is checked for all signatures and "Status" is set to "Enforced".
+
+If the BIG-IP appliance is not configured to prevent code injection attacks from being launched against data storage objects, including, at a minimum, databases, database records, queries, and fields, this is a finding.</check-content></check></Rule></Group><Group id="V-266141"><title>SRG-NET-000318-ALG-000151</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266141r1024839_rule" weight="10.0" severity="medium"><version>F5BI-AP-300007</version><title>To protect against data mining, the F5 BIG-IP appliance providing content filtering must prevent code injection attacks launched against application objects including, at a minimum, application URLs and application code.</title><description>&lt;VulnDiscussion&gt;Data mining is the analysis of large quantities of data to discover patterns and is used in intelligence gathering. Failure to prevent attacks launched against organizational information from unauthorized data mining may result in the compromise of information.
+
+Injection attacks allow an attacker to inject code into a program or query or inject malware onto a computer to execute remote commands that can read or modify a database or change data on a website. These attacks include buffer overrun, XML, JavaScript, and HTML injections.
+ 
+Compliance requires the ALG to have the capability to prevent code injections. Examples include a Web Application Firewalls (WAFs) or database application gateways.
+
+Satisfies: SRG-NET-000318-ALG-000151, SRG-NET-000319-ALG-000153&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002346</ident><ident system="http://cyber.mil/cci">CCI-002347</ident><fixtext fixref="F-69968r1023670_fix">From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Security Policies.
+4. Policies List.
+5. Click the name of the policy.
+6. Set "Enforcement Mode" to "Blocking".
+7. Select "Attack Signatures".
+8. Click the filter at the top left of the signatures window.
+9. Select "Buffer Overflow" in the "Attack Type" field and click "Apply".
+10. Select all signatures in the filtered list and click "Enforce".
+11. Click "Enforce" again.
+12. Click the filter at the top left of the signatures window.
+13. Select "Server Side Code Injection" in the "Attack Type" field and click "Apply".
+14. Select all signatures in the filtered list and click "Enforce".
+15. Click "Enforce" again.
+16. Click "Apply Policy".</fixtext><fix id="F-69968r1023670_fix" /><check system="C-70065r1023669_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the ALG does not perform content filtering as part of the traffic management functions, this is not applicable.
+
+From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Security Policies.
+4. Policies List.
+5. Click the name of the policy.
+6. Verify "Enforcement Mode" is set to "Blocking".
+7. Select "Attack Signatures".
+8. Click the filter at the top left of the signatures window.
+9. Select "Buffer Overflow" in the "Attack Type" field and click "Apply".
+10. Verify "Block" is checked for all signatures and "Status" is set to "Enforced".
+11. Click the filter at the top left of the signatures window.
+12. Select "Server Side Code Injection" in the "Attack Type" field and click "Apply".
+13. Verify "Block" is checked for all signatures and "Status" is set to "Enforced".
+
+If the BIG-IP appliance is not configured to prevent code injection attacks launched against application objects including, at a minimum, application URLs and application code, this is a finding.</check-content></check></Rule></Group><Group id="V-266142"><title>SRG-NET-000318-ALG-000152</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266142r1024368_rule" weight="10.0" severity="medium"><version>F5BI-AP-300008</version><title>To protect against data mining, the F5 BIG-IP appliance providing content filtering must prevent SQL injection attacks launched against data storage objects, including, at a minimum, databases, database records, and database fields.</title><description>&lt;VulnDiscussion&gt;Data mining is the analysis of large quantities of data to discover patterns and is used in intelligence gathering. Failure to prevent attacks launched against organizational information from unauthorized data mining may result in the compromise of information.
+
+SQL injection attacks are the most prevalent attacks against web applications and databases. These attacks inject SQL commands that can read, modify, or compromise the meaning of the original SQL query. An attacker can spoof identity; expose, tamper, destroy, or make existing data unavailable; or gain unauthorized privileges on the database server.
+
+Compliance requires the ALG to have the capability to prevent SQL code injections. Examples include a Web Application Firewalls (WAFs) or database application gateways.
+
+Satisfies: SRG-NET-000318-ALG-000152, SRG-NET-000319-ALG-000020&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002346</ident><ident system="http://cyber.mil/cci">CCI-002347</ident><fixtext fixref="F-69969r1023673_fix">From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Security Policies.
+4. Policies List.
+5. Click the name of the policy.
+6. Set "Enforcement Mode" to "Blocking".
+7. Select "Attack Signatures".
+8. Click the filter at the top left of the signatures window.
+9. Select "SQL-Injection" in the "Attack Type" field and click "Apply".
+10. Select all signatures in the filtered list and click "Enforce".
+11. Click "Enforce" again.
+12. Click "Apply Policy".</fixtext><fix id="F-69969r1023673_fix" /><check system="C-70066r1023672_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the ALG does not perform content filtering as part of the traffic management functions, this is not applicable.
+
+From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Security Policies.
+4. Policies List.
+5. Click the name of the policy.
+6. Verify "Enforcement Mode" is set to "Blocking".
+7. Select "Attack Signatures".
+8. Click the filter at the top left of the signatures window.
+9. Select "SQL-Injection" in the "Attack Type" field and click "Apply".
+10. Verify "Block" is checked for all signatures and "Status" is set to "Enforced".
+
+If the BIG-IP appliance is not configured to prevent SQL injection attacks launched against data storage objects, including, at a minimum, databases, database records, and database fields, this is a finding.</check-content></check></Rule></Group><Group id="V-266143"><title>SRG-NET-000015-ALG-000016</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266143r1024370_rule" weight="10.0" severity="high"><version>F5BI-AP-300012</version><title>The F5 BIG-IP appliance providing user access control intermediary services must enforce approved authorizations for logical access to information and system resources by employing identity-based, role-based, and/or attribute-based security policies.</title><description>&lt;VulnDiscussion&gt;Successful authentication must not automatically give an entity access to an asset or security boundary. The lack of authorization-based access control could result in the immediate compromise of and unauthorized access to sensitive information. All DOD systems must be properly configured to incorporate access control methods that do not rely solely on authentication for authorized access.
+
+Authorization is the process of determining whether an entity, once authenticated, is permitted to access a specific asset. Information systems use access control policies and enforcement mechanisms to implement this requirement. Authorization procedures and controls must be implemented to ensure each authenticated entity also has a validated and current authorization.
+
+Access control policies include identity-based policies, role-based policies, and attribute-based policies. Access enforcement mechanisms include access control lists, access control matrices, and cryptography. ALGs must use these policies and mechanisms to control access on behalf of the application for which it is acting as intermediary.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-69970r1024369_fix">For each APM Access Policy, ensure that for each resource, all Advanced Resource Assign agents used in the configuration are explicitly configured to use an authorization list. 
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Click on any items that use the Advanced Resource Assign VPE object.
+6. For each entry with an expression that is "Empty", click "change".
+7. Add an appropriate expression that validates the user's authorization to access the resource specified in the item.
+8. Click "Finished".
+9. Click "Save".
+10. Click "Apply Access Policy".</fixtext><fix id="F-69970r1024369_fix" /><check system="C-70067r1023675_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide user access control intermediary services, this is not applicable.
+
+If Advanced Resource Assign VPE agent is not used in any policy, this is not a finding.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Review each Resource.
+- If the Advanced Resource Assign agent is used, verify that each expression listed is explicitly configured to use an authorization list.
+
+If the Big IP F5 appliance Access Policy has any assigned resources that are not configured with a specific authorization list, this is a finding.</check-content></check></Rule></Group><Group id="V-266144"><title>SRG-NET-000018-ALG-000017</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266144r1024371_rule" weight="10.0" severity="high"><version>F5BI-AP-300013</version><title>The F5 BIG-IP appliance providing user access control intermediary services must implement attribute- and content-based inspection of the source, destination, headers, and/or content of the communications traffic.</title><description>&lt;VulnDiscussion&gt;Information flow control regulates where information is allowed to travel within a network. The flow of all network traffic must be monitored and controlled so it does not introduce any unacceptable risk to the network infrastructure or data.
+
+Information flow control policies and enforcement mechanisms are commonly employed by organizations to control the flow of information between designated sources and destinations (e.g., networks, individuals, devices) within information systems. Examples of information flow control restrictions include keeping export controlled information from being transmitted in the clear to the internet or blocking information marked as classified but is being transported to an unapproved destination.
+
+ALGs enforce approved authorizations by employing security policy and/or rules that restrict information system services, provide packet filtering capability based on header or protocol information and/or message filtering capability based on data content (e.g., implementing key word searches or using document characteristics).
+
+Satisfies: SRG-NET-000018-ALG-000017, SRG-NET-000019-ALG-000018&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-69971r1023679_fix">From the BIG-IP GUI:
+1. Security.
+2. Network Firewall.
+3. Policies.
+4. Create and/or edit firewall policies that are applied to the Context needed to enforce approved authorizations for controlling the flow of information within the network.</fixtext><fix id="F-69971r1023679_fix" /><check system="C-70068r1023678_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. Security.
+2. Network Firewall.
+3. Active Rules.
+4. Verify "Policy Type" is set to "Enforced".
+5. Inspect the different "Context" choices and verify rules are configured to enforce approved authorizations for controlling the flow of information within the network.
+
+If the BIG-IP appliance is not configured to enforce approved authorizations for controlling the flow of information within the network based on attribute- and content-based inspection of the source, destination, headers, and/or content of the communications traffic, this is a finding.</check-content></check></Rule></Group><Group id="V-266145"><title>SRG-NET-000041-ALG-000022</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266145r1024372_rule" weight="10.0" severity="medium"><version>F5BI-AP-300015</version><title>The F5 BIG-IP appliance providing user access control intermediary services must display the Standard Mandatory DOD-approved Notice and Consent Banner before granting access to the network.</title><description>&lt;VulnDiscussion&gt;Display of a standardized and approved use notification before granting access to the network ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist. This requirement applies to network elements that have the concept of a user account and have the logon function residing on the network element.
+
+The banner must be formatted in accordance with DTM-08-060. Use the following verbiage for network elements that can accommodate banners of 1300 characters:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+ 
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."
+
+This policy only applies to ALGs (e.g., identity management or authentication gateways) that provide user account services as part of the intermediary services.
+
+Satisfies: SRG-NET-000041-ALG-000022, SRG-NET-000042-ALG-000023, SRG-NET-000043-ALG-000024&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><ident system="http://cyber.mil/cci">CCI-000050</ident><ident system="http://cyber.mil/cci">CCI-001384</ident><ident system="http://cyber.mil/cci">CCI-001385</ident><ident system="http://cyber.mil/cci">CCI-001386</ident><ident system="http://cyber.mil/cci">CCI-001387</ident><ident system="http://cyber.mil/cci">CCI-001388</ident><fixtext fixref="F-69972r1023682_fix">From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit..." in the "Per-Session Policy" column for an Access Profile used for granting access.
+5. Configure the Access Profile to display the Standard Mandatory DOD Notice and Consent Banner below before granting access to the system.
+6. Click "Apply Access Policy".
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."</fixtext><fix id="F-69972r1023682_fix" /><check system="C-70069r1023681_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit..." in the "Per-Session Policy" column for an Access Profile used for granting access.
+5. Verify the Access Profile is configured to display the Standard Mandatory DOD Notice and Consent Banner before granting access to the system. The banner must be exactly formatted in accordance with the policy (see below).
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+If the BIG-IP APM module is not configured to display the Standard Mandatory DOD Notice and Consent Banner before granting access to the system, this is a finding.</check-content></check></Rule></Group><Group id="V-266146"><title>SRG-NET-000492-ALG-000027</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266146r1024841_rule" weight="10.0" severity="medium"><version>F5BI-AP-300018</version><title>The F5 BIG-IP appliance must generate event log records that can be forwarded to the centralized events log.</title><description>&lt;VulnDiscussion&gt;Without generating audit records that log usage of objects by subjects and other objects, it would be difficult to establish, correlate, and investigate the events relating to an incident, or identify those responsible for one. The device logs internal users associated with denied outgoing communications traffic posing a threat to external information systems.
+
+Audit records can be generated from various components within the information system (e.g., module or policy filter). Security objects are data objects which are controlled by security policy and bound to security attributes.
+
+Satisfies: SRG-NET-000492-ALG-000027, SRG-NET-000494-ALG-000029, SRG-NET-000495-ALG-000030, SRG-NET-000496-ALG-000031, SRG-NET-000497-ALG-000032, SRG-NET-000498-ALG-000033, SRG-NET-000499-ALG-000034, SRG-NET-000500-ALG-000035, SRG-NET-000501-ALG-000036, SRG-NET-000502-ALG-000037, SRG-NET-000503-ALG-000038, SRG-NET-000505-ALG-000039, SRG-NET-000513-ALG-000026, SRG-NET-000074-ALG-000043, SRG-NET-000075-ALG-000044, SRG-NET-000076-ALG-000045, SRG-NET-000077-ALG-000046, SRG-NET-000078-ALG-000047, SRG-NET-000079-ALG-000048, SRG-NET-000249-ALG-000146, SRG-NET-000383-ALG-000135, SRG-NET-000385-ALG-000138, SRG-NET-000392-ALG-000141, SRG-NET-000392-ALG-000142, SRG-NET-000392-ALG-000143, SRG-NET-000392-ALG-000147, SRG-NET-000392-ALG-000148, SRG-NET-000392-ALG-000149, SRG-NET-000370-ALG-000125&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000132</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><ident system="http://cyber.mil/cci">CCI-001487</ident><ident system="http://cyber.mil/cci">CCI-001243</ident><ident system="http://cyber.mil/cci">CCI-002656</ident><ident system="http://cyber.mil/cci">CCI-002684</ident><ident system="http://cyber.mil/cci">CCI-002664</ident><ident system="http://cyber.mil/cci">CCI-002400</ident><fixtext fixref="F-69973r1024840_fix">Note: Performing this Fix modifies the "default-log-setting" log profile, but users can use a different log profile for the Access Profile. However, this requires using the APM Module.
+
+APM Default Log Profile:
+From the BIG-IP GUI:
+1. Access.
+2. Overview.
+3. Event Logs.
+4. Settings.
+5. Check the box for the "default-log-setting" and click "Edit".
+6. Check "Enable Access System Logs".
+7. On the "Access System Logs" tab, set all items are to "Notice".
+8. Click "OK".
+
+Access Profile Log Setting:
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles (Per-Session Policies).
+4. Click the Name of the Access Profile.
+5. Logs tab.
+6. Move "default-log-setting" to the "Selected" column.
+7. Click "Update".</fixtext><fix id="F-69973r1024840_fix" /><check system="C-70070r1023684_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>APM Default Log Profile:
+From the BIG-IP GUI:
+1. Access.
+2. Overview.
+3. Event Logs.
+4. Settings.
+5. Check the box for the "default-log-setting" and click "Edit".
+6. Verify "Enable Access System Logs" is checked.
+7. On the "Access System Logs" tab, verify all items are set to "Notice".
+
+
+Access Profile Log Setting:
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles (Per-Session Policies).
+4. Click the Name of the Access Profile.
+5. Logs tab.
+6. Verify "default-log-setting" is in the "Selected" column.
+
+If the BIG-IP appliance is not configured to generate log records, this is a finding.</check-content></check></Rule></Group><Group id="V-266147"><title>SRG-NET-000512-ALG-000064</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266147r1024374_rule" weight="10.0" severity="medium"><version>F5BI-AP-300041</version><title>The F5 BIG-IP appliance that provides intermediary services for SMTP must inspect inbound and outbound SMTP and Extended SMTP communications traffic for protocol compliance and protocol anomalies.</title><description>&lt;VulnDiscussion&gt;Application protocol anomaly detection examines application layer protocols such as SMTP to identify attacks based on observed deviations in the normal RFC behavior of a protocol or service. This type of monitoring allows for the detection of known and unknown exploits which exploit weaknesses of commonly used protocols.
+
+Since protocol anomaly analysis examines the application payload for patterns or anomalies, an SMTP proxy must be included in the ALG. This ALG will be configured to inspect inbound and outbound SMTP and extended SMTP communications traffic to detect protocol anomalies such as malformed message and command insertion attacks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001125</ident><fixtext fixref="F-69974r1023688_fix">SMTP Profile:
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Profiles.
+3. Services.
+4. SMTP.
+5. Click the name of the SMTP profile.
+6. Check "Protocol Security".
+7. Click "Update".
+
+SMTP Virtual Server:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click the name of the SMTP virtual server.
+5. Select the SMTP profile from the "SMTP Profile" drop-down list.
+6. Click "Update".
+
+Refer to vendor documentation for more information.</fixtext><fix id="F-69974r1023688_fix" /><check system="C-70071r1023687_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide intermediary/proxy services for SMTP communications traffic, this is not applicable.
+
+SMTP Profile:
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Profiles.
+3. Services.
+4. SMTP.
+5. Click the name of the SMTP profile.
+6. Verify "Protocol Security" is checked.
+
+SMTP Virtual Server:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click the name of the SMTP virtual server.
+5. Verify the SMTP profile is selected in the "SMTP Profile" drop-down list.
+
+If the BIG-IP appliance is not configured to inspect inbound and outbound SMTP and Extended SMTP communications traffic for protocol compliance and protocol anomalies, this is a finding.</check-content></check></Rule></Group><Group id="V-266148"><title>SRG-NET-000512-ALG-000065</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266148r1024375_rule" weight="10.0" severity="medium"><version>F5BI-AP-300042</version><title>The F5 BIG-IP appliance that intermediary services for FTP must inspect inbound and outbound FTP communications traffic for protocol compliance and protocol anomalies.</title><description>&lt;VulnDiscussion&gt;Application protocol anomaly detection examines application layer protocols such as FTP to identify attacks based on observed deviations in the normal RFC behavior of a protocol or service. This type of monitoring allows for the detection of known and unknown exploits which exploit weaknesses of commonly used protocols.
+
+Since protocol anomaly analysis examines the application payload for patterns or anomalies, an FTP proxy must be included in the ALG. This ALG will be configured to inspect inbound and outbound FTP communications traffic to detect protocol anomalies such as malformed message and command insertion attacks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001125</ident><fixtext fixref="F-69975r1023691_fix">FTP Profile:
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Profiles.
+3. Services.
+4. FTP.
+5. Click the name of the FTP profile.
+6. Check "Protocol Security".
+7. Click "Update".
+
+FTP Virtual Server:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click the name of the FTP virtual server.
+5. Select the FTP profile from the "FTP Profile" drop-down list.
+6. Click "Update".
+
+Refer to vendor documentation for more information.</fixtext><fix id="F-69975r1023691_fix" /><check system="C-70072r1023690_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide intermediary/proxy services for FTP communications traffic, this is not applicable.
+
+FTP Profile:
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Profiles.
+3. Services.
+4. FTP.
+5. Click the name of the FTP profile.
+6. Verify "Protocol Security" is checked.
+
+FTP Virtual Server:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click the name of the FTP virtual server.
+5. Verify the FTP profile is selected in the "FTP Profile" drop-down list.
+
+If the BIG-IP appliance is not configured to inspect inbound and outbound FTP communications traffic for protocol compliance and protocol anomalies, this is a finding.</check-content></check></Rule></Group><Group id="V-266149"><title>SRG-NET-000512-ALG-000066</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266149r1024844_rule" weight="10.0" severity="medium"><version>F5BI-AP-300043</version><title>The F5 BIG-IP appliance that provides intermediary services for HTTP must inspect inbound and outbound HTTP traffic for protocol compliance and protocol anomalies.</title><description>&lt;VulnDiscussion&gt;Application protocol anomaly detection examines application layer protocols such as HTTP to identify attacks based on observed deviations in the normal RFC behavior of a protocol or service. This type of monitoring allows for the detection of known and unknown exploits which exploit weaknesses of commonly used protocols.
+
+Since protocol anomaly analysis examines the application payload for patterns or anomalies, an HTTP proxy must be included in the ALG. This ALG will be configured to inspect inbound and outbound HTTP communications traffic to detect protocol anomalies such as malformed message and command insertion attacks.
+
+All inbound and outbound traffic, including HTTPS, must be inspected. However, the intention of this policy is not to mandate HTTPS inspection by the ALG. Typically, HTTPS traffic is inspected either at the source, destination and/or is directed for inspection by organizationally-defined network termination point.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001125</ident><fixtext fixref="F-69976r1024843_fix">Application Security Policy:
+From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Policy Building.
+4. Learning and Blocking Settings.
+5. Select the correct policy from the drop-down in the upper left.
+6. Expand "HTTP protocol compliance failed".
+7. Select the proper inspection criteria.
+8. Click "Save".
+9. Click "Apply Policy".
+
+HTTP Virtual Server:
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click the name of the HTTP virtual server.
+5. Security &gt;&gt; Policies tab.
+6. Set "Application Security Policy" to "Enabled".
+7. Select the correct policy from the drop-down.
+8. Click "Update".
+
+Refer to vendor documentation for more information.</fixtext><fix id="F-69976r1024843_fix" /><check system="C-70073r1024842_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide intermediary/proxy services for HTTP communications traffic, this is not applicable.
+
+Application Security Policy:
+From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Policy Building.
+4. Learning and Blocking Settings.
+5. Verify the correct policy is selected from the drop-down in the upper left.
+6. Expand "HTTP protocol compliance failed".
+7. Verify the proper inspection criteria are selected.
+
+HTTP Virtual Server:
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click the name of the HTTP Virtual Server.
+5. Security &gt;&gt; Policies tab.
+6. Verify the correct policy is selected for "Application Security Policy".
+
+If the BIG-IP appliance is not configured to inspect inbound and outbound HTTP communications traffic for protocol compliance and protocol anomalies, this is a finding.</check-content></check></Rule></Group><Group id="V-266150"><title>SRG-NET-000132-ALG-000087</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266150r1024377_rule" weight="10.0" severity="high"><version>F5BI-AP-300045</version><title>The F5 BIG-IP appliance must be configured to prohibit or restrict the use of unnecessary or prohibited functions, ports, protocols, and/or services, including those defined in the PPSM CAL and vulnerability assessments.</title><description>&lt;VulnDiscussion&gt;To prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable or restrict unused or unnecessary physical and logical ports/protocols on information systems.
+
+ALGs are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. DOD continually assesses the ports, protocols, and services that can be used for network communications. Some ports, protocols or services have known exploits or security weaknesses. Network traffic using these ports, protocols, and services must be prohibited or restricted in accordance with DOD policy. The ALG is a key network element for preventing these noncompliant ports, protocols, and services from causing harm to DOD information systems.
+
+The network ALG must be configured to prevent or restrict the use of prohibited ports, protocols, and services throughout the network by filtering the network traffic and disallowing or redirecting traffic as necessary. Default and updated policy filters from the vendors will disallow older version of protocols and applications and will address most known nonsecure ports, protocols, and/or services. However, sources for further policy filters are the IAVMs and the PPSM requirements.
+
+Satisfies: SRG-NET-000132-ALG-000087, SRG-NET-000131-ALG-000085&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-69977r1023697_fix">Check the PPSM CAL and the site's System Security Plan/documentation for a list of prohibited ports, protocols, and services.
+
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. For any virtual server(s) listening on all unnecessary and/or nonsecure functions, ports, protocols, and/or services, check the box next to the virtual server and click "Delete".
+4. Click "Delete" again.</fixtext><fix id="F-69977r1023697_fix" /><check system="C-70074r1023696_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. Verify the list of virtual servers are not configured to listen on unnecessary and/or nonsecure functions, ports, protocols, and/or services.
+
+If any services are running that must not be, this is a finding.</check-content></check></Rule></Group><Group id="V-266151"><title>F5BI-AP-300046</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266151r1024378_rule" weight="10.0" severity="medium"><version>F5BI-AP-300046</version><title>The F5 BIG-IP appliance providing user authentication intermediary services must require users to reauthenticate when the user's role or information authorizations is changed.</title><description>&lt;VulnDiscussion&gt;Without reauthentication, users may access resources or perform tasks for which they do not have authorization.
+
+In addition to the reauthentication requirements associated with session locks, organizations may require reauthentication of individuals and/or devices in other situations, including (but not limited to) the following circumstances: 
+
+1. When authenticators change;
+2. When roles change;
+3. When security categories of information systems change;
+4. When the execution of privileged functions occurs;
+5. After a fixed period of time;
+6. Periodically.
+
+Within the DOD, the minimum circumstances requiring reauthentication are privilege escalation and role changes.
+
+This requirement only applies to components where this is specific to the function of the device or has the concept of user authentication (e.g., VPN or ALG capability). This does not apply to authentication for the purpose of configuring the device itself (i.e., device management).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002038</ident><fixtext fixref="F-69978r1023700_fix">From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles (Per-Session Policies).
+4. Click "Edit" for the Access Profile being used.
+5. Configure the Access Profile to require users to reauthenticate when organization-defined circumstances or situations require reauthentication.
+
+This will also require the administrator to force reauthentication when changes occur that the system cannot automatically detect. Update administrator training and the site's System Security Plan to document this process.</fixtext><fix id="F-69978r1023700_fix" /><check system="C-70075r1023699_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide user authentication intermediary services, this is not applicable.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles (Per-Session Policies).
+4. Click "Edit" for the Access Profile being used.
+5. Verify the Access Profile is configured to require users to reauthenticate when organization-defined circumstances or situations require reauthentication.
+
+If the BIG-IP appliance is not configured to require users to reauthenticate when organization-defined circumstances or situations require reauthentication, this is a finding.</check-content></check></Rule></Group><Group id="V-266152"><title>SRG-NET-000138-ALG-000063</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266152r1024845_rule" weight="10.0" severity="high"><version>F5BI-AP-300047</version><title>The F5 BIG-IP appliance providing user authentication intermediary services must uniquely identify and authenticate users using redundant authentication servers and multifactor authentication (MFA).</title><description>&lt;VulnDiscussion&gt;To ensure accountability and prevent unauthenticated access, organizational users must be identified and authenticated to prevent potential misuse and compromise of the system.
+
+Organizational users include organizational employees or individuals the organization deems to have equivalent status of employees (e.g., contractors). Organizational users (and any processes acting on behalf of users) must be uniquely identified and authenticated for all accesses except the following.
+
+1. Accesses explicitly identified and documented by the organization. Organizations document specific user actions that can be performed on the information system without identification or authentication.
+2. Accesses that occur through authorized use of group authenticators without individual authentication. Organizations may require unique identification of individuals in group accounts (e.g., shared privilege accounts) or for detailed accountability of individual activity.
+
+This requirement applies to ALGs that provide user proxy services, including identification and authentication. This service must use the site's directory service (e.g., Active Directory). Directory services must not be installed onto the gateway.
+
+Satisfies: SRG-NET-000138-ALG-000063, SRG-NET-000138-ALG-000088, SRG-NET-000339-ALG-000090, SRG-NET-000340-ALG-000091, SRG-NET-000140-ALG-000094, SRG-NET-000166-ALG-000101, SRG-NET-000169-ALG-000102&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000764</ident><ident system="http://cyber.mil/cci">CCI-001951</ident><ident system="http://cyber.mil/cci">CCI-001948</ident><ident system="http://cyber.mil/cci">CCI-000766</ident><ident system="http://cyber.mil/cci">CCI-000187</ident><ident system="http://cyber.mil/cci">CCI-000804</ident><fixtext fixref="F-69979r1023703_fix">From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles (Per-Session Policies).
+4. Click "Edit" for the Access Profile being used.
+5. Configure the Access Profile to use a separate authentication server (e.g., LDAP, RADIUS, TACACS+) to perform user authentication.
+
+Note: To create an authentication object in the VPE, it must first be created in APM under Access &gt;&gt; Authentication. Once it has been created, add it to the Access Policy VPE by clicking the "+", selecting the "Authentication" tab, and select the appropriate type of authentication.</fixtext><fix id="F-69979r1023703_fix" /><check system="C-70076r1023702_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles (Per-Session Policies).
+4. Click "Edit" for the Access Profile being used.
+5. Verify the Access Profile uses an authentication server (e.g., LDAP, RADIUS, TACACS+) to perform user authentication.
+
+If the BIG-IP appliance is not configured to use a separate authentication server (e.g., LDAP, RADIUS, TACACS+) to perform user authentication, this is a finding.</check-content></check></Rule></Group><Group id="V-266153"><title>SRG-NET-000164-ALG-000100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266153r1024380_rule" weight="10.0" severity="high"><version>F5BI-AP-300052</version><title>The F5 BIG-IP appliance must configure certification path validation to ensure revoked machine credentials are prohibited from establishing an allowed session.</title><description>&lt;VulnDiscussion&gt;A certificate's certification path is the path from the end entity certificate to a trusted root certification authority (CA). Certification path validation is necessary for a relying party to make an informed decision regarding acceptance of an end entity certificate. 
+
+Certification path validation includes checks such as certificate issuer trust, time validity and revocation status for each certificate in the certification path. Revocation status information for CA and subject certificates in a certification path is commonly provided via certificate revocation lists (CRLs) or online certificate status protocol (OCSP) responses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000185</ident><fixtext fixref="F-69980r1023706_fix">If the Access Profile is configured to pull a machine cert using the "Machine Cert Auth" object in the policy, then perform the following actions. Note that pulling a Machine Cert requires the use of the APM Edge Client installed on the client.
+
+To add OCSP machine certificate verification to an access policy:
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Click the "+" icon on the Successful branch of the Machine Cert Auth object.
+6. Authentication tab.
+7. Select "OCSP Auth".
+8. Click "Add Item".
+9. From the OCSP Responder list, select an OCSP responder.
+Note: To create an OCSP Responder, go to Access &gt;&gt; Authentication &gt;&gt; OCSP Responder.
+10. From the Certificate Type list, select "Machine".
+11. Click "Save".
+12. Click "Apply Access Policy".
+
+To add CRLDP certificate verification to an access policy:
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Click the "+" icon on the Successful branch of the Machine Cert Auth object.
+6. Authentication tab.
+7. Select "CRLDP Auth".
+8. Click "Add Item".
+9. Select an item from the CRLDP Server list.
+Note: To create a CRLDP Server, go to Access &gt;&gt; Authentication &gt;&gt; CRLDP.
+10. Click "Save".
+11. Click "Apply Access Policy".</fixtext><fix id="F-69980r1023706_fix" /><check system="C-70077r1023705_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide intermediary services for TLS, or application protocols that use TLS (e.g., DNSSEC or HTTPS), this is not applicable.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Verify an "OCSP Auth" object is configured in the Access Profile for "Machine" type or a CRLDP object is configured.
+
+If the BIG-IP appliance is not configured to use OCSP or CRLDP to ensure revoked machine credentials are prohibited from establishing an allowed session, this is a finding.</check-content></check></Rule></Group><Group id="V-266154"><title>SRG-NET-000345-ALG-000099</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266154r1024381_rule" weight="10.0" severity="medium"><version>F5BI-AP-300054</version><title>The F5 BIG-IP appliance providing user authentication intermediary services using PKI-based user authentication must implement a local cache of revocation data to support path discovery and validation in case of the inability to access revocation information via the network.</title><description>&lt;VulnDiscussion&gt;Without configuring a local cache of revocation data, there is the potential to allow access to users who are no longer authorized (users with revoked certificates).
+
+The intent of this requirement is to require support for a secondary certificate validation method using a locally cached revocation data, such as Certificate Revocation List (CRL), in case access to OCSP (required by CCI-000185) is not available. Based on a risk assessment, an alternate mitigation is to configure the system to deny access when revocation data is unavailable. 
+
+This requirement applies to ALGs that provide user authentication intermediary services (e.g., authentication gateway or TLS gateway). This does not apply to authentication for the purpose of configuring the device itself (device management).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001991</ident><fixtext fixref="F-69981r1023709_fix">From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Add "OCSP Auth" and/or "CRLDP" object in the Access Profile.
+Note: To create an OCSP Responder, go to Access &gt;&gt; Authentication &gt;&gt; OCSP Responder.
+Note: To create a CRLDP object, go to Access &gt;&gt; Authentication &gt;&gt; CRLDP.
+6. Ensure the fallback branch of these objects goes to a "Deny" ending.
+7. Click "Apply Access Policy".</fixtext><fix id="F-69981r1023709_fix" /><check system="C-70078r1023708_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide PKI-based user authentication intermediary services, this is not applicable.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Verify an "OSCP Auth" and/or "CRLDP" object is configured in the Access Profile VPE AND that the fallback branch of these objects leads to a "Deny" ending.
+
+If the BIG-IP appliance is not configured to deny access when revocation data is unavailable, this is a finding.</check-content></check></Rule></Group><Group id="V-266155"><title>SRG-NET-000213-ALG-000107</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266155r1024382_rule" weight="10.0" severity="high"><version>F5BI-AP-300056</version><title>The F5 BIG-IP appliance must terminate all network connections associated with a communications session at the end of the session or after 15 minutes of inactivity.</title><description>&lt;VulnDiscussion&gt;Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. Quickly terminating an idle session will also free up resources committed by the managed network element.
+
+Terminating network connections associated with communications sessions includes, for example, deallocating associated TCP/IP address/port pairs at the operating system level and deallocating networking assignments at the application level if multiple application sessions are using a single operating system-level network connection.
+
+ALGs may provide session control functionality as part of content filtering, load balancing, or proxy services.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001133</ident><fixtext fixref="F-69982r1023712_fix">From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the name of the Access Profile.
+5. Set "Inactivity Timeout" to 900 seconds.
+Note: If the setting is grayed out, check the box to the right of the setting.
+6. Click "Update".</fixtext><fix id="F-69982r1023712_fix" /><check system="C-70079r1023711_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the name of the Access Profile.
+5. Verify "Inactivity Timeout" is configured for 900 seconds.
+
+If the BIG-IP appliance is not configured to terminate all network connections associated with a user (nonprivileged) communications session after 15 minutes of inactivity, this is a finding.</check-content></check></Rule></Group><Group id="V-266156"><title>SRG-NET-000362-ALG-000112</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266156r1024848_rule" weight="10.0" severity="medium"><version>F5BI-AP-300059</version><title>The F5 BIG-IP appliance providing content filtering must employ rate-based attack prevention behavior analysis.</title><description>&lt;VulnDiscussion&gt;If the network does not provide safeguards against denial-of-service (DoS) attacks, network resources will be unavailable to users.
+
+Installation of content filtering gateways and application layer firewalls at key boundaries in the architecture mitigates the risk of DoS attacks. These attacks can be detected by matching observed communications traffic with patterns of known attacks and monitoring for anomalies in traffic volume/type.
+
+Detection components that use rate-based behavior analysis can detect attacks when signatures for the attack do not exist or are not installed. These attacks include zero-day attacks which are new attacks for which vendors have not yet developed signatures. Rate-based behavior analysis can detect sophisticated, distributed DoS (DDoS) attacks by correlating traffic information from multiple network segments or components.
+ 
+This requirement applies to the communications traffic functionality of the ALG as it pertains to handling communications traffic, rather than to the ALG device itself.
+
+Satisfies: SRG-NET-000362-ALG-000112, SRG-NET-000362-ALG-000126, SRG-NET-000192-ALG-000121&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><ident system="http://cyber.mil/cci">CCI-001094</ident><fixtext fixref="F-69983r1024847_fix">From the BIG-IP GUI:
+1. Security.
+2. DoS Protection.
+3. Device Protection.
+4. Expand each of the applicable families (Network, DNS, SIP) one at a time depending on the traffic being handled by the BIG-IP and do the following for each:
+a. Check the box at the top of the list of signatures to select all.
+b. Set "Set State" to "Mitigate".
+5. Click "Commit Changes to System".
+
+Note: Sites must operationally test or initially use learning mode prior to turning on all of the options in all families to prevent operational impacts, particularly in implementations with large traffic volumes.</fixtext><fix id="F-69983r1024847_fix" /><check system="C-70080r1024846_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not perform content filtering as part of the traffic management functions, this is not applicable.
+
+From the BIG-IP GUI:
+1. Security.
+2. DoS Protection.
+3. Device Protection.
+4. Expand each of the applicable families (Network, DNS, SIP) depending on the traffic being handled by the BIG-IP and verify the "State" is set to "Mitigate" for all signatures in that family.
+
+If the BIG-IP appliance is not configured to protect against known and unknown types of DoS attacks by employing rate-based attack prevention behavior analysis, this is a finding.</check-content></check></Rule></Group><Group id="V-266157"><title>SRG-NET-000362-ALG-000155</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266157r1024386_rule" weight="10.0" severity="medium"><version>F5BI-AP-300061</version><title>The F5 BIG-IP appliance providing content filtering must protect against or limit the effects of known and unknown types of denial-of-service (DoS) attacks by employing pattern recognition pre-processors.</title><description>&lt;VulnDiscussion&gt;If the network does not provide safeguards against DoS attacks, network resources will be unavailable to users.
+
+Installation of content filtering gateways and application layer firewalls at key boundaries in the architecture mitigates the risk of DoS attacks. These attacks can be detected by matching observed communications traffic with patterns of known attacks.
+
+Detection components that use pattern recognition pre-processors can detect attacks when signatures for the attack do not exist or are not installed. These attacks include zero-day attacks which are new attacks for which vendors have not yet developed signatures.
+
+This requirement applies to the communications traffic functionality of the ALG as it pertains to handling communications traffic, rather than to the ALG device itself.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-69984r1024385_fix">From the BIG-IP GUI:
+1. Security.
+2. DoS Protection.
+3. Device Protection.
+4. Expand "Network".
+5. Click "Configure settings".
+6. Set "Dynamic Signature Detection" to "Enabled".
+7. If applicable, expand "DNS".
+8. Click "Configure settings".
+9. Set "Dynamic Signature Detection" to "Enabled".
+10. Click "Commit Changes to System".</fixtext><fix id="F-69984r1024385_fix" /><check system="C-70081r1023717_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not perform content filtering as part of the traffic management functions, this is not applicable.
+
+From the BIG-IP GUI:
+1. Security.
+2. DoS Protection.
+3. Device Protection.
+4. Expand "Network" and verify "Dynamic Signatures" are enabled.
+5. If applicable, expand "DNS" and verify "Dynamic Signatures" are enabled.
+
+If the BIG-IP appliance is not configured to protect against or limit the effects of known and unknown types of DoS attacks by employing pattern recognition pre-processors, this is a finding.</check-content></check></Rule></Group><Group id="V-266158"><title>SRG-NET-000401-ALG-000127</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266158r1024387_rule" weight="10.0" severity="medium"><version>F5BI-AP-300064</version><title>The F5 BIG-IP appliance must check the validity of all data inputs except those specifically identified by the organization.</title><description>&lt;VulnDiscussion&gt;Invalid user input occurs when a user inserts data or characters into an application's data entry fields and the application is unprepared to process that data. This results in unanticipated application behavior potentially leading to an application or information system compromise. Invalid input is one of the primary methods employed when attempting to compromise an application.
+
+Network devices with the functionality to perform application layer inspection may be leveraged to validate data content of network communications. Checking the valid syntax and semantics of information system inputs (e.g., character set, length, numerical range, and acceptable values) verifies that inputs match specified definitions for format and content. Software typically follows well-defined protocols that use structured messages (i.e., commands or queries) to communicate between software modules or system components. Structured messages can contain raw or unstructured data interspersed with metadata or control information. If network elements use attacker-supplied inputs to construct structured messages without properly encoding such messages, then the attacker could insert malicious commands or special characters that can cause the data to be interpreted as control information or metadata. Consequently, the module or component that receives the tainted output will perform the wrong operations or otherwise interpret the data incorrectly. Pre-screening inputs prior to passing to interpreters prevents the content from being unintentionally interpreted as commands. Input validation helps to ensure accurate and correct inputs and prevent attacks such as cross-site scripting and a variety of injection attacks.
+
+This requirement applies to gateways and firewalls that perform content inspection or have higher-layer proxy functionality.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001310</ident><fixtext fixref="F-69985r1023721_fix">From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Parameters.
+4. Parameters List.
+5. Select the appropriate policy from the drop-down menu in the top left.
+6. Configure the appropriate parameters for the application (e.g., character set, length, numerical range, and acceptable values).
+
+Refer to vendor documentation for more information.</fixtext><fix id="F-69985r1023721_fix" /><check system="C-70082r1023720_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. Security.
+2. Application Security.
+3. Parameters.
+4. Parameters List.
+5. Select the appropriate policy from the drop-down menu in the top left.
+6. Verify the appropriate parameters are configured for the application (e.g., character set, length, numerical range, and acceptable values).
+
+If the BIG-IP appliance is not configured to check the validity of all data inputs except those specifically identified by the organization, this is a finding.</check-content></check></Rule></Group><Group id="V-266159"><title>SRG-NET-000251-ALG-000131</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266159r1024388_rule" weight="10.0" severity="medium"><version>F5BI-AP-300065</version><title>The F5 BIG-IP appliance providing content filtering must automatically update malicious code protection mechanisms.</title><description>&lt;VulnDiscussion&gt;The malicious software detection functionality on network elements needs to be constantly updated to identify new threats as they are discovered.
+
+All malicious software detection functions must come with an update mechanism that automatically updates the application and any associated signature definitions. The organization (including any contractor to the organization) is required to promptly install security-relevant malicious code protection updates. Examples of relevant updates include antivirus signatures, detection heuristic rule sets, and/or file reputation data employed to identify and/or block malicious software from executing.
+
+Malicious code includes viruses, worms, Trojan horses, and spyware.
+
+This requirement is limited to ALGs, web content filters, and packet inspection firewalls that perform malicious code detection as part of their functionality.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001247</ident><fixtext fixref="F-69986r1023724_fix">Note: Automatic signature updates can be configured, but depending on site connectivity this may not be possible. In this case, manual upload of updates is possible. The below covers automatic update configuration.
+
+Automatic Update Check:
+From the BIG-IP GUI:
+1. System.
+2. Software Management.
+3. Update Check.
+4. Set "Automatic Update Check" to "Enabled".
+5. Click "Apply Settings".
+
+Real-Time Installation of Updates:
+1. System.
+2. Software Management.
+3. Live Update.
+4. Under "Updates Configuration" click on each item and click "Real-Time" for the setting "Installation of Automatically Downloaded Updates".
+5. Click "Save" for each item.</fixtext><fix id="F-69986r1023724_fix" /><check system="C-70083r1023723_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP  does not perform content filtering as part of its traffic management functionality, this is not applicable.
+
+Note: Automatic signature updates can be configured, but depending on site connectivity this may not be possible. In this case manual upload of updates is possible. The below covers automatic update configuration.
+
+Automatic Update Check:
+From the BIG-IP GUI:
+1. System.
+2. Software Management.
+3. Update Check.
+4. Verify that "Automatic Update Check" is set to "Enabled".
+
+Real-Time Installation of Updates:
+1. System.
+2. Software Management.
+3. Live Update.
+4. Under "Updates Configuration" click on each item and check that "Real-Time" is selected for the setting "Installation of Automatically Downloaded Updates".
+
+If the BIG-IP appliance is not configured to automatically update malicious code protection mechanisms, this is a finding.</check-content></check></Rule></Group><Group id="V-266160"><title>SRG-NET-000384-ALG-000136</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266160r1024389_rule" weight="10.0" severity="medium"><version>F5BI-AP-300068</version><title>The F5 BIG-IP appliance providing content filtering must detect use of network services that have not been authorized or approved by the information system security manager (ISSM) and information system security officer (ISSO), at a minimum.</title><description>&lt;VulnDiscussion&gt;Unauthorized or unapproved network services lack organizational verification or validation, and therefore may be unreliable or serve as malicious rogues for valid services.
+
+Examples of network services include service-oriented architectures (SOAs), cloud-based services (e.g., infrastructure as a service, platform as a service, or software as a service), cross-domain, Voice Over Internet Protocol, Instant Messaging, auto-execute, and file sharing.
+
+To comply with this requirement, the ALG may be configured to detect services either directly or indirectly (i.e., by detecting traffic associated with a service). This requirement applies to gateways/firewalls that perform content inspection or have higher-layer proxy functionality.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002683</ident><fixtext fixref="F-69987r1023727_fix">AFM ACL:
+From the BIG-IP GUI:
+1. Security.
+2. Network Firewall.
+3. Policies.
+4. &lt;Policy Name&gt;.
+5. Configure a rule that uses a "Classification Policy".
+Note: To create a Classification Policy, go to Traffic Intelligence &gt;&gt; Policies.
+6. Click "Commit Changes to System".
+
+Log Profile:
+From the BIG-IP GUI:
+1. Security.
+2. Event Logs.
+3. Logging Profiles.
+4. Edit the global-network profile.
+5. Check "Enabled" for "Classification".
+6. Classification tab.
+7. Configure the Log Publisher. (For production environments, F5 recommends using remote logging.)
+8. Click "Update".</fixtext><fix id="F-69987r1023727_fix" /><check system="C-70084r1023726_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not perform content filtering as part of the traffic management functions, this is not applicable. 
+
+If using the BIG-IP AFM module to perform content filtering:
+
+AFM ACL:
+From the BIG-IP GUI:
+1. Security.
+2. Network Firewall.
+3. Policies.
+4. &lt;Policy Name&gt;.
+5. Verify a rule is configured that uses a "Classification Policy".
+
+Log Profile:
+From the BIG-IP GUI:
+1. Security.
+2. Event Logs.
+3. Logging Profiles.
+4. Edit the global-network profile.
+5. Classification tab.
+6. Verify the Log Publisher is set to the desired setting. (For production environments, F5 recommends using remote logging.)
+
+If configured rules in the policy do not detect use of network services that have not been authorized or approved by the ISSM and ISSO, at a minimum, this is a finding.</check-content></check></Rule></Group><Group id="V-266161"><title>SRG-NET-000385-ALG-000137</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266161r1024391_rule" weight="10.0" severity="medium"><version>F5BI-AP-300069</version><title>The F5 BIG-IP appliance providing content filtering must generate a log record when unauthorized network services are detected.</title><description>&lt;VulnDiscussion&gt;Unauthorized or unapproved network services lack organizational verification or validation, and therefore may be unreliable or serve as malicious rogues for valid services.
+
+Examples of network services include service-oriented architectures (SOAs), cloud-based services (e.g., infrastructure as a service, platform as a service, or software as a service), cross-domain, Voice Over Internet Protocol, instant messaging, auto-execute, and file sharing.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002684</ident><fixtext fixref="F-69988r1024390_fix">AFM ACL:
+From the BIG-IP GUI:
+1. Security.
+2. Network Firewall.
+3. Policies.
+4. &lt;Policy Name&gt;.
+5. Configure a rule that uses a "Classification Policy".
+Note: To create a Classification Policy, go to Traffic Intelligence &gt;&gt; Policies.
+6. Click "Commit Changes to System".
+
+Log Profile:
+From the BIG-IP GUI:
+1. Security.
+2. Event Logs.
+3. Logging Profiles.
+4. Edit the global-network profile.
+5. Check "Enabled" for "Classification".
+6. Classification tab.
+7. Configure the Log Publisher. (For production environments, F5 recommends using remote logging.)
+8. Click "Update".</fixtext><fix id="F-69988r1024390_fix" /><check system="C-70085r1023729_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not perform content filtering as part of the traffic management functions, this is not applicable. 
+
+If using the BIG-IP AFM module to perform content filtering:
+
+AFM ACL:
+From the BIG-IP GUI:
+1. Security.
+2. Network Firewall.
+3. Policies.
+4. &lt;Policy Name&gt;.
+5. Verify a rule is configured that uses a "Classification Policy".
+
+Log Profile:
+From the BIG-IP GUI:
+1. Security.
+2. Event Logs.
+3. Logging Profiles.
+4. Edit the global-network profile.
+5. Classification tab.
+6. Verify the Log Publisher is set to the desired setting. (For production environments, F5 recommends using remote logging.)
+
+If configured rules in the policy do not detect use of network services that have not been authorized or approved by the ISSM and ISSO, at a minimum, this is a finding.</check-content></check></Rule></Group><Group id="V-266162"><title>SRG-NET-000233-ALG-000115</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266162r1024392_rule" weight="10.0" severity="low"><version>F5BI-AP-300151</version><title>When the Access Profile Type is LTM+APM and it is not using any connectivity resources (such as Network Access, Portal Access, etc.) in the VPE, the F5 BIG-IP appliance must be configured to enable the HTTP Only flag.</title><description>&lt;VulnDiscussion&gt;To guard against cookie hijacking, only the BIG-IP APM controller and client must be able to view the full session ID. Setting the APM HTTP Only flag ensures that a third party will not have access to the active session cookies.
+
+This option is only applicable to the LTM+APM access profile type. Other access profile types require access to various session cookies to fully function. Sites must conduct operational testing prior to enabling this setting. For implementations with connectivity resources (such as Network Access, Portal Access, etc.), do not set BIG-IP APM cookies with the HTTP Only flag.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001664</ident><fixtext fixref="F-69989r1023733_fix">When the Access Profile Type is LTM+APM and it is not using any connectivity resources (such as Network Access, Portal Access, etc.) in the VPE, set the HTTP Only flag.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the access profile name.
+5. SSO/Auth Domains.
+6. Under Cookie Options, Check the box next to HTTP Only.
+7. Click "Update".
+8. Click "Apply Access Policy".</fixtext><fix id="F-69989r1023733_fix" /><check system="C-70086r1023732_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the Access Profile Type is not LTM+APM and it uses connectivity resources (such as Network Access, Portal Access, etc.) in the VPE, then this is not a finding.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the access profile name.
+5. SSO/Auth Domains.
+6. Under Cookie Options, verify HTTP Only is enabled.
+
+If the F5 BIG-IP appliance does not enable the HTTP Only flag, this is a finding.</check-content></check></Rule></Group><Group id="V-266163"><title>SRG-NET-000233-ALG-000115</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266163r1024393_rule" weight="10.0" severity="low"><version>F5BI-AP-300152</version><title>The F5 BIG-IP appliance must be configured to enable the secure cookie flag.</title><description>&lt;VulnDiscussion&gt;To guard against cookie hijacking, only the BIG-IP APM controller and client must be able to view the full session ID. Session cookies are set only after the SSL handshake between the BIG-IP APM system and the user has completed, ensuring that the session cookies are protected from interception with SSL encryption.
+
+To ensure that the client browser will not send session cookies unencrypted, the HTTP header that the BIG-IP APM uses when sending the session cookie is set with the secure option (default). This option is only applicable to the LTM+APM access profile type.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001664</ident><fixtext fixref="F-69990r1023736_fix">Configure each Access Profile to enable the Secure Cookies flag.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the access profile name.
+5. SSO/Auth Domains tab.
+6. Under Cookie Options, check "Secure".
+7. Click "Update".
+8. Click "Apply Access Policy".</fixtext><fix id="F-69990r1023736_fix" /><check system="C-70087r1023735_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the access profile name.
+5. SSO/Auth Domains tab.
+6. Under Cookie Options, verify "Secure" is enabled.
+
+If the F5 BIG-IP appliance APM Policy does not enable the Secure cookies flag, this is a finding.</check-content></check></Rule></Group><Group id="V-266164"><title>SRG-NET-000233-ALG-000115</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266164r1024395_rule" weight="10.0" severity="low"><version>F5BI-AP-300153</version><title>The F5 BIG-IP appliance must be configured to disable the persistent cookie flag.</title><description>&lt;VulnDiscussion&gt;For BIG-IP APM deployments with connectivity resources (such as Network Access, Portal Access, etc.), BIG-IP APM cookies cannot be set as Persistent. This is by design since cookies are stored locally on the client's hard disk, and thus could be exposed to unauthorized external access. For some deployments of the BIG-IP APM system, cookie persistence may be required. When selecting cookie persistence, persistence is hard coded at 60 seconds.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001664</ident><fixtext fixref="F-69991r1023739_fix">Note: Testing must be performed prior to implementation to prevent operational impact. This setting may break access to certain applications that require cookie persistence.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the access profile name.
+5. SSO/Auth Domains tab.
+6. Under Cookie Options, uncheck "Persistent".
+7. Click "Update".
+8. Click "Apply Access Policy".</fixtext><fix id="F-69991r1023739_fix" /><check system="C-70088r1024394_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the Access Profile is used for applications that require cookie persistence, then this is not a finding.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the access profile name.
+5. SSO/Auth Domains tab.
+6. Under Cookie Options, verify "Persistent" is disabled.
+
+If the F5 Big IP appliance APM Policy has the Persistent cookies flag enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-266165"><title>SRG-NET-000164-ALG-000100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266165r1024396_rule" weight="10.0" severity="high"><version>F5BI-AP-300154</version><title>The F5 BIG-IP appliance must configure certificate path validation to ensure revoked user credentials are prohibited from establishing an allowed session.</title><description>&lt;VulnDiscussion&gt;A certificate's certification path is the path from the end entity certificate to a trusted root certification authority (CA). Certification path validation is necessary for a relying party to make an informed decision regarding acceptance of an end entity certificate.
+
+Certification path validation includes checks such as certificate issuer trust, time validity and revocation status for each certificate in the certification path. Revocation status information for CA and subject certificates in a certification path is commonly provided via certificate revocation lists (CRLs) or online certificate status protocol (OCSP) responses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000185</ident><fixtext fixref="F-69992r1023742_fix">Access Policy:
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Add an "OCSP Auth" with certificate type of "User" and/or a "CRLDP Auth" object in the Access Profile.
+Note: To create an OCSP Responder, go to Access &gt;&gt; Authentication &gt;&gt; OCSP Responder.
+Note: To create a CRLDP Server object, go to Access &gt;&gt; Authentication &gt;&gt; CRLDP.
+6. Add an "OCSP Auth" object in the Access Profile and select an OCSP Responder.
+7. Click "Update".</fixtext><fix id="F-69992r1023742_fix" /><check system="C-70089r1023741_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide intermediary services for TLS, or application protocols that use TLS (e.g., DNSSEC or HTTPS), this is not applicable.
+
+Access Policy:
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Verify an "OCSP Auth" object is configured in the Access Profile for "User" type or a CRLDP object is configured.
+
+If the BIG-IP appliance is not configured to use OCSP or CRLDP to ensure revoked user credentials are prohibited from establishing an allowed session, this is a finding.</check-content></check></Rule></Group><Group id="V-266166"><title>SRG-NET-000230-ALG-000113</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266166r1024851_rule" weight="10.0" severity="medium"><version>F5BI-AP-300155</version><title>The F5 BIG-IP appliance must not use the On-demand Cert Auth VPE agent as part of the APM Policy Profiles.</title><description>&lt;VulnDiscussion&gt;By requiring mutual authentication before any communication, it becomes significantly challenging for attackers to impersonate a client or server and exploit vulnerabilities. Furthermore, the encryption of all data transmitted between the client and server ensures that even if an attacker intercepts the data, it remains unintelligible without the correct keys.
+
+To ensure the use of the mTLS for session authentication, do not use the On-Demand Cert Auth VPE agent. Typically, when a client makes an HTTPS request, an SSL handshake request occurs at the start of an SSL session. However, if On-Demand is configured, the client SSL profile skips the initial SSL handshake, an On-Demand Cert Auth action can re-negotiate the SSL connection from an access policy by sending a certificate request to the user. This prompts a certificate screen to open. Setting ODCA to "require" the client cert means the client cannot get any farther in the APM VPE without providing a valid certificate. "Request" would ask the client for a certificate, but the client could still continue if they did not provide one. Thus, the Client Certificate must be set to "require" in the client SSL profile since just removing ODCA from the VPE alone will result in the client never getting prompted for a certificate.
+
+Within the Virtual Policy Editor (VPE) of the relevant Access Profile, do not use the On-Demand Cert Auth VPE agent. Configure only the Client Certification Inspection VPE Agent. This adjustment directs the BIG-IP to scrutinize the Client Certificate during the mTLS handshake process and extract the certificate's details into APM session variables.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001184</ident><fixtext fixref="F-69993r1024850_fix">From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Remove any "On-Demand Cert Auth" agents in the profile.
+6. Add a "Client Cert Inspection" object in place of the previous "On Demand Cert Auth" agent.
+7. Click "Apply Access Policy".</fixtext><fix id="F-69993r1024850_fix" /><check system="C-70090r1024849_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit" under "Per-Session Policy" for the Access Profile.
+5. Verify the On-Demand Cert Auth agent is not configured in any part of the profile.
+
+If the On-Demand Cert Auth agent is used in any Access Policy Profile, this is a finding.</check-content></check></Rule></Group><Group id="V-266167"><title>SRG-NET-000230-ALG-000113</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266167r1024399_rule" weight="10.0" severity="medium"><version>F5BI-AP-300156</version><title>The F5 BIG-IP appliance must be configured to restrict a consistent inbound IP for the entire management session.</title><description>&lt;VulnDiscussion&gt;This security measure helps limit the effects of denial-of-service attacks by employing antisession hijacking security safeguards. Session hijacking, also called cookie hijacking, is the exploitation of a valid computer session to gain unauthorized access to an application. The attacker steals (or hijacks) the cookies from a valid user and attempts to use them for authentication.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001184</ident><fixtext fixref="F-69994r1023748_fix">From the BIG-IP GUI:
+1. System.
+2. Preferences.
+3. Under Security Settings, check "Require A Consistent Inbound IP For The Entire Web Session".
+4. Click "Update".
+
+From the BIG-IP Console:
+
+tmsh modify sys httpd auth-pam-validate-ip on
+tmsh save sys config</fixtext><fix id="F-69994r1023748_fix" /><check system="C-70091r1023747_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Preferences.
+3. Under Security Settings, verify "Require A Consistent Inbound IP For The Entire Web Session" box is checked.
+
+From the BIG-IP Console:
+
+tmsh list sys httpd auth-pam-validate-ip
+
+Note: This returns a value of "on".
+
+If the BIG-IP appliance is not configured to require a consistent inbound IP for the entire session for management sessions, this is a finding.</check-content></check></Rule></Group><Group id="V-266168"><title>SRG-NET-000230-ALG-000113</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266168r1024400_rule" weight="10.0" severity="low"><version>F5BI-AP-300157</version><title>The F5 BIG-IP appliance must be configured to limit authenticated client sessions to initial session source IP.</title><description>&lt;VulnDiscussion&gt;The "Restrict to Single Client IP” is a safeguard against session hijacking or cookie theft. Even if an attacker manages to steal a session cookie, the cookie cannot be used from a different source IP address that the address used to initiate the session. This security measure is set within the APM Access Profiles.
+
+This setting has been recommended by F5 as a defense-in-depth measure. However, in some networks, this may result in false positives or rejection of legitimate connections. Users behind a shared proxy address may be denied access. Thus, sites must test this setting within their network prior to implementing to determine if there are operational impacts that prevent the use of this setting. If so, the site must document the impacts and get approval from the authorizing official (AO) if this required setting will not be implemented.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001184</ident><fixtext fixref="F-69995r1023751_fix">Note: Setting must be tested. If there are operational impacts that prevent the use of this setting, document the impacts, and obtain approval from the AO if this requirement will not be implemented. 
+
+From the BIG-IP GUI:
+1. System.
+2. Access.
+3. Profiles/Policies.
+4. Access Profiles.
+5. Click the access profile name.
+6. Under Settings, check "Restrict to Single Client IP".
+Note: If the box is grayed out, check the box all the way to the right of the setting first and then check the box.
+7. Click "Update".
+8. Click "Apply Access Policy".</fixtext><fix id="F-69995r1023751_fix" /><check system="C-70092r1023750_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the site has documented an adverse operational impact and has AO approval, this is not a finding.
+
+From the BIG-IP GUI:
+1. System.
+2. Access.
+3. Profiles/Policies.
+4. Access Profiles.
+5. Click the access profile name.
+6. Under Settings, verify "Restrict to Single Client IP" is checked.
+
+If the BIG-IP appliance is not configured to limit authenticated client sessions to initial session source IP, this is a finding.</check-content></check></Rule></Group><Group id="V-266169"><title>F5BI-AP-300158</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266169r1024401_rule" weight="10.0" severity="medium"><version>F5BI-AP-300158</version><title>The F5 BIG-IP appliance must be configured to set a Maximum Session Timeout value of eight hours or less.</title><description>&lt;VulnDiscussion&gt;The Maximum Session Timeout setting configures a limit on the maximum amount of time a user's session is active without needing to reauthenticate. If the value is set to zero, the user's session is active until either the user terminates the session or the Inactivity Timeout value is reached (the default value is set to 604,800 seconds). When determining how long the maximum user session can last, it may be useful to review the access policy. For example, if the access policy requires that the user's antivirus signatures cannot be older than eight hours, the Maximum Session Timeout must not exceed that time limit.
+
+This is an APM Policy setting, which applies to APM authentication profiles for Virtual Servers and SSL VPN.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002038</ident><fixtext fixref="F-69996r1023754_fix">From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the access profile name.
+5. In the "Settings" section, set the value for "Maximum Session Timeout" to 28800 seconds (eight hours) or less.
+Note: If the setting is grayed out, check the box to the right of the setting and then update it.
+6. Click "Update".
+7. Click "Apply Access Policy".</fixtext><fix id="F-69996r1023754_fix" /><check system="C-70093r1023753_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP APM module does not provide user authentication intermediary services, this is not applicable.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the access profile name.
+5. In the "Settings" section, verify the value for "Maximum Session Timeout" is set to 28800 seconds (eight hours) or less.
+
+If the F5 BIG-IP APM access policy is not configured for a "Maximum Session Timeout" value of 28,800 seconds (eight hours) or less, this is a finding.</check-content></check></Rule></Group><Group id="V-266170"><title>SRG-NET-000510-ALG-000111</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266170r1024402_rule" weight="10.0" severity="high"><version>F5BI-AP-300159</version><title>The F5 BIG-IP appliance must be configured to use cryptographic algorithms approved by NSA to protect NSS for remote access to a classified network.</title><description>&lt;VulnDiscussion&gt;Use of weak or untested encryption algorithms undermines the purposes of utilizing encryption to protect data. The VPN gateway must implement cryptographic modules adhering to the higher standards approved by the Federal Government since this provides assurance they have been tested and validated.
+
+NIST cryptographic algorithms are approved by NSA to protect NSS. Based on an analysis of the impact of quantum computing, cryptographic algorithms specified by CNSSP-15 and approved for use in products in the CSfC program have been changed to more stringent protocols and configured with increased bit sizes and other secure characteristics to protect against quantum computing threats. The Commercial National Security Algorithm Suite (CNSA Suite) replaces Suite B.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-69997r1023757_fix">From the BIG-IP GUI:
+1. Local Traffic.
+2. Profiles.
+3. SSL.
+4. Client.
+5. Click the name of the SSL Profile.
+6. For "Ciphers", configure only AES-256 or other cryptographic algorithms approved by NSA to protect NSS for remote access to a classified network in compliance with CSNA/CNSSP-15.
+7. Click "Update".</fixtext><fix id="F-69997r1023757_fix" /><check system="C-70094r1023756_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. Local Traffic.
+2. Profiles.
+3. SSL.
+4. Client.
+5. Click the name of the SSL Profile.
+6. For "Ciphers", ensure only AES-256 or other cryptographic algorithms approved by NSA to protect NSS for remote access to a classified network are configured in compliance with CSNA/CNSSP-15.
+
+If the BIG-IP appliance is not configured to use cryptographic algorithms approved by NSA to protect NSS for remote access to a classified network, this is a finding.</check-content></check></Rule></Group><Group id="V-266171"><title>SRG-NET-000512-ALG-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266171r1024403_rule" weight="10.0" severity="medium"><version>F5BI-AP-300160</version><title>The F5 BIG-IP must be configured to identify and authenticate all endpoint devices or peers before establishing a connection.</title><description>&lt;VulnDiscussion&gt;Without identifying and authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000778</ident><ident system="http://cyber.mil/cci">CCI-001958</ident><fixtext fixref="F-69998r1023760_fix">From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit..." in the "Per-Session Policy" column for the Access Profile.
+5. Configure the Access Profile to uniquely identify and authenticate network devices.
+6. Click "Apply Access Policy".</fixtext><fix id="F-69998r1023760_fix" /><check system="C-70095r1023759_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide remote access intermediary services, this is not applicable.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click "Edit..." in the "Per-Session Policy" column for the Access Profile.
+5. Verify the Access Profile is configured to uniquely identify network devices.
+
+If the BIG-IP appliance is not configured to identify and authenticate all endpoint devices or peers before establishing a connection, this is a finding.</check-content></check></Rule></Group><Group id="V-266172"><title>SRG-NET-000512-ALG-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266172r1024404_rule" weight="10.0" severity="medium"><version>F5BI-AP-300161</version><title>The F5 BIG-IP appliance providing remote access intermediary services must disable split-tunneling for remote clients' VPNs.</title><description>&lt;VulnDiscussion&gt;Split tunneling would in effect allow unauthorized external connections, making the system more vulnerable to attack and to exfiltration of organizational information.
+
+A VPN hardware or software client with split tunneling enabled provides an unsecured backdoor to the enclave from the internet. With split tunneling enabled, a remote client has access to the internet while at the same time has established a secured path to the enclave via an IPsec tunnel. A remote client connected to the internet that has been compromised by an attacker on the internet, provides an attack base to the enclave’s private network via the IPsec tunnel. Hence, it is imperative that the VPN gateway enforces a no split-tunneling policy to all remote clients.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-002397</ident><fixtext fixref="F-69999r1023763_fix">Obtain the Network Access name in the Access Profile:
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the name of the Access Profile.
+5. Click the Access Policy tab and note the name(s) of the Network Access listed.
+
+Configure the Network Access List:
+From the BIG-IP GUI:
+1. Access.
+2. Connectivity/VPN.
+3. Network Access (VPN).
+4. Network Access Lists.
+5. Click on the Name of the Network Access List.
+6. Network Settings tab.
+7. Select "Force all traffic through tunnel" under Client Settings &gt;&gt; Traffic Options.
+8. Click "Update".</fixtext><fix id="F-69999r1023763_fix" /><check system="C-70096r1023762_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide remote access intermediary services, this is not applicable.
+
+Access Profile:
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the name of the Access Profile.
+5. Click the Access Policy tab and note the name(s) of the Network Access listed.
+
+Network Access List:
+From the BIG-IP GUI:
+1. Access.
+2. Connectivity/VPN.
+3. Network Access (VPN).
+4. Network Access Lists.
+5. Click on the Name of the Network Access List.
+6. Network Settings tab.
+7. Verify "Force all traffic through tunnel" is selected under Client Settings &gt;&gt; Traffic Options.
+
+If the BIG-IP appliance is not configured to disable split-tunneling for remote client VPNs, this is a finding.</check-content></check></Rule></Group><Group id="V-266173"><title>SRG-NET-000512-ALG-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266173r1024854_rule" weight="10.0" severity="medium"><version>F5BI-AP-300162</version><title>The F5 BIG-IP appliance providing remote access intermediary services must be configured to route sessions to an IDPS for inspection.</title><description>&lt;VulnDiscussion&gt;Remote access devices, such as those providing remote access to network devices and information systems, which lack automated, capabilities increase risk and makes remote user access management difficult at best.
+
+Remote access is access to DOD nonpublic information systems by an authorized user (or an information system) communicating through an external, non-organization-controlled network.
+
+Automated monitoring of remote access sessions allows organizations to detect cyberattacks and ensure ongoing compliance with remote access policies by auditing connection activities of remote access capabilities, from a variety of information system components (e.g., servers, workstations, notebook computers, smart phones, and tablets).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001097</ident><fixtext fixref="F-70000r1024853_fix">Configure one of these two options:
+1. Configure the network architecture to route traffic inline from the BIG-IP through an IDPS.
+2. Configure a Protocol Inspection Profile on the Virtual Server.
+
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click on the name of the Virtual Server.
+5. Security &gt;&gt; Policies tab.
+6. Set "Protocol Inspection Profile" to "Enabled".
+7. Set the "Profile" drop-down to the appropriate value.
+Note: To create a Protocol Inspection Profile, go to Security &gt;&gt; Protocol Security &gt;&gt; Inspection Profiles.
+8. Click "Update".</fixtext><fix id="F-70000r1024853_fix" /><check system="C-70097r1024852_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>If the BIG-IP appliance does not provide remote access intermediary services, this is not applicable. 
+
+Verify one of these two options are configured:
+1. The network architecture routes traffic inline from the BIG-IP through an IDPS.
+2. A Protocol Inspection Profile is configured on the Virtual Server.
+
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. Virtual Server List.
+4. Click on the name of the Virtual Server.
+5. Security &gt;&gt; Policies tab.
+6. Verify "Protocol Inspection Profile" is set to "Enabled" and the "Profile" drop-down is set to the appropriate value.
+
+If the BIG-IP appliance is not configured to route sessions to an IDPS for inspection, this is a finding.</check-content></check></Rule></Group><Group id="V-266174"><title>SRG-NET-000512-ALG-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266174r1024406_rule" weight="10.0" severity="medium"><version>F5BI-AP-300163</version><title>The VPN Gateway must use Always On VPN connections for remote computing.</title><description>&lt;VulnDiscussion&gt;Allowing remote users to manually toggle a VPN connection can create critical security risks. With Always On VPN, if a secured connection to the gateway is lost, hybrid-working users will simply be disconnected from the internet until the issue is solved.
+
+"Always On" is a term that describes a VPN connection that is secure and always on after the initial connection is established. An Always On VPN deployment establishes a VPN connection with the client without the need for user interaction (e.g., user credentials). The remote client must not be able to access the Internet without first established a VPN session with a DOD site.
+
+Note that device compliance checks are still required prior to connecting to DOD resources. Although out of scope for this requirement, the connection process must ensure that remote devices meet security standards before accessing DOD resources. Devices that fail to meet compliance requirements can be denied access, reducing the risk of compromised endpoints.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001184</ident><fixtext fixref="F-70001r1023769_fix">Configure at least one of these methods.
+Always Connected Mode:
+
+From the BIG-IP GUI:
+1. Access.
+2. Connectivity/VPN.
+3. Connectivity.
+4. Profiles.
+5. Click the name of the profile.
+6. At the bottom, click Customize Package &gt;&gt; Windows.
+7. Click "BIG-IP Edge Client" on the left.
+8. Check the box next to "Enable Always connected mode".
+Note: Always connected mode requires at least one host be listed in the Server list of the Connectivity Profile. Edit the Connectivity Profile to add an entry, if necessary.
+9. Click "Download" to save the settings and download the installer.
+
+Machine Tunnels:
+From the BIG-IP GUI:
+1. Access.
+2. Connectivity/VPN.
+3. Connectivity.
+4. Profiles.
+5. Click the name of the profile.
+6. At the bottom, click Customize Package &gt;&gt; Windows.
+7. Check "Machine Tunnel Service".
+8. Optionally, click "Machine Tunnel Service" on the left and check "Enable NLA for Machine Tunnel".
+Note: To configure DNS Suffixes for NLA, edit the Connectivity Profile &gt;&gt; Win/Mac Edge Client &gt; Location DNS List.
+9. Click "Download" to save the settings and download the installer.</fixtext><fix id="F-70001r1023769_fix" /><check system="C-70098r1023768_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>Verify at least one of these methods is configured.
+
+Always Connected Mode:
+From the BIG-IP GUI:
+1. Access.
+2. Connectivity/VPN.
+3. Connectivity.
+4. Profiles.
+5. Click the name of the profile.
+6. At the bottom, click Customize Package &gt;&gt; Windows.
+7. Click "BIG-IP Edge Client" on the left.
+8. Verify "Enable Always connected mode" is enabled.
+
+Machine Tunnels:
+From the BIG-IP GUI:
+1. Access.
+2. Connectivity/VPN.
+3. Connectivity.
+4. Profiles.
+5. Click the name of the profile.
+6. At the bottom, click Customize Package &gt;&gt; Windows.
+7. Verify "Machine Tunnel Service" is checked.
+
+If the BIG-IP VPN Gateway is not configured to use an Always On VPN connection for remote computing, this is a finding.</check-content></check></Rule></Group><Group id="V-266175"><title>SRG-NET-000053-ALG-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266175r1024855_rule" weight="10.0" severity="low"><version>F5BI-AP-300164</version><title>The F5 BIG-IP appliance must be configured to set the "Max In Progress Sessions per Client IP" value to 10 or an organizational-defined number.</title><description>&lt;VulnDiscussion&gt;The "Max In Progress Sessions Per Client IP" setting in an APM Access Profile is a security configuration that limits the number of simultaneous sessions that can be initiated from a single IP address. This is particularly helpful in preventing a session flood, where a hacker might attempt to overwhelm the system by initiating many sessions from a single source. By capping the number of sessions per IP, this setting can help maintain the system's stability and integrity while also providing a layer of protection against such potential attacks.
+
+This setting has been recommended by F5 as a defense-in-depth measure. However, in some networks, narrowing the number of in progress sessions may in adverse impacts on legitimate connections. Thus, sites must test this setting within their network prior to implementing to determine the minimum acceptable number. This should not remain at the very high default value and should not be excessively high. Document the organizational value.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS ALG</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS ALG</dc:subject><dc:identifier>5640</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-70002r1023772_fix">From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the access profile name.
+5. In the "Settings" section, set "Max In Progress Sessions per Client IP" to 10 or an organization-defined number.
+Note: If the setting is grayed out, check the box to the right of the setting and then update it. If the setting is not set to 10, verify the operational reason is documented and approved by the AO.
+6. Click "Update".
+7. Click "Apply Access Policy".</fixtext><fix id="F-70002r1023772_fix" /><check system="C-70099r1023771_chk"><check-content-ref href="F5_BIG-IP_TMOS_ALG_STIG.xml" name="M" /><check-content>Note: Setting must be tested to determine if a number greater than 10 is operationally necessary. Ten is the minimum but may have operational impacts. Set to the minimum that is possible without adverse impacts, document the setting and the operational testing.
+
+From the BIG-IP GUI:
+1. Access.
+2. Profiles/Policies.
+3. Access Profiles.
+4. Click the access profile name.
+5. In the "Settings" section, verify "Max In Progress Sessions per Client IP" is set to 10 or an organization-defined number.
+
+If the F5 BIG-IP APM access policy is not configured to set a "Max In Progress Sessions per Client IP" value to 10 or an organization-defined number, this is a finding.</check-content></check></Rule></Group></Benchmark>

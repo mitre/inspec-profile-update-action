@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="F5_BIG-IP_TMOS_NDM_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-09-20">accepted</status><title>F5 BIG-IP TMOS NDM Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 26 Sep 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266064" selected="true" /><select idref="V-266065" selected="true" /><select idref="V-266066" selected="true" /><select idref="V-266067" selected="true" /><select idref="V-266068" selected="true" /><select idref="V-266069" selected="true" /><select idref="V-266070" selected="true" /><select idref="V-266074" selected="true" /><select idref="V-266075" selected="true" /><select idref="V-266076" selected="true" /><select idref="V-266077" selected="true" /><select idref="V-266078" selected="true" /><select idref="V-266079" selected="true" /><select idref="V-266080" selected="true" /><select idref="V-266083" selected="true" /><select idref="V-266084" selected="true" /><select idref="V-266085" selected="true" /><select idref="V-266086" selected="true" /><select idref="V-266087" selected="true" /><select idref="V-266088" selected="true" /><select idref="V-266089" selected="true" /><select idref="V-266090" selected="true" /><select idref="V-266091" selected="true" /><select idref="V-266092" selected="true" /><select idref="V-266093" selected="true" /><select idref="V-266094" selected="true" /><select idref="V-266095" selected="true" /><select idref="V-266096" selected="true" /><select idref="V-266134" selected="true" /><select idref="V-266135" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266064" selected="true" /><select idref="V-266065" selected="true" /><select idref="V-266066" selected="true" /><select idref="V-266067" selected="true" /><select idref="V-266068" selected="true" /><select idref="V-266069" selected="true" /><select idref="V-266070" selected="true" /><select idref="V-266074" selected="true" /><select idref="V-266075" selected="true" /><select idref="V-266076" selected="true" /><select idref="V-266077" selected="true" /><select idref="V-266078" selected="true" /><select idref="V-266079" selected="true" /><select idref="V-266080" selected="true" /><select idref="V-266083" selected="true" /><select idref="V-266084" selected="true" /><select idref="V-266085" selected="true" /><select idref="V-266086" selected="true" /><select idref="V-266087" selected="true" /><select idref="V-266088" selected="true" /><select idref="V-266089" selected="true" /><select idref="V-266090" selected="true" /><select idref="V-266091" selected="true" /><select idref="V-266092" selected="true" /><select idref="V-266093" selected="true" /><select idref="V-266094" selected="true" /><select idref="V-266095" selected="true" /><select idref="V-266096" selected="true" /><select idref="V-266134" selected="true" /><select idref="V-266135" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266064" selected="true" /><select idref="V-266065" selected="true" /><select idref="V-266066" selected="true" /><select idref="V-266067" selected="true" /><select idref="V-266068" selected="true" /><select idref="V-266069" selected="true" /><select idref="V-266070" selected="true" /><select idref="V-266074" selected="true" /><select idref="V-266075" selected="true" /><select idref="V-266076" selected="true" /><select idref="V-266077" selected="true" /><select idref="V-266078" selected="true" /><select idref="V-266079" selected="true" /><select idref="V-266080" selected="true" /><select idref="V-266083" selected="true" /><select idref="V-266084" selected="true" /><select idref="V-266085" selected="true" /><select idref="V-266086" selected="true" /><select idref="V-266087" selected="true" /><select idref="V-266088" selected="true" /><select idref="V-266089" selected="true" /><select idref="V-266090" selected="true" /><select idref="V-266091" selected="true" /><select idref="V-266092" selected="true" /><select idref="V-266093" selected="true" /><select idref="V-266094" selected="true" /><select idref="V-266095" selected="true" /><select idref="V-266096" selected="true" /><select idref="V-266134" selected="true" /><select idref="V-266135" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266064" selected="true" /><select idref="V-266065" selected="true" /><select idref="V-266066" selected="true" /><select idref="V-266067" selected="true" /><select idref="V-266068" selected="true" /><select idref="V-266069" selected="true" /><select idref="V-266070" selected="true" /><select idref="V-266074" selected="true" /><select idref="V-266075" selected="true" /><select idref="V-266076" selected="true" /><select idref="V-266077" selected="true" /><select idref="V-266078" selected="true" /><select idref="V-266079" selected="true" /><select idref="V-266080" selected="true" /><select idref="V-266083" selected="true" /><select idref="V-266084" selected="true" /><select idref="V-266085" selected="true" /><select idref="V-266086" selected="true" /><select idref="V-266087" selected="true" /><select idref="V-266088" selected="true" /><select idref="V-266089" selected="true" /><select idref="V-266090" selected="true" /><select idref="V-266091" selected="true" /><select idref="V-266092" selected="true" /><select idref="V-266093" selected="true" /><select idref="V-266094" selected="true" /><select idref="V-266095" selected="true" /><select idref="V-266096" selected="true" /><select idref="V-266134" selected="true" /><select idref="V-266135" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266064" selected="true" /><select idref="V-266065" selected="true" /><select idref="V-266066" selected="true" /><select idref="V-266067" selected="true" /><select idref="V-266068" selected="true" /><select idref="V-266069" selected="true" /><select idref="V-266070" selected="true" /><select idref="V-266074" selected="true" /><select idref="V-266075" selected="true" /><select idref="V-266076" selected="true" /><select idref="V-266077" selected="true" /><select idref="V-266078" selected="true" /><select idref="V-266079" selected="true" /><select idref="V-266080" selected="true" /><select idref="V-266083" selected="true" /><select idref="V-266084" selected="true" /><select idref="V-266085" selected="true" /><select idref="V-266086" selected="true" /><select idref="V-266087" selected="true" /><select idref="V-266088" selected="true" /><select idref="V-266089" selected="true" /><select idref="V-266090" selected="true" /><select idref="V-266091" selected="true" /><select idref="V-266092" selected="true" /><select idref="V-266093" selected="true" /><select idref="V-266094" selected="true" /><select idref="V-266095" selected="true" /><select idref="V-266096" selected="true" /><select idref="V-266134" selected="true" /><select idref="V-266135" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266064" selected="true" /><select idref="V-266065" selected="true" /><select idref="V-266066" selected="true" /><select idref="V-266067" selected="true" /><select idref="V-266068" selected="true" /><select idref="V-266069" selected="true" /><select idref="V-266070" selected="true" /><select idref="V-266074" selected="true" /><select idref="V-266075" selected="true" /><select idref="V-266076" selected="true" /><select idref="V-266077" selected="true" /><select idref="V-266078" selected="true" /><select idref="V-266079" selected="true" /><select idref="V-266080" selected="true" /><select idref="V-266083" selected="true" /><select idref="V-266084" selected="true" /><select idref="V-266085" selected="true" /><select idref="V-266086" selected="true" /><select idref="V-266087" selected="true" /><select idref="V-266088" selected="true" /><select idref="V-266089" selected="true" /><select idref="V-266090" selected="true" /><select idref="V-266091" selected="true" /><select idref="V-266092" selected="true" /><select idref="V-266093" selected="true" /><select idref="V-266094" selected="true" /><select idref="V-266095" selected="true" /><select idref="V-266096" selected="true" /><select idref="V-266134" selected="true" /><select idref="V-266135" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266064" selected="true" /><select idref="V-266065" selected="true" /><select idref="V-266066" selected="true" /><select idref="V-266067" selected="true" /><select idref="V-266068" selected="true" /><select idref="V-266069" selected="true" /><select idref="V-266070" selected="true" /><select idref="V-266074" selected="true" /><select idref="V-266075" selected="true" /><select idref="V-266076" selected="true" /><select idref="V-266077" selected="true" /><select idref="V-266078" selected="true" /><select idref="V-266079" selected="true" /><select idref="V-266080" selected="true" /><select idref="V-266083" selected="true" /><select idref="V-266084" selected="true" /><select idref="V-266085" selected="true" /><select idref="V-266086" selected="true" /><select idref="V-266087" selected="true" /><select idref="V-266088" selected="true" /><select idref="V-266089" selected="true" /><select idref="V-266090" selected="true" /><select idref="V-266091" selected="true" /><select idref="V-266092" selected="true" /><select idref="V-266093" selected="true" /><select idref="V-266094" selected="true" /><select idref="V-266095" selected="true" /><select idref="V-266096" selected="true" /><select idref="V-266134" selected="true" /><select idref="V-266135" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266064" selected="true" /><select idref="V-266065" selected="true" /><select idref="V-266066" selected="true" /><select idref="V-266067" selected="true" /><select idref="V-266068" selected="true" /><select idref="V-266069" selected="true" /><select idref="V-266070" selected="true" /><select idref="V-266074" selected="true" /><select idref="V-266075" selected="true" /><select idref="V-266076" selected="true" /><select idref="V-266077" selected="true" /><select idref="V-266078" selected="true" /><select idref="V-266079" selected="true" /><select idref="V-266080" selected="true" /><select idref="V-266083" selected="true" /><select idref="V-266084" selected="true" /><select idref="V-266085" selected="true" /><select idref="V-266086" selected="true" /><select idref="V-266087" selected="true" /><select idref="V-266088" selected="true" /><select idref="V-266089" selected="true" /><select idref="V-266090" selected="true" /><select idref="V-266091" selected="true" /><select idref="V-266092" selected="true" /><select idref="V-266093" selected="true" /><select idref="V-266094" selected="true" /><select idref="V-266095" selected="true" /><select idref="V-266096" selected="true" /><select idref="V-266134" selected="true" /><select idref="V-266135" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266064" selected="true" /><select idref="V-266065" selected="true" /><select idref="V-266066" selected="true" /><select idref="V-266067" selected="true" /><select idref="V-266068" selected="true" /><select idref="V-266069" selected="true" /><select idref="V-266070" selected="true" /><select idref="V-266074" selected="true" /><select idref="V-266075" selected="true" /><select idref="V-266076" selected="true" /><select idref="V-266077" selected="true" /><select idref="V-266078" selected="true" /><select idref="V-266079" selected="true" /><select idref="V-266080" selected="true" /><select idref="V-266083" selected="true" /><select idref="V-266084" selected="true" /><select idref="V-266085" selected="true" /><select idref="V-266086" selected="true" /><select idref="V-266087" selected="true" /><select idref="V-266088" selected="true" /><select idref="V-266089" selected="true" /><select idref="V-266090" selected="true" /><select idref="V-266091" selected="true" /><select idref="V-266092" selected="true" /><select idref="V-266093" selected="true" /><select idref="V-266094" selected="true" /><select idref="V-266095" selected="true" /><select idref="V-266096" selected="true" /><select idref="V-266134" selected="true" /><select idref="V-266135" selected="true" /></Profile><Group id="V-266064"><title>SRG-APP-000001-NDM-000200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266064r1024595_rule" weight="10.0" severity="medium"><version>F5BI-DM-300001</version><title>The F5 BIG-IP appliance must be configured to limit the number of concurrent sessions to the Configuration Utility to 10 or an organization-defined number.</title><description>&lt;VulnDiscussion&gt;Device management includes the ability to control the number of administrators and management sessions that manage a device. Limiting the number of allowed administrators and sessions per administrator is helpful in limiting risks related to denial-of-service (DoS) attacks.
+
+This requirement addresses concurrent sessions for administrative accounts and does not address concurrent sessions by a single administrator via multiple administrative accounts. 
+
+Satisfies: SRG-APP-000001-NDM-000200, SRG-APP-000435-NDM-000315&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-69890r1023442_fix">From the BIG-IP GUI:
+1. System.
+2. Preferences.
+3. Set System Settings view to Advanced.
+4. Maximum HTTP connections to Configuration Utility: enter 10 or an organization-defined number.
+5. Update.
+
+From the BIG-IP console, type the following commands:
+
+tmsh modify sys httpd max-clients &lt;10 or an organization-defined number&gt;
+tmsh save sys config</fixtext><fix id="F-69890r1023442_fix" /><check system="C-69987r1023441_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Preferences.
+3. Verify that System Settings view is set to Advanced.
+4. Verify Maximum HTTP connections to Configuration Utility is set to 10 or an organization-defined number.
+
+From the BIG-IP console, type the following command:
+
+tmsh list sys httpd max-clients
+
+If the device is not configured to limit the number of concurrent sessions to the Configuration Utility to 10 or an organization-defined number, this is a finding.</check-content></check></Rule></Group><Group id="V-266065"><title>SRG-APP-000317-NDM-000282</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266065r1024596_rule" weight="10.0" severity="medium"><version>F5BI-DM-300003</version><title>The F5 BIG-IP appliance must terminate shared/group account credentials when members leave the group.</title><description>&lt;VulnDiscussion&gt;A shared/group account credential is a shared form of authentication that allows multiple individuals to access the network device using a single account. If shared/group account credentials are not terminated when individuals leave the group, the user that left the group can still gain access even though they are no longer authorized. There may also be instances when specific user actions need to be performed on the network device without unique administrator identification or authentication. Examples of credentials include passwords and group membership certificates.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002142</ident><fixtext fixref="F-69891r1023445_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. User List.
+4. Check the box next to any shared/group accounts that must not be active.
+5. Click "Delete".
+6. Click "Delete" again on the next page.
+
+From the BIG-IP console, type the following command:
+
+tmsh delete auth user &lt;username&gt;
+tmsh save sys config</fixtext><fix id="F-69891r1023445_fix" /><check system="C-69988r1023444_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. User List.
+
+From the BIG-IP console, type the following command:
+
+tmsh list auth user
+
+If there are any shared accounts that must not be active, this is a finding.</check-content></check></Rule></Group><Group id="V-266066"><title>SRG-APP-000148-NDM-000346</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266066r1024597_rule" weight="10.0" severity="medium"><version>F5BI-DM-300009</version><title>The F5 BIG-IP appliance must be configured with only one local account to be used as the account of last resort in the event the authentication server is unavailable.</title><description>&lt;VulnDiscussion&gt;Authentication for administrative (privileged level) access to the device is required at all times. An account can be created on the device's local database for use when the authentication server is down or connectivity between the device and the authentication server is not operable. This account is referred to as the account of last resort since it is intended to be used as a last resort and when immediate administrative access is absolutely necessary.
+
+The account of last resort logon credentials must be stored in a sealed envelope and kept in a safe. The safe must be periodically audited to verify the envelope remains sealed. The signature of the auditor and the date of the audit must be added to the envelope as a record. Administrators must secure the credentials and disable the root account (if possible) when not needed for system administration functions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001358</ident><ident system="http://cyber.mil/cci">CCI-002111</ident><fixtext fixref="F-69892r1023448_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. User List.
+4. Delete any local users that are not the account of last resort.
+
+From the BIG-IP console, type the following commands:
+
+tmsh delete auth user &lt;username&gt;
+tmsh save sys config</fixtext><fix id="F-69892r1023448_fix" /><check system="C-69989r1023447_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. User List.
+4. Verify there is only one account of last resort listed.
+
+From the BIG-IP console, type the following command:
+
+tmsh list auth user
+
+If there is more than one account of last resort listed, this is a finding.</check-content></check></Rule></Group><Group id="V-266067"><title>SRG-APP-000033-NDM-000212</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266067r1024598_rule" weight="10.0" severity="high"><version>F5BI-DM-300010</version><title>The F5 BIG-IP appliance must be configured to assign appropriate user roles or access levels to authenticated users.</title><description>&lt;VulnDiscussion&gt;Successful identification and authentication must not automatically give an entity full access to a network device or security domain. 
+
+Authorization is the process of determining whether an entity, once authenticated, is permitted to access a specific asset or set of resources. Information systems use access control policies and enforcement mechanisms to implement this requirement. The F5 BIG-IP appliance must enforce organization-defined roles to control privileged access to configure the types or objects a user can manage and/or the tasks a user can perform.
+
+For each BIG-IP user account, a different user role can be assigned to each administrative partition to which the user has access. This allows assignment of multiple user roles to each user account on the system. Users can assign a specific user role to each administrative partition to grant the user access. In this way, the BIG-IP configuration objects that the user can manage are controlled, as well as the types of actions the user can perform on those objects.
+
+Satisfies: SRG-APP-000033-NDM-000212, SRG-APP-000329-NDM-000287&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-002169</ident><fixtext fixref="F-69893r1023451_fix">Remote Roles (e.g., RADIUS, LDAP groups)
+From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Remote Role Groups.
+4. Select the Group Name.
+5. Modify the Properties of the group to the appropriate access level.
+6. Update.
+
+Local Users
+1. System.
+2. Users.
+3. User List.
+4. Select the user.
+5. Modify "Partition Access" to the appropriate access level.
+6. Update.</fixtext><fix id="F-69893r1023451_fix" /><check system="C-69990r1023450_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Remote Role Groups.
+4. Verify configured groups are assigned the appropriate role.
+
+From the BIG-IP console, type the following command:
+
+tmsh list auth remote-role
+
+Note: Verify configured groups are assigned the appropriate role.
+
+If the BIG-IP appliance is not configured to assign appropriate user roles or access levels to authenticated users, this is a finding.</check-content></check></Rule></Group><Group id="V-266068"><title>SRG-APP-000343-NDM-000289</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266068r1024599_rule" weight="10.0" severity="medium"><version>F5BI-DM-300012</version><title>The F5 BIG-IP appliance must be configured to audit the execution of privileged functions such as accounts additions and changes.</title><description>&lt;VulnDiscussion&gt;Misuse of privileged functions, either intentionally or unintentionally by authorized users, or by unauthorized external entities that have compromised information system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Auditing the use of privileged functions is one way to detect such misuse and identify the risk from insider threats and the advanced persistent threat.
+
+Satisfies: SRG-APP-000343-NDM-000289, SRG-APP-000026-NDM-000208, SRG-APP-000027-NDM-000209, SRG-APP-000028-NDM-000210, SRG-APP-000029-NDM-000211, SRG-APP-000319-NDM-000283, SRG-APP-000080-NDM-000220, SRG-APP-000516-NDM-000334, SRG-APP-000091-NDM-000223, SRG-APP-000495-NDM-000318, SRG-APP-000499-NDM-000319, SRG-APP-000503-NDM-000320, SRG-APP-000504-NDM-000321, SRG-APP-000095-NDM-000225, SRG-APP-000096-NDM-000226, SRG-APP-000097-NDM-000227, SRG-APP-000098-NDM-000228, SRG-APP-000099-NDM-000229, SRG-APP-000100-NDM-000230, SRG-APP-000101-NDM-000231, SRG-APP-000381-NDM-000305&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002234</ident><ident system="http://cyber.mil/cci">CCI-000018</ident><ident system="http://cyber.mil/cci">CCI-001403</ident><ident system="http://cyber.mil/cci">CCI-001404</ident><ident system="http://cyber.mil/cci">CCI-001405</ident><ident system="http://cyber.mil/cci">CCI-002130</ident><ident system="http://cyber.mil/cci">CCI-000166</ident><ident system="http://cyber.mil/cci">CCI-000169</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000132</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><ident system="http://cyber.mil/cci">CCI-001487</ident><ident system="http://cyber.mil/cci">CCI-000135</ident><ident system="http://cyber.mil/cci">CCI-001814</ident><fixtext fixref="F-69894r1023454_fix">From the BIG-IP GUI:
+1. System.
+2. Logs.
+3. Configuration.
+4. Options.
+5. Under “Local Traffic Logging”:
+ a. MCP: Notice.
+ b. SSL: Informational.
+ c. Traffic Management OS: Informational.
+6. Under “Audit Logging”:
+ a. MCP: Enable.
+7. Update.
+
+From the BIG-IP console, type the following commands:
+
+tmsh modify sys daemon-log-settings tmm os-log-level informational
+tmsh modify sys daemon-log-settings tmm ssl-log-level informational
+tmsh modify sys daemon-log-settings mcpd audit enabled
+tmsh modify sys daemon-log-settings mcpd log-level notice
+tmsh modify sys db log.ssl.level value informational
+tmsh save sys config</fixtext><fix id="F-69894r1023454_fix" /><check system="C-69991r1023453_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Logs.
+3. Configuration.
+4. Options.
+5. Under Local Traffic Logging:
+ a. MCP: Notice.
+ b. SSL: Informational.
+ c. Traffic Management OS: Informational.
+6. Under Audit Logging:
+ a. MCP: Enable.
+
+From the BIG-IP console, type the following commands:
+
+tmsh list sys daemon-log-settings tmm os-log-level
+
+Note: This command must return a value of "informational".
+
+tmsh list sys daemon-log-settings tmm ssl-log-level
+
+Note: This must return a value of "informational":
+
+tmsh list sys daemon-log-settings mcpd audit
+
+Note: This must return a value of "enabled".
+
+tmsh list sys daemon-log-settings mcpd log-level
+
+Note: This must return a value of "notice".
+
+tmsh list sys db log.ssl.level value
+
+Note: This must return a value of "informational".
+
+If the BIG-IP appliance is not configured to audit the execution of privileged functions, this is a finding.</check-content></check></Rule></Group><Group id="V-266069"><title>SRG-APP-000065-NDM-000214</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266069r1024600_rule" weight="10.0" severity="medium"><version>F5BI-DM-300013</version><title>The F5 BIG-IP appliance must be configured to enforce the limit of three consecutive invalid logon attempts, after which time it must block any login attempt for at least 15 minutes.</title><description>&lt;VulnDiscussion&gt;By limiting the number of failed logon attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute-forcing, is reduced.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-69895r1023457_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Set Maximum Login Failures to "3".
+5. Set User Lockout to "Automatically enable locked-out user after 900 seconds".
+6. Update.
+
+From the BIG-IP console, type the following commands:
+
+tmsh modify auth password-policy max-login-failures 3
+tmsh modify auth password-policy lockout-duration 900
+tmsh save sys config</fixtext><fix id="F-69895r1023457_fix" /><check system="C-69992r1023456_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Verify Maximum Login Failures set to "3".
+5. Verify User Lockout set to "Automatically enable locked-out user after 900 seconds".
+
+From the BIG-IP console, type the following command:
+
+tmsh list auth password-policy max-login-failures
+
+Note: Check for a value of "3".
+
+tmsh list auth password-policy lockout-duration
+
+Note: Check for a value of "900".
+
+If the BIG-IP appliance is not configured to enforce the limit of three consecutive invalid logon attempts and lock out users for 900 seconds, this is a finding.</check-content></check></Rule></Group><Group id="V-266070"><title>SRG-APP-000068-NDM-000215</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266070r1024881_rule" weight="10.0" severity="medium"><version>F5BI-DM-300014</version><title>The F5 BIG-IP appliance must be configured to display the Standard Mandatory DOD Notice and Consent Banner upon access to the TMOS User Interface.</title><description>&lt;VulnDiscussion&gt;Display of the DOD-approved use notification before granting access to the network device ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-69896r1024880_fix">From the BIG-IP GUI:
+1. System.
+2. Preferences.
+3. Security Banner Text To Show On The Login Screen.
+4. Enter the text below in the "Security Banner Text To Show On The Login Screen" under the "Security Settings" section and then click "Update" to save.
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+SSH Banner:
+From the BIG-IP GUI:
+1. System.
+2. Configuration.
+3. Device.
+4. SSHD.
+5. Check the box for "Show The Security Banner On The Login Screen".
+6. Enter the following in the "Security Banner Text To Show On The Login Screen" under the "Security Settings" section:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."
+
+7. Update.
+8. From the BIG-IP console, type the following commands:
+
+tmsh modify sys sshd banner enabled
+tmsh modify sys sshd banner-text "You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions: The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations. At any time, the USG may inspect and seize data stored on this IS. Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG authorized purpose. This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy. Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+tmsh save sys config</fixtext><fix id="F-69896r1024880_fix" /><check system="C-69993r1023459_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Preferences.
+3. Security Banner Text To Show On The Login Screen.
+4. Review the "Security Banner Text To Show On The Login Screen" under the "Security Settings" section for the following verbiage:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+If the banner is not presented, this is a finding.</check-content></check></Rule></Group><Group id="V-266074"><title>SRG-APP-000357-NDM-000293</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266074r1024605_rule" weight="10.0" severity="low"><version>F5BI-DM-300033</version><title>The F5 BIG-IP appliance must manage local audit storage capacity in accordance with organization-defined audit record storage requirements.</title><description>&lt;VulnDiscussion&gt;To ensure network devices have a sufficient storage capacity in which to write the audit logs, they need to be able to allocate audit record storage capacity. The task of allocating audit record storage capacity is usually performed during initial device setup if it is modifiable. 
+
+The value for the organization-defined audit record storage requirement will depend on the amount of storage available on the network device, the anticipated volume of logs, the frequency of transfer from the network device to centralized log servers, and other factors.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001849</ident><fixtext fixref="F-69900r1023472_fix">To manage audit record storage capacity, configure the following log-related elements on the BIG-IP system in accordance with the site's System Security Plan:
+- Change the log rotation frequency.
+- Change the age at which log files become eligible for removal.
+- Change the number of archive copies that the system retains.
+- Change the message count for alertd log check.</fixtext><fix id="F-69900r1023472_fix" /><check system="C-69997r1023471_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>Verify the site configures the local audit record storage capacity using any of the following log-related elements in accordance with the site's System Security Plan:
+- Log rotation frequency.
+- Age at which log files become eligible for removal.
+- The number of archive copies that the system retains.
+- The message count for alertd log check.
+
+If the site does not manage log storage capacity in compliance with the SSP or if the process is not documented, this is a finding.</check-content></check></Rule></Group><Group id="V-266075"><title>SRG-APP-000515-NDM-000325</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266075r1024607_rule" weight="10.0" severity="high"><version>F5BI-DM-300034</version><title>The F5 BIG-IP appliance must generate audit records and send records to redundant central syslog servers that are separate from the appliance.</title><description>&lt;VulnDiscussion&gt;Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
+
+Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.
+
+MCP audit records are generated from various components within the network device. For example, it logs the creation of DNS objects and DNSSEC configuration, including key creations.
+
+Satisfies: SRG-APP-000515-NDM-000325, SRG-APP-000360-NDM-000295, SRG-APP-000516-NDM-000350&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001851</ident><ident system="http://cyber.mil/cci">CCI-001858</ident><ident system="http://cyber.mil/cci">CCI-002605</ident><fixtext fixref="F-69901r1023475_fix">Configure two or more central syslog servers.
+
+From the BIG-IP GUI:
+1. System.
+2. Logs.
+3. Configuration.
+4. Remote Logging.
+5. Add the IP address of a syslog server in the "Remote IP" field, modify the port if necessary, and click "Add".
+6. Click "Update".
+
+From the BIG-IP Console, issue the following commands:
+
+     tmsh modify sys syslog remote-servers add { &lt;name&gt; { host &lt;ip address&gt; remote-port &lt;port&gt; } }
+     tmsh save sys config</fixtext><fix id="F-69901r1023475_fix" /><check system="C-69998r1024606_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Logs.
+3. Configuration.
+4. Remote Logging.
+
+From the BIG-IP Console, issue the following command:
+
+tmsh list sys syslog remote-servers
+
+Note: This must return at least two remote IP addresses of syslog server.
+
+If the BIG-IP appliance does not send audit records to one or more central syslog servers that are separate from the appliance, this is a finding.</check-content></check></Rule></Group><Group id="V-266076"><title>F5BI-DM-300036</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266076r1024608_rule" weight="10.0" severity="medium"><version>F5BI-DM-300036</version><title>The F5 BIG-IP appliance must be configured to synchronize internal information system clocks using redundant authoritative time sources.</title><description>&lt;VulnDiscussion&gt;The loss of connectivity to a particular authoritative time source will result in the loss of time synchronization (free-run mode) and increasingly inaccurate time stamps on audit events and other functions. 
+
+Multiple time sources provide redundancy by including a secondary source. Time synchronization is usually a hierarchy; clients synchronize time to a local source while that source synchronizes its time to a more accurate source. The network device must use an authoritative time server and/or be configured to use redundant authoritative time sources. This requirement is related to the comparison done in CCI-001891.
+
+DOD-approved solutions consist of a combination of a primary and secondary time source using a combination or multiple instances of the following: a time server designated for the appropriate DOD network (NIPRNet/SIPRNet); United States Naval Observatory (USNO) time servers; and/or the Global Positioning System (GPS). The secondary time source must be located in a different geographic region than the primary time source.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001893</ident><fixtext fixref="F-69902r1023478_fix">From the BIG-IP Console, issue the following commands:
+
+tmsh edit sys ntp all-properties
+
+#Replace the "include" section with the following (add as many ntp server lines as necessary for the environment):
+
+include "server &lt;ntp server&gt; key &lt;trusted key number matched to /etc/ntp/keys&gt; iburst trustedkey &lt;trusted key number matched to /etc/ntp/keys&gt;
+server &lt;ntp server&gt; key &lt;trusted key number matched to /etc/ntp/keys&gt; iburst trustedkey &lt;trusted key number matched to /etc/ntp/keys&gt;"
+
+tmsh save sys config</fixtext><fix id="F-69902r1023478_fix" /><check system="C-69999r1023477_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP Console, issue the following commands:
+
+tmsh list sys ntp include
+#Verify there is a line similar to the following with more than one "server" listed
+#server &lt;ntp server&gt; key &lt;trusted key number matched to /etc/ntp/keys&gt; iburst trustedkey &lt;trusted key number matched to /etc/ntp/keys&gt;
+
+If the BIG-IP appliance is not configured to synchronize internal information system clocks using redundant authoritative time sources, this is a finding.</check-content></check></Rule></Group><Group id="V-266077"><title>SRG-APP-000374-NDM-000299</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266077r1024609_rule" weight="10.0" severity="medium"><version>F5BI-DM-300037</version><title>The F5 BIG-IP appliance must record time stamps for audit records that can be mapped to Coordinated Universal Time (UTC).</title><description>&lt;VulnDiscussion&gt;If time stamps are not consistently applied and there is no common time reference, it is difficult to perform forensic analysis.
+
+Time stamps generated by the application include date and time. Time is commonly expressed in UTC, a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001890</ident><fixtext fixref="F-69903r1023481_fix">From the BIG-IP GUI:
+1. System.
+2. Platform.
+3. Set "UTC" for "Time Zone".
+4. Click "Update".
+
+From the BIG-IP Console, issue the following commands:
+
+tmsh modify sys ntp timezone UTC
+tmsh save sys config</fixtext><fix id="F-69903r1023481_fix" /><check system="C-70000r1023480_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Platform.
+3. Verify that "UTC" is configured for "Time Zone".
+
+From the BIG-IP Console, issue the following commands:
+
+tmsh list sys ntp timezone
+
+Note: This must return a value of "UTC".
+
+If the BIG-IP appliance is not configured for the UTC time zone, this is a finding.</check-content></check></Rule></Group><Group id="V-266078"><title>SRG-APP-000131-NDM-000243</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266078r1024610_rule" weight="10.0" severity="medium"><version>F5BI-DM-300039</version><title>The F5 BIG-IP appliance must be configured to prevent the installation of patches, service packs, or application components without verification the software component has been digitally signed using a certificate that is recognized and approved by the organization.</title><description>&lt;VulnDiscussion&gt;Changes to any software components can have significant effects on the overall security of the network device. Verifying software components have been digitally signed using a certificate that is recognized and approved by the organization ensures the software has not been tampered with and has been provided by a trusted vendor. 
+
+Accordingly, patches, service packs, or application components must be signed with a certificate recognized and approved by the organization.
+
+Verifying the authenticity of the software prior to installation validates the integrity of the patch or upgrade received from a vendor. This ensures the software has not been tampered with and has been provided by a trusted vendor. Self-signed certificates are disallowed by this requirement. The device must not have to verify the software again. This requirement does not mandate DOD certificates for this purpose; however, the certificate used to verify the software must be from an approved certificate authority (CA).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001749</ident><fixtext fixref="F-69904r1023484_fix">From the BIG-IP console, type the following commands:
+
+tmsh modify /sys db liveinstall.checksig value "enable"
+tmsh save sys config</fixtext><fix id="F-69904r1023484_fix" /><check system="C-70001r1023483_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP console, type the following command:
+
+tmsh list /sys db liveinstall.checksig value
+
+Note: This must return a value of "enable".
+
+If the db variable is not set to "enable", this is a finding.</check-content></check></Rule></Group><Group id="V-266079"><title>SRG-APP-000516-NDM-000336</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266079r1024884_rule" weight="10.0" severity="high"><version>F5BI-DM-300040</version><title>The F5 BIG-IP appliance must be configured to use at least two authentication servers to authenticate administrative users.</title><description>&lt;VulnDiscussion&gt;Centralized management of authentication settings increases the security of remote and nonlocal access methods. This control is particularly important protection against the insider threat. With robust centralized management, audit records for administrator account access to the organization's network devices can be more readily analyzed for trends and anomalies. The alternative method of defining administrator accounts on each device exposes the device configuration to remote access authentication attacks and system administrators with multiple authenticators for each network device.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><fixtext fixref="F-69905r1024883_fix">From the BIG-IP GUI:
+RADIUS:
+1. System.
+2. Users.
+3. Authentication.
+4. If "User Directory" is configured for "Remote - RADIUS", click "Change" at the bottom.
+5. Configure values for Primary and Secondary servers.
+Note: To view Primary and Secondary Hosts, the "Server Configuration" must be set to "Primary &amp; Secondary".
+6. Click "Finished".
+
+TACACS+
+1. System.
+2. Users.
+3. Authentication.
+4. If "User Directory" is configured for "Remote - TACACS+", click "Change" at the bottom
+5. Add multiple IP Addresses to the "Servers" field.
+6. Set "Authentication" to "Authenticate to each server until success".
+7. Click "Finished".</fixtext><fix id="F-69905r1024883_fix" /><check system="C-70002r1024882_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+RADIUS:
+1. System.
+2. Users.
+3. Authentication.
+4. If "User Directory" is configured for "Remote - RADIUS", verify different Primary and Secondary Hosts exist in the configuration.
+Note: To view Primary and Secondary Hosts, the "Server Configuration" must be set to "Primary &amp; Secondary".
+
+TACACS+
+1. System.
+2. Users.
+3. Authentication.
+4. If "User Directory" is configured for "Remote - TACACS+", verify multiple servers exist in the configuration.
+5. Verify "Authentication" is set to "Authenticate to each server until success".
+
+If the BIG-IP appliance is not configured to use at least two authentication servers to authenticate administrative users, this is a finding.</check-content></check></Rule></Group><Group id="V-266080"><title>SRG-APP-000516-NDM-000351</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266080r1024886_rule" weight="10.0" severity="high"><version>F5BI-DM-300041</version><title>The F5 BIG-IP appliance must be running an operating system release that is currently supported by the vendor.</title><description>&lt;VulnDiscussion&gt;Network devices running an unsupported operating system lack current security fixes required to mitigate the risks associated with recent vulnerabilities.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-69906r1023490_fix">If the release is not a supported version, then update the version.
+
+From the BIG-IP GUI:
+1. Import .iso.
+a. System.
+b. Software Management.
+c. Image List.
+d. Import .iso of supported BIG-IP operating system.
+e. Import the corresponding .iso.sig file.
+f. Install.
+2. Switch boot location to new install.
+a. System.
+b. Software Management.
+c. Boot Locations.
+d. Select new install location.
+e. Optionally change "Install Configuration" to "Yes".
+f. Activate.</fixtext><fix id="F-69906r1023490_fix" /><check system="C-70003r1024885_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Configuration.
+3. Device.
+4. General.
+5. Verify "Version" is currently supported according to the vendor support site.
+
+From the BIG-IP console, type the following command(s):
+
+tmsh list cm device version
+
+Note: Verify the version is currently supported on the vendor's website.
+
+If the BIG-IP appliance is not running an operating system release that is currently supported by the vendor, this is a finding.</check-content></check></Rule></Group><Group id="V-266083"><title>SRG-APP-000516-NDM-000344</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266083r1024615_rule" weight="10.0" severity="medium"><version>F5BI-DM-300044</version><title>The F5 BIG-IP appliance must obtain its public key certificates from an appropriate certificate policy through an approved service provider.</title><description>&lt;VulnDiscussion&gt;For user certificates, each organization obtains certificates from an approved, shared service provider, as required by OMB policy. For federal agencies operating a legacy public key infrastructure cross-certified with the Federal Bridge Certification Authority at medium assurance or higher, this Certification Authority (CA) will suffice.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001159</ident><fixtext fixref="F-69909r1023499_fix">From the BIG-IP GUI:
+1. System.
+2. Certificate Management.
+3. Device Certificate Management.
+4. Device Certificate Signing Request.
+5. Click "Renew".
+6. Select "Certificate Authority" in "Issuer" and complete the form.
+7. Copy or download and submit CSR to an approved CA.
+8. Import the certificate via Device Certificate Management &gt;&gt; Device Certificate &gt;&gt; Import.</fixtext><fix id="F-69909r1023499_fix" /><check system="C-70006r1023498_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Certificate Management.
+3. Device Certificate Management.
+4. Device Certificate.
+5. Verify the Issuer is an approved CA.
+
+From the BIG-IP console, type the following command:
+
+openssl x509 -in /config/httpd/conf/ssl.crt/server.crt -text
+
+Note: Verify the issuer is an approved CA.
+
+If the BIG-IP appliance does not obtain its public key certificates from an appropriate certificate policy through an approved service provider, this is a finding.</check-content></check></Rule></Group><Group id="V-266084"><title>SRG-APP-000142-NDM-000245</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266084r1024616_rule" weight="10.0" severity="high"><version>F5BI-DM-300045</version><title>The F5 BIG-IP appliance must be configured to prohibit the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services.</title><description>&lt;VulnDiscussion&gt;To prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable unused or unnecessary physical and logical ports/protocols on information systems.
+
+Network devices are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., email and web services); however, doing so increases risk over limiting the services provided by any one component.
+
+To support the requirements and principles of least functionality, the network device must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved. Some network devices have capabilities enabled by default; if these capabilities are not necessary, they must be disabled. If a particular capability is used, then it must be documented and approved.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-69910r1023502_fix">Check the PPSM CAL and the site's System Security Plan/documentation for a list of prohibited ports, protocols, and services.
+
+From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. For any virtual server(s) listening on all unnecessary and/or nonsecure functions, ports, protocols, and/or services, check the box next to the virtual server and click "Delete".
+4. Click "Delete" again.</fixtext><fix id="F-69910r1023502_fix" /><check system="C-70007r1023501_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. Local Traffic.
+2. Virtual Servers.
+3. Verify the list of virtual servers are not configured to listen on unnecessary and/or nonsecure functions, ports, protocols, and/or services.
+
+If the BIG-IP appliance is configured to listen or run unnecessary and/or nonsecure functions, ports, protocols, and/or services, this is a finding.</check-content></check></Rule></Group><Group id="V-266085"><title>SRG-APP-000149-NDM-000247</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266085r1024888_rule" weight="10.0" severity="high"><version>F5BI-DM-300046</version><title>The F5 BIG-IP appliance must be configured to use multifactor authentication (MFA) for interactive logins.</title><description>&lt;VulnDiscussion&gt;MFA is when two or more factors are used to confirm the identity of an individual who is requesting access to digital information resources. Valid factors include something the individual knows (e.g., username and password), something the individual has (e.g., a smartcard or token), or something the individual is (e.g., a fingerprint or biometric). Legacy information system environments only use a single factor for authentication, typically a username and password combination. Although two pieces of data are used in a username and password combination, this is still considered single factor because an attacker can obtain access simply by learning what the user knows. Common attacks against single-factor authentication are attacks on user passwords. These attacks include brute force password guessing, password spraying, and password credential stuffing. MFA, along with strong user account hygiene, helps mitigate the threat of having account passwords discovered by an attacker. Even in the event of a password compromise, with MFA implemented and required for interactive login, the attacker still needs to acquire something the user has or replicate a piece of the user’s biometric digital presence.
+
+Private industry recognizes and uses a wide variety of MFA solutions. However, DOD public key infrastructure (PKI) is the only prescribed method approved for DOD organizations to implement MFA. For authentication purposes, centralized DOD certificate authorities (CA) issue PKI certificate key pairs (public and private) to individuals using the prescribed x.509 format. The private certificates that have been generated by the issuing CA are downloaded and saved to smartcards which, within DOD, are referred to as common access cards (CAC) or personal identity verification (PIV) cards. This happens at designated DOD badge facilities. The CA maintains a record of the corresponding public keys for use with PKI-enabled environments. Privileged user smartcards, or “alternate tokens”, function in the same manner, so this requirement applies to all interactive user sessions (authorized and privileged users).
+
+Note: This requirement is used in conjunction with the use of a centralized authentication server (e.g., AAA, RADIUS, LDAP), a separate but equally important requirement. The MFA configuration of this requirement provides identification and the first phase of authentication (the challenge and validated response, thereby confirming the PKI certificate that was presented by the user). The centralized authentication server will provide the second phase of authentication (the digital presence of the PKI ID as a valid user in the requested security domain) and authorization. The centralized authentication server will map validated PKI identities to valid user accounts and determine access levels for authenticated users based on security group membership and role. In cases where the centralized authentication server is not used by the network device for user authorization, the network device must map the authenticated identity to the user account for PKI-based authentication.
+
+Satisfies: SRG-APP-000149-NDM-000247, SRG-APP-000177-NDM-000263, SRG-APP-000153-NDM-000249&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000765</ident><ident system="http://cyber.mil/cci">CCI-000166</ident><ident system="http://cyber.mil/cci">CCI-000187</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><ident system="http://cyber.mil/cci">CCI-000770</ident><fixtext fixref="F-69911r1023505_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Click "Change".
+5. Select one of the "Remote" options and fill out the configuration depending on the chosen option.
+Note: DOD sites must configure only the options for ClientCert LDAP, RADIUS, or TACACS+.
+6. Fill out all other fields as appropriate for the environment.
+7. Click "Finished".</fixtext><fix id="F-69911r1023505_fix" /><check system="C-70008r1024887_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Verify "User Directory" is configured to use one of the following options: ClientCert LDAP, RADIUS, or TACACS+.
+
+From the BIG-IP console, type the following command(s):
+
+tmsh list auth source
+
+Note: Verify "type" is set to one of the following options: ClientCert LDAP, RADIUS, or TACACS+.
+
+If the BIG-IP appliance is not configured to use DOD PKI for interactive logins, this is a finding.</check-content></check></Rule></Group><Group id="V-266086"><title>SRG-APP-000395-NDM-000347</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266086r1024925_rule" weight="10.0" severity="medium"><version>F5BI-DM-300048</version><title>The F5 BIG-IP appliance must authenticate Network Time Protocol (NTP) sources using authentication that is cryptographically based.</title><description>&lt;VulnDiscussion&gt;If NTP is not authenticated, an attacker can introduce a rogue NTP server. This rogue server can then be used to send incorrect time information to network devices, which will make log timestamps inaccurate and affect scheduled actions. NTP authentication is used to prevent this tampering by authenticating the time source.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001967</ident><fixtext fixref="F-69912r1024925_fix">From the BIG-IP console, type the following commands:
+
+echo "1 M &lt;passphrase&gt; #MD5 Key" &gt; /etc/ntp/keys
+
+Note: This command assumes that no other keys have been previously configured in the /etc/ntp/keys file. Running this command will overwrite the file.
+
+#Make sure this key is installed on all the NTP servers and clients participating in the NTP time synchronization.
+
+tmsh edit sys ntp all-properties
+
+#Replace the "include" section with the following (add as many ntp server lines as necessary for the environment, but configure at least 2):
+
+include "server &lt;ntp server&gt; key &lt;trusted key number matched to /etc/ntp/keys&gt; iburst trustedkey &lt;trusted key number matched to /etc/ntp/keys&gt;
+server &lt;ntp server&gt; key &lt;trusted key number matched to /etc/ntp/keys&gt; iburst trustedkey &lt;trusted key number matched to /etc/ntp/keys&gt;"
+
+tmsh save sys config</fixtext><fix id="F-69912r1024925_fix" /><check system="C-70009r1023507_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP Console:
+cat /etc/ntp/keys
+
+#Verify this key is installed on all the NTP servers and clients participating in the NTP time synchronization.
+
+tmsh list sys ntp include
+
+#Verify there is a line similar to the following:
+#server &lt;ntp server&gt; key &lt;trusted key number matched to /etc/ntp/keys&gt; iburst trustedkey &lt;trusted key number matched to /etc/ntp/keys&gt;
+
+If the BIG-IP appliance is not configured to authenticate Network Time Protocol sources using authentication that is cryptographically based, this is a finding.</check-content></check></Rule></Group><Group id="V-266087"><title>SRG-APP-000164-NDM-000252</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266087r1024891_rule" weight="10.0" severity="medium"><version>F5BI-DM-300049</version><title>The F5 BIG-IP appliance must enforce a minimum 15-character password length.</title><description>&lt;VulnDiscussion&gt;Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password.
+
+The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised. Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-69914r1024890_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Under "Password Policy" set "Secure Password Enforcement" to "Enabled".
+5. Configure "Minimum Length" to 15.
+6. Click "Update".
+
+From the BIG-IP console, type the following command(s):
+
+tmsh modify auth password-policy minimum-length 15
+tmsh save sys config</fixtext><fix id="F-69914r1024890_fix" /><check system="C-70011r1024889_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Verify that "Secure Password Enforcement" is set to "Enabled".
+5. Verify that "Minimum Length" is set to at least 15.
+
+From the BIG-IP console, type the following command(s):
+
+tmsh list auth password-policy minimum-length
+
+Note: Verify the value is set to at least 15.
+
+If the BIG-IP appliance is not configured to enforce a minimum 15-character password length, this is a finding.</check-content></check></Rule></Group><Group id="V-266088"><title>SRG-APP-000166-NDM-000254</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266088r1024894_rule" weight="10.0" severity="medium"><version>F5BI-DM-300050</version><title>The F5 BIG-IP appliance must enforce password complexity by requiring that at least one uppercase character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex passwords helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password is, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords must only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000192</ident><fixtext fixref="F-69915r1024893_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Under "Password Policy" set "Secure Password Enforcement" to "Enabled".
+5. Under "Required Characters" set "Uppercase" to at least 1.
+6. Click "Update".
+
+From the BIG-IP console, type the following command(s):
+
+tmsh modify auth password-policy required-uppercase 1
+tmsh save sys config</fixtext><fix id="F-69915r1024893_fix" /><check system="C-70012r1024892_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Verify that "Secure Password Enforcement" is set to "Enabled".
+5. Verify under "Required Characters" that "Uppercase" is set to at least 1.
+
+From the BIG-IP console, type the following command(s):
+
+tmsh list auth password-policy required-uppercase
+
+Note: Verify the value is set to at least 1.
+
+If the BIG-IP appliance is not configured to enforce password complexity by requiring that at least one uppercase character be used, this is a finding.</check-content></check></Rule></Group><Group id="V-266089"><title>SRG-APP-000167-NDM-000255</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266089r1024622_rule" weight="10.0" severity="medium"><version>F5BI-DM-300051</version><title>The F5 BIG-IP appliance must enforce password complexity by requiring that at least one lowercase character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords must only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000193</ident><fixtext fixref="F-69916r1023517_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Under "Password Policy" set "Secure Password Enforcement" to "Enabled".
+5. Under "Required Characters" set "Lowercase" to at least 1.
+6. Click "Update".
+
+From the BIG-IP console, type the following commands:
+
+tmsh modify auth password-policy required-lowercase 1
+tmsh save sys config</fixtext><fix id="F-69916r1023517_fix" /><check system="C-70013r1023516_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Verify that "Secure Password Enforcement" is set to "Enabled".
+5. Verify under "Required Characters" that "Lowercase" is set to at least 1.
+
+From the BIG-IP console, type the following command:
+
+tmsh list auth password-policy required-lowercase
+
+Note: Verify the value is set to at least 1.
+
+If the BIG-IP appliance is not configured to enforce password complexity by requiring that at least one lowercase character be used, this is a finding.</check-content></check></Rule></Group><Group id="V-266090"><title>SRG-APP-000168-NDM-000256</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266090r1024623_rule" weight="10.0" severity="medium"><version>F5BI-DM-300052</version><title>The F5 BIG-IP appliance must enforce password complexity by requiring that at least one numeric character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords must only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000194</ident><fixtext fixref="F-69917r1023520_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Under "Password Policy" set "Secure Password Enforcement" to "Enabled".
+5. Under "Required Characters" set "Numeric" to at least 1.
+6. Click "Update".
+
+From the BIG-IP console, type the following command:
+
+tmsh modify auth password-policy required-numeric 1
+tmsh save sys config</fixtext><fix id="F-69917r1023520_fix" /><check system="C-70014r1023519_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Verify that "Secure Password Enforcement" is set to "Enabled".
+5. Verify under "Required Characters" that "Numeric" is set to at least 1.
+
+From the BIG-IP console, type the following command:
+
+tmsh list auth password-policy required-numeric
+
+Note: Verify the value is set to at least 1.
+
+If the BIG-IP appliance is not configured to enforce password complexity by requiring that at least one numeric character be used, this is a finding.</check-content></check></Rule></Group><Group id="V-266091"><title>SRG-APP-000169-NDM-000257</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266091r1024624_rule" weight="10.0" severity="medium"><version>F5BI-DM-300053</version><title>The F5 BIG-IP appliance must enforce password complexity by requiring that at least one special character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords must only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001619</ident><fixtext fixref="F-69918r1023523_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Under "Password Policy" set "Secure Password Enforcement" to "Enabled".
+5. Under "Required Characters" set "Other" to at least 1.
+6. Click "Update".
+
+From the BIG-IP console, type the following command:
+
+tmsh modify auth password-policy required-special 1
+tmsh save sys config</fixtext><fix id="F-69918r1023523_fix" /><check system="C-70015r1023522_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. Verify that "Secure Password Enforcement" is set to "Enabled".
+5. Verify under "Required Characters" that "Other" is set to at least 1.
+
+From the BIG-IP console, type the following command:
+
+tmsh list auth password-policy required-special
+
+Note: Verify the value is set to at least 1.
+
+If the BIG-IP appliance is not configured to enforce password complexity by requiring that at least one special character be used, this is a finding.</check-content></check></Rule></Group><Group id="V-266092"><title>SRG-APP-000170-NDM-000329</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266092r1024896_rule" weight="10.0" severity="medium"><version>F5BI-DM-300054</version><title>The F5 BIG-IP appliance must require that when a password is changed, the characters are changed in at least eight of the positions within the password.</title><description>&lt;VulnDiscussion&gt;If the application allows the user to consecutively reuse extensive portions of passwords, this increases the chances of password compromise by increasing the window of opportunity for attempts at guessing and brute-force attacks.
+
+The number of changed characters refers to the number of changes required with respect to the total number of positions in the current password. In other words, characters may be the same within the two passwords; however, the positions of the like characters must be different.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords must only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000195</ident><fixtext fixref="F-69919r1024895_fix">If this setting has been changed from the default value of 8, reset the value.
+
+From the BIG-IP console, type the following command:
+
+tmsh modify sys db password.difok value 8
+tmsh save sys config</fixtext><fix id="F-69919r1024895_fix" /><check system="C-70016r1023525_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP console, type the following command:
+
+tmsh list sys db password.difok
+
+Note: Verify the value is set to at least 8.
+
+If the BIG-IP appliance is not configured to require that when a password is changed, the characters are changed in at least eight of the positions within the password, this is a finding.</check-content></check></Rule></Group><Group id="V-266093"><title>SRG-APP-000400-NDM-000313</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266093r1024899_rule" weight="10.0" severity="medium"><version>F5BI-DM-300055</version><title>The F5 BIG-IP appliance must prohibit the use of cached authenticators after eight hours or less.</title><description>&lt;VulnDiscussion&gt;Some authentication implementations can be configured to use cached authenticators.
+
+If cached authentication information is out-of-date, the validity of the authentication information may be questionable.
+
+The organization-defined time period must be established for each device depending on the nature of the device; for example, a device with just a few administrators in a facility with spotty network connectivity may merit a longer caching time period than a device with many administrators.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002007</ident><fixtext fixref="F-69920r1024898_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. If ClientCert LDAP is used as the remote authentication type, configure "OCSP Response Max Age" for an organization-defined time period.
+Note: The OCSP Override option must be set to "on" to view the OCSP Response Max Age value.</fixtext><fix id="F-69920r1024898_fix" /><check system="C-70017r1024897_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. If "User Directory" is configured for "Remote - ClientCert LDAP", verify "OCSP Response Max Age" is configured for an organization-defined time period.
+Note: The OCSP Override option must be set to "on" to view the OCSP Response Max Age value.
+
+If the BIG-IP appliance is not configured to prohibit the use of cached authenticators after an organization-defined time period, this is a finding.</check-content></check></Rule></Group><Group id="V-266094"><title>SRG-APP-000175-NDM-000262</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266094r1024902_rule" weight="10.0" severity="high"><version>F5BI-DM-300056</version><title>The F5 BIG-IP appliance must be configured to use DOD approved OCSP responders or CRLs to validate certificates used for PKI-based authentication.</title><description>&lt;VulnDiscussion&gt;Once issued by a DOD certificate authority (CA), public key infrastructure (PKI) certificates are typically valid for three years or shorter within the DOD. However, there are many reasons a certificate may become invalid before the prescribed expiration date. For example, an employee may leave or be terminated and still possess the smartcard on which the PKI certificates were stored. Another example is that a smartcard containing PKI certificates may become lost or stolen. A more serious issue could be that the CA or server which issued the PKI certificates has become compromised, thereby jeopardizing every certificate keypair that was issued by the CA. These examples of revocation use cases and many more can be researched further using internet cybersecurity resources.
+
+PKI user certificates presented as part of the identification and authentication criteria (e.g., DOD PKI as multifactor authentication [MFA]) must be checked for validity by network devices. For example, valid PKI certificates are digitally signed by a trusted DOD certificate authority (CA). Additionally, valid PKI certificates are not expired, and valid certificates have not been revoked by a DOD CA.
+
+Network devices can verify the validity of PKI certificates by checking with an authoritative CA. One method of checking the status of PKI certificates is to query databases referred to as certificate revocation lists (CRL). These are lists which are published, updated, and maintained by authoritative DOD CAs. For example, once certificates are expired or revoked, issuing CAs place the certificates on a CRL. Organizations can download these lists periodically (i.e., daily or weekly) and store them locally on the devices themselves or even onto another nearby local enclave resource. Storing them locally ensures revocation status can be checked even if internet connectivity is severed at the enclave’s point of presence (PoP). However, CRLs can be rather large in storage size and further, the use of CRLs can be rather taxing on some computing resources.
+
+Another method of validating certificate status is to use the online certificate status protocol (OCSP). Using OCSP, a requestor (i.e., the network device which the user is trying to authenticate to) sends a request to an authoritative CA challenging the validity of a certificate that has been presented for identification and authentication. The CA receives the request and sends a digitally signed response indicating the status of the user’s certificate as valid, revoked, or unknown. Network devices must only allow access for responses that indicate the certificates presented by the user were considered valid by an approved DOD CA. OCSP is the preferred method because it is fast, provides the most current status, and is lightweight.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000185</ident><fixtext fixref="F-69921r1024901_fix">From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. If ClientCert LDAP is used as the remote authentication type, click "Change".
+6. Set "OCSP Responder" IP address to one that is DOD approved.
+Note: The OCSP Override option must be set to "on" to view the OCSP Responder value.
+7. Click "Finish".</fixtext><fix id="F-69921r1024901_fix" /><check system="C-70018r1024900_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Users.
+3. Authentication.
+4. If "User Directory" is configured for "Remote - ClientCert LDAP", verify the "OCSP Responder" configured is DOD approved
+Note: The OCSP Override option must be set to "on" to view the OCSP Responder value.
+
+If the BIG-IP appliance is not configured to use DOD-approved OCSP responders or CRLs to validate certificates used for PKI-based authentication, this is a finding.</check-content></check></Rule></Group><Group id="V-266095"><title>SRG-APP-000190-NDM-000267</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266095r1024904_rule" weight="10.0" severity="high"><version>F5BI-DM-300057</version><title>The F5 BIG-IP appliance must set the idle time before automatic logout to five minutes of inactivity except to fulfill documented and validated mission requirements.</title><description>&lt;VulnDiscussion&gt;Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. In addition, quickly terminating an idle session will also free up resources committed by the managed network element. 
+
+Terminating network connections associated with communications sessions includes, for example, deallocating associated TCP/IP address/port pairs at the operating system level, or deallocating networking assignments at the application level if multiple application sessions are using a single, operating system-level network connection. This does not mean that the device terminates all sessions or network access; it only ends the inactive session and releases the resources associated with that session.
+
+Satisfies: SRG-APP-000190-NDM-000267, SRG-APP-000003-NDM-000202&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001133</ident><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-69922r1023535_fix">From the BIG-IP GUI:
+HTTPD/TMSH:
+1. System.
+2. Preferences.
+3. Under Security Settings configure "Idle Time Before Automatic Logout" to 300 seconds.
+4. Click "Update".
+
+SSHD:
+1. System.
+2. Configuration.
+3. Device.
+4. SSHD.
+5. Configure "Idle Time Before Automatic Logout" to 300 seconds.
+6. Click "Update".
+
+From the BIG-IP Console, issue the following commands:
+HTTPD/TMSH:
+tmsh modify sys httpd auth-pam-idle-timeout 300
+
+tmsh modify sys httpd auth-pam-dashboard-timeout on
+
+tmsh modify sys global-settings console-inactivity-timeout 300
+
+tmsh modify cli global-settings idle-timeout 5
+
+SSHD:
+tmsh modify sys sshd inactivity-timeout 300
+
+tmsh save sys config</fixtext><fix id="F-69922r1023535_fix" /><check system="C-70019r1024903_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>If a documented and validated reason for not implementing the five-minute idle timeout exists, this is not a finding.
+
+From the BIG-IP GUI:
+HTTPD/TMSH:
+1. System.
+2. Preferences.
+3. Under Security Settings, verify "Idle Time Before Automatic Logout" is configured for 300 seconds or less.
+
+SSHD:
+1. System.
+2. Configuration.
+3. Device.
+4. SSHD.
+5. Verify "Idle Time Before Automatic Logout" is configured for 300 seconds or less.
+
+From the BIG-IP Console, issue the following commands:
+HTTPD/TMSH:
+
+tmsh list sys httpd auth-pam-idle-timeout
+Note: This must return a value of 300 or less.
+
+tmsh list sys httpd auth-pam-dashboard-timeout
+Note: This must return a value of "on".
+
+tmsh list sys global-settings console-inactivity-timeout
+Note: This must return a value of 300 or less.
+
+tmsh list cli global-settings idle-timeout
+Note: This must return a value of 5.
+
+SSHD:
+tmsh list sys sshd inactivity-timeout
+Note: This must return a value of 300 or less.
+
+If the BIG-IP appliance is not configured to terminate inactive sessions after five minutes of inactivity, this is a finding.</check-content></check></Rule></Group><Group id="V-266096"><title>SRG-APP-000516-NDM-000341</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266096r1024630_rule" weight="10.0" severity="medium"><version>F5BI-DM-300060</version><title>The F5 BIG-IP appliance must conduct backups of the configuration at a weekly or organization-defined frequency and store on a separate device.</title><description>&lt;VulnDiscussion&gt;Information system backup is a critical step in maintaining data assurance and availability. Information system and security-related documentation contains information pertaining to system configuration and security settings. If this information were not backed up, and a system failure were to occur, the security settings would be difficult to reconfigure quickly and accurately. Maintaining a backup of information system and security-related documentation provides for a quicker recovery time when system outages occur.
+
+This control requires the network device to support the organizational central backup process for user account information associated with the network device. This function may be provided by the network device itself; however, the preferred best practice is a centralized backup rather than each network device performing discrete backups.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000539</ident><fixtext fixref="F-69923r1023538_fix">Document this process in the system security plan (SSP) and perform periodic manual backups. This process backs up the current configuration. Backups must be weekly or a documented organization-defined frequency.
+
+From the BIG-IP GUI:
+1. System.
+2. Archives.
+3. Create.
+
+From the BIG-IP console, type the following command:
+
+tmsh save sys ucs &lt;name&gt;</fixtext><fix id="F-69923r1023538_fix" /><check system="C-70020r1023537_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Archives.
+3. Review the list of archives to verify backups are conducted in accordance with the local backup policy.
+
+From the BIG-IP console, type the following command:
+
+tmsh list sys ucs
+
+If the BIG-IP appliance is not configured to back up at system-level information weekly or at an organization-defined frequency this is a finding.</check-content></check></Rule></Group><Group id="V-266134"><title>SRG-APP-000069-NDM-000216</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266134r1024908_rule" weight="10.0" severity="medium"><version>F5BI-DM-300098</version><title>The F5 BIG-IP appliance must be configured to display the Standard Mandatory DOD Notice and Consent Banner when accessing via SSH.</title><description>&lt;VulnDiscussion&gt;Display of the DOD-approved use notification before granting access to the network device ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000050</ident><fixtext fixref="F-69961r1024907_fix">From the BIG-IP GUI:
+1. System.
+2. Configuration.
+3. Device.
+4. SSHD.
+5. Check the box for "Show The Security Banner On The Login Screen".
+6. Enter the following in the "Security Banner Text To Show On The Login Screen" under the "Security Settings" section and then select "Update" to save.
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."</fixtext><fix id="F-69961r1024907_fix" /><check system="C-70058r1023651_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Configuration.
+3. Device.
+4. SSHD.
+5. Verify the box for “Show The Security Banner On The Login Screen” is checked.
+6. Review the "Security Banner Text To Show On The Login Screen" under the "Security Settings" section for the following verbiage:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+If such a banner is not presented, this is a finding.</check-content></check></Rule></Group><Group id="V-266135"><title>SRG-APP-000435-NDM-000315</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266135r1024669_rule" weight="10.0" severity="medium"><version>F5BI-DM-300099</version><title>The F5 BIG-IP appliance must be configured to restrict a consistent inbound IP for the entire management session.</title><description>&lt;VulnDiscussion&gt;This security measure helps limit the effects of denial-of-service (DoS) attacks by employing anti-session hijacking security safeguards. Session hijacking, also called cookie hijacking, is the exploitation of a valid computer session to gain unauthorized access to an application. The attacker steals (or hijacks) the cookies from a valid user and attempts to use them for authentication.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target F5 BIG-IP TMOS NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>F5 BIG-IP TMOS NDM</dc:subject><dc:identifier>5639</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-69962r1023655_fix">From the BIG-IP GUI:
+1. System.
+2. Preferences.
+3. Under "Security Settings", check "Require A Consistent Inbound IP For The Entire Web Session".
+4. Update.</fixtext><fix id="F-69962r1023655_fix" /><check system="C-70059r1023654_chk"><check-content-ref href="F5_BIG-IP_TMOS_NDM_STIG.xml" name="M" /><check-content>From the BIG-IP GUI:
+1. System.
+2. Preferences.
+3. Under "Security Settings", verify "Require A Consistent Inbound IP For The Entire Web Session" box is checked.
+
+If the BIG-IP appliance is not configured to require a consistent inbound IP for the entire session for management sessions, this is a finding.</check-content></check></Rule></Group></Benchmark>
