@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="MS_Intune_MDM_Service_Desktop_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-10-04">accepted</status><title>Microsoft Intune Service Desktop Security Technical Implementation Guide</title><description>This Security Requirements Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil. </description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 24 Sep 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-267303" selected="true" /><select idref="V-267309" selected="true" /><select idref="V-267314" selected="true" /><select idref="V-267315" selected="true" /><select idref="V-267334" selected="true" /><select idref="V-267341" selected="true" /><select idref="V-267355" selected="true" /><select idref="V-267372" selected="true" /><select idref="V-267373" selected="true" /><select idref="V-267374" selected="true" /><select idref="V-267375" selected="true" /><select idref="V-267379" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-267303" selected="true" /><select idref="V-267309" selected="true" /><select idref="V-267314" selected="true" /><select idref="V-267315" selected="true" /><select idref="V-267334" selected="true" /><select idref="V-267341" selected="true" /><select idref="V-267355" selected="true" /><select idref="V-267372" selected="true" /><select idref="V-267373" selected="true" /><select idref="V-267374" selected="true" /><select idref="V-267375" selected="true" /><select idref="V-267379" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-267303" selected="true" /><select idref="V-267309" selected="true" /><select idref="V-267314" selected="true" /><select idref="V-267315" selected="true" /><select idref="V-267334" selected="true" /><select idref="V-267341" selected="true" /><select idref="V-267355" selected="true" /><select idref="V-267372" selected="true" /><select idref="V-267373" selected="true" /><select idref="V-267374" selected="true" /><select idref="V-267375" selected="true" /><select idref="V-267379" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-267303" selected="true" /><select idref="V-267309" selected="true" /><select idref="V-267314" selected="true" /><select idref="V-267315" selected="true" /><select idref="V-267334" selected="true" /><select idref="V-267341" selected="true" /><select idref="V-267355" selected="true" /><select idref="V-267372" selected="true" /><select idref="V-267373" selected="true" /><select idref="V-267374" selected="true" /><select idref="V-267375" selected="true" /><select idref="V-267379" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-267303" selected="true" /><select idref="V-267309" selected="true" /><select idref="V-267314" selected="true" /><select idref="V-267315" selected="true" /><select idref="V-267334" selected="true" /><select idref="V-267341" selected="true" /><select idref="V-267355" selected="true" /><select idref="V-267372" selected="true" /><select idref="V-267373" selected="true" /><select idref="V-267374" selected="true" /><select idref="V-267375" selected="true" /><select idref="V-267379" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-267303" selected="true" /><select idref="V-267309" selected="true" /><select idref="V-267314" selected="true" /><select idref="V-267315" selected="true" /><select idref="V-267334" selected="true" /><select idref="V-267341" selected="true" /><select idref="V-267355" selected="true" /><select idref="V-267372" selected="true" /><select idref="V-267373" selected="true" /><select idref="V-267374" selected="true" /><select idref="V-267375" selected="true" /><select idref="V-267379" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-267303" selected="true" /><select idref="V-267309" selected="true" /><select idref="V-267314" selected="true" /><select idref="V-267315" selected="true" /><select idref="V-267334" selected="true" /><select idref="V-267341" selected="true" /><select idref="V-267355" selected="true" /><select idref="V-267372" selected="true" /><select idref="V-267373" selected="true" /><select idref="V-267374" selected="true" /><select idref="V-267375" selected="true" /><select idref="V-267379" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-267303" selected="true" /><select idref="V-267309" selected="true" /><select idref="V-267314" selected="true" /><select idref="V-267315" selected="true" /><select idref="V-267334" selected="true" /><select idref="V-267341" selected="true" /><select idref="V-267355" selected="true" /><select idref="V-267372" selected="true" /><select idref="V-267373" selected="true" /><select idref="V-267374" selected="true" /><select idref="V-267375" selected="true" /><select idref="V-267379" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-267303" selected="true" /><select idref="V-267309" selected="true" /><select idref="V-267314" selected="true" /><select idref="V-267315" selected="true" /><select idref="V-267334" selected="true" /><select idref="V-267341" selected="true" /><select idref="V-267355" selected="true" /><select idref="V-267372" selected="true" /><select idref="V-267373" selected="true" /><select idref="V-267374" selected="true" /><select idref="V-267375" selected="true" /><select idref="V-267379" selected="true" /></Profile><Group id="V-267303"><title>SRG-APP-000003-UEM-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267303r1026081_rule" weight="10.0" severity="medium"><version>MSIN-24-000030</version><title>Microsoft Intune service must initiate a session lock after a 15-minute period of inactivity.</title><description>&lt;VulnDiscussion&gt;A session time-out lock is a temporary action taken when a user stops work and moves away from the immediate physical vicinity of the information system, but does not log out because of the temporary nature of the absence. Rather than relying on the user to manually lock their application session prior to vacating the vicinity, applications need to be able to identify when a user's application session has idled and take action to initiate the session lock.
+
+The session lock is implemented at the point where session activity can be determined and/or controlled. This is typically at the operating system level and results in a system lock but may be at the application level where the application interface window is secured instead.
+
+Satisfies: FMT_SMF.1.1(2) c.8 
+Reference: PP-MDM-411047
+
+Satisfies: SRG-APP-000003-UEM-000003, SRG-APP-000295-UEM-000169&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><ident system="http://cyber.mil/cci">CCI-002361</ident><fixtext fixref="F-71130r1025791_fix">Sign in to portal.office365.com (or .us if the user is a GCCH or DOD tenant).
+
+1. Navigate to Admin &gt;&gt; Settings &gt;&gt; Org Settings &gt;&gt; Security and Privacy (tab on top of page) &gt;&gt; Idle Session Timeout.
+
+2. Select the check box to enable "Turn on to set the period of inactivity".
+
+3. Select custom option, then enter "15".
+
+4. Select "Save".</fixtext><fix id="F-71130r1025791_fix" /><check system="C-71227r1025790_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>To verify the inactivity timeout is configured for 15 minutes or less, follow the steps outlined below:
+
+1. Sign in to portal.office365.com (or .us if the user is a GCCH or DOD tenant).
+
+2. Navigate to Admin &gt;&gt; Settings &gt;&gt; Org Settings &gt;&gt; Security and Privacy (tab on top of page) &gt;&gt; Idle Session Timeout.
+
+3. Select the check box to enable "Turn on to set the period of inactivity".
+
+4. Select custom option, then verify it has been set to 15.
+
+If the inactivity timeout is not set to 15 minutes or less, this is a finding.</check-content></check></Rule></Group><Group id="V-267309"><title>SRG-APP-000025-UEM-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267309r1025795_rule" weight="10.0" severity="medium"><version>MSIN-24-000090</version><title>Microsoft Intune service must automatically disable accounts and identifiers (individuals, groups, roles, and devices) after a 35-day period of account inactivity.</title><description>&lt;VulnDiscussion&gt;Attackers that can exploit an inactive account and identifiers can potentially obtain and maintain undetected access to an application. Owners of inactive accounts will not notice if unauthorized access to their user account has been obtained. Applications need to track periods of user inactivity and disable accounts after 35 days of inactivity. Such a process greatly reduces the risk that accounts will be hijacked, leading to a data compromise.
+
+To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to offload those access control functions and focus on core application features and functionality.
+
+This policy does not apply to either emergency accounts or infrequently used accounts. Infrequently used accounts are local login administrator accounts used by system administrators when network or normal login/access is not available. Emergency accounts are administrator accounts created in response to crisis situations.
+
+Satisfies: FMT_SMF.1(2)b. 
+Reference: PP-MDM-431027
+
+Satisfies: SRG-APP-000025-UEM-000014, SRG-APP-000163-UEM-000093&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000017</ident><ident system="http://cyber.mil/cci">CCI-003627</ident><fixtext fixref="F-71136r1025794_fix">Intune administrator account authentication is managed by Entra ID.
+
+Use the following procedure to disable inactive user accounts in Entra ID via the use of the Graph PowerShell SDK.
+
+Installation instructions:
+https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0
+
+Required roles:
+Global Administrator
+
+Example PowerShell commands:
+Connect-MgGraph -Scopes Directory.AccessAsUser.All, User.EnableDisableAccount.All -Environment USGov
+
+Update-MgBetaUser -UserId &lt;Unique UserId of user&gt; -AccountEnabled:$False
+
+References:
+https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mguser?view=graph-powershell-1.0
+
+https://learn.microsoft.com/en-us/graph/api/user-update?view=graph-rest-1.0&amp;tabs=http
+
+For any PowerShell scripts that are Graph, note Graph endpoints differ depending on where the tenant is located.
+- For commercial tenants, graph endpoints are graph.microsoft.com.
+- For GCC High tenants (IL4), graph endpoints are graph.microsoft.us.
+- For DOD tenants (IL5), graph endpoints are dod-graph.microsoft.us.</fixtext><fix id="F-71136r1025794_fix" /><check system="C-71233r1025793_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Intune administrator account authentication is managed by Entra ID.
+
+Use the following procedure to discover inactive user accounts in Entra ID (35+ days) via the use of the Graph PowerShell SDK.
+
+Installation instructions:
+https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0
+
+Required roles:
+At least Global Reader
+
+Required tenant license:
+Entra ID Premium P1
+
+Example PowerShell commands:
+Connect-MgGraph -Scopes AuditLog.Read.All,User.Read.All -Environment USGov
+
+$inactiveDate = (Get-Date).AddDays(-35)
+
+$users = Get-MgUser -All:$true -Property Id, DisplayName, UserPrincipalName, UserType, createdDateTime, SignInActivity, AccountEnabled | Where-Object { $_.AccountEnabled -eq $true }
+
+$inactiveUsers =
+$users | Where-Object {
+    ($_.SignInActivity.LastSignInDateTime -lt $inactiveDate) -or ($_.SignInActivity.LastSignInDateTime -eq $null -and $_.CreatedDateTime -lt $inactiveDate)
+} | Select-Object DisplayName, UserPrincipalName, UserType, createdDateTime, @{Name = 'LastSignInDateTime'; Expression = {($_.SignInActivity).LastSignInDateTime}}, Id | Sort-Object LastSignInDateTime 
+
+$inactiveUsers | Format-Table -AutoSize
+
+If accounts are not disabled after a 35-day period of account inactivity, this is a finding.
+
+References:
+https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguser?view=graph-powershell-1.0
+
+https://learn.microsoft.com/en-us/graph/api/user-list?view=graph-rest-1.0&amp;tabs=http
+
+https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0#properties
+
+https://learn.microsoft.com/en-us/graph/api/resources/signinactivity?view=graph-rest-1.0#properties
+
+For any PowerShell scripts that are Graph, note Graph endpoints differ depending on where the tenant is located.
+- For commercial tenants, graph endpoints are graph.microsoft.com.
+- For GCC High tenants (IL4), graph endpoints are graph.microsoft.us.
+- For DOD tenants (IL5), graph endpoints are dod-graph.microsoft.us.</check-content></check></Rule></Group><Group id="V-267314"><title>SRG-APP-000065-UEM-000036</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267314r1026042_rule" weight="10.0" severity="medium"><version>MSIN-24-000140</version><title>Microsoft Intune service must enforce the limit of three consecutive invalid login attempts by a user during a 15-minute time period.</title><description>&lt;VulnDiscussion&gt;By limiting the number of failed login attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute forcing, is reduced. Limits are imposed by locking the account. 
+
+Satisfies: FMT_SMF.1(2)b. 
+Reference: PP-MDM-431028
+
+Satisfies: SRG-APP-000065-UEM-000036, SRG-APP-000345-UEM-000218&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><ident system="http://cyber.mil/cci">CCI-002238</ident><fixtext fixref="F-71141r1026042_fix">Intune administrator account authentication is managed by Entra ID. To configure account lockout settings, complete these steps: 
+
+Required procedure: https://learn.microsoft.com/en-us/entra/identity/authentication/howto-password-smart-lockout
+
+1. Sign in to the Microsoft Entra admin center as at least an Authentication Administrator.
+
+2. Browse to Protection &gt;&gt; Authentication methods &gt;&gt; Password protection.
+
+3. Set the Lockout threshold to 3. The default is 10 for Azure Public tenants and 3 for Azure U.S. Government tenants.
+
+4. Set the Lockout duration in seconds, to the length in seconds of each lockout. The default is 900 seconds (15 minutes).
+
+Note: If the first sign-in after a lockout period has expired also fails, the account locks out again. If an account locks repeatedly, the lockout duration increases.
+================================
+This can be viewed in the Entra ID audit logs.
+
+1. Log in to the Entra ID tenant with GA permissions.
+
+2. Scroll down to the Monitoring section and select "Audit Logs".
+
+3. All events related to user creation, modification, etc., are shown.</fixtext><fix id="F-71141r1026042_fix" /><check system="C-71238r1025796_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Verify Entra ID is configured to enforce the limit of three consecutive invalid login attempts by a user during a 15-minute time period.
+
+1. Sign in to the Microsoft Entra admin center as at least an Authentication Policy Administrator.
+
+2. Browse to Protection &gt;&gt; Authentication methods &gt;&gt; Password protection.
+
+3. Verify the Lockout Threshold has been set to 3 and Lockout duration is set to 900 or more.
+
+If Entra ID is not configured to enforce the limit of three consecutive invalid login attempts with a lockout period of 15 minutes, this is a finding.</check-content></check></Rule></Group><Group id="V-267315"><title>SRG-APP-000068-UEM-000037</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267315r1026051_rule" weight="10.0" severity="medium"><version>MSIN-24-000150</version><title>Microsoft Intune service must display the Standard Mandatory DOD Notice and Consent Banner and have the user acknowledge acceptance of the access conditions before granting access to the application.</title><description>&lt;VulnDiscussion&gt;Display of the DOD-approved use notification before granting access to the application ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+The banner must be acknowledged by the user prior to allowing the user access to the application. This provides assurance that the user has seen the message and accepted the conditions for access. If the consent banner is not acknowledged by the user, DOD will not be in compliance with system use notifications required by law.
+
+To establish acceptance of the application usage policy, a click-through banner at application login is required. The application must prevent further activity until the user executes a positive action to manifest agreement by clicking on a box indicating "OK". System use notifications are required only for access via login interfaces with human users and are not required when such human interfaces do not exist.
+
+The banner must be formatted in accordance with DTM-08-060. Use the following verbiage for applications that can accommodate banners of 1300 characters:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't." 
+
+Satisfies: FTA_TAB.1.1, FMT_SMF.1.1(2) c.2 
+Reference: PP-MDM-411056
+
+Satisfies: SRG-APP-000068-UEM-000037, SRG-APP-000069-UEM-000038&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><ident system="http://cyber.mil/cci">CCI-000050</ident><fixtext fixref="F-71142r1026051_fix">Intune administrator account authentication is managed by Entra ID. To create the standard DOD banner in Entra ID, do the following:
+
+1. Sign in to the Microsoft Entra admin center as a Global Administrator.
+
+2. Search for "Company Branding" in the search bar.
+
+3. Select "Customize" under "Default sign-in experience".
+
+4. Configure format of the banner as desired. Refer to https://learn.microsoft.com/en-us/entra/fundamentals/how-to-customize-branding for more information.
+
+5. Place the required DOD banner text in either the "Display text" box of the banner footer or the "Sign-in page text" box of the "Sign-in form" based on local preference.
+
+6. Select "Create".</fixtext><fix id="F-71142r1026051_fix" /><check system="C-71239r1025798_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Verify Entra ID has been configured to display the DOD login banner when an Intune user logs in.
+
+Have an authorized Intune administrator log in to the Intune admin center and verify the DOD banner is displayed and the user is forced to acknowledge acceptance of the access conditions.
+
+If an authorized Intune administrator log does not find the DOD login banner when logging in to Intune and is not forced to acknowledge acceptance of the access conditions, this is a finding.</check-content></check></Rule></Group><Group id="V-267334"><title>SRG-APP-000125-UEM-000074</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267334r1025801_rule" weight="10.0" severity="medium"><version>MSIN-24-000370</version><title>Microsoft Intune service must be configured to transfer Intune logs to another server for storage, analysis, and reporting at least every seven days.</title><description>&lt;VulnDiscussion&gt;Note: UEM server logs include logs of UEM events and logs transferred to Microsoft Intune service by UEM agents of managed devices.
+
+Protection of log data includes ensuring log data is not accidentally lost or deleted. Backing up audit records to a different system or onto separate media than the system being audited on an organizationally defined frequency helps ensure, in the event of a catastrophic system failure, the audit records will be retained. 
+
+This helps to ensure a compromise of the information system being audited does not also result in a compromise of the audit records.
+
+This requirement only applies to applications that have a native backup capability for audit records. Operating system backup requirements cover applications that do not provide native backup functions. 
+
+Satisfies: FAU_STG_EXT.1.1, FMT_SMF.1.1(2) Refinement b, FMT_SMF.1.1(2) c.8
+
+Satisfies: SRG-APP-000125-UEM-000074, SRG-APP-000275-UEM-000157, SRG-APP-000358-UEM-000228&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001348</ident><ident system="http://cyber.mil/cci">CCI-001294</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-71161r1025800_fix">Configure the Microsoft Intune server to transfer Microsoft Intune server logs to another server for storage, analysis, and reporting at least every seven days.
+
+Intune audit logs can be sent to many locations, including Azure Monitor services or a third-party audit management server. If sending Intune audit logs to the Azure monitor, follow the setup instructions listed here: https://docs.microsoft.com/en-us/mem/intune/fundamentals/review-logs-using-azure-monitor.
+
+To manually offload audit logs to an audit log management server, follow these instructions:
+
+1. Log in to the console.
+
+2. Select "Tenant Administration".
+
+3. Select "Audit Logs".
+
+4. Select "Export".
+
+This exports a .csv file with audit data. Other methods can be used to archive the .csv files.</fixtext><fix id="F-71161r1025800_fix" /><check system="C-71258r1025475_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Verify the site is scheduling audit log backups at least every seven days.
+
+Since, at this time, offloading Intune audit logs is a manual process, verify the site is periodically (at least every seven days) offloading Intune logs.
+
+If Microsoft Intune is not set to transfer Microsoft Intune server logs to another server for storage, analysis, and reporting at least every seven days, this is a finding.</check-content></check></Rule></Group><Group id="V-267341"><title>SRG-APP-000149-UEM-000083</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267341r1026082_rule" weight="10.0" severity="medium"><version>MSIN-24-000440</version><title>Microsoft Intune service must be configured to use a DOD Central Directory Service to provide multifactor authentication for network access to privileged and nonprivileged accounts and individual and group accounts.</title><description>&lt;VulnDiscussion&gt;A comprehensive account management process that includes automation helps to ensure the accounts designated as requiring attention are consistently and promptly addressed. If an attacker compromises an account, the entire MDM server infrastructure is at risk. Providing automated support functions for the management of accounts will ensure only active accounts will be granted access with the proper authorization levels. These objectives are best achieved by configuring the MDM server to leverage an enterprise authentication mechanism (e.g., Microsoft Active Directory Kerberos). 
+
+To ensure individual accountability and prevent unauthorized access, application users must be individually identified and authenticated. Individual accountability mandates that each user is uniquely identified. A group authenticator is a shared account or some other form of authentication that allows multiple unique individuals to access the application using a single account. If an application allows or provides for group authenticators, it must first individually authenticate users prior to implementing group authenticator functionality. Some applications may not have the need to provide a group authenticator; this is considered a matter of application design. In those instances where the application design includes the use of a group authenticator, this requirement will apply.
+
+Satisfies: FIA 
+Reference: PP-MDM-414003
+
+Satisfies: SRG-APP-000149-UEM-000083, SRG-APP-000153-UEM-000087&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000765</ident><ident system="http://cyber.mil/cci">CCI-004045</ident><fixtext fixref="F-71168r1026082_fix">Intune administrator account authentication is managed by Entra ID. The following steps will create a Conditional Access policy to require all Intune users use multifactor authentication.
+
+1. Sign in to the Microsoft Entra admin center as at least a Conditional Access Administrator.
+
+2. In the search bar, search for Conditional Access.
+
+3. Select "Create new policy".
+
+4. Name the policy. It is recommended that organizations create a meaningful standard for the names of their policies.
+
+5. Under Assignments, select "Users or workload identities".
+
+a. Under Include, select "All users".
+
+b. Under Exclude, select "Users and groups" and choose the organization's emergency access or break-glass accounts.
+
+6. Under Target resources &gt;&gt; Cloud apps &gt;&gt; Include, select "All cloud apps". This will include Intune.
+
+a. Under Exclude, select any applications that do not require multifactor authentication.
+
+7. Under Access controls &gt;&gt; Grant, select "Grant access, Require multifactor authentication", and select "Select".
+
+8. Confirm the settings and set Enable policy to Report-only.
+
+9. Select Create to create to enable the policy.
+
+10. After confirming the policy, deploy the policy be either moving the Enable policy toggle from Report-only to On or alternately, deploy the policy using a Conditional Access template.</fixtext><fix id="F-71168r1026082_fix" /><check system="C-71265r1025496_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Verify all Intune user accounts require MFA.
+
+1. Sign in to the Microsoft Entra admin center as at least a Conditional Access Administrator.
+
+2. Browse to Conditional Access.
+
+3. Find the MFA policy.
+
+4. Confirm Enable policy is set to "On".
+
+If all Intune user accounts do not require MFA, this is a finding.</check-content></check></Rule></Group><Group id="V-267355"><title>SRG-APP-000174-UEM-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267355r1025805_rule" weight="10.0" severity="medium"><version>MSIN-24-000610</version><title>Microsoft Intune service must enforce a 60-day maximum password lifetime restriction.</title><description>&lt;VulnDiscussion&gt;Any password, no matter how complex, can eventually be cracked. Therefore, passwords need to be changed at specific intervals. 
+
+One method of minimizing this risk is to use complex passwords and periodically change them. If the application does not limit the lifetime of passwords and force users to change their passwords, there is the risk that the system and/or application passwords could be compromised. 
+
+This requirement does not include emergency administration accounts, which are meant for access to the application in case of failure. These accounts are not required to have maximum password lifetime restrictions. 
+
+Satisfies: FMT_SMF.1(2)b 
+Reference: PP-MDM-431024&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><fixtext fixref="F-71182r1025804_fix">Change the default Entra ID password expiration time period to 60 days by using the Graph script located here: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mguser 
+
+Use the "Get-MgDomain" command, and update it to 60 days using the "Update-MgDomain -DomainId &lt;DomainName&gt; 
+-PasswordValidityPeriodInDays 60" command.
+
+For any PowerShell scripts that are Graph, note Graph endpoints differ depending on where the tenant is located.
+- For commercial tenants, graph endpoints are graph.microsoft.com.
+- For GCC High tenants (IL4), graph endpoints are graph.microsoft.us.
+- For DOD tenants (IL5), graph endpoints are dod-graph.microsoft.us.</fixtext><fix id="F-71182r1025804_fix" /><check system="C-71279r1025803_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Verify the Entra ID password expiration time period has been changed to 60 days.
+
+Interview the site Intune and/or Entra ID system administrator and verify the script shown in the Fix has been run.
+
+If the Entra ID password expiration time period has been changed to 60 days, this is a finding.
+
+Note: It is not possible to view the current value for the password expiration time (the Entra ID default is 90). An administrator can check the maximum password age of their Entra ID tenant by using the Graph PowerShell SDK module and using the "Get-MgDomain" command by using the script located here: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain?view=graph-powershell-1.0
+
+Note: For any PowerShell scripts that are Graph, note Graph endpoints differ depending on where the tenant is located.
+- For commercial tenants, graph endpoints are graph.microsoft.com.
+- For GCC High tenants (IL4), graph endpoints are graph.microsoft.us.
+- For DOD tenants (IL5), graph endpoints are dod-graph.microsoft.us.</check-content></check></Rule></Group><Group id="V-267372"><title>SRG-APP-000291-UEM-000165</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267372r1025806_rule" weight="10.0" severity="medium"><version>MSIN-24-000820</version><title>Microsoft Intune service must notify system administrators and the information system security officer (ISSO) when accounts are created.</title><description>&lt;VulnDiscussion&gt;Once an attacker establishes access to an application, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to simply create a new account. Sending notification of account creation events to the system administrator and ISSO is one method for mitigating this risk.
+
+To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to offload those access control functions and focus on core application features and functionality. 
+
+Satisfies: FAU_ALT_EXT.1.1, FAU_GEN.1.1(1), FMT_SMF.1.1(2)c.8 
+Reference: PP-MDM-411065, PP-MDM-412000&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000091</ident><fixtext fixref="F-71199r1025590_fix">Account management is managed by Entra ID. Intune cannot be configured to not use Entra ID. Event monitoring and alerting may be implemented through various methods including log aggregation and the use of monitoring tools. It is recommended that Entra ID be configured to download audit logs to a log management server (https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-download-logs) and the log management server be configured to alert the ISSO when accounts are created.</fixtext><fix id="F-71199r1025590_fix" /><check system="C-71296r1025589_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Verify the ISSO is alerted when accounts are created in Entra ID. Account management is managed by Entra ID. Intune cannot be configured to not use Entra ID.
+
+Event monitoring and alerting in Entra ID may be implemented through various methods including log aggregation and the use of monitoring tools. Determine how the site has implemented this requirement. It is recommended that Entra ID be configured to download audit logs to a log management server and the log management server be configured to alert the ISSO when accounts are created.
+
+If the ISSO is not alerted when accounts are created in Entra ID, this is a finding.</check-content></check></Rule></Group><Group id="V-267373"><title>SRG-APP-000292-UEM-000166</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267373r1025807_rule" weight="10.0" severity="medium"><version>MSIN-24-000830</version><title>Microsoft Intune service must notify system administrators and the information system security officer (ISSO) when accounts are modified.</title><description>&lt;VulnDiscussion&gt;When application accounts are modified, user accessibility is affected. Accounts are used for identifying individual users or for identifying the application processes themselves. Sending notification of account modification events to the system administrator and ISSO is one method for mitigating this risk. Such a capability greatly reduces the risk that application accessibility will be negatively affected for extended periods of time and provides logging that can be used for forensic purposes.
+
+To address access requirements, many operating systems can be integrated with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. 
+
+Satisfies: FAU_ALT_EXT.1.1, FAU_GEN.1.1(1), FMT_SMF.1.1(2)c.8 
+Reference: PP-MDM-411065, PP-MDM-412000&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000091</ident><fixtext fixref="F-71200r1025593_fix">Account management is managed by Entra ID. Intune cannot be configured to not use Entra ID. Event monitoring and alerting may be implemented through various methods including log aggregation and the use of monitoring tools. It is recommended that Entra ID be configured to download audit logs to a log management server (https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-download-logs) and the log management server be configured to alert the ISSO when accounts are modified.</fixtext><fix id="F-71200r1025593_fix" /><check system="C-71297r1025592_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Verify the ISSO is alerted when accounts are modified in Entra ID. Account management is managed by Entra ID. Intune cannot be configured to not use Entra ID.
+
+Event monitoring and alerting in Entra ID may be implemented through various methods including log aggregation and the use of monitoring tools. Determine how the site has implemented this requirement. It is recommended that Entra ID be configured to download audit logs to a log management server and the log management server be configured to alert the ISSO when accounts are modified.
+
+If the ISSO is not alerted when accounts are modified in Entra ID, this is a finding.</check-content></check></Rule></Group><Group id="V-267374"><title>SRG-APP-000293-UEM-000167</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267374r1026210_rule" weight="10.0" severity="medium"><version>MSIN-24-000840</version><title>Microsoft Intune service must notify system administrators and the information system security officer (ISSO) for account disabling actions.</title><description>&lt;VulnDiscussion&gt;When application accounts are disabled, user accessibility is affected. Accounts are used for identifying individual users or for identifying the application processes themselves. Sending notification of account disabling events to the system administrator and ISSO is one method for mitigating this risk. Such a capability greatly reduces the risk that application accessibility will be negatively affected for extended periods of time and provides logging that can be used for forensic purposes.
+
+To address access requirements, many operating systems can be integrated with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. 
+
+Satisfies: FAU_ALT_EXT.1.1, FAU_GEN.1.1(1), FMT_SMF.1.1(2)c.8 
+Reference: PP-MDM-411065, PP-MDM-412000&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000091</ident><fixtext fixref="F-71201r1025596_fix">Account management is managed by Entra ID. Intune cannot be configured to not use Entra ID. Event monitoring and alerting may be implemented through various methods including log aggregation and the use of monitoring tools. It is recommended that Entra ID be configured to download audit logs to a log management server (https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-download-logs) and the log management server be configured to alert the ISSO when accounts are disabled.</fixtext><fix id="F-71201r1025596_fix" /><check system="C-71298r1025595_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Verify the ISSO is alerted when accounts are disabled in Entra ID. Account management is managed by Entra ID. Intune cannot be configured to not use Entra ID. 
+
+Event monitoring and alerting in Entra ID may be implemented through various methods including log aggregation and the use of monitoring tools. Determine how the site has implemented this requirement. It is recommended that Entra ID be configured to download audit logs to a log management server and the log management server be configured to alert the ISSO when accounts are disabled.
+
+If the ISSO is not alerted when accounts are disabled in Entra ID, this is a finding.</check-content></check></Rule></Group><Group id="V-267375"><title>SRG-APP-000294-UEM-000168</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267375r1025809_rule" weight="10.0" severity="medium"><version>MSIN-24-000850</version><title>Microsoft Intune service must notify system administrators and the information system security officer (ISSO) for account removal actions.</title><description>&lt;VulnDiscussion&gt;When application accounts are removed, user accessibility is affected. Accounts are used for identifying users or for identifying the application processes themselves. Sending notification of account removal events to the system administrator and ISSO is one method for mitigating this risk. Such a capability greatly reduces the risk that application accessibility will be negatively affected for extended periods of time and provides logging that can be used for forensic purposes.
+
+To address access requirements, many operating systems can be integrated with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. 
+
+Satisfies: FAU_ALT_EXT.1.1, FAU_GEN.1.1(1), FMT_SMF.1.1(2)c.8 
+Reference: PP-MDM-411065, PP-MDM-412000&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000091</ident><fixtext fixref="F-71202r1025599_fix">Account management is managed by Entra ID. Intune cannot be configured to not use Entra ID. Event monitoring and alerting may be implemented through various methods including log aggregation and the use of monitoring tools. It is recommended that Entra ID be configured to download audit logs to a log management server (https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-download-logs) and the log management server be configured to alert the ISSO when accounts are removed.</fixtext><fix id="F-71202r1025599_fix" /><check system="C-71299r1025598_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Verify the ISSO is alerted when accounts are removed in Entra ID. Account management is managed by Entra ID. Intune cannot be configured to not use Entra ID.
+
+Event monitoring and alerting in Entra ID may be implemented through various methods including log aggregation and the use of monitoring tools. Determine how the site has implemented this requirement. It is recommended that Entra ID be configured to download audit logs to a log management server and the log management server be configured to alert the ISSO when accounts are removed.
+
+If the ISSO is not alerted when accounts are removed in Entra ID, this is a finding.</check-content></check></Rule></Group><Group id="V-267379"><title>SRG-APP-000320-UEM-000193</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267379r1025810_rule" weight="10.0" severity="medium"><version>MSIN-24-000900</version><title>Microsoft Intune service must notify system administrator and information system security officer (ISSO) of account enabling actions.</title><description>&lt;VulnDiscussion&gt;Once an attacker establishes access to an application, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to simply enable a new or disabled account. Sending notification of account enabling events to the system administrator and ISSO is one method for mitigating this risk. Such a capability greatly reduces the risk that application accessibility will be negatively affected for extended periods of time and also provides logging that can be used for forensic purposes.
+
+To detect and respond to events that affect user accessibility and application processing, applications must notify the appropriate individuals so they can investigate the event.
+
+To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to offload those access control functions and focus on core application features and functionality. 
+
+Satisfies: FAU_ALT_EXT.1.1, FAU_GEN.1.1(1), FMT_SMF.1.1(2)c.8 
+Reference: PP-MDM-411065, PP-MDM-412000&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target MS Intune Service</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>MS Intune Service</dc:subject><dc:identifier>5651</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><fixtext fixref="F-71206r1025611_fix">Account management is managed by Entra ID. Intune cannot be configured to not use Entra ID. Event monitoring and alerting may be implemented through various methods including log aggregation and the use of monitoring tools. It is recommended that Entra ID be configured to download audit logs to a log management server (https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-download-logs) and the log management server be configured to alert the ISSO when accounts are enabled.</fixtext><fix id="F-71206r1025611_fix" /><check system="C-71303r1025610_chk"><check-content-ref href="MS_Intune_Service_STIG.xml" name="M" /><check-content>Verify the ISSO is alerted when accounts are enabled in Entra ID. Account management is managed by Entra ID. Intune cannot be configured to not use Entra ID. 
+
+Event monitoring and alerting in Entra ID may be implemented through various methods including log aggregation and the use of monitoring tools. Determine how the site has implemented this requirement. It is recommended that Entra ID be configured to download audit logs to a log management server and the log management server be configured to alert the ISSO when accounts are enabled.
+
+If the ISSO is not alerted when accounts are enabled in Entra ID, this is a finding.</check-content></check></Rule></Group></Benchmark>
