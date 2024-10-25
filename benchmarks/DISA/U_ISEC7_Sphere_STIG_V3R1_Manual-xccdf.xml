@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="ISEC7_Sphere" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-08-20">accepted</status><title>ISEC7 Sphere Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 24 Oct 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>3</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224760" selected="true" /><select idref="V-224761" selected="true" /><select idref="V-224762" selected="true" /><select idref="V-224763" selected="true" /><select idref="V-224764" selected="true" /><select idref="V-224765" selected="true" /><select idref="V-224766" selected="true" /><select idref="V-224767" selected="true" /><select idref="V-224768" selected="true" /><select idref="V-224769" selected="true" /><select idref="V-224770" selected="true" /><select idref="V-224771" selected="true" /><select idref="V-224772" selected="true" /><select idref="V-224773" selected="true" /><select idref="V-224774" selected="true" /><select idref="V-224775" selected="true" /><select idref="V-224776" selected="true" /><select idref="V-224777" selected="true" /><select idref="V-224778" selected="true" /><select idref="V-224779" selected="true" /><select idref="V-224780" selected="true" /><select idref="V-224781" selected="true" /><select idref="V-224782" selected="true" /><select idref="V-224783" selected="true" /><select idref="V-224784" selected="true" /><select idref="V-224785" selected="true" /><select idref="V-224786" selected="true" /><select idref="V-224788" selected="true" /><select idref="V-224789" selected="true" /><select idref="V-224790" selected="true" /><select idref="V-224791" selected="true" /><select idref="V-224792" selected="true" /><select idref="V-224793" selected="true" /><select idref="V-225096" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224760" selected="true" /><select idref="V-224761" selected="true" /><select idref="V-224762" selected="true" /><select idref="V-224763" selected="true" /><select idref="V-224764" selected="true" /><select idref="V-224765" selected="true" /><select idref="V-224766" selected="true" /><select idref="V-224767" selected="true" /><select idref="V-224768" selected="true" /><select idref="V-224769" selected="true" /><select idref="V-224770" selected="true" /><select idref="V-224771" selected="true" /><select idref="V-224772" selected="true" /><select idref="V-224773" selected="true" /><select idref="V-224774" selected="true" /><select idref="V-224775" selected="true" /><select idref="V-224776" selected="true" /><select idref="V-224777" selected="true" /><select idref="V-224778" selected="true" /><select idref="V-224779" selected="true" /><select idref="V-224780" selected="true" /><select idref="V-224781" selected="true" /><select idref="V-224782" selected="true" /><select idref="V-224783" selected="true" /><select idref="V-224784" selected="true" /><select idref="V-224785" selected="true" /><select idref="V-224786" selected="true" /><select idref="V-224788" selected="true" /><select idref="V-224789" selected="true" /><select idref="V-224790" selected="true" /><select idref="V-224791" selected="true" /><select idref="V-224792" selected="true" /><select idref="V-224793" selected="true" /><select idref="V-225096" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224760" selected="true" /><select idref="V-224761" selected="true" /><select idref="V-224762" selected="true" /><select idref="V-224763" selected="true" /><select idref="V-224764" selected="true" /><select idref="V-224765" selected="true" /><select idref="V-224766" selected="true" /><select idref="V-224767" selected="true" /><select idref="V-224768" selected="true" /><select idref="V-224769" selected="true" /><select idref="V-224770" selected="true" /><select idref="V-224771" selected="true" /><select idref="V-224772" selected="true" /><select idref="V-224773" selected="true" /><select idref="V-224774" selected="true" /><select idref="V-224775" selected="true" /><select idref="V-224776" selected="true" /><select idref="V-224777" selected="true" /><select idref="V-224778" selected="true" /><select idref="V-224779" selected="true" /><select idref="V-224780" selected="true" /><select idref="V-224781" selected="true" /><select idref="V-224782" selected="true" /><select idref="V-224783" selected="true" /><select idref="V-224784" selected="true" /><select idref="V-224785" selected="true" /><select idref="V-224786" selected="true" /><select idref="V-224788" selected="true" /><select idref="V-224789" selected="true" /><select idref="V-224790" selected="true" /><select idref="V-224791" selected="true" /><select idref="V-224792" selected="true" /><select idref="V-224793" selected="true" /><select idref="V-225096" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224760" selected="true" /><select idref="V-224761" selected="true" /><select idref="V-224762" selected="true" /><select idref="V-224763" selected="true" /><select idref="V-224764" selected="true" /><select idref="V-224765" selected="true" /><select idref="V-224766" selected="true" /><select idref="V-224767" selected="true" /><select idref="V-224768" selected="true" /><select idref="V-224769" selected="true" /><select idref="V-224770" selected="true" /><select idref="V-224771" selected="true" /><select idref="V-224772" selected="true" /><select idref="V-224773" selected="true" /><select idref="V-224774" selected="true" /><select idref="V-224775" selected="true" /><select idref="V-224776" selected="true" /><select idref="V-224777" selected="true" /><select idref="V-224778" selected="true" /><select idref="V-224779" selected="true" /><select idref="V-224780" selected="true" /><select idref="V-224781" selected="true" /><select idref="V-224782" selected="true" /><select idref="V-224783" selected="true" /><select idref="V-224784" selected="true" /><select idref="V-224785" selected="true" /><select idref="V-224786" selected="true" /><select idref="V-224788" selected="true" /><select idref="V-224789" selected="true" /><select idref="V-224790" selected="true" /><select idref="V-224791" selected="true" /><select idref="V-224792" selected="true" /><select idref="V-224793" selected="true" /><select idref="V-225096" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224760" selected="true" /><select idref="V-224761" selected="true" /><select idref="V-224762" selected="true" /><select idref="V-224763" selected="true" /><select idref="V-224764" selected="true" /><select idref="V-224765" selected="true" /><select idref="V-224766" selected="true" /><select idref="V-224767" selected="true" /><select idref="V-224768" selected="true" /><select idref="V-224769" selected="true" /><select idref="V-224770" selected="true" /><select idref="V-224771" selected="true" /><select idref="V-224772" selected="true" /><select idref="V-224773" selected="true" /><select idref="V-224774" selected="true" /><select idref="V-224775" selected="true" /><select idref="V-224776" selected="true" /><select idref="V-224777" selected="true" /><select idref="V-224778" selected="true" /><select idref="V-224779" selected="true" /><select idref="V-224780" selected="true" /><select idref="V-224781" selected="true" /><select idref="V-224782" selected="true" /><select idref="V-224783" selected="true" /><select idref="V-224784" selected="true" /><select idref="V-224785" selected="true" /><select idref="V-224786" selected="true" /><select idref="V-224788" selected="true" /><select idref="V-224789" selected="true" /><select idref="V-224790" selected="true" /><select idref="V-224791" selected="true" /><select idref="V-224792" selected="true" /><select idref="V-224793" selected="true" /><select idref="V-225096" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224760" selected="true" /><select idref="V-224761" selected="true" /><select idref="V-224762" selected="true" /><select idref="V-224763" selected="true" /><select idref="V-224764" selected="true" /><select idref="V-224765" selected="true" /><select idref="V-224766" selected="true" /><select idref="V-224767" selected="true" /><select idref="V-224768" selected="true" /><select idref="V-224769" selected="true" /><select idref="V-224770" selected="true" /><select idref="V-224771" selected="true" /><select idref="V-224772" selected="true" /><select idref="V-224773" selected="true" /><select idref="V-224774" selected="true" /><select idref="V-224775" selected="true" /><select idref="V-224776" selected="true" /><select idref="V-224777" selected="true" /><select idref="V-224778" selected="true" /><select idref="V-224779" selected="true" /><select idref="V-224780" selected="true" /><select idref="V-224781" selected="true" /><select idref="V-224782" selected="true" /><select idref="V-224783" selected="true" /><select idref="V-224784" selected="true" /><select idref="V-224785" selected="true" /><select idref="V-224786" selected="true" /><select idref="V-224788" selected="true" /><select idref="V-224789" selected="true" /><select idref="V-224790" selected="true" /><select idref="V-224791" selected="true" /><select idref="V-224792" selected="true" /><select idref="V-224793" selected="true" /><select idref="V-225096" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224760" selected="true" /><select idref="V-224761" selected="true" /><select idref="V-224762" selected="true" /><select idref="V-224763" selected="true" /><select idref="V-224764" selected="true" /><select idref="V-224765" selected="true" /><select idref="V-224766" selected="true" /><select idref="V-224767" selected="true" /><select idref="V-224768" selected="true" /><select idref="V-224769" selected="true" /><select idref="V-224770" selected="true" /><select idref="V-224771" selected="true" /><select idref="V-224772" selected="true" /><select idref="V-224773" selected="true" /><select idref="V-224774" selected="true" /><select idref="V-224775" selected="true" /><select idref="V-224776" selected="true" /><select idref="V-224777" selected="true" /><select idref="V-224778" selected="true" /><select idref="V-224779" selected="true" /><select idref="V-224780" selected="true" /><select idref="V-224781" selected="true" /><select idref="V-224782" selected="true" /><select idref="V-224783" selected="true" /><select idref="V-224784" selected="true" /><select idref="V-224785" selected="true" /><select idref="V-224786" selected="true" /><select idref="V-224788" selected="true" /><select idref="V-224789" selected="true" /><select idref="V-224790" selected="true" /><select idref="V-224791" selected="true" /><select idref="V-224792" selected="true" /><select idref="V-224793" selected="true" /><select idref="V-225096" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224760" selected="true" /><select idref="V-224761" selected="true" /><select idref="V-224762" selected="true" /><select idref="V-224763" selected="true" /><select idref="V-224764" selected="true" /><select idref="V-224765" selected="true" /><select idref="V-224766" selected="true" /><select idref="V-224767" selected="true" /><select idref="V-224768" selected="true" /><select idref="V-224769" selected="true" /><select idref="V-224770" selected="true" /><select idref="V-224771" selected="true" /><select idref="V-224772" selected="true" /><select idref="V-224773" selected="true" /><select idref="V-224774" selected="true" /><select idref="V-224775" selected="true" /><select idref="V-224776" selected="true" /><select idref="V-224777" selected="true" /><select idref="V-224778" selected="true" /><select idref="V-224779" selected="true" /><select idref="V-224780" selected="true" /><select idref="V-224781" selected="true" /><select idref="V-224782" selected="true" /><select idref="V-224783" selected="true" /><select idref="V-224784" selected="true" /><select idref="V-224785" selected="true" /><select idref="V-224786" selected="true" /><select idref="V-224788" selected="true" /><select idref="V-224789" selected="true" /><select idref="V-224790" selected="true" /><select idref="V-224791" selected="true" /><select idref="V-224792" selected="true" /><select idref="V-224793" selected="true" /><select idref="V-225096" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224760" selected="true" /><select idref="V-224761" selected="true" /><select idref="V-224762" selected="true" /><select idref="V-224763" selected="true" /><select idref="V-224764" selected="true" /><select idref="V-224765" selected="true" /><select idref="V-224766" selected="true" /><select idref="V-224767" selected="true" /><select idref="V-224768" selected="true" /><select idref="V-224769" selected="true" /><select idref="V-224770" selected="true" /><select idref="V-224771" selected="true" /><select idref="V-224772" selected="true" /><select idref="V-224773" selected="true" /><select idref="V-224774" selected="true" /><select idref="V-224775" selected="true" /><select idref="V-224776" selected="true" /><select idref="V-224777" selected="true" /><select idref="V-224778" selected="true" /><select idref="V-224779" selected="true" /><select idref="V-224780" selected="true" /><select idref="V-224781" selected="true" /><select idref="V-224782" selected="true" /><select idref="V-224783" selected="true" /><select idref="V-224784" selected="true" /><select idref="V-224785" selected="true" /><select idref="V-224786" selected="true" /><select idref="V-224788" selected="true" /><select idref="V-224789" selected="true" /><select idref="V-224790" selected="true" /><select idref="V-224791" selected="true" /><select idref="V-224792" selected="true" /><select idref="V-224793" selected="true" /><select idref="V-225096" selected="true" /></Profile><Group id="V-224760"><title>SRG-APP-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224760r1013798_rule" weight="10.0" severity="medium"><version>ISEC-06-000010</version><title>The ISEC7 SPHERE must limit the number of concurrent sessions to an organization-defined number for all accounts and/or account types.</title><description>&lt;VulnDiscussion&gt;Application management includes the ability to control the number of users and user sessions that utilize an application. Limiting the number of allowed users and sessions per user is helpful in limiting risks related to denial-of-service (DoS) attacks.
+
+This requirement may be met via the application or by utilizing information system session control provided by a web server with specialized session management capabilities. If it has been specified that this requirement will be handled by the application, the capability to limit the maximum number of concurrent single user sessions must be designed and built into the application. 
+
+This requirement addresses concurrent sessions for information system accounts and does not address concurrent sessions by single users via multiple system accounts. The maximum number of concurrent sessions should be defined based upon mission needs and the operational environment for each system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106407</ident><ident system="http://cyber.mil/legacy">V-97303</ident><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-26439r1004898_fix">Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Set the maxConnections setting according to organizational guidelines.
+Set the maxThreads setting according to organizational guidelines.
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26439r1004898_fix" /><check system="C-26451r1004897_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Verify the maxConnections setting is set according to organizational guidelines.
+Verify the maxThreads setting is set according to organizational guidelines.
+
+If the maxConnections setting is not set according to organizational guidelines or the maxThreads setting is not set according to organizational guidelines, this is a finding.</check-content></check></Rule></Group><Group id="V-224761"><title>SRG-APP-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224761r1013800_rule" weight="10.0" severity="medium"><version>ISEC-06-000030</version><title>The ISEC7 SPHERE must initiate a session lock after a 15-minute period of inactivity.</title><description>&lt;VulnDiscussion&gt;A session time-out lock is a temporary action taken when a user stops work and moves away from the immediate physical vicinity of the information system, but does not log out because of the temporary nature of the absence. Rather than relying on the user to manually lock their application session prior to vacating the vicinity, applications need to be able to identify when a user's application session has idled and take action to initiate the session lock.
+
+The session lock is implemented at the point where session activity can be determined and/or controlled. This is typically at the operating system-level and results in a system lock, but may be at the application-level where the application interface window is secured instead.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106489</ident><ident system="http://cyber.mil/legacy">V-97385</ident><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-26440r1004901_fix">Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Set the session timeout to the correct value of 15 minutes or less.</fixtext><fix id="F-26440r1004901_fix" /><check system="C-26452r1013799_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Validate the session timeout has been set to the correct value.
+
+Alternatively, allow the console to sit for 15 minutes and confirm the user is prompted to login again when attempting to navigate to a new screen.
+
+If the SPHERE Console timeout has not been set for 15 minutes or less, this is a finding.</check-content></check></Rule></Group><Group id="V-224762"><title>SRG-APP-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224762r1013803_rule" weight="10.0" severity="medium"><version>ISEC-06-000060</version><title>The ISEC7 SPHERE must use TLS 1.2, at a minimum, to protect the confidentiality of sensitive data during electronic dissemination using remote access.</title><description>&lt;VulnDiscussion&gt;Using older unauthorized versions or incorrectly configuring protocol negotiation makes the gateway vulnerable to known and unknown attacks that exploit vulnerabilities in this protocol.
+
+This requirement applies to Transport Layer Security (TLS) gateways (also known as Secure Sockets Layer [SSL] gateways), web servers, and web applications and is not applicable to virtual private network (VPN) devices. Application protocols such as HTTPS and DNSSEC use TLS as the underlying security protocol and thus are in scope for this requirement. NIST SP 800-52 provides guidance for client negotiation on either DOD-only or on public-facing servers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106491</ident><ident system="http://cyber.mil/legacy">V-97387</ident><ident system="http://cyber.mil/cci">CCI-000068</ident><fixtext fixref="F-26441r1013802_fix">Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Using the dropdown menu for protocols, select +TLSv1.2, +TLSv1.3.
+Click "Update".
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26441r1013802_fix" /><check system="C-26453r1013801_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Verify "protocols" is set to +TLSv1.2, +TLSv1.3.
+
+If "protocols" is not set to +TLSv1.2 or higher, this is a finding.</check-content></check></Rule></Group><Group id="V-224763"><title>SRG-APP-000068</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224763r1013805_rule" weight="10.0" severity="medium"><version>ISEC-06-000200</version><title>The ISEC7 SPHERE must display the Standard Mandatory DOD Notice and Consent Banner before granting access to the ISEC7 SPHERE.</title><description>&lt;VulnDiscussion&gt;Display of the DOD-approved use notification before granting access to the application ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist.
+
+The banner must be formatted in accordance with DTM-08-060. Use the following verbiage for applications that can accommodate banners of 1300 characters:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+ 
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106493</ident><ident system="http://cyber.mil/legacy">V-97389</ident><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-26442r1004907_fix">Set the session timeout to the correct value of 15 minutes or less.</fixtext><fix id="F-26442r1004907_fix" /><check system="C-26454r1013804_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Note if the appropriate Standard mandatory DOD Notice and Consent Banner is displayed.
+
+Alternatively, if already logged in to the ISEC7 SPHERE Console, navigate to Administration &gt;&gt; User Self Service &gt;&gt; Page Customizations.
+Verify that a Page Customization exists to display the Standard mandatory DOD Notice and Consent Banner.
+
+If a Page Customization does not exist, or it does not contain the required DOD banner, this is a finding.</check-content></check></Rule></Group><Group id="V-224764"><title>SRG-APP-000090</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224764r1013808_rule" weight="10.0" severity="medium"><version>ISEC-06-000270</version><title>The ISEC7 SPHERE server must be configured to have at least one user in the following Administrator roles: Security Administrator, Site Administrator, and Help Desk User.</title><description>&lt;VulnDiscussion&gt;Without the capability to restrict which roles and individuals can select which events are audited, unauthorized personnel may be able to prevent the auditing of critical events. Misconfigured audits may degrade the system's performance by overwhelming the audit log. Misconfigured audits may also make it more difficult to establish, correlate, and investigate the events relating to an incident, or identify those responsible for one. 
+ 
+The list of audited events is the set of events for which audits are to be generated. This set of events is typically a subset of the list of all events for which the system is capable of generating audit records.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106495</ident><ident system="http://cyber.mil/legacy">V-97391</ident><ident system="http://cyber.mil/cci">CCI-000171</ident><fixtext fixref="F-26443r1013807_fix">Log in to the ISEC7 SPHERE console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Access Permissions.
+Assign at least one user or AD group to each of the following roles: Security Administrator, Site Administrator, and Help Desk User.</fixtext><fix id="F-26443r1013807_fix" /><check system="C-26455r1013806_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Access Permissions.
+Verify for each Role (Security Administrator, Site Administrator, and Help Desk User) that at least one user or AD group has been assigned.
+
+If for each Role (Security Administrator, Site Administrator, Help Desk User) there is not at least one user (or AD group) assigned, this is a finding.</check-content></check></Rule></Group><Group id="V-224765"><title>SRG-APP-000108</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224765r1013811_rule" weight="10.0" severity="medium"><version>ISEC-06-000380</version><title>The ISEC7 SPHERE must alert the information system security officer (ISSO) and system administrator (SA) (at a minimum) in the event of an audit processing failure.</title><description>&lt;VulnDiscussion&gt;It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without this notification, the security personnel may be unaware of an impending failure of the audit capability and system operation may be adversely affected. 
+
+Audit processing failures include software/hardware errors, failures in the audit capturing mechanisms, and audit storage capacity being reached or exceeded.
+
+This requirement applies to each audit data storage repository (i.e., distinct information system component where audit records are stored), the centralized audit storage capacity of organizations (i.e., all audit data storage repositories combined), or both.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106497</ident><ident system="http://cyber.mil/legacy">V-97393</ident><ident system="http://cyber.mil/cci">CCI-000139</ident><fixtext fixref="F-26444r1013810_fix">Log in to the ISEC7 SPHERE console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Notifications &gt;&gt; Recipient Lists.
+Select "Edit" next to the Systems Notifications.
+Under Add recipient, select "Email" as the Type and enter the correct email address of recipients.
+Select "Add".</fixtext><fix id="F-26444r1013810_fix" /><check system="C-26456r1013809_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Notifications &gt;&gt; Recipient Lists.
+Select "Edit" next to the Systems Notifications.
+Verify the email address or distribution list has been added.
+
+If a recipient email address or distribution list has not been added to System Notifications, this is a finding.</check-content></check></Rule></Group><Group id="V-224766"><title>SRG-APP-000125</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224766r1013812_rule" weight="10.0" severity="medium"><version>ISEC-06-000500</version><title>The ISEC7 SPHERE must back up audit records at least every seven days onto a different system or system component than the system or component being audited, provide centralized management and configuration of the content to be captured in audit records generated by all ISEC7 SPHERE components, and offload audit records onto a different system or media than the system being audited.</title><description>&lt;VulnDiscussion&gt;Protection of log data includes assuring log data is not accidentally lost or deleted. Backing up audit records to a different system or onto separate media than the system being audited on an organizationally defined frequency helps to assure in the event of a catastrophic system failure, the audit records will be retained. 
+
+This helps to ensure a compromise of the information system being audited does not also result in a compromise of the audit records.
+
+This requirement only applies to applications that have a native backup capability for audit records. Operating system backup requirements cover applications that do not provide native backup functions.
+
+Satisfies: SRG-APP-000125, SRG-APP-000356, SRG-APP-000358&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106511</ident><ident system="http://cyber.mil/legacy">V-97407</ident><ident system="http://cyber.mil/cci">CCI-001348</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-26445r1004916_fix">Log in to the ISEC7 SPHERE Console.
+
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+
+Set the log directory path to the desired location.
+
+Alternatively:
+
+On the ISEC7 SPHERE server, browse to the install directory.
+Default is %Install Drive%/Program Files/ISEC7 SPHERE.
+Select the conf folder.
+Open config.properties and set the logPath to the desired location of the log server.</fixtext><fix id="F-26445r1004916_fix" /><check system="C-26457r1004915_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Open the central log repository and verify the ISEC7 logs have been written to the location of the log server.
+
+Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Verify that the log directory path is set to the desired location.
+
+Alternatively:
+
+On the ISEC7 SPHERE server, browse to the install directory.
+Default is %Install Drive%/Program Files/ISEC7 SPHERE.
+Select the conf folder.
+Open config.properties and verify the logPath is set to the desired location.
+
+If ISEC7 SPHERE logs are not written to an audit log management server, this is a finding.
+</check-content></check></Rule></Group><Group id="V-224767"><title>SRG-APP-000148</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224767r1013815_rule" weight="10.0" severity="high"><version>ISEC-06-000660</version><title>ISEC7 SPHERE must disable or delete local account created during application installation and configuration.</title><description>&lt;VulnDiscussion&gt;The ISEC7 local account password complexity controls do not meet DOD requirements; therefore, admins have the capability to configure the account out of compliance, which could allow attacker to gain unauthorized access to the server and access to command MDM servers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106373</ident><ident system="http://cyber.mil/legacy">V-97249</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26446r1013814_fix">Log in to the ISEC7 SPHERE console.
+Navigate to Administration &gt;&gt; Configuration  &gt;&gt; Account Management &gt;&gt; Users.
+Select "Edit" next to the local account Admin.
+Check "Log in disabled" for the account.
+Click "Save".</fixtext><fix id="F-26446r1013814_fix" /><check system="C-26458r1013813_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Account Management &gt;&gt; Users.
+Select "Edit" next to the local account Admin.
+Verify "Log in disabled" has been selected.
+
+If "Log in disabled" has not been selected, this is a finding.</check-content></check></Rule></Group><Group id="V-224768"><title>SRG-APP-000175</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224768r1013818_rule" weight="10.0" severity="medium"><version>ISEC-06-000780</version><title>When using PKI-based authentication for user access, the ISEC7 SPHERE must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor.</title><description>&lt;VulnDiscussion&gt;Without path validation, an informed trust decision by the relying party cannot be made when presented with any certificate not already explicitly trusted. To meet this requirement, the information system must create trusted channels between itself and remote trusted authorized IT product (e.g., syslog server) entities that protect the confidentiality and integrity of communications. The information system must create trusted paths between itself and remote administrators and users that protect the confidentiality and integrity of communications.
+
+A trust anchor is an authoritative entity represented via a public key and associated data. It is most often used in the context of public key infrastructures, X.509 digital certificates, and DNSSEC. However, applications that do not use a trusted path are not approved for nonlocal and remote management of DOD information systems.
+
+Use of SSHv2 to establish a trusted channel is approved. Use of FTP, TELNET, HTTP, and SNMPV1 is not approved since they violate the trusted channel rule set. Use of web management tools that are not validated by common criteria my also violate trusted channel rule set.
+
+When there is a chain of trust, usually the top entity to be trusted becomes the trust anchor; it can be, for example, a Certification Authority (CA). A certification path starts with the subject certificate and proceeds through a number of intermediate certificates up to a trusted root certificate, typically issued by a trusted CA. 
+
+This requirement verifies that a certification path to an accepted trust anchor is used for certificate validation and that the path includes status information. Path validation is necessary for a relying party to make an informed trust decision when presented with any certificate not already explicitly trusted. Status information for certification paths includes certificate revocation lists or online certificate status protocol responses. Validation of the certificate status information is out of scope for this requirement.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106499</ident><ident system="http://cyber.mil/legacy">V-97395</ident><ident system="http://cyber.mil/cci">CCI-000185</ident><fixtext fixref="F-26447r1013817_fix">Log in to the server(s) hosting the ISEC7 SPHERE application.
+Open the Microsoft Management Console and add the Local Computer Certificates snap-in.
+Open the Trusted Root Certification Authorities &gt;&gt; Certificates.
+Install the DOD Root PKI Certificates Authorities to the server.</fixtext><fix id="F-26447r1013817_fix" /><check system="C-26459r1013816_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the server(s) hosting the ISEC7 SPHERE application.
+Open the Microsoft Management Console and add the Local Computer Certificates snap-in.
+Open the Trusted Root Certification Authorities &gt;&gt; Certificates.
+Verify the DOD Root PKI Certificates Authorities have been added to the server.
+
+If the DOD Root PKI Certificates Authorities have not been added to the server, this is a finding.</check-content></check></Rule></Group><Group id="V-224769"><title>SRG-APP-000391</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224769r1013821_rule" weight="10.0" severity="low"><version>ISEC-06-001730</version><title>The ISEC7 SPHERE must accept Personal Identity Verification (PIV) credentials.</title><description>&lt;VulnDiscussion&gt;The use of PIV credentials facilitates standardization and reduces the risk of unauthorized access.
+
+DOD has mandated the use of the CAC to support identity management and personal authentication for systems covered under HSPD 12, as well as a primary component of layered protection for national security systems.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106501</ident><ident system="http://cyber.mil/legacy">V-97397</ident><ident system="http://cyber.mil/cci">CCI-001953</ident><fixtext fixref="F-26448r1013820_fix">Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; LDAP.
+Check "Also enable user certificate logins. e.g. from smart cards (CAC)".
+Check "Only allow certificates with extended key usage for smartcard logon (1.3.6.1.4.1.311.20.2.2)".
+
+Browse to %Install Drive%/Program Files &gt;&gt; ISEC7 SPHERE &gt;&gt; Tomcat &gt;&gt; conf.
+Open the server.xml file and add clientAuth="required" under the Connection.</fixtext><fix id="F-26448r1013820_fix" /><check system="C-26460r1013819_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Settings.
+
+Verify the CAC login box has been checked.
+
+On the ISEC7 SPHERE server, browse to the install directory.
+Default is %Install Drive%/Program Files/ISEC7 SPHERE
+Select the conf folder.
+Open config.properties and confirm the following lines exist:
+
+    cacUserUIDRegex=^CN=[^0-9]*\\.([0-9]+),
+    cacUserUIDProperty=UserPrincipalName
+
+Browse to %Install Drive%/Program Files &gt;&gt; ISEC7 SPHERE &gt;&gt; Tomcat &gt;&gt; conf
+Confirm the server.xml file has clientAuth="required" under the Connection.
+
+If the required commands do not exist in config.properties or if clientAuth does not ="required" in the server.xml file, this is a finding.</check-content></check></Rule></Group><Group id="V-224770"><title>SRG-APP-000395</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224770r1013824_rule" weight="10.0" severity="medium"><version>ISEC-06-001760</version><title>Before establishing a local, remote, and/or network connection with any endpoint device, the ISEC7 SPHERE must use a bidirectional authentication mechanism configured with a FIPS-validated Advanced Encryption Standard (AES) cipher block algorithm to authenticate with the device.</title><description>&lt;VulnDiscussion&gt;Without device-to-device authentication, communications with malicious devices may be established. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk. Currently, DOD requires the use of AES for bidirectional authentication since it is the only FIPS-validated AES cipher block algorithm. 
+
+For distributed architectures (e.g., service-oriented architectures), the decisions regarding the validation of authentication claims may be made by services separate from the services acting on those decisions. In such situations, it is necessary to provide authentication decisions (as opposed to the actual authenticators) to the services that need to act on those decisions.
+
+A local connection is any connection with a device communicating without the use of a network. A network connection is any connection with a device that communicates through a network (e.g., local area or wide area network; the internet). A remote connection is any connection with a device communicating through an external network (e.g., the internet).
+
+Because of the challenges of applying this requirement on a large scale, organizations are encouraged to apply the requirement only to those limited number (and type) of devices that truly need to support this capability.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106503</ident><ident system="http://cyber.mil/legacy">V-97399</ident><ident system="http://cyber.mil/cci">CCI-001967</ident><fixtext fixref="F-26449r1013823_fix">Submit a CSR for a DOD-issued certificate with the private key.
+Retrieve the approved certificate from the issuing Certificate Authority.
+Set the friendly name on the certificate to https.
+
+Windows-MY:
+Open the Microsoft Management Console.
+Add the Certificates Snap-In for the ISEC7 Service Account.
+Navigate to the Personal Certificates Store.
+Import the certificate with Private key.
+Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Set the Keystore Type to Windows-MY.
+Restart the ISEC7 SPHERE Web service.
+
+JavaKeystore:
+Using a Keystore browser such as Portecle, open the ISEC7 SPHERE Suite keystore.
+Enter the Keystore password when prompted.
+Delete the self-signed certificate in the keystore.
+Import the DOD-issued certificate with the private key.
+Enter the key password when prompted.
+Enter the certificate alias as "https" when prompted.
+Save the keystore with the same keystore password.
+Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Verify the Keystore type is set to JavaKeystore PKCS12.
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26449r1013823_fix" /><check system="C-26461r1013822_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Confirm that the browser session is secured using a DOD issued certificate. 
+Internet Explorer:
+Click the Padlock icon at the end of the url field.
+Select "View Certificates".
+Confirm that the Issued By is a valid DOD Certificate Authority.
+
+Google Chrome:
+Click the Padlock icon at the front of the url field.
+Select "Certificate".
+Confirm that the Issued By is a valid DOD Certificate Authority.
+
+Alternately, log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Identify which type of Keystore is being used.
+
+Windows MY: 
+Open the Microsoft Management Console.
+Add the Certificates Snap-In for the ISEC7 Service Account.
+Navigate to the Personal Certificates Store.
+Verify the certificate is issued by a DOD Trusted Certificate Authority.
+
+JavaKeystore PKCS12:
+Using a Keystore browser such as Portecle, open the ISEC7 SPHERE keystore.
+Enter the Keystore password when prompted.
+Open the installed certificate and verify it was issued by a DOD Trusted Certificate Authority.
+
+If certificates used by the server are not DOD-issued certificates, this is a finding.</check-content></check></Rule></Group><Group id="V-224771"><title>SRG-APP-000427</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224771r1013827_rule" weight="10.0" severity="medium"><version>ISEC-06-001960</version><title>The ISEC7 SPHERE must allow the use of DOD PKI established certificate authorities for verification of the establishment of protected sessions.</title><description>&lt;VulnDiscussion&gt;Untrusted Certificate Authorities (CA) can issue certificates, but they may be issued by organizations or individuals that seek to compromise DOD systems or by organizations with insufficient security controls. If the CA used for verifying the certificate is not a DOD-approved CA, trust of this CA has not been established.
+
+The DOD will only accept PKI certificates obtained from a DOD-approved internal or external certificate authority. Reliance on CAs for the establishment of secure sessions includes, for example, the use of TLS certificates. 
+
+This requirement focuses on communications protection for the application session rather than for the network packet.
+
+This requirement applies to applications that utilize communications sessions. This includes, but is not limited to, web-based applications and Service-Oriented Architectures (SOA).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106505</ident><ident system="http://cyber.mil/legacy">V-97401</ident><ident system="http://cyber.mil/cci">CCI-002470</ident><fixtext fixref="F-26450r1013826_fix">Log in to the ISEC7 SPHERE Server.
+Navigate to %Install Drive%/Program Files/ISEC7 SPHERE/tomcat/bin.
+Run tomcat9w.bat and select the JAVA tab in the window that opens.
+Under "Java options" add "-Djavax.net.ssl.trustStoreType=Windows-ROOT" and select "OK".
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26450r1013826_fix" /><check system="C-26462r1013825_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Server.
+Navigate to %Install Drive%/Program Files/ISEC7 SPHERE/tomcat/bin.
+Run tomcat9w.bat and select the JAVA tab in the window that opens.
+Under "Java options" verify "-Djavax.net.ssl.trustStoreType=Windows-ROOT" is listed.
+
+If "-Djavax.net.ssl.trustStoreType=Windows-ROOT" is not listed, this is a finding.</check-content></check></Rule></Group><Group id="V-224772"><title>SRG-APP-000439</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224772r1013830_rule" weight="10.0" severity="medium"><version>ISEC-06-002030</version><title>The ISEC7 SPHERE must protect the confidentiality and integrity of transmitted information during preparation for transmission and during reception using cryptographic mechanisms.</title><description>&lt;VulnDiscussion&gt;Without protection of the transmitted information, confidentiality and integrity may be compromised since unprotected communications can be intercepted and either read or altered. 
+
+This requirement applies only to those applications that are either distributed or can allow access to data nonlocally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, TLS VPNs, or IPSEC.
+
+Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of organizational information can be accomplished by physical means (e.g., employing physical distribution systems) or by logical means (e.g., employing cryptographic techniques). If physical means of protection are employed, then logical means (cryptography) do not have to be employed, and vice versa.
+
+Satisfies: SRG-APP-000439, SRG-APP-000440, SRG-APP-000441, SRG-APP-000442&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106513</ident><ident system="http://cyber.mil/legacy">V-97409</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><ident system="http://cyber.mil/cci">CCI-002420</ident><ident system="http://cyber.mil/cci">CCI-002421</ident><ident system="http://cyber.mil/cci">CCI-002422</ident><fixtext fixref="F-26451r1013829_fix">Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Using the drop-down menu for protocols, select +TLSv1.2, +TLSv1.3.
+Click "Update".
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26451r1013829_fix" /><check system="C-26463r1013828_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Verify protocols is set to +TLSv1.2, +TLSv1.3.
+
+If protocols is not set to +TLSv1.2 or higher, this is a finding.</check-content></check></Rule></Group><Group id="V-224773"><title>SRG-APP-000516</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224773r1013833_rule" weight="10.0" severity="medium"><version>ISEC-06-002510</version><title>The ISEC7 SPHERE must be configured to leverage the enterprise directory service accounts and groups for ISEC7 SPHERE server admin identification and authentication.</title><description>&lt;VulnDiscussion&gt;A comprehensive account management process that includes automation helps to ensure the accounts designated as requiring attention are consistently and promptly addressed. If an attacker compromises an account, the entire infrastructure is at risk. Providing automated support functions for the management of accounts will ensure only active accounts will be granted access with the proper authorization levels. These objectives are best achieved by configuring the server to leverage an enterprise authentication mechanism (e.g., Microsoft Active Directory Kerberos).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106375</ident><ident system="http://cyber.mil/legacy">V-97261</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-26452r1013832_fix">Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; LDAP.
+Select "Add new LDAP".
+Provide the connection information for the enterprise LDAP connection.
+Check the box "Use for Login".
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Settings.
+Set Log in using (Default) to the enterprise connection.</fixtext><fix id="F-26452r1013832_fix" /><check system="C-26464r1013831_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; LDAP.
+Verify that a LDAP entry has been configured to the enterprise.
+Select "Edit" and confirm the "Use for Login" check box has been selected.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Settings.
+Verify that Log in using (Default) has been set to the enterprise connection.
+
+If a LDAP entry has not been configured to the enterprise or Log in using (Default) has not been set to the enterprise connection, this is a finding.</check-content></check></Rule></Group><Group id="V-224774"><title>SRG-APP-000516</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224774r1013835_rule" weight="10.0" severity="medium"><version>ISEC-06-002520</version><title>The ISEC7 SPHERE must configure the timeout for the console to be 15 minutes or less.</title><description>&lt;VulnDiscussion&gt;A session time-out lock is a temporary action taken when a user (MDM system administrator) stops work and moves away from the immediate physical vicinity of the information system but does not log out because of the temporary nature of the absence. Rather than relying on the user to manually lock their application session prior to vacating the vicinity, applications need to be able to identify when a user's application session has idled and take action to initiate the session lock.
+
+The session lock is implemented at the point where session activity can be determined and/or controlled. This is typically at the operating system level and results in a system lock but may be at the application level where the application interface window is secured instead.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106377</ident><ident system="http://cyber.mil/legacy">V-97263</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-26453r1004940_fix">Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Set the session timeout to the correct value of 15 minutes or less.</fixtext><fix id="F-26453r1004940_fix" /><check system="C-26465r1013834_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Validate the session timeout has been set to the correct value.
+
+Alternatively, allow the console to sit for 15 minutes and confirm that the user is prompted to log in once again when attempting to navigate to a new screen.
+
+If the SPHERE Console timeout has not been set for 15 minutes or less, this is a finding.</check-content></check></Rule></Group><Group id="V-224775"><title>SRG-APP-000516</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224775r1013838_rule" weight="10.0" severity="medium"><version>ISEC-06-002530</version><title>The ISEC7 SPHERE, Tomcat installation, and ISEC7 Suite monitor must be configured to use the Windows Trust Store for the storage of digital certificates and keys.</title><description>&lt;VulnDiscussion&gt;A trust store provides requisite encryption and access control to protect digital certificates from unauthorized access.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106379</ident><ident system="http://cyber.mil/legacy">V-97265</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-26454r1013837_fix">Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Select the type of Keystore to be used as: 
+Windows-MY
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26454r1013837_fix" /><check system="C-26466r1013836_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Verify that the type of Keystore being used is: Windows-MY 
+
+If the type of Keystore being used is not Windows-MY, this is a finding.</check-content></check></Rule></Group><Group id="V-224776"><title>SRG-APP-000585</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224776r1013841_rule" weight="10.0" severity="medium"><version>ISEC-06-002620</version><title>If cipher suites using pre-shared keys are used for device authentication, the ISEC7 SPHERE must have a minimum security strength of 112 bits or higher, must only be used in networks where both the client and server are government systems, must prohibit client negotiation to TLS 1.1, TLS 1.0, SSL 2.0, or SSL 3.0 and must prohibit or restrict the use of protocols that transmit unencrypted authentication information or use flawed cryptographic algorithm for transmission.</title><description>&lt;VulnDiscussion&gt;Pre-shared keys are symmetric keys that are already in place prior to the initiation of a Transport Layer Security (TLS) session (e.g., as the result of a manual distribution). In general, pre-shared keys should not be used. However, the use of pre-shared keys may be appropriate for some closed environments that have stung key management best practices. 
+
+Pre-shared keys may be appropriate for constrained environments with limited processing, memory, or power. If pre-shared keys are appropriate and supported, the following additional guidelines must be followed. Consult 800-52 for recommended pre-shared key cipher suites for pre-shared keys. Pre-shared keys must be distributed in a secure manner, such as a secure manual distribution or using a key establishment certificate. These cipher suites employ a pre-shared key for device authentication (for both the server and the client) and may also use RSA or ephemeral Diffie-Hellman (DHE) algorithms for key establishment. 
+
+Because these cipher suites require pre-shared keys, these suites are not generally applicable to classic secure website applications and are not expected to be widely supported in TLS clients or TLS servers. NIST suggests that these suites be considered in particular for infrastructure applications, particularly if frequent authentication of the network entities is required. These cipher suites may be used with TLS versions 1.1 or 1.2. Note that cipher suites using GCM, SHA-256, or SHA-384 are only available in TLS 1.2.
+
+Using older unauthorized versions or incorrectly configuring protocol negotiation makes the gateway vulnerable to known and unknown attacks that exploit vulnerabilities in this protocol.
+
+This requirement applies to Transport Layer Security (TLS) gateways (also known as Secure Sockets Layer [SSL] gateways), web servers, and web applications. Application protocols such as HTTPS and DNSSEC use TLS as the underlying security protocol and thus are in scope for this requirement. NIST SP 800-52 provides guidance for client negotiation, either on DOD-only or on public-facing servers.
+
+If unsecured protocols (lacking cryptographic mechanisms) are used for sessions, the contents of those sessions will be susceptible to manipulation, potentially allowing alteration and hijacking of maintenance sessions.
+
+Satisfies: SRG-APP-000585, SRG-APP-000590, SRG-APP-000560, SRG-APP-000645&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106515</ident><ident system="http://cyber.mil/legacy">V-97411</ident><ident system="http://cyber.mil/cci">CCI-000382</ident><ident system="http://cyber.mil/cci">CCI-001453</ident><ident system="http://cyber.mil/cci">CCI-001967</ident><fixtext fixref="F-26455r1013840_fix">Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Using the dropdown menu for protocols, select +TLSv1.2, +TLSv1.3.
+Click "Update".
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26455r1013840_fix" /><check system="C-26467r1013839_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Verify protocols is set to +TLSv1.2, +TLSv1.3.
+
+If protocols is not set to +TLSv1.2 or higher, this is a finding.</check-content></check></Rule></Group><Group id="V-224777"><title>SRG-APP-000610</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224777r1013844_rule" weight="10.0" severity="medium"><version>ISEC-06-002660</version><title>The ISEC7 SPHERE must use FIPS-validated SHA-2 or higher hash function for digital signature generation and verification (nonlegacy use).</title><description>&lt;VulnDiscussion&gt;Without cryptographic integrity protections, information can be altered by unauthorized users without detection.
+
+To protect the integrity of the authenticator and authentication mechanism used for the cryptographic module used by the network device, the application, operating system, or protocol must be configured to use one of the following hash functions for hashing the password or other authenticator in accordance with SP 800-131Ar1: SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256, SHA3-224, SHA3-256, SHA3-384, and SHA3-512.
+
+For digital signature verification, SP800-131Ar1 allows SHA-1 for legacy use where needed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106507</ident><ident system="http://cyber.mil/legacy">V-97403</ident><ident system="http://cyber.mil/cci">CCI-000803</ident><fixtext fixref="F-26456r1013843_fix">Submit a CSR for a DOD Issued Certificate with the private key.
+Retrieve the approved certificate from the issuing Certificate Authority.
+Set the friendly name on the certificate to https.
+
+Windows-MY:
+Open the Microsoft Management Console.
+Add the Certificates Snap-In for the ISEC7 Service Account.
+Navigate to the Personal Certificates Store.
+Import the certificate with Private key.
+Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Set the Keystore Type to Windows-MY.
+Restart the ISEC7 SPHERE Web service.
+
+JavaKeystore:
+Using a Keystore browser such as Portecle, open the ISEC7 SPHERE keystore.
+Enter the Keystore password when prompted.
+Delete the self-signed certificate in the keystore.
+Import the DOD issued certificate with the private key.
+Enter the key password when prompted.
+Enter the certificate alias as https when prompted.
+Save the keystore with the same keystore password.
+Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Verify the Keystore type is set to JavaKeystore PKCS12.
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26456r1013843_fix" /><check system="C-26468r1013842_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Confirm that the browser session is secured using a DOD issued certificate.
+
+Alternately, log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Identify which type of Keystore is being used.
+
+Windows MY: 
+Open the Microsoft Management Console.
+Add the Certificates Snap-In for the ISEC7 Service Account.
+Navigate to the Personal Certificates Store.
+Verify the certificate is issued by a DOD Trusted Certificate Authority.
+
+JavaKeystore PKCS12:
+Using a Keystore browser such as Portecle, open the ISEC7 SPHERE keystore.
+Enter the Keystore password when prompted.
+Open the installed certificate and verify it was issued by a DOD Trusted Certificate Authority.
+
+If certificates used by the server are not DOD issued certificates, this is a finding.</check-content></check></Rule></Group><Group id="V-224778"><title>SRG-APP-000630</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224778r1013847_rule" weight="10.0" severity="medium"><version>ISEC-06-002690</version><title>The ISEC7 SPHERE must use a FIPS-validated cryptographic module to provision digital signatures.</title><description>&lt;VulnDiscussion&gt;Without confidentiality protection mechanisms, unauthorized individuals may gain access to sensitive information via a remote access session. FIPS 140-2 precludes the use of invalidated cryptography for the cryptographic protection of sensitive or valuable data within Federal systems. Unvalidated cryptography is viewed by NIST as providing no protection to the information or data. In effect, the data would be considered unprotected plaintext. If the agency specifies that the information or data be cryptographically protected, then FIPS 140-2 is applicable. In essence, if cryptography is required, it must be validated. Cryptographic modules that have been approved for classified use may be used in lieu of modules that have been validated against the FIPS 140-2 standard. 
+
+The cryptographic module used must have one FIPS-validated encryption algorithm (i.e., validated Advanced Encryption Standard [AES]). This validated algorithm must be used for encryption for cryptographic security function within the product being evaluated.
+
+SPHERE is using the standard JCE module coming with OpenJDK 17 (included in installer) or Oracle JRE either legacy 1.8 or latest release (see https://openjdk.java.net/groups/security/). There are two module providers, IBM and RSA. The check/fix are written assuming the RSA module is used. Any FIPS 140-2 compliant JCE module (.jar) can be replaced and configured and used with SPHERE.
+
+Satisfies: SRG-APP-000630, SRG-APP-000412, SRG-APP-000514&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106517</ident><ident system="http://cyber.mil/legacy">V-97413</ident><ident system="http://cyber.mil/cci">CCI-002450</ident><ident system="http://cyber.mil/cci">CCI-003123</ident><fixtext fixref="F-26457r1013846_fix">Submit a CSR for a DOD Issued Certificate with the private key.
+Retrieve the approved certificate from the issuing Certificate Authority.
+Set the friendly name on the certificate to https.
+
+Windows-MY:
+Open the Microsoft Management Console.
+Add the Certificates Snap-In for the ISEC7 Service Account.
+Navigate to the Personal Certificates Store.
+Import the certificate with Private key.
+Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Set the Keystore Type to Windows-MY.
+Restart the ISEC7 SPHERE Web service.
+
+JavaKeystore:
+Using a Keystore browser such as Portecle, open the ISEC7 SPHERE keystore.
+Enter the Keystore password when prompted.
+Delete the self-signed certificate in the keystore.
+Import the DOD-issued certificate with the private key.
+Enter the key password when prompted.
+Enter the certificate alias as https when prompted.
+Save the keystore with the same keystore password.
+Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Verify the Keystore type is set to JavaKeystore PKCS12.
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26457r1013846_fix" /><check system="C-26469r1013845_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Confirm that the browser session is secured using a DOD issued certificate.
+
+Alternately, log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Identify which type of Keystore is being used.
+
+Windows MY: 
+Open the Microsoft Management Console.
+Add the Certificates Snap-In for the ISEC7 Service Account.
+Navigate to the Personal Certificates Store.
+Verify the certificate is issued by a DOD Trusted Certificate Authority.
+
+JavaKeystore PKCS12:
+Using a Keystore browser such as Portecle, open the ISEC7 SPHERE keystore.
+Enter the Keystore password when prompted.
+Open the installed certificate and verify it was issued by a DOD Trusted Certificate Authority.
+
+If certificates used by the server are not DOD issued certificates, this is a finding.</check-content></check></Rule></Group><Group id="V-224779"><title>SRG-APP-000635</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224779r1013850_rule" weight="10.0" severity="medium"><version>ISEC-06-002700</version><title>The ISEC7 SPHERE must use a FIPS 140-2-validated cryptographic module to implement encryption services for unclassified information requiring confidentiality, generate cryptographic hashes, and to configure web management tools with FIPS-validated Advanced Encryption Standard (AES) cipher block algorithm to protect the confidentiality of maintenance and diagnostic communications for nonlocal maintenance sessions.</title><description>&lt;VulnDiscussion&gt;FIPS 140-2 precludes the use of invalidated cryptography for the cryptographic protection of sensitive or valuable data within Federal systems. Unvalidated cryptography is viewed by NIST as providing no protection to the information or data. In effect, the data would be considered unprotected plaintext. If the agency specifies that the information or data be cryptographically protected, then FIPS 140-2 is applicable. In essence, if cryptography is required, it must be validated. Cryptographic modules that have been approved for classified use may be used in lieu of modules that have been validated against the FIPS 140-2 standard. 
+
+The cryptographic module used must have one FIPS-validated encryption algorithm (i.e., validated Advanced Encryption Standard [AES]). This validated algorithm must be used for encryption for cryptographic security function within the product being evaluated.
+
+SPHERE is using the standard JCE module coming with OpenJDK 17 (included in installer) or Oracle JRE either legacy 1.8 or latest release.
+see https://openjdk.java.net/groups/security/ There are two module providers, IBM and RSA. The check/fix are written assuming the RSA module is used.
+Any FIPS 140-2 compliant JCE module (.jar) can be replaced and configured and used with SPHERE.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106509</ident><ident system="http://cyber.mil/legacy">V-97405</ident><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-26458r1013849_fix">Submit a CSR for a DOD Issued Certificate with the private key.
+Retrieve the approved certificate from the issuing Certificate Authority.
+Set the friendly name on the certificate to https.
+
+Windows-MY:
+Open the Microsoft Management Console.
+Add the Certificates Snap-In for the ISEC7 Service Account.
+Navigate to the Personal Certificates Store.
+Import the certificate with Private key.
+Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Set the Keystore Type to Windows-MY.
+Restart the ISEC7 SPHERE Web service.
+
+JavaKeystore:
+Using a Keystore browser such as Portecle, open the ISEC7 SPHERE keystore.
+Enter the Keystore password when prompted.
+Delete the self-signed certificate in the keystore.
+Import the DOD issued certificate with the private key.
+Enter the key password when prompted.
+Enter the certificate alias as https when prompted.
+Save the keystore with the same keystore password.
+Log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Verify the Keystore type is set to JavaKeystore PKCS12.
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26458r1013849_fix" /><check system="C-26470r1013848_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE Console.
+Confirm that the browser session is secured using a DOD issued certificate.
+
+Alternately, log in to the ISEC7 SPHERE Console.
+Navigate to Administration &gt;&gt; Configuration &gt;&gt; Apache Tomcat Settings.
+Identify which type of Keystore is being used.
+
+Windows MY: 
+Open the Microsoft Management Console.
+Add the Certificates Snap-In for the ISEC7 Service Account.
+Navigate to the Personal Certificates Store.
+Verify the certificate is issued by a DOD Trusted Certificate Authority.
+
+JavaKeystore PKCS12:
+Using a Keystore browser such as Portecle, open the ISEC7 SPHERE keystore.
+Enter the Keystore password when prompted.
+Open the installed certificate and verify it was issued by a DOD Trusted Certificate Authority.
+
+If certificates used by the server are not DOD issued certificates, this is a finding.</check-content></check></Rule></Group><Group id="V-224780"><title>SRG-APP-000171</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224780r1013853_rule" weight="10.0" severity="medium"><version>ISEC-06-550150</version><title>The Apache Tomcat Manager Web app password must be cryptographically hashed with a DOD-approved algorithm.</title><description>&lt;VulnDiscussion&gt;The Apache Tomcat Manager Web app password is stored in plain text in CATALINA_HOME/conf/tomcat-users.xml and should be encrypted so it is not visible to an intruder. 
+
+Passwords need to be protected at all times, and encryption is the standard method for protecting passwords. If passwords are not encrypted, they can be plainly read and easily compromised. Use of passwords for authentication is intended only for limited situations and should not be used as a replacement for two-factor CAC-enabled authentication. 
+
+Examples of situations where a user ID and password might be used include:
+
+- When the user does not use a CAC and is not a current DOD employee, member of the military, or DOD contractor.
+
+- When a user has been officially designated as temporarily unable to present a CAC for some reason (lost, damaged, not yet issued, broken card reader) (i.e., Temporary Exception User) and to satisfy urgent organizational needs must be temporarily permitted to use user ID/password authentication until the problem with CAC use has been remedied.
+
+- When the application is publicly available and or hosting publicly releasable data requiring some degree of need-to-know protection.
+
+If the password is already encrypted and not a plaintext password, this meets this requirement. Implementation of this requirement requires configuration of FIPS-approved cipher block algorithm and block cipher modes for encryption. This method uses a one-way hashing encryption algorithm with a salt value to validate a user's password without having to store the actual password. Performance and time required to access are factors that must be considered, and the one-way hash is the most feasible means of securing the password and providing an acceptable measure of password security.
+
+Verifying the user knows a password is performed using a password verifier. In its simplest form, a password verifier is a computational function that is capable of creating a hash of a password and determining if the value provided by the user matches the hash. A more secure version of verifying a user knowing a password is to store the result of an iterating hash function and a large random salt value as follows:
+
+H0 = H(pwd, H(salt))
+Hn = H(Hn-1,H(salt))
+
+In the above, "n" is a cryptographically-strong random [*3] number. "Hn" is stored along with the salt. When the application wishes to verify that the user knows a password, it simply repeats the process and compares "Hn" with the stored "Hn". A salt is essentially a fixed-length cryptographically strong random value.
+
+Another method is using a keyed-hash message authentication code (HMAC). HMAC calculates a message authentication code via a cryptographic hash function used in conjunction with an encryption key. The key must be protected as with any private key.
+
+This requirement applies to all accounts including authentication server, AAA, and local account, including the root account and the account of last resort.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106381</ident><ident system="http://cyber.mil/legacy">V-97275</ident><ident system="http://cyber.mil/cci">CCI-004062</ident><fixtext fixref="F-26459r1013852_fix">To encrypt the Tomcat Manager Web app password, run the ISEC7 integrated installer or use the following manual procedure.
+
+Note: The ISEC7 integrated installer will configure SHA-512 as the hash algorithm, which is not available with the manual procedure. The manual procedure will configure SHA-256. Both are DOD approved.
+
+Log in to the ISEC7 SPHERE server.
+Browse to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf and open Tomcat-Users.xml
+Open the Command Prompt and CD to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\bin
+Execute the following command:
+
+digest -a SHA-256 -h org.apache.catalina.realm.MessageDigestCredentialHandler *
+
+* Where password is the 15 character password designated for the account.
+
+Copy the output, which is the SHA-256 hashed digest password.
+In Tomcat-Users.xml, add in the password for the user with the obfuscated output.
+
+ex: &lt;user password="310c55aa3d5b42217e7f0e80ce30467d$100000$529cceb1fbc80f4f461fc1bd56219d79d9c94d4a8fc46abad0646f27e753ff9e" roles="manager-gui,manager-script" username="admin"/&gt;
+
+Save the file.
+
+Open &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf\server.xml with Notepad.exe.
+Select Edit &gt;&gt; Find and search for CredentialHandler.
+Replace the text with: &lt;CredentialHandler className="org.apache.catalina.realm.MessageDigestCredentialHandler" algorithm="SHA-256" /&gt;
+Save the file.
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26459r1013852_fix" /><check system="C-26471r1013851_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify the Apache Tomcat Manager Web app password is hashed using SHA-256 (or SHA-512).
+
+Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf\
+Open tomcat-users.xml and verify the user password has been hashed with an obfuscated password.
+
+ex: &lt;user password="310c55aa3d5b42217e7f0e80ce30467d$100000$529cceb1fbc80f4f461fc1bd56219d79d9c94d4a8fc46abad0646f27e753ff9e" roles="manager-gui,manager-script" username="admin"/&gt;
+
+Open &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf\server.xml with Notepad.exe.
+
+Select Edit &gt;&gt; Find and search for CredentialHandler.
+
+Confirm the text: &lt;CredentialHandler algorithm="PBKDF2WithHmacSHA512" keyLength="256" /&gt;
+
+Close the file.
+
+If the Apache Tomcat Manager Web app password is not hashed using SHA-256 (or SHA-512), this is a finding.</check-content></check></Rule></Group><Group id="V-224781"><title>SRG-APP-000383</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224781r1013855_rule" weight="10.0" severity="medium"><version>ISEC-06-550200</version><title>All Web applications included with Apache Tomcat that are not required must be removed.</title><description>&lt;VulnDiscussion&gt;Removal of unneeded or nonsecure functions, ports, protocols, and services mitigate the risk of unauthorized connection of devices, unauthorized transfer of information, or other exploitation of these resources.
+
+The organization must perform a periodic scan/review of the application (as required by CCI-000384) and disable functions, ports, protocols, and services deemed to be unneeded or nonsecure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106383</ident><ident system="http://cyber.mil/legacy">V-97277</ident><ident system="http://cyber.mil/cci">CCI-001762</ident><fixtext fixref="F-26460r1013854_fix">To configure the CATALINA_HOME/webapps Tomcat administrative tool to remove all Web applications that are not required, run the ISEC7 integrated installer or use the following manual procedure: 
+
+Log in to the ISEC7 SPHERE server.
+Browse to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\webapps\
+Remove all folders in the directory with the exception of Manager and Host-Manager.</fixtext><fix id="F-26460r1013854_fix" /><check system="C-26472r1004960_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify CATALINA_HOME/webapps Tomcat administrative tool has been configured to remove all Web applications that are not required.
+
+Log in to the ISEC7 SPHERE server.
+Browse to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\webapps\
+Confirm all folders in the directory with the exception of Manager and Host-Manager have been removed.
+
+If the CATALINA_HOME/webapps Tomcat administrative tool has not been configured to remove all Web applications that are not required, this is a finding.</check-content></check></Rule></Group><Group id="V-224782"><title>SRG-APP-000383</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224782r1013858_rule" weight="10.0" severity="medium"><version>ISEC-06-550300</version><title>LockOutRealm must not be removed from Apache Tomcat.</title><description>&lt;VulnDiscussion&gt;LockOutRealm prevents brute force attacks against user passwords. Removal of unneeded or nonsecure functions, ports, protocols, and services mitigate the risk of unauthorized connection of devices, unauthorized transfer of information, or other exploitation of these resources.
+
+The organization must perform a periodic scan/review of the application (as required by CCI-000384) and disable functions, ports, protocols, and services deemed to be unneeded or nonsecure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106385</ident><ident system="http://cyber.mil/legacy">V-97279</ident><ident system="http://cyber.mil/cci">CCI-001762</ident><fixtext fixref="F-26461r1013857_fix">Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\Program Files\Isec7 SPHERE\Tomcat\Config
+Open the server.xml file with Notepad.
+Select Edit &gt;&gt; Find and search for LockOutRealm.
+Add the following line is in the server.xml file:
+
+&lt;Realm className="org.apache.catalina.realm.LockOutRealm"&gt;
+
+Restart the ISEC7 SPHERE Web service in the services.msc.</fixtext><fix id="F-26461r1013857_fix" /><check system="C-26473r1013856_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\Program Files\Isec7 SPHERE\Tomcat\Config
+Open the server.xml file with Notepad.
+Select Edit &gt;&gt; Find and search for LockOutRealm.
+Confirm the following line is in the server.xml file:
+
+&lt;Realm className="org.apache.catalina.realm.LockOutRealm"&gt;
+
+If it is not found or has been commented out, this is a finding.
+
+If the LockOutRealm has been removed and cannot be used, this is a finding.</check-content></check></Rule></Group><Group id="V-224783"><title>SRG-APP-000065</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224783r1013861_rule" weight="10.0" severity="medium"><version>ISEC-06-550305</version><title>The LockOutRealm must be configured with a login failure count of 3.</title><description>&lt;VulnDiscussion&gt;LockOutRealm prevents brute force attacks against user passwords. Removal of unneeded or nonsecure functions, ports, protocols, and services mitigate the risk of unauthorized connection of devices, unauthorized transfer of information, or other exploitation of these resources. Access to LockOutRealm must be configured to control login attempts by local accounts.
+
+The organization must perform a periodic scan/review of the application (as required by CCI-000384) and disable functions, ports, protocols, and services deemed to be unneeded or nonsecure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106387</ident><ident system="http://cyber.mil/legacy">V-97281</ident><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-26462r1013860_fix">Add failureCount parameter to the LockOutRealm configuration:
+
+Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\Program Files\Isec7 SPHERE\Tomcat\Config.
+Open the server.xml file with Notepad.
+Select Edit &gt;&gt; Find and search for LockOutRealm.
+Add the following line is in the server.xml file:
+
+&lt;Realm className="org.apache.catalina.realm.LockOutRealm" failureCount="3" lockOutTime="900" &gt;
+
+Restart the ISEC7 SPHERE Web service in the services.msc.</fixtext><fix id="F-26462r1013860_fix" /><check system="C-26474r1013859_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify the failureCount parameter is set to 3 in the LockOutRealm configuration.
+
+Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\Program Files\Isec7 SPHERE\Tomcat\Config.
+Open the server.xml file with Notepad.
+Select Edit &gt;&gt; Find and search for LockOutRealm.
+Verify the failureCount parameter is set to 3 in the following file:
+
+&lt;Realm className="org.apache.catalina.realm.LockOutRealm" failureCount="3" lockOutTime="900" &gt;
+
+If the failureCount parameter is not set to 3 in the LockOutRealm configuration, this is a finding.</check-content></check></Rule></Group><Group id="V-224784"><title>SRG-APP-000516</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224784r1013864_rule" weight="10.0" severity="medium"><version>ISEC-06-550310</version><title>The LockOutRealm must be configured with a login lockout time of 15 minutes.</title><description>&lt;VulnDiscussion&gt;LockOutRealm prevents brute force attacks against user passwords. Removal of unneeded or nonsecure functions, ports, protocols, and services mitigate the risk of unauthorized connection of devices, unauthorized transfer of information, or other exploitation of these resources. Access to LockOutRealm must be configured to control login attempts by local accounts.
+
+The organization must perform a periodic scan/review of the application (as required by CCI-000384) and disable functions, ports, protocols, and services deemed to be unneeded or nonsecure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106389</ident><ident system="http://cyber.mil/legacy">V-97283</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-26463r1013863_fix">Add lockOutTime parameter to the LockOutRealm configuration:
+
+Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\Program Files\Isec7 SPHERE\Tomcat\Config.
+Open the server.xml file with Notepad.
+Select Edit&gt;Find and search for LockOutRealm.
+Add the following line in the server.xml file:
+
+&lt;Realm className="org.apache.catalina.realm.LockOutRealm" failureCount="3" lockOutTime="900" &gt;
+
+Restart the ISEC7 SPHERE Web service in the services.msc.</fixtext><fix id="F-26463r1013863_fix" /><check system="C-26475r1013862_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify the lockOutTime parameter is set to 900 in the LockOutRealm configuration.
+
+Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\Program Files\Isec7 SPHERE\Tomcat\Config.
+Open the server.xml file with Notepad.
+Select Edit &gt;&gt; Find and search for LockOutRealm.
+Verify the lockOutTime parameter is set to 900 in the following file:
+
+&lt;Realm className="org.apache.catalina.realm.LockOutRealm" failureCount="3" lockOutTime="900" &gt;
+
+If the lockOutTime parameter is not set to 900 in the LockOutRealm configuration, this is a finding.</check-content></check></Rule></Group><Group id="V-224785"><title>SRG-APP-000164</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224785r1013867_rule" weight="10.0" severity="medium"><version>ISEC-06-550700</version><title>The Manager Web app password must be configured as follows: 
+-15 or more characters.
+-at least one lower case letter. 
+-at least one upper case letter. 
+-at least one number.
+-at least one special character.</title><description>&lt;VulnDiscussion&gt;The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised.
+
+Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password. The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised. 
+
+Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.
+
+Satisfies: SRG-APP-000164, SRG-APP-000166, SRG-APP-000169&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106519</ident><ident system="http://cyber.mil/legacy">V-97415</ident><ident system="http://cyber.mil/cci">CCI-004066</ident><fixtext fixref="F-26464r1013866_fix">To set a strong password on the Manager Web app, run the ISEC7 integrated installer or use the following manual procedure:
+
+Log in to the ISEC7 SPHERE server.
+Browse to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf and open Tomcat-Users.xml.
+Open the Command Prompt and CD to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\bin.
+Execute the following using sha command:
+
+digest –a sha password*
+
+*Where password is the 15 character password designated for the account.
+
+Copy the output, which is the hashed digest password.
+In Tomcat-Users.xml, add in the password for the user with the obfuscated output at &lt;user password="**", where ** is the obfuscated password.
+
+example: &lt;user password="310c55aa3d5b42217e7f0e80ce30467d$100000$529cceb1fbc80f4f461fc1bd56219d79d9c94d4a8fc46abad0646f27e753ff9e" roles="manager-gui,manager-script" username="admin"/&gt;
+
+Save the file.
+Open &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf\server.xml with Notepad.exe.
+Enter: &lt;Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+ resourceName="UserDatabase" digest=”sha”/&gt;
+Save the file.
+Restart the ISEC7 SPHERE Web service using the services.msc.
+
+Note: the password must meet the following complexity requirements:
+-15 or more characters.
+-at least one lower case letter.
+-at least one upper case letter.
+-at least one number.
+-at least one special character.</fixtext><fix id="F-26464r1013866_fix" /><check system="C-26476r1013865_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify the Manager Web app password has been configured as follows:
+-15 or more characters.
+-at least one lower case letter.
+-at least one upper case letter.
+-at least one number.
+-at least one special character.
+
+Log in to the ISEC7 SPHERE server.
+Open a Web browser and go to https://localhost/manager/html.
+Log in with the custom administrator login and password. Verify password entered meets complexity requirements.
+
+If the Manager Web app password has not been configured as required, this is a finding.</check-content></check></Rule></Group><Group id="V-224786"><title>SRG-APP-000439</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224786r1013870_rule" weight="10.0" severity="medium"><version>ISEC-06-550800</version><title>The ISEC7 SPHERE must configure Enable HTTPS to use HTTP over SSL in Apache Tomcat.</title><description>&lt;VulnDiscussion&gt;Without protection of the transmitted information, confidentiality and integrity may be compromised since unprotected communications can be intercepted and either read or altered. 
+
+This requirement applies only to those applications that are either distributed or can allow access to data nonlocally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, TLS VPNs, or IPSEC.
+
+Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of organizational information can be accomplished by physical means (e.g., employing physical distribution systems) or by logical means (e.g., employing cryptographic techniques). If physical means of protection are employed, then logical means (cryptography) do not have to be employed, and vice versa.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106391</ident><ident system="http://cyber.mil/legacy">V-97287</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-26465r1013869_fix">To enable HTTPS to use HTTP over SSL, run the ISEC7 integrated installer or use the following manual procedure:
+
+Log in to the ISEC7 SPHERE server.
+Open the server.xml file located at &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf with Notepad.exe.
+Select Edit &gt;&gt; Find and search for port="443".
+If the connector is not present add:
+
+ex: &lt;Connector SSLEnabled="true" maxParameterCount="1000" maxThreads="200" port="443" protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https" secure="true" sslImplementationName="org.apache.tomcat.util.net.jsse.JSSEImplementation"&gt;
+&lt;SSLHostConfig certificateVerification="false" ciphers="HIGH:!aNULL:!MD5:!3DES:!ARIA:!SHA:!CAMELLIA:!AES128-CCM8:!AES128-CCM:!AES256-CCM8:!AES256-CCM:!DHE" honorCipherOrder="true" protocols="+TLSv1.2,+TLSv1.3"&gt;
+&lt;Certificate certificateKeyAlias="https" certificateKeystoreFile="" certificateKeystoreType="Windows-MY"/&gt;
+&lt;/SSLHostConfig&gt;
+&lt;/Connector&gt;
+
+Modifying the certificateKeystoreFile path and certificateKeystorePassword as needed or leveraging the Windows-MY certificateKeystoreType instead.
+If the connector has been commented out, remove the comment characters.
+Save the file.
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26465r1013869_fix" /><check system="C-26477r1013868_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify Enable HTTPS has been configured to use HTTP over SSL:
+
+Open a web browser that is able to reach the ISEC7 SPHERE console.
+Verify that the address used has a prefix of "https://".
+
+Alternately:
+
+Log in to the ISEC7 SPHERE server.
+Open the server.xml file located at &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf with Notepad.exe.
+Select Edit &gt;&gt; Find and search for port="443".
+Confirm the connector is present and not commented out:
+
+If Enable HTTPS has not been configured to use HTTP over SSL, this is a finding.</check-content></check></Rule></Group><Group id="V-224788"><title>SRG-APP-000383</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224788r1013873_rule" weight="10.0" severity="medium"><version>ISEC-06-551200</version><title>Stack tracing must be disabled in Apache Tomcat.</title><description>&lt;VulnDiscussion&gt;The default error page shows a full stack trace, which is a disclosure of sensitive information. Removal of unneeded or nonsecure functions, ports, protocols, and services mitigate the risk of unauthorized connection of devices, unauthorized transfer of information, or other exploitation of these resources.
+
+The organization must perform a periodic scan/review of the application (as required by CCI-000384) and disable functions, ports, protocols, and services deemed to be unneeded or nonsecure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106395</ident><ident system="http://cyber.mil/legacy">V-97291</ident><ident system="http://cyber.mil/cci">CCI-001762</ident><fixtext fixref="F-26467r1013872_fix">Remove the default error page by updating the web application web.xml file.
+
+Navigate to the ISEC7 SPHERE installation directory: &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\web\WEB-INF.
+Open web.xml with Notepad.exe.
+Scroll to the end of the file.
+Remove the comment tags &lt;!--" and "--&gt;.
+
+&lt;!--   &lt;error-page&gt;
+    &lt;exception-type&gt;java.lang.Exception&lt;/exception-type&gt;
+    &lt;location&gt;/exception.jsp&lt;/location&gt;
+  &lt;/error-page&gt; --&gt;
+
+Save the changes.
+
+This will acknowledge to the user that an exception occurred without showing any trace or source information.</fixtext><fix id="F-26467r1013872_fix" /><check system="C-26479r1013871_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify stack tracing has been disabled in Apache Tomcat. 
+
+Navigate to the ISEC7 SPHERE installation directory: &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\web\WEB-INF.
+Open web.xml with Notepad.exe.
+Scroll to the end of the file.
+Confirm there are no comment tags &lt;!--" and "--&gt; and the following exists without comment tags:
+
+ &lt;error-page&gt;
+    &lt;exception-type&gt;java.lang.Exception&lt;/exception-type&gt;
+    &lt;location&gt;/exception.jsp&lt;/location&gt;
+  &lt;/error-page&gt;
+
+If stack tracing has not been disabled in Apache Tomcat, this is a finding.</check-content></check></Rule></Group><Group id="V-224789"><title>SRG-APP-000380</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224789r1013876_rule" weight="10.0" severity="medium"><version>ISEC-06-551300</version><title>The Apache Tomcat shutdown port must be disabled.</title><description>&lt;VulnDiscussion&gt;Tomcat uses a port (defaults to 8005) as a shutdown port. Someone could Telnet to the machine using this port and send the default command SHUTDOWN. Tomcat and all web apps would shut down in that case, which is a denial-of-service attack and would cause an unwanted service interruption.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106397</ident><ident system="http://cyber.mil/legacy">V-97293</ident><ident system="http://cyber.mil/cci">CCI-001813</ident><fixtext fixref="F-26468r1013875_fix">Log in to the SPHERE server.
+Browse to Program Files\Isec7 SPHERE\Tomcat\Conf.
+Open the server.xml with Notepad.exe.
+Select Edit &gt;&gt; Find, and then search for "Shutdown".
+Change the shutdown to "-1".
+
+example:  shutdown=-1
+
+Save the file and restart the Isec7 SPHERE Web service with the services.msc.</fixtext><fix id="F-26468r1013875_fix" /><check system="C-26480r1013874_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify the shutdown port is disabled.
+
+Log in to the SPHERE server.
+Browse to Program Files\Isec7 SPHERE\Tomcat\Conf.
+Open the server.xml with Notepad.exe.
+Select Edit &gt;&gt; Find, and then search for "Shutdown".
+Verify that the shutdown port has been disabled with entry below:
+
+shutdown="-1"
+
+If the shutdown port has not been disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-224790"><title>SRG-APP-000380</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224790r1013879_rule" weight="10.0" severity="medium"><version>ISEC-06-551310</version><title>The ISEC7 SPHERE must remove any unnecessary users or groups that have permissions to the server.xml file in Apache Tomcat.</title><description>&lt;VulnDiscussion&gt;Tomcat uses a port (defaults to 8005) as a shutdown port. Someone could Telnet to the machine using this port and send the default command SHUTDOWN. Tomcat and all web apps would shut down in that case, which is a denial-of-service attack and would cause an unwanted service interruption.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106399</ident><ident system="http://cyber.mil/legacy">V-97295</ident><ident system="http://cyber.mil/cci">CCI-001813</ident><fixtext fixref="F-26469r1013878_fix">Log in to the ISEC7 SPHERE server.
+Browse to ProgramFiles\Isec7 SPHERE\Tomcat\Conf and select Server.xml.
+Right-click and select "Properties".
+Select the security tab and remove unnecessary accounts or groups that have been granted permissions to the Server.xml file.</fixtext><fix id="F-26469r1013878_fix" /><check system="C-26481r1013877_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify unnecessary users or groups that have permissions to the Server.xml file in Apache Tomcat have been removed.
+
+Browse to ProgramFiles\Isec7 SPHERE\Tomcat\Conf and select "Server.xml".
+Right-click and select "Properties".
+Select the security tab and verify no unnecessary account or groups have been granted permissions to the file.
+Verify no unnecessary users or groups have permissions to the file.
+
+If unnecessary users or groups that have permissions to the Server.xml file in Apache Tomcat have not been removed, this is a finding.</check-content></check></Rule></Group><Group id="V-224791"><title>SRG-APP-000090</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224791r1013882_rule" weight="10.0" severity="medium"><version>ISEC-06-551400</version><title>A manager role must be assigned to the Apache Tomcat Web apps (Manager, Host-Manager).</title><description>&lt;VulnDiscussion&gt;If a manager role is not assigned to the Apache Tomcat web apps, the system administrator will not be able to manage and configure the web apps and security setting may not be configured correctly, with could leave the Apache Tomcat susceptible to attack by an intruder.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106401</ident><ident system="http://cyber.mil/legacy">V-97297</ident><ident system="http://cyber.mil/cci">CCI-000171</ident><fixtext fixref="F-26470r1013881_fix">To add a manager role to the Apache Tomcat Web apps (Manager, Host-Manager), run the ISEC7 integrated installer or use the following manual procedure:
+
+By default there are no users with the manager role assigned. To make use of the manager webapp, add a new role and user into the &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf\tomcat-users.xml file.
+
+Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf\.
+Add a user with the manager role to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf\tomcat-users.xml.
+
+example: &lt;user username="admin" roles="manager-gui,manager-script" ..../&gt;
+
+Save the file.</fixtext><fix id="F-26470r1013881_fix" /><check system="C-26482r1013880_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify a manager role has been assigned to the Apache Tomcat Web apps (Manager, Host-Manager).
+
+Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf\.
+Confirm a user with the manager role to &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf\tomcat-users.xml exists.
+
+example: &lt;user username="admin" roles="manager-gui,manager-script" ..../&gt;
+
+If  a manager role has not been assigned to the Apache Tomcat Web apps, this is a finding.</check-content></check></Rule></Group><Group id="V-224792"><title>SRG-APP-000439</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224792r1013885_rule" weight="10.0" severity="medium"><version>ISEC-06-551600</version><title>SSL must be enabled on Apache Tomcat.</title><description>&lt;VulnDiscussion&gt;Without protection of the transmitted information, confidentiality and integrity may be compromised since unprotected communications can be intercepted and either read or altered. 
+
+This requirement applies only to those applications that are either distributed or can allow access to data nonlocally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, TLS VPNs, or IPSEC.
+
+Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of organizational information can be accomplished by physical means (e.g., employing physical distribution systems) or by logical means (e.g., employing cryptographic techniques). If physical means of protection are employed, then logical means (cryptography) do not have to be employed, and vice versa.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106403</ident><ident system="http://cyber.mil/legacy">V-97299</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-26471r1013884_fix">To configure SSL support on Tomcat, run the ISEC7 integrated installer or use the following manual procedure:
+
+Log in to the ISEC7 SPHERE server.
+Open the server.xml file located at &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf with Notepad.exe.
+Select Edit &gt;&gt; Find and search for port="443".
+If the connector is not present add:
+
+ex: &lt;Connector SSLEnabled="true" maxParameterCount="1000" maxThreads="200" port="443" protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https" secure="true" sslImplementationName="org.apache.tomcat.util.net.jsse.JSSEImplementation"&gt;
+&lt;SSLHostConfig certificateVerification="false" ciphers="HIGH:!aNULL:!MD5:!3DES:!ARIA:!SHA:!CAMELLIA:!AES128-CCM8:!AES128-CCM:!AES256-CCM8:!AES256-CCM:!DHE" honorCipherOrder="true" protocols="+TLSv1.2,+TLSv1.3"&gt;
+&lt;Certificate certificateKeyAlias="https" certificateKeystoreFile="" certificateKeystoreType="Windows-MY"/&gt;
+&lt;/SSLHostConfig&gt;
+&lt;/Connector&gt;
+
+Modifying the certificateKeystoreFile path and certificateKeystorePassword as needed or leveraging the Windows-MY certificateKeystoreType instead.
+If the connector has been commented out, remove the comment characters.
+Save the file.
+Restart the ISEC7 SPHERE Web service.</fixtext><fix id="F-26471r1013884_fix" /><check system="C-26483r1013883_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>To configure SSL support on Tomcat, run the ISEC7 integrated installer or use the following manual procedure:
+
+Log in to the ISEC7 SPHERE server.
+Open the server.xml file located at &lt;Drive&gt;:\Program Files\ISEC7 SPHERE\Tomcat\conf with Notepad.exe.
+Select Edit &gt;&gt; Find and search for port="443".
+If the connector is not present add:
+
+ex: &lt;Connector SSLEnabled="true" maxParameterCount="1000" maxThreads="200" port="443" protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https" secure="true" sslImplementationName="org.apache.tomcat.util.net.jsse.JSSEImplementation"&gt;
+&lt;SSLHostConfig certificateVerification="false" ciphers="HIGH:!aNULL:!MD5:!3DES:!ARIA:!SHA:!CAMELLIA:!AES128-CCM8:!AES128-CCM:!AES256-CCM8:!AES256-CCM:!DHE" honorCipherOrder="true" protocols="+TLSv1.2,+TLSv1.3"&gt;
+&lt;Certificate certificateKeyAlias="https" certificateKeystoreFile="" certificateKeystoreType="Windows-MY"/&gt;
+&lt;/SSLHostConfig&gt;
+&lt;/Connector&gt;
+
+Modifying the certificateKeystoreFile path and certificateKeystorePassword as needed or leveraging the Windows-MY certificateKeystoreType instead.
+If the connector has been commented out, remove the comment characters.
+Save the file.
+Restart the ISEC7 SPHERE Web service.</check-content></check></Rule></Group><Group id="V-224793"><title>SRG-APP-000439</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224793r1013888_rule" weight="10.0" severity="medium"><version>ISEC-06-551700</version><title>Tomcat SSL must be restricted except for ISEC7 SPHERE tasks.</title><description>&lt;VulnDiscussion&gt;Restricting the use of SSL helps ensure only authorized users and processes have access to Tomcat Web apps and reduces the attack surface of the ISEC7 EMM Suite. Without protection of the transmitted information, confidentiality and integrity may be compromised since unprotected communications can be intercepted and either read or altered. 
+
+This requirement applies only to those applications that are either distributed or can allow access to data nonlocally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, TLS VPNs, or IPSEC.
+
+Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of organizational information can be accomplished by physical means (e.g., employing physical distribution systems) or by logical means (e.g., employing cryptographic techniques). If physical means of protection are employed, then logical means (cryptography) do not have to be employed, and vice versa.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-106405</ident><ident system="http://cyber.mil/legacy">V-97301</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-26472r1013887_fix">To restrict Tomcat SSL to only ISEC7 SPHERE tasks, run the ISEC7 integrated installer or use the following manual procedure:
+
+To restrict SSL for all users except for agent task, the user needs to add a security constraint tag to &lt;Drive&gt;:\ProgramFiles\ISEC7 SPHERE\Tomcat\conf\web.xml.
+
+Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\ProgramFiles\ISEC7 SPHERE\Tomcat\conf\.
+Edit the web.xml file with Notepad.exe.
+Add the following entry:
+
+&lt;security-constraint&gt;
+ &lt;web-resource-collection&gt;
+  &lt;web-resource-name&gt;Unsecure&lt;/web-resource-name&gt;
+  &lt;!-- Agent --&gt;
+  &lt;url-pattern&gt;/BNator/agent/*&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/app/agent/*&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/app/admin/agentinstaller.jnlp&lt;/url-pattern&gt;
+  &lt;!-- Client --&gt;
+  &lt;url-pattern&gt;/app/clients/*&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/app/data/*&lt;/url-pattern&gt;
+  &lt;!-- Remote Control --&gt;
+  &lt;url-pattern&gt;/rc/*&lt;/url-pattern&gt;
+  &lt;!-- Traffic Push --&gt;
+  &lt;url-pattern&gt;/BNator/uss/trafficinfo/*&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/BNator/data/mds/trafficpush&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/BNator/favorites/*&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/app/resource/*&lt;/url-pattern&gt;
+ &lt;/web-resource-collection&gt;
+&lt;/security-constraint&gt;
+
+&lt;security-constraint&gt;
+ &lt;web-resource-collection&gt;
+  &lt;web-resource-name&gt;Secure&lt;/web-resource-name&gt;
+  &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+ &lt;/web-resource-collection&gt;
+
+ &lt;user-data-constraint&gt;
+  &lt;transport-guarantee&gt;CONFIDENTIAL&lt;/transport-guarantee&gt;
+ &lt;/user-data-constraint&gt;
+&lt;/security-constraint&gt;</fixtext><fix id="F-26472r1013887_fix" /><check system="C-26484r1013886_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Verify Tomcat SSL is restricted to only ISEC7 SPHERE tasks.
+
+Log in to the ISEC7 SPHERE server.
+Navigate to &lt;Drive&gt;:\ProgramFiles\ISEC7 SPHERE\Tomcat\conf\.
+Edit the web.xml file with Notepad.exe.
+Verify the following entries are present:
+
+&lt;security-constraint&gt;
+ &lt;web-resource-collection&gt;
+  &lt;web-resource-name&gt;Unsecure&lt;/web-resource-name&gt;
+  &lt;!-- Agent --&gt;
+  &lt;url-pattern&gt;/BNator/agent/*&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/app/agent/*&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/app/admin/agentinstaller.jnlp&lt;/url-pattern&gt;
+  &lt;!-- Client --&gt;
+  &lt;url-pattern&gt;/app/clients/*&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/app/data/*&lt;/url-pattern&gt;
+  &lt;!-- Remote Control --&gt;
+  &lt;url-pattern&gt;/rc/*&lt;/url-pattern&gt;
+  &lt;!-- Traffic Push --&gt;
+  &lt;url-pattern&gt;/BNator/uss/trafficinfo/*&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/BNator/data/mds/trafficpush&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/BNator/favorites/*&lt;/url-pattern&gt;
+  &lt;url-pattern&gt;/app/resource/*&lt;/url-pattern&gt;
+ &lt;/web-resource-collection&gt;
+&lt;/security-constraint&gt;
+
+&lt;security-constraint&gt;
+ &lt;web-resource-collection&gt;
+  &lt;web-resource-name&gt;Secure&lt;/web-resource-name&gt;
+  &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+ &lt;/web-resource-collection&gt;
+
+ &lt;user-data-constraint&gt;
+  &lt;transport-guarantee&gt;CONFIDENTIAL&lt;/transport-guarantee&gt;
+ &lt;/user-data-constraint&gt;
+&lt;/security-constraint&gt;
+
+If Tomcat SSL is not restricted to only ISEC7 SPHERE tasks, this is a finding.</check-content></check></Rule></Group><Group id="V-225096"><title>SRG-APP-000456</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225096r1013891_rule" weight="10.0" severity="high"><version>ISEC-00-000100</version><title>The ISEC7 Sphere server must be maintained at a supported version.</title><description>&lt;VulnDiscussion&gt;Versions of ISEC7 Sphere server are maintained by ISEC7 for specific periods of time. Unsupported versions will not receive security updates for new vulnerabilities which leaves them subject to exploitation.
+
+A list of supported ISEC7 Sphere server versions is maintained by ISEC7 here: https://www.isec7-us.com/emm-suite-mobile-monitoring.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target ISEC7 Sphere</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>ISEC7 Sphere</dc:subject><dc:identifier>4200</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002605</ident><fixtext fixref="F-26776r1013890_fix">The administrator must check https://www.isec7-us.com/emm-suite-mobile-monitoring for the latest supported and unsupported versions of software.
+
+Once confirmed, the administrator must update ISEC7 Sphere server to the latest supported version.</fixtext><fix id="F-26776r1013890_fix" /><check system="C-26788r1013889_chk"><check-content-ref href="ISEC7_Sphere_STIG.xml" name="M" /><check-content>Review the ISEC7 Sphere server version after logging into the console. Correlate the version with the latest supported version of ISEC7 Sphere server.
+
+If the installed version of ISEC7 Sphere server is not a supported version, this is a finding.</check-content></check></Rule></Group></Benchmark>

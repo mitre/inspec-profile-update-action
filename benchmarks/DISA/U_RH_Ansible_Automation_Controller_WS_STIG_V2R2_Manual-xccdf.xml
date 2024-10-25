@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="RH_Ansible_Automation_Controller_Web_Server_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-08-27">accepted</status><title>Red Hat Ansible Automation Controller Web Server Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 24 Oct 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>2</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256940" selected="true" /><select idref="V-256941" selected="true" /><select idref="V-256942" selected="true" /><select idref="V-256943" selected="true" /><select idref="V-256944" selected="true" /><select idref="V-256945" selected="true" /><select idref="V-256946" selected="true" /><select idref="V-256947" selected="true" /><select idref="V-256948" selected="true" /><select idref="V-256949" selected="true" /><select idref="V-256950" selected="true" /><select idref="V-256951" selected="true" /><select idref="V-256952" selected="true" /><select idref="V-256953" selected="true" /><select idref="V-256954" selected="true" /><select idref="V-256955" selected="true" /><select idref="V-256956" selected="true" /><select idref="V-256957" selected="true" /><select idref="V-256958" selected="true" /><select idref="V-256959" selected="true" /><select idref="V-256960" selected="true" /><select idref="V-256961" selected="true" /><select idref="V-256962" selected="true" /><select idref="V-256963" selected="true" /><select idref="V-256964" selected="true" /><select idref="V-256965" selected="true" /><select idref="V-256966" selected="true" /><select idref="V-256967" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256940" selected="true" /><select idref="V-256941" selected="true" /><select idref="V-256942" selected="true" /><select idref="V-256943" selected="true" /><select idref="V-256944" selected="true" /><select idref="V-256945" selected="true" /><select idref="V-256946" selected="true" /><select idref="V-256947" selected="true" /><select idref="V-256948" selected="true" /><select idref="V-256949" selected="true" /><select idref="V-256950" selected="true" /><select idref="V-256951" selected="true" /><select idref="V-256952" selected="true" /><select idref="V-256953" selected="true" /><select idref="V-256954" selected="true" /><select idref="V-256955" selected="true" /><select idref="V-256956" selected="true" /><select idref="V-256957" selected="true" /><select idref="V-256958" selected="true" /><select idref="V-256959" selected="true" /><select idref="V-256960" selected="true" /><select idref="V-256961" selected="true" /><select idref="V-256962" selected="true" /><select idref="V-256963" selected="true" /><select idref="V-256964" selected="true" /><select idref="V-256965" selected="true" /><select idref="V-256966" selected="true" /><select idref="V-256967" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256940" selected="true" /><select idref="V-256941" selected="true" /><select idref="V-256942" selected="true" /><select idref="V-256943" selected="true" /><select idref="V-256944" selected="true" /><select idref="V-256945" selected="true" /><select idref="V-256946" selected="true" /><select idref="V-256947" selected="true" /><select idref="V-256948" selected="true" /><select idref="V-256949" selected="true" /><select idref="V-256950" selected="true" /><select idref="V-256951" selected="true" /><select idref="V-256952" selected="true" /><select idref="V-256953" selected="true" /><select idref="V-256954" selected="true" /><select idref="V-256955" selected="true" /><select idref="V-256956" selected="true" /><select idref="V-256957" selected="true" /><select idref="V-256958" selected="true" /><select idref="V-256959" selected="true" /><select idref="V-256960" selected="true" /><select idref="V-256961" selected="true" /><select idref="V-256962" selected="true" /><select idref="V-256963" selected="true" /><select idref="V-256964" selected="true" /><select idref="V-256965" selected="true" /><select idref="V-256966" selected="true" /><select idref="V-256967" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256940" selected="true" /><select idref="V-256941" selected="true" /><select idref="V-256942" selected="true" /><select idref="V-256943" selected="true" /><select idref="V-256944" selected="true" /><select idref="V-256945" selected="true" /><select idref="V-256946" selected="true" /><select idref="V-256947" selected="true" /><select idref="V-256948" selected="true" /><select idref="V-256949" selected="true" /><select idref="V-256950" selected="true" /><select idref="V-256951" selected="true" /><select idref="V-256952" selected="true" /><select idref="V-256953" selected="true" /><select idref="V-256954" selected="true" /><select idref="V-256955" selected="true" /><select idref="V-256956" selected="true" /><select idref="V-256957" selected="true" /><select idref="V-256958" selected="true" /><select idref="V-256959" selected="true" /><select idref="V-256960" selected="true" /><select idref="V-256961" selected="true" /><select idref="V-256962" selected="true" /><select idref="V-256963" selected="true" /><select idref="V-256964" selected="true" /><select idref="V-256965" selected="true" /><select idref="V-256966" selected="true" /><select idref="V-256967" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256940" selected="true" /><select idref="V-256941" selected="true" /><select idref="V-256942" selected="true" /><select idref="V-256943" selected="true" /><select idref="V-256944" selected="true" /><select idref="V-256945" selected="true" /><select idref="V-256946" selected="true" /><select idref="V-256947" selected="true" /><select idref="V-256948" selected="true" /><select idref="V-256949" selected="true" /><select idref="V-256950" selected="true" /><select idref="V-256951" selected="true" /><select idref="V-256952" selected="true" /><select idref="V-256953" selected="true" /><select idref="V-256954" selected="true" /><select idref="V-256955" selected="true" /><select idref="V-256956" selected="true" /><select idref="V-256957" selected="true" /><select idref="V-256958" selected="true" /><select idref="V-256959" selected="true" /><select idref="V-256960" selected="true" /><select idref="V-256961" selected="true" /><select idref="V-256962" selected="true" /><select idref="V-256963" selected="true" /><select idref="V-256964" selected="true" /><select idref="V-256965" selected="true" /><select idref="V-256966" selected="true" /><select idref="V-256967" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256940" selected="true" /><select idref="V-256941" selected="true" /><select idref="V-256942" selected="true" /><select idref="V-256943" selected="true" /><select idref="V-256944" selected="true" /><select idref="V-256945" selected="true" /><select idref="V-256946" selected="true" /><select idref="V-256947" selected="true" /><select idref="V-256948" selected="true" /><select idref="V-256949" selected="true" /><select idref="V-256950" selected="true" /><select idref="V-256951" selected="true" /><select idref="V-256952" selected="true" /><select idref="V-256953" selected="true" /><select idref="V-256954" selected="true" /><select idref="V-256955" selected="true" /><select idref="V-256956" selected="true" /><select idref="V-256957" selected="true" /><select idref="V-256958" selected="true" /><select idref="V-256959" selected="true" /><select idref="V-256960" selected="true" /><select idref="V-256961" selected="true" /><select idref="V-256962" selected="true" /><select idref="V-256963" selected="true" /><select idref="V-256964" selected="true" /><select idref="V-256965" selected="true" /><select idref="V-256966" selected="true" /><select idref="V-256967" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256940" selected="true" /><select idref="V-256941" selected="true" /><select idref="V-256942" selected="true" /><select idref="V-256943" selected="true" /><select idref="V-256944" selected="true" /><select idref="V-256945" selected="true" /><select idref="V-256946" selected="true" /><select idref="V-256947" selected="true" /><select idref="V-256948" selected="true" /><select idref="V-256949" selected="true" /><select idref="V-256950" selected="true" /><select idref="V-256951" selected="true" /><select idref="V-256952" selected="true" /><select idref="V-256953" selected="true" /><select idref="V-256954" selected="true" /><select idref="V-256955" selected="true" /><select idref="V-256956" selected="true" /><select idref="V-256957" selected="true" /><select idref="V-256958" selected="true" /><select idref="V-256959" selected="true" /><select idref="V-256960" selected="true" /><select idref="V-256961" selected="true" /><select idref="V-256962" selected="true" /><select idref="V-256963" selected="true" /><select idref="V-256964" selected="true" /><select idref="V-256965" selected="true" /><select idref="V-256966" selected="true" /><select idref="V-256967" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256940" selected="true" /><select idref="V-256941" selected="true" /><select idref="V-256942" selected="true" /><select idref="V-256943" selected="true" /><select idref="V-256944" selected="true" /><select idref="V-256945" selected="true" /><select idref="V-256946" selected="true" /><select idref="V-256947" selected="true" /><select idref="V-256948" selected="true" /><select idref="V-256949" selected="true" /><select idref="V-256950" selected="true" /><select idref="V-256951" selected="true" /><select idref="V-256952" selected="true" /><select idref="V-256953" selected="true" /><select idref="V-256954" selected="true" /><select idref="V-256955" selected="true" /><select idref="V-256956" selected="true" /><select idref="V-256957" selected="true" /><select idref="V-256958" selected="true" /><select idref="V-256959" selected="true" /><select idref="V-256960" selected="true" /><select idref="V-256961" selected="true" /><select idref="V-256962" selected="true" /><select idref="V-256963" selected="true" /><select idref="V-256964" selected="true" /><select idref="V-256965" selected="true" /><select idref="V-256966" selected="true" /><select idref="V-256967" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-256940" selected="true" /><select idref="V-256941" selected="true" /><select idref="V-256942" selected="true" /><select idref="V-256943" selected="true" /><select idref="V-256944" selected="true" /><select idref="V-256945" selected="true" /><select idref="V-256946" selected="true" /><select idref="V-256947" selected="true" /><select idref="V-256948" selected="true" /><select idref="V-256949" selected="true" /><select idref="V-256950" selected="true" /><select idref="V-256951" selected="true" /><select idref="V-256952" selected="true" /><select idref="V-256953" selected="true" /><select idref="V-256954" selected="true" /><select idref="V-256955" selected="true" /><select idref="V-256956" selected="true" /><select idref="V-256957" selected="true" /><select idref="V-256958" selected="true" /><select idref="V-256959" selected="true" /><select idref="V-256960" selected="true" /><select idref="V-256961" selected="true" /><select idref="V-256962" selected="true" /><select idref="V-256963" selected="true" /><select idref="V-256964" selected="true" /><select idref="V-256965" selected="true" /><select idref="V-256966" selected="true" /><select idref="V-256967" selected="true" /></Profile><Group id="V-256940"><title>SRG-APP-000001-WSR-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256940r960735_rule" weight="10.0" severity="medium"><version>APWS-AT-000020</version><title>The Automation Controller web server must manage sessions.</title><description>&lt;VulnDiscussion&gt;Session management on client and server is required to protect identity and authorization information.
+
+Sessions for the Automation Controller web server, if compromised, could lead to execution of jobs on remote endpoints as if authenticated.
+
+Satisfies: SRG-APP-000001-WSR-000002, SRG-APP-000001-WSR-000001, SRG-APP-000295-WSR-000012, SRG-APP-000295-WSR-000134&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><ident system="http://cyber.mil/cci">CCI-002361</ident><fixtext fixref="F-60557r903541_fix">Log in to Automation Controller as an administrator and navigate to Settings &gt;&gt; System &gt;&gt; Miscellaneous Authentication.
+
+Click "Edit".
+
+Set the following parameters:
+
+OAuth 2 Timeout Settings &lt; 1800 seconds. 
+
+The maximum number of simultaneous logged session must equal 0 or the organizationally defined maximum.
+
+Disable the built-in authentication system = ON
+
+Enable HTTP Basic Auth = Off
+
+Access Token Expiration = 31536000000
+
+Authorization Code Expiration = 600
+
+Refresh Token Expiration = 2628000
+
+Allow External Users to Create OAuth2 Tokens = Off
+
+Login redirect override URL = Not Configured or Blank
+
+Social Auth Organization Map = Null
+
+Social Auth Team Map = Null
+
+Social Auth User Fields = Null
+
+Click "Save".</fixtext><fix id="F-60557r903541_fix" /><check system="C-60615r903545_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>Log in to Automation Controller as an administrator and navigate to Settings &gt;&gt; System &gt;&gt; Miscellaneous Authentication.
+
+The following parameters must be set:
+
+OAuth 2 Timeout Settings &lt; 1800 seconds (No more than 30 minutes). 
+
+The maximum number of simultaneous logged session must not be less than 0 (The default is -1) and must not match the organizationally defined maximum.
+
+Disable the built-in authentication system = ON
+
+Enable HTTP Basic Auth = Off
+
+OAuth 2 Timeout settings: 
+
+"ACCESS_TOKEN_EXPIRE_SECONDS": 31536000000,
+ "AUTHORIZATION_CODE_EXPIRE_SECONDS": 600,
+ "REFRESH_TOKEN_EXPIRE_SECONDS": 2628000
+
+Allow External Users to Create OAuth2 Tokens = Off
+
+Login redirect override URL = Not Configured or Blank
+
+Social Auth Organization Map = Null
+
+Social Auth Team Map = Null
+
+Social Auth User Fields = Null
+
+If any of these settings are incorrect, this is a finding.</check-content></check></Rule></Group><Group id="V-256941"><title>SRG-APP-000014-WSR-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256941r1016548_rule" weight="10.0" severity="medium"><version>APWS-AT-000030</version><title>The Automation Controller servers must use encrypted communication for all channels given the high impact of those services to an organization's infrastructure.</title><description>&lt;VulnDiscussion&gt;The Automation Controller communicates information about configuration of other information systems through its web interface and API, storing records about this information in a database. Although large portions are sanitized of sensitive information, due to the nature of this kind of information, it must always be maximally protected. Leaked details of configuration for DOD enterprise information systems could lead to compromise, so all access to and from the Automation Controller servers must be encrypted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000068</ident><fixtext fixref="F-60558r1016547_fix">As a System Administrator for each Automation Controller Web Server, reconfigure the TLS versions or ciphers used in Automation Controller's web server:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' `
+sudo -e ${NGINXCONF}
+
+Replace the line beginning with "ssl_protocols" to match (note the leading spaces):
+"        ssl_protocols TLSv1.2;"
+
+If the "ssl_protocols" variable does not exist, add the line after the line beginning with "ssl_ciphers".
+
+Replace the line beginning with "ssl_ciphers" to match (note the leading spaces):
+"        ssl_ciphers PROFILE=SYSTEM;"
+
+Save the file and exit the text editor. To apply these changes to the running service immediately, restart the NGINX service with the following command:
+
+sudo systemctl restart nginx
+
+Database TLS Configuration Fix:
+
+Locate the inventory file used to install Ansible Automation Platform and edit it, ensuring that the following variables are set:
+
+pg_sslmode='verify-full'
+postgres_use_ssl=true
+
+Run the setup.sh command in the installer bundle directory to reconfigure the controller to use the new setting:
+
+sudo ./setup.sh</fixtext><fix id="F-60558r1016547_fix" /><check system="C-60616r1016546_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server, a TLS Configuration Check validates the TLS version used by the server:
+
+NGINXCONF=$(nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}')
+sudo grep ssl_protocols ${NGINXCONF} | grep 'ssl_protocols TLSv1.2;' || echo "FAILED"
+
+If "FAILED" is displayed, this is a finding.
+
+A TLS Configuration Check validates the ciphers used for the web server are provided by the underlying host operating system:
+
+NGINXCONF=$(nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}')
+sudo grep ssl_ciphers ${NGINXCONF} | grep -q '^  *ssl_ciphers PROFILE=SYSTEM;' || echo "FAILED"
+
+If "FAILED" is displayed, this is a finding.
+
+A Database TLS Configuration Check validates connections to required resources use TLS connections.
+
+Automation Controller may be configured to connect to PostgreSQL databases with or without TLS. The Administrator must check the contents of the file at /etc/tower/conf.d/postgres.py with root permissions to determine if pg_sslmode was configured with "verify-full" for any external databases at the time of installation.
+
+Execute the following command to test the client-side database configuration:
+
+sudo python3 -c 'exec(open("/etc/tower/conf.d/postgres.py").read()); [print(DATABASES[db]["OPTIONS"]["sslmode"]) for db in DATABASES if DATABASES[db]["HOST"] not in ("127.0.0.1", "localhost")]' | grep 'verify-full' || echo "FAILED"
+
+If "FAILED" is displayed, this is a finding.
+
+Execute the following commands to test the server-side database configuration:
+
+PGCON=`sudo python3 -c 'exec(open("/etc/tower/conf.d/postgres.py").read());print(":".join((DATABASES["default"]["HOST"],DATABASES["default"]["PORT"])))'`
+psql "postgresql://${PGCON}/postgres?sslmode=require" 2&gt;/dev/null || echo FAILED
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256942"><title>SRG-APP-000015-WSR-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256942r960762_rule" weight="10.0" severity="medium"><version>APWS-AT-000040</version><title>The Automation Controller NGINX web server must use cryptography on all remote connections.</title><description>&lt;VulnDiscussion&gt;Nondisplayed data on a web page may expose information that could put the organization at risk and negatively affect data integrity.
+
+Automation Controller's web server must be configured such that all connections, regardless of their origin, between the server and the user are encrypted using cryptography.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001453</ident><fixtext fixref="F-60559r902339_fix">As a System Administrator, locate the inventory file used to install Ansible Automation Platform (usually in the installer directory). Edit this file and ensure the "nginx_disable_https" variable is absent or is set to "false".
+
+Run the setup.sh command in the installer directory to reconfigure the controller to use the new setting:
+
+sudo ./setup.sh</fixtext><fix id="F-60559r902339_fix" /><check system="C-60617r903519_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As any user, execute the following command, substituting "&lt;controller_fqdn&gt;" for the hostname of the Automation Controller:
+
+curl -s -w '%{redirect_url}\n' -o /dev/null http://&lt;controller_fqdn&gt;/api/v2/ping/  | grep '^https' &gt;/dev/null || echo FAILED
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256943"><title>SRG-APP-000016-WSR-000005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256943r960765_rule" weight="10.0" severity="medium"><version>APWS-AT-000090</version><title>The Automation Controller must generate the appropriate log records.</title><description>&lt;VulnDiscussion&gt;Automation Controller's web server must log all details related to user sessions in support of troubleshooting, debugging, and forensic analysis.
+
+Without a data logging feature, the organization loses an important auditing and analysis tool for event investigations.
+
+Satisfies: SRG-APP-000016-WSR-000005, SRG-APP-000095-WSR-000056, SRG-APP-000096-WSR-000057, SRG-APP-000097-WSR-000058, SRG-APP-000098-WSR-000059, SRG-APP-000098-WSR-000060, SRG-APP-000099-WSR-000061, SRG-APP-000100-WSR-000064&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000067</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000132</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><ident system="http://cyber.mil/cci">CCI-001487</ident><fixtext fixref="F-60560r903520_fix">As a System Administrator, for each Automation Controller host, navigate to console Settings &gt;&gt; System &gt;&gt; Miscellaneous System.
+
+Click "Edit".
+
+Set the following:
+Enable Activity Stream = On
+
+Enable Activity Stream for Inventory Sync = On
+
+Organization Admins Can Manage Users and Teams = On
+
+All Users Visible to Organization Admins = On
+
+Click "Save".</fixtext><fix id="F-60560r903520_fix" /><check system="C-60618r902341_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>For each Automation Controller host, determine whether the web server is logging all content related to user sessions.
+
+Log in to Automation Controller as an administrator and navigate to console Settings &gt;&gt; System &gt;&gt; Miscellaneous System.
+
+Verify the following settings:
+
+Enable Activity Stream = On
+
+Enable Activity Stream for Inventory Sync = On
+
+Organization Admins Can Manage Users and Teams = On
+
+All Users Visible to Organization Admins = On
+
+If the configuration settings are not as above, this is a finding.</check-content></check></Rule></Group><Group id="V-256944"><title>SRG-APP-000131-WSR-000051</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256944r1016556_rule" weight="10.0" severity="high"><version>APWS-AT-000230</version><title>All Automation Controller NGINX front-end web server files must be verified for their integrity (e.g., checksums and hashes) before becoming part of the production web server.</title><description>&lt;VulnDiscussion&gt;Being able to verify that a patch, upgrade, certificate, etc., being added to the web server is unchanged from the producer of the file is essential for file validation and nonrepudiation of the information. 
+
+The Automation Controller NGINX web server host must have a mechanism to verify that files are valid prior to installation.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-003992</ident><ident system="http://cyber.mil/cci">CCI-001749</ident><fixtext fixref="F-60561r902345_fix">As a System Administrator, for each Automation Controller NGINX web server host, check for existing or install AIDE:
+
+yum install -y aide
+
+Create or update the AIDE database immediately after initial installation of each Automation Controller NGINX web server host:
+
+aide --init &amp;&amp; mv /var/lib/aide/aide.db.new.gz  /var/lib/aide/aide.db.gz
+
+Accept any expected changes to the host by updating the AIDE database:
+
+aide --update
+
+The output will provide checksums for the AIDE database. Save in a protected location.</fixtext><fix id="F-60561r902345_fix" /><check system="C-60619r902344_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator, for each Automation Controller NGINX web server host, verify the integrity of the Automation Controller NGINX web server hosts files:
+
+aide --check
+
+Verify the displayed checksums against previously reserved checksums of the Advanced Intrusion Detection Environment (AIDE) database.
+
+If there are any unauthorized or unexplained changes against previous checksums, this is a finding.</check-content></check></Rule></Group><Group id="V-256945"><title>SRG-APP-000131-WSR-000073</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256945r1016557_rule" weight="10.0" severity="medium"><version>APWS-AT-000240</version><title>Expansion modules must be fully reviewed, tested, and signed before they can exist on a production Automation Controller NGINX front-end web server.</title><description>&lt;VulnDiscussion&gt;In the case of a production web server, areas for content development and testing will not exist, as this type of content is only permissible on a development website.
+
+The process of developing on a functional production website entails a degree of trial and error and repeated testing. This process is often accomplished in an environment where debugging, sequencing, and formatting of content are the main goals. The opportunity for a malicious user to obtain files that reveal business logic and login schemes is high in this situation. The existence of such immature content on a web server represents a significant security risk that is totally avoidable.
+
+The Automation Controller NGINX front-end web server must enforce, either internally or through an external utility, the signing of modules before they are implemented into a production environment. By signing modules, the author guarantees that the module has been reviewed and tested before production implementation.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-003992</ident><ident system="http://cyber.mil/cci">CCI-001749</ident><fixtext fixref="F-60562r986182_fix">As a system administrator for each Automation Controller NGINX web server host, execute the following:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' `
+NGINXMODPATH=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | grep modules-path | sed -ne '/modules-path/{s/.*modules-path=\(.*\)/\1/;p}'`
+NGINXMODINC=`grep include /etc/nginx/nginx.conf | grep modules | awk '{print $2}' | xargs dirname`
+sudo rm -f ${NGINXMODPATH}/*
+sudo rm -f ${NGINXMODINC}/*
+sudo -e ${NGINXCONF}
+
+In the editor, remove any lines that contain "load_module".
+
+Save the file and exit the text editor. Run the following command to apply the changes:
+
+sudo systemctl restart nginx</fixtext><fix id="F-60562r986182_fix" /><check system="C-60620r986181_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>The Automation Controller does not require any nginx dynamic expansion modules to function. Determine if any dynamic modules are specified in the nginx configuration.
+
+As a system administrator for each Automation Controller NGINX web server host, execute the following:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' `
+NGINXMODPATH=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | grep modules-path | sed -ne '/modules-path/{s/.*modules-path=\(.*\)/\1/;p}'`
+NGINXMODINC=`grep include /etc/nginx/nginx.conf | grep modules | awk '{print $2}' | xargs dirname`
+grep -q load_module ${NGINXCONF} &amp;&amp; echo FAILED
+[ `ls -1 $NGINXMODPATH | wc -l` == 0 ]  || echo FAILED
+[ `ls -1 $NGINXMODINC | wc -l` == 0 ]  || echo FAILED
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256946"><title>SRG-APP-000141-WSR-000015</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256946r960963_rule" weight="10.0" severity="medium"><version>APWS-AT-000250</version><title>All Automation Controller NGINX front-end web servers must not perform user management for hosted applications.</title><description>&lt;VulnDiscussion&gt;Web servers require enterprise-wide user management capability in order to prevent unauthorized access, with features like attempt lockouts and password complexity requirements.
+
+Unauthorized access to the web server makes the web server and the organization vulnerable to attack.
+
+Note: The underlying NGINX web server does not perform user management or authentication. The Automation Controller includes user management and authentication capabilities. However, the user management controls built into Automation Controller may not be sufficient to enforce the appropriate level of password, sessions, and other policies required. It is strongly recommended that Automation Controller be configured to use the organization's Identity Management/Authentication Service. This may be an AD/LDAP service, OIDC, or other supported authentication service.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60563r902351_fix">As a system administrator for each Automation Controller NGINX web server host, navigate to Settings &gt;&gt; Authentication.
+
+Configure the appropriate authentication service.</fixtext><fix id="F-60563r902351_fix" /><check system="C-60621r902350_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a system administrator for each Automation Controller NGINX web server host, navigate to Settings &gt;&gt; Authentication.
+
+Review the configuration and verify that the appropriate authentication service is configured.
+
+If no authentication service is configured, this is a finding.</check-content></check></Rule></Group><Group id="V-256947"><title>SRG-APP-000141-WSR-000076</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256947r960963_rule" weight="10.0" severity="medium"><version>APWS-AT-000270</version><title>All Automation Controller NGINX web servers must not be a proxy server for any process other than the Automation Controller application.</title><description>&lt;VulnDiscussion&gt;The Automation Controller NGINX web server must be primarily a web server or a proxy server but not both, for the same reasons that other multi-use servers are not recommended. Scanning for web servers that will also proxy requests into an otherwise protected network is a very common anonymous attack.
+
+In a scenario where Automation Controller is still reachable without use of the proxy/load balancer or when the proxy does not validate the header, X-Forwarded-For can be spoofed fairly easily to fake the originating IP addresses. Using HTTP_X_FORWARDED_FOR in the REMOTE_HOST_HEADERS setting poses a vulnerability that essentially gives users access to certain resources that they must not have.
+
+Satisfies: SRG-APP-000141-WSR-000076, SRG-APP-000141-WSR-000083, SRG-APP-000141-WSR-000087&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60564r902354_fix">As a System Administrator, remove any content present and served from the static content location (/var/lib/awx/public/static) that is not acceptable per organizationally defined policy.
+
+Run the setup.sh command in the Ansible Automation Platform installer directory to reconfigure the controller to the default state, which only contains the required configuration:
+
+sudo ./setup.sh</fixtext><fix id="F-60564r902354_fix" /><check system="C-60622r903554_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a system administrator for each Automation Controller NGINX web server host, ensure that the only upstream servers configured are for the Automation Controller ASGI and WSGI modules:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' `
+sudo grep -E 'proxy_pass|uwsgi_pass' $NGINXCONF | grep -Pqz '^\s+proxy_pass http://daphne;\n\s+uwsgi_pass uwsgi;\n$' || echo FAILED
+[ "`sudo grep -Pzo 'upstream\s+daphne\s+{[^}]+}' $NGINXCONF | grep -a server | grep -v 'server unix:/var/run/tower/daphne.sock;'`" == '' ] || echo FAILED
+[ "`sudo grep -Pzo 'upstream\s+uwsgi\s+{[^}]+}' $NGINXCONF | grep -a server | grep -v 'server unix:/var/run/tower/uwsgi.sock;'`" == '' ] || echo FAILED
+
+If "FAILED" is displayed, this is a finding.
+
+Ensure all locations are served by either these upstream servers or other well-known content:
+
+[ "`sudo grep location $NGINXCONF | grep -v '^\s*#' | grep -Ev '^\s+location\s+/(favicon.ico|static|websocket)?\s+{'`" == "" ] || echo "FAILED"
+sudo grep -Eq 'location\s+/favicon.ico\s+{\s+alias\s+/var/lib/awx/public/static/media/favicon.ico;\s+}' $NGINXCONF || echo "FAILED"
+sudo grep -Eq 'location\s+/static\s+{\s+alias\s+/var/lib/awx/public/static;\s+}' $NGINXCONF || echo "FAILED"
+sudo grep -Pzo 'location\s+/websocket\s+({([^{}]|(?1))*})' $NGINXCONF | grep -Eq '^\s+proxy_pass\s+http://daphne;' || echo "FAILED"
+sudo grep -Pzo 'location\s+/\s+({([^{}]|(?1))*})' $NGINXCONF | grep -Eq '^\s+uwsgi_pass\s+uwsgi;' || echo "FAILED"
+
+If "FAILED" is displayed, this is a finding.
+
+Verify the content present and served from the static content location (/var/lib/awx/public/static) is acceptable per organizationally defined policy.
+
+If any content present in this location (or its subdirectories) is not acceptable per organizationally defined policy, this is a finding.</check-content></check></Rule></Group><Group id="V-256948"><title>SRG-APP-000141-WSR-000078</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256948r960963_rule" weight="10.0" severity="medium"><version>APWS-AT-000290</version><title>All Automation Controller NGINX webserver accounts not utilized by installed features (i.e., tools, utilities, specific services, etc.) must not be created and must be deleted when the web server feature is uninstalled.</title><description>&lt;VulnDiscussion&gt;If web server accounts are not being used, they must be deleted when the web server is uninstalled. This is because the accounts become stale over time and are not tended to. Best practice also dictates that if accounts are not going to be used, they must not be created for the same reason. Both situations create an opportunity for web server exploitation.
+
+When accounts used for web server features such as documentation, sample code, example applications, tutorials, utilities, and services are created, even though the feature is not installed, they become an exploitable threat to a web server. These accounts become inactive and are not monitored through regular use, and passwords for the accounts are not created or updated. An attacker can use these accounts to gain access to the web server and begin investigating ways to elevate the account privileges.
+
+The accounts used for all Automation Controller NGINX web server features not installed must not be created and must be deleted when these features are uninstalled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60565r902357_fix">As a System Administrator for each Automation Controller NGINX web server, reinstall Automation Controller if no "nginx" users exist in /etc/passwd.
+
+Review all users enumerated in /etc/passwd, and remove any that are not attributable to RHEL or Automation Controller and/or organizationally disallowed.</fixtext><fix id="F-60565r902357_fix" /><check system="C-60623r902356_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server, examine NGINX users in /etc/passwd.
+
+Verify a single user "nginix" exists using the command:
+
+[ `grep -c nginx /etc/passwd` == 1 ] || echo FAILED
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256949"><title>SRG-APP-000141-WSR-000081</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256949r960963_rule" weight="10.0" severity="medium"><version>APWS-AT-000310</version><title>All Automation Controller NGINX web servers must have Multipurpose Internet Mail Extensions (MIME) that invoke OS shell programs disabled.</title><description>&lt;VulnDiscussion&gt;Controlling what a user of a hosted application can access is part of the security posture of the Automation Controller NGINX web server.
+
+Any time a user can access more functionality than is needed for the operation of the hosted application, it  poses a security issue. A user with too much access can view information that is not needed for the user's job role, or the user could use the function in an unintentional manner.
+
+A MIME tells the Automation Controller NGINX web servers what type of program various file types and extensions are and what external utilities or programs are needed to execute the file type.
+
+A shell is a program that serves as the basic interface between the user and the operating system, so hosted application users must not have access to these programs. Shell programs may execute shell escapes and can then perform unauthorized activities that could damage the security posture of Automation Controller.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60566r902360_fix">As a System Administrator for each Automation Controller NGINX web server, remove the disallowed mime types:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ; 
+MIME_TYPES=`grep mime $NGINXCONF | awk '{printf $2}' | sed 's/;$//' ` ;
+ disallowed_mime_types=('application.*\sbin' 'application.*\sexe' 'application.*\srpm' 'application.*\smsi' 'application.*\smsp application.*\smsm' 'application.*\sjs') ; 
+echo "${disallowed_mime_types[*]}" | tr ' ' '\n' &gt;tempfile ; cat $MIME_TYPES | grep -vf tempfile &gt;$MIME_TYPES; rm -f tempfile
+
+Restart NGINX.</fixtext><fix id="F-60566r902360_fix" /><check system="C-60624r902359_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server, check the allowed mime types and associated shell applications:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ; MIME_TYPES=`grep mime $NGINXCONF | awk '{printf $2}' | sed 's/;$//' ` ; disallowed_mime_types=('application.*\sbin' 'application.*\sexe' 'application.*\srpm' 'application.*\smsi' 'application.*\smsp application.*\smsm' 'application.*\sjs') ; echo "${disallowed_mime_types[*]}" | tr ' ' '\n' &gt;tempfile ; cat $MIME_TYPES | grep -f tempfile 1&gt;/dev/null &amp;&amp; echo "FAILED"; rm -f tempfile
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256950"><title>SRG-APP-000141-WSR-000085</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256950r960963_rule" weight="10.0" severity="medium"><version>APWS-AT-000340</version><title>All Automation Controller NGINX web servers must have Web Distributed Authoring (WebDAV) disabled.</title><description>&lt;VulnDiscussion&gt;Automation Controller NGINX web servers can be installed with functionality that, just by its nature, is not secure. Web Distributed Authoring (WebDAV) is an extension to the HTTP protocol that, when developed, was meant to allow users to create, change, and move documents on a server, typically a web server or web share. Allowing this functionality, development, and deployment is much easier for web authors.
+
+WebDAV is not widely used and has serious security concerns because it may allow clients to modify unauthorized files on the web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60567r902363_fix">As a system administrator, for each Automation Controller nginx web server host, remove all WebDAV modules from the NGINX configuration file (nominally /etc/nginx/nginx.conf).
+
+Reload the NGINX server configurations for all NGINX processes:
+
+$ pkill -HUP nginx</fixtext><fix id="F-60567r902363_fix" /><check system="C-60625r902362_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a system administrator, for each Automation Controller NGINX web server host, check the Automation Controller NGINX web server configuration for WebDAV modules:
+
+disallowed_modules=(nginx-dav-ext-module headers-more-nginx-module) ; echo "${disallowed_modules[*]}" | tr ' ' '\n' &gt;tempfile ; nginx -V 2&gt;&amp;1 | grep module | tr ' ' '\n' | grep module | grep -v modules-path | grep -Ff tempfile &amp;&amp; echo "FAILED"; rm -f tempfile
+
+If "FAILED" is displayed, this is a finding.
+
+Check the Automation Controller NGINX web server configuration for WebDAV modules for disallowed WebDAV verbs, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ;
+grep dev_(.*)methods $NGINXCONF | grep  'COPY|MOVE|MKCO|PROPFIND|PROPPATCH|LOCK|UNLOCK' &amp;&amp; echo 'FAILED'
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256951"><title>SRG-APP-000141-WSR-000086</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256951r960963_rule" weight="10.0" severity="low"><version>APWS-AT-000350</version><title>All Automation Controller NGINX web servers must protect system resources and privileged operations from hosted applications.</title><description>&lt;VulnDiscussion&gt;Automation Controller NGINX web servers may host too many applications. Each application will need certain system resources and privileged operations to operate correctly. The Automation Controller NGINX web servers must be configured to contain and control the applications and protect the system resources and privileged operations from those not needed by the application for operation.
+
+Not limiting the application will exacerbate the potential harm a compromised application could cause to a system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-60568r902366_fix">As a system administrator for each Automation Controller NGINX web server host, place the server in SELinux enforcing mode:
+
+setenforce 1</fixtext><fix id="F-60568r902366_fix" /><check system="C-60626r902365_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a system administrator for each Automation Controller NGINX web server host, check if SELinux is enabled in enforcing mode:
+
+getenforce | grep Enforcing  &gt;/dev/null || echo FAILED
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256952"><title>SRG-APP-000142-WSR-000089</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256952r960966_rule" weight="10.0" severity="medium"><version>APWS-AT-000370</version><title>All Automation Controller NGINX web servers must be configured to use a specified IP address and port.</title><description>&lt;VulnDiscussion&gt;From a security perspective, it is important that all Automation Controller NGINX web servers are configured to use a specified IP address and port because “listening” on all IP addresses poses a vulnerability to the web server.
+
+Not confining the web server to a specified IP address and port puts all web server content at risk of access by bad actors wanting to take advantage of those resources.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-60569r902369_fix">As a System Administrator for each Automation Controller NGINX web server host, identify the allowed and/or designated IP address(es) for the Automation Controller system.
+
+Replace any wildcard or ranged IP address references in the NGINX configuration with IP addresses from the pool of allowed and/or designated address.
+
+Reload the NGINX server configurations for all NGINX processes:
+
+$ pkill -HUP nginx</fixtext><fix id="F-60569r902369_fix" /><check system="C-60627r903524_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server host, verify the web server is configured to use a static IP address and port.
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ; grep '^\s*listen\s*\*\|\s*listen\s*\[.*\]\|\s*listen\s*0\.0\.0\.0\|\s*listen\s*\[.*\]|^\s*listen\s\+.*:[^[:digit:]\s]\+.*' $NGINXCONF &amp;&amp; echo FAILED
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256953"><title>SRG-APP-000176-WSR-000096</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256953r961041_rule" weight="10.0" severity="medium"><version>APWS-AT-000400</version><title>Only authenticated system administrators or the designated PKI Sponsor for an Automation Controller NGINX web server must have access to any Automation Controller NGINX web server's private key.</title><description>&lt;VulnDiscussion&gt;Each Automation Controller NGINX web server's private key is used to prove the identity of the server to clients and securely exchange the shared secret key used to encrypt communications between the Automation Controller NGINX web server and clients.
+
+By gaining access to the private key, an attacker can pretend to be an authorized server and decrypt the SSL traffic between a client and the Automation Controller NGINX web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000186</ident><fixtext fixref="F-60570r902372_fix">As a System Administrator for each Automation Controller NGINX web server host, set the permissions:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' `
+TOWER_KEY=`sed -n 's/^\s*ssl_certificate_key\s*\(.*\);/\1/p' $NGINXCONF`
+sudo chown root:awx $TOWER_KEY
+sudo chmod 600 $TOWER_KEY</fixtext><fix id="F-60570r902372_fix" /><check system="C-60628r903525_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server host, verify the location of the NGINX configuration:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' `
+TOWER_KEY=`sed -n 's/^\s*ssl_certificate_key\s*\(.*\);/\1/p' $NGINXCONF`
+stat -c "%a %U %G" $TOWER_KEY| grep "600 root awx" || echo "FAILED" 
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256954"><title>SRG-APP-000211-WSR-000030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256954r961095_rule" weight="10.0" severity="medium"><version>APWS-AT-000440</version><title>All Automation Controller NGINX web server accounts accessing the directory tree, the shell, or other operating system functions and utilities must only be administrative accounts.</title><description>&lt;VulnDiscussion&gt;AIT is important to limit access to Automation Controller nginx web servers and provide access on a need-to-know basis. For example, only System Administrators must have access to all the system's capabilities, while the web administrator and associated staff require access and control of the web content and Automation Controller NGINX web server configuration files.
+
+Without close monitoring and control over access to the web server and its resources, there is the risk of unskilled personnel making mistakes, and a risk of characters performing malicious acts.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001082</ident><fixtext fixref="F-60571r902375_fix">As a System Administrator for each Automation Controller NGINX web server host, enumerate all (nonroot) privileged users on the system:
+
+getent passwd | cut -f1 -d ':' | sudo xargs -L1 sudo -l -U | grep -v 'not allowed' | tail -n +3 | sed -n '/^User/s/User\s*\(\w*\).*/\1/p' | grep -v root
+
+For each user shown, perform one of the following actions:
+- Remove the indicated user from the system;
+- Remove the indicated user from any privileged groups (wheel);
+- Remove login access for the user;
+- Verify via organizationally defined procedures the indicated user is an authorized administrative account.</fixtext><fix id="F-60571r902375_fix" /><check system="C-60629r903528_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a system administrator for each Automation Controller NGINX web server host, enumerate all (nonroot) privileged users on the system:
+
+allowed_privileged_users=('root') ; echo "${allowed_privileged_users}" | tr ' ' '\n' &gt;/tmp/allowed_privileged_users ; getent passwd | cut -f1 -d ':' | sudo xargs -L1 sudo -l -U | grep -v 'not allowed' | tail -n +3 | sed -n '/^User/s/User\s*\(\w*\).*/\1/p' | grep -v -f /tmp/allowed_privileged_users 1&gt;/dev/null &amp;&amp; echo "FAILED" ; rm -f /tmp/allowed_privileged_users
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256955"><title>SRG-APP-000223-WSR-000011</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256955r961116_rule" weight="10.0" severity="medium"><version>APWS-AT-000480</version><title>Cookies exchanged between any Automation Controller NGINX web server and any client, such as session cookies, must have security settings that disallow cookie access outside the originating Automation Controller NGINX web server and hosted application.</title><description>&lt;VulnDiscussion&gt;It is important that cookies exchanged between any Automation Controller NGINX webserver and any client have security settings that do not allow cookie access outside the originating Automation Controller server and the hosted application. This is because exchanged cookies may have session information such as user credentials that enable the web server application and the client to maintain a persistent connection.
+
+If cookie access outside of the originating Automation Controller NGINX webserver and the hosted application are allowed, it puts the security of the server at risk of malicious acts by bad actors.
+
+Satisfies: SRG-APP-000223-WSR-000011, SRG-APP-000439-WSR-000154, SRG-APP-000439-WSR-000155&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001664</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-60572r902378_fix">As a System Administrator for each Automation Controller NGINX web server host, remove any local variable changes related to cookie properties:
+
+sudo grep -r -E '(CSRF|SESSION)_COOKIE_(HTTPONLY|SECURE|SAMESITE)' /etc/tower/settings.py /etc/tower/conf.d/
+
+For each result, edit the relevant file. For example, if a variable is found in /etc/tower/settings.py, edit the file with the following command:
+
+sudo -e /etc/tower.settings.py
+
+Remove any line where the following variables are defined:
+
+SESSION_COOKIE_HTTPONLY
+SESSION_COOKIE_SECURE
+SESSION_COOKIE_SAMESITE
+CSRF_COOKIE_HTTPONLY
+CSRF_COOKIE_SECURE
+CSRF_COOKIE_SAMESITE
+
+Execute the following command to restart the Automation Controller service:
+
+sudo automation-controller-service restart</fixtext><fix id="F-60572r902378_fix" /><check system="C-60630r902377_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>The Automation Controller application configures cookie properties appropriately by default. Any local modifications to cookie-related settings must be located and removed.
+
+As a System Administrator for each Automation Controller NGINX web server host, search for modified cookie variables in the Automation Controller configuration:
+
+sudo grep -r -E '(CSRF|SESSION)_COOKIE_(HTTPONLY|SECURE|SAMESITE)' /etc/tower/settings.py /etc/tower/conf.d/
+
+If any output is shown, this is a finding.</check-content></check></Rule></Group><Group id="V-256956"><title>SRG-APP-000233-WSR-000146</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256956r961131_rule" weight="10.0" severity="medium"><version>APWS-AT-000590</version><title>The Automation Controller NGINX web server document directory must be in a separate partition from the web server's system files.</title><description>&lt;VulnDiscussion&gt;It is important that Automation Controller NGINX web server restricts the ability of clients to launch denial-of-service (DoS) attacks against other information systems or networks by disallowing access to system files via document and system file partitioning. DoS attacks are an attempt to negatively affect the availability of the server to end users through directory traversal and URL manipulation. An attack could compromise the end user’s access to websites and applications, which could be critical.
+
+If a client is allowed to enable a DoS attack through access to system files, it means that the whole server or network could be shut down. In a best-case scenario, it could deny the user access to required websites and applications, which poses a threat to productivity as well as the need to spend time researching and resolving the attack. This is why it is important that Automation Controller NGINX web server does not allow access to any system files.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001084</ident><fixtext fixref="F-60573r902381_fix">As a System Administrator for each Automation Controller NGINX web server host, migrate the "/var/lib/awx/public" path onto a separate file system. No automated fix is available for this action.</fixtext><fix id="F-60573r902381_fix" /><check system="C-60631r903529_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>Automation Controller serves static public content from the directory /var/lib/awx/public.
+
+As a System Administrator for each Automation Controller NGINX web server host, verify that a separate file system/partition has been created for /var/lib/awx/public:
+
+[[ $(sudo awk '$0~"/var/lib/awx/public" {print $2}' /etc/fstab) == "/var/lib/awx/public" ]] || echo "FAILED"
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256957"><title>SRG-APP-000251-WSR-000157</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256957r961158_rule" weight="10.0" severity="medium"><version>APWS-AT-000610</version><title>The Automation Controller NGINX web server must limit the character set used for data entry.</title><description>&lt;VulnDiscussion&gt;It is important that Automation Controller NGINX web server limit the character set used for data entry and disallow Unicode use in hosted applications to avoid application compromise. Definition of the available character set for data entry can trap efforts to bypass security checks. The presence of nonstandard characters may cause the browser to interpret the content using a different character set than the defined one, because the system may interpret the content using a different CHARSET. Nonstandard encodings like UTF-7 can be used to bypass the application's defensive filters.
+
+If character sets for data entry are not defined, it leaves open the door for attackers to bypass security checks and make the server vulnerable to malicious attack.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001310</ident><fixtext fixref="F-60574r902384_fix">As a System Administrator for each Automation Controller NGINX web server, verify the NGINX web server configuration file in use is located at '/etc/nginx/nginx.conf'
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ; 
+
+Add the directive to the NGINX configuration to force a required charset.
+
+sed -i  '/location/i charset_required; ' $NGINXCONF
+
+Reload the NGINX server configurations for all NGINX processes.
+
+$ pkill -HUP nginx</fixtext><fix id="F-60574r902384_fix" /><check system="C-60632r902383_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server, verify the configuration requires a charset is mandatory.
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ; grep 'charset_required' $NGINXCONF || echo "FAILED"
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256958"><title>SRG-APP-000266-WSR-000142</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256958r961167_rule" weight="10.0" severity="medium"><version>APWS-AT-000620</version><title>The Automation Controller NGINX web server must display a default hosted application web page, not a directory listing, when a requested web page cannot be found.</title><description>&lt;VulnDiscussion&gt;It is important that Automation Controller NGINX web server display a default hosted application web paged and not a directory listing when a requested web page cannot be found, because the web server will be vulnerable to intrusion. For this reason, access to directory listings must be disabled.
+
+If a user or attacker have access to the website directory listing, they may have access to all the files in that folder. Additionally, they may be privy to specific details regarding the web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-60575r902387_fix">As a System Administrator for each Automation Controller nginx web server host, remove any configuration that turns the autoindexing on:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ;
+sed -Ei -e '/autoindex\s+on/d;' $NGINXCONF
+
+To apply these changes to the running service immediately, restart the NGINX service with the following command:
+
+sudo systemctl restart nginx</fixtext><fix id="F-60575r902387_fix" /><check system="C-60633r903555_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>For each Automation Controller NGINX web server, a system administrator must view to see whether autoindex is turned on or off (autoindex on/autoindex off):
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ; 
+grep -E 'autoindex\s+on' $NGINXCONF &amp;&amp; echo "FAILED"
+ 
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256959"><title>SRG-APP-000266-WSR-000160</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256959r961167_rule" weight="10.0" severity="medium"><version>APWS-AT-000640</version><title>Debugging and trace information, within Automation Controller NGINX web server, used to diagnose the web server must be disabled.</title><description>&lt;VulnDiscussion&gt;It is important that Automation Controller NGINX web server debugging and trace information used to diagnose the web server is disabled, because debugging information can yield information about the Automation Controller NGINX webserver, like web server type, version, patches installed, plugins, modules, the hosted app’s code type. Back ends used for storage could be revealed, as well. An attacker would not need to cause an error condition to gain this information because they could reside in logs and general messages.
+
+If debugging/trace information is enabled, attackers could get the information from logs and general information, without drawing attention to themselves via an error message.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-60576r902390_fix">For each Automation Controller NGINX web server, a system administrator must complete the following steps. 
+
+Verify the NGINX configuration file in use:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ;  echo $NGINXCONF
+
+Remove the error_log directive from the NGINX configuration file.
+
+Cause NGINX to reload its configuration file:
+
+pkill -HUP nginx</fixtext><fix id="F-60576r902390_fix" /><check system="C-60634r902389_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>For each Automation Controller NGINX web server, a system administrator must check to determine if any error or debug information is being logged or generated:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ;  cat $NGINXCONF  | grep '^\s*error_log' &amp;&amp; echo FAILED
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256960"><title>SRG-APP-000340-WSR-000029</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256960r961353_rule" weight="10.0" severity="medium"><version>APWS-AT-000700</version><title>Nonprivileged accounts on the hosting system must only access Automation Controller NGINX web server security-relevant information and functions through a distinct administrative account.</title><description>&lt;VulnDiscussion&gt;It is important that Automation Controller NGINX web server security features are separated from nonprivileged users. Special “privileged” roles need to be developed so that only they can have access to those features and administer the web server, when necessary. These privileged roles will be better trained in the security features and will limit loss of data for forensic analysis and limits accidental changes to the web server.
+
+Without isolating privileged users from nonprivileged users when administering to the web server, organizations run the risk of having limited access to forensic data, as well as increased risk of accidental changes, by nonprivileged and presumably less-trained individuals.
+
+Satisfies: SRG-APP-000340-WSR-000029, SRG-APP-000211-WSR-000031&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001082</ident><ident system="http://cyber.mil/cci">CCI-002235</ident><fixtext fixref="F-60577r902393_fix">As a system administrator, for each Automation Controller NGINX web server host, set the permissions and owner of Automation Controller web server program configuration directory:
+
+sudo chown -R root:root /etc/nginx/
+sudo chmod 755 /etc/nginx /etc/nginx
+sudo chmod 755 /etc/nginx /etc/nginx/conf.d
+sudo chmod 644 /etc/nginx/nginx.conf
+ 
+As a system administrator, for each Automation Controller NGINX web server program configuration files.
+
+sudo chown root:root /usr/lib/systemd/system/nginx.service
+sudo chmod 644 /usr/lib/systemd/system/nginx.service
+ 
+Set the permissions and owner of Automation Controller application content directory:
+
+sudo chmod 755 /var/lib/awx/public/static
+sudo chown root:awx /var/lib/awx/public/static</fixtext><fix id="F-60577r902393_fix" /><check system="C-60635r903547_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a system administrator, for each Automation Controller NGINX web server host, inspect the current permissions and owner of Tower's web server configuration directory:
+
+stat -c "%a %U %G" /etc/nginx | grep -q "755 root root" || echo "FAILED"
+stat -c "%a %U %G" /etc/nginx/conf.d | grep -q "755 root root" || echo "FAILED"
+stat -c "%a %U %G" /etc/nginx/nginx.conf | grep -q "644 root root" || echo "FAILED"
+ 
+If "FAILED" is displayed, this is a finding.
+
+Inspect the current permissions and owner of Automation Controller web server program configuration files:
+
+stat -c "%a %U %G" /usr/lib/systemd/system/nginx.service | grep -q "644 root root" || echo "FAILED"
+ 
+If "FAILED" is displayed, this is a finding.
+ 
+Inspect the current permissions and owner of Automation Controller application content directory:
+
+stat -c "%a %U %G" /var/lib/awx/public/static | grep -q "755 root awx" || echo "FAILED"
+ 
+If "FAILED" is displayed, this is a finding.
+ 
+Inspect the current permissions and owner of Automation Controller web server log directory:
+
+stat -c "%a %U %G" /var/log/nginx| grep -q "770 nginx root" || echo "FAILED"
+ 
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256961"><title>SRG-APP-000380-WSR-000072</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256961r961461_rule" weight="10.0" severity="medium"><version>APWS-AT-000780</version><title>The Automation Controller NGINX web server application, libraries, and configuration files must only be accessible to privileged users.</title><description>&lt;VulnDiscussion&gt;Automation Controller NGINX web servers can be modified through parameter modification, patch installation, upgrades to the web server or modules, and security parameter changes. With each of these changes, there is the potential for an adverse effect such as a DoS, web server instability, or hosted application instability.
+
+To limit changes to Automation Controller NGINX web servers and limit exposure to any adverse effects from the changes, files such as the web server application files, libraries, and configuration files must have permissions and ownership set properly to only allow privileged users access.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001813</ident><fixtext fixref="F-60578r902396_fix">As a System Administrator for each Automation Controller NGINX web server host, modify the file permissions for the web server components require privileged access:
+
+chmod -R 644 /etc/nginx &amp;&amp; chown -R nginx /etc/nginx</fixtext><fix id="F-60578r902396_fix" /><check system="C-60636r902395_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server host, check that the file permissions for the web server components require privileged access:
+
+$ [ `find /etc/nginx -type f -not -perm 644 | wc -l` -gt 0 ] &amp;&amp; echo "FAILED"
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256962"><title>SRG-APP-000435-WSR-000147</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256962r961620_rule" weight="10.0" severity="medium"><version>APWS-AT-000830</version><title>The Automation Controller NGINX web server must be protected from being stopped by a nonprivileged user.</title><description>&lt;VulnDiscussion&gt;An attacker has at least two reasons to stop an Automation Controller NGINX web server. The first is to cause a DoS, and the second is to put in place changes the attacker made to an Automation Controller NGINX web server configuration.
+
+To prohibit an attacker from stopping the Automation Controller NGINX web server, the process ID (PID) of the web server and the utilities used to start/stop the web server must be protected from access by nonprivileged users. By knowing the PID and having access to the Automation Controller NGINX web server utilities, a nonprivileged user has a greater capability of stopping the server, whether intentionally or unintentionally.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-60579r902399_fix">As a System Administrator for each Automation Controller NGINX web server host, set the permissions correctly on the nginx service file:
+
+sudo chown root:root /usr/lib/systemd/system/nginx.service
+sudo chmod 644 /usr/lib/systemd/system/nginx.service
+
+Reset the Ansible Automation Platform configuration to the defaults, which meet the requirements for the supervisord and automation-controller services.
+
+Locate the inventory file used to install Ansible Automation Platform (usually in the installer directory).
+
+Run the setup.sh command in the installer directory to reconfigure the controller to use the new setting:
+
+sudo ./setup.sh</fixtext><fix id="F-60579r902399_fix" /><check system="C-60637r903550_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server host, verify required service definition is protected from unprivileged users:
+
+stat -c "%a %U %G" /usr/lib/systemd/system/automation-controller.service | grep -q "644 root root" || echo "FAILED"
+stat -c "%a %U %G" /usr/lib/systemd/system/supervisord.service | grep -q "644 root root" || echo "FAILED"
+stat -c "%a %U %G"  /usr/lib/systemd/system/nginx.service | grep -q "644 root root" || echo "FAILED"
+
+If "FAILED" is displayed, this is a finding.
+
+Verify the required services are enabled:
+
+systemctl is-enabled automation-controller.service &gt;/dev/null || echo FAILED
+systemctl is-enabled supervisord.service &gt;/dev/null || echo FAILED
+systemctl is-enabled nginx.service &gt;/dev/null || echo FAILED
+
+If "FAILED" is displayed, this is a finding.
+
+Verify application services are correctly managed by supervisord. Verify protection of and capture supervisord configuration.
+
+stat -c "%a %U %G" /etc/supervisord.d/*.ini | grep -q "644 root root" || echo "FAILED"
+cat  /etc/supervisord.d/*.ini | sed -n -E "/^\[.*\]/{s/\[(.*)\]/\1/;h;n;};/^[a-zA-Z]/{s/#.*//;G;s/([^ ]*) *= *(.*)\n(.*)/\3_\1='\2'/;p;}" &gt; /tmp/supervisord.parsed.conf
+
+Verify specific start and restart properties for application services:
+
+application_services=(program:awx-dispatcher_autostart program:awx-dispatcher_autorestart program:awx-wsbroadcast_autostart program:awx-wsbroadcast_autorestart program:awx-uwsgi_autostart program:awx-uwsgi_autorestart program:awx-daphne_autostart program:awx-daphne_autorestart program:awx-rsyslogd_autostart program:awx-rsyslogd_autorestart) 
+for SUPERVISOR_CHECK in ${application_services[@]}; do grep $SUPERVISOR_CHECK /tmp/supervisord.parsed.conf | grep -q true || echo "FAILED" ; done
+rm /tmp/supervisord.parsed.conf
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256963"><title>SRG-APP-000439-WSR-000151</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256963r1016551_rule" weight="10.0" severity="high"><version>APWS-AT-000850</version><title>The Automation Controller NGINX web server must employ cryptographic mechanisms (TLS/DTLS/SSL) to prevent the unauthorized disclosure of information during transmission.</title><description>&lt;VulnDiscussion&gt;Preventing the disclosure of transmitted information requires that the Automation Controller web server take measures to employ some form of cryptographic mechanism in order to protect the information during transmission. This is usually achieved through the use of Transport Layer Security (TLS).
+
+Transmission of data can take place between the web server and a large number of devices/applications external to the web server. Examples are a web client used by a user, a backend database, an audit server, or other web servers in a web cluster.
+
+If data is transmitted unencrypted, the data then becomes vulnerable to disclosure. The disclosure may reveal user identifier/password combinations, website code revealing business logic, or other user personal information.
+
+Satisfies: SRG-APP-000439-WSR-000151, SRG-APP-000439-WSR-000152, SRG-APP-000442-WSR-000182, SRG-APP-000429-WSR-000113&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002418</ident><ident system="http://cyber.mil/cci">CCI-002422</ident><ident system="http://cyber.mil/cci">CCI-002476</ident><fixtext fixref="F-60580r1016550_fix">As a System Administrator for each Automation Controller NGINX web server host, for each available server connection that is not handled or upgraded to SSL via an organizationally approved method, perform one of the following actions:
+
+Remove the available server connections.
+OR
+Upgrade the connection via redirect to an SSL server connection.
+OR
+Rewrite the connection URL to an HTTPS server connection.
+OR
+Other organizationally defined handling method.
+
+Reload the NGINX server configuration by executing the following:
+pkill -HUP nginx
+
+(Alternatively, reinstall Automation Controller for each web server host.)</fixtext><fix id="F-60580r1016550_fix" /><check system="C-60638r1016549_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server host, enumerate all available server connections:
+
+NGINXCONF=$(nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}')
+grep '\s*listen'
+NGINXCONF | grep -v ssl
+
+Ensure each available server connection that does not use SSL upgrades this connection to use SSL via an allowed method:
+
+- is redirected to an SSL server connection, e.g., "return 301 https://$host:443$request_uri";
+- is rewritten to an SSL server URL, e.g., "rewrite ^ https://$host$request_uri? permanent;";
+- is dropped silently;
+- or used other organizationally approved connection handling.
+
+Examine the NGINX configuration, for example:
+
+vi $NGINXCONF
+
+If any available server connection is not handled or upgraded to SSL via an organizationally approved method, this is a finding.
+vi $NGINXCONF
+
+If any available server connection is not handled or upgraded to SSL via an organizationally approved method, this is a finding.</check-content></check></Rule></Group><Group id="V-256964"><title>SRG-APP-000439-WSR-000156</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256964r961632_rule" weight="10.0" severity="medium"><version>APWS-AT-000900</version><title>Automation Controller NGINX web servers must maintain the confidentiality of controlled information during transmission through the use of an approved TLS version.</title><description>&lt;VulnDiscussion&gt;Transport Layer Security (TLS) is a required transmission protocol for a web server hosting controlled information. The use of TLS provides confidentiality of data in transit between the web server and client. FIPS 140-2 approved TLS versions must be enabled and non-FIPS-approved SSL versions must be disabled.
+
+NIST SP 800-52 defines the approved TLS versions for government applications.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-60581r902405_fix">As a System Administrator for each Automation Controller Web Server, reconfigure the TLS versions or ciphers used in Automation Controller's web server:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' `
+sudo -e ${NGINXCONF}
+
+Replace the line beginning with "ssl_protocols" to match (note the leading spaces):
+"        ssl_protocols TLSv1.2;"
+
+If the "ssl_protocols" variable does not exist, add it after the line beginning with "ssl_ciphers".
+
+Save the file and exit the text editor. To apply these changes to the running service immediately, restart the NGINX service with the following command:
+
+sudo systemctl restart nginx</fixtext><fix id="F-60581r902405_fix" /><check system="C-60639r902404_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator, for each Automation Controller NGINX web server, a TLS Configuration Check validates the TLS version used by the server:
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' `
+sudo grep ssl_protocols ${NGINXCONF} | grep -E 'ssl_protocols\s+TLSv1.2;' || echo "FAILED"
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-256965"><title>SRG-APP-000441-WSR-000181</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256965r961638_rule" weight="10.0" severity="medium"><version>APWS-AT-000920</version><title>The Automation Controller NGINX web servers must maintain the confidentiality and integrity of information during preparation for transmission.</title><description>&lt;VulnDiscussion&gt;Information can be either unintentionally or maliciously disclosed or modified during preparation for transmission, including, for example, during aggregation, at protocol transformation points, and during packing/unpacking. These unauthorized disclosures or modifications compromise the confidentiality or integrity of the information.
+
+An example of this would be an SMTP queue. This queue may be added to a web server through an SMTP module to enhance error reporting or to allow developers to add SMTP functionality to their applications.
+
+Any modules used by the web server that queue data before transmission must maintain the confidentiality and integrity of the information before the data is transmitted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002420</ident><fixtext fixref="F-60582r902408_fix">As a System Administrator for each Automation Controller NGINX web server host, verify the NGINX web server configuration file in use is located at "/etc/nginx.nginx.conf":
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` ; 
+
+Verify the location of the NGINX modules libraries:
+
+pushd `nginx -V 2&gt;&amp;1 | grep module | tr ' ' '\n' | grep module | sed -n 's/.*modules-path.*=\s*\(.*\)/\1/p'`
+
+Remove all modules that violate organizationally defined policy.
+Examine runtime loaded modules:
+
+grep load_module nginx.conf.test | sed -n 's/^\s*load_module\s*\(.*\)/\1/p'
+
+Remove all modules that violate organizationally defined policy.
+Examine the remainder of the modules:
+
+nginx -V 2&gt;&amp;1 | grep module | tr ' ' '\n' | grep module | grep -v modules-path 
+
+These modules are compiled into the core NGINX binaries are cannot be removed. Use of any these modules that violate organizationally defined policy must be mitigated.
+
+To apply these changes to the running service immediately, restart the NGINX service with the following command:
+
+sudo systemctl restart nginx
+
+Alternatively, reinstall Automation Controller for each web server host.</fixtext><fix id="F-60582r902408_fix" /><check system="C-60640r902407_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server host, verify the NGINX web server configuration file in use is located at "/etc/nginx.nginx.conf":
+
+NGINXCONF=`nginx -V 2&gt;&amp;1 | tr ' ' '\n' | sed -ne '/conf-path/{s/.*conf-path=\(.*\)/\1/;p}' ` 
+
+If the file does not exist, this is a finding.
+
+Verify the use of only dynamic modules witch are allowed by organizational policy:
+
+allowed_modules=(ssl_module http_v2_module http_realip_module http_addition_module http_xslt_module=dynamic http_image_filter_module=dynamic http_sub_module http_dav_module  http_mp4_module http_gunzip_module http_gzip_static_module http_random_index_module http_secure_link_module http_degradation_module http_slice_module http_stub_status_module http_perl_module=dynamic http_auth_request_module mail_ssl_module stream_ssl_preread_module http_flv_module) ; echo "${allowed_modules[*]}" | tr ' ' '\n' &gt;/tmp/allowed_modules ; nginx -V 2&gt;&amp;1 | grep module | tr ' ' '\n' | grep module | grep -v modules-path | grep -v -Ff /tmp/allowed_modules &amp;&amp; echo "FAILED";
+
+Verify the use of only runtime modules which are allowed by organizational policy:
+
+grep load_module $NGINXCONF  | sed -n 's/^\s*load_module\s*\(.*\)/\1/p' | grep -v -Ff /tmp/allowed_modules &amp;&amp; echo "FAILED" ; rm -f /tmp/allowed_modules
+
+If the output shows "FAILED", this is a finding.</check-content></check></Rule></Group><Group id="V-256966"><title>SRG-APP-000456-WSR-000187</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256966r961683_rule" weight="10.0" severity="medium"><version>APWS-AT-000940</version><title>Automation Controller NGINX web servers must install security-relevant software updates within the configured time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).</title><description>&lt;VulnDiscussion&gt;Security flaws with software applications are discovered daily. Red Hat constantly updates and patches Automation Controller to address newly discovered security vulnerabilities. Organizations (including any contractor to the organization) are required to promptly install security-relevant software updates (e.g., patches, service packs, and hot fixes). Flaws discovered during security assessments, continuous monitoring, incident response activities, or information system error handling must also be addressed expeditiously.
+
+The Automation Controller NGINX web server will be configured to check for and install security-relevant software updates from an authoritative source within an organizationally identified time period from the availability of the update. By default, this time period will be every 24 hours.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002605</ident><fixtext fixref="F-60583r903536_fix">As a system administrator, for each Automation Controller NGINX web server host, perform the following:
+
+1. Either configure update repositories in accordance with organizationally defined requirements or subscribe to Red Hat update repositories for the underlying operating system.
+
+2. Execute an update from these repositories:
+
+$ yum update -y
+
+3. Perform one of the following:
+
+3.1. Schedule an update to occur every 30 days, or in accordance with organizationally defined policy:
+
+$ yum install -y dnf-automatic  &amp;&amp; sed -i '/apply_updates/s/no/yes/' /etc/dnf/automatic.conf &amp;&amp; sed -i '/OnCalendar/s/^OnCalendar\s*=.*/OnCalendar=*-1-* 6:00/' /usr/lib/systemd/system/dnf-automatic.timer &amp;&amp; systemctl enable --now dnf-automatic.timer
+
+3.2. Schedule manual updates to occur at least every 30 days, or in accordance with organizationally defined policy. 
+
+4. Restart the Automation Controller NGINX web server host.</fixtext><fix id="F-60583r903536_fix" /><check system="C-60641r902410_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server host, verify the system is configured to receive updates from an organizationally defined source for authoritative system updates:
+
+yum -v repolist
+
+If each URL is not valid and consistent with organizationally defined requirements, this is a finding.
+
+If each repository is not enabled in accordance with organizationally defined requirements, this is a finding.
+
+If the system is not configured to automatically receive and apply system updates from this source at least every 30 days, or manually receive and apply updates at least every 30 days, this is a finding.</check-content></check></Rule></Group><Group id="V-256967"><title>SRG-APP-000516-WSR-000079</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-256967r961863_rule" weight="10.0" severity="medium"><version>APWS-AT-000950</version><title>All accounts installed with the Automation Controller NGINX web server's software and tools must have passwords assigned and default passwords changed.</title><description>&lt;VulnDiscussion&gt;During installation of the Automation Controller NGINX web server software, accounts are created for the web server to operate properly. The accounts installed can have either no password installed or a default password, which will be known and documented by the vendor and the user community.
+
+The first thing an attacker will try when presented with a login screen are the default user identifiers with default passwords. Installed applications may also install accounts with no password, making the login even easier. Once the Automation Controller NGINX web server is installed, the passwords for any created accounts must be changed and documented. The new passwords must meet the requirements for all passwords (i.e., upper/lower characters, numbers, special characters, time until change, reuse policy, etc.).
+
+Service accounts or system accounts that have no login capability do not need to have passwords set or changed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Red Hat Ansible Automation Controller Web Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Red Hat Ansible Automation Controller Web Server</dc:subject><dc:identifier>5535</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-60584r902414_fix">As a System Administrator for each Automation Controller NGINX web server host, change the NGINX account to disallow interactive login:
+
+$ usermod -s /sbin/nologin nginx</fixtext><fix id="F-60584r902414_fix" /><check system="C-60642r903537_chk"><check-content-ref href="Red_Hat_Ansible_Automation_Controller_Web_Server_STIG.xml" name="M" /><check-content>As a System Administrator for each Automation Controller NGINX web server host, verify the NGINX account is configured to disallow interactive login"
+
+grep '^nginx.*\(/sbin/nologin$\|/bin/false$\)' /etc/passwd
+
+If "FAILED" is displayed, this is a finding.</check-content></check></Rule></Group></Benchmark>

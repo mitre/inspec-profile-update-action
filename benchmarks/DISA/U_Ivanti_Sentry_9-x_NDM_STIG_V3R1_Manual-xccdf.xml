@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Ivanti_MI_Sentry_9-x_NDM_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-09-25">accepted</status><title>Ivanti Sentry 9.x NDM Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil. 
+</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 24 Oct 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>3</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250982" selected="true" /><select idref="V-250983" selected="true" /><select idref="V-250984" selected="true" /><select idref="V-250985" selected="true" /><select idref="V-250986" selected="true" /><select idref="V-250987" selected="true" /><select idref="V-250988" selected="true" /><select idref="V-250989" selected="true" /><select idref="V-250990" selected="true" /><select idref="V-250991" selected="true" /><select idref="V-250992" selected="true" /><select idref="V-250993" selected="true" /><select idref="V-250994" selected="true" /><select idref="V-250995" selected="true" /><select idref="V-250996" selected="true" /><select idref="V-250997" selected="true" /><select idref="V-250998" selected="true" /><select idref="V-250999" selected="true" /><select idref="V-251000" selected="true" /><select idref="V-251001" selected="true" /><select idref="V-251002" selected="true" /><select idref="V-251003" selected="true" /><select idref="V-251004" selected="true" /><select idref="V-251005" selected="true" /><select idref="V-251006" selected="true" /><select idref="V-251007" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250982" selected="true" /><select idref="V-250983" selected="true" /><select idref="V-250984" selected="true" /><select idref="V-250985" selected="true" /><select idref="V-250986" selected="true" /><select idref="V-250987" selected="true" /><select idref="V-250988" selected="true" /><select idref="V-250989" selected="true" /><select idref="V-250990" selected="true" /><select idref="V-250991" selected="true" /><select idref="V-250992" selected="true" /><select idref="V-250993" selected="true" /><select idref="V-250994" selected="true" /><select idref="V-250995" selected="true" /><select idref="V-250996" selected="true" /><select idref="V-250997" selected="true" /><select idref="V-250998" selected="true" /><select idref="V-250999" selected="true" /><select idref="V-251000" selected="true" /><select idref="V-251001" selected="true" /><select idref="V-251002" selected="true" /><select idref="V-251003" selected="true" /><select idref="V-251004" selected="true" /><select idref="V-251005" selected="true" /><select idref="V-251006" selected="true" /><select idref="V-251007" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250982" selected="true" /><select idref="V-250983" selected="true" /><select idref="V-250984" selected="true" /><select idref="V-250985" selected="true" /><select idref="V-250986" selected="true" /><select idref="V-250987" selected="true" /><select idref="V-250988" selected="true" /><select idref="V-250989" selected="true" /><select idref="V-250990" selected="true" /><select idref="V-250991" selected="true" /><select idref="V-250992" selected="true" /><select idref="V-250993" selected="true" /><select idref="V-250994" selected="true" /><select idref="V-250995" selected="true" /><select idref="V-250996" selected="true" /><select idref="V-250997" selected="true" /><select idref="V-250998" selected="true" /><select idref="V-250999" selected="true" /><select idref="V-251000" selected="true" /><select idref="V-251001" selected="true" /><select idref="V-251002" selected="true" /><select idref="V-251003" selected="true" /><select idref="V-251004" selected="true" /><select idref="V-251005" selected="true" /><select idref="V-251006" selected="true" /><select idref="V-251007" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250982" selected="true" /><select idref="V-250983" selected="true" /><select idref="V-250984" selected="true" /><select idref="V-250985" selected="true" /><select idref="V-250986" selected="true" /><select idref="V-250987" selected="true" /><select idref="V-250988" selected="true" /><select idref="V-250989" selected="true" /><select idref="V-250990" selected="true" /><select idref="V-250991" selected="true" /><select idref="V-250992" selected="true" /><select idref="V-250993" selected="true" /><select idref="V-250994" selected="true" /><select idref="V-250995" selected="true" /><select idref="V-250996" selected="true" /><select idref="V-250997" selected="true" /><select idref="V-250998" selected="true" /><select idref="V-250999" selected="true" /><select idref="V-251000" selected="true" /><select idref="V-251001" selected="true" /><select idref="V-251002" selected="true" /><select idref="V-251003" selected="true" /><select idref="V-251004" selected="true" /><select idref="V-251005" selected="true" /><select idref="V-251006" selected="true" /><select idref="V-251007" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250982" selected="true" /><select idref="V-250983" selected="true" /><select idref="V-250984" selected="true" /><select idref="V-250985" selected="true" /><select idref="V-250986" selected="true" /><select idref="V-250987" selected="true" /><select idref="V-250988" selected="true" /><select idref="V-250989" selected="true" /><select idref="V-250990" selected="true" /><select idref="V-250991" selected="true" /><select idref="V-250992" selected="true" /><select idref="V-250993" selected="true" /><select idref="V-250994" selected="true" /><select idref="V-250995" selected="true" /><select idref="V-250996" selected="true" /><select idref="V-250997" selected="true" /><select idref="V-250998" selected="true" /><select idref="V-250999" selected="true" /><select idref="V-251000" selected="true" /><select idref="V-251001" selected="true" /><select idref="V-251002" selected="true" /><select idref="V-251003" selected="true" /><select idref="V-251004" selected="true" /><select idref="V-251005" selected="true" /><select idref="V-251006" selected="true" /><select idref="V-251007" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250982" selected="true" /><select idref="V-250983" selected="true" /><select idref="V-250984" selected="true" /><select idref="V-250985" selected="true" /><select idref="V-250986" selected="true" /><select idref="V-250987" selected="true" /><select idref="V-250988" selected="true" /><select idref="V-250989" selected="true" /><select idref="V-250990" selected="true" /><select idref="V-250991" selected="true" /><select idref="V-250992" selected="true" /><select idref="V-250993" selected="true" /><select idref="V-250994" selected="true" /><select idref="V-250995" selected="true" /><select idref="V-250996" selected="true" /><select idref="V-250997" selected="true" /><select idref="V-250998" selected="true" /><select idref="V-250999" selected="true" /><select idref="V-251000" selected="true" /><select idref="V-251001" selected="true" /><select idref="V-251002" selected="true" /><select idref="V-251003" selected="true" /><select idref="V-251004" selected="true" /><select idref="V-251005" selected="true" /><select idref="V-251006" selected="true" /><select idref="V-251007" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250982" selected="true" /><select idref="V-250983" selected="true" /><select idref="V-250984" selected="true" /><select idref="V-250985" selected="true" /><select idref="V-250986" selected="true" /><select idref="V-250987" selected="true" /><select idref="V-250988" selected="true" /><select idref="V-250989" selected="true" /><select idref="V-250990" selected="true" /><select idref="V-250991" selected="true" /><select idref="V-250992" selected="true" /><select idref="V-250993" selected="true" /><select idref="V-250994" selected="true" /><select idref="V-250995" selected="true" /><select idref="V-250996" selected="true" /><select idref="V-250997" selected="true" /><select idref="V-250998" selected="true" /><select idref="V-250999" selected="true" /><select idref="V-251000" selected="true" /><select idref="V-251001" selected="true" /><select idref="V-251002" selected="true" /><select idref="V-251003" selected="true" /><select idref="V-251004" selected="true" /><select idref="V-251005" selected="true" /><select idref="V-251006" selected="true" /><select idref="V-251007" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250982" selected="true" /><select idref="V-250983" selected="true" /><select idref="V-250984" selected="true" /><select idref="V-250985" selected="true" /><select idref="V-250986" selected="true" /><select idref="V-250987" selected="true" /><select idref="V-250988" selected="true" /><select idref="V-250989" selected="true" /><select idref="V-250990" selected="true" /><select idref="V-250991" selected="true" /><select idref="V-250992" selected="true" /><select idref="V-250993" selected="true" /><select idref="V-250994" selected="true" /><select idref="V-250995" selected="true" /><select idref="V-250996" selected="true" /><select idref="V-250997" selected="true" /><select idref="V-250998" selected="true" /><select idref="V-250999" selected="true" /><select idref="V-251000" selected="true" /><select idref="V-251001" selected="true" /><select idref="V-251002" selected="true" /><select idref="V-251003" selected="true" /><select idref="V-251004" selected="true" /><select idref="V-251005" selected="true" /><select idref="V-251006" selected="true" /><select idref="V-251007" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250982" selected="true" /><select idref="V-250983" selected="true" /><select idref="V-250984" selected="true" /><select idref="V-250985" selected="true" /><select idref="V-250986" selected="true" /><select idref="V-250987" selected="true" /><select idref="V-250988" selected="true" /><select idref="V-250989" selected="true" /><select idref="V-250990" selected="true" /><select idref="V-250991" selected="true" /><select idref="V-250992" selected="true" /><select idref="V-250993" selected="true" /><select idref="V-250994" selected="true" /><select idref="V-250995" selected="true" /><select idref="V-250996" selected="true" /><select idref="V-250997" selected="true" /><select idref="V-250998" selected="true" /><select idref="V-250999" selected="true" /><select idref="V-251000" selected="true" /><select idref="V-251001" selected="true" /><select idref="V-251002" selected="true" /><select idref="V-251003" selected="true" /><select idref="V-251004" selected="true" /><select idref="V-251005" selected="true" /><select idref="V-251006" selected="true" /><select idref="V-251007" selected="true" /></Profile><Group id="V-250982"><title>SRG-APP-000001-NDM-000200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250982r1028209_rule" weight="10.0" severity="medium"><version>MOIS-ND-000020</version><title>Sentry must limit the number of concurrent sessions for the CLISH interface to an organization-defined number for each administrator account and/or administrator account type.</title><description>&lt;VulnDiscussion&gt;Device management includes the ability to control the number of administrators and management sessions that manage a device. Limiting the number of allowed administrators and sessions per administrator based on account type, role, or access type is helpful in limiting risks related to DoS attacks.
+
+This requirement addresses concurrent sessions for administrative accounts and does not address concurrent sessions by a single administrator via multiple administrative accounts. The maximum number of concurrent sessions should be defined based upon mission needs and the operational environment for each system. At a minimum, limits must be set for SSH, HTTPS, account of last resort, and root account sessions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-54371r802167_fix">Configure the CLISH with a max number of SSH sessions. 
+
+1. Log in to the Sentry System Manager.
+2. Go to Settings &gt;&gt; CLI.
+3. Configure a Max SSH Sessions integer (1-10) based on security guidance.
+4. Click "Apply" and "Save" in the top right corner.</fixtext><fix id="F-54371r802167_fix" /><check system="C-54417r802166_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify that the CLISH has a max number of SSH sessions enabled. 
+
+1. Log in to the Sentry System Manager.
+2. Go to Settings &gt;&gt; CLI.
+3. Verify a Max SSH Sessions integer (1-10) is set based on security guidance.
+
+If the Max SSH Sessions integer is not set correctly, this is a finding.</check-content></check></Rule></Group><Group id="V-250983"><title>SRG-APP-000001-NDM-000200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250983r1028210_rule" weight="10.0" severity="medium"><version>MOIS-ND-000030</version><title>Sentry must be configured to limit the network access of the Sentry System Manager Portal behind the corporate firewall and whitelist source IP range.</title><description>&lt;VulnDiscussion&gt;Device management includes the ability to control the number of administrators and management sessions that manage a device. Limiting the number of allowed administrators and sessions per administrator based on account type, role, or access type is helpful in limiting risks related to DoS attacks.
+
+This requirement addresses concurrent sessions for administrative accounts and does not address concurrent sessions by a single administrator via multiple administrative accounts. The maximum number of concurrent sessions should be defined based upon mission needs and the operational environment for each system. At a minimum, limits must be set for SSH, HTTPS, account of last resort, and root account sessions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-54372r802170_fix">Configure a secondary interface for System Manager Portal Access of Sentry.
+
+1. Log in to the Sentry System Manager.
+2. Go to Settings &gt;&gt; Network &gt;&gt; Interfaces.
+3. Click an open Physical Interface such as GigabitEthernet2.
+4. Configure a Management Interface for internal access of the System Manager Portal (refer to the "MobileIron Standalone Sentry 9.8.0 Installation Guide" Physical Interfaces section for more information).</fixtext><fix id="F-54372r802170_fix" /><check system="C-54418r802169_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify that a secondary interface has been added for System Manager Portal Access of Sentry.
+
+1. Log in to the Sentry System Manager.
+2. Go to Settings &gt;&gt; Network &gt;&gt; Interfaces.
+3. Verify a Management Interface for internal access of the System Manager Portal has been added as one of the interfaces.
+
+If the Management Interface for internal access of the System Manager Portal has not been added as one of the Interfaces, this is a finding.</check-content></check></Rule></Group><Group id="V-250984"><title>SRG-APP-000003-NDM-000202</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250984r1028211_rule" weight="10.0" severity="medium"><version>MOIS-ND-000050</version><title>Sentry must initiate a session lock after a 15-minute period of inactivity.</title><description>&lt;VulnDiscussion&gt;A session lock is a temporary network device or administrator-initiated action taken when the administrator stops work but does not log out of the network device. Rather than relying on the user to manually lock their management session prior to vacating the vicinity, network devices need to be able to identify when a management session has idled and take action to initiate the session lock. Once invoked, the session lock shall remain in place until the administrator reauthenticates. No other system activity aside from reauthentication shall unlock the management session.
+
+Note that CCI-001133 requires that administrative network sessions be disconnected after 10 minutes of idle time. So this requirement may only apply to local administrative sessions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-54373r1004828_fix">Set the System Manager Timeout to 15 minutes.
+
+1. Log in to the Sentry System Manager.
+2. Navigate to Settings &gt;&gt; Timeout.
+3. Configure the System Manager timeout to 15.
+4. Click "Apply" and "Save" in the top right corner.</fixtext><fix id="F-54373r1004828_fix" /><check system="C-54419r1004827_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify the System manager Timeout is set to 15 minutes.
+
+1. Log in to the Sentry System Manager.
+2. Navigate to Settings &gt;&gt; Timeout.
+3. Verify the System Manager timeout is set to 15.
+
+If the System Manager timeout is not set to 15, this is a finding.</check-content></check></Rule></Group><Group id="V-250985"><title>SRG-APP-000038-NDM-000213</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250985r1028212_rule" weight="10.0" severity="low"><version>MOIS-ND-000130</version><title>Sentry must enforce approved authorizations for controlling the flow of management information within the network device based on information flow control policies.</title><description>&lt;VulnDiscussion&gt;A mechanism to detect and prevent unauthorized communication flow must be configured or provided as part of the system design. If management information flow is not enforced based on approved authorizations, the network device may become compromised. Information flow control regulates where management information is allowed to travel within a network device. The flow of all management information must be monitored and controlled so it does not introduce any unacceptable risk to the network device or data. 
+
+Application-specific examples of enforcement occur in systems that employ rule sets or establish configuration settings that restrict information system services or message-filtering capability based on message content (e.g., implementing key word searches or using document characteristics).
+
+Applications providing information flow control must be able to enforce approved authorizations for controlling the flow of management information within the system in accordance with applicable policy.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><fixtext fixref="F-54374r1004831_fix">Configure Sentry to enforce approved authorizations for controlling the flow of management information within the network device. 
+
+Sentry receives a request from MobileIron Core and enforces verification before handling the request to validate that it is from a trusted MobileIron Core.
+
+Therefore, if the deployment uses MobileIron Core, to ensure that Sentry trusts MobileIron Core in the deployment, run the following commands in Sentry CLI:
+
+1. sentry emm-source-verify true
+
+2. sentry emm-ips &lt;subnet_list&gt;&gt;
+
+3. This can further be mitigated by creating ACLs for Sentry System Manager.
+
+Then:
+1. In the Standalone Sentry System Manager, go to Security &gt;&gt; Access Control Lists.
+2. Click "Add".
+3. In the "Name" field, enter a name to identify the ACL.
+4. In the "Description" field, enter text to clarify the purpose of the ACL.
+5. Click "Save".
+6. Select the new ACL that was created and click it, which should open a Modify ACL dialog box.
+7. Click "Add" to add an access control entry (ACE) to the ACL.
+Each ACE consists of a combination of the network hosts and services that were configured for use in ACLs.
+8. Use the following guidelines to complete the form:
+Source Network 
+Destination Network
+Service
+Action - Select Permit or Deny from the dropdown list.
+Connections Per Minute
+9. Click "Save".
+10. Configure Sentry with specified backend services such as Exchange Active Sync or App Tunnels. Refer to section "Configuring Standalone Sentry for ActiveSync" and "Configuring Standalone Sentry for AppTunnel" in "Sentry 9.8 Guide for MobileIron Core" to ensure these services are configured in Sentry settings in Core where applicable.</fixtext><fix id="F-54374r1004831_fix" /><check system="C-54420r1004830_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Review Sentry configuration to determine if it enforces approved authorizations for controlling the flow of management information within the network.
+
+Sentry receives a request from MobileIron Core and enforces verification before handling the request to validate that it is from a trusted MobileIron Core.
+
+Therefore, if the deployment uses MobileIron Core, to verify that Sentry trusts MobileIron Core in the deployment:
+
+1. Run the following command in Sentry CLI:
+show sentry EMM-source-verify 
+
+If this is set to "false", this is a finding.
+
+2. Run the following command in Sentry CLI:
+show sentry emm-ips 
+
+If the Core IP is not specified, this is a finding.
+
+3. Verify Sentry has an ACL for Core in Sentry System Manager.
+
+Then:
+1. In the Standalone Sentry System Manager, go to Security &gt;&gt; Access Control Lists.
+2. Verify that an ACL is created for Core. If it is not, this is a finding.
+3. Determine if Sentry is configured with specified backend services such as Exchange Active Sync or App Tunnels.
+
+If the backend service is not specified, this is a finding. 
+
+Refer to section "Configuring Standalone Sentry for ActiveSync" and "Configuring Standalone Sentry for AppTunnel" in "Sentry 9.8 Guide for MobileIron Core" to ensure these services are configured in Sentry settings in Core where applicable.</check-content></check></Rule></Group><Group id="V-250986"><title>SRG-APP-000065-NDM-000214</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250986r1028213_rule" weight="10.0" severity="low"><version>MOIS-ND-000140</version><title>Sentry must be configured to enforce the limit of three consecutive invalid logon attempts, after which time it must block any login attempt for 15 minutes.</title><description>&lt;VulnDiscussion&gt;By limiting the number of failed login attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute-forcing, is reduced.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-54375r1004834_fix">Configure Sentry to enforce the limit of three consecutive invalid login attempts during a 15-minute time period.
+
+1. Log in to Sentry System Manager portal.
+2. Go to the "Security" tab.
+3. Go to "Password Policy".
+4. For "Number of Failed Attempts", set value to 3.
+5. For "Auto-Lock Time", set value to 900 seconds or more.</fixtext><fix id="F-54375r1004834_fix" /><check system="C-54421r1004833_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Review Sentry configuration to verify that it enforces the limit of three consecutive invalid logon attempts. 
+
+1. Log in to Sentry System Manager portal.
+2. Go to the "Security" tab. 
+3. Go to "Password Policy". 
+4. Look for "Number of Failed Attempts" and determine if the value is set to 3. If it is not, this is a finding.
+5. Verify the Auto-Lock Time value is set to 900 seconds or more. 
+
+If the Auto-Lock Time is not set to 900 seconds or more, this is a finding.</check-content></check></Rule></Group><Group id="V-250987"><title>SRG-APP-000068-NDM-000215</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250987r1028214_rule" weight="10.0" severity="medium"><version>MOIS-ND-000150</version><title>Sentry must display the Standard Mandatory DOD Notice and Consent Banner in the Sentry web interface before granting access to the device.</title><description>&lt;VulnDiscussion&gt;Display of the DOD-approved use notification before granting access to the network device ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-54376r1004837_fix">Configure Sentry to display "I've read and consent to terms in IS user agreem't" when logging in to the command line.
+
+1. Log in to the Sentry System Manager.
+2. Go to Settings &gt;&gt; Login.
+3. Add the required login banner to the "Text to Display" box.
+4. Click "Apply".</fixtext><fix id="F-54376r1004837_fix" /><check system="C-54422r1004836_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify that Sentry displays "I've read and consent to terms in IS user agreem't" when logging in to the command line.
+
+1. Log in to the Sentry System Manager or the CLI interface.
+2. Verify the required login banner is displayed.
+
+If the banner is not shown, this is a finding.</check-content></check></Rule></Group><Group id="V-250988"><title>SRG-APP-000149-NDM-000247</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250988r1028216_rule" weight="10.0" severity="high"><version>MOIS-ND-000390</version><title>Sentry must be configured to use DOD PKI as multi-factor authentication (MFA) for interactive logins.</title><description>&lt;VulnDiscussion&gt;Multi-factor authentication (MFA) is when two or more factors are used to confirm the identity of an individual who is requesting access to digital information resources. Valid factors include something the individual knows (e.g., username and password), something the individual has (e.g., a smartcard or token), or something the individual is (e.g., a fingerprint or biometric). Legacy information system environments only use a single factor for authentication, typically a username and password combination. Although two pieces of data are used in a username and password combination, this is still considered single factor because an attacker can obtain access simply by learning what the user knows. Common attacks against single-factor authentication are attacks on user passwords. These attacks include brute force password guessing, password spraying, and password credential stuffing. MFA, along with strong user account hygiene, helps mitigate against the threat of having account passwords discovered by an attacker. Even in the event of a password compromise, with MFA implemented and required for interactive login, the attacker still needs to acquire something the user has or replicate a piece of user’s biometric digital presence.
+
+Private industry recognizes and uses a wide variety of MFA solutions. However, DOD public key infrastructure (PKI) is the only prescribed method approved for DOD organizations to implement MFA. For authentication purposes, centralized DOD certificate authorities (CA) issue PKI certificate key pairs (public and private) to individuals using the prescribed x.509 format. The private certificates that have been generated by the issuing CA are downloaded and saved to smartcards which, within DOD, are referred to as common access cards (CAC) or personal identity verification (PIV) cards. This happens at designated DOD badge facilities. The CA maintains a record of the corresponding public keys for use with PKI-enabled environments. Privileged user smartcards, or "alternate tokens", function in the same manner, so this requirement applies to all interactive user sessions (authorized and privileged users).
+
+Note: This requirement is used in conjunction with the use of a centralized authentication server (e.g., AAA, RADIUS, LDAP), a separate but equally important requirement. The MFA configuration of this requirement provides identification and the first phase of authentication (the challenge and validated response, thereby confirming the PKI certificate that was presented by the user). The centralized authentication server will provide the second phase of authentication (the digital presence of the PKI ID as a valid user in the requested security domain) and authorization. The centralized authentication server will map validated PKI identities to valid user accounts and determine access levels for authenticated users based on security group membership and role. In cases where the centralized authentication server is not utilized by the network device for user authorization, the network device must map the authenticated identity to the user account for PKI-based authentication.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000765</ident><fixtext fixref="F-54377r1028215_fix">Configure the Sentry with DOD PKI-based Certificate Authentication. 
+
+1. Log in to the Sentry System Manager.
+2. Go to Security tab &gt;&gt; Advanced &gt;&gt; Sign-in Authentication.
+3. Select the Certificate Authentication checkbox.
+4. Select the CAC or PIV checkbox.
+5. Map user certificate fields in the Certificate Attribute Mapping section based on the organization's certificates.
+6. Upload the Issuing CA Certificate chain.
+7. Click "Apply" and "Save" in the top right corner.
+8. If using DOD PKI, ensure an EDIPI attribute is assigned to the user in the Security &gt;&gt; Local Users section.</fixtext><fix id="F-54377r1028215_fix" /><check system="C-54423r1004839_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Review the Sentry Configuration to ensure Certificate Authentication has been configured.
+
+1. Log in to the Sentry System Manager.
+2. Go to Security tab &gt;&gt; Advanced &gt;&gt; Sign-in Authentication. 
+3. Determine if Certificate Authentication is activated and configured. 
+
+If Certificate Authentication is not activated and configured, this is a finding.</check-content></check></Rule></Group><Group id="V-250989"><title>SRG-APP-000164-NDM-000252</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250989r1029559_rule" weight="10.0" severity="medium"><version>MOIS-ND-000420</version><title>Sentry device must enforce a minimum 15-character password length.</title><description>&lt;VulnDiscussion&gt;Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password.
+
+The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised. Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-54378r1004843_fix">Configure the Sentry Local User Password Policy to enforce a minimum 15-character password.
+
+1. Log in to Sentry System Manager portal.
+2. Go to the "Security" tab. 
+3. Go to Password Policy. 
+4. Set the "Minimum Password Length" value to 15 or more.</fixtext><fix id="F-54378r1004843_fix" /><check system="C-54424r1004842_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Review Sentry configuration to verify that a minimum 15-character password is set.
+
+1. Log in to Sentry System Manager portal. 
+2. Go to the "Security" tab. 
+3. Go to Identity Source &gt;&gt; Password Policy. 
+4. Verify the "Minimum Password Length" is set to 15 or more.
+
+If the password character length is not set 15 or more, this is a finding.</check-content></check></Rule></Group><Group id="V-250990"><title>SRG-APP-000166-NDM-000254</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250990r1029560_rule" weight="10.0" severity="medium"><version>MOIS-ND-000430</version><title>Sentry must enforce password complexity by requiring that at least one uppercase character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex passwords helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password is, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords should only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000192</ident><fixtext fixref="F-54379r1028219_fix">Configure Sentry Server to enforce password complexity by requiring that at least one uppercase character be used.
+
+1. Log in to the System Manager of Sentry. 
+2. Go to Security &gt;&gt; Password.
+3. Check "Upper Case". 
+4. Select "Apply".</fixtext><fix id="F-54379r1028219_fix" /><check system="C-54425r1028218_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Where passwords are used, verify that Sentry Server enforces password complexity by requiring that at least one uppercase character be used. This requirement may be verified by demonstration, configuration review, or validated test results.
+
+If Sentry Server does not require that at least one uppercase character be used in each password, this is a finding.
+
+Verify the local Password Policy enforces an uppercase value: 
+1. Log in to the System Manager of Sentry. 
+2. Go to Security &gt;&gt; Identity Source &gt;&gt; Password. 
+3. Verify "Upper Case" is checked.
+
+If "Upper Case" is not checked, this is a finding.</check-content></check></Rule></Group><Group id="V-250991"><title>SRG-APP-000167-NDM-000255</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250991r1029561_rule" weight="10.0" severity="medium"><version>MOIS-ND-000440</version><title>Sentry must enforce password complexity by requiring that at least one lowercase character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords should only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000193</ident><fixtext fixref="F-54380r1028222_fix">Configure Sentry Server to enforce password complexity by requiring that at least one lowercase character be used.
+
+1. Log in to the System Manager of Sentry. 
+2. Go to Security &gt;&gt; Password. 
+3. Check "Lower Case". 
+4. Select "Apply".</fixtext><fix id="F-54380r1028222_fix" /><check system="C-54426r1028221_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Where passwords are used, confirm that Sentry Server enforces password complexity by requiring that at least one lowercase character be used. This requirement may be verified by demonstration, configuration review, or validated test results.
+
+If Sentry does not require that at least one lowercase character be used in each password, this is a finding. 
+
+1. Log in to the System Manager of Sentry. 
+2. Go to Security &gt;&gt; Identity Source &gt;&gt; Password. 
+3. Verify "Lower Case" is checked.
+
+If "Lower Case" is not checked, this is a finding.</check-content></check></Rule></Group><Group id="V-250992"><title>SRG-APP-000168-NDM-000256</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250992r1029562_rule" weight="10.0" severity="medium"><version>MOIS-ND-000450</version><title>Sentry must enforce password complexity by requiring that at least one numeric character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords should only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000194</ident><fixtext fixref="F-54381r1028225_fix">Configure Sentry Server to enforce password complexity by requiring that at least one numeric character be used.
+
+1. Log in to the System Manager of Sentry. 
+2. Go to Security &gt;&gt; Password. 
+3. Check "Numeric". 
+4. Select "Apply".</fixtext><fix id="F-54381r1028225_fix" /><check system="C-54427r1028224_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Where passwords are used, confirm that Sentry Server enforces password complexity by requiring that at least one numeric character be used. This requirement may be verified by demonstration, configuration review, or validated test results.
+
+If Sentry Server does not require that at least one numeric character be used in each password, this is a finding.
+
+1. Log into the System Manager of Sentry. 
+2. Go to Security &gt;&gt; Identity Source &gt;&gt; Password. 
+3. Verify "Numeric" is checked.
+
+If "Numeric" is not checked, this is a finding.</check-content></check></Rule></Group><Group id="V-250993"><title>SRG-APP-000169-NDM-000257</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250993r1029563_rule" weight="10.0" severity="medium"><version>MOIS-ND-000460</version><title>Sentry must enforce password complexity by requiring that at least one special character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords should only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-001619</ident><fixtext fixref="F-54382r1028228_fix">Configure Sentry Server to enforce password complexity by requiring that at least one special character be used.
+
+1. Log in to the System Manager of Sentry. 
+2. Go to Security &gt;&gt; Password. 
+3. Check "Special Character".
+4. Select "Apply".</fixtext><fix id="F-54382r1028228_fix" /><check system="C-54428r1028227_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Where passwords are used, confirm that Sentry Server enforces password complexity by requiring that at least one special character be used. 
+
+If Sentry Server does not require that at least one special character be used in each password, this is a finding.
+
+1. Log in to the System Manager of Sentry. 
+2. Go to Security &gt;&gt; Identity Source &gt;&gt; Password. 
+3. Verify "Special Character" is checked.
+
+If "Special Character" is not checked, this is a finding.</check-content></check></Rule></Group><Group id="V-250994"><title>SRG-APP-000177-NDM-000263</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250994r1028230_rule" weight="10.0" severity="high"><version>MOIS-ND-000510</version><title>Sentry, for PKI-based authentication, must be configured to map validated certificates to unique user accounts.</title><description>&lt;VulnDiscussion&gt;Without mapping the PKI certificate to a unique user account, the ability to determine the identities of individuals or the status of their non-repudiation is considerably impacted during forensic analysis. A strength of using PKI as MFA is that it can help ensure only the assigned individual is using their associated user account. This can only be accomplished if the network device is configured to enforce the relationship which binds PKI certificates to unique user accounts.
+
+Local accounts (accounts created, stored, and maintained locally on the network device) should be avoided in lieu of using a centrally managed directory service. Local accounts empower the same workgroup who will be operating the network infrastructure to also control and manipulate access methods, thus creating operational autonomy. This undesirable approach breaks the concept of separation of duties. Additionally, local accounts are susceptible to poor cyber hygiene because they create another user database that must be maintained by the operator, whose primary focus is on running the network. Such examples of poor hygiene include dormant accounts that are not disabled or deleted, employees who have left the organization but whose accounts are still present, periodic password and hash rotation, password complexity shortcomings, increased exposure to insider threat, etc. For reasons such as this, local users on network devices are frequently the targets of cyber-attacks. Instead, organizations should explore examples of centrally managed account services. These examples include the implementation of AAA concepts like the use of external RADIUS and LDAP directory service brokers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000166</ident><ident system="http://cyber.mil/cci">CCI-000187</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-54383r802203_fix">Ensure that an EDIPI is mapped to the Sentry Admin user accounts. 
+
+1. Log in to the Sentry System Manager.
+2. Ensure "Certificate Based Authentication" under Security Tab &gt;&gt; Sign-In Authentication.
+3. Ensure that a Certificate Attribute Mapping is mapped to EDIPI.
+4. Go to Security tab &gt;&gt; Local Users. Click on an active Local User and configure an EDIPI.
+5. Click "Apply".
+6. Repeat step for 4 for all local users.</fixtext><fix id="F-54383r802203_fix" /><check system="C-54429r802202_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify that an EDIPI is mapped to the Sentry Admin user accounts. 
+
+1. Log in to the Sentry System Manager.
+2. Verify "Certificate Based Authentication" under Security Tab &gt;&gt; Sign-In Authentication.
+3. Verify that a Certificate Attribute Mapping is mapped to EDIPI.
+4. Go to Security tab &gt;&gt; Local Users. Click on an active Local User and configure an EDIPI.
+5. Click "Apply".
+6. Repeat step 4 for all local users.
+
+If EDIPI is not mapped to the Sentry Admin user accounts, this is a finding.</check-content></check></Rule></Group><Group id="V-250995"><title>SRG-APP-000179-NDM-000265</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250995r1028232_rule" weight="10.0" severity="high"><version>MOIS-ND-000530</version><title>Sentry must use FIPS 140-2 approved algorithms for authentication to a cryptographic module.</title><description>&lt;VulnDiscussion&gt;Unapproved mechanisms that are used for authentication to the cryptographic module are not validated and therefore cannot be relied upon to provide confidentiality or integrity, and DOD data may be compromised.
+
+Sentry utilizing encryption is required to use FIPS-compliant mechanisms for authenticating to cryptographic modules.
+
+FIPS 140-2 is the current standard for validating that mechanisms used to access cryptographic modules utilize authentication that meets DOD requirements. However, authentication algorithms must configure security processes to use only FIPS-approved and NIST-recommended authentication algorithms.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><fixtext fixref="F-54384r1028231_fix">Configure the Sentry Server to use a FIPS 140-2-validated cryptographic module.
+
+On the Sentry console, do the following:
+1. SSH to Sentry Server from any SSH client.
+2. Enter the administrator credentials set at Sentry installation.
+3. Enter "enable".
+4. When prompted, enter the "enable secret" set at Sentry installation.
+5. Enter "configure terminal".
+6. Enter the following command to enable FIPS: FIPS
+7. Enter the following command to proceed with the necessary reload: do reload
+8. Enter "Yes" at saved configuration modified prompt.
+9. Enter "Yes" at proceed do reload.</fixtext><fix id="F-54384r1028231_fix" /><check system="C-54430r1004858_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify the Sentry uses encryption services that implement NIST FIPS-validated cryptography to protect the confidentiality of remote access sessions. 
+
+On the Sentry CLI console, do the following:
+1. SSH to Sentry Server from any SSH client.
+2. Enter the administrator credentials set at Sentry installation.
+3. Enter "enable".
+4. When prompted, enter the "enable secret" set at Sentry installation.
+5. Enter "show FIPS".
+6. Verify "FIPS 140 mode is enabled" is displayed.
+
+If the Sentry Server does not report that FIPS mode is "enabled", this is a finding.</check-content></check></Rule></Group><Group id="V-250996"><title>SRG-APP-000190-NDM-000267</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250996r1028233_rule" weight="10.0" severity="high"><version>MOIS-ND-000550</version><title>Sentry must terminate all network connections associated with a device management session at the end of the session, or the session must be terminated after 10 minutes of inactivity except to fulfill documented and validated mission requirement.</title><description>&lt;VulnDiscussion&gt;Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. In addition, quickly terminating an idle session will also free up resources committed by the managed network element.
+
+Terminating network connections associated with communications sessions includes, for example, de-allocating associated TCP/IP address/port pairs at the operating system level, or de-allocating networking assignments at the application level if multiple application sessions are using a single, operating system-level network connection. This does not mean that the device terminates all sessions or network access; it only ends the inactive session and releases the resources associated with that session.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001133</ident><fixtext fixref="F-54385r1004862_fix">Configure the Sentry to terminate the connection associated with a device management session at the end of the session or after 10 minutes of inactivity.
+
+1. Log in to Sentry.
+2. Go to Settings &gt;&gt; CLI.
+3. Within CLI Configuration, input "10" for CLI Session Timeout(minutes).
+4. Click "Apply".</fixtext><fix id="F-54385r1004862_fix" /><check system="C-54431r1004861_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>The Sentry System Manager has two interfaces, a CLI restricted shell and web-based GUI. In the Sentry MICS portal, verify that the Sentry CLI timeout is set to 10 minutes.
+
+1. Log in to Sentry.
+2. Go to Settings &gt;&gt; CLI.
+3. Within CLI Configuration, verify the CLI Session Timeout(minutes) is set to greater than 10 minutes.
+
+If the CLI Session Timeout(minutes) is not set to greater than 10 minutes, this is a finding.</check-content></check></Rule></Group><Group id="V-250997"><title>SRG-APP-000224-NDM-000270</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250997r1028235_rule" weight="10.0" severity="medium"><version>MOIS-ND-000580</version><title>Sentry must generate unique session identifiers using a FIPS 140-2 approved random number generator.</title><description>&lt;VulnDiscussion&gt;Sequentially generated session IDs can be easily guessed by an attacker. Employing the concept of randomness in the generation of unique session identifiers helps to protect against brute-force attacks to determine future session identifiers.
+
+Unique session IDs address man-in-the-middle attacks, including session hijacking or insertion of false information into a session. If the attacker is unable to identify or guess the session information related to pending application traffic, they will have more difficulty in hijacking the session or otherwise manipulating valid sessions.
+
+This requirement is applicable to devices that use a web interface for device management.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001188</ident><fixtext fixref="F-54386r1028234_fix">Configure the Sentry Server to use a FIPS 140-2-validated cryptographic module.
+
+On the Sentry console, do the following:
+1. SSH to Sentry Server from any SSH client.
+2. Enter the administrator credentials set at Sentry installation.
+3. Enter "enable".
+4. When prompted, enter the "enable secret" set at Sentry installation.
+5. Enter "configure terminal".
+6. Enter the following command to enable FIPS: FIPS
+7. Enter the following command to proceed with the necessary reload: do reload
+8. Enter "Yes" at saved configuration modified prompt.
+9. Enter "Yes" at proceed do reload.</fixtext><fix id="F-54386r1028234_fix" /><check system="C-54432r1004864_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify the Sentry uses encryption services that implement NIST FIPS-validated cryptography to protect the confidentiality of remote access sessions. 
+
+On the Sentry CLI console, do the following:
+1. SSH to Sentry Server from any SSH client.
+2. Enter the administrator credentials set at Sentry installation.
+3. Enter "enable".
+4. When prompted, enter the "enable secret" set at Sentry installation.
+5. Enter "show FIPS".
+6. Verify "FIPS 140 mode is enabled" is displayed.
+
+If the Sentry Server does not report that FIPS mode is "enabled", this is a finding.</check-content></check></Rule></Group><Group id="V-250998"><title>SRG-APP-000360-NDM-000295</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250998r1028236_rule" weight="10.0" severity="low"><version>MOIS-ND-000690</version><title>Sentry must generate an immediate real-time alert of all audit failure events requiring real-time alerts.</title><description>&lt;VulnDiscussion&gt;It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without a real-time alert, security personnel may be unaware of an impending failure of the audit capability and system operation may be adversely affected. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001858</ident><fixtext fixref="F-54387r1004868_fix">Configure the Sentry to send alerts for failure events in Sentry System Manager web GUI. 
+
+1. Log in to Sentry.
+2. Go to Monitoring &gt;&gt; Alert Configuration.
+3. Check "Send Notification".
+4. Apply Email List.
+5. Enter Alerts Per Hour.
+6. Enter Batch Time Interval (min).
+7. Select "Default Alert Action".
+8. Apply.
+9. Add Alert Notification Management.
+10. Add Alert ID.
+11. Add "Action" from dropdown.
+12. Click "Apply" and "Save" in the top right corner.
+
+Refer to the "Alert Configuration" section of the "Sentry 9.8.0 Guide for MobileIron Core" for more information.</fixtext><fix id="F-54387r1004868_fix" /><check system="C-54433r1004867_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify the Sentry is configured to send alerts for failure events in Sentry System Manager web GUI. 
+
+1. Log in to Sentry.
+2. Go to Monitoring &gt;&gt; Alert Configuration.
+3. Verify Alert monitoring is configured.
+
+If Alert Configuration settings are not configured, this is a finding. 
+
+Refer to the "Alert Configuration" section of the "Sentry 9.8.0 Guide for MobileIron Core" for more information.</check-content></check></Rule></Group><Group id="V-250999"><title>SRG-APP-000373-NDM-000298</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250999r1029564_rule" weight="10.0" severity="medium"><version>MOIS-ND-000700</version><title>Sentry must be configured to synchronize internal information system clocks using redundant authoritative time sources.</title><description>&lt;VulnDiscussion&gt;The loss of connectivity to a particular authoritative time source will result in the loss of time synchronization (free-run mode) and increasingly inaccurate time stamps on audit events and other functions.
+
+Multiple time sources provide redundancy by including a secondary source. Time synchronization is usually a hierarchy; clients synchronize time to a local source while that source synchronizes its time to a more accurate source. The network device must utilize an authoritative time server and/or be configured to use redundant authoritative time sources. This requirement is related to the comparison done in CCI-001891.
+
+DOD-approved solutions consist of a combination of a primary and secondary time source using a combination or multiple instances of the following: a time server designated for the appropriate DOD network (NIPRNet/SIPRNet); United States Naval Observatory (USNO) time servers; and/or the Global Positioning System (GPS). The secondary time source must be located in a different geographic region than the primary time source.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-004928</ident><ident system="http://cyber.mil/cci">CCI-001893</ident><fixtext fixref="F-54388r1004871_fix">Configure the Sentry with multiple date and time servers (NTP).
+
+1. Log in to Sentry.
+2. Go to Settings &gt;&gt; Date and Time (NTP).
+3. Under Time Source dropdown, select "NTP".
+4. Enter at least Primary and Secondary NTP servers.
+5. Click "Apply" and "Save" in the top right corner.
+
+Refer to the "Date and Time (NTP)" section of the "Sentry 9.8.0 Guide for MobileIron Core" for more information.</fixtext><fix id="F-54388r1004871_fix" /><check system="C-54434r1004870_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify the Sentry is configured with multiple date and time servers (NTP).
+
+1. Log in to Sentry.
+2. Go to Settings &gt;&gt; Date and Time (NTP).
+3. Verify the NTP servers are configured.
+
+If NTP servers are not configured, this is a finding.
+
+Refer to the "Date and Time (NTP)" section of the "Sentry 9.8.0 Guide for MobileIron Core" for more information.</check-content></check></Rule></Group><Group id="V-251000"><title>SRG-APP-000395-NDM-000310</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251000r1028238_rule" weight="10.0" severity="medium"><version>MOIS-ND-000760</version><title>The Sentry must be configured to authenticate SNMP messages using a FIPS-validated Keyed-Hash Message Authentication Code (HMAC).</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk. A local connection is any connection with a device communicating without the use of a network. A network connection is any connection with a device that communicates through a network (e.g., local area or wide area network).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001967</ident><fixtext fixref="F-54389r1004874_fix">On Sentry console, do the following to configure FIPS mode:
+
+1. SSH to the Sentry. 
+2. At the prompt, enter "enable" mode with the secret credentials.
+3. Type Configure command.
+4. Type FIPS.
+5. Once reloaded, SSH to the Sentry.
+6. Run the "show FIPS".
+
+Then:
+1. Log in to Sentry.
+2. Go to Settings &gt;&gt; SNMP.
+3. Add SNMP Trap Receiver.
+4. Enable SNMP Service.
+5. Select Protocol v3.
+6. Add SNMP v3 Users.
+7. Enter User Name.
+8. Select Security Level from dropdown.
+9. Select AUTH Protocol from dropdown.
+10. Enter AUTH Password.
+11. Select Privacy Protocol from dropdown.
+12. Enter Privacy Password.
+13. Click "Save".
+14. Enable Link Up/Down Trap.
+15. Click "Apply" to save changes.</fixtext><fix id="F-54389r1004874_fix" /><check system="C-54435r1004873_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>On the Sentry console, do the following to verify FIPS mode is enabled: 
+
+1. SSH to Sentry Server from any SSH client.
+2. Enter the administrator credentials set at Sentry installation.
+3. Enter "enable".
+4. When prompted, enter the "enable secret" set at Sentry installation. 
+5. Enter "show FIPS".
+6. Verify "FIPS 140 mode is enabled" is displayed. If it is not, this is a finding.
+
+Then:
+1. Log in to Sentry.
+
+2. Go to Settings &gt;&gt; SNMP. 
+
+3. Verify SNMP server has been added.
+a. If SNMP server is not added, this is a finding.
+b.  If SNMP server is added, go to step 4. 
+
+4. Verify SNMP Control is not disabled.
+a. If SNMP Control is disabled, this is a finding.
+b. If SNMP Control is not disabled, go to step 5.
+
+5. Verify Protocol v3 is selected.
+a. If Protocol v3 is not selected, this is a finding.
+b. If Protocol v3 is selected, go to step 6.
+
+6. Verify the SNMP v3 User has been added.
+a. If SNMP v3 User has not been added, this is a finding.</check-content></check></Rule></Group><Group id="V-251001"><title>SRG-APP-000412-NDM-000331</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251001r1028239_rule" weight="10.0" severity="high"><version>MOIS-ND-000810</version><title>Sentry must be configured to implement cryptographic mechanisms using a FIPS 140-2 approved algorithm to protect the confidentiality of remote maintenance sessions.</title><description>&lt;VulnDiscussion&gt;This requires the use of secure protocols instead of their unsecured counterparts, such as SSH instead of telnet, SCP instead of FTP, and HTTPS instead of HTTP. If unsecured protocols (lacking cryptographic mechanisms) are used for sessions, the contents of those sessions will be susceptible to eavesdropping, potentially putting sensitive data (including administrator passwords) at risk of compromise and potentially allowing hijacking of maintenance sessions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-003123</ident><fixtext fixref="F-54390r1004877_fix">Configure Sentry to use FIPS 140-2 approved algorithms to protect the confidentiality of remote maintenance sessions:
+
+1. SSH to the Sentry.
+2. At the prompt, enter "enable" mode with the secret credentials.
+3. Type Configure command.
+4. Type FIPS.
+5. Once reloaded, SSH to the Sentry.
+6. Run the "show FIPS" command. 
+
+FIPS 140 mode is enabled.</fixtext><fix id="F-54390r1004877_fix" /><check system="C-54436r1004876_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>On Sentry console, do the following to verify FIPS mode is activated to protect the confidentiality of remote maintenance sessions: 
+ 
+1. SSH to the Sentry. 
+2. Run the "show FIPS" command.
+3. Verify FIPS 140 mode is not disabled. 
+
+If FIPS 140-2 mode is disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-251002"><title>SRG-APP-000515-NDM-000325</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251002r1028240_rule" weight="10.0" severity="low"><version>MOIS-ND-000900</version><title>Sentry must offload audit records onto a different system or media than the system being audited.</title><description>&lt;VulnDiscussion&gt;Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Offloading is a common process in information systems with limited audit storage capacity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-54391r1004880_fix">Configure Sentry to forward/offload audit to a different system.
+
+1. Log in to Sentry.
+2. Go to Settings &gt;&gt; Syslog.
+3. Configure a new syslog server if not already added.
+4. Click on the syslog server(s) and in the "Modify Syslog"/"Add Syslog" pop-up dialog, under the "Facility Type", click the checkbox for "Audit". 
+5. Set the Admin State to "Enable".
+6. Click "Apply".</fixtext><fix id="F-54391r1004880_fix" /><check system="C-54437r1004879_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify Sentry is configured to offload audit records to a different system. 
+
+1. Log in to Sentry.
+2. Go to Settings &gt;&gt; Syslog.
+3. Verify that a syslog server is configured.
+ 
+If the syslog server is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-251003"><title>SRG-APP-000516-NDM-000335</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251003r1028241_rule" weight="10.0" severity="low"><version>MOIS-ND-000930</version><title>Sentry must enforce access restrictions associated with changes to the system components.</title><description>&lt;VulnDiscussion&gt;Changes to the hardware or software components of the network device can have significant effects on the overall security of the network. Therefore, only qualified and authorized individuals should be allowed administrative access to the network device for implementing any changes or upgrades. This requirement applies to updates of the application files, configuration, ACLs, and policy filters.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000345</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-54392r1004883_fix">Configure that only authorized administrators have permissions for changes, deletions, and updates on the Sentry. 
+
+1. Log in to System Manager.
+2. Go to Security &gt;&gt; identity Source &gt;&gt; Local Users. 
+3. Click "Add" to add authorized users.
+4. If unauthorized users are listed, click the check box next to the unauthorized user and click "Delete".</fixtext><fix id="F-54392r1004883_fix" /><check system="C-54438r1004882_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify that only authorized administrators have permissions for changes, deletions, and updates on the Sentry. 
+
+1. Log in to System Manager.
+2. Go to Security &gt;&gt; Local Users.
+3. Verify no unauthorized users are listed.
+
+If unauthorized users are listed, this is a finding.</check-content></check></Rule></Group><Group id="V-251004"><title>SRG-APP-000516-NDM-000340</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251004r1028242_rule" weight="10.0" severity="low"><version>MOIS-ND-000950</version><title>Sentry must be configured to conduct backups of system level information contained in the information system when changes occur.</title><description>&lt;VulnDiscussion&gt;This control requires the network device to support the organizational central backup process for system-level information associated with the network device. This function may be provided by the network device itself; however, the preferred best practice is a centralized backup rather than each network device performing discrete backups.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000537</ident><fixtext fixref="F-54393r1004886_fix">Ensure the virtual solution provides periodic backups. 
+ 
+Refer to "Sentry Installation Guide", section "Periodic backups for VMware", pages 6-7.</fixtext><fix id="F-54393r1004886_fix" /><check system="C-54439r1004885_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Identify/validate Sentry support for periodic backups. 
+
+This is done via the virtual machine.
+
+Check with the virtual team to verify backups are scheduled.
+
+If the backups are not scheduled, this is a finding.</check-content></check></Rule></Group><Group id="V-251005"><title>SRG-APP-000516-NDM-000344</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251005r1028243_rule" weight="10.0" severity="medium"><version>MOIS-ND-000970</version><title>Sentry must obtain its public key certificates from an appropriate certificate policy through an approved service provider.</title><description>&lt;VulnDiscussion&gt;For user certificates, each organization obtains certificates from an approved, shared service provider, as required by OMB policy. For federal agencies operating a legacy public key infrastructure cross-certified with the Federal Bridge Certification Authority at medium assurance or higher, this Certification Authority will suffice.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001159</ident><fixtext fixref="F-54394r1004889_fix">Configure the Sentry with a certificate from an approved Certificate Authority.
+
+From MobileIron Core:
+1. Log in to the MobileIron Core.
+2. Navigate to "Services".
+3. Select "Sentry".
+4. On each configured Sentry, select "Manage Certificate".
+5. Upload appropriate certificate. 
+
+From Sentry:
+1. Log in to the Sentry. 
+2. Navigate to "Security".
+3. Select "Certificate Management".
+4. Select "Manage Certificate".
+5. Upload appropriate certificate. 
+
+Reference "Sentry Guide for MobileIron Core" for uploading a certificate to Sentry, section "Standalone Sentry Certificate".</fixtext><fix id="F-54394r1004889_fix" /><check system="C-54440r1004888_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Determine if the Sentry has a public certificate from an approved Certificate Authority. 
+
+From MobileIron Core:
+1. Log in to the MobileIron Core.
+2. Navigate to "Services".
+3. Select "Sentry".
+4. On each configured Sentry, select "View Certificate".
+5. Validate the Public Key is issued from an approved Certificate Authority.
+
+From Sentry:
+1. Log in to the Sentry. 
+2. Navigate to "Security".
+3. Scroll down to "Certificate Mgmt".
+4. Select "View Certificate".
+
+If approved certificates have not been uploaded, this is a finding.</check-content></check></Rule></Group><Group id="V-251006"><title>SRG-APP-000516-NDM-000350</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251006r1028244_rule" weight="10.0" severity="high"><version>MOIS-ND-000980</version><title>Sentry must be configured to send log data to a central log server for the purpose of forwarding alerts to the administrators and the ISSO.</title><description>&lt;VulnDiscussion&gt;Without syslog enabled it will be difficult for an ISSO to correlate the users behavior and identify potential threats within the logs.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002605</ident><fixtext fixref="F-54395r1004892_fix">Configure the Sentry to forward syslog data using the steps below Refer to "Sentry Guide for Core", section "Syslog", page 140.
+  
+ 1. Log in to the Sentry.
+ 2. Navigate to "Settings".
+ 3. Scroll down to "Syslog".
+ 4. If there is no syslog server entry, ADD the server:
+      a. Add Server IP address.
+      b. Add Port.
+      c. Select/add Facility Types and Log Levels.
+     d. Enable Admin state.</fixtext><fix id="F-54395r1004892_fix" /><check system="C-54441r1004891_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>To identify/validate Sentry support for syslog forwarding, follow the navigation steps below. 
+
+1. Log in to the Sentry.
+2. Navigate to "Settings".
+3. Scroll down to "Syslog".
+4. Verify that a syslog server has been configured correctly. 
+      a. Verify Server IP address.
+      b. Verify Port.
+      c. Verify Facility Types.
+      d. Verify Admin state is enabled.
+
+If syslog forwarding has not been implemented, this is a finding.</check-content></check></Rule></Group><Group id="V-251007"><title>SRG-APP-000516-NDM-000351</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251007r1028245_rule" weight="10.0" severity="high"><version>MOIS-ND-000990</version><title>Sentry must be running an operating system release that is currently supported by MobileIron.</title><description>&lt;VulnDiscussion&gt;Network devices running an unsupported operating system lack current security fixes required to mitigate the risks associated with recent vulnerabilities.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Ivanti Sentry 9.x NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Ivanti Sentry 9.x NDM</dc:subject><dc:identifier>5438</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-54396r802242_fix">Install the most current MobileIron supported version of Sentry.</fixtext><fix id="F-54396r802242_fix" /><check system="C-54442r1004894_chk"><check-content-ref href="Ivanti_Sentry_9.x_NDM_STIG.xml" name="M" /><check-content>Verify the Sentry is a supported version. 
+
+1. Enter the Sentry System Manager Portal URL in a web browser.
+2. View the version number in the top right corner.
+3. Check the MI Support page (help.mobileiron.com) to ensure the MI Sentry is a supported version. 
+
+If the version number of the Sentry appliance is not supported, this is a finding.</check-content></check></Rule></Group></Benchmark>
