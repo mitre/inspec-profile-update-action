@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="HPE_Aruba_AOS_VPN_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-10-29">accepted</status><title>HPE Aruba Networking AOS VPN Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 22 Oct 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266982" selected="true" /><select idref="V-266983" selected="true" /><select idref="V-266984" selected="true" /><select idref="V-266985" selected="true" /><select idref="V-266986" selected="true" /><select idref="V-266987" selected="true" /><select idref="V-266988" selected="true" /><select idref="V-266989" selected="true" /><select idref="V-266990" selected="true" /><select idref="V-266991" selected="true" /><select idref="V-266992" selected="true" /><select idref="V-266993" selected="true" /><select idref="V-266994" selected="true" /><select idref="V-266995" selected="true" /><select idref="V-266996" selected="true" /><select idref="V-266997" selected="true" /><select idref="V-266998" selected="true" /><select idref="V-266999" selected="true" /><select idref="V-267000" selected="true" /><select idref="V-267001" selected="true" /><select idref="V-268313" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266982" selected="true" /><select idref="V-266983" selected="true" /><select idref="V-266984" selected="true" /><select idref="V-266985" selected="true" /><select idref="V-266986" selected="true" /><select idref="V-266987" selected="true" /><select idref="V-266988" selected="true" /><select idref="V-266989" selected="true" /><select idref="V-266990" selected="true" /><select idref="V-266991" selected="true" /><select idref="V-266992" selected="true" /><select idref="V-266993" selected="true" /><select idref="V-266994" selected="true" /><select idref="V-266995" selected="true" /><select idref="V-266996" selected="true" /><select idref="V-266997" selected="true" /><select idref="V-266998" selected="true" /><select idref="V-266999" selected="true" /><select idref="V-267000" selected="true" /><select idref="V-267001" selected="true" /><select idref="V-268313" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266982" selected="true" /><select idref="V-266983" selected="true" /><select idref="V-266984" selected="true" /><select idref="V-266985" selected="true" /><select idref="V-266986" selected="true" /><select idref="V-266987" selected="true" /><select idref="V-266988" selected="true" /><select idref="V-266989" selected="true" /><select idref="V-266990" selected="true" /><select idref="V-266991" selected="true" /><select idref="V-266992" selected="true" /><select idref="V-266993" selected="true" /><select idref="V-266994" selected="true" /><select idref="V-266995" selected="true" /><select idref="V-266996" selected="true" /><select idref="V-266997" selected="true" /><select idref="V-266998" selected="true" /><select idref="V-266999" selected="true" /><select idref="V-267000" selected="true" /><select idref="V-267001" selected="true" /><select idref="V-268313" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266982" selected="true" /><select idref="V-266983" selected="true" /><select idref="V-266984" selected="true" /><select idref="V-266985" selected="true" /><select idref="V-266986" selected="true" /><select idref="V-266987" selected="true" /><select idref="V-266988" selected="true" /><select idref="V-266989" selected="true" /><select idref="V-266990" selected="true" /><select idref="V-266991" selected="true" /><select idref="V-266992" selected="true" /><select idref="V-266993" selected="true" /><select idref="V-266994" selected="true" /><select idref="V-266995" selected="true" /><select idref="V-266996" selected="true" /><select idref="V-266997" selected="true" /><select idref="V-266998" selected="true" /><select idref="V-266999" selected="true" /><select idref="V-267000" selected="true" /><select idref="V-267001" selected="true" /><select idref="V-268313" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266982" selected="true" /><select idref="V-266983" selected="true" /><select idref="V-266984" selected="true" /><select idref="V-266985" selected="true" /><select idref="V-266986" selected="true" /><select idref="V-266987" selected="true" /><select idref="V-266988" selected="true" /><select idref="V-266989" selected="true" /><select idref="V-266990" selected="true" /><select idref="V-266991" selected="true" /><select idref="V-266992" selected="true" /><select idref="V-266993" selected="true" /><select idref="V-266994" selected="true" /><select idref="V-266995" selected="true" /><select idref="V-266996" selected="true" /><select idref="V-266997" selected="true" /><select idref="V-266998" selected="true" /><select idref="V-266999" selected="true" /><select idref="V-267000" selected="true" /><select idref="V-267001" selected="true" /><select idref="V-268313" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266982" selected="true" /><select idref="V-266983" selected="true" /><select idref="V-266984" selected="true" /><select idref="V-266985" selected="true" /><select idref="V-266986" selected="true" /><select idref="V-266987" selected="true" /><select idref="V-266988" selected="true" /><select idref="V-266989" selected="true" /><select idref="V-266990" selected="true" /><select idref="V-266991" selected="true" /><select idref="V-266992" selected="true" /><select idref="V-266993" selected="true" /><select idref="V-266994" selected="true" /><select idref="V-266995" selected="true" /><select idref="V-266996" selected="true" /><select idref="V-266997" selected="true" /><select idref="V-266998" selected="true" /><select idref="V-266999" selected="true" /><select idref="V-267000" selected="true" /><select idref="V-267001" selected="true" /><select idref="V-268313" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266982" selected="true" /><select idref="V-266983" selected="true" /><select idref="V-266984" selected="true" /><select idref="V-266985" selected="true" /><select idref="V-266986" selected="true" /><select idref="V-266987" selected="true" /><select idref="V-266988" selected="true" /><select idref="V-266989" selected="true" /><select idref="V-266990" selected="true" /><select idref="V-266991" selected="true" /><select idref="V-266992" selected="true" /><select idref="V-266993" selected="true" /><select idref="V-266994" selected="true" /><select idref="V-266995" selected="true" /><select idref="V-266996" selected="true" /><select idref="V-266997" selected="true" /><select idref="V-266998" selected="true" /><select idref="V-266999" selected="true" /><select idref="V-267000" selected="true" /><select idref="V-267001" selected="true" /><select idref="V-268313" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266982" selected="true" /><select idref="V-266983" selected="true" /><select idref="V-266984" selected="true" /><select idref="V-266985" selected="true" /><select idref="V-266986" selected="true" /><select idref="V-266987" selected="true" /><select idref="V-266988" selected="true" /><select idref="V-266989" selected="true" /><select idref="V-266990" selected="true" /><select idref="V-266991" selected="true" /><select idref="V-266992" selected="true" /><select idref="V-266993" selected="true" /><select idref="V-266994" selected="true" /><select idref="V-266995" selected="true" /><select idref="V-266996" selected="true" /><select idref="V-266997" selected="true" /><select idref="V-266998" selected="true" /><select idref="V-266999" selected="true" /><select idref="V-267000" selected="true" /><select idref="V-267001" selected="true" /><select idref="V-268313" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-266982" selected="true" /><select idref="V-266983" selected="true" /><select idref="V-266984" selected="true" /><select idref="V-266985" selected="true" /><select idref="V-266986" selected="true" /><select idref="V-266987" selected="true" /><select idref="V-266988" selected="true" /><select idref="V-266989" selected="true" /><select idref="V-266990" selected="true" /><select idref="V-266991" selected="true" /><select idref="V-266992" selected="true" /><select idref="V-266993" selected="true" /><select idref="V-266994" selected="true" /><select idref="V-266995" selected="true" /><select idref="V-266996" selected="true" /><select idref="V-266997" selected="true" /><select idref="V-266998" selected="true" /><select idref="V-266999" selected="true" /><select idref="V-267000" selected="true" /><select idref="V-267001" selected="true" /><select idref="V-268313" selected="true" /></Profile><Group id="V-266982"><title>SRG-NET-000371-VPN-001640</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266982r1040712_rule" weight="10.0" severity="high"><version>ARBA-VN-001640</version><title>AOS, when used as an IPsec VPN Gateway, must specify Perfect Forward Secrecy (PFS) during Internet Key Exchange (IKE) negotiation.</title><description>&lt;VulnDiscussion&gt;PFS generates each new encryption key independently from the previous key. Without PFS, compromise of one key will compromise all communications.
+
+The phase 2 (Quick Mode) Security Association (SA) is used to create an IPsec session key. Hence, its rekey or key regeneration procedure is very important. The phase 2 rekey can be performed with or without Perfect Forward Secrecy (PFS). With PFS, every time a new IPsec Security Association is negotiated during the Quick Mode, a new Diffie-Hellman (DH) exchange occurs. The new DH shared secret will be included with original keying material (SYKEID_d, initiator nonce, and responder nonce} from phase 1 for generating a new IPsec session key. If PFS is not used, the IPsec session key will always be completely dependent on the original keying material from the Phase-1. Hence, if an older key is compromised at any time, it is possible that all new keys may be compromised.
+
+The DH exchange is performed in the same manner as was done in phase 1 (Main or Aggressive Mode). However, the phase 2 exchange is protected by encrypting the phase 2 packets with the key derived from the phase 1 negotiation. Because DH negotiations during phase 2 are encrypted, the new IPsec session key has an added element of secrecy.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-70809r1040711_fix">Configure AOS with the following commands:
+configure terminal
+crypto-local ipsec-map &lt;map name&gt; &lt;priority #&gt;
+set pfs group 19
+exit
+write memory</fixtext><fix id="F-70809r1040711_fix" /><check system="C-70906r1040710_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following command: 
+show crypto-local ipsec-map
+ 
+If each active IPsec map does not show PFS enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-266983"><title>SRG-NET-000063-VPN-000220</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266983r1040715_rule" weight="10.0" severity="medium"><version>ARBA-VN-000220</version><title>AOS, when used as a VPN Gateway, must be configured to use IPsec with SHA-2 at 384 bits or greater for hashing to protect the integrity of remote access sessions.</title><description>&lt;VulnDiscussion&gt;Without strong cryptographic integrity protections, information can be altered by unauthorized users without detection.
+
+SHA-1 is considered a compromised hashing standard and is being phased out of use by industry and government standards. DOD systems must not be configured to use SHA-1 for integrity of remote access sessions. 
+
+The remote access VPN provides access to DOD nonpublic information systems by an authorized user (or an information system) communicating through an external, nonorganization-controlled network.
+
+Satisfies: SRG-NET-000063-VPN-000220, SRG-NET-000074-VPN-000250, SRG-NET-000168-VPN-000600, SRG-NET-000230-VPN-000780&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001453</ident><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-000803</ident><ident system="http://cyber.mil/cci">CCI-001184</ident><fixtext fixref="F-70810r1040714_fix">Configure AOS with the following commands:
+configure terminal
+crypto isakmp policy &lt;priority&gt;
+hash sha2-384-192
+exit
+write memory</fixtext><fix id="F-70810r1040714_fix" /><check system="C-70907r1040713_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>1. Verify the AOS configuration with the following command:
+show crypto-local ipsec-map
+
+Note the IKEv2 Policy number for each configured map.
+
+2. For each configured policy number, run the following command:
+show crypto isakmp policy &lt;IKEv2 Policy #&gt;
+
+If each configured IKEv2 policy hash algorithm is not configured with SHA-2 at 384 bit, this is a finding.</check-content></check></Rule></Group><Group id="V-266984"><title>SRG-NET-000164-VPN-000560</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266984r1040891_rule" weight="10.0" severity="medium"><version>ARBA-VN-000560</version><title>AOS, when used as a VPN Gateway and using public key infrastructure (PKI)-based authentication, must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor.</title><description>&lt;VulnDiscussion&gt;Without path validation, an informed trust decision by the relying party cannot be made when presented with any certificate not already explicitly trusted. To meet this requirement, the information system must create trusted channels between itself and remote trusted authorized IT product (e.g., syslog server) entities that protect the confidentiality and integrity of communications. The information system must create trusted paths between itself and remote administrators and users that protect the confidentiality and integrity of communications.
+
+A trust anchor is an authoritative entity represented via a public key and associated data. It is most often used in the context of public key infrastructures, X.509 digital certificates, and Domain Name System Security Extensions (DNSSEC). However, applications that do not use a trusted path are not approved for nonlocal and remote management of DOD information systems.
+
+Use of SSHv2 to establish a trusted channel is approved. Use of FTP, TELNET, HTTP, and SNMPV1 is not approved because they violate the trusted channel rule set. Use of web management tools that are not validated by common criteria may also violate the trusted channel rule set.
+
+When there is a chain of trust, usually the top entity to be trusted becomes the trust anchor; it can be, for example, a certificate authority (CA). A certification path starts with the subject certificate and proceeds through a number of intermediate certificates up to a trusted root certificate, typically issued by a trusted CA.
+
+This requirement verifies that a certification path to an accepted trust anchor is used for certificate validation and that the path includes status information. Path validation is necessary for a relying party to make an informed trust decision when presented with any certificate not already explicitly trusted. Status information for certification paths includes certificate revocation lists or online certificate status protocol responses. Validation of the certificate status information is out of scope for this requirement.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000185</ident><fixtext fixref="F-70811r1040717_fix">Configure AOS using the web interface: 
+
+1. Navigate to Configuration &gt;&gt; System &gt;&gt; Certificates tab. 
+2. Under "Import Certificates", click the plus sign (+) and upload the trusted root CA. Provide the certificate name, upload the certificate file, and select the matching certificate format. 
+3. Choose the TrustedCA Certificate type. 
+4. Click Submit &gt;&gt; Pending Changes &gt;&gt; and Deploy Changes.</fixtext><fix id="F-70811r1040717_fix" /><check system="C-70908r1040891_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>1. Verify the AOS configuration with the following command:
+show crypto-local pki trusted CA
+
+2. Note the name(s) of each trust CA.
+show crypto-local pki trustedCA &lt;name&gt;
+
+3. Verify that each trusted CA is a valid DOD PKI CA. 
+
+If the trusted CAs are not DOD PKI or no DOD PKI CAs are present, this is a finding.</check-content></check></Rule></Group><Group id="V-266985"><title>SRG-NET-000317-VPN-001090</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266985r1040721_rule" weight="10.0" severity="high"><version>ARBA-VN-001090</version><title>AOS, when used as an IPsec VPN Gateway, must use Advanced Encryption Standard (AES) encryption for the Internet Key Exchange (IKE) proposal to protect confidentiality of remote access sessions.</title><description>&lt;VulnDiscussion&gt;Without confidentiality protection mechanisms, unauthorized individuals may gain access to sensitive information via a remote access session.
+
+Remote access is access to DOD nonpublic information systems by an authorized user (or an information system) communicating through an external, nonorganization-controlled network.
+
+AES is the Federal Information Processing Standard (FIPS)-validated cipher block cryptographic algorithm approved for use in DOD. For an algorithm implementation to be listed on a FIPS 140-2/140-3 cryptographic module validation certificate as an approved security function, the algorithm implementation must meet all the requirements of FIPS 140-2/140-3 and must successfully complete the cryptographic algorithm validation process. Currently, the National Institute of Standards and Technology (NIST) has approved the following confidentiality modes to be used with approved block ciphers in a series of special publications: ECB, CBC, OFB, CFB, CTR, XTS-AES, FF1, FF3, CCM, GCM, KW, KWP, and TKW.
+
+Satisfies: SRG-NET-000317-VPN-001090, SRG-NET-000371-VPN-001650, SRG-NET-000400-VPN-001940, SRG-NET-000525-VPN-002330&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><ident system="http://cyber.mil/cci">CCI-000197</ident><fixtext fixref="F-70812r1040720_fix">Configure AOS with the following commands for each IKEv2 Policy number noted:
+configure terminal
+crypto isakmp policy &lt;priority&gt;
+encryption aes256
+exit
+write memory</fixtext><fix id="F-70812r1040720_fix" /><check system="C-70909r1040719_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>1. Verify the AOS configuration with the following commands:
+show crypto-local ipsec-map
+
+Note the IKEv2 Policy number for each configured map.
+
+2. For each configured policy number, run the following command:
+show crypto isakmp policy &lt;IKEv2 Policy #&gt;
+
+If each configured IKEv2 policy is not configured with AES256 or greater encryption, this is a finding.</check-content></check></Rule></Group><Group id="V-266986"><title>SRG-NET-000352-VPN-001460</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266986r1040894_rule" weight="10.0" severity="medium"><version>ARBA-VN-001460</version><title>AOS, when used as a VPN Gateway, must use an approved Commercial Solution for Classified (CSfC) when transporting classified traffic across an unclassified network.</title><description>&lt;VulnDiscussion&gt;Use of weak or untested encryption algorithms undermines the purposes of using encryption to protect data.
+
+The National Security Agency/Central Security Service's (NSA/CSS) CSfC program enables commercial products to be used in layered solutions to protect classified National Security Systems (NSS) data. Currently, Suite B cryptographic algorithms are specified by the National Institute of Standards and Technology (NIST) and are used by the NSA's Information Assurance Directorate in solutions approved for protecting classified and unclassified NSS. However, quantum-resistant algorithms will be required for future required Suite B implementations.
+
+Satisfies: SRG-NET-000352-VPN-001460, SRG-NET-000565-VPN-002390, SRG-NET-000565-VPN-002400&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-70813r1040894_fix">Configure AOS with the following commands:
+
+1. crypto pki csr ec curve_name secp384r1 common_name &lt;common_name&gt; country &lt;US&gt; state_or_province &lt;state&gt; city &lt;city&gt; organization &lt;org&gt; unit &lt;unit&gt; email &lt;email&gt;
+show crypto pki csr
+2. Use DOD PKI to generate a public certificate based on the CSR.
+3. Using the web GUI, navigate to Configuration &gt;&gt; System &gt;&gt; Certificates &gt;&gt; Import Certificates.
+4. Click the plus sign (+) and enter "Certificate name:", browse to the public certificate file, choose the appropriate format, "ServerCert" type, and click "Submit". 
+5. Navigate to Configuration &gt;&gt; System &gt;&gt; Admin and choose the imported certificate under "Server Certificate" and click "Submit". 
+6. Click Pending Changes &gt;&gt; Deploy Changes. 
+
+configure terminal
+crypto ipsec transform-set &lt;name&gt; esp-aes256-gcm
+crypto isakmp policy &lt;#&gt;
+authentication ecdsa-384
+encryption aes256
+group 20
+hash sha2-384-192
+prf prf-hmac-sha384
+version v2
+exit
+crypto-local ipsec-map &lt;name&gt; &lt;priority&gt;
+set transform-set &lt;set created earlier name&gt;
+&lt;configure VPN settings as needed&gt;
+exit
+write memory</fixtext><fix id="F-70813r1040894_fix" /><check system="C-70910r1040722_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>If AOS is not being used for CSFC, this requirement is not applicable.
+ 
+1. Verify the AOS configuration with the following command:
+show crypto-local ipsec-map
+ 
+Note the IKEv2 Policy number for each configured map.
+ 
+2. For each configured policy number, run the following command:
+show crypto isakmp policy &lt;IKEv2 Policy #&gt;
+ 
+3. Verify each configured transform-set by running the following command:
+show crypto ipsec transform-set
+ 
+If the configured IPsec map, ISAKMP policy, and transform-set do not contain the following, this is a finding:
+ECDCA 384 certificate
+IKEv2 policy with AES256, SHA-384, ECDSA-384, Group 20
+Transform set with AES-256-GCM</check-content></check></Rule></Group><Group id="V-266987"><title>SRG-NET-000148-VPN-000540</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266987r1040727_rule" weight="10.0" severity="medium"><version>ARBA-VN-000540</version><title>AOS, when used as a VPN Gateway, must uniquely identify all network-connected endpoint devices before establishing a connection.</title><description>&lt;VulnDiscussion&gt;Without identifying devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity.
+
+For distributed architectures (e.g., service-oriented architectures), the decisions regarding the validation of identification claims may be made by services separate from the services acting on those decisions. In such situations, it is necessary to provide the identification decisions (as opposed to the actual identifiers) to the services that need to act on those decisions.
+
+This requirement applies to applications that connect locally, remotely, or through a network to an endpoint device (including, but not limited to, workstations, printers, servers outside a datacenter, Voice Over Internet Protocol [VoIP] phones, and video teleconference codecs). Gateways and service-oriented architecture (SOA) applications are examples of where this requirement would apply.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000778</ident><fixtext fixref="F-70814r1040726_fix">Configure AOS using the web interface:
+
+1. Navigate to Configuration &gt;&gt; Services &gt;&gt; VPN and expand "Site-to-Site". 
+2. Select the configured site-to-site VPN IPsec maps. Select the applicable Server certificate. Select the applicable trusted DOD root CA under "CA certificate:". 
+3. Click Submit &gt;&gt; Pending Changes &gt;&gt; Deploy Changes. 
+4. Navigate to Configuration &gt;&gt; Access Points &gt;&gt; Remote APs tab.
+5. Select the check box next to the AP Name in the Remote AP table and click "Provision".
+6. In the "General" tab, select "Certificate" from the "Authentication method:" drop-down list.
+7. Click "Submit" to apply the configuration and reboot the AP as a certificate Remote AP.
+8. Click Pending Changes &gt;&gt; Deploy Changes.</fixtext><fix id="F-70814r1040726_fix" /><check system="C-70911r1040725_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following command:
+
+1. Site-to-site VPN:
+Using the CLI:
+show crypto isakmp sa
+
+If the IPsec security association is not operating with certificates ("-c"), this is a finding.
+
+2. Hardware client VPN:
+Using the web GUI, navigate to Configuration &gt;&gt; Access Points &gt;&gt; Remote APs. Review each provisioned Remote Access Point (RAP) and verify that each AP has "c" in the FLAGS column. 
+
+If certificate authentication is not configured for each RAP, this is a finding.</check-content></check></Rule></Group><Group id="V-266988"><title>SRG-NET-000343-VPN-001370</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266988r1040893_rule" weight="10.0" severity="medium"><version>ARBA-VN-001370</version><title>AOS, when used as a VPN Gateway, must authenticate all network-connected endpoint devices before establishing a connection.</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity.
+
+For distributed architectures (e.g., service-oriented architectures), the decisions regarding the validation of authentication claims may be made by services separate from the services acting on those decisions. In such situations, it is necessary to provide authentication decisions (as opposed to the actual authenticators) to the services that need to act on those decisions.
+
+This requirement applies to applications that connect either locally, remotely, or through a network to an endpoint device (including, but not limited to, workstations, printers, servers (outside a datacenter), VoIP Phones, and VTC codecs). Gateways and SOA applications are examples of where this requirement would apply.
+
+Device authentication is a solution enabling an organization to manage devices. It is an additional layer of authentication ensuring only specific preauthorized devices can access the system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001958</ident><fixtext fixref="F-70815r1040729_fix">Configure AOS using the web interface:
+
+1. Navigate to Configuration &gt;&gt; Services &gt;&gt; VPN and expand "Site-to-Site". 
+2. Select the configured site-to-site VPN IPsec maps. Select the applicable Server certificate. Select the applicable trusted DOD root CA under "CA certificate:". 
+3. Click Submit &gt;&gt; Pending Changes &gt;&gt; Deploy Changes. 
+4. Navigate to Configuration &gt;&gt; Access Points &gt;&gt; Remote APs tab.
+5. Select the check box next to the AP Name in the Remote AP table and click "Provision".
+6. In the "General" tab, select "Certificate" from the "Authentication method:" drop-down list.
+7. Click "Submit" to apply the configuration and reboot the AP as a certificate Remote AP.
+8. Click Pending Changes &gt;&gt; Deploy Changes.</fixtext><fix id="F-70815r1040729_fix" /><check system="C-70912r1040893_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following command:
+
+1. Site-to-site VPN:
+Using the CLI:
+show crypto isakmp sa
+ 
+If the IPsec security association is not operating with certificates ("-c"), this is a finding.
+ 
+2. Hardware client VPN:
+Using the web GUI, navigate to Configuration &gt;&gt; Access Points &gt;&gt; Remote APs. Review each provisioned RAP and verify that each AP has "c" in the FLAGS column.
+ 
+If certificate authentication is not configured for each RAP, this is a finding.</check-content></check></Rule></Group><Group id="V-266989"><title>SRG-NET-000041-VPN-000110</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266989r1040733_rule" weight="10.0" severity="medium"><version>ARBA-VN-000110</version><title>The Remote Access VPN Gateway and/or client must display the Standard Mandatory DOD Notice and Consent Banner before granting remote access to the network.</title><description>&lt;VulnDiscussion&gt;Display of a standardized and approved use notification before granting access to the network ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+In most VPN implementations, the banner is configured in the management backplane (NDM Security Requirements Guide) and serves as the presentation for the VPN client connection as well as for administrator logon to the device management tool/backplane.
+
+System use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist. This requirement applies to VPN gateways that have the concept of a user account and have the logon function residing on the VPN gateway.
+
+The banner must be formatted in accordance with applicable DOD policy. Use the following verbiage for VPN gateways that can accommodate banners of 1300 characters:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+ 
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."
+
+Satisfies: SRG-NET-000041-VPN-000110, SRG-NET-000042-VPN-000120, SRG-NET-000043-VPN-000130&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><ident system="http://cyber.mil/cci">CCI-000050</ident><ident system="http://cyber.mil/cci">CCI-001384</ident><ident system="http://cyber.mil/cci">CCI-001385</ident><ident system="http://cyber.mil/cci">CCI-001386</ident><ident system="http://cyber.mil/cci">CCI-001387</ident><ident system="http://cyber.mil/cci">CCI-001388</ident><fixtext fixref="F-70816r1040732_fix">Configure AOS with the following commands:
+configure terminal
+banner via #
+You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+-At any time, the USG may inspect and seize data stored on this IS.
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.#
+write memory</fixtext><fix id="F-70816r1040732_fix" /><check system="C-70913r1040731_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following command:
+show bannervia
+
+If the Standard Mandatory DOD Notice and Consent Banner is not set, this is a finding.</check-content></check></Rule></Group><Group id="V-266990"><title>SRG-NET-000213-VPN-000720</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266990r1040736_rule" weight="10.0" severity="low"><version>ARBA-VN-000720</version><title>AOS, when used as a VPN Gateway, must terminate all network connections associated with a communications session at the end of the session.</title><description>&lt;VulnDiscussion&gt;Idle Transmission Control Protocol (TCP) sessions can be susceptible to unauthorized access and hijacking attacks. By default, routers do not continually test whether a previously connected TCP endpoint is still reachable. If one end of a TCP connection idles out or terminates abnormally, the opposite end of the connection may still believe the session is available. These "orphaned" sessions use up valuable router resources and can be hijacked by an attacker. 
+
+To mitigate this risk, routers must be configured to send periodic keep-alive messages to check that the remote end of a session is still connected. If the remote device fails to respond to the TCP keep-alive message, the sending router will clear the connection and free resources allocated to the session.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001133</ident><fixtext fixref="F-70817r1040735_fix">Configure AOS with the following commands:
+configure terminal
+crypto-local isakmp dpd idle-timeout &lt;idle_sec&gt; retry-timeout &lt;retry_sec&gt; retry-attempts &lt;retry_number&gt;
+write memory</fixtext><fix id="F-70817r1040735_fix" /><check system="C-70914r1040734_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following command:
+show configuration effective | include dpd
+
+If DPD is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-266991"><title>SRG-NET-000132-VPN-000480</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266991r1040739_rule" weight="10.0" severity="medium"><version>ARBA-VN-000480</version><title>For site-to-site VPN implementations using AOS, the Layer 2 Tunneling Protocol (L2TP) must be blocked or denied at the security boundary with the private network so unencrypted L2TP packets cannot traverse into the private network of the enclave.</title><description>&lt;VulnDiscussion&gt;Unlike Generic Routing Encapsulation (GRE) (a simple encapsulating header), L2TP is a full-fledged communications protocol with control channel, data channels, and a robust command structure. In addition to Point-to-Point Protocol (PPP), other link layer types (called pseudowires) can be and are defined for delivery in L2TP by separate Internet Engineering Task Force Request for Comments (RFC) documents. Further complexity is created by the capability to define vender-specific parameters beyond those defined in the L2TP specifications.
+
+The endpoint devices of an L2TP connection can be an L2TP Access Concentrator (LAC), in which case it inputs/outputs the layer 2 protocol to/from the L2TP tunnel. Otherwise, it is an L2TP Network Server (LNS), in which case it inputs/outputs the layer 3 (IP) protocol to/from the L2TP tunnel. The specifications describe three reference models: LAC-LNS, LAC-LAC, and LNS-LNS, the first of which is the most common case. The LAC-LNS model allows a remote access user to reach their home network or internet service provider from a remote location. The remote access user connects to a LAC device, which tunnels the connection home to a waiting LNS. The LAC could also be located on the remote user's laptop, which connects to an LNS at home using a generic internet connection. The other reference models may be used for more obscure scenarios.
+
+Although the L2TP protocol does not contain encryption capability, it can be operated over IPsec, which would provide authentication and confidentiality. A remote user in the LAC-LNS model would most likely obtain a dynamically assigned IP address from the home network to ultimately use through the tunnel back to the home network. The outer IP source address used to send the L2TP tunnel packet to the home network is likely to be unknown or highly variable. Also, because the LNS provides the remote user with a dynamic IP address, the firewall at the home network would have to be dynamically updated to accept this address in conjunction with the outer tunnel address. There is also the issue of authentication of the remote user prior to divulging an acceptable IP address. 
+
+Because of all of these complications, the strict filtering rules applied to the IP-in-IP and GRE tunneling cases will likely not be possible in the L2TP scenario.
+
+In addition to the difficulty of enforcing addresses and endpoints (as explained above), the L2TP protocol itself is a security concern if allowed through a security boundary. In particular:
+
+1. L2TP potentially allows link layer protocols to be delivered from afar. These protocols were intended for link-local scope only and are less defended and not as well known.
+2. The L2TP tunnels can carry IP packets that are very difficult to see and filter because of the additional layer 2 overhead.
+3. L2TP is highly complex and variable (vender-specific variability) and therefore would be a viable target that is difficult to defend. It is better left outside of the main firewall where less damage occurs if the L2TP-processing node is compromised.
+4. Filtering cannot be used to detect and prevent other unintended layer 2 protocols from being tunneled. The strength of the application layer code would have to be relied on to achieve this task.
+5. Regardless of whether the L2TP is handled inside or outside of the main network, a secondary layer of IP filtering is required; therefore, bringing it inside does not save resources.
+
+It is not recommended to allow unencrypted L2TP packets across the security boundary into the network's protected areas. Reference the Backbone Transport STIG for additional L2TP guidance and use.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-70818r1040738_fix">Configure AOS with the following commands:
+configure terminal
+cd /mm
+ip access-list session vpnlogon
+any any svc-l2tp deny
+exit
+write memory
+cd /mynode
+vpdn group l2tp
+disable
+exit
+write memory</fixtext><fix id="F-70818r1040738_fix" /><check system="C-70915r1040737_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following command:
+show ip access-list vpnlogon
+show firewall-cp
+
+If L2TP or UDP 1701 are permitted, this is a finding.</check-content></check></Rule></Group><Group id="V-266992"><title>SRG-NET-000019-VPN-000040</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266992r1040904_rule" weight="10.0" severity="medium"><version>ARBA-VN-000040</version><title>AOS, when used as a VPN Gateway, must ensure inbound and outbound traffic is configured with a security policy in compliance with information flow control policies.</title><description>&lt;VulnDiscussion&gt;Unrestricted traffic may contain malicious traffic, which poses a threat to an enclave or to other connected networks. Additionally, unrestricted traffic may transit a network, which uses bandwidth and other resources.
+
+VPN traffic received from another enclave with different security policy or level of trust must not bypass being inspected by the firewall before being forwarded to the private network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-70819r1040741_fix">Configure AOS with the following commands: 
+configure terminal
+ip access-list session &lt;name&gt;
+network &lt;A.B.C.D&gt; &lt;netmask A.B.C.D&gt; any any permit
+any any any deny log
+ipv6 network &lt;X:X:X:X::X/&lt;0-128&gt; any any permit
+ipv6 any any any deny log
+exit
+write memory
+interface gigabit &lt;#/#/#&gt;
+ip access-group session &lt;ACL name&gt;
+exit
+write mem</fixtext><fix id="F-70819r1040741_fix" /><check system="C-70916r1040890_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following command:
+show running-config | begin "interface gigabit"
+
+Note the configured IP access-group session ACL for each active interface. 
+
+For each configured ACL:
+show ip access-list &lt;ACL name&gt;
+
+If each ACL does not end in an "any any deny log" for both IPv4 and IPv6, this is a finding.</check-content></check></Rule></Group><Group id="V-266993"><title>SRG-NET-000053-VPN-000170</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266993r1040745_rule" weight="10.0" severity="medium"><version>ARBA-VN-000170</version><title>AOS, when used as a VPN Gateway, must limit the number of concurrent sessions for user accounts to one or to an organization-defined number.</title><description>&lt;VulnDiscussion&gt;VPN gateway management includes the ability to control the number of users and user sessions that utilize a VPN gateway. Limiting the number of allowed users and sessions per user is helpful in limiting risks related to denial-of-service attacks.
+
+This requirement addresses concurrent sessions for information system accounts and does not address concurrent sessions by single users via multiple system accounts. The maximum number of concurrent sessions should be defined based on mission needs and the operational environment for each system.
+
+The intent of this policy is to ensure the number of concurrent sessions is deliberately set to a number based on the site's mission and not left unlimited.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-70820r1040744_fix">Configure AOS with the following commands:
+configure terminal
+user-role &lt;vpn user role&gt;
+max-sessions 1
+exit
+write memory</fixtext><fix id="F-70820r1040744_fix" /><check system="C-70917r1040743_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following command:
+show running-config | begin "user-role &lt;vpn user role&gt;"
+
+If the vpn user role is not configured to max-sessions 1 (or an organization-defined number), this is a finding.</check-content></check></Rule></Group><Group id="V-266994"><title>SRG-NET-000166-VPN-000580</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266994r1040748_rule" weight="10.0" severity="medium"><version>ARBA-VN-000580</version><title>The Remote Access VPN Gateway must use a separate authentication server (e.g., Lightweight Directory Access Protocol [LDAP], Remote Authentication Dial-In User Service [RADIUS], Terminal Access Controller Access-Control System+ [TACACS+] to perform user authentication.</title><description>&lt;VulnDiscussion&gt;The VPN interacts directly with public networks and devices and should not contain user authentication information for all users. Authentication, Authorization, and Accounting (AAA) network security services provide the primary framework through which a network administrator can set up access control and authorization on network points of entry or network access servers. It is not advisable to configure access control on the VPN gateway or remote access server. Separation of services provides added assurance to the network if the access control server is compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000187</ident><fixtext fixref="F-70821r1040747_fix">Configure AOS with the following commands:
+
+1. crypto pki csr ec curve_name secp384r1 common_name &lt;common_name&gt; country &lt;US&gt; state_or_province &lt;state&gt; city &lt;city&gt; organization &lt;org&gt; unit &lt;unit&gt; email &lt;email&gt;
+show crypto pki csr
+2. Use DOD PKI to generate a public certificate based on the CSR.
+3. Using the web GUI, navigate to Configuration &gt;&gt; System &gt;&gt; Certificates &gt;&gt; Import Certificates. 
+4. Click the plus sign (+) and enter "Certificate name:", browse to the public certificate file, choose the appropriate format, select Certificate type: "ServerCert", and click "Submit".
+5. Click Pending Changes &gt;&gt; Deploy Changes.
+
+Continue configuring with the CLI:
+configure terminal
+crypto-local isakmp ca-certificate &lt;CA certificate name&gt;
+crypto-local isakmp certificate-group server-certificate &lt;EC certificate name&gt; ca-certificate &lt;CA certificate name&gt;
+write memory
+
+crypto dynamic-map &lt;name&gt; &lt;priority&gt;
+version v2
+set pfs group20
+set transform-set default-gcm256
+set security-association lifetime seconds 28800
+exit
+write memory
+
+aaa authentication-server radius &lt;name&gt;
+host &lt;A.B.C.D or X:X:X:X::X or hostname&gt;
+key &lt;preshared key&gt;
+enable
+exit
+write memory
+
+aaa server-group &lt;name&gt;
+auth-server &lt;name&gt;
+exit
+write memory
+
+ip access-list session &lt;name&gt;
+any any any permit 
+ipv6 any any any permit
+exit
+write memory
+
+user-role &lt;name&gt;
+access-list session &lt;name&gt;
+exit
+write memory
+
+aaa authentication via auth-profile &lt;name&gt;
+default-role &lt;name&gt;
+client-cert-enable
+server-group &lt;name&gt;
+exit
+write memory
+
+aaa authentication via connection-profile &lt;name&gt;
+auth-profile &lt;name&gt;
+enable-fips
+ikev2-policy 10009
+ikev2-proto
+ikev2auth eap-tls
+ipsecv2-cryptomap map &lt;name&gt; number &lt;priority&gt;
+max-timeout value &lt;0-65535&gt;
+suiteb-crypto
+validate-server-cert
+exit
+write memory
+
+aaa authentication via web-auth default
+auth-profile &lt;name&gt;
+exit
+write memory
+
+user-role &lt;name&gt;
+via &lt;name&gt;
+exit
+write memory</fixtext><fix id="F-70821r1040747_fix" /><check system="C-70918r1040746_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following commands:
+show aaa authentication via auth-profile
+
+Note each referenced VIA authentication profile. 
+
+For each referenced VIA authentication profile:
+show aaa authentication via auth-profile &lt;name&gt;
+
+Note the server-group. 
+
+For each server-group:
+show aaa server-group &lt;name&gt;
+
+If the remote access authentication profile is not set to use a separate authentication server, this is a finding.</check-content></check></Rule></Group><Group id="V-266995"><title>SRG-NET-000138-VPN-000490</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266995r1040751_rule" weight="10.0" severity="medium"><version>ARBA-VN-000490</version><title>The VPN Gateway must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users).</title><description>&lt;VulnDiscussion&gt;To ensure accountability and prevent unauthenticated access, organizational users must be identified and authenticated to prevent potential misuse and compromise of the system.
+
+Organizational users include organizational employees or individuals the organization deems to have equivalent status of employees (e.g., contractors). Organizational users (and any processes acting on behalf of users) must be uniquely identified and authenticated for all accesses except the following.
+
+(i) Accesses explicitly identified and documented by the organization. Organizations document specific user actions that can be performed on the information system without identification or authentication; and
+
+(ii) Accesses that occur through authorized use of group authenticators without individual authentication. Organizations may require unique identification of individuals' in-group accounts (e.g., shared privilege accounts) or for detailed accountability of individual activity.
+
+This requirement only applies to components where this is specific to the function of the device or has the concept of an organizational user (e.g., VPN or proxy capability). This does not apply to authentication for the purpose of configuring the device itself (i.e., device management).
+
+Satisfies: SRG-NET-000138-VPN-000490, SRG-NET-000166-VPN-000590, SRG-NET-000341-VPN-001350&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000764</ident><ident system="http://cyber.mil/cci">CCI-000187</ident><ident system="http://cyber.mil/cci">CCI-001953</ident><fixtext fixref="F-70822r1040750_fix">Configure AOS with the following commands:
+
+1. crypto pki csr ec curve_name secp384r1 common_name &lt;common_name&gt; country &lt;US&gt; state_or_province &lt;state&gt; city &lt;city&gt; organization &lt;org&gt; unit &lt;unit&gt; email &lt;email&gt;
+show crypto pki csr
+2. Use DOD PKI to generate a public certificate based on the CSR.
+3. Using the web GUI, navigate to Configuration &gt;&gt; System &gt;&gt; Certificates &gt;&gt; Import Certificates. 
+4. Click the plus sign (+) and enter "Certificate name:", browse to the public certificate file, choose the appropriate format, select Certificate type: "ServerCert", and click "Submit".
+5. Click Pending Changes &gt;&gt; Deploy Changes.
+
+Continue configuring with the CLI:
+configure terminal
+crypto-local isakmp ca-certificate &lt;CA certificate name&gt;
+crypto-local isakmp certificate-group server-certificate &lt;EC certificate name&gt; ca-certificate &lt;CA certificate name&gt;
+write memory
+
+crypto dynamic-map &lt;name&gt; &lt;priority&gt;
+version v2
+set pfs group20
+set transform-set default-gcm256
+set security-association lifetime seconds 28800
+exit
+write memory
+
+aaa authentication-server radius &lt;name&gt;
+host &lt;A.B.C.D or X:X:X:X::X or hostname&gt;
+key &lt;preshared key&gt;
+enable
+exit
+write memory
+
+aaa server-group &lt;name&gt;
+auth-server &lt;name&gt;
+exit
+write memory
+
+ip access-list session &lt;name&gt;
+any any any permit 
+ipv6 any any any permit
+exit
+write memory
+
+user-role &lt;name&gt;
+access-list session &lt;name&gt;
+exit
+write memory
+
+aaa authentication via auth-profile &lt;name&gt;
+default-role &lt;name&gt;
+client-cert-enable
+server-group &lt;name&gt;
+exit
+write memory
+
+aaa authentication via connection-profile &lt;name&gt;
+auth-profile &lt;name&gt;
+enable-fips
+ikev2-policy 10009
+ikev2-proto
+ikev2auth eap-tls
+ipsecv2-cryptomap map &lt;name&gt; number &lt;priority&gt;
+max-timeout value &lt;0-65535&gt;
+suiteb-crypto
+validate-server-cert
+exit
+write memory
+
+aaa authentication via web-auth default
+auth-profile &lt;name&gt;
+exit
+write memory
+
+user-role &lt;name&gt;
+via &lt;name&gt;
+exit
+write memory</fixtext><fix id="F-70822r1040750_fix" /><check system="C-70919r1040749_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following commands:
+show aaa authentication via connection-profile
+
+Note each referenced VIA connection profile. 
+
+For each referenced connection profile:
+show aaa authentication via connection-profile &lt;name&gt; | include "IKEv2 Authentication method"
+
+If the authentication method is not set to "eap-tls", this is a finding.</check-content></check></Rule></Group><Group id="V-266996"><title>SRG-NET-000213-VPN-000721</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266996r1040892_rule" weight="10.0" severity="medium"><version>ARBA-VN-000721</version><title>The Remote Access VPN Gateway must terminate remote access network connections after an organization-defined time period.</title><description>&lt;VulnDiscussion&gt;This requirement is in response to the DOD Office of Inspector General Audit of Maintaining Cybersecurity in the Coronavirus Disease-2019 Telework Environment.
+
+Best practice is to terminate inactive user sessions after a period; however, when setting timeouts to any VPN connection, the organization must consider the risk to the mission and the purpose of the VPN. VPN connections that provide user access to the network are the prime candidates for VPN session termination and are the primary focus of this requirement.
+
+To determine if and when the VPN connections warrant termination, the organization must perform a risk assessment to identify the use case for the VPN and determine if periodic VPN session termination puts the mission at significant risk.
+
+The organization must document the results and the determination of the risk assessment in the VPN section of the System Security Plan. The organization must also configure VPN session terminations in accordance with the risk assessment.
+
+Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. Quickly terminating an idle session will also free up resources committed by the managed network element. 
+
+Terminating network connections associated with communications sessions includes, for example, deallocating associated TCP/IP address/port pairs at the operating system level and deallocating networking assignments at the application level if multiple application sessions are using a single operating system-level network connection. 
+
+This requirement applies to any network element that tracks individual sessions (e.g., stateful inspection firewall, ALG, or VPN).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><ident system="http://cyber.mil/cci">CCI-001133</ident><fixtext fixref="F-70823r1040753_fix">Configure AOS with the following commands:
+
+For each VIA authentication profile: 
+aaa authentication via connection-profile 
+
+configure terminal
+aaa authentication via
+connection-profile&lt;name&gt;
+max-timeout value &lt;0-65535&gt;
+exit
+write memory</fixtext><fix id="F-70823r1040753_fix" /><check system="C-70920r1040752_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following commands:
+show aaa authentication via connection-profile
+
+Note each referenced VIA connection profile. 
+
+For each referenced connection profile:
+show aaa authentication via connection-profile &lt;name&gt; | include "VIA max session timeout"
+
+If the max session timeout is not set to the organization-defined time, this is a finding.</check-content></check></Rule></Group><Group id="V-266997"><title>SRG-NET-000337-VPN-001300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266997r1040757_rule" weight="10.0" severity="medium"><version>ARBA-VN-001300</version><title>AOS, when used as a VPN Gateway, must renegotiate the security association after 24 hours or less or as defined by the organization.</title><description>&lt;VulnDiscussion&gt;When a VPN gateway creates an IPsec security association (SA), resources must be allocated to maintain the SA. These resources are wasted during periods of IPsec endpoint inactivity, which could result in the gateway's inability to create new SAs for other endpoints, thereby preventing new sessions from connecting. 
+
+The Internet Key Exchange (IKE) idle timeout may also be set to allow SAs associated with inactive endpoints to be deleted before the SA lifetime has expired, although this setting is not recommended at this time. The value of one hour or less is a common best practice.
+
+Satisfies: SRG-NET-000337-VPN-001300, SRG-NET-000337-VPN-001290&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002038</ident><fixtext fixref="F-70824r1040756_fix">Configure AOS with the following commands:
+configure terminal
+crypto-local ipsec-map &lt;name&gt; &lt;priority&gt;
+set security-association lifetime seconds 28800
+exit
+write memory
+ 
+crypto dynamic-map &lt;name&gt; &lt;priority&gt;
+set security-association lifetime seconds 28800
+exit
+write memory</fixtext><fix id="F-70824r1040756_fix" /><check system="C-70921r1040755_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following commands:
+show crypto-local ipsec-map
+show crypto dynamic-map
+ 
+If the configured IPSec maps are not configured to support a security association lifetime of 28,800 seconds (8 hours), this is a finding.</check-content></check></Rule></Group><Group id="V-266998"><title>SRG-NET-000132-VPN-000470</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266998r1040760_rule" weight="10.0" severity="medium"><version>ARBA-VN-000470</version><title>The Remote Access VPN Gateway must be configured to prohibit Point-to-Point Tunneling Protocol (PPTP) and Layer 2 Forwarding (L2F).</title><description>&lt;VulnDiscussion&gt;PPTP and L2F are obsolete methods for implementing virtual private networks. Both protocols may be easy to use and readily available, but they have many well-known security issues and exploits. Encryption and authentication are both weak.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-70825r1040759_fix">Configure AOS with the following commands:
+configure terminal
+cd /mm
+ip access-list session vpnlogon
+any any svc-pptp deny
+exit
+write memory
+cd /mynode
+firewall cp
+ipv4 deny any proto 6 ports 1723 1723
+ipv6 deny any proto 6 ports 1723 1723
+exit
+write memory</fixtext><fix id="F-70825r1040759_fix" /><check system="C-70922r1040758_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following commands:
+show ip access-list vpnlogon
+show firewall-cp
+
+If PPTP or TCP 1723 are permitted, this is a finding.</check-content></check></Rule></Group><Group id="V-266999"><title>SRG-NET-000205-VPN-000710</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-266999r1040763_rule" weight="10.0" severity="medium"><version>ARBA-VN-000710</version><title>AOS, when used as a VPN Gateway, must be configured to route sessions to an intrusion detection and prevention system (IDPS) for inspection.</title><description>&lt;VulnDiscussion&gt;Remote access devices, such as those providing remote access to network devices and information systems, that lack automated capabilities increase risk and make remote user access management difficult at best.
+
+Remote access is access to DOD nonpublic information systems by an authorized user (or an information system) communicating through an external, nonorganization-controlled network.
+
+Automated monitoring of remote access sessions allows organizations to detect cyberattacks and ensure ongoing compliance with remote access policies by auditing connection activities of remote access capabilities from a variety of information system components (e.g., servers, workstations, notebook computers, smartphones, and tablets).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001097</ident><fixtext fixref="F-70826r1040762_fix">Configure AOS with the following commands:
+configure terminal
+ip default-gateway &lt;ipv4&gt;
+ipv6 default-gateway &lt;ipv6&gt;
+ip route &lt;A.B.C.D IPv4 network&gt; &lt;A.B.C.D netmask&gt; &lt;A.B.C.D nexthop&gt; &lt;cost&gt;
+ipv6 route &lt;X:X:X:X::X IPv6 network/prefix&gt; &lt;X:X:X:X::X nexthop&gt; &lt;cost&gt;
+write memory</fixtext><fix id="F-70826r1040762_fix" /><check system="C-70923r1040761_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following commands:
+show running-config | include default-gateway
+show running-config | include "ipv4 route"
+show running-config | include "ipv6 route"
+
+If any routes exist that do not route sessions to an IDPS for inspection, this is a finding.</check-content></check></Rule></Group><Group id="V-267000"><title>SRG-NET-000369-VPN-001620</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267000r1040766_rule" weight="10.0" severity="medium"><version>ARBA-VN-001620</version><title>AOS, when used as a VPN Gateway, must disable split-tunneling for remote client VPNs.</title><description>&lt;VulnDiscussion&gt;Split tunneling would in effect allow unauthorized external connections, making the system more vulnerable to attack and to exfiltration of organizational information.
+
+A VPN hardware or software client with split tunneling enabled provides an unsecured backdoor to the enclave from the internet. With split tunneling enabled, a remote client has access to the internet while at the same time has established a secured path to the enclave via an IPsec tunnel. A remote client connected to the internet that has been compromised by an attacker on the internet provides an attack base to the enclave's private network via the IPsec tunnel. Hence, it is imperative that the VPN gateway enforces a no split-tunneling policy to all remote clients.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002397</ident><fixtext fixref="F-70827r1040765_fix">Configure AOS using the following commands:
+configure terminal
+wlan virtual-ap &lt;profile name&gt;
+forward-mode tunnel
+exit
+write memory
+ap system-profile &lt;profile name&gt;
+double-encrypt
+exit
+write memory
+
+For each VIA connection profile:
+vaaa authentication via connection-profile &lt;name&gt;
+no split-tunneling
+exit
+write memory</fixtext><fix id="F-70827r1040765_fix" /><check system="C-70924r1040764_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following commands:
+show wlan virtual-ap
+
+For each active WLAN virtual-ap profile:
+show wlan virtual-ap &lt;name&gt; | include "Forward mode"
+ 
+show ap system-profile
+
+For each active AP system-profile:
+show ap system-profile &lt;name&gt; | include "Double Encrypt"
+ 
+show aaa authentication via connection-profile
+
+For each referenced profile:
+show aaa authentication via connection-profile &lt;name&gt; | include "Enable split tunneling"
+ 
+If any instances of remote access or virtual-ap profile forward mode of split-tunnel are found or if double-encrypt is not enabled per active AP system profile, this is a finding.</check-content></check></Rule></Group><Group id="V-267001"><title>SRG-NET-000512-VPN-002220</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-267001r1040895_rule" weight="10.0" severity="high"><version>ARBA-VN-002220</version><title>AOS, when used as an IPsec VPN Gateway, must use Internet Key Exchange (IKE) for IPsec VPN security associations (SAs).</title><description>&lt;VulnDiscussion&gt;Without IKE, the SPI is manually specified for each security association. IKE peers will negotiate the encryption algorithm and authentication or hashing methods as well as generate the encryption keys.
+
+An IPsec SA is established using either IKE or manual configuration. When using IKE, the security associations are established when needed and expire after a period of time or volume of traffic threshold. If manually configured, they are established as soon as the configuration is complete at both end points, and they do not expire. When using IKE, the Security Parameter Index (SPI) for each security association is a pseudo-randomly derived number.
+
+With manual configuration of the IPsec security association, both the cipher key and authentication key are static. Hence, if the keys are compromised, the traffic being protected by the current IPsec tunnel can be decrypted as well as traffic in any future tunnels established by this SA. Furthermore, the peers are not authenticated prior to establishing the SA, which could result in a rogue device establishing an IPsec SA with either of the VPN endpoints.
+
+IKE provides primary authentication to verify the identity of the remote system before negotiation begins. This feature is lost when the IPsec security associations are manually configured, which results in a nonterminating session using static preshared keys.
+
+Satisfies: SRG-NET-000512-VPN-002220, SRG-NET-000132-VPN-000460, SRG-NET-000147-VPN-000530&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000382</ident><ident system="http://cyber.mil/cci">CCI-001942</ident><fixtext fixref="F-70828r1040768_fix">Configure AOS with the following commands:
+configure terminal
+crypto-local ipsec-map &lt;name&gt; &lt;priority&gt;
+version v2
+exit
+write memory</fixtext><fix id="F-70828r1040768_fix" /><check system="C-70925r1040895_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following command:
+show crypto-local ipsec-map
+
+If each configured IPsec map is not configured with IKE, this is a finding.</check-content></check></Rule></Group><Group id="V-268313"><title>SRG-NET-000345-VPN-002430</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-268313r1040899_rule" weight="10.0" severity="high"><version>ARBA-VN-002430</version><title>AOS, when used as a VPN Gateway, must not accept certificates that have been revoked when using PKI for authentication.</title><description>&lt;VulnDiscussion&gt;Situations may arise in which the certificate issued by a certificate authority (CA) may need to be revoked before the lifetime of the certificate expires (for example, when the certificate is known to have been compromised).
+
+When an incoming Internet Key Exchange (IKE) session is initiated for a remote client or peer whose certificate is revoked, the revocation list configured for use by the VPN server is checked to determine if the certificate is valid. If the certificate is revoked, IKE will fail, and an IPsec security association will not be established for the remote endpoint.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target HPE Aruba Networking AOS VPN</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>HPE Aruba Networking AOS VPN</dc:subject><dc:identifier>5645</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004068</ident><fixtext fixref="F-72237r1040898_fix">Configure AOS using the web interface: 
+
+1. Navigate to Configuration &gt;&gt; System &gt;&gt; Certificates tab. Under "Import Certificates", upload the trust root CA. 
+2. Choose the TrustCA Certificate type. Click "Submit". 
+3. Upload the same certificate and select the OCSPResponderCert Certificate type (provide a different friendly name). Click "Submit". 
+4. Click Pending Changes &gt;&gt; Deploy Changes.
+5. Expand "Revocation Checkpoint". Select the configured trusted root CA. 
+6. Select "ocsp" for Revocation method 1. Enter the OCSP server URL in the OCSP URL field (remove "http://"). 
+7. Choose the configured certificate under OCSP responder cert. Click "Submit". 
+8. Click Pending Changes &gt;&gt; Deploy Changes.</fixtext><fix id="F-72237r1040898_fix" /><check system="C-72334r1040897_chk"><check-content-ref href="HPE_Aruba_Networking_AOS_VPN_STIG.xml" name="M" /><check-content>Verify the AOS configuration with the following command:
+show crypto-local pki rcp
+
+If any configured trusted root certificate authorities are not configured to use OCSP, this is a finding.</check-content></check></Rule></Group></Benchmark>
