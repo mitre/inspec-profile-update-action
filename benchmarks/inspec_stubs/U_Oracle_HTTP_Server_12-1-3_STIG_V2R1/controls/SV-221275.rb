@@ -1,0 +1,41 @@
+control 'SV-221275' do
+  title 'OHS must limit the number of threads within a worker process to limit the number of allowed simultaneous requests.'
+  desc 'Web server management includes the ability to control the number of users and user sessions that utilize a web server. Limiting the number of allowed users and sessions per user is helpful in limiting risks related to several types of Denial of Service attacks. 
+
+Although there is some latitude concerning the settings themselves, the settings should follow DoD-recommended values, but the settings should be configurable to allow for future DoD direction. While the DoD will specify recommended values, the values can be adjusted to accommodate the operational requirement of a given system.'
+  desc 'check', '1. Open the $DOMAIN_HOME/config/fmwconfig/components/OHS/<componentName>/httpd.conf file with an editor.
+
+2. Search for the "ThreadsPerChild" directive within "<IfModule mpm_worker_module>" directive at the OHS server configuration scope.
+
+3. If "ThreadsPerChild" is omitted or set greater than "25", this is a finding.
+
+4. Search for the "ThreadLimit" directive within "<IfModule mpm_worker_module>" directive at the OHS server configuration scope.
+
+5. If "ThreadLimit" is omitted or set greater than "64", this is a finding.
+
+Note: This vulnerability can be documented locally with the ISSM/ISSO if the site has operational reasons for the use of a higher value. If the site has this documentation, this should be marked as not a finding.'
+  desc 'fix', '1. Open $DOMAIN_HOME/config/fmwconfig/components/OHS/<componentName>/httpd.conf with an editor.
+
+2. Search for the "ThreadsPerChild" directive within "<IfModule mpm_worker_module>" directive at the OHS server configuration scope.
+
+3. Within the "<IfModule mpm_worker_module>" directive, set the "ThreadsPerChild" directive to "25", add the directive if it does not exist.
+
+4. Search for the "ThreadLimit" directive within "<IfModule mpm_worker_module>" directive at the OHS server configuration scope.
+
+5. Within the "<IfModule mpm_worker_module>" directive, set the "ThreadLimit" directive to "64", add the directive if it does not exist.
+
+Note: This vulnerability can be documented locally with the ISSM/ISSO if the site has operational reasons for the use of a higher value.'
+  impact 0.5
+  ref 'DPMS Target Oracle HTTP Server 12.1.3'
+  tag check_id: 'C-22990r414508_chk'
+  tag severity: 'medium'
+  tag gid: 'V-221275'
+  tag rid: 'SV-221275r414510_rule'
+  tag stig_id: 'OH12-1X-000004'
+  tag gtitle: 'SRG-APP-000001-WSR-000001'
+  tag fix_id: 'F-22979r414509_fix'
+  tag 'documentable'
+  tag legacy: ['SV-78619', 'V-64129']
+  tag cci: ['CCI-000054']
+  tag nist: ['AC-10']
+end

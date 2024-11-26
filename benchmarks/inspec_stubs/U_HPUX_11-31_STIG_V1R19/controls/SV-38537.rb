@@ -1,0 +1,25 @@
+control 'SV-38537' do
+  title 'Any Network Information System (NIS+) server must be operating at security level 2.'
+  desc 'If the NIS+ server is not operating in, at least, security level 2, there is no encryption and the system could be penetrated by intruders and/or malicious users.'
+  desc 'check', 'If the system is not using NIS+, this is not applicable.
+
+Check the system to determine if NIS+ security level two is implemented. Execute this command:
+# niscat cred.org_dir 
+
+If the second column does not contain DES, the system is not using NIS+ security level two, and this is a finding.'
+  desc 'fix', 'Configure the NIS+ server to use security level 2.'
+  impact 0.5
+  ref 'DPMS Target HP-UX 11.31'
+  tag check_id: 'C-36723r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-926'
+  tag rid: 'SV-38537r1_rule'
+  tag stig_id: 'GEN006460'
+  tag gtitle: 'GEN006460'
+  tag fix_id: 'F-32104r1_fix'
+  tag 'documentable'
+  tag responsibility: 'System Administrator'
+  tag ia_controls: 'ECSC-1'
+  tag cci: ['CCI-001435']
+  tag nist: ['AC-17 (8)']
+end

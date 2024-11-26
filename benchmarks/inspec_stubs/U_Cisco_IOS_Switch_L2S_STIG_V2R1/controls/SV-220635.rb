@@ -1,0 +1,33 @@
+control 'SV-220635' do
+  title 'The Cisco switch must have Dynamic Address Resolution Protocol (ARP) Inspection (DAI) enabled on all user VLANs.'
+  desc 'DAI intercepts ARP requests and verifies that each of these packets has a valid IP-to-MAC address binding before updating the local ARP cache and before forwarding the packet to the appropriate destination. Invalid ARP packets are dropped and logged. 
+
+DAI determines the validity of an ARP packet based on valid IP-to-MAC address bindings stored in the DHCP snooping binding database. If the ARP packet is received on a trusted interface, the switch forwards the packet without any checks. On untrusted interfaces, the switch forwards the packet only if it is valid.'
+  desc 'check', 'Review the switch configuration to verify that the DAI feature is enabled on all user VLANs:
+
+hostname SW2
+…
+…
+…
+ip arp inspection vlan 2,4-8,11
+
+Note: DAI depends on the entries in the DHCP snooping binding database to verify IP-to-MAC address bindings in incoming ARP requests and ARP responses.
+
+If DAI is not enabled on all user VLANs, this is a finding.'
+  desc 'fix', 'Configure the switch to have DAI enabled on all user VLANs as shown in the example below:
+
+SW2(config)#ip arp inspection vlan 2,4-8,11'
+  impact 0.5
+  ref 'DPMS Target Cisco IOS Switch L2S'
+  tag check_id: 'C-22350r507951_chk'
+  tag severity: 'medium'
+  tag gid: 'V-220635'
+  tag rid: 'SV-220635r539671_rule'
+  tag stig_id: 'CISC-L2-000150'
+  tag gtitle: 'SRG-NET-000362-L2S-000027'
+  tag fix_id: 'F-22339r507952_fix'
+  tag 'documentable'
+  tag legacy: ['SV-110241', 'V-101137']
+  tag cci: ['CCI-002385']
+  tag nist: ['SC-5 a']
+end

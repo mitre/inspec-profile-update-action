@@ -1,0 +1,73 @@
+control 'SV-256509' do
+  title 'The Photon operating system must disable the loading of unnecessary kernel modules.'
+  desc 'To support the requirements and principles of least functionality, the operating system must provide only essential capabilities and limit the use of modules, protocols, and/or services to only those required for the proper functioning of the product.
+
+'
+  desc 'check', 'At the command line, run the following command:
+
+# modprobe --showconfig | grep "^install" | grep "/bin"
+
+Expected result:
+
+install sctp /bin/false
+install dccp /bin/false
+install dccp_ipv4 /bin/false
+install dccp_ipv6 /bin/false
+install ipx /bin/false
+install appletalk /bin/false
+install decnet /bin/false
+install rds /bin/false
+install tipc /bin/false
+install bluetooth /bin/false
+install usb_storage /bin/false
+install ieee1394 /bin/false
+install cramfs /bin/false
+install freevxfs /bin/false
+install jffs2 /bin/false
+install hfs /bin/false
+install hfsplus /bin/false
+install squashfs /bin/false
+install udf /bin/false
+
+The output may include other statements outside of the expected result.
+
+If the output does not include at least every statement in the expected result, this is a finding.'
+  desc 'fix', 'Navigate to and open:
+
+/etc/modprobe.d/modprobe.conf
+
+Set the contents as follows:
+
+install sctp /bin/false
+install dccp /bin/false
+install dccp_ipv4 /bin/false
+install dccp_ipv6 /bin/false
+install ipx /bin/false
+install appletalk /bin/false
+install decnet /bin/false
+install rds /bin/false
+install tipc /bin/false
+install bluetooth /bin/false
+install usb_storage /bin/false
+install ieee1394 /bin/false
+install cramfs /bin/false
+install freevxfs /bin/false
+install jffs2 /bin/false
+install hfs /bin/false
+install hfsplus /bin/false
+install squashfs /bin/false
+install udf /bin/false'
+  impact 0.5
+  ref 'DPMS Target VMware vSphere 7.0 vCA Photon OS'
+  tag check_id: 'C-60184r887199_chk'
+  tag severity: 'medium'
+  tag gid: 'V-256509'
+  tag rid: 'SV-256509r887201_rule'
+  tag stig_id: 'PHTN-30-000032'
+  tag gtitle: 'SRG-OS-000096-GPOS-00050'
+  tag fix_id: 'F-60127r887200_fix'
+  tag satisfies: ['SRG-OS-000096-GPOS-00050', 'SRG-OS-000114-GPOS-00059']
+  tag 'documentable'
+  tag cci: ['CCI-000382', 'CCI-000778']
+  tag nist: ['CM-7 b', 'IA-3']
+end

@@ -1,0 +1,44 @@
+control 'SV-248564' do
+  title 'The OL 8 operating system must implement DoD-approved encryption in the OpenSSL package.'
+  desc 'Without cryptographic integrity protections, information can be altered by unauthorized users without detection. 
+ 
+Remote access (e.g., RDP) is access to DoD nonpublic information systems by an authorized user (or an information system) communicating through an external, non-organization-controlled network. Remote access methods include, for example, dial-up, broadband, and wireless. 
+ 
+Cryptographic mechanisms used for protecting the integrity of information include, for example, signed hash functions using asymmetric cryptography, enabling distribution of the public key to verify the hash information while maintaining the confidentiality of the secret key used to generate the hash. 
+ 
+OL 8 incorporates system-wide crypto policies by default. The employed algorithms can be viewed in the "/etc/crypto-policies/back-ends/openssl.config" file.'
+  desc 'check', 'Verify the OpenSSL library is configured to use only ciphers employing FIPS 140-2-approved algorithms:
+
+Verify that system-wide crypto policies are in effect:
+
+$ sudo grep -i opensslcnf.config /etc/pki/tls/openssl.cnf
+
+.include /etc/crypto-policies/back-ends/opensslcnf.config
+
+If the "opensslcnf.config" is not defined in the "/etc/pki/tls/openssl.cnf" file, this is a finding.
+
+Verify which system-wide crypto policy is in use:
+
+$ sudo update-crypto-policies --show
+
+FIPS
+
+If the system-wide crypto policy is set to anything other than "FIPS", this is a finding.'
+  desc 'fix', 'Configure the OL 8 OpenSSL library to use only ciphers employing FIPS 140-2-approved algorithms with the following command:
+
+$ sudo fips-mode-setup --enable
+
+A reboot is required for the changes to take effect.'
+  impact 0.5
+  ref 'DPMS Target Oracle Linux 8'
+  tag check_id: 'C-51998r779256_chk'
+  tag severity: 'medium'
+  tag gid: 'V-248564'
+  tag rid: 'SV-248564r877394_rule'
+  tag stig_id: 'OL08-00-010293'
+  tag gtitle: 'SRG-OS-000250-GPOS-00093'
+  tag fix_id: 'F-51952r779257_fix'
+  tag 'documentable'
+  tag cci: ['CCI-001453']
+  tag nist: ['AC-17 (2)']
+end

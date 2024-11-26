@@ -1,0 +1,28 @@
+control 'SV-55410' do
+  title 'The Symantec Endpoint Protection client Auto-Protect Advanced Options Floppy Settings must be configured to check floppies when the system shuts down.'
+  desc 'Computer viruses in the early days of personal computing were almost exclusively passed around by floppy disks. Floppy disks would be used to boot the computer and, if infected, would infect the hard drive files, as well. Although floppy drives have fallen out of use, it is still a good security practice, whenever the antivirus software allows, to enable the scanning software to scan a floppy disk at shutdown.'
+  desc 'check', 'GUI check:  Locate the Symantec Endpoint Protection icon in the system tray. Double-click the icon to open the Symantec Endpoint Protection configuration screen. On the left hand side, select Change settings -> Under Virus and Spyware Protection -> Select Configure Settings -> Under the Auto-Protect tab -> Select Advanced -> Under Additional advanced options -> Select Floppies -> Under Computer shutdown settings -> Ensure "Check floppies when the computer shuts down" is selected. 
+
+Criteria:  If "Check floppies when the computer shuts down" is not selected, this is a finding. 
+
+On the machine use the Windows Registry Editor to navigate to the following key: 
+32 bit:
+HKLM\\SOFTWARE\\Symantec\\Symantec Endpoint Protection\\AV\\Storages\\Filesystem\\RealTimeScan
+64 bit:
+HKLM\\SOFTWARE\\Wow6432Node\\Symantec\\Symantec Endpoint Protection\\AV\\Storages\\Filesystem\\RealTimeScan
+
+Criteria:  If the value of SkipShutDownFloppyCheck is not 0, this is a finding.'
+  desc 'fix', 'Locate the Symantec Endpoint Protection icon in the system tray. Double-click the icon to open the Symantec Endpoint Protection configuration screen. On the left hand side, select Change settings -> Under Virus and Spyware Protection -> Select Configure Settings -> Under the Auto-Protect tab -> Select Advanced -> Under Additional advanced options -> Select Floppies -> Under Computer shutdown settings -> Select "Check floppies when the computer shuts down".'
+  impact 0.5
+  ref 'DPMS Target Symantec AntiVirus Locally Configured Client'
+  tag check_id: 'C-48953r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-42682'
+  tag rid: 'SV-55410r1_rule'
+  tag stig_id: 'DTASEP018'
+  tag gtitle: 'DTASEP018'
+  tag fix_id: 'F-48267r1_fix'
+  tag 'documentable'
+  tag cci: ['CCI-001242']
+  tag nist: ['SI-3 c 1']
+end

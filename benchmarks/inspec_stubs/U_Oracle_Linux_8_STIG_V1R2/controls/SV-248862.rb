@@ -1,0 +1,34 @@
+control 'SV-248862' do
+  title 'OL 8 must have the USBGuard installed.'
+  desc 'Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity. 
+ 
+Peripherals include but are not limited to such devices as flash drives, external storage, and printers. 
+ 
+A new feature that OL 8 provides is the USBGuard software framework. The USBguard-daemon is the main component of the USBGuard software framework. It runs as a service in the background and enforces the USB device authorization policy for all USB devices. The policy is defined by a set of rules using a rule language described in the "usbguard-rules.conf" file. The policy and the authorization state of USB devices can be modified during runtime using the "usbguard" tool. 
+ 
+The System Administrator (SA) must work with the site Information System Security Officer (ISSO) to determine a list of authorized peripherals and establish rules within the USBGuard software framework to allow only authorized devices.'
+  desc 'check', 'Verify USBGuard is installed on the operating system with the following command:
+
+$ sudo yum list installed usbguard
+
+Installed Packages
+usbguard.x86_64                   0.7.8-7.el8             @ol8_appstream
+
+If the USBGuard package is not installed, ask the SA to indicate how unauthorized peripherals are being blocked.
+If there is no evidence that unauthorized peripherals are being blocked before establishing a connection, this is a finding.'
+  desc 'fix', 'Install the USBGuard package with the following command:
+
+$ sudo yum install usbguard.x86_64'
+  impact 0.5
+  ref 'DPMS Target Oracle Linux 8'
+  tag check_id: 'C-52296r780150_chk'
+  tag severity: 'medium'
+  tag gid: 'V-248862'
+  tag rid: 'SV-248862r780152_rule'
+  tag stig_id: 'OL08-00-040139'
+  tag gtitle: 'SRG-OS-000378-GPOS-00163'
+  tag fix_id: 'F-52250r780151_fix'
+  tag 'documentable'
+  tag cci: ['CCI-001958']
+  tag nist: ['IA-3']
+end

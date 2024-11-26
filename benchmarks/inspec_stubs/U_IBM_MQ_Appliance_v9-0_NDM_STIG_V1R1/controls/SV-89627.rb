@@ -1,0 +1,38 @@
+control 'SV-89627' do
+  title 'The MQ Appliance network device must enforce password complexity by requiring that at least one upper-case character be used.'
+  desc "Use of a complex passwords helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password is, the greater the number of possible combinations that need to be tested before the password is compromised. 
+
+For LDAP authentication, the authentication server is responsible for enforcing password policy. When the LDAP server is not available, password policy is enforced by the MQ Appliance's RBM Password Policy."
+  desc 'check', 'Log on to the MQ Appliance WebGUI as a privileged user. Go to Administration (gear icon) >> Access >> RBM Settings. 
+
+Verify the Authentication Method is set to LDAP. 
+
+Expand Password Policy. 
+
+Verify the (local) Password Policy Require Mixed Case check box is checked. 
+
+If MQ is not set to LDAP authentication or if the local password policy is not configured to meet the requirement, this is a finding.'
+  desc 'fix', 'Log on to the MQ Appliance WebGUI as a privileged user. Go to Administration (gear icon) >> Access >> RBM Settings. 
+
+Set Authentication Method to LDAP. 
+
+Configure LDAP server connection as required. 
+
+Expand Password Policy. 
+
+In Password Policy, check the Require Mixed Case check box.'
+  impact 0.5
+  ref 'DPMS Target IBM MQ Appliance v9.0 NDM'
+  tag check_id: 'C-74811r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-74953'
+  tag rid: 'SV-89627r1_rule'
+  tag stig_id: 'MQMH-ND-000580'
+  tag gtitle: 'SRG-APP-000166-NDM-000254'
+  tag fix_id: 'F-81569r1_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000192']
+  tag nist: ['IA-5 (1) (a)']
+end

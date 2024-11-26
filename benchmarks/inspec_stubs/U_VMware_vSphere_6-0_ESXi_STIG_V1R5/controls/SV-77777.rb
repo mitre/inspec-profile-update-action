@@ -1,0 +1,38 @@
+control 'SV-77777' do
+  title 'The virtual switch Forged Transmits policy must be set to reject.'
+  desc 'If the virtual machine operating system changes the MAC address, the operating system can send frames with an impersonated source MAC address at any time. This allows an operating system to stage malicious attacks on the devices in a network by impersonating a network adaptor authorized by the receiving network. 
+
+This means the virtual switch does not compare the source and effective MAC addresses. 
+ 
+To protect against MAC address impersonation, all virtual switches should have forged transmissions set to Reject. Reject Forged Transmit can be set at the vSwitch and/or the Portgroup level. You can override switch level settings at the Portgroup level.'
+  desc 'check', 'From the vSphere Client go to Configuration >> Networking >> vSphere Standard Switch.  View the properties on each virtual switch and port group and verify "Forged Transmits" is set to reject.
+
+or
+
+From a PowerCLI command prompt while connected to the ESXi host run the following commands:
+
+Get-VirtualSwitch | Get-SecurityPolicy
+Get-VirtualPortGroup | Get-SecurityPolicy
+
+If the "Forged Transmits" policy is set to accept, this is a finding.'
+  desc 'fix', 'From the vSphere Client go to Configuration >> Networking >> vSphere Standard Switch.  For each virtual switch go to properties and change "Forged Transmits" to reject for the switch and each port group.
+
+or
+
+From a PowerCLI command prompt while connected to the ESXi host run the following commands:
+
+Get-VirtualSwitch | Get-SecurityPolicy | Set-SecurityPolicy -ForgedTransmits $false
+Get-VirtualPortGroup | Get-SecurityPolicy | Set-SecurityPolicy -ForgedTransmitsInherited $true'
+  impact 0.5
+  ref 'DPMS Target ESXi 6.0'
+  tag check_id: 'C-64021r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-63287'
+  tag rid: 'SV-77777r1_rule'
+  tag stig_id: 'ESXI-06-000059'
+  tag gtitle: 'SRG-OS-000480-VMM-002000'
+  tag fix_id: 'F-69205r1_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end
