@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Dell_OS10_Switch_NDM_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-11">accepted</status><title>Dell OS10 Switch NDM Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 10 Dec 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269768" selected="true" /><select idref="V-269769" selected="true" /><select idref="V-269770" selected="true" /><select idref="V-269771" selected="true" /><select idref="V-269772" selected="true" /><select idref="V-269773" selected="true" /><select idref="V-269774" selected="true" /><select idref="V-269775" selected="true" /><select idref="V-269776" selected="true" /><select idref="V-269777" selected="true" /><select idref="V-269778" selected="true" /><select idref="V-269779" selected="true" /><select idref="V-269780" selected="true" /><select idref="V-269781" selected="true" /><select idref="V-269782" selected="true" /><select idref="V-269783" selected="true" /><select idref="V-269784" selected="true" /><select idref="V-269785" selected="true" /><select idref="V-269786" selected="true" /><select idref="V-269787" selected="true" /><select idref="V-269788" selected="true" /><select idref="V-269789" selected="true" /><select idref="V-269790" selected="true" /><select idref="V-269791" selected="true" /><select idref="V-269793" selected="true" /><select idref="V-269794" selected="true" /><select idref="V-269795" selected="true" /><select idref="V-269796" selected="true" /><select idref="V-269797" selected="true" /><select idref="V-269798" selected="true" /><select idref="V-269799" selected="true" /><select idref="V-269800" selected="true" /><select idref="V-269801" selected="true" /><select idref="V-269802" selected="true" /><select idref="V-269803" selected="true" /><select idref="V-269804" selected="true" /><select idref="V-269805" selected="true" /><select idref="V-270643" selected="true" /><select idref="V-270644" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269768" selected="true" /><select idref="V-269769" selected="true" /><select idref="V-269770" selected="true" /><select idref="V-269771" selected="true" /><select idref="V-269772" selected="true" /><select idref="V-269773" selected="true" /><select idref="V-269774" selected="true" /><select idref="V-269775" selected="true" /><select idref="V-269776" selected="true" /><select idref="V-269777" selected="true" /><select idref="V-269778" selected="true" /><select idref="V-269779" selected="true" /><select idref="V-269780" selected="true" /><select idref="V-269781" selected="true" /><select idref="V-269782" selected="true" /><select idref="V-269783" selected="true" /><select idref="V-269784" selected="true" /><select idref="V-269785" selected="true" /><select idref="V-269786" selected="true" /><select idref="V-269787" selected="true" /><select idref="V-269788" selected="true" /><select idref="V-269789" selected="true" /><select idref="V-269790" selected="true" /><select idref="V-269791" selected="true" /><select idref="V-269793" selected="true" /><select idref="V-269794" selected="true" /><select idref="V-269795" selected="true" /><select idref="V-269796" selected="true" /><select idref="V-269797" selected="true" /><select idref="V-269798" selected="true" /><select idref="V-269799" selected="true" /><select idref="V-269800" selected="true" /><select idref="V-269801" selected="true" /><select idref="V-269802" selected="true" /><select idref="V-269803" selected="true" /><select idref="V-269804" selected="true" /><select idref="V-269805" selected="true" /><select idref="V-270643" selected="true" /><select idref="V-270644" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269768" selected="true" /><select idref="V-269769" selected="true" /><select idref="V-269770" selected="true" /><select idref="V-269771" selected="true" /><select idref="V-269772" selected="true" /><select idref="V-269773" selected="true" /><select idref="V-269774" selected="true" /><select idref="V-269775" selected="true" /><select idref="V-269776" selected="true" /><select idref="V-269777" selected="true" /><select idref="V-269778" selected="true" /><select idref="V-269779" selected="true" /><select idref="V-269780" selected="true" /><select idref="V-269781" selected="true" /><select idref="V-269782" selected="true" /><select idref="V-269783" selected="true" /><select idref="V-269784" selected="true" /><select idref="V-269785" selected="true" /><select idref="V-269786" selected="true" /><select idref="V-269787" selected="true" /><select idref="V-269788" selected="true" /><select idref="V-269789" selected="true" /><select idref="V-269790" selected="true" /><select idref="V-269791" selected="true" /><select idref="V-269793" selected="true" /><select idref="V-269794" selected="true" /><select idref="V-269795" selected="true" /><select idref="V-269796" selected="true" /><select idref="V-269797" selected="true" /><select idref="V-269798" selected="true" /><select idref="V-269799" selected="true" /><select idref="V-269800" selected="true" /><select idref="V-269801" selected="true" /><select idref="V-269802" selected="true" /><select idref="V-269803" selected="true" /><select idref="V-269804" selected="true" /><select idref="V-269805" selected="true" /><select idref="V-270643" selected="true" /><select idref="V-270644" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269768" selected="true" /><select idref="V-269769" selected="true" /><select idref="V-269770" selected="true" /><select idref="V-269771" selected="true" /><select idref="V-269772" selected="true" /><select idref="V-269773" selected="true" /><select idref="V-269774" selected="true" /><select idref="V-269775" selected="true" /><select idref="V-269776" selected="true" /><select idref="V-269777" selected="true" /><select idref="V-269778" selected="true" /><select idref="V-269779" selected="true" /><select idref="V-269780" selected="true" /><select idref="V-269781" selected="true" /><select idref="V-269782" selected="true" /><select idref="V-269783" selected="true" /><select idref="V-269784" selected="true" /><select idref="V-269785" selected="true" /><select idref="V-269786" selected="true" /><select idref="V-269787" selected="true" /><select idref="V-269788" selected="true" /><select idref="V-269789" selected="true" /><select idref="V-269790" selected="true" /><select idref="V-269791" selected="true" /><select idref="V-269793" selected="true" /><select idref="V-269794" selected="true" /><select idref="V-269795" selected="true" /><select idref="V-269796" selected="true" /><select idref="V-269797" selected="true" /><select idref="V-269798" selected="true" /><select idref="V-269799" selected="true" /><select idref="V-269800" selected="true" /><select idref="V-269801" selected="true" /><select idref="V-269802" selected="true" /><select idref="V-269803" selected="true" /><select idref="V-269804" selected="true" /><select idref="V-269805" selected="true" /><select idref="V-270643" selected="true" /><select idref="V-270644" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269768" selected="true" /><select idref="V-269769" selected="true" /><select idref="V-269770" selected="true" /><select idref="V-269771" selected="true" /><select idref="V-269772" selected="true" /><select idref="V-269773" selected="true" /><select idref="V-269774" selected="true" /><select idref="V-269775" selected="true" /><select idref="V-269776" selected="true" /><select idref="V-269777" selected="true" /><select idref="V-269778" selected="true" /><select idref="V-269779" selected="true" /><select idref="V-269780" selected="true" /><select idref="V-269781" selected="true" /><select idref="V-269782" selected="true" /><select idref="V-269783" selected="true" /><select idref="V-269784" selected="true" /><select idref="V-269785" selected="true" /><select idref="V-269786" selected="true" /><select idref="V-269787" selected="true" /><select idref="V-269788" selected="true" /><select idref="V-269789" selected="true" /><select idref="V-269790" selected="true" /><select idref="V-269791" selected="true" /><select idref="V-269793" selected="true" /><select idref="V-269794" selected="true" /><select idref="V-269795" selected="true" /><select idref="V-269796" selected="true" /><select idref="V-269797" selected="true" /><select idref="V-269798" selected="true" /><select idref="V-269799" selected="true" /><select idref="V-269800" selected="true" /><select idref="V-269801" selected="true" /><select idref="V-269802" selected="true" /><select idref="V-269803" selected="true" /><select idref="V-269804" selected="true" /><select idref="V-269805" selected="true" /><select idref="V-270643" selected="true" /><select idref="V-270644" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269768" selected="true" /><select idref="V-269769" selected="true" /><select idref="V-269770" selected="true" /><select idref="V-269771" selected="true" /><select idref="V-269772" selected="true" /><select idref="V-269773" selected="true" /><select idref="V-269774" selected="true" /><select idref="V-269775" selected="true" /><select idref="V-269776" selected="true" /><select idref="V-269777" selected="true" /><select idref="V-269778" selected="true" /><select idref="V-269779" selected="true" /><select idref="V-269780" selected="true" /><select idref="V-269781" selected="true" /><select idref="V-269782" selected="true" /><select idref="V-269783" selected="true" /><select idref="V-269784" selected="true" /><select idref="V-269785" selected="true" /><select idref="V-269786" selected="true" /><select idref="V-269787" selected="true" /><select idref="V-269788" selected="true" /><select idref="V-269789" selected="true" /><select idref="V-269790" selected="true" /><select idref="V-269791" selected="true" /><select idref="V-269793" selected="true" /><select idref="V-269794" selected="true" /><select idref="V-269795" selected="true" /><select idref="V-269796" selected="true" /><select idref="V-269797" selected="true" /><select idref="V-269798" selected="true" /><select idref="V-269799" selected="true" /><select idref="V-269800" selected="true" /><select idref="V-269801" selected="true" /><select idref="V-269802" selected="true" /><select idref="V-269803" selected="true" /><select idref="V-269804" selected="true" /><select idref="V-269805" selected="true" /><select idref="V-270643" selected="true" /><select idref="V-270644" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269768" selected="true" /><select idref="V-269769" selected="true" /><select idref="V-269770" selected="true" /><select idref="V-269771" selected="true" /><select idref="V-269772" selected="true" /><select idref="V-269773" selected="true" /><select idref="V-269774" selected="true" /><select idref="V-269775" selected="true" /><select idref="V-269776" selected="true" /><select idref="V-269777" selected="true" /><select idref="V-269778" selected="true" /><select idref="V-269779" selected="true" /><select idref="V-269780" selected="true" /><select idref="V-269781" selected="true" /><select idref="V-269782" selected="true" /><select idref="V-269783" selected="true" /><select idref="V-269784" selected="true" /><select idref="V-269785" selected="true" /><select idref="V-269786" selected="true" /><select idref="V-269787" selected="true" /><select idref="V-269788" selected="true" /><select idref="V-269789" selected="true" /><select idref="V-269790" selected="true" /><select idref="V-269791" selected="true" /><select idref="V-269793" selected="true" /><select idref="V-269794" selected="true" /><select idref="V-269795" selected="true" /><select idref="V-269796" selected="true" /><select idref="V-269797" selected="true" /><select idref="V-269798" selected="true" /><select idref="V-269799" selected="true" /><select idref="V-269800" selected="true" /><select idref="V-269801" selected="true" /><select idref="V-269802" selected="true" /><select idref="V-269803" selected="true" /><select idref="V-269804" selected="true" /><select idref="V-269805" selected="true" /><select idref="V-270643" selected="true" /><select idref="V-270644" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269768" selected="true" /><select idref="V-269769" selected="true" /><select idref="V-269770" selected="true" /><select idref="V-269771" selected="true" /><select idref="V-269772" selected="true" /><select idref="V-269773" selected="true" /><select idref="V-269774" selected="true" /><select idref="V-269775" selected="true" /><select idref="V-269776" selected="true" /><select idref="V-269777" selected="true" /><select idref="V-269778" selected="true" /><select idref="V-269779" selected="true" /><select idref="V-269780" selected="true" /><select idref="V-269781" selected="true" /><select idref="V-269782" selected="true" /><select idref="V-269783" selected="true" /><select idref="V-269784" selected="true" /><select idref="V-269785" selected="true" /><select idref="V-269786" selected="true" /><select idref="V-269787" selected="true" /><select idref="V-269788" selected="true" /><select idref="V-269789" selected="true" /><select idref="V-269790" selected="true" /><select idref="V-269791" selected="true" /><select idref="V-269793" selected="true" /><select idref="V-269794" selected="true" /><select idref="V-269795" selected="true" /><select idref="V-269796" selected="true" /><select idref="V-269797" selected="true" /><select idref="V-269798" selected="true" /><select idref="V-269799" selected="true" /><select idref="V-269800" selected="true" /><select idref="V-269801" selected="true" /><select idref="V-269802" selected="true" /><select idref="V-269803" selected="true" /><select idref="V-269804" selected="true" /><select idref="V-269805" selected="true" /><select idref="V-270643" selected="true" /><select idref="V-270644" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269768" selected="true" /><select idref="V-269769" selected="true" /><select idref="V-269770" selected="true" /><select idref="V-269771" selected="true" /><select idref="V-269772" selected="true" /><select idref="V-269773" selected="true" /><select idref="V-269774" selected="true" /><select idref="V-269775" selected="true" /><select idref="V-269776" selected="true" /><select idref="V-269777" selected="true" /><select idref="V-269778" selected="true" /><select idref="V-269779" selected="true" /><select idref="V-269780" selected="true" /><select idref="V-269781" selected="true" /><select idref="V-269782" selected="true" /><select idref="V-269783" selected="true" /><select idref="V-269784" selected="true" /><select idref="V-269785" selected="true" /><select idref="V-269786" selected="true" /><select idref="V-269787" selected="true" /><select idref="V-269788" selected="true" /><select idref="V-269789" selected="true" /><select idref="V-269790" selected="true" /><select idref="V-269791" selected="true" /><select idref="V-269793" selected="true" /><select idref="V-269794" selected="true" /><select idref="V-269795" selected="true" /><select idref="V-269796" selected="true" /><select idref="V-269797" selected="true" /><select idref="V-269798" selected="true" /><select idref="V-269799" selected="true" /><select idref="V-269800" selected="true" /><select idref="V-269801" selected="true" /><select idref="V-269802" selected="true" /><select idref="V-269803" selected="true" /><select idref="V-269804" selected="true" /><select idref="V-269805" selected="true" /><select idref="V-270643" selected="true" /><select idref="V-270644" selected="true" /></Profile><Group id="V-269768"><title>SRG-APP-000001-NDM-000200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269768r1051689_rule" weight="10.0" severity="medium"><version>OS10-NDM-000010</version><title>The Dell OS10 Switch must limit the number of concurrent sessions to an organization-defined number for each administrator account and/or administrator account type.</title><description>&lt;VulnDiscussion&gt;Device management includes the ability to control the number of administrators and management sessions that manage a device. Limiting the number of allowed administrators and sessions per administrator based on account type, role, or access type is helpful in limiting risks related to denial-of-service (DoS) attacks.
+
+This requirement addresses concurrent sessions for administrative accounts and does not address concurrent sessions by a single administrator via multiple administrative accounts. The maximum number of concurrent sessions should be defined based upon mission needs and the operational environment for each system. At a minimum, limits must be set for SSH, HTTPS, account of last resort, and root account sessions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-73702r1051688_fix">Configure the network device to limit the number of concurrent sessions to an organization-defined number for all administrator accounts and/or administrator account types, as in the following example.
+
+OS10(config)# login concurrent-session limit 3</fixtext><fix id="F-73702r1051688_fix" /><check system="C-73801r1051687_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Review the network device configuration to verify if the device limits the number of concurrent sessions to an organization-defined number for all administrator accounts and/or administrator account types. 
+
+Review the running-configuration. Verify the configuration includes "login concurrent-session limit" followed by the number of sessions defined by the organization.
+
+Note: The default concurrent session limit is 10, so if it is not displayed when viewing the configuration, the limit is set to 10. 
+
+If the network device does not limit the number of concurrent sessions to an organization-defined number for each administrator account and/or administrator account type, this is a finding.</check-content></check></Rule></Group><Group id="V-269769"><title>SRG-APP-000033-NDM-000212</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269769r1052474_rule" weight="10.0" severity="high"><version>OS10-NDM-000100</version><title>The Dell OS10 Switch must be configured to assign appropriate user roles or access levels to authenticated users.</title><description>&lt;VulnDiscussion&gt;Successful identification and authentication must not automatically give an entity full access to a network device or security domain. The lack of authorization-based access control could result in the immediate compromise and unauthorized access to sensitive information. All DOD systems must be properly configured to incorporate access control methods that do not rely solely on authentication for authorized access.
+
+Authorization is the process of determining whether an entity, once authenticated, is permitted to access a specific asset or set of resources. Information systems use access control policies and enforcement mechanisms to implement this requirement. Authorization procedures and controls must be implemented to ensure each authenticated entity also has a validated and current authorization.
+
+Some network devices are preconfigured with security groups. Other network devices enable operators to create custom security groups with custom permissions. For example, an information system security manager (ISSM) may require read-only access to audit the network device. Operators may create an audit security group, define permissions, and access levels for members of the group, and then assign the ISSM's user persona to the audit security group. This is still considered privileged access, but the ISSM's security group is more restrictive than the network administrator's security group.
+
+Network devices that rely on AAA brokers for authentication and authorization services may need to identify the available security groups or access levels available on the network devices and convey that information to the AAA operator. Once the AAA broker identifies the user persona on the centralized directory service, the user's security group memberships can be retrieved. The AAA operator may need to create a mapping that links target security groups from the directory service to the appropriate security groups or access levels on the network device. Once these mappings are configured, authorizations can happen dynamically, based on each user's directory service group membership.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-73703r1051691_fix">Configure the OS10 Switch to assign appropriate user roles or access levels to authenticated users.
+
+OS10(config)#  username &lt;name&gt; password ********** role &lt;sysadmin/netoperator/secadmin/netadmin&gt;</fixtext><fix id="F-73703r1051691_fix" /><check system="C-73802r1051690_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>If the network device is configured to use a AAA service account, and the AAA broker is configured to assign authorization levels based on centralized user account group memberships on behalf of the network device, that will satisfy this requirement. Because the responsibility for meeting this requirement is transferred to the AAA broker, this requirement is not applicable for the local network device. This requirement may be verified by demonstration or configuration review.
+
+Verify the Dell OS10 Switch is configured to assign appropriate user roles to authenticated users. Valid roles are system admin, security admin, network admin, and network operator. Verify the correct role is assigned to each user.
+
+OS10# show running-configuration users
+username admin password **** role sysadmin priv-lvl 15
+username op100 password **** role netoperator priv-lvl 1
+OS10#
+
+If any users are assigned to the wrong role, this is a finding.</check-content></check></Rule></Group><Group id="V-269770"><title>SRG-APP-000038-NDM-000213</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269770r1051695_rule" weight="10.0" severity="medium"><version>OS10-NDM-000110</version><title>The Dell OS10 Switch must enforce approved authorizations for controlling the flow of management information within the network device based on information flow control policies.</title><description>&lt;VulnDiscussion&gt;A mechanism to detect and prevent unauthorized communication flow must be configured or provided as part of the system design. If management information flow is not enforced based on approved authorizations, the network device may become compromised. Information flow control regulates where management information is allowed to travel within a network device. The flow of all management information must be monitored and controlled so it does not introduce any unacceptable risk to the network device or data. 
+
+Application-specific examples of enforcement occur in systems that employ rule sets or establish configuration settings that restrict information system services or message-filtering capability based on message content (e.g., implementing key word searches or using document characteristics).
+
+Applications providing information flow control must be able to enforce approved authorizations for controlling the flow of management information within the system in accordance with applicable policy.
+
+Satisfies: SRG-APP-000038-NDM-000213, SRG-APP-000880-NDM-000290&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><ident system="http://cyber.mil/cci">CCI-004192</ident><fixtext fixref="F-73704r1051694_fix">Configure the OS10 Switch to restrict management access to specific IP addresses as shown in the example below.
+
+Step 1: Configure inbound ACLs to restrict which packets should be allowed to reach to the control plane from the OOBM port and from the front panel data ports:
+
+OS10(config)# ip access-list MGMT_TRAFFIC_FROM_OOBM
+OS10(config-ipv4-acl)# seq 10 permit ip 192.168.105.0/28 192.168.105.17/32
+OS10(config-ipv4-acl)# seq 20 deny ip any 192.168.105.17/32 log
+
+OS10(config)# ip access-list MGMT_TRAFFIC_FROM_DATA
+OS10(config-ipv4-acl)# seq 10 permit ip 10.20.30.0/24 10.20.31.1/32
+OS10(config-ipv4-acl)# seq 20 deny ip any 10.20.31.1 log
+
+Step 2: Apply the ACLs to the ingress of the control-plane:
+
+OS10(config)# control-plane
+OS10(config-control-plane)# ip access-group MGMT_TRAFFIC_FROM_OOBM mgmt in
+OS10(config-control-plane)# ip access-group MGMT_TRAFFIC_FROM_DATA data in</fixtext><fix id="F-73704r1051694_fix" /><check system="C-73803r1051693_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Review the OS10 Switch configuration to verify that administrative access to the switch is allowed only from hosts residing in the management network.
+
+Step 1: Examine the interface configuration for the control plane ACLs applied to the traffic destined to the router control plane from the OOBM port or front panel data ports:
+
+!
+control-plane
+ ip access-group MGMT_TRAFFIC_FROM_OOBM mgmt in
+ ip access-group MGMT_TRAFFIC_FROM_DATA data in
+
+Step 2: Review the control plane ACLs to verify traffic is limited appropriately.
+
+For example, to restrict the management traffic access to a switch at address 192.168.105.17 to only a subset of the 192.168.105.0 subnet, check for an ACL list such as the following:
+!
+ip access-list MGMT_TRAFFIC_FROM_OOBM
+ seq 10 permit ip 192.168.105.0/28 192.168.105.17/32
+ seq 20 deny ip any 192.168.105.17/32 log
+
+Likewise, to restrict the management traffic arriving to a switch address 10.20.30.1 on the front panel data ports: 
+
+!
+ip access-list MGMT_TRAFFIC_FROM_DATA
+ seq 10 permit ip 10.20.30.0/24 10.20.31.1/32
+ seq 20 deny ip any 10.20.31.1 log
+ 
+If the OS10 Switch is not configured to enforce approved authorizations for controlling the flow of management information within the device based on control policies, this is a finding.</check-content></check></Rule></Group><Group id="V-269771"><title>SRG-APP-000065-NDM-000214</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269771r1051698_rule" weight="10.0" severity="medium"><version>OS10-NDM-000120</version><title>The Dell OS10 Switch must be configured to enforce the limit of three consecutive invalid logon attempts, after which time it must block any login attempt for 15 minutes.</title><description>&lt;VulnDiscussion&gt;By limiting the number of failed login attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute-forcing, is reduced.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-73705r1051697_fix">Configure the Dell OS10 Switch to enforce the limit of three consecutive invalid logon attempts and a 15-minute lockout as shown in the example below:
+
+OS10(config)# password-attributes max-retry 3 lockout-period 15</fixtext><fix id="F-73705r1051697_fix" /><check system="C-73804r1051696_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Review the Dell OS10 Switch configuration to verify that it enforces the limit of three consecutive invalid logon attempts and a 15-minute lockout period as shown in the example below:
+
+password-attributes lockout-period 15
+
+Note: Since the max-retry value of three is the default value, it will not be displayed when viewing the configuration. So, if the password-attributes max-retry value is not displayed then it is set to three attempts. 
+
+If the Dell OS10 Switch is not configured to enforce the limit of three consecutive invalid logon attempts and a 15-minute lockout period, this is a finding.</check-content></check></Rule></Group><Group id="V-269772"><title>SRG-APP-000068-NDM-000215</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269772r1051701_rule" weight="10.0" severity="medium"><version>OS10-NDM-000130</version><title>The Dell OS10 device must display the Standard Mandatory DOD Notice and Consent Banner before granting access to the device.</title><description>&lt;VulnDiscussion&gt;Display of the DOD-approved use notification before granting access to the network device ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users.
+
+Satisfies: SRG-APP-000068-NDM-000215, SRG-APP-000069-NDM-000216&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><ident system="http://cyber.mil/cci">CCI-000050</ident><fixtext fixref="F-73706r1051700_fix">Configure the Dell OS10 Switch to display the Standard Mandatory DOD Notice and Consent Banner before granting access as follows:
+
+OS10(config)# banner motd disable
+OS10(config)# banner login ^C
+*****************************************************************
+You are accessing a U.S. Government (USG) Information System
+(IS) that is provided for USG-authorized use only.
+By using this IS (which includes any device attached to this
+IS), you consent to the following conditions:
+-The USG routinely intercepts and monitors communications on
+this IS for purposes including, but not limited to,
+penetration testing, COMSEC monitoring, network operations and
+defense, personnel misconduct (PM), law enforcement (LE), and
+counterintelligence (CI) investigations.
+-At any time, the USG may inspect and seize data stored on
+this IS.
+-Communications using, or data stored on, this IS are not
+private, are subject to routine monitoring, interception, and
+search, and may be disclosed or used for any USG authorized
+purpose.
+-This IS includes security measures (e.g., authentication and
+access controls) to protect USG interests--not for your
+personal benefit or privacy.
+-Notwithstanding the above, using this IS does not constitute
+consent to PM, LE or CI investigative searching or monitoring
+of the content of privileged communications, or work product,
+related to personal representation or services by attorneys,
+psychotherapists, or clergy, and their assistants. Such
+communications and work product are private and confidential.
+See User Agreement for details.
+*****************************************************************
+^C</fixtext><fix id="F-73706r1051700_fix" /><check system="C-73805r1051699_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the Dell OS10 device is configured to present a DOD-approved banner that is formatted in accordance with DTM-08-060. Verify the following banner is displayed during login before the password is entered:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+-At any time, the USG may inspect and seize data stored on this IS.
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+If such a banner is not presented, this is a finding. </check-content></check></Rule></Group><Group id="V-269773"><title>SRG-APP-000080-NDM-000220</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269773r1051704_rule" weight="10.0" severity="medium"><version>OS10-NDM-000150</version><title>The Dell OS10 Switch must protect against an individual (or process acting on behalf of an individual) falsely denying having performed organization-defined actions to be covered by nonrepudiation.</title><description>&lt;VulnDiscussion&gt;This requirement supports nonrepudiation of actions taken by an administrator and is required to maintain the integrity of the configuration management process. All configuration changes to the network device are logged, and administrators authenticate with two-factor authentication before gaining administrative access. Together, these processes will ensure the administrators can be held accountable for the configuration changes they implement.
+
+To meet this requirement, the network device must log administrator access and activity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000166</ident><fixtext fixref="F-73707r1051703_fix">Configure the OS10 Switch to enable audit logging:
+
+OS10(config)# logging audit enable</fixtext><fix id="F-73707r1051703_fix" /><check system="C-73806r1051702_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Verify the OS10 Switch protects against an individual (or process acting on behalf of an individual) falsely denying having performed organization-defined actions to be covered by nonrepudiation. 
+
+Review the OS10 Switch configuration to determine if audit logging is enabled:
+
+!
+logging audit enable
+
+If audit logging is not enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-269774"><title>SRG-APP-000092-NDM-000224</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269774r1051707_rule" weight="10.0" severity="medium"><version>OS10-NDM-000180</version><title>The Dell OS10 Switch must initiate session auditing upon startup.</title><description>&lt;VulnDiscussion&gt;If auditing is enabled late in the startup process, the actions of some start-up processes may not be audited. Some audit systems also maintain state information only available if auditing is enabled before a given process is created.
+
+Satisfies: SRG-APP-000092-NDM-000224, SRG-APP-000026-NDM-000208, SRG-APP-000027-NDM-000209, SRG-APP-000028-NDM-000210, SRG-APP-000029-NDM-000211, SRG-APP-000091-NDM-000223, SRG-APP-000095-NDM-000225, SRG-APP-000096-NDM-000226, SRG-APP-000097-NDM-000227, SRG-APP-000098-NDM-000228, SRG-APP-000099-NDM-000229, SRG-APP-000100-NDM-000230, SRG-APP-000101-NDM-000231, SRG-APP-000319-NDM-000283, SRG-APP-000343-NDM-000289, SRG-APP-000381-NDM-000305, SRG-APP-000495-NDM-000318, SRG-APP-000499-NDM-000319, SRG-APP-000503-NDM-000320, SRG-APP-000504-NDM-000321, SRG-APP-000505-NDM-000322, SRG-APP-000506-NDM-000323&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001464</ident><ident system="http://cyber.mil/cci">CCI-000018</ident><ident system="http://cyber.mil/cci">CCI-001403</ident><ident system="http://cyber.mil/cci">CCI-001404</ident><ident system="http://cyber.mil/cci">CCI-001405</ident><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000132</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><ident system="http://cyber.mil/cci">CCI-001487</ident><ident system="http://cyber.mil/cci">CCI-000135</ident><ident system="http://cyber.mil/cci">CCI-002130</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><ident system="http://cyber.mil/cci">CCI-003938</ident><fixtext fixref="F-73708r1051706_fix">Configure the OS10 Switch to initiate session auditing upon startup:
+
+OS10(config)# logging audit enable</fixtext><fix id="F-73708r1051706_fix" /><check system="C-73807r1051705_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Check the OS10 Switch to determine if it initiates session auditing upon startup:
+
+!
+logging audit enable
+
+If theOS10 Switch does not initiate session auditing upon startup, this is a finding.</check-content></check></Rule></Group><Group id="V-269775"><title>SRG-APP-000131-NDM-000243</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269775r1051710_rule" weight="10.0" severity="medium"><version>OS10-NDM-000320</version><title>The Dell OS10 Switch must prevent the installation of patches, service packs, or application components without verification the software component has been digitally signed using a certificate that is recognized and approved by the organization.</title><description>&lt;VulnDiscussion&gt;Changes to any software components can have significant effects on the overall security of the network device. Verifying software components have been digitally signed using a certificate that is recognized and approved by the organization ensures the software has not been tampered with and has been provided by a trusted vendor. 
+
+Accordingly, patches, service packs, or application components must be signed with a certificate recognized and approved by the organization. 
+
+Verifying the authenticity of the software prior to installation validates the integrity of the patch or upgrade received from a vendor. This ensures the software has not been tampered with and has been provided by a trusted vendor. Self-signed certificates are disallowed by this requirement. The device should not have to verify the software again. This requirement does not mandate DOD certificates for this purpose; however, the certificate used to verify the software must be from an approved certificate authority (CA).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-003992</ident><fixtext fixref="F-73709r1051709_fix">Install OS10 images with digital signature verification using the following command.
+
+Enable OS10 secure-boot, if necessary, with the following command. Reload the switch after enabling secure boot.
+
+OS10# secure-boot enable
+
+With OS10 secure-boot enabled, install OS10 images with the following command:
+
+OS10# image secure-install &lt;image-filepath&gt; {sha256 signature &lt;signature-filepath&gt; | gpg signature &lt;signature-filepath&gt; | pki signature &lt;signature-filepath&gt; publickey
+&lt;key-file&gt;}</fixtext><fix id="F-73709r1051709_fix" /><check system="C-73808r1051708_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the OS10 Switch prevents the installation of patches, service packs, or application components without verifying the software component has been digitally signed using a certificate that is recognized and approved by the organization. 
+
+Image install commands verify signatures if OS10 secure-boot is enabled. Verify that OS10 secure-boot feature is enabled with the following command:
+
+OS10# show secure-boot status
+Last boot was via secure boot : yes
+Secure boot configured : yes
+Latest startup config protected: yes
+BIOS secure boot:
+BIOS Secure boot configured: yes
+
+If BIOS Secure boot is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-269776"><title>SRG-APP-000142-NDM-000245</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269776r1051713_rule" weight="10.0" severity="high"><version>OS10-NDM-000340</version><title>The Dell OS10 Switch must be configured to prohibit the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services.</title><description>&lt;VulnDiscussion&gt;To prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable unused or unnecessary physical and logical ports/protocols on information systems.
+
+Network devices are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., email and web services); however, doing so increases risk over limiting the services provided by any one component. 
+
+To support the requirements and principles of least functionality, the network device must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved. Some network devices have capabilities enabled by default; if these capabilities are not necessary, they must be disabled. If a particular capability is used, then it must be documented and approved.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-73710r1051712_fix">Configure the OS10 Switch to prohibit the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services:
+
+OS10(config)# no ip telnet server enable
+OS10(config)# no rest api restconf
+OS10(config)# eula-consent support-assist reject</fixtext><fix id="F-73710r1051712_fix" /><check system="C-73809r1051711_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the network device prohibits the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services. 
+
+Verify the configuration does not include unnecessary or nonsecure protocols and services:
+
+ip telnet server enable
+rest api restconf
+eula-consent support-assist accept
+
+If any unnecessary or nonsecure functions are permitted, this is a finding.</check-content></check></Rule></Group><Group id="V-269777"><title>SRG-APP-000142-NDM-000245</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269777r1051716_rule" weight="10.0" severity="high"><version>OS10-NDM-000350</version><title>The Dell OS10 Switch must be configured to disable the Bash shell.</title><description>&lt;VulnDiscussion&gt;To prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable unused or unnecessary physical and logical ports/protocols on information systems.
+
+Network devices are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., email and web services); however, doing so increases risk over limiting the services provided by any one component. 
+
+To support the requirements and principles of least functionality, the network device must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved. Some network devices have capabilities enabled by default; if these capabilities are not necessary, they must be disabled. If a particular capability is used, then it must be documented and approved.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-73711r1051715_fix">Disable Bash shell from the CLI:
+
+OS10# configure terminal
+OS10(config)# system-cli disable</fixtext><fix id="F-73711r1051715_fix" /><check system="C-73810r1051714_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Verify the bash shell is disabled.
+
+Check the switch configuration for the setting "system-cli disable".
+
+If system-cli disable is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-269778"><title>SRG-APP-000148-NDM-000346</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269778r1051719_rule" weight="10.0" severity="medium"><version>OS10-NDM-000360</version><title>The Dell OS10 Switch must be configured with only one local account to be used as the account of last resort in the event the authentication server is unavailable.</title><description>&lt;VulnDiscussion&gt;Authentication for administrative (privileged level) access to the device is always required. An account can be created on the device's local database for use when the authentication server is down or connectivity between the device and the authentication server is not operable. This account is referred to as the account of last resort since it is intended to be used as a last resort and when immediate administrative access is necessary.
+
+The account of last resort logon credentials must be stored in a sealed envelope and kept in a safe. The safe must be periodically audited to verify the envelope remains sealed. The signature of the auditor and the date of the audit should be added to the envelope as a record. Administrators should secure the credentials and disable the root account (if possible) when not needed for system administration functions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001358</ident><ident system="http://cyber.mil/cci">CCI-002111</ident><fixtext fixref="F-73712r1051718_fix">Configure the OS10 Switch to only allow one local account for use as the account of last resort.
+
+Disable the linuxadmin system user:
+
+OS10(config)# system-user linuxadmin disable
+
+%Warning : Operation is not recommended in absence of console access.
+Do you want to proceed ? [yes/no(default)]:yes
+OS10(config)#
+
+Delete any extra local users with the following command:
+
+OS10(config)# no username admin
+
+Note: The account of last resort must be added before the default admin account can be deleted.</fixtext><fix id="F-73712r1051718_fix" /><check system="C-73811r1051717_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Review the network device configuration to determine if an account of last resort is configured. Verify default admin and other vendor-provided accounts are disabled, removed, or renamed where possible. Verify the username and password for the account of last resort is contained within a sealed envelope and kept in a safe. 
+
+Step 1: Verify the Dell OS10 Switch is configured with only a single local user account. If one local account does not exist for use as the account of last resort, this is a finding. 
+
+Verify the role is sysadmin.
+
+OS10# show running-configuration users
+username alradmin password **** role sysadmin priv-lvl 15
+OS10#
+
+Step 2: Verify the linuxadmin system user has been disabled:
+
+OS10# show running-configuration | grep system-user
+system-user linuxadmin disable
+system-user linuxadmin password ****
+OS10#
+
+If one local account does not exist for use as the account of last resort or the linuxadmin system-user has not been disabled, this is a finding. </check-content></check></Rule></Group><Group id="V-269779"><title>SRG-APP-000149-NDM-000247</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269779r1051722_rule" weight="10.0" severity="high"><version>OS10-NDM-000370</version><title>The Dell OS10 Switch must be configured to use DOD PKI as multifactor authentication (MFA) for interactive logins.</title><description>&lt;VulnDiscussion&gt;MFA is when two or more factors are used to confirm the identity of an individual who is requesting access to digital information resources. Valid factors include something the individual knows (e.g., username and password), something the individual has (e.g., a smartcard or token), or something the individual is (e.g., a fingerprint or biometric). Legacy information system environments only use a single factor for authentication, typically a username and password combination. Although two pieces of data are used in a username and password combination, this is still considered single factor because an attacker can obtain access simply by learning what the user knows. Common attacks against single-factor authentication are attacks on user passwords. These attacks include brute force password guessing, password spraying, and password credential stuffing. MFA, along with strong user account hygiene, helps mitigate against the threat of having account passwords discovered by an attacker. Even in the event of a password compromise, with MFA implemented and required for interactive login, the attacker still needs to acquire something the user has or replicate a piece of user’s biometric digital presence.
+
+Private industry recognizes and uses a wide variety of MFA solutions. However, DOD public key infrastructure (PKI) is the only prescribed method approved for DOD organizations to implement MFA. For authentication purposes, centralized DOD certificate authorities (CA) issue PKI certificate key pairs (public and private) to individuals using the prescribed x.509 format. The private certificates that have been generated by the issuing CA are downloaded and saved to smartcards which, within DOD, are referred to as common access cards (CAC) or personal identity verification (PIV) cards. This happens at designated DOD badge facilities. The CA maintains a record of the corresponding public keys for use with PKI-enabled environments. Privileged user smartcards, or "alternate tokens", function in the same manner, so this requirement applies to all interactive user sessions (authorized and privileged users).
+
+Note: This requirement is used in conjunction with the use of a centralized authentication server (e.g., AAA, RADIUS, LDAP), a separate but equally important requirement. The MFA configuration of this requirement provides identification and the first phase of authentication (the challenge and validated response, thereby confirming the PKI certificate that was presented by the user). The centralized authentication server will provide the second phase of authentication (the digital presence of the PKI ID as a valid user in the requested security domain) and authorization. The centralized authentication server will map validated PKI identities to valid user accounts and determine access levels for authenticated users based on security group membership and role. In cases where the centralized authentication server is not used by the network device for user authorization, the network device must map the authenticated identity to the user account for PKI-based authentication.
+
+Satisfies: SRG-APP-000149-NDM-000247, SRG-APP-000820-NDM-000170, SRG-APP-000825-NDM-000180&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000765</ident><ident system="http://cyber.mil/cci">CCI-004046</ident><ident system="http://cyber.mil/cci">CCI-004047</ident><fixtext fixref="F-73713r1051721_fix">Configure the OS10 Switch to use DOD PKI as MFA for interactive logins. Configure a named security profile to use for MFA. Configure the SSH server to enable authentication by PKI certificate:
+
+OS10(config)#
+OS10(config)# crypto security-profile &lt;profile-name&gt;
+OS10(config-sec-profile)# certificate &lt;host-certificate-name&gt;
+OS10(config-sec-profile)# peer-name-check
+OS10(config-sec-profile)# ocsp-check &lt;ocsp-url&gt;
+OS10(config-sec-profile)# exit
+OS10(config)#
+OS10(config)# ip ssh server x509v3-authentication security-profile &lt;profile-name&gt;
+OS10(config)#</fixtext><fix id="F-73713r1051721_fix" /><check system="C-73812r1051720_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Verify the OS10 Switch is configured to use DOD PKI as MFA for interactive logins. Evidence of successful configuration is usually indicated by a prompt for the user to insert a smartcard. If the smartcard is already inserted, the network device will prompt the user to enter the corresponding PIN which unlocks the certificate keystore on the smartcard. 
+
+Review the running-configuration to verify that X.509v3 authentication is enabled for SSH. Verify the PKI authenticated user is mapped to the effective local user account by ensuring that peer-name-check has not been disabled in the associated security profile ("no peer-name-check" is not present).
+
+ip ssh server x509v3-authentication security-profile cacpiv-prof
+...
+crypto security-profile &lt;profile-name&gt;
+  certificate &lt;host-certificate-name&gt;
+  ocsp-check &lt;ocsp-url&gt;
+...
+
+If the OS10 Switch is not configured to use DOD PKI as MFA for interactive logins, this is a finding. 
+If peer-name-check has been disabled in the security profile this is a finding.</check-content></check></Rule></Group><Group id="V-269780"><title>SRG-APP-000156-NDM-000250</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269780r1051725_rule" weight="10.0" severity="medium"><version>OS10-NDM-000390</version><title>The Dell OS10 Switch must implement replay-resistant authentication mechanisms for network access to privileged accounts.</title><description>&lt;VulnDiscussion&gt;A replay attack may enable an unauthorized user to gain access to the application. Authentication sessions between the authenticator and the application validating the user credentials must not be vulnerable to a replay attack.
+
+An authentication process resists replay attacks if it is impractical to achieve a successful authentication by recording and replaying a previous authentication message. 
+
+Techniques used to address this include protocols using nonces (e.g., numbers generated for a specific one-time use) or challenges (e.g., TLS, WS_Security). Additional techniques include time-synchronous or challenge-response one-time authenticators.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001941</ident><fixtext fixref="F-73714r1051724_fix">Configure the OS10 Switch to implement replay-resistant authentication mechanisms for network access to privileged accounts:
+
+OS10(config)# crypto fips enable
+
+WARNING: Upon committing this configuration, the system will regenerate SSH keys. Please consult documentation and toggle FIPS mode only if you know what you are doing!
+Continue? [yes/no(default)]:yes
+OS10(config)#
+
+Disable telnet if it has been enabled:
+ OS10(config)# no ip telnet server enable
+
+Enable SSH if it has been disabled:
+ OS10(config)# ip ssh server enable</fixtext><fix id="F-73714r1051724_fix" /><check system="C-73813r1051723_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Review the OS10 Switch configuration to determine if replay-resistant authentication mechanisms are implemented for network access to privileged accounts.
+
+Review the FIPS status to verify that FIPS mode is enabled, as shown below:
+
+OS10# show fips status
+
+FIPS mode:           Enabled
+Crypto Library:      OpenSSL 1.0.2zg-fips  7 Feb 2023
+FIPS Object Module:  DELL OpenSSL FIPS Crypto Module v2.6 July 2021
+OS10#
+
+Verify that SSH is enabled for network access by reviewing the SSH server status:
+
+OS10# show ip ssh | grep "SSH Server:"
+SSH Server:                   Enabled
+
+Verify that telnet is disabled on the switch by verifying that the following is not in the running-configuration: 
+
+ip telnet server enable
+
+If FIPS mode is not enabled or if the SSH is not enabled or if telnet is enabled in the OS10 Switch, this is a finding.</check-content></check></Rule></Group><Group id="V-269781"><title>SRG-APP-000164-NDM-000252</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269781r1051728_rule" weight="10.0" severity="medium"><version>OS10-NDM-000400</version><title>The Dell OS10 Switch must enforce a minimum 15-character password length.</title><description>&lt;VulnDiscussion&gt;Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password.
+
+The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised. Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><fixtext fixref="F-73715r1051727_fix">Configure the OS10 Switch or its associated authentication server to enforce a minimum 15-character password length:
+
+OS10(config)# password-attributes min-length 15</fixtext><fix id="F-73715r1051727_fix" /><check system="C-73814r1051726_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the OS10 Switch or its associated authentication server enforces a minimum 15-character password length. 
+
+Review the configuration to verify that the min-length password-attribute is set to 15:
+
+OS10# show running-configuration password-attributes
+!
+password-attributes min-length 15
+
+If the OS10 Switch or its associated authentication server does not enforce a minimum 15-character password length, this is a finding.</check-content></check></Rule></Group><Group id="V-269782"><title>SRG-APP-000166-NDM-000254</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269782r1051731_rule" weight="10.0" severity="medium"><version>OS10-NDM-000410</version><title>The Dell OS10 Switch must enforce password complexity by requiring that at least one uppercase character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex passwords helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password is, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords should only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><fixtext fixref="F-73716r1051730_fix">Configure the OS10 Switch and associated authentication server to enforce password complexity by requiring that at least one uppercase character be used:
+
+OS10(config)# password-attributes character-restriction upper 1</fixtext><fix id="F-73716r1051730_fix" /><check system="C-73815r1051729_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Where passwords are used, confirm that the OS10 Switch and associated authentication server enforces password complexity by requiring that at least one uppercase character be used.
+
+Review the configuration to verify that the upper password-attribute is set to 1:
+
+OS10# show running-configuration password-attributes
+!
+password-attributes character-restriction upper 1
+
+If the OS10 Switch and associated authentication server does not require that at least one uppercase character be used in each password, this is a finding.</check-content></check></Rule></Group><Group id="V-269783"><title>SRG-APP-000167-NDM-000255</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269783r1051734_rule" weight="10.0" severity="medium"><version>OS10-NDM-000420</version><title>The Dell OS10 Switch must enforce password complexity by requiring that at least one lowercase character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords should only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><fixtext fixref="F-73717r1051733_fix">Configure the OS10 Switch and associated authentication server to enforce password complexity by requiring that at least one lowercase character be used:
+
+OS10(config)# password-attributes character-restriction lower 1</fixtext><fix id="F-73717r1051733_fix" /><check system="C-73816r1051732_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Where passwords are used, confirm that the OS10 Switch and associated authentication server enforces password complexity by requiring that at least one lower-case character be used.
+
+Review the configuration to verify that the lower password-attribute is set to 1:
+
+OS10# show running-configuration password-attributes
+!
+password-attributes character-restriction lower 1
+
+If the OS10 Switch and associated authentication server does not require that at least one lowercase character be used in each password, this is a finding.</check-content></check></Rule></Group><Group id="V-269784"><title>SRG-APP-000168-NDM-000256</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269784r1051737_rule" weight="10.0" severity="medium"><version>OS10-NDM-000430</version><title>The Dell OS10 Switch must enforce password complexity by requiring that at least one numeric character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords should only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><fixtext fixref="F-73718r1051736_fix">Configure the OS10 Switch and associated authentication server to enforce password complexity by requiring that at least one numeric character be used:
+
+OS10(config)# password-attributes character-restriction numeric 1</fixtext><fix id="F-73718r1051736_fix" /><check system="C-73817r1051735_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Where passwords are used, confirm that the OS10 Switch and associated authentication server enforces password complexity by requiring that at least one numeric character be used.
+
+Review the configuration to verify that the numeric password-attribute is set to 1:
+
+OS10# show running-configuration password-attributes
+!
+password-attributes character-restriction numeric 1
+
+If the OS10 Switch and associated authentication server does not require that at least one numeric character be used in each password, this is a finding.</check-content></check></Rule></Group><Group id="V-269785"><title>SRG-APP-000169-NDM-000257</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269785r1051740_rule" weight="10.0" severity="medium"><version>OS10-NDM-000440</version><title>The Dell OS10 Switch must enforce password complexity by requiring that at least one special character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks.
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Multifactor authentication (MFA) is required for all administrative and user accounts on network devices, except for an account of last resort and (where applicable) a root account. Passwords should only be used when MFA using PKI is not available, and for the account of last resort and root account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><fixtext fixref="F-73719r1051739_fix">Configure the OS10 Switch and associated authentication server to enforce password complexity by requiring that at least one special character be used:
+
+OS10(config)# password-attributes character-restriction special-char 1</fixtext><fix id="F-73719r1051739_fix" /><check system="C-73818r1051738_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Where passwords are used, confirm that the OS10 Switch and associated authentication server enforces password complexity by requiring that at least one special character be used.
+
+Review the configuration to verify that the special-char password-attribute is set to 1:
+
+OS10# show running-configuration password-attributes
+!
+password-attributes character-restriction special-char 1
+
+If the OS10 Switch and associated authentication server does not require that at least one special character be used in each password, this is a finding.</check-content></check></Rule></Group><Group id="V-269786"><title>SRG-APP-000175-NDM-000262</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269786r1052487_rule" weight="10.0" severity="high"><version>OS10-NDM-000480</version><title>The Dell OS10 Switch must be configured to use DOD-approved OCSP responders or CRLs to validate certificates used for PKI-based authentication.</title><description>&lt;VulnDiscussion&gt;Once issued by a DOD certificate authority (CA), public key infrastructure (PKI) certificates are typically valid for three years or shorter within the DOD. However, there are many reasons a certificate may become invalid before the prescribed expiration date. For example, an employee may leave or be terminated and still possess the smartcard on which the PKI certificates were stored. Another example is that a smartcard containing PKI certificates may become lost or stolen. A more serious issue could be that the CA or server which issued the PKI certificates has become compromised, thereby jeopardizing every certificate keypair that was issued by the CA. These examples of revocation use cases and many more can be researched further using internet cybersecurity resources.
+
+PKI user certificates presented as part of the identification and authentication criteria (e.g., DOD PKI as multifactor authentication [MFA]) must be checked for validity by network devices. For example, valid PKI certificates are digitally signed by a trusted DOD CA. Additionally, valid PKI certificates are not expired, and valid certificates have not been revoked by a DOD CA.
+
+Network devices can verify the validity of PKI certificates by checking with an authoritative CA. One method of checking the status of PKI certificates is to query databases referred to as certificate revocation lists (CRL). These are lists which are published, updated, and maintained by authoritative DOD CAs. For example, once certificates are expired or revoked, issuing CAs place the certificates on a certificate revocation list (CRL). Organizations can download these lists periodically (i.e., daily or weekly) and store them locally on the devices themselves or even onto another nearby local enclave resource. Storing them locally ensures revocation status can be checked even if internet connectivity is severed at the enclave’s point of presence (PoP). However, CRLs can be rather large in storage size and further, the use of CRLs can be rather taxing on some computing resources.
+
+Another method of validating certificate status is to use the online certificate status protocol (OCSP). Using OCSP, a requestor (i.e., the network device to which the user is trying to authenticate) sends a request to an authoritative CA challenging the validity of a certificate that has been presented for identification and authentication. The CA receives the request and sends a digitally signed response indicating the status of the user's certificate as valid, revoked, or unknown. Network devices should only allow access for responses that indicate the certificates presented by the user were considered valid by an approved DOD CA. OCSP is the preferred method because it is fast, provides the most current status, and is lightweight. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000185</ident><fixtext fixref="F-73720r1051742_fix">Configure the OS10 Switch to validate certificates used for PKI-based authentication using DOD approved OCSP or CRL sources:
+
+OS10(config)#
+OS10(config)# crypto security-profile &lt;profile-name&gt;
+OS10(config-sec-profile)# ocsp-check &lt;ocsp-url&gt;
+OS10(config-sec-profile)# exit
+OS10(config)#</fixtext><fix id="F-73720r1051742_fix" /><check system="C-73819r1051741_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Verify the OS10 Switch is configured to validate certificates used for PKI-based authentication using DOD-approved OCSP or CRL resources. 
+
+Verify that OSCP validation using the appropriate DOD OCSP responder is enabled in the security profile:
+
+ip ssh server x509v3-authentication security-profile cacpiv-prof
+...
+crypto security-profile &lt;profile-name&gt;
+  ...
+  ocsp-check &lt;ocsp-url&gt;
+...
+
+If the OS10 Switch is not configured to validate certificates used for PKI-based authentication using DOD approved OCSP or CRL sources, this is a finding.</check-content></check></Rule></Group><Group id="V-269787"><title>SRG-APP-000177-NDM-000263</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269787r1052488_rule" weight="10.0" severity="high"><version>OS10-NDM-000490</version><title>The Dell OS10 Switch, for PKI-based authentication, must be configured to map validated certificates to unique user accounts.</title><description>&lt;VulnDiscussion&gt;Without mapping the PKI certificate to a unique user account, the ability to determine the identities of individuals or the status of their nonrepudiation is considerably impacted during forensic analysis. A strength of using PKI as multifactor authentication (MFA) is that it can help ensure only the assigned individual is using their associated user account. This can only be accomplished if the network device is configured to enforce the relationship which binds PKI certificates to unique user accounts.
+
+Local accounts (accounts created, stored, and maintained locally on the network device) should be avoided in lieu of using a centrally managed directory service. Local accounts empower the same workgroup who will be operating the network infrastructure to also control and manipulate access methods, thus creating operational autonomy. This undesirable approach breaks the concept of separation of duties. Additionally, local accounts are susceptible to poor cyber hygiene because they create another user database that must be maintained by the operator, whose primary focus is on running the network. Such examples of poor hygiene include dormant accounts that are not disabled or deleted, employees who have left the organization but whose accounts are still present, periodic password and hash rotation, password complexity shortcomings, increased exposure to insider threat, etc. For reasons such as this, local users on network devices are frequently the targets of cyber-attacks. Instead, organizations should explore examples of centrally managed account services. These examples include the implementation of AAA concepts like the use of external RADIUS and LDAP directory service brokers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000187</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><ident system="http://cyber.mil/cci">CCI-000166</ident><fixtext fixref="F-73721r1051745_fix">Configure the OS10 Switch to use DOD PKI as MFA for interactive logins. Configure a named security profile to use for MFA. Configure the SSH server to enable authentication by PKI certificate.
+
+OS10(config)#
+OS10(config)# crypto security-profile &lt;profile-name&gt;
+OS10(config-sec-profile)# certificate &lt;host-certificate-name&gt;
+OS10(config-sec-profile)# peer-name-check
+OS10(config-sec-profile)# ocsp-check &lt;ocsp-url&gt;
+OS10(config-sec-profile)# exit
+OS10(config)#
+OS10(config)# ip ssh server x509v3-authentication security-profile &lt;profile-name&gt;
+OS10(config)#</fixtext><fix id="F-73721r1051745_fix" /><check system="C-73820r1051744_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>If PKI-based authentication is not used as the MFA solution for interactive logins, this requirement is not applicable.
+
+OS10 maps certificates to valid usernames by comparing the common name and user principal name in the certificate to the unique user account name. This check is applied by default unless name checking has been disabled in the security profile with the "no peer-name-check" setting. 
+
+Review the running-configuration to verify that X.509v3 authentication is enabled for SSH. Verify the PKI authenticated user is mapped to the effective local user account by ensuring that peer-name-check has not been disabled in the associated security profile ("no peer-name-check" is not present).
+
+ip ssh server x509v3-authentication security-profile cacpiv-prof
+...
+crypto security-profile &lt;profile-name&gt;
+  certificate &lt;host-certificate-name&gt;
+  ocsp-check &lt;ocsp-url&gt;
+...
+
+If peer-name-check has been disabled in the security profile this is a finding.</check-content></check></Rule></Group><Group id="V-269788"><title>SRG-APP-000179-NDM-000265</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269788r1051749_rule" weight="10.0" severity="high"><version>OS10-NDM-000510</version><title>The Dell OS10 Switch must use FIPS 140-2 approved algorithms for authentication to a cryptographic module.</title><description>&lt;VulnDiscussion&gt;Unapproved mechanisms that are used for authentication to the cryptographic module are not validated and therefore cannot be relied upon to provide confidentiality or integrity, and DOD data may be compromised.
+
+Network devices using encryption are required to use FIPS-compliant mechanisms for authenticating to cryptographic modules.
+
+FIPS 140-2 is the current standard for validating that mechanisms used to access cryptographic modules use authentication that meets DOD requirements. However, authentication algorithms must configure security processes to use only FIPS-approved and NIST-recommended authentication algorithms.
+
+Satisfies: SRG-APP-000179-NDM-000265, SRG-APP-000172-NDM-000259&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><ident system="http://cyber.mil/cci">CCI-000197</ident><fixtext fixref="F-73722r1051748_fix">Configure the network device to use FIPS 140-2 approved algorithms for authentication to a cryptographic module:
+
+OS10(config)# crypto fips enable
+
+WARNING: Upon committing this configuration, the system will regenerate SSH keys. Please consult documentation and toggle FIPS mode only if you know what you are doing!
+Continue? [yes/no(default)]:yes
+OS10(config)#</fixtext><fix id="F-73722r1051748_fix" /><check system="C-73821r1051747_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the network device uses FIPS 140-2 approved algorithms for authentication to a cryptographic module. 
+
+Review the FIPS status to verify that FIPS mode is enabled, as shown below:
+
+OS10# show fips status
+
+FIPS mode:           Enabled
+Crypto Library:      OpenSSL 1.0.2zg-fips  7 Feb 2023
+FIPS Object Module:  DELL OpenSSL FIPS Crypto Module v2.6 July 2021
+OS10#
+
+If the network device is not configured to use a FIPS-approved authentication algorithm to a cryptographic module, this is a finding.</check-content></check></Rule></Group><Group id="V-269789"><title>SRG-APP-000190-NDM-000267</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269789r1051752_rule" weight="10.0" severity="high"><version>OS10-NDM-000530</version><title>The Dell OS10 Switch must terminate all network connections associated with a device management session at the end of the session, or the session must be terminated after five minutes of inactivity except to fulfill documented and validated mission requirements.</title><description>&lt;VulnDiscussion&gt;Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. In addition, quickly terminating an idle session will also free up resources committed by the managed network element. 
+
+Terminating network connections associated with communications sessions includes, for example, deallocating associated TCP/IP address/port pairs at the operating system level, or deallocating networking assignments at the application level if multiple application sessions are using a single, operating system-level network connection. This does not mean that the device terminates all sessions or network access; it only ends the inactive session and releases the resources associated with that session.
+
+Satisfies: SRG-APP-000190-NDM-000267, SRG-APP-000186-NDM-000266, SRG-APP-000516-NDM-000336&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001133</ident><ident system="http://cyber.mil/cci">CCI-000879</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><fixtext fixref="F-73723r1051751_fix">Configure the OS10 Switch to terminate the connection associated with a device management session at the end of the session or after five minutes of inactivity:
+
+OS10(config)# exec-timeout 300</fixtext><fix id="F-73723r1051751_fix" /><check system="C-73822r1051750_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the network device terminates the connection associated with a device management session at the end of the session or after five minutes of inactivity. 
+
+Review the running-configuration. Verify the configuration includes "exec-timeout 300" which disconnects sessions after five minutes of inactivity.
+
+If the network device does not terminate the connection associated with a device management session at the end of the session or after five minutes of inactivity, this is a finding.</check-content></check></Rule></Group><Group id="V-269790"><title>SRG-APP-000340-NDM-000288</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269790r1051755_rule" weight="10.0" severity="high"><version>OS10-NDM-000640</version><title>The Dell OS10 Switch must prevent nonprivileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures.</title><description>&lt;VulnDiscussion&gt;Preventing nonprivileged users from executing privileged functions mitigates the risk that unauthorized individuals or processes may gain unnecessary access to information or privileges. 
+
+Privileged functions include establishing accounts, performing system integrity checks, or administering cryptographic key management activities. Nonprivileged users are individuals that do not possess appropriate authorizations.
+
+Satisfies: SRG-APP-000340-NDM-000288, SRG-APP-000329-NDM-000287&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002235</ident><ident system="http://cyber.mil/cci">CCI-002169</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-73724r1051754_fix">Configure the OS10 Switch to assign appropriate user roles or access levels to authenticated users:
+
+OS10(config)#  username &lt;name&gt; password ********** role &lt;sysadmin/netoperator/secadmin/netadmin&gt;</fixtext><fix id="F-73724r1051754_fix" /><check system="C-73823r1051753_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the OS10 Switch prevents nonprivileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures.
+
+Access to privileged functions is restricted by OS10 to users with the appropriate role. Verify the OS10 Switch is configured to assign appropriate user roles to authenticated users. Valid roles are system admin, security admin, network admin, and network operator. Verify the correct role is assigned to each user:
+
+OS10# show running-configuration users
+username admin password **** role sysadmin priv-lvl 15
+username op100 password **** role netoperator priv-lvl 1
+OS10#
+
+If the OS10 Switch does not prevent nonprivileged users from executing privileged functions, this is a finding.</check-content></check></Rule></Group><Group id="V-269791"><title>SRG-APP-000360-NDM-000295</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269791r1051758_rule" weight="10.0" severity="medium"><version>OS10-NDM-000670</version><title>The Dell OS10 Switch must generate an immediate real-time alert of all audit failure events requiring real-time alerts.</title><description>&lt;VulnDiscussion&gt;It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without a real-time alert, security personnel may be unaware of an impending failure of the audit capability and system operation may be adversely affected. 
+
+Alerts provide organizations with urgent messages. Real-time alerts provide these messages immediately (i.e., the time from event detection to alert occurs in seconds or less).
+
+Satisfies: SRG-APP-000360-NDM-000295, SRG-APP-000795-NDM-000130&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001858</ident><ident system="http://cyber.mil/cci">CCI-003831</ident><fixtext fixref="F-73725r1051757_fix">Configure the OS10 Switch to use either TCP or TLS for connection to the remote syslog servers:
+
+OS10(config)# logging server 100.94.75.111 tcp</fixtext><fix id="F-73725r1051757_fix" /><check system="C-73824r1051756_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the OS10 Switch generates an immediate alert of all audit failure events requiring real-time alerts.
+
+Verify that syslog is configured to use a connection-based protocol, either TCP or TLS, when connecting to a remote syslog server:
+
+OS10# show running-configuration logging
+!
+...
+logging server 100.94.75.111 tcp 514
+
+If the OS10 Switch is not configured to use either TCP or TLS for connection to the remote syslog servers, this is a finding.</check-content></check></Rule></Group><Group id="V-269793"><title>SRG-APP-000395-NDM-000310</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269793r1052419_rule" weight="10.0" severity="medium"><version>OS10-NDM-000740</version><title>The Dell OS10 Switch must be configured to authenticate SNMP messages using a FIPS-validated Keyed-Hash Message Authentication Code (HMAC).</title><description>&lt;VulnDiscussion&gt;Without authenticating devices, unidentified or unknown devices may be introduced, thereby facilitating malicious activity. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk.
+
+A local connection is any connection with a device communicating without the use of a network. A network connection is any connection with a device that communicates through a network (e.g., local area or wide area network, internet). A remote connection is any connection with a device communicating through an external network (e.g., the internet).
+
+Because of the challenges of applying this requirement on a large scale, organizations are encouraged to only apply the requirement to those limited number (and type) of devices that truly need to support this capability.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001967</ident><fixtext fixref="F-73727r1051763_fix">Configure the OS10 Switch to authenticate SNMP messages using a FIPS-validated Keyed-HMAC.
+
+Ensure FIPS mode is enabled.
+OS10(config)# crypto fips enable
+
+WARNING: Upon committing this configuration, the system will regenerate SSH keys. Please consult documentation and toggle FIPS mode only if you know what you are doing!
+Continue? [yes/no(default)]:yes
+OS10(config)#
+
+Configure an SNMP user to enforce SHA authentication.
+OS10(config)# snmp-server group Group3 3 priv notify NOTIFY
+OS10(config)# snmp-server user User3 Group3 3 auth sha ********** priv aes **********
+
+Configure the SNMP server to use version 3 and enforce SHA authentication (auth) or both SHA authentication and AES encryption (priv).
+OS10(config)# snmp-server host 10.10.10.10 version 3 priv User3 snmp</fixtext><fix id="F-73727r1051763_fix" /><check system="C-73826r1051762_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Review the OS10 Switch configuration to verify SNMP messages are authenticated using a FIPS-validated Keyed-HMAC.
+
+Step 1: Review the FIPS status to verify that FIPS mode is enabled, as shown below:
+
+OS10# show fips status
+
+FIPS mode:           Enabled
+Crypto Library:      OpenSSL 1.0.2zg-fips  7 Feb 2023
+FIPS Object Module:  DELL OpenSSL FIPS Crypto Module v2.6 July 2021
+OS10#
+
+Step 2: Review the SNMP configuration to verify that the server is configured to enforce authentication ({auth|priv} {name}). Verify the SNMP user is configured for SHA authentication (auth sha):
+
+OS10(config)# show running-configuration snmp
+!
+...
+snmp-server group Group3 3 priv notify NOTIFY
+snmp-server host 10.10.10.10 traps version 3 priv User3
+snmp-server user User3 Group3 3 encrypted auth sha **** priv aes ****
+
+If SNMP is not configured to enforce authentication or FIPS mode is not enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-269794"><title>SRG-APP-000395-NDM-000347</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269794r1051767_rule" weight="10.0" severity="medium"><version>OS10-NDM-000750</version><title>The Dell OS10 Switch must authenticate Network Time Protocol (NTP) sources using authentication that is cryptographically based.</title><description>&lt;VulnDiscussion&gt;If NTP is not authenticated, an attacker can introduce a rogue NTP server. This rogue server can then be used to send incorrect time information to network devices, which will make log timestamps inaccurate and affect scheduled actions. NTP authentication is used to prevent this tampering by authenticating the time source.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001967</ident><fixtext fixref="F-73728r1051766_fix">Configure the OS10 Switch to authenticate NTP sources using authentication that is cryptographically based:
+
+OS10(config)# ntp authenticate
+OS10(config)# ntp trusted-key 345
+OS10(config)# ntp authentication-key 345 sha2-256 0 &lt;key&gt;
+OS10(config)# ntp server 192.0.2.1 key 345 preferred
+OS10(config)# ntp server 192.0.2.5 key 345</fixtext><fix id="F-73728r1051766_fix" /><check system="C-73827r1051765_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Review the OS10 Switch configuration to determine if the network device authenticates NTP endpoints before establishing a local, remote, or network connection using authentication that is cryptographically based.
+
+Review the configuration to verify that NTP authentication is configured when communicating with the NTP servers with the following commands:
+
+OS10# show running-configuration ntp
+!
+ntp authenticate
+ntp authentication-key 345 sha2-256 9 ****
+ntp server 192.0.2.1 key 345 prefer
+ntp server 192.0.2.5 key 345
+ntp trusted-key 345
+
+If the OS10 Switch not authenticate NTP sources using authentication that is cryptographically based, this is a finding.</check-content></check></Rule></Group><Group id="V-269795"><title>SRG-APP-000400-NDM-000313</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269795r1052420_rule" weight="10.0" severity="medium"><version>OS10-NDM-000760</version><title>The Dell OS10 Switch must prohibit the use of cached authenticators after an organization-defined time period.</title><description>&lt;VulnDiscussion&gt;Some authentication implementations can be configured to use cached authenticators.
+
+If cached authentication information is out-of-date, the validity of the authentication information may be questionable.
+
+The organization-defined time period should be established for each device depending on the nature of the device; for example, a device with just a few administrators in a facility with spotty network connectivity may merit a longer caching time period than a device with many administrators.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002007</ident><fixtext fixref="F-73729r1051769_fix">Configure the OS10 Switch to prohibit the use of cached authenticators after an organization-defined time period:
+
+OS10(config)# rest authentication token validity {minutes}</fixtext><fix id="F-73729r1051769_fix" /><check system="C-73828r1051768_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Review the OS10 Switch configuration to determine if it prohibits the use of cached authenticators after an organization-defined time period.
+
+Verify the rest authentication token validity setting is configured. If no entry is displayed, the default is 120 minutes.
+
+OS10# show running-configuration | grep "rest authentication token validity"
+rest authentication token validity 60
+
+If cached authenticators are used after an organization-defined time period, this is a finding.</check-content></check></Rule></Group><Group id="V-269796"><title>SRG-APP-000411-NDM-000330</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269796r1051773_rule" weight="10.0" severity="high"><version>OS10-NDM-000780</version><title>The Dell OS10 Switch must use FIPS-validated Keyed-Hash Message Authentication Code (HMAC) to protect the integrity of nonlocal maintenance and diagnostic communications.</title><description>&lt;VulnDiscussion&gt;Unapproved mechanisms that are used for authentication to the cryptographic module are not verified and therefore cannot be relied upon to provide confidentiality or integrity, and DOD data may be compromised.
+
+Nonlocal maintenance and diagnostic activities are those activities conducted by individuals communicating through a network, either an external network (e.g., the internet) or an internal network. 
+
+Currently, HMAC is the only FIPS-approved algorithm for generating and verifying message/data authentication codes in accordance with FIPS 198-1. Products that are FIPS 140-2 validated will have an HMAC that meets specification; however, the option must be configured for use as the only message authentication code used for authentication to cryptographic modules.
+
+Separate requirements for configuring applications and protocols used by each application (e.g., SNMPv3, SSHv2, NTP, HTTPS, and other protocols and applications that require server/client authentication) are required to implement this requirement. Where SSH is used, the SSHv2 protocol suite is required because it includes Layer 7 protocols such as SCP and SFTP, which can be used for secure file transfers. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002890</ident><fixtext fixref="F-73730r1051772_fix">Configure the OS10 Switch to use FIPS-validated HMAC to protect the integrity of nonlocal maintenance and diagnostic communications.
+
+OS10(config)# crypto fips enable
+
+WARNING: Upon committing this configuration, the system will regenerate SSH keys. Please consult documentation and toggle FIPS mode only if you know what you are doing!
+Continue? [yes/no(default)]:yes
+OS10(config)#
+
+Disable telnet if it has been enabled:
+
+ OS10(config)# no ip telnet server enable
+
+Enable SSH if it has been disabled:
+
+ OS10(config)# ip ssh server enable</fixtext><fix id="F-73730r1051772_fix" /><check system="C-73829r1051771_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Verify the OS10 Switch uses FIPS-validated HMAC to protect the integrity of nonlocal maintenance and diagnostic communications.
+
+Review the FIPS status to verify that FIPS mode is enabled, as shown below:
+
+OS10# show fips status
+
+FIPS mode:           Enabled
+Crypto Library:      OpenSSL 1.0.2zg-fips  7 Feb 2023
+FIPS Object Module:  DELL OpenSSL FIPS Crypto Module v2.6 July 2021
+OS10#
+
+Verify that SSH is enabled for network access by reviewing the SSH server status:
+
+OS10# show ip ssh | grep "SSH Server:"
+SSH Server:                   Enabled
+
+Verify that telnet is disabled on the switch by verifying that the following is not in the running-configuration: 
+ip telnet server enable
+
+ If FIPS mode is not enabled or if the SSH is not enabled or if telnet is enabled in the OS10 Switch, this is a finding.</check-content></check></Rule></Group><Group id="V-269797"><title>SRG-APP-000412-NDM-000331</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269797r1052421_rule" weight="10.0" severity="high"><version>OS10-NDM-000790</version><title>The Dell OS10 Switch must be configured to implement cryptographic mechanisms using a FIPS 140-2 approved algorithm to protect the confidentiality of remote maintenance sessions.</title><description>&lt;VulnDiscussion&gt;This requires the use of secure protocols instead of their unsecured counterparts, such as SSH instead of telnet, SCP instead of FTP, and HTTPS instead of HTTP. If unsecured protocols (lacking cryptographic mechanisms) are used for sessions, the contents of those sessions will be susceptible to eavesdropping, potentially putting sensitive data (including administrator passwords) at risk of compromise, and potentially allowing hijacking of maintenance sessions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-003123</ident><fixtext fixref="F-73731r1051775_fix">Configure the OS10 Switch to implement cryptographic mechanisms to protect the confidentiality of remote maintenance sessions using a FIPS 140-2 approved algorithm:
+
+OS10(config)# crypto fips enable
+
+WARNING: Upon committing this configuration, the system will regenerate SSH keys. Please consult documentation and toggle FIPS mode only if you know what you are doing!
+Continue? [yes/no(default)]:yes
+OS10(config)#
+
+Disable telnet if it has been enabled:
+ OS10(config)# no ip telnet server enable
+
+Enable SSH if it has been disabled:
+ OS10(config)# ip ssh server enable</fixtext><fix id="F-73731r1051775_fix" /><check system="C-73830r1051774_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Review the OS10 Switch configuration to determine if cryptographic mechanisms are implemented using a FIPS 140-2 approved algorithm to protect the confidentiality of remote maintenance sessions.
+
+Review the FIPS status to verify that FIPS mode is enabled, as shown below:
+
+OS10# show fips status
+
+FIPS mode:           Enabled
+Crypto Library:      OpenSSL 1.0.2zg-fips  7 Feb 2023
+FIPS Object Module:  DELL OpenSSL FIPS Crypto Module v2.6 July 2021
+OS10#
+
+Verify that SSH is enabled for network access by reviewing the SSH server status:
+
+OS10# show ip ssh | grep "SSH Server:"
+SSH Server:                   Enabled
+
+Verify that telnet is disabled on the switch by verifying that the following is not in the running-configuration: 
+
+ip telnet server enable
+
+If FIPS mode is not enabled, if the SSH is not enabled, or if telnet is enabled in the OS10 Switch, this is a finding.</check-content></check></Rule></Group><Group id="V-269798"><title>SRG-APP-000435-NDM-000315</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269798r1051779_rule" weight="10.0" severity="medium"><version>OS10-NDM-000800</version><title>The Dell OS10 Switch must be configured to protect against known types of denial-of-service (DoS) attacks by employing organization-defined security safeguards.</title><description>&lt;VulnDiscussion&gt;DoS is a condition when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity.
+
+This requirement addresses the configuration of network devices to mitigate the impact of DoS attacks that have occurred or are ongoing on device availability. For each network device, known and potential DoS attacks must be identified and solutions for each type implemented. A variety of technologies exist to limit or, in some cases, eliminate the effects of DoS attacks (e.g., limiting processes or restricting the number of sessions the device opens at one time). Employing increased capacity and bandwidth, combined with service redundancy, may reduce the susceptibility to some DoS attacks.
+
+The security safeguards cannot be defined at the DOD level because they vary according to the capabilities of the individual network devices and the security controls applied on the adjacent networks (for example, firewalls performing packet filtering to block DoS attacks).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-73732r1051778_fix">Configure the network device to protect against or limit the effects of all known types of DoS attacks by employing organization-defined security safeguards.
+
+Create an appropriate QoS policy for CoPP:
+
+OS10(config)# class-map type control-plane example-copp-class-map-name
+OS10(config-cmap-control-plane)# exit
+OS10(config)# policy-map type control-plane example-copp-policy-map-name
+OS10(config-pmap-control-plane)# class example-copp-class-map-name
+OS10(config-pmap-c)# set qos-group 2
+OS10(config-pmap-c)# police cir 100 pir 100
+
+Assign the control-plane service-policy:
+
+OS10(config)# control-plane
+OS10(conf-control-plane)# service-policy input example-copp-policy-map-name
+
+Configure inbound ACLs to restrict which packets should be allowed to reach to the control plane from the OOBM management port and from the front panel data ports:
+
+OS10(config)# ip access-list MGMT_TRAFFIC_FROM_OOBM
+OS10(config-ipv4-acl)# permit ...
+OS10(config-ipv4-acl)# permit ...
+OS10(config-ipv4-acl)# deny ... log
+OS10(config-ipv4-acl)# deny ... log
+
+OS10(config)# ip access-list MGMT_TRAFFIC_FROM_DATA
+OS10(config-ipv4-acl)# permit ...
+OS10(config-ipv4-acl)# permit ...
+OS10(config-ipv4-acl)# deny ... log
+OS10(config-ipv4-acl)# deny ... log
+
+Apply the ACLs to the ingress of the control-plane:
+
+OS10(config)# control-plane
+OS10(config-control-plane)# ip access-group MGMT_TRAFFIC_FROM_OOBM mgmt in
+OS10(config-control-plane)# ip access-group MGMT_TRAFFIC_FROM_DATA data in</fixtext><fix id="F-73732r1051778_fix" /><check system="C-73831r1051777_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the OS10 Switch protects against or limits the effects of all known types of DoS attacks by employing organization-defined security safeguards. Dell OS10 Switches provide DoS protection via control plane ACLs and Control Plane Policing (CoPP).
+
+Use the show control-plane info command to verify that the CoPP queue rate limits are appropriate to implement the organization-defined security safeguards:
+
+OS10# show control-plane info
+Queue                    Min Rate Limit(in pps)   Max Rate Limit(in pps)   Protocols
+0                        600                      600                      ISCSI UNKNOWN UNICAST
+1                        1000                     1000                     OPEN_FLOW SFLOW
+2                        400                      400                      IGMP PIM
+3                        600                      1000                     VLT NDS
+4                        500                      1000                     IPV6_ICMP IPV4_ICMP
+5                        500                      1000                     ICMPV6_RS ICMPV6_NS ICMPV6_RA ICMPV6_NA
+6                        500                      1000                     ARP_REQ SERVICEABILITY
+7                        500                      1000                     ARP_RESP
+8                        500                      500                      SSH TELNET TACACS NTP FTP
+9                        600                      600                      FCOE NVME
+10                       600                      1000                     LACP
+11                       400                      400                      RSTP PVST MSTP
+12                       500                      500                      DOT1X LLDP FEFD
+13                       600                      1000                     IPV6_OSPF IPV4_OSPF
+14                       600                      1000                     OSPF_HELLO
+15                       600                      1000                     BGP
+16                       500                      500                      IPV6_DHCP IPV4_DHCP
+17                       600                      1000                     VRRP
+18                       700                      700                      BFD
+19                       1400                     2000                     REMOTE CPS
+20                       300                      300                      MCAST DATA
+21                       100                      100                      ACL LOGGING
+22                       300                      300                      MCAST KNOWN DATA
+23                       100                      100                      PTP
+24                       100                      100                      PORT_SECURITY
+OS10#
+
+Use the show running-configuration class-map and policy-map to review configured CoPP policies:
+
+OS10# show running-configuration class-map
+!
+class-map type application class-iscsi
+!
+class-map type control-plane example-copp-class-map-name
+OS10#
+OS10# show running-configuration policy-map
+!
+policy-map type application policy-iscsi
+!
+policy-map type control-plane example-copp-policy-map-name
+ !
+ class example-copp-class-map-name
+  set qos-group 2
+  police cir 100 pir 100
+
+Examine the interface configuration for the control plane ACLs applied to the traffic destined to the control plane from the OOBM management port or front panel data ports:
+
+OS10# show running-configuration control-plane
+!
+control-plane
+ ip access-group MGMT_TRAFFIC_FROM_OOBM mgmt in
+ ip access-group MGMT_TRAFFIC_FROM_DATA data in
+
+Review the control plane ACLs and verify traffic is limited appropriately:
+
+OS10# show running-configuration access-list
+!
+ip access-list MGMT_TRAFFIC_FROM_OOBM
+ seq 10 permit ...
+ seq 20 permit ...
+ seq 30 deny ... log
+ seq 40 deny ... log
+
+!
+ip access-list MGMT_TRAFFIC_FROM_DATA
+ seq 10 permit ...
+ seq 20 permit ...
+ seq 30 deny ... log
+ seq 40 deny ... log
+
+If the OS10 Switch does not protect against or limit the effects of all known types of DoS attacks by employing organization-defined security safeguards, this is a finding.</check-content></check></Rule></Group><Group id="V-269799"><title>SRG-APP-000457-NDM-000352</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269799r1051782_rule" weight="10.0" severity="medium"><version>OS10-NDM-000810</version><title>The application must install security-relevant firmware updates within the time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).</title><description>&lt;VulnDiscussion&gt;Security flaws with firmware are discovered daily. Vendors are constantly updating and patching their products to address newly discovered security vulnerabilities. Organizations (including any contractor to the organization) are required to promptly install security-relevant firmware updates. Flaws discovered during security assessments, continuous monitoring, incident response activities, or information system error handling must also be addressed expeditiously. 
+
+Organization-defined time periods for updating security-relevant firmware may vary based on a variety of factors including, for example, the security category of the information system or the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw).
+
+This requirement will apply to software patch management solutions that are used to install firmware patches across the enclave (e.g., mobile device management solutions). Patch criticality, as well as system criticality will vary. Therefore, the tactical situations regarding the patch management process will also vary. This means that the time period used must be a configurable parameter. Time frames for application of security-relevant firmware updates may be dependent upon the Information Assurance Vulnerability Management (IAVM) process.
+
+The application will be configured to check for and install security-relevant firmware updates within an identified time period from the availability of the update. The specific time period will be defined by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002605</ident><fixtext fixref="F-73733r1051781_fix">Upgrade the network device to the latest version of the desired LTS version of OS10 available from Dell support.
+
+Step 1: Download the OS10 image file and GPG signature using secure file transfer from a trusted local server:
+
+OS10# image download https://hostip/filepath/PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin
+Download started.
+Use 'show image status' for updates
+OS10#
+OS10# show image status
+Image Upgrade State:     idle
+==================================================
+File Transfer State:     transfer-success
+--------------------------------------------------
+  State Detail:          Completed: No error
+  Task Start:            2024-04-26T16:52:54Z
+  Task End:              2024-04-26T16:53:18Z
+  Transfer Progress:     100 %
+  Transfer Bytes:        959310070 bytes
+  File Size:             959310070 bytes
+  Transfer Rate:         44447 kbps
+
+Installation State:      idle
+--------------------------------------------------
+  State Detail:          No install information available
+  Task Start:            0000-00-00T00:00:00Z
+  Task End:              0000-00-00T00:00:00Z
+OS10#
+OS10# image download https://hostip/filepath/PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin.gpg
+OS10#
+OS10#
+OS10# dir image
+
+Directory contents for folder: image
+Date (modified)        Size (bytes)  Name
+---------------------  ------------  ------------------------------------------
+2024-04-26T16:53:16Z   959310070     PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin
+2024-04-26T16:57:36Z   566           PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin.gpg
+OS10#
+
+Step 2: Load the Dell GPG signing key and verify the image GPG signature:
+
+OS10# image gpg-key key-server keyserver.ubuntu.com key-id 7FDA043B
+OS10#
+OS10# image verify image://PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin gpg signature image://PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin.gpg
+Image verified successfully.
+OS10#
+
+Step 3: install the new OS10 image into the backup image partition:
+
+OS10# image install image://PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin
+Info: Take the Backup of the configs which can be used during downgrade
+Install started.
+Use 'show image status' for updates
+OS10#
+OS10# show image status
+Image Upgrade State:     idle
+==================================================
+File Transfer State:     transfer-success
+--------------------------------------------------
+  State Detail:          Completed: No error
+  Task Start:            2024-04-26T16:58:01Z
+  Task End:              2024-04-26T16:58:01Z
+  Transfer Progress:     100 %
+  Transfer Bytes:        350 bytes
+  File Size:             350 bytes
+  Transfer Rate:         3 kbps
+
+Installation State:      install-success
+--------------------------------------------------
+  State Detail:          Completed: Success
+  Task Start:            2024-04-26T17:04:48Z
+  Task End:              2024-04-26T17:22:03Z
+OS10#
+
+Step 4: Switch the standby image to be the boot image and reboot the switch:
+
+OS10#
+OS10# boot system standby
+OS10#
+OS10# reload
+
+Proceed to reboot the system? [confirm yes/no]:yes</fixtext><fix id="F-73733r1051781_fix" /><check system="C-73832r1051780_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Verify the OS10 Switch version by entering the following command: 
+
+OS10# show version
+
+Verify the release is the most recent approved release available on Dell.com. All OS10 releases supported by Dell can be found at https://www.dell.com/support.
+
+If the OS10 Switch is not running an approved release within the time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs), this is a finding.</check-content></check></Rule></Group><Group id="V-269800"><title>SRG-APP-000516-NDM-000334</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269800r1052422_rule" weight="10.0" severity="medium"><version>OS10-NDM-000910</version><title>The Dell OS10 Switch must generate log records for a locally developed list of auditable events.</title><description>&lt;VulnDiscussion&gt;Auditing and logging are key components of any security architecture. Logging the actions of specific events provides a means to investigate an attack; to recognize resource usage or capacity thresholds; or to identify an improperly configured network device. If auditing is not comprehensive, it will not be useful for intrusion monitoring, security investigations, and forensic analysis.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000169</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-73734r1051784_fix">Configure the OS10 Switch to enable audit logging:
+
+OS10(config)# logging audit enable
+
+Configure the switch to log a locally developed list of auditable events by adding appropriate configuration for audit as shown in the example below.
+
+From a shell as root, add desired audit rules to a file in the /etc/audit/rules.d/ directory, as in this example:
+
+OS10# system "sudo -i"
+[sudo] password for admin:
+root@OS10:~# echo “-w /var/log/sudo.log -p wa -k actions" &gt;&gt; /etc/audit/rules.d/audit.rules
+root@OS10:~#
+
+Delete any rules from the rule sets with the obsolete action of “entry”:
+
+root@OS10:~# sed -i '/-a entry/d' /etc/audit/rules.d/*
+
+Reload the rules files:
+
+root@OS10:~# augenrules --load</fixtext><fix id="F-73734r1051784_fix" /><check system="C-73833r1051783_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the OS10 Switch generates audit log events for a locally developed list of auditable events.
+
+Review the OS10 Switch configuration to determine if audit logging is enabled:
+
+!
+logging audit enable
+
+For the locally developed list of audit items review the auditd rule set with the following command:
+
+OS10# system "sudo auditctl -l"
+-a never,user
+-a never,task
+-w /var/run/utmp -p wa -k session
+-w /var/log/btmp -p wa -k session
+-w /var/log/wtmp -p wa -k session
+-w /usr/bin/dpkg -p x -k software_mgmt
+-w /usr/bin/apt-add-repository -p x -k software_mgmt
+-w /usr/bin/apt-get -p x -k software_mgmt
+-w /usr/bin/aptitude -p x -k software_mgmt
+OS10#
+
+If audit logging is not enabled or auditctl does not list rules for the desired auditable events, this is a finding.
+
+Review the OS10 Switch configuration to determine if audit logging is enabled:
+
+!
+logging audit enable
+
+If audit logging is not enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-269801"><title>SRG-APP-000516-NDM-000335</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269801r1051788_rule" weight="10.0" severity="medium"><version>OS10-NDM-000920</version><title>The Dell OS10 Switch must enforce access restrictions associated with changes to the system components.</title><description>&lt;VulnDiscussion&gt;Changes to the hardware or software components of the network device can have significant effects on the overall security of the network. Therefore, only qualified and authorized individuals should be allowed administrative access to the network device for implementing any changes or upgrades. This requirement applies to updates of the application files, configuration, ACLs, and policy filters.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000345</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-73735r1051787_fix">Configure any unauthorized users to have the netoperator role that cannot make any changes:
+
+OS10(config)#  username &lt;name&gt; password ********** role netoperator</fixtext><fix id="F-73735r1051787_fix" /><check system="C-73834r1051786_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Check the OS10 Switch to determine if only authorized administrators have permissions for changes, deletions, and updates on the network device. Inspect the maintenance log to verify changes are being made only by the authorized administrators.
+
+Changes, deletions, and updates in Dell OS10 can only be done by users with sysadmin, secadmin, or netadmin role. Verify if there are any unauthorized users assigned to the any of these roles:
+
+OS10# show running-configuration users
+
+If any unauthorized users are assigned to the sysadmin, secadmin, or netadmin role, this is a finding.</check-content></check></Rule></Group><Group id="V-269802"><title>SRG-APP-000516-NDM-000344</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269802r1052489_rule" weight="10.0" severity="medium"><version>OS10-NDM-000960</version><title>The Dell OS10 Switch must obtain its public key certificates from an appropriate certificate policy through an approved service provider.</title><description>&lt;VulnDiscussion&gt;For user certificates, each organization obtains certificates from an approved, shared service provider, as required by OMB policy. For federal agencies operating a legacy public key infrastructure cross-certified with the Federal Bridge Certification Authority at medium assurance or higher, this certification authority (CA) will suffice.
+
+Satisfies: SRG-APP-000516-NDM-000344, SRG-APP-000910-NDM-000300
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001159</ident><ident system="http://cyber.mil/cci">CCI-004909</ident><fixtext fixref="F-73736r1051790_fix">Configure the OS10 Switch to obtain its public key certificates from an appropriate certificate policy through an approved service provider.
+
+Install CA certificates using the crypto ca-cert install command as shown in the example below.
+
+OS10# crypto ca-cert install
+Certificate base file name : DOD_PKE
+Paste certificate below.
+Include the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- headers.
+Enter a blank line to abort this command.
+Certificate:
+-----BEGIN CERTIFICATE-----
+MIID...
+...
+...=
+-----END CERTIFICATE-----
+
+Install as trusted-host certificate? [yes/no]:n
+Processing file ...
+Installed Root CA certificate
+  CommonName = ...
+  IssuerName = ...
+OS10#</fixtext><fix id="F-73736r1051790_fix" /><check system="C-73835r1051789_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the OS10 Switch obtains public key certificates from an appropriate certificate policy through an approved service provider.
+
+Verify the configured CA certificates with the following commands:
+
+OS10# show crypto ca-certs
+ --------------------------------------
+|    Locally installed certificates    |
+ --------------------------------------
+DOD_PKE.crt
+OS10#
+OS10# show crypto ca-certs DOD_PKE.crt
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+...
+
+If the OS10 Switch does not obtain its public key certificates from an appropriate certificate policy through an approved service provider, this is a finding.</check-content></check></Rule></Group><Group id="V-269803"><title>SRG-APP-000516-NDM-000350</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269803r1051794_rule" weight="10.0" severity="high"><version>OS10-NDM-000970</version><title>The Dell OS10 Switch must be configured to send log data to at least two central log servers for the purpose of forwarding alerts to the administrators and the information system security officer (ISSO).</title><description>&lt;VulnDiscussion&gt;The aggregation of log data kept on a syslog server can be used to detect attacks and trigger an alert to the appropriate security personnel. The stored log data can used to detect weaknesses in security that enable the network IA team to find and address these weaknesses before breaches can occur. Reviewing these logs, whether before or after a security breach, are important in showing whether someone is an internal employee or an outside threat.
+
+Satisfies: SRG-APP-000516-NDM-000350, SRG-APP-000515-NDM-000325&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-73737r1051793_fix">Configure the OS10 Switch to send log data to at least two central log servers:
+
+!
+logging audit enable
+!
+logging server 10.0.0.4
+logging server 10.0.0.8
+!</fixtext><fix id="F-73737r1051793_fix" /><check system="C-73836r1051792_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Verify the OS10 Switch is configured to send log data to at least two central log servers. 
+
+OS10# show running-configuration logging
+!
+logging audit enable
+!
+logging server 10.0.0.4
+logging server 10.0.0.8
+
+If the OS10 Switch is not configured to send log data to at least two central log servers, this is a finding.</check-content></check></Rule></Group><Group id="V-269804"><title>SRG-APP-000516-NDM-000351</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269804r1051797_rule" weight="10.0" severity="high"><version>OS10-NDM-000980</version><title>The Dell OS10 Switch must be running an operating system release that is currently supported by Dell.</title><description>&lt;VulnDiscussion&gt;Network devices running an unsupported operating system lack current security fixes required to mitigate the risks associated with recent vulnerabilities.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-73738r1051796_fix">Upgrade the network device to the latest version of the desired LTS version of OS10 available from Dell support.
+
+Step 1: Download the OS10 image file and GPG signature using secure file transfer from a trusted local server:
+
+OS10# image download https://hostip/filepath/PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin
+Download started.
+Use 'show image status' for updates
+OS10#
+OS10# show image status
+Image Upgrade State:     idle
+==================================================
+File Transfer State:     transfer-success
+--------------------------------------------------
+  State Detail:          Completed: No error
+  Task Start:            2024-04-26T16:52:54Z
+  Task End:              2024-04-26T16:53:18Z
+  Transfer Progress:     100 %
+  Transfer Bytes:        959310070 bytes
+  File Size:             959310070 bytes
+  Transfer Rate:         44447 kbps
+
+Installation State:      idle
+--------------------------------------------------
+  State Detail:          No install information available
+  Task Start:            0000-00-00T00:00:00Z
+  Task End:              0000-00-00T00:00:00Z
+OS10#
+OS10# image download https://hostip/filepath/PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin.gpg
+OS10#
+OS10#
+OS10# dir image
+
+Directory contents for folder: image
+Date (modified)        Size (bytes)  Name
+---------------------  ------------  ------------------------------------------
+2024-04-26T16:53:16Z   959310070     PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin
+2024-04-26T16:57:36Z   566           PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin.gpg
+OS10#
+
+Step 2: Load the Dell GPG signing key and verify the image GPG signature:
+
+OS10# image gpg-key key-server keyserver.ubuntu.com key-id 7FDA043B
+OS10#
+OS10# image verify image://PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin gpg signature image://PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin.gpg
+Image verified successfully.
+OS10#
+
+Step 3: Install the new OS10 image into the backup image partition:
+
+OS10# image install image://PKGS_OS10-Enterprise-10.5.6.2.110buster-installer-x86_64.bin
+Info: Take the Backup of the configs which can be used during downgrade
+Install started.
+Use 'show image status' for updates
+OS10#
+OS10# show image status
+Image Upgrade State:     idle
+==================================================
+File Transfer State:     transfer-success
+--------------------------------------------------
+  State Detail:          Completed: No error
+  Task Start:            2024-04-26T16:58:01Z
+  Task End:              2024-04-26T16:58:01Z
+  Transfer Progress:     100 %
+  Transfer Bytes:        350 bytes
+  File Size:             350 bytes
+  Transfer Rate:         3 kbps
+
+Installation State:      install-success
+--------------------------------------------------
+  State Detail:          Completed: Success
+  Task Start:            2024-04-26T17:04:48Z
+  Task End:              2024-04-26T17:22:03Z
+OS10#
+
+Step 4: Switch the standby image to be the boot image and reboot the switch:
+
+OS10#
+OS10# boot system standby
+OS10#
+OS10# reload
+
+Proceed to reboot the system? [confirm yes/no]:yes</fixtext><fix id="F-73738r1051796_fix" /><check system="C-73837r1051795_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Verify the OS10 Switch complies with this requirement by entering the following command: 
+
+OS10# show version
+
+Verify the release is still supported by Dell. All OS10 releases supported by Dell can be found at https://www.dell.com/support.
+
+If the OS10 Switch is not running an operating system release that is currently supported by Dell, this is a finding.</check-content></check></Rule></Group><Group id="V-269805"><title>SRG-APP-000845-NDM-000220</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269805r1051800_rule" weight="10.0" severity="medium"><version>OS10-NDM-001070</version><title>The Dell OS10 Switch must not have any default manufacturer passwords when deployed.</title><description>&lt;VulnDiscussion&gt;Password-based authentication applies to passwords regardless of whether they are used in single-factor or multifactor authentication. Long passwords or passphrases are preferable over shorter passwords. Enforced composition rules provide marginal security benefits while decreasing usability. However, organizations may choose to establish certain rules for password generation (e.g., minimum character length for long passwords) under certain circumstances and can enforce this requirement in IA-5(1)(h). Account recovery can occur, for example, in situations when a password is forgotten. Cryptographically protected passwords include salted one-way cryptographic hashes of passwords. The list of commonly used, compromised, or expected passwords includes passwords obtained from previous breach corpuses, dictionary words, and repetitive or sequential characters. The list includes context-specific words, such as the name of the service, username, and derivatives thereof.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004061</ident><fixtext fixref="F-73739r1051799_fix">Configure new passwords for the admin and linuxadmin users as shown below and disable the linuxadmin:
+
+OS10(config)#  username admin password ********** role sysadmin
+
+OS10(config)# system-user linuxadmin password ************
+OS10(config)# system-user linuxadmin disable</fixtext><fix id="F-73739r1051799_fix" /><check system="C-73838r1051798_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>If a default password is still configured for any user, warning messages will be displayed on login directly above the initial prompt, as shown below.
+
+Log in to OS10 and verify that no warning messages about default passwords are displayed above the initial prompt:
+
+%Warning : Default password for admin account should be changed to secure the system
+%Warning : Default password for linuxadmin account should be changed to secure the system.
+OS10#
+
+If any default password warnings are displayed, this is a finding. 
+
+If "system-user linuxadmin disable" is not shown in the switch configuration, this is a finding.</check-content></check></Rule></Group><Group id="V-270643"><title>SRG-APP-000516</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270643r1052343_rule" weight="10.0" severity="high"><version>OS10-NDM-000930</version><title>The Dell OS10 Switch must be configured to use at least two authentication servers for the purpose of authenticating users prior to granting administrative access.</title><description>&lt;VulnDiscussion&gt;Centralized management of authentication settings increases the security of remote and nonlocal access methods. This control is particularly important protection against the insider threat. With robust centralized management, audit records for administrator account access to the organization's network devices can be more readily analyzed for trends and anomalies. The alternative method of defining administrator accounts on each device exposes the device configuration to remote access authentication attacks and system administrators with multiple authenticators for each network device.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000370</ident><fixtext fixref="F-74577r1052343_fix">Configure the network device to use at least two authentication servers. The authentication order is determined by the order in which the radius-server entries are configured.
+
+OS10(config)#
+OS10(config)# radius-server host 10.120.60.23 tls security-profile PROFILE1 key ******************
+OS10(config)# radius-server host 10.120.80.82 tls security-profile PROFILE1 key ******************
+OS10(config)#
+OS10(config)# aaa authentication login default group radius local
+OS10(config)# aaa authentication login console group radius local
+OS10(config)#
+
+Configure all network connections associated with a device management to use the authentication servers for the purpose of login authentication.
+OS10(config)# aaa authentication login default group radius local
+
+Optionally, configure the local console access to try local authentication before attempting remote authentication servers.
+OS10(config)# aaa authentication login console local group radius</fixtext><fix id="F-74577r1052343_fix" /><check system="C-74676r1052334_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Review the OS10 switch configuration to verify the device is configured to use at least two authentication servers as primary source for authentication.  Verify that multiple radius servers are configured and that AAA login authentication is configured to use remote authentication.
+
+OS10#
+OS10# show running-configuration radius-server
+radius-server host 10.120.60.23 tls security-profile PROFILE-1 key 9 ****
+radius-server host 10.120.80.82 tls security-profile PROFILE1 key 9 ****
+OS10#
+OS10# show running-configuration aaa
+!
+aaa authentication login default group radius local
+aaa authentication login console local group radius
+OS10#
+
+If the OS10 switch is not configured to use at least two authentication servers for the purpose of authenticating users prior to granting administrative access, this is a finding.</check-content></check></Rule></Group><Group id="V-270644"><title>SRG-APP-000920-NDM-000320</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270644r1052341_rule" weight="10.0" severity="medium"><version>OS10-NDM-000680</version><title>The Dell OS10 Switch must be configured to synchronize internal information system clocks using redundant authoritative time sources.</title><description>&lt;VulnDiscussion&gt;The loss of connectivity to a particular authoritative time source will result in the loss of time synchronization (free-run mode) and increasingly inaccurate time stamps on audit events and other functions. 
+
+Multiple time sources provide redundancy by including a secondary source. Time synchronization is usually a hierarchy; clients synchronize time to a local source while that source synchronizes its time to a more accurate source. The network device must use an authoritative time server and/or be configured to use redundant authoritative time sources. This requirement is related to the comparison done in CCI-001891.
+
+DOD-approved solutions consist of a combination of a primary and secondary time source using a combination or multiple instances of the following: a time server designated for the appropriate DOD network (NIPRNet/SIPRNet); United States Naval Observatory (USNO) time servers; and/or the Global Positioning System (GPS). The secondary time source must be in a different geographic region than the primary time source.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch NDM</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch NDM</dc:subject><dc:identifier>5666</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004922</ident><ident system="http://cyber.mil/cci">CCI-004923</ident><fixtext fixref="F-74578r1052340_fix">Configure the OS10 Switch to synchronize internal information system clocks with the primary and secondary time sources:
+
+OS10(config)# ntp authenticate
+OS10(config)# ntp trusted-key 345
+OS10(config)# ntp authentication-key 345 sha2-256 0 &lt;key&gt;
+OS10(config)# ntp server 192.0.2.1 key 345 prefer
+OS10(config)# ntp server 192.0.2.5 key 345</fixtext><fix id="F-74578r1052340_fix" /><check system="C-74677r1052339_chk"><check-content-ref href="Dell_OS10_Switch_NDM_STIG.xml" name="M" /><check-content>Determine if the OS10 Switch is configured to synchronize internal information system clocks with the primary and secondary time sources.
+
+Review the configuration to verify that the primary and secondary time sources are configured as NTP servers with the following commands:
+
+OS10# show running-configuration ntp
+!
+ntp authenticate
+ntp authentication-key 345 sha2-256 9 ****
+ntp server 192.0.2.1 key 345 prefer
+ntp server 192.0.2.5 key 345
+ntp trusted-key 345
+
+If the OS10 Switch is not configured to synchronize internal information system clocks with the primary and secondary time sources, this is a finding.</check-content></check></Rule></Group></Benchmark>

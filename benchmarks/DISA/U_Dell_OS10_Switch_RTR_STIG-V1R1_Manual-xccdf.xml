@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Dell_OS10_Switch_Router_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-11">accepted</status><title>Dell OS10 Switch Router Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 10 Dec 2024</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269849" selected="true" /><select idref="V-269850" selected="true" /><select idref="V-269851" selected="true" /><select idref="V-269852" selected="true" /><select idref="V-269853" selected="true" /><select idref="V-269854" selected="true" /><select idref="V-269855" selected="true" /><select idref="V-269857" selected="true" /><select idref="V-269858" selected="true" /><select idref="V-269859" selected="true" /><select idref="V-269861" selected="true" /><select idref="V-269863" selected="true" /><select idref="V-269864" selected="true" /><select idref="V-269865" selected="true" /><select idref="V-269866" selected="true" /><select idref="V-269867" selected="true" /><select idref="V-269868" selected="true" /><select idref="V-269869" selected="true" /><select idref="V-269870" selected="true" /><select idref="V-269872" selected="true" /><select idref="V-269873" selected="true" /><select idref="V-269877" selected="true" /><select idref="V-269879" selected="true" /><select idref="V-269880" selected="true" /><select idref="V-269882" selected="true" /><select idref="V-269883" selected="true" /><select idref="V-269884" selected="true" /><select idref="V-269885" selected="true" /><select idref="V-269886" selected="true" /><select idref="V-269887" selected="true" /><select idref="V-269888" selected="true" /><select idref="V-269889" selected="true" /><select idref="V-269890" selected="true" /><select idref="V-269891" selected="true" /><select idref="V-269892" selected="true" /><select idref="V-269898" selected="true" /><select idref="V-269899" selected="true" /><select idref="V-269901" selected="true" /><select idref="V-269902" selected="true" /><select idref="V-269903" selected="true" /><select idref="V-269904" selected="true" /><select idref="V-269927" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269849" selected="true" /><select idref="V-269850" selected="true" /><select idref="V-269851" selected="true" /><select idref="V-269852" selected="true" /><select idref="V-269853" selected="true" /><select idref="V-269854" selected="true" /><select idref="V-269855" selected="true" /><select idref="V-269857" selected="true" /><select idref="V-269858" selected="true" /><select idref="V-269859" selected="true" /><select idref="V-269861" selected="true" /><select idref="V-269863" selected="true" /><select idref="V-269864" selected="true" /><select idref="V-269865" selected="true" /><select idref="V-269866" selected="true" /><select idref="V-269867" selected="true" /><select idref="V-269868" selected="true" /><select idref="V-269869" selected="true" /><select idref="V-269870" selected="true" /><select idref="V-269872" selected="true" /><select idref="V-269873" selected="true" /><select idref="V-269877" selected="true" /><select idref="V-269879" selected="true" /><select idref="V-269880" selected="true" /><select idref="V-269882" selected="true" /><select idref="V-269883" selected="true" /><select idref="V-269884" selected="true" /><select idref="V-269885" selected="true" /><select idref="V-269886" selected="true" /><select idref="V-269887" selected="true" /><select idref="V-269888" selected="true" /><select idref="V-269889" selected="true" /><select idref="V-269890" selected="true" /><select idref="V-269891" selected="true" /><select idref="V-269892" selected="true" /><select idref="V-269898" selected="true" /><select idref="V-269899" selected="true" /><select idref="V-269901" selected="true" /><select idref="V-269902" selected="true" /><select idref="V-269903" selected="true" /><select idref="V-269904" selected="true" /><select idref="V-269927" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269849" selected="true" /><select idref="V-269850" selected="true" /><select idref="V-269851" selected="true" /><select idref="V-269852" selected="true" /><select idref="V-269853" selected="true" /><select idref="V-269854" selected="true" /><select idref="V-269855" selected="true" /><select idref="V-269857" selected="true" /><select idref="V-269858" selected="true" /><select idref="V-269859" selected="true" /><select idref="V-269861" selected="true" /><select idref="V-269863" selected="true" /><select idref="V-269864" selected="true" /><select idref="V-269865" selected="true" /><select idref="V-269866" selected="true" /><select idref="V-269867" selected="true" /><select idref="V-269868" selected="true" /><select idref="V-269869" selected="true" /><select idref="V-269870" selected="true" /><select idref="V-269872" selected="true" /><select idref="V-269873" selected="true" /><select idref="V-269877" selected="true" /><select idref="V-269879" selected="true" /><select idref="V-269880" selected="true" /><select idref="V-269882" selected="true" /><select idref="V-269883" selected="true" /><select idref="V-269884" selected="true" /><select idref="V-269885" selected="true" /><select idref="V-269886" selected="true" /><select idref="V-269887" selected="true" /><select idref="V-269888" selected="true" /><select idref="V-269889" selected="true" /><select idref="V-269890" selected="true" /><select idref="V-269891" selected="true" /><select idref="V-269892" selected="true" /><select idref="V-269898" selected="true" /><select idref="V-269899" selected="true" /><select idref="V-269901" selected="true" /><select idref="V-269902" selected="true" /><select idref="V-269903" selected="true" /><select idref="V-269904" selected="true" /><select idref="V-269927" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269849" selected="true" /><select idref="V-269850" selected="true" /><select idref="V-269851" selected="true" /><select idref="V-269852" selected="true" /><select idref="V-269853" selected="true" /><select idref="V-269854" selected="true" /><select idref="V-269855" selected="true" /><select idref="V-269857" selected="true" /><select idref="V-269858" selected="true" /><select idref="V-269859" selected="true" /><select idref="V-269861" selected="true" /><select idref="V-269863" selected="true" /><select idref="V-269864" selected="true" /><select idref="V-269865" selected="true" /><select idref="V-269866" selected="true" /><select idref="V-269867" selected="true" /><select idref="V-269868" selected="true" /><select idref="V-269869" selected="true" /><select idref="V-269870" selected="true" /><select idref="V-269872" selected="true" /><select idref="V-269873" selected="true" /><select idref="V-269877" selected="true" /><select idref="V-269879" selected="true" /><select idref="V-269880" selected="true" /><select idref="V-269882" selected="true" /><select idref="V-269883" selected="true" /><select idref="V-269884" selected="true" /><select idref="V-269885" selected="true" /><select idref="V-269886" selected="true" /><select idref="V-269887" selected="true" /><select idref="V-269888" selected="true" /><select idref="V-269889" selected="true" /><select idref="V-269890" selected="true" /><select idref="V-269891" selected="true" /><select idref="V-269892" selected="true" /><select idref="V-269898" selected="true" /><select idref="V-269899" selected="true" /><select idref="V-269901" selected="true" /><select idref="V-269902" selected="true" /><select idref="V-269903" selected="true" /><select idref="V-269904" selected="true" /><select idref="V-269927" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269849" selected="true" /><select idref="V-269850" selected="true" /><select idref="V-269851" selected="true" /><select idref="V-269852" selected="true" /><select idref="V-269853" selected="true" /><select idref="V-269854" selected="true" /><select idref="V-269855" selected="true" /><select idref="V-269857" selected="true" /><select idref="V-269858" selected="true" /><select idref="V-269859" selected="true" /><select idref="V-269861" selected="true" /><select idref="V-269863" selected="true" /><select idref="V-269864" selected="true" /><select idref="V-269865" selected="true" /><select idref="V-269866" selected="true" /><select idref="V-269867" selected="true" /><select idref="V-269868" selected="true" /><select idref="V-269869" selected="true" /><select idref="V-269870" selected="true" /><select idref="V-269872" selected="true" /><select idref="V-269873" selected="true" /><select idref="V-269877" selected="true" /><select idref="V-269879" selected="true" /><select idref="V-269880" selected="true" /><select idref="V-269882" selected="true" /><select idref="V-269883" selected="true" /><select idref="V-269884" selected="true" /><select idref="V-269885" selected="true" /><select idref="V-269886" selected="true" /><select idref="V-269887" selected="true" /><select idref="V-269888" selected="true" /><select idref="V-269889" selected="true" /><select idref="V-269890" selected="true" /><select idref="V-269891" selected="true" /><select idref="V-269892" selected="true" /><select idref="V-269898" selected="true" /><select idref="V-269899" selected="true" /><select idref="V-269901" selected="true" /><select idref="V-269902" selected="true" /><select idref="V-269903" selected="true" /><select idref="V-269904" selected="true" /><select idref="V-269927" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269849" selected="true" /><select idref="V-269850" selected="true" /><select idref="V-269851" selected="true" /><select idref="V-269852" selected="true" /><select idref="V-269853" selected="true" /><select idref="V-269854" selected="true" /><select idref="V-269855" selected="true" /><select idref="V-269857" selected="true" /><select idref="V-269858" selected="true" /><select idref="V-269859" selected="true" /><select idref="V-269861" selected="true" /><select idref="V-269863" selected="true" /><select idref="V-269864" selected="true" /><select idref="V-269865" selected="true" /><select idref="V-269866" selected="true" /><select idref="V-269867" selected="true" /><select idref="V-269868" selected="true" /><select idref="V-269869" selected="true" /><select idref="V-269870" selected="true" /><select idref="V-269872" selected="true" /><select idref="V-269873" selected="true" /><select idref="V-269877" selected="true" /><select idref="V-269879" selected="true" /><select idref="V-269880" selected="true" /><select idref="V-269882" selected="true" /><select idref="V-269883" selected="true" /><select idref="V-269884" selected="true" /><select idref="V-269885" selected="true" /><select idref="V-269886" selected="true" /><select idref="V-269887" selected="true" /><select idref="V-269888" selected="true" /><select idref="V-269889" selected="true" /><select idref="V-269890" selected="true" /><select idref="V-269891" selected="true" /><select idref="V-269892" selected="true" /><select idref="V-269898" selected="true" /><select idref="V-269899" selected="true" /><select idref="V-269901" selected="true" /><select idref="V-269902" selected="true" /><select idref="V-269903" selected="true" /><select idref="V-269904" selected="true" /><select idref="V-269927" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269849" selected="true" /><select idref="V-269850" selected="true" /><select idref="V-269851" selected="true" /><select idref="V-269852" selected="true" /><select idref="V-269853" selected="true" /><select idref="V-269854" selected="true" /><select idref="V-269855" selected="true" /><select idref="V-269857" selected="true" /><select idref="V-269858" selected="true" /><select idref="V-269859" selected="true" /><select idref="V-269861" selected="true" /><select idref="V-269863" selected="true" /><select idref="V-269864" selected="true" /><select idref="V-269865" selected="true" /><select idref="V-269866" selected="true" /><select idref="V-269867" selected="true" /><select idref="V-269868" selected="true" /><select idref="V-269869" selected="true" /><select idref="V-269870" selected="true" /><select idref="V-269872" selected="true" /><select idref="V-269873" selected="true" /><select idref="V-269877" selected="true" /><select idref="V-269879" selected="true" /><select idref="V-269880" selected="true" /><select idref="V-269882" selected="true" /><select idref="V-269883" selected="true" /><select idref="V-269884" selected="true" /><select idref="V-269885" selected="true" /><select idref="V-269886" selected="true" /><select idref="V-269887" selected="true" /><select idref="V-269888" selected="true" /><select idref="V-269889" selected="true" /><select idref="V-269890" selected="true" /><select idref="V-269891" selected="true" /><select idref="V-269892" selected="true" /><select idref="V-269898" selected="true" /><select idref="V-269899" selected="true" /><select idref="V-269901" selected="true" /><select idref="V-269902" selected="true" /><select idref="V-269903" selected="true" /><select idref="V-269904" selected="true" /><select idref="V-269927" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269849" selected="true" /><select idref="V-269850" selected="true" /><select idref="V-269851" selected="true" /><select idref="V-269852" selected="true" /><select idref="V-269853" selected="true" /><select idref="V-269854" selected="true" /><select idref="V-269855" selected="true" /><select idref="V-269857" selected="true" /><select idref="V-269858" selected="true" /><select idref="V-269859" selected="true" /><select idref="V-269861" selected="true" /><select idref="V-269863" selected="true" /><select idref="V-269864" selected="true" /><select idref="V-269865" selected="true" /><select idref="V-269866" selected="true" /><select idref="V-269867" selected="true" /><select idref="V-269868" selected="true" /><select idref="V-269869" selected="true" /><select idref="V-269870" selected="true" /><select idref="V-269872" selected="true" /><select idref="V-269873" selected="true" /><select idref="V-269877" selected="true" /><select idref="V-269879" selected="true" /><select idref="V-269880" selected="true" /><select idref="V-269882" selected="true" /><select idref="V-269883" selected="true" /><select idref="V-269884" selected="true" /><select idref="V-269885" selected="true" /><select idref="V-269886" selected="true" /><select idref="V-269887" selected="true" /><select idref="V-269888" selected="true" /><select idref="V-269889" selected="true" /><select idref="V-269890" selected="true" /><select idref="V-269891" selected="true" /><select idref="V-269892" selected="true" /><select idref="V-269898" selected="true" /><select idref="V-269899" selected="true" /><select idref="V-269901" selected="true" /><select idref="V-269902" selected="true" /><select idref="V-269903" selected="true" /><select idref="V-269904" selected="true" /><select idref="V-269927" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-269849" selected="true" /><select idref="V-269850" selected="true" /><select idref="V-269851" selected="true" /><select idref="V-269852" selected="true" /><select idref="V-269853" selected="true" /><select idref="V-269854" selected="true" /><select idref="V-269855" selected="true" /><select idref="V-269857" selected="true" /><select idref="V-269858" selected="true" /><select idref="V-269859" selected="true" /><select idref="V-269861" selected="true" /><select idref="V-269863" selected="true" /><select idref="V-269864" selected="true" /><select idref="V-269865" selected="true" /><select idref="V-269866" selected="true" /><select idref="V-269867" selected="true" /><select idref="V-269868" selected="true" /><select idref="V-269869" selected="true" /><select idref="V-269870" selected="true" /><select idref="V-269872" selected="true" /><select idref="V-269873" selected="true" /><select idref="V-269877" selected="true" /><select idref="V-269879" selected="true" /><select idref="V-269880" selected="true" /><select idref="V-269882" selected="true" /><select idref="V-269883" selected="true" /><select idref="V-269884" selected="true" /><select idref="V-269885" selected="true" /><select idref="V-269886" selected="true" /><select idref="V-269887" selected="true" /><select idref="V-269888" selected="true" /><select idref="V-269889" selected="true" /><select idref="V-269890" selected="true" /><select idref="V-269891" selected="true" /><select idref="V-269892" selected="true" /><select idref="V-269898" selected="true" /><select idref="V-269899" selected="true" /><select idref="V-269901" selected="true" /><select idref="V-269902" selected="true" /><select idref="V-269903" selected="true" /><select idref="V-269904" selected="true" /><select idref="V-269927" selected="true" /></Profile><Group id="V-269849"><title>SRG-NET-000018-RTR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269849r1051932_rule" weight="10.0" severity="medium"><version>OS10-RTR-000010</version><title>The Dell OS10 Router must be configured to enforce approved authorizations for controlling the flow of information within the network based on organization-defined information flow control policies.</title><description>&lt;VulnDiscussion&gt;Information flow control regulates where information is allowed to travel within a network and between interconnected networks. The flow of all network traffic must be monitored and controlled so it does not introduce any unacceptable risk to the network infrastructure or data. Information flow control policies and enforcement mechanisms are commonly employed by organizations to control the flow of information between designated sources and destinations (e.g., networks, individuals, and devices) within information systems.
+
+Enforcement occurs, for example, in boundary protection devices (e.g., gateways, routers, guards, encrypted tunnels, and firewalls) that employ rule sets or establish configuration settings that restrict information system services, provide a packet filtering capability based on header information, or provide a message filtering capability based on message content (e.g., implementing key word searches or using document characteristics).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><fixtext fixref="F-73783r1051931_fix">This requirement is not applicable for the DODIN Backbone.
+
+Configure ACLs to allow or deny traffic for specific source and destination addresses as well as ports and protocols.
+
+Step 1: Configure named ACL with appropriate filter rules.
+
+OS10(config)# ip access-list FILTER_EXTERNAL_INGRESS
+OS10(config-ipv4-acl)# deny ip 10.0.0.0/8 any log
+OS10(config-ipv4-acl)# deny tcp any any eq 23
+OS10(config-ipv4-acl)# permit ip any any
+OS10(config-ipv4-acl)# exit
+
+Step 2: Apply the ACLs on the appropriate external and internal interfaces.
+
+OS10(config-ipv4-acl)# interface ethernet1/1/4
+OS10(conf-if-eth1/1/4)# ip access-group FILTER_EXTERNAL_INGRESS in</fixtext><fix id="F-73783r1051931_fix" /><check system="C-73882r1051930_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone.
+
+Review the router configuration to verify that access control lists (ACLs) are configured to allow or deny traffic for specific source and destination addresses as well as ports and protocols.
+
+These filters should be applied inbound or outbound on the appropriate external and internal interfaces.
+
+Review the ACL configuration with the "show ip access-lists in" and "show ip access-lists out" commands.
+
+OS10# show ip access-lists in
+Ingress IP access-list FILTER_EXTERNAL_INGRESS
+ Active on interfaces :
+  ethernet1/1/4
+ seq 10 deny ip 10.0.0.0/8 any log
+ seq 20 deny tcp any any eq 23
+ seq 30 permit ip any any
+ 
+If the router is not configured to enforce approved authorizations for controlling the flow of information within the network based on organization-defined information flow control policies, this is a finding.</check-content></check></Rule></Group><Group id="V-269850"><title>SRG-NET-000018-RTR-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269850r1051935_rule" weight="10.0" severity="medium"><version>OS10-RTR-000020</version><title>The Dell OS10 BGP router must be configured to reject inbound route advertisements for any Bogon prefixes.</title><description>&lt;VulnDiscussion&gt;Accepting route advertisements for Bogon prefixes can result in the local autonomous system (AS) becoming a transit for malicious traffic as it will in turn advertise these prefixes to neighbor autonomous systems.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><fixtext fixref="F-73784r1051934_fix">Ensure all eBGP routers are configured to reject inbound route advertisements for any Bogon prefixes.
+
+Step 1: Configure a prefix list containing the current Bogon prefixes.
+
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 5 deny 0.0.0.0/8 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 10 deny 10.0.0.0/8 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 15 deny 100.64.0.0/10 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 20 deny 127.0.0.0/8 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 25 deny 169.254.0.0/16 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 30 deny 172.16.0.0/12 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 35 deny 192.0.2.0/24 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 40 deny 192.88.99.0/24 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 45 deny 192.168.0.0/16 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 50 deny 198.18.0.0/15 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 55 deny 198.51.100.0/24 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 60 deny 203.0.113.0/24 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 65 deny 224.0.0.0/4 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 70 deny 240.0.0.0/4 le 32
+OS10(config)# ip prefix-list BOGON_PREFIX_FILTER seq 75 permit 0.0.0.0/0 ge 8
+
+Step 2: Configure the route map referencing the configured Bogon prefix list.
+
+OS10(config)# route-map PREFIX_FILTER_MAP 10
+OS10(config-route-map)# match ip address prefix-list BOGON_PREFIX_FILTER
+OS10(config-route-map)# exit
+
+Step 3: Apply the route-map inbound to each external BGP neighbor.
+
+OS10(config)# router bgp 10
+OS10(config-router-bgp-10)# neighbor 123.1.1.10
+OS10(config-router-neighbor)# address-family ipv4 unicast
+OS10(config-router-bgp-neighbor-af)# route-map PREFIX_FILTER_MAP in
+OS10(config-router-bgp-neighbor-af)# exit
+OS10(config-router-neighbor)# exit
+OS10(config-router-bgp-10)# template ebgp
+OS10(config-router-template)# address-family ipv4 unicast
+OS10(config-router-bgp-template-af)# route-map PREFIX_FILTER_MAP in
+OS10(config-router-bgp-template-af)# exit
+OS10(config-router-template)# exit
+OS10(config-router-bgp-10)# exit</fixtext><fix id="F-73784r1051934_fix" /><check system="C-73883r1051933_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to verify it will reject routes of any Bogon prefixes.
+
+The prefix filter must be referenced inbound on the appropriate BGP neighbor statements.
+
+Step 1: Verify a prefix list has been configured containing the current Bogon prefixes as shown in the example below.
+
+ip prefix-list BOGON_PREFIX_FILTER seq 5 deny 0.0.0.0/8 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 10 deny 10.0.0.0/8 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 15 deny 100.64.0.0/10 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 20 deny 127.0.0.0/8 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 25 deny 169.254.0.0/16 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 30 deny 172.16.0.0/12 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 35 deny 192.0.2.0/24 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 40 deny 192.88.99.0/24 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 45 deny 192.168.0.0/16 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 50 deny 198.18.0.0/15 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 55 deny 198.51.100.0/24 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 60 deny 203.0.113.0/24 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 65 deny 224.0.0.0/4 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 70 deny 240.0.0.0/4 le 32
+ip prefix-list BOGON_PREFIX_FILTER seq 75 permit 0.0.0.0/0 ge 8
+
+Step 2: Verify the route map applied to the external neighbors references the configured Bogon prefix list shown above.
+
+!
+route-map PREFIX_FILTER_MAP permit 10
+ match ip address prefix-list BOGON_PREFIX_FILTER
+ 
+!
+router bgp 10
+ !
+ template ebgp
+  !
+  address-family ipv4 unicast
+   route-map PREFIX_FILTER_MAP in
+ !
+ neighbor 123.1.1.10
+  !
+  address-family ipv4 unicast
+   route-map PREFIX_FILTER_MAP in
+
+If the router is not configured to reject inbound route advertisements for any Bogon prefixes, this is a finding.</check-content></check></Rule></Group><Group id="V-269851"><title>SRG-NET-000018-RTR-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269851r1051938_rule" weight="10.0" severity="medium"><version>OS10-RTR-000030</version><title>The Dell OS10 BGP router must be configured to reject inbound route advertisements for any prefixes belonging to the local autonomous system (AS).</title><description>&lt;VulnDiscussion&gt;Accepting route advertisements belonging to the local AS can result in traffic looping or being black holed, or at a minimum using a nonoptimized path.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><fixtext fixref="F-73785r1051937_fix">Ensure all eBGP routers are configured to reject inbound route advertisements for any prefixes belonging to the local AS.
+
+Step 1: Add to the prefix filter list those prefixes belonging to the local autonomous system.
+
+OS10(config)# ip prefix-list PREFIX_FILTER seq 73 deny 20.10.10.0/24 le 32
+OS10(config)# ip prefix-list PREFIX_FILTER seq 74 deny 40.10.10.0/24 le 32
+
+Step 2: Configure the route map referencing the configured prefix list.
+
+OS10(config)# route-map PREFIX_FILTER_MAP 10
+OS10(config-route-map)# match ip address prefix-list PREFIX_FILTER
+OS10(config-route-map)# exit
+
+Step 3: Apply the route-map inbound to each external BGP neighbor.
+
+OS10(config)# router bgp 10
+OS10(config-router-bgp-10)# neighbor 123.1.1.10
+OS10(config-router-neighbor)# address-family ipv4 unicast
+OS10(config-router-bgp-neighbor-af)# route-map PREFIX_FILTER_MAP in
+OS10(config-router-bgp-neighbor-af)# exit
+OS10(config-router-neighbor)# exit
+OS10(config-router-bgp-10)# template ebgp
+OS10(config-router-template)# address-family ipv4 unicast
+OS10(config-router-bgp-template-af)# route-map PREFIX_FILTER_MAP in
+OS10(config-router-bgp-template-af)# exit
+OS10(config-router-template)# exit
+OS10(config-router-bgp-10)# exit</fixtext><fix id="F-73785r1051937_fix" /><check system="C-73884r1051936_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to verify that it will reject routes belonging to the local AS.
+
+The prefix filter must be referenced inbound on the appropriate BGP neighbor statements.
+
+Step 1: Verify a prefix list has been configured containing the local AS prefixes.
+
+ip prefix-list PREFIX_FILTER seq 5 deny 0.0.0.0/8 le 32
+...
+...
+ip prefix-list PREFIX_FILTER seq 73 deny 20.10.10.0/24 le 32
+ip prefix-list PREFIX_FILTER seq 74 deny 40.10.10.0/24 le 32
+ip prefix-list PREFIX_FILTER seq 75 permit 0.0.0.0/0 ge 8
+
+Step 2: Verify the route map applied to the external neighbors references the configured prefix list shown above.
+
+!
+route-map PREFIX_FILTER_MAP permit 10
+ match ip address prefix-list PREFIX_FILTER
+ 
+!
+router bgp 10
+ !
+ template ebgp
+  !
+  address-family ipv4 unicast
+   route-map PREFIX_FILTER_MAP in
+ !
+ neighbor 123.1.1.10
+  !
+  address-family ipv4 unicast
+   route-map PREFIX_FILTER_MAP in
+
+If the router is not configured to reject inbound route advertisements belonging to the local AS, this is a finding.</check-content></check></Rule></Group><Group id="V-269852"><title>SRG-NET-000018-RTR-000004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269852r1051941_rule" weight="10.0" severity="medium"><version>OS10-RTR-000040</version><title>The Dell OS10 BGP router must be configured to reject inbound route advertisements from a customer edge (CE) router for prefixes that are not allocated to that customer.</title><description>&lt;VulnDiscussion&gt;As a best practice, a service provider should only accept customer prefixes that have been assigned to that customer and any peering autonomous systems. A multihomed customer with BGP speaking routers connected to the internet or other external networks could be breached and used to launch a prefix deaggregation attack. Without ingress route filtering of customers, the effectiveness of such an attack could impact the entire IP core and its customers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><fixtext fixref="F-73786r1051940_fix">Configure all eBGP routers to reject inbound route advertisements from a CE router for prefixes that are not allocated to that customer.
+
+Step 1: Configure a prefix list for each customer containing prefixes belonging to each.
+
+OS10(config)# ip prefix-list PREFIX_FILTER_CUST1 seq 5 permit 50.10.10.0/24 le 32
+OS10(config)# ip prefix-list PREFIX_FILTER_CUST1 seq 10 deny 0.0.0.0/0 ge 8
+OS10(config)# ip prefix-list PREFIX_FILTER_CUST2 seq 5 permit 60.10.10.0/24 le 32
+OS10(config)# ip prefix-list PREFIX_FILTER_CUST2 seq 10 deny 0.0.0.0/0 ge 8
+
+Step 2: Configure the route map referencing the configured prefix list.
+
+OS10(config)# route-map PREFIX_FILTER_CUST1_MAP 50
+OS10(config-route-map)# match ip address prefix-list PREFIX_FILTER_CUST1
+OS10(config-route-map)# exit
+OS10(config)# route-map PREFIX_FILTER_CUST2_MAP 50
+OS10(config-route-map)# match ip address prefix-list PREFIX_FILTER_CUST2
+OS10(config-route-map)# exit
+
+Step 3: Apply the route-map inbound to each external BGP neighbor.
+
+OS10(config)# router bgp 10
+OS10(config-router-bgp-10)# neighbor 50.1.1.1
+OS10(config-router-neighbor)# address-family ipv4 unicast
+OS10(config-router-bgp-neighbor-af)# route-map PREFIX_FILTER_CUST1_MAP in
+OS10(config-router-bgp-neighbor-af)# exit
+OS10(config-router-neighbor)# exit
+OS10(config-router-bgp-10)# neighbor 60.1.1.1
+OS10(config-router-neighbor)# address-family ipv4 unicast
+OS10(config-router-bgp-neighbor-af)# route-map PREFIX_FILTER_CUST2_MAP in
+OS10(config-router-bgp-neighbor-af)# exit
+OS10(config-router-neighbor)# exit
+OS10(config-router-bgp-10)# exit</fixtext><fix id="F-73786r1051940_fix" /><check system="C-73885r1051939_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to verify that there are filters defined to only accept routes for prefixes that belong to specific customers. 
+
+The prefix filter must be referenced inbound on the appropriate BGP neighbor statement.
+
+Step 1: Verify prefix lists have been configured for each customer containing prefixes that belong to that customer.
+
+OS10# show running-configuration prefix-list
+!
+...
+ip prefix-list PREFIX_FILTER_CUST1 seq 5 permit 50.10.10.0/24 le 32
+ip prefix-list PREFIX_FILTER_CUST1 seq 10 deny 0.0.0.0/0 ge 8
+ip prefix-list PREFIX_FILTER_CUST2 seq 5 permit 60.10.10.0/24 le 32
+ip prefix-list PREFIX_FILTER_CUST2 seq 10 deny 0.0.0.0/0 ge 8
+...
+
+Step 2: Verify the route map applied to the external neighbors references the configured prefix list shown above.
+
+OS10# show running-configuration route-map
+!
+route-map PREFIX_FILTER_CUST1_MAP permit 50
+ match ip address prefix-list PREFIX_FILTER_CUST1
+!
+route-map PREFIX_FILTER_CUST2_MAP permit 60
+ match ip address prefix-list PREFIX_FILTER_CUST2
+! 
+
+Step 3: Verify the route map applied to the external neighbors references the appropriate route maps shown above.
+ 
+!
+router bgp 10
+ !
+ neighbor 50.1.1.1
+  !
+  address-family ipv4 unicast
+   route-map PREFIX_FILTER_CUST1_MAP in
+ neighbor 60.1.1.1
+  !
+  address-family ipv4 unicast
+   route-map PREFIX_FILTER_CUST2_MAP in
+
+If the router is not configured to reject inbound route advertisements from each CE router for prefixes that are not allocated to that customer, this is a finding.</check-content></check></Rule></Group><Group id="V-269853"><title>SRG-NET-000018-RTR-000005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269853r1051944_rule" weight="10.0" severity="medium"><version>OS10-RTR-000050</version><title>The Dell OS10 BGP router must be configured to reject outbound route advertisements for any prefixes that do not belong to any customers or the local autonomous system (AS).</title><description>&lt;VulnDiscussion&gt;Advertisement of routes by an autonomous system for networks that do not belong to any of its customers pulls traffic away from the authorized network. This causes a denial of service (DoS) on the network that allocated the block of addresses and may cause a DoS on the network that is inadvertently advertising it as the originator. It is also possible that a misconfigured or compromised router within the GIG IP core could redistribute IGP routes into BGP, thereby leaking internal routes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><fixtext fixref="F-73787r1051943_fix">Configure all eBGP routers to filter outbound route advertisements for prefixes that are not allocated to or belong to any customer or the local AS.
+
+Step 1: Configure a prefix list for each customer containing prefixes belonging to each.
+
+OS10(config)# ip prefix-list PREFIX_FILTER_A seq 5 permit 50.10.10.0/24 le 32
+OS10(config)# ip prefix-list PREFIX_FILTER_A seq 10 permit 60.10.10.0/24 le 32
+OS10(config)# ip prefix-list PREFIX_FILTER_A seq 15 deny 0.0.0.0/0 ge 8
+
+Step 2: Configure the route map referencing the configured prefix list.
+
+OS10(config)# route-map PREFIX_FILTER_A_MAP 50
+OS10(config-route-map)# match ip address prefix-list PREFIX_FILTER_A
+OS10(config-route-map)# exit
+
+Step 3: Apply the route-map outbound to each external BGP neighbor.
+
+OS10(config)# router bgp 10
+OS10(config-router-bgp-10)# neighbor 50.1.1.1
+OS10(config-router-neighbor)# address-family ipv4 unicast
+OS10(config-router-bgp-neighbor-af)# route-map PREFIX_FILTER_A_MAP out
+OS10(config-router-bgp-neighbor-af)# exit
+OS10(config-router-neighbor)# exit
+OS10(config-router-bgp-10)# exit</fixtext><fix id="F-73787r1051943_fix" /><check system="C-73886r1051942_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone. 
+
+Review the router configuration to verify that there is a filter defined to only advertise routes for prefixes that belong to any customers or the local AS.
+
+The prefix filter must be referenced outbound on the appropriate BGP neighbor statements.
+
+Step 1: Verify prefix lists have been configured for each customer containing prefixes that belong to that customer.
+
+OS10# show running-configuration prefix-list
+!
+...
+ip prefix-list PREFIX_FILTER_A seq 5 permit 50.10.10.0/24 le 32
+ip prefix-list PREFIX_FILTER_A seq 10 permit 60.10.10.0/24 le 32
+ip prefix-list PREFIX_FILTER_A seq 15 deny 0.0.0.0/0 ge 8
+...
+
+Step 2: Verify the route map applied to the external neighbors references the configured prefix list shown above.
+
+OS10# show running-configuration route-map
+!
+route-map PREFIX_FILTER_A_MAP permit 50
+ match ip address prefix-list PREFIX_FILTER_A
+
+Step 3: Verify the route map applied to the external neighbors references the appropriate route maps shown above.
+ 
+!
+router bgp 10
+ !
+ neighbor 50.1.1.1
+  !
+  address-family ipv4 unicast
+   route-map PREFIX_FILTER_A_MAP out
+
+If the router is not configured to reject outbound route advertisements that belong to any customers or the local AS, this is a finding.</check-content></check></Rule></Group><Group id="V-269854"><title>SRG-NET-000018-RTR-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269854r1051947_rule" weight="10.0" severity="low"><version>OS10-RTR-000060</version><title>The Dell OS10 BGP router must be configured to reject route advertisements from BGP peers that do not list their autonomous system (AS) number as the first AS in the AS_PATH attribute.</title><description>&lt;VulnDiscussion&gt;Verifying the path a route has traversed will ensure the IP core is not used as a transit network for unauthorized or possibly even internet traffic. All autonomous system boundary routers (ASBRs) must ensure updates received from eBGP peers list their AS number as the first AS in the AS_PATH attribute.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><fixtext fixref="F-73788r1051946_fix">Configure the BGP router to reject route advertisements from BGP peers that do not list their AS number as the first AS in the AS_PATH attribute.
+
+OS10# configure terminal
+OS10 (config)# router bgp 100
+OS10(config-router-bgp-100)# enforce-first-as
+OS10(config-router-bgp-100)# end</fixtext><fix id="F-73788r1051946_fix" /><check system="C-73887r1051945_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>By default, the Dell OS10 Router rejects route advertisements from BGP peers that do not list their AS number as the first AS in the AS_PATH attribute. Verify that this behavior has not been disable by reviewing the running-configuration of BGP: 
+
+OS10# show running-configuration bgp
+!
+router bgp 100
+no enforce-first-as
+…
+!
+
+Verify that "no enforce-first-as" has not been configured for BGP. If "no enforce-first-as" has been configured, this is a finding.</check-content></check></Rule></Group><Group id="V-269855"><title>SRG-NET-000018-RTR-000010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269855r1051950_rule" weight="10.0" severity="low"><version>OS10-RTR-000100</version><title>The Dell OS10 BGP router must be configured to reject route advertisements from CE routers with an originating autonomous system (AS) in the AS_PATH attribute that does not belong to that customer.</title><description>&lt;VulnDiscussion&gt;Verifying the path a route has traversed will ensure that the local AS is not used as a transit network for unauthorized traffic. To ensure that the local AS does not carry any prefixes that do not belong to any customers, all PE routers must be configured to reject routes with an originating AS other than that belonging to the customer.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001368</ident><fixtext fixref="F-73789r1051949_fix">Configure the router to reject updates from CE routers with an originating AS in the AS_PATH attribute that does not belong to that customer.
+
+Step 1: Configure a prefix list for each customer containing prefixes belonging to each.
+
+OS10(config)# ip as-path access-list AS_PATH_FILTER_CUST1 permit 10.*
+OS10(config)# ip as-path access-list AS_PATH_FILTER_CUST1 deny .*
+OS10(config)# ip as-path access-list AS_PATH_FILTER_CUST2 permit 200
+OS10(config)# ip as-path access-list AS_PATH_FILTER_CUST2 deny .*
+
+Step 2: Configure the route map referencing the configured prefix list.
+
+OS10(config)# route-map AS_PATH_FILTER_CUST1_MAP 50
+OS10(config-route-map)# match ip address prefix-list AS_PATH_FILTER_CUST1
+OS10(config-route-map)# exit
+OS10(config)# route-map AS_PATH_FILTER_CUST2_MAP 50
+OS10(config-route-map)# match ip address prefix-list AS_PATH_FILTER_CUST2
+OS10(config-route-map)# exit
+
+Step 3: Apply the route-map inbound to each external BGP neighbor.
+
+OS10(config)# router bgp 10
+OS10(config-router-bgp-10)# neighbor 50.1.1.1
+OS10(config-router-neighbor)# address-family ipv4 unicast
+OS10(config-router-bgp-neighbor-af)# route-map AS_PATH_FILTER_CUST1_MAP in
+OS10(config-router-bgp-neighbor-af)# exit
+OS10(config-router-neighbor)# exit
+OS10(config-router-bgp-10)# neighbor 60.1.1.1
+OS10(config-router-neighbor)# address-family ipv4 unicast
+OS10(config-router-bgp-neighbor-af)# route-map AS_PATH_FILTER_CUST2_MAP in
+OS10(config-router-bgp-neighbor-af)# exit
+OS10(config-router-neighbor)# exit
+OS10(config-router-bgp-10)# exit</fixtext><fix id="F-73789r1051949_fix" /><check system="C-73888r1051948_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone. 
+
+Review the router configuration to verify the router is configured to deny updates received from CE routers with an originating AS in the AS_PATH attribute that does not belong to that customer.
+
+Step 1: Review router configuration and verify that there is an as-path access-list statement defined to only accept routes from a CE router whose AS did not originate the route. 
+
+OS10# show running-configuration as-path
+!
+...
+ip as-path access-list AS_PATH_FILTER_CUST1 permit 10.*
+ip as-path access-list AS_PATH_FILTER_CUST1 deny .*
+ip as-path access-list AS_PATH_FILTER_CUST2 permit 200
+ip as-path access-list AS_PATH_FILTER_CUST2 deny .*
+...
+
+Step 2: Verify the route map applied to the external neighbors references the configured as-path access list shown above.
+
+OS10# show running-configuration route-map
+!
+route-map AS_PATH_FILTER_CUST1_MAP permit 50
+match ip address prefix-list AS_PATH_FILTER_CUST1
+!
+route-map AS_PATH_FILTER_CUST2_MAP permit 60
+match ip address prefix-list AS_PATH_FILTER_CUST2
+! 
+
+Step 3: Verify the route map applied to the external neighbors references the appropriate route maps shown above.
+
+!
+router bgp 10
+!
+neighbor 50.1.1.1
+  !
+  address-family ipv4 unicast
+   route-map AS_PATH_FILTER_CUST1_MAP in
+neighbor 60.1.1.1
+  !
+  address-family ipv4 unicast
+   route-map AS_PATH_FILTER_CUST2_MAP in
+
+
+If the router is not configured to reject updates from CE routers with an originating AS in the AS_PATH attribute that does not belong to that customer, this is a finding.</check-content></check></Rule></Group><Group id="V-269857"><title>SRG-NET-000019-RTR-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269857r1051956_rule" weight="10.0" severity="medium"><version>OS10-RTR-000130</version><title>The Dell OS10 multicast router must be configured to disable Protocol Independent Multicast (PIM) on all interfaces that are not required to support multicast routing.</title><description>&lt;VulnDiscussion&gt;If multicast traffic is forwarded beyond the intended boundary, it is possible that it can be intercepted by unauthorized or unintended personnel. Limiting where, within the network, a given multicast group's data is permitted to flow is an important first step in improving multicast security. 
+
+A scope zone is an instance of a connected region of a given scope. Zones of the same scope cannot overlap while zones of a smaller scope will fit completely within a zone of a larger scope. For example, Admin-local scope is smaller than Site-local scope, so the administratively configured boundary fits within the bounds of a site. According to RFC 4007 IPv6 Scoped Address Architecture (section 5), scope zones are also required to be "convex from a routing perspective"; that is, packets routed within a zone must not pass through any links that are outside of the zone. This requirement forces each zone to be one contiguous island rather than a series of separate islands. 
+
+As stated in the DOD IPv6 IA Guidance for MO3, "One should be able to identify all interfaces of a zone by drawing a closed loop on their network diagram, engulfing some routers and passing through some routers to include only some of their interfaces." Therefore, it is imperative that the network engineers have documented their multicast topology and thereby knows which interfaces are enabled for multicast. Once this is done, the zones can be scoped as required.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-73791r1051955_fix">Disable support for PIM on interfaces that are not required to support it.
+
+interface vlan100
+ no ip pim sparse-mode</fixtext><fix id="F-73791r1051955_fix" /><check system="C-73890r1051954_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>If IPv4 or IPv6 multicast routing is enabled, verify all interfaces enabled for PIM are documented in the network's multicast topology diagram.
+
+Review the router configuration to determine if multicast routing is enabled and which interfaces are enabled for PIM.
+
+!
+ip multicast-routing
+
+!
+interface vlan100
+ no shutdown
+ ip pim sparse-mode
+
+If an interface is not required to support multicast routing and it is enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-269858"><title>SRG-NET-000019-RTR-000004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269858r1051959_rule" weight="10.0" severity="medium"><version>OS10-RTR-000140</version><title>The Dell OS10 multicast router must be configured to bind a Protocol Independent Multicast (PIM) neighbor filter to interfaces that have PIM enabled.</title><description>&lt;VulnDiscussion&gt;PIM is a routing protocol used to build multicast distribution trees for forwarding multicast traffic across the network infrastructure. PIM traffic must be limited to only known PIM neighbors by configuring and binding a PIM neighbor filter to those interfaces that have PIM enabled. If a PIM neighbor filter is not applied to those interfaces that have PIM enabled, unauthorized routers can join the PIM domain, discover and use the rendezvous points, and also advertise their rendezvous points into the domain. This can result in a denial of service by traffic flooding or result in the unauthorized transfer of data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-73792r1051958_fix">This requirement is not applicable for the DODIN Backbone.
+
+Configure neighbor filters to only accept PIM control plane traffic from documented PIM neighbors. Bind neighbor filters to all PIM enabled interfaces.
+
+Step 1: Configure an ACL that only permits documented neighbors.
+
+OS10(config)# ip access-list PIM_NBR_FILTER
+OS10(config-ipv4-acl)# permit ip 10.10.10.2/32 any
+
+Step 2: Apply the ACL to the PIM interfaces.
+
+OS10(config)# interface vlan 100
+OS10(conf-if-vl-100)# ip pim neighbor-filter PIM_NBR_FILTER</fixtext><fix id="F-73792r1051958_fix" /><check system="C-73891r1051957_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone.
+
+Review the multicast topology diagram and determine if router interfaces are enabled for IPv4 or IPv6 multicast routing.
+
+If the router is enabled for multicast routing, verify all interfaces enabled for PIM have a neighbor filter bound to the interface. The neighbor filter must only accept PIM control plane traffic from the documented PIM neighbors.
+
+Step 1: Verify that a PIM neighbor filter has been configured.
+
+!
+ip access-list PIM_NBR_FILTER
+ seq 10 permit ip 10.10.10.2/32 any
+ 
+Step 2: Verify all interfaces enabled for PIM have the neighbor filter bound to the interface.
+
+!
+interface vlan100
+ no shutdown
+ ip pim sparse-mode
+ ip pim neighbor-filter PIM_NBR_FILTER
+
+If PIM neighbor filters are not bound to all interfaces that have PIM enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-269859"><title>SRG-NET-000019-RTR-000007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269859r1051962_rule" weight="10.0" severity="low"><version>OS10-RTR-000160</version><title>The Dell OS10 Router must be configured to have all inactive interfaces disabled.</title><description>&lt;VulnDiscussion&gt;An inactive interface is rarely monitored or controlled and may expose a network to an undetected attack on that interface. Unauthorized personnel with access to the communication facility could gain access to a router by connecting to a configured interface that is not in use.
+
+If an interface is no longer used, the configuration must be deleted and the interface disabled. For subinterfaces, delete subinterfaces that are on inactive interfaces and delete subinterfaces that are themselves inactive. If the subinterface is no longer necessary for authorized communications, it must be deleted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-73793r1051961_fix">Disable all inactive interfaces on the router as shown in the example below.
+
+OS10(config)# default interface ethernet 1/1/6
+OS10(config)# interface ethernet 1/1/6
+OS10(conf-if-eth1/1/6)# no switchport
+OS10(conf-if-eth1/1/6)# shutdown</fixtext><fix id="F-73793r1051961_fix" /><check system="C-73892r1051960_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to verify that inactive interfaces have been disabled as shown below.
+
+!
+interface ethernet1/1/6
+ shutdown
+ no switchport
+!
+interface ethernet1/1/7
+ shutdown
+ no switchport
+
+If an interface is not being used but is configured or enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-269861"><title>SRG-NET-000019-RTR-000009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269861r1052431_rule" weight="10.0" severity="high"><version>OS10-RTR-000180</version><title>The perimeter router must be configured to not be a Border Gateway Protocol (BGP) peer to an alternate gateway service provider.</title><description>&lt;VulnDiscussion&gt;ISPs use BGP to share route information with other autonomous systems (i.e., other ISPs and corporate networks). If the perimeter router was configured to BGP peer with an ISP, NIPRnet routes could be advertised to the ISP; thereby creating a backdoor connection from the internet to the NIPRnet.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-73795r1051967_fix">This requirement is not applicable for the DODIN Backbone.
+
+Configure the router such that there are no BGP neighbors configured to the remote AS that belongs to the alternate gateway service provider.
+
+OS10(config)# router bgp 10
+OS10(config-router-bgp-10)# no neighbor 120.100.5.2</fixtext><fix id="F-73795r1051967_fix" /><check system="C-73894r1052431_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone.
+
+Review the configuration of the router connecting to the alternate gateway.
+
+Verify there are no BGP neighbors configured to the remote AS that belongs to the alternate gateway service provider.
+
+OS10# show running-configuration bgp
+!
+router bgp 10
+ !
+ neighbor 50.1.1.1
+  !
+  address-family ipv4 unicast
+  ...
+ !
+ neighbor 120.100.5.2
+  !
+  address-family ipv6 unicast
+  ...
+ !
+ ...
+ 
+If there are BGP neighbors connecting the remote AS of the alternate gateway service provider, this is a finding.</check-content></check></Rule></Group><Group id="V-269863"><title>SRG-NET-000019-RTR-000011</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269863r1052433_rule" weight="10.0" severity="medium"><version>OS10-RTR-000200</version><title>The Dell OS10 out-of-band management (OOBM) gateway router must be configured to have separate Interior Gateway Protocol (IGP) instances for the managed network and management network.</title><description>&lt;VulnDiscussion&gt;If the gateway router is not a dedicated device for the OOBM network, implementation of several safeguards for containment of management and production traffic boundaries must occur. Since the managed and management network are separate routing domains, configuration of separate IGP routing instances is critical on the router to segregate traffic from each network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-73797r1052433_fix">Configure the router to enforce that IGP instances configured on the OOBM gateway router peer only with their own routing domain.
+
+OS10(config)# ip vrf OOBM
+OS10(conf-vrf)# exit
+
+OS10(config)# ip vrf PROD
+OS10(conf-vrf)# exit
+
+OS10(config)# router ospf 1 vrf OOBM
+OS10(config-router-ospf-1)# router-id 77.0.0.10
+OS10(config-router-ospf-1)# exit
+
+OS10(config)# router ospf 2 vrf PROD
+OS10(config-router-ospf-2)# router-id 88.0.0.88
+OS10(config-router-ospf-2)# exit</fixtext><fix id="F-73797r1052433_fix" /><check system="C-73896r1052432_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone.
+
+Verify the OOBM interface is an adjacency in the IGP routing domain for the management network. 
+
+Verify the IGP instance used for the management network is configured in a separate VRF from that used for the managed networks.
+
+!
+router ospf 1 vrf OOBM
+ router-id 77.0.0.10
+ ...
+! 
+router ospf 2 vrf PROD
+ router-id 88.0.0.88
+ ...
+! 
+
+If the router does not enforce that IGP instances configured on the OOBM gateway router peer only with their own routing domain, this is a finding.</check-content></check></Rule></Group><Group id="V-269864"><title>SRG-NET-000019-RTR-000012</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269864r1051977_rule" weight="10.0" severity="medium"><version>OS10-RTR-000210</version><title>The Dell OS10 out-of-band management (OOBM) gateway router must be configured to not redistribute routes between the management network routing domain and the managed network routing domain.</title><description>&lt;VulnDiscussion&gt;If the gateway router is not a dedicated device for the OOBM network, several safeguards must be implemented for containment of management and production traffic boundaries; otherwise, it is possible that management traffic will not be separated from production traffic.
+
+Since the managed network and the management network are separate routing domains, separate Interior Gateway Protocol (IGP) routing instances must be configured on the router, one for the managed network and one for the OOBM network. In addition, the routes from the two domains must not be redistributed to each other.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-73798r1051976_fix">This requirement is not applicable for the DODIN Backbone.
+
+Configure the IGP instance used for the managed network to prohibit redistribution of routes into the IGP instance used for the management network, and vice versa.
+
+Delete any inappropriate route redistribution commands using the "no redistribute" command.
+
+OS10(config)# router ospf 10 vrf OOBM
+OS10(config-router-ospf-10)# no redistribute bgp 4 route-map dell4</fixtext><fix id="F-73798r1051976_fix" /><check system="C-73897r1051975_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone.
+
+Verify the IGP instance used for the managed network does not redistribute routes into the IGP instance used for the management network, and vice versa.
+
+Examine the configuration to verify that routes configured to be redistributed into the management network do not originate in a managed network, and vice versa.
+
+!
+router ospf 10 vrf OOBM
+ redistribute bgp 4 route-map dell4
+
+If the IGP instance used for the managed network redistributes routes into the IGP instance used for the management network, or vice versa, this is a finding.</check-content></check></Rule></Group><Group id="V-269865"><title>SRG-NET-000019-RTR-000013</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269865r1051980_rule" weight="10.0" severity="low"><version>OS10-RTR-000220</version><title>The Dell OS10 multicast Rendezvous Point (RP) router must be configured to filter Protocol Independent Multicast (PIM) Register messages received from the Designated Router (DR) for any undesirable multicast groups and sources.</title><description>&lt;VulnDiscussion&gt;Real-time multicast traffic can entail multiple large flows of data. An attacker can flood a network segment with multicast packets, over-using the available bandwidth and thereby creating a denial-of-service (DoS) condition. Hence, it is imperative that register messages are accepted only for authorized multicast groups and sources.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-73799r1051979_fix">Configure the RP router to filter PIM register messages received from a multicast DR for any undesirable multicast groups or sources.
+
+OS10# configure terminal
+OS10(config)#
+OS10(config)#
+OS10(config)# ip access-list PIM_REGFILTER
+OS10(config-ipv4-acl)# permit ip 10.10.10.2/32 any
+OS10(config-ipv4-acl)# exit
+OS10(config)#
+OS10(config)# ip pim register-filter PIM_REGFILTER</fixtext><fix id="F-73799r1051979_fix" /><check system="C-73898r1051978_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Verify the RP router is configured to filter PIM register messages. 
+
+!
+ip access-list PIM_REGFILTER
+seq 10 permit ip 10.10.10.2/32 any
+!
+
+!
+ip pim register-filter PIM_REGFILTER
+!
+
+If the RP router peering with PIM-SM routers is not configured with a PIM import policy to block registration messages for any undesirable multicast groups and sources, this is a finding.</check-content></check></Rule></Group><Group id="V-269866"><title>SRG-NET-000019-RTR-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269866r1051983_rule" weight="10.0" severity="low"><version>OS10-RTR-000230</version><title>The Dell OS10 multicast Rendezvous Point (RP) router must be configured to filter Protocol Independent Multicast (PIM) Join messages received from the Designated Router (DR) for any undesirable multicast groups.</title><description>&lt;VulnDiscussion&gt;Real-time multicast traffic can entail multiple large flows of data. An attacker can flood a network segment with multicast packets, over-using the available bandwidth and thereby creating a denial-of-service (DoS) condition. Hence, it is imperative that join messages are only accepted for authorized multicast groups.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001414</ident><fixtext fixref="F-73800r1051982_fix">Configure the RP to filter PIM join messages for any undesirable multicast groups.
+
+Step 1: Configure an ACL that identifies which groups are allowed to join.
+
+OS10(config)# ip access-list PIM_JOINFILTER
+OS10(config-ipv4-acl)# permit ip 10.10.10.0/24 226.1.1.0/24
+OS10(config-ipv4-acl)# permit ip any 225.1.1.0/24
+
+Step 2: Configure a PIM join filter on the PIM interfaces. 
+
+OS10(config)# interface ethernet 1/1/1
+OS10(conf-if-eth1/1/1)# ip pim join-filter PIM_JOINFILTER
+
+NOTES:
+
+* Dell Technologies recommends not using the IP PIM join-filter command on an interface between a source and the RP router. Using this command in this scenario could cause problems with the PIM-SM source registration process resulting in excessive traffic being sent to the CPU of both the RP and PIM DR of the source. Excessive traffic generates when the join process from the RP back to the source is blocked due to a new source group being permitted in the join-filter. This results in the new source becoming stuck in registering on the DR and the continuous generation of UDP-encapsulated registration messages between the DR and RP routers which are sent to the CPU.
+
+* Do not to configure a PIM join-filter on a source connected interface (IIF) on first hop router (FHR) node. Applying PIM join-filter with the rule, deny ip any any might block creation of the S,G entries.
+
+* When configuring a join filter, it applies for both incoming and outgoing joins. There is no option to specify in or out parameters while configuring a join filter.</fixtext><fix id="F-73800r1051982_fix" /><check system="C-73899r1051981_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Verify the RP router is configured to filter PIM join messages for any undesirable multicast groups. 
+
+!
+interface vlan100
+ no shutdown
+ ip pim sparse-mode
+ ip pim join-filter PIM_JOINFILTER
+
+!
+ip access-list PIM_JOINFILTER
+ seq 10 permit ip 10.10.10.0/24 226.1.1.0/24
+ seq 20 permit ip any 225.1.1.0/24
+
+If the RP is not configured to filter join messages received from the DR for any undesirable multicast groups, this is a finding.</check-content></check></Rule></Group><Group id="V-269867"><title>SRG-NET-000078-RTR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269867r1051986_rule" weight="10.0" severity="low"><version>OS10-RTR-000260</version><title>The Dell OS10 Router must be configured to log all packets that have been dropped.</title><description>&lt;VulnDiscussion&gt;Auditing and logging are key components of any security architecture. It is essential for security personnel to know what is being done or attempted to be done, and by whom, to compile an accurate risk assessment. Auditing the actions on network devices provides a means to recreate an attack or identify a configuration mistake on the device.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000134</ident><fixtext fixref="F-73801r1051985_fix">Configure the router to enable audit logging and to log all packets dropped by ACL rules.
+
+OS10(config)# logging audit enable
+
+OS10(config)# ip access-list FILTER_EXTERNAL_INGRESS
+OS10(config-ipv4-acl)# permit ...
+OS10(config-ipv4-acl)# permit ...
+OS10(config-ipv4-acl)# deny ip any any log</fixtext><fix id="F-73801r1051985_fix" /><check system="C-73900r1051984_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to verify that audit logging is enabled.
+
+!
+logging audit enable
+
+Review the router configuration to verify that all ACL rules that drop packets are configured to log the event.
+
+!
+ip access-list FILTER_EXTERNAL_INGRESS
+ seq 10 permit ...
+ seq 20 permit ...
+ seq 30 permit ...
+ seq 40 deny ip any any log
+
+If audit logging is disabled or an ACL is not configured to log dropped packets, this is a finding.</check-content></check></Rule></Group><Group id="V-269868"><title>SRG-NET-000168-RTR-000077</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269868r1051989_rule" weight="10.0" severity="medium"><version>OS10-RTR-000290</version><title>The Dell OS10 Router must be configured to use encryption for routing protocol authentication.</title><description>&lt;VulnDiscussion&gt;A rogue router could send a fictitious routing update to convince a site's perimeter router to send traffic to an incorrect or even a rogue destination. This diverted traffic could be analyzed to learn confidential information about the site's network or used to disrupt the network's ability to communicate with other networks. This is known as a "traffic attraction attack" and is prevented by configuring neighbor router authentication for routing updates. However, using clear-text authentication provides little benefit since an attacker can intercept traffic and view the authentication key. This would allow the attacker to use the authentication key in an attack.
+
+This requirement applies to all IPv4 and IPv6 protocols that are used to exchange routing or packet forwarding information; this includes all Interior Gateway Protocols (such as OSPF, EIGRP, and IS-IS) and Exterior Gateway Protocols (such as BGP), MPLS-related protocols (such as LDP), and multicast-related protocols.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><fixtext fixref="F-73802r1051988_fix">Configure the router to use encryption for routing protocol authentication.
+
+OS10(config)# interface vlan 400
+OS10(conf-if-vl-400)# ipv6 ospf 10 area 0.0.0.1
+OS10(conf-if-vl-400)# ipv6 ospf authentication ipsec spi 4017 sha1 1234567890123456789012345678901234567890
+OS10(conf-if-vl-400)#
+OS10(conf-if-vl-400)# ip ospf 1 area 0.0.0.1
+OS10(conf-if-vl-400)# ip ospf message-digest-key 1 md5 1234567812345678
+OS10(conf-if-vl-400)# exit</fixtext><fix id="F-73802r1051988_fix" /><check system="C-73901r1051987_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration.
+
+For every protocol that affects the routing or forwarding tables (where information is exchanged between neighbors), verify that neighbor router authentication is encrypting the authentication key.
+
+Verify the routing protocols are configured to use encryption 
+
+!
+interface vlan400
+ ipv6 ospf 10 area 0.0.0.1
+ ipv6 ospf authentication ipsec spi 4017 sha1 1234567890123456789012345678901234567890
+ ...
+ ip ospf 1 area 0.0.0.1
+ ip ospf message-digest-key 1 md5 1234567812345678
+
+If authentication is not encrypting the authentication key, this is a finding.</check-content></check></Rule></Group><Group id="V-269869"><title>SRG-NET-000168-RTR-000078</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269869r1051992_rule" weight="10.0" severity="medium"><version>OS10-RTR-000300</version><title>The Dell OS10 Router must be configured to authenticate all routing protocol messages using NIST-validated FIPS 198-1 message authentication code algorithm.</title><description>&lt;VulnDiscussion&gt;A rogue router could send a fictitious routing update to convince a site's perimeter router to send traffic to an incorrect or even a rogue destination. This diverted traffic could be analyzed to learn confidential information about the site's network or used to disrupt the network's ability to communicate with other networks. This is known as a "traffic attraction attack" and is prevented by configuring neighbor router authentication for routing updates. However, using clear-text authentication provides little benefit since an attacker can intercept traffic and view the authentication key. This would allow the attacker to use the authentication key in an attack.
+
+Since MD5 is vulnerable to "birthday" attacks and may be compromised, routing protocol authentication must use FIPS 198-1 validated algorithms and modules to encrypt the authentication key. This requirement applies to all IPv4 and IPv6 protocols that are used to exchange routing or packet forwarding information; this includes all Interior Gateway Protocols (such as OSPF, EIGRP, and IS-IS) and Exterior Gateway Protocols (such as BGP), MPLS-related protocols (such as LDP), and multicast-related protocols.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><fixtext fixref="F-73803r1051991_fix">Configure routing protocol authentication to use a NIST-validated FIPS 198-1 message authentication code algorithm.
+
+OS10(config)# interface vlan 400
+OS10(conf-if-vl-400)# ipv6 ospf 10 area 0.0.0.1
+OS10(conf-if-vl-400)# ipv6 ospf authentication ipsec spi 4017 sha1 1234567890123456789012345678901234567890
+OS10(conf-if-vl-400)# exit</fixtext><fix id="F-73803r1051991_fix" /><check system="C-73902r1051990_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to verify it is using a NIST-validated FIPS 198-1 message authentication code algorithm to authenticate routing protocol messages.
+
+!
+interface vlan400
+ ipv6 ospf 10 area 0.0.0.1
+ ipv6 ospf authentication ipsec spi 4017 sha1 1234567890123456789012345678901234567890
+ 
+If a NIST-validated FIPS 198-1 message authentication code algorithm is not being used to authenticate routing protocol messages, this is a finding.</check-content></check></Rule></Group><Group id="V-269870"><title>SRG-NET-000193-RTR-000112</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269870r1052434_rule" weight="10.0" severity="medium"><version>OS10-RTR-000340</version><title>The PE router must be configured to enforce a Quality-of-Service (QoS) policy to limit the effects of packet flooding denial-of-service (DoS) attacks.</title><description>&lt;VulnDiscussion&gt;DoS is a condition when a resource is not available for legitimate users. Packet flooding distributed denial-of-service (DDoS) attacks are referred to as volumetric attacks and have the objective of overloading a network or circuit to deny or seriously degrade performance, which denies access to the services that normally traverse the network or circuit. Volumetric attacks have become relatively easy to launch using readily available tools such as Low Orbit Ion Cannon or botnets. 
+
+Measures to mitigate the effects of a successful volumetric attack must be taken to ensure that sufficient capacity is available for mission-critical traffic. Managing capacity may include, for example, establishing selected network usage priorities or quotas and enforcing them using rate limiting, QoS, or other resource reservation control methods. These measures may also mitigate the effects of sudden decreases in network capacity that are the result of accidental or intentional physical damage to telecommunications facilities (such as cable cuts or weather-related outages).
+
+Satisfies: SRG-NET-000193-RTR-000112, SRG-NET-000193-RTR-000113, SRG-NET-000193-RTR-000114&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001095</ident><fixtext fixref="F-73804r1051994_fix">Implement a mechanism for traffic prioritization and bandwidth reservation. This mechanism must enforce the traffic priorities specified by the Combatant Commands/Services/Agencies.
+
+Step 1: Configure QoS class-maps to match on DSCP values as shown in the configuration example below:
+
+OS10(config)# class-map type qos 6Q_BestEffort_dscp
+OS10(config-cmap-qos)# match ip-any dscp 0
+OS10(config-cmap-qos)# !
+OS10(config-cmap-qos)# class-map type qos 6Q_NetworkControl_dscp
+OS10(config-cmap-qos)# match ip-any dscp 48
+OS10(config-cmap-qos)# !
+OS10(config-cmap-qos)# class-map type qos 6Q_PreferData_dscp
+OS10(config-cmap-qos)# match ip-any dscp 16
+OS10(config-cmap-qos)# !
+OS10(config-cmap-qos)# class-map type qos 6Q_Scavenger_dscp
+OS10(config-cmap-qos)# match ip-any dscp 8
+OS10(config-cmap-qos)# !
+OS10(config-cmap-qos)# class-map type qos 6Q_Video_dscp
+OS10(config-cmap-qos)# match ip-any dscp 38
+OS10(config-cmap-qos)# !
+OS10(config-cmap-qos)# class-map type qos 6Q_Voice_dscp
+OS10(config-cmap-qos)# match ip-any dscp 49
+OS10(config-cmap-qos)# !
+OS10(config-cmap-qos)# class-map type qos 6Q_Voice_dscp_15
+OS10(config-cmap-qos)# match ip-any dscp 15
+OS10(config-cmap-qos)# !
+OS10(config-cmap-qos)# exit
+OS10(config)#
+
+Step 2: Configure policy-maps to map traffic qos classes to qos-groups.
+
+OS10(config)# policy-map type qos 6Q_PolicyMapIn_dscp
+OS10(config-pmap-qos)# !
+OS10(config-pmap-qos)# class 6Q_Scavenger_dscp
+OS10(config-pmap-c-qos)# set qos-group 0
+OS10(config-pmap-c-qos)# !
+OS10(config-pmap-c-qos)# class 6Q_BestEffort_dscp
+OS10(config-pmap-c-qos)# set qos-group 1
+OS10(config-pmap-c-qos)# !
+OS10(config-pmap-c-qos)# class 6Q_PreferData_dscp
+OS10(config-pmap-c-qos)# set qos-group 2
+OS10(config-pmap-c-qos)# !
+OS10(config-pmap-c-qos)# class 6Q_Video_dscp
+OS10(config-pmap-c-qos)# set qos-group 3
+OS10(config-pmap-c-qos)# !
+OS10(config-pmap-c-qos)# class 6Q_Voice_dscp
+OS10(config-pmap-c-qos)# set qos-group 4
+OS10(config-pmap-c-qos)# !
+OS10(config-pmap-c-qos)# class 6Q_Voice_dscp_15
+OS10(config-pmap-c-qos)# set qos-group 4
+OS10(config-pmap-c-qos)# set dscp 45
+OS10(config-pmap-c-qos)# !
+OS10(config-pmap-c-qos)# class 6Q_NetworkControl_dscp
+OS10(config-pmap-c-qos)# set qos-group 5
+OS10(config-pmap-c-qos)# !
+OS10(config-pmap-c-qos)# exit
+OS10(config-pmap-qos)# exit
+
+Step 3: Configure queuing class-maps as shown in the configuration example below:
+
+OS10(config)# class-map type queuing 6Q_Scavenger
+OS10(config-cmap-queuing)# match queue 0
+OS10(config-cmap-queuing)# !
+OS10(config-cmap-queuing)# class-map type queuing 6Q_BestEffort
+OS10(config-cmap-queuing)# match queue 1
+OS10(config-cmap-queuing)# !
+OS10(config-cmap-queuing)# class-map type queuing 6Q_PreferData
+OS10(config-cmap-queuing)# match queue 2
+OS10(config-cmap-queuing)# !
+OS10(config-cmap-queuing)# class-map type queuing 6Q_Video
+OS10(config-cmap-queuing)# match queue 3
+OS10(config-cmap-queuing)# !
+OS10(config-cmap-queuing)# class-map type queuing 6Q_Voice
+OS10(config-cmap-queuing)# match queue 4
+OS10(config-cmap-queuing)# !
+OS10(config-cmap-queuing)# class-map type queuing 6Q_NetworkControl
+OS10(config-cmap-queuing)# match queue 5
+OS10(config-cmap-queuing)# !
+OS10(config-cmap-queuing)# exit
+OS10(config)#
+
+Step 4: Configure policy maps to preserve bandwidth for each queue.
+
+OS10(config-pmap-qos)#
+OS10(config-pmap-qos)# policy-map type queuing 6Q_PolicyMapOut_100G
+OS10(config-pmap-queuing)# !
+OS10(config-pmap-queuing)# class 6Q_Scavenger
+OS10(config-pmap-c-que)# bandwidth percent 10
+OS10(config-pmap-c-que)# shape min mbps 10000 max mbps 10000
+OS10(config-pmap-c-que)# !
+OS10(config-pmap-c-que)# class 6Q_BestEffort
+OS10(config-pmap-c-que)# bandwidth percent 20
+OS10(config-pmap-c-que)# !
+OS10(config-pmap-c-que)# class 6Q_NetworkControl
+OS10(config-pmap-c-que)# bandwidth percent 5
+OS10(config-pmap-c-que)# shape min mbps 5000 max mbps 5000
+OS10(config-pmap-c-que)# !
+OS10(config-pmap-c-que)# class 6Q_PreferData
+OS10(config-pmap-c-que)# bandwidth percent 30
+OS10(config-pmap-c-que)# shape min mbps 30000 max mbps 30000
+OS10(config-pmap-c-que)# !
+OS10(config-pmap-c-que)# class 6Q_Video
+OS10(config-pmap-c-que)# bandwidth percent 15
+OS10(config-pmap-c-que)# shape min mbps 15000 max mbps 15000
+OS10(config-pmap-c-que)# !
+OS10(config-pmap-c-que)# class 6Q_Voice
+OS10(config-pmap-c-que)# bandwidth percent 20
+OS10(config-pmap-c-que)# shape min mbps 20000 max mbps 20000
+OS10(config-pmap-c-que)# !
+
+Step 5: Apply the input and output service policy to all interfaces as shown in the configuration example below:
+
+OS10(config)# interface ethernet 1/1/2
+OS10(conf-if-eth1/1/2)# service-policy input type qos 6Q_PolicyMapIn_dscp
+OS10(conf-if-eth1/1/2)# service-policy output type queuing 6Q_PolicyMapOut_100G</fixtext><fix id="F-73804r1051994_fix" /><check system="C-73903r1052434_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration and interview the system administrator to verify that a mechanism for traffic prioritization and bandwidth reservation exists.
+
+Verify the class-maps are configured to match on DSCP, protocols, or access control lists (ACLs) that identify traffic types based on ports. 
+
+!
+class-map type qos 6Q_BestEffort_dscp
+ match ip-any dscp 0
+!
+class-map type qos 6Q_NetworkControl_dscp
+ match ip-any dscp 48
+!
+class-map type qos 6Q_PreferData_dscp
+ match ip-any dscp 16
+!
+class-map type qos 6Q_Scavenger_dscp
+ match ip-any dscp 8
+!
+class-map type qos 6Q_Video_dscp
+ match ip-any dscp 38
+!
+class-map type qos 6Q_Voice_dscp
+ match ip-any dscp 49
+!
+class-map type qos 6Q_Voice_dscp_15
+ match ip-any dscp 15
+!
+class-map type queuing 6Q_BestEffort
+ match queue 1
+!
+class-map type queuing 6Q_NetworkControl
+ match queue 5
+!
+class-map type queuing 6Q_PreferData
+ match queue 2
+!
+class-map type queuing 6Q_Scavenger
+ match queue 0
+!
+class-map type queuing 6Q_Unused_6
+ match queue 6
+!
+class-map type queuing 6Q_Unused_7
+ match queue 7
+!
+class-map type queuing 6Q_Video
+ match queue 3
+!
+class-map type queuing 6Q_Voice
+ match queue 4
+!
+
+policy-map type qos 6Q_PolicyMapIn_dscp
+ !
+ class 6Q_Scavenger_dscp
+  set qos-group 0
+ !
+ class 6Q_BestEffort_dscp
+  set qos-group 1
+ !
+ class 6Q_PreferData_dscp
+  set qos-group 2
+ !
+ class 6Q_Video_dscp
+  set qos-group 3
+ !
+ class 6Q_Voice_dscp
+  set qos-group 4
+ !
+ class 6Q_Voice_dscp_15
+  set qos-group 4
+  set dscp 45
+ !
+ class 6Q_NetworkControl_dscp
+  set qos-group 5
+!
+policy-map type queuing 6Q_PolicyMapOut_100G
+ !
+ class 6Q_Scavenger
+  bandwidth percent 10
+  shape min mbps 10000 max mbps 10000
+ !
+ class 6Q_BestEffort
+  bandwidth percent 18
+ !
+ class 6Q_NetworkControl
+  bandwidth percent 5
+  shape min mbps 5000 max mbps 5000
+ !
+ class 6Q_PreferData
+  bandwidth percent 30
+  shape min mbps 30000 max mbps 30000
+ !
+ class 6Q_Unused_6
+  bandwidth percent 1
+ !
+ class 6Q_Unused_7
+  bandwidth percent 1
+ !
+ class 6Q_Video
+  bandwidth percent 15
+  shape min mbps 15000 max mbps 15000
+ !
+ class 6Q_Voice
+  bandwidth percent 20
+  shape min mbps 20000 max mbps 20000
+!
+
+Verify the policy-map is configured to set DSCP values for the defined class-maps in accordance with the QoS GIG Technical Profile. 
+
+policy-map type qos 6Q_PolicyMapIn_dscp
+ !
+ class 6Q_Scavenger_dscp
+  set qos-group 0
+ !
+ class 6Q_BestEffort_dscp
+  set qos-group 1
+ !
+ class 6Q_PreferData_dscp
+  set qos-group 2
+ !
+ class 6Q_Video_dscp
+  set qos-group 3
+ !
+ class 6Q_Voice_dscp
+  set qos-group 4
+ !
+ class 6Q_Voice_dscp_15
+  set qos-group 4
+  set dscp 45
+ !
+ class 6Q_NetworkControl_dscp
+  set qos-group 5
+!
+policy-map type queuing 6Q_PolicyMapOut_100G
+ !
+ class 6Q_Scavenger
+  bandwidth percent 10
+  shape min mbps 10000 max mbps 10000
+ !
+ class 6Q_BestEffort
+  bandwidth percent 18
+ !
+ class 6Q_NetworkControl
+  bandwidth percent 5
+  shape min mbps 5000 max mbps 5000
+ !
+ class 6Q_PreferData
+  bandwidth percent 30
+  shape min mbps 30000 max mbps 30000
+ !
+ class 6Q_Unused_6
+  bandwidth percent 1
+ !
+ class 6Q_Unused_7
+  bandwidth percent 1
+ !
+ class 6Q_Video
+  bandwidth percent 15
+  shape min mbps 15000 max mbps 15000
+ !
+ class 6Q_Voice
+  bandwidth percent 20
+  shape min mbps 20000 max mbps 20000
+!
+
+Verify that input and output service policies are bound to the appropriate interfaces. 
+
+!
+interface ethernet1/1/2
+ service-policy input type qos 6Q_PolicyMapIn_dscp
+ service-policy output type queuing 6Q_PolicyMapOut_100G
+!
+
+Note: The GTP QOS document (GTP-0009) can be downloaded via the following link:
+https://intellipedia.intelink.gov/wiki/Portal:GIG_Technical_Guidance/GTG_GTPs/GTP_Development_List
+
+
+If the router is not configured to implement a QoS policy in accordance with the QoS GIG Technical Profile, this is a finding.</check-content></check></Rule></Group><Group id="V-269872"><title>SRG-NET-000205-RTR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269872r1052001_rule" weight="10.0" severity="high"><version>OS10-RTR-000380</version><title>The Dell OS10 Router must be configured to restrict traffic destined to itself.</title><description>&lt;VulnDiscussion&gt;The route processor handles traffic destined to the router—the key component used to build forwarding paths and is also instrumental with all network management functions. Hence, any disruption or denial-of-service (DoS) attack to the route processor can result in mission critical network outages.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001097</ident><fixtext fixref="F-73806r1052000_fix">Configure the router with receive path filters to restrict traffic destined to the router.
+
+Step 1: Configure inbound ACLs to restrict which packets should be allowed to reach to the control plane from the OOBM management port and from the front panel data ports. 
+
+OS10(config)# ip access-list MGMT_TRAFFIC_FROM_OOBM
+OS10(config-ipv4-acl)# permit ...
+OS10(config-ipv4-acl)# permit ...
+OS10(config-ipv4-acl)# deny ... log
+OS10(config-ipv4-acl)# deny ... log
+
+OS10(config)# ip access-list MGMT_TRAFFIC_FROM_DATA
+OS10(config-ipv4-acl)# permit ...
+OS10(config-ipv4-acl)# permit ...
+OS10(config-ipv4-acl)# deny ... log
+OS10(config-ipv4-acl)# deny ... log
+
+Step 2: Apply the ACLs to the ingress of the control-plane.
+
+OS10(config)# control-plane
+OS10(config-control-plane)# ip access-group MGMT_TRAFFIC_FROM_OOBM mgmt in
+OS10(config-control-plane)# ip access-group MGMT_TRAFFIC_FROM_DATA data in</fixtext><fix id="F-73806r1052000_fix" /><check system="C-73905r1051999_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the access control list (ACL) or filter for the router receive path and verify that it will only process specific management plane and control plane traffic from specific sources.
+
+Step 1: Examine the interface configuration for the control plane ACLs applied to the traffic destined to the router control plane from the OOBM management port or front panel data ports.
+
+!
+control-plane
+ ip access-group MGMT_TRAFFIC_FROM_OOBM mgmt in
+ ip access-group MGMT_TRAFFIC_FROM_DATA data in
+
+Step 2: Review the control plane ACLs verify traffic is limited appropriately.
+
+!
+ip access-list MGMT_TRAFFIC_FROM_OOBM
+ seq 10 permit ...
+ seq 20 permit ...
+ seq 30 deny ... log
+ seq 40 deny ... log
+
+!
+ip access-list MGMT_TRAFFIC_FROM_DATA
+ seq 10 permit ...
+ seq 20 permit ...
+ seq 30 deny ... log
+ seq 40 deny ... log
+
+If the router is not configured with a receive-path filter to restrict traffic destined to itself, this is a finding.</check-content></check></Rule></Group><Group id="V-269873"><title>SRG-NET-000205-RTR-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269873r1052004_rule" weight="10.0" severity="medium"><version>OS10-RTR-000390</version><title>The Dell OS10 Router must be configured to drop all fragmented Internet Control Message Protocol (ICMP) packets destined to itself.</title><description>&lt;VulnDiscussion&gt;Fragmented ICMP packets can be generated by hackers for denial-of-service (DoS) attacks such as Ping O' Death and Teardrop. It is imperative that all fragmented ICMP packets are dropped.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001097</ident><fixtext fixref="F-73807r1052003_fix">Ensure all routers have their receive path filter configured to drop all fragmented ICMP packets.
+
+Step 1: Configure a control-plane ACL that drops fragmented ICMP packets.
+
+OS10(config)# ip access-list FILTER_FRAGMENTED_ICMP
+OS10(config-ipv4-acl)# seq 10 deny icmp any any log fragment
+OS10(config-ipv4-acl)# seq 20 permit ip any any
+
+Step 2: Apply the ACL above to the control-plane.
+
+OS10(config)# control-plane
+OS10(config-control-plane)# ip access-group FILTER_FRAGMENTED_ICMP data in</fixtext><fix id="F-73807r1052003_fix" /><check system="C-73906r1052002_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the access control list (ACL) for the control plane receive path.
+
+Verify that it will drop all fragmented ICMP packets destined to itself.
+
+Step 1: Review the router configuration to verify that an ACL is configured that drops fragmented ICMP packets.
+
+!
+ip access-list FILTER_FRAGMENTED_ICMP
+ seq 10 deny icmp any any log fragment
+ ...
+ seq 20 permit ip any any
+
+Step 2: Examine the configuration to verify the ACL above is applied to packets destined to the control plane.
+
+!
+control-plane
+ ip access-group FILTER_FRAGMENTED_ICMP data in
+
+Note: As shown above, OS10 can filter fragmented packets that arrive on the front panel data ports. OS10 does not support filtering fragmented packets arriving on the OOBM management ethernet interface.
+  
+If the router is not configured with a receive-path filter to drop all fragmented ICMP packets, this is a finding.</check-content></check></Rule></Group><Group id="V-269877"><title>SRG-NET-000205-RTR-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269877r1052016_rule" weight="10.0" severity="medium"><version>OS10-RTR-000430</version><title>The Dell OS10 BGP router must be configured to reject outbound route advertisements for any prefixes belonging to the IP core.</title><description>&lt;VulnDiscussion&gt;Outbound route advertisements belonging to the core can result in traffic either looping or being black holed, or at a minimum, using a nonoptimized path.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001097</ident><fixtext fixref="F-73811r1052015_fix">Configure all eBGP routers to filter outbound route advertisements belonging to the IP core.
+
+Step 1: Add to the prefix filter list those prefixes belonging to the IP core.
+
+OS10(config)# ip prefix-list CORE_PREFIX_FILTER seq  5 deny 20.0.0.0/24 ge 8 le 32
+OS10(config)# ip prefix-list CORE_PREFIX_FILTER seq 10 deny 30.0.0.0/24 ge 8 le 32
+OS10(config)# ip prefix-list CORE_PREFIX_FILTER seq 15 permit 0.0.0.0/0 ge 8
+
+Step 2: Configure the route map referencing the configured prefix list.
+
+OS10(config)# route-map CORE_PREFIX_FILTER_MAP 10
+OS10(config-route-map)# match ip address prefix-list CORE_PREFIX_FILTER
+OS10(config-route-map)# exit
+
+Step 3: Apply the route-map inbound to each external BGP neighbor.
+
+OS10(config)# router bgp 10
+OS10(config-router-bgp-10)# neighbor 40.1.1.10
+OS10(config-router-neighbor)# address-family ipv4 unicast
+OS10(config-router-bgp-neighbor-af)# route-map CORE_PREFIX_FILTER_MAP out
+OS10(config-router-bgp-neighbor-af)# exit
+OS10(config-router-neighbor)# exit
+OS10(config-router-bgp-10)# template ebgp
+OS10(config-router-template)# address-family ipv4 unicast
+OS10(config-router-bgp-template-af)# route-map CORE_PREFIX_FILTER_MAP out
+OS10(config-router-bgp-template-af)# exit
+OS10(config-router-template)# exit
+OS10(config-router-bgp-10)# exit</fixtext><fix id="F-73811r1052015_fix" /><check system="C-73910r1052014_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to verify that there is a filter defined to block route advertisements for prefixes that belong to the IP core. 
+
+The prefix filter must be referenced outbound on the appropriate BGP neighbor statements.
+
+Step 1: Verify a prefix list has been configured containing the current IP core prefixes as shown in the example below.
+
+ip prefix-list CORE_PREFIX_FILTER seq  5 deny 20.0.0.0/24 ge 8 le 32
+ip prefix-list CORE_PREFIX_FILTER seq 10 deny 30.0.0.0/24 ge 8 le 32
+ip prefix-list CORE_PREFIX_FILTER seq 15 permit 0.0.0.0/0 ge 8
+
+Step 2: Verify the route map applied to the external neighbors references the configured prefix list shown above.
+
+!
+route-map CORE_PREFIX_FILTER_MAP permit 10
+ match ip address prefix-list CORE_PREFIX_FILTER
+ 
+!
+router bgp 10
+ !
+ neighbor 40.1.1.10
+  !
+  address-family ipv4 unicast
+   route-map CORE_PREFIX_FILTER_MAP OUT
+
+If the router is not configured to reject outbound route advertisements that belong to the IP core, this is a finding.</check-content></check></Rule></Group><Group id="V-269879"><title>SRG-NET-000205-RTR-000010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269879r1052022_rule" weight="10.0" severity="medium"><version>OS10-RTR-000470</version><title>The Dell OS10 out-of-band management (OOBM) gateway router must be configured to forward only authorized management traffic to the Network Operations Center (NOC).</title><description>&lt;VulnDiscussion&gt;The OOBM network is an IP network used exclusively for the transport of OAM&amp;P data from the network being managed to the OSS components located at the NOC. Its design provides connectivity to each managed network device, enabling network management traffic to flow between the managed network elements and the NOC. This allows the use of paths separate from those used by the managed network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001097</ident><fixtext fixref="F-73813r1052021_fix">This requirement is not applicable for the DODIN Backbone.
+
+Configure ACLs based on port, source IP address, and destination IP address to permit only authorized management traffic through the OOBM interfaces used for forwarding management data.
+
+Step 1: Configure named ACL with appropriate filter rules.
+
+OS10(config)# ip access-list MGMT_TRAFFIC_TO_NOC
+OS10(config-ipv4-acl)# permit tcp 10.10.0.0/16 10.10.0.0/16 eq 22
+OS10(config-ipv4-acl)# permit udp 10.10.0.0/16 10.10.0.0/16 range 161 162
+OS10(config-ipv4-acl)# permit udp 10.10.0.0/16 10.10.0.0/16 range 1812 1813
+OS10(config-ipv4-acl)# permit tcp 10.10.0.0/16 10.10.0.0/16 range 1812 1813
+OS10(config-ipv4-acl)# permit udp 10.10.0.0/16 10.10.0.0/16 eq 123
+OS10(config-ipv4-acl)# permit udp 10.10.0.0/16 10.10.0.0/16 eq 514
+OS10(config-ipv4-acl)# permit tcp 10.10.0.0/16 10.10.0.0/16 eq 6514
+OS10(config-ipv4-acl)# deny ip any any log
+
+Step 2: Apply the ACLs on the appropriate external and internal interfaces.
+
+OS10(config-ipv4-acl)# interface ethernet1/1/1
+OS10(conf-if-eth1/1/4)# ip access-group MGMT_TRAFFIC_TO_NOC out</fixtext><fix id="F-73813r1052021_fix" /><check system="C-73912r1052020_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone.
+
+Review the network topology diagram to determine connectivity between the managed network and the NOC. 
+
+Review the OOBM gateway router configuration to validate the path that the management traffic traverses.
+
+Verify that only management traffic is forwarded through the OOBM interface.
+
+If traffic other than authorized management traffic is permitted through the OOBM interface, this is a finding.</check-content></check></Rule></Group><Group id="V-269880"><title>SRG-NET-000205-RTR-000011</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269880r1052242_rule" weight="10.0" severity="medium"><version>OS10-RTR-000480</version><title>The Dell OS10 out-of-band management (OOBM) gateway router must be configured to block any traffic destined to itself that is not sourced from the OOBM network or the NOC.</title><description>&lt;VulnDiscussion&gt;If the gateway router is not a dedicated device for the OOBM network, several safeguards must be implemented for containment of management and production traffic boundaries. It is imperative that hosts from the managed network are not able to access the OOBM gateway router.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001097</ident><fixtext fixref="F-73814r1052242_fix">This requirement is not applicable for the DODIN Backbone. If the OOBM gateway router is a dedicated device for the OOBM network, this requirement is not applicable. 
+
+Step 1: Configure an inbound ACL to bind to any OOBM interface connecting to the OOBM backbone which ensures that traffic destined to the OS10 OOBM router is only from the OOBM or NOC address space.
+
+OS10(config)# ip access-list MGMT_TRAFFIC_FROM_NOC
+OS10(config-ipv4-acl)# seq 10 permit ip 10.10.1.0/24 host 10.10.1.1
+OS10(config-ipv4-acl)# seq 20 permit ip 10.10.1.0/24 host 10.10.2.1
+OS10(config-ipv4-acl)# seq 30 deny ip any host 10.10.1.1 log
+OS10(config-ipv4-acl)# seq 40 deny ip any host 10.10.2.1 log
+OS10(config-ipv4-acl)# seq 50 permit ip 10.10.1.0/24 10.10.2.0/24
+OS10(config-ipv4-acl)# seq 60 deny ip any any log
+OS10(config-ipv4-acl)# exit
+
+Step 2: Configure an inbound ACL to bind to any OOBM LAN interfaces which ensures that traffic destined to the OS10 OOBM router is from the OOBM LAN address space.
+
+OS10(config)# ip access-list MGMT_TRAFFIC_FROM_OOBM_LAN
+OS10(config-ipv4-acl)# seq 10 permit ip 10.10.2.0/24 host 10.10.1.1
+OS10(config-ipv4-acl)# seq 20 permit ip 10.10.2.0/24 host 10.10.2.1
+OS10(config-ipv4-acl)# seq 30 deny ip any host 10.10.1.1 log
+OS10(config-ipv4-acl)# seq 40 deny ip any host 10.10.2.1 log
+OS10(config-ipv4-acl)# seq 50 permit ip 10.10.2.0/24 10.10.1.0/24
+OS10(config-ipv4-acl)# seq 60 deny ip any any log
+OS10(config-ipv4-acl)# exit
+
+Step 3: Apply the ACLs to the OOBM interfaces.
+
+OS10(config)# interface ethernet1/1/1
+OS10(conf-if-eth1/1/1)# ip access-group MGMT_TRAFFIC_FROM_NOC in
+OS10(conf-if-eth1/1/1)# exit
+OS10(config)# interface ethernet1/1/2
+OS10(conf-if-eth1/1/2)# ip access-group MGMT_TRAFFIC_FROM_OOBM_LAN in
+OS10(conf-if-eth1/1/2)# exit
+
+Ensure that traffic from the managed network is not able to access the OOBM gateway router using either receive path or interface ingress ACLs.</fixtext><fix id="F-73814r1052242_fix" /><check system="C-73913r1052023_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone. If the OOBM gateway router is a dedicated device for the OOBM network, this requirement is not applicable.
+
+Review the access control list (ACL) or filter for the router receive path.
+
+Verify that only traffic sourced from the OOBM network or the NOC is allowed to access the router.
+
+Step 1: Examine the interface configuration for the inbound ACL applied to the OOBM interfaces.
+
+!
+interface ethernet1/1/1
+ description "OOB link to NOC"
+ ip address 10.10.1.1/24
+ ip access-group MGMT_TRAFFIC_FROM_NOC in
+!
+interface ethernet1/1/2
+ description "link to OOBM LAN access switch"
+ ip address 10.10.2.1/24
+ ip access-group MGMT_TRAFFIC_FROM_OOBM_LAN in
+
+Step 2: Review the inbound ACL bound to any OOBM interface connecting to the OOBM backbone and verify traffic destined to the OS10 OOBM router is only from the OOBM or NOC address space.
+
+!
+ip access-list MGMT_TRAFFIC_FROM_NOC
+ seq 10 permit ip 10.10.1.0/24 host 10.10.1.1
+ seq 20 permit ip 10.10.1.0/24 host 10.10.2.1
+ seq 30 deny ip any host 10.10.1.1 log
+ seq 40 deny ip any host 10.10.2.1 log
+ seq 50 permit ip 10.10.1.0/24 10.10.2.0/24
+ seq 60 deny ip any any log
+
+Step 3: Review the inbound ACL bound to any OOBM LAN interfaces and verify traffic destined to the OS10 OOBM router is from the OOBM LAN address space.
+
+!
+ip access-list MGMT_TRAFFIC_FROM_OOBM_LAN
+ seq 10 permit ip 10.10.2.0/24 host 10.10.1.1
+ seq 20 permit ip 10.10.2.0/24 host 10.10.2.1
+ seq 30 deny ip any host 10.10.1.1 log
+ seq 40 deny ip any host 10.10.2.1 log
+ seq 50 permit ip 10.10.2.0/24 10.10.1.0/24
+ seq 60 deny ip any any log
+
+If the router does not block any traffic destined to itself that is not sourced from the OOBM network or the NOC, this is a finding.</check-content></check></Rule></Group><Group id="V-269882"><title>SRG-NET-000230-RTR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269882r1052031_rule" weight="10.0" severity="medium"><version>OS10-RTR-000540</version><title>The Dell OS10 Router must be configured to implement message authentication for all control plane protocols.</title><description>&lt;VulnDiscussion&gt;A rogue router could send a fictitious routing update to convince a site's perimeter router to send traffic to an incorrect or even a rogue destination. This diverted traffic could be analyzed to learn confidential information about the site's network or used to disrupt the network's ability to communicate with other networks. This is known as a "traffic attraction attack" and is prevented by configuring neighbor router authentication for routing updates.
+
+This requirement applies to all IPv4 and IPv6 protocols that are used to exchange routing or packet forwarding information. This includes BGP, RIP, OSPF, EIGRP, IS-IS, and LDP.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001184</ident><fixtext fixref="F-73816r1052030_fix">Configure authentication to be enabled for every protocol that affects the routing or forwarding tables.
+
+OS10(config)# interface vlan 400
+OS10(conf-if-vl-400)# ipv6 ospf 10 area 0.0.0.1
+OS10(conf-if-vl-400)# ipv6 ospf authentication ipsec spi 4018 sha1 1234567890123456789012345678901234567890
+OS10(conf-if-vl-400)# ip ospf 1 area 0.0.0.1
+OS10(conf-if-vl-400)# ip ospf message-digest-key 1 md5 $$9d5679ab0b6ff43439c05e8059fefcccf05a20062d9679720bdecd630843c545
+OS10(conf-if-vl-400)# exit</fixtext><fix id="F-73816r1052030_fix" /><check system="C-73915r1052029_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration.
+
+For every protocol that affects the routing or forwarding tables (where information is exchanged between neighbors), verify that neighbor router authentication is enabled.
+
+Verify the routing protocols are configured to authenticate neighbors. 
+
+!
+interface vlan400
+ ipv6 ospf 10 area 0.0.0.1
+ ipv6 ospf authentication ipsec spi 4017 sha1 1234567890123456789012345678901234567890
+ ...
+ ip ospf 1 area 0.0.0.1
+ ip ospf message-digest-key 1 md5 $$c95abfd48ae6bcffc281603e960d49860dab21b300c5ea1febf7b674320be879
+ 
+If authentication is not enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-269883"><title>SRG-NET-000230-RTR-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269883r1052034_rule" weight="10.0" severity="medium"><version>OS10-RTR-000550</version><title>The Dell OS10 BGP router must be configured to use a unique key for each autonomous system (AS) that it peers with.</title><description>&lt;VulnDiscussion&gt;If the same keys are used between eBGP neighbors, the chance of a hacker compromising any of the BGP sessions increases. It is possible that a malicious user exists in one autonomous system who would know the key used for the eBGP session. This user would then be able to hijack BGP sessions with other trusted neighbors.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001184</ident><fixtext fixref="F-73817r1052033_fix">Configure unique keys for each AS that the router peers with.
+
+OS10(config)# interface vlan 400
+OS10(conf-if-vl-400)# ipv6 ospf 10 area 0.0.0.1
+OS10(conf-if-vl-400)# ipv6 ospf authentication ipsec spi 4018 sha1 1234567890123456789012345678901234567890
+OS10(conf-if-vl-400)# ip ospf 1 area 0.0.0.1
+OS10(conf-if-vl-400)# ip ospf message-digest-key 1 md5 $$9d5679ab0b6ff43439c05e8059fefcccf05a20062d9679720bdecd630843c545
+OS10(conf-if-vl-400)# exit</fixtext><fix id="F-73817r1052033_fix" /><check system="C-73916r1052032_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration.
+
+Verify that unique keys are used for each AS that it peers with.
+
+!
+interface vlan400
+ ipv6 ospf 10 area 0.0.0.1
+ ipv6 ospf authentication ipsec spi 4017 sha1 1234567890123456789012345678901234567890
+ ...
+ ip ospf 1 area 0.0.0.1
+ ip ospf message-digest-key 1 md5 $$c95abfd48ae6bcffc281603e960d49860dab21b300c5ea1febf7b674320be879
+ 
+If any keys are found not to be unique for each autonomous system, this is a finding.</check-content></check></Rule></Group><Group id="V-269884"><title>SRG-NET-000230-RTR-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269884r1052037_rule" weight="10.0" severity="medium"><version>OS10-RTR-000560</version><title>The Dell OS10 Router must be configured to use keys with a duration not exceeding 180 days for authenticating routing protocol messages.</title><description>&lt;VulnDiscussion&gt;If the keys used for routing protocol authentication are guessed, the malicious user could create havoc within the network by advertising incorrect routes and redirecting traffic. Some routing protocols allow the use of key chains for authentication. A key chain is a set of keys that is used in succession, with each having a lifetime of no more than 180 days. Changing the keys frequently reduces the risk of them eventually being guessed.
+
+Keys cannot be used during time periods for which they are not activated. If a time period occurs during which no key is activated, neighbor authentication cannot occur, and therefore routing updates will fail. Therefore, ensure that for a given key chain, key activation times overlap to avoid any period of time during which no key is activated.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001184</ident><fixtext fixref="F-73818r1052036_fix">Manually change the routing protocol authentication keys.
+
+Example:
+OS10(config)# interface vlan 400
+OS10(conf-if-vl-400)# ipv6 ospf 10 area 0.0.0.1
+OS10(conf-if-vl-400)# ipv6 ospf authentication ipsec spi 4017 sha1 1234567890123456789012345678901234567890
+OS10(conf-if-vl-400)#
+OS10(conf-if-vl-400)# ip ospf 1 area 0.0.0.1
+OS10(conf-if-vl-400)# ip ospf message-digest-key 1 md5 1234567812345678
+OS10(conf-if-vl-400)# exit</fixtext><fix id="F-73818r1052036_fix" /><check system="C-73917r1052035_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration.
+
+Document the date when routing protocol keys were changed and manually change them at least every 180 days.
+
+If the routing authentication keys have not been changed in more than 180 days, this is a finding.</check-content></check></Rule></Group><Group id="V-269885"><title>SRG-NET-000362-RTR-000109</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269885r1052040_rule" weight="10.0" severity="medium"><version>OS10-RTR-000600</version><title>The Dell OS10 Router must not be configured to have any zero-touch deployment feature enabled when connected to an operational network.</title><description>&lt;VulnDiscussion&gt;Network devices that are configured via a zero-touch deployment or auto-loading feature can have their startup configuration or image pushed to the device for installation via TFTP or Remote Copy (rcp). Loading an image or configuration file from the network is taking a security risk because the file could be intercepted by an attacker who could corrupt the file, resulting in a denial of service.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-73819r1052039_fix">Disable zero-touch deployment.
+
+Log in to the device and make any configuration change and then issue the following commands:
+
+OS10# write memory
+OS10# ztd stop
+OS10# reload</fixtext><fix id="F-73819r1052039_fix" /><check system="C-73918r1052038_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the Dell OS10 Switch configuration to verify that zero-touch deployment has been disabled.
+
+Verify that ZTD has been disabled by checking with the following command:
+
+OS10# show ztd-status
+-----------------------------------
+ZTD Status     : disabled
+ZTD State      : init
+Protocol State : idle
+Reason         :
+-----------------------------------
+OS10#
+
+if ZTD is enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-269886"><title>SRG-NET-000362-RTR-000110</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269886r1052435_rule" weight="10.0" severity="medium"><version>OS10-RTR-000610</version><title>The Dell OS10 Router must be configured to protect against or limit the effects of denial-of-service (DoS) attacks by employing control plane protection.</title><description>&lt;VulnDiscussion&gt;The Route Processor (RP) is critical to all network operations because it is the component used to build all forwarding paths for the data plane via control plane processes. It is also instrumental with ongoing network management functions that keep the routers and links available for providing network services. Any disruption to the RP or the control and management planes can result in mission-critical network outages.
+
+A DoS attack targeting the RP can result in excessive CPU and memory utilization. To maintain network stability and RP security, the router must be able to handle specific control plane and management plane traffic that is destined to the RP. In the past, one method of filtering was to use ingress filters on forwarding interfaces to filter both forwarding path and receiving path traffic. However, this method does not scale well as the number of interfaces and the size of the ingress filters grow. Control plane policing increases the security of routers and multilayer switches by protecting the RP from unnecessary or malicious traffic. Filtering and rate limiting the traffic flow of control plane packets can be implemented to protect routers against reconnaissance and DoS attacks, allowing the control plane to maintain packet forwarding and protocol states despite an attack or heavy load on the router or multilayer switch.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-73820r1052042_fix">Implement control plane protection by classifying traffic types based on importance and configure filters to restrict and rate limit the traffic directed to and processed by the RP according to each class.
+
+Step 1: Create an appropriate QoS policy for CoPP.
+
+OS10(config)# class-map type control-plane example-copp-class-map-name
+OS10(config-cmap-control-plane)# exit
+OS10(config)# policy-map type control-plane example-copp-policy-map-name
+OS10(config-pmap-control-plane)# class example-copp-class-map-name
+OS10(config-pmap-c)# set qos-group 2
+OS10(config-pmap-c)# police cir 100 pir 100
+
+Step 2: Assign the control-plane service-policy.
+
+OS10(config)# control-plane
+OS10(conf-control-plane)# service-policy input example-copp-policy-map-name</fixtext><fix id="F-73820r1052042_fix" /><check system="C-73919r1052435_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Determine whether control plane protection has been implemented on the device by verifying traffic types have been classified based on importance levels and a policy has been configured to filter and rate limit the traffic according to each class.
+
+Use the show control-plane info command to review the Control Plane Policing (CoPP) policies.
+
+OS10# show control-plane info
+Queue                    Min Rate Limit(in pps)   Max Rate Limit(in pps)   Protocols
+0                        600                      600                      ISCSI UNKNOWN UNICAST
+1                        1000                     1000                     OPEN_FLOW SFLOW
+2                        400                      400                      IGMP PIM
+3                        600                      1000                     VLT NDS
+4                        500                      1000                     IPV6_ICMP IPV4_ICMP
+5                        500                      1000                     ICMPV6_RS ICMPV6_NS ICMPV6_RA ICMPV6_NA
+6                        500                      1000                     ARP_REQ SERVICEABILITY
+7                        500                      1000                     ARP_RESP
+8                        500                      500                      SSH TELNET TACACS NTP FTP
+9                        600                      600                      FCOE NVME
+10                       600                      1000                     LACP
+11                       400                      400                      RSTP PVST MSTP
+12                       500                      500                      DOT1X LLDP FEFD
+13                       600                      1000                     IPV6_OSPF IPV4_OSPF
+14                       600                      1000                     OSPF_HELLO
+15                       600                      1000                     BGP
+16                       500                      500                      IPV6_DHCP IPV4_DHCP
+17                       600                      1000                     VRRP
+18                       700                      700                      BFD
+19                       1400                     2000                     REMOTE CPS
+20                       300                      300                      MCAST DATA
+21                       100                      100                      ACL LOGGING
+22                       300                      300                      MCAST KNOWN DATA
+23                       100                      100                      PTP
+24                       100                      100                      PORT_SECURITY
+OS10#
+
+Use the show running-configuration class-map and policy-map to review configured CoPP policies.
+
+OS10# show running-configuration class-map
+!
+class-map type application class-iscsi
+!
+class-map type control-plane example-copp-class-map-name
+OS10#
+OS10# show running-configuration policy-map
+!
+policy-map type application policy-iscsi
+!
+policy-map type control-plane example-copp-policy-map-name
+ !
+ class example-copp-class-map-name
+  set qos-group 2
+  police cir 100 pir 100
+OS10#
+
+Use the show qos control-plane command to review whether custom CoPP policies have been configured.
+
+OS10# show qos control-plane
+Service-policy (input): example-copp-policy-map-name
+
+If the router does not have appropriate control plane protection implemented, this is a finding.</check-content></check></Rule></Group><Group id="V-269887"><title>SRG-NET-000362-RTR-000111</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269887r1052046_rule" weight="10.0" severity="medium"><version>OS10-RTR-000620</version><title>The Dell OS10 Router must be configured to have Gratuitous ARP disabled on all external interfaces.</title><description>&lt;VulnDiscussion&gt;A gratuitous ARP is an ARP broadcast in which the source and destination MAC addresses are the same. It is used to inform the network about a host IP address. A spoofed gratuitous ARP message can cause network mapping information to be stored incorrectly, causing network malfunction.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-73821r1052045_fix">Configure the Dell OS10 Switch to disable gratuitous arp on all external interfaces as shown in the example below:
+
+OS10(config)# interface ethernet 1/1/1
+OS10(conf-if-eth1/1/1)# no ip arp gratuitous update</fixtext><fix id="F-73821r1052045_fix" /><check system="C-73920r1052044_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the Dell OS10 Switch configuration to determine if gratuitous ARP is disabled on all external interfaces.
+
+Verify that gratuitous ARP has not been enabled on each external interface by checking that the following has not been configured:
+
+  ip arp gratuitous update
+  
+If gratuitous ARP is enabled on any external interface, this is a finding.</check-content></check></Rule></Group><Group id="V-269888"><title>SRG-NET-000362-RTR-000112</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269888r1052480_rule" weight="10.0" severity="low"><version>OS10-RTR-000630</version><title>The Dell OS10 Router must be configured to have IP directed broadcast disabled on all interfaces.</title><description>&lt;VulnDiscussion&gt;An IP directed broadcast is a datagram sent to the broadcast address of a subnet that is not directly attached to the sending machine. The directed broadcast is routed through the network as a unicast packet until it arrives at the target subnet, where it is converted into a link-layer broadcast. Because of the nature of the IP addressing architecture, only the last router in the chain, which is connected directly to the target subnet, can conclusively identify a directed broadcast.
+
+IP directed broadcasts are used in the extremely common and popular smurf, or denial-of-service (DoS) attacks. In a smurf attack, the attacker sends Internet Control Message Protocol (ICMP) echo requests from a falsified source address to a directed broadcast address, causing all the hosts on the target subnet to send replies to the falsified source. By sending a continuous stream of such requests, the attacker can create a much larger stream of replies, which can completely inundate the host whose address is being falsified. This service should be disabled on all interfaces when not needed to prevent smurf and DoS attacks.
+
+Directed broadcast can be enabled on internal facing interfaces to support services such as Wake-On-LAN. Case scenario may also include support for legacy applications where the content server and the clients do not support multicast. The content servers send streaming data using UDP broadcast. Used in conjunction with the IP multicast helper-map feature, broadcast data can be sent across a multicast topology. The broadcast streams are converted to multicast and vice versa at the first-hop routers and last-hop routers before entering and leaving the multicast transit area respectively. The last-hop router must convert the multicast to broadcast. Hence, this interface must be configured to forward a broadcast packet (i.e., a directed broadcast address is converted to all nodes broadcast address).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-73822r1052048_fix">Disable IP directed broadcasts on all Layer 3 interfaces with the following commands.
+
+OS10# system "echo net.ipv4.conf.all.bc_forwarding = 0 &gt; /tmp/directed_broadcast.conf"
+OS10# system "echo net.ipv4.conf.default.bc_forwarding = 0 &gt;&gt; /tmp/directed_broadcast.conf"
+OS10# system "sudo cp /tmp/directed_broadcast.conf /etc/sysctl.d/"
+OS10# system "sudo sysctl net.ipv4.conf.all.bc_forwarding=0"</fixtext><fix id="F-73822r1052048_fix" /><check system="C-73921r1052047_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to determine if IP directed broadcast is enabled.
+
+Perform the following command and verify that bc_forwarding = 0 for all interfaces. If bc_forwarding = 1 then directed broadcast is enabled. The default value is 0, disabled.
+
+OS10# system "sudo sysctl net.ipv4.conf | grep bc_forwarding"
+
+If IP directed broadcast is enabled on Layer 3 interfaces, this is a finding.</check-content></check></Rule></Group><Group id="V-269889"><title>SRG-NET-000362-RTR-000113</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269889r1052052_rule" weight="10.0" severity="medium"><version>OS10-RTR-000640</version><title>The Dell OS10 Router must be configured to have Internet Control Message Protocol (ICMP) unreachable notifications disabled on all external interfaces.</title><description>&lt;VulnDiscussion&gt;The ICMP supports IP traffic by relaying information about paths, routes, and network conditions. Routers automatically send ICMP messages under a wide variety of conditions. Host unreachable ICMP messages are commonly used by attackers for network mapping and diagnosis.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-73823r1052051_fix">Disable ICMP unreachable notifications on all external interfaces.
+
+OS10(config)# interface ethernet 1/1/4
+OS10(conf-if-eth1/1/4)# no ip unreachables</fixtext><fix id="F-73823r1052051_fix" /><check system="C-73922r1052050_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the device configuration to determine if controls have been defined to ensure the router does not send ICMP unreachable notifications out to any external interfaces.
+
+Verify the "ip unreachables" command is not configured on any external interfaces. Note: the default setting has ICMP unreachable notifications disabled, so if "ip unreachables" is not present in the interface configuration then it is disabled. 
+ !
+ interface ethernet1/1/4
+  ip unreachables
+
+If ICMP unreachable notifications are enabled on any external interfaces, this is a finding.</check-content></check></Rule></Group><Group id="V-269890"><title>SRG-NET-000362-RTR-000117</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269890r1052055_rule" weight="10.0" severity="medium"><version>OS10-RTR-000670</version><title>The Dell OS10 BGP router must be configured to use the maximum prefixes feature to protect against route table flooding and prefix deaggregation attacks.</title><description>&lt;VulnDiscussion&gt;The effects of prefix deaggregation can degrade router performance due to the size of routing tables and also result in black-holing legitimate traffic. Initiated by an attacker or a misconfigured router, prefix deaggregation occurs when the announcement of a large prefix is fragmented into a collection of smaller prefix announcements.
+
+In 1997, misconfigured routers in the Florida Internet Exchange network (AS7007) de-aggregated every prefix in their routing table and started advertising the first /24 block of each of these prefixes as their own. Faced with this additional burden, the internal routers became overloaded and crashed repeatedly. This caused prefixes advertised by these routers to disappear from routing tables and reappear when the routers came back online. As the routers came back after crashing, they were flooded with the routing table information by their neighbors. The flood of information would again overwhelm the routers and cause them to crash. This process of route flapping served to destabilize not only the surrounding network but also the entire internet. Routers trying to reach those addresses would choose the smaller, more specific /24 blocks first. This caused backbone networks throughout North America and Europe to crash.
+
+Maximum prefix limits on peer connections combined with aggressive prefix-size filtering of customers' reachability advertisements will effectively mitigate the deaggregation risk. BGP maximum prefix must be used on all eBGP routers to limit the number of prefixes that it should receive from a particular neighbor, whether customer or peering AS. Consider each neighbor and how many routes they should be advertising and set a threshold slightly higher than the number expected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-73824r1052054_fix">Configure all eBGP routers to use the maximum prefixes feature to protect against route table flooding and prefix deaggregation attacks.
+
+OS10(config)#router bgp 10
+OS10(config-router-bgp-10)# template ebgp
+OS10(config-router-template)# address-family ipv4 unicast
+OS10(config-router-bgp-neighbor-af)# maximum-prefix 10 50</fixtext><fix id="F-73824r1052054_fix" /><check system="C-73923r1052053_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to verify the number of received prefixes from each eBGP neighbor is controlled.
+
+Verify that a maximum-prefix value is configured in the appropriate neighbor entries or templates.
+
+router bgp 10
+ !
+ template ebgp
+  !
+  address-family ipv4 unicast
+   maximum-prefix 10 50
+
+If the router is not configured to control the number of prefixes received from each peer to protect against route table flooding and prefix deaggregation attacks, this is a finding.</check-content></check></Rule></Group><Group id="V-269891"><title>SRG-NET-000362-RTR-000118</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269891r1052058_rule" weight="10.0" severity="low"><version>OS10-RTR-000680</version><title>The Dell OS10 BGP router must be configured to limit the prefix size on any inbound route advertisement to /24 or the least significant prefixes issued to the customer.</title><description>&lt;VulnDiscussion&gt;The effects of prefix deaggregation can degrade router performance due to the size of routing tables and also result in black-holing legitimate traffic. Initiated by an attacker or a misconfigured router, prefix deaggregation occurs when the announcement of a large prefix is fragmented into a collection of smaller prefix announcements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-73825r1052057_fix">Ensure all eBGP routers are configured to limit the prefix size on any route advertisement to /24 or the least significant prefixes issued to the customer.
+
+Step 1: Configure a prefix list for each customer containing prefixes belonging to each.
+
+OS10(config)# ip prefix-list LONG_PREFIX_FILTER permit 0.0.0.0/0 ge 8 le 24
+OS10(config)# ip prefix-list LONG_PREFIX_FILTER deny 0.0.0.0/0
+
+Step 2: Configure the route map referencing the configured prefix list.
+
+OS10(config)# route-map LONG_PREFIX_FILTER_MAP 50
+OS10(config-route-map)# match ip address prefix-list LONG_PREFIX_FILTER
+OS10(config-route-map)# exit
+
+Step 3: Apply the route-map outbound to each external BGP neighbor.
+
+OS10(config)# router bgp 10
+OS10(config-router-bgp-10)# neighbor 50.1.1.1
+OS10(config-router-neighbor)# address-family ipv4 unicast
+OS10(config-router-bgp-neighbor-af)# route-map LONG_PREFIX_FILTER_MAP in
+OS10(config-router-bgp-neighbor-af)# exit
+OS10(config-router-neighbor)# exit
+OS10(config-router-bgp-10)# exit</fixtext><fix id="F-73825r1052057_fix" /><check system="C-73924r1052056_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone. 
+
+Review the router configuration to verify that there is a filter to reject inbound route advertisements that are greater than /24 or the least significant prefixes issued to the customer, whichever is larger.
+
+The prefix filter must be referenced outbound on the appropriate BGP neighbor statements.
+
+Step 1: Verify prefix lists have been configured for each customer containing prefixes that belong to that customer.
+
+OS10# show running-configuration prefix-list
+!
+ip prefix-list LONG_PREFIX_FILTER permit 0.0.0.0/0 ge 8 le 24
+ip prefix-list LONG_PREFIX_FILTER deny 0.0.0.0/0
+
+Step 2: Verify the route map applied to the external neighbors references the configured prefix list shown above.
+
+OS10# show running-configuration route-map
+!
+route-map LONG_PREFIX_FILTER_MAP permit 50
+ match ip address prefix-list LONG_PREFIX_FILTER
+
+Step 3: Verify the route map applied to the external neighbors references the appropriate route maps shown above.
+ 
+!
+router bgp 10
+ !
+ neighbor 50.1.1.1
+  !
+  address-family ipv4 unicast
+   route-map LONG_PREFIX_FILTER_MAP in
+
+If the router is not configured to limit the prefix size on any inbound route advertisement to /24 or the least significant prefixes issued to the customer, this is a finding.</check-content></check></Rule></Group><Group id="V-269892"><title>SRG-NET-000362-RTR-000121</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269892r1052061_rule" weight="10.0" severity="medium"><version>OS10-RTR-000710</version><title>The Dell OS10 multicast Rendezvous Point (RP) must be configured to rate limit the number of Protocol Independent Multicast (PIM) Register messages.</title><description>&lt;VulnDiscussion&gt;When a new source starts transmitting in a PIM Sparse Mode network, the DR will encapsulate the multicast packets into register messages and forward them to the RP using unicast. This process can be taxing on the CPU for both the DR and the RP if the source is running at a high data rate and there are many new sources starting at the same time. This scenario can potentially occur immediately after a network failover. The rate limit for the number of register messages should be set to a relatively low value based on the known number of multicast sources within the multicast domain.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-73826r1052060_fix">Configure the RP to rate limit the number of multicast register messages.
+
+Step 1: Configure a control-plane class map for PIM packets.
+
+OS10(config)# class-map type control-plane PIM-CLASS-MAP
+OS10(config-cmap-control-plane)# match pim
+
+Step 2: Configure a control-plane policy map for PIM packets that applies an appropriate rate limit in packets per second.
+
+OS10(config)# policy-map type control-plane PIM-POLICY-MAP
+OS10(config-pmap-control-plane)# class PIM-CLASS-MAP
+OS10 (config-pmap-c)# set qos-group 2
+OS10 (config-pmap-c)# police cir 10 pir 50
+
+Step 3: Assign the service policy to the control plane.
+
+OS10(config)# control-plane
+OS10(config-control-plane)# service-policy input PIM-POLICY-MAP</fixtext><fix id="F-73826r1052060_fix" /><check system="C-73925r1052059_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the configuration of the RP to verify that it is rate limiting the number of multicast register messages.
+
+Step 1: Verify that a control-plane class map for PIM packets has been configured.
+
+OS10# show running-configuration class-map
+!
+class-map type control-plane PIM-CLASS-MAP
+match pim
+
+Step 2: Verify that a control-plane policy map for PIM packets has been configured that applies an appropriate rate limit in packets per second.
+
+OS10# show running-configuration policy-map
+!
+policy-map type control-plane PIM-POLICY-MAP
+!
+class PIM-CLASS-MAP
+  set qos-group 2
+  police cir 10 pir 50
+
+Step 3: Verify the service policy has been assigned to the control plane.
+
+OS10# show running-configuration control-plane
+!
+control-plane
+service-policy input PIM-POLICY-MAP
+
+If the RP is not limiting multicast register messages, this is a finding.</check-content></check></Rule></Group><Group id="V-269898"><title>SRG-NET-000364-RTR-000114</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269898r1052079_rule" weight="10.0" severity="low"><version>OS10-RTR-000800</version><title>The Dell OS10 multicast Designated Router (DR) must be configured to filter the Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Report messages to allow hosts to join only multicast groups that have been approved by the organization.</title><description>&lt;VulnDiscussion&gt;Real-time multicast traffic can entail multiple large flows of data. Large unicast flows tend to be fairly isolated (i.e., someone doing a file download here or there), whereas multicast can have broader impact on bandwidth consumption, resulting in extreme network congestion. Hence, it is imperative that there is multicast admission control to restrict which multicast groups hosts are allowed to join via IGMP or MLD.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><fixtext fixref="F-73832r1052078_fix">Configure the DR to filter the IGMP and MLD report messages to allow hosts to join only those multicast groups that have been approved.
+
+OS10(config)# ip access-list IGMP_FILTER
+OS10(config-ipv4-acl)# deny 2 224.0.0.22 239.8.0.0/16 ttl eq 1
+OS10(config-ipv4-acl)# permit ip any any
+
+OS10(config)# interface vlan 100
+OS10(conf-if-vl-100)# ip access-group IGMP_FILTER in</fixtext><fix id="F-73832r1052078_fix" /><check system="C-73931r1052077_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the configuration of the DR to verify that it is filtering IGMP or MLD report messages, allowing hosts to join only those groups that have been approved.
+
+Note: This requirement is only applicable to Source Specific Multicast (SSM) implementation. This requirement is not applicable to Any Source Multicast (ASM) since the filtering is being performed by the Rendezvous Point router.
+
+Step 1: Verify that SSM is in use. If not, this requirement is not applicable.
+
+!
+ip access-list ssm-1
+ seq 10 permit ip any 236.0.0.0/8
+ 
+!
+ip pim ssm-range ssm-1
+
+Step 2: Verify that each interface applies an appropriate inbound IGMP filter that permits or denies IGMP messages.
+
+!
+interface vlan100
+ no shutdown
+ ip access-group IGMP_FILTER in
+ 
+!
+ip access-list IGMP_FILTER
+ seq 10 deny 2 224.0.0.22 239.8.0.0/16 ttl eq 1
+ seq 20 permit ip any any
+
+If the DR is not filtering IGMP or MLD report messages, this is a finding.</check-content></check></Rule></Group><Group id="V-269899"><title>SRG-NET-000364-RTR-000115</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269899r1052082_rule" weight="10.0" severity="medium"><version>OS10-RTR-000810</version><title>The Dell OS10 multicast Designated Router (DR) must be configured to filter the Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD) Report messages to allow hosts to join a multicast group only from sources that have been approved by the organization.</title><description>&lt;VulnDiscussion&gt;Real-time multicast traffic can entail multiple large flows of data. Large unicast flows tend to be fairly isolated (i.e., someone doing a file download here or there), whereas multicast can have broader impact on bandwidth consumption, resulting in extreme network congestion. Hence, it is imperative that there is multicast admission control to restrict which multicast groups hosts are allowed to join via IGMP or MLD.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><fixtext fixref="F-73833r1052081_fix">Configure the DR to filter the IGMP and MLD report messages to allow hosts to join only those multicast groups from sources that have been approved.
+
+OS10(config)# ip access-list IGMP_FILTER
+OS10(config-ipv4-acl)# deny 2 224.0.0.22 239.8.0.0/16 ttl eq 1
+OS10(config-ipv4-acl)# permit 2 224.0.0.0/24 238.5.0.0/16
+OS10(config-ipv4-acl)# permit ip any any
+
+OS10(config)# interface vlan 100
+OS10(conf-if-vl-100)# ip access-group IGMP_FILTER in</fixtext><fix id="F-73833r1052081_fix" /><check system="C-73932r1052080_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the configuration of the DR to verify that it is filtering IGMP or MLD report messages, allowing hosts to only join multicast groups from sources that have been approved.
+
+Note: This requirement is only applicable to Source Specific Multicast (SSM) implementation.
+
+Step 1: Verify that SSM is in use. If not, this requirement is not applicable.
+
+!
+ip access-list ssm-1
+ seq 10 permit ip any 236.0.0.0/8
+ 
+!
+ip pim ssm-range ssm-1
+
+Step 2: Verify that each interface applies an appropriate inbound IGMP filter that permits or denies IGMP messages.
+
+!
+interface vlan100
+ no shutdown
+ ip access-group IGMP_FILTER in
+ 
+!
+ip access-list IGMP_FILTER
+ seq 10 deny 2 224.0.0.22  239.8.0.0/16 ttl eq 1
+ seq 20 permit 2 224.0.0.0/24 238.5.0.0/16
+ seq 30 permit ip any any
+
+If the DR is not filtering IGMP or MLD report messages, this is a finding.</check-content></check></Rule></Group><Group id="V-269901"><title>SRG-NET-000512-RTR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269901r1052088_rule" weight="10.0" severity="low"><version>OS10-RTR-000910</version><title>The Dell OS10 BGP router must be configured to use its loopback address as the source address for iBGP peering sessions.</title><description>&lt;VulnDiscussion&gt;Using a loopback address as the source address offers a multitude of uses for security, access, management, and scalability of the BGP routers. It is easier to construct appropriate ingress filters for router management plane traffic destined to the network management subnet since the source addresses will be from the range used for loopback interfaces instead of a larger range of addresses used for physical interfaces. Log information recorded by authentication and syslog servers will record the router's loopback address instead of the numerous physical interface addresses.
+
+When the loopback address is used as the source for eBGP peering, the BGP session will be harder to hijack since the source address to be used is not known globally, making it more difficult for a hacker to spoof an eBGP neighbor. By using traceroute, a hacker can easily determine the addresses for an eBGP speaker when the IP address of an external interface is used as the source address. The routers within the iBGP domain should also use loopback addresses as the source address when establishing BGP sessions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-73835r1052087_fix">Ensure that the router's loopback address is used as the source address when originating traffic.
+
+OS10(config)# router bgp 10
+OS10(conf-router-bgp-10)# neighbor 192.0.2.4
+OS10(conf-router-neighbor)# update-source Loopback 1</fixtext><fix id="F-73835r1052087_fix" /><check system="C-73934r1052086_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to verify that a loopback address has been configured.
+
+!
+interface loopback2
+ no shutdown
+ ip address 10.11.12.13/32
+ 
+
+Verify that a loopback interface is used as the source address for all iBGP sessions.
+
+!
+router bgp 10
+ !
+ neighbor 192.0.2.4
+  update-source loopback2
+
+If the router does not use its loopback address as the source address for all iBGP sessions, this is a finding.</check-content></check></Rule></Group><Group id="V-269902"><title>SRG-NET-000512-RTR-000012</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269902r1052091_rule" weight="10.0" severity="low"><version>OS10-RTR-001020</version><title>The Dell OS10 Router must be configured to advertise a hop limit of at least 32 in Router Advertisement messages for IPv6 stateless auto-configuration deployments.</title><description>&lt;VulnDiscussion&gt;The Neighbor Discovery protocol allows a hop limit value to be advertised by routers in a Router Advertisement message being used by hosts instead of the standardized default value. If a very small value was configured and advertised to hosts on the LAN segment, communications would fail due to the hop limit reaching zero before the packets sent by a host reached its destination.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-73836r1052090_fix">Configure each IPv6 interface to advertise a hop limit of at least 32 in Router Advertisement messages as in the example below.
+
+OS10(config)# interface ethernet 1/1/4
+OS10(conf-if-eth1/1/4)# ipv6 nd send-ra
+OS10(conf-if-eth1/1/4)# ipv6 nd hop-limit 32</fixtext><fix id="F-73836r1052090_fix" /><check system="C-73935r1052089_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone. 
+
+Review the router configuration to determine if the hop limit has been configured for Router Advertisement messages. 
+
+Verify the ipv6 nd hop-limit settings are not configured less than 32.
+ !
+ interface ethernet1/1/4
+  ...
+  ipv6 nd hop-limit 32
+
+If it has been configured and has not been set to at least 32, it is a finding.</check-content></check></Rule></Group><Group id="V-269903"><title>SRG-NET-000512-RTR-000013</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269903r1052094_rule" weight="10.0" severity="medium"><version>OS10-RTR-001030</version><title>The Dell OS10 Router must not be configured to use IPv6 Site Local Unicast addresses.</title><description>&lt;VulnDiscussion&gt;As currently defined, site local addresses are ambiguous and can be present in multiple sites. The address itself does not contain any indication of the site to which it belongs. The use of site-local addresses has the potential to adversely affect network security through leaks, ambiguity, and potential misrouting as documented in section 2 of RFC3879. RFC3879 formally deprecates the IPv6 site-local unicast prefix FEC0::/10 as defined in RFC3513.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-73837r1052093_fix">Configure the router using only authorized IPv6 addresses.</fixtext><fix id="F-73837r1052093_fix" /><check system="C-73936r1052092_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the router configuration to ensure FEC0::/10 IP addresses are not defined. 
+
+If IPv6 Site Local Unicast addresses are defined, this is a finding.</check-content></check></Rule></Group><Group id="V-269904"><title>SRG-NET-000512-RTR-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269904r1052097_rule" weight="10.0" severity="medium"><version>OS10-RTR-001040</version><title>The Dell OS10 Router must be configured to suppress Router Advertisements on all external IPv6-enabled interfaces.</title><description>&lt;VulnDiscussion&gt;Many of the known attacks in stateless autoconfiguration are defined in RFC 3756 were present in IPv4 ARP attacks. To mitigate these vulnerabilities, links that have no hosts connected such as the interface connecting to external gateways must be configured to suppress router advertisements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-73838r1052096_fix">Configure the router to suppress Router Advertisements on all external IPv6-enabled interfaces.
+
+OS10(config)# interface ethernet 1/1/4
+OS10(conf-if-eth1/1/4)# no ipv6 nd send-ra</fixtext><fix id="F-73838r1052096_fix" /><check system="C-73937r1052095_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>This requirement is not applicable for the DODIN Backbone. 
+
+Review the router configuration to verify Router Advertisements are not enabled on all external IPv6-enabled interfaces.
+
+Verify the ipv6 nd send-ra setting is not configured.
+!
+interface ethernet1/1/4
+ ...
+ ipv6 nd send-ra
+ 
+If the router is not configured to suppress Router Advertisements on all external IPv6-enabled interfaces, this is a finding.</check-content></check></Rule></Group><Group id="V-269927"><title>SRG-NET-000131-RTR-000083</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-269927r1052166_rule" weight="10.0" severity="medium"><version>OS10-RTR-000280</version><title>The Dell OS10 Router must not be configured to have any feature enabled that calls home to the vendor.</title><description>&lt;VulnDiscussion&gt;Call home services will routinely send data such as configuration and diagnostic information to the vendor for routine or emergency analysis and troubleshooting. There is a risk that transmission of sensitive data sent to unauthorized persons could result in data loss or downtime due to an attack.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dell OS10 Switch Router</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dell OS10 Switch Router</dc:subject><dc:identifier>5668</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002403</ident><fixtext fixref="F-73861r1052165_fix">Configure the Dell OS10 Switch to disable support-assist as shown in the example below:
+
+OS10(config)# eula-consent support-assist reject</fixtext><fix id="F-73861r1052165_fix" /><check system="C-73960r1052164_chk"><check-content-ref href="Dell_OS10_Switch_Router_STIG.xml" name="M" /><check-content>Review the Dell OS10 Switch configuration to determine if support-assist is disabled.
+
+OS10# show support-assist status
+EULA support-assist : Rejected
+Service             : Disabled
+OS10#
+  
+If support-assist is enabled, this is a finding.</check-content></check></Rule></Group></Benchmark>
