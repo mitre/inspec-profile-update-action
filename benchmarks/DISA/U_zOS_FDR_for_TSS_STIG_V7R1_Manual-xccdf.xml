@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_FDR_for_TSS_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-16">accepted</status><title>z/OS FDR for TSS Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224718" selected="true" /><select idref="V-224719" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224718" selected="true" /><select idref="V-224719" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224718" selected="true" /><select idref="V-224719" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224718" selected="true" /><select idref="V-224719" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224718" selected="true" /><select idref="V-224719" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224718" selected="true" /><select idref="V-224719" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224718" selected="true" /><select idref="V-224719" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224718" selected="true" /><select idref="V-224719" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224718" selected="true" /><select idref="V-224719" selected="true" /></Profile><Group id="V-224718"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224718r1041440_rule" weight="10.0" severity="high"><version>ZFDR0040</version><title>FDR (Fast Dump Restore) security options are improperly specified.</title><description>&lt;VulnDiscussion&gt;Product configuration/parameters control the security and operational characteristics of products. If these parameter values are improperly specified, security and operational controls may be weakened. This exposure may threaten the availability of the product applications, and compromise the confidentiality of customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS FDR for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS FDR for TSS</dc:subject><dc:identifier>4192</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-18014</ident><ident system="http://cyber.mil/legacy">SV-27074</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-26397r1041439_fix">The systems programmer will verify that the security option ALLCALL is set to Yes.
+
+1) Execute the FDR ISPF dialog by entering the following on the command line:
+
+	EXEC 'SYS2.FDR.VXXXX.CLIST(ABRALLOC)'
+
+2) Select 'I' on the FDR PRIMARY OPTIONS MENU for INSTALL.
+
+3) Select '4' on the INSTALLATION OPTIONS MENU to select SETOPT - SET INSTALLATION OPTIONS IN THE FDR GLOBAL OPTIONS TABLE.
+
+4) Verify the FDR program library data set on this panel is set to the current LOADLIB.  Example: 'SYS2A.FDR.Vxxxx.LOADLIB'.
+
+5) Select '1' to select SECURITY OPTIONS.
+
+6) On the SET FDR GLOBAL SECURITY OPTIONS, review the ALLCALL setting, ensure it is set to YES.</fixtext><fix id="F-26397r1041439_fix" /><check system="C-26409r1041438_chk"><check-content-ref href="zOS_FDR_for_TSS_STIG.xml" name="M" /><check-content>a) The following steps are necessary for reviewing the FDR options:
+
+1) Issue the following command on the command line at option 6 in TSO to bring up the FDR ISPF dialog:
+
+EXEC 'SYS2.FDR.Vxxxx.CLIST(ABRALLOC)'
+
+2) Select 'I' on the FDR primary panel for INSTALL.
+3) Select '4' on the FDR installation options panel to select SETOPT.
+4) Verify the FDR Program Library Data Set on this panel specifies the following:
+Example: 'SYS2A.FDR.Vxxxx.LOADLIB'.
+5) Select '1' for SECURITY OPTIONS.
+6) Review the setting for ALLCALL
+
+Automated Analysis
+Refer to the following report produced by the z/OS Data Collection:
+
+- PDI(ZFDR0040)
+
+b) If ALLCALL is set to YES, there is no finding.
+
+c) If ALLCALL is set to NO, this is a finding.</check-content></check></Rule></Group><Group id="V-224719"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224719r1041443_rule" weight="10.0" severity="medium"><version>ZFDRT000</version><title>Fast Dump Restore (FDR) install data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;Fast Dump Restore (FDR) install have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS FDR for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS FDR for TSS</dc:subject><dc:identifier>4192</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-27205</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26398r1041442_fix">The ISSO will ensure that update and/or ALL access to Fast Dump Restore (FDR) install data sets is limited to systems programmers only, and all  update and/or ALL access is logged. All other FDR users can have read access.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and/or ALL access and if required that all update and/or ALL access is logged. The installing systems programmer will identify if any additional groups have update and/or ALL access for specific data sets and once documented will work with the ISSO to see that they are properly restricted to the ACP (Access Control Program ) active on the system.
+
+Data sets to be protected will be: 
+SYS2.FDR 
+SYS2A.FDR 
+
+The following commands are provided as a sample for implementing dataset controls: 
+
+TSS PERMIT(syspaudt) DSN(SYS2.FDR.) ACCESS(R) 
+TSS PERMIT(syspaudt) DSN(SYS2.FDR.) ACCESS(ALL) ACTION(AUDIT)
+TSS PERMIT(&lt;fdrusers&gt;) DSN(SYS2.FDR.) ACCESS(R) 
+
+TSS PERMIT(syspaudt) DSN(SYS2A.FDR.) ACCESS(R)
+TSS PERMIT(syspaudt) DSN(SYS2A.FDR.) ACCESS(ALL) ACTION(AUDIT)
+TSS PERMIT(&lt;fdrusers&gt;) DSN(SYS2A.FDR.) ACCESS(R)</fixtext><fix id="F-26398r1041442_fix" /><check system="C-26410r1041441_chk"><check-content-ref href="zOS_FDR_for_TSS_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(FDRRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZFDR0000)
+
+b) Verify that access to the Fast Dump Restore (FDR) Install data sets are properly restricted.
+ 
+___ The TSS data set rules for the data sets does not restrict UPDATE and/or ALL access to systems programming personnel.
+
+___ The TSS data set rules for the datasets does not specify that all (i.e., failures and successes) UPDATE and/or ALL access will be logged.
+
+c) If all of the above are untrue, there is no finding.
+
+d) If any of the above is true, this is a finding.</check-content></check></Rule></Group></Benchmark>

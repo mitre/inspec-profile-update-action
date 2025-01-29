@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_TDMF_for_ACF2_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-16">accepted</status><title>z/OS TDMF for ACF2 Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224347" selected="true" /><select idref="V-224348" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224347" selected="true" /><select idref="V-224348" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224347" selected="true" /><select idref="V-224348" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224347" selected="true" /><select idref="V-224348" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224347" selected="true" /><select idref="V-224348" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224347" selected="true" /><select idref="V-224348" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224347" selected="true" /><select idref="V-224348" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224347" selected="true" /><select idref="V-224348" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224347" selected="true" /><select idref="V-224348" selected="true" /></Profile><Group id="V-224347"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224347r1041263_rule" weight="10.0" severity="medium"><version>ZTDM0040</version><title>Transparent Data Migration Facility (TDMF) configuration/parameter/option values are not specified properly.</title><description>&lt;VulnDiscussion&gt;Transparent Data Migration Facility (TDMF) configuration/parameter/option settings control the security and operational characteristics of product. If these setting values are improperly specified, security and operational controls may be weakened. This exposure may threaten the availability of the product applications, and compromise the confidentiality of system and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS TDMF for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS TDMF for ACF2</dc:subject><dc:identifier>4131</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-24802</ident><ident system="http://cyber.mil/legacy">V-18014</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-26012r1041262_fix">The product systems programmer will verify that any configuration/parameters that are required to control the security of the product are properly configured and syntactically correct.
+ 
+See the required parameters below:
+
+Parameter Options:
+VOLUME SECURITY = YES
+CHECK TARGET EMPTY = YES
+
+Session Options:
+Volume Security is not available.
+CHECKTarget|CHKTarget
+
+NOTE: The ISSO will ensure that volume resource protection is defined to the ACP and access to volumes be given to the appropiate personnel.</fixtext><fix id="F-26012r1041262_fix" /><check system="C-26024r1041261_chk"><check-content-ref href="zOS_TDMF_for_ACF2_STIG.xml" name="M" /><check-content>a) Have the the products systems programmer display the configuration/parameters control statements used in the current runing product to define or enable security.
+
+b) Verify the following specifications:
+
+Parameter Options:
+VOLUME SECURITY = YES
+CHECK TARGET EMPTY = YES
+
+Session Options:
+Volume Security is not available.
+CHECKTarget|CHKTarget
+
+c) If (b) above is true, there is no finding.
+
+d) If (b) above is untrue, this is a finding</check-content></check></Rule></Group><Group id="V-224348"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224348r1041266_rule" weight="10.0" severity="medium"><version>ZTDMA000</version><title>Transparent Data Migration Facility (TDMF) installation data sets will be not properly protected.</title><description>&lt;VulnDiscussion&gt;Transparent Data Migration Facility (TDMF) installation data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS TDMF for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS TDMF for ACF2</dc:subject><dc:identifier>4131</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-24781</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26013r1041265_fix">The ISSO will ensure that The ISSO will ensure that WRITE and/or greater access to Transparent Data Migration Facility (TDMF) installation data sets is limited to systems programmers only, and all WRITE and/or greater access is logged. READ access can be given to auditors.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have WRITE and/or greater access and if required that all WRITE and/or greater access is logged. The installing systems programmer will identify if any additional groups have WRITE and/or greater access for specific data sets, and once documented will work with the ISSO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS2.TDMF.
+SYS3.TDMF.
+
+The following commands are provided as a sample for implementing data set controls: 
+
+$KEY(SYS2)
+TDMF.- UID(&lt;syspaudt&gt;) R(A) W(L) A(L) E(A)
+TDMF.- UID(&lt;tstcaudt&gt;) R(A) W(L) A(L) E(A)
+TDMF.- UID(&lt;audtaudt&gt;) R(A) E(A)
+
+$KEY(SYS3)
+TDMF.- UID(&lt;syspaudt&gt;) R(A) W(L) A(L) E(A)
+TDMF.- UID(&lt;tstcaudt&gt;) R(A) W(L) A(L) E(A)
+TDMF.- UID(&lt;audtaudt&gt;) R(A) E(A)</fixtext><fix id="F-26013r1041265_fix" /><check system="C-26025r1041264_chk"><check-content-ref href="zOS_TDMF_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(TDMFRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZTDM0000)
+
+Verify that the accesses to the Transparent Data Migration Facility (TDMF) installation data sets are properly restricted. If the following guidance is true, this is not a finding.
+ 
+___ The ACF2 data set rules for the data sets restricts READ access to auditors.
+
+___ The ACF2 data set rules for the data sets restricts WRITE and/or greater access to systems programming personnel.
+
+___ The ACF2 data set rules for the data sets specify that all (i.e., failures and successes) WRITE and/or greater access is logged.</check-content></check></Rule></Group></Benchmark>

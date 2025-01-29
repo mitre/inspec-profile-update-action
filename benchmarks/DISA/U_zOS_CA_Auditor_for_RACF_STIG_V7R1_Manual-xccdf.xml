@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_CA_Auditor_for_RACF_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-16">accepted</status><title>z/OS CA Auditor for RACF Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224430" selected="true" /><select idref="V-224431" selected="true" /><select idref="V-224432" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224430" selected="true" /><select idref="V-224431" selected="true" /><select idref="V-224432" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224430" selected="true" /><select idref="V-224431" selected="true" /><select idref="V-224432" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224430" selected="true" /><select idref="V-224431" selected="true" /><select idref="V-224432" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224430" selected="true" /><select idref="V-224431" selected="true" /><select idref="V-224432" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224430" selected="true" /><select idref="V-224431" selected="true" /><select idref="V-224432" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224430" selected="true" /><select idref="V-224431" selected="true" /><select idref="V-224432" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224430" selected="true" /><select idref="V-224431" selected="true" /><select idref="V-224432" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224430" selected="true" /><select idref="V-224431" selected="true" /><select idref="V-224432" selected="true" /></Profile><Group id="V-224430"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224430r1041270_rule" weight="10.0" severity="medium"><version>ZADTR000</version><title>CA Auditor installation data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor installation data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CA Auditor for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CA Auditor for RACF</dc:subject><dc:identifier>4141</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-31919</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26095r868279_fix">The ISSO will ensure that update and alter access to CA Auditor installation data sets are limited to systems programmers only, and all update and alter access is logged. Read access can be given to auditors, security administrators, and/or CA Auditor's STCs and batch users.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and alter access is logged. The installing systems programmer will identify if any additional groups have update and/or alter access for specific data sets, and once documented will work with the ISSO to ensure they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS2.EXAMINE
+SYS2A.EXAMINE
+
+The following commands are provided as a sample for implementing data set controls: 
+
+ad 'SYS2.EXAMINE.**' uacc(none) owner(sys2) -
+	audit(success(update) failures(read)) -
+	data('Vendor DS Profile: CA Auditor/Examine')
+pe 'SYS2.EXAMINE.**' id(&lt;syspaudt&gt;) acc(a)
+pe 'SYS2.EXAMINE.**' id(&lt;audtaudt&gt; &lt;secaaudt&gt; EXAMMON) acc(r)
+ad 'SYS2A.EXAMINE.**' uacc(none) owner(sys2a) -
+	audit(success(update) failures(read)) -
+	data('Vendor DS Profile: CA Auditor/Examine')
+pe 'SYS2A.EXAMINE.**' id(&lt;syspaudt&gt;) acc(a)
+pe 'SYS2A.EXAMINE.**' id(&lt;audtaudt&gt; &lt;secaaudt&gt; EXAMMON) acc(r)
+
+setr generic(dataset) refresh</fixtext><fix id="F-26095r868279_fix" /><check system="C-26107r868278_chk"><check-content-ref href="zOS_CA_Auditor_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(ADTRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZADT0000)
+
+Verify that the accesses to the CA Auditor installation data sets are properly restricted.
+ 
+___ The RACF data set rules for the data sets restricts READ access to auditors, security administrators, and/or CA Auditor's STCs and batch users.
+
+___ The RACF data set rules for the data sets restricts UPDATE and/or ALTER access to systems programming personnel.
+
+___ The RACF data set rules for the data sets specify that all (i.e., failures and successes) UPDATE and/or ALTER access are logged.</check-content></check></Rule></Group><Group id="V-224431"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224431r958616_rule" weight="10.0" severity="medium"><version>ZADTR002</version><title>CA Auditor User data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor User data sets have the ability to use privileged functions and/or have access to sensitive data.  Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CA Auditor for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CA Auditor for RACF</dc:subject><dc:identifier>4141</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-32206</ident><ident system="http://cyber.mil/legacy">V-21592</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-26096r519558_fix">The IAO will ensure that update and alter access to CA Auditor User data sets are limited to System Programmers, security personnel and auditors.
+
+The installing Systems Programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and alter access is logged. He will identify if any additional groups have update and/or alter access for specific data sets, and once documented he will work with the IAO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS3.EXAMINE
+
+The following commands are provided as a sample for implementing data set controls: 
+
+ad 'SYS3.EXAMINE.**' uacc(none) owner(sys3) -
+	audit(failures(read)) -
+	data('Vendor DS Profile: CA Auditor')
+pe 'SYS3.EXAMINE.**' id(&lt;syspaudt&gt;) acc(a)
+pe 'SYS3.EXAMINE.**' id(&lt;audtaudt&gt; &lt;secaaudt&gt;) acc(A)
+
+setr generic(dataset) refresh</fixtext><fix id="F-26096r519558_fix" /><check system="C-26108r519557_chk"><check-content-ref href="zOS_CA_Auditor_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ADTUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZADT0002)
+
+Verify that the accesses to the CA Auditor User data sets are properly restricted.
+ 
+___	The RACF data set rules for the data sets restricts UPDATE and/or ALTER access to systems programming personnel, security personnel and auditors.
+</check-content></check></Rule></Group><Group id="V-224432"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224432r1041273_rule" weight="10.0" severity="medium"><version>ZADTR020</version><title>CA Auditor resources are not properly defined and protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor can run with sensitive system privileges, and potentially can circumvent system controls. Failure to properly control access to product resources could result in the compromise of the operating system environment, and compromise the confidentiality of customer data. Many utilities assign resource controls that can be granted to systems programmers only in greater than read authority. Resources are also granted to certain non systems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CA Auditor for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CA Auditor for RACF</dc:subject><dc:identifier>4141</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17947</ident><ident system="http://cyber.mil/legacy">SV-32209</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-26097r1041272_fix">The ISSO will verify that the LTDMMAIN resource in the PROGRAM resource class is restricted to sytem programmers, auditors, and security personnel.
+
+The RACF rules for the LTDMMAIN resource specify a default access of NONE and no RACF rules that allow access to the LTDMMAIN resource.
+
+Example:
+
+rdef program LTDMMAIN uacc(none) owner(admin) audit(failures(read)) -
+data('added per PDI ZADT0020') 
+
+The RACF rules for the LTDMMAIN resource is restricted access to systems programmers, auditors, and security personnel with access of READ. All RACF rules are defined with UACC(NONE).
+
+Example:
+
+rdef program ltdmmain -                
+ addmem('SYS2A.EXAMINE.V120SP01.CAILIB'//nopadchk) -  
+ data('Required by SRR PDI ZADTR020') -        
+ audit(failures(read)) uacc(none) owner(admin)       
+pe LTDMMAIN cl(program) id(syspaudt) acc(r)
+pe LTDMMAIN cl(program) id(audtaudt) acc(r)
+pe LTDMMAIN cl(program) id(secaaudt) acc(r)
+
+setr when(program) ref</fixtext><fix id="F-26097r1041272_fix" /><check system="C-26109r1041271_chk"><check-content-ref href="zOS_CA_Auditor_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(ZADT0020)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZADT0020)
+
+Verify that the access to the LTDMMAIN resource in the PROGRAM resource class is restricted.
+
+___ The RACF rules for the resources specify a default access of NONE.
+
+___ The RACF rules for the resources are restricted access to sytem programmers, auditors, and security personnel.
+
+___ All RACF rules are defined with UACC(NONE).</check-content></check></Rule></Group></Benchmark>

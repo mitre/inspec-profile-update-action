@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?>
+<Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="MULTI-FUNCTION_DEVICE" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1">
+	<status date="2024-10-10">accepted</status>
+	<title>Multifunction Device and Network Printers Security Technical Implemetation Guide</title>
+	<description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description>
+	<notice id="terms-of-use" xml:lang="en"/>
+	<reference href="http://iase.disa.mil">
+		<dc:publisher>DISA</dc:publisher>
+		<dc:source>STIG.DOD.MIL</dc:source>
+	</reference>
+	<plain-text id="release-info">Release: 15 Benchmark Date: 30 Jan 2025</plain-text>
+	<version>2</version>
+	<Profile id="MAC-1_Classified">
+		<title>I - Mission Critical Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-6777" selected="true"/>
+		<select idref="V-6779" selected="true"/>
+		<select idref="V-6780" selected="true"/>
+		<select idref="V-6781" selected="true"/>
+		<select idref="V-6782" selected="true"/>
+		<select idref="V-6783" selected="true"/>
+		<select idref="V-6784" selected="true"/>
+		<select idref="V-6790" selected="true"/>
+		<select idref="V-6794" selected="true"/>
+		<select idref="V-6796" selected="true"/>
+		<select idref="V-6797" selected="true"/>
+		<select idref="V-6798" selected="true"/>
+		<select idref="V-6799" selected="true"/>
+		<select idref="V-6800" selected="true"/>
+		<select idref="V-6801" selected="true"/>
+		<select idref="V-6802" selected="true"/>
+		<select idref="V-6803" selected="true"/>
+		<select idref="V-6804" selected="true"/>
+		<select idref="V-6805" selected="true"/>
+		<select idref="V-6806" selected="true"/>
+		<select idref="V-97711" selected="true"/>
+	</Profile>
+	<Profile id="MAC-1_Public">
+		<title>I - Mission Critical Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-6777" selected="true"/>
+		<select idref="V-6779" selected="true"/>
+		<select idref="V-6780" selected="true"/>
+		<select idref="V-6782" selected="true"/>
+		<select idref="V-6783" selected="true"/>
+		<select idref="V-6784" selected="true"/>
+		<select idref="V-6790" selected="true"/>
+		<select idref="V-6794" selected="true"/>
+		<select idref="V-6797" selected="true"/>
+		<select idref="V-6798" selected="true"/>
+		<select idref="V-6799" selected="true"/>
+		<select idref="V-6800" selected="true"/>
+		<select idref="V-6803" selected="true"/>
+		<select idref="V-6804" selected="true"/>
+		<select idref="V-97711" selected="true"/>
+	</Profile>
+	<Profile id="MAC-1_Sensitive">
+		<title>I - Mission Critical Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-6777" selected="true"/>
+		<select idref="V-6779" selected="true"/>
+		<select idref="V-6780" selected="true"/>
+		<select idref="V-6781" selected="true"/>
+		<select idref="V-6782" selected="true"/>
+		<select idref="V-6783" selected="true"/>
+		<select idref="V-6784" selected="true"/>
+		<select idref="V-6790" selected="true"/>
+		<select idref="V-6794" selected="true"/>
+		<select idref="V-6796" selected="true"/>
+		<select idref="V-6797" selected="true"/>
+		<select idref="V-6798" selected="true"/>
+		<select idref="V-6799" selected="true"/>
+		<select idref="V-6800" selected="true"/>
+		<select idref="V-6801" selected="true"/>
+		<select idref="V-6802" selected="true"/>
+		<select idref="V-6803" selected="true"/>
+		<select idref="V-6804" selected="true"/>
+		<select idref="V-6805" selected="true"/>
+		<select idref="V-6806" selected="true"/>
+		<select idref="V-97711" selected="true"/>
+	</Profile>
+	<Profile id="MAC-2_Classified">
+		<title>II - Mission Support Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-6777" selected="true"/>
+		<select idref="V-6779" selected="true"/>
+		<select idref="V-6780" selected="true"/>
+		<select idref="V-6781" selected="true"/>
+		<select idref="V-6782" selected="true"/>
+		<select idref="V-6783" selected="true"/>
+		<select idref="V-6784" selected="true"/>
+		<select idref="V-6790" selected="true"/>
+		<select idref="V-6794" selected="true"/>
+		<select idref="V-6796" selected="true"/>
+		<select idref="V-6797" selected="true"/>
+		<select idref="V-6798" selected="true"/>
+		<select idref="V-6799" selected="true"/>
+		<select idref="V-6800" selected="true"/>
+		<select idref="V-6801" selected="true"/>
+		<select idref="V-6802" selected="true"/>
+		<select idref="V-6803" selected="true"/>
+		<select idref="V-6804" selected="true"/>
+		<select idref="V-6805" selected="true"/>
+		<select idref="V-6806" selected="true"/>
+		<select idref="V-97711" selected="true"/>
+	</Profile>
+	<Profile id="MAC-2_Public">
+		<title>II - Mission Support Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-6777" selected="true"/>
+		<select idref="V-6779" selected="true"/>
+		<select idref="V-6780" selected="true"/>
+		<select idref="V-6782" selected="true"/>
+		<select idref="V-6783" selected="true"/>
+		<select idref="V-6784" selected="true"/>
+		<select idref="V-6790" selected="true"/>
+		<select idref="V-6794" selected="true"/>
+		<select idref="V-6797" selected="true"/>
+		<select idref="V-6798" selected="true"/>
+		<select idref="V-6799" selected="true"/>
+		<select idref="V-6800" selected="true"/>
+		<select idref="V-6803" selected="true"/>
+		<select idref="V-6804" selected="true"/>
+		<select idref="V-97711" selected="true"/>
+	</Profile>
+	<Profile id="MAC-2_Sensitive">
+		<title>II - Mission Support Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-6777" selected="true"/>
+		<select idref="V-6779" selected="true"/>
+		<select idref="V-6780" selected="true"/>
+		<select idref="V-6781" selected="true"/>
+		<select idref="V-6782" selected="true"/>
+		<select idref="V-6783" selected="true"/>
+		<select idref="V-6784" selected="true"/>
+		<select idref="V-6790" selected="true"/>
+		<select idref="V-6794" selected="true"/>
+		<select idref="V-6796" selected="true"/>
+		<select idref="V-6797" selected="true"/>
+		<select idref="V-6798" selected="true"/>
+		<select idref="V-6799" selected="true"/>
+		<select idref="V-6800" selected="true"/>
+		<select idref="V-6801" selected="true"/>
+		<select idref="V-6802" selected="true"/>
+		<select idref="V-6803" selected="true"/>
+		<select idref="V-6804" selected="true"/>
+		<select idref="V-6805" selected="true"/>
+		<select idref="V-6806" selected="true"/>
+		<select idref="V-97711" selected="true"/>
+	</Profile>
+	<Profile id="MAC-3_Classified">
+		<title>III - Administrative Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-6777" selected="true"/>
+		<select idref="V-6779" selected="true"/>
+		<select idref="V-6780" selected="true"/>
+		<select idref="V-6781" selected="true"/>
+		<select idref="V-6782" selected="true"/>
+		<select idref="V-6783" selected="true"/>
+		<select idref="V-6784" selected="true"/>
+		<select idref="V-6790" selected="true"/>
+		<select idref="V-6794" selected="true"/>
+		<select idref="V-6796" selected="true"/>
+		<select idref="V-6797" selected="true"/>
+		<select idref="V-6798" selected="true"/>
+		<select idref="V-6799" selected="true"/>
+		<select idref="V-6800" selected="true"/>
+		<select idref="V-6801" selected="true"/>
+		<select idref="V-6802" selected="true"/>
+		<select idref="V-6803" selected="true"/>
+		<select idref="V-6804" selected="true"/>
+		<select idref="V-6805" selected="true"/>
+		<select idref="V-6806" selected="true"/>
+		<select idref="V-97711" selected="true"/>
+	</Profile>
+	<Profile id="MAC-3_Public">
+		<title>III - Administrative Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-6777" selected="true"/>
+		<select idref="V-6779" selected="true"/>
+		<select idref="V-6780" selected="true"/>
+		<select idref="V-6782" selected="true"/>
+		<select idref="V-6783" selected="true"/>
+		<select idref="V-6784" selected="true"/>
+		<select idref="V-6790" selected="true"/>
+		<select idref="V-6794" selected="true"/>
+		<select idref="V-6797" selected="true"/>
+		<select idref="V-6798" selected="true"/>
+		<select idref="V-6799" selected="true"/>
+		<select idref="V-6800" selected="true"/>
+		<select idref="V-6803" selected="true"/>
+		<select idref="V-6804" selected="true"/>
+		<select idref="V-97711" selected="true"/>
+	</Profile>
+	<Profile id="MAC-3_Sensitive">
+		<title>III - Administrative Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-6777" selected="true"/>
+		<select idref="V-6779" selected="true"/>
+		<select idref="V-6780" selected="true"/>
+		<select idref="V-6781" selected="true"/>
+		<select idref="V-6782" selected="true"/>
+		<select idref="V-6783" selected="true"/>
+		<select idref="V-6784" selected="true"/>
+		<select idref="V-6790" selected="true"/>
+		<select idref="V-6794" selected="true"/>
+		<select idref="V-6796" selected="true"/>
+		<select idref="V-6797" selected="true"/>
+		<select idref="V-6798" selected="true"/>
+		<select idref="V-6799" selected="true"/>
+		<select idref="V-6800" selected="true"/>
+		<select idref="V-6801" selected="true"/>
+		<select idref="V-6802" selected="true"/>
+		<select idref="V-6803" selected="true"/>
+		<select idref="V-6804" selected="true"/>
+		<select idref="V-6805" selected="true"/>
+		<select idref="V-6806" selected="true"/>
+		<select idref="V-97711" selected="true"/>
+	</Profile>
+	<Group id="V-6777">
+		<title>MFD Protocol TCP/IP</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-6999r2_rule" severity="medium" weight="10.0">
+			<version>MFD01.001</version>
+			<title>The MFD or Network Printer must not enable network protocols other than TCP/IP.</title>
+			<description>&lt;VulnDiscussion&gt;The greater the number of protocols allowed active on the network the more vulnerabilities there will be available to be exploited. This also prevents accidental implementation of a “call-home” feature that is not allowed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6430r2_fix">Configure the MFD or Network Printer to disable all protocols except TCP/IP.</fixtext>
+			<fix id="F-6430r2_fix"/>
+			<check system="C-2941r2_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will verify the configuration settings in the MFD or Network Printer to ensure the only protocol enabled is TCP/IP.
+
+If a protocol other than TCP/IP is enabled, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6779">
+		<title>MFD/Printer Firewall/Router Rule Perimeter</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7001r2_rule" severity="medium" weight="10.0">
+			<version>MFD01.003</version>
+			<title>A firewall or router rule must block all ingress and egress traffic from the enclave perimeter to the MFD or Network Printer.</title>
+			<description>&lt;VulnDiscussion&gt;Access to the MFD or printer from outside the enclave network could lead to a denial of service caused by a large number of large print files being sent to the device. Ability for the MFD or printer to access addresses outside the enclave network could lead to a compromise of sensitive data caused by forwarding a print file to a location outside of the enclave network. This also prevents accidental implementation of a “call-home” feature that is not allowed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6432r2_fix">Configure a firewall or router rule to block all ingress and egress traffic from the enclave perimeter to the MFD or Network Printer.</fixtext>
+			<fix id="F-6432r2_fix"/>
+			<check system="C-2954r2_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will verify that a firewall or router rule blocks all ingress and egress traffic from the enclave perimeter to the MFD or Network Printer.
+
+If a firewall or router does not block all ingress and egress traffic from the enclave perimeter to the MFD or Network Printer, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6780">
+		<title>MFD Firmware</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7002r2_rule" severity="medium" weight="10.0">
+			<version>MFD02.004</version>
+			<title>The MFD or Network Printer must employ the most current firmware available.</title>
+			<description>&lt;VulnDiscussion&gt;MFD devices or printers utilizing old firmware can expose the network to known vulnerabilities leading to a denial of service or a compromise of sensitive data. While the MFD must use the most current firmware available, it must not use a “call-home” feature that is not allowed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6433r2_fix">If the MFD or printer cannot be upgraded replace it.
+
+If the MFD or printer can be upgraded but is not using the latest release of the firmware, upgrade the firmware.</fixtext>
+			<fix id="F-6433r2_fix"/>
+			<check system="C-2965r2_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will verify that the MFD or Network Printer are flash upgradeable and are configured to use the most current firmware available. 
+
+Ensure any “call-home” feature is disabled.
+
+If the MFD or Network Printer is not flash upgradeable, this is a finding.
+
+If the MFD or Network Printer is not configured with the most current firmware, this is a finding.
+
+If the MFD or Network Printer has the “call-home” feature enabled, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6781">
+		<title>MFD SNMP Community Strings </title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7003r2_rule" severity="high" weight="10.0">
+			<version>MFD02.001</version>
+			<title>The default passwords and SNMP community strings of all management services have not been  replaced with complex passwords.</title>
+			<description>&lt;VulnDiscussion&gt;There are many known vulnerabilities in the SNMP protocol and if the default community strings and passwords are not modified an unauthorized individual could gain control of the MFD or printer.  This could lead to a denial of service or the compromise of sensitive data.
+The SA will ensure the default passwords and SNMP community strings of all management services are replaced with complex passwords.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6434r1_fix">Develop a plan to coordinate the modification of the default passwords and SNMP community strings of all management services replacing them with complex passwords.  Obtain CM approval of the plan and execute the plan.</fixtext>
+			<fix id="F-6434r1_fix"/>
+			<check system="C-2966r2_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with assistance from the SA, verify the default passwords and SNMP community strings of all management services have been  replaced with complex passwords.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6782">
+		<title>MFD Configuration State After Power Down or Reboot</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7004r2_rule" severity="high" weight="10.0">
+			<version>MFD02.002</version>
+			<title>The MFD or Network Printer must maintain configuration state (e.g., passwords, service settings) after a power down or restart.</title>
+			<description>&lt;VulnDiscussion&gt;If the MFD does not maintain it state over a power down or restart, it will expose the network to all of the vulnerabilities that where mitigated by the modifications made to its configuration state. This also prevents accidental implementation of a “call-home” feature that is not allowed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6435r2_fix">If the MFD or Network Printer cannot be configured to maintain state, then replace the MFD with a MFD that will maintain its configuration state (passwords, service settings, etc) after a power down or restart.</fixtext>
+			<fix id="F-6435r2_fix"/>
+			<check system="C-2968r2_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will verify the MFD or Network Printer maintains its configuration state after a power down or restart. Review the device documentation and/or confirm through demonstration to verify the MFD maintains configuration settings.
+
+If the MFD or Network Printer does not maintain its configuration state, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6783">
+		<title>MFD Management Protocols</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7005r2_rule" severity="medium" weight="10.0">
+			<version>MFD02.003</version>
+			<title>Management protocols, with the exception of HTTPS and SNMPv3, must be disabled at all times except when necessary.</title>
+			<description>&lt;VulnDiscussion&gt;Unneeded protocols expose the device and the network to unnecessary vulnerabilities.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCPP-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6436r2_fix">Disable all management protocols except HTTPS and SNMPv3 unless approval has been granted by the organization's AO/ISSM.</fixtext>
+			<fix id="F-6436r2_fix"/>
+			<check system="C-2969r2_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>Verify that all management protocols are disabled unless approved by the organization's AO/ISSM.
+
+Protocols may be enabled temporarily if needed to upgrade firmware or configure the device, but must be disabled immediately when this activity is completed. HTTPS and SNMPv3 may be used but must be configured in accordance with the requirements of the Network Infrastructure STIG.
+
+If management protocols other than HTTPS and SNMPv3 are enabled unnecessarily or without AO/ISSM approval, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6784">
+		<title> MFD or a printer can be managed from any IP</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7009r1_rule" severity="high" weight="10.0">
+			<version>MFD02.005</version>
+			<title>There is no restriction on where a MFD or a printer can be remotely managed.</title>
+			<description>&lt;VulnDiscussion&gt;Since unrestricted access to the MFD or printer for management is not required the restricting the management interface to specific IP addresses decreases the exposure of the system to malicious actions.  If the MFD or printer is compromised it could lead to a denial of service or a compromise of sensitive data.
+The SA will ensure devices can only be remotely managed by SA’s or printer administrators from specific IPs (SA workstations and print spooler).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCBP-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6447r1_fix">Restrict access to the MFD's or printer's management function to a specific set of IP addresses.  If the device lacks this functionality use an ACL in a router, firewall or switch to restrict the access.</fixtext>
+			<fix id="F-6447r1_fix"/>
+			<check system="C-2984r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with the assistance of the SA, verify that the MFD or printer can only be remotely managed by SA or printer administrator from specific IPs (SA workstations and print spooler).  Look for list that restricts the protocol used for administrative access to specific IP addresses.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6790">
+		<title>Print Services Restricted to Port 9100 and/or LPD</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7015r1_rule" severity="low" weight="10.0">
+			<version>MFD03.001</version>
+			<title>Print services for a MFD or printer are not restricted to Port 9100 and/or LPD (Port 515).
+
+Where both Windows and non-Windows clients need services from the same device, both Port 9100 and LPD can be enabled simultaneously.
+</title>
+			<description>&lt;VulnDiscussion&gt;Printer services running on ports other than the known ports for printing cannot be monitored on the network and could lead to a denial of service it the invalid port is blocked by a network administrator responding to an alert from the IDS for traffic on an unauthorized port.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;Print clients configured to use the unauthorized port(s) will not be able to print until they are reconfigured to use the correct port.&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCBP-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6456r1_fix">Develop a plan to coordinate the reconfiguration of the printer servers and clients so that print services runs only on authorized ports.  Obtain CM approval of the plan and implement the plan.</fixtext>
+			<fix id="F-6456r1_fix"/>
+			<check system="C-2994r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with the assistance of the SA, verify that the MFD or printer print services are restricted to LPD or port 9100.
+
+Where both Windows and non-Windows clients need services from the same device, both Port 9100 and LPD can be enabled simultaneously.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6794">
+		<title>MFD/Printer Restrict Jobs Only From Print Spooler</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7019r3_rule" severity="medium" weight="10.0">
+			<version>MFD04.001</version>
+			<title>A MFD or printer is not configured to restrict jobs to those from print spoolers.
+</title>
+			<description>&lt;VulnDiscussion&gt;If MFDs or printers are not restricted to accept print jobs only from print spoolers that authenticate the user and log the job, a denial of service can be created by the MFD or printer accepting one or more large print jobs from an unauthorized user.
+
+The SA will ensure MFDs and printers are configured to restrict jobs only to print spoolers, not directly from users.
+
+Mobile device print jobs must be sent to a print spooler, they must not be sent directly from a mobile device to a MFD or printer that supports direct wireless printing (e.g., AirPrint, Wi-Fi Direct, etc.).
+
+The configuration is accomplished by restricting access, by IP, to those of the print spooler and SAs.  If supported, IP restriction is accomplished on the device, or if not supported, by placing the device behind a firewall, switch or router with an appropriate discretionary access control list.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;Client systems that are configured to bypass the print server that spools print jobs will lose access to the printer until reconfigured.&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6461r2_fix">Reconfigure the device to restrict access, by IP, to those of the print spoolers and SAs.  If the device does not support this functionality, place the device behind a firewall, switch or router with an appropriate discretionary access control list. Disable direct wireless printing on the MFD or printer.</fixtext>
+			<fix id="F-6461r2_fix"/>
+			<check system="C-2998r4_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with the assistance of the SA, verify that MFDs and printers are configured to restrict jobs only to print spoolers, not directly from users.
+
+If print jobs are sent directly to the MFD or printer, this is a finding.
+
+If direct wireless printing (e.g., AirPrint, Wi-Fi Direct, etc.), is enabled on the MFD or printer, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6796">
+		<title>MFD Authorized Users Restrictions</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7021r1_rule" severity="medium" weight="10.0">
+			<version>MFD05.001</version>
+			<title>Print spoolers are  not configured to restrict access to authorized users and restrict users to managing their own individual jobs. </title>
+			<description>&lt;VulnDiscussion&gt;If unauthorized users are allowed access to the print spooler they can queue large print file creating a denial of service for other users.  If users are not restricted to manipulating only files they created, they could create ad denial of service by changing the print order of existing files or deleting other users files.
+The SA will ensure print spoolers are configured to restrict access to authorized user and restrict users to managing their own individual jobs.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAN-1, IAIA-1, IAIA-2&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6463r1_fix">Configure the print spoolers to restrict access to authorized users and restrict users to managing their own individual jobs.</fixtext>
+			<fix id="F-6463r1_fix"/>
+			<check system="C-3002r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with the assistance of the SA, verify that the print spoolers are configured to restrict access to authorized users and restrict users to managing their own individual jobs.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6797">
+		<title>MFD and Spooler Auditing</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7022r1_rule" severity="medium" weight="10.0">
+			<version>MFD06.001</version>
+			<title>The devices and their spoolers do not have auditing enabled. </title>
+			<description>&lt;VulnDiscussion&gt;Without auditing the identification and prosecution of an individual that performs malicious actions is difficult if not impossible.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAR-1, ECAR-2, ECAR-3&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6465r1_fix">Configure the devices and their spoolers have auditing fully enabled.</fixtext>
+			<fix id="F-6465r1_fix"/>
+			<check system="C-3005r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with the assistance of the SA, verify that devices and their spoolers have auditing fully enabled.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6798">
+		<title>MFD/Printer Security Policy </title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7023r3_rule" severity="low" weight="10.0">
+			<version>MFD06.002</version>
+			<title>Implementation of an MFD and printer security policy for the protection of classified information. </title>
+			<description>&lt;VulnDiscussion&gt;Department of Defense Manual 5200.01, "Protection of Classified Information" provides policy, assigns responsibilities, and provides procedures for the designation, marking, protection, and dissemination of controlled unclassified information (CUI) and classified information.  DoDM 5200.01, Volume 3, Section 14 mandates that organizations identify equipment used for classified processing and develop security procedures to safeguard these devices.  
+
+This requires that each organization have an MFD and printer security policy that lists the following safeguards: 
+a. Prevent unauthorized access to that information, including by repair or maintenance personnel.
+b. Ensure that repair procedures do not result in unauthorized dissemination of or access to classified information.
+c. Replace and destroy equipment parts in the appropriate manner when classified information cannot be removed.
+d. Ensure that appropriately knowledgeable, cleared personnel inspect equipment and associated media used to process classified information before the equipment is removed from protected areas to ensure there is no retained classified information.
+e. Ensure MFD and printers used to process classified information are certified and accredited in accordance with DoDD 8500.01E. 
+f. Ensure that MFD and printers address issues concerning compromising emanations in accordance with DoDD 8500.01E.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;DCBP-1, ECAN-1, ECIC-1, IAIA-1, PECS-1, PECS-2, PEDD-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6467r2_fix">Develop and implement an MFD and printer security policy consistent with DoDM 5200.01, Volume 3, Section 14.</fixtext>
+			<fix id="F-6467r2_fix"/>
+			<check system="C-3006r3_chk">
+				<check-content-ref name="I" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>Obtain and review the organization's MFD and printer security policy.  If none is provided, this is a finding.  If it does not prescribe the appropriate safeguards listed below, this is a finding.
+Safeguards to be listed in the organization's MFD and printer security policy;
+a. Prevent unauthorized access to that information, including by repair or maintenance personnel.
+b. Ensure that repair procedures do not result in unauthorized dissemination of or access to classified information.
+c. Replace and destroy equipment parts in the appropriate manner when classified information cannot be removed.
+d. Ensure that appropriately knowledgeable, cleared personnel inspect equipment and associated media used to process classified information before the equipment is removed from protected areas to ensure there is no retained classified information.
+e. Ensure MFD and printers used to process classified information are certified and accredited in accordance with DoDD 8500.01E. 
+f. Ensure that MFD and printers address issues concerning compromising emanations in accordance with DoDD 8500.01E.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6799">
+		<title>MFD Level of Audit and Reviewing</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7024r2_rule" severity="low" weight="10.0">
+			<version>MFD06.006</version>
+			<title>The level of audit has not been established or the audit logs being collected for the devices and print spoolers are not being reviewed.</title>
+			<description>&lt;VulnDiscussion&gt;If inadequate information is captured in the audit, the identification and prosecution of malicious user will be very difficult. If the audits are not regularly reviewed suspicious activity may go undetected for a long time.  Therefore, the level of auditing for MFDs, printers, and print spoolers must be defined and personnel identified to review the audit logs.   &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECAR-1, ECAR-2, ECAR-3, ECAT-1, ECAT-2&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6470r2_fix">Define the level of auditing and identify personnel responsible for reviewing audit logs of MFDs, printers, and print spoolers.</fixtext>
+			<fix id="F-6470r2_fix"/>
+			<check system="C-3009r2_chk">
+				<check-content-ref name="I" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>Obtain and review the organization's MFD and printer security policy.  If the level of auditing has not been established, this is a finding.  If personnel have not been identified to regularly review MFD, printer, and print spooler logs, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6800">
+		<title>MFD Classified Network</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7025r2_rule" severity="high" weight="10.0">
+			<version>MFD07.001</version>
+			<title>MFDs with print, copy, scan, or fax capabilities must be prohibited on classified networks without the approval of the DAA.</title>
+			<description>&lt;VulnDiscussion&gt;MFDs with print, copy, scan, or fax capabilities, if compromised, could lead to the compromise of classified data or the compromise of the network.  The IAO will ensure MFDs with copy, scan, or fax capabilities are not allowed on classified networks unless approved by the DAA.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;If the device is removed from the classified network it will need to be sanitized in accordance with DoDD 5200.1R if it is to be used for unclassified processing or is to be decommissioned.&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCBP-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6472r4_fix">Remove the MFD from the classified network until DAA approval is obtained.</fixtext>
+			<fix id="F-6472r4_fix"/>
+			<check system="C-3012r4_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will interview the IAO to verify that MFDs with print, copy, scan, or fax capabilities are prohibited on classified networks unless approved by the DAA.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6801">
+		<title>MFD Clearing Disk Space Scan to Disk</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7026r1_rule" severity="medium" weight="10.0">
+			<version>MFD07.002</version>
+			<title>A MFD device, with scan to hard disk functionality used, is not configured to clear the hard disk between jobs.</title>
+			<description>&lt;VulnDiscussion&gt;If the MFD is compromised the un-cleared, previously used, space on the hard disk drive can be read which can lead to a compromise of sensitive data.
+The SA will ensure the device is configured to clear the hard disk between jobs if scan to hard disk functionality is used.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECRC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6475r1_fix">Configured the MFD to clear the hard disk between jobs if scan to hard disk functionality is used.</fixtext>
+			<fix id="F-6475r1_fix"/>
+			<check system="C-3016r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer, with the assistance of the SA, verify the device is configured to clear the hard disk between jobs if scan to hard disk functionality is used.
+
+Note:  This policy is a security-in-depth measure and applies to normal use. Thus, the clearing algorithm does not have to comply with DoD sanitization procedures. Proper sanitization using a DoD compliant procedure will be required only for final destruction/disposition. 
+
+Note: This does not apply if PKI authenticated access and discretionary access controls (authorization controls) are used to protect the stored data. 
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6802">
+		<title>MFD Scan Discretionary Access Control</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7027r1_rule" severity="low" weight="10.0">
+			<version>MFD07.003</version>
+			<title>Scan to a file share is enabled but the file shares do not have the appropriate discretionary access control list in place.</title>
+			<description>&lt;VulnDiscussion&gt;Without appropriate discretionary access controls unauthorized individuals may read the scanned data.  This can lead to a compromise of sensitive data.
+The SA will ensure file shares have the appropriate discretionary access control list in place if scan to a file share is enabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6476r1_fix">Create the appropriate discretionary access control list for file shares if scan to a file share is enabled.</fixtext>
+			<fix id="F-6476r1_fix"/>
+			<check system="C-3017r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with the assistance of the SA, verify that file shares have the appropriate discretionary access control list in place if scan to a file share is enabled.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6803">
+		<title>MFD fax from network auditing</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7028r2_rule" severity="low" weight="10.0">
+			<version>MFD07.004</version>
+			<title>Auditing of user access and fax logs must be enabled when fax from the network is enabled.</title>
+			<description>&lt;VulnDiscussion&gt;Without auditing the originator and destination of a fax cannot be determined. Prosecuting of an individual who maliciously compromises sensitive data via a fax will be hindered without audits.
+
+The SA will ensure auditing of user access and fax logging is enabled if fax from the network is enabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6477r2_fix">Configure the MFD to audit faxing. If this is not possible, disable the fax functionality and disconnect the phone line from the MFD.</fixtext>
+			<fix id="F-6477r2_fix"/>
+			<check system="C-3018r2_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with the assistance from the SA, verify auditing of user access and fax logging is enabled if fax from the network is enabled. If auditing of user access and fax logging is not enabled, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6804">
+		<title>MFD scan to SMTP (email)</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7029r2_rule" severity="medium" weight="10.0">
+			<version>MFD07.005</version>
+			<title>MFDs must not allow scan to SMTP (email).</title>
+			<description>&lt;VulnDiscussion&gt;The SMTP engines found on the MFDs reviewed when writing the MFD STIG did not have robust enough security features supporting scan to email. Because of the lack of robust security, scan to email will be disabled on MFD devices. Failure to disable this feature could lead to an untraceable and possibly undetectable compromise of sensitive data.
+
+The SA will ensure MFDs do not allow scan to SMTP.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6478r1_fix">Disable the scan to SMTP (email) feature on all MFDs.</fixtext>
+			<fix id="F-6478r1_fix"/>
+			<check system="C-3019r2_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with the assistance from the SA, verify devices do not allow scan to SMTP. If scan to SMTP is enabled on the MFD, this is a finding.
+
+Note: With AO approval, strict usage policies, and user training, MFD scan to SMTP (email) is allowed if CAC/PKI authentication is implemented on the MFD. There must be a method implemented for non-repudiation and authenticated access. A USB/flash drive/thumb drive or any removable storage capability will not be installed.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6805">
+		<title>MFD Hard Drive Lock</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7030r1_rule" severity="medium" weight="10.0">
+			<version>MFD08.001</version>
+			<title>A MFD device does not have a mechanism to lock and prevent access to the hard drive.</title>
+			<description>&lt;VulnDiscussion&gt;If the hard disk drive of a MFD can be removed from the MFD the data on the drive can be recovered and read.  This can lead to a compromise of sensitive data.
+
+The IAO will ensure the device has a mechanism to lock and prevent access to the hard disk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;PECF-1, PECF-2&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6479r1_fix">If the lock is not locked, lock it.
+
+If there is no lock see if the vendor makes one and if so acquire it an lock the drive.
+If the vendor does not supply a lock, acquire an aftermarket lock that will secure the drive so that it cannot be accessed.  Even a drive that cannot be removed but the connectors can be removed is vulnerable.
+</fixtext>
+			<fix id="F-6479r1_fix"/>
+			<check system="C-3020r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with the assistance of the SA, verify that the device has a mechanism to lock and prevent access to the hard disk.
+
+What we are looking for here is a locking mechanism with a key securing the hard drive or the case access to the hard drive.  The lock will be locked or this is a finding.
+
+Note:  This is not required if physical security measures are in place, if the drive is not easily removable, if drive is encrypted, or if there is zeroization or other strong protection mechanism.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6806">
+		<title>MFD/Printer Global Configuration Settings</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7031r1_rule" severity="high" weight="10.0">
+			<version>MFD08.002</version>
+			<title>The device is not configured to prevent non-printer administrators from altering the global configuration of the device.</title>
+			<description>&lt;VulnDiscussion&gt;If unauthorized users can alter the global configuration of the MFD they can remove all security.  This can lead to the compromise of sensitive data or the compromise of the network the MFD is attached to.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6480r1_fix">Configured the device to prevent non-printer administrators from altering the global configuration of the device.  If the device cannot be configured in this manner, replace the device with one that can be configured in an acceptable manner.</fixtext>
+			<fix id="F-6480r1_fix"/>
+			<check system="C-3021r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>The reviewer will, with the assistance of the SA, verify that the device is configured to prevent non-printer administrators from altering the global configuration of the device.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-6807">
+		<title>MFD/Printer Global Configuration Settings</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-7031r1_rule" severity="high" weight="10.0">
+			<version>MFD09.001</version>
+			<title>The device must be supported by the vendor.</title>
+			<description>&lt;VulnDiscussion&gt;The use of unsupported devices can lead to the compromise of sensitive data or the compromise of the network the MFD is attached to.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<fixtext fixref="F-6480r1_fix">Replace the device with one that is supported by the vendor and follow vendor best security practices.</fixtext>
+			<fix id="F-6480r1_fix"/>
+			<check system="C-3021r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>This STIG is sunset and will no longer be maintained. If the site is using a device not supported by the vendor, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-97711">
+		<title>MFD03.002</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-106815r1_rule" severity="medium" weight="10.0">
+			<version>MFD03.002</version>
+			<title>The MFD must be configured to prohibit the use of all unnecessary and/or nonsecure functions, physical and logical ports, protocols, and/or services.</title>
+			<description>&lt;VulnDiscussion&gt;In order to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling (i.e., embedding of data types within data types), organizations must disable unused or unnecessary physical and logical ports/protocols on information systems.
+
+MFDs are capable of providing a wide variety of functions and services. Some of the functions and services provided by default may not be necessary to support essential organizational operations. Additionally, it is sometimes convenient to provide multiple services from a single component (e.g., email and web services); however, doing so increases risk over limiting the services provided by any one component. 
+
+To support the requirements and principles of least functionality, the MFD must support the organizational requirements providing only essential capabilities and limiting the use of ports, protocols, and/or services to only those required, authorized, and approved. Some network devices have capabilities enabled by default; if these capabilities are not necessary, they must be disabled. If a particular capability is used, then it must be documented and approved.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Multifunction Device - MFD</dc:title>
+				<dc:publisher>DISA</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Multifunction Device - MFD</dc:subject>
+				<dc:identifier>551</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-000382</ident>
+			<fixtext fixref="F-103387r1_fix">Configure the MFD to prohibit the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services. This included hardware ports, for example USB ports.</fixtext>
+			<fix id="F-103387r1_fix"/>
+			<check system="C-96545r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_MULTI-FUNCTION DEVICE.xml"/>
+				<check-content>Determine if the network device prohibits the use of all unnecessary and/or nonsecure functions, ports, protocols, and/or services. This includes hardware ports such as USB ports. 
+
+If any unnecessary or nonsecure functions, ports, protocols and/or services are permitted, this is a finding.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+</Benchmark>

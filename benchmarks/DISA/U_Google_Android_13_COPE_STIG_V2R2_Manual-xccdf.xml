@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Google_Android_13_COPE_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-04">accepted</status><title>Google Android 13 COPE Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>2</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254764" selected="true" /><select idref="V-254765" selected="true" /><select idref="V-254766" selected="true" /><select idref="V-254767" selected="true" /><select idref="V-254768" selected="true" /><select idref="V-254769" selected="true" /><select idref="V-254770" selected="true" /><select idref="V-254771" selected="true" /><select idref="V-254772" selected="true" /><select idref="V-254773" selected="true" /><select idref="V-254774" selected="true" /><select idref="V-254775" selected="true" /><select idref="V-254776" selected="true" /><select idref="V-254777" selected="true" /><select idref="V-254778" selected="true" /><select idref="V-254779" selected="true" /><select idref="V-254780" selected="true" /><select idref="V-254781" selected="true" /><select idref="V-254782" selected="true" /><select idref="V-254783" selected="true" /><select idref="V-254784" selected="true" /><select idref="V-254785" selected="true" /><select idref="V-254786" selected="true" /><select idref="V-254787" selected="true" /><select idref="V-254788" selected="true" /><select idref="V-254789" selected="true" /><select idref="V-254790" selected="true" /><select idref="V-254791" selected="true" /><select idref="V-254792" selected="true" /><select idref="V-254793" selected="true" /><select idref="V-254794" selected="true" /><select idref="V-254795" selected="true" /><select idref="V-254796" selected="true" /><select idref="V-254797" selected="true" /><select idref="V-254798" selected="true" /><select idref="V-254799" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254764" selected="true" /><select idref="V-254765" selected="true" /><select idref="V-254766" selected="true" /><select idref="V-254767" selected="true" /><select idref="V-254768" selected="true" /><select idref="V-254769" selected="true" /><select idref="V-254770" selected="true" /><select idref="V-254771" selected="true" /><select idref="V-254772" selected="true" /><select idref="V-254773" selected="true" /><select idref="V-254774" selected="true" /><select idref="V-254775" selected="true" /><select idref="V-254776" selected="true" /><select idref="V-254777" selected="true" /><select idref="V-254778" selected="true" /><select idref="V-254779" selected="true" /><select idref="V-254780" selected="true" /><select idref="V-254781" selected="true" /><select idref="V-254782" selected="true" /><select idref="V-254783" selected="true" /><select idref="V-254784" selected="true" /><select idref="V-254785" selected="true" /><select idref="V-254786" selected="true" /><select idref="V-254787" selected="true" /><select idref="V-254788" selected="true" /><select idref="V-254789" selected="true" /><select idref="V-254790" selected="true" /><select idref="V-254791" selected="true" /><select idref="V-254792" selected="true" /><select idref="V-254793" selected="true" /><select idref="V-254794" selected="true" /><select idref="V-254795" selected="true" /><select idref="V-254796" selected="true" /><select idref="V-254797" selected="true" /><select idref="V-254798" selected="true" /><select idref="V-254799" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254764" selected="true" /><select idref="V-254765" selected="true" /><select idref="V-254766" selected="true" /><select idref="V-254767" selected="true" /><select idref="V-254768" selected="true" /><select idref="V-254769" selected="true" /><select idref="V-254770" selected="true" /><select idref="V-254771" selected="true" /><select idref="V-254772" selected="true" /><select idref="V-254773" selected="true" /><select idref="V-254774" selected="true" /><select idref="V-254775" selected="true" /><select idref="V-254776" selected="true" /><select idref="V-254777" selected="true" /><select idref="V-254778" selected="true" /><select idref="V-254779" selected="true" /><select idref="V-254780" selected="true" /><select idref="V-254781" selected="true" /><select idref="V-254782" selected="true" /><select idref="V-254783" selected="true" /><select idref="V-254784" selected="true" /><select idref="V-254785" selected="true" /><select idref="V-254786" selected="true" /><select idref="V-254787" selected="true" /><select idref="V-254788" selected="true" /><select idref="V-254789" selected="true" /><select idref="V-254790" selected="true" /><select idref="V-254791" selected="true" /><select idref="V-254792" selected="true" /><select idref="V-254793" selected="true" /><select idref="V-254794" selected="true" /><select idref="V-254795" selected="true" /><select idref="V-254796" selected="true" /><select idref="V-254797" selected="true" /><select idref="V-254798" selected="true" /><select idref="V-254799" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254764" selected="true" /><select idref="V-254765" selected="true" /><select idref="V-254766" selected="true" /><select idref="V-254767" selected="true" /><select idref="V-254768" selected="true" /><select idref="V-254769" selected="true" /><select idref="V-254770" selected="true" /><select idref="V-254771" selected="true" /><select idref="V-254772" selected="true" /><select idref="V-254773" selected="true" /><select idref="V-254774" selected="true" /><select idref="V-254775" selected="true" /><select idref="V-254776" selected="true" /><select idref="V-254777" selected="true" /><select idref="V-254778" selected="true" /><select idref="V-254779" selected="true" /><select idref="V-254780" selected="true" /><select idref="V-254781" selected="true" /><select idref="V-254782" selected="true" /><select idref="V-254783" selected="true" /><select idref="V-254784" selected="true" /><select idref="V-254785" selected="true" /><select idref="V-254786" selected="true" /><select idref="V-254787" selected="true" /><select idref="V-254788" selected="true" /><select idref="V-254789" selected="true" /><select idref="V-254790" selected="true" /><select idref="V-254791" selected="true" /><select idref="V-254792" selected="true" /><select idref="V-254793" selected="true" /><select idref="V-254794" selected="true" /><select idref="V-254795" selected="true" /><select idref="V-254796" selected="true" /><select idref="V-254797" selected="true" /><select idref="V-254798" selected="true" /><select idref="V-254799" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254764" selected="true" /><select idref="V-254765" selected="true" /><select idref="V-254766" selected="true" /><select idref="V-254767" selected="true" /><select idref="V-254768" selected="true" /><select idref="V-254769" selected="true" /><select idref="V-254770" selected="true" /><select idref="V-254771" selected="true" /><select idref="V-254772" selected="true" /><select idref="V-254773" selected="true" /><select idref="V-254774" selected="true" /><select idref="V-254775" selected="true" /><select idref="V-254776" selected="true" /><select idref="V-254777" selected="true" /><select idref="V-254778" selected="true" /><select idref="V-254779" selected="true" /><select idref="V-254780" selected="true" /><select idref="V-254781" selected="true" /><select idref="V-254782" selected="true" /><select idref="V-254783" selected="true" /><select idref="V-254784" selected="true" /><select idref="V-254785" selected="true" /><select idref="V-254786" selected="true" /><select idref="V-254787" selected="true" /><select idref="V-254788" selected="true" /><select idref="V-254789" selected="true" /><select idref="V-254790" selected="true" /><select idref="V-254791" selected="true" /><select idref="V-254792" selected="true" /><select idref="V-254793" selected="true" /><select idref="V-254794" selected="true" /><select idref="V-254795" selected="true" /><select idref="V-254796" selected="true" /><select idref="V-254797" selected="true" /><select idref="V-254798" selected="true" /><select idref="V-254799" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254764" selected="true" /><select idref="V-254765" selected="true" /><select idref="V-254766" selected="true" /><select idref="V-254767" selected="true" /><select idref="V-254768" selected="true" /><select idref="V-254769" selected="true" /><select idref="V-254770" selected="true" /><select idref="V-254771" selected="true" /><select idref="V-254772" selected="true" /><select idref="V-254773" selected="true" /><select idref="V-254774" selected="true" /><select idref="V-254775" selected="true" /><select idref="V-254776" selected="true" /><select idref="V-254777" selected="true" /><select idref="V-254778" selected="true" /><select idref="V-254779" selected="true" /><select idref="V-254780" selected="true" /><select idref="V-254781" selected="true" /><select idref="V-254782" selected="true" /><select idref="V-254783" selected="true" /><select idref="V-254784" selected="true" /><select idref="V-254785" selected="true" /><select idref="V-254786" selected="true" /><select idref="V-254787" selected="true" /><select idref="V-254788" selected="true" /><select idref="V-254789" selected="true" /><select idref="V-254790" selected="true" /><select idref="V-254791" selected="true" /><select idref="V-254792" selected="true" /><select idref="V-254793" selected="true" /><select idref="V-254794" selected="true" /><select idref="V-254795" selected="true" /><select idref="V-254796" selected="true" /><select idref="V-254797" selected="true" /><select idref="V-254798" selected="true" /><select idref="V-254799" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254764" selected="true" /><select idref="V-254765" selected="true" /><select idref="V-254766" selected="true" /><select idref="V-254767" selected="true" /><select idref="V-254768" selected="true" /><select idref="V-254769" selected="true" /><select idref="V-254770" selected="true" /><select idref="V-254771" selected="true" /><select idref="V-254772" selected="true" /><select idref="V-254773" selected="true" /><select idref="V-254774" selected="true" /><select idref="V-254775" selected="true" /><select idref="V-254776" selected="true" /><select idref="V-254777" selected="true" /><select idref="V-254778" selected="true" /><select idref="V-254779" selected="true" /><select idref="V-254780" selected="true" /><select idref="V-254781" selected="true" /><select idref="V-254782" selected="true" /><select idref="V-254783" selected="true" /><select idref="V-254784" selected="true" /><select idref="V-254785" selected="true" /><select idref="V-254786" selected="true" /><select idref="V-254787" selected="true" /><select idref="V-254788" selected="true" /><select idref="V-254789" selected="true" /><select idref="V-254790" selected="true" /><select idref="V-254791" selected="true" /><select idref="V-254792" selected="true" /><select idref="V-254793" selected="true" /><select idref="V-254794" selected="true" /><select idref="V-254795" selected="true" /><select idref="V-254796" selected="true" /><select idref="V-254797" selected="true" /><select idref="V-254798" selected="true" /><select idref="V-254799" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254764" selected="true" /><select idref="V-254765" selected="true" /><select idref="V-254766" selected="true" /><select idref="V-254767" selected="true" /><select idref="V-254768" selected="true" /><select idref="V-254769" selected="true" /><select idref="V-254770" selected="true" /><select idref="V-254771" selected="true" /><select idref="V-254772" selected="true" /><select idref="V-254773" selected="true" /><select idref="V-254774" selected="true" /><select idref="V-254775" selected="true" /><select idref="V-254776" selected="true" /><select idref="V-254777" selected="true" /><select idref="V-254778" selected="true" /><select idref="V-254779" selected="true" /><select idref="V-254780" selected="true" /><select idref="V-254781" selected="true" /><select idref="V-254782" selected="true" /><select idref="V-254783" selected="true" /><select idref="V-254784" selected="true" /><select idref="V-254785" selected="true" /><select idref="V-254786" selected="true" /><select idref="V-254787" selected="true" /><select idref="V-254788" selected="true" /><select idref="V-254789" selected="true" /><select idref="V-254790" selected="true" /><select idref="V-254791" selected="true" /><select idref="V-254792" selected="true" /><select idref="V-254793" selected="true" /><select idref="V-254794" selected="true" /><select idref="V-254795" selected="true" /><select idref="V-254796" selected="true" /><select idref="V-254797" selected="true" /><select idref="V-254798" selected="true" /><select idref="V-254799" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254764" selected="true" /><select idref="V-254765" selected="true" /><select idref="V-254766" selected="true" /><select idref="V-254767" selected="true" /><select idref="V-254768" selected="true" /><select idref="V-254769" selected="true" /><select idref="V-254770" selected="true" /><select idref="V-254771" selected="true" /><select idref="V-254772" selected="true" /><select idref="V-254773" selected="true" /><select idref="V-254774" selected="true" /><select idref="V-254775" selected="true" /><select idref="V-254776" selected="true" /><select idref="V-254777" selected="true" /><select idref="V-254778" selected="true" /><select idref="V-254779" selected="true" /><select idref="V-254780" selected="true" /><select idref="V-254781" selected="true" /><select idref="V-254782" selected="true" /><select idref="V-254783" selected="true" /><select idref="V-254784" selected="true" /><select idref="V-254785" selected="true" /><select idref="V-254786" selected="true" /><select idref="V-254787" selected="true" /><select idref="V-254788" selected="true" /><select idref="V-254789" selected="true" /><select idref="V-254790" selected="true" /><select idref="V-254791" selected="true" /><select idref="V-254792" selected="true" /><select idref="V-254793" selected="true" /><select idref="V-254794" selected="true" /><select idref="V-254795" selected="true" /><select idref="V-254796" selected="true" /><select idref="V-254797" selected="true" /><select idref="V-254798" selected="true" /><select idref="V-254799" selected="true" /></Profile><Group id="V-254764"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254764r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-002800</version><title>Google Android 13 must be configured to enable audit logging.</title><description>&lt;VulnDiscussion&gt;Audit logs enable monitoring of security-relevant events and subsequent forensics when breaches occur. To be useful, administrators must have the ability to view the audit logs.
+
+SFR ID: FMT_SMF_EXT.1.1 #32&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000154</ident><fixtext fixref="F-58321r862673_fix">Configure the Google Android 13 device to enable audit logging.
+
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "Device owner management" section.
+2. Toggle "Enable security logging" to "ON".</fixtext><fix id="F-58321r862673_fix" /><check system="C-58375r862672_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Inspect the configuration on the managed Google Android 13 device to enable audit logging.
+
+This validation procedure is performed only on the EMM Administration Console. 
+
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "Device owner management" section.
+2. Verify that "Enable security logging" is toggled to "ON".
+
+If the EMM console device policy is not set to enable audit logging, this is a finding.</check-content></check></Rule></Group><Group id="V-254765"><title>PP-MDF-323024</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254765r1015723_rule" weight="10.0" severity="medium"><version>GOOG-13-006000</version><title>Google Android 13 must be configured to enforce a minimum password length of six characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. The ability to crack a password is a function of how many attempts an adversary is permitted, how quickly an adversary can do each attempt, and the size of the password space. The longer the minimum length of the password is, the larger the password space. Having a too-short minimum password length significantly reduces password strength, increasing the chance of password compromise and resulting device and data compromise.
+
+SFR ID: FMT_SMF_EXT.1.1 #1a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-58322r862676_fix">Configure the Google Android 13 device to enforce a minimum password length of six characters.
+
+On the EMM console:
+
+COBO:
+
+1. Open "Lock screen" settings.
+2. Open "Password constraints".
+3. Open "Minimum password quality".
+4. Choose Numeric Complex, Alphabetic, Alphanumeric, or Complex.
+5. Open "Minimum password length".
+6. Enter in the number of characters as "6".
+
+COPE:
+
+1. Open "Lock screen" settings.
+2. Open "Password constraints".
+3. Select "Personal Profile".
+4. Open "Minimum password quality".
+5. Choose Numeric Complex, Alphabetic, Alphanumeric, or Complex.
+6. Open "Minimum password length".
+7. Enter in the number of characters as "6".</fixtext><fix id="F-58322r862676_fix" /><check system="C-58376r862675_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the mobile device is enforcing a minimum password length of six characters.
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM console:
+
+COBO:
+
+1. Open "Lock screen" settings.
+2. Open "Password constraints".
+3. Open "Minimum password quality".
+4. Verify Numeric Complex, Alphabetic, Alphanumeric, or Complex is selected.
+5. Open "Minimum password length".
+6. Verify "6" is set for number of characters.
+
+COPE:
+
+1. Open "Lock screen" settings.
+2. Open "Password constraints".
+3. Select "Personal Profile".
+4. Verify "Minimum password quality" is set to Numeric Complex, Alphabetic, Alphanumeric, or Complex.
+5. Open "Minimum password length".
+6. Verify the number of characters is set to "6" or higher.
+_____________________________
+
+On the managed Google Android 13 device:
+
+COBO and COPE:
+
+1. Open Settings &gt;&gt; Security &gt;&gt; Screen lock.
+2. Enter current password.
+3. Tap "Pin or Password".
+4. Verify Password length required is at least "6".
+
+If the device password length is not set to six characters or more on EMM console or on the managed Google Android 13 device, this is a finding.</check-content></check></Rule></Group><Group id="V-254766"><title>PP-MDF-323025</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254766r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-006100</version><title>Google Android 13 must be configured to not allow passwords that include more than four repeating or sequential characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. Passwords that contain repeating or sequential characters are significantly easier to guess than those that do not contain repeating or sequential characters. Therefore, disallowing repeating or sequential characters increases password strength and decreases risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #1b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58323r862679_fix">Configure the Google Android 13 device to prevent passwords from containing more than four repeating or sequential characters.
+
+On the EMM console:
+
+COBO:
+
+1. Open "Lock screen" settings.
+2. Open "Password constraints".
+3. Set password quality to "Numeric (Complex)".
+
+COPE:
+
+1. Open "Password constraints".
+2. Select "Personal Profile".
+3. Set password quality to "Numeric (Complex)".
+
+Note: Alphabetic, Alphanumeric, and Complex are also acceptable selections, but these selections will cause the user to select a complex password, which is not required by the STIG.</fixtext><fix id="F-58323r862679_fix" /><check system="C-58377r862678_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the mobile device is prohibiting passwords with more than four repeating or sequential characters.
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device.
+
+On the EMM console:
+
+COBO:
+
+1. Open "Lock screen" settings.
+2. Open "Password constraints".
+3. Verify that quality is set to "Numeric (Complex)" or higher.
+
+COPE:
+
+1. Open "Lock screen" settings.
+2. Open "Password constraints".
+3. Select "Personal Profile".
+4. Verify that quality is set to "Numeric (Complex)" or higher.
+____________________________
+
+On the managed Google Android 13 device:
+
+COBO and COPE:
+
+1. Open Settings &gt;&gt; Security &gt;&gt; Screen lock.
+2. Enter current password.
+3. Select "PIN".
+4. Try to enter a new PIN with repeating numbers.
+5. Verify Password complexity requirements are listed: Ascending, descending, or repeated sequence of digits is not allowed.
+
+If the EMM console device policy is set to a password with more than two repeating or sequential characters or on the managed Google Android 13 device, the device policy is set to a password with more than two repeating or sequential characters, this is a finding.
+
+Note: Alphabetic, Alphanumeric, and Complex are also acceptable selections, but these selections will cause the user to select a complex password, which is not required by the STIG.</check-content></check></Rule></Group><Group id="V-254767"><title>PP-MDF-323026</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254767r958402_rule" weight="10.0" severity="medium"><version>GOOG-13-006200</version><title>Google Android 13 must be configured to enable a screen-lock policy that will lock the display after a period of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen-lock timeout helps protect the device from unauthorized access. Devices without a screen-lock timeout provide an opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device and possibly access to DOD networks.
+
+SFR ID: FMT_SMF_EXT.1.1 #2a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-58324r862682_fix">Configure the Google Android 13 device to enable a screen-lock policy that will lock the display after a period of inactivity.
+
+On the EMM Console:
+
+COBO:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Set "Max time to screen lock" to any number desired.
+Note: The units are in seconds.
+
+COPE:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Select "Personal Profile".
+4. Set "Max time to screen lock" to any number desired.
+Note: The units are in seconds.</fixtext><fix id="F-58324r862682_fix" /><check system="C-58378r862681_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the mobile device is enforcing a screen-lock policy that will lock the display after a period of inactivity.
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM Console:
+
+COBO:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Verify that "Max time to screen lock" is set to any number desired, the units are in seconds.
+
+COPE:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Select "Personal Profile".
+4. Verify that "Max time to screen lock" is set to any number desired, the units are in seconds.
+___________________________
+
+On the managed Google Android 13 device:
+
+COBO and COPE:
+
+1. Open Settings &gt;&gt; Display.
+2. Tap "Screen timeout".
+3. Ensure the Screen timeout value is set to the desired value and cannot be set to a larger value.
+
+If the EMM console device policy is not set to enable a screen-lock policy that will lock the display after a period of inactivity or on the managed Google Android 13 device, the device policy is not set to enable a screen-lock policy that will lock the display after a period of inactivity, this is a finding.</check-content></check></Rule></Group><Group id="V-254768"><title>PP-MDF-323030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254768r958402_rule" weight="10.0" severity="medium"><version>GOOG-13-006300</version><title>Google Android 13 must be configured to lock the display after 15 minutes (or less) of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen lock timeout must be set to a value that helps protect the device from unauthorized access. Having a too-long timeout would increase the window of opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device. The maximum timeout period of 15 minutes has been selected to balance functionality and security; shorter timeout periods may be appropriate depending on the risks posed to the mobile device.
+
+SFR ID: FMT_SMF_EXT.1.1 #2b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-58325r862685_fix">Configure the Google Android 13 device to enable a screen-lock policy of 15 minutes for the max period of inactivity. 
+
+Note: Google Android 13 does not support the 15 minute increment. The available allowable selection is 10 mins then increases to 30 minutes. Therefore, the control will be set to 10 minutes.
+
+On the EMM Console:
+
+COBO:
+
+1. Open "Lock screen restrictions".
+2. Set "Max time to screen lock" to "600".
+Note: The units are in seconds.
+
+COPE:
+
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Set "Max time to screen lock" to "600".
+Note: The units are in seconds.</fixtext><fix id="F-58325r862685_fix" /><check system="C-58379r862684_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android device configuration settings to determine if the mobile device is enforcing a screen-lock policy that will lock the display after a period of 15 minutes or less of inactivity.
+
+Note: Google Android 13 does not support the 15 minute increment. The available allowable selection is 10 mins then increases to 30 minutes. Therefore, the control should be set to 10 minutes.
+
+This validation procedure is performed on both the EMM Administration Console and the Android 13 device. 
+
+On the EMM Console:
+
+COBO:
+
+1. Open "Lock screen restrictions".
+2. Verify that "Max time to screen lock" is set to "600".
+Note: The units are in seconds.
+
+COPE:
+
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Verify that "Max time to screen lock" is set to "600".
+Note: The units are in seconds.
+
+On the managed Google Android 13 device:
+
+COBO and COPE:
+
+1. Open Settings &gt;&gt; Display.
+2. Tap "Screen timeout".
+3. Ensure the Screen timeout value is set to "600" seconds.
+
+If the EMM console device policy is not set to enable a screen-lock policy that will lock the display after a period of inactivity of 600 seconds, this is a finding.</check-content></check></Rule></Group><Group id="V-254769"><title>PP-MDF-323040</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254769r958388_rule" weight="10.0" severity="medium"><version>GOOG-13-006400</version><title>Google Android 13 must be configured to not allow more than 10 consecutive failed authentication attempts.</title><description>&lt;VulnDiscussion&gt;The more attempts an adversary has to guess a password, the more likely the adversary will enter the correct password and gain access to resources on the device. Setting a limit on the number of attempts mitigates this risk. Setting the limit at 10 or less gives authorized users the ability to make a few mistakes when entering the password but still provides adequate protection against dictionary or brute force attacks on the password.
+
+SFR ID: FMT_SMF_EXT.1.1 #2c, FIA_AFL_EXT.1.5&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-58326r862688_fix">Configure the Google Android 13 device to allow only 10 or fewer consecutive failed authentication attempts.
+
+On the EMM Console:
+
+COBO:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Set "Max password failures for local wipe" to a number between 1 and 10.
+
+COPE:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Select "Personal Profile".
+4. Set "Max password failures for local wipe" to a number between 1 and 10.</fixtext><fix id="F-58326r862688_fix" /><check system="C-58380r862687_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the mobile device has the maximum number of consecutive failed authentication attempts set at 10 or fewer. 
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM Console:
+
+COBO:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Verify that "Max password failures for local wipe" is set to a number between 1 and 10.
+
+COPE:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Select "Personal Profile".
+4. Verify that "Max password failures for local wipe" is set to a number between 1 and 10.
+_________________________
+
+On the managed Google Android 13 device:
+
+COBO and COPE:
+
+1. Lock the device screen.
+2. Attempt to unlock the screen and validate that the device autowipes after specified number of invalid entries. Note: Perform this verification only with a test phone set up with a production profile.
+
+If the EMM console device policy is not set to the maximum number of consecutive failed authentication attempts at 10 or fewer, or if on the managed Google Android 13 device the device policy is not set to the maximum number of consecutive failed authentication attempts at 10 or fewer, this is a finding.</check-content></check></Rule></Group><Group id="V-254770"><title>PP-MDF-323050</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254770r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-006500</version><title>Google Android 13 must be configured to enforce an application installation policy by specifying one or more authorized application repositories, including [selection: DOD-approved commercial app repository, MDM server, mobile application store].</title><description>&lt;VulnDiscussion&gt;Forcing all applications to be installed from authorized application repositories can prevent unauthorized and malicious applications from being installed and executed on mobile devices. Allowing such installations and executions could cause a compromise of DOD data accessible by these unauthorized/malicious applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #8a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58327r862691_fix">Configure the Google Android 13 device to disable unauthorized application repositories.
+
+On the EMM Console:
+
+COBO and COPE:
+
+1. Open "Set user restrictions".
+2. Toggle "Disallow install unknown sources" to "ON".
+3. Toggle "Disallow installs from unknown sources globally" to "ON".</fixtext><fix id="F-58327r862691_fix" /><check system="C-58381r862690_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the mobile device has only approved application repositories (DOD-approved commercial app repository, EMM server, and/or mobile application store).
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM Console:
+
+COBO and COPE:
+
+1. Open "Set user restrictions".
+2. Verify that "Disallow install unknown sources" is toggled to "ON".
+3. Verify that "Disallow installs from unknown sources globally" is toggled to "ON".
+
+On the Google Android 13 device:
+
+COBO and COPE:
+
+1. Open Settings &gt;&gt; Apps &gt;&gt; Special app access.
+2. Open Install unknown apps.
+3. Ensure the list of apps is blank or if an app is on the list, "Disabled by admin" is listed under the app name.
+
+If the EMM console device policy is not set to allow connections to only approved application repositories or on the managed Google Android 13 device, the device policy is not set to allow connections to only approved application repositories, this is a finding.</check-content></check></Rule></Group><Group id="V-254771"><title>PP-MDF-323060</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254771r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-006600</version><title>Google Android 13 must be configured to enforce an application installation policy by specifying an application allowlist that restricts applications by the following characteristics: [selection: list of digital signatures, cryptographic hash values, names, application version].</title><description>&lt;VulnDiscussion&gt;The application allowlist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core and preinstalled applications, or the MD must provide an alternate method of restricting user access/execution to core and preinstalled applications. 
+
+Core application: Any application integrated into the OS by the OS or MD vendors.
+
+Preinstalled application: Additional noncore applications included in the OS build by the OS vendor, MD vendor, or wireless carrier.
+
+Requiring all authorized applications to be in an application allowlist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the allowlist. Failure to configure an application allowlist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DOD data accessible by these applications.
+
+The application allowlist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core applications (included in the OS by the OS vendor) and preinstalled applications (provided by the MD vendor and wireless carrier), or the MD must provide an alternate method of restricting user access/execution to core and preinstalled applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #8b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001764</ident><fixtext fixref="F-58328r862694_fix">Configure the Google Android 13 device to use an application allowlist.
+
+On the EMM Console:
+
+COBO and COPE:
+
+1. Go to the Android app catalog for managed Google Play.
+2. Select apps to be available (only approved apps).
+3. Push updated policy to the device.
+
+Note: Managed Google Play is an allowed App Store.</fixtext><fix id="F-58328r862694_fix" /><check system="C-58382r862693_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the mobile device has an application allowlist configured. Verify all applications listed on the allowlist have been approved by the Approving Official (AO).
+
+On the EMM console:
+
+COBO and COPE:
+
+1. Go to the Android app catalog for managed Google Play.
+2. Verify all selected apps are AO approved.
+
+On the managed Google Android 13 device:
+
+COBO and COPE:
+
+1. Open the managed Google Play Store.
+2. Verify that only the approved apps are visible.
+
+Note: Managed Google Play is an allowed App Store.
+
+If the EMM console list of selected managed Google Play apps includes non-approved apps, this is a finding.
+
+Note: The application allowlist will include approved core applications (included in the OS by the OS vendor) and pre-installed applications (provided by the MD vendor and wireless carrier), or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications. For Google Android, there are no pre-installed applications.</check-content></check></Rule></Group><Group id="V-254772"><title>PP-MDF-323070</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254772r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-006700</version><title>Google Android 13 allowlist must be configured to not include applications with the following characteristics: 
+
+1. Back up mobile device (MD) data to non-DOD cloud servers (including user and application access to cloud backup services);
+2. Transmit MD diagnostic data to non-DOD servers;
+3. Voice assistant application if available when MD is locked;
+4. Voice dialing application if available when MD is locked;
+5. Allows synchronization of data or applications between devices associated with user; and
+6. Allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs or printers.</title><description>&lt;VulnDiscussion&gt;Requiring all authorized applications to be in an application allowlist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the allowlist. Failure to configure an application allowlist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DOD data accessible by these applications. Applications with the listed characteristics have features that can cause the compromise of sensitive DOD data or have features with no known application in the DOD environment.
+
+Application Note: The application allowlist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core and preinstalled applications, or the MD must provide an alternate method of restricting user access/execution to core and preinstalled applications.
+
+Core application: Any application integrated into the OS by the OS or MD vendors.
+
+Preinstalled application: Additional noncore applications included in the OS build by the OS vendor, MD vendor, or wireless carrier.
+
+SFR ID: FMT_SMF_EXT.1.1 #8b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58329r862697_fix">Configure the Google Android 13 device application allowlist to exclude applications with the following characteristics:
+
+- Back up MD data to non-DOD cloud servers (including user and application access to cloud backup services);
+- Transmit MD diagnostic data to non-DOD servers;
+- Voice assistant application if available when MD is locked;
+- Voice dialing application if available when MD is locked;
+- Allows synchronization of data or applications between devices associated with user;
+- Payment processing; and
+- Allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+
+On the EMM Console:
+
+1. Go to the Android app catalog for managed Google Play.
+2. Before selecting an app, review the app details and privacy policy to ensure the app does not include prohibited characteristics.</fixtext><fix id="F-58329r862697_fix" /><check system="C-58383r862696_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the mobile device has an application allowlist configured and that the application allowlist does not include applications with the following characteristics:
+
+- Back up MD data to non-DOD cloud servers (including user and application access to cloud backup services);
+- Transmit MD diagnostic data to non-DOD servers;
+- Voice assistant application if available when MD is locked;
+- Voice dialing application if available when MD is locked;
+- Allows synchronization of data or applications between devices associated with user;
+- Payment processing; and
+- Allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+
+This validation procedure is performed only on the EMM Administration Console.
+
+On the EMM console:
+
+1. Review the list of selected Managed Google Play apps.
+2. Review the details and privacy policy of each selected app to ensure the app does not include prohibited characteristics.
+
+If the EMM console device policy includes applications with unauthorized characteristics, this is a finding.</check-content></check></Rule></Group><Group id="V-254773"><title>PP-MDF-323080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254773r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-006800</version><title>Google Android 13 must be configured to not display the following (work profile) notifications when the device is locked: [selection:
+
+a. email notifications 
+b. calendar appointments 
+c. contact associated with phone call notification 
+d. text message notification
+e. other application-based notifications
+f. all notifications].</title><description>&lt;VulnDiscussion&gt;Many mobile devices display notifications on the lock screen so that users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. When they are available on the lock screen, an adversary can see them merely by being in close physical proximity to the device. Configuring the mobile operating system (MOS) to not send notifications to the lock screen mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #18&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000060</ident><fixtext fixref="F-58330r862700_fix">Configure the Google Android 13 device to not display (work profile) notifications when the device is locked.
+
+On the EMM console:
+
+COBO:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Toggle "Disable unredacted notifications".
+
+COPE:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Select "Work Profile".
+4. Toggle "Disable unredacted notifications".</fixtext><fix id="F-58330r862700_fix" /><check system="C-58384r862699_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device settings to determine if the Google Android 13 device displays (work profile) notifications on the lock screen. Notifications of incoming phone calls are acceptable even when the device is locked. 
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM console:
+
+COBO:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Verify that "Disable unredacted notifications" is toggled to "ON".
+
+COPE:
+
+1. Open "Lock screen" settings.
+2. Open "Lock screen restrictions".
+3. Select "Work Profile".
+4. Verify that "Disable unredacted notifications" is toggled to "ON".
+___________________________
+
+On the managed Google Android 13 device:
+
+COBO:
+
+1. Go to Settings &gt;&gt; Display &gt;&gt; Lock screen.
+2. Tap on "Privacy".
+3. Verify that "Show sensitive content only when unlocked" is selected.
+
+COPE:
+
+1. Go to Settings &gt;&gt; Display &gt;&gt; Lock screen.
+2. Tap on "When work profile is locked".
+3. Verify that "Hide sensitive work content" is selected.
+
+If the EMM console device policy allows work notifications on the lock screen, or the managed Google Android 13 device allows work notifications on the lock screen, this is a finding.</check-content></check></Rule></Group><Group id="V-254774"><title>PP-MDF-323110</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254774r1015724_rule" weight="10.0" severity="medium"><version>GOOG-13-007200</version><title>Google Android 13 must be configured to disable trust agents.</title><description>&lt;VulnDiscussion&gt;Trust agents allow a user to unlock a mobile device without entering a passcode when the mobile device is, for example, connected to a user-selected Bluetooth device or in a user-selected location. This technology would allow unauthorized users to have access to DOD sensitive data if compromised. By not permitting the use of non-password authentication mechanisms, users are forced to use passcodes that meet DOD passcode requirements.
+
+SFR ID: FMT_SMF_EXT.1.1 #22, FIA_UAU.5.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000765</ident><ident system="http://cyber.mil/cci">CCI-000767</ident><fixtext fixref="F-58331r862703_fix">Configure the Google Android 13 device to disable trust agents. 
+ 
+On the EMM console:
+
+COBO:
+
+1. Open "Lock screen restrictions".
+2. Toggle "Disable trust agents" to "ON".
+
+COPE:
+
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Toggle "Disable trust agents" to "ON".
+4. Select "Work Profile".
+5. Toggle "Disable trust agents" to "ON".</fixtext><fix id="F-58331r862703_fix" /><check system="C-58385r862702_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that trust agents are disabled. 
+ 
+This procedure is performed on both the EMM Administration console and the managed Google Android 13 device. 
+ 
+On the EMM console:
+
+COBO:
+
+1. Open "Lock screen restrictions".
+2. Verify that "Disable trust agents" is toggled to "ON".
+
+COPE:
+
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Verify that "Disable trust agents" is toggled to "ON".
+4. Select "Work Profile".
+5. Verify that "Disable trust agents" is toggled to "ON".
+____________________________
+
+On the managed Google Android 13 device: 
+
+COBO and COPE:
+
+1. Open Settings.
+2. Tap "Security". 
+3. Tap "Advanced". 
+4. Tap "Trust agents". 
+5. Verify that all listed trust agents are disabled and cannot be enabled.
+ 
+If on the EMM console, "disable trust agents" is not selected, or on the managed Google Android 13 device a trust agent can be enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-254775"><title>PP-MDF-323130</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254775r958478_rule" weight="10.0" severity="medium"><version>GOOG-13-007400</version><title>Google Android 13 must be configured to disable developer modes.</title><description>&lt;VulnDiscussion&gt;Developer modes expose features of the mobile operating system (MOS) that are not available during standard operation. An adversary may leverage a vulnerability inherent in a developer mode to compromise the confidentiality, integrity, and availability of DOD sensitive information. Disabling developer modes mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #26&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-58332r862706_fix">Configure the Google Android 13 device to disable developer modes.
+
+On the EMM Console:
+
+COBO:
+
+1. Open "Set user restrictions".
+2. Toggle "Disallow debugging features" to "ON".
+
+COPE:
+
+1. Open "Set user restrictions".
+2. Toggle "Disallow debugging features" to "ON".
+3. Open "Set user restrictions on parent".
+4. Toggle "Disallow debugging features" to "ON".</fixtext><fix id="F-58332r862706_fix" /><check system="C-58386r862705_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine whether a developer mode is enabled.
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM Console:
+
+COBO:
+
+1. Open "Set user restrictions".
+2. Verify that "Disallow debugging features" is toggled to "ON".
+
+COPE:
+
+1. Open "Set user restrictions".
+2. Verify that "Disallow debugging features" is toggled to "ON".
+3. Open "Set user restrictions on parent".
+4. Verify that "Disallow debugging features" is toggled to "ON".
+____________________________
+
+On the managed Google Android 13 device:
+
+COBO and COPE:
+
+1. Go to Settings &gt;&gt; System.
+2. Ensure "Developer Options" is not listed.
+3. Go to Settings &gt;&gt; About Phone.
+4. Tap on the Build Number to try to enable Developer Options and validate that action is blocked.
+
+If the EMM console device policy is not set to disable developer mode or on the managed Google Android 13 device, the device policy is not set to disable developer mode, this is a finding.</check-content></check></Rule></Group><Group id="V-254776"><title>PP-MDF-323160</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254776r958390_rule" weight="10.0" severity="low"><version>GOOG-13-007700</version><title>Google Android 13 must be configured to display the DOD advisory warning message at startup or each time the user unlocks the device.</title><description>&lt;VulnDiscussion&gt;Before granting access to the system, the mobile operating system is required to display the DOD-approved system use notification message or banner that provides privacy and security notices consistent with applicable Federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. Required banners help ensure that DOD can audit and monitor the activities of mobile device users without legal restriction.
+
+System use notification messages can be displayed when individuals first access or unlock the mobile device. The banner must be implemented as a "click-through" banner at device unlock (to the extent permitted by the operating system). A "click-through" banner prevents further activity on the information system unless and until the user executes a positive action to manifest agreement by clicking on a box indicating "OK."
+
+The approved DOD text must be used exactly as required in the Knowledge Service referenced in DODI 8500.01. For devices accommodating banners of 1300 characters, the banner text is: 
+
+You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. 
+By using this IS (which includes any device attached to this IS), you consent to the following conditions: 
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+-At any time, the USG may inspect and seize data stored on this IS.
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.
+
+For devices with severe character limitations, the banner text is:
+
+I've read &amp; consent to terms in IS user agreem't.
+
+The administrator must configure the banner text exactly as written without any changes.
+
+SFR ID: FMT_SMF_EXT.1.1 #36&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-58333r862709_fix">Configure the DOD warning banner by either of the following methods (required text is found in the Vulnerability Discussion):
+
+1. By placing the DOD warning banner text in the user agreement signed by each Google Android 13 device user (preferred method).
+2. By configuring the warning banner text on the EMM console and installing the banner on each Google Android 13 mobile device.
+
+On the EMM Console:
+
+COBO:
+
+1. Open "Lock screen restrictions".
+2. Select "Lock screen message".
+3. Enter in message.
+
+COPE:
+
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Select "Lock screen message".
+4. Enter in message.</fixtext><fix id="F-58333r862709_fix" /><check system="C-58387r862708_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>The DOD warning banner can be displayed by either of the following methods (required text is found in the Vulnerability Discussion):
+
+1. By placing the DOD warning banner text in the user agreement signed by each managed Android 13 device user (preferred method).
+2. By configuring the warning banner text on the EMM console and installing the banner on each managed Android 13 mobile device.
+
+Determine which method is used at the Google Android 13 device site and follow the appropriate validation procedure below.
+
+Validation Procedure for Method #1:
+Review the signed user agreements for several Google Android 13 device users and verify the agreement includes the required DOD warning banner text.
+
+Validation Procedure for Method #2:
+On the EMM Console:
+
+COBO:
+
+1. Open "Lock screen restrictions".
+2. Select "Lock screen message".
+3. Verify the message.
+
+COPE:
+
+1. Open "Lock screen restrictions".
+2. Select "Personal Profile".
+3. Select "Lock screen message".
+4. Verify the message.
+
+If, for Method #1, the required warning banner text is not on all signed user agreements reviewed, or for Method #2, the EMM console device policy is not set to display a warning banner with the appropriate designated wording or on the managed Google Android 13 device, the device policy is not set to display a warning banner with the appropriate designated wording, this is a finding.</check-content></check></Rule></Group><Group id="V-254777"><title>PP-MDF-323170</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254777r958442_rule" weight="10.0" severity="medium"><version>GOOG-13-007800</version><title>Google Android 13 must be configured to generate audit records for the following auditable events: Detected integrity violations.</title><description>&lt;VulnDiscussion&gt;Audit logs enable monitoring of security-relevant events and subsequent forensics when breaches occur. They help identify attacks so that breaches can be prevented or limited in their scope. They facilitate analysis to improve performance and security. The Requirement Statement lists key events for which the system must generate an audit record.
+
+Note: This requirement applies only to integrity violation detections that can be logged by the audit logging component.
+
+SFR ID: FMT_SMF_EXT.1.1 #37&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000169</ident><fixtext fixref="F-58334r862712_fix">Configure the Google Android 13 device to generate audit records for the following auditable events: Detected integrity violations.
+
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "Device owner management" section.
+2. Toggle "Enable security logging" to "ON".</fixtext><fix id="F-58334r862712_fix" /><check system="C-58388r862711_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the mobile device is configured to generate audit records for the following auditable events: Detected integrity violations.
+
+This validation procedure is performed only on the EMM Administration Console. 
+
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "Device owner management" section.
+2. Verify that "Enable security logging" is toggled to "ON".
+
+If the EMM console device policy is not set to enable security logging, this is a finding.</check-content></check></Rule></Group><Group id="V-254778"><title>PP-MDF-323230</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254778r958478_rule" weight="10.0" severity="medium"><version>GOOG-13-008400</version><title>Google Android 13 must be configured to disable USB mass storage mode.</title><description>&lt;VulnDiscussion&gt;USB mass storage mode enables the transfer of data and software from one device to another. This software can include malware. When USB mass storage is enabled on a mobile device, it becomes a potential vector for malware and unauthorized data exfiltration. Prohibiting USB mass storage mode mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #39&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002546</ident><fixtext fixref="F-58335r862715_fix">Configure the Google Android 13 device to disable USB mass storage mode.
+
+On the EMM console:
+
+COBO:
+
+1. Open "User restrictions".
+2. Open "Set user restrictions".
+3. Toggle "Disallow USB file transfer" to "ON".
+
+COPE:
+
+1. Open "User restrictions".
+2. Open "Set user restrictions on parent".
+3. Toggle "Disallow USB file transfer" to "ON".</fixtext><fix id="F-58335r862715_fix" /><check system="C-58389r862714_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the mobile device has a USB mass storage mode and whether it has been disabled. 
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM console:
+
+COBO:
+
+1. Open "User restrictions".
+2. Open "Set user restrictions".
+3. Verify that "Disallow USB file transfer" is toggled to "ON".
+
+COPE:
+
+1. Open "User restrictions".
+2. Open "Set user restrictions on parent".
+3. Verify "Disallow USB file transfer" is toggled to "ON".
+______________________________
+
+On the managed Google Android 13 device:
+
+1. Plug a USB cable into the managed Google Android 13 device and connect to a non-DOD network-managed PC.
+2. Go to Settings &gt;&gt; Connected devices &gt;&gt; USB.
+3. Verify "No data transfer" is selected.
+
+If the EMM console device policy is not set to disable USB mass storage mode or on the managed Google Android 13 device, the device policy is not set to disable USB mass storage mode, this is a finding.</check-content></check></Rule></Group><Group id="V-254779"><title>PP-MDF-323240</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254779r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-008500</version><title>Google Android 13 must be configured to not allow backup of [all applications, configuration data] to locally connected systems.</title><description>&lt;VulnDiscussion&gt;Data on mobile devices is protected by numerous mechanisms, including user authentication, access control, and cryptography. When the data is backed up to an external system (either locally connected or cloud based), many if not all of these mechanisms are no longer present. This leaves the backed-up data vulnerable to attack. Disabling backup to external systems mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001090</ident><fixtext fixref="F-58336r862718_fix">Configure the Google Android 13 device to disable backup to locally connected systems.
+
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "Device owner management".
+2. Toggle "Enable backup service" to "OFF".</fixtext><fix id="F-58336r862718_fix" /><check system="C-58390r862717_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the capability to back up to a locally connected system has been disabled. 
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "Device owner management".
+2. Verify "Enable backup service" is toggled to "OFF".
+
+On the managed Google Android 13 device:
+
+COBO:
+
+1. Go to Settings &gt;&gt; System &gt;&gt; Backup.
+2. Verify Backup settings is "Not available".
+
+COPE:
+
+1. Go to Settings &gt;&gt; System &gt;&gt; Backup.
+2. Select "Work".
+3. Verify Backup settings is "Not available".
+
+If the EMM console device policy is not set to disable the capability to back up to a locally connected system or on the managed Google Android 13 device, the device policy is not set to disable the capability to back up to a locally connected system, and this is a finding.</check-content></check></Rule></Group><Group id="V-254780"><title>PP-MDF-323250</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254780r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-008600</version><title>Google Android 13 must be configured to not allow backup of [all applications, configuration data] to remote systems.</title><description>&lt;VulnDiscussion&gt;Backups to remote systems (including cloud backup) can leave data vulnerable to breach on the external systems, which often offer less protection than the mobile operating system (MOS). Where the remote backup involves a cloud-based solution, the backup capability is often used to synchronize data across multiple devices. In this case, DOD devices may synchronize DOD sensitive information to a user's personal device or other unauthorized computers that are vulnerable to breach. Disallowing remote backup mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001090</ident><fixtext fixref="F-58337r862721_fix">Configure the Google Android 13 device to disable backup to remote systems (including commercial clouds).
+
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "Device owner management".
+2. Toggle "Enable backup service" to "OFF".
+
+Note: Since personal accounts cannot be added to the work profile (GOOG-13-009800), this control only impacts personal profile accounts. Site can allow backup based on local policy.</fixtext><fix id="F-58337r862721_fix" /><check system="C-58391r862720_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review managed Google Android 13 device configuration settings to determine if the capability to back up to a remote system has been disabled. 
+
+Note: Since personal accounts cannot be added to the work profile (GOOG-13-009800), this control only impacts personal profile accounts. Site can allow backup based on local policy.
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "Device owner management".
+2. Verify "Enable backup service" is toggled to "OFF".
+
+On the managed Google Android 13 device:
+
+COBO:
+
+1. Go to Settings &gt;&gt; System &gt;&gt; System &gt;&gt; Backup.
+2. Verify Backup settings is "Not available".
+
+COPE:
+
+1. Go to Settings &gt;&gt; System &gt;&gt; System &gt;&gt; Backup.
+2. Select "Work".
+3. Verify Backup settings is "Not available".
+
+If the EMM console device policy is not set to disable the capability to back up to a remote system or on the managed Google Android 13 device, the device policy is not set to disable the capability to back up to a remote system, this is a finding.</check-content></check></Rule></Group><Group id="V-254781"><title>PP-MDF-323280</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254781r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-008900</version><title>Google Android 13 must be configured to disable exceptions to the access control policy that prevent [selection: application processes, groups of application processes] from accessing [selection: all, private] data stored by other [selection: application processes, groups of application processes].</title><description>&lt;VulnDiscussion&gt;App data sharing gives apps the ability to access the data of other apps for enhanced user functionality. However, sharing also poses a significant risk that unauthorized users or apps will obtain access to DOD sensitive information. To mitigate this risk, there are data sharing restrictions, primarily from sharing data from personal (unmanaged) apps and work (managed) apps. If a user is allowed to make exceptions to the data sharing restriction policy, the user could enable unauthorized sharing of data, leaving it vulnerable to breach. Limiting the granting of exceptions to either the Administrator or common application developer mitigates this risk.
+
+Copy/paste of data between applications in different application processes or groups of application processes is considered an exception to the access control policy and therefore, the Administrator must be able to enable/disable the feature. Other exceptions include allowing any data or application sharing between process groups.
+
+SFR ID: FMT_SMF_EXT.1.1 #42, FDP_ACF_EXT.1.2&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002233</ident><ident system="http://cyber.mil/cci">CCI-002530</ident><fixtext fixref="F-58338r862724_fix">Configure the Google Android 13 device to enable the access control policy that prevents [selection: application processes, groups of application processes] from accessing [selection: all, private] data stored by other [selection: application processes, groups of application processes].
+
+Note: All application data is inherently sandboxed and isolated from other applications. In order to disable copy/paste on the EMM Console:
+
+COPE:
+
+1. Open "User restrictions".
+2. Open "Set user restrictions".
+3. Toggle "Disallow cross profile copy/paste" to "ON".
+4. Toggle "Disallow sharing data into the profile" to "ON".</fixtext><fix id="F-58338r862724_fix" /><check system="C-58392r862723_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review documentation on the managed Google Android 13 device and inspect the configuration on the Google Android device to verify the access control policy that prevents [selection: application processes] from accessing [selection: all] data stored by other [selection: application processes] is enabled.
+
+This validation procedure is performed only on the EMM Administration Console. 
+
+On the EMM console:
+
+COPE:
+
+1. Open "User restrictions".
+2. Open "Set user restrictions".
+3. Verify that "Disallow cross profile copy/paste" is toggled to "ON".
+4. Verify that "Disallow sharing data into the profile" is toggled to "ON".
+
+If the EMM console device policy is not set to disable data sharing between profiles, this is a finding.</check-content></check></Rule></Group><Group id="V-254782"><title>PP-MDF-323290</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254782r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-009000</version><title>Google Android 13 must be configured to disable multiuser modes.</title><description>&lt;VulnDiscussion&gt;Multiuser mode allows multiple users to share a mobile device by providing a degree of separation between user data. To date, no mobile device with multiuser mode features meets DOD requirements for access control, data separation, and nonrepudiation for user accounts. In addition, the MDFPP does not include design requirements for multiuser account services. Disabling multiuser mode mitigates the risk of not meeting DOD multiuser account security policies.
+
+SFR ID: FMT_SMF_EXT.1.1 #47a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-002110</ident><fixtext fixref="F-58339r862727_fix">Configure the Google Android 13 device to disable multi-user modes.
+
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "User restrictions".
+2. Open "Set user restrictions".
+3. Toggle "Disallow modify accounts" to "ON".</fixtext><fix id="F-58339r862727_fix" /><check system="C-58393r862726_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review documentation on the managed Google Android 13 device and inspect the configuration on the Google Android device to disable multiuser modes.
+
+This validation procedure is performed on both the EMM Administration Console and the managed Google Android 13 device. 
+
+On the EMM console:
+
+COBO and COPE: 
+
+1. Open "User restrictions".
+2. Open "Set user restrictions".
+3. Verify "Disallow modify accounts" is toggled to "ON".
+
+On the managed Google Android 13 device:
+
+COBO and COPE:
+
+1. Go to Settings &gt;&gt; Passwords &amp; accounts &gt;&gt; Accounts for Owner.
+2. Tap "Add account".
+3. Verify the action is not allowed.
+
+If the EMM console device policy is not set to disable multi-user modes or on the managed Google Android 13 device, the device policy is not set to disable multi-user modes, this is a finding.</check-content></check></Rule></Group><Group id="V-254783"><title>PP-MDF-323320</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254783r959010_rule" weight="10.0" severity="low"><version>GOOG-13-009400</version><title>Google Android 13 must be configured to disable Bluetooth or configured via User Based Enforcement (UBE) to allow Bluetooth for only Headset Profile (HSP), Hands-Free Profile (HFP), and Serial Port Profile (SPP).</title><description>&lt;VulnDiscussion&gt;Some Bluetooth profiles provide the capability for remote transfer of sensitive DOD data without encryption or otherwise do not meet DOD IT security policies and therefore must be disabled.
+
+SFR ID: FMT_SMF_EXT.1.1/BLUETOOTH BT-8&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001761</ident><fixtext fixref="F-58340r862730_fix">Configure the Google Android 13 device to disable Bluetooth or if the AO has approved the use of Bluetooth (for example, for car hands-free use), train the user to connect to only authorized Bluetooth devices using only HSP, HFP, or SPP Bluetooth capable devices (UBE).
+
+To disable Bluetooth use the following procedure:
+
+On the EMM Console:
+
+COBO:
+
+1. Open "User restrictions" section.
+2. Toggle "Disallow Bluetooth" to "ON".
+
+COPE:
+
+1. Open "User restrictions on parent" section.
+2. Toggle "Disallow Bluetooth" to "ON".
+
+The user training requirement is satisfied in requirement GOOG-13-009800.</fixtext><fix id="F-58340r862730_fix" /><check system="C-58394r862729_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Determine if the AO has approved the use of Bluetooth at the site.
+
+If the AO has not approved the use of Bluetooth, verify Bluetooth has been disabled.
+
+On the EMM console:
+
+COBO:
+
+1. Open "User restrictions" section.
+2. Verify "Disallow Bluetooth" is toggled to "ON".
+
+COPE:
+
+1. Open "User restrictions on parent" section.
+2. Verify "Disallow Bluetooth" is toggled to "ON".
+
+On the managed Google Android 13 device:
+
+COBO and COPE:
+
+1. Go to Settings &gt;&gt; Connected Devices &gt;&gt; Connection Preferences &gt;&gt; Bluetooth.
+2. Verify "Use Bluetooth" is set to OFF and cannot be toggled to "ON".
+
+If the AO has approved the use of Bluetooth, on the managed Android 13 device:
+
+1. Go to Settings &gt;&gt; Connected Devices.
+2. Verify only approved Bluetooth connected devices using approved profiles are listed.
+
+If the AO has not approved the use of Bluetooth, and Bluetooth use is not disabled via an EMM-managed device policy, this is a finding.
+
+If the AO has approved the use of Bluetooth, and Bluetooth devices using unauthorized Bluetooth profiles are listed on the device under "Connected devices", this is a finding.</check-content></check></Rule></Group><Group id="V-254784"><title>PP-MDF-323330</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254784r1042505_rule" weight="10.0" severity="medium"><version>GOOG-13-009500</version><title>Google Android 13 must be configured to disable ad hoc wireless client-to-client connection capability.</title><description>&lt;VulnDiscussion&gt;Ad hoc wireless client-to-client connections allow mobile devices to communicate with each other directly, circumventing network security policies and making the traffic invisible. This could allow the exposure of sensitive DOD data and increase the risk of downloading and installing malware on the DOD mobile device.
+
+SFR ID: FMT_SMF_EXT.1.1/WLAN&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002536</ident><fixtext fixref="F-58341r1042504_fix">Configure the Google Android devices to disallow Wi-Fi Direct.
+
+On the management tool, in the user restrictions, set "Wi-Fi Direct" to "Disallow".
+
+Wi-Fi Direct connections and pairing between devices will become unavailable.</fixtext><fix id="F-58341r1042504_fix" /><check system="C-58395r1042503_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>This validation procedure is performed on both the management tool and the Google Android device.
+
+On the management tool, in the user restrictions, verify "Wi-Fi Direct" has been set to "Disallow".
+
+On the Google Android device:
+1. Open Settings &gt;&gt; Connections &gt;&gt; Wi-Fi.
+2. From the hamburger menu, select "Wi-Fi Direct".
+3. Verify that "Wi-Fi Direct" cannot be selected.
+
+If on the management tool "Wi-Fi Direct" is not set to "Disallow", or on the Google Android device a Wi-Fi Direct device is listed that can be connected to, this is a finding.</check-content></check></Rule></Group><Group id="V-254785"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254785r1042507_rule" weight="10.0" severity="medium"><version>GOOG-13-009800</version><title>Google Android 13 users must complete required training.</title><description>&lt;VulnDiscussion&gt;The security posture of Google devices requires the device user to configure several required policy rules on their device. User-Based Enforcement (UBE) is required for these controls. In addition, if the authorizing official (AO) has approved the use of an unmanaged personal space, the user must receive training on risks. If a user is not aware of their responsibilities and does not comply with UBE requirements, the security posture of the Google mobile device may become compromised, and DOD sensitive data may become compromised.
+
+SFR ID: NA&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58342r1042506_fix">All Google Android 13 device users must complete training on the following training topics (users must acknowledge that they have reviewed training via a signed User Agreement or similar written record): 
+- Operational security concerns introduced by unmanaged applications/unmanaged personal space, including applications using global positioning system (GPS) tracking.
+- Need to ensure no DOD data is saved to the personal space or transmitted from a personal app (for example, from personal email). 
+- If the Purebred key management app is used, users are responsible for maintaining positive control of their credentialed device at all times. The DOD PKI certificate policy requires subscribers to maintain positive control of the devices that contain private keys and to report any loss of control so the credentials can be revoked. Upon device retirement, turn-in, or reassignment, ensure that a factory data reset is performed prior to device handoff. Follow mobility service provider decommissioning procedures as applicable.
+- How to configure the following UBE controls (users must configure the control) on the Google device: 
+ **Secure use of Calendar Alarm. 
+ **Local screen mirroring and Mirroring procedures (authorized/not authorized for use). 
+ **Do not upload DOD contacts via smart call and caller ID services. 
+ **Do not remove DOD intermediate and root PKI digital certificates. 
+ **Disable Wi-Fi Sharing. 
+ **Do not configure a DOD network (work) VPN profile on any third-party VPN client installed in the personal space. 
+ **If Bluetooth connections are approved for mobile device, types of allowed connections (for example car hands-free, but not Bluetooth wireless keyboard).
+ **How to perform a full device wipe.
+**Use default Wi-Fi hotspot password: 15-character complex Wi-Fi hotspot preshared password enabled ("WPA2/WPA3-personal").
+- AO guidance on acceptable use and restrictions, if any, on downloading and installing personal apps and data (music, photos, etc.) in the Google device personal space.</fixtext><fix id="F-58342r1042506_fix" /><check system="C-58396r862735_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review a sample of site User Agreements for Google Android 13 device users or similar training records and training course content. 
+ 
+Verify that the Google Android 13 device users have completed the required training. The intent is that required training is renewed on a periodic basis in a time period determined by the AO. 
+ 
+If any Google Android 13 device user has not completed the required training, this is a finding.</check-content></check></Rule></Group><Group id="V-254786"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254786r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-009900</version><title>Google Android 13 must be configured to enforce that Wi-Fi Sharing is disabled.</title><description>&lt;VulnDiscussion&gt;Wi-Fi Sharing is an optional configuration of Wi-Fi Tethering/Mobile Hotspot, which allows the device to share its Wi-Fi connection with other wirelessly connected devices instead of its mobile (cellular) connection. 
+ 
+Wi-Fi Sharing grants the "other" device access to a corporate Wi-Fi network and may possibly bypass the network access control mechanisms. This risk can be partially mitigated by requiring the use of a preshared key for personal hotspots.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58343r862739_fix">Configure the Google Android 13 device to disable Wi-Fi Sharing.
+ 
+Mobile Hotspot must be enabled to enable Wi-Fi Sharing. If the AO has not approved Mobile Hotspot, and it has been disabled on the EMM console, no further action is needed. 
+
+If Mobile Hotspot is being used, use the following procedure to disable Wi-Fi Sharing: 
+
+On the EMM console:
+
+COBO:
+
+1. Open "Set user restrictions".
+2. Toggle "Disallow config tethering" to "ON".
+
+COPE:
+
+1. Open "Set user restrictions on parent".
+2. Toggle "Disallow config tethering" to "ON".</fixtext><fix id="F-58343r862739_fix" /><check system="C-58397r862738_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm Wi-Fi Sharing is disabled. 
+ 
+Mobile Hotspot must be enabled to enable Wi-Fi Sharing. If the Authorizing Official (AO) has not approved Mobile Hotspot, and it has been verified as disabled on the EMM console, no further action is needed. 
+
+If Mobile Hotspot is being used, use the following procedure to verify Wi-Fi Sharing is disabled: 
+
+On the EMM console:
+
+COBO:
+
+1. Open "Set user restrictions".
+2. Verify "Disallow config tethering" is toggled to "ON".
+
+COPE:
+
+1. Open "Set user restrictions on parent".
+2. Toggle "Disallow config tethering" to "ON".
+
+On the managed Google Android 13 device:
+
+COBO and COPE:
+
+1. Go to Settings &gt;&gt; Network &amp; Internet.
+2. Verify "Hotspot &amp; tethering" is "Controlled by admin".
+3. Verify that tapping "Hotspot &amp; tethering" provides a prompt to the user specifying "Action not allowed".
+ 
+If on the managed Google Android 13 device "Hotspot &amp; tethering" is enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-254787"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254787r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-010000</version><title>Google Android 13 must have the DOD root and intermediate PKI certificates installed.</title><description>&lt;VulnDiscussion&gt;DOD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the root and intermediate certificates are not available, an adversary could falsely sign a certificate in such a way that it could not be detected. Providing access to the DOD root and intermediate PKI certificates greatly diminishes the risk of this attack.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58344r862742_fix">Configure the Google Android 13 device to install DOD root and intermediate certificates. 
+ 
+On the EMM console upload DOD root and intermediate certificates as part of a device and/or work profile.
+ 
+The current DOD root and intermediate PKI certificates may be obtained in self-extracting zip files at http://cyber.mil/pki-pke (for NIPRNet).</fixtext><fix id="F-58344r862742_fix" /><check system="C-58398r862741_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm that the DOD root and intermediate PKI certificates are installed.
+ 
+This procedure is performed on both the EMM Administration console and the managed Google Android 13 device. 
+ 
+The current DOD root and intermediate PKI certificates may be obtained in self-extracting zip files at http://cyber.mil/pki-pke (for NIPRNet). 
+ 
+On the EMM console verify that the DOD root and intermediate certificates are part of a device and/or work profile that is being pushed down to the devices.
+ 
+On the managed Google Android 13 device: 
+
+1. Open Settings. 
+2. Tap "Security". 
+3. Tap "Advanced".
+4. Tap "Encryption &amp; credentials".
+5. Tap "Trusted credentials".
+6. Verify that DOD root and intermediate PKI certificates are listed under the User tab in the Work section.
+ 
+If on the EMM console the DOD root and intermediate certificates are not listed in a profile, or the managed Android 13 device does not list the DOD root and intermediate certificates under the user tab, this is a finding.</check-content></check></Rule></Group><Group id="V-254788"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254788r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-010100</version><title>The Google Android 13 work profile must be configured to prevent users from adding personal email accounts to the work email app.</title><description>&lt;VulnDiscussion&gt;If the user is able to add a personal email account (POP3, IMAP, EAS) to the work email app, it could be used to forward sensitive DOD data to unauthorized recipients. Restricting email account addition to the administrator or restricting email account addition to allowlisted accounts mitigates this vulnerability.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58345r862745_fix">Configure the Google Android 13 device to prevent users from adding personal email accounts to the work email app. 
+ 
+On the EMM console: 
+
+COPE:
+
+1. Open "Set user restrictions".
+2. Toggle "Disallow modify accounts" to "ON".
+
+Refer to the EMM documentation to determine how to provision users' work email accounts for the work email app.</fixtext><fix id="F-58345r862745_fix" /><check system="C-58399r862744_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review the managed Google Android 13 work profile configuration settings to confirm that users are prevented from adding personal email accounts to the work email app. 
+ 
+This procedure is performed on both the EMM Administrator console and the managed Google Android 13 device. 
+
+COPE:
+ 
+On the EMM console:
+1. Open "Set user restrictions".
+2. Verify "Disallow modify accounts" is toggled to "ON".
+
+On the managed Google Android 13 device: 
+
+1. Open Settings.
+2. Tap "Passwords &amp; accounts".
+3. Select "Work".
+4. Tap "Add account".
+5. Verify a message is displayed to the user stating "Action not allowed".
+ 
+If on the EMM console the restriction to "Disallow modify accounts" is not set, or on the managed Android 13 device the user is able to add an account in the Work section, this is a finding.</check-content></check></Rule></Group><Group id="V-254789"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254789r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-010200</version><title>The Google Android 13 work profile must be configured to enforce the system application disable list.</title><description>&lt;VulnDiscussion&gt;The system application disable list controls user access to/execution of all core and preinstalled applications. 
+ 
+Core application: Any application integrated into Google Android 13 by Google. 
+ 
+Preinstalled application: Additional noncore applications included in the Google Android 13 build by Google or the wireless carrier. 
+ 
+Some system applications can compromise DOD data or upload users' information to non-DOD-approved servers. A user must be blocked from using such applications that exhibit behavior that can result in compromise of DOD data or DOD user information. 
+ 
+The site administrator must analyze all preinstalled applications on the device and disable all applications not approved for DOD use by configuring the system application disable list.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58346r862748_fix">Configure the Google Android 13 device to enforce the system application disable list. 
+
+The required configuration is the default configuration when the device is enrolled. If the device configuration is changed, use the following procedure to bring the device back into compliance:
+
+On the EMM console:
+
+COBO:
+
+1. Open "Apps management" section.
+2. Select "Hide apps".
+3. Enter package names of apps to hide.
+
+COPE:
+
+1. Open "Apps management" section.
+2. Select "Hide apps on parent".
+3. Enter package names of apps to hide.
+
+Configure a list of approved Google core and preinstalled apps in the core app allowlist.</fixtext><fix id="F-58346r862748_fix" /><check system="C-58400r862747_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review the managed Google Android 13 work profile configuration settings to confirm the system application disable list is enforced. This setting is enforced by default. Verify only approved system apps have been placed on the core allowlist.
+ 
+This procedure is performed on the EMM Administrator console. 
+ 
+Review the system app allowlist and verify only approved apps are on the list.
+
+COBO:
+
+1. Open "Apps management" section.
+2. Select "Hide apps".
+3. Verify package names of apps are listed.
+
+COPE:
+
+1. Open "Apps management" section.
+2. Select "Hide apps on parent".
+3. Verify package names of apps are listed.
+
+If on the EMM console the system app allowlist contains unapproved core apps, this is a finding.</check-content></check></Rule></Group><Group id="V-254790"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254790r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-010300</version><title>Google Android 13 must be provisioned as a fully managed device and configured to create a work profile.</title><description>&lt;VulnDiscussion&gt;The Android Enterprise work profile is the designated application group for the COPE use case.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58347r862751_fix">Configure the Google Android 13 device as corporate owned with a work profile.
+
+On the EMM console, configure the default enrollment as Corporate Owned, and select "Use for Work &amp; Personal".
+
+Refer to the EMM documentation to determine how to configure the device.</fixtext><fix id="F-58347r862751_fix" /><check system="C-58401r862750_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review that managed Google Android 13 is configured as Corporate Owned Work Managed.
+ 
+This procedure is performed on both the EMM Administrator console and the managed Google Android 13 device. 
+ 
+On the EMM console, configure the default enrollment as Corporate Owned and select "Use for Work &amp; Personal".
+ 
+On the managed Google Android 13 device: 
+
+1. Go to the application drawer.
+2. Ensure a Personal tab and a Work tab are present.
+
+If on the EMM console the account the default enrollment is set to Corporate Owned Work Managed or on the managed Android 13 device the user does not have a Work tab, this is a finding.</check-content></check></Rule></Group><Group id="V-254791"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254791r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-010400</version><title>The Google Android 13 work profile must be configured to disable automatic completion of work space internet browser text input.</title><description>&lt;VulnDiscussion&gt;The autofill functionality in the web browser allows the user to complete a form that contains sensitive information, such as personally identifiable information (PII), without previous knowledge of the information. By allowing the use of autofill functionality, an adversary who learns a user's Android 13 device password, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the autofill feature to provide information unknown to the adversary. By disabling the autofill functionality, the risk of an adversary gaining further information about the device's user or compromising other systems is significantly mitigated.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58348r862754_fix">Configure the Chrome browser on the Google Android 13 device work profile to disable autofill.
+ 
+On the EMM console:
+
+COPE:
+
+1. Open "Managed Configurations" section.
+2. Select the Chrome Browser version from the work profile.
+3. Ensure "SearchSuggestEnabled" is turned "OFF".
+
+Refer to the EMM documentation to determine how to configure Chrome Browser Settings.</fixtext><fix id="F-58348r862754_fix" /><check system="C-58402r862753_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review the work profile Chrome Browser app on the Google Android 13 autofill setting.
+
+This procedure is performed only on the EMM Administrator console. 
+ 
+On the EMM console:
+
+COPE:
+
+1. Open "Managed Configurations" section.
+2. Select the Chrome Browser version from the work profile.
+3. Verify "SearchSuggestEnabled" is turned "OFF".
+ 
+If on the EMM console autofill is set to "On" in the Chrome Browser Settings, this is a finding.</check-content></check></Rule></Group><Group id="V-254792"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254792r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-010500</version><title>The Google Android 13 work profile must be configured to disable the autofill services.</title><description>&lt;VulnDiscussion&gt;The autofill services allow the user to complete text inputs that could contain sensitive information, such as personally identifiable information (PII), without previous knowledge of the information. By allowing the use of autofill services, an adversary who learns a user's Android 13 device password, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the autofill services to provide information unknown to the adversary. By disabling the autofill services, the risk of an adversary gaining further information about the device's user or compromising other systems is significantly mitigated. 
+ 
+Examples of apps that offer autofill services include Samsung Pass, Google, Dashlane, LastPass, and 1Password.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58349r862757_fix">Configure the Google Android 13 device work profile to disable the autofill services. 
+ 
+On the EMM console:
+
+COPE:
+
+1. Open "Set user restrictions".
+2. Toggle "Disable autofill" to "ON".</fixtext><fix id="F-58349r862757_fix" /><check system="C-58403r862756_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review the Google Android 13 work profile configuration settings to confirm that autofill services are disabled. 
+ 
+This procedure is performed only on the EMM Administration console. 
+ 
+On the EMM console:
+
+COPE:
+
+1. Open "Set user restrictions".
+2. Verify "Disable autofill" is toggled to "ON".
+ 
+If on the EMM console "disallow autofill" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-254793"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254793r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-010600</version><title>Google Android 13 must be configured to disallow configuration of date and time.</title><description>&lt;VulnDiscussion&gt;Determining the correct time a particular application event occurred on a system is critical when conducting forensic analysis and investigating system events. 
+ 
+Periodically synchronizing internal clocks with an authoritative time source is necessary to correctly correlate the timing of events that occur across the enterprise. The three authoritative time sources for Google Android 13 are an authoritative time server that is synchronized with redundant United States Naval Observatory (USNO) time servers as designated for the appropriate DOD network (NIPRNet or SIPRNet), or the Global Positioning System (GPS), or the wireless carrier. 
+ 
+Time stamps generated by the audit system in Google Android 13 must include both date and time. The time may be expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58350r862760_fix">Configure the Google Android 13 device to set auto network time.
+ 
+On the EMM console:
+
+COBO:
+
+1. Open "Set user restrictions".
+2. Toggle "Disallow config date time" to "ON".
+
+COPE:
+
+1. Open "Set user restrictions on parent".
+2. Toggle "Disallow config date time" to "ON".</fixtext><fix id="F-58350r862760_fix" /><check system="C-58404r862759_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review the managed Google Android 13 device configuration settings to confirm that autofill services are disabled. 
+ 
+This procedure is performed on both the EMM Administration console and the managed Google Android 13 device. 
+ 
+On the EMM console:
+
+COBO:
+
+1. Open "Set user restrictions".
+2. Verify "Disallow config date time" is toggled to "ON".
+
+COPE:
+
+1. Open "Set user restrictions on parent".
+2. Verify "Disallow config date time" is toggled to "ON".
+ 
+On the managed Google Android 13 device: 
+
+COBO and COPE:
+
+1. Open Settings. 
+2. Tap "System".
+3. Tap "Date &amp; times". 
+4. Verify "Set time automatically" is grayed out and is "Enabled by admin".
+ 
+If on the EMM console "Disallow config date time" is not set to "On", or on the managed Android 13 device "User network-provided time" is not grayed out, this is a finding.</check-content></check></Rule></Group><Group id="V-254794"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254794r959010_rule" weight="10.0" severity="high"><version>GOOG-13-010800</version><title>Android 13 devices must have the latest available Google Android 13 operating system installed.</title><description>&lt;VulnDiscussion&gt;Required security features are not available in earlier operating system versions. In addition, there may be known vulnerabilities in earlier versions.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58351r862763_fix">Install the latest released version of the Google Android 13 operating system on all managed Google devices.
+ 
+Note: Google Android device operating system updates are released directly by Google or can be distributed via the EMM. Check each device manufacturer and/or Carriers for current updates.</fixtext><fix id="F-58351r862763_fix" /><check system="C-58405r862762_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review device configuration settings to confirm the Google Android device has the most recently released version of managed Google Android 13 installed. 
+ 
+This procedure is performed on both the EMM console and the managed Google Android 13 device.
+ 
+In the EMM management console, review the version of Google Android 13 installed on a sample of managed devices. This procedure will vary depending on the EMM product. 
+ 
+On the managed Google Android 13 device, to determine the installed operating system version: 
+
+COBO and COPE:
+
+1. Open Settings.
+2. Tap "About phone".
+3. Verify "Build number".
+ 
+If the installed version of the Google Android 13 operating system on any reviewed devices is not the latest released by Google, this is a finding. 
+
+Google's Android operating system patch website: https://source.android.com/security/bulletin/
+
+Android versions for Pixel devices: https://developers.google.com/android/images</check-content></check></Rule></Group><Group id="V-254795"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254795r959010_rule" weight="10.0" severity="low"><version>GOOG-13-010900</version><title>Android 13 devices must be configured to disable the use of third-party keyboards.</title><description>&lt;VulnDiscussion&gt;Many third-party keyboard applications are known to contain malware.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58352r862766_fix">Configure the Google Android 13 device to disallow the use of third-party keyboards. 
+ 
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "Input methods".
+2. Tap "Set input methods".
+3. Select only the approved keyboard.
+
+Additionally, Admins can configure application allowlists for Google Play that do not have any third-party keyboards for user installation.</fixtext><fix id="F-58352r862766_fix" /><check system="C-58406r862765_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review the managed Google Android 13 configuration settings to confirm that no third-party keyboards are enabled. 
+ 
+This procedure is performed on the EMM console.
+ 
+On the EMM console:
+
+COBO and COPE:
+
+1. Open "Input methods".
+2. Tap "Set input methods".
+3. Verify only the approved keyboards are selected.
+
+If third-party keyboards are allowed, this is a finding.</check-content></check></Rule></Group><Group id="V-254796"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254796r959010_rule" weight="10.0" severity="low"><version>GOOG-13-011000</version><title>Android 13 devices must be configured to enable Common Criteria Mode (CC Mode).</title><description>&lt;VulnDiscussion&gt;The CC Mode feature is a superset of other features and behavioral changes that are mandatory MDFPP requirements. If CC mode is not implemented, the device will not be operating in the NIAP-certified compliant CC Mode of operation.
+
+CC Mode implements the following behavioral/functional changes: How the Bluetooth and Wi-Fi keys are stored using different types of encryption.
+
+SFR ID: FMT_SMF_EXT.1.1 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-58353r862769_fix">Configure the Google Android 13 device to implement CC Mode. 
+ 
+On the EMM console:
+
+COBO and COPE:
+
+1. Open Device owner management.
+2. Toggle "Enable Common Criteria mode" to "ON".</fixtext><fix id="F-58353r862769_fix" /><check system="C-58407r862768_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review the managed Google Android 13 configuration settings to confirm CC mode is enabled. 
+ 
+This procedure is performed on the EMM console.
+ 
+COBO and COPE:
+
+1. Open Device owner management.
+2. Verify "Enable Common Criteria mode" is toggled to "ON".
+
+If CC mode is not enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-254797"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254797r959010_rule" weight="10.0" severity="medium"><version>GOOG-13-012200</version><title>Google Android 13 must be configured to disable all data signaling over [assignment: list of externally accessible hardware ports (for example, USB)].</title><description>&lt;VulnDiscussion&gt;If a user is able to configure the security setting, the user could inadvertently or maliciously set it to a value that poses unacceptable risk to DOD information systems. An adversary could exploit vulnerabilities created by the weaker configuration to compromise DOD sensitive information.
+
+SFR ID: FMT_MOF_EXT.1.2 #24&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002235</ident><fixtext fixref="F-58354r862772_fix">Configure Google Android 13 device to disable the USB port (except for charging the device).
+
+COPE and COBO:
+
+On the EMM console:
+1. Open "Set user restrictions".
+2. Toggle "Enable USB" to "OFF".</fixtext><fix id="F-58354r862772_fix" /><check system="C-58408r862771_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review the device configuration to confirm that the USB port is disabled except for charging the device.
+
+On the EMM console:
+1. Open "Set user restrictions".
+2. Verify "Enable USB" is toggled to "OFF".
+ 
+If on EMM console the USB port is not disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-254798"><title>PP-MDF-323350</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254798r970707_rule" weight="10.0" severity="medium"><version>GOOG-13-012300</version><title>The Google Android 13 must allow only the administrator (EMM) to install/remove DOD root and intermediate PKI certificates.</title><description>&lt;VulnDiscussion&gt;DOD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the user is allowed to remove root and intermediate certificates, the user could allow an adversary to falsely sign a certificate in such a way that it could not be detected. Restricting the ability to remove DOD root and intermediate PKI certificates to the Administrator mitigates this risk.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-000370</ident><fixtext fixref="F-58355r862775_fix">Configure Google Android 13 device to prevent a user from removing DOD root and intermediate PKI certificates.
+
+On the EMM console:
+1. Open "Set user restrictions".
+2. Toggle "Disallow config credentials" to "ON".</fixtext><fix id="F-58355r862775_fix" /><check system="C-58409r862774_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review the device configuration to confirm that the user is unable to remove DOD root and intermediate PKI certificates.
+
+On the EMM console:
+1. Open "Set user restrictions".
+2. Verify "Disallow config credentials" is toggled to "ON".
+
+On the Google Android 13 device:
+1. Open Settings.
+2. Tap "Security".
+3. Tap "Advanced".
+4. Tap "Encryption &amp; credentials".
+5. Tap "Trusted credentials".
+6. Verify the user is unable to untrust or remove any work certificates.
+ 
+If on the Google Android 13 device the user is able to remove certificates, this is a finding.</check-content></check></Rule></Group><Group id="V-254799"><title>PP-MDF-990000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254799r959010_rule" weight="10.0" severity="low"><version>GOOG-13-012400</version><title>Google Android 13 must allow only the Administrator (MDM) to perform the following management function: Disable Phone Hub.</title><description>&lt;VulnDiscussion&gt;It may be possible to transfer work profile data on a DOD Android device to an unauthorized ChromeBook if the user has the same Google Account set up on the ChromeBook and in the work profile on the Android device. This may result in the exposure of sensitive DOD data.
+
+SFR ID: FMT_MOF_EXT.1.2 #47&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Google Android 13 COPE</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Google Android 13 COPE</dc:subject><dc:identifier>5490</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001090</ident><fixtext fixref="F-58356r862778_fix">Configure Google Android 13 device to disable the nearby notification streaming policy to disable Phone Hub.
+
+COPE and COBO:
+
+On the EMM console:
+1. Open "Set user restrictions".
+2. Toggle "Nearby Streaming Policy" to "NEARBY_STREAMING_DISABLED".</fixtext><fix id="F-58356r862778_fix" /><check system="C-58410r862777_chk"><check-content-ref href="Google_Android_13_COPE_STIG.xml" name="M" /><check-content>Review the EMM configuration to confirm phone hub has been disabled.
+
+On the EMM console:
+1. Open "Set user restrictions".
+2. Verify "Nearby notification streaming policy" is set to "NEARBY_STREAMING_DISABLED".
+ 
+If on EMM console the "Nearby Streaming Policy" is not set to "NEARBY_STREAMING_DISABLED", this is a finding.
+
+Note: From a Chromebook, if a device is connected to the Phone Hub, try to set up the Notifications and it will fail to connect to the device to complete the set up if phone hub has been disabled on the DOD Android device.</check-content></check></Rule></Group></Benchmark>

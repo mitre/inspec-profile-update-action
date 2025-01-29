@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_BMC_CONTROL-D_for_ACF2_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-16">accepted</status><title>z/OS BMC CONTROL-D for ACF2 Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224106" selected="true" /><select idref="V-224107" selected="true" /><select idref="V-224108" selected="true" /><select idref="V-224109" selected="true" /><select idref="V-224110" selected="true" /><select idref="V-224111" selected="true" /><select idref="V-224112" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224106" selected="true" /><select idref="V-224107" selected="true" /><select idref="V-224108" selected="true" /><select idref="V-224109" selected="true" /><select idref="V-224110" selected="true" /><select idref="V-224111" selected="true" /><select idref="V-224112" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224106" selected="true" /><select idref="V-224107" selected="true" /><select idref="V-224108" selected="true" /><select idref="V-224109" selected="true" /><select idref="V-224110" selected="true" /><select idref="V-224111" selected="true" /><select idref="V-224112" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224106" selected="true" /><select idref="V-224107" selected="true" /><select idref="V-224108" selected="true" /><select idref="V-224109" selected="true" /><select idref="V-224110" selected="true" /><select idref="V-224111" selected="true" /><select idref="V-224112" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224106" selected="true" /><select idref="V-224107" selected="true" /><select idref="V-224108" selected="true" /><select idref="V-224109" selected="true" /><select idref="V-224110" selected="true" /><select idref="V-224111" selected="true" /><select idref="V-224112" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224106" selected="true" /><select idref="V-224107" selected="true" /><select idref="V-224108" selected="true" /><select idref="V-224109" selected="true" /><select idref="V-224110" selected="true" /><select idref="V-224111" selected="true" /><select idref="V-224112" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224106" selected="true" /><select idref="V-224107" selected="true" /><select idref="V-224108" selected="true" /><select idref="V-224109" selected="true" /><select idref="V-224110" selected="true" /><select idref="V-224111" selected="true" /><select idref="V-224112" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224106" selected="true" /><select idref="V-224107" selected="true" /><select idref="V-224108" selected="true" /><select idref="V-224109" selected="true" /><select idref="V-224110" selected="true" /><select idref="V-224111" selected="true" /><select idref="V-224112" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224106" selected="true" /><select idref="V-224107" selected="true" /><select idref="V-224108" selected="true" /><select idref="V-224109" selected="true" /><select idref="V-224110" selected="true" /><select idref="V-224111" selected="true" /><select idref="V-224112" selected="true" /></Profile><Group id="V-224106"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224106r1041231_rule" weight="10.0" severity="medium"><version>ZCTD0040</version><title>BMC CONTROL-D configuration/parameter values are not specified properly.</title><description>&lt;VulnDiscussion&gt;BMC CONTROL-D configuration/parameters control the security and operational characteristics of products. If these parameter values are improperly specified, security and operational controls may be weakened. This exposure may threaten the availability of the product applications, and compromise the confidentiality of customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS BMC CONTROL-D for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS BMC CONTROL-D for ACF2</dc:subject><dc:identifier>4103</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-18014</ident><ident system="http://cyber.mil/legacy">SV-32211</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-25767r1041230_fix">The BMC CONTROL-D Systems programmer will verify that any configuration/parameters that are required to control the security of the product are properly configured and syntactically correct. Set the standard values for the BMC CONTROL-D security parameters for the specific ACP environment along with additional IOA security parameters with standard values as documented below.
+
+Keyword	Value
+DEFMCHKD	$$CTDEDM
+SECTOLD	NO
+DFMD01	EXTEND
+DFMD04	EXTEND
+DFMD08	EXTEND
+DFMD19	EXTEND
+DFMD23	EXTEND
+DFMD24	EXTEND
+DFMD26	EXTEND
+DFMD27	EXTEND</fixtext><fix id="F-25767r1041230_fix" /><check system="C-25779r1041229_chk"><check-content-ref href="zOS_BMC_CONTROL-D_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following applicable reports produced by the z/OS Data Collection:
+
+- IOA.RPT(SECPARM)
+
+Automated Analysis
+Refer to the following report produced by the z/OS Data Collection:
+
+- PDI(ZCTD0040)
+
+The following keywords will have the specified values in the BMC CONTROL-D security parameter member:
+
+Keyword	Value
+DEFMCHKD	$$CTDEDM
+SECTOLD	NO
+DFMD01	EXTEND
+DFMD04	EXTEND
+DFMD08	EXTEND
+DFMD19	EXTEND
+DFMD23	EXTEND
+DFMD24	EXTEND
+DFMD26	EXTEND
+DFMD27	EXTEND</check-content></check></Rule></Group><Group id="V-224107"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224107r1041234_rule" weight="10.0" severity="medium"><version>ZCTD0060</version><title>BMC CONTROL-D security exits are not installed or configured properly.</title><description>&lt;VulnDiscussion&gt;The BMC CONTROL-D security exits enable access authorization checking to BMC CONTROL-D commands, features, and online functionality. If these exit(s) is (are) not in place, activities by unauthorized users may result. BMC CONTROL-D security exit(s) interface with the ACP. If an unauthorized exit was introduced into the operating environment, system security could be weakened or bypassed. These exposures may result in the compromise of the operating system environment, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS BMC CONTROL-D for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS BMC CONTROL-D for ACF2</dc:subject><dc:identifier>4103</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-32015</ident><ident system="http://cyber.mil/legacy">V-17985</ident><ident system="http://cyber.mil/cci">CCI-001744</ident><fixtext fixref="F-25768r1041233_fix">The systems programmer responsible for the BMC CONTROL-D will review the BMC CONTROL-D operating environment. Ensure that the following security exit(s) is (are) installed properly. Determine if the site has modified the following security exit(s):
+
+CTDSE01
+CTDSE04
+CTDSE08
+CTDSE19
+CTDSE24
+CTDSE28
+
+Ensure that the security exit(s) has (have) not been modified.
+
+If the security exit(s) has (have) been modified, ensure the security exit(s) has (have) been checked as to not violate any security integrity within the system and approval documentation is on file.</fixtext><fix id="F-25768r1041233_fix" /><check system="C-25780r1041232_chk"><check-content-ref href="zOS_BMC_CONTROL-D_for_ACF2_STIG.xml" name="M" /><check-content>Interview the systems programmer responsible for the BMC CONTROL-D. Determine if the site has modified the following security exit(s):
+
+CTDSE01
+CTDSE04
+CTDSE08
+CTDSE19
+CTDSE24
+CTDSE28
+
+Ensure the above security exit(s) has (have) not been modified.
+
+If the above security exit(s) has (have) been modified, ensure that the security exit(s) has (have) been approved by the site systems programmer and the approval is on file for examination.</check-content></check></Rule></Group><Group id="V-224108"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224108r1041235_rule" weight="10.0" severity="medium"><version>ZCTDA000</version><title>BMC CONTROL-D installation data sets will be properly protected.</title><description>&lt;VulnDiscussion&gt;BMC CONTROL-D installation data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS BMC CONTROL-D for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS BMC CONTROL-D for ACF2</dc:subject><dc:identifier>4103</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-31827</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-25769r868120_fix">The ISSO will ensure that WRITE and/or greater access to BMC CONTROL-D installation data sets are limited to systems programmers only, and all WRITE and/or greater access is logged. READ access can be given to auditors, BMC users, security personnel (domain level and decentralized), and BMC STCs and/or batch users. All failures and successful WRITE and/or greater accesses are logged.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update and/or alter access for specific data sets, and once documented will work with the ISSO to ensure they are properly restricted to the ACP (Access Control Program) active on the system.
+
+(Note: The data sets and/or data set prefixes identified below are examples of a possible installation. The actual data sets and/or prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+Data sets to be protected will be: 
+SYS2.IOA.*.CTDI.
+
+The following commands are provided as a sample for implementing data set controls: 
+
+$KEY(SYS2)
+IOA.-.CTDI.-  UID(&lt;syspaudt&gt;) R(A) W(L) A(L) E(A)
+IOA.-.CTDI.-  UID(&lt;audtaudt&gt;) R(A) E(A)
+IOA.-.CTDI.-  UID(&lt;bmcuser&gt;) R(A) E(A)
+IOA.-.CTDI.-  UID(&lt;secaaudt&gt;) R(A) E(A)
+IOA.-.CTDI.-  UID(&lt;secdaudt&gt;) R(A) E(A)
+IOA.-.CTDI.-  UID(CONTROLD) R(A) E(A)</fixtext><fix id="F-25769r868120_fix" /><check system="C-25781r868119_chk"><check-content-ref href="zOS_BMC_CONTROL-D_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(CTDRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZCTD0000)
+
+Verify that the accesses to the BMC CONTROL-D installation data sets are properly restricted. If the following guidance is true, this is not a finding.
+
+___ The ACF2 data set access authorizations restrict READ access to auditors, BMC users, security personnel (domain level and decentralized), and BMC STCs and/or batch users.
+
+___ The ACF2 data set access authorizations restrict WRITE and/or greater access to systems programming personnel.
+
+___ The ACF2 data set access authorizations specify that all (i.e., failures and successes) WRITE and/or greater access are logged.</check-content></check></Rule></Group><Group id="V-224109"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224109r958616_rule" weight="10.0" severity="medium"><version>ZCTDA001</version><title>BMC CONTROL-D STC data sets must be properly protected.</title><description>&lt;VulnDiscussion&gt;BMC CONTROL-D STC data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS BMC CONTROL-D for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS BMC CONTROL-D for ACF2</dc:subject><dc:identifier>4103</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-32165</ident><ident system="http://cyber.mil/legacy">V-17067</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-25770r868123_fix">The ISSO will ensure that WRITE and/or greater access to BMC CONTROL-D STC data sets are limited to systems programmers and BMC STCs and/or batch users. UPDATE access can be given to centralized and decentralized security personnel. READ access can be given to auditors and BMC users.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update and/or alter access for specific data sets, and once documented will work with the ISSO to ensure they are properly restricted to the ACP (Access Control Program) active on the system.
+
+(Note: The data sets and/or data set prefixes identified below are examples of a possible installation. The actual data sets and/or prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+Data sets to be protected will be: 
+SYS3.IOA.*.CTDO.
+
+The following commands are provided as a sample for implementing data set controls: 
+
+$KEY(SYS3)
+IOA.-.CTDO.- UID(syspaudt) R(A) W(A) A(A) E(A)
+IOA.-.CTDO.- UID(tstcaudt) R(A) W(A) A(A) E(A)
+IOA.-.CTDO.- UID(BMC STCs) R(A) W(A) A(A) E(A)
+IOA.-.CTDO.- UID(secaaudt) R(A) W(A) E(A)
+IOA.-.CTDO.- UID(secdaudt) R(A) W(A) E(A)
+IOA.-.CTDO.- UID(audtaudt) R(A) E(A)
+IOA.-.CTDO.- UID(bmcuser) R(A) E(A)</fixtext><fix id="F-25770r868123_fix" /><check system="C-25782r868122_chk"><check-content-ref href="zOS_BMC_CONTROL-D_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(CTDSTC)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZCTD0001)
+
+Verify that the accesses to the BMC CONTROL-D STC data sets are properly restricted. If the following guidance is true, this is not a finding.
+ 
+___ The ACF2 data set access authorizations restrict READ access to auditors and CONTROL-D end users.
+
+___ The ACF2 data set access authorizations restrict WRITE and/or greater access to systems programming personnel.
+
+___ The ACF2 data set access authorizations restrict WRITE and/or greater access to BMC STCs and/or batch users.
+
+___ The ACF2 data set access authorizations restrict UPDATE access to centralized and decentralized security personnel.</check-content></check></Rule></Group><Group id="V-224110"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224110r1041237_rule" weight="10.0" severity="medium"><version>ZCTDA002</version><title>BMC CONTROL-D user data sets must be properly protected.</title><description>&lt;VulnDiscussion&gt;BMC CONTROL-D User data sets, CDAM and Repository, have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS BMC CONTROL-D for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS BMC CONTROL-D for ACF2</dc:subject><dc:identifier>4103</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-32162</ident><ident system="http://cyber.mil/legacy">V-21592</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-25771r868125_fix">The ISSO must ensure that WRITE and/or greater access to BMC CONTROL-D User data sets are limited to systems programmers and BMC STCs and/or batch users. Additionally, UPDATE access can be given to centralized and decentralized security personnel, and BMC users. The ISSO can approve ALLOC access in circumstances where it is determined to be necessary and appropriate for systems operations to execute in a normal secure manner. READ access can be given to auditors.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer must identify if any additional groups have update and/or alter access for specific data sets, and once documented will work with the ISSO to ensure they are properly restricted to the ACP (Access Control Program) active on the system.
+
+(Note: The data sets and/or data set prefixes identified below are examples of a possible installation. The actual data sets and/or prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+Data sets to be protected will be: 
+SYS3.IOA.*.CTDR.
+CTRUSR.
+CTDSRV.
+CTDJB1.
+
+The following commands are provided as a sample for implementing data set controls: 
+
+$KEY(SYS3)
+IOA.-.CTDR.- UID(syspaudt) R(A) W(A) A(A) E(A)
+IOA.-.CTDR.- UID(tstcaudt) R(A) W(A) A(A) E(A)
+IOA.-.CTDR.- UID(BMC STCs) R(A) W(A) A(A) E(A)
+IOA.-.CTDR.- UID(bmcuser) R(A) W(A) E(A)
+IOA.-.CTDR.- UID(secaaudt) R(A) W(A) E(A)
+IOA.-.CTDR.- UID(secdaudt) R(A) W(A) E(A)
+IOA.-.CTDR.- UID(audtaudt) R(A) E(A)
+
+$KEY(CTRUSR)
+- UID(syspaudt) R(A) W(A) A(A) E(A)
+- UID(tstcaudt) R(A) W(A) A(A) E(A)
+- UID(BMC STCs) R(A) W(A) A(A) E(A)
+- UID(bmcuser) R(A) W(A) E(A)
+- UID(secaaudt) R(A) W(A) E(A)
+- UID(secdaudt) R(A) W(A) E(A)
+- UID(audtaudt) R(A) E(A)
+
+$KEY(CTDSRV)
+- UID(syspaudt) R(A) W(A) A(A) E(A)
+- UID(tstcaudt) R(A) W(A) A(A) E(A)
+- UID(BMC STCs) R(A) W(A) A(A) E(A)
+- UID(bmcuser) R(A) W(A) E(A)
+- UID(secaaudt) R(A) W(A) E(A)
+- UID(secdaudt) R(A) W(A) E(A)
+- UID(audtaudt) R(A) E(A)
+
+$KEY(CTDJB1)
+- UID(syspaudt) R(A) W(A) A(A) E(A)
+- UID(tstcaudt) R(A) W(A) A(A) E(A)
+- UID(BMC STCs) R(A) W(A) A(A) E(A)
+- UID(bmcuser) R(A) W(A) E(A)
+- UID(secaaudt) R(A) W(A) E(A)
+- UID(secdaudt) R(A) W(A) E(A)
+- UID(audtaudt) R(A) E(A)</fixtext><fix id="F-25771r868125_fix" /><check system="C-25783r1041236_chk"><check-content-ref href="zOS_BMC_CONTROL-D_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(CTMUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZCTD0002)
+
+Verify that the accesses to the BMC CONTROL-D User data sets are properly restricted. If the following guidance is true, this is not a finding.
+
+___ The ACF2 data set access authorizations restrict READ access to auditors.
+
+___ The ACF2 data set access authorizations restrict WRITE and/or greater access to systems programming personnel.
+
+___ The ACF2 data set access authorizations restrict WRITE and/or greater access to the BMC STCs and/or batch users.
+
+___ The ACF2 data set access authorizations restrict UPDATE access to centralized and decentralized security personnel, and/or CONTROL-D end users.</check-content></check></Rule></Group><Group id="V-224111"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224111r1041240_rule" weight="10.0" severity="medium"><version>ZCTDA020</version><title>BMC CONTROL-D resources will be properly defined and protected.</title><description>&lt;VulnDiscussion&gt;BMC CONTROL-D can run with sensitive system privileges, and potentially can circumvent system controls. Failure to properly control access to product resources could result in the compromise of the operating system environment, and compromise the confidentiality of customer data. Many utilities assign resource controls that can be granted to systems programmers only in greater than read authority. Resources are also granted to certain non systems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS BMC CONTROL-D for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS BMC CONTROL-D for ACF2</dc:subject><dc:identifier>4103</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17947</ident><ident system="http://cyber.mil/legacy">SV-32055</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-25772r1041239_fix">The ISSO will work with the systems programmer to verify that the following are properly specified in the ACP.
+
+Note: To determine what resource class is used review the IOACLASS setting in SECPARM. The "Trigger" resources, i.e., $$SECxxx (xxx is unique to the product) are defined in the FACILITY resource class
+
+(Note: The resource class, resources, and/or resource prefixes identified below are examples of a possible installation. The actual resource class, resources, and/or resource prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+Use BMC CONTROL-D Resources and BMC INCONTROL Resources Descriptions tables in the zOS STIG Addendum. These tables list the resources, descriptions, and access and logging requirements. Ensure the guidelines for the resources and/or generic equivalent specified in the z/OS STIG Addendum are followed.
+
+The following commands are provided as a sample for implementing resource controls:
+
+$key($$addnot) type(ioa)
+- uid(&lt;appsaudt&gt;) allow
+- uid(&lt;operaudt&gt;) allow
+- uid(&lt;pcspaudt&gt;) allow
+- uid(&lt;syspaudt&gt;) allow
+- uid(*) prevent
+
+</fixtext><fix id="F-25772r1041239_fix" /><check system="C-25784r1041238_chk"><check-content-ref href="zOS_BMC_CONTROL-D_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the ACF2 Data Collection and Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(ZCTD0020)
+- ACF2CMDS.RPT(RESOURCE) - Alternate report
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZCTD0020)
+
+Verify that the accesses to resources and/or generic equivalent are properly restricted according to the requirements specified in BMC CONTROL-D Resources table in the z/OS STIG Addendum. If the following guidance is true, this is not a finding.
+
+Note: To determine what resource class is used review the IOACLASS setting in SECPARM. The "Trigger" resources, i.e., $$SECxxx (xxx is unique to the product) are defined in the FACILITY resource class
+
+___ The ACF2 resources are defined with a default access of PREVENT.
+
+___ The ACF2 resource access authorizations restrict access to the appropriate personnel.
+
+___ The ACF2 resource logging requirements are specified.
+</check-content></check></Rule></Group><Group id="V-224112"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224112r958482_rule" weight="10.0" severity="medium"><version>ZCTDA030</version><title>BMC CONTROL-D Started Task name is not properly identified / defined to the system ACP.</title><description>&lt;VulnDiscussion&gt;BMC CONTROL-D requires a started task that will be restricted to certain resources, datasets and other system functions. By defining the started task as a userid to the system ACP, It allows the ACP to control the access and authorized users that require these capabilities. Failure to properly control these capabilities, could compromise of the operating system environment, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS BMC CONTROL-D for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS BMC CONTROL-D for ACF2</dc:subject><dc:identifier>4103</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17452</ident><ident system="http://cyber.mil/legacy">SV-32067</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-25773r518663_fix">The BMC CONTROL-D system programmer and the IAO will ensure that a product's Started Task(s) is properly Identified / defined to the System ACP. 
+
+If the product requires a Started Task, verify that it is properly defined to the System ACP with the proper attributes.
+
+Most installation manuals will indicate how the Started Task is identified and any additional attributes that must be specified.
+
+Example:
+
+SET LID
+CHANGE CONTROLD STC MUSASS NO-SMC</fixtext><fix id="F-25773r518663_fix" /><check system="C-25785r518662_chk"><check-content-ref href="zOS_BMC_CONTROL-D_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the ACF2 Data Collection:
+
+-	ACF2CMDS.RPT(ATTSTC)
+
+Insure that the logonids(s) for the BMC CONTROL-D started task(s) includes the following:
+
+STC
+MUSASS
+NO-SMC</check-content></check></Rule></Group></Benchmark>

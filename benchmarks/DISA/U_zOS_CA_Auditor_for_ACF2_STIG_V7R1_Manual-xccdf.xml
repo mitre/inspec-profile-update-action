@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_CA_Auditor_for_ACF2_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-16">accepted</status><title>z/OS CA Auditor for ACF2 Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224265" selected="true" /><select idref="V-224266" selected="true" /><select idref="V-224267" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224265" selected="true" /><select idref="V-224266" selected="true" /><select idref="V-224267" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224265" selected="true" /><select idref="V-224266" selected="true" /><select idref="V-224267" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224265" selected="true" /><select idref="V-224266" selected="true" /><select idref="V-224267" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224265" selected="true" /><select idref="V-224266" selected="true" /><select idref="V-224267" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224265" selected="true" /><select idref="V-224266" selected="true" /><select idref="V-224267" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224265" selected="true" /><select idref="V-224266" selected="true" /><select idref="V-224267" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224265" selected="true" /><select idref="V-224266" selected="true" /><select idref="V-224267" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224265" selected="true" /><select idref="V-224266" selected="true" /><select idref="V-224267" selected="true" /></Profile><Group id="V-224265"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224265r1041183_rule" weight="10.0" severity="medium"><version>ZADTA000</version><title>CA Auditor installation data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor installation data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CA Auditor for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CA Auditor for ACF2</dc:subject><dc:identifier>4112</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-31918</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-25926r868064_fix">The ISSO will ensure that update and allocate access to CA Auditor installation data sets is limited to systems programmers only, and all update and allocate access is logged. Read access can be given to auditors, security administrators, and/or CA Auditor's STCs and batch users.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update and/or alter access for specific data sets, and once documented will work with the ISSO to ensure they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS2.EXAMINE
+SYS2A.EXAMINE
+
+The following commands are provided as a sample for implementing data set controls: 
+
+$KEY(SYS2)
+EXAMINE.- UID(&lt;syspaudt&gt;) R(A) W(L) A(L) E(A)
+EXAMINE.- UID(&lt;audtaudt&gt;) R(A) E(A)
+EXAMINE.- UID(&lt;secaaudt&gt;) R(A) E(A)
+EXAMINE.- UID(EXAMMON) R(A) E(A)
+$KEY(SYS2A)
+EXAMINE.- UID(&lt;syspaudt&gt;) R(A) W(L) A(L) E(A)
+EXAMINE.- UID(&lt;audtaudt&gt;) R(A) E(A)
+EXAMINE.- UID(&lt;secaaudt&gt;) R(A) E(A)
+EXAMINE.- UID(EXAMMON) R(A) E(A)</fixtext><fix id="F-25926r868064_fix" /><check system="C-25938r868063_chk"><check-content-ref href="zOS_CA_Auditor_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(ADTRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZADT0000)
+
+Verify that the accesses to the CA Auditor installation data sets are properly restricted.
+ 
+___ The ACF2 data set rules for the data sets restricts READ access to auditors, security administrators, and/or CA Auditor's STCs and batch users.
+
+___ The ACF2 data set rules for the data sets restricts UPDATE and/or ALTER access to systems programming personnel.
+
+___ The ACF2 data set rules for the data sets specify that all (i.e., failures and successes) UPDATE and/or ALTER access are logged.</check-content></check></Rule></Group><Group id="V-224266"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224266r958616_rule" weight="10.0" severity="medium"><version>ZADTA002</version><title>CA Auditor User data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor User data sets have the ability to use privileged functions and/or have access to sensitive data.  Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CA Auditor for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CA Auditor for ACF2</dc:subject><dc:identifier>4112</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-21592</ident><ident system="http://cyber.mil/legacy">SV-32205</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-25927r519549_fix">The IAO will ensure that update and allocate access to CA Auditor User data sets are limited to System Programmers, security personnel and auditors.
+
+The installing Systems Programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged.  He will identify if any additional groups have update and/or alter access for specific data sets, and once documented he will work with the IAO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS3.EXAMINE
+
+The following commands are provided as a sample for implementing data set controls: 
+
+$KEY(SYS3)
+EXAMINE.- UID(&lt;syspaudt&gt;) R(A) W(A) A(A) E(A)
+EXAMINE.- UID(&lt;audtaudt&gt;) R(A) W(A) A(A) E(A)
+EXAMINE.- UID(&lt;secaaudt&gt;) R(A) W(A) A(A) E(A)</fixtext><fix id="F-25927r519549_fix" /><check system="C-25939r519548_chk"><check-content-ref href="zOS_CA_Auditor_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ADTUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZADT0002)
+
+Verify that the accesses to the CA Auditor User data sets are properly restricted.
+
+___	The ACF2 data set rules for the data sets restricts UPDATE and/or ALTER access to systems programming personnel, security personnel and auditors.
+</check-content></check></Rule></Group><Group id="V-224267"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224267r1041186_rule" weight="10.0" severity="medium"><version>ZADTA020</version><title>CA Auditor resources are not properly defined and protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor can run with sensitive system privileges, and potentially can circumvent system controls. Failure to properly control access to product resources could result in the compromise of the operating system environment, and compromise the confidentiality of customer data. Many utilities assign resource controls that can be granted to systems programmers only in greater than read authority. Resources are also granted to certain non systems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CA Auditor for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CA Auditor for ACF2</dc:subject><dc:identifier>4112</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-32208</ident><ident system="http://cyber.mil/legacy">V-17947</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-25928r1041185_fix">The IOA will verify that the LTDMMAIN resource in the PROGRAM resource class is restricted to systems programmers, auditors, and security personnel.
+
+The ACF2 rules for the resource specify a default access of NONE. There are ACF2 rules defined and only systems programmers, auditors, and security personnel have access.
+
+Example:
+
+SET R(PGM)
+$KEY(LTDMMAIN) TYPE(PGM)
+ UID(&lt;syspaudt&gt;) ALLOW
+ UID(&lt;audtaudt&gt;) ALLOW
+ UID(&lt;secaaudt&gt;) ALLOW
+ UID(*) PREVENT DATA(SRR FINDING FOR CA AUDITOR)</fixtext><fix id="F-25928r1041185_fix" /><check system="C-25940r1041184_chk"><check-content-ref href="zOS_CA_Auditor_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the ACF2 Data Collection and Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(ZADT0020)
+- ACF2CMDS.RPT(RESOURCE) - Alternate report
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZADT0020)
+
+Verify that the access to the LTDMMAIN resource in the PROGRAM resource class is restricted.
+
+___ The ACF2 rules for the resources specify a default access of NONE.
+
+___ The ACF2 rules for the resources are restricted access to systems programmers, auditors, and security personnel.</check-content></check></Rule></Group></Benchmark>

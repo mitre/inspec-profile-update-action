@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_CA_Auditor_for_TSS_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-16">accepted</status><title>z/OS CA Auditor for TSS Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224618" selected="true" /><select idref="V-224619" selected="true" /><select idref="V-224620" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224618" selected="true" /><select idref="V-224619" selected="true" /><select idref="V-224620" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224618" selected="true" /><select idref="V-224619" selected="true" /><select idref="V-224620" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224618" selected="true" /><select idref="V-224619" selected="true" /><select idref="V-224620" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224618" selected="true" /><select idref="V-224619" selected="true" /><select idref="V-224620" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224618" selected="true" /><select idref="V-224619" selected="true" /><select idref="V-224620" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224618" selected="true" /><select idref="V-224619" selected="true" /><select idref="V-224620" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224618" selected="true" /><select idref="V-224619" selected="true" /><select idref="V-224620" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224618" selected="true" /><select idref="V-224619" selected="true" /><select idref="V-224620" selected="true" /></Profile><Group id="V-224618"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224618r1041360_rule" weight="10.0" severity="medium"><version>ZADTT000</version><title>CA Auditor installation data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor installation data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CA Auditor for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CA Auditor for TSS</dc:subject><dc:identifier>4174</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-31920</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26289r868598_fix">The ISSO will ensure that update and allocate access to CA Auditor installation data sets is limited to systems programmers only, and all update and allocate access is logged. Read access can be given to auditors, security administrators, and/or CA Auditor's STCs and batch users.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update and/or alter access for specific data sets, and once documented will work with the ISSO to ensure they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS2.EXAMINE
+SYS2A.EXAMINE
+
+The following commands are provided as a sample for implementing data set controls:
+
+TSS PERMIT(&lt;syspaudt&gt;) DSN(SYS2.EXAMINE.) ACCESS(R)
+TSS PERMIT(&lt;syspaudt&gt;) DSN(SYS2.EXAMINE.) ACCESS(ALL) ACTION(AUDIT)
+TSS PERMIT(&lt;audtaudt&gt;) DSN(SYS2.EXAMINE.) ACCESS(R)
+TSS PERMIT(&lt;secaaudt&gt;) DSN(SYS2.EXAMINE.) ACCESS(R)
+TSS PERMIT(EXAMMON) DSN(SYS2.EXAMINE.) ACCESS(R)
+TSS PERMIT(&lt;syspaudt&gt;) DSN(SYS2A.EXAMINE.) ACCESS(R)
+TSS PERMIT(&lt;syspaudt&gt;) DSN(SYS2A.EXAMINE.) ACCESS(ALL) ACTION(AUDIT)
+TSS PERMIT(&lt;audtaudt&gt;) DSN(SYS2A.EXAMINE.) ACCESS(R)
+TSS PERMIT(&lt;secaaudt&gt;) DSN(SYS2A.EXAMINE.) ACCESS(R)
+TSS PERMIT(EXAMMON) DSN(SYS2A.EXAMINE.) ACCESS(R)</fixtext><fix id="F-26289r868598_fix" /><check system="C-26301r868597_chk"><check-content-ref href="zOS_CA_Auditor_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(ADTRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZADT0000)
+
+Verify that the accesses to the CA Auditor installation data sets are properly restricted.
+ 
+___ The TSS data set rules for the data sets restricts READ access to auditors, security administrators, and/or CA Auditor's STCs and batch users.
+
+___ The TSS data set rules for the data sets restricts UPDATE and/or ALL access to systems programming personnel.
+
+___ The TSS data set rules for the data sets specify that all (i.e., failures and successes) UPDATE and/or ALL access are logged.</check-content></check></Rule></Group><Group id="V-224619"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224619r958616_rule" weight="10.0" severity="medium"><version>ZADTT002</version><title>CA Auditor User data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor User data sets have the ability to use privileged functions and/or have access to sensitive data.  Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CA Auditor for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CA Auditor for TSS</dc:subject><dc:identifier>4174</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-32207</ident><ident system="http://cyber.mil/legacy">V-21592</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-26290r519567_fix">The IAO will ensure that update and allocate access to CA Auditor User data sets are limited to System Programmers,  security personnel and auditors.
+
+The installing Systems Programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. He will identify if any additional groups have update and/or alter access for specific data sets, and once documented he will work with the IAO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be:
+
+SYS3.EXAMINE
+
+The following commands are provided as a sample for implementing data set controls:
+
+TSS PERMIT(&lt;syspaudt&gt;) DSN(SYS3.EXAMINE) ACCESS(ALL)
+TSS PERMIT(&lt;audtaudt&gt;) DSN(SYS3.EXAMINE) ACCESS(ALL)
+TSS PERMIT(&lt;secaaudt&gt;) DSN(SYS3.EXAMINE) ACCESS(ALL)</fixtext><fix id="F-26290r519567_fix" /><check system="C-26302r519566_chk"><check-content-ref href="zOS_CA_Auditor_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ADTUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZADT0002)
+
+Verify that the accesses to the CA Auditor User data sets are properly restricted.
+
+___	The TSS data set rules for the data sets restricts UPDATE and/or ALL access to systems programming personnel, security personnel and auditors.
+
+</check-content></check></Rule></Group><Group id="V-224620"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224620r1041363_rule" weight="10.0" severity="medium"><version>ZADTT020</version><title>CA Auditor resources are not properly defined and protected.</title><description>&lt;VulnDiscussion&gt;CA Auditor can run with sensitive system privileges, and potentially can circumvent system controls. Failure to properly control access to product resources could result in the compromise of the operating system environment, and compromise the confidentiality of customer data. Many utilities assign resource controls that can be granted to systems programmers only in greater than read authority. Resources are also granted to certain non systems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS CA Auditor for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS CA Auditor for TSS</dc:subject><dc:identifier>4174</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17947</ident><ident system="http://cyber.mil/legacy">SV-32210</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-26291r1041362_fix">The ISSO will verify that the LTDMMAIN resource in the PROGRAM resource class is restricted to systems programmers, auditors, and security personnel.
+
+The TSS owner is defined for the LTDMMAIN resource and/or PROGRAM RDT entry has DEFPROT specified.
+
+Example:
+
+TSS ADD(dept-acid)PROGRAM(LTDMMAIN)
+
+TSS REP(RDT)RESCLASS(PROGRAM)ATTR(DEFPROT)
+
+The TSS rules for the LTDMMAIN resource is restricted access to systems programmers, auditors, and security personnel.
+
+Example:
+
+TSS PERMIT(audtaudt)PROGRAM(LTDMMAIN)
+TSS PERMIT(secaaudt)PROGRAM(LTDMMAIN)
+TSS PERMIT(syspaudt)PROGRAM(LTDMMAIN)</fixtext><fix id="F-26291r1041362_fix" /><check system="C-26303r1041361_chk"><check-content-ref href="zOS_CA_Auditor_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following reports produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(ZADT0020)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZADT0020)
+
+Verify that the access to the LTDMMAIN resource in the PROGRAM resource class is restricted.
+
+___ The TSS owner is defined for the prefix of the resource and/or the resource classes RDT entry has DEFPROT specified.
+
+___ The TSS rules for the resources are restricted access to systems programmers, auditors, and security personnel.</check-content></check></Rule></Group></Benchmark>

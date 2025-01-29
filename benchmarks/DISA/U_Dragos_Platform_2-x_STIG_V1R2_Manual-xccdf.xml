@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Dragos_Platform_2-x_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-23">accepted</status><title>Dragos Platform 2.x Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-270904" selected="true" /><select idref="V-270910" selected="true" /><select idref="V-270916" selected="true" /><select idref="V-270917" selected="true" /><select idref="V-270919" selected="true" /><select idref="V-270932" selected="true" /><select idref="V-270944" selected="true" /><select idref="V-270945" selected="true" /><select idref="V-270947" selected="true" /><select idref="V-270952" selected="true" /><select idref="V-270955" selected="true" /><select idref="V-270978" selected="true" /><select idref="V-270993" selected="true" /><select idref="V-271008" selected="true" /><select idref="V-271027" selected="true" /><select idref="V-271034" selected="true" /><select idref="V-271049" selected="true" /><select idref="V-271070" selected="true" /><select idref="V-271105" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-270904" selected="true" /><select idref="V-270910" selected="true" /><select idref="V-270916" selected="true" /><select idref="V-270917" selected="true" /><select idref="V-270919" selected="true" /><select idref="V-270932" selected="true" /><select idref="V-270944" selected="true" /><select idref="V-270945" selected="true" /><select idref="V-270947" selected="true" /><select idref="V-270952" selected="true" /><select idref="V-270955" selected="true" /><select idref="V-270978" selected="true" /><select idref="V-270993" selected="true" /><select idref="V-271008" selected="true" /><select idref="V-271027" selected="true" /><select idref="V-271034" selected="true" /><select idref="V-271049" selected="true" /><select idref="V-271070" selected="true" /><select idref="V-271105" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-270904" selected="true" /><select idref="V-270910" selected="true" /><select idref="V-270916" selected="true" /><select idref="V-270917" selected="true" /><select idref="V-270919" selected="true" /><select idref="V-270932" selected="true" /><select idref="V-270944" selected="true" /><select idref="V-270945" selected="true" /><select idref="V-270947" selected="true" /><select idref="V-270952" selected="true" /><select idref="V-270955" selected="true" /><select idref="V-270978" selected="true" /><select idref="V-270993" selected="true" /><select idref="V-271008" selected="true" /><select idref="V-271027" selected="true" /><select idref="V-271034" selected="true" /><select idref="V-271049" selected="true" /><select idref="V-271070" selected="true" /><select idref="V-271105" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-270904" selected="true" /><select idref="V-270910" selected="true" /><select idref="V-270916" selected="true" /><select idref="V-270917" selected="true" /><select idref="V-270919" selected="true" /><select idref="V-270932" selected="true" /><select idref="V-270944" selected="true" /><select idref="V-270945" selected="true" /><select idref="V-270947" selected="true" /><select idref="V-270952" selected="true" /><select idref="V-270955" selected="true" /><select idref="V-270978" selected="true" /><select idref="V-270993" selected="true" /><select idref="V-271008" selected="true" /><select idref="V-271027" selected="true" /><select idref="V-271034" selected="true" /><select idref="V-271049" selected="true" /><select idref="V-271070" selected="true" /><select idref="V-271105" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-270904" selected="true" /><select idref="V-270910" selected="true" /><select idref="V-270916" selected="true" /><select idref="V-270917" selected="true" /><select idref="V-270919" selected="true" /><select idref="V-270932" selected="true" /><select idref="V-270944" selected="true" /><select idref="V-270945" selected="true" /><select idref="V-270947" selected="true" /><select idref="V-270952" selected="true" /><select idref="V-270955" selected="true" /><select idref="V-270978" selected="true" /><select idref="V-270993" selected="true" /><select idref="V-271008" selected="true" /><select idref="V-271027" selected="true" /><select idref="V-271034" selected="true" /><select idref="V-271049" selected="true" /><select idref="V-271070" selected="true" /><select idref="V-271105" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-270904" selected="true" /><select idref="V-270910" selected="true" /><select idref="V-270916" selected="true" /><select idref="V-270917" selected="true" /><select idref="V-270919" selected="true" /><select idref="V-270932" selected="true" /><select idref="V-270944" selected="true" /><select idref="V-270945" selected="true" /><select idref="V-270947" selected="true" /><select idref="V-270952" selected="true" /><select idref="V-270955" selected="true" /><select idref="V-270978" selected="true" /><select idref="V-270993" selected="true" /><select idref="V-271008" selected="true" /><select idref="V-271027" selected="true" /><select idref="V-271034" selected="true" /><select idref="V-271049" selected="true" /><select idref="V-271070" selected="true" /><select idref="V-271105" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-270904" selected="true" /><select idref="V-270910" selected="true" /><select idref="V-270916" selected="true" /><select idref="V-270917" selected="true" /><select idref="V-270919" selected="true" /><select idref="V-270932" selected="true" /><select idref="V-270944" selected="true" /><select idref="V-270945" selected="true" /><select idref="V-270947" selected="true" /><select idref="V-270952" selected="true" /><select idref="V-270955" selected="true" /><select idref="V-270978" selected="true" /><select idref="V-270993" selected="true" /><select idref="V-271008" selected="true" /><select idref="V-271027" selected="true" /><select idref="V-271034" selected="true" /><select idref="V-271049" selected="true" /><select idref="V-271070" selected="true" /><select idref="V-271105" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-270904" selected="true" /><select idref="V-270910" selected="true" /><select idref="V-270916" selected="true" /><select idref="V-270917" selected="true" /><select idref="V-270919" selected="true" /><select idref="V-270932" selected="true" /><select idref="V-270944" selected="true" /><select idref="V-270945" selected="true" /><select idref="V-270947" selected="true" /><select idref="V-270952" selected="true" /><select idref="V-270955" selected="true" /><select idref="V-270978" selected="true" /><select idref="V-270993" selected="true" /><select idref="V-271008" selected="true" /><select idref="V-271027" selected="true" /><select idref="V-271034" selected="true" /><select idref="V-271049" selected="true" /><select idref="V-271070" selected="true" /><select idref="V-271105" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-270904" selected="true" /><select idref="V-270910" selected="true" /><select idref="V-270916" selected="true" /><select idref="V-270917" selected="true" /><select idref="V-270919" selected="true" /><select idref="V-270932" selected="true" /><select idref="V-270944" selected="true" /><select idref="V-270945" selected="true" /><select idref="V-270947" selected="true" /><select idref="V-270952" selected="true" /><select idref="V-270955" selected="true" /><select idref="V-270978" selected="true" /><select idref="V-270993" selected="true" /><select idref="V-271008" selected="true" /><select idref="V-271027" selected="true" /><select idref="V-271034" selected="true" /><select idref="V-271049" selected="true" /><select idref="V-271070" selected="true" /><select idref="V-271105" selected="true" /></Profile><Group id="V-270904"><title>SRG-APP-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270904r1058027_rule" weight="10.0" severity="medium"><version>DRAG-OT-000020</version><title>Dragos must configure idle timeouts at 10 minutes.</title><description>&lt;VulnDiscussion&gt;A session time-out lock is a temporary action taken when a user stops work and moves away from the immediate physical vicinity of the information system but does not log out because of the temporary nature of the absence. 
+
+The session lock is implemented at the point where session activity can be determined. This is typically at the operating system level but may be at Dragos level. 
+
+When Dragos design specifies Dragos rather than the operating system will determine when to lock the session, Dragos session lock event must include an obfuscation of the display screen to prevent other users from reading what was previously displayed. 
+
+Publicly viewable images can include static or dynamic images, for example, patterns used with screen savers, photographic images, solid colors, a clock, a battery life indicator, or a blank screen, with the additional caveat that none of the images convey sensitive information.
+
+Satisfies: SRG-APP-000002, SRG-APP-000003, SRG-APP-000190, SRG-APP-000295, SRG-APP-000389&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000060</ident><ident system="http://cyber.mil/cci">CCI-000057</ident><ident system="http://cyber.mil/cci">CCI-001133</ident><ident system="http://cyber.mil/cci">CCI-002361</ident><ident system="http://cyber.mil/cci">CCI-002038</ident><fixtext fixref="F-74848r1057354_fix">Set session timeout configurations.
+
+In the UI, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Advanced Settings.
+
+Click "Configurations".
+
+Set Idle Auto-Logout Minutes to "10".
+
+Set Re-Authenticate User Device (Inactive) to "1h".
+
+Click "Save &amp; Apply".</fixtext><fix id="F-74848r1057354_fix" /><check system="C-74947r1057353_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Verify session timeout is configured.
+
+In the UI, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Advanced Settings.
+
+Click "Configurations".
+
+If Idle Auto-Logout Minutes is not set to "10" minutes, this is a finding. 
+
+If Re-Authenticate User Device (Inactive) is not set to "1h", this is a finding.</check-content></check></Rule></Group><Group id="V-270910"><title>SRG-APP-000023</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270910r1057994_rule" weight="10.0" severity="medium"><version>DRAG-OT-000090</version><title>Dragos Platform must use an Identity Provider (IDP) for authentication and authorization processes.</title><description>&lt;VulnDiscussion&gt;Enterprise environments make application account management challenging and complex. A manual process for account management functions adds the risk of a potential oversight or other error. 
+
+A comprehensive application account management process that includes automation helps to ensure accounts designated as requiring attention are consistently and promptly addressed. Examples include, but are not limited to, using automation to take action on multiple accounts designated as inactive, suspended, or terminated or by disabling accounts located in noncentralized account stores such as multiple servers. This requirement applies to all account types, including individual/user, shared, group, system, guest/anonymous, emergency, developer/manufacturer/vendor, temporary, and service.
+
+Dragos Platform must be configured to automatically provide account management functions and these functions must immediately enforce the organization's current account policy. The automated mechanisms may reside within Dragos Platform itself or may be offered by the operating system or other infrastructure providing automated account management capabilities. Automated mechanisms may be comprised of differing technologies that when placed together contain an overall automated mechanism supporting an organization's automated account management requirements. 
+
+Account management functions include: assignment of group or role membership; identifying account type; specifying user access authorizations (i.e., privileges); account removal, update, or termination; and administrative alerts. The use of automated mechanisms can include, for example: using email or text messaging to automatically notify account managers when users are terminated or transferred; using the information system to monitor account usage; and using automated telephonic notification to report atypical system account usage.
+
+Satisfies: SRG-APP-000023, SRG-APP-000025, SRG-APP-000065, SRG-APP-000149, SRG-APP-000150, SRG-APP-000151, SRG-APP-000152, SRG-APP-000163, SRG-APP-000165, SRG-APP-000170, SRG-APP-000173, SRG-APP-000233, SRG-APP-000345, SRG-APP-000317, SRG-APP-000318&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-000017</ident><ident system="http://cyber.mil/cci">CCI-000044</ident><ident system="http://cyber.mil/cci">CCI-000765</ident><ident system="http://cyber.mil/cci">CCI-000766</ident><ident system="http://cyber.mil/cci">CCI-000767</ident><ident system="http://cyber.mil/cci">CCI-000768</ident><ident system="http://cyber.mil/cci">CCI-000795</ident><ident system="http://cyber.mil/cci">CCI-000200</ident><ident system="http://cyber.mil/cci">CCI-000195</ident><ident system="http://cyber.mil/cci">CCI-000198</ident><ident system="http://cyber.mil/cci">CCI-001084</ident><ident system="http://cyber.mil/cci">CCI-002238</ident><ident system="http://cyber.mil/cci">CCI-002142</ident><ident system="http://cyber.mil/cci">CCI-002145</ident><fixtext fixref="F-74854r1057993_fix">Configure LDAP.
+
+In the UI, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Authentication Providers.
+
+Next to LDAP/Active Directory, click "ADD PROVIDER".
+
+Fill in the configuration in the "Add New LDAP Provider" form.
+
+Click "Save".</fixtext><fix id="F-74854r1057993_fix" /><check system="C-74953r1057371_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Review the authentication method being used by the Platform. 
+
+In the UI, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Authentication Providers.
+
+If the Platform does not have an Authentication Provider configured, this is a finding.</check-content></check></Rule></Group><Group id="V-270916"><title>SRG-APP-000068</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270916r1057996_rule" weight="10.0" severity="medium"><version>DRAG-OT-000200</version><title>The Dragos Platform must display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system.</title><description>&lt;VulnDiscussion&gt;Display of a standardized and approved use notification before granting access to the operating system ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist.
+
+The banner must be formatted in accordance with applicable DOD policy. Use the following verbiage for operating systems that can accommodate banners of 1300 characters:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."
+
+Satisfies: SRG-APP-000068, SRG-APP-000069&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><ident system="http://cyber.mil/cci">CCI-000050</ident><fixtext fixref="F-74860r1057995_fix">Configure the Dragos Platform to display the Standard Mandatory DOD Notice and Consent Banner before granting access to the system:
+
+1. Log in to the SiteStore or Sensor via SSH.
+
+2. Input "config banner pre_login" into the CLI.
+
+3. Input the banner text shown below, pressing "Enter" after each line. Press config appl CTRL-D to save the text or CTRL-C to quit without saving.
+
+4. Apply the banner by executing the following:
+config apply
+
+The banner must be formatted in accordance with applicable DOD policy. Use the following verbiage for operating systems that can accommodate banners of 1300 characters:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."</fixtext><fix id="F-74860r1057995_fix" /><check system="C-74959r1057389_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Verify the Dragos Platform displays the Standard Mandatory DOD Notice and Consent Banner before granting access to the system when login in via SSH.
+
+If the banner does not exist or is not formatted in accordance with applicable DOD policy, this is a finding.</check-content></check></Rule></Group><Group id="V-270917"><title>SRG-APP-000070</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270917r1058026_rule" weight="10.0" severity="medium"><version>DRAG-OT-000220</version><title>The publicly accessible Dragos Platform application must display the Standard Mandatory DOD Notice and Consent Banner before granting access to Dragos Platform.</title><description>&lt;VulnDiscussion&gt;Display of a standardized and approved use notification before granting access to the publicly accessible application ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist.
+
+The banner must be formatted in accordance with DTM-08-060. Use the following verbiage for desktops, laptops, and other devices accommodating banners of 1300 characters:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+ 
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001384</ident><ident system="http://cyber.mil/cci">CCI-001385</ident><ident system="http://cyber.mil/cci">CCI-001386</ident><ident system="http://cyber.mil/cci">CCI-001387</ident><ident system="http://cyber.mil/cci">CCI-001388</ident><fixtext fixref="F-74861r1058026_fix">1. Download the following script and put it in the /root directory on the sitestore where the DOD Banner is to be applied (see below).
+
+2. Run the script with the following syntax: 
+python3 DOD_Banner_Config_Utility.py, and go to the sitestore login page to verify the banner is present.
+
+3. Schedule the cron with the following syntax to ensure the change survives reboots: 
+5 * * * * python3 /root/DOD_Banner_Config_Utility.py --persist-banner
+
+DOD_Banner_Config_Utility.py
+
+Utility: import os, json, sys, time
+# Created by bdudley@dragos.com to assist with Dragos STIG implementation
+# specifically related to DoD Banner for web UI before login
+os.chdir("/root")
+# version compatibility check
+if 'Platform Version: 2.4.' not in os.popen("dragoscmd version").read():
+    print("This version of the Dragos platform is incompatible with this script.")
+    exit()
+DOD_BANNER_JS = "alert('You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.\\nBy using this IS (which includes any device attached to this IS), you consent to the following conditions:\\n-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.\\n-At any time, the USG may inspect and seize data stored on this IS.\\n-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.\\n-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.\\n-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.');"
+fstream = open('banner.js', 'w')
+fstream.write(DOD_BANNER_JS)
+fstream.close()
+# get the platform-ui container id
+platformui = os.popen("kubectl get pods | grep platform-ui | grep -v platform-ui-logger | awk '{print $1}'").read().strip()
+BANNER_DIR = '/usr/share/nginx/html/source/'
+HTML_DIR = '/usr/share/nginx/html/'
+if "--restore-defaults" in sys.argv:
+    print("Restoring to default, no banner.")
+    os.system("kubectl -n dragos-sitestore cp ./index.html.bak "+platformui+":"+HTML_DIR+"index.html")
+    print("Done, reload the page to test changes.")
+    exit()
+# this will check periodically to make sure the banner changes persisted, and re-apply them if not
+if "--persist-banner" in sys.argv:
+    # check the current settings
+    current_html = os.popen("curl -k https://localhost").read()
+    if "./source/banner.js" in current_html:
+        print("Banner is currently set, taking no action.")
+        exit()
+    else:
+        fstream = open("banner.log", "a")
+        fstream.write("["+time.ctime().replace("  ", "")+"] banner was not set, setting banner now.\n")
+        fstream.close()
+    # put the banner js file in the appropriate directory
+    os.system("kubectl -n dragos-sitestore cp ./banner.js "+platformui+":"+BANNER_DIR+"banner.js")
+    # update the current version of index.html in the pod
+    os.system("kubectl -n dragos-sitestore cp ./index.html.patched "+platformui+":"+HTML_DIR+"index.html")
+    exit()
+# is the sitestore up and running?
+if "System is ready." not in os.popen("dragoscmd system k3s status").read():
+    print("System is not ready, wait until all pods are started before configuring banner.")
+    exit()
+# is there a backup of the old index.html file
+if os.path.exists('index.html.bak') == False:
+    print("Creating an index.html backup...")
+    os.system("kubectl -n dragos-sitestore cp "+platformui+":"+HTML_DIR+"index.html ./index.html.bak")
+    print("Done.")
+# put the banner js file in the appropriate directory
+os.system("kubectl -n dragos-sitestore cp ./banner.js "+platformui+":"+BANNER_DIR+"banner.js")
+# perform appropriate patching on the index.html backup
+fstream = open("index.html.bak", "r")
+html = fstream.read()
+fstream.close()
+original = '&lt;script nonce="**CSP_NONCE**" type="module" crossorigin'
+replacement = '&lt;script src="./source/banner.js" nonce="**CSP_NONCE**"&gt;&lt;/script&gt;&lt;script nonce="**CSP_NONCE**" type="module" crossorigin'
+fstream = open("index.html.patched", "w")
+fstream.write(html.replace(original, replacement))
+fstream.close()
+# update the current version of index.html in the pod
+os.system("kubectl -n dragos-sitestore cp ./index.html.patched "+platformui+":"+HTML_DIR+"index.html")
+print("Banner configuration changes complete, reload the login page (or logout) to see the popup.  If the formatting for the popup needs to be adjusted, make the changes in the banner block above and re-run this script.")
+print("\nUse the below format to create a cron that makes the banner persist through reboots:\n\n*/5 * * * * python3 /root/DOD_Banner_Config_Utility.py --persist-banner\n\n")</fixtext><fix id="F-74861r1058026_fix" /><check system="C-74960r1057392_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Verify that the Standard Mandatory DOD Notice and Consent Banner appears before being granted access to Dragos Platform UI. 
+
+If the Standard Mandatory DOD Notice is not presented, this is a finding.</check-content></check></Rule></Group><Group id="V-270919"><title>SRG-APP-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270919r1058028_rule" weight="10.0" severity="medium"><version>DRAG-OT-000240</version><title>The Dragos Platform must only allow local administrative and service user accounts.</title><description>&lt;VulnDiscussion&gt;Only two default accounts facilitate the initial setup and configuration of the Platform. These accounts provide immediate access to the system, allowing administrators to quickly get the system up and running without needing to create new user accounts during the initial installation phase.
+
+During maintenance, updates, or support operations, default accounts allow vendor support teams to access the system without needing to manage a variety of customer-specific accounts. This can streamline support activities and reduce downtime.
+
+Default accounts passwords need to be protected so they cannot be exploited by attackers to gain unauthorized access to the system.
+
+Satisfies: SRG-APP-000080, SRG-APP-000234&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000166</ident><ident system="http://cyber.mil/cci">CCI-001682</ident><fixtext fixref="F-74863r1057399_fix">Remove nonessential users.
+
+While logged in to the Dragos Platform with a user account with administrative privileges, navigate to Admin &gt;&gt; User Management &gt;&gt; Users.
+
+Click the kebab menu next to the user and select "Delete User".
+
+Click "DELETE" in the verification window.</fixtext><fix id="F-74863r1057399_fix" /><check system="C-74962r1057999_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Verify local user accounts.
+
+While logged in to the Dragos Platform with a user account with administrative privileges, navigate to Admin &gt;&gt; User Management &gt;&gt; Users.
+
+If any user except the Administrator and Service account is found, this is a finding.</check-content></check></Rule></Group><Group id="V-270932"><title>SRG-APP-000108</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270932r1058029_rule" weight="10.0" severity="medium"><version>DRAG-OT-000370</version><title>The Dragos Platform must have notification and audit services installed.</title><description>&lt;VulnDiscussion&gt;Installing the Knowledge Pack(s) is essential for the Dragos Platform to provide comprehensive security monitoring, compliance, and operational visibility within industrial environments. It enhances the Platform's capabilities in detecting and responding to threats, ensuring regulatory compliance, and maintaining the overall security. It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required.
+
+The pack provides enhanced visibility into the operations of the Dragos Platform. This includes monitoring user activities, changes to system configurations, and other critical events. Improved visibility helps in identifying potential security issues and operational anomalies before they escalate into significant problems.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000139</ident><fixtext fixref="F-74876r1058001_fix">If a notification does not appear, install KP-CW-24-001. This knowledge pack will add this and other notifications relevant to the STIG to the Dragos Platform.
+
+To add Knowledge Pack:
+While logged in to the Dragos Platform with a user account with administrative privileges, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Knowledge Packs.
+
+Locate all "STIG-KP_Plus" Knowledge Pack(s).
+
+Click "Deploy" button next to the Knowledge Pack(s).
+
+Fill in the form and click "DEPLOY".</fixtext><fix id="F-74876r1058001_fix" /><check system="C-74975r1057437_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Ensure all notification and audit services are functional.
+
+Log in to the SiteStore CLI and execute the following command:
+system k3s status
+
+If the message does not return "system is ready", this is a finding. 
+
+(Note that for approximately 15–20 minutes after system startup or reboot, system will not be ready. Additionally, until the sensor is paired with a SiteStore, one pod on the sensor will not be ready).</check-content></check></Rule></Group><Group id="V-270944"><title>SRG-APP-000125</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270944r1058004_rule" weight="10.0" severity="medium"><version>DRAG-OT-000490</version><title>The Dragos Platform must be configured to send backup audit records.</title><description>&lt;VulnDiscussion&gt;Configuring the Dragos Platform to send out backup audit records is a critical best practice for ensuring the security, integrity, and availability of audit data. It supports disaster recovery, regulatory compliance, forensic investigations, and overall operational resilience, thereby strengthening the organization's cybersecurity posture.
+
+Storing backup audit records in a separate location ensures that even if the primary system is compromised or experiences a failure, the audit records remain intact and secure. This separation enhances the overall integrity and security of the audit data.
+
+In the event of a catastrophic event such as a cyberattack, hardware failure, or natural disaster, having backup audit records stored offsite allows for recovery of critical audit data. This capability is essential for restoring operations and conducting post-incident analyses.
+
+In the aftermath of a security incident, forensic investigators rely on audit records to reconstruct events and understand the nature and impact of the incident. Backup audit records provide a reliable source of information for these investigations, even if the primary records are tampered with or deleted.
+
+Regularly backing up audit records ensures operational continuity by safeguarding critical data. In case of an unexpected event, the Dragos Platform can quickly access the backup records to continue monitoring and analyzing security events without significant disruption.
+
+Regular backups of audit records help ensure accountability by providing a reliable and tamper-evident log of activities. This accountability is essential for maintaining trust and transparency within the organization and with external stakeholders.
+
+Satisfies: SRG-APP-000125, SRG-APP-000515, SRG-APP-000358&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001348</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-74888r1058003_fix">Create Syslog server and Rule.
+
+1. Create a Syslog server on a third-party device. The steps may vary depending on the chosen Syslog server software.
+
+2. Create a syslog server output in the Dragos UI.
+
+Navigate to Admin &gt;&gt; Integrations.
+
+Click "LAUNCH" in the Syslog section.
+
+Click "ADD NEW SERVER".
+
+Enter third-party server information and click "NEXT".
+
+Input Message Template.
+
+Click "SAVE".
+
+3. Create a rule.
+Navigate to Notification &gt;&gt; RULES Tab.
+
+Click "NEW RULE".
+
+Fill in Name and Processing Order.
+
+Select For Rule Criteria:
+If ANY of the following - "Notification Type" "Equals" "System"
+Action = Send Syslog (third-party server)
+
+Click "SAVE".</fixtext><fix id="F-74888r1058003_fix" /><check system="C-74987r1057473_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Verify third-party server is used to offload audit records.
+
+1. Check for a configured Syslog Server. In the UI, navigate to Admin &gt;&gt; Integrations.
+
+Click "LAUNCH" in the Syslog section.
+
+If a Syslog Server is not listed or Status is not connected, this is a finding. 
+
+2. Check for an export rule. In the UI, navigate to Notification &gt;&gt; RULES Tab.
+
+Verify a rule exists and has the following:
+Action = "Send Syslog (&lt;your syslog server&gt;)"
+Criteria = "IF Notification Type equals System" 
+
+If this rule does not exist with the correct Action and Criteria, this is a finding.</check-content></check></Rule></Group><Group id="V-270945"><title>SRG-APP-000126</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270945r1058006_rule" weight="10.0" severity="medium"><version>DRAG-OT-000500</version><title>The Dragos Platform must have disk encryption enabled on a virtual machines (VMs).</title><description>&lt;VulnDiscussion&gt;Enabling disk encryption on VMs running the Dragos Platform is a critical security measure to protect sensitive data, ensure compliance with regulations, and provide a robust defense against various threats, including unauthorized access, data breaches, and insider threats.
+
+Disk encryption ensures that the data stored on the VM's disk is unreadable to unauthorized users. This is crucial for protecting sensitive information, such as security logs, configurations, and other operational data, from being accessed if the disk is physically stolen or if unauthorized access is obtained.
+
+In the event of a security breach, encrypted disks prevent attackers from easily accessing the data stored on the VMs. This is particularly important for mitigating the risks associated with data breaches, including the potential exposure of sensitive operational technology (OT) and industrial control system (ICS) data.
+
+VMs can be snapshotted or cloned, creating exact copies of the VM, including its data. Disk encryption ensures that even if a snapshot or clone is made, the data remains protected and cannot be accessed without the appropriate decryption keys.
+
+Disk encryption protects data at rest, which is data stored on the disk when the system is not in use. This is a critical aspect of data security, as it ensures that the data remains protected even if the VM is powered off or in a dormant state.
+
+For organizations using both on-premises and cloud environments, disk encryption provides a consistent approach to data security. This helps maintain uniform security policies and practices across different infrastructure setups.
+
+In multi-tenant environments, where multiple virtual machines run on the same physical hardware, disk encryption ensures that data on one VM cannot be accessed by other tenants or compromised VMs on the same host.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001350</ident><fixtext fixref="F-74889r1058005_fix">If Dragos is running on an appliance, this check is Not Applicable. 
+
+LUKS (Linux Unified Key Setup):
+During the installation process, most Linux distributions provide an option to encrypt the disk. Select this option to set up encryption.
+
+To encrypt an existing installation, use tools such as cryptsetup to set up encryption manually. Here is a general guide:
+
+Execute the following (Replace /dev/sdX with the appropriate device name):
+
+sudo cryptsetup luksFormat /dev/sdX
+sudo cryptsetup open /dev/sdX encrypted_disk
+sudo mkfs.ext4 /dev/mapper/encrypted_disk
+sudo mount /dev/mapper/encrypted_disk /mnt</fixtext><fix id="F-74889r1058005_fix" /><check system="C-74988r1057476_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>If Dragos is running on an appliance, this check is Not Applicable. 
+
+Check for disk encryption in a VM.
+
+Log into the VM and access the VM using remote access method, such as SSH.
+
+Use Built-in Tools or Commands:
+Linux:
+1. Open a terminal window.
+
+2. Use the following command to check if any encrypted partitions exist:
+lsblk -o NAME,FSTYPE,LABEL,UUID,SIZE,MOUNTPOINT,TYPE
+
+3. Check for partitions with the filesystem type "crypto_LUKS" or similar.
+
+4. Use the following command to list encrypted volumes:
+cryptsetup luksDump /dev/sdX
+(Replace /dev/sdX with the appropriate device name)
+
+If volumes are not encrypted, this is a finding.</check-content></check></Rule></Group><Group id="V-270947"><title>SRG-APP-000133</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270947r1058031_rule" weight="10.0" severity="high"><version>DRAG-OT-000520</version><title>Dragos Platforms must limit privileges and not allow the ability to run shell.</title><description>&lt;VulnDiscussion&gt;If Dragos Platform were to allow any user to make changes to software libraries, then those changes might be implemented without undergoing the appropriate testing and approvals that are part of a robust change management process.
+
+This requirement applies to applications with software libraries that are accessible and configurable, as in the case of interpreted languages. Software libraries also include privileged programs which execute with escalated privileges. Only qualified and authorized individuals must be allowed to obtain access to information system components for purposes of initiating changes, including upgrades and modifications.
+
+Satisfies: SRG-APP-000133, SRG-APP-000206, SRG-APP-000246, SRG-APP-000340, SRG-APP-000342, SRG-APP-000384&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-001166</ident><ident system="http://cyber.mil/cci">CCI-001094</ident><ident system="http://cyber.mil/cci">CCI-002235</ident><ident system="http://cyber.mil/cci">CCI-002233</ident><ident system="http://cyber.mil/cci">CCI-001764</ident><fixtext fixref="F-74891r1058031_fix">Uninstall shell environment:
+
+Log in to the Dragos Platform CLI. 
+
+Execute the following command:
+run ushell
+
+Once this is done, users cannot initiate communications outside low threshold (nonuser configurable) ICMP packets. Nonsigned installation packages cannot be added to the Dragos Platform. This command removes the shell from the Platform; it cannot be reinstalled without installing Dragos Platform from baseline images.</fixtext><fix id="F-74891r1058031_fix" /><check system="C-74990r1058030_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Verify shell environment:
+
+Log in to the Dragos Platform CLI. 
+
+Execute the following command:
+run shell
+
+If the option "run shell" executes successfully and places the terminal session into a shell environment, this is a finding.
+
+Note: A shell environment will be noticeable because the terminal line will be in the format "user@dragos:~$" compared to dragoscmd, which would be "dragos&gt;". If shell is properly uninstalled, the return will be "Error: No such command 'shell'."</check-content></check></Rule></Group><Group id="V-270952"><title>SRG-APP-000156</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270952r1057499_rule" weight="10.0" severity="medium"><version>DRAG-OT-000610</version><title>Dragos must allow only the individuals appointed by the information system security manager (ISSM) to have full admin rights to the system.</title><description>&lt;VulnDiscussion&gt;Without restricting which roles and individuals can select which events are audited, unauthorized personnel may be able to prevent the auditing of critical events. 
+
+Misconfigured audits may degrade the system's performance by overwhelming the audit log. Misconfigured audits may also make it more difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001941</ident><fixtext fixref="F-74896r1057498_fix">Provide the list of individuals assigned by the ISSM to be members of the admin role to the Dragos administrator.
+
+Provide the list of individuals assigned by the ISSM to be members of the admin role to the LDAP administrator to add to the LDAP group mapped to the admin role.
+
+Create user accounts and assign the admin role for users provided in the lists.</fixtext><fix id="F-74896r1057498_fix" /><check system="C-74995r1057497_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Obtain the LDAP group name mapped to the admin role.
+
+Request from the LDAP administrator the group membership of this LDAP group, and compare to the list of individuals appointed by the ISSM.
+
+If users that are not defined by the ISSM as requiring admin rights are present in the admin role membership, this is a finding.</check-content></check></Rule></Group><Group id="V-270955"><title>SRG-APP-000164</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270955r1058011_rule" weight="10.0" severity="medium"><version>DRAG-OT-000650</version><title>The Dragos Platform must configure local password policies.</title><description>&lt;VulnDiscussion&gt;The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised.
+
+Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password. Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.
+
+Satisfies: SRG-APP-000164, SRG-APP-000166, SRG-APP-000167, SRG-APP-000168, SRG-APP-000169, SRG-APP-000174&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000205</ident><ident system="http://cyber.mil/cci">CCI-000192</ident><ident system="http://cyber.mil/cci">CCI-000193</ident><ident system="http://cyber.mil/cci">CCI-000194</ident><ident system="http://cyber.mil/cci">CCI-001619</ident><ident system="http://cyber.mil/cci">CCI-000199</ident><fixtext fixref="F-74899r1058010_fix">Change password configurations.
+
+In the UI, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Authentication Providers.
+
+Click "EDIT" in the Local Authentication section. 
+
+Change the fields to the following settings:
+Password Expiration = "2 months" or less
+Password Reuse Limit = "5" or less
+Minimum Length = "15" or greater
+Uppercase and lowercase letters = Checked
+Special characters = Checked
+Numeric characters = Checked
+
+Click "SAVE".</fixtext><fix id="F-74899r1058010_fix" /><check system="C-74998r1057506_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Check password configurations.
+In the UI, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Authentication Providers.
+ 
+Click "EDIT" in the Local Authentication section. 
+
+Verify the following settings:
+1. Password Expiration is set to "2 months" or less. 
+2. Password Reuse Limit is set to "5" or less.
+3. Minimum Length is set to "15" or greater. 
+4. Uppercase and lowercase letters is checked.
+5. Special characters is checked.
+6. Numeric characters is checked.
+
+If any settings are not configured correctly, this is a finding.</check-content></check></Rule></Group><Group id="V-270978"><title>SRG-APP-000231</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270978r1057577_rule" weight="10.0" severity="medium"><version>DRAG-OT-001010</version><title>Dragos must use FIPS-validated encryption and hashing algorithms to protect the confidentiality and integrity of application configuration files and user-generated data stored or aggregated on the device.</title><description>&lt;VulnDiscussion&gt;Confidentiality and integrity protections are intended to address the confidentiality and integrity of system information at rest (e.g., network device rule sets) when it is located on a storage device within the network device or as a component of the network device. This protection is required to prevent unauthorized alteration, corruption, or disclosure of information when not stored directly on the network device.
+
+This requirement addresses protection of user-generated data as well as operating system-specific configuration data. Organizations may choose to employ different mechanisms to achieve confidentiality and integrity protections, as appropriate, in accordance with the security category and/or classification of the information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001199</ident><fixtext fixref="F-74922r1057576_fix">If using Dragos hardware, this check is Not Applicable.
+
+Configuring FIPS compliance in a virtual environment involves enabling settings or options that enforce the use of only FIPS-approved cryptographic algorithms and modules. The exact steps may vary depending on the virtualization platform being used (e.g., VMware, Hyper-V, VirtualBox) or the cloud service provider being used (e.g., AWS, Azure). Here is a general guide on how to configure FIPS compliance in a virtual environment:
+
+Review Documentation: 
+Start by reviewing the documentation provided by the virtualization platform or cloud service provider. Check for information on FIPS compliance and how to enable it within the environment.
+
+Enable FIPS Mode:
+Many virtualization platforms offer an option to enable FIPS mode. Depending on the platform, this option may be found in the settings or configuration menu.
+
+Update Software: 
+Ensure the virtualization software and any guest operating systems are up to date. Some updates may include patches or changes related to FIPS compliance.
+
+Configure Security Policies:
+Check if there are specific security policies or configurations related to FIPS compliance that need to be set within the virtual environment. This could include policies related to encryption, authentication, or other security-related settings.
+
+Test Configuration: 
+After enabling FIPS mode and configuring any necessary settings, perform testing to ensure that only FIPS-approved cryptographic algorithms are being used within the virtual environment. Test various cryptographic operations to verify compliance.</fixtext><fix id="F-74922r1057576_fix" /><check system="C-75021r1057575_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>If using Dragos hardware, this check is Not Applicable.
+
+In a virtual environment, check for FIPS-validated encryption:
+
+Check the documentation of the virtual environment being used (e.g., virtual machine software or cloud service provider documentation) to find out if it uses FIPS compliance or FIPS-validated encryption support.
+
+Check for configuration settings related to encryption algorithms and cryptographic modules in the virtual environment. Some platforms allow users to enable FIPS mode.
+
+Perform testing to ensure that only FIPS-approved cryptographic algorithms are being used within the virtual environment. This would involve testing encryption and decryption processes to confirm compliance with FIPS standards.
+
+If the virtual environment is not using FIPS-validated encryption or is not using FIPS compliance, this is a finding.</check-content></check></Rule></Group><Group id="V-270993"><title>SRG-APP-000291</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-270993r1058013_rule" weight="10.0" severity="medium"><version>DRAG-OT-001190</version><title>The Dragos Platform must notify system administrators and information system security officer (ISSO) of local account activity.</title><description>&lt;VulnDiscussion&gt;Once an attacker establishes access to an application, the attacker often attempts to create a persistent method of re-establishing access. One way to accomplish this is for the attacker to simply create a new account. Sending notification of account creation events to the system administrator and ISSO is one method for mitigating this risk.
+
+Satisfies: SRG-APP-000291, SRG-APP-000292, SRG-APP-000293, SRG-APP-000294&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001683</ident><ident system="http://cyber.mil/cci">CCI-001684</ident><ident system="http://cyber.mil/cci">CCI-001685</ident><ident system="http://cyber.mil/cci">CCI-001686</ident><fixtext fixref="F-74937r1058012_fix">1. If a notification does not appear, install KP-CW-24-001. This knowledge pack will add this and other notifications relevant to the STIG to the Dragos Platform.
+
+Adding Knowledge Pack:
+While logged in to the Dragos Platform with administrative privileges, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Knowledge Packs.
+
+Locate all "STIG-KP_Plus" Knowledge Pack(s).
+
+Click "Deploy" button next to the Knowledge Pack(s).
+
+Fill in the form and click "DEPLOY".
+
+2. If a notification appears but is not received by the aggregate/syslog server, ensure there is a rule to trigger a syslog export in the "Notifications" applet of the Dragos Platform. If not, create one.
+
+To create a rule, navigate to Notification &gt;&gt; RULES Tab.
+
+Create two Attributes.
+
+Click "NEW RULE".
+
+Fill in Name and Processing Order.
+
+Click "ADD ATTRIBUTE" in the "If ANY of the following" block
+Type = "Detected By"
+Select Operation = "Equals"
+Select Value = "Authentication to the Dragos Platform"
+
+Click "ADD ATTRIBUTE" in the "If ANY of the following" block
+Type = "Detected By"
+Select Operation = "Equals"
+Select Value = "User Account Activity"
+
+In the "THEN perform the following actions block:
+Click "ADD ACTION"
+Action = Send Syslog (third-party server)
+
+Click "SAVE".</fixtext><fix id="F-74937r1058012_fix" /><check system="C-75036r1057620_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>While logged in to the Dragos Platform with a user account with administrative privileges, navigate to Admin &gt;&gt; User Management &gt;&gt; Users.
+
+Create a new user account (does not require roles or authentication). 
+
+(Within 15 minutes)
+1. Click the "Notifications" button. 
+Verify a notification appears within Dragos Platform notifications page. 
+
+If a notification does not occur, this is a finding. 
+
+2. Observe that the same notification appears in the aggregate server/syslog recipient.
+(Note: Depending on the software application used, steps to view syslog third-party alerts may vary.)
+
+If an alert is not being sent to third-party syslog, this is a finding. 
+
+3. Check Rules:
+Navigate to Notification &gt;&gt; RULES Tab.
+
+Verify a rule exists and has the following:
+Action = "Send Syslog (third-party server)"
+Criteria = "Detected By Equals Authentication to the Dragos Platform"
+          "Detected By Equals User Account Activity" 
+
+If a rule does not exist with the correct Action and Criteria, this is a finding.
+
+4. Remove the test user just created.</check-content></check></Rule></Group><Group id="V-271008"><title>SRG-APP-000357</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-271008r1057667_rule" weight="10.0" severity="medium"><version>DRAG-OT-001430</version><title>Dragos Platform must allocate audit record storage retention length.</title><description>&lt;VulnDiscussion&gt;In order to ensure applications have a sufficient storage capacity in which to write the audit logs, applications need to be able to allocate audit record storage capacity.
+
+The task of allocating audit record storage capacity is usually performed during initial installation of Dragos Platform and is closely associated with the database administrator (DBA) and system administrator (SA) roles. The DBA or SA will usually coordinate the allocation of physical drive space with Dragos Platform owner/installer and Dragos Platform will prompt the installer to provide the capacity information, the physical location of the disk, or both.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001849</ident><fixtext fixref="F-74952r1057666_fix">In the UI, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Advanced Settings.
+
+Set "Deleted Retention Days" and "Source Data Retention Days" (length in days) in accordance with organization-defined audit record storage requirements. 
+
+Click "Save &amp; Apply".</fixtext><fix id="F-74952r1057666_fix" /><check system="C-75051r1057665_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>In the UI, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Advanced Settings.
+
+Review the System Security Plan (SSP).
+
+Verify Deleted Retention Days and Source Data Retention Days is set accordance with organization-defined audit record storage requirements. If not, this is a finding.</check-content></check></Rule></Group><Group id="V-271027"><title>SRG-APP-000383</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-271027r1057724_rule" weight="10.0" severity="medium"><version>DRAG-OT-001630</version><title>The Syslog client must use TCP connections.</title><description>&lt;VulnDiscussion&gt;Removal of unneeded or nonsecure functions, ports, protocols, and services mitigate the risk of unauthorized connection of devices, unauthorized transfer of information, or other exploitation of these resources.
+
+The organization must perform a periodic scan/review of Dragos (as required by CCI-000384) and disable functions, ports, protocols, and services deemed to be unneeded or nonsecure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001762</ident><fixtext fixref="F-74971r1057723_fix">Changing UDP ports to TCP ports and using TCP instead involves modifying the configuration of the application or service that uses UDP for communication.
+
+Modify the syslog client configuration to specify TCP instead of UDP. This may involve changing port numbers or selecting TCP as the communication protocol.
+
+After making the necessary changes, restart the application or service to apply the new configuration settings. This ensures that the syslog client starts using TCP ports instead of UDP ports.</fixtext><fix id="F-74971r1057723_fix" /><check system="C-75070r1057722_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Use the netstat command to display active UDP connections:
+netstat -n -p UDP
+
+If the syslog client is using a UDP connection, this is a finding.</check-content></check></Rule></Group><Group id="V-271034"><title>SRG-APP-000402</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-271034r1057745_rule" weight="10.0" severity="medium"><version>DRAG-OT-001750</version><title>Dragos Platform must accept the DOD CAC or other PKI credential for identity management and personal authentication.</title><description>&lt;VulnDiscussion&gt;The use of Personal Identity Verification (PIV) credentials facilitates standardization and reduces the risk of unauthorized access.
+
+PIV credentials are those credentials issued by federal agencies that conform to FIPS Publication 201 and supporting guidance documents. OMB Memorandum 11-11 requires federal agencies to continue implementing the requirements specified in HSPD-12 to enable agency-wide use of PIV credentials.
+
+Satisfies: SRG-APP-000402, SRG-APP-000403, SRG-APP-000391, SRG-APP-000392, SRG-APP-000402, SRG-APP-000403, SRG-APP-000177, SRG-APP-000176, SRG-APP-000175, SRG-APP-000401&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002009</ident><ident system="http://cyber.mil/cci">CCI-002010</ident><ident system="http://cyber.mil/cci">CCI-001953</ident><ident system="http://cyber.mil/cci">CCI-001954</ident><ident system="http://cyber.mil/cci">CCI-000185</ident><ident system="http://cyber.mil/cci">CCI-000186</ident><ident system="http://cyber.mil/cci">CCI-000187</ident><ident system="http://cyber.mil/cci">CCI-001991</ident><fixtext fixref="F-74978r1057744_fix">Configure an SSO proxy service using LDAP to provide PKI credentials.</fixtext><fix id="F-74978r1057744_fix" /><check system="C-75077r1057743_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Verify that Dragos is configured to use the DOD CAC or other PKI credential to log in to the application.
+
+Log in to the application. 
+
+If DOD CAC or other PKI is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-271049"><title>SRG-APP-000427</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-271049r1057790_rule" weight="10.0" severity="medium"><version>DRAG-OT-001910</version><title>The Dragos Platform must only allow the use of DOD PKI established certificate authorities for verification of the establishment of protected sessions.</title><description>&lt;VulnDiscussion&gt;Untrusted Certificate Authorities (CA) can issue certificates, but they may be issued by organizations or individuals that seek to compromise DOD systems or by organizations with insufficient security controls. If the CA used for verifying the certificate is not a DOD-approved CA, trust of this CA has not been established.
+
+The DOD will only accept PKI certificates obtained from a DOD-approved internal or external certificate authority. Reliance on CAs for the establishment of secure sessions includes, for example, the use of TLS certificates. 
+
+This requirement focuses on communications protection for Dragos Platform session rather than for the network packet.
+
+This requirement applies to applications that use communications sessions. This includes, but is not limited to, web-based applications and Service-Oriented Architectures (SOA).
+
+Satisfies: SRG-APP-000427, SRG-APP-000605&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002470</ident><ident system="http://cyber.mil/cci">CCI-000185</ident><fixtext fixref="F-74993r1057789_fix">Change Certificate via GUI.
+
+In the UI, navigate to Admin &gt;&gt; SiteStore Management &gt;&gt; Advanced Settings.
+
+Click "Change Certificate".
+
+Fill in the correct fields and either upload or insert the certificate.
+
+Click "Save &amp; Apply".</fixtext><fix id="F-74993r1057789_fix" /><check system="C-75092r1057788_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Open a web browser and navigate to the Dragos Platform UI.
+
+Locate the security or certificate status indicator at the address bar.
+
+Open the certificate information. If the certificate is signed by anyone other than DOD, PKI, or CA, this is a finding.</check-content></check></Rule></Group><Group id="V-271070"><title>SRG-APP-000471</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-271070r1058032_rule" weight="10.0" severity="medium"><version>DRAG-OT-002120</version><title>The Dragos Platform must alert the information system security officer (ISSO), information system security manager (ISSM), and other individuals designated by the local organization when events are detected that indicate a compromise or potential for compromise.</title><description>&lt;VulnDiscussion&gt;When a security event occurs, Dragos Platform must immediately notify the appropriate support personnel so they can respond appropriately.
+
+Alerts may be generated from a variety of sources, including audit records or inputs from malicious code protection mechanisms, intrusion detection mechanisms, or prevention mechanisms.
+
+IOCs are forensic artifacts from intrusions that are identified on organizational information systems (at the host or network level). IOCs provide organizations with valuable information on objects or information systems that have been compromised. These indicators reflect the occurrence of a compromise or a potential compromise.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002664</ident><fixtext fixref="F-75014r1058015_fix">1. Configure Servers.
+If using Syslog Server:
+Create a Syslog server on a third-party device.
+The steps may vary depending on the chosen Syslog server software. Refer to 2.3.x Dragos Platform Syslog Integration Guide in the Customer Portal for additional help.
+
+Create a syslog server output in the Dragos UI.
+Navigate to Admin &gt;&gt; Integrations.
+Click "LAUNCH" in the Syslog section.
+Click "ADD NEW SERVER".
+Enter third-party server information and click "NEXT".
+Input Message Template.
+Click "SAVE".
+
+If using Email Server:
+In the UI, navigate to Admin &gt;&gt; Integrations.
+Click "LAUNCH" on the email block.
+
+Configure the Email Server and Recipients:
+Refer to 2.3.x Dragos Platform Email Integration Guide in the Customer Portal for additional help.
+
+2. Creating System Rules:
+Navigate to Notification &gt;&gt; RULES Tab.
+Click "NEW RULE".
+Fill in Name and Processing Order.
+
+Create two Attributes.
+Click "ADD ATTRIBUTE" in the "If ANY of the following" block:
+Type = "Notification Type"
+Select Operation = "Equals"
+Select Value = "System"
+
+Click "ADD ATTRIBUTE" in the "If ANY of the following" block:
+Type = "Notification Type"
+Select Operation = "Equals"
+Select Value = "System failure"
+
+In the "THEN perform the following actions block:
+Click "ADD ACTION".
+Action = "Send (&lt;your syslog server or email server&gt;)"
+
+Click "SAVE".</fixtext><fix id="F-75014r1058015_fix" /><check system="C-75113r1058014_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>1. Check Server Configuration.
+
+If using Syslog Server:
+Verify third-party server is used to receive communication-related notifications.
+Check for a configured Syslog Server.
+In the UI, navigate to Admin &gt;&gt; Integrations.
+Click "LAUNCH" in the Syslog section.
+
+If using Email Server:
+Check that the Email Server is configured.
+In the UI, navigate to Admin &gt;&gt; Integrations.
+Click "LAUNCH" on the email block.
+
+If no server is configured or the status is not "Connected", this is a finding. 
+
+If no recipient is configured, this is a finding.
+
+2. Check Rules:
+Navigate to Notification &gt;&gt; RULES Tab.
+Verify a rule exists and has the following:
+Action = "Send (&lt;your syslog server or email server&gt;)"
+Criteria = "Notification Type Equals System"
+          "Notification Type Equals System Failure" 
+
+If a rule does not exist with the correct Action and Criteria, this is a finding.</check-content></check></Rule></Group><Group id="V-271105"><title>SRG-APP-000570</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-271105r1057958_rule" weight="10.0" severity="medium"><version>DRAG-OT-002480</version><title>Before establishing a network connection with a Network Time Protocol (NTP) server, Dragos Platform must authenticate using a bidirectional, cryptographically based authentication method that uses a FIPS-validated Advanced Encryption Standard (AES) cipher block algorithm to authenticate with the NTP server.</title><description>&lt;VulnDiscussion&gt;Without device-to-device authentication, communications with malicious devices may be established. Bidirectional authentication provides stronger safeguards to validate the identity of other devices for connections that are of greater risk.
+
+Currently, DOD requires the use of AES for bidirectional authentication since it is the only FIPS-validated AES cipher block algorithm. The NTP uses MD5 authentication keys. The MD5 algorithm is not approved for use in either the FIPS or NIST recommendation; thus, a CAT 1 finding is allocated in CCI-000803. However, the use of MD5 is preferred to no authentication at all and can be used to mitigate this requirement to a CAT II finding.
+
+The trusted-key statement permits authenticating NTP servers. The product must be configured to support separate keys for each NTP server. Severs should have PKI device certificate involved for use in the device authentication process.
+
+Server authentication is performed by the client using the server's public key certificate, which the server presents during the handshake. The exact nature of the cryptographic operation for server authentication is dependent on the negotiated cipher suite and extensions. In most cases (e.g., RSA for key transport, DH, and ECDH), authentication is performed explicitly through verification of digital signatures present in certificates and implicitly by the use of the server public key by the client during the establishment of the master secret. A successful "Finished" message implies that both parties calculated the same master secret and thus, the server must have known the private key corresponding to the public key used for key establishment.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Dragos Platform 2.x</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Dragos Platform 2.x</dc:subject><dc:identifier>5675</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001967</ident><fixtext fixref="F-75049r1057957_fix">Configure NTP Server.
+
+Log in to the Dragos Platform CLI. 
+
+Execute the following command:
+config ntp server add ["SERVER_NAME"]</fixtext><fix id="F-75049r1057957_fix" /><check system="C-75148r1057956_chk"><check-content-ref href="Dragos_Platform_2.x_STIG.xml" name="M" /><check-content>Verify NTP Server.
+
+Log in to the Dragos Platform CLI. 
+
+Execute the following command:
+config show
+
+If an NTP server is configured, the following will be in the output. If the following is not in the output, this is a finding. (Note: "servers" will be the configured server.) 
+
+ "system": {
+    "ntp": {
+      "enabled": true,
+      "servers": [
+        "pool.ntp.org"
+      ]
+    }
+  }</check-content></check></Rule></Group></Benchmark>

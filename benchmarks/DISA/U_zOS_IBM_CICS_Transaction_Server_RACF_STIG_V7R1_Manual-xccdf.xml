@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_IBM_CICS_Transaction_Server_for_RACF" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-16">accepted</status><title>z/OS IBM CICS Transaction Server for RACF Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224492" selected="true" /><select idref="V-224493" selected="true" /><select idref="V-224494" selected="true" /><select idref="V-224495" selected="true" /><select idref="V-224496" selected="true" /><select idref="V-224497" selected="true" /><select idref="V-224498" selected="true" /><select idref="V-224499" selected="true" /><select idref="V-224500" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224492" selected="true" /><select idref="V-224493" selected="true" /><select idref="V-224494" selected="true" /><select idref="V-224495" selected="true" /><select idref="V-224496" selected="true" /><select idref="V-224497" selected="true" /><select idref="V-224498" selected="true" /><select idref="V-224499" selected="true" /><select idref="V-224500" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224492" selected="true" /><select idref="V-224493" selected="true" /><select idref="V-224494" selected="true" /><select idref="V-224495" selected="true" /><select idref="V-224496" selected="true" /><select idref="V-224497" selected="true" /><select idref="V-224498" selected="true" /><select idref="V-224499" selected="true" /><select idref="V-224500" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224492" selected="true" /><select idref="V-224493" selected="true" /><select idref="V-224494" selected="true" /><select idref="V-224495" selected="true" /><select idref="V-224496" selected="true" /><select idref="V-224497" selected="true" /><select idref="V-224498" selected="true" /><select idref="V-224499" selected="true" /><select idref="V-224500" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224492" selected="true" /><select idref="V-224493" selected="true" /><select idref="V-224494" selected="true" /><select idref="V-224495" selected="true" /><select idref="V-224496" selected="true" /><select idref="V-224497" selected="true" /><select idref="V-224498" selected="true" /><select idref="V-224499" selected="true" /><select idref="V-224500" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224492" selected="true" /><select idref="V-224493" selected="true" /><select idref="V-224494" selected="true" /><select idref="V-224495" selected="true" /><select idref="V-224496" selected="true" /><select idref="V-224497" selected="true" /><select idref="V-224498" selected="true" /><select idref="V-224499" selected="true" /><select idref="V-224500" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224492" selected="true" /><select idref="V-224493" selected="true" /><select idref="V-224494" selected="true" /><select idref="V-224495" selected="true" /><select idref="V-224496" selected="true" /><select idref="V-224497" selected="true" /><select idref="V-224498" selected="true" /><select idref="V-224499" selected="true" /><select idref="V-224500" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224492" selected="true" /><select idref="V-224493" selected="true" /><select idref="V-224494" selected="true" /><select idref="V-224495" selected="true" /><select idref="V-224496" selected="true" /><select idref="V-224497" selected="true" /><select idref="V-224498" selected="true" /><select idref="V-224499" selected="true" /><select idref="V-224500" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224492" selected="true" /><select idref="V-224493" selected="true" /><select idref="V-224494" selected="true" /><select idref="V-224495" selected="true" /><select idref="V-224496" selected="true" /><select idref="V-224497" selected="true" /><select idref="V-224498" selected="true" /><select idref="V-224499" selected="true" /><select idref="V-224500" selected="true" /></Profile><Group id="V-224492"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224492r958616_rule" weight="10.0" severity="medium"><version>ZCIC0010</version><title>CICS system data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;CICS is a transaction-processing product that provides programmers with the facilities to develop interactive applications. Unauthorized access to CICS system data sets (i.e., product, security, and application libraries) could result in the compromise of the confidentiality, integrity, and availability of the CICS region, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS IBM CICS Transaction Server for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS IBM CICS Transaction Server for RACF</dc:subject><dc:identifier>4154</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7978</ident><ident system="http://cyber.mil/legacy">V-7516</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-26163r520263_fix">Review the access authorizations for CICS system data sets for each region.  Ensure they conform to the specifications below:
+
+A CICS environment may include several data set types required for operation.  Typically they are CICS product libraries, which are usually included in the STEPLIB concatenation but may be found in DD DFHRPL.  CICS system data sets that can be identified with DFH DD statements, other product system data sets, and application program libraries. Restrict alter and update access to CICS program libraries and all system data sets to systems programmers only.  Other access must be documented and approved by the IAO.  The site may determine access to application data sets included in the DD DFHRPL and CICS region startup JCL according to need.  Ensure that procedures are established; documented, and followed that prevents the introduction of unauthorized or untested application programs into production application systems.
+
+</fixtext><fix id="F-26163r520263_fix" /><check system="C-26175r520262_chk"><check-content-ref href="zOS_IBM_CICS_Transaction_Server_for_RACF_STIG.xml" name="M" /><check-content>a)	Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(CICSRPT)
+
+Since it is possible to have multiple CICS regions running on an LPAR, it is recommended that you go into the z/OS STIG Addendum and fill out all the information in the "CICS System Programmers Worksheet" for each CICS region running on your LPAR. It is recommended that you save this information for any other CICS vulnerabilities that will require it.
+
+b)	WRITE and/or ALLOCATE access to CICS system data sets is restricted to systems programming personnel.
+
+c)	If (b) is true, there is NO FINDING.
+
+d)	If (b) is untrue, this is a FINDING.</check-content></check></Rule></Group><Group id="V-224493"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224493r958472_rule" weight="10.0" severity="medium"><version>ZCIC0020</version><title>Sensitive CICS transactions are not protected in accordance with security requirements.</title><description>&lt;VulnDiscussion&gt;Sensitive CICS transactions offer the ability to circumvent transaction level controls for accessing resources under CICS.  These transactions must be protected so that only authorized users can access them.  Unauthorized use can result in the compromise of the confidentiality, integrity, and availability of the operating system or customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS IBM CICS Transaction Server for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS IBM CICS Transaction Server for RACF</dc:subject><dc:identifier>4154</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7528</ident><ident system="http://cyber.mil/legacy">V-251</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-26164r520266_fix">Develop a plan to implement the required changes.
+
+1. Most transactions are protected in groups. An example would be "L2TRANS" which would contain all Category 2 transactions. L2TRANS is defined to RACF as a profile and contains all the Category 2 transactions. An example of how to implement this within RACF is shown here:
+
+RDEF GCICSTRN L2TRANS UACC(NONE) OWNER(ADMIN) AUDIT(ALL(READ))
+
+RALT GCICSTRN L2TRANS ADDMEM(CADP CBAM CDBC)
+
+Permission to the transaction group can be accomplished with a sample command:
+
+PE L2TRANS CL(GCICSTRN) id(&lt;syspaudt&gt;)
+
+Note that a refresh is generally needed to the member class.
+In this case TCICSTRN is the member class for GCICSTRN and a sample refresh command is
+
+SETR RACL(TCICSTRN) REFRESH
+
+2. Transactions groups should be defined and permitted in accordance with the CICS Transaction
+tables listed in the zOS STIG Addendum.</fixtext><fix id="F-26164r520266_fix" /><check system="C-26176r520265_chk"><check-content-ref href="zOS_IBM_CICS_Transaction_Server_for_RACF_STIG.xml" name="M" /><check-content>a)	Refer to the following reports produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(TCICSTRN)
+-	SENSITVE.RPT(GCICSTRN)
+
+NOTE:	If a CICS region is using a site-defined transaction resource class pair, execute a RACF RLIST command against these resource classes.
+
+Refer to the CICS Systems Programmer Worksheets filled out from previous vulnerability ZCIC0010.
+
+b)	Ensure the following items are in effect for all CICS regions:
+
+1)	Transactions listed in tables CICS CATEGORY 2 CICS AND OTHER PRODUCT TRANSACTIONS and CICS CATEGORY 4 COTS-SUPPLIED SENSITIVE TRANSACTIONS, in the z/OS STIG Addendum, are restricted to authorized personnel.
+
+Note:	The exception to this is the CEOT and CSGM transactions, which can be made available to all users.
+Note:	The exception to this is the CWBA transaction, can be made available to the CICS Default user.
+Note:	The transactions beginning with "CK" apply to regions running WebSphere MQ.
+Note:	Category 1 transactions are internally restricted to CICS region userids.
+
+c)	If the items mentioned in (b) are true for all CICS transaction resource classes, there is NO FINDING.
+
+d)	If any item mentioned in (b) is untrue for a CICS transaction resource class, this is a FINDING.</check-content></check></Rule></Group><Group id="V-224494"><title>SRG-OS-000480</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224494r1041297_rule" weight="10.0" severity="medium"><version>ZCIC0030</version><title>CICS System Initialization Table (SIT) parameter values must be specified in accordance with proper security requirements.</title><description>&lt;VulnDiscussion&gt;The CICS SIT is used to define system operation and configuration parameters of a CICS system. Several of these parameters control the security within a CICS region. Failure to code the appropriate values could result in unexpected operations and degraded security. This exposure may result in unauthorized access impacting the confidentiality, integrity, and availability of the CICS region, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS IBM CICS Transaction Server for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS IBM CICS Transaction Server for RACF</dc:subject><dc:identifier>4154</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7530</ident><ident system="http://cyber.mil/legacy">V-302</ident><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-26165r868324_fix">Ensure that CICS System Initialization Table (SIT) parameter values are specified using the following guidance.
+
+The system initialization parameters are processed in the following order, with later system initialization parameter values overriding those specified earlier. CICS system initialization parameters are specified in the following ways:
+
+       In the system initialization table, loaded from a library in the STEPLIB concatenation of the CICS startup procedure.
+       In the PARM parameter of the EXEC PGM=DFHSIP statement of the CICS startup procedure.
+       In the SYSIN data set defined in the startup procedure (but only if SYSIN is coded in the PARM parameter).
+
+SEC=YES - If SEC is not coded in the CICS region startup JCL, go to offset x'117' from the beginning on the SIT dump (record sequence number - 6) for a length of 1. This is the security byte flag. Below are is the hex and bit settings for this flag.
+
+X'80' EQU B'10000000' External Security Requested &lt;&lt;===
+X'40' EQU B'01000000' Resource Prefix Required
+X'10' EQU B'00010000' RACLIST class APPCLU required
+X'08' EQU B'00001000' ESM INSTLN data is required
+X'04' EQU B'00000100' Surrogate User Checking required
+X'02' EQU B'00000010' Always enact resource check
+X'01' EQU B'00000001' Always enact command check
+
+DFLTUSER=&lt;parameter&gt;  - If DFLTUSER is not coded in the CICS region startup JCL, go to offset x'118' from the beginning on the SIT dump (record sequence number - 6) for a length of 8 bytes. The value will be the CICS default userid.
+
+XUSER=YES - If XUSER is not coded in the CICS region startup JCL, go to offset x'117' from the beginning on the SIT dump (record sequence number - 6) for a length of 1. This is the security byte flag. Below is the hex and bit settings for this flag.
+
+X'80' EQU B'10000000' External Security Requested
+X'40' EQU B'01000000' Resource Prefix Required
+X'10' EQU B'00010000' RACLIST class APPCLU required
+X'08' EQU B'00001000' ESM INSTLN data is required
+X'04' EQU B'00000100' Surrogate User Checking required &lt;&lt;===
+X'02' EQU B'00000010' Always enact resource check
+X'01' EQU B'00000001' Always enact command check
+
+SNSCOPE=NONE|CICS|MVSIMAGE|SYSPLEX
+
+If SNSCOPE is not coded in the CICS region startup JCL, go to offset x'124' from the beginning on the SIT dump (record sequence number - 6) for a length of 1. This is the signon scope byte flag. Ensure that users cannot sign on to more than one CICS production region within the scope of a single CICS region, a single z/OS image, or a sysplex. Below are the hex settings for this flag:
+
+X'01' EQU 1 SIGNON SCOPE = NONE
+X'02' EQU 2 SIGNON SCOPE = CICS
+X'03' EQU 3 SIGNON SCOPE = MVSIMAGE
+X'04' EQU 4 SIGNON SCOPE = SYSPLEX
+
+Note: SNSCOPE=NONE is only allowed with test/development regions.
+
+XTRAN=YES|ssrrTRN - If XTRAN is not coded in the CICS region startup JCL, go to offset x'CA' from the beginning on the SIT dump (record sequence number - 6) for a length of 7 bytes. The value will be the resource class name used for that region. If XTRAN=YES is coded, c'CICSTRN' will be present.
+
+SECPRFX=YES - If SECPRFX is not coded in the CICS region startup JCL, go to offset x'117' from the beginning on the SIT dump (record sequence number - 6) for a length of 1. This is the security byte flag. Below are the hex and bit settings for this flag with the resource prefixing setting bolded:
+
+X'80' EQU B'10000000' External Security Requested
+X'40' EQU B'01000000' Resource Prefix Required &lt;&lt;===
+X'10' EQU B'00010000' RACLIST class APPCLU required
+X'08' EQU B'00001000' ESM INSTLN data is required
+X'04' EQU B'00000100' Surrogate User Checking required
+X'02' EQU B'00000010' Always enact resource check
+X'01' EQU B'00000001' Always enact command check
+
+Note: If XTRAN=ssrrTRN is specified, resource prefixing (e.g., SECPRFX=YES) is not required to be enabled. Also, CICS regions cannot share the same resource class if resource prefixing is not active.
+</fixtext><fix id="F-26165r868324_fix" /><check system="C-26177r868323_chk"><check-content-ref href="zOS_IBM_CICS_Transaction_Server_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the z/OS Data Collection:
+
+- EXAM.RPT(CICSPROC)
+
+Refer to the following report produced by the CICS Data Collection:
+
+- CICS.RPT(DFHSITxx)
+
+Refer to the CICS Systems Programmer Worksheets filled out from previous vulnerability ZCIC0010.
+
+Refer to the CICS region SYSLOG - (Alternate source of SIT parameters) be sure to process DFHSIT based on the order specified. The system initialization parameters are processed in the following order, with later system initialization parameter values overriding those specified earlier. CICS system initialization parameters are specified in the following ways:
+
+- In the system initialization table, loaded from a library in the STEPLIB concatenation of the CICS startup procedure.
+- In the PARM parameter of the EXEC PGM=DFHSIP statement of the CICS startup procedure.
+- In the SYSIN data set defined in the startup procedure (but only if SYSIN is coded in the PARM parameter).
+
+Ensure the following CICS System Initialization Table (SIT) parameter settings are specified for each CICS region. If the following guidance is true, this is not a finding. 
+
+___ SEC=YES - If SEC is not coded in the CICS region startup JCL, go to offset x'117' from the beginning on the SIT dump (record sequence number - 6) for a length of 1. This is the security byte flag. Below is the hex and bit settings for this flag.
+
+X'80' EQU B'10000000' External Security Requested
+
+___ DFLTUSER=&lt;parameter&gt; - If DFLTUSER is not coded in the CICS region startup JCL, go to offset x'118' from the beginning on the SIT dump (record sequence number - 6) for a length of 8 bytes. The value will be the CICS default userid. 
+
+___ XUSER=YES - If XUSER is not coded in the CICS region startup JCL, go to offset x'117' from the beginning on the SIT dump (record sequence number - 6) for a length of 1. This is the security byte flag. Below is the hex and bit settings for this flag.
+
+X'04' EQU B'00000100' Surrogate User Checking required
+
+___ SNSCOPE=NONE|CICS|MVSIMAGE|SYSPLEX - If SNSCOPE is not coded in the CICS region startup JCL, go to offset x'124' from the beginning on the SIT dump (record sequence number - 6) for a length of 1. This is the signon scope byte flag. Ensure that users cannot sign on to more than one CICS production region within the scope of a single CICS region, a single z/OS image, or a sysplex. Below are listed the hex and bit settings for this flag:
+
+X'01' EQU 1 SIGNON SCOPE = NONE
+X'02' EQU 2 SIGNON SCOPE = CICS
+X'03' EQU 3 SIGNON SCOPE = MVSIMAGE
+X'04' EQU 4 SIGNON SCOPE = SYSPLEX
+
+Note: SNSCOPE=NONE is only allowed with test/development regions.
+
+___ XTRAN=YES|ssrrTRN - If XTRAN is not coded in the CICS region startup JCL, go to offset x'CA' from the beginning on the SIT dump (record sequence number - 6) for a length of 7 bytes. The value will be the resource class name used for that region. If XTRAN=YES is coded, c'CICSTRN' will be present.
+
+___ SECPRFX=YES - If SECPRFX is not coded in the CICS region startup JCL, go to offset x'117' from the beginning on the SIT dump (record sequence number - 6) for a length of 1. This is the security byte flag. Below are the hex and bit settings for this flag.
+
+X'40' EQU B'01000000' Resource Prefix Required
+
+If XTRAN=ssrrTRN is specified, resource prefixing (e.g., SECPRFX=YES) is not required to be enabled. Also, CICS regions cannot share the same resource class if resource prefixing is not active.</check-content></check></Rule></Group><Group id="V-224495"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224495r958482_rule" weight="10.0" severity="medium"><version>ZCIC0040</version><title>CICS region logonid(s) must be defined and/or controlled in accordance with the security requirements.
+</title><description>&lt;VulnDiscussion&gt;CICS is a transaction-processing product that provides programmers with the facilities to develop interactive applications. Improperly defined or controlled CICS region userids may provide an exposure and vulnerability within the CICS environment.  This could result in the compromise of the confidentiality, integrity, and availability of the CICS region, applications, and customer data.
+
+The region userid should be associated with a unique RACF userid.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS IBM CICS Transaction Server for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS IBM CICS Transaction Server for RACF</dc:subject><dc:identifier>4154</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7532</ident><ident system="http://cyber.mil/legacy">V-44</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26166r520272_fix">Review all CICS region, default, and end-user userids to ensure they are defined and controlled as required.
+
+Ensure that the following is defined for each CICS region:
+
+1)	A unique userid is defined.
+
+Use the RACF Adduser command to accomplish this.  A sample command is provided here:
+
+AU &lt;cicsregionid&gt; NAME('STC, CICS Region') DFLTGRP(STC) OWNER(STC) 
+
+2)	Defined to the STARTED resource class.
+
+Use the RACF RDEFINE command.  A sample is provided here:
+
+RDEF STARTED &lt;cicsprocname&gt;.** UACC(NONE) OWNER(ADMIN) DATA('USED TO MAP &lt;cicsprocname&gt; TO A VALID RACF USERID') STDATA(USER(=MEMBER) GROUP(STC) TRACE(YES))
+
+</fixtext><fix id="F-26166r520272_fix" /><check system="C-26178r520271_chk"><check-content-ref href="zOS_IBM_CICS_Transaction_Server_for_RACF_STIG.xml" name="M" /><check-content>a)	Refer to the following report produced by the z/OS Data Collection:
+
+-	EXAM.RPT(CICSPROC)
+
+Refer to the following reports produced by the RACF Data Collection:
+
+-	RACFCMDS.RPT(LISTUSER)
+-	DSMON.RPT(RACCDT)
+
+Refer to the CICS Systems Programmer Worksheets filled out from previous vulnerability ZCIC0010.
+
+b)	Ensure that the following is defined for each CICS region:
+
+1)	A unique userid is defined.
+2)	Defined to the STARTED resource class.
+
+c)	If (b) is true, this is not a finding.
+
+d)	If (b) is untrue, this is a finding.</check-content></check></Rule></Group><Group id="V-224496"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224496r958482_rule" weight="10.0" severity="medium"><version>ZCIC0041</version><title>CICS default logonid(s) must be defined and/or controlled in accordance with the security requirements.</title><description>&lt;VulnDiscussion&gt;CICS is a transaction-processing product that provides programmers with the facilities to develop interactive applications. An improperly defined or controlled CICS default userid may provide an exposure and vulnerability within the CICS environment. This could result in the compromise of the confidentiality, integrity, and availability of the CICS region, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS IBM CICS Transaction Server for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS IBM CICS Transaction Server for RACF</dc:subject><dc:identifier>4154</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7536</ident><ident system="http://cyber.mil/legacy">V-7119</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26167r868327_fix">Ensure the following items are in effect for the CICS default userid (i.e., DFLTUSER=default userid):
+
+1) Not granted the RACF OPERATIONS attribute.
+
+a) Issue a RACF LU (Listuser) command on the CICS default userid.
+
+b) The OPERATIONS attribute can be removed via the RACF command ALU &lt;cicsdefaultuser&gt; NOOPERATIONS
+
+2) No access to interactive on-line facilities (e.g., TSO) other than CICS.
+
+a) Use the RACF ALU (Altuser) command to remove attributes such as TSO. Example: ALU &lt;cicsdefaultuser&gt; NOTSO
+
+3) TIMEOUT parameter in the CICS segment is set to 15 minutes.
+
+4) A system's default time for terminal lock-out or session termination may be lengthened to 30 minutes at the discretion of the ISSM. The ISSM will maintain the documentation for each system with a time-out adjusted beyond the 15-minute recommendation to explain the basis for this decision.
+
+a) Use the RACF LU (ListUser) command to display the CICS segment. An example is shown here: 
+LU &lt;cicsdefaultuser&gt; CICS
+
+b) Use the RACF ALU command to set the 15 minute timeout value. An example is shown here: 
+ALU &lt;cicsdefaultuser&gt; CICS(TIMEOUT(15))
+
+5) Restricted from accessing all data sets and resources with the following exceptions:
+
+a) Delete the CICS default user from dataset access lists via the command:
+PE '&lt;dataset profile name&gt;' ID(&lt;cicsdefaultuser&gt;) DEL
+
+(a) Non-restricted CICS transactions (e.g., CESF, CESN, 'good morning' transaction, etc.)
+
+(b) If applicable, resources necessary to operate in an intersystem communication (ISC) environment (i.e., LU6.1, LU6.2, and MRO)
+
+NOTE: Execute the JCL in CNTL(IRRUT100) using the CICS default userid as SYSIN input. This report lists all occurrences of this userid within the RACF database, including data set and resource access lists.
+
+c) If all items in (b) are true, there is no finding.
+
+d) If any item in (b) is untrue, this is a finding.</fixtext><fix id="F-26167r868327_fix" /><check system="C-26179r904395_chk"><check-content-ref href="zOS_IBM_CICS_Transaction_Server_for_RACF_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the z/OS Data Collection:
+
+- EXAM.RPT(CICSPROC)
+
+Refer to the following reports produced by the RACF Data Collection:
+
+- RACFCMDS.RPT(LISTUSER)
+- SENSITVE.RPT(TCICSTRN)
+- SENSITVE.RPT(GCICSTRN)
+
+NOTE: If a CICS region is using a site-defined transaction resource class pair, execute a RACF RLIST command against these resource classes.
+
+Refer to the CICS Systems Programmer Worksheets filled out from previous vulnerability ZCIC0010.
+
+b) Ensure the following items are in effect for the CICS default userid (i.e., DFLTUSER=default userid):
+
+1) Not granted the RACF OPERATIONS attribute.
+2) No access to interactive on-line facilities (e.g., TSO) other than CICS.
+3) TIMEOUT parameter in the CICS segment is set to 15 minutes.
+
+4) A system's default time for terminal lock-out or session termination may be lengthened to 30 minutes at the discretion of the ISSM. The ISSM will maintain the documentation for each system with a time-out adjusted beyond the 15-minute recommendation to explain the basis for this decision.
+
+5) Restricted from accessing all data sets and resources with the following exceptions:
+
+(a) Non-restricted CICS transactions (e.g., CESF, CESN, 'good morning' transaction, etc.)
+(b) If applicable, resources necessary to operate in an intersystem communication (ISC) environment (i.e., LU6.1, LU6.2, and MRO)
+
+Note: Refer to the IBM CICS Transaction Server Resource Definition Guide for latest and most accurate definition for the Default CICS User. 
+Note: Any exceptions to these guidelines must be approved by the site ISSO and documented in site security plan.
+
+NOTE: Execute the JCL in CNTL(IRRUT100) using the CICS default userid as SYSIN input. This report lists all occurrences of this userid within the RACF database, including data set and resource access lists.
+
+c) If all items in (b) are true, this not a finding.
+
+d) If any item in (b) is untrue, this is a finding.</check-content></check></Rule></Group><Group id="V-224497"><title>SRG-OS-000029</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224497r958402_rule" weight="10.0" severity="medium"><version>ZCIC0042</version><title>CICS logonid(s) must have time-out limit set to 15 minutes. 
+</title><description>&lt;VulnDiscussion&gt;CICS is a transaction-processing product that provides programmers with the facilities to develop interactive applications. Improperly defined or controlled CICS region userids may provide an exposure and vulnerability within the CICS environment. This could result in the compromise of the confidentiality, integrity, and availability of the CICS region, applications, and customer data.
+
+RACF provides the PROPCNTL class to prevent userids such as the CICS region userid from being propagated/used by unauthorized userids.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS IBM CICS Transaction Server for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS IBM CICS Transaction Server for RACF</dc:subject><dc:identifier>4154</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7540</ident><ident system="http://cyber.mil/legacy">V-7120</ident><ident system="http://cyber.mil/cci">CCI-000057</ident><fixtext fixref="F-26168r520278_fix">Review all CICS region, default, and end-user userids to ensure they are defined and controlled as required. 
+
+Ensure that all userids with a CICS segment have the TIMEOUT parameter set to 15 minutes.
+
+Examples: Use the RACF ALtUser command to assign the required value:
+
+ALU &lt;cics user&gt; CICS(TIMEOUT(15))</fixtext><fix id="F-26168r520278_fix" /><check system="C-26180r868329_chk"><check-content-ref href="zOS_IBM_CICS_Transaction_Server_for_RACF_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the RACF Data Collection:
+
+- RACFCMDS.RPT(LISTUSER)
+
+Refer to the CICS Systems Programmer Worksheets filled out from previous vulnerability ZCIC0010.
+
+NOTE: Any userid that does not have a TIMEOUT parameter specified will obtain its TIMEOUT parameter from the default value set in ZCIC0041. Any userid that specifies a TIMEOUT parameter must meet the requirements specified below.
+
+b) Ensure that all userids with a CICS segment have the TIMEOUT parameter set to 15 minutes.
+
+c) If (b) is true for each CICS region and/or CICS user, there is no finding.
+
+NOTE: If the time-out limit is greater than 15 minutes, and the system is processing unclassified information, review the following items. If any of these is true, there is no finding.
+
+1) If a session is not terminated, but instead is locked out after 15 minutes of inactivity, a process must be in place that requires user identification and authentication before the session is unlocked. Session lock-out will be implemented through system controls or terminal screen protection.
+2) A system's default time for terminal lock-out or session termination may be lengthened to 30 minutes at the discretion of the ISSM. The ISSM will maintain the documentation for each system with a time-out adjusted beyond the 15-minute recommendation to explain the basis for this decision.
+3) The ISSM may set selected userids to have a time-out of up to 60 minutes in order to complete critical reports or transactions without timing out. Each exception must meet the following criteria:
+
+(a) The time-out exception cannot exceed 60 minutes.
+(b) A letter of justification fully documenting the user requirement(s) must be submitted and approved by the site ISSM. In addition, this letter must identify an alternate means of access control for the terminal(s) involved (e.g., a room that is locked at all times, a room with a cipher lock to limit access, a password protected screen saver set to 30 minutes or less, etc.).
+(c) The requirement must be revalidated on an annual basis.
+
+c) If the CICS time-out limit is not specified for 15 minutes of inactivity, and the previously mentioned exceptions do not apply, this is a finding.</check-content></check></Rule></Group><Group id="V-224498"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224498r1041298_rule" weight="10.0" severity="medium"><version>ZCICR021</version><title>IBM CICS Transaction Server SPI command resources must be properly defined and protected.</title><description>&lt;VulnDiscussion&gt;IBM CICS Transaction Server can run with sensitive system privileges, and potentially can circumvent system controls. Failure to properly control access to product resources could result in the compromise of the operating system environment, and compromise the confidentiality of customer data. Many utilities assign resource controls that can be granted to systems programmers only in greater than read authority. Resources are also granted to certain non systems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS IBM CICS Transaction Server for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS IBM CICS Transaction Server for RACF</dc:subject><dc:identifier>4154</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-43225</ident><ident system="http://cyber.mil/legacy">V-17982</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-26169r520281_fix">Ensure that the IBM CICS Transaction Server command resources defined in the IBM CICS-RACF Security Guide access is in accordance with those outlined in the site security plan, use CICS SPI Resources table in the zOS STIG Addendum as a guide. These tables list the resources and access requirements for IBM CICS Transaction Server; ensure the following guidelines are followed:
+
+The RACF resources and/or generic equivalent as designated in the above table are defined with a default access of NONE.
+
+The RACF resource access authorizations restrict access to the appropriate personnel as designated in the above table.
+
+The RACF resource rules for the resources designated in the above table specify UACC(NONE) and NOWARNING.
+
+The following commands are provided as a sample for implementing resource controls:
+
+RDEFINE CCICSCMD ASSOCIATION.** UACC(NONE) OWNER(ADMIN) AUDIT(FAILURE(READ))
+PERMIT ASSOCIATION.** CLASS(CCICSCMD) ACCESS(READ) ID(cicsaudt)
+PERMIT ASSOCIATION.** CLASS(CCICSCMD) ACCESS(READ) ID(cicuaudt)
+PERMIT ASSOCIATION.** CLASS(CCICSCMD) ACCESS(READ) ID(syscaudt)</fixtext><fix id="F-26169r520281_fix" /><check system="C-26181r904342_chk"><check-content-ref href="zOS_IBM_CICS_Transaction_Server_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+SENSITVE.RPT(CCICSCMD)
+SENSITVE.RPT(VCICSCMD)
+
+Automated Analysis:
+Refer to the following report produced by the RACF Data Collection Checklist:
+- PDI (ZCIC0021)
+
+Ensure that all IBM CICS Transaction Server resources defined in the IBM CICS-RACF Security Guide are properly protected according to the requirements specified in CICS SPI Resources table in the site security plan. Use CICS SPI Resources table in the zOS STIG Addendum as a guide. If the following guidance is true, this is not a finding.
+
+The RACF resources and/or generic equivalent as designated in the above table are defined with a default access of NONE.
+
+The RACF resource access authorizations restrict access to the appropriate personnel as designated in the above table.
+
+The RACF resource rules for the resources designated in the above table specify UACC(NONE) and NOWARNING.
+</check-content></check></Rule></Group><Group id="V-224499"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224499r1041301_rule" weight="10.0" severity="medium"><version>ZCICR038</version><title>External RACF Classes are not active for CICS transaction checking.</title><description>&lt;VulnDiscussion&gt;Implement CICS transaction security by utilizing two distinct and unique RACF resource classes (i.e., member and grouping) within each CICS region. If several CICS regions are grouped in an MRO environment, it is permissible for those grouped regions to share a common pair of resource classes. Member classes contain a RACF discrete profile for each transaction. Grouping classes contain groups of transactions requiring equal protection under RACF. Ideally, member classes contain no profiles, and all transactions are defined by groups in a grouping class.
+
+If CICS Classes are not active, this could result in the compromise of the confidentiality, integrity, and availability of the CICS region, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS IBM CICS Transaction Server for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS IBM CICS Transaction Server for RACF</dc:subject><dc:identifier>4154</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-301</ident><ident system="http://cyber.mil/legacy">V-301</ident><ident system="http://cyber.mil/cci">CCI-000336</ident><ident system="http://cyber.mil/cci">CCI-002358</ident><fixtext fixref="F-26170r1041300_fix">Review each CICS SIT to ensure each region has a unique resource class or resource prefix specified. 
+
+1. The resources classes are activated in RACF using the following command: SETR CLASSACT(&lt;classname&gt;)
+
+</fixtext><fix id="F-26170r1041300_fix" /><check system="C-26182r1041299_chk"><check-content-ref href="zOS_IBM_CICS_Transaction_Server_for_RACF_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the RACF Data Collection:
+
+- RACFCMDS.RPT(SETROPTS)
+
+Refer to the CICS Systems Programmer Worksheets filled out from previous vulnerability ZCIC0010.
+
+b) Ensure each CICS transaction resource class pair are active.
+
+c) If (b) is true, there is no finding.
+
+d) If (b) is untrue, this is a finding.
+</check-content></check></Rule></Group><Group id="V-224500"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224500r958472_rule" weight="10.0" severity="medium"><version>ZCICR041</version><title>CICS regions are improperly protected to prevent unauthorized propagation of the region userid.</title><description>&lt;VulnDiscussion&gt;CICS is a transaction-processing product that provides programmers with the facilities to develop interactive applications. Improperly defined or controlled CICS userids (i.e., region, default, and terminal users) may provide an exposure and vulnerability within the CICS environment.  This could result in the compromise of the confidentiality, integrity, and availability of the CICS region, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS IBM CICS Transaction Server for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS IBM CICS Transaction Server for RACF</dc:subject><dc:identifier>4154</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7193</ident><ident system="http://cyber.mil/legacy">V-6898</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-26171r520287_fix">Utilize propagation control for each CICS region. 
+
+Under no circumstance should a user's batch job submitted from a CICS region execute under that CICS region's userid. To prevent this from occurring, define a profile in the PROPCNTL resource class for each CICS region. The
+following is an example:
+RDEFINE PROPCNTL &lt;cics-region-userid&gt; OWNER(ADMIN) AUDIT(ALL(READ))
+
+The PROPCNTL class must be active and RACLISTed for this protection to be in effect:
+SETROPTS CLASSACT(PROPCNTL) RACLIST(PROPCNTL)
+</fixtext><fix id="F-26171r520287_fix" /><check system="C-26183r520286_chk"><check-content-ref href="zOS_IBM_CICS_Transaction_Server_for_RACF_STIG.xml" name="M" /><check-content>a)	Refer to the following report produced by the RACF Data Collection:
+
+-	SENSITVE.RPT(PROPCNTL)
+
+Refer to the CICS Systems Programmer Worksheets filled out from previous vulnerability ZCIC0010.
+
+b)	Ensure the CICS region is defined to the PROPCNTL resource class.
+
+c)	If (b) are true, there is NO FINDING.
+
+d)	If (b) is untrue, this is a FINDING.
+</check-content></check></Rule></Group></Benchmark>

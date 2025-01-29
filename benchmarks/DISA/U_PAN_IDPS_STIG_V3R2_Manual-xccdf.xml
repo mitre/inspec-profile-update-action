@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Palo_Alto_Networks_IDPS_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-19">accepted</status><title>Palo Alto Networks IDPS Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>3</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-207688" selected="true" /><select idref="V-207689" selected="true" /><select idref="V-207690" selected="true" /><select idref="V-207691" selected="true" /><select idref="V-207692" selected="true" /><select idref="V-207693" selected="true" /><select idref="V-207694" selected="true" /><select idref="V-207695" selected="true" /><select idref="V-207696" selected="true" /><select idref="V-207697" selected="true" /><select idref="V-207698" selected="true" /><select idref="V-207699" selected="true" /><select idref="V-207700" selected="true" /><select idref="V-207701" selected="true" /><select idref="V-207702" selected="true" /><select idref="V-207703" selected="true" /><select idref="V-207704" selected="true" /><select idref="V-207705" selected="true" /><select idref="V-207706" selected="true" /><select idref="V-207707" selected="true" /><select idref="V-207708" selected="true" /><select idref="V-207709" selected="true" /><select idref="V-207710" selected="true" /><select idref="V-207711" selected="true" /><select idref="V-207712" selected="true" /><select idref="V-207713" selected="true" /><select idref="V-207714" selected="true" /><select idref="V-207715" selected="true" /><select idref="V-207716" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-207688" selected="true" /><select idref="V-207689" selected="true" /><select idref="V-207690" selected="true" /><select idref="V-207691" selected="true" /><select idref="V-207692" selected="true" /><select idref="V-207693" selected="true" /><select idref="V-207694" selected="true" /><select idref="V-207695" selected="true" /><select idref="V-207696" selected="true" /><select idref="V-207697" selected="true" /><select idref="V-207698" selected="true" /><select idref="V-207699" selected="true" /><select idref="V-207700" selected="true" /><select idref="V-207701" selected="true" /><select idref="V-207702" selected="true" /><select idref="V-207703" selected="true" /><select idref="V-207704" selected="true" /><select idref="V-207705" selected="true" /><select idref="V-207706" selected="true" /><select idref="V-207707" selected="true" /><select idref="V-207708" selected="true" /><select idref="V-207709" selected="true" /><select idref="V-207710" selected="true" /><select idref="V-207711" selected="true" /><select idref="V-207712" selected="true" /><select idref="V-207713" selected="true" /><select idref="V-207714" selected="true" /><select idref="V-207715" selected="true" /><select idref="V-207716" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-207688" selected="true" /><select idref="V-207689" selected="true" /><select idref="V-207690" selected="true" /><select idref="V-207691" selected="true" /><select idref="V-207692" selected="true" /><select idref="V-207693" selected="true" /><select idref="V-207694" selected="true" /><select idref="V-207695" selected="true" /><select idref="V-207696" selected="true" /><select idref="V-207697" selected="true" /><select idref="V-207698" selected="true" /><select idref="V-207699" selected="true" /><select idref="V-207700" selected="true" /><select idref="V-207701" selected="true" /><select idref="V-207702" selected="true" /><select idref="V-207703" selected="true" /><select idref="V-207704" selected="true" /><select idref="V-207705" selected="true" /><select idref="V-207706" selected="true" /><select idref="V-207707" selected="true" /><select idref="V-207708" selected="true" /><select idref="V-207709" selected="true" /><select idref="V-207710" selected="true" /><select idref="V-207711" selected="true" /><select idref="V-207712" selected="true" /><select idref="V-207713" selected="true" /><select idref="V-207714" selected="true" /><select idref="V-207715" selected="true" /><select idref="V-207716" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-207688" selected="true" /><select idref="V-207689" selected="true" /><select idref="V-207690" selected="true" /><select idref="V-207691" selected="true" /><select idref="V-207692" selected="true" /><select idref="V-207693" selected="true" /><select idref="V-207694" selected="true" /><select idref="V-207695" selected="true" /><select idref="V-207696" selected="true" /><select idref="V-207697" selected="true" /><select idref="V-207698" selected="true" /><select idref="V-207699" selected="true" /><select idref="V-207700" selected="true" /><select idref="V-207701" selected="true" /><select idref="V-207702" selected="true" /><select idref="V-207703" selected="true" /><select idref="V-207704" selected="true" /><select idref="V-207705" selected="true" /><select idref="V-207706" selected="true" /><select idref="V-207707" selected="true" /><select idref="V-207708" selected="true" /><select idref="V-207709" selected="true" /><select idref="V-207710" selected="true" /><select idref="V-207711" selected="true" /><select idref="V-207712" selected="true" /><select idref="V-207713" selected="true" /><select idref="V-207714" selected="true" /><select idref="V-207715" selected="true" /><select idref="V-207716" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-207688" selected="true" /><select idref="V-207689" selected="true" /><select idref="V-207690" selected="true" /><select idref="V-207691" selected="true" /><select idref="V-207692" selected="true" /><select idref="V-207693" selected="true" /><select idref="V-207694" selected="true" /><select idref="V-207695" selected="true" /><select idref="V-207696" selected="true" /><select idref="V-207697" selected="true" /><select idref="V-207698" selected="true" /><select idref="V-207699" selected="true" /><select idref="V-207700" selected="true" /><select idref="V-207701" selected="true" /><select idref="V-207702" selected="true" /><select idref="V-207703" selected="true" /><select idref="V-207704" selected="true" /><select idref="V-207705" selected="true" /><select idref="V-207706" selected="true" /><select idref="V-207707" selected="true" /><select idref="V-207708" selected="true" /><select idref="V-207709" selected="true" /><select idref="V-207710" selected="true" /><select idref="V-207711" selected="true" /><select idref="V-207712" selected="true" /><select idref="V-207713" selected="true" /><select idref="V-207714" selected="true" /><select idref="V-207715" selected="true" /><select idref="V-207716" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-207688" selected="true" /><select idref="V-207689" selected="true" /><select idref="V-207690" selected="true" /><select idref="V-207691" selected="true" /><select idref="V-207692" selected="true" /><select idref="V-207693" selected="true" /><select idref="V-207694" selected="true" /><select idref="V-207695" selected="true" /><select idref="V-207696" selected="true" /><select idref="V-207697" selected="true" /><select idref="V-207698" selected="true" /><select idref="V-207699" selected="true" /><select idref="V-207700" selected="true" /><select idref="V-207701" selected="true" /><select idref="V-207702" selected="true" /><select idref="V-207703" selected="true" /><select idref="V-207704" selected="true" /><select idref="V-207705" selected="true" /><select idref="V-207706" selected="true" /><select idref="V-207707" selected="true" /><select idref="V-207708" selected="true" /><select idref="V-207709" selected="true" /><select idref="V-207710" selected="true" /><select idref="V-207711" selected="true" /><select idref="V-207712" selected="true" /><select idref="V-207713" selected="true" /><select idref="V-207714" selected="true" /><select idref="V-207715" selected="true" /><select idref="V-207716" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-207688" selected="true" /><select idref="V-207689" selected="true" /><select idref="V-207690" selected="true" /><select idref="V-207691" selected="true" /><select idref="V-207692" selected="true" /><select idref="V-207693" selected="true" /><select idref="V-207694" selected="true" /><select idref="V-207695" selected="true" /><select idref="V-207696" selected="true" /><select idref="V-207697" selected="true" /><select idref="V-207698" selected="true" /><select idref="V-207699" selected="true" /><select idref="V-207700" selected="true" /><select idref="V-207701" selected="true" /><select idref="V-207702" selected="true" /><select idref="V-207703" selected="true" /><select idref="V-207704" selected="true" /><select idref="V-207705" selected="true" /><select idref="V-207706" selected="true" /><select idref="V-207707" selected="true" /><select idref="V-207708" selected="true" /><select idref="V-207709" selected="true" /><select idref="V-207710" selected="true" /><select idref="V-207711" selected="true" /><select idref="V-207712" selected="true" /><select idref="V-207713" selected="true" /><select idref="V-207714" selected="true" /><select idref="V-207715" selected="true" /><select idref="V-207716" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-207688" selected="true" /><select idref="V-207689" selected="true" /><select idref="V-207690" selected="true" /><select idref="V-207691" selected="true" /><select idref="V-207692" selected="true" /><select idref="V-207693" selected="true" /><select idref="V-207694" selected="true" /><select idref="V-207695" selected="true" /><select idref="V-207696" selected="true" /><select idref="V-207697" selected="true" /><select idref="V-207698" selected="true" /><select idref="V-207699" selected="true" /><select idref="V-207700" selected="true" /><select idref="V-207701" selected="true" /><select idref="V-207702" selected="true" /><select idref="V-207703" selected="true" /><select idref="V-207704" selected="true" /><select idref="V-207705" selected="true" /><select idref="V-207706" selected="true" /><select idref="V-207707" selected="true" /><select idref="V-207708" selected="true" /><select idref="V-207709" selected="true" /><select idref="V-207710" selected="true" /><select idref="V-207711" selected="true" /><select idref="V-207712" selected="true" /><select idref="V-207713" selected="true" /><select idref="V-207714" selected="true" /><select idref="V-207715" selected="true" /><select idref="V-207716" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-207688" selected="true" /><select idref="V-207689" selected="true" /><select idref="V-207690" selected="true" /><select idref="V-207691" selected="true" /><select idref="V-207692" selected="true" /><select idref="V-207693" selected="true" /><select idref="V-207694" selected="true" /><select idref="V-207695" selected="true" /><select idref="V-207696" selected="true" /><select idref="V-207697" selected="true" /><select idref="V-207698" selected="true" /><select idref="V-207699" selected="true" /><select idref="V-207700" selected="true" /><select idref="V-207701" selected="true" /><select idref="V-207702" selected="true" /><select idref="V-207703" selected="true" /><select idref="V-207704" selected="true" /><select idref="V-207705" selected="true" /><select idref="V-207706" selected="true" /><select idref="V-207707" selected="true" /><select idref="V-207708" selected="true" /><select idref="V-207709" selected="true" /><select idref="V-207710" selected="true" /><select idref="V-207711" selected="true" /><select idref="V-207712" selected="true" /><select idref="V-207713" selected="true" /><select idref="V-207714" selected="true" /><select idref="V-207715" selected="true" /><select idref="V-207716" selected="true" /></Profile><Group id="V-207688"><title>SRG-NET-000018-IDPS-00018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207688r557390_rule" weight="10.0" severity="medium"><version>PANW-IP-000001</version><title>The Palo Alto Networks security platform must enable Antivirus, Anti-spyware, and Vulnerability Protection for all authorized traffic.</title><description>&lt;VulnDiscussion&gt;The flow of all communications traffic must be monitored and controlled so it does not introduce any unacceptable risk to the network infrastructure or data.
+
+Restricting the flow of communications traffic, also known as Information flow control, regulates where information is allowed to travel as opposed to who is allowed to access the information and without explicit regard to subsequent accesses to that information.
+
+Traffic that is prohibited by the PPSM and Vulnerability Assessments must be denied by the policies configured in the Palo Alto Networks security platform; this is addressed in a separate requirement.  Traffic that is allowed by the PPSM and Vulnerability Assessments must still be inspected by the IDPS capabilities of the Palo Alto Networks security platform known as Content-ID.  Content-ID is enabled on a per rule basis using individual or group profiles to facilitate policy-based control over content traversing the network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77137</ident><ident system="http://cyber.mil/legacy">V-62647</ident><ident system="http://cyber.mil/cci">CCI-001368</ident><fixtext fixref="F-7942r358398_fix">Configure an Antivirus Profile, an Anti-spyware Profile, and a Vulnerability Protection Profile in turn.  Use these Profiles in the Security Policy or Policies that allows authorized traffic.
+To create an Antivirus Profile:
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Antivirus
+Select "Add".
+In the "Antivirus Profile" window,  complete the required fields.
+Complete the "Name" and "Description" fields.
+In the "Antivirus" tab, for all Decoders (SMTP, IMAP, POP3, FTP, HTTP, SMB protocols), set the Action to "drop" or "reset-both".
+Select "OK".
+
+To create a Vulnerability Protection Profile:
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Vulnerability Protection
+Select "Add".
+In the "Vulnerability Protection Profile" window, complete the required fields.
+In the "Name" field, enter the name of the Vulnerability Protection Profile.
+In the "Description" field, enter the description of the Vulnerability Protection Profile.
+In the "Rules" tab, select "Add".
+In the "Vulnerability Protection Rule" window, 
+In the "Rule Name" field, enter the Rule name,
+In the "Threat Name" field, select "any",
+In the "Action" field, select "drop" or "reset-both".
+In the "Host type" field, select "any",
+Select the checkboxes above the "CVE" and "Vendor ID" boxes. 
+In the "Severity" section, select the "critical", "high", and "medium" check boxes.
+Select "OK".
+
+In the "Vulnerability Protection Profile" window, select the configured rule, then select "OK".
+To configure an Anti-Spyware Profile:
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Anti-Spyware
+Select the name of a configured Anti-Spyware Profile or select "Add" to create a new one.
+In the "Anti-Spyware Profile" window, complete the required fields in all tabs.
+In the "Rules" tab, select the name of a configured Anti-Spyware Rule or select "Add" to create a new one.
+Complete the required fields.
+For the Category field, select "any".
+For the Action field, select "Drop" or "reset-both".
+For the Severity field, select "All" or configured multiple rules, one for each Severity.
+Select "OK". 
+Select "OK" again.
+
+Go to Policies &gt;&gt; Security
+Select an existing policy rule or select "Add" to create a new one.
+In the "Actions" tab in the "Profile Setting" section; in the "Profile Type" field, select "Profiles".  The window will change to display the different categories of Profiles.  
+In the "Actions" tab in the "Profile Setting" section; in the "Antivirus" field, select the configured Antivirus Profile.
+In the "Actions" tab in the "Profile Setting" section; in the "Anti-spyware" field, select the configured or "Strict Anti-spyware" Profile.
+In the "Actions" tab in the "Profile Setting" section; in the "Vulnerability Protection" field, select the configured Vulnerability Protection Profile.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7942r358398_fix" /><check system="C-7942r358397_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Review the list of authorized applications, endpoints, services, and protocols that has been added to the PPSM database.  Identify which traffic flows are authorized.
+
+Go to  Objects &gt;&gt; Security Profiles &gt;&gt; Antivirus
+If there are no Antivirus Profiles configured other than the default, this is a finding.
+
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Anti-Spyware
+View the configured Anti-Spyware Profiles.  If none are configured, this is a finding.
+
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Vulnerability Protection
+View the configured Vulnerability Protection Profiles.  If none are configured, this is a finding.
+
+Review each of the configured security policies in turn.  For any Security Policy that allows traffic between Zones (interzone), view the "Profile" column.  If the "Profile" column does not display the Antivirus Profile, Anti-Spyware, and Vulnerability Protection symbols, this is a finding.</check-content></check></Rule></Group><Group id="V-207689"><title>SRG-NET-000077-IDPS-00062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207689r767016_rule" weight="10.0" severity="medium"><version>PANW-IP-000007</version><title>The Palo Alto Networks security platform must produce audit records containing information to establish the source of the event, including, at a minimum, originating source address.</title><description>&lt;VulnDiscussion&gt;Associating the source of the event with detected events in the logs provides a means of investigating an attack or suspected attack.
+
+While auditing and logging are closely related, they are not the same. Logging is recording data about events that take place in a system, while auditing is the use of log records to identify security-relevant information such as system or user accesses. In short, log records are audited to establish an accurate history. Without logging, it would be impossible to establish an audit trail.
+
+Palo Alto Networks security platform has four options for the source of log records - "FQDN", "hostname", "ipv4-address", and "ipv6-address".  This requirement only allows the use of "ipv4-address" and "ipv6-address" as options.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77139</ident><ident system="http://cyber.mil/legacy">V-62649</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><fixtext fixref="F-7943r767015_fix">Set a unique hostname.
+Go to Device &gt;&gt; Setup &gt;&gt; Management
+In the "General Settings" window, select the "Edit" icon (the gear symbol in the upper-right corner of the pane).
+In the "General Settings" window, in the "hostname" field; enter a unique hostname.
+Select "OK".
+
+Configure the device to send either the ipv4-address, or  ipv6-address with all log messages.
+Device &gt;&gt; Setup &gt;&gt; Management
+Click the "Edit" icon in the "Logging and Reporting Settings" section.
+Select the "Log Export and Reporting" tab.
+Select one of the following options from the "Send Hostname" in the "Syslog" drop-down list:
+ipv4-address —Uses the IPv4 address of the interface used to send logs on the device. By default, this is the management interface of the device.
+ipv6-address —Uses the IPv6 address of the interface used to send logs on the device. By default, this is the management interface of the device.  
+Note that the addresses must be consistent with the IP address used by the management interface.
+Select "OK".
+
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7943r767015_fix" /><check system="C-7943r767014_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Go to Device &gt;&gt; Setup &gt;&gt; Management
+In the "General Settings" window, if the "hostname" field does not contain a unique identifier, this is a finding.
+
+Go to Device &gt;&gt; Setup &gt;&gt; Management
+In the "Logging and Reporting Settings" pane, if the "Send Hostname in Syslog" does not show either "ipv4-address" or "ipv6-address", this is a finding.
+</check-content></check></Rule></Group><Group id="V-207690"><title>SRG-NET-000078-IDPS-00063</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207690r559743_rule" weight="10.0" severity="medium"><version>PANW-IP-000008</version><title>The Palo Alto Networks security platform must capture traffic of detected/dropped malicious code.</title><description>&lt;VulnDiscussion&gt;Associating event outcome with detected events in the log provides a means of investigating an attack or suspected attack.
+
+The logs should identify what servers, destination addresses, applications, or databases were potentially attacked by logging communications traffic between the target and the attacker. All commands that were entered by the attacker (such as account creations, changes in permissions, files accessed, etc.) during the session should also be logged when capturing for forensic analysis.
+
+Packet captures of attack traffic can be used by forensic tools for analysis for example, to determine if an alert is real or a false alarm or for forensics for threat intelligence. Configure the packet capture filters so that the CPU is not overloaded.  There are many reasons for a packet capture. This requirement addresses the case where the capture is based on forensics for a detected malicious attack and the traffic is being captured in association with that traffic. Filtering should be engaged to facilitate forensics.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77141</ident><ident system="http://cyber.mil/legacy">V-62651</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><fixtext fixref="F-7944r573750_fix">This procedure will only capture the first packet. See the vendor documentation for further information.
+
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Antivirus
+Select the name of a configured Antivirus Profile or select "Add" to create a new one.
+In the "Antivirus Profile" window,  complete the required fields.
+In the "Antivirus" tab, select the "Packet Capture" check box.
+Select "OK".
+
+Configure an Anti-Spyware Profile to capture detected malicious traffic.
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Anti-Spyware
+Select the name of a configured Anti-Spyware Profile or select "Add" to create a new one.
+In the "Anti-Spyware Profile" window, complete the required fields in all tabs.
+In the "Rules" tab, select the name of a configured Anti-Spyware Rule or select "Add" to create a new one.
+In the "Anti-Spyware Rule" window, in the "Packet Capture" field, select "extended-capture".
+Select "OK". 
+Select "OK" again.
+
+Configure a Vulnerability Protection Profile to capture detected malicious traffic.
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Vulnerability Protection
+Select the name of a configured Vulnerability Protection Profile or select "Add" to create a new one.
+In the "Vulnerability Protection Profile" window, complete the required fields.
+In the "Rules" tab, select the name of a configured Vulnerability Protection Rule or select "Add" to create a new one.
+In the "Vulnerability Protection Rule" window, in the "Packet Capture" field, select "extended-capture".
+Select "OK".
+Select "OK" again.
+
+Use the Antivirus Profile, Anti-Spyware Profile, and Vulnerability Protection Profile in a Security Policy.
+Go to Policies &gt;&gt; Security
+Select an existing policy rule or select "Add" to create a new one.
+In the "Actions tab in the Profile Setting section:
+In the "Profile Type" field, select "Profiles".  The window will change to display the different categories of Profiles.  
+In the "Antivirus" field, select the configured Antivirus Profile.
+In the "Anti-Spyware" field, select the configured Anti-Spyware Profile.
+In the "Vulnerability Protection" field, select the configured Vulnerability Protection Profile.
+Select "OK". 
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7944r573750_fix" /><check system="C-7944r358403_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Go to Objects &gt;&gt; Security Profiles &gt;&gt; Antivirus
+View the configured Antivirus Profiles. If the Packet Capture check box is not checked, this is a finding.
+
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Anti-Spyware
+View the configured Anti-Spyware Profiles. If the "Packet Capture" field does not show extended-capture, this is a finding.
+
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Vulnerability Protection
+View the configured Vulnerability Protection Profiles. If the "Packet Capture" field does not show extended-capture, this is a finding.
+
+Go to Policies &gt;&gt; Security
+Review each of the configured security policies in turn.  For any Security Policy that affects traffic between Zones (interzone), view the "Profile" column.  If the "Profile" column does not display the Antivirus Profile, Anti-Spyware, and Vulnerability Protection symbols, this is a finding.</check-content></check></Rule></Group><Group id="V-207691"><title>SRG-NET-000089-IDPS-00069</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207691r1038960_rule" weight="10.0" severity="medium"><version>PANW-IP-000010</version><title>In the event of a logging failure caused by the lack of audit record storage capacity, the Palo Alto Networks security platform must continue generating and storing audit records if possible, overwriting the oldest audit records in a first-in-first-out manner.</title><description>&lt;VulnDiscussion&gt;It is critical that when the Palo Alto Networks security platform is at risk of failing to process audit logs as required, it takes action to mitigate the failure.
+
+The Palo Alto Networks security platform performs a critical security function, so its continued operation is imperative. Since availability of the Palo Alto Networks security platform is an overriding concern, shutting down the system in the event of an audit failure should be avoided, except as a last resort.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77143</ident><ident system="http://cyber.mil/legacy">V-62653</ident><ident system="http://cyber.mil/cci">CCI-000140</ident><fixtext fixref="F-7945r358407_fix">Note: Overwriting the oldest audit records in a first-in-first-out manner is the default setting of the Palo Alto Networks security platform.
+  
+Go to Device &gt;&gt; Setup
+In the "Logging and Reporting Settings" pane, select the "Edit" icon in the upper-right corner.
+In the "Logging and Reporting Settings" window, in the "Log Export and Reporting" tab, deselect (uncheck) the "Stop Traffic when LogDb Full" checkbox.  If it is already not selected, do not change it.
+Switch back to the "Log Storage" tab.
+Select "OK".
+
+If no changes were made, it is not necessary or possible to commit a change.  If a change was made, commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7945r358407_fix" /><check system="C-7945r358406_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Note: overwriting the oldest audit records in a first-in-first-out manner is the default setting of the Palo Alto Networks security platform.
+ 
+Go to Device &gt;&gt; Setup
+In the "Logging and Reporting Settings" pane, if the "Stop Traffic when LogDb Full" checkbox is selected, this is a finding.</check-content></check></Rule></Group><Group id="V-207692"><title>SRG-NET-000192-IDPS-00140</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207692r997604_rule" weight="10.0" severity="medium"><version>PANW-IP-000018</version><title>The Palo Alto Networks security platform must have a denial-of-service (DoS) Protection Profile for outbound traffic applied to a policy for traffic originating from the internal zone going to the external zone.</title><description>&lt;VulnDiscussion&gt;The Palo Alto Networks security platform must include protection against DoS attacks that originate from inside the enclave which can affect either internal or external systems. These attacks may use legitimate or rogue endpoints from inside the enclave.
+
+Installation of Palo Alto Networks security platform detection and prevention components (i.e., sensors) at key boundaries in the architecture mitigates the risk of DoS attacks. These attacks can be detected by matching observed communications traffic with patterns of known attacks and monitoring for anomalies in traffic volume/type.
+
+To comply with this requirement, the Palo Alto Networks security platform must inspect outbound traffic for indications of known and unknown DoS attacks. Sensor log capacity management along with techniques which prevent the logging of redundant information during an attack also guard against DoS attacks. This requirement is used in conjunction with other requirements which require configuration of security policies, signatures, rules, and anomaly detection techniques and are applicable to both inbound and outbound traffic.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77145</ident><ident system="http://cyber.mil/legacy">V-62655</ident><ident system="http://cyber.mil/cci">CCI-001095</ident><ident system="http://cyber.mil/cci">CCI-004866</ident><fixtext fixref="F-7946r997603_fix">Go to Objects &gt;&gt; Security Profiles &gt;&gt; DoS Protection.
+Select "Add" to create a new profile.
+In the "DoS Protection Profile" window, complete the required fields.
+For the Type, select "Classified".
+In the "Flood Protection" tab, "Syn Flood" tab, select the "Syn Flood" check box and select either "Random Early Drop" (preferred in this case) or "SYN Cookie".
+In the "Flood Protection" tab, "UDP Flood" tab, select the "UDP Flood" check box; complete the "Alarm Rate", "Activate Rate", "Max Rate", and "Block Duration" fields.
+In the "Flood Protection" tab, "ICMP Flood" tab, select the "ICMP Flood" check box; complete the "Alarm Rate", "Activate Rate", "Max Rate", and "Block Duration" fields.
+In the "Flood Protection" tab, "ICMPv6 Flood" tab, select the "ICMPv6 Flood" check box; complete the "Alarm Rate", "Activate Rate", "Max Rate", and "Block Duration" fields.
+In the "Flood Protection" tab, "Other IP Flood" tab, select the "Other IP Flood" check box; complete the "Alarm Rate", "Activate Rate", "Max Rate", and "Block Duration" fields. 
+In the "Resources Protection" tab, leave the "Maximum Concurrent Sessions" check box unselected.
+Select "OK".
+
+Go to Policies &gt;&gt; DoS Protection.
+Select "Add" to create a new policy.
+In the "DoS Rule" Window, complete the required fields.
+In the "General" tab, complete the "Name" and "Description" fields.
+In the "Source" tab, for "Zone", select the "Internal zone", for "Source Address", select "Any".
+In the "Destination" tab, "Zone", select "External zone", for "Destination Address", select "Any".
+In the "Option/Protection" tab:
+For "Service", select "Any".
+For "Action", select "Protect".
+Select the "Classified" check box.
+In the "Profile" field, select the configured DoS Protection profile for outbound traffic.
+In the "Address field", select "source-ip-only".
+Commit changes by selecting "Commit" in the upper-right corner of the screen. Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7946r997603_fix" /><check system="C-7946r997602_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Go to Objects &gt;&gt; Security Profiles &gt;&gt; DoS Protection.
+If there are no DoS Protection Profiles configured, this is a finding.
+
+There may be more than one configured DoS Protection Profile; ask the administrator which DoS Protection Profile is intended to protect outside networks from internally-originated DoS attacks.
+If there is no such DoS Protection Profile, this is a finding.</check-content></check></Rule></Group><Group id="V-207693"><title>SRG-NET-000229-IDPS-00163</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207693r768712_rule" weight="10.0" severity="medium"><version>PANW-IP-000020</version><title>The Palo Alto Networks security platform must detect and deny any prohibited mobile or otherwise malicious code at the enclave boundary.</title><description>&lt;VulnDiscussion&gt;Mobile code is defined as software modules obtained from remote systems, transferred across a network, and then downloaded and executed on a local system without explicit installation or execution by the recipient. Examples of mobile code include JavaScript, VBScript, Java applets, ActiveX controls, Flash animations, Shockwave videos, and macros embedded within Microsoft Office documents. Mobile code can be exploited to attack a host. It can be sent as an e-mail attachment or embedded in other file formats not traditionally associated with executable code.
+
+While the IDPS cannot replace the anti-virus and host-based IDS (HIDS) protection installed on the network's endpoints, vendor or locally created sensor rules can be implemented, which provide preemptive defense against both known and zero-day vulnerabilities. Many of the protections may provide defenses before vulnerabilities are discovered and rules or blacklist updates are distributed by anti-virus or malicious code solution vendors.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77147</ident><ident system="http://cyber.mil/legacy">V-62657</ident><ident system="http://cyber.mil/cci">CCI-001662</ident><fixtext fixref="F-7947r768710_fix">To create an Antivirus Profile:
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Antivirus.
+
+Select "Add".
+
+In the "Antivirus Profile" window, complete the required fields. 
+
+Complete the "Name" and "Description" fields. 
+
+In the "Antivirus" tab, for all Decoders (SMTP, IMAP, POP3, FTP, HTTP, SMB protocols), set the “Action” to "deny", or “reset-both”.
+
+Select "OK".
+
+Use the Profile in a Security Policy:
+Go to Policies &gt;&gt; Security. 
+
+Select an existing policy rule or select "Add" to create a new one.
+
+In the "Actions” tab in the "Profile Setting" section; in the "Profile Type" field, select "Profiles". The window will change to display the different categories of Profiles.
+
+In the "Actions" tab in the "Profile Setting" section; in the "Antivirus" field, select the configured Antivirus Profile.
+
+Select "OK".
+
+Use the Antivirus Profile in a Security Policy applied to traffic from an outside (untrusted) zone.
+
+Go to Policies &gt;&gt; Security.
+
+Select an existing policy rule or select "Add" to create a new one.
+
+In the "Actions” tab in the Profile Setting section:
+In the "Profile Type" field, select "Profiles". The window will change to display the different categories of Profiles.
+
+In the "Antivirus" field, select the configured Antivirus Profile. 
+
+In the "Anti-Spyware" field, select the configured Anti-Spyware Profile.
+
+In the "Vulnerability Protection" field, select the configured “Vulnerability Protection Profile”.
+
+Select "OK".
+
+Commit changes by selecting "Commit" in the upper-right corner of the screen.
+
+Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7947r768710_fix" /><check system="C-7947r768711_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Go to Objects &gt;&gt; Security Profiles &gt;&gt; Antivirus.
+
+If no Antivirus Profiles are configured other than the default, this is a finding.
+
+View the configured Antivirus Profiles for each protocol decoder (SMTP, IMAP, POP3, FTP, HTTP, SMB). 
+
+If the "Action" is anything other than "drop" or "reset-both", this is a finding.
+
+Go to Policies &gt;&gt; Security.
+
+Review each of the configured security policies in turn. For any Security Policy that affects traffic from an outside (untrusted) zone, view the "Profile" column. 
+
+If the "Profile" column does not display the “Antivirus Profile” symbol, this is a finding.</check-content></check></Rule></Group><Group id="V-207694"><title>SRG-NET-000246-IDPS-00205</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207694r997607_rule" weight="10.0" severity="medium"><version>PANW-IP-000024</version><title>The Palo Alto Networks security platform must install updates for application software files, signature definitions, detection heuristics, and vendor-provided rules when new releases are available in accordance with organizational configuration management policy and procedures.</title><description>&lt;VulnDiscussion&gt;Failing to update malicious code protection mechanisms, including application software files, signature definitions, and vendor-provided rules, leaves the system vulnerable to exploitation by recently developed attack methods and programs.
+
+The IDPS is a key malicious code protection mechanism in the enclave infrastructure. To ensure this protection is responsive to changes in malicious code threats, IDPS components must be updated, including application software files, anti-virus signatures, detection heuristics, vendor-provided rules, and vendor-provided signatures.
+
+Updates must be installed in accordance with the CCB procedures for the local organization. However, at a minimum:
+Updates designated as critical security updates by the vendor must be installed immediately.
+Updates for signature definitions, detection heuristics, and vendor-provided rules must be installed immediately.
+Updates for application software are installed in accordance with the CCB procedures.
+Prior to automatically installing updates, either manual or automated integrity and authentication checking is required, at a minimum, for application software updates.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77149</ident><ident system="http://cyber.mil/legacy">V-62659</ident><ident system="http://cyber.mil/cci">CCI-004965</ident><fixtext fixref="F-7948r997606_fix">Go to Device &gt;&gt; Dynamic Updates.
+Select "Check Now" at the bottom of the page to retrieve the latest signatures.
+To schedule automatic signature updates.
+Note: the steps provided below do not account for local change management policies.
+
+Go to Device &gt;&gt; Dynamic Updates.
+Select the text to the right of "Schedule".
+In the "Applications and Threat Updates Schedule" window; complete the required information.
+In the "Recurrence" field, select "Daily".
+In the "Time" field, enter the time at which you want the device to check for updates.
+For the "Action", select "Download and Install".
+Select "OK".
+Commit changes by selecting "Commit" in the upper-right corner of the screen. Select "OK" when the confirmation dialog appears.
+ 
+If manual updates are used, an Administrator must obtain updates from the Palo Alto Networks support site and upload them from a workstation or server to the Palo Alto Networks security platform.
+Go to Device &gt;&gt; Dynamic Updates.
+Select "Upload" (at the bottom of the pane).
+In the "Select Package Type for the Upload" window in the "Package Type" field, select "anti-virus".
+Browse to and select the appropriate file.
+Select "OK".
+
+Select "Install From File" (at the bottom of the pane).
+In the "Select Package Type for Installation" window, select "antivirus".
+Select "OK".
+
+In the "Install Application and Threats From File" window, select the previously uploaded file.
+Select "OK".</fixtext><fix id="F-7948r997606_fix" /><check system="C-7948r997605_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Since some networks cannot connect to the vendor site for automatic updates, a manual process can be used.
+
+To verify that the Palo Alto Networks security platform is using the current Applications and Threats database should be checked by viewing the Dashboard and the version and date compared to the latest release.
+Go to Dashboard; in the General Information pane, view the Threat Version and Antivirus Version. If they are not the most current version as listed on the Palo Alto Networks support site, this is a finding.
+
+The following check applies if the network is authorized to connect to the Vendor site for automatic updates.
+To verify that automatic updates are configured, go to Device &gt;&gt; Dynamic Updates.
+If no entries for "Applications and Threats" are present, this is a finding.
+If the "Applications and Threats" entry states "Download Only", this is a finding.</check-content></check></Rule></Group><Group id="V-207695"><title>SRG-NET-000249-IDPS-00176</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207695r557390_rule" weight="10.0" severity="medium"><version>PANW-IP-000026</version><title>The Palo Alto Networks security platform must detect and drop any prohibited mobile or otherwise malicious code at internal boundaries.</title><description>&lt;VulnDiscussion&gt;Mobile code is defined as software modules obtained from remote systems, transferred across a network, and then downloaded and executed on a local system without explicit installation or execution by the recipient. Examples of mobile code include JavaScript, VBScript, Java applets, ActiveX controls, Flash animations, Shockwave videos, and macros embedded within Microsoft Office documents. Mobile code can be exploited to attack a host. It can be sent as an e-mail attachment or embedded in other file formats not traditionally associated with executable code.
+
+While the IDPS cannot replace the anti-virus and host-based IDS (HIDS) protection installed on the network's endpoints, vendor or locally created sensor rules can be implemented, which provide preemptive defense against both known and zero-day vulnerabilities. Many of the protections may provide defenses before vulnerabilities are discovered and rules or blacklist updates are distributed by anti-virus or malicious code solution vendors.
+
+The Palo Alto Networks security platform allows customized profiles to be used to perform antivirus inspection for traffic between zones. Antivirus, anti-spyware, and vulnerability protection features require a specific license. There is a default Antivirus Profile; the profile inspects all of the listed protocol decoders for viruses, and generates alerts for SMTP, IMAP, and POP3 protocols while dropping for FTP, HTTP, and SMB protocols. However, these default actions cannot be edited and the values for the FTP, HTTP, and SMB protocols do not meet the requirement, so customized profiles must be used.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77151</ident><ident system="http://cyber.mil/legacy">V-62661</ident><ident system="http://cyber.mil/cci">CCI-001243</ident><fixtext fixref="F-7949r358419_fix">To create an Antivirus Profile:
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Antivirus.
+
+Select "Add".
+
+In the "Antivirus Profile" window, complete the required fields.
+
+Complete the "Name" and "Description" fields.
+
+In the "Antivirus" tab, for all Decoders (SMTP, IMAP, POP3, FTP, HTTP, SMB protocols), set the "Action" to "drop" or "reset-both".
+
+Select "OK".
+
+Use the Antivirus Profile in a Security Policy:
+Go to Policies &gt;&gt; Security.
+
+Select an existing policy rule or select "Add" to create a new one.
+
+In the "Actions" tab in the "Profile Setting" section; in the "Profile Type" field, select "Profiles". The window will change to display the different categories of Profiles.
+
+In the "Actions" tab in the "Profile Setting" section; in the "Antivirus" field, select the configured Antivirus Profile.
+
+Select "OK".
+
+Commit changes by selecting "Commit" in the upper-right corner of the screen.
+
+Select "OK" when the confirmation dialog appears.
+
+Use the Antivirus Profile in a Security Policy applied to traffic between internal zones.
+
+Go to Policies &gt;&gt; Security.
+
+Select an existing policy rule or select "Add" to create a new one. 
+
+In the "Actions” tab in the “Profile Setting” section;: 
+Iin the "Profile Type" field, select "Profiles". The window will change to display the different categories of Profiles.
+
+In the "Antivirus" field, select the configured Antivirus Profile.
+
+In the "Anti-Spyware" field, select the configured “Anti-Spyware” Profile. 
+
+In the "Vulnerability Protection" field, select the configured “Vulnerability Protection Profile”. 
+
+Select "OK".
+
+Commit changes by selecting "Commit" in the upper-right corner of the screen. 
+
+Select "OK" when the confirmation dialog appears</fixtext><fix id="F-7949r358419_fix" /><check system="C-7949r358418_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Go to Objects &gt;&gt; Security Profiles &gt;&gt; Antivirus.
+
+If there are no Antivirus Profiles configured other than the default, this is a finding.
+
+View the configured Antivirus Profiles; for each protocol decoder (SMTP, IMAP, POP3, FTP, HTTP, SMB).
+
+If the "Action" is anything other than "drop" or "reset-both", this is a finding.
+
+Go to Policies &gt;&gt; Security.
+
+Review each of the configured security policies in turn. For any Security Policy that affects traffic between internal Zones (interzone), view the "Profile" column.
+
+If the "Profile" column does not display the “Antivirus Profile” symbol, this is a finding.</check-content></check></Rule></Group><Group id="V-207696"><title>SRG-NET-000249-IDPS-00222</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207696r557390_rule" weight="10.0" severity="medium"><version>PANW-IP-000028</version><title>The Palo Alto Networks security platform must send an immediate (within seconds) alert to, at a minimum, the SA when malicious code is detected.</title><description>&lt;VulnDiscussion&gt;Without an alert, security personnel may be unaware of an impending failure of the audit capability, and the ability to perform forensic analysis and detect rate-based and other anomalies will be impeded.
+
+The IDPS generates an immediate (within seconds) alert which notifies designated personnel of the incident. Sending a message to an unattended log or console does not meet this requirement since that will not be seen immediately. These messages should include a severity level indicator or code as an indicator of the criticality of the incident.
+
+When the Palo Alto Networks security platform blocks malicious code, it also generates a record in the threat log.  This message has a medium severity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77153</ident><ident system="http://cyber.mil/legacy">V-62663</ident><ident system="http://cyber.mil/cci">CCI-001243</ident><fixtext fixref="F-7950r358422_fix">The following is an example of how to configure the device to send messages to e-mail; this is one option that meets the requirement.  If sending messages to an SNMP server or Syslog servers is used, follow the vendor guidance on how to configure that function.
+
+To create an email server profile:
+Go to Device &gt;&gt; Server Profiles &gt;&gt; Email
+Select "Add". 
+In the "Email Server Profile" field, enter the name of the profile.
+Select "Add".
+In the "Servers" tab, enter the required information.
+In the "Name" field, enter the name of the Email server.
+In the "Email Display" Name field, enter the name shown in the "From" field of the email.
+In the "From" field, enter the "From email address".
+In the "To" field, enter the email address of the recipient.
+In the "Additional Recipient" field, enter the email address of another recipient. You can only add one additional recipient. To add multiple recipients, add the email address of a distribution list.
+In the "Gateway" field, enter the IP address or host name of the Simple Mail Transport Protocol (SMTP) server used to send the email.
+Select "OK".
+
+After you create the Server Profiles that define where to send your logs, you must enable log forwarding. 
+Threat Logs—Enable forwarding of Threat logs by creating a Log Forwarding Profile (Objects &gt;&gt; Log Forwarding) that specifies which severity levels you want to forward and then adding it to the security policies for which you want to trigger the log forwarding. A Threat log entry will only be created (and therefore forwarded) if the associated traffic matches a Security Profile (Antivirus, Anti-spyware, Vulnerability, URL Filtering, File Blocking, Data Filtering, or DoS Protection).
+
+Configure the log-forwarding profile to select the logs to be forwarded to Email server.
+Go to Objects &gt;&gt; Log forwarding
+The "Log Forwarding Profile" window appears.  Note that it has five columns.  
+In the "Name" Field, enter the name of the Log Forwarding Profile.
+In the "Threat Settings Section" in the "Email" column, select the Email server profile for forwarding threat logs to the configured server(s).
+Select "OK".
+
+When the "Log Forwarding Profile" window disappears, the screen will show the configured log-forwarding profile.
+For Threat Logs, use the log forwarding profile in the security rules.
+Go to Policies &gt;&gt; Security Rule
+Select the rule for which the log forwarding needs to be applied, which in this case is the Security Policy that is used to detect malicious code (the "Profile column" does display the Antivirus Profile symbol). Apply the log forwarding profile to the rule.
+In the "Actions" tab in the "Log Setting" section; in the "Log Forwarding" field, select the log forwarding profile from drop-down list.  Note that the "Log Forwarding" field can only have one profile.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7950r358422_fix" /><check system="C-7950r358421_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>The following is an example of how to check if the device is sending messages to e-mail; this is one option that meets the requirement.  If sending messages to an SNMP server or Syslog servers is used, follow the vendor guidance on how to verify that function.   
+Go to Device &gt;&gt; Server Profiles &gt;&gt; Email
+If there is no Email Server Profile configured, this is a finding.
+
+Go to Objects &gt;&gt; Log forwarding
+If there is no Email Forwarding Profile configured, this is a finding.
+
+Go to Policies &gt;&gt; Security
+View the Security Policy that is used to detect malicious code (the "Profile" column does display the Antivirus Profile symbol); in the "Options" column, if the Email Forwarding Profile is not used, this is a finding.</check-content></check></Rule></Group><Group id="V-207697"><title>SRG-NET-000251-IDPS-00178</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207697r997610_rule" weight="10.0" severity="medium"><version>PANW-IP-000029</version><title>The Palo Alto Networks security platform must automatically install updates to signature definitions, detection heuristics, and vendor-provided rules.</title><description>&lt;VulnDiscussion&gt;Failing to automatically update malicious code protection mechanisms, including application software files, signature definitions, and vendor-provided rules, leaves the system vulnerable to exploitation by recently developed attack methods and programs. An automatic update process ensures this important task is performed without the need for SCA intervention.
+
+The IDPS is a key malicious code protection mechanism in the enclave infrastructure. To ensure this protection is responsive to changes in malicious code threats, IDPS components must be automatically updated, including anti-virus signatures, detection heuristics, vendor-provided rules, and vendor-provided signatures.
+
+If a DOD patch management server or update repository having the tested/verified updates is available for the device component, the components must be configured to automatically check this server/site for updates and install new updates.
+
+If a DOD server/site is not available, the component must be configured to automatically check a trusted vendor site for updates. A trusted vendor is either commonly used by DOD, specifically approved by DOD, the vendor from which the equipment was purchased, or approved by the local program's CCB.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77155</ident><ident system="http://cyber.mil/legacy">V-62665</ident><ident system="http://cyber.mil/cci">CCI-004964</ident><fixtext fixref="F-7951r997609_fix">Go to Device &gt;&gt; Dynamic Updates.
+Select "Check Now" at the bottom of the page to retrieve the latest signatures.
+To schedule automatic signature updates.
+Note: the steps provided below do not account for local change management policies.
+
+Go to Device &gt;&gt; Dynamic Updates.
+Select the text to the right of "Schedule".
+In the "Applications and Threat Updates Schedule" Window; complete the required information.
+In the "Recurrence" field, select "Daily".
+In the "Time" field, enter the time at which you want the device to check for updates.
+For the "Action", select "Download and Install".
+Select "OK".
+Commit changes by selecting "Commit" in the upper-right corner of the screen. Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7951r997609_fix" /><check system="C-7951r997608_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>To verify that automatic updates are configured, go to Device &gt;&gt; Dynamic Updates.
+
+If no entries for "Applications and Threats" are present, this is a finding.
+
+If the "Applications and Threats" entry states "Download Only", this is a finding.</check-content></check></Rule></Group><Group id="V-207698"><title>SRG-NET-000273-IDPS-00198</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207698r1056118_rule" weight="10.0" severity="medium"><version>PANW-IP-000030</version><title>The Palo Alto Networks security platform must block outbound ICMP Destination Unreachable, Redirect, and Address Mask reply messages.</title><description>&lt;VulnDiscussion&gt;Internet Control Message Protocol (ICMP) messages are used to provide feedback about problems in the network. These messages are sent back to the sender to support diagnostics. However, some messages can also provide host information and network topology that may be exploited by an attacker.
+
+Review the vendor documentation for more information about "How to Allow/Block ICMP Error Reporting Packets".
+
+Note that this setting is only available in the Zone Protection profile option, not in the DoS protection profile. Thus, where IDS is part of the function of Palo Alto, a Zone Protection profile is required to comply with this requirement.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77157</ident><ident system="http://cyber.mil/legacy">V-62667</ident><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-7952r1056117_fix">Create a zone protection profile for each outgoing zone that drops any ICMP Destination Unreachable, Redirect, and Address Mask reply messages.
+
+1. Navigate to the "Zone Protection Profile" configuration screen.
+2. Select the "Packet Based Attack Protection" tab.
+3. Select the "ICMP Drop" tab.
+4. Check the "Discard ICMP embedded with error message" box.</fixtext><fix id="F-7952r1056117_fix" /><check system="C-7952r1056116_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Verify a zone protection profile is configured for each outgoing zone that drops all ICMP Destination Unreachable, Redirect, and Address Mask reply messages.
+
+1. Navigate to the "Zone Protection Profile" configuration screen.
+2. Select the "Packet Based Attack Protection" tab.
+3. Select the "ICMP Drop" tab.
+
+If the "Discard ICMP embedded with error message" box is not checked for each internal or DMZ zone, this is a finding.</check-content></check></Rule></Group><Group id="V-207699"><title>SRG-NET-000273-IDPS-00204</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207699r557390_rule" weight="10.0" severity="medium"><version>PANW-IP-000031</version><title>The Palo Alto Networks security platform must block malicious ICMP packets.</title><description>&lt;VulnDiscussion&gt;Internet Control Message Protocol (ICMP) messages are used to provide feedback about problems in the network. These messages are sent back to the sender to support diagnostics.  However, ICMP can be misused to provide a covert channel. ICMP tunneling is when an attacker injects arbitrary data into an echo packet and sends to a remote computer. The remote computer injects an answer into another ICMP packet and sends it back.  The creates a covert channel where an attacker can hide commands sent to a compromised host or a compromised host can exfiltrate data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77159</ident><ident system="http://cyber.mil/legacy">V-62669</ident><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-7953r358431_fix">To configure the security policy:
+Go to Policies &gt;&gt; Security
+Select "Add".
+In the "Security Policy Rule" window, complete the required fields.
+In the "General" tab, complete the "Name" and "Description" fields.
+In the "Source" tab, complete the "Source Zone" and "Source Address" fields.
+For the "Source Zone" field, select "external". 
+For the "Source Address" field, select "any".
+In the "Destination" tab, complete the "Destination Zone" and "Destination Address" fields. 
+For the "Destination Zone" field, select the internal and DMZ zones.
+Note: the exact number and name of zones is specific to the network.
+
+For the "Destination Address" field, select "any".
+In the "Applications" tab, select "icmp", "ipv6-icmp", "traceroute".
+In the "Actions" tab, select "Deny" as the resulting action.  Select the required Log Setting and Profile Settings as necessary.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7953r358431_fix" /><check system="C-7953r358430_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Ask the Administrator which Security Policy blocks traceroutes and ICMP probes.
+Go to Policies &gt;&gt; Security
+View the identified Security Policy.
+ 
+If the  "Source Zone" field is not external and the "Source Address" field is not any, this is a finding.
+
+If the "Destination Zone" fields do not include the internal and DMZ zones and the "Destination Address" field is not "any", this is a finding.
+Note: the exact number and name of zones is specific to the network.
+
+If the "Application" fields do not include "icmp", "ipv6-icmp", and "traceroute", this is a finding.
+
+If the "Actions" field does not show "Deny" as the resulting action, this is a finding.</check-content></check></Rule></Group><Group id="V-207700"><title>SRG-NET-000318-IDPS-00068</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207700r856614_rule" weight="10.0" severity="medium"><version>PANW-IP-000032</version><title>To protect against unauthorized data mining, the Palo Alto Networks security platform must detect and prevent SQL and other code injection attacks launched against data storage objects, including, at a minimum, databases, database records, queries, and fields.</title><description>&lt;VulnDiscussion&gt;Data mining is the analysis of large quantities of data to discover patterns and is used in intelligence gathering. Failure to detect attacks that use unauthorized data mining techniques to attack databases may result in the compromise of information.
+
+Injection attacks allow an attacker to inject code into a program or query or inject malware onto a computer to execute remote commands that can read or modify a database, or change data on a website. Web applications frequently access databases to store, retrieve, and update information. An attacker can construct inputs that the database will execute. This is most commonly referred to as a code injection attack. This type of attack includes XPath and LDAP injections.
+
+IDPS component(s) with the capability to prevent code injections must be included in the IDPS implementation to protect against unauthorized data mining. These components must include rules and anomaly detection algorithms to monitor for atypical database queries or accesses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77161</ident><ident system="http://cyber.mil/legacy">V-62671</ident><ident system="http://cyber.mil/cci">CCI-002346</ident><fixtext fixref="F-7954r358434_fix">Create and apply a Vulnerability Protection Profile to protect database assets by blocking and alerting on attacks. This profile has two rules; the first blocks critical, high, and medium threats, and the second alerts on low and informational threats.
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Vulnerability Protection
+Select "Add".
+In the "Vulnerability Protection Profile" window, complete the required fields.
+In the "Name" field, enter the name of the Vulnerability Protection Profile.
+In the "Description" field, enter the description of the Vulnerability Protection Profile.
+In the "Rules" tab, select "Add".
+In the "Vulnerability Protection Rule" window, 
+In the "Rule Name" field, enter the Rule name,
+In the "Threat Name" field, select "any",
+In the "Action" field, select "block".
+In the "Host type" field, select "server",
+Select the checkboxes above the "CVE" and "Vendor ID" boxes. 
+In the "Severity" section, select the "critical", "high", and "medium" check boxes.
+Select "OK".
+
+In the "Vulnerability Protection Profile" window, select the configured rule, then select "OK".
+Add a second rule that  alerts on low and informational threats.
+
+Apply the Vulnerability Protection Profile to the Security Policy Rules permitting traffic to the databases.
+Go to Policies &gt;&gt; Security
+Select an existing policy rule or select "Add" to create a new one.
+In the "Actions" tab in the "Profile Setting" section; in the "Profile Type" field, select "Profiles".  The window will change to display the different categories of Profiles.  
+In the "Actions" tab in the "Profile Setting" section; in the "Vulnerability Protection" field, select the configured Vulnerability Protection Profile.
+Select "OK". 
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7954r358434_fix" /><check system="C-7954r358433_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Go to  Objects &gt;&gt; Security Profiles &gt;&gt; Vulnerability Protection
+If there are no Vulnerability Protection Profiles configured, this is a finding.
+
+Ask the Administrator which Vulnerability Protection Profile is used to protect database assets by blocking and alerting on attacks.
+View the configured Vulnerability Protection Profile; check the "Severity" and "Action" columns.
+
+If the Vulnerability Protection Profile used for database protection does not block all critical, high, and medium threats, this is a finding.
+
+If the Vulnerability Protection Profile used for database protection does not alert on low and informational threats, this is a finding.
+
+Ask the Administrator which Security Policy is used to protect database assets.
+Go to Policies &gt;&gt; Security
+View the configured Security Policy; view the "Profile" column.
+ 
+If the "Profile" column does not display the Vulnerability Protection Profile symbol, this is a finding.
+
+Moving the cursor over the symbol will list the exact Vulnerability Protection Profiles applied.
+
+If the specific Vulnerability Protection Profile is not listed, this is a finding.</check-content></check></Rule></Group><Group id="V-207701"><title>SRG-NET-000318-IDPS-00182</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207701r1056120_rule" weight="10.0" severity="medium"><version>PANW-IP-000033</version><title>To protect against unauthorized data mining, the Palo Alto Networks security platform must detect and prevent code injection attacks launched against application objects including, at a minimum, application URLs and application code.</title><description>&lt;VulnDiscussion&gt;Data mining is the analysis of large quantities of data to discover patterns and is used in intelligence gathering. Failure to detect attacks that use unauthorized data mining techniques to attack applications may result in the compromise of information.
+
+Injection attacks allow an attacker to inject code into a program or query or inject malware onto a computer to execute remote commands that can read or modify a database, or change data on a website. These attacks include buffer overrun, XML, JavaScript, and HTML injections.
+
+IDPS component(s) with the capability to prevent code injections must be included in the IDPS implementation to protect against unauthorized data mining. These components must include rules and anomaly detection algorithms to monitor for atypical database queries or accesses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77163</ident><ident system="http://cyber.mil/legacy">V-62673</ident><ident system="http://cyber.mil/cci">CCI-002346</ident><fixtext fixref="F-7955r864178_fix">Create and apply a Vulnerability Protection Profile to protect database assets by blocking and alerting on attacks. This example profile has two rules; the first blocks critical, high, and medium threats, and the second alerts on low and informational threats.
+
+Creating the Protection Profiles:
+1. Go to Objects &gt;&gt; Security Profiles &gt;&gt; Vulnerability Protection and select "Add".
+2. In the "Vulnerability Protection Profile" window, complete the following required fields:
+     In the "Name" field, enter the name of the Vulnerability Protection Profile.
+     In the "Description" field, enter the description of the Vulnerability Protection Profile.
+     In the "Rules" tab, select "Add".
+3. In the "Vulnerability Protection Rule" window, complete the required fields:
+     In the "Rule Name" field, enter the Rule name.
+     In the "Threat Name" field, select "any".
+     In the "Action" field, select "block".
+     In the "Host type" field, select "server".
+     Select the checkboxes above the "CVE" and "Vendor ID" boxes. 
+    In the "Severity" section, select the "critical", "high", and "medium" check boxes.
+    Select "OK".
+4. In the "Vulnerability Protection Profile" window, select the configured rule, then select "OK".
+5. Add a second rule that alerts on low and informational threats.
+
+Apply the Vulnerability Protection Profile to the Security Policy Rules permitting traffic to the databases.
+1. Go to Policies &gt;&gt; Security.
+2. Select an existing policy rule.
+3. In the "Actions" tab in the "Profile Setting" section; in the "Profile Type" field, select "Profiles". The window will change to display the different categories of Profiles.  
+4. In the "Actions" tab in the "Profile Setting" section; in the "Vulnerability Protection" field, select the configured Vulnerability Protection Profile.
+5. Select "OK". 
+
+Commit changes by selecting "Commit" in the upper-right corner of the screen. Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7955r864178_fix" /><check system="C-7955r1056119_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Go to Objects &gt;&gt; Security Profiles &gt;&gt; Vulnerability Protection.
+
+If there are no Vulnerability Protection Profiles configured, this is a finding.</check-content></check></Rule></Group><Group id="V-207702"><title>SRG-NET-000334-IDPS-00191</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207702r856616_rule" weight="10.0" severity="low"><version>PANW-IP-000039</version><title>The Palo Alto Networks security platform must off-load log records to a centralized log server.</title><description>&lt;VulnDiscussion&gt;Information stored in one location is vulnerable to accidental or incidental deletion or alteration. Off-loading ensures audit information does not get overwritten if the limited audit storage capacity is reached and also protects the audit record in case the system/component being audited is compromised.
+
+This also prevents the log records from being lost if the logs stored locally are accidentally or intentionally deleted, altered, or corrupted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77165</ident><ident system="http://cyber.mil/legacy">V-62675</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-7956r358440_fix">To create a syslog server profile:
+Go to Device &gt;&gt; Server Profiles &gt;&gt; Syslog
+Select "Add".
+In the Syslog Server Profile, enter the name of the profile.
+Select "Add".
+In the "Servers" tab, enter the required information.
+Name: Name of the syslog server
+Server: Server IP address where the logs will be forwarded to
+Port: Default port 514
+Facility: Select from the drop down list
+Select "OK".
+
+After you create the Server Profiles that define where to send your logs, you must enable log forwarding. 
+The way to enable forwarding depends on the log type:
+Traffic Logs— Enable forwarding of Traffic logs by creating a Log Forwarding Profile (Objects &gt;&gt; Log Forwarding) and adding it to the security policies you want to trigger the log forwarding. Only traffic that matches a specific rule within the security policy will be logged and forwarded.
+Configure the log-forwarding profile to select the logs to be forwarded to syslog server.
+Go to Objects &gt;&gt; Log forwarding
+The "Log Forwarding Profile" window appears.  Note that it has five columns.  In the "Syslog" column, select the syslog server profile for forwarding threat logs to the configured server(s).
+Select "OK".
+
+When the "Log Forwarding Profile" window disappears, the screen will show the configured log-forwarding profile.
+Threat Logs—You enable forwarding of Threat logs by creating a Log Forwarding Profile (Objects &gt;&gt; Log Forwarding) that specifies which severity levels you want to forward and then adding it to the security policies for which you want to trigger the log forwarding. A Threat log entry will only be created (and therefore forwarded) if the associated traffic matches a Security Profile (Antivirus, Anti-spyware, Vulnerability, URL Filtering, File Blocking, Data Filtering, or DoS Protection).
+Configure the log-forwarding profile to select the logs to be forwarded to syslog server.
+Go to Objects &gt;&gt; Log forwarding.
+The "Log Forwarding Profile" window appears.  Note that it has five columns.  In the "Syslog" column, select the syslog server profile for forwarding threat logs to the configured server(s).
+Select "OK".
+
+When the "Log Forwarding Profile" window disappears, the screen will show the configured log-forwarding profile.
+System Logs—You enable forwarding of System logs by specifying a Server Profile in the log settings configuration. 
+Go to Device &gt;&gt; Log Settings &gt;&gt; System Logs
+The list of severity levels is displayed.
+
+Select a Server Profile for each severity level to forward.  
+Select each severity level in turn; with each selection, the "Log Systems - Setting" window will appear.  
+In the "Log Systems - Setting" window, in the "Syslog" drop-down box, select the configured Server Profile.
+Select "OK".
+
+Config Logs—You enable forwarding of Config logs by specifying a Server Profile in the log settings configuration. 
+Go to Device &gt;&gt; Log Settings &gt;&gt; Config Logs
+Select the "Edit" icon (the gear symbol in the upper-right corner of the pane).
+In the "Log Settings Config" window, in the "Syslog" drop-down box, select the configured Server Profile.
+Select "OK".
+
+For Traffic Logs and Threat Logs, use the log forwarding profile in the security rules.
+Go to Policies &gt;&gt; Security Rule
+Select the rule for which the log forwarding needs to be applied. Apply the security profiles to the rule.
+Go to Actions &gt;&gt; Log forwarding
+Select the log forwarding profile from drop-down list.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7956r358440_fix" /><check system="C-7956r358439_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>To view a syslog server profile:
+Go to Device &gt;&gt; Server Profiles &gt;&gt; Syslog
+
+If there are no Syslog Server Profiles present, this is a finding.
+
+Select each Syslog Server Profile; if no server is configured, this is a finding.
+
+View the log-forwarding profile to determine which logs are forwarded to the syslog server.
+Go to Objects &gt;&gt; Log forwarding
+
+If no Log Forwarding Profile is present, this is a finding.
+
+The  "Log Forwarding Profile" window has five columns.
+
+If there are no Syslog Server Profiles present in the "Syslog" column for the Traffic Log Type, this is a finding.
+
+If there are no Syslog Server Profiles present for each of the severity levels of the Threat Log Type, this is a finding.
+ 
+Go to Device &gt;&gt; Log Settings &gt;&gt; System Logs
+The list of Severity levels is displayed.
+
+If any of the Severity levels does not have a configured Syslog Profile, this is a finding.
+
+Go to Device &gt;&gt; Log Settings &gt;&gt; Config Logs
+
+If the "Syslog" field is blank, this is a finding.</check-content></check></Rule></Group><Group id="V-207703"><title>SRG-NET-000362-IDPS-00196</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207703r997613_rule" weight="10.0" severity="medium"><version>PANW-IP-000041</version><title>The Palo Alto Networks security platform must protect against or limit the effects of known and unknown types of denial-of-service (DoS) attacks by employing rate-based attack prevention behavior analysis (traffic thresholds).</title><description>&lt;VulnDiscussion&gt;If the network does not provide safeguards against DoS attack, network resources will be unavailable to users.
+
+Installation of IDPS detection and prevention components (i.e., sensors) at key boundaries in the architecture mitigates the risk of DoS attacks. These attacks can be detected by matching observed communications traffic with patterns of known attacks and monitoring for anomalies in traffic volume/type.
+
+Detection components that use rate-based behavior analysis can detect attacks when signatures for the attack do not exist or are not installed. These attacks include zero-day attacks which are new attacks for which vendors have not yet developed signatures. Rate-based behavior analysis can detect sophisticated, Distributed DoS (DDoS) attacks by correlating traffic information from multiple network segments or components.
+
+This requirement applies to the communications traffic functionality of the IDPS as it pertains to handling communications traffic, rather than to the IDPS device itself.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77167</ident><ident system="http://cyber.mil/legacy">V-62677</ident><ident system="http://cyber.mil/cci">CCI-002385</ident><ident system="http://cyber.mil/cci">CCI-004866</ident><fixtext fixref="F-7957r997612_fix">Go to Objects &gt;&gt; Security Profiles &gt;&gt; DoS Protection.
+Select "Add" to create a new profile.
+In the "DoS Protection Profile" window, complete the required fields.
+For the "Type", select "Classified".
+In the "Flood Protection" tab, "Syn Flood" tab, select the "Syn Flood" check box and select "SYN Cookie".
+In the "Flood Protection" tab, "UDP Flood" tab, select the "UDP Flood" check box; complete the "Alarm Rate", "Activate Rate", "Max Rate", and "Block Duration" fields.
+In the "Flood Protection" tab, "ICMP Flood" tab, select the "ICMP Flood" check box; complete the "Alarm Rate", "Activate Rate", "Max Rate", and "Block Duration" fields.
+In the "Flood Protection" tab, "ICMPv6 Flood" tab, select the "ICMPv6 Flood" check box; complete the "Alarm Rate", "Activate Rate", "Max Rate", and "Block Duration" fields.
+In the "Flood Protection" tab, "Other IP Flood" tab, select the "Other IP Flood" check box; complete the "Alarm Rate", "Activate Rate", "Max Rate", and "Block Duration" fields.
+In the "Resources Protection" tab, select the "Maximum Concurrent Sessions" check box.
+In the "Resources Protection" tab, complete the "Max Concurrent Sessions" field. If the DoS profile type is aggregate, this limit applies to the entire traffic hitting the DoS rule on which the DoS profile is applied. If the DoS profile type is classified, this limit applies to the entire traffic on a classified basis (source IP, destination IP or source-and-destination IP) hitting the DoS rule on which the DoS profile is applied.
+Select "OK".
+
+Go to Policies &gt;&gt; DoS Protection.
+Select "Add" to create a new policy.
+In the "DoS Rule" Window, complete the required fields.
+In the "General" tab, complete the "Name" and "Description" fields.
+In the "Source" tab, for "Zone", select the "External zone, for Source Address", select "Any".
+In the "Destination" tab, "Zone", select "Internal zone, for Destination Address", select "Any".
+In the "Option/Protection" tab, 
+For "Service", select "Any".
+For "Action", select "Protect".
+Select the "Classified" check box.
+In the "Profile" field, select the configured DoS Protection profile for inbound traffic.
+In the "Address" field, select "destination-ip-only".
+Commit changes by selecting "Commit" in the upper-right corner of the screen. Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7957r997612_fix" /><check system="C-7957r997611_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Go to Objects &gt;&gt; Security Profiles &gt;&gt; DoS Protection.
+If there are no DoS Protection Profiles configured, this is a finding.
+
+Go to Policies &gt;&gt; DoS Protection.
+If there are no DoS Protection Policies, this is a finding.
+
+There may be more than one configured DoS Protection Policy; ask the administrator which DoS Protection Policy is intended to protect internal networks and DMZ networks from externally-originated DoS attacks.
+
+If there is no such DoS Protection Policy, this is a finding.
+
+If the DoS Protection Policy has no DoS Protection Profile, this is a finding.</check-content></check></Rule></Group><Group id="V-207704"><title>SRG-NET-000362-IDPS-00198</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207704r997616_rule" weight="10.0" severity="medium"><version>PANW-IP-000043</version><title>The Palo Alto Networks security platform must use a Vulnerability Protection Profile that blocks any critical, high, or medium threats.</title><description>&lt;VulnDiscussion&gt;If the network does not provide safeguards against DoS attacks, network resources will be unavailable to users.
+
+Installation of IDPS detection and prevention components (i.e., sensors) at key boundaries in the architecture mitigates the risk of DoS attacks. These attacks can be detected by matching observed communications traffic with patterns of known attacks and monitoring for anomalies in traffic volume, type, or protocol usage.
+
+Detection components that use signatures can detect known attacks by using known attack signatures. Signatures are usually obtained from and updated by the IDPS component vendor. These attacks include SYN-flood, ICMP-flood, and Land Attacks.
+
+This requirement applies to the communications traffic functionality of the IDPS as it pertains to handling communications traffic, rather than to the IDPS device itself.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77169</ident><ident system="http://cyber.mil/legacy">V-62679</ident><ident system="http://cyber.mil/cci">CCI-002385</ident><ident system="http://cyber.mil/cci">CCI-004866</ident><fixtext fixref="F-7958r997615_fix">To create a Vulnerability Protection Profile:
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Vulnerability Protection.
+Select "Add".
+In the "Vulnerability Protection Profile" window, complete the required fields.
+In the "Name" field, enter the name of the Vulnerability Protection Profile.
+In the "Description" field, enter the description of the Vulnerability Protection Profile.
+In the "Rules" tab, select "Add".
+In the "Vulnerability Protection Rule" window.
+In the "Rule Name" field, enter the Rule name.
+In the "Threat Name" field, select "any".
+In the "Action" field, select "block".
+In the "Host type" field, select "any".
+Select the checkboxes above the "CVE" and "Vendor ID" boxes. 
+In the "Severity" section, select the "critical", "high", and "medium" check boxes.
+Select "OK".
+
+In the "Vulnerability Protection Profile" window, select the configured rule, then select "OK".
+Use the Profile in a Security Policy.
+Go to Policies &gt;&gt; Security.
+Select an existing policy rule or select "Add" to create a new one.
+In the "Actions" tab in the "Profile Setting" section; in the "Profile Type" field, select "Profiles". The window will change to display the different categories of Profiles.
+In the "Actions" tab in the "Profile Setting" section; in the "Vulnerability Protection" field, select the configured Vulnerability Protection Profile.
+Select "OK". 
+Commit changes by selecting "Commit" in the upper-right corner of the screen. Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7958r997615_fix" /><check system="C-7958r997614_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Go to Objects &gt;&gt; Security Profiles &gt;&gt; Vulnerability Protection.
+If there are no Vulnerability Protection Profiles configured, this is a finding.
+
+Ask the administrator which Vulnerability Protection Profile is used for interzone traffic.
+View the configured Vulnerability Protection Profiles; check the "Severity" and "Action" columns.
+If the Vulnerability Protection Profile used for interzone traffic does not block all critical, high, and medium threats, this is a finding.
+
+Go to Policies &gt;&gt; Security.
+Review each of the configured security policies in turn.
+For any Security Policy that affects traffic between Zones (interzone), view the Profile column. If the Profile column does not display the Vulnerability Protection Profile symbol, this is a finding.</check-content></check></Rule></Group><Group id="V-207705"><title>SRG-NET-000383-IDPS-00208</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207705r856619_rule" weight="10.0" severity="medium"><version>PANW-IP-000045</version><title>Palo Alto Networks security platform components, including sensors, event databases, and management consoles must integrate with a network-wide monitoring capability.</title><description>&lt;VulnDiscussion&gt;An integrated, network-wide intrusion detection capability increases the ability to detect and prevent sophisticated distributed attacks based on access patterns and characteristics of access.
+
+Integration is more than centralized logging and a centralized management console. The enclave's monitoring capability may include multiple sensors, IPS, sensor event databases, behavior-based monitoring devices, application-level content inspection systems, malicious code protection software, scanning tools, audit record monitoring software, and network monitoring software. Some tools may monitor external traffic while others monitor internal traffic at key boundaries. 
+
+These capabilities may be implemented using different devices and therefore can have different security policies and severity-level schema. This is valuable because content filtering, monitoring, and prevention can become a bottleneck on the network if not carefully configured.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77171</ident><ident system="http://cyber.mil/legacy">V-62681</ident><ident system="http://cyber.mil/cci">CCI-002656</ident><fixtext fixref="F-7959r358449_fix">To create a NetFlow Server Profile:
+Go to Device &gt;&gt; Server Profiles &gt;&gt; NetFlow
+Select Add.
+In the "NetFlow Server Profile" window, complete the required fields.
+In the "Name" field, enter the name of the NetFlow Server Profile.
+In the "Minutes" field, enter the number of minutes after which the NetFlow template is refreshed. 
+In the "Packets" field, enter the number of packets after which the NetFlow template is refreshed.
+In the "Active Timeout" field, enter the frequency (in minutes) the device exports records.
+Select the "PAN-OS Field Types" check box to export "App-ID" and "User-ID" fields.
+Select "Add" to add a NetFlow collector.
+In the "Name" field, enter the name of the server.
+In the "NetFlow Server" field, enter the hostname or IP address of the server.
+In the "Port" field enter the port used by the NetFlow collector (default 2055).
+Select "OK".
+
+Assign the NetFlow server profile to the interfaces that carry the traffic to be analyzed.  These steps assume that it is one of the Ethernet interfaces.  The configuration is the same for Ethernet, VLAN, Loopback and Tunnel interfaces.
+Go to Network &gt;&gt; Interfaces &gt;&gt; Ethernet
+Select the interface that the traffic traverses.
+In the "Ethernet Interface" window, in the "NetFlow Profile" field, select the configured NetFlow Profile.
+Select "OK".
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7959r358449_fix" /><check system="C-7959r358448_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Go to Device &gt;&gt; Server Profiles &gt;&gt; NetFlow
+If no NetFlow Server Profiles are configured, this is a finding.
+
+This step assumes that it is an Ethernet interface that is being monitored.  The verification is the same for Ethernet, VLAN, Loopback and Tunnel interfaces.  Ask the Administrator which interface is being monitored; there may be more than one.
+Go to Network &gt;&gt; Interfaces &gt;&gt; Ethernet
+Select the interface that is being monitored.
+If the "NetFlow Profile" field is "None", this is a finding.</check-content></check></Rule></Group><Group id="V-207706"><title>SRG-NET-000384-IDPS-00209</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207706r856620_rule" weight="10.0" severity="medium"><version>PANW-IP-000046</version><title>The Palo Alto Networks security platform must detect use of network services that have not been authorized or approved by the ISSM and ISSO, at a minimum.</title><description>&lt;VulnDiscussion&gt;Unauthorized or unapproved network services lack organizational verification or validation and therefore may be unreliable or serve as malicious rogues for valid services.
+
+Examples of network services include service-oriented architectures (SOAs), cloud-based services (e.g., infrastructure as a service, platform as a service, or software as a service), cross-domain, Voice Over Internet Protocol, Instant Messaging, auto-execute, and file sharing.
+
+To comply with this requirement, the IDPS may be configured to detect services either directly or indirectly (i.e., by detecting traffic associated with a service).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77173</ident><ident system="http://cyber.mil/legacy">V-62683</ident><ident system="http://cyber.mil/cci">CCI-002683</ident><fixtext fixref="F-7960r358452_fix">Obtain the list of network services that have not been authorized or approved by the ISSM and ISSO.  For each prohibited network service, configure a security policy that denies traffic associated with it and logs the denied traffic.
+
+To create or edit a Security Policy:
+Go to Policies &gt;&gt; Security
+Select "Add" to create a new security policy or select the name of the security policy to edit it. 
+Configure the specific parameters of the policy by completing the required information in the fields of each tab.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7960r358452_fix" /><check system="C-7960r358451_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Obtain the list of network services that have not been authorized or approved by the ISSM and ISSO.  For each prohibited network service, view the security policies that denies traffic associated with it and logs the denied traffic.
+
+If there is no list of unauthorized network services, this is a finding.
+ 
+If there are no configured security policies that specifically match the list of unauthorized network services, this is a finding.
+ 
+If the security policies do not deny the traffic associated with the unauthorized network services, this is a finding.</check-content></check></Rule></Group><Group id="V-207707"><title>SRG-NET-000385-IDPS-00210</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207707r856621_rule" weight="10.0" severity="medium"><version>PANW-IP-000047</version><title>The Palo Alto Networks security platform must generate a log record when unauthorized network services are detected.</title><description>&lt;VulnDiscussion&gt;Unauthorized or unapproved network services lack organizational verification or validation and therefore may be unreliable or serve as malicious rogues for valid services.
+
+Examples of network services include service-oriented architectures (SOAs), cloud-based services (e.g., infrastructure as a service, platform as a service, or software as a service), cross-domain, Voice Over Internet Protocol, Instant Messaging, auto-execute, and file sharing.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77175</ident><ident system="http://cyber.mil/legacy">V-62685</ident><ident system="http://cyber.mil/cci">CCI-002684</ident><fixtext fixref="F-7961r358455_fix">Obtain the list of network services that have not been authorized or approved by the ISSM and ISSO.  For each prohibited network service, configure a security policy that denies traffic associated with it and logs the denied traffic.
+
+To configure a Security Policy to log denied traffic:
+Go to Policies &gt;&gt; Security
+Select "Add" to create a new security policy or select the name of the security policy to edit it. 
+Configure the specific parameters of the policy by completing the required information in the fields of each tab.
+In the "Actions" tab, select the Log forwarding profile and select "Log at Session End".
+"Log at Session Start" may be selected under specific circumstances, but "Log at Session End" is preferred.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.
+Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7961r358455_fix" /><check system="C-7961r358454_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Obtain the list of network services that have not been authorized or approved by the ISSM and ISSO.  For each prohibited network service, view the security policies that denies traffic associated with it and logs the denied traffic.
+ 
+To verify if a Security Policy logs denied traffic:
+Go to Policies &gt;&gt; Security
+Select the name of the security policy to view it.
+
+In the "Actions" tab, in the "Log Setting" section, if neither the "Log at Session Start" nor the "Log at Session End" check boxes are checked, this is a finding.</check-content></check></Rule></Group><Group id="V-207708"><title>SRG-NET-000385-IDPS-00211</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207708r856622_rule" weight="10.0" severity="medium"><version>PANW-IP-000048</version><title>The Palo Alto Networks security platform must generate an alert to the ISSO and ISSM, at a minimum, when unauthorized network services are detected.</title><description>&lt;VulnDiscussion&gt;Unauthorized or unapproved network services lack organizational verification or validation and therefore may be unreliable or serve as malicious rogues for valid services.
+
+Automated mechanisms can be used to send automatic alerts or notifications. Such automatic alerts or notifications can be conveyed in a variety of ways (e.g., telephonically, via electronic mail, via text message, or via websites).
+
+The IDPS must either send the alert to a management console that is actively monitored by authorized personnel or use a messaging capability to send the alert directly to designated personnel.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77177</ident><ident system="http://cyber.mil/legacy">V-62687</ident><ident system="http://cyber.mil/cci">CCI-002684</ident><fixtext fixref="F-7962r358458_fix">Obtain the list of network services that have not been authorized or approved by the ISSM and ISSO.  For each prohibited network service, configure a security policy that  generates an alert to, at a minimum, the ISSO and ISSM when unauthorized network services are detected.
+Configure a Server Profile for use with Log Forwarding Profile(s);  if email is used, the ISSO and ISSM must be recipients.
+   
+To create an email server profile:
+Go to Device &gt;&gt; Server Profiles &gt;&gt; Email
+Select "Add". 
+In the Email Server Profile, enter the name of the profile.
+Select "Add".
+In the "Servers" tab, enter the required information:
+In the "Name" field, enter the name of the Email server
+In the "Email Display Name" field, enter the name shown in the "From" field of the email.
+In the "From" field, enter the From email address.
+In the "To" field, enter the email address of the recipient.
+In the "Additional Recipient" field, enter the email address of another recipient. You can only add one additional recipient. To add multiple recipients, add the email address of a distribution list.
+In the "Gateway" field, enter the IP address or host name of the Simple Mail Transport Protocol (SMTP) server used to send the email.
+Select "OK".
+  
+Configure a Log Forwarding Profile; this is under Objects &gt;&gt; Log Forwarding
+Go to Policies &gt;&gt; Security
+Select "Add" to create a new security policy or select the name of the security policy to edit it. 
+Configure the specific parameters of the policy by completing the required information in the fields of each tab.
+In the "Actions" tab, select the Log forwarding profile and select "Log at Session End".
+"Log at Session Start" may be selected under specific circumstances, but "Log at Session End" is preferred.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.
+Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7962r358458_fix" /><check system="C-7962r358457_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Obtain the list of network services that have not been authorized or approved by the ISSM and ISSO.  For each prohibited network service, view the security policies that denies traffic associated with it and logs the denied traffic. 
+Ask the Administrator how the ISSO and ISSM are receiving alerts (E-mail, SNMP Trap, or Syslog).
+
+View the configured Server Profile; if there is no Server Profile for the method explained, this is a finding.
+ 
+View the Log Forwarding Profiles; this is under Objects &gt;&gt; Log Forwarding.  Determine which Server Profile is associated with each Log Forwarding Profile.
+View the Security Policies that are used to block unauthorized network services.
+Go to Policies &gt;&gt; Security
+Select the name of the security policy to view it. 
+In the "Actions" tab, in the "Log Setting" section, view the Log Forwarding Profile.
+
+If there is no Log Forwarding Profile, this is a finding.</check-content></check></Rule></Group><Group id="V-207709"><title>SRG-NET-000390-IDPS-00212</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207709r856623_rule" weight="10.0" severity="medium"><version>PANW-IP-000049</version><title>The Palo Alto Networks security platform must continuously monitor inbound communications traffic for unusual/unauthorized activities or conditions.</title><description>&lt;VulnDiscussion&gt;If inbound communications traffic is not continuously monitored for unusual/unauthorized activities or conditions, there will be times when hostile activity may not be noticed and defended against.
+
+Although some of the components in the site's content scanning solution may be used for periodic scanning assessment, the IDPS sensors and other components must provide continuous, 24 hours a day, 7 days a week monitoring.
+
+Unusual/unauthorized activities or conditions related to information system inbound communications traffic include, for example, internal traffic that indicates the presence of malicious code within organizational information systems or propagating among system components, the unauthorized exporting of information, or signaling to external information systems. Anomalies within organizational information systems include, for example, large file transfers, long-time persistent connections, use of unusual protocols and ports, and communications with suspected or known malicious external entities.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77179</ident><ident system="http://cyber.mil/legacy">V-62689</ident><ident system="http://cyber.mil/cci">CCI-002661</ident><fixtext fixref="F-7963r358461_fix">The network architecture diagrams must identify where traffic crosses from one internal zone to another. The specific security policy is based on the authorized endpoints, applications, and protocols.
+
+To create or edit a Security Policy:
+Go to Policies &gt;&gt; Security
+Select "Add" to create a new security policy or select the name of the security policy to edit it. 
+Configure the specific parameters of the policy by completing the required information in the fields of each tab.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7963r358461_fix" /><check system="C-7963r358460_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Obtain the network architecture diagrams and identify where traffic crosses from one internal zone to another and review the configuration of the Palo Alto Networks security platform.  
+The specific security policy is based on the authorized endpoints, applications, and protocols.
+
+If it does not filter traffic passing between zones, this is a finding.</check-content></check></Rule></Group><Group id="V-207710"><title>SRG-NET-000391-IDPS-00213</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207710r856624_rule" weight="10.0" severity="medium"><version>PANW-IP-000050</version><title>The Palo Alto Networks security platform must continuously monitor outbound communications traffic for unusual/unauthorized activities or conditions.</title><description>&lt;VulnDiscussion&gt;If outbound communications traffic is not continuously monitored for unusual/unauthorized activities or conditions, there will be times when hostile activity may not be noticed and defended against.
+
+Although some of the components in the site's content scanning solution may be used for periodic scanning assessment, the IDPS sensors and other components must provide continuous, 24 hours a day, 7 days a week monitoring.
+
+Unusual/unauthorized activities or conditions related to information system outbound communications traffic include, for example, internal traffic that indicates the presence of malicious code within organizational information systems or propagating among system components, the unauthorized exporting of information, or signaling to external information systems. Anomalies within organizational information systems include, for example, large file transfers, long-time persistent connections, use of unusual protocols and ports, and communications with suspected or known malicious external entities.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77181</ident><ident system="http://cyber.mil/legacy">V-62691</ident><ident system="http://cyber.mil/cci">CCI-002662</ident><fixtext fixref="F-7964r358464_fix">The network architecture diagrams must identify where traffic crosses from one internal zone to another.  The specific security policy is based on the authorized endpoints, applications, and protocols.
+
+To create or edit a Security Policy:
+Go to Policies &gt;&gt; Security
+Select "Add" to create a new security policy or select the name of the security policy to edit it. 
+Configure the specific parameters of the policy by completing the required information in the fields of each tab.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7964r358464_fix" /><check system="C-7964r358463_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Obtain the network architecture diagrams and identify where traffic crosses from one internal zone to another and review the configuration of the Palo Alto Networks security platform.
+
+If it does not filter traffic passing between zones, this is a finding.</check-content></check></Rule></Group><Group id="V-207711"><title>SRG-NET-000392-IDPS-00214</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207711r971533_rule" weight="10.0" severity="medium"><version>PANW-IP-000051</version><title>The Palo Alto Networks security platform must send an alert to, at a minimum, the ISSO and ISSM when intrusion detection events are detected which indicate a compromise or potential for compromise.</title><description>&lt;VulnDiscussion&gt;Without an alert, security personnel may be unaware of intrusion detection incidents that require immediate action and this delay may result in the loss or compromise of information.
+
+An Intrusion Detection and Prevention System must generate an alert when detection events from real-time monitoring occur. Alerts may be transmitted, for example, telephonically, by electronic mail messages, or by text messaging. The IDPS must either send the alert to a management console that is actively monitored by authorized personnel or use a messaging capability to send the alert directly to designated personnel. For each violation of a security policy, an alert to, at a minimum, the ISSO and ISSM, must be sent.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77183</ident><ident system="http://cyber.mil/legacy">V-62693</ident><ident system="http://cyber.mil/cci">CCI-002664</ident><fixtext fixref="F-7965r358467_fix">Configure a Server Profile for use with Log Forwarding Profile(s);  If email is used, the ISSO and ISSM must be recipients.
+   
+To create an email server profile:
+Go to Device &gt;&gt; Server Profiles &gt;&gt; Email
+Select "Add". 
+In the Email Server Profile, enter the name of the profile.
+Select "Add".
+In the "Servers" tab, enter the required information.
+In the "Name" field, enter the name of the Email server.
+In the "Email Display" Name field, enter the name shown in the "From" field of the email.
+In the "From" field, enter the From email address.
+In the "To" field, enter the email address of the recipient.
+In the "Additional Recipient" field, enter the email address of another recipient. You can only add one additional recipient. To add multiple recipients, add the email address of a distribution list.
+In the "Gateway" field, enter the IP address or host name of the Simple Mail Transport Protocol (SMTP) server used to send the email.
+Select "OK".
+
+Configure a Log Forwarding Profile; this is under Objects &gt;&gt; Log Forwarding.
+Go to Policies &gt;&gt; Security
+Select "Add" to create a new security policy or select the name of the security policy to edit it. 
+Configure the specific parameters of the policy by completing the required information in the fields of each tab.
+In the "Actions" tab, select the Log forwarding profile and select "Log at Session End".
+"Log at Session Start" may be selected under specific circumstances, but "Log at Session End" is preferred.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.
+Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7965r358467_fix" /><check system="C-7965r358466_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Ask the Administrator how the ISSO and ISSM are receiving alerts (E-mail, SNMP Trap, or Syslog).
+View the configured Server Profile.
+
+If there is no Server Profile for the method explained, this is a finding.
+
+View the Log Forwarding Profiles; this is under Objects &gt;&gt; Log Forwarding.  Determine which Server Profile is associated with each Log Forwarding Profile.
+View the Security Policies that are used to block unauthorized network services.
+Go to Policies &gt;&gt; Security
+Select the name of the security policy to view it.
+In the "Actions" tab, in the "Log Setting" section, view the Log Forwarding Profile.
+
+If there is no Log Forwarding Profile, this is a finding.</check-content></check></Rule></Group><Group id="V-207712"><title>SRG-NET-000392-IDPS-00215</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207712r971533_rule" weight="10.0" severity="medium"><version>PANW-IP-000052</version><title>The Palo Alto Networks security platform must send an alert to, at a minimum, the ISSO and ISSM when threats identified by authoritative sources (e.g., IAVMs or CTOs) are detected.</title><description>&lt;VulnDiscussion&gt;Without an alert, security personnel may be unaware of an impending failure of the audit capability, and the ability to perform forensic analysis and detect rate-based and other anomalies will be impeded.
+
+Alerts may be transmitted, for example, telephonically, by electronic mail messages, or by text messaging. The IDPS must either send the alert to a management console that is actively monitored by authorized personnel or use a messaging capability to send the alert directly to designated personnel.
+
+Each Security Policy created in response to an IAVM or CTO must log violations of that particular Security Policy.  For each violation of a security policy, an alert to, at a minimum, the ISSO and ISSM, must be sent.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77185</ident><ident system="http://cyber.mil/legacy">V-62695</ident><ident system="http://cyber.mil/cci">CCI-002664</ident><fixtext fixref="F-7966r358470_fix">Configure a Server Profile for use with Log Forwarding Profile(s);  If email is used, the ISSO and ISSM must be recipients.
+   
+To create an email server profile:
+Go to Device &gt;&gt; Server Profiles &gt;&gt; Email
+Select "Add". 
+In the Email Server Profile, enter the name of the profile.
+Select "Add".
+In the "Servers" tab, enter the required information:
+In the "Name" field, enter the name of the Email server.
+In the "Email Display Name" field, enter the name shown in the "From" field of the email.
+In the "From" field, enter the From email address.
+In the "To" field, enter the email address of the recipient.
+In the "Additional Recipient" field, enter the email address of another recipient. You can only add one additional recipient. To add multiple recipients, add the email address of a distribution list.
+In the "Gateway" field, enter the IP address or host name of the Simple Mail Transport Protocol (SMTP) server used to send the email.
+Select "OK".
+
+Configure a Log Forwarding Profile; this is under Objects &gt;&gt; Log Forwarding.
+Go to Policies &gt;&gt; Security
+Select "Add" to create a new security policy or select the name of the security policy to edit it. 
+Configure the specific parameters of the policy by completing the required information in the fields of each tab.
+In the "Actions" tab, select the Log forwarding profile and select "Log at Session End".
+"Log at Session Start" may be selected under specific circumstances, but "Log at Session End" is preferred.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.
+Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7966r358470_fix" /><check system="C-7966r358469_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Ask the Administrator how the ISSO and ISSM are receiving alerts (E-mail, SNMP Trap, or Syslog).
+View the configured Server Profile; if there is no Server Profile for the method explained, this is a finding. 
+View the Log Forwarding Profiles; this is under Objects &gt;&gt; Log Forwarding.  Determine which Server Profile is associated with each Log Forwarding Profile.
+View the Security Policies that are used to enforce policies issued by authoritative sources.
+Go to Policies &gt;&gt; Security
+Select the name of the security policy to view it.
+In the "Actions" tab, in the "Log Setting" section, view the Log Forwarding Profile.  If there is no Log Forwarding Profile, this is a finding.</check-content></check></Rule></Group><Group id="V-207713"><title>SRG-NET-000392-IDPS-00216</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207713r971533_rule" weight="10.0" severity="medium"><version>PANW-IP-000053</version><title>The Palo Alto Networks security platform must generate an alert to, at a minimum, the ISSO and ISSM when rootkits or other malicious software which allows unauthorized privileged or non-privileged access is detected.</title><description>&lt;VulnDiscussion&gt;Without an alert, security personnel may be unaware of major detection incidents that require immediate action and this delay may result in the loss or compromise of information.
+
+CJCSM 6510.01B, "Cyber Incident Handling Program", lists nine Cyber Incident and Reportable Event Categories. DoD has determined that categories identified by CJCSM 6510.01B Major Indicators (category I, II, IV, and VII detection events) will require an alert when an event is detected.
+
+Alert messages must include a severity level indicator or code as an indicator of the criticality of the incident. Since these incidents require immediate action, these messages are assigned a critical or level 1 priority/severity, depending on the system's priority schema.
+
+Alerts may be transmitted, for example, telephonically, by electronic mail messages, or by text messaging. The Palo Alto Networks security platform  must either send the alert to a management console that is actively monitored by authorized personnel or use a messaging capability to send the alert directly to designated personnel.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77187</ident><ident system="http://cyber.mil/legacy">V-62697</ident><ident system="http://cyber.mil/cci">CCI-002664</ident><fixtext fixref="F-7967r358473_fix">This requires the use of an Antivirus Profile, an Anti-spyware Profile, and a Vulnerability Protection Profile.
+
+Configure a Server Profile for use with Log Forwarding Profile(s);  If email is used, the ISSO and ISSM must be recipients.   
+Configure a Log Forwarding Profile; this is under Objects &gt;&gt; Log Forwarding.
+Configure an Antivirus Profile, an Anti-spyware Profile, and a Vulnerability Protection Profile in turn.
+Note: A custom Anti-spyware Profile or the Strict Anti-spyware Profile must be used instead of the Default Anti-spyware Profile.  The selected Anti-spyware Profile must use the block action at the critical, high, and medium severity threat levels.
+  
+Use the Antivirus Profile, Anti-spyware Profile, and the Vulnerability Protection Profile in a Security Policy that filters traffic to Internal and DMZ zones:
+Go to Policies &gt;&gt; Security
+Select an existing policy rule or select "Add" to create a new one.
+In the "Actions" tab in the "Profile Setting" section; in the "Profile Type" field, select "Profiles".  The window will change to display the different categories of Profiles.  
+In the "Actions" tab in the "Profile Setting" section; in the "Antivirus" field, select the configured Antivirus Profile.
+In the "Actions" tab in the "Profile Setting" section; in the "Anti-spyware" field, select the configured or "Strict Anti-spyware" Profile.
+In the "Actions" tab in the "Profile Setting" section; in the "Vulnerability Protection" field, select the configured Vulnerability Protection Profile.
+In the "Actions" tab in the "Log Setting" section, select "Log At Session End".  This generates a traffic log entry for the end of a session and logs drop and deny entries.  
+In the "Actions" tab in the "Log Setting" section; in the "Log Forwarding" field, select the log forwarding profile from drop-down list.
+Select "OK". 
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7967r358473_fix" /><check system="C-7967r358472_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Ask the Administrator how the ISSO and ISSM are receiving alerts (E-mail, SNMP Trap, or Syslog).
+
+View the configured Server Profile; if there is no Server Profile for the method explained, this is a finding.
+ 
+View the Log Forwarding Profiles; this is under Objects &gt;&gt; Log Forwarding.  Determine which Server Profile is associated with each Log Forwarding Profile.
+View the Security Policies that are used to filter traffic into the Internal or DMZ zones.
+
+If the "Profile" column does not display the Antivirus Profile symbol, this is a finding.
+
+If the "Profile" column does not display the Vulnerability Protection Profile symbol, this is a finding.
+  
+If the "Profile" column does not display the Anti-spyware symbol, this is a finding.
+
+If the "Options" column does not display the Log Forwarding Profile symbol, this is a finding.</check-content></check></Rule></Group><Group id="V-207714"><title>SRG-NET-000392-IDPS-00218</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207714r971533_rule" weight="10.0" severity="medium"><version>PANW-IP-000055</version><title>The Palo Alto Networks security platform must send an alert to, at a minimum, the ISSO and ISSM when denial of service incidents are detected.</title><description>&lt;VulnDiscussion&gt;Without an alert, security personnel may be unaware of major detection incidents that require immediate action and this delay may result in the loss or compromise of information.
+
+CJCSM 6510.01B, "Cyber Incident Handling Program", lists nine Cyber Incident and Reportable Event Categories. DoD has determined that categories identified by CJCSM 6510.01B Major Indicators (category I, II, IV, and VII detection events) will require an alert when an event is detected.
+
+Alert messages must include a severity level indicator or code as an indicator of the criticality of the incident. Since these incidents require immediate action, these messages are assigned a critical or level 1 priority/severity, depending on the system's priority schema.
+
+Alerts may be transmitted, for example, telephonically, by electronic mail messages, or by text messaging. The Palo Alto Networks security platform must either send the alert to a management console that is actively monitored by authorized personnel or use a messaging capability to send the alert directly to designated personnel.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77189</ident><ident system="http://cyber.mil/legacy">V-62699</ident><ident system="http://cyber.mil/cci">CCI-002664</ident><fixtext fixref="F-7968r358476_fix">Configure a Server Profile for use with Log Forwarding Profile(s);  If email is used, the ISSO and ISSM must be recipients.   
+Configure a Log Forwarding Profile; this is under Objects &gt;&gt; Log Forwarding.
+Go to Policies &gt;&gt; DoS Protection
+Select "Add" to create a new policy or select the Name of the Policy to edit it.
+In the "DoS Rule" window, complete the required fields.
+In the "Option/Protection" tab, in the "Log Forwarding" field, select the configured Log Forwarding Profile.
+Select "OK".
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7968r358476_fix" /><check system="C-7968r358475_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Ask the Administrator how the ISSO and ISSM are receiving alerts (E-mail, SNMP Trap, or Syslog).
+
+View the configured Server Profile; if there is no Server Profile for the method explained, this is a finding.
+ 
+View the Log Forwarding Profiles; this is under Objects &gt;&gt; Log Forwarding.  Determine which Server Profile is associated with each Log Forwarding Profile.
+Go to Policies &gt;&gt; DoS Protection
+If there are no DoS Protection Policies, this is a finding.
+
+There may be more than one configured DoS Protection Policy.
+If there is no such DoS Protection Policy, this is a finding.
+
+In the "Log Forwarding" field, if there is no configured Log Forwarding Profile, this is a finding.</check-content></check></Rule></Group><Group id="V-207715"><title>SRG-NET-000392-IDPS-00219</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207715r971533_rule" weight="10.0" severity="medium"><version>PANW-IP-000056</version><title>The Palo Alto Networks security platform must generate an alert to, at a minimum, the ISSO and ISSM when new active propagation of malware infecting DoD systems or malicious code adversely affecting the operations and/or security of DoD systems is detected.</title><description>&lt;VulnDiscussion&gt;Without an alert, security personnel may be unaware of major detection incidents that require immediate action and this delay may result in the loss or compromise of information.
+
+CJCSM 6510.01B, "Cyber Incident Handling Program", lists nine Cyber Incident and Reportable Event Categories. DoD has determined that categories identified by CJCSM 6510.01B Major Indicators (category I, II, IV, and VII detection events) will require an alert when an event is detected.
+
+Alert messages must include a severity level indicator or code as an indicator of the criticality of the incident. Since these incidents require immediate action, these messages are assigned a critical or level 1 priority/severity, depending on the system's priority schema.
+
+Alerts may be transmitted, for example, telephonically, by electronic mail messages, or by text messaging. The Palo Alto Networks security platform must either send the alert to a management console that is actively monitored by authorized personnel or use a messaging capability to send the alert directly to designated personnel.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77191</ident><ident system="http://cyber.mil/legacy">V-62701</ident><ident system="http://cyber.mil/cci">CCI-002664</ident><fixtext fixref="F-7969r358479_fix">Configure a Server Profile for use with Log Forwarding Profile(s);  If email is used, the ISSO and ISSM must be recipients.   
+Configure a Log Forwarding Profile; this is under Objects &gt;&gt; Log Forwarding.
+Go to Objects &gt;&gt; Security Profiles &gt;&gt; Antivirus
+Select "Add" to create a new Antivirus Profile or select the name of the profile to edit it.
+
+Use the Antivirus Profile in a Security Policy.
+Go to Policies &gt;&gt; Security
+Select an existing policy rule or select "Add" to create a new one.
+In the "Actions" tab in the "Profile Setting" section; in the "Profile Type" field, select "Profiles".  The window will change to display the different categories of Profiles.  
+In the "Actions" tab in the "Profile Setting" section; in the "Antivirus" field, select the configured Antivirus Profile.
+Select "OK".
+In the "Actions" tab in the "Log Setting" section, select "Log At Session End".  
+In the "Actions" tab in the "Log Setting" section; in the "Log Forwarding" field, select the log forwarding profile from drop-down list.
+Select "OK". 
+Commit changes by selecting "Commit" in the upper-right corner of the screen.  Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7969r358479_fix" /><check system="C-7969r358478_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>Ask the Administrator how the ISSO and ISSM are receiving alerts (E-mail, SNMP Trap, or Syslog).
+View the configured Server Profile; if there is no Server Profile for the method explained, this is a finding.
+ 
+View the Log Forwarding Profiles; this is under Objects &gt;&gt; Log Forwarding.  Determine which Server Profile is associated with each Log Forwarding Profile.
+View the Security Policies that are used to filter traffic between zones or subnets.
+If the "Profile" column does not display the Antivirus Profile symbol, this is a finding.
+
+If the "Options" column does not display the Log Forwarding Profile symbol, this is a finding.</check-content></check></Rule></Group><Group id="V-207716"><title>SRG-NET-000511-IDPS-00012</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-207716r856630_rule" weight="10.0" severity="low"><version>PANW-IP-000058</version><title>The Palo Alto Networks security platform must off-load log records to a centralized log server in real-time.</title><description>&lt;VulnDiscussion&gt;Off-loading ensures audit information does not get overwritten if the limited audit storage capacity is reached and also protects the audit record in case the system/component being audited is compromised.
+
+Off-loading is a common process in information systems with limited audit storage capacity. The audit storage on the device is used only in a transitory fashion until the system can communicate with the centralized log server designated for storing the audit records, at which point the information is transferred. However, DoD requires that the log be transferred in real-time which indicates that the time from event detection to off-loading is seconds or less.
+
+This does not apply to audit logs generated on behalf of the device itself (management).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Palo Alto Networks IDPS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Palo Alto Networks IDPS</dc:subject><dc:identifier>2927</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-77193</ident><ident system="http://cyber.mil/legacy">V-62703</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-7970r358482_fix">To create a syslog server profile:
+Go to Device &gt;&gt; Server Profiles &gt;&gt; Syslog
+Select "Add". 
+In the Syslog Server Profile, enter the name of the profile.
+Select "Add".
+In the "Servers" tab, enter the required information.
+Name: Name of the syslog server
+Server: Server IP address where the logs will be forwarded to
+Port: Default port 514
+Facility: Select from the drop-down list.
+Select "OK.
+
+After you create the Server Profiles that define where to send your logs, you must enable log forwarding. 
+The way you enable forwarding depends on the log type:
+Traffic Logs—You enable forwarding of Traffic logs by creating a Log Forwarding Profile (Objects &gt;&gt; Log Forwarding) and adding it to the security policies you want to trigger the log forwarding. Only traffic that matches a specific rule within the security policy will be logged and forwarded.
+Configure the log-forwarding profile to select the logs to be forwarded to syslog server.
+Go to Objects &gt;&gt; Log forwarding.
+The "Log Forwarding Profile" window appears.  Note that it has five columns.  In the "Syslog" column, select the syslog server profile for forwarding threat logs to the configured server(s).
+Select "OK.
+
+When the "Log Forwarding Profile" window disappears, the screen will show the configured log-forwarding profile.
+Threat Logs—You enable forwarding of Threat logs by creating a Log Forwarding Profile (Objects &gt;&gt; Log Forwarding) that specifies which severity levels you want to forward and then adding it to the security policies for which you want to trigger the log forwarding. A Threat log entry will only be created (and therefore forwarded) if the associated traffic matches a Security Profile (Antivirus, Anti-spyware, Vulnerability, URL Filtering, File Blocking, Data Filtering, or DoS Protection).
+Configure the log-forwarding profile to select the logs to be forwarded to syslog server.
+Go to Objects &gt;&gt; Log forwarding
+The "Log Forwarding Profile" window appears.  Note that it has five columns.  In the "Syslog" column, select the syslog server profile for forwarding threat logs to the configured server(s).
+Select "OK".
+
+When the "Log Forwarding Profile" window disappears, the screen will show the configured log-forwarding profile.
+System Logs—You enable forwarding of System logs by specifying a Server Profile in the log settings configuration. 
+Go to Device &gt;&gt; Log Settings &gt;&gt; System Logs
+The list of severity levels is displayed.
+You must select a Server Profile for each severity level you want to forward.  
+Select each severity level in turn; with each selection, the "Log Systems - Setting" window will appear.  
+In the "Log Systems - Setting" window, in the "Syslog" drop-down box, select the configured Server Profile.
+Select "OK.
+
+Config Logs—You enable forwarding of Config logs by specifying a Server Profile in the log settings configuration. 
+Go to Device &gt;&gt; Log Settings &gt;&gt; Config Logs
+Select the "Edit" icon (the gear symbol in the upper-right corner of the pane).
+In the "Log Settings Config" window, in the "Syslog" drop-down box, select the configured Server Profile.
+Select "OK.
+
+For Traffic Logs and Threat Logs, use the log forwarding profile in the security rules.
+Go to Policies &gt;&gt; Security Rule
+Select the rule for which the log forwarding needs to be applied. Apply the security profiles to the rule.
+Go to Actions &gt;&gt; Log forwarding
+Select the log forwarding profile from drop-down list.
+Commit changes by selecting "Commit" in the upper-right corner of the screen.
+Select "OK" when the confirmation dialog appears.</fixtext><fix id="F-7970r358482_fix" /><check system="C-7970r358481_chk"><check-content-ref href="Palo_Alto_Networks_IDPS_STIG.xml" name="M" /><check-content>To view a syslog server profile:
+Go to Device &gt;&gt; Server Profiles &gt;&gt; Syslog
+If there are no Syslog Server Profiles present, this is a finding.
+
+Select each Syslog Server Profile; if no server is configured, this is a finding.
+
+View the log-forwarding profile to determine which logs are forwarded to the syslog server.
+Go to Objects &gt;&gt; Log forwarding
+If no Log Forwarding Profile is present, this is a finding.
+
+The  Log Forwarding Profile window has five columns.  If there are no Syslog Server Profiles present in the "Syslog" column for the Traffic Log Type, this is a finding.
+
+If there are no Syslog Server Profiles present for each of the severity levels of the Threat Log Type, this is a finding.
+ 
+Go to Device &gt;&gt; Log Settings &gt;&gt; System Logs
+The list of Severity levels is displayed.
+If any of the Severity levels does not have a configured Syslog Profile, this is a finding.
+
+Go to Device &gt;&gt; Log Settings &gt;&gt; Config Logs.
+If the "Syslog" field is blank, this is a finding.</check-content></check></Rule></Group></Benchmark>

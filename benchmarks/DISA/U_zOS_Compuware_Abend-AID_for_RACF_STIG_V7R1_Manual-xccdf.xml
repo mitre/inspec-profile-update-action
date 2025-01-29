@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_Compuware_Abend-AID_for_RACF" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-16">accepted</status><title>z/OS Compuware Abend-AID for RACF Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224471" selected="true" /><select idref="V-224472" selected="true" /><select idref="V-224473" selected="true" /><select idref="V-224474" selected="true" /><select idref="V-224475" selected="true" /><select idref="V-224476" selected="true" /><select idref="V-224477" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224471" selected="true" /><select idref="V-224472" selected="true" /><select idref="V-224473" selected="true" /><select idref="V-224474" selected="true" /><select idref="V-224475" selected="true" /><select idref="V-224476" selected="true" /><select idref="V-224477" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224471" selected="true" /><select idref="V-224472" selected="true" /><select idref="V-224473" selected="true" /><select idref="V-224474" selected="true" /><select idref="V-224475" selected="true" /><select idref="V-224476" selected="true" /><select idref="V-224477" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224471" selected="true" /><select idref="V-224472" selected="true" /><select idref="V-224473" selected="true" /><select idref="V-224474" selected="true" /><select idref="V-224475" selected="true" /><select idref="V-224476" selected="true" /><select idref="V-224477" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224471" selected="true" /><select idref="V-224472" selected="true" /><select idref="V-224473" selected="true" /><select idref="V-224474" selected="true" /><select idref="V-224475" selected="true" /><select idref="V-224476" selected="true" /><select idref="V-224477" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224471" selected="true" /><select idref="V-224472" selected="true" /><select idref="V-224473" selected="true" /><select idref="V-224474" selected="true" /><select idref="V-224475" selected="true" /><select idref="V-224476" selected="true" /><select idref="V-224477" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224471" selected="true" /><select idref="V-224472" selected="true" /><select idref="V-224473" selected="true" /><select idref="V-224474" selected="true" /><select idref="V-224475" selected="true" /><select idref="V-224476" selected="true" /><select idref="V-224477" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224471" selected="true" /><select idref="V-224472" selected="true" /><select idref="V-224473" selected="true" /><select idref="V-224474" selected="true" /><select idref="V-224475" selected="true" /><select idref="V-224476" selected="true" /><select idref="V-224477" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224471" selected="true" /><select idref="V-224472" selected="true" /><select idref="V-224473" selected="true" /><select idref="V-224474" selected="true" /><select idref="V-224475" selected="true" /><select idref="V-224476" selected="true" /><select idref="V-224477" selected="true" /></Profile><Group id="V-224471"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224471r1041275_rule" weight="10.0" severity="medium"><version>ZAID0040</version><title>Compuware Abend-AID external security options must be specified properly.</title><description>&lt;VulnDiscussion&gt;Compuware Abend-AID offers external security interfaces that are controlled by parameters specified in FDBDPARM DD statement of the started task procedures. These interfaces provide security controls for Abend-AID. Without proper controls to ensure that security is active, the integrity of the Compuware Abend-AID System and the confidentiality of data stored on the system may be compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Compuware Abend-AID for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Compuware Abend-AID for RACF</dc:subject><dc:identifier>4149</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-43205</ident><ident system="http://cyber.mil/legacy">V-18014</ident><ident system="http://cyber.mil/cci">CCI-000015</ident><fixtext fixref="F-26142r519813_fix">In the data set specified in the CWPARM DD statement from the ECC started task procedure, specify the parameter values for each component in the respective members as follows:
+
+Member Name: AABD00 - Abend-AID batch dump capture address space
+	EXTERNAL_SECURITY_ENABLED=YES    
+Member Name: AATD00 - Abend-AID CICS Transaction Dump Capture Address Space
+ 	EXTERNAL_SECURITY_ENABLED=YES 
+Member Name: AAVW00 - Abend-AID viewing server  
+	EXTERNAL_SECURITY_ENABLED=YES       
+</fixtext><fix id="F-26142r519813_fix" /><check system="C-26154r1041274_chk"><check-content-ref href="zOS_Compuware_Abend-AID_for_RACF_STIG.xml" name="M" /><check-content>Examine the Enterprise Common Components (ECC) started task procedure. (This can usually be found in the system PROCLIBs). Refer to the contents of the data set specified in the CWPARM DD statement. 
+
+Automated Analysis
+Refer to the following report produced by the z/OS Data Collection:
+
+- PDI(ZAID0040)
+
+Review the Member name listed.
+
+If the following is specified for each component, this is not a finding.
+Member Name: AABD00 - Abend-AID batch dump capture address space
+	EXTERNAL_SECURITY_ENABLED=YES    
+Member Name: AATD00 - Abend-AID CICS Transaction Dump Capture Address Space
+ 	EXTERNAL_SECURITY_ENABLED=YES 
+Member Name: AAVW00 - Abend-AID viewing server  
+	EXTERNAL_SECURITY_ENABLED=YES</check-content></check></Rule></Group><Group id="V-224472"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224472r1041278_rule" weight="10.0" severity="medium"><version>ZAIDR000</version><title>Compuware Abend-AID installation data sets will be properly protected.</title><description>&lt;VulnDiscussion&gt;Compuware Abend-AID installation data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Compuware Abend-AID for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Compuware Abend-AID for RACF</dc:subject><dc:identifier>4149</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-43166</ident><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26143r1041277_fix">The ISSO will ensure that WRITE and/or greater access to Compuware Abend-AID installation data sets is limited to systems programmers only, and all WRITE and/or greater access is logged. READ access can be given to all authorized users.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have WRITE and/or greater access and if required that all WRITE and/or greater access is logged. The installing systems programmer will identify if any additional groups have WRITE and/or greater access for specific data sets, and once documented will work with the ISSO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be:
+SYS2.ABENDAID.
+SYS2A.ABENDAID.
+SYS3A.ABENDAID.
+
+The following commands are provided as a sample for implementing data set controls:
+
+AD 'sys2.abendaid.v**' UACC(NONE) OWNER(SYS2) AUDIT(SUCCESS(UPDATE) FAILURES(READ))
+AD 'sys2a.abendaid.v**' UACC(NONE) OWNER(SYS2A) AUDIT(SUCCESS(UPDATE) FAILURES(READ))
+AD 'sys3a.abendaid.v**' UACC(NONE) OWNER(SYS3A) AUDIT(SUCCESS(UPDATE) FAILURES(READ))
+
+PE 'sys2.abendaid.v**' ID(syspaudt) ACC(A)
+PE 'sys2.abendaid.v**' ID(authorized users/*) ACC(R)
+PE 'sys2a.abendaid.v**' ID(syspaudt) ACC(A)
+PE 'sys2a.abendaid.v**' ID(authorized users/*) ACC(R)
+PE 'sys3a.abendaid.v**' ID(syspaudt) ACC(A)
+PE 'sys3a.abendaid.v**' ID(authorized users/*) ACC(R)</fixtext><fix id="F-26143r1041277_fix" /><check system="C-26155r1041276_chk"><check-content-ref href="zOS_Compuware_Abend-AID_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(AIDRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZAID0000)
+
+Verify that the accesses to the Compuware Abend-AID installation data sets are properly restricted. If the following guidance is true, this is not a finding.
+
+___ The RACF data set rules for the data sets restricts READ access to all authorized users.
+ 
+___ The RACF data set rules for the data sets restricts WRITE and/or greater access to systems programming personnel.
+
+___ The RACF data set rules for the data sets specify that all (i.e., failures and successes) WRITE and/or greater access is logged.
+
+___ The RACF data set rules for the data sets specify UACC(NONE) and NOWARNING.</check-content></check></Rule></Group><Group id="V-224473"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224473r958616_rule" weight="10.0" severity="medium"><version>ZAIDR001</version><title>Compuware Abend-AID STC data sets must be properly protected.</title><description>&lt;VulnDiscussion&gt;Compuware Abend-AID STC data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Compuware Abend-AID for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Compuware Abend-AID for RACF</dc:subject><dc:identifier>4149</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-43169</ident><ident system="http://cyber.mil/legacy">V-17067</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-26144r868282_fix">The ISSO will ensure that WRITE and/or greater access to Compuware Abend-AID STC data sets is limited to systems programmers and/or Compuware Abend-AID's STC(s) and/or batch user(s) only. READ access can be given to auditors.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have WRITE and/or greater access and if required that all WRITE and/or greater access is logged. The installing systems programmer will identify if any additional groups have WRITE and/or greater access for specific data sets, and once documented will work with the ISSO to ensure they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be:
+SYS3.ABENDAID.
+
+The following commands are provided as a sample for implementing data set controls:
+
+AD 'sys3.abendaid.**' UACC(NONE) OWNER(SYS3) AUDIT(FAILURES(READ))
+
+PE 'sys3.abendaid.**' ID(syspaudt) ACC(A)
+PE 'sys3.abendaid.**' ID(ABENDAID STCs) ACC(A)
+PE 'sys3.abendaid.**' ID(audtaudt) ACC(R)</fixtext><fix id="F-26144r868282_fix" /><check system="C-26156r868281_chk"><check-content-ref href="zOS_Compuware_Abend-AID_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(AIDSTC)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZAID0001)
+
+Verify that the accesses to the Compuware Abend-AID STC data sets are properly restricted. If the following guidance is true, this is not a finding.
+
+___ The RACF data set rules for the data sets restricts READ access to auditors.
+
+___ The RACF data set rules for the data sets restricts WRITE and/or greater access to systems programming personnel.
+
+___ The RACF data set rules for the data sets restricts WRITE and/or greater access to the Compuware Abend-AID's STC(s) and/or batch user(s).
+
+___ The RACF data set rules for the data sets specify UACC(NONE) and NOWARNING.</check-content></check></Rule></Group><Group id="V-224474"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224474r1041279_rule" weight="10.0" severity="medium"><version>ZAIDR002</version><title>Compuware Abend-AID user data sets must be properly protected.</title><description>&lt;VulnDiscussion&gt;Compuware Abend-AID user data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Compuware Abend-AID for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Compuware Abend-AID for RACF</dc:subject><dc:identifier>4149</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-75839</ident><ident system="http://cyber.mil/legacy">V-21592</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-26145r868285_fix">Ensure that WRITE and/or greater access to Compuware Abend-AID User data sets listed is limited to systems programmers and/or Compuware Abend-AID's STC(s) and/or batch user(s) only. Ensure that CONTROL access to Compuware Abend-AID User data sets listed is limited to application development programmers and Application Production Support Team members. READ access can be given to auditors.
+
+(Note: The data sets and/or data set prefixes identified below are examples of a possible installation. The actual data sets and/or prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+Data sets to be protected will be:
+
+Region dump datasets
+Report databases
+Source listing files/source listing shared directories
+
+The following commands are provided as a sample for implementing data set controls:
+
+AD 'sys3.abendaid.shared.**' UACC(NONE) OWNER(SYS3) AUDIT(SUCCESS(UPDATE) FAILURES(READ))
+AD 'sys3.abendaid.reportdb.**' UACC(NONE) OWNER(SYS3) AUDIT(SUCCESS(UPDATE) FAILURES(READ))
+
+PE 'sys3.abendaid.reportdb.**' ID(syspaudt) ACC(A)
+PE 'sys3.abendaid.reportdb.**' ID(tstcaudt) ACC(A)
+PE 'sys3.abendaid.reportdb.**' ID(ABEND-AID STCs) ACC(A)
+PE 'sys3.abendaid.reportdb.**' ID(audtaudt) ACC(R)
+PE 'sys3.abendaid.reportdb.**' ID(appdaudt) ACC(CONTROL)
+PE 'sys3.abendaid.reportdb.**' ID(appsaudt) ACC(CONTROL) 
+PE 'sys3.abendaid.shared.**' ID(syspaudt) ACC(A)
+PE 'sys3.abendaid.shared.**' ID(tstcaudt) ACC(A)
+PE 'sys3.abendaid.shared.**' ID(ABEND-AID STCs) ACC(A)
+PE 'sys3.abendaid.shared.**' ID(audtaudt) ACC(R)
+PE 'sys3.abendaid.shared.**' ID(appdaudt) ACC(CONTROL)
+PE 'sys3.abendaid.shared.**' ID(appsaudt) ACC(CONTROL)</fixtext><fix id="F-26145r868285_fix" /><check system="C-26157r868284_chk"><check-content-ref href="zOS_Compuware_Abend-AID_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(AIDUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZAID0002)
+
+Verify that the accesses to the following Compuware Abend-AID user data sets are properly restricted.
+Region dump datasets
+Report databases
+Source listing files/source listing shared directories
+      
+If the following guidance is true, this is not a finding.
+
+___ The RACF data set rules for the listed data sets restricts READ access to auditors.
+
+___ The RACF data set rules for the listed data sets restricts WRITE and/or greater access to systems programming personnel.
+
+___ The RACF data set rules for the listed data sets restricts WRITE and/or greater access to the Compuware Abend-AID's STC(s) and/or batch user(s).
+
+___ The RACF data set rules for the listed data sets restricts CONTROL access to application development programmers and Application Production Support Team members.
+
+___ The RACF data set rules for the listed data sets specify UACC(NONE) and NOWARNING.</check-content></check></Rule></Group><Group id="V-224475"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224475r1041280_rule" weight="10.0" severity="medium"><version>ZAIDR020</version><title>Compuware Abend-AID resources must be properly defined and protected.</title><description>&lt;VulnDiscussion&gt;Compuware Abend-AID can run with sensitive system privileges, and potentially can circumvent system controls. Failure to properly control access to product resources could result in the compromise of the operating system environment, and compromise the confidentiality of customer data. Many utilities assign resource controls that can be granted to systems programmers only in greater than read authority. Resources are also granted to certain non systems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Compuware Abend-AID for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Compuware Abend-AID for RACF</dc:subject><dc:identifier>4149</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-44085</ident><ident system="http://cyber.mil/legacy">V-17947</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-26146r868288_fix">Ensure that the following are properly specified in the ACP.
+
+(Note: The resources and/or resource prefixes identified below are examples of a possible installation. The actual resources and/or prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+Use the Compuware Abend-AID Resources and Compuware Abend-AID Resources Descriptions tables in the zOS STIG Addendum. These tables list the resources, access requirements, and logging requirement for Compuware Abend-AID. Ensure the guidelines for the resources and/or generic equivalent specified in the z/OS STIG Addendum are followed.
+
+Note: The Compuware Abend-AID resource class is identified in the Viewer Server's STC configuration procedure, CWPARM DD statement, member name AAVW00, using the parameter setting EXTERNAL_SECURITY_RESOURCE_CLASS. In addition, there is a parameter that identifies the prefix for all resources, which is EXTERNAL_SECURITY_PREFIX.
+
+The RACF resources as designated in the above table are defined with a default access of NONE.
+
+The RACF resource access authorizations restrict access to the appropriate personnel as designated in the above table.
+
+The RACF resource rules for the resources designated in the above table specify UACC(NONE) and NOWARNING.
+
+The following commands are provided as a sample for implementing resource controls:
+
+RDEFINE resource-class prefix.** UACC(NONE) OWNER(ADMIN) AUDIT(FAILURE(READ))
+PERMIT prefix.SERVER.LOGON.FD.** CLASS(res-class) ACCESS(ALTER) ID(appdaudt)
+PERMIT prefix.SERVER.LOGON.FD.** CLASS(res-class) ACCESS(ALTER) ID(appsaudt)
+PERMIT prefix.SERVER.LOGON.FD.** CLASS(res-class) ACCESS(ALTER) ID(operaudt)
+PERMIT prefix.SERVER.LOGON.FD.** CLASS(res-class) ACCESS(ALTER) ID(syspaudt)</fixtext><fix id="F-26146r868288_fix" /><check system="C-26158r868287_chk"><check-content-ref href="zOS_Compuware_Abend-AID_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(ZAID0020)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZAID0020)
+
+NOTE: The Abend-AID resource class is identified in the Enterprise Common Components (ECC) STC procedure, CWPARM DD statement, member name AAVW00, using the parameter setting EXTERNAL_SECURITY_RESOURCE_CLASS.
+
+Verify that the accesses to resources and/or generic equivalent are properly restricted according to the requirements specified in the Compuware Abend-AID Resources table in the z/OS STIG Addendum. 
+
+If the following guidance is true, this is not a finding.
+
+___ The RACF resources are defined with a default access of NONE.
+
+___ The RACF resource access authorizations restrict access to the appropriate personnel.
+
+___ The RACF resource access authorizations are defined with UACC(NONE) and NOWARNING.</check-content></check></Rule></Group><Group id="V-224476"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224476r958482_rule" weight="10.0" severity="medium"><version>ZAIDR030</version><title>Compuware Abend-AID Started Task name will be properly identified and/or defined to the system ACP.</title><description>&lt;VulnDiscussion&gt;Compuware Abend-AID requires a started task that will be restricted to certain resources, datasets and other system functions. By defining the started task as a userid to the system ACP, It allows the ACP to control the access and authorized users that require these capabilities. Failure to properly control these capabilities, could compromise of the operating system environment, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Compuware Abend-AID for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Compuware Abend-AID for RACF</dc:subject><dc:identifier>4149</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-43175</ident><ident system="http://cyber.mil/legacy">V-17452</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26147r868291_fix">The ISSO working with the systems programmer will ensure the Compuware Abend-AID Started Task(s) is properly identified and/or defined to the System ACP. 
+
+If the product requires a Started Task, verify that it is properly defined to the System ACP with the proper attributes.
+
+Most installation manuals will indicate how the Started Task is identified and any additional attributes that must be specified.
+
+The following commands are provided as a sample for defining Started Task(s):
+
+au AAVIEWER name('STC, Compuware Abend-AID Viewer') owner(stc) dfltgrp(stc) nopass -
+	data('Abend-AID Viewer')
+au BDCAS name('STC, Compuware Abend-AID') owner(stc) dfltgrp(stc) nopass -
+	data('Abend-AID')
+au TDCAS name('STC, Compuware Abend-AID for CICS') owner(stc) dfltgrp(stc) nopass -
+	data('Abend-AID')</fixtext><fix id="F-26147r868291_fix" /><check system="C-26159r868290_chk"><check-content-ref href="zOS_Compuware_Abend-AID_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the RACF Data Collection:
+
+- RACFCMDS.RPT(LISTUSER)
+
+Verify that the userid(s) for the Compuware Abend-AID started task(s) is (are) properly defined. If the following attributes are defined, this is not a finding.
+
+PROTECTED</check-content></check></Rule></Group><Group id="V-224477"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224477r958482_rule" weight="10.0" severity="medium"><version>ZAIDR032</version><title>Compuware Abend-AID Started task will be properly defined to the STARTED resource class for RACF.</title><description>&lt;VulnDiscussion&gt;Access to product resources should be restricted to only those individuals responsible for the application connectivity and who have a requirement to access these resources. Improper control of product resources could potentially compromise the operating system, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Compuware Abend-AID for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Compuware Abend-AID for RACF</dc:subject><dc:identifier>4149</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-43185</ident><ident system="http://cyber.mil/legacy">V-17454</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26148r868294_fix">The ISSO working with the systems programmer will ensure the Compuware Abend-AID Started Task(s) is properly identified and/or defined to the System ACP. 
+
+A unique userid must be assigned for the Compuware Abend-AID started task(s) thru a corresponding STARTED class entry.
+
+The following commands are provided as a sample for defining Started Task(s):
+
+rdef started AAVIEWER.** uacc(none) owner(admin) audit(all(read)) -
+	stdata(user(AAVIEWER) group(stc))
+rdef started BDCAS.** uacc(none) owner(admin) audit(all(read)) -
+	stdata(user(BDCAS) group(stc))
+rdef started TDCAS.** uacc(none) owner(admin) audit(all(read)) -
+	stdata(user(TDCAS) group(stc))
+setr racl(started) ref</fixtext><fix id="F-26148r868294_fix" /><check system="C-26160r868293_chk"><check-content-ref href="zOS_Compuware_Abend-AID_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the RACF Data Collection:
+
+- DSMON.RPT(RACSPT)
+
+Automated Analysis
+Refer to the following report produced by the RACF Data Collection:
+
+- PDI(ZAID0032)
+
+If the Compuware Abend-AID started task(s) is (are) defined to the STARTED resource class profile and/or ICHRIN03 table entry, this is not a finding.</check-content></check></Rule></Group></Benchmark>
