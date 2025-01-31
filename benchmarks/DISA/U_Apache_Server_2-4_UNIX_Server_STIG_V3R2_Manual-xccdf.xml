@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Apache_Server_2-4_UNIX_Server_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2024-12-04">accepted</status><title>Apache Server 2.4 UNIX Server Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 30 Jan 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>3</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-214228" selected="true" /><select idref="V-214229" selected="true" /><select idref="V-214230" selected="true" /><select idref="V-214231" selected="true" /><select idref="V-214232" selected="true" /><select idref="V-214233" selected="true" /><select idref="V-214234" selected="true" /><select idref="V-214235" selected="true" /><select idref="V-214236" selected="true" /><select idref="V-214237" selected="true" /><select idref="V-214238" selected="true" /><select idref="V-214239" selected="true" /><select idref="V-214240" selected="true" /><select idref="V-214241" selected="true" /><select idref="V-214242" selected="true" /><select idref="V-214243" selected="true" /><select idref="V-214244" selected="true" /><select idref="V-214245" selected="true" /><select idref="V-214246" selected="true" /><select idref="V-214247" selected="true" /><select idref="V-214248" selected="true" /><select idref="V-214249" selected="true" /><select idref="V-214250" selected="true" /><select idref="V-214251" selected="true" /><select idref="V-214252" selected="true" /><select idref="V-214253" selected="true" /><select idref="V-214254" selected="true" /><select idref="V-214255" selected="true" /><select idref="V-214256" selected="true" /><select idref="V-214257" selected="true" /><select idref="V-214258" selected="true" /><select idref="V-214259" selected="true" /><select idref="V-214260" selected="true" /><select idref="V-214261" selected="true" /><select idref="V-214262" selected="true" /><select idref="V-214263" selected="true" /><select idref="V-214264" selected="true" /><select idref="V-214265" selected="true" /><select idref="V-214266" selected="true" /><select idref="V-214267" selected="true" /><select idref="V-214268" selected="true" /><select idref="V-214269" selected="true" /><select idref="V-214270" selected="true" /><select idref="V-214271" selected="true" /><select idref="V-214272" selected="true" /><select idref="V-214273" selected="true" /><select idref="V-214274" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-214228" selected="true" /><select idref="V-214229" selected="true" /><select idref="V-214230" selected="true" /><select idref="V-214231" selected="true" /><select idref="V-214232" selected="true" /><select idref="V-214233" selected="true" /><select idref="V-214234" selected="true" /><select idref="V-214235" selected="true" /><select idref="V-214236" selected="true" /><select idref="V-214237" selected="true" /><select idref="V-214238" selected="true" /><select idref="V-214239" selected="true" /><select idref="V-214240" selected="true" /><select idref="V-214241" selected="true" /><select idref="V-214242" selected="true" /><select idref="V-214243" selected="true" /><select idref="V-214244" selected="true" /><select idref="V-214245" selected="true" /><select idref="V-214246" selected="true" /><select idref="V-214247" selected="true" /><select idref="V-214248" selected="true" /><select idref="V-214249" selected="true" /><select idref="V-214250" selected="true" /><select idref="V-214251" selected="true" /><select idref="V-214252" selected="true" /><select idref="V-214253" selected="true" /><select idref="V-214254" selected="true" /><select idref="V-214255" selected="true" /><select idref="V-214256" selected="true" /><select idref="V-214257" selected="true" /><select idref="V-214258" selected="true" /><select idref="V-214259" selected="true" /><select idref="V-214260" selected="true" /><select idref="V-214261" selected="true" /><select idref="V-214262" selected="true" /><select idref="V-214263" selected="true" /><select idref="V-214264" selected="true" /><select idref="V-214265" selected="true" /><select idref="V-214266" selected="true" /><select idref="V-214267" selected="true" /><select idref="V-214268" selected="true" /><select idref="V-214269" selected="true" /><select idref="V-214270" selected="true" /><select idref="V-214271" selected="true" /><select idref="V-214272" selected="true" /><select idref="V-214273" selected="true" /><select idref="V-214274" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-214228" selected="true" /><select idref="V-214229" selected="true" /><select idref="V-214230" selected="true" /><select idref="V-214231" selected="true" /><select idref="V-214232" selected="true" /><select idref="V-214233" selected="true" /><select idref="V-214234" selected="true" /><select idref="V-214235" selected="true" /><select idref="V-214236" selected="true" /><select idref="V-214237" selected="true" /><select idref="V-214238" selected="true" /><select idref="V-214239" selected="true" /><select idref="V-214240" selected="true" /><select idref="V-214241" selected="true" /><select idref="V-214242" selected="true" /><select idref="V-214243" selected="true" /><select idref="V-214244" selected="true" /><select idref="V-214245" selected="true" /><select idref="V-214246" selected="true" /><select idref="V-214247" selected="true" /><select idref="V-214248" selected="true" /><select idref="V-214249" selected="true" /><select idref="V-214250" selected="true" /><select idref="V-214251" selected="true" /><select idref="V-214252" selected="true" /><select idref="V-214253" selected="true" /><select idref="V-214254" selected="true" /><select idref="V-214255" selected="true" /><select idref="V-214256" selected="true" /><select idref="V-214257" selected="true" /><select idref="V-214258" selected="true" /><select idref="V-214259" selected="true" /><select idref="V-214260" selected="true" /><select idref="V-214261" selected="true" /><select idref="V-214262" selected="true" /><select idref="V-214263" selected="true" /><select idref="V-214264" selected="true" /><select idref="V-214265" selected="true" /><select idref="V-214266" selected="true" /><select idref="V-214267" selected="true" /><select idref="V-214268" selected="true" /><select idref="V-214269" selected="true" /><select idref="V-214270" selected="true" /><select idref="V-214271" selected="true" /><select idref="V-214272" selected="true" /><select idref="V-214273" selected="true" /><select idref="V-214274" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-214228" selected="true" /><select idref="V-214229" selected="true" /><select idref="V-214230" selected="true" /><select idref="V-214231" selected="true" /><select idref="V-214232" selected="true" /><select idref="V-214233" selected="true" /><select idref="V-214234" selected="true" /><select idref="V-214235" selected="true" /><select idref="V-214236" selected="true" /><select idref="V-214237" selected="true" /><select idref="V-214238" selected="true" /><select idref="V-214239" selected="true" /><select idref="V-214240" selected="true" /><select idref="V-214241" selected="true" /><select idref="V-214242" selected="true" /><select idref="V-214243" selected="true" /><select idref="V-214244" selected="true" /><select idref="V-214245" selected="true" /><select idref="V-214246" selected="true" /><select idref="V-214247" selected="true" /><select idref="V-214248" selected="true" /><select idref="V-214249" selected="true" /><select idref="V-214250" selected="true" /><select idref="V-214251" selected="true" /><select idref="V-214252" selected="true" /><select idref="V-214253" selected="true" /><select idref="V-214254" selected="true" /><select idref="V-214255" selected="true" /><select idref="V-214256" selected="true" /><select idref="V-214257" selected="true" /><select idref="V-214258" selected="true" /><select idref="V-214259" selected="true" /><select idref="V-214260" selected="true" /><select idref="V-214261" selected="true" /><select idref="V-214262" selected="true" /><select idref="V-214263" selected="true" /><select idref="V-214264" selected="true" /><select idref="V-214265" selected="true" /><select idref="V-214266" selected="true" /><select idref="V-214267" selected="true" /><select idref="V-214268" selected="true" /><select idref="V-214269" selected="true" /><select idref="V-214270" selected="true" /><select idref="V-214271" selected="true" /><select idref="V-214272" selected="true" /><select idref="V-214273" selected="true" /><select idref="V-214274" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-214228" selected="true" /><select idref="V-214229" selected="true" /><select idref="V-214230" selected="true" /><select idref="V-214231" selected="true" /><select idref="V-214232" selected="true" /><select idref="V-214233" selected="true" /><select idref="V-214234" selected="true" /><select idref="V-214235" selected="true" /><select idref="V-214236" selected="true" /><select idref="V-214237" selected="true" /><select idref="V-214238" selected="true" /><select idref="V-214239" selected="true" /><select idref="V-214240" selected="true" /><select idref="V-214241" selected="true" /><select idref="V-214242" selected="true" /><select idref="V-214243" selected="true" /><select idref="V-214244" selected="true" /><select idref="V-214245" selected="true" /><select idref="V-214246" selected="true" /><select idref="V-214247" selected="true" /><select idref="V-214248" selected="true" /><select idref="V-214249" selected="true" /><select idref="V-214250" selected="true" /><select idref="V-214251" selected="true" /><select idref="V-214252" selected="true" /><select idref="V-214253" selected="true" /><select idref="V-214254" selected="true" /><select idref="V-214255" selected="true" /><select idref="V-214256" selected="true" /><select idref="V-214257" selected="true" /><select idref="V-214258" selected="true" /><select idref="V-214259" selected="true" /><select idref="V-214260" selected="true" /><select idref="V-214261" selected="true" /><select idref="V-214262" selected="true" /><select idref="V-214263" selected="true" /><select idref="V-214264" selected="true" /><select idref="V-214265" selected="true" /><select idref="V-214266" selected="true" /><select idref="V-214267" selected="true" /><select idref="V-214268" selected="true" /><select idref="V-214269" selected="true" /><select idref="V-214270" selected="true" /><select idref="V-214271" selected="true" /><select idref="V-214272" selected="true" /><select idref="V-214273" selected="true" /><select idref="V-214274" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-214228" selected="true" /><select idref="V-214229" selected="true" /><select idref="V-214230" selected="true" /><select idref="V-214231" selected="true" /><select idref="V-214232" selected="true" /><select idref="V-214233" selected="true" /><select idref="V-214234" selected="true" /><select idref="V-214235" selected="true" /><select idref="V-214236" selected="true" /><select idref="V-214237" selected="true" /><select idref="V-214238" selected="true" /><select idref="V-214239" selected="true" /><select idref="V-214240" selected="true" /><select idref="V-214241" selected="true" /><select idref="V-214242" selected="true" /><select idref="V-214243" selected="true" /><select idref="V-214244" selected="true" /><select idref="V-214245" selected="true" /><select idref="V-214246" selected="true" /><select idref="V-214247" selected="true" /><select idref="V-214248" selected="true" /><select idref="V-214249" selected="true" /><select idref="V-214250" selected="true" /><select idref="V-214251" selected="true" /><select idref="V-214252" selected="true" /><select idref="V-214253" selected="true" /><select idref="V-214254" selected="true" /><select idref="V-214255" selected="true" /><select idref="V-214256" selected="true" /><select idref="V-214257" selected="true" /><select idref="V-214258" selected="true" /><select idref="V-214259" selected="true" /><select idref="V-214260" selected="true" /><select idref="V-214261" selected="true" /><select idref="V-214262" selected="true" /><select idref="V-214263" selected="true" /><select idref="V-214264" selected="true" /><select idref="V-214265" selected="true" /><select idref="V-214266" selected="true" /><select idref="V-214267" selected="true" /><select idref="V-214268" selected="true" /><select idref="V-214269" selected="true" /><select idref="V-214270" selected="true" /><select idref="V-214271" selected="true" /><select idref="V-214272" selected="true" /><select idref="V-214273" selected="true" /><select idref="V-214274" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-214228" selected="true" /><select idref="V-214229" selected="true" /><select idref="V-214230" selected="true" /><select idref="V-214231" selected="true" /><select idref="V-214232" selected="true" /><select idref="V-214233" selected="true" /><select idref="V-214234" selected="true" /><select idref="V-214235" selected="true" /><select idref="V-214236" selected="true" /><select idref="V-214237" selected="true" /><select idref="V-214238" selected="true" /><select idref="V-214239" selected="true" /><select idref="V-214240" selected="true" /><select idref="V-214241" selected="true" /><select idref="V-214242" selected="true" /><select idref="V-214243" selected="true" /><select idref="V-214244" selected="true" /><select idref="V-214245" selected="true" /><select idref="V-214246" selected="true" /><select idref="V-214247" selected="true" /><select idref="V-214248" selected="true" /><select idref="V-214249" selected="true" /><select idref="V-214250" selected="true" /><select idref="V-214251" selected="true" /><select idref="V-214252" selected="true" /><select idref="V-214253" selected="true" /><select idref="V-214254" selected="true" /><select idref="V-214255" selected="true" /><select idref="V-214256" selected="true" /><select idref="V-214257" selected="true" /><select idref="V-214258" selected="true" /><select idref="V-214259" selected="true" /><select idref="V-214260" selected="true" /><select idref="V-214261" selected="true" /><select idref="V-214262" selected="true" /><select idref="V-214263" selected="true" /><select idref="V-214264" selected="true" /><select idref="V-214265" selected="true" /><select idref="V-214266" selected="true" /><select idref="V-214267" selected="true" /><select idref="V-214268" selected="true" /><select idref="V-214269" selected="true" /><select idref="V-214270" selected="true" /><select idref="V-214271" selected="true" /><select idref="V-214272" selected="true" /><select idref="V-214273" selected="true" /><select idref="V-214274" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-214228" selected="true" /><select idref="V-214229" selected="true" /><select idref="V-214230" selected="true" /><select idref="V-214231" selected="true" /><select idref="V-214232" selected="true" /><select idref="V-214233" selected="true" /><select idref="V-214234" selected="true" /><select idref="V-214235" selected="true" /><select idref="V-214236" selected="true" /><select idref="V-214237" selected="true" /><select idref="V-214238" selected="true" /><select idref="V-214239" selected="true" /><select idref="V-214240" selected="true" /><select idref="V-214241" selected="true" /><select idref="V-214242" selected="true" /><select idref="V-214243" selected="true" /><select idref="V-214244" selected="true" /><select idref="V-214245" selected="true" /><select idref="V-214246" selected="true" /><select idref="V-214247" selected="true" /><select idref="V-214248" selected="true" /><select idref="V-214249" selected="true" /><select idref="V-214250" selected="true" /><select idref="V-214251" selected="true" /><select idref="V-214252" selected="true" /><select idref="V-214253" selected="true" /><select idref="V-214254" selected="true" /><select idref="V-214255" selected="true" /><select idref="V-214256" selected="true" /><select idref="V-214257" selected="true" /><select idref="V-214258" selected="true" /><select idref="V-214259" selected="true" /><select idref="V-214260" selected="true" /><select idref="V-214261" selected="true" /><select idref="V-214262" selected="true" /><select idref="V-214263" selected="true" /><select idref="V-214264" selected="true" /><select idref="V-214265" selected="true" /><select idref="V-214266" selected="true" /><select idref="V-214267" selected="true" /><select idref="V-214268" selected="true" /><select idref="V-214269" selected="true" /><select idref="V-214270" selected="true" /><select idref="V-214271" selected="true" /><select idref="V-214272" selected="true" /><select idref="V-214273" selected="true" /><select idref="V-214274" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-214228" selected="true" /><select idref="V-214229" selected="true" /><select idref="V-214230" selected="true" /><select idref="V-214231" selected="true" /><select idref="V-214232" selected="true" /><select idref="V-214233" selected="true" /><select idref="V-214234" selected="true" /><select idref="V-214235" selected="true" /><select idref="V-214236" selected="true" /><select idref="V-214237" selected="true" /><select idref="V-214238" selected="true" /><select idref="V-214239" selected="true" /><select idref="V-214240" selected="true" /><select idref="V-214241" selected="true" /><select idref="V-214242" selected="true" /><select idref="V-214243" selected="true" /><select idref="V-214244" selected="true" /><select idref="V-214245" selected="true" /><select idref="V-214246" selected="true" /><select idref="V-214247" selected="true" /><select idref="V-214248" selected="true" /><select idref="V-214249" selected="true" /><select idref="V-214250" selected="true" /><select idref="V-214251" selected="true" /><select idref="V-214252" selected="true" /><select idref="V-214253" selected="true" /><select idref="V-214254" selected="true" /><select idref="V-214255" selected="true" /><select idref="V-214256" selected="true" /><select idref="V-214257" selected="true" /><select idref="V-214258" selected="true" /><select idref="V-214259" selected="true" /><select idref="V-214260" selected="true" /><select idref="V-214261" selected="true" /><select idref="V-214262" selected="true" /><select idref="V-214263" selected="true" /><select idref="V-214264" selected="true" /><select idref="V-214265" selected="true" /><select idref="V-214266" selected="true" /><select idref="V-214267" selected="true" /><select idref="V-214268" selected="true" /><select idref="V-214269" selected="true" /><select idref="V-214270" selected="true" /><select idref="V-214271" selected="true" /><select idref="V-214272" selected="true" /><select idref="V-214273" selected="true" /><select idref="V-214274" selected="true" /></Profile><Group id="V-214228"><title>SRG-APP-000001-WSR-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214228r960735_rule" weight="10.0" severity="medium"><version>AS24-U1-000010</version><title>The Apache web server must limit the number of allowed simultaneous session requests.</title><description>&lt;VulnDiscussion&gt;Apache web server management includes the ability to control the number of users and user sessions that utilize an Apache web server. Limiting the number of allowed users and sessions per user is helpful in limiting risks related to several types of denial-of-service (DOS) attacks.
+
+Although there is some latitude concerning the settings, they should follow DoD-recommended values and be configurable to allow for future DoD direction. While the DoD will specify recommended values, the values can be adjusted to accommodate the operational requirements of a given system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102685</ident><ident system="http://cyber.mil/legacy">V-92597</ident><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-15440r881403_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used.  
+
+Set the "KeepAlive" directive to a value of "on"; add the directive if it does not exist.
+
+Set the "MaxKeepAliveRequests" directive to a value of "100" or greater; add the directive if it does not exist.
+
+Restart Apache: apachectl restart</fixtext><fix id="F-15440r881403_fix" /><check system="C-15442r881402_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used.
+
+Search for the directives "KeepAlive" and "MaxKeepAliveRequests" in the "httpd.conf" file:
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "keepalive"
+
+KeepAlive On
+MaxKeepAliveRequests 100
+
+If the value of "KeepAlive" is set to "off" or does not exist, this is a finding.
+
+If the value of "MaxKeepAliveRequests" is set to a value less than "100" or does not exist, this is a finding.</check-content></check></Rule></Group><Group id="V-214229"><title>SRG-APP-000001-WSR-000002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214229r960735_rule" weight="10.0" severity="medium"><version>AS24-U1-000020</version><title>The Apache web server must perform server-side session management.</title><description>&lt;VulnDiscussion&gt;Session management is the practice of protecting the bulk of the user authorization and identity information. This data can be stored on the client system or on the server.
+
+When the session information is stored on the client, the session ID, along with the user authorization and identity information, is sent along with each client request and is stored in a cookie, embedded in the uniform resource locator (URL), or placed in a hidden field on the displayed form. Each of these offers advantages and disadvantages. The biggest disadvantage to all three is the possibility of the hijacking of a session along with all of the user's credentials.
+
+When the user authorization and identity information is stored on the server in a protected and encrypted database, the communication between the client and Apache web server will only send the session identifier, and the server can then retrieve user credentials for the session when needed. If, during transmission, the session were to be hijacked, the user's credentials would not be compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102687</ident><ident system="http://cyber.mil/legacy">V-92599</ident><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-15441r276948_fix">If the modules are not installed, install any missing packages.
+
+Add the following lines to the "httpd.conf" file:
+
+LoadModule usertrack_module modules/mod_usertrack.so
+
+LoadModule session_module modules/mod_session.so
+
+Additional documentation can be found at:
+
+https://httpd.apache.org/docs/2.4/mod/mod_usertrack.html
+
+https://httpd.apache.org/docs/2.4/mod/mod_session.html
+
+Restart Apache: apachectl restart</fixtext><fix id="F-15441r276948_fix" /><check system="C-15443r881405_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Issue the following command:
+httpd -M |grep -E 'session_module|usertrack'
+
+Expected output:
+usertrack_module (shared)
+session_module (shared)
+
+If results do not return both "usertrack_module (shared)" and "session_module (shared)", this is a finding.
+
+Alternatively, determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used.  
+
+Search for the "session_module" and "usertrack_module" directives:
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "session_module"
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "usertrack_module"
+If "session_module" and "usertrack_module" are not enabled or do not exist, this is a finding.</check-content></check></Rule></Group><Group id="V-214230"><title>SRG-APP-000014-WSR-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214230r960759_rule" weight="10.0" severity="medium"><version>AS24-U1-000030</version><title>The Apache web server must use cryptography to protect the integrity of remote sessions.</title><description>&lt;VulnDiscussion&gt;Data exchanged between the user and the Apache web server can range from static display data to credentials used to log on to the hosted application. Even when data appears to be static, the non-displayed logic in a web page may expose business logic or trusted system relationships. The integrity of all the data being exchanged between the user and the Apache web server must always be trusted. To protect the integrity and trust, encryption methods should be used to protect the complete communication session.
+
+Satisfies: SRG-APP-000014-WSR-000006, SRG-APP-000015-WSR-000014, SRG-APP-000033-WSR-000169, SRG-APP-000172-WSR-000104, SRG-APP-000179-WSR-000110, SRG-APP-000179-WSR-000111, SRG-APP-000224-WSR-000139, SRG-APP-000427-WSR-000186, SRG-APP-000439-WSR-000151, SRG-APP-000439-WSR-000152, SRG-APP-000439-WSR-000153, SRG-APP-000442-WSR-000182&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92601</ident><ident system="http://cyber.mil/legacy">SV-102689</ident><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-000197</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-000803</ident><ident system="http://cyber.mil/cci">CCI-001188</ident><ident system="http://cyber.mil/cci">CCI-001453</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><ident system="http://cyber.mil/cci">CCI-002422</ident><ident system="http://cyber.mil/cci">CCI-002470</ident><fixtext fixref="F-15442r803399_fix"># cat /etc/httpd/conf.d/ssl.conf | grep "SSLProtocol - ALL +TLSv1.2"
+
+Ensure the "SSLProtocol" is added to the ssl.conf file and looks like the following:
+
+SSLProtocol -ALL +TLSv1.2
+
+Restart Apache: apachectl restart</fixtext><fix id="F-15442r803399_fix" /><check system="C-15444r881407_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Verify the "ssl module" module is loaded
+# httpd -M | grep -i ssl_module
+Output:  ssl_module (shared) 
+
+If the "ssl_module" is not found, this is a finding. 
+
+Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used.  
+
+Search for the directive "SSLProtocol" in the "httpd.conf" file: 
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "SSLProtocol" 
+
+If the "SSLProtocol" directive is missing or does not look like the following, this is a finding: 
+
+SSLProtocol -ALL +TLSv1.2 
+
+If the TLS version is not TLS 1.2 or higher, according to NIST SP 800-52 Rev 2, or if non-FIPS-approved algorithms are enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-214231"><title>SRG-APP-000516-WSR-000174</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214231r961863_rule" weight="10.0" severity="medium"><version>AS24-U1-000065</version><title>The Apache web server must have system logging enabled.</title><description>&lt;VulnDiscussion&gt;The server error logs are invaluable because they can also be used to identify potential problems and enable proactive remediation. Log data can reveal anomalous behavior such as “not found” or “unauthorized” errors that may be an evidence of attack attempts. Failure to enable error logging can significantly reduce the ability of Web Administrators to detect or remediate problems. The CustomLog directive specifies the log file, syslog facility, or piped logging utility.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102695</ident><ident system="http://cyber.mil/legacy">V-92607</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-15443r276954_fix">Edit the "httpd.conf" file and enter the name, path and level for the CustomLog.</fixtext><fix id="F-15443r276954_fix" /><check system="C-15445r881409_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used.
+
+Search for the directive "CustomLog" in the "httpd.conf" file:
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "CustomLog"
+
+If the "CustomLog" directive is missing, this is a finding:
+
+An example CustomLog directive would be as follows:
+CustomLog "logs/access_log" common or CustomLog “log/access_log” combined
+(May also be "Logs/access_log")
+</check-content></check></Rule></Group><Group id="V-214232"><title>SRG-APP-000089-WSR-000047</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214232r960879_rule" weight="10.0" severity="medium"><version>AS24-U1-000070</version><title>The Apache web server must generate, at a minimum, log records for system startup and shutdown, system access, and system authentication events.</title><description>&lt;VulnDiscussion&gt;Log records can be generated from various components within the Apache web server (e.g., httpd, plug-ins to external backends, etc.). From a web server perspective, certain specific Apache web server functionalities may be logged as well. The Apache web server must allow the definition of what events are to be logged. As conditions change, the number and types of events to be logged may change, and the Apache web server must be able to facilitate these changes.
+
+The minimum list of logged events should be those pertaining to system startup and shutdown, system access, and system authentication events. If these events are not logged at a minimum, any type of forensic investigation would be missing pertinent information needed to replay what occurred.
+
+
+Satisfies: SRG-APP-000089-WSR-000047, SRG-APP-000092-WSR-000055, SRG-APP-000095-WSR-000056, SRG-APP-000096-WSR-000057, SRG-APP-000097-WSR-000058, SRG-APP-000098-WSR-000059, SRG-APP-000099-WSR-000061, SRG-APP-000100-WSR-000064&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102697</ident><ident system="http://cyber.mil/legacy">V-92609</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000132</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><ident system="http://cyber.mil/cci">CCI-000169</ident><ident system="http://cyber.mil/cci">CCI-001464</ident><ident system="http://cyber.mil/cci">CCI-001487</ident><fixtext fixref="F-15444r881412_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Uncomment the "log_config_module" module line.
+
+Configure the "LogFormat" in the "httpd.conf" file to look like the following:
+
+LogFormat "%a %A %h %H %l %m %s %t %u %U \"%{Referer}i\" " common
+
+Restart Apache: apachectl restart
+
+Note: The log format could be using different variables based on the environment; however it should be verified to ensure it is producing the same end result of logged elements.  
+
+The logging elements required breakdown as follows:
+%a       remote IP address
+%A       local IP address
+%h       IP address of requesting client
+%H      the request protocol
+%l        user ID of the requesting client
+%m      request method
+%s        status
+%t        time the request was received
+%u       user ID of the remote user
+%U       URL path requested</fixtext><fix id="F-15444r881412_fix" /><check system="C-15446r881411_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Verify the Log Configuration Module is loaded:
+# httpd -M | grep -i log_config_module
+Output:  log_config_module (shared)
+
+If the "log_config_module" is not enabled, this is a finding.
+
+Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used.  
+
+Search for the directive "LogFormat" in the "httpd.conf" file:
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "LogFormat"
+
+If the "LogFormat" directive is missing, this is a finding:
+
+An example is:
+LogFormat "%a %A %h %H %l %m %s %t %u %U \"%{Referer}i\" " common</check-content></check></Rule></Group><Group id="V-214233"><title>SRG-APP-000098-WSR-000060</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214233r960900_rule" weight="10.0" severity="medium"><version>AS24-U1-000130</version><title>An Apache web server, behind a load balancer or proxy server, must produce log records containing the client IP information as the source and destination and not the load balancer or proxy IP information with each event.</title><description>&lt;VulnDiscussion&gt;Apache web server logging capability is critical for accurate forensic analysis. Without sufficient and accurate information, a correct replay of the events cannot be determined.
+
+Ascertaining the correct source of the events (e.g., source IP) is important during forensic analysis. Correctly determining the source of events will add information to the overall reconstruction of the loggable event. By determining the source of the event correctly, analysis of the enterprise can be undertaken to determine if events tied to the source occurred in other areas within the enterprise.
+
+A web server behind a load balancer or proxy server, when not configured correctly, will record the load balancer or proxy server as the source of every loggable event. When looking at the information forensically, this information is not helpful in the investigation of events. The web server must record with each event the client source of the event.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102709</ident><ident system="http://cyber.mil/legacy">V-92621</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><fixtext fixref="F-15445r505080_fix">Access the proxy server through which inbound web traffic is passed and configure settings to pass web traffic to the Apache web server transparently.
+
+Refer to https://httpd.apache.org/docs/2.4/mod/mod_remoteip.html for additional information on logging options based on your proxy/load balancing setup.</fixtext><fix id="F-15445r505080_fix" /><check system="C-15447r881414_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>If Apache server is not behind a load balancer or proxy server, this check is Not Applicable.
+
+Interview the System Administrator to review the configuration of the Apache web server architecture and determine if inbound web traffic is passed through a proxy.
+
+If the Apache web server is receiving inbound web traffic through a proxy, the audit logs must be reviewed to determine if correct source information is being passed through by the proxy server.
+
+Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used. 
+
+Review the location of the log files.
+
+When the log file is displayed, review the source IP information in the log entries and verify the entries do not reflect the IP address of the proxy server.
+If the log entries in the log file(s) reflect the IP address of the client in addition to the proxy address, this is not a finding.
+If the log entries in the log file(s) reflect the IP address of the proxy server as the source, this is a finding.
+
+If logs containing source/destination IPs can be obtained at the load balancer/proxy server, this is not a finding.</check-content></check></Rule></Group><Group id="V-214234"><title>SRG-APP-000108-WSR-000166</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214234r960912_rule" weight="10.0" severity="medium"><version>AS24-U1-000160</version><title>The Apache web server must use a logging mechanism that is configured to alert the Information System Security Officer (ISSO) and System Administrator (SA) in the event of a processing failure.</title><description>&lt;VulnDiscussion&gt;Reviewing log data allows an investigator to recreate the path of an attacker and to capture forensic data for later use. Log data is also essential to SAs in their daily administrative duties on the hosted system or within the hosted applications.
+
+If the logging system begins to fail, events will not be recorded. Organizations must define logging failure events, at which time the application or the logging mechanism the application uses will provide a warning to the ISSO and SA at a minimum.
+
+Satisfies: SRG-APP-000108-WSR-000166, SRG-APP-000359-WSR-000065&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102715</ident><ident system="http://cyber.mil/legacy">V-92627</ident><ident system="http://cyber.mil/cci">CCI-000139</ident><ident system="http://cyber.mil/cci">CCI-001855</ident><fixtext fixref="F-15446r276963_fix">Work with the SIEM administrator to configure an alert when no audit data is received from Apache based on the defined schedule of connections.</fixtext><fix id="F-15446r276963_fix" /><check system="C-15448r276962_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Work with the SIEM administrator to determine if an alert is configured when audit data is no longer received as expected.
+
+If there is no alert configured, this is a finding.</check-content></check></Rule></Group><Group id="V-214235"><title>SRG-APP-000118-WSR-000068</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214235r960930_rule" weight="10.0" severity="medium"><version>AS24-U1-000180</version><title>The Apache web server log files must only be accessible by privileged users.</title><description>&lt;VulnDiscussion&gt;Log data is essential in the investigation of events. If log data were to become compromised, competent forensic analysis and discovery of the true source of potentially malicious system activity would be difficult, if not impossible, to achieve. In addition, access to log records provides information an attacker could potentially use to their advantage since each event record might contain communication ports, protocols, services, trust relationships, user names, etc.
+
+The web server must protect the log data from unauthorized read, write, copy, etc. This can be done by the web server if the web server is also doing the logging function. The web server may also use an external log system. In either case, the logs must be protected from access by non-privileged users.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102717</ident><ident system="http://cyber.mil/legacy">V-92629</ident><ident system="http://cyber.mil/cci">CCI-000162</ident><fixtext fixref="F-15447r276966_fix">To protect the integrity of the data that is being captured in the log files, ensure that only the members of the Auditors group, Administrators, and the user assigned to run the web server software is granted permissions to read the log files.</fixtext><fix id="F-15447r276966_fix" /><check system="C-15449r881416_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used.
+
+Work with the Administrator to locate the log files:
+Example: /etc/httpd/logs
+
+List the POSIX permission set and owner/group of the log files:
+# ls -laH /etc/httpd/logs/*log*
+Output Example:
+-rw-r------. 1 apache root    0 Sep 27 2020 /etc/httpd/logs/access_log
+-rw-r------. 1 apache root 1235 Sep 23 2020 /etc/httpd/logs/access_log-20200927
+-rw-r------. 1 apache root  332 Sep 26 03:40 /etc/httpd/logs/error_log
+
+Only system administrators and service accounts running the server should have permissions to the files and the POSIX permissions should be set to 640 or more restrictive
+
+If any users other than those authorized have read access to the log files, this is a finding.
+</check-content></check></Rule></Group><Group id="V-214236"><title>SRG-APP-000119-WSR-000069</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214236r960933_rule" weight="10.0" severity="medium"><version>AS24-U1-000190</version><title>The log information from the Apache web server must be protected from unauthorized modification or deletion.</title><description>&lt;VulnDiscussion&gt;Log data is essential in the investigation of events. If log data were to become compromised, competent forensic analysis and discovery of the true source of potentially malicious system activity would be difficult, if not impossible, to achieve. In addition, access to log records provides information an attacker could potentially use to their advantage since each event record might contain communication ports, protocols, services, trust relationships, user names, etc.
+
+The web server must protect the log data from unauthorized read, write, copy, etc. This can be done by the web server if the web server is also doing the logging function. The web server may also use an external log system. In either case, the logs must be protected from access by non-privileged users.
+
+Satisfies: SRG-APP-000119-WSR-000069, SRG-APP-000120-WSR-000070&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102719</ident><ident system="http://cyber.mil/legacy">V-92631</ident><ident system="http://cyber.mil/cci">CCI-000163</ident><ident system="http://cyber.mil/cci">CCI-000164</ident><fixtext fixref="F-15448r881418_fix">Determine the location of the "ErrorLog" directory in the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Open the "httpd.conf" file.
+
+Look for the "ErrorLog" directive.
+
+Ensure the permissions and ownership of all files in the Apache log directory are correct by executing the following commands as an administrative service account:
+ 
+# chown &lt;'service account'&gt; &lt;'ErrorLog directive PATH'&gt;/*</fixtext><fix id="F-15448r881418_fix" /><check system="C-15450r276968_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Verify the log information from the web server must be protected from unauthorized modification.
+
+Review the web server documentation and deployed configuration settings to determine if the web server logging features protect log information from unauthorized modification.
+ 
+Review file system settings to verify the log files have secure file permissions. Run the following command:
+ 
+ls -l &lt;'INSTALL PATH'&gt;/logs
+ 
+If the web server log files present are owned by anyone other than an administrative service account this is a finding.</check-content></check></Rule></Group><Group id="V-214237"><title>SRG-APP-000125-WSR-000071</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214237r960948_rule" weight="10.0" severity="medium"><version>AS24-U1-000210</version><title>The log data and records from the Apache web server must be backed up onto a different system or media.</title><description>&lt;VulnDiscussion&gt;Protection of log data includes ensuring log data is not accidentally lost or deleted. Backing up log records to an unrelated system or onto separate media than the system the web server is actually running on helps to ensure that, in the event of a catastrophic system failure, the log records will be retained.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102723</ident><ident system="http://cyber.mil/legacy">V-92635</ident><ident system="http://cyber.mil/cci">CCI-001348</ident><fixtext fixref="F-15449r276972_fix">Document the web server backup procedures.</fixtext><fix id="F-15449r276972_fix" /><check system="C-15451r276971_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Interview the Information System Security Officer, System Administrator, Web Manager, Webmaster, or developers as necessary to determine whether a tested and verifiable backup strategy has been implemented for web server software and all web server data files.
+
+Proposed questions:
+- Who maintains the backup and recovery procedures?
+- Do you have a copy of the backup and recovery procedures?
+- Where is the off-site backup location?
+- Is the contingency plan documented?
+- When was the last time the contingency plan was tested?
+- Are the test dates and results documented?
+
+If there is not a backup and recovery process for the web server, this is a finding.</check-content></check></Rule></Group><Group id="V-214238"><title>SRG-APP-000131-WSR-000073</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214238r1016509_rule" weight="10.0" severity="medium"><version>AS24-U1-000230</version><title>Expansion modules must be fully reviewed, tested, and signed before they can exist on a production Apache web server.</title><description>&lt;VulnDiscussion&gt;In the case of a production web server, areas for content development and testing will not exist, as this type of content is only permissible on a development website. The process of developing on a functional production website entails a degree of trial and error and repeated testing. This process is often accomplished in an environment where debugging, sequencing, and formatting of content are the main goals. The opportunity for a malicious user to obtain files that reveal business logic and logon schemes is high in this situation. The existence of such immature content on a web server represents a significant security risk that is totally avoidable.
+
+The web server must enforce, internally or through an external utility, the signing of modules before they are implemented into a production environment. By signing modules, the author guarantees that the module has been reviewed and tested before production implementation.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102725</ident><ident system="http://cyber.mil/legacy">V-92637</ident><ident system="http://cyber.mil/cci">CCI-003992</ident><ident system="http://cyber.mil/cci">CCI-001749</ident><fixtext fixref="F-15450r276975_fix">Remove any unsigned modules.</fixtext><fix id="F-15450r276975_fix" /><check system="C-15452r985882_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Enter the following command:
+
+"httpd -M"
+
+This will provide a list of the loaded modules. Validate that all displayed modules are required for operations.
+
+If any module is not required for operation, this is a finding.
+
+Note: The following modules are needed for basic web function and do not need to be reviewed:
+
+core_module
+http_module
+so_module
+mpm_prefork_module
+
+For a complete list of signed Apache Modules, review https://httpd.apache.org/docs/2.4/mod/.</check-content></check></Rule></Group><Group id="V-214239"><title>SRG-APP-000141-WSR-000015</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214239r960963_rule" weight="10.0" severity="medium"><version>AS24-U1-000240</version><title>The Apache web server must not perform user management for hosted applications.</title><description>&lt;VulnDiscussion&gt;User management and authentication can be an essential part of any application hosted by the web server. Along with authenticating users, the user management function must perform several other tasks such as password complexity, locking users after a configurable number of failed logons, and management of temporary and emergency accounts. All of this must be done enterprise-wide.
+
+The web server contains a minimal user management function, but the web server user management function does not offer enterprise-wide user management, and user management is not the primary function of the web server. User management for the hosted applications should be done through a facility that is built for enterprise-wide user management, such as LDAP and Active Directory.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102727</ident><ident system="http://cyber.mil/legacy">V-92639</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-15451r276978_fix">Comment out the "AuthUserFile" lines found in the Apache configuration.</fixtext><fix id="F-15451r276978_fix" /><check system="C-15453r276977_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Review the web server documentation and configuration to determine if the web server is being used as a user management application.
+ 
+Search for "AuthUserFile" in the configuration files in the installed Apache Path.
+ 
+Example:
+
+grep -rin AuthUserFile *
+ 
+If there are uncommented lines pointing to files on disk using the above configuration option, this is a finding.</check-content></check></Rule></Group><Group id="V-214240"><title>SRG-APP-000141-WSR-000075</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214240r960963_rule" weight="10.0" severity="medium"><version>AS24-U1-000250</version><title>The Apache web server must only contain services and functions necessary for operation.</title><description>&lt;VulnDiscussion&gt;A web server can provide many features, services, and processes. Some of these may be deemed unnecessary or too unsecure to run on a production DoD system.
+
+The web server must provide the capability to disable, uninstall, or deactivate functionality and services that are deemed to be non-essential to the web server mission or can adversely impact server performance.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102729</ident><ident system="http://cyber.mil/legacy">V-92641</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-15452r622513_fix">Remove any unnecessary applications per ISSO documentation.  </fixtext><fix id="F-15452r622513_fix" /><check system="C-15454r622512_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>If the site requires the use of a particular piece of software, verify that the Information System Security Officer (ISSO) maintains documentation identifying this software as necessary for operations. The software must be operated at the vendor’s current patch level and must be a supported vendor release.
+
+If programs or utilities that meet the above criteria are installed on the web server and appropriate documentation and signatures are in evidence, this is not a finding.
+
+Determine whether the web server is configured with unnecessary software.
+
+Determine whether processes other than those that support the web server are loaded and/or run on the web server.
+
+Examples of software that should not be on the web server are all web development tools, office suites (unless the web server is a private web development server), compilers, and other utilities that are not part of the web server suite or the basic operating system.
+
+Check the directory structure of the server and verify that additional, unintended, or unneeded applications are not loaded on the system.
+
+If, after review of the application on the system, there is no justification for the identified software, this is a finding. 
+</check-content></check></Rule></Group><Group id="V-214241"><title>SRG-APP-000141-WSR-000076</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214241r1051280_rule" weight="10.0" severity="medium"><version>AS24-U1-000260</version><title>The Apache web server must not be a proxy server.</title><description>&lt;VulnDiscussion&gt;A web server should be primarily a web server or a proxy server but not both, for the same reasons that other multiuse servers are not recommended. Scanning for web servers that will also proxy requests into an otherwise protected network is a very common attack, making the attack anonymous.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102731</ident><ident system="http://cyber.mil/legacy">V-92643</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-15453r1051279_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Edit the file and comment out the ProxyRequests directive in the httpd.conf file.
+
+Restart Apache: apachectl restart</fixtext><fix id="F-15453r1051279_fix" /><check system="C-15455r1051278_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>If the server has been approved to be a proxy server, this requirement is Not Applicable.
+
+Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or "httpd -V" can also be used. 
+
+Search for the directive "ProxyRequests" in the "httpd.conf" file. 
+
+If the ProxyRequests directive is set to "On", this is a finding.</check-content></check></Rule></Group><Group id="V-214242"><title>SRG-APP-000141-WSR-000077</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214242r960963_rule" weight="10.0" severity="high"><version>AS24-U1-000270</version><title>The Apache web server must provide install options to exclude the installation of documentation, sample code, example applications, and tutorials.</title><description>&lt;VulnDiscussion&gt;Apache web server documentation, sample code, example applications, and tutorials may be an exploitable threat to an Apache web server because this type of code has not been evaluated and approved. A production Apache web server must only contain components that are operationally necessary (e.g., compiled code, scripts, web content, etc.).
+
+Any documentation, sample code, example applications, and tutorials must be removed from a production Apache web server. To ensure that the documentation and code are not installed or are uninstalled completely, the Apache web server must offer an option as part of the installation process to exclude these packages or to uninstall the packages if necessary.
+
+Satisfies: SRG-APP-000141-WSR-000077, SRG-APP-000141-WSR-000080&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102733</ident><ident system="http://cyber.mil/legacy">V-92645</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-15454r622510_fix">Review all pre-installed content and remove content that is not required. In particular, look for the unnecessary content that may be found in the document root directory, a configuration directory such as conf/extra directory, or as a UNIX/Linux package.
+
+Remove the default index.html or welcome page if it is a separate package. If the default welcome page is part of the main Apache httpd package as it is on Red Hat Linux, then comment out the configuration as shown below. Removing a file such as "welcome.conf" is not recommended as it may be replaced if the package is updated.
+
+#
+# This configuration file enables the default "Welcome"
+# page if there is no default index page present for
+# the root URL. To disable the Welcome page, comment
+# out all the lines below.
+#
+##&lt;LocationMatch "^/+$"&gt;
+## Options -Indexes
+## ErrorDocument 403 /error/noindex.html
+##&lt;/LocationMatch&gt;
+
+Remove the Apache User Manual content or comment out configurations referencing the manual.
+
+Example:
+
+# yum erase httpd-manual
+
+Remove or comment out any Server Status handler configuration:
+
+#
+# Allow server status reports generated by mod_status,
+# with the URL of http://servername/server-status
+# Change the ".example.com" to match your domain to enable.
+#
+##&lt;Location /server-status&gt;
+## SetHandler server-status
+## Order deny,allow
+## Deny from all
+## Allow from .example.com
+##&lt;/Location&gt;
+
+Remove or comment out any Server Information handler configuration:
+
+#
+# Allow remote server configuration reports, with the URL of
+# http://servername/server-info (requires that mod_info.c be loaded).
+# Change the ".example.com" to match your domain to enable.
+#
+##&lt;Location /server-info&gt;
+## SetHandler server-info
+## Order deny,allow
+## Deny from all
+## Allow from .example.com
+##&lt;/Location&gt;
+
+Remove or comment out any other handler configuration such as perl-status:
+
+# This will allow remote server configuration reports, with the URL of
+# http://servername/perl-status
+# Change the ".example.com" to match your domain to enable.
+#
+##&lt;Location /perl-status&gt;
+## SetHandler perl-script
+## PerlResponseHandler Apache2::Status
+## Order deny,allow
+## Deny from all
+## Allow from .example.com
+##&lt;/Location&gt;
+
+The default source build provides extra content available in the &lt;'INSTALLED PATH'&gt;/conf/extra/ directory, but the configuration of most of the extra content is commented out by default. In particular, the inclusion of conf/extra/proxyhtml.conf is not commented out in "httpd.conf":
+
+# Server-pool management (MPM specific)
+#Include conf/extra/httpd-mpm.conf
+# Multi-language error messages
+#Include conf/extra/httpd-multilang-errordoc.conf
+# Fancy directory listings
+#Include conf/extra/httpd-autoindex.conf
+# Language settings
+#Include conf/extra/httpd-languages.conf
+# User home directories
+#Include conf/extra/httpd-userdir.conf
+# Real-time info on requests and configuration
+#Include conf/extra/httpd-info.conf
+# Virtual hosts
+#Include conf/extra/httpd-vhosts.conf
+# Local access to the Apache HTTP Server Manual
+#Include conf/extra/httpd-manual.conf
+# Distributed authoring and versioning (WebDAV)
+#Include conf/extra/httpd-dav.conf
+# Various default settings
+#Include conf/extra/httpd-default.conf
+# Configure mod_proxy_html to understand HTML4/XHTML1
+&lt;IfModule proxy_html_module&gt;
+Include conf/extra/proxy-html.conf
+&lt;/IfModule&gt;
+# Secure (SSL/TLS) connections
+#Include conf/extra/httpd-ssl.conf
+
+For applications developed in-house, ensure that development artifacts (sample data and scripts; unused libraries, components, debug code; or tools) are not included in the deployed software or accessible in the production environment.
+</fixtext><fix id="F-15454r622510_fix" /><check system="C-15456r622509_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Verify the document root directory and the configuration files do not provide for default index.html or welcome page.
+
+Verify the Apache User Manual content is not installed by checking the configuration files for manual location directives.
+
+Verify the Apache configuration files do not have the Server Status handler configured.
+
+Verify the Server Information handler is not configured.
+
+Verify that any other handler configurations such as perl-status are not enabled.
+
+If any of these are present, this is a finding.
+</check-content></check></Rule></Group><Group id="V-214243"><title>SRG-APP-000141-WSR-000081</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214243r960963_rule" weight="10.0" severity="medium"><version>AS24-U1-000300</version><title>The Apache web server must have resource mappings set to disable the serving of certain file types.</title><description>&lt;VulnDiscussion&gt;Resource mapping is the process of tying a particular file type to a process in the web server that can serve that type of file to a requesting client and to identify which file types are not to be delivered to a client.
+
+By not specifying which files can and cannot be served to a user, the web server could deliver to a user web server configuration files, log files, password files, etc.
+
+The web server must only allow hosted application file types to be served to a user, and all other types must be disabled.
+
+Satisfies: SRG-APP-000141-WSR-000081, SRG-APP-000141-WSR-000083&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102741</ident><ident system="http://cyber.mil/legacy">V-92653</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-15455r881423_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Disable MIME types for .exe, .dll, .com, .bat, and .csh programs.
+
+If "Action" or "AddHandler" exist within the "httpd.conf" file and they configure .exe, .dll, .com, .bat, or .csh, remove those references.
+
+Restart Apache: apachectl restart
+
+Ensure this process is documented and approved by the ISSO.</fixtext><fix id="F-15455r881423_fix" /><check system="C-15457r881422_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used.
+
+Review any "Action" or "AddHandler" directives:
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "Action"
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "AddHandler"
+
+If "Action" or "AddHandler" exist and they configure .exe, .dll, .com, .bat, or .csh, or any other shell as a viewer for documents, this is a finding.
+
+If this is not documented and approved by the Information System Security Officer (ISSO), this is a finding.</check-content></check></Rule></Group><Group id="V-214244"><title>SRG-APP-000141-WSR-000082</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214244r960963_rule" weight="10.0" severity="medium"><version>AS24-U1-000310</version><title>The Apache web server must allow the mappings to unused and vulnerable scripts to be removed.</title><description>&lt;VulnDiscussion&gt;Scripts allow server-side processing on behalf of the hosted application user or as processes needed in the implementation of hosted applications. Removing scripts not needed for application operation or deemed vulnerable helps to secure the web server.
+
+To ensure scripts are not added to the web server and run maliciously, script mappings that are not needed or used by the web server for hosted application operation must be removed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102743</ident><ident system="http://cyber.mil/legacy">V-92655</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-15456r881426_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Review "Script", "ScriptAlias" or "ScriptAliasMatch", and "ScriptInterpreterSource" directives.
+
+Go into each directory and locate "cgi-bin" files. Remove any script that is not needed for application operation.
+
+Ensure this process is documented and approved by the ISSO.</fixtext><fix id="F-15456r881426_fix" /><check system="C-15458r881425_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used.  
+
+Locate "cgi-bin" files and directories enabled in the Apache configuration via "Script", "ScriptAlias" or "ScriptAliasMatch", and "ScriptInterpreterSource" directives:
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "Script"
+
+If any scripts are present that are not needed for application operation, this is a finding.
+
+If this is not documented and approved by the Information System Security Officer (ISSO), this is a finding.</check-content></check></Rule></Group><Group id="V-214245"><title>SRG-APP-000141-WSR-000085</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214245r960963_rule" weight="10.0" severity="medium"><version>AS24-U1-000330</version><title>The Apache web server must have Web Distributed Authoring (WebDAV) disabled.</title><description>&lt;VulnDiscussion&gt;A web server can be installed with functionality that, by its nature, is not secure. WebDAV is an extension to the HTTP protocol that, when developed, was meant to allow users to create, change, and move documents on a server, typically a web server or web share. Allowing this functionality, development, and deployment is much easier for web authors.
+
+WebDAV is not widely used and has serious security concerns because it may allow clients to modify unauthorized files on the web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102747</ident><ident system="http://cyber.mil/legacy">V-92659</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-15457r276996_fix">Determine where the "dav" modules are located by running the following command:
+
+grep -rl "dav_module" &lt;'INSTALL PATH'&gt;
+
+Edit the file and comment out the following modules:
+
+dav_module
+dav_fs_module
+dav_lock_module
+
+Restart Apache: apachectl restart</fixtext><fix id="F-15457r276996_fix" /><check system="C-15459r276995_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>In a command line, run "httpd -M | sort" to view a list of installed modules.
+
+If any of the following modules are present, this is a finding:
+
+dav_module
+dav_fs_module
+dav_lock_module</check-content></check></Rule></Group><Group id="V-214246"><title>SRG-APP-000142-WSR-000089</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214246r1043177_rule" weight="10.0" severity="medium"><version>AS24-U1-000360</version><title>The Apache web server must be configured to use a specified IP address and port.</title><description>&lt;VulnDiscussion&gt;The web server must be configured to listen on a specified IP address and port. Without specifying an IP address and port for the web server to use, the web server will listen on all IP addresses available to the hosting server. If the web server has multiple IP addresses, i.e., a management IP address, the web server will also accept connections on the management IP address.
+
+Accessing the hosted application through an IP address normally used for non-application functions opens the possibility of user access to resources, utilities, files, ports, and protocols that are protected on the desired application IP address.
+
+Satisfies: SRG-APP-000142-WSR-000089, SRG-APP-000176-WSR-000096&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102749</ident><ident system="http://cyber.mil/legacy">V-92661</ident><ident system="http://cyber.mil/cci">CCI-000186</ident><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-15458r881429_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Set the "Listen" directive to listen on a specific IP address and port.
+
+Restart Apache: apachectl restart</fixtext><fix id="F-15458r881429_fix" /><check system="C-15460r881428_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used. 
+Search for the "Listen" directive:
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "Listen"
+
+Verify that any enabled "Listen" directives specify both an IP address and port number.
+
+If the "Listen" directive is found with only an IP address or only a port number specified, this is finding.
+
+If the IP address is all zeros (i.e., 0.0.0.0:80 or [::ffff:0.0.0.0]:80), this is a finding.
+
+If the "Listen" directive does not exist, this is a finding.</check-content></check></Rule></Group><Group id="V-214247"><title>SRG-APP-000211-WSR-000030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214247r961095_rule" weight="10.0" severity="medium"><version>AS24-U1-000430</version><title>Apache web server accounts accessing the directory tree, the shell, or other operating system functions and utilities must only be administrative accounts.</title><description>&lt;VulnDiscussion&gt;As a rule, accounts on a web server are to be kept to a minimum. Only administrators, web managers, developers, auditors, and web authors require accounts on the machine hosting the web server. The resources to which these accounts have access must also be closely monitored and controlled. Only the system administrator needs access to all the system's capabilities, while the web administrator and associated staff require access and control of the web content and web server configuration files.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102759</ident><ident system="http://cyber.mil/legacy">V-92671</ident><ident system="http://cyber.mil/cci">CCI-001082</ident><fixtext fixref="F-15459r277002_fix">Limit the functions, directories, and files that are accessible by each account and role to administrative service accounts and remove or modify non-privileged account access.</fixtext><fix id="F-15459r277002_fix" /><check system="C-15461r277001_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Review the web server documentation and configuration to determine what web server accounts are available on the server.
+
+Any directories or files owned by anyone other than an administrative service account is a finding. 
+
+If non-privileged web server accounts are available with access to functions, directories, or files not needed for the role of the account, this is a finding.</check-content></check></Rule></Group><Group id="V-214248"><title>SRG-APP-000211-WSR-000031</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214248r961095_rule" weight="10.0" severity="high"><version>AS24-U1-000440</version><title>Apache web server application directories,  libraries, and configuration files must only be accessible to privileged users.</title><description>&lt;VulnDiscussion&gt;By separating Apache web server security functions from non-privileged users, roles can be developed that can then be used to administer the Apache web server. Forcing users to change from a non-privileged account to a privileged account when operating on the Apache web server or on security-relevant information forces users to only operate as a Web Server Administrator when necessary. Operating in this manner allows for better logging of changes and better forensic information and limits accidental changes to the Apache web server.
+
+To limit changes to the Apache web server and limit exposure to any adverse effects from the changes, files such as the Apache web server application files, libraries, and configuration files must have permissions and ownership set properly to only allow privileged users access.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102761</ident><ident system="http://cyber.mil/legacy">V-92673</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><ident system="http://cyber.mil/cci">CCI-001082</ident><ident system="http://cyber.mil/cci">CCI-001813</ident><fixtext fixref="F-15460r505083_fix">Ensure non-administrators are not allowed access to the directory tree, the shell, or other operating system functions and utilities.</fixtext><fix id="F-15460r505083_fix" /><check system="C-15462r505082_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Obtain a list of the user accounts for the system, noting the privileges for each account.
+
+Verify with the SA or the Information System Security Officer (ISSO) that all privileged accounts are mission essential and documented.
+
+Verify with the SA or the ISSO that all non-administrator access to shell scripts and operating system functions are mission essential and documented.
+
+If undocumented privileged accounts are present, this is a finding.
+
+If undocumented access to shell scripts or operating system functions is present, this is a finding.</check-content></check></Rule></Group><Group id="V-214249"><title>SRG-APP-000211-WSR-000129</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214249r961095_rule" weight="10.0" severity="medium"><version>AS24-U1-000450</version><title>The Apache web server must separate the hosted applications from hosted Apache web server management functionality.</title><description>&lt;VulnDiscussion&gt;The separation of user functionality from web server management can be accomplished by moving management functions to a separate IP address or port. To further separate the management functions, separate authentication methods and certificates should be used.
+
+By moving the management functionality, the possibility of accidental discovery of the management functions by non-privileged users during hosted application use is minimized.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102763</ident><ident system="http://cyber.mil/legacy">V-92675</ident><ident system="http://cyber.mil/cci">CCI-001082</ident><fixtext fixref="F-15461r277008_fix">Configure Apache to separate the hosted applications from web server management functionality.</fixtext><fix id="F-15461r277008_fix" /><check system="C-15463r277007_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Review the web server documentation and deployed configuration to determine whether hosted application functionality is separated from web server management functions.
+
+If the functions are not separated, this is a finding.</check-content></check></Rule></Group><Group id="V-214250"><title>SRG-APP-000220-WSR-000201</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214250r1043179_rule" weight="10.0" severity="medium"><version>AS24-U1-000460</version><title>The Apache web server must invalidate session identifiers upon hosted application user logout or other session termination.</title><description>&lt;VulnDiscussion&gt;Captured sessions can be reused in "replay" attacks. This requirement limits the ability of adversaries from capturing and continuing to employ previously valid session IDs.
+
+Session IDs are tokens generated by web applications to uniquely identify an application user's session. Unique session IDs help to reduce predictability of said identifiers. When a user logs out, or when any other session termination event occurs, the web server must terminate the user session to minimize the potential for an attacker to hijack that particular user session.
+
+Satisfies: SRG-APP-000220-WSR-000201, SRG-APP-000295-WSR-000012&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102765</ident><ident system="http://cyber.mil/legacy">V-92677</ident><ident system="http://cyber.mil/cci">CCI-001185</ident><ident system="http://cyber.mil/cci">CCI-002361</ident><fixtext fixref="F-15462r881432_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Add the following line to the "httpd.conf" file:
+
+SessionMaxAge 600
+
+Restart Apache: apachectl restart</fixtext><fix id="F-15462r881432_fix" /><check system="C-15464r881431_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used. 
+
+Search for the following directive:
+
+"SessionMaxAge"
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "SessionMaxAge"
+
+Verify the value of "SessionMaxAge" is set to "600" or less.
+
+If the "SessionMaxAge" does not exist or is set to more than "600", this is a finding.</check-content></check></Rule></Group><Group id="V-214251"><title>SRG-APP-000223-WSR-000011</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214251r1043180_rule" weight="10.0" severity="medium"><version>AS24-U1-000470</version><title>Cookies exchanged between the Apache web server and client, such as session cookies, must have security settings that disallow cookie access outside the originating Apache web server and hosted application.</title><description>&lt;VulnDiscussion&gt;Cookies are used to exchange data between the web server and the client. Cookies, such as a session cookie, may contain session information and user credentials used to maintain a persistent connection between the user and the hosted application since HTTP/HTTPS is a stateless protocol.
+
+When the cookie parameters are not set properly (i.e., domain and path parameters), cookies can be shared within hosted applications residing on the same web server or to applications hosted on different web servers residing on the same domain.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102767</ident><ident system="http://cyber.mil/legacy">V-92679</ident><ident system="http://cyber.mil/cci">CCI-001664</ident><fixtext fixref="F-15463r277014_fix">Edit the "mod_session.conf" file and find the "SessionCookieName" directive.
+
+Set the "SessionCookieName" to "session path=/; HttpOnly; Secure; "
+
+Example:
+
+SessionCookieName session path=/; HttpOnly; Secure; 
+
+Restart Apache: apachectl restart</fixtext><fix id="F-15463r277014_fix" /><check system="C-15465r457879_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Note: For web servers acting as a public facing with static content that do not require authentication, this is Not Applicable.
+
+Review the web server documentation and configuration to determine if cookies between the web server and client are accessible by applications or web servers other than the originating pair.
+
+grep SessionCookieName &lt;'INSTALL LOCATION'&gt;/mod_session.conf
+
+Confirm that the "HttpOnly" and "Secure" settings are present in the line returned.
+
+Confirm that the line does not contain the "Domain" cookie setting.
+
+Verify the "headers_module (shared)" module is loaded in the web server:
+
+"# httpd -M 
+Verify " headers_module (shared)" is returned in the list of Loaded Modules from the above command."
+
+If the "headers_module (shared)" is not loaded, this is a finding.
+</check-content></check></Rule></Group><Group id="V-214252"><title>SRG-APP-000224-WSR-000137</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214252r1043181_rule" weight="10.0" severity="medium"><version>AS24-U1-000510</version><title>The Apache web server must generate a session ID long enough that it cannot be guessed through brute force.</title><description>&lt;VulnDiscussion&gt;Generating a session identifier (ID) that is not easily guessed through brute force is essential to deter several types of session attacks. By knowing the session ID, an attacker can hijack a user session that has already been user authenticated by the hosted application. The attacker does not need to guess user identifiers and passwords or have a secure token since the user session has already been authenticated.
+
+Generating session IDs that are at least 128 bits (16 bytes) in length will cause an attacker to take a large amount of time and resources to guess, reducing the likelihood of an attacker guessing a session ID.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92687</ident><ident system="http://cyber.mil/legacy">SV-102775</ident><ident system="http://cyber.mil/cci">CCI-001188</ident><fixtext fixref="F-15464r277017_fix">Configure the web server to generate session identifiers that are at least 128 bits in length.
+
+Ensure that "session_crypto_module" is enabled.
+
+Determine the location of the "httpd.conf" file by running the following command:
+
+httpd -V
+
+Review the "HTTPD_ROOT" path.
+
+Navigate to the "HTTPD_ROOT"/conf directory.
+
+Edit the "httpd.conf" file.
+
+SessionCryptoCipher aes256
+
+Restart Apache: apachectl restart</fixtext><fix id="F-15464r277017_fix" /><check system="C-15466r881434_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Review the web server documentation and deployed configuration to determine the length of the generated session identifiers.
+
+First ensure that "session_crypto" is enabled:
+
+httpd -M |grep session_crypto
+
+If the above command returns "session_crypto_module", the module is enabled in the running server.
+
+Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used. 
+
+Review the "httpd.conf" file.
+
+If the "SessionCryptoCipher" is not used or "SessionCryptoCipher" is not set to "aes256", this is a finding.</check-content></check></Rule></Group><Group id="V-214253"><title>SRG-APP-000224-WSR-000138</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214253r1043181_rule" weight="10.0" severity="high"><version>AS24-U1-000520</version><title>The Apache web server must generate a session ID using as much of the character set as possible to reduce the risk of brute force.</title><description>&lt;VulnDiscussion&gt;Generating a session identifier (ID) that is not easily guessed through brute force is essential to deter several types of session attacks. By knowing the session ID, an attacker can hijack a user session that has already been user-authenticated by the hosted application. The attacker does not need to guess user identifiers and passwords or have a secure token since the user session has already been authenticated.
+
+By generating session IDs that contain as much of the character set as possible, i.e., A-Z, a-z, and 0-9, the session ID becomes exponentially harder to guess.
+
+Satisfies: SRG-APP-000223-WSR-000145, SRG-APP-000224-WSR-000135, SRG-APP-000224-WSR-000136, SRG-APP-000224-WSR-000138&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92689</ident><ident system="http://cyber.mil/legacy">SV-102777</ident><ident system="http://cyber.mil/cci">CCI-001188</ident><ident system="http://cyber.mil/cci">CCI-001664</ident><fixtext fixref="F-15465r881437_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Load the "unique_id_module". 
+
+Example: LoadModule unique_id_module modules/mod_unique_id.so
+
+Restart Apache: apachectl restart</fixtext><fix id="F-15465r881437_fix" /><check system="C-15467r881436_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used. 
+
+Verify the "unique_id_module" is loaded:
+
+run httpd -M | grep unique_id 
+If no unique_id is returned, this is a finding.</check-content></check></Rule></Group><Group id="V-214254"><title>SRG-APP-000225-WSR-000140</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214254r961122_rule" weight="10.0" severity="medium"><version>AS24-U1-000550</version><title>The Apache web server must be built to fail to a known safe state if system initialization fails, shutdown fails, or aborts fail.</title><description>&lt;VulnDiscussion&gt;Determining a safe state for failure and weighing that against a potential denial of service for users depends on what type of application the web server is hosting. For an application presenting publicly available information that is not critical, a safe state for failure might be to shut down for any type of failure, but for an application that presents critical and timely information, a shutdown might not be the best state for all failures.
+
+Performing a proper risk analysis of the hosted applications and configuring the web server according to what actions to take for each failure condition will provide a known fail safe state for the web server.
+
+Satisfies: SRG-APP-000225-WSR-000140, SRG-APP-000225-WSR-000074&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92695</ident><ident system="http://cyber.mil/legacy">SV-102783</ident><ident system="http://cyber.mil/cci">CCI-001190</ident><fixtext fixref="F-15466r277023_fix">Prepare documentation for disaster recovery methods for the Apache 2.4 web server in the event of the necessity for rollback.
+
+Document and test the disaster recovery methods designed.</fixtext><fix id="F-15466r277023_fix" /><check system="C-15468r277022_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Interview the System Administrator for the Apache 2.4 web server.
+
+Ask for documentation on the disaster recovery methods tested and planned for the Apache 2.4 web server in the event of the necessity for rollback.
+
+If documentation for a disaster recovery has not been established, this is a finding.</check-content></check></Rule></Group><Group id="V-214255"><title>SRG-APP-000246-WSR-000149</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214255r1051283_rule" weight="10.0" severity="medium"><version>AS24-U1-000590</version><title>The Apache web server must be tuned to handle the operational requirements of the hosted application.</title><description>&lt;VulnDiscussion&gt;A denial of service (DoS) can occur when the Apache web server is so overwhelmed that it can no longer respond to additional requests. A web server not properly tuned may become overwhelmed and cause a DoS condition even with expected traffic from users. To avoid a DoS, the Apache web server must be tuned to handle the expected traffic for the hosted applications.
+
+Satisfies: SRG-APP-000246-WSR-000149, SRG-APP-000435-WSR-000148&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92697</ident><ident system="http://cyber.mil/legacy">SV-102785</ident><ident system="http://cyber.mil/cci">CCI-001094</ident><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-15467r1051282_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Add or modify the "Timeout" directive to have a value of "60" seconds or less:
+
+"Timeout 60"</fixtext><fix id="F-15467r1051282_fix" /><check system="C-15469r1051281_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or "httpd -V" can also be used. 
+
+Verify that the "Timeout" directive is specified to have a value of "60" seconds or less.
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "Timeout"
+
+If the "Timeout" directive is not configured or is set for more than "60" seconds, this is a finding.</check-content></check></Rule></Group><Group id="V-214256"><title>SRG-APP-000266-WSR-000159</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214256r961167_rule" weight="10.0" severity="medium"><version>AS24-U1-000620</version><title>Warning and error messages displayed to clients must be modified to minimize the identity of the Apache web server, patches, loaded modules, and directory paths.</title><description>&lt;VulnDiscussion&gt;Information needed by an attacker to begin looking for possible vulnerabilities in a web server includes any information about the web server, backend systems being accessed, and plug-ins or modules being used.
+
+Web servers will often display error messages to client users, displaying enough information to aid in the debugging of the error. The information given back in error messages may display the web server type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any backends being used for data storage.
+
+This information could be used by an attacker to blueprint what type of attacks might be successful. The information given to users must be minimized to not aid in the blueprinting of the Apache web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92699</ident><ident system="http://cyber.mil/legacy">SV-102787</ident><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-15468r881443_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Use the "ErrorDocument" directive to enable custom error pages for 4xx or 5xx HTTP status codes.
+
+ErrorDocument 500 "Sorry, our script crashed. Oh dear"
+ErrorDocument 500 /cgi-bin/crash-recover
+ErrorDocument 500 http://error.example.com/server_error.html
+ErrorDocument 404 /errors/not_found.html
+ErrorDocument 401 /subscription/how_to_subscribe.html
+
+The syntax of the ErrorDocument directive is:
+
+ErrorDocument &lt;3-digit-code&gt; &lt;action&gt;
+
+Additional information: 
+
+https://httpd.apache.org/docs/2.4/custom-error.html</fixtext><fix id="F-15468r881443_fix" /><check system="C-15470r944427_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or "httpd -V" can also be used. 
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "ErrorDocument"
+
+If the "ErrorDocument" directive is not being used for custom error pages for "4xx" or "5xx" HTTP status codes, this is a finding.
+
+Note: Using a "sites-available" method for error messages is also acceptable; this would involve the use of /etc/apache2/sites-available and /etc/apache2/sites-enabled. As long as warning and error messages have been sanitized, this is not a finding.</check-content></check></Rule></Group><Group id="V-214257"><title>SRG-APP-000266-WSR-000160</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214257r961167_rule" weight="10.0" severity="medium"><version>AS24-U1-000630</version><title>Debugging and trace information used to diagnose the Apache web server must be disabled.</title><description>&lt;VulnDiscussion&gt;Information needed by an attacker to begin looking for possible vulnerabilities in a web server includes any information about the web server and plug-ins or modules being used.
+
+When debugging or trace information is enabled in a production web server, information about the web server, such as web server type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any backends being used for data storage may be displayed. Since this information may be placed in logs and general messages during normal operation of the web server, an attacker does not need to cause an error condition to gain this information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92701</ident><ident system="http://cyber.mil/legacy">SV-102789</ident><ident system="http://cyber.mil/cci">CCI-001312</ident><fixtext fixref="F-15469r881446_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Add or set the value of "TraceEnable" to "Off". 
+
+Set the "LogLevel" directive to "info" or below.</fixtext><fix id="F-15469r881446_fix" /><check system="C-15471r881445_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used. 
+
+For any enabled "TraceEnable" directives, verify they are part of the server-level configuration (i.e., not nested in a "Directory" or "Location" directive). 
+
+Verify that the "TraceEnable" directive is set to "Off":
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "TraceEnable"
+
+If the "TraceEnable" directive is not part of the server-level configuration and/or is not set to "Off", this is a finding.
+
+If the directive does not exist in the "conf" file, this is a finding because the default value is "On".
+
+If the "LogLevel" directive is not being used, this is a finding: 
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "LogLevel"</check-content></check></Rule></Group><Group id="V-214258"><title>SRG-APP-000295-WSR-000134</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214258r1043182_rule" weight="10.0" severity="medium"><version>AS24-U1-000650</version><title>The Apache web server must set an inactive timeout for sessions.</title><description>&lt;VulnDiscussion&gt;Leaving sessions open indefinitely is a major security risk. An attacker can easily use an already authenticated session to access the hosted application as the previously authenticated user. By closing sessions after a set period of inactivity, the Apache web server can make certain that those sessions that are not closed through the user logging out of an application are eventually closed. mod_reqtimeout is an Apache module designed to shut down connections from clients taking too long to send their request, as seen in many attacks. This module provides a directive that allows Apache to close the connection if it senses that the client is not sending data quickly enough.
+
+Acceptable values are 5 minutes for high-value applications, 10 minutes for medium-value applications, and 20 minutes for low-value applications.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102793</ident><ident system="http://cyber.mil/legacy">V-92705</ident><ident system="http://cyber.mil/cci">CCI-002361</ident><fixtext fixref="F-15470r881449_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Load the "reqtimeout_module".
+
+Set the "RequestReadTimeout" directive to specific values applicable to the website.</fixtext><fix id="F-15470r881449_fix" /><check system="C-15472r881448_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used. 
+
+Verify the "reqtimeout_module" is loaded:
+
+Change to the root directory of Apache and run the following command to verify the "reqtimeout_module" is loaded:
+
+# httpd -M | grep reqtimeout_module
+Outout: reqtimeout_module (shared)
+
+If the "reqtimeout_module" is not loaded, this is a finding.
+
+Verify the "RequestReadTimeout" directive is configured. 
+Example: RequestReadTimeout handshake=5 header=10 body=30
+Allows for 5 seconds to complete the TLS handshake, 10 seconds to receive the request headers, and 30 seconds for receiving the request body.
+The values will depend upon the website. 
+The intent of this requirement is to ensure the RequestReadTimeout is explicitly configured.
+If the "reqtimeout_module" is loaded and the "RequestReadTimeout" directive is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-214259"><title>SRG-APP-000315-WSR-000004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214259r961278_rule" weight="10.0" severity="medium"><version>AS24-U1-000670</version><title>The Apache web server must restrict inbound connections from nonsecure zones.</title><description>&lt;VulnDiscussion&gt;Remote access to the Apache web server is any access that communicates through an external, non-organization-controlled network. Remote access can be used to access hosted applications or to perform management functions.
+
+A web server can be accessed remotely and must be capable of restricting access from what the DoD defines as nonsecure zones. Nonsecure zones are defined as any IP, subnet, or region that is defined as a threat to the organization. The nonsecure zones must be defined for public web servers logically located in a DMZ, as well as private web servers with perimeter protection devices. By restricting access from nonsecure zones, through the internal web server access list, the Apache web server can stop or slow denial-of-service (DoS) attacks on the web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92709</ident><ident system="http://cyber.mil/legacy">SV-102797</ident><ident system="http://cyber.mil/cci">CCI-002314</ident><fixtext fixref="F-15471r277038_fix">Configure the "http.conf" file to include restrictions.
+
+Example:
+
+&lt;RequireAll&gt;
+Require not ip 192.168.205
+Require not host phishers.example.com
+&lt;/RequireAll&gt;</fixtext><fix id="F-15471r277038_fix" /><check system="C-15473r881451_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>If external controls such as host-based firewalls are used to restrict this access, this check is Not Applicable.
+
+Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used. 
+
+Search for the "RequireAll" directive:
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "RequireAll"
+
+If "RequireAll" is not configured, or IP ranges configured to allow are not restrictive enough to prevent connections from nonsecure zones, this is a finding.</check-content></check></Rule></Group><Group id="V-214260"><title>SRG-APP-000316-WSR-000170</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214260r961281_rule" weight="10.0" severity="medium"><version>AS24-U1-000680</version><title>The Apache web server must be configured to immediately disconnect or disable remote access to the hosted applications.</title><description>&lt;VulnDiscussion&gt;During an attack on the Apache web server or any of the hosted applications, the System Administrator (SA) may need to disconnect or disable access by users to stop the attack.
+
+The Apache web server must be configured to disconnect users from a hosted application without compromising other hosted applications unless deemed necessary to stop the attack. Methods to disconnect or disable connections are to stop the application service for a specified hosted application, stop the Apache web server, or block all connections through the Apache web server access list.
+
+The Apache web server capabilities used to disconnect or disable users from connecting to hosted applications and the Apache web server must be documented to make certain that, during an attack, the proper action is taken to conserve connectivity to any other hosted application if possible and to make certain log data is conserved for later forensic analysis.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92711</ident><ident system="http://cyber.mil/legacy">SV-102799</ident><ident system="http://cyber.mil/cci">CCI-002322</ident><fixtext fixref="F-15472r854699_fix">Prepare documented procedures for shutting down an Apache website in the event of an attack.
+
+The procedure should, at a minimum, provide the following steps:
+
+Search for the PidFile runtime directive. (This example uses the combined results of HTTPD_ROOT and SERVER_CONFIG_FILE, above.) If this command returns a result, use this value in the kill command, otherwise, use the DEFAULT_PIDLOG value, above.
+
+In a command line, enter the following command:
+
+# grep -i pidfile /etc/httpd/conf/httpd.conf  
+
+# kill -TERM 'cat &lt;FULLY-QUALIFIED_PIDFILE_FILENAME&gt;'
+</fixtext><fix id="F-15472r854699_fix" /><check system="C-15474r881453_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Interview the SA and Web Manager.
+
+Ask for documentation for the Apache web server administration.
+
+Verify there are documented procedures for shutting down an Apache website in the event of an attack. 
+
+The procedure must, at a minimum, provide the following steps:
+
+1. Determine the respective website for the application at risk of an attack.
+
+2. Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file|pidlog'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+-D DEFAULT_PIDLOG=”/run/httpd/httpd.pid”
+ 
+3. Search for the PidFile runtime directive. (This example uses the combined results of HTTPD_ROOT and SERVER_CONFIG_FILE, above.) 
+
+# grep -i pidfile /etc/httpd/conf/httpd.conf  
+
+4. If this command returns a result, use this value in the kill command, otherwise, use the DEFAULT_PIDLOG value, above.
+
+# kill -TERM `cat &lt;FULLY-QUALIFIED_PIDFILE_FILENAME&gt;`
+Note: These should be documented steps, validators should not run kill commands while reviewing production systems.
+
+If the web server is not capable of or cannot be configured to disconnect or disable remote access to the hosted applications when necessary, this is a finding.</check-content></check></Rule></Group><Group id="V-214261"><title>SRG-APP-000340-WSR-000029</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214261r961353_rule" weight="10.0" severity="medium"><version>AS24-U1-000690</version><title>Non-privileged accounts on the hosting system must only access Apache web server security-relevant information and functions through a distinct administrative account.</title><description>&lt;VulnDiscussion&gt;By separating Apache web server security functions from non-privileged users, roles can be developed that can then be used to administer the Apache web server. Forcing users to change from a non-privileged account to a privileged account when operating on the Apache web server or on security-relevant information forces users to only operate as a Web Server Administrator when necessary. Operating in this manner allows for better logging of changes and better forensic information and limits accidental changes to the Apache web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92713</ident><ident system="http://cyber.mil/legacy">SV-102801</ident><ident system="http://cyber.mil/cci">CCI-002235</ident><fixtext fixref="F-15473r277044_fix">Restrict access to the web administration tool to only the System Administrator, Web Manager, or the Web Manager designees.</fixtext><fix id="F-15473r277044_fix" /><check system="C-15475r277043_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine which tool or control file is used to control the configuration of the web server.
+
+If the control of the web server is done via control files, verify who has update access to them. If tools are being used to configure the web server, determine who has access to execute the tools.
+
+If accounts other than the System Administrator (SA), the Web Manager, or the Web Manager designees have access to the web administration tool or control files, this is a finding.</check-content></check></Rule></Group><Group id="V-214262"><title>SRG-APP-000357-WSR-000150</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214262r961392_rule" weight="10.0" severity="medium"><version>AS24-U1-000710</version><title>The Apache web server must use a logging mechanism that is configured to allocate log record storage capacity large enough to accommodate the logging requirements of the Apache web server.</title><description>&lt;VulnDiscussion&gt;To make certain that the logging mechanism used by the web server has sufficient storage capacity in which to write the logs, the logging mechanism needs to be able to allocate log record storage capacity.
+
+The task of allocating log record storage capacity is usually performed during initial installation of the logging mechanism. The System Administrator will usually coordinate the allocation of physical drive space with the Web Server Administrator along with the physical location of the partition and disk. Refer to NIST SP 800-92 for specific requirements on log rotation and storage dependent on the impact of the web server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92715</ident><ident system="http://cyber.mil/legacy">SV-102803</ident><ident system="http://cyber.mil/cci">CCI-001849</ident><fixtext fixref="F-15474r277047_fix">Work with the SIEM administrator to determine if the SIEM is configured to allocate log record storage capacity large enough to accommodate the logging requirements of the Apache web server.</fixtext><fix id="F-15474r277047_fix" /><check system="C-15476r277046_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Work with SIEM administrator to determine log storage capacity. 
+
+If there is no setting within a SIEM to accommodate enough a large logging capacity, this is a finding.</check-content></check></Rule></Group><Group id="V-214263"><title>SRG-APP-000358-WSR-000063</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214263r961395_rule" weight="10.0" severity="medium"><version>AS24-U1-000720</version><title>The Apache web server must not impede the ability to write specified log record content to an audit log server.</title><description>&lt;VulnDiscussion&gt;Writing events to a centralized management audit system offers many benefits to the enterprise over having dispersed logs. Centralized management of audit records and logs provides for efficiency in maintenance and management of records, enterprise analysis of events, and backup and archiving of event records enterprise-wide. The web server and related components are required to be capable of writing logs to centralized audit log servers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92717</ident><ident system="http://cyber.mil/legacy">SV-102805</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-15475r277050_fix">Work with the SIEM administrator to  allow the ability to write specified log record content to an audit log server.</fixtext><fix id="F-15475r277050_fix" /><check system="C-15477r277049_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Work with SIEM administrator to determine audit configurations. 
+
+If there is a setting within the SIEM that could impede the ability to write specific log record content, this is a finding.</check-content></check></Rule></Group><Group id="V-214264"><title>SRG-APP-000358-WSR-000163</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214264r961395_rule" weight="10.0" severity="medium"><version>AS24-U1-000730</version><title>The Apache web server must be configured to integrate with an organizations security infrastructure.</title><description>&lt;VulnDiscussion&gt;A web server will typically use logging mechanisms for maintaining a historical log of activity that occurs within a hosted application. This information can then be used for diagnostic purposes, forensics purposes, or other purposes relevant to ensuring the availability and integrity of the hosted application.
+
+While it is important to log events identified as being critical and relevant to security, it is equally important to notify the appropriate personnel in a timely manner so they are able to respond to events as they occur. 
+
+Manual review of the web server logs may not occur in a timely manner, and each event logged is open to interpretation by a reviewer. By integrating the web server into an overall or organization-wide log review, a larger picture of events can be viewed, and analysis can be done in a timely and reliable manner.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92719</ident><ident system="http://cyber.mil/legacy">SV-102807</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-15476r277053_fix">Work with the SIEM administrator to integrate with an organizations security infrastructure.</fixtext><fix id="F-15476r277053_fix" /><check system="C-15478r277052_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Work with the SIEM administrator to determine current security integrations. 
+
+If the SIEM is not integrated with security, this is a finding.</check-content></check></Rule></Group><Group id="V-214265"><title>SRG-APP-000374-WSR-000172</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214265r961443_rule" weight="10.0" severity="medium"><version>AS24-U1-000750</version><title>The Apache web server must generate log records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT) which are stamped at a minimum granularity of one second.</title><description>&lt;VulnDiscussion&gt;If time stamps are not consistently applied and there is no common time reference, it is difficult to perform forensic analysis across multiple devices and log records.
+
+Time stamps generated by the Apache web server include date and time. Time is commonly expressed in UTC, a modern continuation of GMT, or local time with an offset from UTC.
+
+Without sufficient granularity of time stamps, it is not possible to adequately determine the chronological order of records.
+
+Time stamps generated by the Apache web server include date and time and must be to a granularity of one second.
+
+Satisfies: SRG-APP-000374-WSR-000172, SRG-APP-000375-WSR-000171&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92723</ident><ident system="http://cyber.mil/legacy">SV-102811</ident><ident system="http://cyber.mil/cci">CCI-001889</ident><ident system="http://cyber.mil/cci">CCI-001890</ident><fixtext fixref="F-15477r277056_fix">In a command line, run "httpd -M" to view a list of installed modules.
+
+If "log_config_module" is not listed, enable this module.
+
+Review the "httpd.conf" file.
+
+Determine if the "LogFormat" directive exists. If it does not exist, ensure the "LogFormat" line contains the %t flag.</fixtext><fix id="F-15477r277056_fix" /><check system="C-15479r881455_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Review the web server documentation and configuration to determine the time stamp format for log data.
+
+Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used.  
+
+Search for the "log_config_module" directive:
+
+# cat /&lt;path_to_file&gt;/httpd.conf | grep -i "LogFormat"
+
+Verify the "LogFormat" directive exists.
+
+If the "LogFormat" directive does not exist, this is a finding.
+
+Verify the "LogFormat" line contains the "%t" flag.
+ 
+If "%t" flag is not present, time is not mapped to UTC or GMT time, this is a finding.</check-content></check></Rule></Group><Group id="V-214266"><title>SRG-APP-000383-WSR-000175</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214266r961470_rule" weight="10.0" severity="medium"><version>AS24-U1-000780</version><title>The Apache web server must prohibit or restrict the use of nonsecure or unnecessary ports, protocols, modules, and/or services.</title><description>&lt;VulnDiscussion&gt;Web servers provide numerous processes, features, and functionalities that use TCP/IP ports. Some of these processes may be deemed unnecessary or too unsecure to run on a production system.
+
+The Apache web server must provide the capability to disable or deactivate network-related services that are deemed to be non-essential to the server mission, are too unsecure, or are prohibited by the Ports, Protocols, and Services Management (PPSM) Category Assurance List (CAL) and vulnerability assessments.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92727</ident><ident system="http://cyber.mil/legacy">SV-102815</ident><ident system="http://cyber.mil/cci">CCI-001762</ident><fixtext fixref="F-15478r277059_fix">Ensure the website enforces the use of IANA well-known ports for HTTP and HTTPS.</fixtext><fix id="F-15478r277059_fix" /><check system="C-15480r277058_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Review the website to determine if HTTP and HTTPs are used in accordance with well known ports (e.g., 80 and 443) or those ports and services as registered and approved for use by the DoD PPSM. Any variation in PPS will be documented, registered, and approved by the PPSM. If not, this is a finding.</check-content></check></Rule></Group><Group id="V-214267"><title>SRG-APP-000435-WSR-000147</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214267r961620_rule" weight="10.0" severity="medium"><version>AS24-U1-000820</version><title>The Apache web server must be protected from being stopped by a non-privileged user.</title><description>&lt;VulnDiscussion&gt;An attacker has at least two reasons to stop a web server. The first is to cause a denial of service (DoS), and the second is to put in place changes the attacker made to the web server configuration.
+
+To prohibit an attacker from stopping the Apache web server, the process ID (pid) of the web server and the utilities used to start/stop it must be protected from access by non-privileged users. By knowing the "pid" and having access to the Apache web server utilities, a non-privileged user has a greater capability of stopping the server, whether intentionally or unintentionally.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92731</ident><ident system="http://cyber.mil/legacy">SV-102819</ident><ident system="http://cyber.mil/cci">CCI-002385</ident><fixtext fixref="F-15479r277062_fix">Review the web server documentation and deployed configuration to determine where the process ID is stored and which utilities are used to start/stop the web server.
+
+Determine where the "httpd.pid" file is located by running the following command:
+
+find / -name "httpd.pid"
+
+Run the following commands:
+ 
+# cd &lt;'httpd.pid location'&gt;/
+# chown &lt;'service account'&gt; httpd.pid 
+# chmod 644 httpd.pid 
+# cd /usr/sbin 
+# chown &lt;'service account'&gt; service apachectl 
+# chmod 755 service apachectl</fixtext><fix id="F-15479r277062_fix" /><check system="C-15481r881457_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Review the web server documentation and deployed configuration to determine where the process ID is stored and which utilities are used to start/stop the web server.
+
+Locate the httpd.pid file and list its permission set and owner/group
+
+# find / -name “httpd.pid
+Output should be similar to: /run/httpd/httpd.pid 
+
+# ls -laH /run/httpd/httpd.pid
+Output should be similar -rw-r--r--. 1 root root 5 Jun 13 03:18 /run/httpd/httpd.pid
+
+If the file owner/group is not an administrative service account, this is a finding.
+
+If permission set is not 644 or more restrictive, this is a finding.
+ 
+Verify the Apache service utilities (binaries) have the correct permission set and are user/group owned by an administrator account
+
+# ls -laH /usr/sbin/service
+Output should be similar: -rwxr-xr-x. 1 root root 3.2K Aug 19, 2019 /usr/sbin/service
+
+# ls -laH /usr/sbin/apachectl
+Output should be similar: -rwxr-xr-x. 1 root root 4.2K Oct 8, 2019 /usr/sbin/apachectl
+ 
+If the service utilities owner/group is not an administrative service account, this is a finding.
+ 
+If permission set is not 755 or more restrictive, this is a finding.</check-content></check></Rule></Group><Group id="V-214268"><title>SRG-APP-000439-WSR-000154</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214268r961632_rule" weight="10.0" severity="medium"><version>AS24-U1-000870</version><title>Cookies exchanged between the Apache web server and the client, such as session cookies, must have cookie properties set to prohibit client-side scripts from reading the cookie data.</title><description>&lt;VulnDiscussion&gt;A cookie can be read by client-side scripts easily if cookie properties are not set properly. By allowing cookies to be read by the client-side scripts, information such as session identifiers could be compromised and used by an attacker who intercepts the cookie. Setting cookie properties (i.e., HttpOnly property) to disallow client-side scripts from reading cookies better protects the information inside the cookie.
+
+Satisfies: SRG-APP-000439-WSR-000154, SRG-APP-000439-WSR-000155&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92741</ident><ident system="http://cyber.mil/legacy">SV-102829</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-15480r881460_fix">Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+ 
+NOTE: SSL directives may also be located in /etc/httpd/conf.d/ssl.conf.
+
+Set "Session" to "on".
+
+Ensure the "SessionCookieName" directive includes "httpOnly" and "secure".</fixtext><fix id="F-15480r881460_fix" /><check system="C-15482r881459_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Verify the session cookie module is loaded
+
+# httpd -M | grep -i session_cookie_module
+Output should look similar to: session_cookie_module (shared)
+
+Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" file:
+
+# apachectl -V | egrep -i 'httpd_root|server_config_file'
+-D HTTPD_ROOT="/etc/httpd"
+-D SERVER_CONFIG_FILE="conf/httpd.conf"
+
+Note: The apachectl front end is the preferred method for locating the Apache httpd file. For some Linux distributions, "apache2ctl -V" or  "httpd -V" can also be used. 
+
+Search for the directive "Session" in the "httpd.conf" file:
+
+# cat httpd.conf  | grep -i "Session"
+Output should be similar to: 
+Session on
+SessionCookieName httpOnly Secure
+SessionCryptoCipher aes256
+SessionMaxAge 600
+
+Note: SSL directives can also be located in /etc/httpd/conf.d/ssl.conf.
+
+If the "Session" and "SessionCookieName" directives are not present, this is a finding.
+
+If "Session" is not set to "on" and "SessionCookieName" does not contain "httpOnly" and "secure", this is a finding.</check-content></check></Rule></Group><Group id="V-214269"><title>SRG-APP-000439-WSR-000188</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214269r961632_rule" weight="10.0" severity="medium"><version>AS24-U1-000900</version><title>The Apache web server must remove all export ciphers to protect the confidentiality and integrity of transmitted information.</title><description>&lt;VulnDiscussion&gt;During the initial setup of a Transport Layer Security (TLS) connection to the Apache web server, the client sends a list of supported cipher suites in order of preference. The Apache web server will reply with the cipher suite it will use for communication from the client list. If an attacker can intercept the submission of cipher suites to the Apache web server and place, as the preferred cipher suite, a weak export suite, the encryption used for the session becomes easy for the attacker to break, often within minutes to hours.
+
+Configuring the Apache server with only strong ciphersuites, denying or disabling weak ciphersuites, will prevent this vulnerability.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92745</ident><ident system="http://cyber.mil/legacy">SV-102833</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-15481r505086_fix">Update the cipher specification string for all enabled SSLCipherSuite directives to include !EXPORT.</fixtext><fix id="F-15481r505086_fix" /><check system="C-15483r881462_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the location of the "HTTPD_ROOT" directory and the "httpd.conf" and "ssl.conf" files:
+
+Search the httpd.conf and ssl.conf file for the following uncommented directive: SSLCipherSuite
+
+# cat httpd.conf  | grep -i SSLCipherSuite
+Output: None
+
+# cat /etc/httpd/conf.d/ssl.conf | grep -i SSLCipherSuite
+Output: SSLCipherSuite HIGH:3DES:!NULL:!MD5:!SEED:!IDEA:!EXPORT
+
+For all enabled SSLCipherSuite directives, ensure the cipher specification string contains the kill cipher from list option for all export cipher suites, i.e., !EXPORT, which may be abbreviated !EXP as in the following example:
+
+Example: SSLCipherSuite="HIGH:MEDIUM:!MD5!EXP:!NULL:!LOW:!ADH
+
+If the SSLCipherSuite directive does not contain !EXPORT or !EXP or there are no enabled SSLCipherSuite directives, this is a finding.</check-content></check></Rule></Group><Group id="V-214270"><title>SRG-APP-000456-WSR-000187</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214270r961683_rule" weight="10.0" severity="medium"><version>AS24-U1-000930</version><title>The Apache web server must install security-relevant software updates within the configured time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).</title><description>&lt;VulnDiscussion&gt;Security flaws with software applications are discovered daily. Vendors are constantly updating and patching their products to address newly discovered security vulnerabilities. Organizations (including any contractor to the organization) are required to promptly install security-relevant software updates (e.g., patches, service packs, and hot fixes). Flaws discovered during security assessments, continuous monitoring, incident response activities, or information system error handling must also be addressed expeditiously.
+
+The Apache web server will be configured to check for and install security-relevant software updates from an authoritative source within an identified time period from the availability of the update. By default, this time period will be every 24 hours.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-102837</ident><ident system="http://cyber.mil/legacy">V-92749</ident><ident system="http://cyber.mil/cci">CCI-002605</ident><fixtext fixref="F-15482r277071_fix">Install the current version of the web server software and maintain appropriate service packs and patches.</fixtext><fix id="F-15482r277071_fix" /><check system="C-15484r854710_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the most recent patch level of the Apache Web Server 2.4 software, as posted on the Apache HTTP Server Project website. If the Apache installation is a proprietary installation supporting an application and is supported by a vendor, determine the most recent patch level of the vendor’s installation.
+
+In a command line, type "httpd -v".
+
+If the version is more than one version behind the most recent patch level, this is a finding.
+</check-content></check></Rule></Group><Group id="V-214271"><title>SRG-APP-000516-WSR-000079</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214271r961863_rule" weight="10.0" severity="high"><version>AS24-U1-000940</version><title>The account used to run the Apache web server must not have a valid login shell and password defined.</title><description>&lt;VulnDiscussion&gt;During installation of the Apache web server software, accounts are created for the Apache web server to operate properly. The accounts installed can have either no password installed or a default password, which will be known and documented by the vendor and the user community.
+
+The first things an attacker will try when presented with a logon screen are the default user identifiers with default passwords. Installed applications may also install accounts with no password, making the logon even easier. Once the Apache web server is installed, the passwords for any created accounts should be changed and documented. The new passwords must meet the requirements for all passwords, i.e., uppercase/lowercase characters, numbers, special characters, time until change, reuse policy, etc. 
+
+Service accounts or system accounts that have no logon capability do not need to have passwords set or changed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92751</ident><ident system="http://cyber.mil/legacy">SV-102839</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-15483r277074_fix">Update the /etc/passwd file to assign the account used to run the "httpd" process an invalid login shell such as "/sbin/nologin".
+
+Lock the account used to run the "httpd" process:
+
+# passwd -l &lt;account&gt;
+Locking password for user &lt;account&gt;
+passwd: Success</fixtext><fix id="F-15483r277074_fix" /><check system="C-15485r277073_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Identify the account that is running the "httpd" process:
+# ps -ef | grep -i httpd | grep -v grep
+
+apache   29613   996  0 Feb17 ?        00:00:00 /usr/sbin/httpd
+apache   29614   996  0 Feb17 ?        00:00:00 /usr/sbin/httpd
+
+Check to see if the account has a valid login shell:
+
+# cut -d: -f1,7 /etc/passwd | grep -i &lt;service_account&gt;
+apache:/sbin/nologin
+
+If the service account has a valid login shell, verify that no password is configured for the account:
+
+# cut -d: -f1,2 /etc/shadow | grep -i &lt;service_account&gt;
+apache:!!
+
+If the account has a valid login shell and a password defined, this is a finding.</check-content></check></Rule></Group><Group id="V-214272"><title>SRG-APP-000516-WSR-000174</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214272r961863_rule" weight="10.0" severity="low"><version>AS24-U1-000950</version><title>The Apache web server must be configured in accordance with the security configuration settings based on DoD security configuration or implementation guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.</title><description>&lt;VulnDiscussion&gt;Configuring the Apache web server to implement organization-wide security implementation guides and security checklists guarantees compliance with federal standards and establishes a common security baseline across the DoD that reflects the most restrictive security posture consistent with operational requirements.
+
+Configuration settings are the set of parameters that can be changed that affect the security posture and/or functionality of the system. Security-related parameters are parameters impacting the security state of the Apache web server, including those required to satisfy other security control requirements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92753</ident><ident system="http://cyber.mil/legacy">SV-102841</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-15484r277077_fix">Ensure the website enforces the use of IANA well-known ports for "HTTP" and "HTTPS".</fixtext><fix id="F-15484r277077_fix" /><check system="C-15486r277076_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Review the website to determine if "HTTP" and "HTTPS" are used in accordance with well-known ports (e.g., 80 and 443) or those ports and services as registered and approved for use by the DoD Ports, Protocols, and Services Management (PPSM).
+
+Verify that any variation in PPS is documented, registered, and approved by the PPSM.
+
+If well-known ports and services are not approved for used by PPSM, this is a finding.</check-content></check></Rule></Group><Group id="V-214273"><title>SRG-APP-000516-WSR-000174</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214273r961863_rule" weight="10.0" severity="high"><version>AS24-U1-000960</version><title>The Apache web server software must be a vendor-supported version.</title><description>&lt;VulnDiscussion&gt;Many vulnerabilities are associated with older versions of web server software. As hot fixes and patches are issued, these solutions are included in the next version of the server software. Maintaining the web server at a current version makes the efforts of a malicious user to exploit the web service more difficult.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92755</ident><ident system="http://cyber.mil/legacy">SV-102843</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-15485r277080_fix">Install the current version of the web server software and maintain appropriate service packs and patches.</fixtext><fix id="F-15485r277080_fix" /><check system="C-15487r277079_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Determine the version of the Apache software that is running on the system by entering the following command:
+
+httpd -v
+
+If the version of Apache is not at the following version or higher, this is a finding:
+
+Apache 2.4 (February 2012)
+
+NOTE: In some situations, the Apache software that is being used is supported by another vendor, such as Oracle in the case of the Oracle Application Server or IBM's HTTP Server. The versions of the software in these cases may not match the version number noted above. If the site can provide vendor documentation showing the version of the web server is supported, this would not be a finding.</check-content></check></Rule></Group><Group id="V-214274"><title>SRG-APP-000516-WSR-000174</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-214274r961863_rule" weight="10.0" severity="medium"><version>AS24-U1-000970</version><title>The Apache web server htpasswd files (if present) must reflect proper ownership and permissions.</title><description>&lt;VulnDiscussion&gt;In addition to OS restrictions, access rights to files and directories can be set on a website using the web server software. That is, in addition to allowing or denying all access rights, a rule can be specified that allows or denies partial access rights. For example, users can be given read-only access rights to files to view the information but not change the files.
+
+This check verifies that the htpasswd file is only accessible by System Administrators (SAs) or Web Managers, with the account running the web service having group permissions of read and execute. "htpasswd" is a utility used by Netscape and Apache to provide for password access to designated websites.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apache Server 2.4 UNIX Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apache Server 2.4 UNIX Server</dc:subject><dc:identifier>3996</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-92757</ident><ident system="http://cyber.mil/legacy">SV-102845</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-15486r277083_fix">Ensure the SA or Web Manager account owns the "htpasswd" file.
+
+Ensure permissions are set to "550".</fixtext><fix id="F-15486r277083_fix" /><check system="C-15488r277082_chk"><check-content-ref href="Apache_Server_2.4_UNIX_Server_STIG.xml" name="M" /><check-content>Locate the htpasswd file by entering the following command:
+
+find / -name htpasswd
+
+Navigate to that directory.
+
+Run: ls -l htpasswd
+
+Permissions should be: r-x r - x - - - (550)
+
+If permissions on "htpasswd" are greater than "550", this is a finding.
+
+Verify the owner is the SA or Web Manager account.
+
+If another account has access to this file, this is a finding.</check-content></check></Rule></Group></Benchmark>
