@@ -1,0 +1,94 @@
+.im-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.im-list-item:hover {
+  background: #2196f3;
+  /*color: #fff;*/
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.im-list-item > div {
+  /*background: rgba(255, 255, 255, 0.2);*/
+  padding: 3px 10px 3px 10px;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+  color: #eee;
+  border-bottom: 1px solid transparent;
+  /*transition: color 0.3s;*/
+  margin-right: auto;
+  flex: 1;
+  overflow: hidden;
+  /*transition: background-color 0.4s;*/
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+
+
+.im-list-item-nochk a {
+  padding: 3px 10px 3px 26px;
+}
+
+.im-list-item:hover {
+  background: #2196f3;
+  color: #fff;
+}
+
+.im-list-item i {
+  color: #ccc;
+}
+
+.im-list-item:hover,
+.im-list-item:hover a,
+.im-list-item:hover div,
+.im-list-item:hover i {
+  background: #111;
+  color: #fff;
+  /*color: #fff;*/
+}
+
+li.sel-item,
+.sel-item-list-multi {
+  color: black;
+  background: #333;
+  color: #fff;
+}
+
+li.sel-item a,
+li.sel-item-list-multi a,
+li.sel-item div i,
+li.sel-item-list-multi div i {
+  color: #fff;
+}
+
+.im-rel {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  margin: 0 2px;
+  border-radius: 2px;
+}
+
+.im-list-btn-chk {
+  width: 12px;
+  display: block;
+  cursor: pointer;
+  align-self: center;
+}
+
+.im-list-btn {
+  width: 22px;
+  display: block;
+  padding: 0 5px 0 0px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.im-list-btn i {
+  color: #ccc;
+}
