@@ -1,0 +1,25 @@
+control 'SV-37686' do
+  title 'X Window System connections not required must be disabled.'
+  desc "If unauthorized clients are permitted access to the X server, a user's X session may be compromised."
+  desc 'check', 'Determine if the X window system is running.
+
+Procedure:
+# ps -ef |grep Xorg
+
+Ask the SA if the X window system is an operational requirement. If it is not, this is a finding.'
+  desc 'fix', 'Disable the X Windows server on the system.'
+  impact 0.5
+  ref 'DPMS Target Red Hat 5'
+  tag check_id: 'C-36878r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-12018'
+  tag rid: 'SV-37686r1_rule'
+  tag stig_id: 'GEN005260'
+  tag gtitle: 'GEN005260'
+  tag fix_id: 'F-31878r1_fix'
+  tag 'documentable'
+  tag responsibility: 'System Administrator'
+  tag ia_controls: 'ECSC-1'
+  tag cci: ['CCI-001436']
+  tag nist: ['AC-17 (8)']
+end

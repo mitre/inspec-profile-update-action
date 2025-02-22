@@ -1,0 +1,53 @@
+control 'SV-75121' do
+  title 'The operating system must employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs.'
+  desc 'Utilizing a whitelist provides a configuration management method for allowing the execution of only authorized software. Using only authorized software decreases risk by limiting the number of potential vulnerabilities.
+
+The organization must identify authorized software programs and only permit execution of authorized software. The process used to identify software programs that are authorized to execute on organizational information systems is commonly referred to as whitelisting.'
+  desc 'check', 'This is applicable to unclassified systems, for other systems this is NA.
+
+Verify the operating system employs a deny-all, permit-by-exception policy to allow the execution of authorized software programs.  This must include packaged apps such as the Windows 8 modern/universal apps installed by default on systems.
+
+If an application whitelisting program is not in use on the system, this is a finding.
+
+Configuration of whitelisting applications will vary by the program.
+
+AppLocker is a whitelisting application built into Windows 8 Enterprise.  A deny-by-default implementation is initiated by enabling any AppLocker rules within a category, only allowing what is specified by defined rules.
+
+If AppLocker is used, perform the following to view the configuration of AppLocker:
+Open PowerShell.
+
+If the AppLocker PowerShell module has not been previously imported, execute the following first:
+Import-Module AppLocker
+
+Execute the following command, substituting [c:\\temp\\file.xml] with a location and file name appropriate for the system:
+Get-AppLockerPolicy -Effective -XML > c:\\temp\\file.xml
+
+This will produce an xml file with the effective settings that can be viewed in a browser or opened in a program such as Excel for review.
+
+Implementation guidance for AppLocker is available in the NSA paper "Application Whitelisting using Microsoft AppLocker" under the Microsoft Windows section of the following link:
+
+https://www.nsa.gov/ia/mitigation_guidance/security_configuration_guides/operating_systems.shtml'
+  desc 'fix', 'This is applicable to unclassified systems, for other systems this is NA.
+
+Configure an application whitelisting program to employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs.
+
+Configuration of whitelisting applications will vary by the program.  AppLocker is a whitelisting application built into Windows 8 Enterprise.
+
+If AppLocker is used, it is configured through group policy in Computer Configuration >> Windows Settings >> Security Settings >> Application Control Policies >> AppLocker.
+
+Implementation guidance for AppLocker is available in the NSA paper "Application Whitelisting using Microsoft AppLocker" under the Microsoft Windows section of the following link:
+
+https://www.nsa.gov/ia/mitigation_guidance/security_configuration_guides/operating_systems.shtml'
+  impact 0.5
+  ref 'DPMS Target Windows 8'
+  tag check_id: 'C-69239r3_chk'
+  tag severity: 'medium'
+  tag gid: 'V-57637'
+  tag rid: 'SV-75121r3_rule'
+  tag stig_id: 'WN08-00-000018'
+  tag gtitle: 'WIN00-000018'
+  tag fix_id: 'F-66345r7_fix'
+  tag 'documentable'
+  tag cci: ['CCI-001774']
+  tag nist: ['CM-7 (5) (b)']
+end

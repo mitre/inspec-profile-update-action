@@ -1,0 +1,39 @@
+control 'SV-219354' do
+  title 'Apple iOS/iPadOS must not display notifications when the device is locked.'
+  desc 'Many mobile devices display notifications on the lock screen so that users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. Notifications on the lock screen can be viewed by an adversary merely by being in close physical proximity to the device. Configuring the MOS to not send notifications to the lock screen mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #19'
+  desc 'check', 'Review configuration settings to confirm "Show Notification Center in Lock screen" is disabled.
+
+This check procedure is performed on both the Apple iOS/iPadOS management tool and the iPhone and iPad. 
+
+Note: If an organization has multiple configuration profiles, the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS/iPadOS management tool, verify "Show Notification Center in Lock screen" is unchecked.
+
+Alternatively, verify the text "<key>allowLockScreenNotificationsView</key> <false/>" appears in the configuration profile (.mobileconfig file).
+
+On the iPhone and iPad:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles & Device Management".
+4. Tap the Configuration Profile from the iOS management tool containing the management policy.
+5. Tap "Restrictions".
+6. Verify "Notifications view on lock screen not allowed" is present.
+
+If "Show Notification Center in Lock screen" is checked in the Apple iOS/iPadOS management tool, "<key>allowLockScreenNotificationsView</key> <true/>" appears in the configuration profile, or the restrictions policy on the iPhone and iPad does not list "Notifications View on lock screen not allowed", this is a finding.'
+  desc 'fix', 'Install a configuration profile to disable Notification Center from the device Lock screen.'
+  impact 0.5
+  ref 'DPMS Target Apple iOS-iPadOS 13'
+  tag check_id: 'C-21079r547579_chk'
+  tag severity: 'medium'
+  tag gid: 'V-219354'
+  tag rid: 'SV-219354r604137_rule'
+  tag stig_id: 'AIOS-13-001800'
+  tag gtitle: 'PP-MDF-301120'
+  tag fix_id: 'F-21078r547580_fix'
+  tag 'documentable'
+  tag legacy: ['SV-106539', 'V-97435']
+  tag cci: ['CCI-000366', 'CCI-000370']
+  tag nist: ['CM-6 b', 'CM-6 (1)']
+end

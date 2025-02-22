@@ -1,0 +1,28 @@
+control 'SV-230844' do
+  title 'The macOS system must be configured with the sudoers file configured to authenticate users on a per -tty basis.'
+  desc %q(The "sudo" command must be configured to prompt for the administrator's password at least once in each newly opened Terminal window or remote logon session, as this prevents a malicious user from taking advantage of an unlocked computer or an abandoned logon session to bypass the normal password prompt requirement. 
+
+Without the "tty_tickets" option, all open local and remote logon sessions would be authenticated to use sudo without a password for the duration of the configured password timeout window.)
+  desc 'check', 'To check if the "tty_tickets" option is set for "/usr/bin/sudo", run the following command:
+
+/usr/bin/sudo /usr/bin/grep tty_tickets /etc/sudoers
+
+If there is no result, this is a finding.'
+  desc 'fix', 'Edit the "/etc/sudoers" file to contain the line:
+
+Defaults tty_tickets
+
+This line can be placed in the defaults section or at the end of the file.'
+  impact 0.7
+  ref 'DPMS Target Apple macOS 11'
+  tag check_id: 'C-33789r607419_chk'
+  tag severity: 'high'
+  tag gid: 'V-230844'
+  tag rid: 'SV-230844r599842_rule'
+  tag stig_id: 'APPL-11-004021'
+  tag gtitle: 'SRG-OS-000480-GPOS-00227'
+  tag fix_id: 'F-33762r607420_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end
