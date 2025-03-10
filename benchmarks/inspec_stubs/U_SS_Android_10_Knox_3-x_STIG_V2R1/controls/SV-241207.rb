@@ -1,0 +1,35 @@
+control 'SV-241207' do
+  title 'Samsung Android must be configured to disable USB mass storage mode.'
+  desc 'USB mass storage mode enables the transfer of data and software from one device to another. This software can include malware. When USB mass storage is enabled on a mobile device, it becomes a potential vector for malware and unauthorized data exfiltration. Prohibiting USB mass storage mode mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #39a'
+  desc 'check', 'Review Samsung Android configuration settings to determine if the mobile device has a USB mass storage mode and if it has been disabled. 
+
+For KPE(AE) deployments this configuration is the default configuration. If the management tool does not provide the capability to configure "USB file transfer", there is NO finding because the default setting cannot be changed.
+
+This validation procedure is performed on both the management tool Administration Console and the Samsung Android device.
+
+On the management tool, in the device restrictions section, verify that "USB file transfer" has been set to "Disallow".
+
+On the PC, browse the mounted Samsung Android device and verify that it does not display any folders or files.
+
+If on the management tool "USB file transfer" is not set to "Disallow", or the PC can mount and browse folders and files on the Samsung Android device, this is a finding.'
+  desc 'fix', 'Configure Samsung Android to disable USB mass storage mode.
+
+For KPE(AE) deployments this configuration is the default configuration. No configuration is required.
+
+On the management tool, in the device restrictions section, set "USB file transfer" to "Disallow".'
+  impact 0.5
+  ref 'DPMS Target Samsung Android OS 10 with Knox 3-x'
+  tag check_id: 'C-44483r680260_chk'
+  tag severity: 'medium'
+  tag gid: 'V-241207'
+  tag rid: 'SV-241207r680262_rule'
+  tag stig_id: 'KNOX-10-003400'
+  tag gtitle: 'PP-MDF-301210'
+  tag fix_id: 'F-44442r680261_fix'
+  tag 'documentable'
+  tag legacy: ['SV-109047', 'V-99943']
+  tag cci: ['CCI-000381']
+  tag nist: ['CM-7 a']
+end

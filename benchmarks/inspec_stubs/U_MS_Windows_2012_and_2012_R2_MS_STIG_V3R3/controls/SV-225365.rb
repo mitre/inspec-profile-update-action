@@ -1,0 +1,27 @@
+control 'SV-225365' do
+  title 'The default Autorun behavior must be configured to prevent Autorun commands.'
+  desc 'Allowing Autorun commands to execute may introduce malicious code to a system.  Configuring this setting prevents Autorun commands from executing.'
+  desc 'check', 'If the following registry value does not exist or is not configured as specified, this is a finding:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\
+
+Value Name: NoAutorun
+
+Type: REG_DWORD
+Value: 1'
+  desc 'fix', 'Configure the policy value for Computer Configuration -> Administrative Templates -> Windows Components -> AutoPlay Policies -> "Set the default behavior for AutoRun" to "Enabled:Do not execute any autorun commands".'
+  impact 0.7
+  ref 'DPMS Target Windows Server 2012-2012 R2 Member Server'
+  tag check_id: 'C-27064r471437_chk'
+  tag severity: 'high'
+  tag gid: 'V-225365'
+  tag rid: 'SV-225365r569185_rule'
+  tag stig_id: 'WN12-CC-000073'
+  tag gtitle: 'SRG-OS-000368-GPOS-00154'
+  tag fix_id: 'F-27052r471438_fix'
+  tag 'documentable'
+  tag legacy: ['SV-53124', 'V-22692']
+  tag cci: ['CCI-001764']
+  tag nist: ['CM-7 (2)']
+end

@@ -1,0 +1,54 @@
+control 'SV-223610' do
+  title 'IBM z/OS SSL encryption options for the TN3270 Telnet Server must be specified properly for each statement that defines a SECUREPORT or within the TELNETGLOBALS.'
+  desc 'Without confidentiality protection mechanisms, unauthorized individuals may gain access to sensitive information via a remote access session.
+
+Remote access is access to DoD nonpublic information systems by an authorized user (or an information system) communicating through an external, non-organization-controlled network. Remote access methods include, for example, dial-up, broadband, and wireless.
+
+Encryption provides a means to secure the remote connection to prevent unauthorized access to the data traversing the remote access connection (e.g., RDP), thereby providing a degree of confidentiality. The encryption strength of a mechanism is selected based on the security categorization of the information.
+
+'
+  desc 'check', 'Refer to the Profile configuration file specified on the PROFILE DD statement in the TCPIP started task JCL.
+
+If the following items are in effect for the configuration specified in the TCP/IP Profile configuration file, this is not a finding.
+
+NOTE: If an INCLUDE statement is coded in the TCP/IP Profile configuration file, the data set specified on this statement must be checked for the following items as well.
+
+NOTE: FIPS 140-2 minimum encryption is the accepted level of encryption and will override this requirement if greater.
+
+The TELNETGLOBALS block that specifies an ENCRYPTION statement states one or more of the below cipher specifications.
+
+Each TELNETPARMS block that specifies the SECUREPORT statement, specifies an ENCRYPTION statement that states one or more of the below cipher specifications, and the TELNETGLOBALS block does or does not specify an ENCRYPTION statement.
+
+Cipher Specifications
+SSL_3DES_SHA
+SSL_AES_256_SHA
+SSL_AES_128_SHA'
+  desc 'fix', 'Configure the SECUREPORT and TELNETPARMS ENCRYPTION statements and/or the TELNETGLOBALS statement in the PROFILE.TCPIP file to conform to the requirements specified below.
+
+The TELNETGLOBALS block may specify an ENCRYPTION statement that specifies one or more of the below cipher specifications.
+
+Each TELNETPARMS block that specifies the SECUREPORT statement, an ENCRYPTION statement is coded with one or more of the below cipher specifications, and the TELNETGLOBALS block does or does not specify an ENCRYPTION statement.
+
+To prevent the use of non FIPS 140-2 encryption, the TELNETGLOBALS block and/or each TELNETPARMS block that specifies an ENCRYPTION statement will specify one or more of the following cipher specifications:
+
+Cipher Specifications
+SSL_3DES_SHA
+SSL_AES_256_SHA
+SSL_AES_128_SHA
+
+Note: Always check for the minimum allowed in FIPS 140-2.'
+  impact 0.5
+  ref 'DPMS Target IBM zOS ACF2'
+  tag check_id: 'C-25283r504791_chk'
+  tag severity: 'medium'
+  tag gid: 'V-223610'
+  tag rid: 'SV-223610r533198_rule'
+  tag stig_id: 'ACF2-TN-000030'
+  tag gtitle: 'SRG-OS-000033-GPOS-00014'
+  tag fix_id: 'F-25271r504792_fix'
+  tag satisfies: ['SRG-OS-000033-GPOS-00014', 'SRG-OS-000120-GPOS-00061', 'SRG-OS-000250-GPOS-00093', 'SRG-OS-000393-GPOS-00173', 'SRG-OS-000394-GPOS-00174', 'SRG-OS-000396-GPOS-00176', 'SRG-OS-000423-GPOS-00187', 'SRG-OS-000424-GPOS-00188', 'SRG-OS-000425-GPOS-00189', 'SRG-OS-000426-GPOS-00190', 'SRG-OS-000478-GPOS-00223']
+  tag 'documentable'
+  tag legacy: ['V-97925', 'SV-107029']
+  tag cci: ['CCI-000068', 'CCI-000803', 'CCI-001453', 'CCI-002418', 'CCI-002420', 'CCI-002421', 'CCI-002422', 'CCI-002450', 'CCI-002890', 'CCI-003123']
+  tag nist: ['AC-17 (2)', 'IA-7', 'AC-17 (2)', 'SC-8', 'SC-8 (2)', 'SC-8 (1)', 'SC-8 (2)', 'SC-13 b', 'MA-4 (6)', 'MA-4 (6)']
+end

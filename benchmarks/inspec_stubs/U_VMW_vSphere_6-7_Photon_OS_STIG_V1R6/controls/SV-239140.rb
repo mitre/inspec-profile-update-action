@@ -1,0 +1,30 @@
+control 'SV-239140' do
+  title 'The Photon operating system must implement address space layout randomization (ASLR) to protect its memory from unauthorized code execution.'
+  desc "ASLR makes it more difficult for an attacker to predict the location of attack code he or she has introduced into a process's address space during an attempt at exploitation. Additionally, ASLR also makes it more difficult for an attacker to know the location of existing code to repurpose it using return-oriented programming techniques."
+  desc 'check', 'At the command line, execute the following command:
+
+# cat /proc/sys/kernel/randomize_va_space
+
+If the value of "randomize_va_space" is not "2", this is a finding.'
+  desc 'fix', 'Open /etc/sysctl.d/50-security-hardening.conf with a text editor.
+
+Ensure that the "randomize_va_space" is uncommented and set to the following:
+
+kernel.randomize_va_space=2
+
+At the command line, execute the following command:
+
+# sysctl --system'
+  impact 0.5
+  ref 'DPMS Target VMware vSphere 6.7 Photon OS'
+  tag check_id: 'C-42351r675226_chk'
+  tag severity: 'medium'
+  tag gid: 'V-239140'
+  tag rid: 'SV-239140r856058_rule'
+  tag stig_id: 'PHTN-67-000069'
+  tag gtitle: 'SRG-OS-000433-GPOS-00193'
+  tag fix_id: 'F-42310r675227_fix'
+  tag 'documentable'
+  tag cci: ['CCI-002824']
+  tag nist: ['SI-16']
+end
