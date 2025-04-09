@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="IBM_WebSphere_Liberty_Server_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-02-11">accepted</status><title>IBM WebSphere Liberty Server Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>2</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250322" selected="true" /><select idref="V-250323" selected="true" /><select idref="V-250324" selected="true" /><select idref="V-250325" selected="true" /><select idref="V-250326" selected="true" /><select idref="V-250327" selected="true" /><select idref="V-250328" selected="true" /><select idref="V-250329" selected="true" /><select idref="V-250330" selected="true" /><select idref="V-250331" selected="true" /><select idref="V-250332" selected="true" /><select idref="V-250333" selected="true" /><select idref="V-250334" selected="true" /><select idref="V-250335" selected="true" /><select idref="V-250336" selected="true" /><select idref="V-250337" selected="true" /><select idref="V-250338" selected="true" /><select idref="V-250339" selected="true" /><select idref="V-250340" selected="true" /><select idref="V-250341" selected="true" /><select idref="V-250342" selected="true" /><select idref="V-250343" selected="true" /><select idref="V-250344" selected="true" /><select idref="V-250345" selected="true" /><select idref="V-250346" selected="true" /><select idref="V-250347" selected="true" /><select idref="V-250348" selected="true" /><select idref="V-250349" selected="true" /><select idref="V-250350" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250322" selected="true" /><select idref="V-250323" selected="true" /><select idref="V-250324" selected="true" /><select idref="V-250325" selected="true" /><select idref="V-250326" selected="true" /><select idref="V-250327" selected="true" /><select idref="V-250328" selected="true" /><select idref="V-250329" selected="true" /><select idref="V-250330" selected="true" /><select idref="V-250331" selected="true" /><select idref="V-250332" selected="true" /><select idref="V-250333" selected="true" /><select idref="V-250334" selected="true" /><select idref="V-250335" selected="true" /><select idref="V-250336" selected="true" /><select idref="V-250337" selected="true" /><select idref="V-250338" selected="true" /><select idref="V-250339" selected="true" /><select idref="V-250340" selected="true" /><select idref="V-250341" selected="true" /><select idref="V-250342" selected="true" /><select idref="V-250343" selected="true" /><select idref="V-250344" selected="true" /><select idref="V-250345" selected="true" /><select idref="V-250346" selected="true" /><select idref="V-250347" selected="true" /><select idref="V-250348" selected="true" /><select idref="V-250349" selected="true" /><select idref="V-250350" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250322" selected="true" /><select idref="V-250323" selected="true" /><select idref="V-250324" selected="true" /><select idref="V-250325" selected="true" /><select idref="V-250326" selected="true" /><select idref="V-250327" selected="true" /><select idref="V-250328" selected="true" /><select idref="V-250329" selected="true" /><select idref="V-250330" selected="true" /><select idref="V-250331" selected="true" /><select idref="V-250332" selected="true" /><select idref="V-250333" selected="true" /><select idref="V-250334" selected="true" /><select idref="V-250335" selected="true" /><select idref="V-250336" selected="true" /><select idref="V-250337" selected="true" /><select idref="V-250338" selected="true" /><select idref="V-250339" selected="true" /><select idref="V-250340" selected="true" /><select idref="V-250341" selected="true" /><select idref="V-250342" selected="true" /><select idref="V-250343" selected="true" /><select idref="V-250344" selected="true" /><select idref="V-250345" selected="true" /><select idref="V-250346" selected="true" /><select idref="V-250347" selected="true" /><select idref="V-250348" selected="true" /><select idref="V-250349" selected="true" /><select idref="V-250350" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250322" selected="true" /><select idref="V-250323" selected="true" /><select idref="V-250324" selected="true" /><select idref="V-250325" selected="true" /><select idref="V-250326" selected="true" /><select idref="V-250327" selected="true" /><select idref="V-250328" selected="true" /><select idref="V-250329" selected="true" /><select idref="V-250330" selected="true" /><select idref="V-250331" selected="true" /><select idref="V-250332" selected="true" /><select idref="V-250333" selected="true" /><select idref="V-250334" selected="true" /><select idref="V-250335" selected="true" /><select idref="V-250336" selected="true" /><select idref="V-250337" selected="true" /><select idref="V-250338" selected="true" /><select idref="V-250339" selected="true" /><select idref="V-250340" selected="true" /><select idref="V-250341" selected="true" /><select idref="V-250342" selected="true" /><select idref="V-250343" selected="true" /><select idref="V-250344" selected="true" /><select idref="V-250345" selected="true" /><select idref="V-250346" selected="true" /><select idref="V-250347" selected="true" /><select idref="V-250348" selected="true" /><select idref="V-250349" selected="true" /><select idref="V-250350" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250322" selected="true" /><select idref="V-250323" selected="true" /><select idref="V-250324" selected="true" /><select idref="V-250325" selected="true" /><select idref="V-250326" selected="true" /><select idref="V-250327" selected="true" /><select idref="V-250328" selected="true" /><select idref="V-250329" selected="true" /><select idref="V-250330" selected="true" /><select idref="V-250331" selected="true" /><select idref="V-250332" selected="true" /><select idref="V-250333" selected="true" /><select idref="V-250334" selected="true" /><select idref="V-250335" selected="true" /><select idref="V-250336" selected="true" /><select idref="V-250337" selected="true" /><select idref="V-250338" selected="true" /><select idref="V-250339" selected="true" /><select idref="V-250340" selected="true" /><select idref="V-250341" selected="true" /><select idref="V-250342" selected="true" /><select idref="V-250343" selected="true" /><select idref="V-250344" selected="true" /><select idref="V-250345" selected="true" /><select idref="V-250346" selected="true" /><select idref="V-250347" selected="true" /><select idref="V-250348" selected="true" /><select idref="V-250349" selected="true" /><select idref="V-250350" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250322" selected="true" /><select idref="V-250323" selected="true" /><select idref="V-250324" selected="true" /><select idref="V-250325" selected="true" /><select idref="V-250326" selected="true" /><select idref="V-250327" selected="true" /><select idref="V-250328" selected="true" /><select idref="V-250329" selected="true" /><select idref="V-250330" selected="true" /><select idref="V-250331" selected="true" /><select idref="V-250332" selected="true" /><select idref="V-250333" selected="true" /><select idref="V-250334" selected="true" /><select idref="V-250335" selected="true" /><select idref="V-250336" selected="true" /><select idref="V-250337" selected="true" /><select idref="V-250338" selected="true" /><select idref="V-250339" selected="true" /><select idref="V-250340" selected="true" /><select idref="V-250341" selected="true" /><select idref="V-250342" selected="true" /><select idref="V-250343" selected="true" /><select idref="V-250344" selected="true" /><select idref="V-250345" selected="true" /><select idref="V-250346" selected="true" /><select idref="V-250347" selected="true" /><select idref="V-250348" selected="true" /><select idref="V-250349" selected="true" /><select idref="V-250350" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250322" selected="true" /><select idref="V-250323" selected="true" /><select idref="V-250324" selected="true" /><select idref="V-250325" selected="true" /><select idref="V-250326" selected="true" /><select idref="V-250327" selected="true" /><select idref="V-250328" selected="true" /><select idref="V-250329" selected="true" /><select idref="V-250330" selected="true" /><select idref="V-250331" selected="true" /><select idref="V-250332" selected="true" /><select idref="V-250333" selected="true" /><select idref="V-250334" selected="true" /><select idref="V-250335" selected="true" /><select idref="V-250336" selected="true" /><select idref="V-250337" selected="true" /><select idref="V-250338" selected="true" /><select idref="V-250339" selected="true" /><select idref="V-250340" selected="true" /><select idref="V-250341" selected="true" /><select idref="V-250342" selected="true" /><select idref="V-250343" selected="true" /><select idref="V-250344" selected="true" /><select idref="V-250345" selected="true" /><select idref="V-250346" selected="true" /><select idref="V-250347" selected="true" /><select idref="V-250348" selected="true" /><select idref="V-250349" selected="true" /><select idref="V-250350" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250322" selected="true" /><select idref="V-250323" selected="true" /><select idref="V-250324" selected="true" /><select idref="V-250325" selected="true" /><select idref="V-250326" selected="true" /><select idref="V-250327" selected="true" /><select idref="V-250328" selected="true" /><select idref="V-250329" selected="true" /><select idref="V-250330" selected="true" /><select idref="V-250331" selected="true" /><select idref="V-250332" selected="true" /><select idref="V-250333" selected="true" /><select idref="V-250334" selected="true" /><select idref="V-250335" selected="true" /><select idref="V-250336" selected="true" /><select idref="V-250337" selected="true" /><select idref="V-250338" selected="true" /><select idref="V-250339" selected="true" /><select idref="V-250340" selected="true" /><select idref="V-250341" selected="true" /><select idref="V-250342" selected="true" /><select idref="V-250343" selected="true" /><select idref="V-250344" selected="true" /><select idref="V-250345" selected="true" /><select idref="V-250346" selected="true" /><select idref="V-250347" selected="true" /><select idref="V-250348" selected="true" /><select idref="V-250349" selected="true" /><select idref="V-250350" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-250322" selected="true" /><select idref="V-250323" selected="true" /><select idref="V-250324" selected="true" /><select idref="V-250325" selected="true" /><select idref="V-250326" selected="true" /><select idref="V-250327" selected="true" /><select idref="V-250328" selected="true" /><select idref="V-250329" selected="true" /><select idref="V-250330" selected="true" /><select idref="V-250331" selected="true" /><select idref="V-250332" selected="true" /><select idref="V-250333" selected="true" /><select idref="V-250334" selected="true" /><select idref="V-250335" selected="true" /><select idref="V-250336" selected="true" /><select idref="V-250337" selected="true" /><select idref="V-250338" selected="true" /><select idref="V-250339" selected="true" /><select idref="V-250340" selected="true" /><select idref="V-250341" selected="true" /><select idref="V-250342" selected="true" /><select idref="V-250343" selected="true" /><select idref="V-250344" selected="true" /><select idref="V-250345" selected="true" /><select idref="V-250346" selected="true" /><select idref="V-250347" selected="true" /><select idref="V-250348" selected="true" /><select idref="V-250349" selected="true" /><select idref="V-250350" selected="true" /></Profile><Group id="V-250322"><title>SRG-APP-000001-AS-000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250322r960735_rule" weight="10.0" severity="medium"><version>IBMW-LS-000010</version><title>Maximum in-memory session count must be set according to application requirements.</title><description>&lt;VulnDiscussion&gt;Application management includes the ability to control the number of sessions that use an application by all accounts and/or account types. Limiting the number of allowed sessions is helpful in limiting risks related to Denial of Service attacks.
+
+Application servers host and expose business logic and application processes. The application server must possess the capability to limit the maximum number of concurrent sessions in a manner that affects the entire application server or on an individual application basis. Although there is some latitude concerning the settings themselves, the settings should follow DoD-recommended values, but the settings should be configurable to allow for future DoD direction. While the DoD will specify recommended values, the values can be adjusted to accommodate the operational requirement of a given system.
+
+The System Security Plan should be reviewed and the maximum number of concurrent sessions allowable and defined within that plan should be used in the httpSession element. For example, if the maximum number of concurrent sessions is defined in the System Security Plan as 5000, then the httpSession element in ${server.config.dir}/server.xml should be configured as: 
+&lt;httpSession maxInMemorySessionCount="5000" allowOverflow="false" /&gt;
+
+For http session security settings to apply, the security feature (appSecurity-2.0) must be defined in order to configure a user registry for the servlet to authenticate against. The servlet feature (servlet-3.1) must be defined in order to use a web application, and the ldap feature (ldapRegistry-3.0) must be defined in order to configure an enterprise-level user registry for authentication of the servlet users.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-53711r795018_fix">To limit the max number of concurrent sessions available, the ${server.config.dir}/server.xml must be configured with maxInMemorySessionCount set according to system security plan and allowOverflow="false".
+
+EXAMPLE:
+&lt;httpSession maxInMemorySessionCount="5" allowOverflow="false" /&gt;</fixtext><fix id="F-53711r795018_fix" /><check system="C-53757r795017_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>Review the System Security plan to determine the maximum number of concurrent sessions allowed. This is a per user setting and must be defined by the application admins.
+
+As a privileged user with access to the server.xml file, review file content and identify the "maxInMemorySessionCount" and the allowOverflow settings.
+
+EXAMPLE:
+grep -i maxInMemorySessionCount server.xml
+
+&lt;httpSession maxInMemorySessionCount="xxxx" allowOverflow="false" /&gt; 
+
+If maxInMemorySessionCount is not set in server.xml according to the settings defined in the system security plan or if allowOverflow="true", this is a finding.</check-content></check></Rule></Group><Group id="V-250323"><title>SRG-APP-000014-AS-000009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250323r960759_rule" weight="10.0" severity="medium"><version>IBMW-LS-000020</version><title>The WebSphere Liberty Server Quality of Protection (QoP) must be set to use TLSv1.2 or higher.</title><description>&lt;VulnDiscussion&gt;Quality of Protection in WebSphere Liberty specifies the security level, ciphers, and mutual authentication settings for the Secure Socket Layer (SSL/TLS) configuration. For Quality of Protection settings to apply, the security feature (appSecurity-2.0) must be defined in order to configure a user registry for the servlet to authenticate against. The SSL feature (ssl-1.0) must be defined in order to configure ssl settings, and the ldap feature (ldapRegistry-3.0) must be defined in order to configure an enterprise-level user registry for authentication of users.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000068</ident><fixtext fixref="F-53712r862964_fix">To ensure the QoP is set to TLS v1.2 or higher, the ${server.config.dir}/server.xml file must be configured as follows: 
+
+&lt;featureManager&gt;&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;&lt;feature&gt;ssl-1.0&lt;/feature&gt;&lt;/featureManager&gt;
+
+For every SSL configuration, the sslProtocol field must be set to TLS v1.2 or higher.
+
+ &lt;ssl id="TLSSettings" keyStoreRef="TLSKeyStore" trustStoreRef="TLSTrustStore"  sslProtocol="TLSv1.2" /&gt;</fixtext><fix id="F-53712r862964_fix" /><check system="C-53758r862963_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a privileged user with local file access to ${server.config.dir}/server.xml, verify the appSecurity-x.x feature and the sslProtocol settings are configured.
+
+grep -i appsecurity- server.xml
+
+RESULT:
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+
+Verify the SSL protocol setting is configured for TLSV1.2 for every SSL configuration. There can be multiple SSL configurations and SSL ID settings.
+
+grep -i "&lt;ssl id=" server.xml
+
+SAMPLE RESULT:
+&lt;ssl id="TLSSettings" keyStoreRef="TLSKeyStore" trustStoreRef="TLSTrustStore" sslProtocol="TLSv1.2"/&gt;
+
+If the SSL protocol setting does not specify TLS v.1.2 or higher, or if the appSecurity feature is not configured, this is a finding.</check-content></check></Rule></Group><Group id="V-250324"><title>SRG-APP-000015-AS-000010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250324r960762_rule" weight="10.0" severity="medium"><version>IBMW-LS-000030</version><title>Security cookies must be set to HTTPOnly.</title><description>&lt;VulnDiscussion&gt;Web applications use cookies to track users across requests. These cookies, while typically not sensitive in themselves, connect to the existing state on the back-end system. If an intruder were to capture one of these cookies, they could potentially use the cookie to act as the user. Important web traffic should be encrypted using SSL. This includes important cookies.
+
+In the case of WebSphere Liberty Server, the most important cookies are the LTPA cookie and session cookie; therefore, both should be configured to be only sent over SSL. To set httpOnly on the application server’s cookies, the security feature (appSecurity-2.0) must be defined in order to configure a user registry for the servlet to authenticate against. The servlet (servlet-3.1) feature must be defined in order to deploy web applications, the ssl (ssl-1.0) feature must be defined in order to do SSL communications, and the ldap feature (ldapRegistry-3.0) must be defined in order to configure an enterprise-level user registry for authentication of users. 
+
+For the LTPA cookie,  the httpOnlyCookies element must be set to true: 
+&lt;webAppSecurity  ssoCookieName="LtpaToken2"  ssoRequiresSSL="true"    httpOnlyCookies="true"   logoutOnHttpSessionExpire="true"/&gt;   
+
+For the JSESSIONID cookie, the cookieHttpOnly element must be set to true: 
+&lt;httpSession    cookieName="JSESSIONID"    cookieSecure="true"    cookieHttpOnly="true"    cookiePath="/"/&gt;&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001453</ident><fixtext fixref="F-53713r862967_fix">To ensure security cookies use httpOnly, the ${server.config.dir)/server.xml must be configured as follows: 
+
+&lt;featureManager&gt;&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;&lt;/featureManager&gt;
+
+ &lt;webAppSecurity  ssoCookieName="LtpaToken2"  ssoRequiresSSL="true"    httpOnlyCookies="true"   logoutOnHttpSessionExpire="true"/&gt;  
+
+&lt;httpSession    cookieName="JSESSIONID"    cookieSecure="true"    cookieHttpOnly="true"    cookiePath="/"/&gt;</fixtext><fix id="F-53713r862967_fix" /><check system="C-53759r862966_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a user with local file access to ${server.config.dir}/server.xml, verify appSecurity feature is enabled.
+
+&lt;featureManager&gt;&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;&lt;/featureManager&gt;
+
+Verify both web application LTPA and http session cookies are configured for httpOnly.
+
+&lt;webAppSecurity  ssoCookieName="LtpaToken2"  ssoRequiresSSL="true"    httpOnlyCookies="true"   logoutOnHttpSessionExpire="true"/&gt;  
+
+&lt;httpSession    cookieName="JSESSIONID"    cookieSecure="true"    cookieHttpOnly="true"    cookiePath="/"/&gt;
+
+If the appSecurity feature is not enabled or if the LPTA or Session cookie settings are not set for httpOnly, this is a finding.</check-content></check></Rule></Group><Group id="V-250325"><title>SRG-APP-000016-AS-000013</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250325r1015250_rule" weight="10.0" severity="medium"><version>IBMW-LS-000040</version><title>The WebSphere Liberty Server must log remote session and security activity.</title><description>&lt;VulnDiscussion&gt;Security auditing must be configured in order to log remote session activity. Security auditing will not be performed unless the audit feature (audit-1.0) has been enabled. The security feature (appSecurity-2.0) must be enabled for the security auditing to capture security transactions. Remote session activity will then be logged, regardless of the user attempting that activity.
+
+Satisfies: SRG-APP-000016-AS-000013, SRG-APP-000080-AS-000045, SRG-APP-000089-AS-000050, SRG-APP-000091-AS-000052, SRG-APP-000095-AS-000056, SRG-APP-000096-AS-000059, SRG-APP-000097-AS-000060, SRG-APP-000098-AS-000061, SRG-APP-000099-AS-000062, SRG-APP-000100-AS-000063, SRG-APP-000101-AS-000072, SRG-APP-000266-AS-000168, SRG-APP-000343-AS-000030, SRG-APP-000172-AS-000121&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000067</ident><ident system="http://cyber.mil/cci">CCI-000130</ident><ident system="http://cyber.mil/cci">CCI-000131</ident><ident system="http://cyber.mil/cci">CCI-000132</ident><ident system="http://cyber.mil/cci">CCI-000133</ident><ident system="http://cyber.mil/cci">CCI-000134</ident><ident system="http://cyber.mil/cci">CCI-000135</ident><ident system="http://cyber.mil/cci">CCI-000162</ident><ident system="http://cyber.mil/cci">CCI-000166</ident><ident system="http://cyber.mil/cci">CCI-000169</ident><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-001312</ident><ident system="http://cyber.mil/cci">CCI-001487</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-53714r1015239_fix">To log remote access events, the featureManager setting in the ${server.config.dir}/server.xml must contain the audit and appSecurity features. 
+
+&lt;featureManager&gt;
+&lt;feature&gt;audit-1.0&lt;/feature&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;/featureManager&gt;</fixtext><fix id="F-53714r1015239_fix" /><check system="C-53760r1015249_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>Review the ${server.config.dir}/server.xml file and ensure audit-1.0 and appSecurity-2.0 are defined within the &lt;featureManager&gt; setting in the server.xml file. 
+
+If audit-1.0 and appSecurity-2.0 are not defined within the &lt;featureManager&gt; setting in the server.xml file, this is a finding. 
+
+EXAMPLE:
+&lt;featureManager&gt;
+&lt;feature&gt;audit-1.0&lt;/feature&gt;
+&lt;feature&gt;appSecurity-3.0&lt;/feature&gt;
+&lt;/featureManager&gt;</check-content></check></Rule></Group><Group id="V-250326"><title>SRG-APP-000033-AS-000024</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250326r960792_rule" weight="10.0" severity="high"><version>IBMW-LS-000050</version><title>Users in the REST API admin role must be authorized.</title><description>&lt;VulnDiscussion&gt;Users with console access and OS permissions to the folders where the Liberty Server is installed can make changes to the server. In addition, REST API calls that execute server management tasks are available and can be executed remotely. Adding a user to the admin role will allow that user to make changes to the server via the REST API calls.
+
+The admin role must be controlled and users who are in that role must be authorized.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-53715r795030_fix">If an admin user exists in either a basic user registry or a quickstartsecurity registry, edit the ${server.config.dir}/server.xml file and remove the basic registry and/or quickstartsecurity registry settings.
+
+If an admin user exists via an LDAP user registry setting, document and approve the user(s) or group that have been assigned to the admin role and ensure anyone granted REST API admin rights is authorized.
+
+LDAP EXAMPLE:
+&lt;administrator-role&gt;
+     &lt;user&gt;cn=bob,o=ibm,c=us&lt;/user&gt;
+ &lt;/administrator-role&gt;
+
+BASIC REGISTRY EXAMPLE:
+&lt;basicRegistry&gt;
+     &lt;user name="bob" password="bobpassword"/&gt;
+     &lt;user name="joe" password="joepassword"/&gt;
+     &lt;group name="group1" ...&gt;
+     &lt;/group&gt;
+ &lt;/basicRegistry&gt;
+
+&lt;administrator-role&gt;
+     &lt;user&gt;bob&lt;/user&gt;
+     &lt;group&gt;group1&lt;/group&gt;
+ &lt;/administrator-role&gt;
+
+QUICKSTARTSECURITY EXAMPLE:
+&lt;featureManager&gt;
+     &lt;feature&gt;restConnector-2.0&lt;/feature&gt;
+ &lt;/featureManager&gt;
+ &lt;quickStartSecurity userName="bob" userPassword="bobpassword" /&gt;
+ &lt;keyStore id="defaultKeyStore" password="keystorePassword"/&gt;</fixtext><fix id="F-53715r795030_fix" /><check system="C-53761r795029_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a user with access to ${server.config.dir}/server.xml, review the file and look for the admin role settings.
+
+grep -i administrator-role ${server.config.dir}/server.xml
+grep -i quickstartsecurity ${server.config.dir}/server.xml
+
+If the admin role has been created, users in that role must be documented and approved. However, using the basic registry or the quickstartsecurity methods are not acceptable. The preferred user registry method is to use a centralized access control method via LDAP. 
+
+If no admin users exist at all, this is not a finding.
+
+If admin users in an LDAP user registry configuration are not documented and approved, this is a finding.
+
+If admin users exist in a basic user registry configuration, or in a quickstartsecurity user configuration, this is a finding.
+
+LDAP EXAMPLE:
+&lt;administrator-role&gt;
+     &lt;user&gt;cn=bob,o=ibm,c=us&lt;/user&gt;
+ &lt;/administrator-role&gt;
+
+BASIC REGISTRY EXAMPLE:
+&lt;basicRegistry&gt;
+     &lt;user name="bob" password="bobpassword"/&gt;
+     &lt;user name="joe" password="joepassword"/&gt;
+     &lt;group name="group1" ...&gt;
+     &lt;/group&gt;
+ &lt;/basicRegistry&gt;
+
+&lt;administrator-role&gt;
+     &lt;user&gt;bob&lt;/user&gt;
+     &lt;group&gt;group1&lt;/group&gt;
+ &lt;/administrator-role&gt;
+
+QUICKSTARTSECURITY EXAMPLE:
+&lt;featureManager&gt;
+     &lt;feature&gt;restConnector-2.0&lt;/feature&gt;
+ &lt;/featureManager&gt;
+ &lt;quickStartSecurity userName="bob" userPassword="bobpassword" /&gt;
+ &lt;keyStore id="defaultKeyStore" password="keystorePassword"/&gt;</check-content></check></Rule></Group><Group id="V-250327"><title>SRG-APP-000109-AS-000070</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250327r1043188_rule" weight="10.0" severity="medium"><version>IBMW-LS-000230</version><title>The WebSphere Liberty Server must be configured to offload logs to a centralized system.</title><description>&lt;VulnDiscussion&gt;Log processing failures include, but are not limited to, failures in the application server log capturing mechanisms or log storage capacity being reached or exceeded. In some instances, it is preferred to send alarms to individuals rather than to an entire group. Application servers must be able to trigger an alarm and send an alert to, at a minimum, the SA and ISSO in the event there is an application server log processing failure.
+
+Satisfies: SRG-APP-000109-AS-000070, SRG-APP-000358-AS-000064&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000140</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-53716r795033_fix">To send Liberty logs to a centralized syslog system, the Elastic environment must be set up as per the ELK stack/Elasticsearch directions. Once that is completed, configure the server.xml. The following is a sample configuration. Individual keystore, truststore, and authentication settings will vary. The SME must substitute their own values as needed. 
+
+The message, audit, and accessLog sources must be included at a minimum.
+
+For additional information refer to the IBM website:
+https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.WebSphere.wlp.doc/ae/twlp_analytics_logstash.html
+
+EXAMPLE:
+
+&lt;featureManager&gt;
+    &lt;feature&gt;logstashCollector-1.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+&lt;keyStore id="defaultKeyStore" password="xxxxxxx" /&gt;
+&lt;keyStore id="defaultTrustStore" location="trust.jks" password="xxxxxxx" /&gt;
+&lt;ssl id="myTLSConfig" trustStoreRef="defaultTrustStore" keyStoreRef="defaultKeyStore" /&gt;
+
+&lt;logstashCollector 
+source="message,accessLog,audit" 
+hostName="your ELK stack server" 
+port="Your ELK stack port" 
+sslRef="myTLSConfig"&gt;
+&lt;/logstashCollector&gt;</fixtext><fix id="F-53716r795033_fix" /><check system="C-53762r795032_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a privileged user with local file access to ${server.config.dir}/server.xml, verify the logstashCollector-1.0 feature is enabled.
+
+grep -i -A5 logstashcollector server.xml
+
+EXAMPLE:
+&lt;featureManager&gt;
+    &lt;feature&gt;logstashCollector-1.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+&lt;logstashCollector source="message,accessLog,audit"
+          hostName="&lt;ip address of logstash server&gt;"
+          port="&lt;port of logstash server&gt;"
+          sslRef="DefaultTLSSettings"
+  &lt;/logstashCollector&gt;
+
+If "logstashCollector" is not a configured feature and the logstashCollector "source" setting does not contain "message,accessLog,audit", this is a finding.</check-content></check></Rule></Group><Group id="V-250328"><title>SRG-APP-000119-AS-000079</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250328r960933_rule" weight="10.0" severity="medium"><version>IBMW-LS-000260</version><title>The WebSphere Liberty Server must protect log information from unauthorized access or changes.</title><description>&lt;VulnDiscussion&gt;WebSphere Liberty provides the capability to encrypt and sign the log data to prevent unauthorized modification. 
+
+- The security feature (appSecurity-2.0) must be defined in order to configure a user registry for the servlet to authenticate against.  
+- The audit feature (audit-1.0) must be defined in order to generate audit records.
+- The servlet feature (servlet-3.1) must be defined to be able to deploy a web application. 
+- The ejb feature (ejbLite-3.1) must be defined to be able to deploy an ejb application.
+- The ssl feature (ssl-1.0) must be defined to be able to generate and use certificates to sign and encrypt logs.
+- The ldap feature (ldapRegistry-3.0) must be defined in order to configure an enterprise-level user registry to authenticate users against.
+
+When the audit-1.0 feature is defined, all supported audit events will be captured and logged to an audit.log located under ${server.config.dir}/logs.
+
+The audit log that is currently being logged to is called audit.log. When an audit log fills to a configured maximum capacity, it is archived with a timestamp with the naming convention audit_&lt;timestamp&gt;.log and new records are written to audit.log. 
+
+The audit logs are found under the ${server.config.dir}/logs directory and are named audit.log for the most recent, and audit_&lt;timestamp&gt;.log for any archived logs. 
+
+Two keystores need to be created (ikeyman as part of the JDK may be used) and a personal certificate created in each. One keystore will contain the certificate used to encrypt the logs; the other keystore will contain the certificate used to sign the logs. The audit configuration needs to define the location of these two keystores, their passwords, and the alias of each certificate used to encrypt and sign the logs. As an example:        
+ &lt;keyStore
+         id="auditEncKeyStore"
+         password="Liberty"
+         location="${server.config.dir}/resources/security/AuditEncryptionKeyStore.jks"
+         type="JKS" /&gt;
+
+      &lt;keyStore
+         id="auditSignKeyStore"
+         password="{xor}EzY9Oi0rJg=="
+         location="${server.config.dir}/resources/security/AuditSigningKeyStore2.jks"
+         type="JKS" /&gt;
+
+&lt;auditFileHandler 
+encrypt="true"
+        encryptAlias="auditencryption"
+        encryptKeyStoreRef="auditEncKeyStore"
+    sign="true"
+        signingAlias="auditsigning2"
+        signingKeyStoreRef="auditSignKeyStore"&gt;
+&lt;/auditFileHandler&gt;
+
+Satisfies: SRG-APP-000119-AS-000079, SRG-APP-000120-AS-000080&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000163</ident><ident system="http://cyber.mil/cci">CCI-000164</ident><fixtext fixref="F-53717r795036_fix">As a user with local file access to ${server.config.dir}/logs, use the chmod command to configure the following log files to have the correct file permissions of 660.
+
+chmod 660 &lt;filename.log&gt;
+
+audit.log
+messages.log
+console.log
+trace.log (if it exists)</fixtext><fix id="F-53717r795036_fix" /><check system="C-53763r795035_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a user with local file access to ${server.config.dir}/logs, verify the following audit log files have the correct file permissions of 660.
+
+audit.log
+messages.log
+console.log
+trace.log (if it exists)
+
+If the file permissions for these files are not set to 660, this is a finding.</check-content></check></Rule></Group><Group id="V-250329"><title>SRG-APP-000121-AS-000081</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250329r960939_rule" weight="10.0" severity="medium"><version>IBMW-LS-000280</version><title>The WebSphere Liberty Server must protect log tools from unauthorized access.</title><description>&lt;VulnDiscussion&gt;Protecting log data also includes identifying and protecting the tools used to view and manipulate log data. Depending on the log format and application, system and application log tools may provide the only means to manipulate and manage application and system log data. Therefore, it is imperative that access to log tools be controlled and protected from unauthorized access. 
+
+Application servers provide a web- and/or a command line-based management functionality for managing the application server log capabilities. In addition, subsets of log tool components may be stored on the file system as jar or xml configuration files. The application server must ensure that in addition to protecting any web-based log tools, any file system-based tools are protected as well.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001493</ident><fixtext fixref="F-53718r795039_fix">As a user with local file access to the /opt/IBM/WebSphere/Liberty/bin/ folder, use the chmod command to configure the correct file permissions of 755 for the following files.
+
+binaryLog
+auditUtility</fixtext><fix id="F-53718r795039_fix" /><check system="C-53764r795038_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a user with local file access to the /opt/IBM/WebSphere/Liberty/bin folder, verify the following audit tool files have the correct file permissions of 755.
+
+binaryLog
+auditUtility
+
+If the file permissions for these files are not set to 755, this is a finding.</check-content></check></Rule></Group><Group id="V-250330"><title>SRG-APP-000126-AS-000085</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250330r960951_rule" weight="10.0" severity="medium"><version>IBMW-LS-000320</version><title>The WebSphere Liberty Server must be configured to encrypt log information.</title><description>&lt;VulnDiscussion&gt;Protection of log records is of critical importance. Encrypting log records provides a level of protection that does not rely on host-based protections that can be accidentally misconfigured, such as file system permissions. Cryptographic mechanisms are the industry-established standard used to protect the integrity of log data. An example of a cryptographic mechanism is the computation and application of a cryptographic-signed hash using asymmetric cryptography. 
+
+- The security feature (appSecurity-2.0) must be defined in order to configure a user registry for the servlet to authenticate against.  
+- The audit feature (audit-1.0) must be defined in order to generate audit records.
+- The servlet feature (servlet-3.1) must be defined to be able to deploy a web application. 
+- The ejb feature (ejbLite-3.1) must be defined to be able to deploy an ejb application.
+- The ssl feature (ssl-1.0) must be defined to be able to generate and use certificates to sign and encrypt logs.
+- The ldap feature (ldapRegistry-3.0) must be defined in order to configure an enterprise-level user registry to authenticate users against.
+
+When the audit-1.0 feature is defined, all supported audit events will be captured and logged to an audit.log located under ${server.config.dir}/logs.
+
+The audit log that is currently being logged to is called audit.log. When an audit log fills to a configured maximum capacity, it is archived with a timestamp with the naming convention audit_&lt;timestamp&gt;.log and new records are written to audit.log. 
+
+The audit logs are found under the ${server.config.dir}/logs directory and are named audit.log for the most recent, and audit_&lt;timestamp&gt;.log for any archived logs. 
+
+One keystore needs to be created (ikeyman as part of the JDK may be used) and a personal certificate created. This certificate is used to encrypt the logs. The audit configuration needs to define the location of this keystore, its password, and the alias of the certificate used to encrypt the logs. As an example:        
+ &lt;keyStore
+         id="auditEncKeyStore"
+         password="Liberty"
+         location="${server.config.dir}/resources/security/AuditEncryptionKeyStore.jks"
+         type="JKS" /&gt;
+
+      &lt;keyStore
+         id="auditSignKeyStore"
+         password="{xor}EzY9Oi0rJg=="
+         location="${server.config.dir}/resources/security/AuditSigningKeyStore2.jks"
+         type="JKS" /&gt;
+
+&lt;auditFileHandler 
+encrypt="true"
+        encryptAlias="auditencryption"
+        encryptKeyStoreRef="auditEncKeyStore"
+&lt;/auditFileHandler&gt;
+
+Satisfies: SRG-APP-000126-AS-000085, SRG-APP-000118-AS-000078, SRG-APP-000267-AS-000170&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000162</ident><ident system="http://cyber.mil/cci">CCI-001314</ident><ident system="http://cyber.mil/cci">CCI-001350</ident><fixtext fixref="F-53719r862974_fix">If the system is configured to send logs to a remote ELK stack log server, (or other remote logging solution) as per requirement IBMW-LS-000230, this requirement is Not Applicable.
+
+Signing is optional. The encrypted and/or signed audit logs are found under the ${server.config.dir}/logs directory and are named audit.log for the most recent, and audit_&lt;timestamp&gt;.log for any archived logs. Two keystores are recommended but not required when doing both encryption and signing (ikeyman as part of the JDK may be used) and a certificate imported into each. One keystore will contain the certificate used to encrypt the logs; the other keystore will contain the certificate used to sign the logs. The audit configuration must define the location of every keystore, their passwords, and the alias of each certificate used to encrypt and sign the logs.
+
+1. Enable the following features:
+
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;feature&gt;audit-1.0&lt;/feature&gt;
+&lt;feature&gt;ssl-1.0&lt;/feature&gt;
+&lt;feature&gt;
+&lt;/featureManager&gt;
+
+2. Verify a keystore is configured. The following is a JKS keystore example. PKCS12 is also a viable keystore:
+
+ &lt;keyStore
+         id="auditEncKeyStore"
+         password="ENTER THE ENCRYPTION KEYSTORE PASSWORD"
+         location="${server.config.dir}/resources/security/AuditEncryptionKeyStore.jks"
+         type="JKS" /&gt;
+
+      &lt;keyStore
+         id="auditSignKeyStore"
+         password="ENTER THE SIGNING KEYSTORE PASSWORD"
+         location="${server.config.dir}/resources/security/AuditSigningKeyStore2.jks"
+         type="JKS" /&gt;
+
+3. Enable auditFileHandler encryption. Signing the logs is optional.
+
+&lt;auditFileHandler 
+encrypt="true"
+        encryptAlias="auditencryption"
+        encryptKeyStoreRef="auditEncKeyStore"
+    sign="true"
+        signingAlias="auditsigning2"
+        signingKeyStoreRef="auditSignKeyStore"&gt;
+&lt;/auditFileHandler&gt;</fixtext><fix id="F-53719r862974_fix" /><check system="C-53765r862973_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>If the system is configured to send logs to a remote ELK stack log server, as per requirement IBMW-LS-000230, (or other remote logging solution) this requirement is Not Applicable.
+
+As a user with local file access to ${server.config.dir}/server.xml: 
+
+1. Verify the following features are configured.
+
+ &lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;feature&gt;audit-1.0&lt;/feature&gt;
+&lt;feature&gt;ssl-1.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+2. Verify a keystore is configured. The following is an example:
+
+ &lt;keyStore
+         id="auditEncKeyStore"
+         password="ENTER THE ENCRYPTION KEYSTORE PASSWORD"
+         location="${server.config.dir}/resources/security/AuditEncryptionKeyStore.jks"
+         type="JKS" /&gt;
+
+      &lt;keyStore
+         id="auditSignKeyStore"
+         password="ENTER THE SIGNING KEYSTORE PASSWORD"
+         location="${server.config.dir}/resources/security/AuditSigningKeyStore2.jks"
+         type="JKS" /&gt;
+
+3. Verify auditFileHandler encryption is enabled. Signing is optional.
+
+&lt;auditFileHandler 
+encrypt="true"
+        encryptAlias="auditencryption"
+        encryptKeyStoreRef="auditEncKeyStore"
+    sign="true"
+        signingAlias="auditsigning2"
+        signingKeyStoreRef="auditSignKeyStore"&gt;
+&lt;/auditFileHandler&gt;
+
+If the features and keystore are not configured, and encryption is not enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-250331"><title>SRG-APP-000133-AS-000092</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250331r960960_rule" weight="10.0" severity="medium"><version>IBMW-LS-000340</version><title>The WebSphere Liberty Server must protect software libraries from unauthorized access.</title><description>&lt;VulnDiscussion&gt;Application servers have the ability to specify that the hosted applications use shared libraries. The application server must have a capability to divide roles based upon duties wherein one project user (such as a developer) cannot modify the shared library code of another project user. The application server must also be able to specify that non-privileged users cannot modify any shared library code at all.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-53720r795045_fix">As a privileged user with local file access to the /opt/IBM/WebSphere/Liberty/lib/ folder, verify all of the jar files in the lib folder have the correct file permissions of 664.
+
+If the file permissions for all jar files in the lib folder are not set to 664, use the chmod command to change the file permissions.
+
+chmod 664 *.jar</fixtext><fix id="F-53720r795045_fix" /><check system="C-53766r795044_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a privileged user with local file access to the /opt/IBM/WebSphere/Liberty/lib/ folder, verify all of the jar files in the lib folder have the correct file permissions of 664.
+
+If the file permissions for all jar files in the lib folder are not set to 664, this is a finding.</check-content></check></Rule></Group><Group id="V-250332"><title>SRG-APP-000142-AS-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250332r1043177_rule" weight="10.0" severity="medium"><version>IBMW-LS-000370</version><title>The WebSphere Liberty Server must prohibit or restrict the use of nonsecure ports, protocols, modules, and/or services as defined in the PPSM CAL and vulnerability assessments.</title><description>&lt;VulnDiscussion&gt;Some networking protocols may not meet organizational security requirements to protect data and components.
+
+Application servers natively host a number of various features, such as management interfaces, httpd servers, and message queues. These features all run on TCPIP ports. This creates the potential that the vendor may choose to use port numbers or network services that have been deemed unusable by the organization. The application server must have the capability to both reconfigure and disable the assigned ports without adversely impacting application server operation capabilities. For a list of approved ports and protocols, reference the DoD ports and protocols website at https://powhatan.iiie.disa.mil/ports/cal.html.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000382</ident><fixtext fixref="F-53721r795048_fix">Every port listed in ${server.config.dir}/server.xml must be registered with PPSM. 
+
+Refer to the PPSM website on https://cyber.mil/ppsm for information.</fixtext><fix id="F-53721r795048_fix" /><check system="C-53767r795047_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a privileged user with access to the server.xml file, review the file and identify all TCPIP ports used by the server. 
+
+EXAMPLE:
+grep -I "port=" server.xml
+
+ httpsPort="9443"&gt;
+
+Review the PPSM site for the list of approved ports. If any of the ports used are not registered with PPSM, this is a finding.</check-content></check></Rule></Group><Group id="V-250333"><title>SRG-APP-000148-AS-000101</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250333r1051118_rule" weight="10.0" severity="medium"><version>IBMW-LS-000380</version><title>The WebSphere Liberty Server must use an LDAP user registry.</title><description>&lt;VulnDiscussion&gt;To ensure accountability and prevent unauthorized access, application server users must be uniquely identified and authenticated. This is typically accomplished via the use of a user store which is either local (OS-based) or centralized (LDAP) in nature. Best practice guideline to is to use a centralized enterprise LDAP server.
+
+To ensure support to the enterprise, the authentication must use an enterprise solution.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-53722r862977_fix">To ensure an enterprise user management system is configured to uniquely identify and authenticate users and processes acting on behalf of org users, the server.xml must be configured to use an ldap configuration as follows:
+
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;feature&gt;ldapRegistry-3.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+&lt;ldapRegistry id="ldap" realm="SampleLdapRealm" host="${ldap.server.name}" port="${ldap.server.port}" ignoreCase="true"
+baseDN="${ldap.server.base.dn}"
+ldapType="${ldap.vendor.type}"
+searchTimeout="8m"&gt;
+&lt;/ldapRegistry&gt;</fixtext><fix id="F-53722r862977_fix" /><check system="C-53768r862976_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a user with local file access to ${server.config.dir}/server.xml file, verify the LDAP user registry is used to authenticate users. If the LDAP user registry is not defined within server.xml, this is a finding. 
+
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;feature&gt;ldapRegistry-3.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+&lt;ldapRegistry id="ldap" realm="SampleLdapRealm" host="${ldap.server.name}" port="${ldap.server.port}" ignoreCase="true"
+baseDN="${ldap.server.base.dn}"
+ldapType="${ldap.vendor.type}"
+searchTimeout="8m"&gt;
+&lt;/ldapRegistry&gt;</check-content></check></Rule></Group><Group id="V-250334"><title>SRG-APP-000148-AS-000101</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250334r1051118_rule" weight="10.0" severity="medium"><version>IBMW-LS-000381</version><title>Basic Authentication must be disabled.</title><description>&lt;VulnDiscussion&gt;Basic authentication does not use a centralized user store like LDAP. Not using a centralized user store complicates user management tasks and increases the risk that user accounts could remain on the system long after users have moved to their next deployment. Basic Auth also stores user credentials and passwords on the system and creates the potential for an attacker to circumvent strong authentication requirements like multi-factor or certificate based authentication.
+
+Allowing failover to Basic Auth allows the Liberty Server to fall back to basic authentication in the event certificate based authentication methods fail. Configuring the Liberty Server to fall back to basic authentication creates the potential for an attacker to circumvent strong authentication requirements and must be avoided.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-53723r862979_fix">Delete basicRegistry settings and re-configure the server.xml file to use a centralized LDAP user store. 
+
+SAMPLE:
+
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;feature&gt;ldapRegistry-3.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+&lt;ldapRegistry id="ldap" realm="SampleLdapRealm" host="${ldap.server.name}" port="${ldap.server.port}" ignoreCase="true"
+baseDN="${ldap.server.base.dn}"
+ldapType="${ldap.vendor.type}"
+searchTimeout="8m"&gt;
+&lt;/ldapRegistry&gt;</fixtext><fix id="F-53723r862979_fix" /><check system="C-53769r795053_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a privileged user with local file access to the ${server.config.dir}/server.xml file, search the server.xml for the basicRegistry setting.
+
+grep -i basicregistry server.xml
+
+SAMPLE:
+&lt;basicRegistry id="basic" realm="BasicRealm"&gt;
+        &lt;user name="employee0" password="emp0pwd" /&gt;
+        &lt;user name="employee1" password="emp1pwd" /&gt;
+        &lt;user name="manager0" password="mgr0pwd" /&gt;
+        &lt;group name="employeeGroup"&gt;
+            &lt;member name="employee0" /&gt;
+            &lt;member name="employee1" /&gt;
+        &lt;/group&gt;
+    &lt;/basicRegistry&gt;  
+
+If &lt;basicRegistry&gt; settings are defined in server.xml, this is a finding.</check-content></check></Rule></Group><Group id="V-250335"><title>SRG-APP-000149-AS-000102</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250335r1015469_rule" weight="10.0" severity="high"><version>IBMW-LS-000390</version><title>Multifactor authentication for network access to privileged accounts must be used.</title><description>&lt;VulnDiscussion&gt;Multifactor authentication creates a layered defense and makes it more difficult for an unauthorized person to access the application server. If one factor is compromised or broken, the attacker still has at least one more barrier to breach before successfully breaking into the target. Unlike a simple username/password scenario where the attacker could gain access by knowing both the username and password without the user knowing his account was compromised, multifactor authentication adds the requirement that the attacker must have something from the user, such as a token, or to biometrically be the user.
+
+When accessing the application server via a network connection, administrative access to the application server must be PKI Hardware Token enabled.
+
+The high level steps required for configuring Liberty Server to use certificate based authentication include the following:
+
+1. Configure Web Application with client certificate authentication.
+2. Configure Liberty SSL configuration with client authentication.
+3. Configure Liberty LDAP Security Configuration with certificate filter.
+
+Satisfies: SRG-APP-000149-AS-000102, SRG-APP-000151-AS-000103, SRG-APP-000402-AS-000247, SRG-APP-000403-AS-000248, SRG-APP-000177-AS-000126&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000187</ident><ident system="http://cyber.mil/cci">CCI-000765</ident><ident system="http://cyber.mil/cci">CCI-002009</ident><ident system="http://cyber.mil/cci">CCI-002010</ident><fixtext fixref="F-53724r862982_fix">Refer to IBM documentation on how to configure TLS and client based certificate authentication for additional configuration details. The following is a summary list of items needed to configure the system for certificate based authentication. Production systems and installations will vary. 
+
+The application’s web.xml file must be configured to use client certs.
+
+EXAMPLE:
+&lt;login-config&gt;
+    &lt;auth-method&gt;CLIENT-CERT&lt;/auth-method&gt;
+&lt;/login-config&gt;
+
+The server.xml features must be configured to use transportSecurity and an ldap configuration. 
+
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;feature&gt;ldapRegistry-3.0&lt;/feature&gt;
+&lt;feature&gt;transportSecurity-1.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+The server.xml TLS and LDAP settings must be configured. The following is an EXAMPLE only. "Default" verbiage and keystore information in the below SSL configuration will be different in production systems.
+
+ &lt;!-- default SSL configuration is defaultSSLSettings --&gt;      
+    &lt;sslDefault sslRef="defaultSSLSettings" /&gt;
+    &lt;ssl id="defaultSSLSettings" keyStoreRef="defaultKeyStore" sslProtocol="SSL_TLSv2" trustStoreRef="defaultTrustStore"
+clientAuthentication="true"/&gt;
+
+ &lt;keyStore id="defaultKeyStore" location="key.jks" type="JKS" password="defaultPWD" /&gt;
+ &lt;keyStore id="defaultTrustStore" location="key.jks" type="JKS" password="defaultPWD" /&gt;
+
+Configure LDAP certificate filter settings according the certificates being used.
+
+&lt;ldapRegistry id="ldap" realm="SampleLdapRealm" host="${ldap.server.name}" port="${ldap.server.port}" ignoreCase="true"
+baseDN="${ldap.server.base.dn}"
+ldapType="${ldap.vendor.type}"
+certificateMapMode="Certificate_Filter" or "Exact_DN"
+certificateFilter="${your certificate mapping}"
+searchTimeout="8m"
+sslEnabled="true"&gt;
+&lt;/ldapRegistry&gt;</fixtext><fix id="F-53724r862982_fix" /><check system="C-53770r862981_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a user with local file access to ${server.config.dir}/server.xml file, verify the TLS connection used for managing the server is configured to use clientAuthentication.
+
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;feature&gt;ldapRegistry-3.0&lt;/feature&gt;
+&lt;feature&gt;transportSecurity-1.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+Verify the TLS connection used for managing the server is configured to use clientAuthentication. The following is used as an example.
+
+If the clientAuthentication setting for the TLS management application is not set to "true", this is a finding.
+
+EXAMPLE:
+&lt;!-- default SSL configuration is defaultSSLSettings --&gt;      
+    &lt;sslDefault sslRef="defaultSSLSettings" /&gt;
+    &lt;ssl id="defaultSSLSettings" keyStoreRef="defaultKeyStore" sslProtocol="SSL_TLSv2" trustStoreRef="defaultTrustStore"
+clientAuthentication="true"/&gt;
+
+Access the web management interface via a web browser and verify TLS secured connectivity to the web based management application.</check-content></check></Rule></Group><Group id="V-250336"><title>SRG-APP-000171-AS-000119</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250336r1015470_rule" weight="10.0" severity="high"><version>IBMW-LS-000440</version><title>The WebSphere Liberty Server must store only encrypted representations of user passwords.</title><description>&lt;VulnDiscussion&gt;WebSphere Liberty can either provide a local account store or integrate with enterprise account stores such as LDAP directories. If the application server stores application passwords in the server.xml configuration files, the application server must store encrypted representations of passwords rather than unencrypted, clear-text passwords.
+
+The Liberty Application Server provides a SecurityUtility tool that can take a plain-text or encoded password and convert it to an encrypted password. This tool does not update the ${server.config.dir/server.xml file directly; a manual update of the server.xml is needed once the utility is run. 
+
+It is imperative that administrators understand that the SecurityUtility tool must be run for each application password that is stored within the server.xml file.
+
+Satisfies: SRG-APP-000171-AS-000119, SRG-APP-000428-AS-000265, SRG-APP-000429-AS-000157&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000196</ident><ident system="http://cyber.mil/cci">CCI-004062</ident><ident system="http://cyber.mil/cci">CCI-002475</ident><ident system="http://cyber.mil/cci">CCI-002476</ident><fixtext fixref="F-53725r795060_fix">For additional information regarding the use of the SecurityUtility command, refer to IBM’s website: 
+https://www.ibm.com/docs/en/was-liberty/base?topic=applications-securityutility-command
+
+Create a new xml file with file permissions of 660.
+
+File owner and group membership is the same as the WebSphere Liberty server user.
+
+Add the following line to the new xml file:
+
+&lt;variable name="wlp.password.encryption.key" value="mysecret"/&gt;
+
+In the above, "mysecret" is the passphrase selected to create a cryptographic hash that represents the password.
+
+Save the file to a secured location. Note the path and name, as it will be needed when updating server.xml.
+
+Edit the server.xml file and add the following line:
+
+&lt;include location="/path/&lt;xml file created&gt;" /&gt;
+
+For every unencrypted password in server.xml, run the following SecurityUtility command, which can be found in the Liberty Server install path:
+
+SecurityUtility encode --encoding=aes 
+
+This will prompt the user to enter the plain-text password stored within the server.xml file.
+
+The SecurityUtility tool will generate an AES cryptographic hash of the password.
+
+Copy and replace the plain-text password with the hashed value.
+
+This must be done for every plain-text password in server.xml.
+
+Restart the server by entering: 
+server stop &lt;server name&gt;
+server start &lt;server name&gt;</fixtext><fix id="F-53725r795060_fix" /><check system="C-53771r795059_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a privileged user with file access to ${server.config.dir}/server.xml, review and ensure there are no clear-text passwords stored within the server.xml file.
+
+If any passwords appear in plain text, or if any passwords start with {xor}, this is a finding.</check-content></check></Rule></Group><Group id="V-250337"><title>SRG-APP-000172-AS-000120</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250337r961029_rule" weight="10.0" severity="high"><version>IBMW-LS-000450</version><title>The WebSphere Liberty Server must use TLS-enabled LDAP.</title><description>&lt;VulnDiscussion&gt;Passwords need to be protected at all times, and encryption is the standard method for protecting passwords during transmission. If passwords are not encrypted, they can be plainly read (i.e., clear text) and easily compromised.
+
+Application servers have the capability to use either certificates (tokens) or user IDs and passwords in order to authenticate. When the application server transmits or receives passwords, the passwords must be encrypted. The certificate used by LDAP to establish trust with incoming client requests must be imported into a trust keystore created on the Liberty Server (JDK ikeyman may be used to do this). The LDAP configuration must indicate it is using SSL, provide the BindDN and BindPassword and point to the trust keystore containing the LDAP certificate.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000197</ident><fixtext fixref="F-53726r862985_fix">To ensure the Liberty Server transmits only encrypted passwords, the ${server.config.dir}/server.xml must be configured as follows:
+
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;feature&gt;ssl-1.0&lt;/feature&gt;
+&lt;feature&gt;ldapRegistry-3.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+&lt;ldapRegistry id="ldap" realm="SampleLdapRealm" host="${ldap.server.name}" port="${ldap.server.port}" ignoreCase="true"
+baseDN="${ldap.server.base.dn}"
+bindDN="${ldap.server.bind.dn}’
+bindPassword="${ldap.server.bind.password}"
+sslEnabled="true"
+sslRef="LDAPTLSSettings"
+ldapType="${ldap.vendor.type}"
+searchTimeout="8m"&gt;
+&lt;/ldapRegistry&gt; 
+
+&lt;sslDefault sslRef="LDAPTLSSettings" /&gt;
+&lt;ssl id="LDAPTLSSettings" keyStoreRef="LDAPKeyStore" trustStoreRef="LDAPTrustStore"
+sslProtocol="TLSv1.2"
+ /&gt;
+&lt;keyStore id="LDAPKeyStore" location="${server.config.dir}/LdapSSLKeyStore.jks" type="JKS" password="{xor}CDo9Hgw=" /&gt;
+&lt;keyStore id="LDAPTrustStore" location="${server.config.dir}/LdapTLSTrustStore.jks" type="JKS" password="{xor}CDo9Hgw=" /&gt;</fixtext><fix id="F-53726r862985_fix" /><check system="C-53772r862984_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a user with local file access to ${server.config.dir}/server.xml, verify TLS-enabled LDAP is in use. If TLS-Enabled LDAP is not defined within server.xml, this is a finding. 
+
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;feature&gt;ssl-1.0&lt;/feature&gt;
+&lt;feature&gt;ldapRegistry-3.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+&lt;ldapRegistry id="ldap" realm="SampleLdapRealm" host="${ldap.server.name}" port="${ldap.server.port}" ignoreCase="true"
+baseDN="${ldap.server.base.dn}"
+bindDN="${ldap.server.bind.dn}’
+bindPassword="${ldap.server.bind.password}"
+sslEnabled="true"
+sslRef="LDAPTLSSettings"
+ldapType="${ldap.vendor.type}"
+searchTimeout="8m"&gt;
+&lt;/ldapRegistry&gt; 
+
+&lt;sslDefault sslRef="LDAPTLSSettings" /&gt;
+&lt;ssl id="LDAPTLSSettings" keyStoreRef="LDAPKeyStore" trustStoreRef="LDAPTrustStore" 
+sslProtocol="TLSv1.2"/&gt;
+&lt;keyStore id="LDAPKeyStore" location="${server.config.dir}/LdapSSLKeyStore.jks" type="JKS" password="{xor}CDo9Hgw=" /&gt;
+&lt;keyStore id="LDAPTrustStore" location="${server.config.dir}/LdapTLSTrustStore.jks" type="JKS" password="{xor}CDo9Hgw=" /&gt;</check-content></check></Rule></Group><Group id="V-250338"><title>SRG-APP-000177-AS-000126</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250338r961044_rule" weight="10.0" severity="medium"><version>IBMW-LS-000500</version><title>The WebSphere Liberty Server must use DoD-issued/signed certificates.</title><description>&lt;VulnDiscussion&gt;The cornerstone of PKI is the private key used to encrypt or digitally sign information. The key by itself is a cryptographic value that does not contain specific user information, but the key can be mapped to a user. Without mapping the certificate used to authenticate to the user account, the ability to determine the identity of the individual user or group will not be available for forensic analysis.
+
+Satisfies: SRG-APP-000177-AS-000126, SRG-APP-000427-AS-000264, SRG-APP-000514-AS-000137&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000187</ident><ident system="http://cyber.mil/cci">CCI-002450</ident><ident system="http://cyber.mil/cci">CCI-002470</ident><fixtext fixref="F-53727r795066_fix">Do not use self-signed certificates in a production environment. Only import certificates signed by an authorized DoD CA or authorized for DoD use. 
+
+Obtain the signer certificate either as a Base 64-encoded ASCII file or as binary DER data. 
+
+Using the JDK’s ikeyman or keytool utility, open the default trusted keystore specified in the ${server.config.dir}/server.xml. 
+
+Click on signer certificates and import the file that contains the DoD signed certificate.</fixtext><fix id="F-53727r795066_fix" /><check system="C-53773r850894_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a privileged user with access to the ${server.config.dir}/server.xml file; search for SSLDefault in order to identify the default SSL configuration.
+
+grep -i ssldefault server.xml
+
+Identify the default ssl configuration by examining the sslRef flag.
+
+SAMPLE:
+ &lt;sslDefault sslRef="DefaultTLSSettings" /&gt; 
+
+Review the default ssl configuration to identify the default truststore.
+
+SAMPLE:
+ &lt;ssl id="DefaultTLSSettings" keyStoreRef="defaultKeyStore" /&gt;
+       &lt;keyStore id="LDAPTrustStore" location="${server.config.dir}/liberty.ks" type="JKS" password="xxxxxxx" /&gt;
+
+Use the java keytool or ikeyman utilities to open and examine the certificates stored in the truststore.
+
+If the certificates are self signed or not signed by a DoD approved CA, this is a finding.</check-content></check></Rule></Group><Group id="V-250339"><title>SRG-APP-000179-AS-000129</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250339r1067571_rule" weight="10.0" severity="high"><version>IBMW-LS-000520</version><title>The WebSphere Liberty Server must use FIPS 140-2 approved encryption modules when authenticating users and processes.</title><description>&lt;VulnDiscussion&gt;Application servers must use and meet requirements of the DOD Enterprise PKI infrastructure for application authentication. Encryption is only as good as the encryption modules used. Unapproved cryptographic module algorithms cannot be verified and cannot be relied upon to provide confidentiality or integrity, and DOD data may be compromised due to weak algorithms. The use of TLS provides confidentiality of data in transit between the application server and client. 
+
+TLS must be enabled and non-FIPS-approved SSL versions must be disabled. NIST SP 800-52 specifies the preferred configurations for government systems.
+
+Satisfies: SRG-APP-000179-AS-000129, SRG-APP-000224-AS-000152, SRG-APP-000416-AS-000140, SRG-APP-000439-AS-000155, SRG-APP-000442-AS-000259, SRG-APP-000514-AS-000136&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><ident system="http://cyber.mil/cci">CCI-001188</ident><ident system="http://cyber.mil/cci">CCI-002418</ident><ident system="http://cyber.mil/cci">CCI-002422</ident><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-53728r1067570_fix">There are two ways to meet this requirement. Only one method is required.
+
+If IBM JDK 8 is installed and configured to run with WebSphere Liberty, proceed with method (I).
+
+If IBM Semeru Runtimes version 11 and above is installed and configured with WebSphere Liberty, proceed with method (II). Currently IBM Semeru supports FIPS on RedHat Enterprise Linux.
+
+Method (I) IBM JDK 8 is configured to run with WebSphere Liberty:
+
+1. Edit/Create the ${server.config.dir}/jvm.options file. 
+Edit/Add the following two properties:
+Dcom.ibm.jsse2.usefipsprovider=true 
+Dcom.ibm.jsse2.usefipsProviderName=IBMJCEPlusFIPS 
+
+2. Edit ${JAVA_HOME}/jre/lib/security/java.security file and locate the list of cryptographic providers. Edit/add the following four providers: 
+
+security.provider.1=com.ibm.jsse2.IBMJSSEProvider2
+security.provider.2=com.ibm.crypto.plus.provider.IBMJCEPlusFIPS 
+security.provider.3=com.ibm.crypto.provider.IBMJCE
+security.provider.4=com.ibm.crypto.plus.provider.IBMJCEPlus
+
+Method (II) Semeru Runtimes version 11 and above is installed and configured with WebSphere Liberty. Requires RedHat Enterprise Linux as the Host Operating System.
+
+1. Log in as root or super user.
+
+2. Enable FIPS on the RedHat Enterprise Linux. 
+$ fips-mode-setup --enable
+$ fips-mode-setup --check
+ 
+3. Update/create the ${server.config.dir}/jvm.options.
+Edit/Add the following property:
+Dsemeru.fips=true 
+
+4. Install NSS packages. Run "$ dnf install nss".
+
+5. Import keystores to NSS Database by using "pk12util" command. Replace "changeit" for -W option to the desired password. 
+
+$ pk12util -i resources/security/key.p12 -W changeit -d /etc/pki/nssdb
+pk12util: PKCS12 IMPORT SUCCESSFUL
+
+6. Mark the imported certificates as a trusted certificate authority (CA).
+
+$ certutil -M -n default -t "CT,CT,CT" -d /etc/pki/nssdb
+
+7. List the contents of the NSS Database to confirm the alias name and the Trust Attributes.
+
+$ certutil -L -d /etc/pki/nssdb
+Certificate Nickname                                         Trust Attributes
+                                                                       SSL,S/MIME,JAR/XPI
+default                                                        CTu,Cu,Cu
+
+8. Create a config file (pkcs11cfg.cfg) with the contents below. It will be used by ${server.config.dir}/server.xml. 
+
+name = NSS-FIPS
+library = /usr/lib64/libsoftokn3.so
+slot = 3
+showInfo = true
+
+9. Update the ${server.config.dir}/server.xml file to use the configuration file in its SSL configuration. 
+
+&lt;ssl id="defaultSSLConfig"
+         keyStoreRef="defaultKeyStore"
+         sslProtocol="TLSv1.2" /&gt;    
+&lt;keyStore id="defaultKeyStore" password="password used in -W parameter earlier here"
+         location="${server.config.dir}/pkcs11cfg.cfg" type="PKCS11"
+         fileBased="false" provider="SunPKCS11-NSS-FIPS"/&gt;
+
+9.1 Find the &lt;keyStore/&gt; configuration referenced in the ssl configuration as "keyStoreRef". 
+9.2 Set "provider" attribute to either "SunPKCS11-NSS-FIPS" or "PKCS11-NSS-FIPS".
+9.3 Set the "type" attribute to "PKCS11"
+9.4 Set the "fileBased" attribute to "false"
+9.5 Set the "location" attribute to point to the NSS keystore configuration created in step 8 (pkcs11.cfg.cfg).
+9.6 Verify the file is in a location that is accessible to Liberty.</fixtext><fix id="F-53728r1067570_fix" /><check system="C-53774r1067569_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>There are two ways to meet this requirement. Only one method is required.
+
+If IBM JDK 8 is installed and configured to run with WebSphere Liberty, proceed with method (I).
+
+If IBM Semeru Runtimes version 11 and above is installed and configured with WebSphere Liberty, proceed with method (II). Currently IBM Semeru supports FIPS on RedHat Enterprise Linux.
+
+Method (I) IBM JDK 8 is configured to run with WebSphere Liberty:
+
+1. Review the ${server.config.dir}/jvm.options file. Verify FIPS is in use by checking the following lines:
+ 
+Dcom.ibm.jsse2.usefipsprovider=true 
+Dcom.ibm.jsse2.usefipsProviderName=IBMJCEPlusFIPS
+
+If the properties are not set as shown in the ${server.config.dir}/jvm.options file, this is a finding.
+
+2. Open ${JAVA_HOME}/jre/lib/security/java.security file. Locate the list of cryptographic providers and confirm the following entries in the provider list:
+
+com.ibm.crypto.plus.provider.IBMJSSEProvider2
+com.ibm.crypto.plus.provider.IBMJCEPlusFIPS 
+com.ibm.crypto.plus.provider.IBMJCEPlus
+com.ibm.crypto.plus.provider.IBMJCE
+
+If the entries are not set as shown in the ${JAVA_HOME}/jre/lib/security/java.security file, this is a finding.
+
+
+Method (II) Semeru Runtimes version 11 and above is installed and configured with WebSphere Liberty. Requires RedHat Enterprise Linux as the Host Operating System.
+
+1. Run the following command on the RedHat Enterprise Linux. Verify FIPS mode is enabled. 
+# fips-mode-setup --check
+If FIPS mode is not enabled, this is a finding.
+ 
+2. Review the ${server.config.dir}/jvm.options file. Verify "semeru.fips" property is set to true. 
+Dsemeru.fips=true
+If the property is not set as shown in the ${server.config.dir}/jvm.options file, this is a finding.
+
+3. Confirm NSS packages are installed by running "# dnf install nss" in a terminal.
+
+# dnf install nss
+Updating Subscription Management repositories.
+Last metadata expiration check: 0:56:30 ago on Wed 13 Sep 2023 07:29:35 AM PDT.
+Package nss-3.79.0-11.el8_7.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+
+If the command does not return output stating NSS is installed, this is a finding.
+
+4. Confirm NSS Database has the keystore imported by running "# certutil -L -d /etc/pki/nssdb" in a terminal. 
+
+# certutil -L -d /etc/pki/nssdb
+Certificate Nickname                                         Trust Attributes
+                                                             SSL,S/MIME,JAR/XPI
+default                                                      CTu,Cu,Cu
+
+If the command does not return the results as shown, this is a finding.
+
+5. Review the ${server.config.dir}/server.xml and confirm the following entries:
+
+name = NSS-FIPS
+library = /usr/lib64/libsoftokn3.so
+slot = 3
+showInfo = true
+
+If the entries are not set as shown in the ${server.config.dir}/server.xml file, this is a finding.
+
+6. Review the ${server.config.dir}/server.xml file with the following steps:
+
+6.1 Locate &lt;ssl&gt; configuration that is specifying the default SSL configuration for Liberty.
+6.2 Locate the "keyStoreRef" attribute in the &lt;ssl&gt; configuration and find the referenced &lt;keyStore&gt; configuration. 
+6.3 Verify the "provider" attribute is set to either "SunPKCS11-NSS-FIPS" or "PKCS11-NSS-FIPS" in the &lt;keyStore&gt; configuration. 
+6.4 Verify the "type" attribute is set to "PKCS11".
+6.5 Verify the "fileBased" attribute is set to "false".
+6.6 Find the "location" attribute for the configuration file of NSS keystore database (In the example below, it is "/tmp/pkcs11cfg.cfg").
+6.7 Verify the file is in a location that is accessible to Liberty.
+
+Snippet of server.xml:
+&lt;ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLSv1.2" /&gt;
+&lt;keyStore id="defaultKeyStore" password="{xor}Lz4sLCgwLTsINis3" location="/tmp/pkcs11cfg.cfg" type="PKCS11" fileBased="false" provider="SunPKCS11-NSS-FIPS" /&gt;
+
+If the entries are not set as shown in the ${server.config.dir}/server.xml file, this is a finding.</check-content></check></Rule></Group><Group id="V-250340"><title>SRG-APP-000295-AS-000263</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250340r1043182_rule" weight="10.0" severity="medium"><version>IBMW-LS-000720</version><title>HTTP session timeout must be configured.</title><description>&lt;VulnDiscussion&gt;An attacker can take advantage of user sessions that are left open, thus bypassing the user authentication process.
+
+To thwart the vulnerability of open and unused user sessions, the application server must be configured to close the sessions when a configured condition or trigger event is met.
+
+Session termination terminates all processes associated with a user’s logical session except those processes that are specifically created by the user (i.e., session owner) to continue after the session is terminated.
+
+Conditions or trigger events requiring automatic session termination can include, for example, periods of user inactivity, targeted responses to certain types of incidents, and time-of-day restrictions on information system use.
+
+Satisfies: SRG-APP-000295-AS-000263, SRG-APP-000389-AS-000253&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002038</ident><ident system="http://cyber.mil/cci">CCI-004895</ident><ident system="http://cyber.mil/cci">CCI-002361</ident><fixtext fixref="F-53729r795072_fix">The ${server.config.dir}/server.xml file must be configured to update the invalidationTimeout attribute on the httpSession element to set the session timeout value in hours (h) or minutes (m). The server.xml file must define the following: 
+
+&lt;httpSession invalidationTimeout="10m"/&gt;  
+
+By default, httpSession invalidationTimeout is set to 30m.</fixtext><fix id="F-53729r795072_fix" /><check system="C-53775r795071_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a user with access to the server xml file, review the contents and verify the httpSession time out setting is configured for 10 minutes.
+
+If the ${server.config.dir}/server.xml does not define the timeout setting as 10 minutes, this is a finding.
+
+&lt;httpSession invalidationTimeout="10m"/&gt;</check-content></check></Rule></Group><Group id="V-250341"><title>SRG-APP-000315-AS-000094</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250341r1015252_rule" weight="10.0" severity="high"><version>IBMW-LS-000770</version><title>Application security must be enabled on the WebSphere Liberty Server.</title><description>&lt;VulnDiscussion&gt;Application security enables security for the applications in the environment. This type of security provides application isolation and requirements for authenticating application users. When a user enables security, both administrative and application security is enabled. 
+
+Application security is in effect only when administrative security is enabled via the security feature. If the application server is to be used for only web applications, only the servlet-3.1 feature needs to be defined. If the application server is to be used for only ejb applications, only the ejbLite-3.1 feature needs to be defined. If both web and ejb applications are to be deployed on the application server, then both the servlet-3.1 and ejbLite-3.1 features need to be defined. The check and fix assumes that the application server will have both web and ejb applications deployed.
+
+Satisfies: SRG-APP-000315-AS-000094, SRG-APP-000014-AS-000009&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-002314</ident><fixtext fixref="F-53730r862988_fix">Configure the ${server.config.dir}/server.xml file and add the appSecurity-2.0 feature. 
+
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+Review ${server.config.dir}/logs/messages.log
+
+Validate log entry that indicates "Security service is ready".</fixtext><fix id="F-53730r862988_fix" /><check system="C-53776r1015251_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a user with local file access to ${server.config.dir}/server.xml file, verify application security is enabled. 
+
+If the appSecurity-2.0 feature is not defined within server.xml, this is a finding.
+
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;/featureManager&gt;</check-content></check></Rule></Group><Group id="V-250342"><title>SRG-APP-000340-AS-000185</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250342r961353_rule" weight="10.0" severity="medium"><version>IBMW-LS-000790</version><title>Users in a reader-role must be authorized.</title><description>&lt;VulnDiscussion&gt;The reader role is a management role that allows read-only access to select administrative REST APIs as well as the Admin Center UI (adminCenter-1.0). Preventing non-privileged users from viewing privileged functions mitigates the risk that unauthorized individuals or processes may gain unnecessary access to information or privileges.
+
+Users granted reader role access must be authorized.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002235</ident><fixtext fixref="F-53731r862991_fix">Edit the ${server.config.dir}/server.xml file. If unauthorized users have been added to the reader-role, remove those users. 
+
+Otherwise, document the users who are granted the reader-role access.
+
+To allow read-only access to select administrative REST APIs, the ${server.config.dir}/server.xml must be configured as follows. Additionally, the users and groups they are a part of must be defined within LDAP.
+
+EXAMPLE:
+&lt;featureManager&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+&lt;reader-role&gt;
+&lt;group&gt;group&lt;/group&gt;&lt;group-access-id&gt; group:realmName/groupUniqueId&lt;/group-access-id&gt;&lt;user&gt;user&lt;/user&gt;&lt;user-access-id&gt;user:realmName/userUniqueId&lt;/user-access-id&gt;
+&lt;/reader-role&gt;
+
+&lt;ldapRegistry id="ldap" realm="SampleLdapRealm" host="${ldap.server.name}" port="${ldap.server.port}" ignoreCase="true"
+baseDN="${ldap.server.base.dn}"
+ldapType="${ldap.vendor.type}"
+searchTimeout="8m"&gt;
+&lt;/ldapRegistry&gt;</fixtext><fix id="F-53731r862991_fix" /><check system="C-53777r862990_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a user with access to the ${server.config.dir}/server.xml file. Review the contents and identify if users have been granted the reader-role.
+
+grep -i reader-role ${server.config.dir}/server.xml
+
+If the reader-role has been created, users in that role must be documented and approved. 
+
+If users in the reader-role are not approved, this is a finding.
+
+EXAMPLE:
+&lt;featureManager&gt;&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;&lt;/featureManager&gt;
+
+&lt;reader-role&gt;
+&lt;group&gt;group&lt;/group&gt;
+&lt;group-access-id&gt;group:realmName/groupUniqueId&lt;/group-access-id&gt;
+&lt;user&gt;user&lt;/user&gt;
+&lt;user-access-id&gt;user:realmName/userUniqueId&lt;/user-access-id&gt;
+&lt;/reader-role&gt;</check-content></check></Rule></Group><Group id="V-250343"><title>SRG-APP-000357-AS-000038</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250343r961392_rule" weight="10.0" severity="medium"><version>IBMW-LS-000830</version><title>The WebSphere Liberty Server must allocate JVM log record storage capacity in accordance with organization-defined log record storage requirements.</title><description>&lt;VulnDiscussion&gt;JVM logs are logs used to store application and runtime related events, rather than audit related events. They are mainly used to diagnose application or runtime bugs. However, they are useful for providing more context when correlated with audit related events. 
+
+By default, Liberty automatically logs the console.log, messages.log, and trace.log but these default settings must be validated.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001849</ident><fixtext fixref="F-53732r850900_fix">Edit the bootstrap.properties file and configure the  com.ibm.ws.logging.console.log.level=ON. 
+
+Edit the ${server.config.dir}/server.xml file. Configure &lt;logging traceSpecification&gt; in accordance with local policy and system storage limits.
+
+EXAMPLE:
+&lt;logging traceSpecification="*=info=enabled:my.package.*=all" maxFileSize="40" maxFiles="20"/&gt;, 
+
+where maxFileSize is set to the maximum file size defined in local policy and maxFiles is set to the maximum number of historical files defined in local policy and in accordance with system storage limits.</fixtext><fix id="F-53732r850900_fix" /><check system="C-53778r795080_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>Review the ${server.config.dir}/bootstrap.properties file, verify console logging is not turned off. If the property com.ibm.ws.logging.console.log.level=OFF, this is a finding. 
+
+Review the ${server.config.dir}/server.xml file and verify the logging traceSpecification setting is configured according to system capacity requirements. If the logging traceSpecification settings are not configured, this is a finding.
+
+EXAMPLE:
+&lt;logging traceSpecification="*=info=enabled:my.package.*=all" maxFileSize="40" maxFiles="20"/&gt;</check-content></check></Rule></Group><Group id="V-250344"><title>SRG-APP-000380-AS-000088</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250344r961461_rule" weight="10.0" severity="medium"><version>IBMW-LS-000910</version><title>The server.xml file must be protected from unauthorized modification.</title><description>&lt;VulnDiscussion&gt;When dealing with access restrictions pertaining to change control, it should be noted that any changes to the software, and/or application server configuration could potentially have significant adverse effects on the overall security of the system.
+
+Protect the server.xml file from unauthorized modification by applying file permission restrictions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001813</ident><fixtext fixref="F-53733r795084_fix">As a privileged user with local file access to ${server.config.dir}/server.xml.
+
+Use the chmod command to configure the correct file permissions of 660.
+
+chmod 660 server.xml</fixtext><fix id="F-53733r795084_fix" /><check system="C-53779r795083_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>As a privileged user with local file access to ${server.config.dir}/server.xml, verify the server.xml file permissions are set to 660.
+
+If the server.xml file permissions are not set to 660, this is a finding.</check-content></check></Rule></Group><Group id="V-250345"><title>SRG-APP-000400-AS-000246</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250345r961521_rule" weight="10.0" severity="medium"><version>IBMW-LS-000970</version><title>The WebSphere Liberty Server must prohibit the use of cached authenticators after an organization-defined time period.</title><description>&lt;VulnDiscussion&gt;Larger authentication cache timeout values can increase security risks. For example, a user who is revoked can still log in by using a credential that is cached in the authentication cache until the cache is refreshed.
+
+Smaller authentication cache timeout values can affect performance. When this value is smaller, the Liberty Server accesses the user registry or repository more frequently.
+
+Larger numbers of entries in the authentication cache, which is caused by an increased number of users, increases the memory usage of the authentication cache. Thus, the application server might slow down and affect performance.
+
+If cached authentication information is out of date, the validity of the authentication information may be questionable.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002007</ident><fixtext fixref="F-53734r862993_fix">Edit the server.xml file and define the authCache timeout value as 10 minutes or AO approved value. Also ensure the appSecurity-2.0 feature is enabled.
+
+EXAMPLE:
+
+&lt;featureManager&gt; 
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;/featureManager&gt; 
+
+&lt;authCache initialSize="100" maxSize="50000" timeout="10m"/&gt;</fixtext><fix id="F-53734r862993_fix" /><check system="C-53780r795086_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>Review system security plan and identify the cache timeout parameters for authentication. The  value for admin timeout is 10 minutes. However, a case-by-case exception based on operational requirements can be configured with AO acceptance. 
+
+As a privileged user with access to server.xml, review the file and verify the authCache timeout parameter is configured for 10 minutes.
+
+grep -i authcache server.xml
+
+EXAMPLE:
+&lt;authCache initialSize="100" maxSize="50000" timeout="10m"/&gt;
+
+If the authCache timeout parameter is not configured for 10 minutes, or the AO has not accepted the risk for extending the timeout period specified, this is a finding.</check-content></check></Rule></Group><Group id="V-250346"><title>SRG-APP-000428-AS-000265</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250346r1067567_rule" weight="10.0" severity="medium"><version>IBMW-LS-001050</version><title>The WebSphere Liberty Server LTPA keys password must be changed.</title><description>&lt;VulnDiscussion&gt;The default location of the automatically generated Lightweight Third Party Authentication (LTPA) keys file is ${server.output.dir}/resources/security/ltpa.keys. 
+
+The LTPA keys are encrypted with a randomly generated key and a default password of WebAS is initially used to protect the keys. The password is required when importing the LTPA keys into another server. To protect the security of the LTPA keys, change the password. 
+
+When the LTPA keys are exchanged between servers, this password must match across the servers for Single Sign On (SSO) to work.
+
+Automated LTPA key generation can create unplanned outages. Plan to change the LTPA keys during a scheduled outage and do not use automated key changes. Distribute the new keys to all nodes in the cell and to all external systems/cells during this outage window.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002475</ident><fixtext fixref="F-53735r795090_fix">To update key password and force a regeneration of keys follow these steps. To obtain encoded values, use the Liberty "securityUtility encode" command.
+
+1. Shut down the server.
+
+2. Configure the &lt;ltpa&gt; element in the server.xml file as follows, replacing the sample values in the example with local values. The password may be encoded or encrypted.
+
+&lt;ltpa keysFileName="yourLTPAKeysFileName.keys" keysPassword="yourkeysPassword" expiration="120" /&gt;
+
+3. Delete the existing ${wlp.server.dir}/resources/security/ltpa.keys file.
+
+4. Sync changes with all servers in the cell.
+
+5. Start the servers.</fixtext><fix id="F-53735r795090_fix" /><check system="C-53781r850904_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>If LTPA is not used, this requirement is not a finding.
+
+As a privileged user with access to ${server.config.dir}/server.xml file, review the server.xml file and locate LTPA settings. If the LTPA settings do not exist, this is not a finding.
+
+EXAMPLE:
+grep -i "&lt;ltpa" server.xml
+
+ &lt;ltpa keysFileName="LTPA.keys" keysPassword="myLTPAkeysPassword" expiration="120" monitorInterval="5s" /&gt;
+
+If the LTPA setting exists and the password is set to "WebAS", this is a finding.</check-content></check></Rule></Group><Group id="V-250347"><title>SRG-APP-000439-AS-000274</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250347r961632_rule" weight="10.0" severity="medium"><version>IBMW-LS-001110</version><title>The WebSphere Liberty Server must remove all export ciphers to protect the confidentiality and integrity of transmitted information.</title><description>&lt;VulnDiscussion&gt;Export grade encryption suites are not strong and do not meet DoD requirements. The encryption for the session becomes easy for the attacker to break. Do not use export grade encryption.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-53736r795093_fix">Review the ${server.config.dir}/server.xml file and if needed, modify the "enabledCiphers" setting for each affected SSL configuration.
+
+&lt;ssl id="myDefaultSSLConfig"
+       keyStoreRef="defaultKeyStore"
+       trustStoreRef="defaultTrustStore"
+       clientAuthentication="true"
+       sslProtocol="TLS" 
+       enabledCiphers="SSL_xxx_yyy_zzz"/&gt; 
+
+where xxx, yyy, and zzz do not contain "EXPORT".</fixtext><fix id="F-53736r795093_fix" /><check system="C-53782r795092_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>Review the ${server.config.dir}/server.xml file and check the "enabledCiphers" setting. If any of the ciphers specified in the enabledCiphers setting contains the word "EXPORT", this is a finding. 
+
+&lt;ssl id="myDefaultSSLConfig"
+       keyStoreRef="defaultKeyStore"
+       trustStoreRef="defaultTrustStore"
+       clientAuthentication="true"
+       sslProtocol="TLS" 
+       enabledCiphers="SSL_xxx_yyy_zzz"/&gt;</check-content></check></Rule></Group><Group id="V-250348"><title>SRG-APP-000440-AS-000167</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250348r961635_rule" weight="10.0" severity="medium"><version>IBMW-LS-001120</version><title>The WebSphere Liberty Server must be configured to use HTTPS only.</title><description>&lt;VulnDiscussion&gt;Transmission of data can take place between the application server and a large number of devices/applications external to the application server. Examples are a web client used by a user, a backend database, a log server, or other application servers in an application server cluster.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002421</ident><fixtext fixref="F-53737r862996_fix">Modify the server.xml file. Enable the ssl-1.0 feature and configure the httpEndpoint settings. The keystores and truststores must also be configured.
+
+&lt;featureManager&gt;
+&lt;feature&gt;servlet-3.0&lt;/feature&gt;
+&lt;feature&gt;ssl-1.0&lt;/feature&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+    
+    &lt;httpEndpoint id="defaultHttpEndpoint"
+          host="localhost"
+          httpPort="${bvt.prop.HTTP_default}"
+          httpsPort="${bvt.prop.HTTP_default.secure}" &gt;
+          &lt;tcpOptions soReuseAddr="true" /&gt;
+          &lt;sslOptions sslRef="testSSLConfig" /&gt;
+&lt;/httpEndpoint&gt; 
+
+     &lt;ssl id="defaultSSLConfig"
+      keyStoreRef="defaultKeyStore"
+      trustStoreRef="defaultKeyStore"
+      serverKeyAlias="default" /&gt;
+
+     &lt;ssl id="testSSLConfig"
+      keyStoreRef="defaultKeyStore"
+      trustStoreRef="alternateTrustStore"
+      serverKeyAlias="alternateCert"
+      enabledCiphers="AES256-SHA AES128-SHA" /&gt;
+
+&lt;!-- inbound (HTTPS) keystore --&gt;
+&lt;keyStore id="defaultKeyStore" password="Liberty"
+           location="${server.config.dir}/resources/security/sslOptions.jks" /&gt;
+
+&lt;keyStore id="defaultTrustStore" password="Liberty"
+           location="${server.config.dir}/resources/security/trust.jks" /&gt;
+           
+&lt;keyStore id="alternateTrustStore" password="Liberty"
+           location="${server.config.dir}/resources/security/optionsTrust.jks" /&gt;
+
+    &lt;application type="war" id="basicauth" name="basicauth"
+             location="${server.config.dir}/apps/basicauth.war" /&gt;</fixtext><fix id="F-53737r862996_fix" /><check system="C-53783r862995_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>Review the ${server.config.dir}/server.xml file and check the ssl-1.0 feature and httpEndpoint settings. 
+
+If the ssl-1.0 feature is not defined, this is a finding. 
+
+If the httpEndpoint settings do not include ssloptions, this is a finding.
+
+&lt;featureManager&gt;
+&lt;feature&gt;servlet-3.0&lt;/feature&gt;
+&lt;feature&gt;ssl-1.0&lt;/feature&gt;
+&lt;feature&gt;appSecurity-2.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+&lt;httpEndpoint id="defaultHttpEndpoint"
+          host="localhost"
+          httpPort="${bvt.prop.HTTP_default}"
+          httpsPort="${bvt.prop.HTTP_default.secure}" &gt;
+          &lt;tcpOptions soReuseAddr="true" /&gt;
+          &lt;sslOptions sslRef="testSSLConfig" /&gt;
+&lt;/httpEndpoint&gt;</check-content></check></Rule></Group><Group id="V-250349"><title>SRG-APP-000456-AS-000266</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250349r961683_rule" weight="10.0" severity="medium"><version>IBMW-LS-001170</version><title>The WebSphere Liberty Server must install security-relevant software updates within the time period directed by an authoritative source.</title><description>&lt;VulnDiscussion&gt;Security vulnerabilities are often addressed by testing and applying the latest security patches and fix packs. The latest fixpacks can be found at: http://www-01.ibm.com/support/docview.wss?uid=swg27009661&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002605</ident><fixtext fixref="F-53738r795099_fix">Obtain WebSphere Liberty product security and patch support at http://www-01.ibm.com/support/docview.wss?uid=swg27009661. 
+
+Run the productInfo validate command to validate the MD5 checksum file for server installation and each feature.
+
+If a feature is not valid, the command outputs an error and lists the manifest file for the affected feature. The following example validates the features for the current installation and outputs the results to the validate.txt file:
+
+productInfo validate --output=/tmp/validate.txt</fixtext><fix id="F-53738r795099_fix" /><check system="C-53784r795098_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>Use the "productInfo(.bat/.sh) version" command to determine the WebSphere version. Review the patch level and fix pack. 
+
+Review the latest fixpacks at: http://www-01.ibm.com/support/docview.wss?uid=swg27009661 and determine if the system is operating at the latest patch level.
+
+If the most recent patches/fix packs have not been applied, this is a finding.</check-content></check></Rule></Group><Group id="V-250350"><title>SRG-APP-000499-AS-000224</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-250350r961812_rule" weight="10.0" severity="medium"><version>IBMW-LS-001190</version><title>The WebSphere Liberty Server must generate log records for authentication and authorization events.</title><description>&lt;VulnDiscussion&gt;Enabling authentication (SECURITY_AUTHN) and authorization (SECURITY_AUTHZ) event handlers configures the server to record security authorization and authentication events. By logging these events, the logs can be analyzed to identify activity that could be related to security events and to aid post mortem forensic analysis.
+
+Satisfies: SRG-APP-000499-AS-000224, SRG-APP-000495-AS-000220, SRG-APP-000503-AS-000228, SRG-APP-000504-AS-000229, SRG-APP-000505-AS-000230, SRG-APP-000506-AS-000231, SRG-APP-000509-AS-000234, SRG-APP-000092-AS-000053&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM WebSphere Liberty Server</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM WebSphere Liberty Server</dc:subject><dc:identifier>5424</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000172</ident><ident system="http://cyber.mil/cci">CCI-001464</ident><fixtext fixref="F-53739r795102_fix">Modify the ${server.config.dir}/server.xml file and configure the audit-1.0 feature.
+
+&lt;featureManager&gt;
+&lt;feature&gt;audit-1.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+Configure the auditFileHandler setting to record SECURITY_AUTHN and SECURITY_AUTHZ events. 
+
+&lt;auditFileHandler&gt;
+      &lt;events name="AllAuthn" eventName="SECURITY_AUTHN"/&gt;
+&lt;events name="AllAuthz" eventName="SECURITY_AUTHZ" /&gt;
+    &lt;/auditFileHandler&gt;    
+
+Review audit logs located under the ${server.config.dir}/logs directory and ensure AUTHN and AUTHZ events are logged.</fixtext><fix id="F-53739r795102_fix" /><check system="C-53785r795101_chk"><check-content-ref href="IBM_WebSphere_Liberty_Server_STIG.xml" name="M" /><check-content>Review the ${server.config.dir}/server.xml file, verify the audit-1.0 feature is enabled. Also verify the auditFile Handler is configured to log AUTHN and AUTHZ events. 
+
+If the audit1.0 feature is not enabled, this is a finding.
+
+If the SECURITY_AUTHN and SECURITY_AUTHZ event handlers are not configured, this is a finding. 
+
+&lt;featureManager&gt;
+&lt;feature&gt;audit-1.0&lt;/feature&gt;
+&lt;/featureManager&gt;
+
+    &lt;auditFileHandler&gt;
+        &lt;events name="AllAuthn" eventName="SECURITY_AUTHN" /&gt;
+&lt;events name="AllAuthz" eventName="SECURITY_AUTHZ" /&gt;
+    &lt;/auditFileHandler&gt;</check-content></check></Rule></Group></Benchmark>
