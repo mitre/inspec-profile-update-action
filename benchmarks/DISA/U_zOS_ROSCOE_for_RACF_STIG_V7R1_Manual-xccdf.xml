@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_ROSCOE_for_RACF_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-03-04">accepted</status><title>z/OS ROSCOE for RACF Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224528" selected="true" /><select idref="V-224529" selected="true" /><select idref="V-224530" selected="true" /><select idref="V-224531" selected="true" /><select idref="V-224532" selected="true" /><select idref="V-224533" selected="true" /><select idref="V-224534" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224528" selected="true" /><select idref="V-224529" selected="true" /><select idref="V-224530" selected="true" /><select idref="V-224531" selected="true" /><select idref="V-224532" selected="true" /><select idref="V-224533" selected="true" /><select idref="V-224534" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224528" selected="true" /><select idref="V-224529" selected="true" /><select idref="V-224530" selected="true" /><select idref="V-224531" selected="true" /><select idref="V-224532" selected="true" /><select idref="V-224533" selected="true" /><select idref="V-224534" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224528" selected="true" /><select idref="V-224529" selected="true" /><select idref="V-224530" selected="true" /><select idref="V-224531" selected="true" /><select idref="V-224532" selected="true" /><select idref="V-224533" selected="true" /><select idref="V-224534" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224528" selected="true" /><select idref="V-224529" selected="true" /><select idref="V-224530" selected="true" /><select idref="V-224531" selected="true" /><select idref="V-224532" selected="true" /><select idref="V-224533" selected="true" /><select idref="V-224534" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224528" selected="true" /><select idref="V-224529" selected="true" /><select idref="V-224530" selected="true" /><select idref="V-224531" selected="true" /><select idref="V-224532" selected="true" /><select idref="V-224533" selected="true" /><select idref="V-224534" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224528" selected="true" /><select idref="V-224529" selected="true" /><select idref="V-224530" selected="true" /><select idref="V-224531" selected="true" /><select idref="V-224532" selected="true" /><select idref="V-224533" selected="true" /><select idref="V-224534" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224528" selected="true" /><select idref="V-224529" selected="true" /><select idref="V-224530" selected="true" /><select idref="V-224531" selected="true" /><select idref="V-224532" selected="true" /><select idref="V-224533" selected="true" /><select idref="V-224534" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224528" selected="true" /><select idref="V-224529" selected="true" /><select idref="V-224530" selected="true" /><select idref="V-224531" selected="true" /><select idref="V-224532" selected="true" /><select idref="V-224533" selected="true" /><select idref="V-224534" selected="true" /></Profile><Group id="V-224528"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224528r1082308_rule" weight="10.0" severity="medium"><version>ZROSR000</version><title>ROSCOE Install data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;ROSCOE Install data sets provide the capability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS ROSCOE for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS ROSCOE for RACF</dc:subject><dc:identifier>4161</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-21927</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26199r1082308_fix">The ISSO will ensure that update and alter access to program product data sets is limited to system programmers, security personnel and auditors only, and all update and allocate access is logged.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and alter access is logged. The installing systems programmer will identify if any additional groups have update access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+Data set prefix to be protected will be:
+
+SYS2.ROSCOE.
+SYS2A.ROSCOE.
+SYS3.ROSCOE.
+SYS3A.ROSCOE.
+
+The following commands are provided as a sample for implementing dataset controls: 
+
+ad 'sys2.roscoe.**' uacc(none) owner(sys2) -
+	audit(success(update) failures(read)) -
+	data('Vendor DS Profile: ROSCOE')
+pe 'sys2.roscoe.**' id(syspaudt) acc(a)
+pe 'sys2.roscoe.**' id(*) acc(r)
+ad 'sys2a.roscoe.**' uacc(none) owner(sys2a) -
+	audit(success(update) failures(read)) -
+	data('Roscoe Vendor Datasets')
+pe 'sys2a.roscoe.**' id(&lt;syspaudt&gt;) acc(a)
+pe 'sys2a.roscoe.**' id(*) acc(r)
+ad 'sys3.roscoe.**' uacc(none) owner(sys3) -
+	audit(success(update) failures(read)) -
+	data('Roscoe Vendor Datasets')
+pe 'sys3.roscoe.**' id(&lt;syspaudt&gt;) acc(a)
+pe 'sys3.roscoe.**' id(*) acc(r)
+ad 'sys3a.roscoe.**' uacc(none) owner(sys3a) -
+	audit(success(update) failures(read)) -
+	data('Roscoe Vendor Datasets')
+pe 'sys3a.roscoe.**' id(&lt;syspaudt&gt;) acc(a)
+pe 'sys3a.roscoe.**' id(*) acc(r)
+setr generic(dataset) refresh</fixtext><fix id="F-26199r1082308_fix" /><check system="C-26211r1070091_chk"><check-content-ref href="zOS_ROSCOE_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ROSRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZROS0000)
+
+Verify that access to the ROSCOE Install data set are properly restricted.
+ 
+The RACF data set rules for the data sets does not restrict UPDATE and/or ALTER access to systems programming personnel.
+
+The RACF data set rules for the data sets does not specify that all (i.e., failures and successes) UPDATE and/or ALTER access will be logged.
+
+If all of the above are untrue, this is not a finding.
+
+If any of the above is true, this is a finding.</check-content></check></Rule></Group><Group id="V-224529"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224529r958616_rule" weight="10.0" severity="medium"><version>ZROSR001</version><title>ROSCOE STC data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;ROSCOE STC data sets provide the capability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS ROSCOE for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS ROSCOE for RACF</dc:subject><dc:identifier>4161</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17067</ident><ident system="http://cyber.mil/legacy">SV-23706</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-26200r520836_fix">The IAO will ensure that update and alter access to the ROSCOE started task or batch job data sets is limited to system programmers and the started task only and all update and alter access is logged.
+
+The IAO will ensure that all other accesses to the ROSCOE started task or batch job data sets are properly restricted and all required accesses are properly logged.
+
+Data sets to be protected will be
+
+SYS3.ROSCOE.sys*.**
+SYS3.ROSCOE.ros*.**
+
+The following commands are provided as a sample for implementing dataset controls: 
+
+ad 'sys3.roscoe.ros*.**' uacc(none) owner(sys3) -
+	audit(success(update) failures(read)) -
+	data('Site Customized Profile: ROSCOE')
+pe 'sys3.roscoe.ros*.**' id(syspaudt) acc(a)
+pe 'sys3.roscoe.ros*.**' id(roscoe) acc(a)
+ad 'sys3.roscoe.sys*.**' uacc(none) owner(sys3) -
+	audit(success(update) failures(read)) -
+	data('Site Customized profile: ROSCOE')
+pe 'sys3.roscoe.sys*.**' id(syspaudt) acc(a)
+pe 'sys3.roscoe.sys*.**' id(roscoe) acc(a)
+setr generic(dataset) refresh</fixtext><fix id="F-26200r520836_fix" /><check system="C-26212r520835_chk"><check-content-ref href="zOS_ROSCOE_for_RACF_STIG.xml" name="M" /><check-content>a)	Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ROSSTC)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZROS0001)
+
+b)	Verify that access to the ROSCOE STC data sets are properly restricted.  The data sets in this group are the data sets identified in the ROSACTxx (if used), ROSLIBxx, and SYSAWSx DD statements of the STC or batch JCL.
+ 
+___	The RACF data set rules for the data sets does not restrict UPDATE and/or ALTER access to systems programming personnel.
+
+___	The RACF data set rules for the data sets does not restrict UPDATE and/or ALTER access to the product STC(s) and/or batch job(s).
+
+c)	If all of the above are untrue, there is NO FINDING.
+
+d)	If any of the above is true, this is a FINDING.</check-content></check></Rule></Group><Group id="V-224530"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224530r1070182_rule" weight="10.0" severity="medium"><version>ZROSR020</version><title>ROSCOE resources must be properly defined and protected.</title><description>&lt;VulnDiscussion&gt;ROSCOE can run with sensitive system privileges, and potentially can circumvent system controls. Failure to properly control access to product resources could result in the compromise of the operating system environment, and compromise the confidentiality and integrity of customer data. Many utilities assign resource controls that can be granted to systems programmers only in greater than read authority. Resources are also granted to certain nonsystems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS ROSCOE for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS ROSCOE for RACF</dc:subject><dc:identifier>4161</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17947</ident><ident system="http://cyber.mil/legacy">SV-23708</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26201r1070181_fix">The ISSO will work with the systems programmer to verify that the following are properly specified in the Access Control Program (ACP).
+
+(Note: The resources and/or resource prefixes identified below are examples of a possible installation. The actual resources and/or resource prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+Ensure that all ROSCOE resources and/or generic equivalent are properly protected according to the requirements specified in CA ROSCOE Resources table in the z/OS STIG Addendum.
+
+Use CA ROSCOE Resources table in the z/OS STIG Addendum. This table lists the resources, access requirements, and logging requirements for ROSCOE ensure the following guidelines are followed:
+
+The RACF resource access authorizations restrict access to the appropriate personnel.
+
+The RACF resource logging is correctly specified.
+
+The RACF resource access authorizations specify UACC(NONE) and NOWARNING.
+
+The following commands are provided as a sample for implementing resource controls:
+
+RDEFINE RO@RES rosid.** UACC(NONE) OWNER(ADMIN) AUDIT(FAILURE(READ))
+RDEFINE RO@RES rosid.ROSCMD.** UACC(NONE) OWNER(ADMIN) AUDIT(FAILURE(READ))
+RDEFINE RO@RES rosid.ROSCMD.MONITOR.** UACC(NONE) OWNER(ADMIN) AUDIT(FAILURE(READ))
+RDEFINE RO@RES rosid.ROSCMD.ETSO UACC(NONE) OWNER(ADMIN) AUDIT(FAILURE(READ))
+RDEFINE RO@RES rosid.ROSCMD.MONITOR.AMS UACC(NONE) OWNER(ADMIN) AUDIT(FAILURE(READ))
+
+PE rosid.ROSCMD.ETSO CLASS(RO@RES) ID(*) ACCESS(READ)
+PE rosid.ROSCMD.MONITOR.- CLASS(RO@RES) ID(syspaudt) ACCESS(ALTER)
+PE rosid.ROSCMD.MONITOR.AMS CLASS(RO@RES) ID(syspaudt) ACCESS(ALTER)
+PE rosid.ROSCMD.MONITOR.AMS CLASS(RO@RES) ID(*) ACCESS(READ)
+PE rosid.ROSCMD.- CLASS(RO@RES) ID(syspaudt) ACCESS(ALTER)</fixtext><fix id="F-26201r1070181_fix" /><check system="C-26213r1070180_chk"><check-content-ref href="zOS_ROSCOE_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ZROS0020)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZROS0020)
+
+Ensure all ROSCOE resources and/or generic equivalent are properly protected according to the requirements specified in the CA ROSCOE Resources table in the z/OS STIG Addendum. Note: Wherever an access or user group is missing, use the Site Security Plan (SSP) to determine access and/or user group. If the following guidance is true, this is not a finding.
+
+The RACF resource access authorizations restrict access to the appropriate personnel.
+
+The RACF resource logging is correctly specified.
+
+The RACF resource access authorizations are defined with UACC(NONE) and NOWARNING.</check-content></check></Rule></Group><Group id="V-224531"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224531r958482_rule" weight="10.0" severity="medium"><version>ZROSR030</version><title>ROSCOE Started Task name is not properly identified / defined to the system ACP.</title><description>&lt;VulnDiscussion&gt;Products that require a started task will require that the started task be restricted to certain resources, datasets and other system functions. By defining the started task as a userid to the system ACP, It allows the ACP to control the access and authorized users that require these capabilities. Failure to properly control these capabilities, could compromise of the operating system environment, ACP, and customer data.      &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS ROSCOE for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS ROSCOE for RACF</dc:subject><dc:identifier>4161</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17452</ident><ident system="http://cyber.mil/legacy">SV-23710</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26202r520842_fix">The ROSCOE system programmer and the IAO will ensure that a product's Started Task(s) is properly Identified / defined to the System ACP. 
+
+If the product requires a Started Task, verify that it is properly defined to the System ACP with the proper attributes.
+
+Most installation manuals will indicate how the Started Task is identified and any additional attributes that must be specified.
+
+A sample is provided here:
+
+au roscoe name('stc, roscoe') owner(stc) dfltgrp(stc) nopass</fixtext><fix id="F-26202r520842_fix" /><check system="C-26214r520841_chk"><check-content-ref href="zOS_ROSCOE_for_RACF_STIG.xml" name="M" /><check-content>a)	Refer to the following report produced by the RACF Data Collection:
+
+-	RACFCMDS.RPT(LISTUSER)
+
+b)	If the Product started task(s) or Product batch job userid(s) is defined and is assigned the RACF PROTECTED attribute, there is NO FINDING.
+
+c)	If the above is untrue, than this is a FINDING.</check-content></check></Rule></Group><Group id="V-224532"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224532r958482_rule" weight="10.0" severity="medium"><version>ZROSR032</version><title>ROSCOE Started task(s) must be properly defined to the STARTED resource class for RACF.</title><description>&lt;VulnDiscussion&gt;Access to product resources should be restricted to only those individuals responsible for the application connectivity and who have a requirement to access these resources.  Improper control of product resources could potentially compromise the operating system, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS ROSCOE for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS ROSCOE for RACF</dc:subject><dc:identifier>4161</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17454</ident><ident system="http://cyber.mil/legacy">SV-24812</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26203r520845_fix">The ROSCOE system programmer and the IAO will ensure that a product's started task(s) is (are) properly identified and/or defined to the System ACP. 
+
+A unique userid must be assigned for the ROSCOE started task(s) thru a corresponding STARTED class entry.
+
+The following sample set of commands is shown here as a guideline:
+
+rdef started ROSCOE.** uacc(none) owner(admin) audit(all(read)) stdata(user(ROSCOE) group(stc))
+
+setr racl(started) ref</fixtext><fix id="F-26203r520845_fix" /><check system="C-26215r520844_chk"><check-content-ref href="zOS_ROSCOE_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the RACF Data Collection:
+
+-	DSMON.RPT(RACSPT)
+
+Automated Analysis
+Refer to the following report produced by the RACF Data Collection:
+
+-	PDI(ZROS0032)
+
+Verify that the ROSCOE started task(s) is (are) defined to the STARTED resource class profile and/or ICHRIN03 table entry.</check-content></check></Rule></Group><Group id="V-224533"><title>SRG-OS-000309</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224533r987853_rule" weight="10.0" severity="medium"><version>ZROSR038</version><title>The Roscoe Resource Class will be defined or active in the ACP.</title><description>&lt;VulnDiscussion&gt;Failure to use a robust ACP to control a product could potentially compromise the integrity and availability of the MVS operating system and user data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS ROSCOE for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS ROSCOE for RACF</dc:subject><dc:identifier>4161</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-24846</ident><ident system="http://cyber.mil/legacy">V-18011</ident><ident system="http://cyber.mil/cci">CCI-000336</ident><ident system="http://cyber.mil/cci">CCI-002358</ident><fixtext fixref="F-26204r520848_fix">The IAO will ensure that the Product Resource Class(es) is (are) active.
+
+Issue the following commands:
+
+SETR CLASSACT(RO@RES)
+SETR GENERIC(RO@RES)</fixtext><fix id="F-26204r520848_fix" /><check system="C-26216r520847_chk"><check-content-ref href="zOS_ROSCOE_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the RACF Data Collection:
+
+-	RACFCMDS.RPT(SETROPTS)
+-	DSMON.RPT(RACCDT) - Alternate list of active resource classes
+
+Automated Analysis
+Refer to the following report produced by the RACF Data Collection:
+
+-	PDI(ZROS0038)
+
+Ensure that the ROSCOE resource class(es) is (are) defined and active.</check-content></check></Rule></Group><Group id="V-224534"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224534r1070087_rule" weight="10.0" severity="medium"><version>ZROSR040</version><title>Product configuration/parameter values are not specified properly.</title><description>&lt;VulnDiscussion&gt;Product configuration/parameters control the security and operational characteristics of products.  If these parameter values are improperly specified, security and operational controls may be weakened.  This exposure may threaten the availability of the product applications, and compromise the confidentiality of customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS ROSCOE for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS ROSCOE for RACF</dc:subject><dc:identifier>4161</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-23712</ident><ident system="http://cyber.mil/legacy">V-18014</ident><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-26205r1070086_fix">The product systems programmer will verify that any configuration/parameters required to control the security of the product are properly configured and syntactically correct.
+ 
+See the required parameters below: Example
+
+Keyword	Value
+EXTSEC	RACF
+ACFEXT	YES
+CLLEXT	YES
+JOBEXT	YES
+LIBEXT	YES
+MONEXT	YES
+PRVEXT	YES
+RPFEXT	YES
+UPSEXT	YES</fixtext><fix id="F-26205r1070086_fix" /><check system="C-26217r1070085_chk"><check-content-ref href="zOS_ROSCOE_for_RACF_STIG.xml" name="M" /><check-content>Have the  products system programmer display the configuration/parameters control statements used in the current running product to define or enable security. This information is located in the SYSIN DD statement in the JCL of the STC/Batch job.
+
+Automated Analysis
+Refer to the following report produced by the z/OS Data Collection:
+
+-	PDI(ZROS0040)
+
+Verify the following specifications:
+
+Keyword	Value
+EXTSEC	RACF
+ACFEXT	YES
+CLLEXT	YES
+JOBEXT	YES
+LIBEXT	YES
+MONEXT	YES
+PRVEXT	YES
+RPFEXT	YES
+UPSEXT	YES
+
+If the above is true, this is not a finding.
+
+If the above is untrue, this is a finding.</check-content></check></Rule></Group></Benchmark>

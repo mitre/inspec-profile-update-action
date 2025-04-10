@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_Quest_NC-Pass_for_ACF2_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-02-25">accepted</status><title>z/OS Quest NC-Pass for ACF2 Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224332" selected="true" /><select idref="V-224333" selected="true" /><select idref="V-224334" selected="true" /><select idref="V-224335" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224332" selected="true" /><select idref="V-224333" selected="true" /><select idref="V-224334" selected="true" /><select idref="V-224335" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224332" selected="true" /><select idref="V-224333" selected="true" /><select idref="V-224334" selected="true" /><select idref="V-224335" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224332" selected="true" /><select idref="V-224333" selected="true" /><select idref="V-224334" selected="true" /><select idref="V-224335" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224332" selected="true" /><select idref="V-224333" selected="true" /><select idref="V-224334" selected="true" /><select idref="V-224335" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224332" selected="true" /><select idref="V-224333" selected="true" /><select idref="V-224334" selected="true" /><select idref="V-224335" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224332" selected="true" /><select idref="V-224333" selected="true" /><select idref="V-224334" selected="true" /><select idref="V-224335" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224332" selected="true" /><select idref="V-224333" selected="true" /><select idref="V-224334" selected="true" /><select idref="V-224335" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224332" selected="true" /><select idref="V-224333" selected="true" /><select idref="V-224334" selected="true" /><select idref="V-224335" selected="true" /></Profile><Group id="V-224332"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224332r1070056_rule" weight="10.0" severity="medium"><version>ZNCPA000</version><title>Quest NC-Pass installation data sets will be properly protected.</title><description>&lt;VulnDiscussion&gt;Quest NC-Pass installation data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Quest NC-Pass for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Quest NC-Pass for ACF2</dc:subject><dc:identifier>4127</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-40863</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-25997r1070055_fix">The ISSO will ensure that WRITE and/or greater access to Quest NC-Pass installation data sets is limited to system programmers only, and all WRITE and/or greater access is logged. READ access can be given to all authorized users.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have WRITE and/or greater access and, if required, that all WRITE and/or greater access is logged. The installing systems programmer will identify if any additional groups have WRITE and/or greater access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+Data sets to be protected will be:
+SYS2.NCPASS.
+SYS3.NCPASS. (data sets that are not altered by product STCs, can be more specific)
+
+The following commands are provided as a sample for implementing data set controls:
+
+$KEY(SYS2)
+NCPASS.- UID(&lt;syspaudt&gt;) R(A) W(L) A(L) E(A)
+NCPASS.- UID(&lt;tstcaudt&gt;) R(A) W(L) A(L) E(A)
+NCPASS.- UID(&lt;audtaudt&gt;) R(A) E(A)
+NCPASS.- UID(*) R(A) E(A)
+
+$KEY(SYS3)
+NCPASS.- UID(&lt;syspaudt&gt;) R(A) W(L) A(L) E(A)
+NCPASS.- UID(&lt;tstcaudt&gt;) R(A) W(L) A(L) E(A)
+NCPASS.- UID(&lt;audtaudt&gt;) R(A) E(A)
+NCPASS.- UID(*) R(A) E(A)</fixtext><fix id="F-25997r1070055_fix" /><check system="C-26009r1070054_chk"><check-content-ref href="zOS_Quest_NC-Pass_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(NCPASRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZNCP0000)
+
+Verify that the accesses to the Quest NC-Pass installation data sets are properly restricted. If the following guidance is true, this is not a finding.
+ 
+The ACF2 data set rules for the data sets restricts READ access to all authorized users.
+
+The ACF2 data set rules for the data sets restricts WRITE and/or greater access to systems programming personnel.
+
+The ACF2 data set rules for the data sets specify that all (i.e., failures and successes) WRITE and/or greater access is logged.</check-content></check></Rule></Group><Group id="V-224333"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224333r958616_rule" weight="10.0" severity="medium"><version>ZNCPA001</version><title>Quest NC-Pass STC data sets will be properly protected.</title><description>&lt;VulnDiscussion&gt;Quest NC-Pass STC data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Quest NC-Pass for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Quest NC-Pass for ACF2</dc:subject><dc:identifier>4127</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17067</ident><ident system="http://cyber.mil/legacy">SV-40866</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-25998r868214_fix">The ISSO will ensure that WRITE and/or greater access to Quest NC-Pass STC data sets is limited to systems programmers and/or Quest NC-Pass's STC(s) and/or batch user(s) only. UPDATE access can be given to domain level security administrators. READ access can be given to auditors.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update and/or alter access for specific data sets, and once documented will work with the ISSO to ensure they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be:
+SYS3.NCPASS.*.PASSCAF
+SYS3.NCPASS.*.PASSVSDD
+
+The following commands are provided as a sample for implementing data set controls:
+
+$KEY(SYS3)
+NCPASS.-.PASSCAF.- UID(&lt;syspaudt&gt;) R(A) W(A) A(A) E(A)
+NCPASS.-.PASSCAF.- UID(&lt;tstcaudt&gt;) R(A) W(A) A(A) E(A)
+NCPASS.-.PASSCAF.- UID(NCPASS STCs) R(A) W(A) A(A) E(A)
+NCPASS.-.PASSCAF.- UID(secaaudt) R(A) W(A) E(A)
+NCPASS.-.PASSCAF.- UID(&lt;audtaudt&gt;) R(A) E(A)
+NCPASS.-.PASSVSDD.- UID(&lt;syspaudt&gt;) R(A) W(A) A(A) E(A)
+NCPASS.-.PASSVSDD.- UID(&lt;tstcaudt&gt;) R(A) W(A) A(A) E(A)
+NCPASS.-.PASSVSDD.- UID(NCPASS STCs) R(A) W(A) E(A)
+NCPASS.-.PASSVSDD.- UID(&lt;secaaudt&gt;) R(A) W(A) E(A)
+NCPASS.-.PASSVSDD.- UID(&lt;audtaudt&gt;) R(A) E(A)</fixtext><fix id="F-25998r868214_fix" /><check system="C-26010r868213_chk"><check-content-ref href="zOS_Quest_NC-Pass_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(NCPASSTC)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZNCP0001)
+
+Verify that the accesses to the Quest NC-Pass STC data sets are properly restricted.
+
+___ The ACF2 data set rules for the data sets restricts READ access to auditors.
+
+___ The ACF2 data set rules for the data sets restricts WRITE access to domain level security administrators.
+
+___ The ACF2 data set rules for the data sets restricts WRITE and/or greater access to systems programming personnel.
+
+___ The ACF2 data set rules for the data sets restricts WRITE and/or greater access to the Quest NC-Pass's STC(s) and/or batch user(s).</check-content></check></Rule></Group><Group id="V-224334"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224334r1070011_rule" weight="10.0" severity="medium"><version>ZNCPA020</version><title>Quest NC-Pass will be used by Highly-Sensitive users.</title><description>&lt;VulnDiscussion&gt;DISA has directed that Quest NC-Pass extended authentication be implemented on all domains. All users with update and alter access to sensitive system-level data sets and resources, or who possess special security privileges, are required to use NC-Pass for extended authentication. Typical personnel required to use NC-Pass include, but are not limited to, systems programming, security, operations, network/communications, storage management, and production control.
+
+Improper enforcement of extended authentication through NC-Pass could potentially compromise the operating system, Access Control Program (ACP), and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Quest NC-Pass for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Quest NC-Pass for ACF2</dc:subject><dc:identifier>4127</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17947</ident><ident system="http://cyber.mil/legacy">SV-40869</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-25999r1070010_fix">The ISSO will ensure that sensitive users are properly validated to Quest NC-Pass.
+
+Note: Sensitive users include systems programming personnel, security personnel, and other staff (e.g., DASD management, operations, auditors, technical support, etc.) with access to sensitive resources (e.g., operator commands, ACP privileges, etc.) that can modify the operating system and system software, and review/modify the security environment.
+
+The following attributes must be set for logonids requiring NC-Pass validation:
+
+SET LID
+CHANGE logonid AUTHSUP1</fixtext><fix id="F-25999r1070010_fix" /><check system="C-26011r1070009_chk"><check-content-ref href="zOS_Quest_NC-Pass_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the ACF2 Data Collection:
+
+-	ACF2CMDS.RPT(TSOUSERS)
+
+If all sensitive users requiring NC-Pass validation has the AUTHSUP1 attribute, this is not a finding.
+
+Note: Sensitive users include systems programming personnel, security personnel, and other staff (e.g., DASD management, operations, auditors, technical support, etc.) with access to sensitive resources (e.g., operator commands, ACP privileges, etc.) that can modify the operating system and system software, and review/modify the security environment.</check-content></check></Rule></Group><Group id="V-224335"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224335r958482_rule" weight="10.0" severity="medium"><version>ZNCPA030</version><title>Quest NC-Pass Started Task name will be properly identified and/or defined to the system ACP.</title><description>&lt;VulnDiscussion&gt;Quest NC-Pass requires a started task that will be restricted to certain resources, datasets and other system functions. By defining the started task as a userid to the system ACP, It allows the ACP to control the access and authorized users that require these capabilities. Failure to properly control these capabilities, could compromise of the operating system environment, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS Quest NC-Pass for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS Quest NC-Pass for ACF2</dc:subject><dc:identifier>4127</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-17452</ident><ident system="http://cyber.mil/legacy">SV-40872</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26000r520797_fix">The IAO working with the systems programmer will ensure the Quest NC-Pass Started Task(s) is properly identified and/or defined to the System ACP.
+
+If the product requires a Started Task, verify that it is properly defined to the System ACP with the proper attributes.
+
+Most installation manuals will indicate how the Started Task is identified and any additional attributes that must be specified.
+
+The following commands are provided as a sample for defining Started Task(s):
+
+SET LID
+insert NCPASS stc name('STC, Quest NC-Pass') musass no-smc musupdt</fixtext><fix id="F-26000r520797_fix" /><check system="C-26012r520796_chk"><check-content-ref href="zOS_Quest_NC-Pass_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the ACF2 Data Collection:
+
+-	ACF2CMDS.RPT(ATTSTC)
+
+Verify that the logonid(s) for the Quest NC-Pass started task(s) is (are) properly defined.  If the following attributes are defined, this is not a finding.
+
+STC
+MUSASS
+NO-SMC
+MUSUPDT</check-content></check></Rule></Group></Benchmark>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_HCD_for_RACF_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-02-24">accepted</status><title>z/OS HCD for RACF Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224489" selected="true" /><select idref="V-224490" selected="true" /><select idref="V-224491" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224489" selected="true" /><select idref="V-224490" selected="true" /><select idref="V-224491" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224489" selected="true" /><select idref="V-224490" selected="true" /><select idref="V-224491" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224489" selected="true" /><select idref="V-224490" selected="true" /><select idref="V-224491" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224489" selected="true" /><select idref="V-224490" selected="true" /><select idref="V-224491" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224489" selected="true" /><select idref="V-224490" selected="true" /><select idref="V-224491" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224489" selected="true" /><select idref="V-224490" selected="true" /><select idref="V-224491" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224489" selected="true" /><select idref="V-224490" selected="true" /><select idref="V-224491" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224489" selected="true" /><select idref="V-224490" selected="true" /><select idref="V-224491" selected="true" /></Profile><Group id="V-224489"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224489r1070185_rule" weight="10.0" severity="medium"><version>ZHCDR000</version><title>IBM Hardware Configuration Definition (HCD) install data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;IBM HCD product has the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS HCD for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS HCD for RACF</dc:subject><dc:identifier>4153</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-30545</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26160r1070184_fix">The ISSO will ensure that update and allocate access to IBM HCD install data sets is limited to system programmers only, and all update and alter access is logged. Auditors, automated operations, and operators should have READ access.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The systems programmer will identify if any additional groups have update and/or alter access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+Data sets to be protected will be: 
+SYS1.SCBD*
+
+The following commands are provided as a sample for implementing dataset controls: 
+
+ad 'SYS1.SCBD*.**' uacc(none) owner(sys1) -
+	audit(success(update) failures(read)) -
+	data('Vendor DS Profile: hcd')
+pe 'SYS1.SCBD*.**' id(syspaudt tstcaudt) acc(a)
+pe 'SYS1.SCBD*.**' id(audtaudt autoaudt operaudt) acc(r)
+
+setr generic(dataset) refresh</fixtext><fix id="F-26160r1070184_fix" /><check system="C-26172r1070183_chk"><check-content-ref href="zOS_HCD_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(HCDRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZHCD0000)
+
+Verify that access to the IBM HCD install data sets are properly restricted.
+ 
+ 	The RACF data set rules for the data sets restricts READ access to auditors, automated operations, operators, and systems programming personnel.
+
+ 	The RACF data set rules for the data sets restricts UPDATE and/or ALTER access to systems programming personnel.
+
+ 	The RACF data set rules for the data sets specifies that all (i.e., failures and successes) UPDATE and/or ALTER access are logged.</check-content></check></Rule></Group><Group id="V-224490"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224490r1070140_rule" weight="10.0" severity="medium"><version>ZHCDR002</version><title>IBM Hardware Configuration Definition (HCD) User data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;IBM HCD product has the capability to use privileged functions and/or to have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS HCD for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS HCD for RACF</dc:subject><dc:identifier>4153</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-30598</ident><ident system="http://cyber.mil/legacy">V-21592</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26161r1070139_fix">The ISSO will ensure that update, and alter access to program product user data sets is limited to systems programmers and all update and allocate access is logged. Ensure that read access is limited to auditors, Operations personnel, and Automated Operations users.
+
+The installing systems programmer will identify and document the product user data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+Data sets to be protected will be:
+
+The production IODF data sets. (i.e., hhhhhhhh.IODFnn)
+The working IODF data sets. (i.e., hhhhhhhh.IODFnn.)
+The activity log for the IODF data sets. (i.e., hhhhhhhh.IODFnn.ACTLOG)
+
+Note: Currently on most CSD systems the prefix for these data sets is SYS3.IODF*.**.
+
+The following commands are provided as a sample for implementing dataset controls:
+
+ad 'sys3.iodf*.**' uacc(none) owner(sys3) -
+audit(success(update) failures(read)) -
+data('Vendor DS Profile: IODF for HCD')
+pe 'sys3.iodf*.**' id(syspaudt tstcaudt) acc(a)
+pe 'sys3.iodf*.**' id(audtaudt autoaudt operaudt) acc(r)</fixtext><fix id="F-26161r1070139_fix" /><check system="C-26173r1070138_chk"><check-content-ref href="zOS_HCD_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(HCDUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZHCD0002)
+
+Verify that the access to the IBM HCD install data sets is properly restricted. The data sets to be protected are the production and working IODF data sets as well as the activity log for the IODF data sets.
+
+Note: Currently on most CSD systems the prefix for these data sets is SYS3.IODF*.**.
+
+The RACF data set rules for the data sets does not restrict UPDATE and/or ALTER access to systems programming personnel.
+
+The RACF data set rules for the data sets does not restrict READ access to automated operations users and operations personnel.
+
+The RACF data set rules for the datasets does not specify that all (i.e., failures and successes) UPDATE and/or ALTER access will be logged.
+
+If all of the above are untrue, there is no finding.
+
+If any of the above is true, this is a finding.</check-content></check></Rule></Group><Group id="V-224491"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224491r1070137_rule" weight="10.0" severity="medium"><version>ZHCDR020</version><title>IBM Hardware Configuration Definition (HCD) resources are not properly defined and protected.</title><description>&lt;VulnDiscussion&gt;Program products can run with sensitive system privileges, and potentially can circumvent system controls. Failure to properly control access to program product resources could result in the compromise of the operating system environment, and compromise the confidentiality of customer data. Many utilities assign resource controls that can be granted to systems programmers only in greater than read authority. Resources are also granted to certain nonsystems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS HCD for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS HCD for RACF</dc:subject><dc:identifier>4153</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-30583</ident><ident system="http://cyber.mil/legacy">V-17947</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26162r1070136_fix">The systems programmer will work with the ISSO to verify that the following are properly specified in the Access Control Program (ACP).
+
+1. The RACF rules for the CBD resource specify a default access of NONE.
+2. There are no RACF rules that allow access to the CBD resource.
+
+Example:
+
+rdef facility cbd.** uacc(none) owner(admin) audit(failure(read)) -
+data('added per PDI ZHCD0020') 
+
+3. The RACF rules for the CBD.CPC.IOCDS and CBD.CPC.IPLPARM resources are restricted access to systems programming and operations personnel as well as possibly any automated operations batch users with access of READ.
+4. The RACF rules for the CBD.CPC.IOCDS and CBD.CPC.IPLPARM resources are restricted access to systems programming with access of UPDATE and logged.
+5. All RACF rules are defined with UACC(NONE).
+
+Example:
+
+rdef facility cbd.cpc.iocds.** uacc(none) owner(admin) -
+	audit(success(update) failures(read)) -
+	data('added per PDI ZHCD0020') 
+rdef facility cbd.cpc.iplparm.** uacc(none) owner(admin) -
+	audit(success(update) failures(read)) -
+	data('added per PDI ZHCD0020') 
+
+pe cbd.cpc.iocds.** cl(facility) id(syspaudt) acc(u)
+pe cbd.cpc.iocds.** cl(facility) id(operaudt) acc(r)
+pe cbd.cpc.iocds.** cl(facility) id(autoaudt) acc(r)
+pe cbd.cpc.iplparm.** cl(facility) id(syspaudt) acc(u)
+pe cbd.cpc.iplparm.** cl(facility) id(operaudt) acc(r)
+pe cbd.cpc.iplparm.** cl(facility) id(autoaudt) acc(r)
+
+setr racl(facility) ref</fixtext><fix id="F-26162r1070136_fix" /><check system="C-26174r1070135_chk"><check-content-ref href="zOS_HCD_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(FACILITY)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZHCD0020)
+
+Review the following items for the IBM HCD resources in the FACILITY resource class:
+
+1. The RACF rules for the CBD resource specify a default access of NONE.
+2. The RACF rules for the CBD.CPC.IOCDS and CBD.CPC.IPLPARM resources restrict access to systems programming and operations personnel as well as possibly any automated operations batch users with access of READ.
+3. The RACF rules for the CBD.CPC.IOCDS and CBD.CPC.IPLPARM resources are restricted access to systems programming with access of UPDATE and logged.
+4. All RACF rules are defined with UACC(NONE).
+
+If any item above is untrue, this is a finding.
+
+If all items above are true, this is not a finding.</check-content></check></Rule></Group></Benchmark>

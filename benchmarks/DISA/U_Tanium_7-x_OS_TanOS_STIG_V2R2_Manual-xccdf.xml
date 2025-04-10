@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Tanium_7-x_OS_TanOS_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-02-11">accepted</status><title>Tanium 7.x Operating System on TanOS Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>2</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254839" selected="true" /><select idref="V-254840" selected="true" /><select idref="V-254841" selected="true" /><select idref="V-254842" selected="true" /><select idref="V-254843" selected="true" /><select idref="V-254844" selected="true" /><select idref="V-254846" selected="true" /><select idref="V-254847" selected="true" /><select idref="V-254848" selected="true" /><select idref="V-254849" selected="true" /><select idref="V-254851" selected="true" /><select idref="V-254852" selected="true" /><select idref="V-254853" selected="true" /><select idref="V-254854" selected="true" /><select idref="V-254855" selected="true" /><select idref="V-254856" selected="true" /><select idref="V-254857" selected="true" /><select idref="V-254858" selected="true" /><select idref="V-254859" selected="true" /><select idref="V-254860" selected="true" /><select idref="V-254861" selected="true" /><select idref="V-254862" selected="true" /><select idref="V-254863" selected="true" /><select idref="V-254864" selected="true" /><select idref="V-254865" selected="true" /><select idref="V-254866" selected="true" /><select idref="V-254867" selected="true" /><select idref="V-254868" selected="true" /><select idref="V-254869" selected="true" /><select idref="V-254871" selected="true" /><select idref="V-254873" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254839" selected="true" /><select idref="V-254840" selected="true" /><select idref="V-254841" selected="true" /><select idref="V-254842" selected="true" /><select idref="V-254843" selected="true" /><select idref="V-254844" selected="true" /><select idref="V-254846" selected="true" /><select idref="V-254847" selected="true" /><select idref="V-254848" selected="true" /><select idref="V-254849" selected="true" /><select idref="V-254851" selected="true" /><select idref="V-254852" selected="true" /><select idref="V-254853" selected="true" /><select idref="V-254854" selected="true" /><select idref="V-254855" selected="true" /><select idref="V-254856" selected="true" /><select idref="V-254857" selected="true" /><select idref="V-254858" selected="true" /><select idref="V-254859" selected="true" /><select idref="V-254860" selected="true" /><select idref="V-254861" selected="true" /><select idref="V-254862" selected="true" /><select idref="V-254863" selected="true" /><select idref="V-254864" selected="true" /><select idref="V-254865" selected="true" /><select idref="V-254866" selected="true" /><select idref="V-254867" selected="true" /><select idref="V-254868" selected="true" /><select idref="V-254869" selected="true" /><select idref="V-254871" selected="true" /><select idref="V-254873" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254839" selected="true" /><select idref="V-254840" selected="true" /><select idref="V-254841" selected="true" /><select idref="V-254842" selected="true" /><select idref="V-254843" selected="true" /><select idref="V-254844" selected="true" /><select idref="V-254846" selected="true" /><select idref="V-254847" selected="true" /><select idref="V-254848" selected="true" /><select idref="V-254849" selected="true" /><select idref="V-254851" selected="true" /><select idref="V-254852" selected="true" /><select idref="V-254853" selected="true" /><select idref="V-254854" selected="true" /><select idref="V-254855" selected="true" /><select idref="V-254856" selected="true" /><select idref="V-254857" selected="true" /><select idref="V-254858" selected="true" /><select idref="V-254859" selected="true" /><select idref="V-254860" selected="true" /><select idref="V-254861" selected="true" /><select idref="V-254862" selected="true" /><select idref="V-254863" selected="true" /><select idref="V-254864" selected="true" /><select idref="V-254865" selected="true" /><select idref="V-254866" selected="true" /><select idref="V-254867" selected="true" /><select idref="V-254868" selected="true" /><select idref="V-254869" selected="true" /><select idref="V-254871" selected="true" /><select idref="V-254873" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254839" selected="true" /><select idref="V-254840" selected="true" /><select idref="V-254841" selected="true" /><select idref="V-254842" selected="true" /><select idref="V-254843" selected="true" /><select idref="V-254844" selected="true" /><select idref="V-254846" selected="true" /><select idref="V-254847" selected="true" /><select idref="V-254848" selected="true" /><select idref="V-254849" selected="true" /><select idref="V-254851" selected="true" /><select idref="V-254852" selected="true" /><select idref="V-254853" selected="true" /><select idref="V-254854" selected="true" /><select idref="V-254855" selected="true" /><select idref="V-254856" selected="true" /><select idref="V-254857" selected="true" /><select idref="V-254858" selected="true" /><select idref="V-254859" selected="true" /><select idref="V-254860" selected="true" /><select idref="V-254861" selected="true" /><select idref="V-254862" selected="true" /><select idref="V-254863" selected="true" /><select idref="V-254864" selected="true" /><select idref="V-254865" selected="true" /><select idref="V-254866" selected="true" /><select idref="V-254867" selected="true" /><select idref="V-254868" selected="true" /><select idref="V-254869" selected="true" /><select idref="V-254871" selected="true" /><select idref="V-254873" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254839" selected="true" /><select idref="V-254840" selected="true" /><select idref="V-254841" selected="true" /><select idref="V-254842" selected="true" /><select idref="V-254843" selected="true" /><select idref="V-254844" selected="true" /><select idref="V-254846" selected="true" /><select idref="V-254847" selected="true" /><select idref="V-254848" selected="true" /><select idref="V-254849" selected="true" /><select idref="V-254851" selected="true" /><select idref="V-254852" selected="true" /><select idref="V-254853" selected="true" /><select idref="V-254854" selected="true" /><select idref="V-254855" selected="true" /><select idref="V-254856" selected="true" /><select idref="V-254857" selected="true" /><select idref="V-254858" selected="true" /><select idref="V-254859" selected="true" /><select idref="V-254860" selected="true" /><select idref="V-254861" selected="true" /><select idref="V-254862" selected="true" /><select idref="V-254863" selected="true" /><select idref="V-254864" selected="true" /><select idref="V-254865" selected="true" /><select idref="V-254866" selected="true" /><select idref="V-254867" selected="true" /><select idref="V-254868" selected="true" /><select idref="V-254869" selected="true" /><select idref="V-254871" selected="true" /><select idref="V-254873" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254839" selected="true" /><select idref="V-254840" selected="true" /><select idref="V-254841" selected="true" /><select idref="V-254842" selected="true" /><select idref="V-254843" selected="true" /><select idref="V-254844" selected="true" /><select idref="V-254846" selected="true" /><select idref="V-254847" selected="true" /><select idref="V-254848" selected="true" /><select idref="V-254849" selected="true" /><select idref="V-254851" selected="true" /><select idref="V-254852" selected="true" /><select idref="V-254853" selected="true" /><select idref="V-254854" selected="true" /><select idref="V-254855" selected="true" /><select idref="V-254856" selected="true" /><select idref="V-254857" selected="true" /><select idref="V-254858" selected="true" /><select idref="V-254859" selected="true" /><select idref="V-254860" selected="true" /><select idref="V-254861" selected="true" /><select idref="V-254862" selected="true" /><select idref="V-254863" selected="true" /><select idref="V-254864" selected="true" /><select idref="V-254865" selected="true" /><select idref="V-254866" selected="true" /><select idref="V-254867" selected="true" /><select idref="V-254868" selected="true" /><select idref="V-254869" selected="true" /><select idref="V-254871" selected="true" /><select idref="V-254873" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254839" selected="true" /><select idref="V-254840" selected="true" /><select idref="V-254841" selected="true" /><select idref="V-254842" selected="true" /><select idref="V-254843" selected="true" /><select idref="V-254844" selected="true" /><select idref="V-254846" selected="true" /><select idref="V-254847" selected="true" /><select idref="V-254848" selected="true" /><select idref="V-254849" selected="true" /><select idref="V-254851" selected="true" /><select idref="V-254852" selected="true" /><select idref="V-254853" selected="true" /><select idref="V-254854" selected="true" /><select idref="V-254855" selected="true" /><select idref="V-254856" selected="true" /><select idref="V-254857" selected="true" /><select idref="V-254858" selected="true" /><select idref="V-254859" selected="true" /><select idref="V-254860" selected="true" /><select idref="V-254861" selected="true" /><select idref="V-254862" selected="true" /><select idref="V-254863" selected="true" /><select idref="V-254864" selected="true" /><select idref="V-254865" selected="true" /><select idref="V-254866" selected="true" /><select idref="V-254867" selected="true" /><select idref="V-254868" selected="true" /><select idref="V-254869" selected="true" /><select idref="V-254871" selected="true" /><select idref="V-254873" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254839" selected="true" /><select idref="V-254840" selected="true" /><select idref="V-254841" selected="true" /><select idref="V-254842" selected="true" /><select idref="V-254843" selected="true" /><select idref="V-254844" selected="true" /><select idref="V-254846" selected="true" /><select idref="V-254847" selected="true" /><select idref="V-254848" selected="true" /><select idref="V-254849" selected="true" /><select idref="V-254851" selected="true" /><select idref="V-254852" selected="true" /><select idref="V-254853" selected="true" /><select idref="V-254854" selected="true" /><select idref="V-254855" selected="true" /><select idref="V-254856" selected="true" /><select idref="V-254857" selected="true" /><select idref="V-254858" selected="true" /><select idref="V-254859" selected="true" /><select idref="V-254860" selected="true" /><select idref="V-254861" selected="true" /><select idref="V-254862" selected="true" /><select idref="V-254863" selected="true" /><select idref="V-254864" selected="true" /><select idref="V-254865" selected="true" /><select idref="V-254866" selected="true" /><select idref="V-254867" selected="true" /><select idref="V-254868" selected="true" /><select idref="V-254869" selected="true" /><select idref="V-254871" selected="true" /><select idref="V-254873" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-254839" selected="true" /><select idref="V-254840" selected="true" /><select idref="V-254841" selected="true" /><select idref="V-254842" selected="true" /><select idref="V-254843" selected="true" /><select idref="V-254844" selected="true" /><select idref="V-254846" selected="true" /><select idref="V-254847" selected="true" /><select idref="V-254848" selected="true" /><select idref="V-254849" selected="true" /><select idref="V-254851" selected="true" /><select idref="V-254852" selected="true" /><select idref="V-254853" selected="true" /><select idref="V-254854" selected="true" /><select idref="V-254855" selected="true" /><select idref="V-254856" selected="true" /><select idref="V-254857" selected="true" /><select idref="V-254858" selected="true" /><select idref="V-254859" selected="true" /><select idref="V-254860" selected="true" /><select idref="V-254861" selected="true" /><select idref="V-254862" selected="true" /><select idref="V-254863" selected="true" /><select idref="V-254864" selected="true" /><select idref="V-254865" selected="true" /><select idref="V-254866" selected="true" /><select idref="V-254867" selected="true" /><select idref="V-254868" selected="true" /><select idref="V-254869" selected="true" /><select idref="V-254871" selected="true" /><select idref="V-254873" selected="true" /></Profile><Group id="V-254839"><title>SRG-OS-000021</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254839r1067738_rule" weight="10.0" severity="medium"><version>TANS-OS-000070</version><title>The Tanium Operating System (TanOS) must enforce the limit of three consecutive invalid logon attempts by a user during a 15 minute time period.</title><description>&lt;VulnDiscussion&gt;By limiting the number of failed login attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute forcing, is reduced. Limits are imposed by locking the account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-58396r1067737_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "C" for "User Administration Menu," and then press "Enter".
+
+4. Press "L" for "Local Tanium User Management," and then press "Enter".
+
+5. Press "B" for "Security Policy Local Authentication Service," and then press "Enter".
+
+6. Type "yes," and then press "Enter".
+
+7. Input the following settings pressing "Enter" after every value:
+    a) Minimum Password Lifetime: Configure an appropriate value
+    b) Maximum Password Lifetime: Configure an appropriate value
+    c) Minimum Password Length: Configure an appropriate value
+    d) Minimum Password History: Configure an appropriate value
+    e) Password Lockout: Configure an appropriate value
+    f) Password Maximum Failure: 3
+
+8. Type "yes" to accept the new password policy.</fixtext><fix id="F-58396r1067737_fix" /><check system="C-58452r1067736_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "C" for "User Administration Menu," and then press "Enter".
+
+4. Press "L" for "Local Tanium User Management," and then press "Enter".
+
+5. Press "B" for "Security Policy Local Authentication Service," and then press "Enter".
+
+If the value of "Password Maximum Failure:" is greater than "3", this is a finding.</check-content></check></Rule></Group><Group id="V-254840"><title>SRG-OS-000023</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254840r958390_rule" weight="10.0" severity="medium"><version>TANS-OS-000075</version><title>The Tanium Operating System (TanOS) must display the Standard Mandatory DOD Notice and Consent Banner before granting access to the system.</title><description>&lt;VulnDiscussion&gt;Display of a standardized and approved use notification before granting access to the operating system ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist.
+
+The banner must be formatted in accordance with DTM-08-060. Use the following verbiage for operating system that can accommodate banners of 1300 characters:
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+-At any time, the USG may inspect and seize data stored on this IS.
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+ 
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+"I've read &amp; consent to terms in IS user agreem't."&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-58397r870366_fix">1. Create a .txt file composed of the DOD-authorized warning banner verbiage.
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+-At any time, the USG may inspect and seize data stored on this IS.
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+2. Name the file "banner_ssh.txt".
+
+3. Use SFTP to upload the HTML banner file to the /incoming folder.
+
+4. Access the Tanium Server interactively.
+ 
+5. Log on to the TanOS server with the tanadmin role, or any additional user with administrative privileges.
+
+6. Enter A: Appliance Configuration Menu &gt;&gt; A: Security &gt;&gt; 3: Configure SSH Banner and follow the prompts.
+
+7. Log off and back on to the Tanium Server to confirm application.</fixtext><fix id="F-58397r870366_fix" /><check system="C-58453r870365_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively. 
+
+2. Verify DOD use notification displayed prior to login. 
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+-At any time, the USG may inspect and seize data stored on this IS.
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+If a DOD-approved use notification banner does not display prior to logon, this is a finding.</check-content></check></Rule></Group><Group id="V-254841"><title>SRG-OS-000027</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254841r958398_rule" weight="10.0" severity="medium"><version>TANS-OS-000095</version><title>The Tanium Operating System (TanOS) must limit the number of concurrent sessions to an organization-defined number for all accounts and/or account types.</title><description>&lt;VulnDiscussion&gt;Operating system management includes the ability to control the number of users and user sessions that utilize an operating system. Limiting the number of allowed users and sessions per user is helpful in limiting risks related to DoS attacks.
+
+This requirement addresses concurrent sessions for information system accounts and does not address concurrent sessions by single users via multiple system accounts. The maximum number of concurrent sessions should be defined based upon mission needs and the operational environment for each system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000054</ident><fixtext fixref="F-58398r866063_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and press "Enter".
+
+4. Press "A" for "Security," and then press "Enter".
+
+5. Press P for "Security Policy," and then press "Enter".
+
+6. Press "M" for "Maximum Concurrent Logins," and then press "Enter".
+
+7. Work with the Tanium Administrator to set the number of maximum concurrent users.</fixtext><fix id="F-58398r866063_fix" /><check system="C-58454r866062_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "A" for "Security," and then press "Enter".
+
+5. Press "P" for "Security Policy," and then press "Enter".
+
+6. Press "M" for "Maximum Concurrent Logins," and then press "Enter".
+
+7. Work with the Tanium Administrator to confirm the number of maximum concurrent users.
+
+If the value of "Maximum Concurrent Logins:" is greater than the approved value, this is a finding.</check-content></check></Rule></Group><Group id="V-254842"><title>SRG-OS-000046</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254842r958424_rule" weight="10.0" severity="medium"><version>TANS-OS-000165</version><title>The Tanium operating system (TanOS) must alert the ISSO and SA (at a minimum) in the event of an audit processing failure.</title><description>&lt;VulnDiscussion&gt;It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without this notification, the security personnel may be unaware of an impending failure of the audit capability and system operation may be adversely affected. 
+
+Audit processing failures include software/hardware errors, failures in the audit capturing mechanisms, and audit storage capacity being reached or exceeded.
+
+This requirement applies to each audit data storage repository (i.e., distinct information system component where audit records are stored), the centralized audit storage capacity of organizations (i.e., all audit data storage repositories combined), or both.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000139</ident><fixtext fixref="F-58399r866066_fix">1. Access the TanOS interactively.
+
+2. Press A for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press 5 for "Configure syslog forwarding," and then press "Enter".
+
+5. Enter the destination host (IP address or hostname) provided by the SIEM administrator, and then press "Enter".
+
+6. Enter the destination port number and press "Enter".
+
+7. If TLS is required for this syslog destination, enter "Yes", otherwise enter "No", and then press "Enter".
+
+8. Enter the destination protocol, "udp" or "tcp", and then press "Enter".
+
+9. Work with the SIEM administrator to validate events are being received, and to configure notifications for audit processing failure events.</fixtext><fix id="F-58399r866066_fix" /><check system="C-58455r870377_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press 4 for "Syslog Configuration," and then press "Enter".
+
+4. Press "1" for "Check current status," and then press Enter.
+
+If the syslog status page states, "No existing TanOS syslog forwarding configuration found", this is a finding.
+
+If the syslog status page states, "Syslog forwarding configuration" and the SIEM administrator verifies SIEM is receiving the events correctly and generating notifications for audit processing failure events, this is not a finding.</check-content></check></Rule></Group><Group id="V-254843"><title>SRG-OS-000075</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254843r1015851_rule" weight="10.0" severity="medium"><version>TANS-OS-000270</version><title>The Tanium Operating System (TanOS) must enforce 24 hours/one day as the maximum password lifetime.</title><description>&lt;VulnDiscussion&gt;Enforcing a minimum password lifetime helps to prevent repeated password changes to defeat the password reuse or history enforcement requirement. If users are allowed to immediately and continually change their password, then the password could be repeatedly changed in a short period of time to defeat the organization's policy regarding password reuse.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000198</ident><fixtext fixref="F-58400r866069_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "C" for "User Administration Menu".
+
+4. Press "L" for "Local Tanium User Management".
+
+5. Press "B" for "Security Policy Local Authentication Service".
+
+6. Type "Yes".
+
+7. Set the value for "Define the minimum password in days [0 - 20]" to "1".
+
+8. Press "Enter" to accept the current values for the rest of the options.
+
+9. Type "Yes" to apply the new security policy.</fixtext><fix id="F-58400r866069_fix" /><check system="C-58456r866068_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "C" for "User Administration Menu".
+
+4. Press "L" for "Local Tanium User Management".
+
+5. Press "B" for "Security Policy Local Authentication Service".
+
+If the "Password Minimum Age (days)" is not set to "1", this is a finding.</check-content></check></Rule></Group><Group id="V-254844"><title>SRG-OS-000076</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254844r1038967_rule" weight="10.0" severity="medium"><version>TANS-OS-000275</version><title>The Tanium Operating System (TanOS) must enforce a 60-day maximum password lifetime restriction.</title><description>&lt;VulnDiscussion&gt;Any password, no matter how complex, can eventually be cracked. Therefore, passwords need to be changed periodically. 
+
+One method of minimizing this risk is to use complex passwords and periodically change them. If the operating system does not limit the lifetime of passwords and force users to change their passwords, there is the risk that the operating system passwords could be compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000199</ident><fixtext fixref="F-58401r866072_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "C" for "User Administration Menu".
+
+4. Press "L" for "Local Tanium User Management".
+
+5. Press "B" for "Security Policy Local Authentication Service".
+
+6. Type "Yes".
+
+7. Press "Enter" to accept the current value for "Define the minimum password in days [0 - 20]".
+
+8. Set the value of "Define the maximum password lifetime in days [0-300]" to "60".
+
+9. Press "Enter" to accept the current values for the rest of the options.
+
+10. Type "Yes" to apply the new security policy.</fixtext><fix id="F-58401r866072_fix" /><check system="C-58457r866071_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "C" for "User Administration Menu".
+
+4. Press "L" for "Local Tanium User Management".
+
+5. Press "B" for "Security Policy Local Authentication Service".
+
+If the "Password Maximum Age (days)" is not set to "60", this is a finding.</check-content></check></Rule></Group><Group id="V-254846"><title>SRG-OS-000078</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254846r1067740_rule" weight="10.0" severity="medium"><version>TANS-OS-000285</version><title>The Tanium Operating System (TanOS) must enforce a minimum 15-character password length.</title><description>&lt;VulnDiscussion&gt;The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised.
+
+Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password. Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-58403r1067739_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "C" for "User Administration Menu".
+
+4. Press "L" for "Local Tanium User Management".
+
+5. Press "B" for "Security Policy Local Authentication Service".
+
+6. Type "Yes".
+
+7. Press "Enter" to accept the current value for "Minimum password lifetime in days [0 - 20]:".
+
+8. Press "Enter" to accept the current value for "Maximum password lifetime in days [MinAge - 360]:".
+
+9. Set the value for "Minimum password length in characters [0 - 30]:" to "15".
+
+10. Press "Enter" to accept the current values for the rest of the options.
+
+11. Type "Yes" to apply the new security policy.</fixtext><fix id="F-58403r1067739_fix" /><check system="C-58459r866077_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "C" for "User Administration Menu".
+
+4. Press "L" for "Local Tanium User Management".
+
+5. Press "B" for "Security Policy Local Authentication Service".
+
+If "Password Minimum Length" is not set to 15, this is a finding.</check-content></check></Rule></Group><Group id="V-254847"><title>SRG-OS-000105</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254847r986546_rule" weight="10.0" severity="high"><version>TANS-OS-000325</version><title>The Tanium Operating System (TanOS) must use multifactor authentication for network access to privileged accounts.</title><description>&lt;VulnDiscussion&gt;Without the use of multifactor authentication, the ease of access to privileged functions is greatly increased. 
+
+Multifactor authentication requires using two or more factors to achieve authentication. 
+
+Factors include: (i) Something a user knows (e.g., password/PIN); (ii) Something a user has (e.g., cryptographic identification device, token); or (iii) Something a user is (e.g., biometric). 
+
+A privileged account is defined as an information system account with authorizations of a privileged user. 
+
+Network access is defined as access to an information system by a user (or a process acting on behalf of a user) communicating through a network (e.g., local area network, wide area network, or the internet). 
+
+The DOD CAC with DOD-approved PKI is an example of multifactor authentication.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000765</ident><ident system="http://cyber.mil/cci">CCI-004047</ident><fixtext fixref="F-58404r866081_fix">1. Sign in to the TanOS console as a user with the tanadmin role.
+
+2. Enter "C" to go to the "User Administration" menu.
+
+3. Enter "M" to go to the "Multi-Factor Global Settings" menu.
+
+4. Enter "M" to "Require Multi-Factor Authentication".
+
+5. Enter "E" to "Enable Require Multi-factor Authentication".</fixtext><fix id="F-58404r866081_fix" /><check system="C-58460r866080_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Sign in to the TanOS console as a user with the tanadmin role.
+
+2. Enter "C" to go to the "User Administration" menu.
+
+3. Enter "M" to go to the "Multi-Factor Global Settings" menu.
+
+4. If the status shows "Multi-Factor: Optional", this is a finding.</check-content></check></Rule></Group><Group id="V-254848"><title>SRG-OS-000106</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254848r986547_rule" weight="10.0" severity="medium"><version>TANS-OS-000330</version><title>The Tanium Operating System (TanOS) must use multifactor authentication for network access to nonprivileged accounts.</title><description>&lt;VulnDiscussion&gt;To assure accountability and prevent unauthenticated access, nonprivileged users must utilize multifactor authentication to prevent potential misuse and compromise of the system. 
+
+Multifactor authentication uses two or more factors to achieve authentication. 
+
+Factors include:(i) Something you know (e.g., password/PIN); (ii) Something you have (e.g., cryptographic identification device, token); or (iii) Something you are (e.g., biometric). 
+
+A nonprivileged account is any information system account with authorizations of a nonprivileged user. 
+
+Network access is any access to an application by a user (or process acting on behalf of a user) where said access is obtained through a network connection.
+
+The DOD CAC with DOD-approved PKI is an example of multifactor authentication.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000766</ident><ident system="http://cyber.mil/cci">CCI-004047</ident><fixtext fixref="F-58405r866084_fix">1. Sign in to the TanOS console as a user with the tanadmin role.
+
+2. Enter "C" to go to the "User Administration" menu.
+
+3. Enter "M" to go to the "Multi-Factor Global Settings" menu.
+
+4. Enter "M" to "Require Multi-Factor Authentication".
+
+5. Enter "E" to "Enable Require Multi-factor Authentication".</fixtext><fix id="F-58405r866084_fix" /><check system="C-58461r866083_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Sign in to the TanOS console as a user with the tanadmin role.
+
+2. Enter "C" to go to the "User Administration" menu.
+
+3. Enter "M" to go to the "Multi-Factor Global Settings" menu.
+
+4. If the status shows "Multi-Factor: Optional", this is a finding.</check-content></check></Rule></Group><Group id="V-254849"><title>SRG-OS-000120</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254849r971535_rule" weight="10.0" severity="medium"><version>TANS-OS-000385</version><title>The Tanium Operating System (TanOS) must use FIPS-validated SHA-2 or higher hash function to protect the integrity of hash message authentication code (HMAC), Key Derivation Functions (KDFs), Random Bit Generation, and hash-only applications.</title><description>&lt;VulnDiscussion&gt;To protect the integrity of the authenticator and authentication mechanism used for the cryptographic module used by the network device, the application, operating system, or protocol must be configured to use one of the following hash functions for hashing the password or other authenticator in accordance with SP 800-131Ar1: SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256, SHA3-224, SHA3-256, SHA3-384, and SHA3-512.
+
+This requirement also include HMAC, KDFs, Random Bit Generation, and hash-only applications (e.g., hashing passwords and use for compute a checksum). For digital signature verification, SP800-131Ar1 allows SHA-1 for legacy use only, but this is discouraged by DOD.
+
+Separate requirements for configuring applications and protocols used by each product (e.g., SNMPv3, SSH, NTP, and other protocols and applications that require server/client authentication) are required to implement this requirement.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><fixtext fixref="F-58406r866087_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "A" for "Security," and then press "Enter".
+
+5. Press "X" for "Advanced Security," and then press "Enter".
+
+6. Press "1" for "FIPS 140-2 mode (disabled/enabled)".
+
+7. Type "yes" to confirm enabling FIPS 140-2 Mode and then press "Enter".
+
+8. Press "Enter" at the confirmation prompt that instructs the user to reboot the appliance.
+
+9. Type "RR" and press "Enter" to return to the root menu.
+
+10. Press "B" for "Appliance Maintenance," and then press "Enter".
+
+11. Press "B" for "Reboot/Shutdown," and then press "Enter".
+
+12. Press "1" for "Reboot the appliance," and then press "Enter".
+
+13. Type "Yes", and then press "Enter" to reboot the appliance and complete the configuration.</fixtext><fix id="F-58406r866087_fix" /><check system="C-58462r866086_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "A" for "Security," and then press "Enter".
+
+5. Press "X" for "Advanced Security," and then press "Enter".
+
+If the FIPS 140-2 setting is currently disabled or persistently disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-254851"><title>SRG-OS-000142</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254851r1067742_rule" weight="10.0" severity="medium"><version>TANS-OS-000455</version><title>The Tanium Operating System (TanOS) must manage excess capacity, bandwidth, or other redundancy to limit the effects of information flooding types of denial-of-service (DoS) attacks.</title><description>&lt;VulnDiscussion&gt;DoS is a condition that occurs when a resource is not available for legitimate users. When this occurs, the organization either cannot accomplish its mission or must operate at degraded capacity. 
+
+Managing excess capacity ensures sufficient capacity is available to counter flooding attacks. Employing increased capacity and service redundancy may reduce the susceptibility to some DoS attacks. Managing excess capacity may include, for example, establishing selected usage priorities, quotas, or partitioning.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001095</ident><fixtext fixref="F-58408r1067741_fix">1. Sign in to the TanOS console as a user with the tanadmin role.
+
+2. Enter "A" to go to the "Appliance Configuration" menu.
+
+3. Enter "A" to go to the "Security" menu.
+
+4. Enter "X" to go to the "Advanced Security" menu.
+
+5. Enter "6" to enable DoS protection. The screen updates with an enabled status.</fixtext><fix id="F-58408r1067741_fix" /><check system="C-58464r866092_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Sign in to the TanOS console as a user with the tanadmin role.
+
+2. Enter "A" to go to the "Appliance Configuration" menu.
+
+3. Enter "A" to go to the "Security" menu.
+
+4. Enter "X" to go to the "Advanced Security" menu.
+
+5. If you see "DOS protection: disabled" in the middle of the screen, this is a finding.</check-content></check></Rule></Group><Group id="V-254852"><title>SRG-OS-000163</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254852r970703_rule" weight="10.0" severity="medium"><version>TANS-OS-000465</version><title>Tanium Operating System (TanOS) must terminate all network connections associated with a communications session at the end of the session, or as follows: For in-band management sessions (privileged sessions), the session must be terminated after 10 minutes of inactivity; for user sessions (nonprivileged session), the session must be terminated after 15 minutes of inactivity, except to fulfill documented and validated mission requirements.</title><description>&lt;VulnDiscussion&gt;Terminating an idle session within a short time period reduces the window of opportunity for unauthorized personnel to take control of a management session enabled on the console or console port that has been left unattended. In addition, quickly terminating an idle session will also free up resources committed by the managed network element. 
+
+Terminating network connections associated with communications sessions includes, for example, de-allocating associated TCP/IP address/port pairs at the operating system level, and de-allocating networking assignments at the application level if multiple application sessions are using a single, operating system level network connection. This does not mean that the operating system terminates all sessions or network access; it only ends the inactive session and releases the resources associated with that session.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001133</ident><fixtext fixref="F-58409r866096_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "A" for "Security," and then press "Enter".
+
+5. Press "X" for "Advanced Security," and then press "Enter".
+
+6. Press "5" for "Set Menu Timeout," and then press "Enter".
+
+7. Enter a timeout value no greater than "600" seconds, and then press "Enter".
+
+The timeout is not applied until a new login session is started.
+
+8. Type "RR" and press "Enter" to return to the root menu.
+
+9. Press "Z" for "Log out," and then press Enter.
+
+The session will disconnect and the menu timeout will be active at next sign in.</fixtext><fix id="F-58409r866096_fix" /><check system="C-58465r866095_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "A" for "Security," and then press "Enter".
+
+5. Press "X" for "Advanced Security," and then press "Enter".
+
+If the "Menu Timeout" setting is "-" for "Current" or "Persistent", this is a finding.
+
+If the "Menu Timeout" is greater than "600" (seconds) for either "Current" or "Persistent", this is a finding.</check-content></check></Rule></Group><Group id="V-254853"><title>SRG-OS-000185</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254853r958552_rule" weight="10.0" severity="medium"><version>TANS-OS-000515</version><title>The Tanium Operating System (TanOS) must use FIPS-validated encryption and hashing algorithms to protect the confidentiality and integrity of operating system configuration and user-generated data stored on the host.</title><description>&lt;VulnDiscussion&gt;Confidentiality and integrity protections are intended to address the confidentiality and integrity of system information at rest when it is located on a storage device within the network device or as a component of the network device. This protection is required to prevent unauthorized alteration, corruption, or disclosure of information when not stored directly on the network device.
+
+This requirement addresses the protection of user-generated data as well as operating system-specific configuration data. Organizations may choose to employ different mechanisms to achieve confidentiality and integrity protections, as appropriate, in accordance with the security category and/or classification of the information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001199</ident><fixtext fixref="F-58410r866099_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "A" for "Security," and then press "Enter".
+
+5. Press "X" for "Advanced Security," and then press "Enter".
+
+6. Press "1" for "FIPS 140-2 mode (disabled/enabled).
+
+7. Type "yes" to confirm enabling FIPS 140-2 Mode, and then press "Enter".
+
+8. Press "Enter" at the confirmation prompt that instructs the user to reboot the appliance.
+
+9. Type "RR" and press "Enter" to return to the root menu.
+
+10. Press "B" for "Appliance Maintenance," and then press "Enter".
+
+11. Press "B" for "Reboot/Shutdown," and then press "Enter".
+
+12. Press "1" for "Reboot the appliance," and then press "Enter".
+
+13. Type "Yes" and press "Enter" to reboot the appliance and complete the configuration.</fixtext><fix id="F-58410r866099_fix" /><check system="C-58466r866098_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "A" for "Security," and then press "Enter".
+
+5. Press "X" for "Advanced Security," and then press "Enter".
+
+If the FIPS 140-2 setting is currently disabled or persistently disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-254854"><title>SRG-OS-000200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254854r958558_rule" weight="10.0" severity="medium"><version>TANS-OS-000535</version><title>The Tanium Operating System (TanOS) must notify the ISSO and ISSM of failed security verification tests.</title><description>&lt;VulnDiscussion&gt;If personnel are not notified of failed security verification tests, they will not be able to take corrective action and the unsecure condition(s) will remain. Security function is defined as the hardware, software, and/or firmware of the information system responsible for enforcing the system security policy and supporting the isolation of code and data on which the protection is based. Security functionality includes, but is not limited to, establishing system accounts, configuring access authorizations (i.e., permissions, privileges), setting events to be audited, and setting intrusion detection parameters.
+
+Notifications provided by information systems include electronic alerts, messages to local computer consoles, and/or hardware indications, such as lights.
+
+This requirement applies to operating systems performing security function verification/testing and/or systems and environments that require this functionality.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001294</ident><fixtext fixref="F-58411r866102_fix">1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "5" for "Configure syslog forwarding," and then press "Enter".
+
+5. Enter the destination host (IP address or hostname) provided by the SIEM administrator, and press "Enter".
+
+6. Enter the destination port number, and then press "Enter".
+
+7. If TLS is required for this syslog destination, enter "Yes", otherwise enter "No", and then press "Enter".
+
+8. Enter the destination protocol, "udp" or "tcp", and then press "Enter".
+
+9. Work with the SIEM administrator to validate events are being received, and to configure notifications for failure events.</fixtext><fix id="F-58411r866102_fix" /><check system="C-58467r870378_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and press then "Enter".
+
+4. Press "1" for "Check current status," and then press "Enter".
+
+If the syslog status page states, "No existing TanOS syslog forwarding configuration found", this is a finding.
+
+If the syslog status page states, "Syslog forwarding configuration" and the SIEM administrator verifies SIEM is receiving the events correctly and generating notifications for failed security verification tests, this is not a finding.</check-content></check></Rule></Group><Group id="V-254855"><title>SRG-OS-000228</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254855r958586_rule" weight="10.0" severity="medium"><version>TANS-OS-000605</version><title>The publicly accessible Tanium Operating System (TanOS) must display the Standard Mandatory DOD Notice and Consent Banner before granting access to the system.</title><description>&lt;VulnDiscussion&gt;Display of a standardized and approved use notification before granting access to the publicly accessible operating system ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist.
+
+The banner must be formatted in accordance with DTM-08-060. Use the following verbiage for operating system that can accommodate banners of 1300 characters:
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+-At any time, the USG may inspect and seize data stored on this IS.
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+ 
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+"I've read &amp; consent to terms in IS user agreem't".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001384</ident><ident system="http://cyber.mil/cci">CCI-001385</ident><ident system="http://cyber.mil/cci">CCI-001386</ident><ident system="http://cyber.mil/cci">CCI-001387</ident><ident system="http://cyber.mil/cci">CCI-001388</ident><fixtext fixref="F-58412r870371_fix">1. Use SFTP to copy a file named "banner_ssh.txt" containing the Standard Mandatory DOD Notice and Consent Banner to the /incoming folder.
+
+2. Access the TanOS interactively.
+
+3. Enter "A" to go to the "Appliance Configuration" menu.
+
+4. Enter "A" to go to the "Security" menu.
+
+5. Enter "3" to add the banner file.</fixtext><fix id="F-58412r870371_fix" /><check system="C-58468r870370_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the TanOS interactively.
+
+If the Standard Mandatory DOD Notice and Consent Banner is not displayed at logon, this is a finding.</check-content></check></Rule></Group><Group id="V-254856"><title>SRG-OS-000274</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254856r1015854_rule" weight="10.0" severity="medium"><version>TANS-OS-000710</version><title>The Tanium Operating System (TanOS) must notify system administrators (SAs) and information system security officers (ISSOs) when accounts are created.</title><description>&lt;VulnDiscussion&gt;Once an attacker establishes access to a system, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to create a new account. Notification of account creation is one method for mitigating this risk. A comprehensive account management process will ensure an audit trail which documents the creation of operating system user accounts and notifies administrators and ISSOs that it exists. Such a process greatly reduces the risk that accounts will be surreptitiously created and provides logging that can be used for forensic purposes.
+
+To address access requirements, many operating systems can be integrated with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-001683</ident><fixtext fixref="F-58413r866108_fix">1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "5" for "Configure syslog forwarding," and then press "Enter".
+
+5. Enter the destination host (IP address or hostname) provided by the SIEM administrator, and then press "Enter".
+
+6. Enter the destination port number, and then press "Enter".
+
+7. If TLS is required for this syslog destination, enter "Yes", otherwise enter "No", and then press "Enter".
+
+8. Enter the destination protocol, "udp" or "tcp", and press "Enter".
+
+9. Work with the SIEM administrator to validate events are being received, and to configure notifications for account creation events.</fixtext><fix id="F-58413r866108_fix" /><check system="C-58469r986551_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and press then "Enter".
+
+4. Press "1" for "Check current status," and then press "Enter".
+
+If the syslog status page states, "No existing TanOS syslog forwarding configuration found", this is a finding.
+
+If the syslog status page states, "Syslog forwarding configuration" and the SIEM administrator verifies SIEM is receiving the events correctly and generating notifications for account creation events, this is not a finding.</check-content></check></Rule></Group><Group id="V-254857"><title>SRG-OS-000275</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254857r1015855_rule" weight="10.0" severity="medium"><version>TANS-OS-000715</version><title>The Tanium Operating System (TanOS) must audit and notify system administrators (SAs) and information system security officers (ISSOs) when accounts are modified.</title><description>&lt;VulnDiscussion&gt;Once an attacker establishes access to a system, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to modify an existing account. Notification of account modification is one method for mitigating this risk. A comprehensive account management process will ensure an audit trail, which documents the modification of operating system user accounts and notifies the SA and ISSO of changes. Such a process greatly reduces the risk that accounts will be surreptitiously created and provides logging that can be used for forensic purposes.
+
+To address access requirements, many operating systems can be integrated with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-001684</ident><fixtext fixref="F-58414r866111_fix">1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "5" for "Configure syslog forwarding," and then press "Enter".
+
+5. Enter the destination host (IP address or hostname) provided by the SIEM administrator, and then press "Enter".
+
+6. Enter the destination port number, and then press "Enter".
+
+7. If TLS is required for this syslog destination, enter "Yes", otherwise enter "No", and then press "Enter".
+
+8. Enter the destination protocol, "udp" or "tcp", and then press "Enter".
+
+9. Work with the SIEM administrator to validate events are being received, and to configure notifications for account modification events.</fixtext><fix id="F-58414r866111_fix" /><check system="C-58470r986553_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "1" for "Check current status," and then press "Enter".
+
+If the syslog status page states, "No existing TanOS syslog forwarding configuration found", this is a finding.
+
+If the syslog status page states, "Syslog forwarding configuration", and the SIEM administrator verifies SIEM is receiving the events correctly and generating notifications for account modification events, this is not a finding.</check-content></check></Rule></Group><Group id="V-254858"><title>SRG-OS-000277</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254858r1015856_rule" weight="10.0" severity="medium"><version>TANS-OS-000725</version><title>The Tanium Operating System (TanOS) must notify system administrators (SAs) and information system security officers (ISSOs) when accounts are removed.</title><description>&lt;VulnDiscussion&gt;When operating system accounts are removed, user accessibility is affected. Accounts are utilized for identifying individual operating system users or for identifying the operating system processes themselves. Sending notification of account removal events to the SA and ISSO is one method for mitigating this risk. Such a capability greatly reduces the risk that operating system accessibility will be negatively affected for extended periods of time and also provides logging that can be used for forensic purposes.
+
+To address access requirements, many operating systems can be integrated with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-001686</ident><fixtext fixref="F-58415r866114_fix">1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "5" for "Configure syslog forwarding," and press then "Enter".
+
+5. Enter the destination host (IP address or hostname) provided by the SIEM administrator, and then press "Enter".
+
+6. Enter the destination port number and press "Enter".
+
+7. If TLS is required for this syslog destination, enter "Yes", otherwise enter "No", and then press "Enter".
+
+8. Enter the destination protocol, "udp" or "tcp", and press "Enter".
+
+9. Work with the SIEM administrator to validate events are being received, and to configure notifications for account removal/deletion events.</fixtext><fix id="F-58415r866114_fix" /><check system="C-58471r866113_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "1" for "Check current status," and then press "Enter".
+
+If the syslog status page states "No existing TanOS syslog forwarding configuration found" this is a finding.
+
+If the syslog status page states "Syslog forwarding configuration" and the SIEM administrator verifies SIEM is receiving the events correctly and generating notifications for account removal events, this is not a finding.</check-content></check></Rule></Group><Group id="V-254859"><title>SRG-OS-000279</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254859r958636_rule" weight="10.0" severity="medium"><version>TANS-OS-000735</version><title>Tanium Operating System (TanOS) must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect.</title><description>&lt;VulnDiscussion&gt;Automatic session termination addresses the termination of user-initiated logical sessions in contrast to the termination of network connections that are associated with communications sessions (i.e., network disconnect). A logical session (for local, network, and remote access) is initiated whenever a user (or process acting on behalf of a user) accesses an organizational information system. Such user sessions can be terminated (and thus terminate user access) without terminating network sessions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002361</ident><fixtext fixref="F-58416r866117_fix">1. Sign in to the TanOS console as a user with the tanadmin role. 
+
+2. Enter "A" to go to the "Appliance Configuration" menu. 
+
+3. Enter "A" to go to the "" menu. 
+
+4. Enter "X" to go to the "Advanced Security" menu. 
+
+5. Enter "5" to go to "Set Menu Timeout". 
+
+6. Enter the correct Timeout in seconds, and then press "Enter" to set the setting.</fixtext><fix id="F-58416r866117_fix" /><check system="C-58472r866116_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Sign in to the TanOS console as a user with the tanadmin role. 
+
+2. Enter "A" to go to the "Appliance Configuration" menu. 
+
+3. Enter "A" to go to the "Security" menu. 
+
+4. Enter "X" to go to the "Advanced Security" menu. 
+
+5. Enter "5" to go to "Set Menu Timeout". 
+
+6. See the current setting for timeout, if this does not match the organizationally defined standard, this is a finding.</check-content></check></Rule></Group><Group id="V-254860"><title>SRG-OS-000304</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254860r1015857_rule" weight="10.0" severity="medium"><version>TANS-OS-000860</version><title>Tanium must audit and notify system administrators (SAs) and information system security officers (ISSOs) when accounts are enabled.</title><description>&lt;VulnDiscussion&gt;Once an attacker establishes access to a system, the attacker often attempts to create a persistent method of reestablishing access. One way to accomplish this is for the attacker to enable an existing disabled account. Sending notification of account enabling actions to the SA and ISSO is one method for mitigating this risk. Such a capability greatly reduces the risk that operating system accessibility will be negatively affected for extended periods of time and also provides logging that can be used for forensic purposes.
+
+To detect and respond to events that affect user accessibility and application processing, operating systems must audit account enabling actions and, as required, notify the appropriate individuals so they can investigate the event.
+
+To address access requirements, many operating systems can be integrated with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-002132</ident><fixtext fixref="F-58417r866120_fix">1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "5" for "Configure syslog forwarding," and then press "Enter".
+
+5. Enter the destination host (IP address or hostname) provided by the SIEM administrator, and then press "Enter".
+
+6. Enter the destination port number and then press "Enter".
+
+7. If TLS is required for this syslog destination, enter "Yes", otherwise enter "No", and then press "Enter".
+
+8. Enter the destination protocol, "udp" or "tcp", and then press "Enter".
+
+9. Work with the SIEM administrator to validate events are being received, and to configure notifications for account removal/deletion events.</fixtext><fix id="F-58417r866120_fix" /><check system="C-58473r986556_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Operating System (TanOS) interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "1" for "Check current status," and then press "Enter".
+
+If the syslog status page states, "No existing TanOS syslog forwarding configuration found", this is a finding.
+
+If the syslog status page states, "Syslog forwarding configuration" and the SIEM administrator verifies SIEM is receiving the events correctly and generating notifications for account enable events, this is not a finding.</check-content></check></Rule></Group><Group id="V-254861"><title>SRG-OS-000329</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254861r1067744_rule" weight="10.0" severity="medium"><version>TANS-OS-000985</version><title>Tanium must automatically lock accounts and require them be unlocked by an administrator when three unsuccessful login attempts in 15 minutes are exceeded.</title><description>&lt;VulnDiscussion&gt;By limiting the number of failed login attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute forcing, is reduced. Limits are imposed by locking the account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002238</ident><fixtext fixref="F-58418r1067743_fix">1. Log in to Tanium interactively as a TanAdmin user. 
+
+2. Type "A" for "Appliance Configuration Menu".
+
+3. Type "A" for "Security". 
+
+4. Type "P" for "Security Policy". 
+
+5. Type "L" for "Account Lockout Time".
+
+6. Set the account lockout time to "0".
+
+Note: The time range for the three failures to occur is 15 minutes by default and cannot be configured otherwise.</fixtext><fix id="F-58418r1067743_fix" /><check system="C-58474r866122_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Log in to Tanium interactively as a TanAdmin user.
+
+2. Type "A" for "Appliance Configuration Menu".
+
+3. Type "A" for Security.
+
+4. Type "P" for Security Policy.
+
+5. The section for "Account lockout:" should read "0 seconds after 3 failures".
+
+If the section reads anything else, this is a finding.</check-content></check></Rule></Group><Group id="V-254862"><title>SRG-OS-000342</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254862r958754_rule" weight="10.0" severity="medium"><version>TANS-OS-001030</version><title>The Tanium operating system (TanOS) must offload audit records onto a different system or media than the system being audited.</title><description>&lt;VulnDiscussion&gt;Information stored in one location is vulnerable to accidental or incidental deletion or alteration. 
+
+Offloading is a common process in information systems with limited audit storage capacity.
+
+Satisfies: SRG-OS-000342, SRG-OS-000479, SRG-OS-000215, SRG-OS-000062&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000169</ident><ident system="http://cyber.mil/cci">CCI-001348</ident><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-58419r866126_fix">1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "5" for "Configure syslog forwarding," and then press "Enter".
+
+5. Enter the destination host (IP address or hostname) provided by the SIEM administrator, and then press "Enter".
+
+6. Enter the destination port number and press "Enter".
+
+7. If TLS is required for this syslog destination, enter "Yes", otherwise enter "No", and then press "Enter".
+
+8. Enter the destination protocol, "udp" or "tcp", and then press "Enter".
+
+9. Work with the SIEM administrator to validate events are being received.</fixtext><fix id="F-58419r866126_fix" /><check system="C-58475r866125_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "1" for "Check current status," and then press "Enter".
+
+If the syslog status page states "No existing TanOS syslog forwarding configuration found" this is a finding.
+
+If the syslog status page states "Syslog forwarding configuration" and the SIEM administrator verifies that the destination SIEM is receiving the events correctly, this is not a finding.</check-content></check></Rule></Group><Group id="V-254863"><title>SRG-OS-000343</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254863r971542_rule" weight="10.0" severity="medium"><version>TANS-OS-001035</version><title>The Tanium operating system (TanOS) must provide an immediate warning to the SA and ISSO (at a minimum) when allocated audit record storage volume reaches 75 percent of repository maximum audit record storage capacity.</title><description>&lt;VulnDiscussion&gt;If security personnel are not notified immediately when storage volume reaches 75 percent, they are unable to plan for audit record storage capacity expansion.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001855</ident><fixtext fixref="F-58420r866129_fix">1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "5" for "SNMP Configuration," and then press "Enter".
+
+4. Press "S" for "Set Password and Start the SNMP Service," and then press "Enter".
+
+5. Enter the desired SNMP password and press "Enter".
+
+6. Press "Enter" to continue and return to the SNMP configuration menu and verify the state is now "Enabled".
+
+Work with the SNMP monitoring system administrator to enable warning alerts for low free space.</fixtext><fix id="F-58420r866129_fix" /><check system="C-58476r866128_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "5" for "SNMP Configuration," and then press "Enter".
+
+If the State is "Disabled" this is a finding.
+
+If the state is "Enabled", work with the SNMP monitoring system administrator to ensure warnings are sent when TanOS storage reaches 75 percent of capacity. If they are not being sent, and this is a finding.</check-content></check></Rule></Group><Group id="V-254864"><title>SRG-OS-000344</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254864r958758_rule" weight="10.0" severity="medium"><version>TANS-OS-001040</version><title>The Tanium operating system (TanOS) must provide an immediate real-time alert to the SA and ISSO, at a minimum, of all audit failure events requiring real-time alerts.</title><description>&lt;VulnDiscussion&gt;It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without a real-time alert, security personnel may be unaware of an impending failure of the audit capability and system operation may be adversely affected. 
+
+Alerts provide organizations with urgent messages. Real-time alerts provide these messages immediately (i.e., the time from event detection to alert occurs in seconds or less).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001858</ident><fixtext fixref="F-58421r866132_fix">1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "5" for "Configure syslog forwarding," and then press "Enter".
+
+5. Enter the destination host (IP address or hostname) provided by the SIEM administrator, and then press "Enter".
+
+6. Enter the destination port number and press "Enter".
+
+7. If TLS is required for this syslog destination, enter "Yes", otherwise enter "No", and press "Enter".
+
+8. Enter the destination protocol, "udp" or "tcp", and press "Enter".
+
+9. Work with the SIEM administrator to validate events are being received, and to configure notifications for audit failure events.</fixtext><fix id="F-58421r866132_fix" /><check system="C-58477r866131_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the TanOS interactively.
+
+2. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+3. Press "4" for "Syslog Configuration," and then press "Enter".
+
+4. Press "1" for "Check current status," and then press "Enter".
+
+If the syslog status page states "No existing TanOS syslog forwarding configuration found" this is a finding.
+
+If the syslog status page states "Syslog forwarding configuration" and the SIEM administrator verifies SIEM is receiving the events correctly and generating notifications for audit failure events, this is not a finding.</check-content></check></Rule></Group><Group id="V-254865"><title>SRG-OS-000355</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254865r1067747_rule" weight="10.0" severity="medium"><version>TANS-OS-001095</version><title>The Tanium operating system (TanOS) must, for networked systems, compare internal information system clocks at least every 24 hours with a server synchronized to one of the redundant United States Naval Observatory (USNO) time servers or a time server designated for the appropriate DOD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS).</title><description>&lt;VulnDiscussion&gt;Inaccurate time stamps make it more difficult to correlate events and can lead to an inaccurate analysis. Determining the correct time a particular event occurred on a system is critical when conducting forensic analysis and investigating system events. Sources outside of the configured acceptable allowance (drift) may be inaccurate. 
+
+Synchronizing internal information system clocks provides uniformity of time stamps for information systems with multiple system clocks and systems connected over a network. 
+
+Organizations should consider endpoints that may not have regular access to the authoritative time server (e.g., mobile, teleworking, and tactical endpoints).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004923</ident><ident system="http://cyber.mil/cci">CCI-001891</ident><fixtext fixref="F-58422r1067746_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "3" for "NTP Configuration," and then press "Enter".
+
+5. Type "Yes" to "Remove the current NTP servers and enter new information?" and then press "Enter".
+
+6. Type the first NTP server address and then press "Enter".
+
+7. Type "Yes" to provide a second NTP Server, and then press "Enter".
+
+8. Type the second NTP server address and then press "Enter".
+
+9. Press "Enter" to return to the "Appliance Configuration" menu.</fixtext><fix id="F-58422r1067746_fix" /><check system="C-58478r1067745_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "3" for "NTP Configuration," and then press "Enter".
+
+If there is no address listed for "Currently configured ntp servers:", this is a finding.
+
+The status is reported differently in different versions of TanOS.
+
+TanOS &lt;= 1.7.1:
+If the "Current NTP Status" does not list a status of "Synchronized to NTP Server (
+) at stratum #" and "Time correct to within # ms", this is a finding.
+
+TanOS &gt;= 1.7.2:
+If the "Current NTP Status" does not list a status of "Normal", this is a finding.</check-content></check></Rule></Group><Group id="V-254866"><title>SRG-OS-000356</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254866r1067750_rule" weight="10.0" severity="medium"><version>TANS-OS-001100</version><title>The Tanium Operating System (TanOS) must synchronize internal information system clocks to the authoritative time source when the time difference is greater than the organization-defined time period.</title><description>&lt;VulnDiscussion&gt;Inaccurate time stamps make it more difficult to correlate events and can lead to an inaccurate analysis. Determining the correct time a particular event occurred on a system is critical when conducting forensic analysis and investigating system events. 
+
+Synchronizing internal information system clocks provides uniformity of time stamps for information systems with multiple system clocks and systems connected over a network. Organizations must consider setting time periods for different types of systems (e.g., financial, legal, or mission-critical systems). 
+
+Organizations should also consider endpoints that may not have regular access to the authoritative time server (e.g., mobile, teleworking, and tactical endpoints). This requirement is related to the comparison done every 24 hours in CCI-001891 because a comparison must be done to determine the time difference.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004926</ident><ident system="http://cyber.mil/cci">CCI-002046</ident><fixtext fixref="F-58423r1067749_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "3" for "NTP Configuration," and then press "Enter".
+
+5. Type "Yes" to "Remove the current NTP servers and enter new information?" and then press "Enter".
+
+6. Type the first NTP server address and then press "Enter".
+
+7. Type "Yes" to provide a second NTP Server, and then press "Enter".
+
+8. Type the second NTP server address and then press "Enter".
+
+9. Press "Enter" to return to the "Appliance Configuration" menu.</fixtext><fix id="F-58423r1067749_fix" /><check system="C-58479r1067748_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "3" for "NTP Configuration," and then press "Enter".
+
+If there is no address listed for "Currently configured ntp servers:", this is a finding.
+
+The status is reported differently in different versions of TanOS.
+
+TanOS &lt;= 1.7.1:
+If the "Current NTP Status" does not list a status of "Synchronized to NTP Server (
+) at stratum #" and "Time correct to within # ms", this is a finding.
+
+TanOS &gt;= 1.7.2:
+If the "Current NTP Status" does not list a status of "Normal", this is a finding.</check-content></check></Rule></Group><Group id="V-254867"><title>SRG-OS-000357</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254867r1015860_rule" weight="10.0" severity="medium"><version>TANS-OS-001105</version><title>The Tanium Operating System (TanOS) must be configured to synchronize internal information system clocks with the primary and secondary time sources located in different geographic regions using redundant authoritative time sources.</title><description>&lt;VulnDiscussion&gt;The loss of connectivity to a particular authoritative time source will result in the loss of time synchronization (free-run mode) and increasingly inaccurate time stamps on audit events and other functions. 
+
+Multiple time sources provide redundancy by including a secondary source. Time synchronization is usually a hierarchy; clients synchronize time to a local source while that source synchronizes it's time to a more accurate source. The system must utilize an authoritative time server and/or be configured to use redundant authoritative time sources. Organizations should also consider endpoints that may not have regular access to the authoritative time server (e.g., mobile, teleworking, and tactical endpoints). This requirement is related to the comparison done in CCI-001891.
+
+DOD-approved solutions consist of a combination of a primary and secondary time source using a combination or multiple instances of the following: A time server designated for the appropriate DOD network (NIPRNet/SIPRNet); United States Naval Observatory (USNO) time servers; and/or the Global Positioning System (GPS). The secondary time source must be located in a different geographic region than the primary time source.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004928</ident><ident system="http://cyber.mil/cci">CCI-001893</ident><fixtext fixref="F-58424r986561_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "3" for "NTP Configuration," and then press "Enter".
+
+5. Type "Yes" to "Remove the current NTP servers and enter new information?" and press "Enter".
+
+6. Type the first NTP server address and press "Enter".
+
+7. Type "Yes" to provide a second NTP Server, and then press "Enter".
+
+8. Type the second NTP server address, and then press "Enter".
+
+9. Press "Enter" to return to the "Appliance Configuration" menu.</fixtext><fix id="F-58424r986561_fix" /><check system="C-58480r866140_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "3" for "NTP Configuration," and then press "Enter".
+
+If there is no address or only a single address listed for "Currently configured ntp servers:", this is a finding.
+
+If the "Currently configured ntp servers:" list is not the organizationally mandated list of geographically distributed time servers, this is a finding.</check-content></check></Rule></Group><Group id="V-254868"><title>SRG-OS-000401</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254868r958864_rule" weight="10.0" severity="medium"><version>TANS-OS-001325</version><title>The Tanium operating system (TanOS) must perform data integrity verification on the name/address resolution responses the system receives from authoritative sources.</title><description>&lt;VulnDiscussion&gt;If data origin authentication and data integrity verification is not performed, the resultant response could be forged, it may have come from a poisoned cache, the packets could have been intercepted without the resolver's knowledge, or resource records could have been removed, which would result in query failure or denial of service. Data integrity verification must be performed to thwart these types of attacks.
+
+Each client of name resolution services either performs this validation on its own, or has authenticated channels to trusted validation providers. Information systems that provide name and address resolution services for local clients include, for example, recursive resolving or caching Domain Name System (DNS) servers. DNS client resolvers either perform validation of DNSSEC signatures, or clients use authenticated channels to recursive resolvers that perform such validations. 
+
+This applies to operating systems that have integrated DNS clients.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002467</ident><fixtext fixref="F-58425r866144_fix">1. Work with a systems administrator to determine a designated Name Server that performs data integrity checks.
+
+2. Sign in to the TanOS console as a user with the tanadmin role.
+
+3. Enter "A" to go to the "Appliance Configuration" menu.
+
+4. Enter "1" to go to the "Hostname/DNS Configuration" menu.
+
+5. Enter "2" and follow the prompts to modify the DNS server configuration.</fixtext><fix id="F-58425r866144_fix" /><check system="C-58481r866143_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Work with a systems administrator to determine a designated Name Server that performs data integrity checks.
+
+2. Sign in to the TanOS console as a user with the tanadmin role.
+
+3. Enter "A" to go to the "Appliance Configuration" menu.
+
+4. Enter "1" to go to the "Hostname/DNS Configuration" menu.
+
+5. Enter "2", if the ip address shown is not the designated Name Server determined in step 1. This is a finding.</check-content></check></Rule></Group><Group id="V-254869"><title>SRG-OS-000402</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254869r958866_rule" weight="10.0" severity="medium"><version>TANS-OS-001330</version><title>The Tanium operating system (TanOS) must perform data origin verification authentication on the name/address resolution responses the system receives from authoritative sources.</title><description>&lt;VulnDiscussion&gt;If data origin authentication and data integrity verification is not performed, the resultant response could be forged, it may have come from a poisoned cache, the packets could have been intercepted without the resolver's knowledge, or resource records could have been removed, which would result in query failure or denial of service. Data origin authentication verification must be performed to thwart these types of attacks.
+
+Each client of name resolution services either performs this validation on its own, or has authenticated channels to trusted validation providers. Information systems that provide name and address resolution services for local clients include, for example, recursive resolving or caching Domain Name System (DNS) servers. DNS client resolvers either perform validation of DNSSEC signatures, or clients use authenticated channels to recursive resolvers that perform such validations. 
+
+This applies to operating systems that have integrated DNS clients.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002468</ident><fixtext fixref="F-58426r866147_fix">1. Work with a systems administrator to determine a designated Name Server that performs data origin authentic ion checks.
+
+2. Sign in to the TanOS console as a user with the tanadmin role.
+
+3. Enter "A" to go to the "Appliance Configuration" menu.
+
+4. Enter "1" to go to the "Hostname/DNS Configuration" menu.
+
+5. Enter "2" and follow the prompts to modify the DNS server configuration.</fixtext><fix id="F-58426r866147_fix" /><check system="C-58482r866146_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Work with a systems administrator to determine a designated Name Server that performs data origin authentic ion checks.
+
+2. Sign in to the TanOS console as a user with the tanadmin role.
+
+3. Enter "A" to go to the "Appliance Configuration" menu.
+
+4. Enter "1" to go to the "Hostname/DNS Configuration" menu.
+
+5. Enter "2", if the ip address shown is not the designated Name Server determined in step 1. This is a finding.</check-content></check></Rule></Group><Group id="V-254871"><title>SRG-OS-000439</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254871r958940_rule" weight="10.0" severity="medium"><version>TANS-OS-001515</version><title>The Tanium operating system (TanOS) must install security-relevant software updates within the time period directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs).</title><description>&lt;VulnDiscussion&gt;Security flaws with operating systems are discovered daily. Vendors are constantly updating and patching their products to address newly discovered security vulnerabilities. Organizations (including any contractor to the organization) are required to promptly install security-relevant software updates (e.g., patches, service packs, and hot fixes). Flaws discovered during security assessments, continuous monitoring, incident response activities, or information system error handling must also be addressed expeditiously. 
+
+Organization-defined time periods for updating security-relevant software may vary based on a variety of factors including, for example, the security category of the information system or the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). 
+
+Patch criticality, as well as system criticality will vary. Therefore, the tactical situations regarding the patch management process will also vary. This means that the time period utilized must be a configurable parameter. Time frames for application of security-relevant software updates may be dependent upon the Information Assurance Vulnerability Management (IAVM) process.
+
+The application will be configured to check for and install security-relevant software updates within an identified time period from the availability of the update. The specific time period will be defined by an authoritative source (e.g. IAVM, CTOs, DTMs, and STIGs).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002605</ident><fixtext fixref="F-58428r866153_fix">1. Download the target TanOS upgrade file from Tanium.
+
+2. Transfer the upgrade to the SFTP incoming folder on the TanOS appliance.
+
+3. Access the Tanium Server interactively.
+
+4. Press "B" for "Appliance Maintenance Menu," and then press "Enter".
+
+5. Press "3" for "Upgrade TanOS," and then press "Enter".
+
+5b. If this TanOS server is part of an appliance array, type "yes" and then press "Enter" to choose to upgrade all appliances in the array.
+
+6. Press "1" (or the appropriate number if there are multiple upgrade files to select from) to choose the upgrade file to install.
+
+7. Review the upgrade version confirmation and type "Yes" and then press "Enter" to begin the upgrade.</fixtext><fix id="F-58428r866153_fix" /><check system="C-58484r866152_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Check the version number of the installed TanOS release displayed at the bottom of the main menu.
+
+3. Compare to the latest available release on https://kb.tanium.com/Category:TanOS.
+
+4. If the installed release is not the current release, review the release notes for the current release and any other releases newer than the current version to check for security-relevant updates and when they were released.
+
+If there are security-relevant updates that have not been installed within the directed time period, this is a finding.</check-content></check></Rule></Group><Group id="V-254873"><title>SRG-OS-000550</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-254873r959036_rule" weight="10.0" severity="high"><version>TANS-OS-001760</version><title>The Tanium Operating System (TanOS) must use a FIPS-validated cryptographic module to provision digital signatures.</title><description>&lt;VulnDiscussion&gt;FIPS 140-2 precludes the use of invalidated cryptography for the cryptographic protection of sensitive or valuable data within federal systems. Un-validated cryptography is viewed by NIST as providing no protection to the information or data - in effect the data would be considered unprotected plaintext. If the agency specifies that the information or data be cryptographically protected, then FIPS 140-2 is applicable. In essence, if cryptography is required, then it must be validated. Cryptographic modules that have been approved for classified use may be used in lieu of modules that have been validated against the FIPS 140-2 standard. 
+
+The cryptographic module used must have at least one validated digital signature function. This validated hash algorithm must be used to generate digital signatures for all cryptographic security function within the product being evaluated.
+
+Satisfies: SRG-OS-000550, SRG-OS-000530&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Tanium 7.x OS on TanOS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Tanium 7.x OS on TanOS</dc:subject><dc:identifier>5491</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000185</ident><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-58430r866159_fix">1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "A" for "Security," and then press "Enter".
+
+5. Press "X" for "Advanced Security," and then press "Enter".
+
+6. Press "1" for "FIPS 140-2 mode (disabled/enabled)".
+
+7. Type "yes" to confirm enabling FIPS 140-2 Mode, and then press "Enter".
+
+8. Press "Enter" at the confirmation prompt that instructs the user to reboot the appliance.
+
+9. Type "RR" and press "Enter" to return to the root menu.
+
+10. Press "B" for "Appliance Maintenance," and then press "Enter".
+
+11. Press "B" for "Reboot/Shutdown," and then press "Enter".
+
+12. Press "1" for "Reboot the appliance," and then press "Enter".
+
+13. Type "Yes" and then press "Enter" to reboot the appliance and complete the configuration.</fixtext><fix id="F-58430r866159_fix" /><check system="C-58486r866158_chk"><check-content-ref href="Tanium_7.x_OS_on_TanOS_STIG.xml" name="M" /><check-content>1. Access the Tanium Server interactively.
+
+2. Log on to the TanOS server with the tanadmin role.
+
+3. Press "A" for "Appliance Configuration Menu," and then press "Enter".
+
+4. Press "A" for "Security," and then press "Enter".
+
+5. Press "X" for "Advanced Security," and then press "Enter".
+
+If the FIPS 140-2 setting is currently disabled or persistently disabled, this is a finding.</check-content></check></Rule></Group></Benchmark>

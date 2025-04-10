@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Splunk_Enterprise_8-x_for_Linux_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-03-05">accepted</status><title>Splunk Enterprise 8.x for Linux Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>2</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-251657" selected="true" /><select idref="V-251658" selected="true" /><select idref="V-251659" selected="true" /><select idref="V-251660" selected="true" /><select idref="V-251661" selected="true" /><select idref="V-251662" selected="true" /><select idref="V-251663" selected="true" /><select idref="V-251664" selected="true" /><select idref="V-251665" selected="true" /><select idref="V-251666" selected="true" /><select idref="V-251667" selected="true" /><select idref="V-251668" selected="true" /><select idref="V-251669" selected="true" /><select idref="V-251670" selected="true" /><select idref="V-251671" selected="true" /><select idref="V-251672" selected="true" /><select idref="V-251673" selected="true" /><select idref="V-251674" selected="true" /><select idref="V-251675" selected="true" /><select idref="V-251676" selected="true" /><select idref="V-251677" selected="true" /><select idref="V-251678" selected="true" /><select idref="V-251679" selected="true" /><select idref="V-251680" selected="true" /><select idref="V-251681" selected="true" /><select idref="V-251682" selected="true" /><select idref="V-251683" selected="true" /><select idref="V-251684" selected="true" /><select idref="V-251685" selected="true" /><select idref="V-251686" selected="true" /><select idref="V-251687" selected="true" /><select idref="V-251688" selected="true" /><select idref="V-251689" selected="true" /><select idref="V-251690" selected="true" /><select idref="V-251691" selected="true" /><select idref="V-251692" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-251657" selected="true" /><select idref="V-251658" selected="true" /><select idref="V-251659" selected="true" /><select idref="V-251660" selected="true" /><select idref="V-251661" selected="true" /><select idref="V-251662" selected="true" /><select idref="V-251663" selected="true" /><select idref="V-251664" selected="true" /><select idref="V-251665" selected="true" /><select idref="V-251666" selected="true" /><select idref="V-251667" selected="true" /><select idref="V-251668" selected="true" /><select idref="V-251669" selected="true" /><select idref="V-251670" selected="true" /><select idref="V-251671" selected="true" /><select idref="V-251672" selected="true" /><select idref="V-251673" selected="true" /><select idref="V-251674" selected="true" /><select idref="V-251675" selected="true" /><select idref="V-251676" selected="true" /><select idref="V-251677" selected="true" /><select idref="V-251678" selected="true" /><select idref="V-251679" selected="true" /><select idref="V-251680" selected="true" /><select idref="V-251681" selected="true" /><select idref="V-251682" selected="true" /><select idref="V-251683" selected="true" /><select idref="V-251684" selected="true" /><select idref="V-251685" selected="true" /><select idref="V-251686" selected="true" /><select idref="V-251687" selected="true" /><select idref="V-251688" selected="true" /><select idref="V-251689" selected="true" /><select idref="V-251690" selected="true" /><select idref="V-251691" selected="true" /><select idref="V-251692" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-251657" selected="true" /><select idref="V-251658" selected="true" /><select idref="V-251659" selected="true" /><select idref="V-251660" selected="true" /><select idref="V-251661" selected="true" /><select idref="V-251662" selected="true" /><select idref="V-251663" selected="true" /><select idref="V-251664" selected="true" /><select idref="V-251665" selected="true" /><select idref="V-251666" selected="true" /><select idref="V-251667" selected="true" /><select idref="V-251668" selected="true" /><select idref="V-251669" selected="true" /><select idref="V-251670" selected="true" /><select idref="V-251671" selected="true" /><select idref="V-251672" selected="true" /><select idref="V-251673" selected="true" /><select idref="V-251674" selected="true" /><select idref="V-251675" selected="true" /><select idref="V-251676" selected="true" /><select idref="V-251677" selected="true" /><select idref="V-251678" selected="true" /><select idref="V-251679" selected="true" /><select idref="V-251680" selected="true" /><select idref="V-251681" selected="true" /><select idref="V-251682" selected="true" /><select idref="V-251683" selected="true" /><select idref="V-251684" selected="true" /><select idref="V-251685" selected="true" /><select idref="V-251686" selected="true" /><select idref="V-251687" selected="true" /><select idref="V-251688" selected="true" /><select idref="V-251689" selected="true" /><select idref="V-251690" selected="true" /><select idref="V-251691" selected="true" /><select idref="V-251692" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-251657" selected="true" /><select idref="V-251658" selected="true" /><select idref="V-251659" selected="true" /><select idref="V-251660" selected="true" /><select idref="V-251661" selected="true" /><select idref="V-251662" selected="true" /><select idref="V-251663" selected="true" /><select idref="V-251664" selected="true" /><select idref="V-251665" selected="true" /><select idref="V-251666" selected="true" /><select idref="V-251667" selected="true" /><select idref="V-251668" selected="true" /><select idref="V-251669" selected="true" /><select idref="V-251670" selected="true" /><select idref="V-251671" selected="true" /><select idref="V-251672" selected="true" /><select idref="V-251673" selected="true" /><select idref="V-251674" selected="true" /><select idref="V-251675" selected="true" /><select idref="V-251676" selected="true" /><select idref="V-251677" selected="true" /><select idref="V-251678" selected="true" /><select idref="V-251679" selected="true" /><select idref="V-251680" selected="true" /><select idref="V-251681" selected="true" /><select idref="V-251682" selected="true" /><select idref="V-251683" selected="true" /><select idref="V-251684" selected="true" /><select idref="V-251685" selected="true" /><select idref="V-251686" selected="true" /><select idref="V-251687" selected="true" /><select idref="V-251688" selected="true" /><select idref="V-251689" selected="true" /><select idref="V-251690" selected="true" /><select idref="V-251691" selected="true" /><select idref="V-251692" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-251657" selected="true" /><select idref="V-251658" selected="true" /><select idref="V-251659" selected="true" /><select idref="V-251660" selected="true" /><select idref="V-251661" selected="true" /><select idref="V-251662" selected="true" /><select idref="V-251663" selected="true" /><select idref="V-251664" selected="true" /><select idref="V-251665" selected="true" /><select idref="V-251666" selected="true" /><select idref="V-251667" selected="true" /><select idref="V-251668" selected="true" /><select idref="V-251669" selected="true" /><select idref="V-251670" selected="true" /><select idref="V-251671" selected="true" /><select idref="V-251672" selected="true" /><select idref="V-251673" selected="true" /><select idref="V-251674" selected="true" /><select idref="V-251675" selected="true" /><select idref="V-251676" selected="true" /><select idref="V-251677" selected="true" /><select idref="V-251678" selected="true" /><select idref="V-251679" selected="true" /><select idref="V-251680" selected="true" /><select idref="V-251681" selected="true" /><select idref="V-251682" selected="true" /><select idref="V-251683" selected="true" /><select idref="V-251684" selected="true" /><select idref="V-251685" selected="true" /><select idref="V-251686" selected="true" /><select idref="V-251687" selected="true" /><select idref="V-251688" selected="true" /><select idref="V-251689" selected="true" /><select idref="V-251690" selected="true" /><select idref="V-251691" selected="true" /><select idref="V-251692" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-251657" selected="true" /><select idref="V-251658" selected="true" /><select idref="V-251659" selected="true" /><select idref="V-251660" selected="true" /><select idref="V-251661" selected="true" /><select idref="V-251662" selected="true" /><select idref="V-251663" selected="true" /><select idref="V-251664" selected="true" /><select idref="V-251665" selected="true" /><select idref="V-251666" selected="true" /><select idref="V-251667" selected="true" /><select idref="V-251668" selected="true" /><select idref="V-251669" selected="true" /><select idref="V-251670" selected="true" /><select idref="V-251671" selected="true" /><select idref="V-251672" selected="true" /><select idref="V-251673" selected="true" /><select idref="V-251674" selected="true" /><select idref="V-251675" selected="true" /><select idref="V-251676" selected="true" /><select idref="V-251677" selected="true" /><select idref="V-251678" selected="true" /><select idref="V-251679" selected="true" /><select idref="V-251680" selected="true" /><select idref="V-251681" selected="true" /><select idref="V-251682" selected="true" /><select idref="V-251683" selected="true" /><select idref="V-251684" selected="true" /><select idref="V-251685" selected="true" /><select idref="V-251686" selected="true" /><select idref="V-251687" selected="true" /><select idref="V-251688" selected="true" /><select idref="V-251689" selected="true" /><select idref="V-251690" selected="true" /><select idref="V-251691" selected="true" /><select idref="V-251692" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-251657" selected="true" /><select idref="V-251658" selected="true" /><select idref="V-251659" selected="true" /><select idref="V-251660" selected="true" /><select idref="V-251661" selected="true" /><select idref="V-251662" selected="true" /><select idref="V-251663" selected="true" /><select idref="V-251664" selected="true" /><select idref="V-251665" selected="true" /><select idref="V-251666" selected="true" /><select idref="V-251667" selected="true" /><select idref="V-251668" selected="true" /><select idref="V-251669" selected="true" /><select idref="V-251670" selected="true" /><select idref="V-251671" selected="true" /><select idref="V-251672" selected="true" /><select idref="V-251673" selected="true" /><select idref="V-251674" selected="true" /><select idref="V-251675" selected="true" /><select idref="V-251676" selected="true" /><select idref="V-251677" selected="true" /><select idref="V-251678" selected="true" /><select idref="V-251679" selected="true" /><select idref="V-251680" selected="true" /><select idref="V-251681" selected="true" /><select idref="V-251682" selected="true" /><select idref="V-251683" selected="true" /><select idref="V-251684" selected="true" /><select idref="V-251685" selected="true" /><select idref="V-251686" selected="true" /><select idref="V-251687" selected="true" /><select idref="V-251688" selected="true" /><select idref="V-251689" selected="true" /><select idref="V-251690" selected="true" /><select idref="V-251691" selected="true" /><select idref="V-251692" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-251657" selected="true" /><select idref="V-251658" selected="true" /><select idref="V-251659" selected="true" /><select idref="V-251660" selected="true" /><select idref="V-251661" selected="true" /><select idref="V-251662" selected="true" /><select idref="V-251663" selected="true" /><select idref="V-251664" selected="true" /><select idref="V-251665" selected="true" /><select idref="V-251666" selected="true" /><select idref="V-251667" selected="true" /><select idref="V-251668" selected="true" /><select idref="V-251669" selected="true" /><select idref="V-251670" selected="true" /><select idref="V-251671" selected="true" /><select idref="V-251672" selected="true" /><select idref="V-251673" selected="true" /><select idref="V-251674" selected="true" /><select idref="V-251675" selected="true" /><select idref="V-251676" selected="true" /><select idref="V-251677" selected="true" /><select idref="V-251678" selected="true" /><select idref="V-251679" selected="true" /><select idref="V-251680" selected="true" /><select idref="V-251681" selected="true" /><select idref="V-251682" selected="true" /><select idref="V-251683" selected="true" /><select idref="V-251684" selected="true" /><select idref="V-251685" selected="true" /><select idref="V-251686" selected="true" /><select idref="V-251687" selected="true" /><select idref="V-251688" selected="true" /><select idref="V-251689" selected="true" /><select idref="V-251690" selected="true" /><select idref="V-251691" selected="true" /><select idref="V-251692" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-251657" selected="true" /><select idref="V-251658" selected="true" /><select idref="V-251659" selected="true" /><select idref="V-251660" selected="true" /><select idref="V-251661" selected="true" /><select idref="V-251662" selected="true" /><select idref="V-251663" selected="true" /><select idref="V-251664" selected="true" /><select idref="V-251665" selected="true" /><select idref="V-251666" selected="true" /><select idref="V-251667" selected="true" /><select idref="V-251668" selected="true" /><select idref="V-251669" selected="true" /><select idref="V-251670" selected="true" /><select idref="V-251671" selected="true" /><select idref="V-251672" selected="true" /><select idref="V-251673" selected="true" /><select idref="V-251674" selected="true" /><select idref="V-251675" selected="true" /><select idref="V-251676" selected="true" /><select idref="V-251677" selected="true" /><select idref="V-251678" selected="true" /><select idref="V-251679" selected="true" /><select idref="V-251680" selected="true" /><select idref="V-251681" selected="true" /><select idref="V-251682" selected="true" /><select idref="V-251683" selected="true" /><select idref="V-251684" selected="true" /><select idref="V-251685" selected="true" /><select idref="V-251686" selected="true" /><select idref="V-251687" selected="true" /><select idref="V-251688" selected="true" /><select idref="V-251689" selected="true" /><select idref="V-251690" selected="true" /><select idref="V-251691" selected="true" /><select idref="V-251692" selected="true" /></Profile><Group id="V-251657"><title>SRG-APP-000295-AU-000190</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251657r1043182_rule" weight="10.0" severity="medium"><version>SPLK-CL-000010</version><title>Splunk Enterprise idle session timeout must be set to not exceed 15 minutes.</title><description>&lt;VulnDiscussion&gt;Automatic session termination after a period of inactivity addresses the potential for a malicious actor to exploit the unattended session. Closing any unattended sessions reduces the attack surface to the application.
+
+Satisfies: SRG-APP-000295-AU-000190, SRG-APP-000389-AU-000180&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004895</ident><ident system="http://cyber.mil/cci">CCI-002361</ident><ident system="http://cyber.mil/cci">CCI-002038</ident><fixtext fixref="F-55049r819078_fix">This configuration is performed on the machine used as a search head, which may be a separate machine in a distributed environment.
+
+If the web.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify/Add the following lines in the web.conf file:
+
+tools.session.timeout = 15</fixtext><fix id="F-55049r819078_fix" /><check system="C-55095r992036_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check is performed on the machine used as a search head, which may be a separate machine in a distributed environment.
+
+If the instance being reviewed is not used as a search head, this check in Not Applicable.
+
+Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the web.conf file.
+ 
+If the web.conf file does not exist, this is a finding.
+
+If the "tools.sessions.timeout" is missing or is configured to 16 or more, this is a finding.</check-content></check></Rule></Group><Group id="V-251658"><title>SRG-APP-000291-AU-000200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251658r1015830_rule" weight="10.0" severity="low"><version>SPLK-CL-000020</version><title>Splunk Enterprise must notify the system administrator (SA) and information system security officer (ISSO) when account events are received (creation, deletion, modification, or disabling).</title><description>&lt;VulnDiscussion&gt;Once an attacker establishes access to an application, the attacker often attempts to create a persistent method of re-establishing access. One way to accomplish this is for the attacker to simply create a new account. Sending notification of account creation events to the system administrator and ISSO is one method for mitigating this risk.
+
+To address access requirements, many application developers choose to integrate their applications with enterprise-level authentication/access/auditing mechanisms that meet or exceed access control policy requirements. Such integration allows the application developer to off-load those access control functions and focus on core application features and functionality.
+
+Satisfies: SRG-APP-000291-AU-000200, SRG-APP-000292-AU-000420, SRG-APP-000294-AU-000430, SRG-APP-000294-AU-000440&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000015</ident><ident system="http://cyber.mil/cci">CCI-001683</ident><ident system="http://cyber.mil/cci">CCI-001684</ident><ident system="http://cyber.mil/cci">CCI-001685</ident><ident system="http://cyber.mil/cci">CCI-001686</ident><fixtext fixref="F-55050r808209_fix">Configure Splunk Enterprise, using the reporting and notification tools, to notify the SA and ISSO when account events are received for all devices and hosts within its scope of coverage.</fixtext><fix id="F-55050r808209_fix" /><check system="C-55096r808208_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Interview the SA to verify that a report exists to notify the SA and ISSO when account events are received for all devices and hosts within its scope of coverage.
+
+Interview the ISSO to confirm receipt of this report.
+
+If Splunk Enterprise is not configured to notify the SA and ISSO when account events are received for all devices and hosts within its scope of coverage, this is a finding.</check-content></check></Rule></Group><Group id="V-251659"><title>SRG-APP-000065-AU-000240</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251659r960840_rule" weight="10.0" severity="medium"><version>SPLK-CL-000060</version><title>Splunk Enterprise must enforce the limit of three consecutive invalid logon attempts by a user during a 15-minute time period.</title><description>&lt;VulnDiscussion&gt;By limiting the number of failed login attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute forcing, is reduced. Limits are imposed by locking the account.
+
+In most enterprise environments, this requirement is usually mitigated by a properly configured external authentication system, like LDAP. Splunk local authentication takes precedence over other forms of authentication. The mitigation settings in this requirement apply in the event a local account is created.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000044</ident><fixtext fixref="F-55051r819081_fix">If the authentication.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify the following lines in the authentication.conf file under the [splunk_auth]:
+
+lockoutAttempts = 3
+lockoutThresholdMins = 15</fixtext><fix id="F-55051r819081_fix" /><check system="C-55097r819080_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check is applicable to the instance with the Search Head role, which may be a different instance in a distributed environment.
+
+Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the authentication.conf file.
+ 
+If the authentication.conf file does not exist, this is a finding.
+
+If the "lockoutAttempts" is missing or is configured to more than 3, this is a finding.
+
+If the "lockoutThresholdMins" is missing or is configured to less than 15, this is a finding.</check-content></check></Rule></Group><Group id="V-251660"><title>SRG-APP-000345-AU-000400</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251660r961368_rule" weight="10.0" severity="medium"><version>SPLK-CL-000070</version><title>Splunk Enterprise must automatically lock the account until the locked account is released by an administrator when three unsuccessful login attempts in 15 minutes are exceeded.</title><description>&lt;VulnDiscussion&gt;By limiting the number of failed login attempts, the risk of unauthorized system access via user password guessing, otherwise known as brute forcing, is reduced. Limits are imposed by locking the account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002238</ident><fixtext fixref="F-55052r819084_fix">If the authentication.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify the following lines in the authentication.conf file under the [splunk_auth]:
+
+lockoutUsers = True or 1</fixtext><fix id="F-55052r819084_fix" /><check system="C-55098r819083_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the authentication.conf file.
+ 
+If the authentication.conf file does not exist, this is a finding.
+
+If the lockoutUsers" is missing or is configured to 0 or False, this is a finding.</check-content></check></Rule></Group><Group id="V-251661"><title>SRG-APP-000068-AU-000035</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251661r960843_rule" weight="10.0" severity="low"><version>SPLK-CL-000080</version><title>Splunk Enterprise must display the Standard Mandatory DOD Notice and Consent Banner before granting access to the server.</title><description>&lt;VulnDiscussion&gt;Display of the DOD-approved use notification before granting access to the application ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+System use notifications are required only for access via logon interfaces with human users and are not required when such human interfaces do not exist.
+
+The banner must be formatted in accordance with DTM-08-060. Use the following verbiage for applications that can accommodate banners of 1300 characters:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+Use the following verbiage for operating systems that have severe limitations on the number of characters that can be displayed in the banner:
+
+"I've read &amp; consent to terms in IS user agreem't."&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000048</ident><fixtext fixref="F-55053r918484_fix">This configuration is performed on the machine used as a search head, which may be a separate machine in a distributed environment.
+
+Configure Splunk Enterprise to display the Mandatory DOD Notice and Consent Banner by modifying the web.conf file.
+
+Add/modify the line: 
+login_content = &lt;script&gt;function DoDBanner() {alert("You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.\nBy using this IS (which includes any device attached to this IS), you consent to the following conditions:\n-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.\n-At any time, the USG may inspect and seize data stored on this IS.\n-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.\n-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.\n-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.");}DoDBanner();&lt;/script&gt;
+
+The string in the above line will be the text of the DOD consent banner.</fixtext><fix id="F-55053r918484_fix" /><check system="C-55099r918483_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check is performed on the machine used as a search head, which may be a separate machine in a distributed environment.
+
+If the instance being reviewed is not used as a search head, this check in N/A.
+
+Verify that the Standard Mandatory DOD Notice and Consent Banner appears before being granted access to Splunk Enterprise.
+
+If the Standard Mandatory DOD Notice and Consent Banner is not presented, this is a finding.</check-content></check></Rule></Group><Group id="V-251662"><title>SRG-APP-000080-AU-000010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251662r960864_rule" weight="10.0" severity="medium"><version>SPLK-CL-000090</version><title>Splunk Enterprise must be configured to protect the log data stored in the indexes from alteration.</title><description>&lt;VulnDiscussion&gt;Without non-repudiation, it is impossible to positively attribute an action to an individual (or process acting on behalf of an individual).
+
+The records stored by Splunk Enterprise must be protected against alteration. A hash is one way of performing this function. The server must not allow the removal of identifiers or date/time, or it must severely restrict the ability to do so.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000166</ident><fixtext fixref="F-55054r835282_fix">If the indexes.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify the following lines in the indexes.conf file under each index:
+
+enableDataIntegrityControl = 1 or True</fixtext><fix id="F-55054r835282_fix" /><check system="C-55100r835281_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check is performed on the machine used as an indexer, which may be a separate machine in a distributed environment.
+
+If the instance being reviewed is not used as an indexer, this check is N/A.
+
+Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the indexes.conf file.
+ 
+If the indexes.conf file does not exist, this is a finding.
+
+If the "enableDataIntegrityControl" is missing or is configured to 0 or false for each index, this is a finding.</check-content></check></Rule></Group><Group id="V-251663"><title>SRG-APP-000086-AU-000020</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251663r992039_rule" weight="10.0" severity="low"><version>SPLK-CL-000100</version><title>Splunk Enterprise must be configured to aggregate log records from organization-defined devices and hosts within its scope of coverage.</title><description>&lt;VulnDiscussion&gt;If the application is not configured to collate records based on the time when the events occurred, the ability to perform forensic analysis and investigations across multiple components is significantly degraded. Centralized log aggregation must also include logs from databases and servers (e.g., Windows) that do not natively send logs using the syslog protocol.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000174</ident><ident system="http://cyber.mil/cci">CCI-003821</ident><fixtext fixref="F-55055r808224_fix">Configure Splunk Enterprise to aggregate log records from organization-defined devices and hosts within its scope of coverage, as defined in the site security plan.</fixtext><fix id="F-55055r808224_fix" /><check system="C-55101r808223_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Examine the site documentation that lists the scope of coverage for the instance being reviewed.
+
+Select Settings &gt;&gt; Data Inputs. Verify that data inputs are configured to support the scope of coverage documented for the site.
+
+If Splunk enterprise is not configured to aggregate log records from organization-defined devices and hosts within its scope of coverage, this is a finding.</check-content></check></Rule></Group><Group id="V-251664"><title>SRG-APP-000086-AU-000390</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251664r960873_rule" weight="10.0" severity="medium"><version>SPLK-CL-000110</version><title>In a distributed environment, Splunk Enterprise indexers must be configured to ingest log records from its forwarders.</title><description>&lt;VulnDiscussion&gt;Log servers (e.g., syslog servers) are often used on network segments to consolidate from the devices and hosts on that network segment. However, this does not achieve compliance with the DoD requirement for a centralized enclave log server.
+
+To comply with this requirement, create a central log server that aggregates multiple log servers, or use another method to ensure log analysis and management is centrally managed and available to enterprise forensics and analysis tools. This server is often called a log aggregator, SIEM, or events server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000174</ident><fixtext fixref="F-55056r808227_fix">On the forwarders, configure the outputs.conf with the information of the indexer that the data will be sent to for analysis.
+
+On the indexer, configure the inputs.conf file with the information of the forwarders that are sending the data for analysis.</fixtext><fix id="F-55056r808227_fix" /><check system="C-55102r808226_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check is applicable to the instance with the Indexer role or the Forwarder role, which may be a different instance in a distributed environment.
+
+Verify the Splunk Enterprise Environment is configured to ingest log records from different hosts.
+
+On the forwarders, check if the output.conf file is configured with the details of the indexer is ingesting the log data (e.g., Hostname, port# etc.).
+
+On the indexer, check if the input.conf file is configured with the details of the forwarders that are sending the data.
+
+If the Splunk Enterprise is not configured to perform analysis of log records from across multiple hosts, this is a finding.</check-content></check></Rule></Group><Group id="V-251665"><title>SRG-APP-000095-AU-000050</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251665r960891_rule" weight="10.0" severity="low"><version>SPLK-CL-000120</version><title>The System Administrator (SA) and Information System Security Manager (ISSM) must configure the retention of the log records based on the defined security plan.</title><description>&lt;VulnDiscussion&gt;If authorized individuals do not have the ability to modify auditing parameters in response to a changing threat environment, the organization may not be able to respond effectively and important forensic information may be lost.
+
+The organization must define and document log retention requirements for each device and host and then configure Splunk Enterprise to comply with the required retention period.
+
+This requirement enables organizations to extend or limit auditing as necessary to meet organizational requirements. Auditing that is limited to conserve information system resources may be extended to address certain threat situations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001914</ident><fixtext fixref="F-55057r819090_fix">Edit the following file in the Splunk installation folder:
+
+$SPLUNK_HOME/etc/system/local/indexes.conf
+
+Set frozenTimePeriodInSecs to the defined retention period for each index location.</fixtext><fix id="F-55057r819090_fix" /><check system="C-55103r819089_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check is applicable to the instance with the Indexer role, which may be a different instance in a distributed environment.
+
+Examine the site documentation for the retention time for log data.
+
+Examine the following file in the Splunk installation folder:
+
+$SPLUNK_HOME/etc/system/local/indexes.conf
+
+For each index defined in the scope, the frozenTimePeriodInSecs setting should match the site documentation.
+
+If the settings do not match, this is a finding.</check-content></check></Rule></Group><Group id="V-251666"><title>SRG-APP-000089-AU-000400</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251666r960879_rule" weight="10.0" severity="medium"><version>SPLK-CL-000130</version><title>Splunk Enterprise must be configured to retain the DoD-defined attributes of the log records sent by the devices and hosts.</title><description>&lt;VulnDiscussion&gt;Log records can be generated from various components within the application (e.g., process, module). Certain specific application functionalities may be audited as well. The list of audited events is the set of events for which audits are to be generated. This set of events is typically a subset of the list of all events for which the system is capable of generating log records.
+
+DoD has defined a list of information or attributes that must be included in the log record, including date, time, source, destination, module, severity level (category of information), etc. Other log record content that may be necessary to satisfy the requirement of this policy includes, for example, time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, filenames involved, and access control or flow control rules invoked.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000169</ident><fixtext fixref="F-55058r808233_fix">Configure Splunk Enterprise to retain the DoD-defined attributes of the log records sent by the devices and hosts.
+
+Use Splunk Enterprise to modify the props.conf file to include the DoD-defined attributes.</fixtext><fix id="F-55058r808233_fix" /><check system="C-55104r808232_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Review the log records sent in Splunk Enterprise and verify that the log records retain the DoD-defined attributes.
+
+If the log files do not retain the DoD-defined attributes, this is a finding.</check-content></check></Rule></Group><Group id="V-251667"><title>SRG-APP-000090-AU-000070</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251667r992040_rule" weight="10.0" severity="low"><version>SPLK-CL-000140</version><title>Splunk Enterprise must allow only the individuals appointed by the information system security manager (ISSM) to have full admin rights to the system.</title><description>&lt;VulnDiscussion&gt;Without restricting which roles and individuals can select which events are audited, unauthorized personnel may be able to prevent the auditing of critical events. Misconfigured audits may degrade the system's performance by overwhelming the audit log. Misconfigured audits may also make it more difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000171</ident><ident system="http://cyber.mil/cci">CCI-003831</ident><fixtext fixref="F-55059r808236_fix">Provide the list of individuals assigned by the ISSM to be members of the admin role to the Splunk Enterprise administrator.
+
+Provide the list of individuals assigned by the ISSM to be members of the admin role to the LDAP administrator to add to the LDAP group mapped to the admin role.
+
+Create user accounts and assign the admin role for users provided in the lists.</fixtext><fix id="F-55059r808236_fix" /><check system="C-55105r808235_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check is applicable to the instance with the Search Head role, which may be a different instance in a distributed environment.
+
+Select Settings &gt;&gt; Users.
+
+If users have the admin role that are not defined by the ISSM as requiring admin rights, this is a finding.
+
+LDAP Groups Check: 
+
+Select Settings &gt;&gt; Authentication Method &gt;&gt; LDAP Settings &gt;&gt; Map Groups.
+
+Obtain the LDAP group name mapped to the admin role.
+
+Request from the LDAP administrator the group membership of this LDAP group, and compare to the list of individuals appointed by the ISSM.
+
+If users that are not defined by the ISSM as requiring admin rights are present in the admin role membership, this is a finding.</check-content></check></Rule></Group><Group id="V-251668"><title>SRG-APP-000358-AU-000100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251668r961395_rule" weight="10.0" severity="medium"><version>SPLK-CL-000150</version><title>Splunk Enterprise must be configured to offload log records onto a different system or media than the system being audited.</title><description>&lt;VulnDiscussion&gt;Information stored in one location is vulnerable to accidental or incidental deletion or alteration.
+
+Offloading is a common process in information systems with limited audit storage capacity. Although this may be part of the operating system function, for the enterprise events management system, this is most often a function managed through the application since it is a critical function and requires the use of a large amount of external storage.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001851</ident><fixtext fixref="F-55060r808239_fix">This configuration is performed on the machine used as a forwarder, which is always a separate machine regardless of environment.
+
+On the forwarders, configure the outputs.conf with the information of the indexer that the data will be sent to for analysis. 
+
+This configuration is performed on the machine used as the assigned indexer to the forwarder in a distributed environment.
+
+On the indexer, configure the inputs.conf file with the information of the forwarders that are sending the data for analysis.</fixtext><fix id="F-55060r808239_fix" /><check system="C-55106r808238_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Verify the Splunk Enterprise Environment is configured to offload log records to an external source.
+
+On the forwarder, check that the outputs.conf file is configured with the details of the source that the logs will be sent to (e.g. Hostname, port# etc.).
+
+If the Splunk Enterprise is not configured to offload log records to an external source, this is a finding.</check-content></check></Rule></Group><Group id="V-251669"><title>SRG-APP-000359-AU-000120</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251669r961398_rule" weight="10.0" severity="low"><version>SPLK-CL-000160</version><title>Splunk Enterprise must be configured to send an immediate alert to the system administrator (SA) and information system security officer (ISSO) (at a minimum) when allocated log record storage volume reaches 75 percent of the repository maximum log record storage capacity.</title><description>&lt;VulnDiscussion&gt;If security personnel are not notified immediately upon storage volume utilization reaching 75 percent, they are unable to plan for storage capacity expansion. 
+
+Although this may be part of the operating system function, for the enterprise events management system, this is most often a function managed through the application since it is a critical function and requires the use of a large amount of external storage.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001855</ident><fixtext fixref="F-55061r819093_fix">Perform the following fixes.
+
+1. Edit the file in the Splunk installation folder:
+
+$SPLUNK_HOME/etc/system/local/server.conf
+
+Add the following lines:
+
+[diskUsage]
+minFreeSpace = xxxx
+
+Set the value to 25 percent of the size of the storage volume. For example, 25 percent of a 100GB drive is 25GB, and the value set would be 25000, as the value is in megabytes.
+
+2. Examine the file in the Splunk installation folder:
+
+$SPLUNK_HOME/etc/system/local/health.conf
+
+Add the following lines:
+
+[alert_action:email]
+disabled = 0
+action.to =
+action.cc =
+
+Set the email addresses of the ISSO and SA to be able to receive alerts. This email address can be a group address (example alerts@domain.com) that contain the addresses of the ISSO and SA.
+
+3. In the Splunk console, select Settings &gt;&gt; Health Report Manager &gt;&gt; feature:disk_space.
+
+Set the Red setting to 1, and Yellow setting to 2.</fixtext><fix id="F-55061r819093_fix" /><check system="C-55107r929143_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Perform the following checks. If any do not comply, this is a finding.
+
+1. Examine the file in the Splunk installation folder:
+
+Note: If necessary, run the "btool" app within Splunk to first determine where the effective setting is contained, then validate/change that setting.
+
+SPLUNK_HOME/etc/system/local/server.conf
+
+Locate the following setting:
+
+[diskUsage]
+minFreeSpace = xxxx
+
+Verify that the value is set to 25 percent of the size of the storage volume. For example, 25 percent of a 100GB drive is 25GB, and the value set would be 25000, as the value is in megabytes.
+
+2. Examine the file in the Splunk installation folder:
+
+$SPLUNK_HOME/etc/system/local/health.conf
+
+Locate the following setting:
+
+[alert_action:email]
+disabled = 0
+action.to =
+action.cc =
+
+Verify that the email addresses of the ISSO and SA are set to receive alerts. This email address can be a group address (example alerts@domain.com) that contain the addresses of the ISSO and SA.
+
+3. In the Splunk console, select Settings &gt;&gt; Health Report Manager &gt;&gt; feature:disk_space.
+
+Verify Red setting is 1, and Yellow setting is 2.</check-content></check></Rule></Group><Group id="V-251670"><title>SRG-APP-000360-AU-000130</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251670r961401_rule" weight="10.0" severity="low"><version>SPLK-CL-000170</version><title>Splunk Enterprise must notify the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) of all audit failure events, such as loss of communications with hosts and devices, or if log records are no longer being received.</title><description>&lt;VulnDiscussion&gt;It is critical for the appropriate personnel to be aware if a system is at risk of failing to process audit logs as required. Without a real-time alert, security personnel may be unaware of an impending failure of the audit function and application operation may be adversely affected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001858</ident><fixtext fixref="F-55062r808245_fix">Configure Splunk Enterprise, using the reporting and notification tools, to create a report with notification to the SA and ISSO of any audit failure events, such as loss of communication or logs no longer being collected.</fixtext><fix id="F-55062r808245_fix" /><check system="C-55108r808244_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Interview the SA to verify that a report exists to notify the SA and ISSO of any audit failure, such as loss of communication or logs no longer being collected.
+
+Interview the ISSO to confirm receipt of this report.
+
+If a report does not exist to notify the SA and ISSO of audit failure events, or the ISSO does not confirm receipt of the report, this is a finding.</check-content></check></Rule></Group><Group id="V-251671"><title>SRG-APP-000361-AU-000140</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251671r1001259_rule" weight="10.0" severity="low"><version>SPLK-CL-000180</version><title>Splunk Enterprise must notify the System Administrator (SA) or Information System Security Officer (ISSO) if communication with the host and devices within its scope of coverage is lost.</title><description>&lt;VulnDiscussion&gt;If the system were to continue processing after audit failure, actions could be taken on the system that could not be tracked and recorded for later forensic analysis. To perform this function, some type of heartbeat configuration with all of the devices and hosts must be configured.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001861</ident><fixtext fixref="F-55063r808248_fix">If the Splunk instance is used for Tier 2 CSSP (formerly CND-SP) or JRSS analysis, this check is N/A.
+
+Configure Splunk Enterprise, using the reporting and notification tools, to create a report with notification to the SA and ISSO of any audit failure events, such as loss of communication or logs no longer being collected.</fixtext><fix id="F-55063r808248_fix" /><check system="C-55109r808247_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>If the Splunk instance is used for Tier 2 CSSP (formerly CND-SP) or JRSS analysis, this check is N/A.
+
+Interview the SA to verify that a report exists to notify the SA and ISSO of any audit failure, such as loss of communication or logs no longer being collected.
+
+Interview the ISSO to confirm receipt of this report.
+
+If a report does not exist to notify the SA and ISSO of audit failure events, or the ISSO does not confirm receipt of this report, this is a finding.</check-content></check></Rule></Group><Group id="V-251672"><title>SRG-APP-000118-AU-000100</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251672r960930_rule" weight="10.0" severity="medium"><version>SPLK-CL-000190</version><title>Splunk Enterprise installation directories must be secured.</title><description>&lt;VulnDiscussion&gt;If audit data were to become compromised, then competent forensic analysis and discovery of the true source of potentially malicious system activity is difficult if not impossible to achieve. In addition, access to audit records provides information an attacker could potentially use to his or her advantage.
+
+To ensure the veracity of audit data, the information system and/or the application must protect audit information from any and all unauthorized access. This includes read, write, and copy access.
+
+This requirement can be achieved through multiple methods which will depend upon system architecture and design. Commonly employed methods for protecting audit information include least privilege permissions as well as restricting the location and number of log file repositories.
+
+Additionally, applications with user interfaces to audit records should not allow for the unfettered manipulation of or access to those records via the application. If the application provides access to the audit data, the application becomes accountable for ensuring audit information is protected from unauthorized access.
+
+Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity.
+
+Satisfies: SRG-APP-000118-AU-000100, SRG-APP-000119-AU-000110, SRG-APP-000120-AU-000120, SRG-APP-000121-AU-000130, SRG-APP-000122-AU-000140, SRG-APP-000123-AU-000150&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000162</ident><ident system="http://cyber.mil/cci">CCI-000163</ident><ident system="http://cyber.mil/cci">CCI-000164</ident><ident system="http://cyber.mil/cci">CCI-001493</ident><ident system="http://cyber.mil/cci">CCI-001494</ident><ident system="http://cyber.mil/cci">CCI-001495</ident><fixtext fixref="F-55064r808251_fix">Only the "splunk" and root users should have access to the Splunk Enterprise installation directories.
+
+chown splunk user $SPLUNK_HOME and $SPLUNK_ETC
+chgrp splunk user $SPLUNK_HOME and $SPLUNK_ETC
+chmod 700 $SPLUNK_HOME and $SPLUNK_ETC</fixtext><fix id="F-55064r808251_fix" /><check system="C-55110r808250_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check must be done as the "splunk" user created during installation.
+
+Verify owner and group are set to splunk user.
+
+ls -ld $SPLUNK_HOME and $SPLUNK_ETC 
+
+If the owner or group are not set to the splunk user, this is a finding.
+
+Check for 700 as permission.
+
+stat -c "%a %n" $SPLUNK_HOME and $SPLUNK_ETC 
+
+If the permissions are not set to 700, this is a finding.</check-content></check></Rule></Group><Group id="V-251673"><title>SRG-APP-000125-AU-000300</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251673r960948_rule" weight="10.0" severity="low"><version>SPLK-CL-000250</version><title>Splunk Enterprise must be configured to back up the log records repository at least every seven days onto a different system or system component other than the system or component being audited.</title><description>&lt;VulnDiscussion&gt;Protection of log data includes ensuring log data is not accidentally lost or deleted. Backing up log records to a different system or onto separate media than the system being audited on an organizationally defined frequency helps to ensure that in the event of a catastrophic system failure, the log records will be retained. 
+
+This helps to ensure that a compromise of the information system being audited does not also result in a compromise of the log records.
+
+This requirement only applies to applications that have a native backup capability for log records. Operating system backup requirements cover applications that do not provide native backup functions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001348</ident><fixtext fixref="F-55065r808254_fix">Implement a backup plan for the Splunk log data, following the Splunk documentation on backing up indexed data. Use the underlying OS backup tools, or another approved backup tool.</fixtext><fix id="F-55065r808254_fix" /><check system="C-55111r808253_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Interview the SA to verify that a process exists to back up the Splunk log data every seven days, using the underlying OS backup tools or another approved backup tool.
+
+If a backup plan does not exist for the Splunk log data, this is a finding.</check-content></check></Rule></Group><Group id="V-251674"><title>SRG-APP-000516-AU-000330</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251674r961863_rule" weight="10.0" severity="medium"><version>SPLK-CL-000260</version><title>Splunk Enterprise must be configured to retain the identity of the original source host or device where the event occurred as part of the log record.</title><description>&lt;VulnDiscussion&gt;In this case the information producer is the device based on IP address or some other identifier of the device producing the information. The source of the record must be bound to the record using cryptographic means.
+
+Some events servers allow the administrator to retain only portions of the record sent by devices and hosts.
+
+This requirement applies to log aggregation servers with the role of fulfilling the DoD requirement for a central log repository. The syslog, SIEM, or other event servers must retain this information with each log record to support incident investigations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-55066r808257_fix">Configure Splunk Enterprise to retain the identity of the original source host or device where the event occurred.
+
+Use Splunk Enterprise to modify the props.conf file to include the identity of the original source host or device where the event occurred.</fixtext><fix id="F-55066r808257_fix" /><check system="C-55112r808256_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Review the log records in Splunk Enterprise and verify that the log records retain the identity of the original source host or device where the event occurred.
+
+If the log files do not retain the identity of the original source host or device where the event occurred, this is a finding.</check-content></check></Rule></Group><Group id="V-251675"><title>SRG-APP-000516-AU-000340</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251675r961863_rule" weight="10.0" severity="medium"><version>SPLK-CL-000270</version><title>Splunk Enterprise must use TCP for data transmission.</title><description>&lt;VulnDiscussion&gt;If the UDP protocol is used for communication, then data packets that do not reach the server are not detected as a data loss. The use of TCP to transport data improves delivery reliability, adds data integrity, and gives the option to encrypt the traffic.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-55067r819096_fix">This configuration is performed on the machine used as an indexer, which may be a separate machine in a distributed environment.
+
+Navigate to $SPLUNK_HOME/etc/system/local/
+
+Modify the inputs.conf file to replace any input that is using a UDP port with a TCP port.</fixtext><fix id="F-55067r819096_fix" /><check system="C-55113r819095_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check is performed on the machine used as an indexer, which may be a separate machine in a distributed environment.
+
+Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the inputs.conf file.
+
+If any input is configured to use a UDP port, this is a finding.</check-content></check></Rule></Group><Group id="V-251676"><title>SRG-APP-000516-AU-000350</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251676r961863_rule" weight="10.0" severity="medium"><version>SPLK-CL-000280</version><title>Splunk Enterprise must be configured with a report to notify the System Administrator (SA) and Information System Security Officer (ISSO), at a minimum, when an attack is detected on multiple devices and hosts within its scope of coverage.</title><description>&lt;VulnDiscussion&gt;Detecting when multiple systems are showing anomalies can often indicate an attack. Notifying appropriate personnel can initiate a proper response and mitigation of the attack.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-55068r808263_fix">Configure Splunk Enterprise, using the Reporting and Alert tools, to notify the SA and ISSO, at a minimum, when an attack is detected on multiple devices and hosts within its scope of coverage.</fixtext><fix id="F-55068r808263_fix" /><check system="C-55114r808262_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Interview the SA to verify that a report exists to notify the SA and ISSO, at a minimum, when an attack is detected on multiple devices and hosts within its scope of coverage.
+
+Interview the ISSO to confirm receipt of this report.
+
+If a report does not exist, or the ISSO does not confirm receipt of this report, this is a finding.</check-content></check></Rule></Group><Group id="V-251677"><title>SRG-APP-000516-AU-000410</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251677r961863_rule" weight="10.0" severity="medium"><version>SPLK-CL-000290</version><title>Analysis, viewing, and indexing functions, services, and applications used as part of Splunk Enterprise must be configured to comply with DoD-trusted path and access requirements.</title><description>&lt;VulnDiscussion&gt;Access to Splunk Enterprise for analysis, viewing, indexing functions, services, and applications, such as analysis tools and other vendor-provided applications, must be secured. Software used to perform additional functions, which resides on the server, must also be secured or could provide a vector for unauthorized access to the events repository.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000366</ident><fixtext fixref="F-55069r835284_fix">Edit the following files in the installation to configure Splunk to use SSL certificates:
+
+This configuration is performed on the machine used as an indexer, which may be a separate machine in a distributed environment.
+
+$SPLUNK_HOME/etc/system/local/inputs.conf
+
+[splunktcp-ssl:9997]
+disabled = 0
+
+[SSL]
+serverCert = &lt;path to the DoD approved certificate in PEM format&gt;
+sslPassword = &lt;password for the certificate&gt;
+
+This configuration is performed on the machine used as a forwarder, which is always a separate machine regardless of environment.
+
+$SPLUNK_HOME/etc/system/local/outputs.conf
+
+[tcpout:group1]
+disabled = 0
+clientCert = &lt;path to the DoD approved certificate in PEM format&gt;
+sslPassword = &lt;password for the certificate&gt;
+
+This configuration is performed on the machine used as a search head, which may be a separate machine in a distributed environment.
+
+Edit the following file in the installation to configure Splunk to use SSL certificates:
+
+$SPLUNK_HOME/etc/opt/system/local/web.conf
+
+[settings]
+enableSplunkWebSSL = 1
+privKeyPath = &lt;path to the private key generated for the DoD approved certificate&gt;
+serverCert = &lt;path to the DoD approved certificate in PEM format&gt;</fixtext><fix id="F-55069r835284_fix" /><check system="C-55115r819098_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Execute a search query in Splunk using the following:
+
+index=_internal source=*metrics.log* group=tcpin_connections | dedup hostname | table _time hostname sourceIp destPort ssl
+
+Verify that the report returns ssl = true for every item listed.
+
+Navigate to $SPLUNK_HOME/etc/system/local/web.conf and verify the enableSplunkWebSSL is set to 1.
+
+If the report returns ssl = false for any item, and/or If enableSplunkWebSSL is not set, this is a finding.</check-content></check></Rule></Group><Group id="V-251678"><title>SRG-APP-000141-AU-000090</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251678r960963_rule" weight="10.0" severity="medium"><version>SPLK-CL-000300</version><title>When Splunk Enterprise is distributed over multiple servers, each server must be configured to disable non-essential capabilities.</title><description>&lt;VulnDiscussion&gt;Applications are capable of providing a wide variety of functions and services. Some of the functions and services may not be necessary to support the configuration. This becomes more of an issue in distributed environments, where the application functions are spread out over multiple servers. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000381</ident><fixtext fixref="F-55070r808269_fix">If the Splunk Installation is not distributed among multiple servers, this fix is N/A.
+
+Select Settings &gt;&gt; Monitoring Console.
+
+In the Monitoring Console, select Settings &gt;&gt; General Setup.
+
+Set the Mode type based on the implementation design.
+
+If Mode is set to Distributed, set each instance only with the server roles necessary for the desired functions.</fixtext><fix id="F-55070r808269_fix" /><check system="C-55116r808268_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>If the Splunk Installation is not distributed among multiple servers, this check is N/A.
+
+Select Settings &gt;&gt; Monitoring Console.
+
+In the Monitoring Console, select Settings &gt;&gt; General Setup.
+
+Check the Mode type.
+
+If set to Standalone, then this requirement is N/A, as all functions provided are necessary for operation.
+
+If Mode is set to Distributed, check that each instance is configured only with the server roles necessary for the implementation.
+
+If unused roles are configured, this is a finding.</check-content></check></Rule></Group><Group id="V-251679"><title>SRG-APP-000148-AU-002270</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251679r1051115_rule" weight="10.0" severity="high"><version>SPLK-CL-000320</version><title>Splunk Enterprise must use organization-level authentication to uniquely identify and authenticate users.</title><description>&lt;VulnDiscussion&gt;To assure accountability and prevent unauthenticated access, organizational users must be uniquely identified and authenticated to prevent potential misuse and compromise of the system. 
+
+Sharing of accounts prevents accountability and non-repudiation. Organizational users must be uniquely identified and authenticated for all accesses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-55071r819102_fix">This configuration is performed on the machine used as a search head or a deployment server, which may be a separate machine in a distributed environment.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory.
+
+Edit the authentication.conf file.
+
+If the authentication.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Configure minimum settings similar to the example below for using LDAP or SAML.
+
+If using LDAP:
+
+[authentication]
+authType = LDAP
+authSettings = &lt;ldap_strategy&gt;
+
+[&lt;ldap_strategy&gt;]
+host = &lt;LDAP server&gt;
+port = &lt;LDAP port&gt;
+sslEnabled = 1
+
+Edit the following file in the $SPLUNK_HOME/etc/openldap folder:
+
+ldap.conf
+
+Configure the following lines for your certificate.
+
+TLS_REQCERT
+TLS_CACERT &lt;path to SSL certificate&gt;
+TLS_PROTOCOL_MIN 3.3
+TLS_CIPHER_SUITE ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-
+SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-
+AES128-SHA256:ECDHE-RSA-AES128-SHA256
+
+If using SAML:
+
+[authentication]
+authType = SAML
+authSettings = &lt;saml_strategy&gt;
+[&lt;saml_strategy&gt;]
+entityId = &lt;saml entity&gt;
+idpSSOUrl = &lt;saml URL&gt;
+idpCertPath = &lt;path to certificate&gt;
+
+After configuring LDAP or SAML, open the Splunk Web console.
+
+Select Settings &gt;&gt; Access Controls &gt;&gt; Users. 
+
+Create appropriate LDAP and SAML users and groups for the environment.
+
+Delete any user account with Authentication system set to Splunk, with the exception of one emergency account of last resort. Splunk will prevent the user from deleting an LDAP or SAML account.</fixtext><fix id="F-55071r819102_fix" /><check system="C-55117r819101_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check is performed on the machine used as a search head or a deployment server, which may be a separate machine in a distributed environment.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory.
+
+View the authentication.conf file.
+
+If the authentication.conf file does not exist, this is a finding.
+
+In the authentication.conf file, verify minimum settings similar to the example below. If any minimum settings are not configured, this is a finding.
+
+If using LDAP:
+
+[authentication]
+authType = LDAP
+authSettings = &lt;ldap_strategy&gt;
+
+[&lt;ldap_strategy&gt;]
+host = &lt;LDAP server&gt;
+port = &lt;LDAP port&gt;
+sslEnabled = 1
+
+Check the following file in the $SPLUNK_HOME/etc/openldap folder:
+
+ldap.conf
+
+If the file does not exist, this is a finding.
+
+Check for the following lines. If any are missing or do not match the settings below, this is a finding.
+
+TLS_REQCERT
+TLS_CACERT &lt;path to SSL certificate&gt;
+TLS_PROTOCOL_MIN 3.3
+TLS_CIPHER_SUITE ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-
+SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-
+AES128-SHA256:ECDHE-RSA-AES128-SHA256
+
+If using SAML:
+
+[authentication]
+authType = SAML
+authSettings = &lt;saml_strategy&gt;
+[&lt;saml_strategy&gt;]
+entityId = &lt;saml entity&gt;
+idpSSOUrl = &lt;saml URL&gt;
+idpCertPath = &lt;path to certificate&gt;
+
+Open the Splunk Web console.
+
+Select Settings &gt;&gt; Access Controls &gt;&gt; Users. 
+
+Verify that no user accounts exist with Authentication system set to Splunk except an account of last resort. They must all be set to LDAP or SAML.
+
+If any user accounts have Authentication system set to Splunk, with the exception of one emergency account of last resort, this is a finding.</check-content></check></Rule></Group><Group id="V-251680"><title>SRG-APP-000156-AU-002380</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251680r960993_rule" weight="10.0" severity="medium"><version>SPLK-CL-000330</version><title>Splunk Enterprise must use HTTPS/SSL for access to the user interface.</title><description>&lt;VulnDiscussion&gt;A replay attack may enable an unauthorized user to gain access to the application. Authentication sessions between the authenticator and the application validating the user credentials must not be vulnerable to a replay attack.
+
+Anti-replay is a cryptographically based mechanism; thus, it must use FIPS-approved algorithms. An authentication process resists replay attacks if it is impractical to achieve a successful authentication by recording and replaying a previous authentication message. Note that the anti-replay service is implicit when data contains monotonically increasing sequence numbers and data integrity is assured. Use of DoD PKI is inherently compliant with this requirement for user and device access. Use of Transport Layer Security (TLS), including application protocols, such as HTTPS and DNSSEC, that use TLS/SSL as the underlying security protocol is also complaint.
+
+Configure the information system to use the hash message authentication code (HMAC) algorithm for authentication services to Kerberos, SSH, web management tool, and any other access method.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001941</ident><fixtext fixref="F-55072r819105_fix">This configuration is performed on the machine used as a search head or a deployment server, which may be a separate machine in a distributed environment.
+
+Edit the following file in the installation to configure Splunk to use SSL certificates:
+
+$SPLUNK_HOME/etc/system/local/web.conf
+
+[settings]
+enableSplunkWebSSL = 1
+privKeyPath = &lt;path to the private key generated for the DoD approved certificate&gt;
+serverCert = &lt;path to the DoD approved certificate in PEM format&gt;</fixtext><fix id="F-55072r819105_fix" /><check system="C-55118r819104_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>This check is performed on the machine used as a search head or a deployment server, which may be a separate machine in a distributed environment.
+
+Check the following file in the installation to verify Splunk is set to use SSL and certificates:
+
+$SPLUNK_HOME/etc/system/local/web.conf
+
+[settings]
+enableSplunkWebSSL = 1
+privKeyPath = &lt;path to the private key generated for the DoD approved certificate&gt;
+serverCert = &lt;path to the DoD approved certificate in PEM format&gt;
+
+If the settings are not configured to use SSL and certificates, this is a finding.</check-content></check></Rule></Group><Group id="V-251681"><title>SRG-APP-000166-AU-002490</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251681r1015831_rule" weight="10.0" severity="low"><version>SPLK-CL-000340</version><title>Splunk Enterprise must be configured to enforce password complexity by requiring that at least one uppercase character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+In most enterprise environments, this requirement is usually mitigated by a properly configured external authentication system, like LDAP. Splunk local authentication takes precedence over other forms of authentication, and cannot be disabled. The mitigation settings in this requirement apply in the event a local account is created.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000192</ident><fixtext fixref="F-55073r819108_fix">If the authentication.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify the following lines in the authentication.conf file under the [splunk_auth]:
+
+minPasswordUppercase = 1</fixtext><fix id="F-55073r819108_fix" /><check system="C-55119r819107_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the authentication.conf file.
+ 
+If the authentication.conf file does not exist, this is a finding.
+
+If the "minPasswordUppercase" is missing or is configured to 0, this is a finding.</check-content></check></Rule></Group><Group id="V-251682"><title>SRG-APP-000167-AU-002500</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251682r1015832_rule" weight="10.0" severity="low"><version>SPLK-CL-000350</version><title>Splunk Enterprise must be configured to enforce password complexity by requiring that at least one lowercase character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+In most enterprise environments, this requirement is usually mitigated by a properly configured external authentication system, like LDAP. Splunk local authentication takes precedence over other forms of authentication, and cannot be disabled. The mitigation settings in this requirement apply in the event a local account is created.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000193</ident><fixtext fixref="F-55074r819111_fix">If the authentication.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify the following lines in the authentication.conf file under the [splunk_auth]:
+
+minPasswordLowercase = 1</fixtext><fix id="F-55074r819111_fix" /><check system="C-55120r819110_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the authentication.conf file.
+ 
+If the authentication.conf file does not exist, this is a finding.
+
+If the "minPasswordLowercase" is missing or is configured to 0, this is a finding.</check-content></check></Rule></Group><Group id="V-251683"><title>SRG-APP-000168-AU-002510</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251683r1015833_rule" weight="10.0" severity="low"><version>SPLK-CL-000360</version><title>Splunk Enterprise must be configured to enforce password complexity by requiring that at least one numeric character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+Password complexity is one factor of several that determine how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+In most enterprise environments, this requirement is usually mitigated by a properly configured external authentication system, like LDAP. Splunk local authentication takes precedence over other forms of authentication, and cannot be disabled. The mitigation settings in this requirement apply in the event a local account is created.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000194</ident><fixtext fixref="F-55075r819114_fix">If the authentication.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify the following lines in the authentication.conf file under the [splunk_auth]:
+
+minPasswordDigit = 1</fixtext><fix id="F-55075r819114_fix" /><check system="C-55121r819113_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the authentication.conf file.
+ 
+If the authentication.conf file does not exist, this is a finding.
+
+If the "minPasswordDigit" is missing or is configured to 0, this is a finding.</check-content></check></Rule></Group><Group id="V-251684"><title>SRG-APP-000164-AU-002480</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251684r1015834_rule" weight="10.0" severity="low"><version>SPLK-CL-000370</version><title>Splunk Enterprise must be configured to enforce a minimum 15-character password length.</title><description>&lt;VulnDiscussion&gt;The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised.
+
+Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. Password length is one factor of several that helps to determine strength and how long it takes to crack a password. The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised. 
+
+Use of more characters in a password helps to exponentially increase the time and/or resources required to compromise the password.
+
+In most enterprise environments, this requirement is usually mitigated by a properly configured external authentication system, like LDAP. Splunk local authentication takes precedence over other forms of authentication, and cannot be disabled. The mitigation settings in this requirement apply in the event a local account is created.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000205</ident><fixtext fixref="F-55076r819117_fix">If the authentication.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify the following lines in the authentication.conf file under the [splunk_auth]:
+
+minPasswordLength = 15 or more</fixtext><fix id="F-55076r819117_fix" /><check system="C-55122r819116_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the authentication.conf file.
+ 
+If the authentication.conf file does not exist, this is a finding.
+
+If the "minPasswordLength" is missing or is configured to 14 or less, this is a finding.</check-content></check></Rule></Group><Group id="V-251685"><title>SRG-APP-000169-AU-002520</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251685r1015835_rule" weight="10.0" severity="low"><version>SPLK-CL-000380</version><title>Splunk Enterprise must be configured to enforce password complexity by requiring that at least one special character be used.</title><description>&lt;VulnDiscussion&gt;Use of a complex password helps to increase the time and resources required to compromise the password. Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+Password complexity is one factor in determining how long it takes to crack a password. The more complex the password, the greater the number of possible combinations that need to be tested before the password is compromised.
+
+Special characters are those characters that are not alphanumeric. Examples include: ~ ! @ # $ % ^ *.
+
+In most enterprise environments, this requirement is usually mitigated by a properly configured external authentication system, like LDAP. Splunk local authentication takes precedence over other forms of authentication, and cannot be disabled. The mitigation settings in this requirement apply in the event a local account is created.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-001619</ident><fixtext fixref="F-55077r819120_fix">If the authentication.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify the following lines in the authentication.conf file under the [splunk_auth]:
+
+minPasswordSpecial = 1</fixtext><fix id="F-55077r819120_fix" /><check system="C-55123r819119_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the authentication.conf file.
+ 
+If the authentication.conf file does not exist, this is a finding.
+
+If the "minPasswordSpecial" is missing or is configured to 0, this is a finding.</check-content></check></Rule></Group><Group id="V-251686"><title>SRG-APP-000172-AU-002550</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251686r961029_rule" weight="10.0" severity="high"><version>SPLK-CL-000390</version><title>Splunk Enterprise must be installed in FIPS mode to implement NIST FIPS-approved cryptography for all cryptographic functions.</title><description>&lt;VulnDiscussion&gt;FIPS 140-2 precludes the use of unvalidated cryptography for the cryptographic protection of sensitive or valuable data within Federal systems. Unvalidated cryptography is viewed by NIST as providing no protection to the information or data. In effect, the data would be considered unprotected plaintext. If the agency specifies that the information or data be cryptographically protected, then FIPS 140-2 is applicable. In essence, if cryptography is required, it must be validated. Cryptographic modules that have been approved for classified use may be used in lieu of modules that have been validated against the FIPS 140-2 standard.
+
+Satisfies: SRG-APP-000172-AU-002550, SRG-APP-000179-AU-002670, SRG-APP-000514-AU-002890&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000197</ident><ident system="http://cyber.mil/cci">CCI-000803</ident><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-55078r808293_fix">FIPS 140-2 mode must be enabled during initial installation. If not enabled, it requires a reinstall or upgrade of the application.
+
+Add the following line to the $SPLUNK_HOME/etc/splunk-launch.conf file during the installation process and before the initial start of Splunk Enterprise:
+
+SPLUNK_COMMON_CRITERIA=1
+SPLUNK_FIPS=1
+# Do not generate python byte code
+PYTHONDONTWRITEBYTECODE=1
+
+This will enable FIPS mode before the initial startup.</fixtext><fix id="F-55078r808293_fix" /><check system="C-55124r808292_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Run the following command from the server command line:
+Note: Run this command as the account of last resort, as no other local user accounts should exist.
+
+splunk show fips-mode -auth &lt;username&gt;:&lt;password&gt;
+
+Verify that the command returns FIPS mode enabled.
+
+If the command returns FIPS mode disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-251687"><title>SRG-APP-000174-AU-002570</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251687r1043190_rule" weight="10.0" severity="low"><version>SPLK-CL-000400</version><title>Splunk Enterprise must be configured to enforce a 60-day maximum password lifetime restriction.</title><description>&lt;VulnDiscussion&gt;Any password, no matter how complex, can eventually be cracked. Therefore, passwords need to be changed at specific intervals. If the application does not limit the lifetime of passwords and force users to change their passwords, there is the risk that the system and/or application passwords could be compromised.
+
+This requirement does not include emergency administration accounts that are meant for access to the application in case of failure. These accounts are not required to have maximum password lifetime restrictions.
+
+In most enterprise environments, this requirement is usually mitigated by a properly configured external authentication system, like LDAP. Splunk local authentication takes precedence over other forms of authentication, and cannot be disabled. The mitigation settings in this requirement apply in the event a local account is created.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004066</ident><ident system="http://cyber.mil/cci">CCI-000199</ident><fixtext fixref="F-55079r819123_fix">If the authentication.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify the following lines in the authentication.conf file under the [splunk_auth]:
+
+expirePasswordDays = 60</fixtext><fix id="F-55079r819123_fix" /><check system="C-55125r819122_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the authentication.conf file.
+ 
+If the authentication.conf file does not exist, this is a finding.
+
+If the "expirePasswordDays" is missing or is configured to 61 or more, this is a finding.</check-content></check></Rule></Group><Group id="V-251688"><title>SRG-APP-000165-AU-002580</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251688r1015267_rule" weight="10.0" severity="low"><version>SPLK-CL-000410</version><title>Splunk Enterprise must be configured to prohibit password reuse for a minimum of five generations.</title><description>&lt;VulnDiscussion&gt;Password complexity, or strength, is a measure of the effectiveness of a password in resisting attempts at guessing and brute-force attacks. 
+
+To meet password policy requirements, passwords need to be changed at specific policy-based intervals. 
+
+If the information system or application allows the user to consecutively reuse their password when that password has exceeded its defined lifetime, the end result is a password that is not changed as per policy requirements.
+
+In most enterprise environments, this requirement is usually mitigated by a properly configured external authentication system, like LDAP. Splunk local authentication takes precedence over other forms of authentication, and cannot be disabled. The mitigation settings in this requirement apply in the event a local account is created.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-004061</ident><fixtext fixref="F-55080r819126_fix">If the authentication.conf file does not exist, copy the file from $SPLUNK_HOME/etc/system/default to the $SPLUNK_HOME/etc/system/local directory.
+
+Modify the following lines in the authentication.conf file under the [splunk_auth]:
+
+enablePasswordHistory = True
+passwordHistoryCount = 5</fixtext><fix id="F-55080r819126_fix" /><check system="C-55126r819125_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Examine the configuration.
+
+Navigate to the $SPLUNK_HOME/etc/system/local/ directory. View the authentication.conf file.
+ 
+If the authentication.conf file does not exist, this is a finding.
+
+If the "enablePasswordHistory" is missing or is configured to False, this is a finding.
+
+If the "passwordHistoryCount" is missing or is configured to 4 or less, this is a finding.</check-content></check></Rule></Group><Group id="V-251689"><title>SRG-APP-000610-AU-000050</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251689r1082345_rule" weight="10.0" severity="high"><version>SPLK-CL-000430</version><title>Splunk Enterprise must use TLS 1.2 and SHA-2 or higher cryptographic algorithms.</title><description>&lt;VulnDiscussion&gt;Without cryptographic integrity protections, information can be altered by unauthorized users without detection.
+
+To protect the integrity of the authenticator and authentication mechanism used for the cryptographic module used by the network device, the application, operating system, or protocol must be configured to use one of the following hash functions for hashing the password or other authenticator in accordance with SP 800-131Ar1: SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256, SHA3-224, SHA3-256, SHA3-384, and SHA3-512.
+
+Splunk Enterprise, by default, is compliant with this requirement. But since the settings can be overridden, the check and fix text in this requirement is necessary.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-000803</ident><fixtext fixref="F-55081r1082344_fix">Edit the following files in the $SPLUNK_HOME/etc/system/local folder:
+
+inputs.conf: Fix is applicable to the indexer, which may be a separate machine in a distributed environment.
+
+If the following lines do not exist, then the settings are compliant. If they exist, they must match the settings below or be removed:
+
+sslVersions = tls1.2
+cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+ecdhCurves = prime256v1, secp384r1, secp521r1
+
+outputs.conf: Check is applicable to the forwarder which is always a separate machine in the environment. 
+
+If the following lines do not exist, then the settings are compliant. If they exist, they must match the settings below or be removed:
+
+sslVersions = tls1.2
+cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+ecdhCurves = prime256v1, secp384r1, secp521r1
+
+server.conf
+
+If the following lines do not exist, then the settings are compliant. If they exist, they must match the settings below or be removed:
+
+sslVersions = tls1.2
+sslVersionsForClient = tls1.2
+cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:AES256-GCM-SHA384:AES128-GCM-SHA256:AES128-SHA256
+ecdhCurves = prime256v1, secp384r1, secp521r1
+
+web.conf: Check is applicable to search head or deployment server, which may be a separate machine in a distributed environment.
+
+If the following lines do not exist, then the settings are compliant. If they exist, they must match the settings below or be removed:
+
+sslVersions = tls1.2
+cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+ecdhCurves = prime256v1, secp384r1, secp521r1
+
+Check the following file in the /etc/openldap folder:
+
+ldap.conf
+
+Check for the following lines, set to match the settings below:
+
+#TLS_PROTOCOL_MIN: 3.1 for TLSv1.0, 3.2 for TLSv1.1, 3.3 for TLSv1.2.
+TLS_PROTOCOL_MIN 3.3
+TLS_CIPHER_SUITE ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+
+Note: Splunk Enterprise must operate in FIPS mode to limit the algorithms allowed.</fixtext><fix id="F-55081r1082344_fix" /><check system="C-55127r1082343_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Examine the configuration.
+
+Check the following files in the $SPLUNK_HOME/etc/system/local folder:
+
+inputs.conf: Check is applicable to the indexer which may be a separate machine in a distributed environment.
+
+If the following lines do not exist, then the settings are compliant. If they exist, they must match the settings below or this is a finding:
+
+sslVersions = tls1.2
+cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+ecdhCurves = prime256v1, secp384r1, secp521r1
+
+outputs.conf: Check is applicable to the forwarder, which is always a separate machine in the environment. 
+
+If the following lines do not exist, then the settings are compliant. If they exist, they must match the settings below or this is a finding:
+
+sslVersions = tls1.2
+cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+ecdhCurves = prime256v1, secp384r1, secp521r1
+
+server.conf
+
+If the following lines do not exist, then the settings are compliant. If they exist, they must match the settings below or it is a finding:
+
+sslVersions = tls1.2
+sslVersionsForClient = tls1.2
+cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:AES256-GCM-SHA384:AES128-GCM-SHA256:AES128-SHA256
+ecdhCurves = prime256v1, secp384r1, secp521r1
+
+web.conf: Check is applicable to search head or deployment server, which may be a separate machine in a distributed environment.
+
+If the following lines do not exist, then the settings are compliant. If they exist, they must match the settings below or it is a finding:
+
+sslVersions = tls1.2
+cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+ecdhCurves = prime256v1, secp384r1, secp521r1
+
+Check the following file in the /etc/openldap folder:
+
+ldap.conf
+
+Check for the following lines, they must match the settings below or it is a finding:
+
+#TLS_PROTOCOL_MIN: 3.1 for TLSv1.0, 3.2 for TLSv1.1, 3.3 for TLSv1.2.
+TLS_PROTOCOL_MIN 3.3
+TLS_CIPHER_SUITE ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+
+Note: Splunk Enterprise must operate in FIPS mode to limit the algorithms allowed.</check-content></check></Rule></Group><Group id="V-251690"><title>SRG-APP-000427-AU-000040</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251690r992050_rule" weight="10.0" severity="medium"><version>SPLK-CL-000450</version><title>Splunk Enterprise must only allow the use of DOD-approved certificate authorities for cryptographic functions.</title><description>&lt;VulnDiscussion&gt;Untrusted Certificate Authorities (CA) can issue certificates, but they may be issued by organizations or individuals that seek to compromise DOD systems or by organizations with insufficient security controls. If the CA used for verifying the certificate is not a DOD-approved CA, trust of this CA has not been established.
+
+The DOD will only accept PKI certificates obtained from a DOD-approved internal or external certificate authority. 
+
+Splunk Enterprise contains built-in certificates that are common across all Splunk installations, and are for initial deployment. These should not be used in any production environment.
+
+It is also recommended that the production certificates be stored in another location away from the Splunk default certificates, as that folder gets replaced on any upgrade of the application. An example would be to use a folder named /etc/system/DODcerts under the Splunk installation root folder.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002470</ident><ident system="http://cyber.mil/cci">CCI-004909</ident><ident system="http://cyber.mil/cci">CCI-004910</ident><fixtext fixref="F-55082r992049_fix">Request a DOD-approved certificate and a copy of the DOD root CA public certificate, and place the files in a location for Splunk use.
+
+Configure the certificate files to the PEM format, using the Splunk Enterprise system documentation.</fixtext><fix id="F-55082r992049_fix" /><check system="C-55128r992048_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>On the host OS of the server, verify the properties of the certificate used by Splunk to ensure that the Issuer is the DOD trusted CA.
+
+This can be verified by the command:
+
+openssl x509 -text -inform PEM -in &lt;name of cert&gt;
+
+If the certificate issuer is not a DOD trusted CA, then this is a finding.</check-content></check></Rule></Group><Group id="V-251691"><title>SRG-APP-000439-AU-004310</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251691r961632_rule" weight="10.0" severity="high"><version>SPLK-CL-000460</version><title>Splunk Enterprise must be configured to protect the confidentiality and integrity of transmitted information.</title><description>&lt;VulnDiscussion&gt;Without protection of the transmitted information, confidentiality and integrity may be compromised since unprotected communications can be intercepted and either read or altered. 
+
+This requirement applies only to those applications that are either distributed or can allow access to data non-locally. Use of this requirement will be limited to situations where the data owner has a strict requirement for ensuring data integrity and confidentiality is maintained at every step of the data transfer and handling process. When transmitting data, applications need to leverage transmission protection mechanisms, such as TLS, SSL VPNs, or IPsec.
+
+Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of organizational information can be accomplished by physical means (e.g., employing physical distribution systems) or by logical means (e.g., employing cryptographic techniques). If physical means of protection are employed, then logical means (cryptography) do not have to be employed, and vice versa.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-002418</ident><fixtext fixref="F-55083r819132_fix">Edit the following files in the installation to configure Splunk to use SSL certificates:
+
+This configuration is performed on the machine used as an indexer, which may be a separate machine in a distributed environment.
+
+$SPLUNK_HOME/etc/system/local/inputs.conf
+
+[splunktcp-ssl:9997]
+disabled = 0
+
+[SSL]
+serverCert = &lt;path to the DoD approved certificate in PEM format&gt;
+sslPassword = &lt;password for the certificate&gt;
+
+This configuration is performed on the machine used as a forwarder, which is always a separate machine regardless of environment.
+
+$SPLUNK_HOME/etc/system/local/outputs.conf
+
+[tcpout:group1]
+disabled = 0
+clientCert = &lt;path to the DoD approved certificate in PEM format&gt;
+sslPassword = &lt;password for the certificate&gt;</fixtext><fix id="F-55083r819132_fix" /><check system="C-55129r819131_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>Check the following files in the installation to verify Splunk uses SSL certificates for communication between the indexer and the forwarder:
+
+This check is performed on the machine used as an indexer, which may be a separate machine in a distributed environment.
+
+$SPLUNK_HOME/etc/system/local/inputs.conf
+
+[splunktcp-ssl:9997]
+disabled = 0
+
+[SSL]
+serverCert = &lt;path to the DoD approved certificate in PEM format&gt;
+sslPassword = &lt;password for the certificate&gt;
+
+If these settings are misconfigured, this is a finding.
+
+This configuration is performed on the machine used as a forwarder, which is always a separate machine regardless of environment.
+
+$SPLUNK_HOME/etc/system/local/outputs.conf
+
+[tcpout:group1]
+disabled = 0
+clientCert = &lt;path to the DoD approved certificate in PEM format&gt;
+sslPassword = &lt;password for the certificate&gt;
+
+If these settings are misconfigured, this is a finding.</check-content></check></Rule></Group><Group id="V-251692"><title>SRG-APP-000391-AU-002290</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-251692r992052_rule" weight="10.0" severity="high"><version>SPLK-CL-000490</version><title>Splunk Enterprise must accept the DOD CAC or other PKI credential for identity management and personal authentication.</title><description>&lt;VulnDiscussion&gt;The use of PIV credentials facilitates standardization and reduces the risk of unauthorized access.
+
+DOD has mandated the use of the CAC to support identity management and personal authentication for systems covered under Homeland Security Presidential Directive (HSPD) 12, as well as a primary component of layered protection for national security systems. DOD has approved other methods of PKI, including YubiKey, RSA tokens, etc.
+
+If the application cannot meet this requirement, the risk may be mitigated through use of an authentication server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Splunk Enterprise 8.x for Linux</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Splunk Enterprise 8.x for Linux</dc:subject><dc:identifier>5447</dc:identifier></reference><ident system="http://cyber.mil/cci">CCI-001953</ident><ident system="http://cyber.mil/cci">CCI-004047</ident><fixtext fixref="F-55084r808311_fix">Configure an SSO proxy service using Apache, IIS, F5, SAML, etc., to provide PKI credentials to Splunk Enterprise. 
+
+Examples for Apache and F5 are provided using the supplemental documentation included in this package to be used in addition to the Splunk documentation.</fixtext><fix id="F-55084r808311_fix" /><check system="C-55130r992051_chk"><check-content-ref href="Splunk_Enterprise_8.x_for_Linux_STIG.xml" name="M" /><check-content>If the instance being checked is in a distributed environment and has the web interface disabled, this check is Not Applicable.
+
+Verify that Splunk Enterprise is configured to use the DOD CAC or other PKI credential to log in to the application.
+
+If it is not configured to allow the use of the DOD CAC or other PKI credential, this is a finding.</check-content></check></Rule></Group></Benchmark>

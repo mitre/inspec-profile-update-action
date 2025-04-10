@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_HCD_for_ACF2_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-02-25">accepted</status><title>z/OS HCD for ACF2 Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224299" selected="true" /><select idref="V-224300" selected="true" /><select idref="V-224301" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224299" selected="true" /><select idref="V-224300" selected="true" /><select idref="V-224301" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224299" selected="true" /><select idref="V-224300" selected="true" /><select idref="V-224301" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224299" selected="true" /><select idref="V-224300" selected="true" /><select idref="V-224301" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224299" selected="true" /><select idref="V-224300" selected="true" /><select idref="V-224301" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224299" selected="true" /><select idref="V-224300" selected="true" /><select idref="V-224301" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224299" selected="true" /><select idref="V-224300" selected="true" /><select idref="V-224301" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224299" selected="true" /><select idref="V-224300" selected="true" /><select idref="V-224301" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224299" selected="true" /><select idref="V-224300" selected="true" /><select idref="V-224301" selected="true" /></Profile><Group id="V-224299"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224299r1081019_rule" weight="10.0" severity="medium"><version>ZHCDA000</version><title>IBM Hardware Configuration Definition (HCD) install data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;IBM HCD product has the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS HCD for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS HCD for ACF2</dc:subject><dc:identifier>4121</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-30544</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-25964r1081018_fix">The ISSO will ensure that update and allocate access to IBM HCD install data sets is limited to system programmers only, and all update and alter access is logged. Auditors, automated operations, and operators should have READ access.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update and/or alter access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+Data sets to be protected will be: 
+SYS1.SCBD*
+
+The following commands are provided as a sample for implementing dataset controls: 
+
+$KEY(SYS1)
+SCBD- UID(syspaudt) R(A) W(L) A(L) E(A)
+SCBD- UID(tstcaudt) R(A) W(L) A(L) E(A)
+SCBD- UID(audtaudt) R(A) E(A)
+SCBD- UID(autoaudt) R(A) E(A)
+SCBD- UID(operaudt) R(A) E(A)</fixtext><fix id="F-25964r1081018_fix" /><check system="C-25976r1070042_chk"><check-content-ref href="zOS_HCD_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(HCDRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZHCD0000)
+
+Verify that access to the IBM Hardware Configuration Definition (HCD) install data sets are properly restricted.
+ 
+The ACF2 data set rules for the data sets restricts READ access to auditors, automated operations, operators, and systems programming personnel.
+
+The ACF2 data set rules for the data sets restricts UPDATE and/or ALTER access to systems programming personnel.
+
+The ACF2 data set rules for the data sets specifies that all (i.e., failures and successes) UPDATE and/or ALTER access are logged.</check-content></check></Rule></Group><Group id="V-224300"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224300r1081041_rule" weight="10.0" severity="medium"><version>ZHCDA002</version><title>IBM Hardware Configuration Definition (HCD) User data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;IBM HCD product has the capability to use privileged functions and/or to have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS HCD for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS HCD for ACF2</dc:subject><dc:identifier>4121</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-30577</ident><ident system="http://cyber.mil/legacy">V-21592</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-25965r1081040_fix">The ISSO will ensure that update, and allocate access to program product user data sets is limited to system programmers and all update and allocate access is logged. Ensure that read access is limited to auditors, operations personnel, and automated operations users.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+Data sets to be protected will be:
+
+The production IODF data sets.  (i.e., hhhhhhhh.IODFnn)
+The working IODF data sets.  (i.e., hhhhhhhh.IODFnn.)
+The activity log for the IODF data sets.  (i.e., hhhhhhhh.IODFnn.ACTLOG)
+
+Note:	Currently on most CSD systems the prefix for these data sets is SYS3.IODF*.**.
+
+The following commands are provided as a sample for implementing dataset controls:
+
+SET RULE
+$KEY(S3I)
+$PREFIX(SYS3)
+IODF-.- UID(syspaudt) R(A) W(L) A(L) E(A) DATA(DEFAULT SYSPROG)
+IODF-.- UID(tstcaudt) R(A) W(L) A(L) E(A)
+IODF-.- UID(audtaudt) R(A) E(A) DATA(DEFAULT Auditor)
+IODF-.- UID(autoaudt) R(A) E(A)
+IODF-.- UID(operaudt) R(A) E(A)</fixtext><fix id="F-25965r1081040_fix" /><check system="C-25977r1070045_chk"><check-content-ref href="zOS_HCD_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(HCDUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZHCD0002)
+
+Verify that the access to the IBM HCD install data sets is properly restricted. The data sets to be protected are the production and working IODF data sets as well as the activity log for the IODF data sets.
+
+Note:	Currently on most CSD systems the prefix for these data sets is SYS3.IODF*.**.
+
+The ACF2 data set rules for the data sets does not restrict UPDATE and/or ALTER access to systems programming personnel.
+
+The ACF2 data set rules for the data sets does not restrict READ access to automated operations users and operations personnel.
+
+The ACF2 data set rules for the datasets does not specify that all (i.e., failures and successes) UPDATE and/or ALTER access will be logged.
+
+If all of the above are untrue, this is not a finding.
+
+If any of the above is true, this is a finding. </check-content></check></Rule></Group><Group id="V-224301"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224301r1069981_rule" weight="10.0" severity="medium"><version>ZHCDA020</version><title>IBM Hardware Configuration Definition (HCD) resources are not properly defined and protected.</title><description>&lt;VulnDiscussion&gt;Program products can run with sensitive system privileges, and potentially can circumvent system controls. Failure to properly control access to program product resources could result in the compromise of the operating system environment, and compromise the confidentiality of customer data. Many utilities assign resource controls that can be granted to system programmers only in greater than read authority. Resources are also granted to certain non-systems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS HCD for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS HCD for ACF2</dc:subject><dc:identifier>4121</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-30582</ident><ident system="http://cyber.mil/legacy">V-17947</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-25966r1069980_fix">The systems programmer will work with the ISSO to verify that the following are properly specified in the Access Control Program (ACP).
+
+1) The ACF2 rules for the CBD resource specify a default access of NONE.
+2) There are no ACF2 rules that allow access to the CBD resource.
+
+Example:
+
+SET R(FAC)
+$KEY(CBD) TYPE(FAC)
+ - UID(*) PREVENT DATA(SRR FINDING FOR HCD)
+
+3) The ACF2 rules for the CBD.CPC.IOCDS and CBD.CPC.IPLPARM resources are restricted access to systems programming and operations personnel as well as possibly any automated operations batch users with access of READ.
+4) The ACF2 rules for the CBD.CPC.IOCDS and CBD.CPC.IPLPARM resources are restricted access to systems programming with access of UPDATE and logged.
+
+Example:
+
+SET R(FAC)
+$KEY(CBD) TYPE(FAC)
+CPC.IOCDS.- UID(syspaudt) SERVICE(READ,UPDATE) LOG
+CPC.IOCDS.- UID(operaudt) SERVICE(READ) ALLOW
+CPC.IOCDS.- UID(autoaudt) SERVICE(READ) ALLOW
+CPC.IPLPARM.- UID(syspaudt) SERVICE(READ,UPDATE) LOG
+CPC.IPLPARM.- UID(operaudt) SERVICE(READ) ALLOW
+CPC.IPLPARM.- UID(autoaudt) SERVICE(READ) ALLOW</fixtext><fix id="F-25966r1069980_fix" /><check system="C-25978r1069979_chk"><check-content-ref href="zOS_HCD_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the ACF2 Data Collection and Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(FACILITY)
+-	ACF2CMDS.RPT(RESOURCE) - Alternate report
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZHCD0020)
+
+Review the following items for the IBM Hardware Configuration Definition (HCD) resources in the FACILITY resource class, TYPE(FAC):
+
+1. The ACF2 rules for the CBD resource specify a default access of NONE.
+2. There are no ACF2 rules that allow access to the CBD resource.
+3. The ACF2 rules for the CBD.CPC.IOCDS and CBD.CPC.IPLPARM resources are restricted access to systems programming and operations personnel as well as possibly any automated operations batch users with access of READ.
+4. The ACF2 rules for the CBD.CPC.IOCDS and CBD.CPC.IPLPARM resources are restricted access to systems programming with access of UPDATE and logged.
+
+If any of the above are untrue, this is a finding.
+
+If all items above are true, this is not a finding.</check-content></check></Rule></Group></Benchmark>

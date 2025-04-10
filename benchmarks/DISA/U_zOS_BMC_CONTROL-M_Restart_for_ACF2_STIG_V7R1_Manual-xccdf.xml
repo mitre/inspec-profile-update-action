@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_BMC_CONTROL-M_Restart_for_ACF2_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-02-24">accepted</status><title>z/OS BMC CONTROL-M/Restart for ACF2 Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224121" selected="true" /><select idref="V-224122" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224121" selected="true" /><select idref="V-224122" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224121" selected="true" /><select idref="V-224122" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224121" selected="true" /><select idref="V-224122" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224121" selected="true" /><select idref="V-224122" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224121" selected="true" /><select idref="V-224122" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224121" selected="true" /><select idref="V-224122" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224121" selected="true" /><select idref="V-224122" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224121" selected="true" /><select idref="V-224122" selected="true" /></Profile><Group id="V-224121"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224121r1070020_rule" weight="10.0" severity="medium"><version>ZCTRA000</version><title>BMC CONTROL-M/Restart installation data sets will be properly protected.</title><description>&lt;VulnDiscussion&gt;BMC CONTROL-M/Restart installation data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS BMC CONTROL-M Restart for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS BMC CONTROL-M Restart for ACF2</dc:subject><dc:identifier>4105</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-31831</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-25782r1070019_fix">The ISSO will ensure that WRITE and/or greater access to BMC CONTROL-M/Restart installation data sets are limited to systems programmers only, and all WRITE and/or greater access is logged. READ access can be given to auditors, BMC users, and BMC STCs and/or batch users. All failures and successful WRITE and/or greater accesses are logged.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update and/or alter access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+(Note: The data sets and/or data set prefixes identified below are examples of a possible installation. The actual data sets and/or prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+Data sets to be protected will be: 
+SYS2.IOA.*.CTRO.
+
+The following commands are provided as a sample for implementing data set controls: 
+
+$KEY(SYS2)
+IOA.-.CTRO.-  UID(&lt;syspaudt&gt;) R(A) W(L) A(L) E(A)
+IOA.-.CTRO.-  UID(&lt;audtaudt&gt;) R(A)  E(A)
+IOA.-.CTRO.-  UID(&lt;bmcuser&gt;) R(A)  E(A)
+IOA.-.CTRO.-  UID(CONTROLR) R(A)  E(A)</fixtext><fix id="F-25782r1070019_fix" /><check system="C-25794r1070018_chk"><check-content-ref href="zOS_BMC_CONTROL-M_Restart_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(CTRRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZCTR0000)
+
+Verify that the accesses to the BMC CONTROL-M/Restart installation data sets are properly restricted. If the following guidance is true, this is not a finding.
+ 
+The ACF2 data set access authorizations restrict READ access to auditors, BMC users, and BMC STCs and/or batch users.
+
+The ACF2 data set access authorizations restrict WRITE and/or greater access to systems programming personnel.
+
+The ACF2 data set access authorizations specify that all (i.e., failures and successes) WRITE and/or greater access are logged.</check-content></check></Rule></Group><Group id="V-224122"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224122r1070023_rule" weight="10.0" severity="medium"><version>ZCTRA002</version><title>BMC CONTROL-M/Restart Archived Sysout data sets must be properly protected.</title><description>&lt;VulnDiscussion&gt;BMC CONTROL-M/Restart Archived Sysout data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS BMC CONTROL-M Restart for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS BMC CONTROL-M Restart for ACF2</dc:subject><dc:identifier>4105</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-21592</ident><ident system="http://cyber.mil/legacy">SV-32218</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-25783r1070022_fix">Ensure that WRITE and/or greater access to BMC CONTROL-M/Restart Archived Sysout data sets are limited to production control scheduling personnel, scheduled batch users, systems programmers, and the BMC STCs and/or batch users only. READ access can be given to auditors and BMC users.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. 
+
+The installing systems programmer will identify if any additional groups have update and/or alter access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+(Note: The data sets and/or data set prefixes identified below are examples of a possible installation. The actual data sets and/or prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+Data sets to be protected will be: 
+CTRSYS.
+
+The following commands are provided as a sample for implementing data set controls: 
+
+$KEY(CTRSYS)
+- UID(&lt;syspaudt&gt;) R(A) W(A) A(A) E(A)
+- UID(CONTROLM) R(A) W(A) A(A) E(A)
+- UID(CONTDAY) R(A) W(A) A(A) E(A)
+- UID(&lt;audtaudt&gt;) R(A) E(A)
+- UID(&lt;bmcuser&gt;) R(A) E(A)
+- UID(&lt;autoaudt&gt;) R(A) W(A) A(A) E(A)
+- UID(&lt;pcspaudt&gt;) R(A) W(A) A(A) E(A)</fixtext><fix id="F-25783r1070022_fix" /><check system="C-25795r1070021_chk"><check-content-ref href="zOS_BMC_CONTROL-M_Restart_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(CTRUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZCTR0002)
+
+Verify that the accesses to the BMC CONTROL-M/Restart Archived Sysout data sets are properly restricted. If the following guidance is true, this is not a finding.
+
+The ACF2 data set access authorizations restrict READ access to auditors and BMC Users.
+
+The ACF2 data set access authorizations restrict WRITE and/or greater access to Production Control Scheduling personnel, scheduled batch user(s), systems programming personnel, and the BMC STCs and/or batch users.</check-content></check></Rule></Group></Benchmark>

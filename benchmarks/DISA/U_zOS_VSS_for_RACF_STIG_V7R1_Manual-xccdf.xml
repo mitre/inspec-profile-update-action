@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_VSS_for_RACF_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-03-04">accepted</status><title>z/OS VSS for RACF  Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224543" selected="true" /><select idref="V-224544" selected="true" /><select idref="V-224545" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224543" selected="true" /><select idref="V-224544" selected="true" /><select idref="V-224545" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224543" selected="true" /><select idref="V-224544" selected="true" /><select idref="V-224545" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224543" selected="true" /><select idref="V-224544" selected="true" /><select idref="V-224545" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224543" selected="true" /><select idref="V-224544" selected="true" /><select idref="V-224545" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224543" selected="true" /><select idref="V-224544" selected="true" /><select idref="V-224545" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224543" selected="true" /><select idref="V-224544" selected="true" /><select idref="V-224545" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224543" selected="true" /><select idref="V-224544" selected="true" /><select idref="V-224545" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224543" selected="true" /><select idref="V-224544" selected="true" /><select idref="V-224545" selected="true" /></Profile><Group id="V-224543"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224543r1082311_rule" weight="10.0" severity="medium"><version>ZVSSR000</version><title>Vanguard Security Solutions (VSS) Install data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;Vanguard Security Solutions (VSS) Install data sets provide the capability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS VSS for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS VSS for RACF</dc:subject><dc:identifier>4165</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-24657</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26214r1082311_fix">The ISSO will ensure that update and alter access to program product install data sets is limited to system programmers, and read access is limited to security personnel and auditors, and all update and allocate access is logged.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+Data set prefix to be protected will be:
+
+SYS2.VSS.
+SYS2A.VSS.
+SYS3.VSS.VANOPTS
+
+The following commands are provided as a sample for implementing dataset controls: 
+
+ad 'sys2.vss.**' uacc(none) owner(sys2) -
+ audit(success(update) failures(read)) -
+ data('Vendor DS Profile: Vanguard Security Solutions')
+pe 'sys2.vss.**' id(syspaudt) acc(a)
+pe 'sys2.vss.**' id(secaaudt secdaudt audtaudt) acc(r)
+
+ad 'sys2a.vss.**' uacc(none) owner(sys2a) -                  
+ audit(success(update) failures(read)) -                        
+ data('Vendor Loadlib: Vanguard Security Solutions')
+pe 'sys2a.vss.**' id(syspaudt) acc(a) 
+pe 'sys2a.vss.**' id(secaaudt secdaudt audtaudt) acc(r)
+
+ad 'sys3.vss.vanopts.**' uacc(none) owner(sys3) -
+ audit(success(update) failures(read)) -
+ data('Site Customized DS Profile: Vanguard Security Solutions')
+pe 'sys3.vss.vanopts.**' id(syspaudt) acc(a)
+pe 'sys3.vss.vanopts.**' id(secaaudt secdaudt audtaudt) acc(r)</fixtext><fix id="F-26214r1082311_fix" /><check system="C-26226r1070097_chk"><check-content-ref href="zOS_VSS_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(VSSRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZVSS0000)
+
+Verify that access to the Vanguard Security Solutions (VSS) Install data sets are properly restricted.
+ 
+The RACF data set rules for the product install data sets do not restrict UPDATE and/or ALTER access to systems programming personnel.
+
+The RACF data set rules for the product install data sets do not restrict READ access to systems programming personnel, security personnel and auditors.
+
+The RACF data set rules for the product install data sets do not specify that all (i.e., failures and successes) UPDATE and/or ALTER access will be logged.
+
+If all of the above are untrue, this is not a finding.
+
+If any of the above is true, this is a finding.</check-content></check></Rule></Group><Group id="V-224544"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224544r1082312_rule" weight="10.0" severity="medium"><version>ZVSSR002</version><title>Vanguard Security Solutions (VSS) User data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;VSS User data sets provide the capability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS VSS for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS VSS for RACF</dc:subject><dc:identifier>4165</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-24915</ident><ident system="http://cyber.mil/legacy">V-21592</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-26215r1082312_fix">The ISSO will ensure that read, update, and alter access to program product user data sets is limited to system programmers, security personnel, and auditors and all update and alter access is logged.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and alter access is logged. The installing systems programmer will identify if any additional groups have update access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+Data set prefix to be protected will be:
+
+SYS3.VSS.
+
+The above prefix can specify specific data sets, these would include the VSAM and JCL data sets. The following commands are provided as a sample for implementing dataset controls: 
+
+ad 'sys3.vss.**' uacc(none) owner(sys3) -                  
+ audit(success(update) failures(read)) -                        
+ data('Site Customized DS Profile: Vanguard Security Solutions')
+pe 'sys3.vss.**' id(syspaudt secaaudt audtaudt) acc(a)</fixtext><fix id="F-26215r1082312_fix" /><check system="C-26227r1070076_chk"><check-content-ref href="zOS_VSS_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(VSSUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZVSS0002)
+
+Verify that access to the Vanguard Security Solutions (VSS) User data sets are properly restricted.
+
+The RACF data set rules for the product user data sets do not restrict READ, UPDATE, and/or ALTER access to systems programming personnel, security personnel, and auditors.
+
+The RACF data set rules for the product user data sets do not specify that all (i.e., failures and successes) UPDATE and/or ALTER access will be logged.
+
+If all of the above are untrue, this is not a finding.
+
+If any of the above is true, this is a finding.</check-content></check></Rule></Group><Group id="V-224545"><title>SRG-OS-000018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224545r1070125_rule" weight="10.0" severity="medium"><version>ZVSSR020</version><title>Vanguard Security Solutions resources must be properly defined and protected.</title><description>&lt;VulnDiscussion&gt;Program products can run with sensitive system privileges, and potentially can circumvent system controls. Failure to properly control access to program product resources could result in the compromise of the operating system environment, and compromise the confidentiality of customer data. Many utilities assign resource controls that can be granted to systems programmers only in greater than read authority. Resources are also granted to certain nonsystems personnel with read only authority.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS VSS for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS VSS for RACF</dc:subject><dc:identifier>4165</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-24912</ident><ident system="http://cyber.mil/legacy">V-17947</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26216r1070124_fix">Configure ACP resource definitions in accordance with Vanguard Security Solutions Resources and Vanguard Security Solutions Resources Descriptions tables in the z/OS STIG Addendum. These tables list the resources, descriptions, and access and logging requirements. Ensure the guidelines for the resources and/or generic equivalent specified in the z/OS STIG Addendum are followed.
+
+(Note: The resources, and/or resource prefixes identified below are examples of a possible installation. The actual resources, and/or resource prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+The following commands are provided as a sample for implementing resource controls: 
+
+rdef facility vra$.acstask.** uacc(none) owner(admin) -
+audit(all(read)) -
+data('protected per zvssr020')
+
+pe vra$.acstask.** cl(facility) id(&lt;audtaudt&gt;) acc(read)
+pe vra$.acstask.** cl(facility) id(&lt;secaaudt&gt;) acc(read)   
+Sample scope definition:
+rdef facility vsr$.** uacc(none) owner(admin) audi(a(r)) -      
+ data('deny-by-default for Vanguard Advisor Reporter')          
+rdef facility vsr$.scope uacc(none) owner(admin) -              
+ audit(a(u)) data('Vanguard Advisor Reporter Auth Scope')</fixtext><fix id="F-26216r1070124_fix" /><check system="C-26228r1070123_chk"><check-content-ref href="zOS_VSS_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Access Control Program (ACP) Data Collection and Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(FACILITY)
+-	RACFCMDS.RPT(FACILITY) - Alternate report
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZVSS0020)
+
+Verify that the accesses to resources and/or generic equivalent are properly restricted according to the requirements specified in Vanguard Security Solutions Resources table in the z/OS STIG Addendum. If the following guidance is true, this is not a finding.
+
+The RACF resources are defined with a default access of NONE.
+
+The RACF resource access authorizations restrict access to the appropriate personnel.
+
+The RACF resource logging requirements are specified.
+
+The RACF resource access authorizations are defined with UACC(NONE) and NOWARNING.
+
+The RACF resource VSR$.SCOPE allowed READ access when approved and documented by ISSM  or equivalent Security Authority.</check-content></check></Rule></Group></Benchmark>

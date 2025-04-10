@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_WebsphereMQ_for_TSS_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-02-24">accepted</status><title>zOS WebsphereMQ for TSS Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-225623" selected="true" /><select idref="V-225624" selected="true" /><select idref="V-225625" selected="true" /><select idref="V-225626" selected="true" /><select idref="V-225627" selected="true" /><select idref="V-225628" selected="true" /><select idref="V-225629" selected="true" /><select idref="V-225630" selected="true" /><select idref="V-225631" selected="true" /><select idref="V-225632" selected="true" /><select idref="V-225633" selected="true" /><select idref="V-225634" selected="true" /><select idref="V-225635" selected="true" /><select idref="V-225636" selected="true" /><select idref="V-225637" selected="true" /><select idref="V-225638" selected="true" /><select idref="V-225639" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-225623" selected="true" /><select idref="V-225624" selected="true" /><select idref="V-225625" selected="true" /><select idref="V-225626" selected="true" /><select idref="V-225627" selected="true" /><select idref="V-225628" selected="true" /><select idref="V-225629" selected="true" /><select idref="V-225630" selected="true" /><select idref="V-225631" selected="true" /><select idref="V-225632" selected="true" /><select idref="V-225633" selected="true" /><select idref="V-225634" selected="true" /><select idref="V-225635" selected="true" /><select idref="V-225636" selected="true" /><select idref="V-225637" selected="true" /><select idref="V-225638" selected="true" /><select idref="V-225639" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-225623" selected="true" /><select idref="V-225624" selected="true" /><select idref="V-225625" selected="true" /><select idref="V-225626" selected="true" /><select idref="V-225627" selected="true" /><select idref="V-225628" selected="true" /><select idref="V-225629" selected="true" /><select idref="V-225630" selected="true" /><select idref="V-225631" selected="true" /><select idref="V-225632" selected="true" /><select idref="V-225633" selected="true" /><select idref="V-225634" selected="true" /><select idref="V-225635" selected="true" /><select idref="V-225636" selected="true" /><select idref="V-225637" selected="true" /><select idref="V-225638" selected="true" /><select idref="V-225639" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-225623" selected="true" /><select idref="V-225624" selected="true" /><select idref="V-225625" selected="true" /><select idref="V-225626" selected="true" /><select idref="V-225627" selected="true" /><select idref="V-225628" selected="true" /><select idref="V-225629" selected="true" /><select idref="V-225630" selected="true" /><select idref="V-225631" selected="true" /><select idref="V-225632" selected="true" /><select idref="V-225633" selected="true" /><select idref="V-225634" selected="true" /><select idref="V-225635" selected="true" /><select idref="V-225636" selected="true" /><select idref="V-225637" selected="true" /><select idref="V-225638" selected="true" /><select idref="V-225639" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-225623" selected="true" /><select idref="V-225624" selected="true" /><select idref="V-225625" selected="true" /><select idref="V-225626" selected="true" /><select idref="V-225627" selected="true" /><select idref="V-225628" selected="true" /><select idref="V-225629" selected="true" /><select idref="V-225630" selected="true" /><select idref="V-225631" selected="true" /><select idref="V-225632" selected="true" /><select idref="V-225633" selected="true" /><select idref="V-225634" selected="true" /><select idref="V-225635" selected="true" /><select idref="V-225636" selected="true" /><select idref="V-225637" selected="true" /><select idref="V-225638" selected="true" /><select idref="V-225639" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-225623" selected="true" /><select idref="V-225624" selected="true" /><select idref="V-225625" selected="true" /><select idref="V-225626" selected="true" /><select idref="V-225627" selected="true" /><select idref="V-225628" selected="true" /><select idref="V-225629" selected="true" /><select idref="V-225630" selected="true" /><select idref="V-225631" selected="true" /><select idref="V-225632" selected="true" /><select idref="V-225633" selected="true" /><select idref="V-225634" selected="true" /><select idref="V-225635" selected="true" /><select idref="V-225636" selected="true" /><select idref="V-225637" selected="true" /><select idref="V-225638" selected="true" /><select idref="V-225639" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-225623" selected="true" /><select idref="V-225624" selected="true" /><select idref="V-225625" selected="true" /><select idref="V-225626" selected="true" /><select idref="V-225627" selected="true" /><select idref="V-225628" selected="true" /><select idref="V-225629" selected="true" /><select idref="V-225630" selected="true" /><select idref="V-225631" selected="true" /><select idref="V-225632" selected="true" /><select idref="V-225633" selected="true" /><select idref="V-225634" selected="true" /><select idref="V-225635" selected="true" /><select idref="V-225636" selected="true" /><select idref="V-225637" selected="true" /><select idref="V-225638" selected="true" /><select idref="V-225639" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-225623" selected="true" /><select idref="V-225624" selected="true" /><select idref="V-225625" selected="true" /><select idref="V-225626" selected="true" /><select idref="V-225627" selected="true" /><select idref="V-225628" selected="true" /><select idref="V-225629" selected="true" /><select idref="V-225630" selected="true" /><select idref="V-225631" selected="true" /><select idref="V-225632" selected="true" /><select idref="V-225633" selected="true" /><select idref="V-225634" selected="true" /><select idref="V-225635" selected="true" /><select idref="V-225636" selected="true" /><select idref="V-225637" selected="true" /><select idref="V-225638" selected="true" /><select idref="V-225639" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-225623" selected="true" /><select idref="V-225624" selected="true" /><select idref="V-225625" selected="true" /><select idref="V-225626" selected="true" /><select idref="V-225627" selected="true" /><select idref="V-225628" selected="true" /><select idref="V-225629" selected="true" /><select idref="V-225630" selected="true" /><select idref="V-225631" selected="true" /><select idref="V-225632" selected="true" /><select idref="V-225633" selected="true" /><select idref="V-225634" selected="true" /><select idref="V-225635" selected="true" /><select idref="V-225636" selected="true" /><select idref="V-225637" selected="true" /><select idref="V-225638" selected="true" /><select idref="V-225639" selected="true" /></Profile><Group id="V-225623"><title>SRG-OS-000033</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225623r958408_rule" weight="10.0" severity="high"><version>ZWMQ0011</version><title>WebSphere MQ channel security must be implemented in accordance with security requirements.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ Channel security can be configured to provide authentication, message privacy, and message integrity between queue managers. Secure Sockets Layer (SSL) uses encryption techniques, digital signatures and digital certificates to provide message privacy, message integrity and mutual authentication between clients and servers.
+
+Failure to properly secure a WebSphere MQ channel may lead to unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of some system services, applications, and customer data.
+
+Satisfies: SRG-OS-000505, SRG-OS-000555&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7259</ident><ident system="http://cyber.mil/legacy">V-6958</ident><ident system="http://cyber.mil/cci">CCI-000068</ident><ident system="http://cyber.mil/cci">CCI-002421</ident><ident system="http://cyber.mil/cci">CCI-002423</ident><ident system="http://cyber.mil/cci">CCI-002450</ident><fixtext fixref="F-27312r868767_fix">The system programmer and the ISSO will review the WebSphere MQ Screen interface invoked by the REXX CSQOREXX. Reviewing the channel's SSLCIPH setting.
+
+Display the channel properties and look for the "SSL Cipher Specification" value.
+
+Ensure that a FIPS 140-2 compliant value is shown.
+
+ECDHE_ECDSA_AES_128_CBC_SHA256
+ECDHE_ECDSA_AES_256_CBC_SHA384
+ECDHE_RSA_AES_128_CBC_SHA256
+ECDHE_RSA_AES_256_CBC_SHA384
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+
+Note that both ends of the channel must specify the same cipher specification. 
+
+Repeat these steps for each queue manager ssid identified.</fixtext><fix id="F-27312r868767_fix" /><check system="C-27324r868766_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following report produced by the z/OS Data Collection:
+
+- MQSRPT(ssid)
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+Collect the following Information for WebSphere MQ and MQSeries queue manager.
+
+- If a WebSphere MQ queue manager communicates with a MQSeries queue manager, provide the WebSphere MQ queue manager and channel names used to connect with MQSeries.
+
+Automated Analysis requires Additional Analysis.
+Automated Analysis
+Refer to the following report produced by the z/OS Data Collection:
+
+- PDI(ZWMQ0011)
+
+If the following guidelines are true for each channel definition displayed from the DISPLAY CHANNEL command, this is not a finding.
+
+___ Verify that each WebSphere MQ channel is using SSL by checking for the SSLCIPH parameter, which must specify a FIPS 140-2 compliant value of the following: (Note: Both ends of the channel must specify the same cipher specification.)
+
+ECDHE_ECDSA_AES_128_CBC_SHA256
+ECDHE_ECDSA_AES_256_CBC_SHA384
+ECDHE_RSA_AES_128_CBC_SHA256
+ECDHE_RSA_AES_256_CBC_SHA384
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+
+___ Repeat the above step for each queue manager ssid identified.</check-content></check></Rule></Group><Group id="V-225624"><title>SRG-OS-000403</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225624r958868_rule" weight="10.0" severity="medium"><version>ZWMQ0012</version><title>WebSphere MQ channel security is not implemented in accordance with security requirements.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ channel security can be configured to provide authentication, message privacy, and message integrity between queue managers. WebSphere MQ channels use SSL encryption techniques, digital signatures and digital certificates to provide message privacy, message integrity and mutual authentication between clients and servers.
+
+Failure to properly secure a WebSphere MQ channel may lead to unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of some system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-111901</ident><ident system="http://cyber.mil/legacy">V-6980</ident><ident system="http://cyber.mil/cci">CCI-002470</ident><fixtext fixref="F-27313r868770_fix">Refer to the following report produced by the z/OS Data Collection:
+
+- MQSRPT(ssid)
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier). 
+
+1)	Find the DISPLAY QMGR SSLKEYR command to locate the start of the Queue Manager definitions.
+2)	Verify that each WebSphere MQ queue manager is using a digital certificate by reviewing the SSLKEYR parameter to ensure that a keyring is identified. i.e. SSLKEYR(sslkeyring-id)
+3)	Issue the following TSS commands, where ssidCHIN is the lid for the WebSphere MQ Channel Initiator's userid and sslkeyring-id is obtain from the above action:
+
+TSS LIST(ssidCHIN) KEYRING(sslkeyring-id)
+
+NOTE: The sslkeyring-id is case sensitive.
+
+In the output find the DIGICERT field for ACID(ssidCHIN). Use this DIGICERT in the following command:
+
+TSS LIST(ssidCHIN) DIGICERT(digicert)
+
+NOTE: The Certificate Label Name is case sensitive.
+
+Review the Issuer's Name field in the resulting output for information of any of the following:
+
+OU=PKI.OU=DoD.O=U.S. Government.C=US
+OU=ECA.O=U.S. Government.C=US
+
+4)	Repeat these steps for each queue manager ssid identified.
+
+To implement the requirements stated above, the following two items are provided which attempt to assist with (1) Technical "how to" information and (2) A DISA Point of contact for obtaining SSL certificates for CSD WebSphere MQ channels:
+
+1. Review the information available on setting up SSL, Keyrings, and Digital Certificates in the CA TSS Cookbook regarding usage of the TSS commands to administer PKI Certificates as well as the WebSphere MQ Security manual. Also review the information contained in the documentation provided as part of the install package from the DISA SSO Resource Management Factory (formerly Software Factory).
+
+2. For information on obtaining an SSL certificate in the DISA CSD environment, send email inquiry to disaraoperations@disa.mil for more info. 
+
+</fixtext><fix id="F-27313r868770_fix" /><check system="C-27325r868769_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the z/OS Data Collection:
+
+- MQSRPT(ssid)
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier). To determine which Release of WebSphere MQ, review ssid reports for message CSQU000I.
+
+Collect the following Information for WebSphere MQ queue manager
+
+- If a WebSphere MQ queue manager communicates with a MQSeries queue manager, provide the WebSphere MQ queue manager and channel names used to connect with MQSeries.
+- If any WebSphere MQ channels are used to communicate within the enclave, provide a list of channels and provide documentation regarding the sensitivity of the information on the channel.
+
+b) Review the ssid report(s) and perform the following steps:
+
+1) Find the DISPLAY QMGR SSLKEYR command to locate the start of the Queue Manager definitions.
+2) Verify that each WebSphere MQ 5.3 queue manager is using a digital certificate by reviewing the SSLKEYR parameter to ensure that a keyring is identified. i.e. SSLKEYR(sslkeyring-id)
+3) Issue the following TSS commands, where ssidCHIN is the Acid for the WebSphere MQ Channel Initiator's userid and sslkeyring-id is obtained from the above action:
+
+TSS LIST(ssidCHIN) KEYRING(sslkeyring-id)
+
+NOTE: The sslkeyring-id is case sensitive.
+
+In the output find the DIGICERT field for ACID(ssidCHIN). Use this DIGICERT in the following command:
+
+TSS LIST(ssidCHIN) DIGICERT(digicert)
+
+NOTE: The digicert is case sensitive.
+
+Review the ISSUER DISTINGUISHED NAME field in the resulting output for information of any of the following:
+
+OU=PKI.OU=DoD.O=U.S. Government.C=US
+OU=ECA.O=U.S. Government.C=US
+
+4) Repeat these steps for each queue manager ssid identified.
+
+c) If the all of the items in (b) above are true, there is no finding.
+
+d) If any of the items in (b) above are untrue, this is a finding.</check-content></check></Rule></Group><Group id="V-225625"><title>SRG-OS-000480</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225625r959010_rule" weight="10.0" severity="medium"><version>ZWMQ0014</version><title>Production WebSphere MQ Remotes must utilize Certified Name Filters (CNF).</title><description>&lt;VulnDiscussion&gt;IBM WebSphere MQ can use a user ID associated with an ACP certificate as a channel user ID. When an entity at one end of an SSL channel receives a certificate from a remote connection, the entity asks The ACP if there is a user ID associated with that certificate. The entity uses that user ID as the channel user ID. If there is no user ID associated with the certificate, the entity uses the user ID under which the channel initiator is running. Without a validly defined Certificate Name Filter for the entity IBM WebSphere MQ will set the channel user ID to the default.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-41848</ident><ident system="http://cyber.mil/legacy">V-31561</ident><ident system="http://cyber.mil/cci">CCI-000366</ident><ident system="http://cyber.mil/cci">CCI-001133</ident><fixtext fixref="F-27314r472678_fix">The responsible MQ System programmer(s) shall create and maintain a spread sheet that contains a list of all Production WebSphere MQ Remotes, associated individual USERIDs with corresponding valid Certified Name Filters (CNF). This documentation will be reviewed and validated annually by responsible MQ System programmer(s) and forwarded for approval by the ISSM.
+
+The ISSO will define the associated USERIDs, the CNF, and grant the minimal need to know access, by granting only the required resources and Commands for each USERID in the ACP. See IBM WebSphere MQ Security manual for details on defining CNF for WebSphere MQ.
+
+Generic access shall not be granted such as resource permission at the SSID. MQ resource level.
+</fixtext><fix id="F-27314r472678_fix" /><check system="C-27326r868772_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>Validate that the list of all Production WebSphere MQ Remotes exist, and contains approved Certified Name Filters and associated USERIDS.
+
+If the filter(s) is (are) defined, accurate and has been approved by Vulnerability ICER0030 and the associated USERID(s) is only granted need to know permissions and authority to resources and commands, this is not a finding. 
+
+If there is no Certificate Name Filter for WebSphere MQ Remotes this is a finding.
+
+Note: Improper use of CNF filters for MQ Series will result in the following Message ID.
+
+CSQX632I found in the following example:
+
+CSQX632I csect-name SSL certificate has no
+associated user ID, remote channel
+channel-name - channel initiator user ID
+used</check-content></check></Rule></Group><Group id="V-225626"><title>SRG-OS-000163</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225626r1070323_rule" weight="10.0" severity="medium"><version>ZWMQ0020</version><title>User timeout parameter values for WebSphere MQ queue managers are not specified in accordance with security requirements.
+</title><description>&lt;VulnDiscussion&gt;Users signed on to a WebSphere MQ queue manager could leave their terminals unattended for long periods of time.  This may allow unauthorized individuals to gain access to WebSphere MQ resources and application data.  This exposure could compromise the availability, integrity, and confidentiality of some system services and application data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-3903</ident><ident system="http://cyber.mil/legacy">SV-3903</ident><ident system="http://cyber.mil/cci">CCI-001133</ident><fixtext fixref="F-27315r1070322_fix">Review the WebSphere MQ System Setup Guide and the information on the ALTER SECURITY command in the WebSphere MQ Script (MQSC) Command Reference.
+
+Ensure the values for the TIMEOUT and INTERVAL parameters are specified in accordance with security requirements.</fixtext><fix id="F-27315r1070322_fix" /><check system="C-27327r1070321_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following report produced by the z/OS Data Collection:
+
+-	MQSRPT(ssid)
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+Automated Analysis
+Refer to the following report produced by the z/OS Data Collection:
+
+-	PDI(ZWMQ0020)
+
+Review the ssid report(s) and perform the following steps:
+
+1. Find the DISPLAY SECURITY command to locate the start of the security parameter settings.
+2. Review the CSQH015I and CSQH016I messages to determine the Timeout and Interval parameter settings respectively.
+3. Repeat these steps for each queue manager ssid.
+
+The standard values are:
+
+TIMEOUT(15)
+INTERVAL(5)
+
+If the Timeout and Interval values conform to the standard values, this is not a finding.
+
+If the Timeout and/or Interval values do not conform to the standard values, this is a finding.</check-content></check></Rule></Group><Group id="V-225627"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225627r958482_rule" weight="10.0" severity="medium"><version>ZWMQ0030</version><title>WebSphere MQ started tasks are not defined in accordance with the proper security requirements.</title><description>&lt;VulnDiscussion&gt;Started tasks are used to execute WebSphere MQ queue manager services.  Improperly defined WebSphere MQ started tasks may result in inappropriate access to application resources and the loss of accountability.  This exposure could compromise the availability of some system services and application data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7527</ident><ident system="http://cyber.mil/legacy">V-3904</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-27316r472684_fix">Review WebSphere MQ started tasks and ensure the following items are in effect:
+
+NOTE: 
+           ssid is the queue manager name (a.k.a., subsystem 
+             identifier).
+           ssidMSTR is the name of a queue manager STC.
+           ssidCHIN is the name of a distributed queuing (a.k.a.,  
+             channel initiator) STC.
+
+1) Each WebSphere MQ started task is associated with a unique ACID.
+
+2) Each WebSphere MQ started task is defined to the STC record with a unique ACID.
+
+3) Each ssidMSTR STC ACID has a corresponding WebSphere MQ MASTFAC as defined in the z/OS.
+
+i.e. A Started Task Table entry exists for each queue manager started task procedure xxxxMSTR and distributed queuing started task procedure xxxxCHIN.  A corresponding userid for each started task exists.  Queue manager and channel initiator started tasks will not be defined with the BYPASS attribute.
+
+4) WebSphere MQ queue manager facilities are defined using the control options as specified below:
+
+Define each queue manager xxxxMSTR to the TOP SECRET Facility Matrix Table using the following sample commands:
+
+FACILITY(USERxx=NAME=xxxxMSTR)
+FACILITY(xxxxMSTR=MODE=FAIL,PGM=CSQ,ID=xx)
+FACILITY(xxxxMSTR=ACTIVE,SHRPRF,ASUBM,NOABEND)
+FACILITY(xxxxMSTR=MULTUSER,XDEF,LUMSG,STMSG,SIGN(S))
+FACILITY(xxxxMSTR=INSTDATA,NORNDPW,AUTHINIT)
+FACILITY(xxxxMSTR=NOPROMPT,NOAUDIT,RES,WARNPW)
+FACILITY(xxxxMSTR=NOTSOC,LCFTRANS,IJU,MSGLC,NOTRACE)
+FACILITY(xxxxMSTR=NOEODINIT,NODORMPW,NONPWR)
+(INIT,SMF,MSG,SEC9))
+FACILITY(xxxxMSTR=DOWN=GLOBAL,LOCKTIME=00,DEFACID=(*NONE*))
+</fixtext><fix id="F-27316r472684_fix" /><check system="C-27328r472683_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following reports produced by the TSS Data Collection:
+
+-	TSSCMDS.RPT(#STC)
+-	TSSCMDS.RPT(@ACIDS)
+-	TSSCMDS.RPT(FACLIST) - Preferred report containing all control option values in effect including default values.
+-	TSSCMDS.RPT(TSSPRMFL) - Alternate report containing only control option values explicitly coded at TSS startup.
+
+NOTE:	The FACLIST report must be created by security personnel.  The TSSPRMFL report can be used if security personnel have not executed the required steps documented in the TSS Data Collection.
+
+Provide a list of all WebSphere MQ Subsystem Ids (Queue managers) and Release levels.
+
+Review WebSphere MQ started tasks and ensure the following items are in effect:
+
+NOTE:	ssid is the queue manager name (a.k.a., subsystem identifier).
+ssidMSTR is the name of a queue manager STC.
+ssidCHIN is the name of a distributed queuing (a.k.a., channel initiator) STC.
+
+1)	Each ssidMSTR and ssidCHIN started task is associated with a unique ACID.
+2)	Each ssidMSTR and ssidCHIN started task is defined to the STC record with a unique ACID.
+3)	Each ssidMSTR started task ACID has a corresponding WebSphere MQ MASTFAC defined.
+4)	WebSphere MQ queue manager facilities is defined to the Facility Matrix Table using the following sample commands:
+
+FAC(USERxx=NAME=ssidMSTR,MODE=FAIL,PGM=CSQ,ID=xx,ACTIVE)
+FAC(ssidMSTR=SHRPRF,ASUBM,NOABEND,MULTUSER,XDEF,LUMSG)
+FAC(ssidMSTR=STMSG,SIGN(S),INSTDATA,NORNDPW,AUTHINIT)
+FAC(ssidMSTR=NOPROMPT,NOAUDIT,RES,WARNPW,NOTSOC)
+FAC(ssidMSTR=LCFTRANS,IJU,MSGLC,NOTRACE,NOEODINIT)
+FAC(ssidMSTR=NODORMPW,NONPWR)
+FAC(ssidMSTR=LOG(INIT,SMF,MSG,SEC9))
+FAC(ssidMSTR=DOWN=GLOBAL,LOCKTIME=00,DEFACID=(*NONE*))</check-content></check></Rule></Group><Group id="V-225628"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225628r1070326_rule" weight="10.0" severity="medium"><version>ZWMQ0040</version><title>WebSphere MQ all update and alter access to MQSeries/WebSphere MQ product and system data sets are not properly restricted.</title><description>&lt;VulnDiscussion&gt;MVS data sets provide the configuration, operational, and executable properties of WebSphere MQ. Some data sets are responsible for the security implementation of WebSphere MQ. Failure to properly protect these data sets may lead to unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-3905</ident><ident system="http://cyber.mil/legacy">V-3905</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-27317r1070325_fix">The systems programmer will have the ISSO  ensure that all update and alter access to MQSeries/WebSphere MQ product and system data sets are restricted to WebSphere MQ administrators, systems programmers, and MQSeries/WebSphere MQ started tasks.
+
+The installation requires that the following data sets be APF authorized. 
+
+hlqual.SCSQAUTH
+hlqual.SCSQLINK
+hlqual.SCSQANLx
+hlqual.SCSQSNL
+hlqual.SCSQMVR1
+hlqual.SCSQMVR2
+
+Read access to data sets referenced by the CSQINP1, CSQINP2, and CSQXLIB DDs in the queue manager's procedure will be restricted to the queue manager userid, WebSphere MQ administrator, and systems programming personnel. Log all access to these data sets.
+
+Write and allocate access to data set profiles protecting all page sets, logs, bootstrap data sets (BSDS), and data sets referenced by the CSQOUTX and CSQSNAP DDs in the queue manager's procedure will be restricted to the queue manager userid, WebSphere MQ administrator, and systems programming personnel. Log all write and allocate access to these data sets.
+
+Allocate access to all archive data sets in the queue manager's procedure will be restricted to the queue manager userid, WebSphere MQ administrator, and systems programming personnel. Log all allocate access to these data sets.
+</fixtext><fix id="F-27317r1070325_fix" /><check system="C-27329r1070324_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following report produced by the ACP Data Collection:
+
+-	SENSITVE.RPT(MQSRPT)
+
+Ensure ACP data sets rules for MQSeries/WebSphere MQ system data sets (e.g., SYS2.MQM.) restrict access as follows:
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+READ access to data sets referenced by the following DDnames is restricted to MQSeries/WebSphere MQ STCs, MQSeries/WebSphere MQ administrators, and system programming personnel. All access to these data sets is logged.
+
+DDname          Procedure             Description
+CSQINP1          ssidMSTR               Input parameters
+CSQINP2          ssidMSTR               Input parameters
+CSQXLIB          ssidCHIN                 User exit library
+
+Note: WRITE/UPDATE and/or ALLOCATE/ALTER access to these data sets is restricted to MQSeries/WebSphere MQ administrators and systems programming personnel.
+
+WRITE/UPDATE and/or ALLOCATE/ALTER access to data sets referenced by the following DDnames is restricted to MQSeries/WebSphere MQ STCs, MQSeries/WebSphere MQ administrators, and systems programming personnel. All WRITE and ALLOCATE access to these data sets is logged.
+
+DDname             Procedure          Description
+CSQPxxxx            ssidMSTR           Page data sets
+BSDSx                  ssidMSTR           Bootstrap data sets
+CSQOUTx            ssidMSTR           SYSOUT data sets
+CSQSNAP            ssidMSTR            DUMP data set
+(See note)          ssidMSTR            Log data sets
+
+Note: To determine the log data set names, review the JESMSGLG file of the ssidMSTR active task(s). Find CSQJ001I messages to obtain DSNs.
+
+ALLOCATE/ALTER access to archive data sets is restricted to MQSeries/WebSphere MQ STCs, MQSeries/WebSphere MQ administrator, and system programming personnel. All ALLOCATE/ALTER access to these data sets is logged.
+
+Note: To determine the archive data sets names, review the JESMSGLG file of the ssidMSTR active task(s). Find the CSQY122I message to obtain the ARCPRFX1 and ARCPRFX2 DSN HLQs.
+
+Except for the specific data set requirements just mentioned, WRITE/UPDATE and/or ALLOCATE/ALTER access to all other MQSeries/WebSphere MQ system data sets is restricted to the MQSeries/WebSphere MQ administrator and system programming personnel.
+
+If all the above are true, this is not a finding.
+
+If any item above is untrue, this is a finding.</check-content></check></Rule></Group><Group id="V-225629"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225629r1055911_rule" weight="10.0" severity="medium"><version>ZWMQ0049</version><title>WebSphere MQ security class(es) must not be defined improperly.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists. Some resources provide the ability to disable or bypass security checking. Failure to properly protect WebSphere MQ resources may result in unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7535</ident><ident system="http://cyber.mil/legacy">V-6959</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-002358</ident><fixtext fixref="F-27318r1050721_fix">Ensure that all WebSphere MQ resources are defined to TSS.
+
+The following should be defined to the RDT:
+
+MQADMIN
+MQCONN
+MQCMDS
+MQNLIST
+MQPROC
+MQQUEUE
+
+When SCYCASE is set to mixed,  and the following WebSphere MQ resource classes should be defined to the TSS RDT.
+
+MXADMIN
+MXNLIST
+MXPROC
+MXQUEUE
+MXTOPIC
+
+Use the following commands to define (establish ownership of) resources for each WebSphere MQ subsystem to TSS:
+
+TSS ADD(deptname) MQADMIN(ssid.)
+TSS ADD(deptname) MQCMDS(ssid.)
+TSS ADD(deptname) MQCONN(ssid.)
+TSS ADD(deptname) MQNLIST(ssid.)
+TSS ADD(deptname) MQPROC(ssid.)
+TSS ADD(deptname) MQQUEUE(ssid.)
+
+When SCYCASE is set to mixed, CLASMAP Definitions must include the following entries:
+
+TSS ADD(deptname) MXADMIN(ssid.)
+TSS ADD(deptname) MXNLIST(ssid.)
+TSS ADD(deptname) MXPROC(ssid.)
+TSS ADD(deptname) MXQUEUE(ssid.)
+TSS ADD(deptname) MXTOPIC(ssid.)
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+Another method to ensure protection is to assign the DEFPROT attribute to the resource class in the RDT record by using the following command:
+
+TSS REP(RDT) RESCLASS(MQADMIN) ATTR(DEFPROT)
+TSS REP(RDT) RESCLASS(MQCMDS) ATTR(DEFPROT)
+TSS REP(RDT) RESCLASS(MQCONN) ATTR(DEFPROT)
+TSS REP(RDT) RESCLASS(MQNLIST) ATTR(DEFPROT)
+TSS REP(RDT) RESCLASS(MQPROC) ATTR(DEFPROT)
+TSS REP(RDT) RESCLASS(MQQUEUE) ATTR(DEFPROT)
+
+When SCYCASE is set to mixed.
+
+TSS REP(RDT) RESCLASS(MXADMIN) ATTR(DEFPROT)
+TSS REP(RDT) RESCLASS(MXNLIST) ATTR(DEFPROT)
+TSS REP(RDT) RESCLASS(MXPROC) ATTR(DEFPROT)
+TSS REP(RDT) RESCLASS(MXQUEUE) ATTR(DEFPROT)
+TSS REP(RDT) RESCLASS(MXTOPIC) ATTR(DEFPROT)</fixtext><fix id="F-27318r1050721_fix" /><check system="C-27330r1055911_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following report produced by the TSS Data Collection:
+
+- TSSCMDS.RPT(#RDT)
+- TSSCMDS.RPT(WHOOMADM)
+- TSSCMDS.RPT(WHOOMCMD)
+- TSSCMDS.RPT(WHOOMCON)
+- TSSCMDS.RPT(WHOOMNLI)
+- TSSCMDS.RPT(WHOOMPRO)
+- TSSCMDS.RPT(WHOOMQUE)
+- TSSCMDS.RPT(WHOOXADM)
+- TSSCMDS.RPT(WHOOXNLI)
+- TSSCMDS.RPT(WHOOXPRO)
+- TSSCMDS.RPT(WHOOXQUE)
+- TSSCMDS.RPT(WHOOXTOP)
+
+If the following WebSphere MQ resource classes are not defined to the TSS RDT, this is a finding.
+
+MQADMIN
+MQCONN
+MQCMDS
+MQNLIST
+MQPROC
+MQQUEUE
+
+When SCYCASE is set to mixed, and the following WebSphere MQ resource classes are not defined to the TSS RDT, this is a finding.
+
+MXADMIN
+MXNLIST
+MXPROC
+MXQUEUE
+MXTOPIC
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+NOTE: If both MQADMIN and MXADMIN resource classes are not defined to the RDT record, no security checking is performed.</check-content></check></Rule></Group><Group id="V-225630"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225630r1050725_rule" weight="10.0" severity="high"><version>ZWMQ0051</version><title>WebSphere MQ switch profiles must be properly defined to the appropriate ADMIN class.
+
+</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists. Some resources provide the ability to disable or bypass security checking. Failure to properly protect WebSphere MQ resources may result in unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-6960</ident><ident system="http://cyber.mil/legacy">SV-7539</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-27319r1050724_fix">Switch profiles are special WebSphere MQ profiles that are used to turn on/off security checking for a type of resource. Due to the security exposure this creates, no profiles with the first two qualifiers of ssid.NO will be defined to the MQADMIN or MXADMIN class, with one exception. Due to the fact that (1) all sensitive WebSphere MQ commands are restricted to queue managers, channel initiators, and designated systems personnel, and (2) no command resource checking is performed on DISPLAY commands, at the discretion of the ISSO a ssid.NO.CMD.RESC.CHECKS switch profile may be defined to the MQADMIN or MXADMIN class. 
+
+1. Identify if any switch profile permissions exist using the sample TSS command: 
+ 
+SR CLASS(MQADMIN) NOMASK FILTER(*.NO.**)
+
+2. Use the "RDEL MQADMIN &lt;SwitchProfileName&gt;" to remove the profile and follow up with a "SETR RACL(MQADMIN) REF".
+
+3. An additional refresh to an active WebSphere MQ queue manager may be required. A sample is shown below using the value QMD1 as the queue manager name.
+
+From the Console:
+
+&gt;QMD1 REFRESH SECURITY(*)</fixtext><fix id="F-27319r1050724_fix" /><check system="C-27331r1050723_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the z/OS Data Collection:
+
+- MQSRPT(ssid)
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+Automated Analysis requires Additional Analysis.
+Automated Analysis
+Refer to the following report produced by the z/OS Data Collection:
+
+- PDI(ZWMQ0051)
+
+b) Review the Security switches identified in response to the DISPLAY SECURITY command in each ssid report(s). If all of the following switches specify ON, there is no finding.
+
+SUBSYSTEM
+CONNECTION
+COMMAND
+CONTEXT
+ALTERNATE USER
+PROCESS
+NAMELIST
+QUEUE
+COMMAND RESOURCES
+
+c) If SUBSYSTEM specifies OFF, this is a finding with a severity of Category I.
+
+d) If any of the other above switches specify OFF (other than the exception mentioned below), this is a finding. Downgrade the severity to a Category II.
+
+e) If COMMAND RESOURCE Security switch specifies OFF, there is no finding.
+
+NOTE: At the discretion of the ISSO, COMMAND RESOURCE Security switch may specify OFF by defining ssid.NO.CMD.RESC.CHECKS in the MQADMIN resource class.</check-content></check></Rule></Group><Group id="V-225631"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225631r1070329_rule" weight="10.0" severity="medium"><version>ZWMQ0052</version><title>WebSphere MQ connection class resources must be protected properly.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists. Some resources provide the ability to disable or bypass security checking. Failure to properly protect WebSphere MQ resources may result in unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7542</ident><ident system="http://cyber.mil/legacy">V-6962</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-27320r1070328_fix">Review the following connection resources defined to the MQCONN or MXCONN resource class:
+
+Resource       Authorized Users
+ssid.BATCH       TSO and batch job ACIDs
+ssid.CICS       CICS region ACIDs
+ssid.IMS       IMS region ACIDs
+ssid.CHIN       Channel initiator ACIDs
+
+Note: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+For all connection resources defined to the MQCONN or MXCONN resource class, ensure the following items are in effect:
+
+1. Access authorization restricts access to the appropriate users as indicated above.
+2. All access FAILUREs are logged.
+
+The following is a sample of the commands required to allow a batch user (USER1) to connect to a queue manager (QM1):
+
+TSS ADD(USER1) FAC(QM1MSTR)
+TSS PER(USER1) MQCONN(QM1.BATCH) ACC(READ)</fixtext><fix id="F-27320r1070328_fix" /><check system="C-27332r1070327_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following report produced by the TSS Data Collection:
+
+-	 SENSITVE.RPT(WHOHMCON)
+
+Review the following connection resources defined to the connection resource class:
+
+Resource       Authorized Users
+ssid.BATCH       TSO and batch job ACIDs
+ssid.CICS       CICS region ACIDs
+ssid.IMS       IMS region ACIDs
+ssid.CHIN       Channel initiator ACIDs
+
+Note: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+For all connection resources defined to the MQCONN or MXCONN resource class, ensure the following items are in effect:
+
+1. Access authorization restricts access to the appropriate users as indicated above.
+2. All access FAILUREs are logged.
+
+If all the items above are true, this is not a finding.
+
+If any item is untrue, this is a finding.</check-content></check></Rule></Group><Group id="V-225632"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225632r958482_rule" weight="10.0" severity="medium"><version>ZWMQ0053</version><title>WebSphere MQ dead letter and alias dead letter queues are not properly defined.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists. Some resources provide the ability to disable or bypass security checking. Failure to properly protect WebSphere MQ resources may result in unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-6964</ident><ident system="http://cyber.mil/legacy">SV-7267</ident><ident system="http://cyber.mil/cci">CCI-001762</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-27321r868778_fix">The systems programmer responsible for supporting MQSeries/WebSphere MQ will ensure that the dead-letter queue and its alias are properly defined.
+
+The following scenario describes how to securely define a dead-letter queue:
+
+(1)	Define the real dead-letter queue with attributes PUT(ENABLED) and GET(ENABLED).
+
+(2)	Give update authority for the dead-letter queue to CKTI (the MQSeries/WebSphere MQ-supplied CICS task initiator), channel initiators, and any automated application used for dead-letter queue maintenance.
+
+(3)	Define an alias queue that resolves to the real dead-letter queue, but give the alias queue the attributes PUT(ENABLED) and GET(DISABLED).
+
+(4)	To put a message on the dead-letter queue, an application uses the alias queue. The application does the following:
+
+(a)	Retrieve the name of the real dead-letter queue. To do this, it opens the queue manager object using MQOPEN, and then issues an MQINQ to get the dead-letter queue name.
+
+(b)	Build the name of the alias queue by appending the characters ".PUT" to this name, in this case, ssid.DEAD.QUEUE.PUT.
+
+(c)	Open the alias queue, ssid.DEAD.QUEUE.PUT.
+
+(d)	Put the message on the real dead-letter queue by issuing an MQPUT against the alias queue.
+
+(5)	Give the userid associated with the application update authority to the alias, but no access to the real dead-letter queue.
+
+NOTE:	If an alias queue is not used in place of the dead-letter queue, then the ACP rules for the dead-letter queue will be coded to restrict unauthorized users and systems from reading the messages on the file.
+
+Undeliverable messages can be routed to a dead-letter queue. Two levels of access should be established for these queues. The first level allows applications, as well as some MQSeries / WebSphere MQ objects, to put messages to this queue. The second level restricts the ability to get messages from this queue and protects sensitive data. This will be accomplished by defining an alias queue that resolves to the real dead-letter queue, but defines the alias queue with the attributes PUT(ENABLED) and GET(DISABLED). The ability to get messages from the dead-letter queue will be restricted to message channel agents (MCAs), CKTI (MQSeries/WebSphere MQ-supplied CICS task initiator), channel initiators utility, and any automated application used for dead-letter queue maintenance.
+
+
+</fixtext><fix id="F-27321r868778_fix" /><check system="C-27333r868777_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the  z/OS Data Collection:
+
+- MQSRPT(ssid)
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+b) Review the ssid report(s) and perform the following steps:
+
+1) Find the DISPLAY QMGR DEADQ command to locate the start of the dead-letter queue information. Review the DEADQ parameter to obtain the name of the real dead-letter queue.
+
+2) From the top of the report, find the QUEUE(dead-letter.queue.name) entry to locate the start of the real dead-letter queue definition. Review the GET and PUT parameters to determine their values, and ensure they conform to the specified security requirements.
+
+The  standard values are:
+
+GET(ENABLED)
+PUT(ENABLED)
+
+NOTE: Dead-letter.queue.name is the value of the DEADQ parameter determined in Step 1.
+ 
+3) From the top of the report, find the QUEUE(dead-letter.queue.name.PUT) entry to locate the start of the alias dead-letter queue definition. Review the GET and PUT parameters to determine their values, and ensure they conform to those specified in the security requirements.
+
+The standard values are:
+
+GET(DISABLED)
+PUT(ENABLED)
+
+NOTE 1: Dead-letter.queue.name is the value of the DEADQ parameter determined in Step 1.
+
+NOTE 2: The TARGQ parameter value for the alias queue will be the real dead letter queue name.
+
+NOTE 3:  If an alias queue is not used in place of the dead-letter queue, then the ACP rules for the dead-letter queue must be coded to restrict unauthorized users and systems from reading the messages on the file.
+
+c) If all of the items in (b) are true, there is no finding.
+
+d) If any item in (b) is untrue, this is a finding.</check-content></check></Rule></Group><Group id="V-225633"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225633r1050731_rule" weight="10.0" severity="medium"><version>ZWMQ0054</version><title>WebSphere MQ queue resource defined to the appropriate resource class must be protected in accordance with security requirements.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists. Some resources provide the ability to disable or bypass security checking. Failure to properly protect WebSphere MQ resources may result in unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7545</ident><ident system="http://cyber.mil/legacy">V-6965</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-27322r1050730_fix">For all queue resources defined to the MQQUEUE or MXQUEUE resource class, ensure the following items are in effect:
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+For message queues (i.e., ssid.queuename), access authorization restricts access to users requiring the ability to get messages from and put messages to message queues. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+For system queues (i.e., ssid.SYSTEM.queuename), access authorization restricts access to WebSphere MQ STCs, WebSphere MQ administrators, systems programming personnel, and CICS regions running WebSphere MQ applications.
+
+For the following system queues ensure that UPDATE access is restricted to WebSphere MQ STCs, WebSphere MQ administrators, systems programming personnel, CICS regions running WebSphere MQ applications, auditors, and users that require access to review message queues.
+
+ssid.SYSTEM.COMMAND.INPUT
+ssid.SYSTEM.COMMAND.REPLY
+ssid.SYSTEM.CSQOREXX.*
+
+For the following system queues (i.e., ssid.SYSTEM.CSQUTIL.*) ensure that UPDATE access is restricted to WebSphere MQ STCs, WebSphere MQ administrators, systems programming personnel, CICS regions running WebSphere MQ applications, and auditors.
+
+For the real dead-letter queue (to determine queue name, refer to ZWMQ0053), access authorization restricts access to WebSphere MQ STCs, WebSphere MQ administrators, CICS regions running WebSphere MQ applications, and any automated application used for dead-letter queue maintenance.
+
+For the alias dead-letter queue (to determine queue name, refer to ZWMQ0053), access authorization restricts access to users requiring the ability to put messages to the dead-letter queue. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+NOTE: If an alias queue is not used in place of the dead-letter queue, the RACF rules for the dead-letter queue will be coded to restrict unauthorized users and systems from reading the messages on the file.
+
+The following is a sample of the commands required to allow a user (USER1) to get messages from or put messages to queues beginning with (PAY.) on subsystem (QM1):
+
+TSS PER(USER1) MQQUEUE(QM1.PAY.) ACC(UPDATE)</fixtext><fix id="F-27322r1050730_fix" /><check system="C-27334r1050729_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>Refer to the following report produced by the z/OS Data Collection:
+
+- MQSRPT(ssid)
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier). 
+
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(WHOHMQUE)
+
+For all queue identified by the DISPLAY QUEUE(*) ALL command in the MQSRPT(ssid), these queues will be prefixed by ssid to identify the resources to be protected. Ensure these queue resources are defined to the MQQUEUE or MXQUEUE resource class. If the following guidance is true, this is not a finding.
+
+1) For message queues (i.e., ssid.queuename), access authorization restricts access to users requiring the ability to get messages from and put messages to message queues. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list. Decentralized MQ Administrators, non-DECC datacenter users, can have up to ALTER access to the user message queues.
+
+2) For system queues (i.e., ssid.SYSTEM.queuename), access authorization restricts UPDATE and/or ALTER access to WebSphere MQ STCs, WebSphere MQ administrators, systems programming personnel, and CICS regions running WebSphere MQ applications.
+
+3) For the following system queues, ensure that UPDATE access is restricted to auditors and users that require access to review message queues.
+ssid.SYSTEM.COMMAND.INPUT
+ssid.SYSTEM.COMMAND.REPLY
+ssid.SYSTEM.CSQOREXX.*
+ssid.SYSTEM.CSQUTIL.*
+
+4) For the real dead-letter queue (to determine queue name refer to ZWMQ0053), ALTER access authorization restricts access to WebSphere MQ STCs, WebSphere MQ administrators, CICS regions running WebSphere MQ applications, and any automated application used for dead-letter queue maintenance.
+
+5) For the alias dead-letter queue (to determine queue name refer to ZWMQ0053), UPDATE access authorization restricts access to users requiring the ability to put messages to the dead-letter queue.  This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.</check-content></check></Rule></Group><Group id="V-225634"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225634r1055912_rule" weight="10.0" severity="medium"><version>ZWMQ0055</version><title>WebSphere MQ Process resources must be protected in accordance with security requirements.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists. Some resources provide the ability to disable or bypass security checking. Failure to properly protect WebSphere MQ resources may result in unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7547</ident><ident system="http://cyber.mil/legacy">V-6966</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-27323r1055912_fix">For all process resources (i.e., ssid.processname) defined to MQPROC or MXPROC resource class, ensure access authorization restricts access to users requiring the ability to make process inquiries. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+The following is a sample of the commands required to allow a user (USER1) to inquire on processes beginning with the letter V on queue manager (QM1):
+
+TSS ADD(USER1) FAC(QM1MSTR)
+TSS PER(USER1) MQPROC(QM1.V) ACC(READ) 
+      ACTION(AUDIT)</fixtext><fix id="F-27323r1055912_fix" /><check system="C-27335r1050732_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the TSS Data Collection:
+
+- SENSITVE.RPT(WHOHMPRO)
+
+b) For all process resources (i.e., ssid.processname) defined to MQPROC or MXPROC resource class, ensure access authorization restricts access to users requiring the ability to make process inquiries. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+c) If (b) is true, there is no finding.
+
+d) If (b) is untrue, this is a finding.</check-content></check></Rule></Group><Group id="V-225635"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225635r1055913_rule" weight="10.0" severity="medium"><version>ZWMQ0056</version><title>WebSphere MQ Namelist resources must be protected in accordance with security requirements.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists. Some resources provide the ability to disable or bypass security checking. Failure to properly protect WebSphere MQ resources may result in unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-6967</ident><ident system="http://cyber.mil/legacy">SV-7549</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-27324r1055913_fix">For all namelist resources (i.e., ssid.namelist) defined to MQNLIST or MXNLIST resource class, ensure access authorization restricts access to users requiring the ability to make namelist inquiries. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+The following is a sample of the commands required to allow a user (USER1) to inquire on namelist TST1 on queue manager (QM1):
+
+TSS ADD(USER1) FAC(QM1MSTR)
+TSS PER(USER1) MQNLIST(QM1.TST1.) ACC(READ) 
+      ACTION(AUDIT)</fixtext><fix id="F-27324r1055913_fix" /><check system="C-27336r1050735_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the TSS Data Collection:
+
+- SENSITVE.RPT(WHOHMNLI)
+
+b) For all namelist resources (i.e., ssid.namelist) defined to MQNLIST or MXNLIST resource class, ensure access authorization restricts access to users requiring the ability to make namelist inquiries. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+c) If (b) is true, there is no finding.
+
+d) If (b) is untrue, this is a finding.
+</check-content></check></Rule></Group><Group id="V-225636"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225636r1055914_rule" weight="10.0" severity="medium"><version>ZWMQ0057</version><title>WebSphere MQ alternate user resources defined to appropriate ADMIN resource class must be protected in accordance with security requirements.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists. Some resources provide the ability to disable or bypass security checking. Failure to properly protect WebSphere MQ resources may result in unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-6969</ident><ident system="http://cyber.mil/legacy">SV-7551</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-27325r1055914_fix">For all alternate user resources (i.e., ssid.ALTERNATE.USER.alternateuserid) defined to MQADMIN or MXADMIN resource class, ensure access authorization restricts access to users requiring the ability to use the alternate userid. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+The following is a sample of the commands required to allow payroll server (PAYSRV1) to specify alternate userids starting with the characters PS on queue manager (QM1):
+
+TSS ADD(USER1) FAC(QM1MSTR)
+TSS PER(USER1) MQADMIN(QM1.ALTERNATE.USER.PS) 
+      ACC(UPDATE) ACTION(AUDIT)</fixtext><fix id="F-27325r1055914_fix" /><check system="C-27337r1050738_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the TSS Data Collection:
+
+- SENSITVE.RPT(WHOHMADM)
+
+b) For all alternate user resources (i.e., ssid.ALTERNATE.USER.alternatelogonid) defined to MQADMIN or MXADMIN resource class, ensure access authorization restricts access to users requiring the ability to use the alternate userid. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+c) If (b) is true, there is no finding.
+
+d) If (b) is untrue, this is a finding.
+</check-content></check></Rule></Group><Group id="V-225637"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225637r1050743_rule" weight="10.0" severity="medium"><version>ZWMQ0058</version><title>WebSphere MQ context resources defined to the appropriate ADMIN resource class must be protected in accordance with security requirements.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists. Some resources provide the ability to disable or bypass security checking. Failure to properly protect WebSphere MQ resources may result in unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7553</ident><ident system="http://cyber.mil/legacy">V-6971</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><fixtext fixref="F-27326r1050742_fix">For all context resources (i.e., ssid.CONTEXT) defined to the MQADMIN or MXADMIN resource class, ensure access authorization restricts access to users requiring the ability to pass or set identity and/or origin data for a message. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+The following is a sample of the commands required to allow a systems programming group (SYS1) to offload and reload messages for queue manager (QM1):
+
+TSS ADD(SYS1) FAC(QM1MSTR)
+TSS PER(SYS1) MQADMIN(QM1.CONTEXT) ACC(UPDATE) ACTION(AUDIT)</fixtext><fix id="F-27326r1050742_fix" /><check system="C-27338r1050741_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the TSS Data Collection:
+
+- SENSITVE.RPT(WHOHMADM)
+
+b) For all context resources (i.e., ssid.CONTEXT) defined to the MQADMIN MXADMIN resource class, ensure access authorization restricts access to users requiring the ability to pass or set identity and/or origin data for a message. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+c) If (b) is true, there is no finding.
+
+d) If (b) is untrue, this is a finding.
+</check-content></check></Rule></Group><Group id="V-225638"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225638r958472_rule" weight="10.0" severity="medium"><version>ZWMQ0059</version><title>WebSphere MQ command resources defined to MQCMDS resource class are not protected in accordance with security requirements.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists.  Some resources provide the ability to disable or bypass security checking.  Failure to properly protect WebSphere MQ resources may result in unauthorized access.  This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-7555</ident><ident system="http://cyber.mil/legacy">V-6973</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-27327r472717_fix">Command security validates userids authorized to issue MQSeries/WebSphere MQ commands.  Command security will be active, and all profiles will be defined to the MQCMDS class.
+
+For all command resources (i.e., ssid.command) defined to MQCMDS resource class, ensure the following items are in effect:
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+    1) Access authorization restricts access to the appropriate personnel as designated in the table entitled "Websphere MQ Command Security Controls " in the zOS STIG Addendum. 
+
+2) All command access is logged as designated in the table entitled "Websphere MQ Command Security Controls " in the zOS STIG Addendum.
+
+The following is a sample of the commands required to allow a systems programming group (SYS1) to issue the command CLEAR QLOCAL in subsystem QM1:
+
+TSS ADD(SYS1) FAC(QM1MSTR)
+TSS PER(SYS1) MQCMDS(QM1.CLEAR.LOCAL) ACC(ALTER)
+		ACTION(AUDIT)
+
+
+</fixtext><fix id="F-27327r472717_fix" /><check system="C-27339r472716_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>a)	Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(WHOHMCMD)
+
+b)	For all command resources (i.e., ssid.command) defined to MQCMDS resource class, ensure the following items are in effect:
+
+NOTE:	ssid is the queue manager name (a.k.a., subsystem identifier).
+
+1)	Access authorization restricts access to the appropriate personnel as designated in the Websphere MQ COMMAND SECURITY CONTROLS Table in the z/OS STIG Addendum.
+2)	All command access is logged as designated in the Websphere MQ COMMAND SECURITY CONTROLS Table in the z/OS STIG Addendum.
+
+c)	If both of the items in (b) are true, there is NO FINDING.
+
+d)	If either item in (b) is untrue, this is a FINDING.</check-content></check></Rule></Group><Group id="V-225639"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-225639r1050746_rule" weight="10.0" severity="medium"><version>ZWMQ0060</version><title>WebSphere MQ RESLEVEL resources in the appropriate ADMIN resource class must be protected in accordance with security requirements.</title><description>&lt;VulnDiscussion&gt;WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists. Some resources provide the ability to disable or bypass security checking. Failure to properly protect WebSphere MQ resources may result in unauthorized access. This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS WebsphereMQ for TSS</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS WebsphereMQ for TSS</dc:subject><dc:identifier>4211</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-6975</ident><ident system="http://cyber.mil/legacy">SV-7557</ident><ident system="http://cyber.mil/cci">CCI-000213</ident><ident system="http://cyber.mil/cci">CCI-001762</ident><fixtext fixref="F-27328r1050745_fix">RESLEVEL security profiles control the number of userids checked for API resource security. RESLEVEL security will not be implemented due to the following exposures and limitations:
+
+1) RESLEVEL is a powerful option that can cause the bypassing of all security checks.
+
+2) Security audit records are not created when the RESLEVEL profile is utilized.
+
+3) If the WARNING option is specified on a RESLEVEL profile, no warning messages are produced.
+
+To protect against any profile in the MQADMIN or MXADMIN class, such as ssid.**, resolving to a RESLEVEL profile, an ssid.RESLEVEL permission will be created for each queue manager with an access of none.
+
+The following sample command prevents access to ssid.RESLEVEL:
+
+ TSS PER(ALL) MQADMIN(ssid.RESLEVEL) ACCESS(NONE)</fixtext><fix id="F-27328r1050745_fix" /><check system="C-27340r1050744_chk"><check-content-ref href="zOS_WebsphereMQ_for_TSS_STIG.xml" name="M" /><check-content>a) Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(WHOHMADM)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZWMQ0060)
+
+b) Access authorization to these RESLEVEL resources restricts all access. No users are permitted access to ssid.RESLEVEL resources in the MQADMIN or MXADMIN resource class.
+
+NOTE: ssid is the queue manager name (a.k.a., subsystem identifier).
+
+c) If (b) is true, there is no finding.
+
+d) If (b) is untrue, this is a finding.
+</check-content></check></Rule></Group></Benchmark>

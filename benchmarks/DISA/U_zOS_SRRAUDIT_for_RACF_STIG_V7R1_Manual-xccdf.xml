@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_SRRAUDIT_for_RACF_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-02-24">accepted</status><title>z/OS SRRAUDIT for RACF Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224535" selected="true" /><select idref="V-224536" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224535" selected="true" /><select idref="V-224536" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224535" selected="true" /><select idref="V-224536" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224535" selected="true" /><select idref="V-224536" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224535" selected="true" /><select idref="V-224536" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224535" selected="true" /><select idref="V-224536" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224535" selected="true" /><select idref="V-224536" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224535" selected="true" /><select idref="V-224536" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224535" selected="true" /><select idref="V-224536" selected="true" /></Profile><Group id="V-224535"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224535r1070158_rule" weight="10.0" severity="medium"><version>ZSRRR000</version><title>SRRAUDIT installation data sets must be properly protected.</title><description>&lt;VulnDiscussion&gt;SRRAUDIT installation data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS SRRAUDIT for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS SRRAUDIT for RACF</dc:subject><dc:identifier>4162</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-21732</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26206r1070157_fix">The ISSO will ensure WRITE and/or greater access to SRRAUDIT installation data sets is limited to systems programmers only, and all WRITE and/or greater access is logged. READ access can be given to security personnel, production control and scheduling personnel, and auditors. All failures and successful WRITE and/or greater accesses are logged.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have WRITE and/or greater access and, if required, that all WRITE and/or greater accesses are logged. The installing systems programmer will identify if any additional groups have WRITE and/or greater access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+(Note: The data sets and/or data set prefixes identified below are examples of a possible installation. The actual data sets and/or prefixes are determined when the product is actually installed on a system through the product's installation guide and can be site specific.)
+
+Data sets to be protected will be: 
+SYS2.SRRAUDIT.
+
+The following commands are provided as a sample for implementing data set controls: 
+
+ad 'SYS2.SRRAUDIT.**' uacc(none) owner(sys2) -
+	audit(success(update) failures(read)) -
+	data('SRRAUDIT Install DS')
+pe 'SYS2.SRRAUDIT.**' id(syspaudt tstcaudt) acc(a)
+pe 'SYS2.SRRAUDIT.**' id(audtaudt  pcspaudt) acc(r)
+pe 'SYS2.SRRAUDIT.**' id(secaaudt) acc(r)
+
+setr generic(dataset) refresh</fixtext><fix id="F-26206r1070157_fix" /><check system="C-26218r1070156_chk"><check-content-ref href="zOS_SRRAUDIT_for_RACF_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(SRRPROD)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZSRR0000)
+
+Verify that the accesses to the SRRAUDIT installation data sets are properly restricted. If the following guidance is true, this is not a finding.
+ 
+The RACF data set access authorizations restrict READ access to systems programming personnel, domain level production control and scheduling personnel, security personnel, and auditors.
+
+The RACF data set access authorizations restrict WRITE and/or greater access to systems programming personnel.
+
+The RACF data set access authorizations specify that all (i.e., failures and successes) WRITE and/or greater accesses are logged.
+
+The RACF data set access authorizations specify UACC(NONE) and NOWARNING.</check-content></check></Rule></Group><Group id="V-224536"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224536r958616_rule" weight="10.0" severity="medium"><version>ZSRRR002</version><title>SRRAUDIT User data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;SRRAUDIT User data sets provide the capability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS SRRAUDIT for RACF</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS SRRAUDIT for RACF</dc:subject><dc:identifier>4162</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-23903</ident><ident system="http://cyber.mil/legacy">V-21592</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-26207r520887_fix">The IAO will ensure that read, update, and alter access to program product user data sets is limited to System Programmers, Security Personnel, and Auditors and all update and alter access is logged.
+
+The installing System Programmer will identify and document the product user data sets and categorize them according to who will have update and alter access and if required that all update and alter access is logged. He will identify if any additional groups have update access for specific data sets, and once documented he will work with the IAO to see that they are properly restricted to the ACP (Access Control Program ) active on the system.
+
+Data set prefix to be protected will be:
+
+SYS3.SRRAUDIT.
+
+The following commands are provided as a sample for implementing dataset controls: 
+
+ad 'sys3.srraudit.**' uacc(none) owner(sys3) -                  
+ audit(success(update) failures(read)) -                        
+ data('Vendor DS Profile: SRRAUDIT -                            
+ security automation project, sso-developed self-audit toolkit')
+pe 'sys3.srraudit.**' id(syspaudt secaaudt audtaudt) acc(a) 
+
+If doing a full SRR review using the z/OS STIG Instruction, the following data set prefix to be protected will be:
+
+SYS3.FSO.
+
+The following commands are provided as a sample for implementing dataset controls: 
+
+ad 'sys3.fso.**' uacc(none) owner(sys3) -                  
+ audit(success(update) failures(read)) -                        
+ data('Used for full SRR Review')                   
+pe 'sys3.fso.**' id(syspaudt secaaudt audtaudt) acc(a) </fixtext><fix id="F-26207r520887_fix" /><check system="C-26219r520886_chk"><check-content-ref href="zOS_SRRAUDIT_for_RACF_STIG.xml" name="M" /><check-content>a)	Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(SRRUSER)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZSRR0002)
+
+b)	Verify that access to the SRRAUDIT User data sets are properly restricted.
+
+___	The RACF data set rules for the data sets does not restrict READ, UPDATE, and/or ALTER access to systems programming personnel, security personnel, and auditors.
+
+___	The RACF data set rules for the data sets do not specify that all (i.e., failures and successes) UPDATE and/or ALTER access will be logged.
+
+b)	If all of the above are untrue, there is NO FINDING.
+
+c)	If any of the above is true, this is a FINDING.</check-content></check></Rule></Group></Benchmark>

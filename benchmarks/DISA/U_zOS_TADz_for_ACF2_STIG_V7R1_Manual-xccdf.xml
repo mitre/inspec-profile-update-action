@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="zOS_TADz_for_ACF2_STIG" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2025-02-25">accepted</status><title>z/OS TADz for ACF2 Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><front-matter xml:lang="en"></front-matter><rear-matter xml:lang="en"></rear-matter><reference href="https://cyber.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 02 Apr 2025</plain-text><plain-text id="generator">3.5</plain-text><plain-text id="conventionsVersion">1.10.0</plain-text><version>7</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224344" selected="true" /><select idref="V-224345" selected="true" /><select idref="V-224346" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224344" selected="true" /><select idref="V-224345" selected="true" /><select idref="V-224346" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224344" selected="true" /><select idref="V-224345" selected="true" /><select idref="V-224346" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224344" selected="true" /><select idref="V-224345" selected="true" /><select idref="V-224346" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224344" selected="true" /><select idref="V-224345" selected="true" /><select idref="V-224346" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224344" selected="true" /><select idref="V-224345" selected="true" /><select idref="V-224346" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224344" selected="true" /><select idref="V-224345" selected="true" /><select idref="V-224346" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224344" selected="true" /><select idref="V-224345" selected="true" /><select idref="V-224346" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-224344" selected="true" /><select idref="V-224345" selected="true" /><select idref="V-224346" selected="true" /></Profile><Group id="V-224344"><title>SRG-OS-000080</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224344r1081046_rule" weight="10.0" severity="medium"><version>ZTADA000</version><title>Tivoli Asset Discovery for z/OS (TADz) Install data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;Tivoli Asset Discovery for z/OS (TADz) Install data sets provide the capability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product, which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS TADz for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS TADz for ACF2</dc:subject><dc:identifier>4130</dc:identifier></reference><ident system="http://cyber.mil/legacy">V-16932</ident><ident system="http://cyber.mil/legacy">SV-28469</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><ident system="http://cyber.mil/cci">CCI-002234</ident><fixtext fixref="F-26009r1081046_fix">The ISSO will ensure that update and allocate access to program product data sets is limited to system programmers only, and all update and allocate access is logged. Auditors should have read access.
+
+The installing systems programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. The installing systems programmer will identify if any additional groups have update access for specific data sets, and once documented, will work with the ISSO to ensure they are properly restricted to the Access Control Program (ACP) active on the system.
+
+Data sets to be protected will be: 
+SYS2.TADZ 
+SYS2.TADZ .V-.SHSIMOD1
+SYS3.TADZ 
+
+The following commands are provided as a sample for implementing dataset controls: 
+
+$KEY(SYS2)
+TADZ.- UID(syspaudt) R(A) W(L) A(L) E(A)
+TADZ.V-.SHSIMOD1 UID(syspaudt) R(A) W(L) A(L) E(A)
+TADZ.- UID(audtaudt) R(A) E(A)
+
+$KEY(SYS3)
+TADZ.- UID(syspaudt) R(A) W(L) A(L) E(A)
+TADZ.- UID(audtaudt) R(A) E(A)</fixtext><fix id="F-26009r1081046_fix" /><check system="C-26021r1070063_chk"><check-content-ref href="zOS_TADz_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(TADZRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZTAD0000)
+
+Verify that access to the TADz Install data sets are properly restricted.
+ 
+The ACF2 data set rules for the data sets does not restrict UPDATE and/or ALTER access to systems programming personnel.
+
+The ACF2 data set rules for the data sets does not specify that all (i.e., failures and successes) UPDATE and/or ALTER access will be logged.
+
+If all of the above are untrue, this is not a finding.
+
+If any of the above is true, this is a finding.</check-content></check></Rule></Group><Group id="V-224345"><title>SRG-OS-000259</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224345r958616_rule" weight="10.0" severity="medium"><version>ZTADA001</version><title>Tivoli Asset Discovery for zOS (TADz) STC and/or batch data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;Tivoli Asset Discovery for zOS (TADz) STC data sets provide the capability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS TADz for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS TADz for ACF2</dc:subject><dc:identifier>4130</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-28547</ident><ident system="http://cyber.mil/legacy">V-17067</ident><ident system="http://cyber.mil/cci">CCI-001499</ident><fixtext fixref="F-26010r868235_fix">Grant update and alter access to Tivoli Asset Discovery for z/OS (TADz) STC and/or batch data sets are limited to system programmers and TADz STC and/or batch jobs only. 
+
+Grant read access to any scheduling products that are in use.
+ 
+Grant read access to auditors at the ISSO's discretion.
+
+Identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. Identify if any additional groups have update access for specific data sets, and assure that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS3.TADZ
+
+The following commands are provided as a sample for implementing dataset controls: 
+
+$KEY(SYS3)
+TADZ.- UID(syspaudt) R(A) W(A) A(A) E(A)
+TADZ.- UID(audtaudt) R(A) E(A)
+TADZ.-.UM.- UID(batchid TADZINQ) R(A) W(A) A(A) E(A)
+TADZ.-.IQ.- UID(batchid TADZINQ) R(A) W(A) A(A) E(A)
+TADZ.-.UIQ.- UID(batchid TADZINQ) R(A) W(A) A(A) E(A)
+TADZ.- UID(stc id TADZMON) R(A) W(A) A(A) E(A)</fixtext><fix id="F-26010r868235_fix" /><check system="C-26022r868234_chk"><check-content-ref href="zOS_TADz_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- SENSITVE.RPT(TADZSTC)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+- PDI(ZTAD0001)
+
+For all (TADz) STC and/or batch data sets:
+
+If the UPDATE or greater access is restricted to systems programming personnel and the product STC(s) and/or batch job(s) this is not a finding.
+
+If any job scheduling products are in use and access is restricted to READ this is not a finding.
+
+If auditors have READ access this is not a finding.</check-content></check></Rule></Group><Group id="V-224346"><title>SRG-OS-000104</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-224346r958482_rule" weight="10.0" severity="medium"><version>ZTADA030</version><title>Tivoli Asset Discovery for z/OS (TADz) Started Task name(s) must be properly identified / defined to the system ACP.</title><description>&lt;VulnDiscussion&gt;Tivoli Asset Discovery for z/OS (TADz) requires a started task(s) that will be restricted to certain resources, datasets and other system functions. By defining the started task as a userid to the system Access Control Program (ACP), it allows the ACP to control the access and authorized users that require these capabilities. Failure to properly control these capabilities, could compromise of the operating system environment, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target zOS TADz for ACF2</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>zOS TADz for ACF2</dc:subject><dc:identifier>4130</dc:identifier></reference><ident system="http://cyber.mil/legacy">SV-28612</ident><ident system="http://cyber.mil/legacy">V-17452</ident><ident system="http://cyber.mil/cci">CCI-000764</ident><fixtext fixref="F-26011r520896_fix">The TADz system programmer and the ISSO will ensure that a product's Started Task(s) is properly identified / defined to the System ACP. 
+
+If the product requires a Started Task, verify that it is properly defined to the System ACP with the proper attributes.
+
+Most installation manuals will indicate how the Started Task is identified and any additional attributes that must be specified.
+
+Example:
+
+SET LID
+CHANGE TADZMON STC</fixtext><fix id="F-26011r520896_fix" /><check system="C-26023r520895_chk"><check-content-ref href="zOS_TADz_for_ACF2_STIG.xml" name="M" /><check-content>Refer to the following report produced by the ACF2 Data Collection:
+
+-	ACF2CMDS.RPT(LOGONIDS)
+
+Ensure the following field is completed for each STC logonid for the product:
+
+STC
+
+Ensure the following field is completed for each Batch logonid for the product:
+
+JOB
+
+If the logonids specified in (b) and/or (c) have all the required field is completed, this is not a FINDING.
+
+If the logonids specified in (b) and/or (c) do not have the above field completed, this is a FINDING.</check-content></check></Rule></Group></Benchmark>
