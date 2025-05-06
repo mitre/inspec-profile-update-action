@@ -1,0 +1,25 @@
+control 'SV-239189' do
+  title 'The Photon operating system must protect all boot configuration files from unauthorized access.'
+  desc 'Boot configuration files control how the system boots, including single-user mode, auditing, log levels, etc. Improper or malicious configurations can negatively affect system security and availability.'
+  desc 'check', "At the command line, execute the following command:
+
+# find /boot/*.cfg -xdev -type f -a '(' -not -perm 600 -o -not -user root -o -not -group root ')' -exec ls -ld {} \\;
+
+If any files are returned, this is a finding."
+  desc 'fix', 'At the command line, execute the following commands for each returned file:
+
+# chmod 600 <file>
+# chown root:root <file>'
+  impact 0.5
+  ref 'DPMS Target VMware vSphere 6.7 Photon OS'
+  tag check_id: 'C-42400r675373_chk'
+  tag severity: 'medium'
+  tag gid: 'V-239189'
+  tag rid: 'SV-239189r675375_rule'
+  tag stig_id: 'PHTN-67-000118'
+  tag gtitle: 'SRG-OS-000480-GPOS-00227'
+  tag fix_id: 'F-42359r675374_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end

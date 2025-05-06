@@ -1,0 +1,26 @@
+control 'SV-237750' do
+  title 'The Cisco switch must be configured to have Cisco Express Forwarding enabled.'
+  desc 'The Cisco Express Forwarding (CEF) switching mode replaces the traditional Cisco routing cache with a data structure that mirrors the entire system routing table. Because there is no need to build cache entries when traffic starts arriving for new destinations, CEF behaves more predictably when presented with large volumes of traffic addressed to many destinations such as a SYN flood attacks that. Because many SYN flood attacks use randomized source addresses to which the hosts under attack will reply to, there can be a substantial amount of traffic for a large number of destinations that the switch will have to handle. Consequently, switches configured for CEF will perform better under SYN floods directed at hosts inside the network than switches using the traditional cache.'
+  desc 'check', 'Review the switch to verify that CEF is enabled.
+
+IPv4 Example: ip cef 
+IPv6 Example: ipv6 cef 
+
+If the switch is not configured to have CEF enabled, this is a finding.'
+  desc 'fix', 'Enable CEF
+
+IPv4 Example: ip cef 
+IPv6 Example: ipv6 cef'
+  impact 0.5
+  ref 'DPMS Target Cisco IOS-XE Switch RTR'
+  tag check_id: 'C-40969r648773_chk'
+  tag severity: 'medium'
+  tag gid: 'V-237750'
+  tag rid: 'SV-237750r648776_rule'
+  tag stig_id: 'CISC-RT-000235'
+  tag gtitle: 'SRG-NET-000512-RTR-000100'
+  tag fix_id: 'F-40931r648774_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end

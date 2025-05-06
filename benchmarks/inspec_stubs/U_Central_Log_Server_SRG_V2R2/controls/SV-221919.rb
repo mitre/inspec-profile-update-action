@@ -1,0 +1,27 @@
+control 'SV-221919' do
+  title 'The Central Log Server must protect audit tools from unauthorized deletion.'
+  desc 'Protecting audit data also includes identifying and protecting the tools used to view and manipulate log data. Therefore, protecting audit tools is necessary to prevent unauthorized operation on audit data.
+
+Applications providing tools to interface with audit data will leverage user permissions and roles identifying the user accessing the tools and the corresponding rights the user enjoys in order make access decisions regarding the deletion of audit tools.
+
+Audit tools include, but are not limited to, vendor-provided and open source audit tools needed to successfully view and manipulate audit information system activity and records. Audit tools include custom queries and report generators.'
+  desc 'check', 'Examine the configuration.
+
+Verify that the Central Log Server is configured to protect audit tools from unauthorized deletion.
+
+If the Central Log Server is not configured to protect audit tools from unauthorized deletion, this is a finding.'
+  desc 'fix', 'Configure the Central Log Server to protect audit tools from unauthorized deletion.'
+  impact 0.5
+  ref 'DPMS Target Central Log Server'
+  tag check_id: 'C-23634r420099_chk'
+  tag severity: 'medium'
+  tag gid: 'V-221919'
+  tag rid: 'SV-221919r420101_rule'
+  tag stig_id: 'SRG-APP-000123-AU-000150'
+  tag gtitle: 'SRG-APP-000123'
+  tag fix_id: 'F-23623r420100_fix'
+  tag 'documentable'
+  tag legacy: ['SV-109171', 'V-100067']
+  tag cci: ['CCI-001495']
+  tag nist: ['AU-9']
+end

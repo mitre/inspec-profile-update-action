@@ -1,0 +1,37 @@
+control 'SV-205664' do
+  title 'Windows Server 2019 non-administrative accounts or groups must only have print permissions on printer shares.'
+  desc "Windows shares are a means by which files, folders, printers, and other resources can be published for network users to access. Improper configuration can permit access to devices and data beyond a user's need."
+  desc 'check', 'Open "Printers & scanners" in "Settings".
+
+If there are no printers configured, this is NA. (Exclude Microsoft Print to PDF and Microsoft XPS Document Writer, which do not support sharing.)
+
+For each printer:
+
+Select the printer and "Manage". 
+
+Select "Printer Properties". 
+
+Select the "Sharing" tab. 
+
+If "Share this printer" is checked, select the "Security" tab.
+
+If any standard user accounts or groups have permissions other than "Print", this is a finding.
+
+The default is for the "Everyone" group to be given "Print" permission.
+
+"All APPLICATION PACKAGES" and "CREATOR OWNER" are not standard user accounts.'
+  desc 'fix', 'Configure the permissions on shared printers to restrict standard users to only have Print permissions.'
+  impact 0.3
+  ref 'DPMS Target Microsoft Windows Server 2019'
+  tag check_id: 'C-5929r354910_chk'
+  tag severity: 'low'
+  tag gid: 'V-205664'
+  tag rid: 'SV-205664r569188_rule'
+  tag stig_id: 'WN19-00-000180'
+  tag gtitle: 'SRG-OS-000080-GPOS-00048'
+  tag fix_id: 'F-5929r354911_fix'
+  tag 'documentable'
+  tag legacy: ['SV-103081', 'V-92993']
+  tag cci: ['CCI-000213']
+  tag nist: ['AC-3']
+end

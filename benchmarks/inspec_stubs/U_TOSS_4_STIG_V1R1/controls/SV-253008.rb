@@ -1,0 +1,32 @@
+control 'SV-253008' do
+  title 'TOSS must allow only the Information System Security Manager (ISSM) (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited.'
+  desc "Without the capability to restrict which roles and individuals can select which events are audited, unauthorized personnel may be able to prevent the auditing of critical events. Misconfigured audits may degrade the system's performance by overwhelming the audit log. Misconfigured audits may also make it more difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one."
+  desc 'check', 'Verify that the files in directory "/etc/audit/rules.d/" and "/etc/audit/auditd.conf" file have a mode of "0640" or less permissive by using the following commands:
+
+$ sudo ls -l /etc/audit/rules.d
+
+-rw-r----- 1 root root 1280 Feb 16 17:09 audit.rules
+
+$ sudo ls -l /etc/audit/auditd.conf
+
+-rw-r----- 1 root root 621 Sep 22 17:19 auditd.conf
+
+If the files in the "/etc/audit/rules.d/" directory or the "/etc/audit/auditd.conf" file have a mode more permissive than "0640", this is a finding.'
+  desc 'fix', 'Configure the files in directory "/etc/audit/rules.d/" and the "/etc/audit/auditd.conf" file to have a mode of "0640" with the following commands:
+
+$ sudo chmod 0640 /etc/audit/rules.d/audit.rules
+$ sudo chmod 0640 /etc/audit/rules.d/[customrulesfile].rules
+$ sudo chmod 0640 /etc/audit/auditd.conf'
+  impact 0.5
+  ref 'DPMS Target TOSS 4'
+  tag check_id: 'C-56461r824346_chk'
+  tag severity: 'medium'
+  tag gid: 'V-253008'
+  tag rid: 'SV-253008r824348_rule'
+  tag stig_id: 'TOSS-04-030550'
+  tag gtitle: 'SRG-OS-000063-GPOS-00032'
+  tag fix_id: 'F-56411r824347_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000171']
+  tag nist: ['AU-12 b']
+end

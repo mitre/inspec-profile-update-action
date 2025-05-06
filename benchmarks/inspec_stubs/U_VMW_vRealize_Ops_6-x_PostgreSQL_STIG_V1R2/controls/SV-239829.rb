@@ -1,0 +1,40 @@
+control 'SV-239829' do
+  title 'The vROps PostgreSQL DB must generate audit records when unsuccessful attempts to execute privileged activities or other system-level access occur.'
+  desc 'Without tracking privileged activity, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one. 
+
+System documentation should include a definition of the functionality considered privileged.
+
+A privileged function in this context is any operation that modifies the structure of the database, its built-in logic, or its security settings. This would include all Data Definition Language (DDL) statements and all security-related statements. In an SQL environment, it encompasses, but is not necessarily limited to:
+CREATE
+ALTER
+DROP
+GRANT
+REVOKE
+DENY
+
+Note that it is particularly important to audit, and tightly control, any action that weakens the implementation of this requirement itself, since the objective is to have a complete audit trail of all administrative activity.
+
+To aid in diagnosis, it is necessary to keep track of failed attempts in addition to the successful ones.'
+  desc 'check', %q(At the command prompt, execute the following command:
+
+# grep '^\s*log_statement\b' /storage/db/vcops/vpostgres/data/postgresql.conf
+
+If "log_statement" is not set to "all", this is a finding.)
+  desc 'fix', %q(At the command prompt, execute the following commands:
+
+# /opt/vmware/vpostgres/current/bin/psql -U postgres -c "ALTER SYSTEM SET log_statement TO 'all';"
+# /opt/vmware/vpostgres/current/bin/psql -U postgres -c "SELECT pg_reload_conf();")
+  impact 0.5
+  ref 'DPMS Target VMware vRealize Operations Manager 6.x PostgreSQL'
+  tag check_id: 'C-43062r663862_chk'
+  tag severity: 'medium'
+  tag gid: 'V-239829'
+  tag rid: 'SV-239829r879875_rule'
+  tag stig_id: 'VROM-PG-000575'
+  tag gtitle: 'SRG-APP-000504-DB-000355'
+  tag fix_id: 'F-43021r663863_fix'
+  tag 'documentable'
+  tag legacy: ['SV-98981', 'V-88331']
+  tag cci: ['CCI-000172']
+  tag nist: ['AU-12 c']
+end

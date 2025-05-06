@@ -1,0 +1,29 @@
+control 'SV-221264' do
+  title 'The application must configure malicious code protection mechanisms to perform periodic scans of the information system every seven days.'
+  desc 'Malicious code protection mechanisms include, but are not limited, to anti-virus and malware detection software. In order to minimize potential negative impact to the organization that can be caused by malicious code, it is imperative that malicious code is identified and eradicated. 
+
+Malicious code includes viruses, worms, trojan horses, and spyware. It is not enough to simply have the software installed; this software must periodically scan the system to search for malware on an organization-defined frequency. 
+
+This requirement applies to applications providing malicious code protection.'
+  desc 'check', 'Open the Exchange Management Shell and enter the following command:
+
+Get-TransportAgent "Malware Agent"
+
+If the value of "Enabled" is set to "True", this is a finding.'
+  desc 'fix', 'Open the Exchange Management Shell and enter the following command:
+
+& env:ExchangeInstallPath\\Scripts\\Disable-Antimalwarescanning.ps1'
+  impact 0.5
+  ref 'DPMS Target Microsoft Exchange 2016 Edge Transport Server'
+  tag check_id: 'C-22979r411918_chk'
+  tag severity: 'medium'
+  tag gid: 'V-221264'
+  tag rid: 'SV-221264r612603_rule'
+  tag stig_id: 'EX16-ED-000720'
+  tag gtitle: 'SRG-APP-000277'
+  tag fix_id: 'F-22968r411919_fix'
+  tag 'documentable'
+  tag legacy: ['SV-95317', 'V-80607']
+  tag cci: ['CCI-001241']
+  tag nist: ['SI-3 c 1']
+end

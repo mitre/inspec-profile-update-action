@@ -1,0 +1,38 @@
+control 'SV-242435' do
+  title 'Kubernetes must prevent non-privileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures or the installation of patches and updates.'
+  desc 'Kubernetes uses the API Server to control communication to the other services that makeup Kubernetes. The use of authorizations and not the default of "AlwaysAllow" enables the Kubernetes functions control to only the groups that need them.
+
+To control access the API server must have one of the following options set for the authorization mode:
+    --authorization-mode=ABAC Attribute-Based Access Control (ABAC) mode allows a user to configure policies using local files.
+    --authorization-mode=RBAC Role-based access control (RBAC) mode allows a user to create and store policies using the Kubernetes API.
+    --authorization-mode=Webhook
+ 
+WebHook is an HTTP callback mode that allows a user to manage authorization using a remote REST endpoint.
+    --authorization-mode=Node
+
+Node authorization is a special-purpose authorization mode that specifically authorizes API requests made by kubelets.
+    --authorization-mode=AlwaysDeny 
+
+This flag blocks all requests. Use this flag only for testing.
+
+'
+  desc 'check', 'Change to the /etc/kubernetes/manifests directory on the Kubernetes Master Node. Run the command:
+
+grep -i authorization-mode * 
+
+If the setting authorization-mode is set to "AlwaysAllow" in the Kubernetes API Server manifest file or is not configured, this is a finding.'
+  desc 'fix', 'Edit the Kubernetes API Server manifest file in the /etc/kubernetes/manifests directory on the Kubernetes Master Node. Set the argument "--authorization-mode" to any valid authorization mode other than AlwaysAllow.'
+  impact 0.7
+  ref 'DPMS Target Kubernetes'
+  tag check_id: 'C-45710r712659_chk'
+  tag severity: 'high'
+  tag gid: 'V-242435'
+  tag rid: 'SV-242435r712661_rule'
+  tag stig_id: 'CNTR-K8-001990'
+  tag gtitle: 'SRG-APP-000340-CTR-000770'
+  tag fix_id: 'F-45668r712660_fix'
+  tag satisfies: ['SRG-APP-000340-CTR-000770', 'SRG-APP-000033-CTR-000095', 'SRG-APP-000378-CTR-000880']
+  tag 'documentable'
+  tag cci: ['CCI-000213', 'CCI-001812', 'CCI-002235']
+  tag nist: ['AC-3', 'CM-11 (2)', 'AC-6 (10)']
+end

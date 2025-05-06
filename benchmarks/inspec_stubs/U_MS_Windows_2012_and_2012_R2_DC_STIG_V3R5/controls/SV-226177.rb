@@ -1,0 +1,27 @@
+control 'SV-226177' do
+  title 'The detection of compatibility issues for applications and drivers must be turned off.'
+  desc 'Some features may communicate with the vendor, sending system information or downloading data or components for the feature.  Turning off this feature will prevent potentially sensitive information from being sent outside the enterprise and uncontrolled updates to the system.'
+  desc 'check', 'If the following registry value does not exist or is not configured as specified, this is a finding:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \\Software\\Policies\\Microsoft\\Windows\\AppCompat\\
+
+Value Name: DisablePcaUI
+
+Type: REG_DWORD
+Value: 0'
+  desc 'fix', 'Configure the policy value for Computer Configuration -> Administrative Templates -> System -> Troubleshooting and Diagnostics -> Application Compatibility Diagnostics -> "Detect compatibility issues for applications and drivers" to "Disabled".'
+  impact 0.3
+  ref 'DPMS Target Microsoft Windows Server 2012-2012 R2 DC'
+  tag check_id: 'C-27879r475854_chk'
+  tag severity: 'low'
+  tag gid: 'V-226177'
+  tag rid: 'SV-226177r794433_rule'
+  tag stig_id: 'WN12-CC-000065'
+  tag gtitle: 'SRG-OS-000095-GPOS-00049'
+  tag fix_id: 'F-27867r475855_fix'
+  tag 'documentable'
+  tag legacy: ['V-36696', 'SV-51737']
+  tag cci: ['CCI-000381']
+  tag nist: ['CM-7 a']
+end

@@ -1,0 +1,35 @@
+control 'SV-222563' do
+  title 'Applications used for non-local maintenance sessions must implement cryptographic mechanisms to protect the confidentiality of non-local maintenance and diagnostic communications.'
+  desc 'Privileged access contains control and configuration information which is particularly sensitive, so additional protections are necessary. This is maintained by using cryptographic mechanisms to protect confidentiality.
+
+Non-local maintenance and diagnostic activities are those activities conducted by individuals communicating through a network, either an external network (e.g., the Internet) or an internal network. Local maintenance and diagnostic activities are those activities carried out by individuals physically present at the information system or information system component and not communicating across a network connection.
+
+The application can meet this requirement through leveraging a cryptographic module.'
+  desc 'check', 'Review the application documentation and interview the application administrator to identify application maintenance functions.
+
+If the application does not provide non-local maintenance and diagnostic capability, this requirement is not applicable.
+
+Identify the maintenance functions/capabilities that are provided by the application and performed by an individual which can be performed remotely.
+
+For example, the application may provide the ability to clean up a folder of temporary files, add users, remove users, restart processes, backup certain files, manage logs, or execute diagnostic sessions.
+
+Access the application in the appropriate role needed to execute maintenance tasks. Observe the manner in which the application is connecting and verify the session is being encrypted.
+
+For example, observe the browser to ensure the session is being encrypted with TLS/SSL.
+
+If the application provides remote access to maintenance functions and capabilities and the remote access methods are not encrypted, this is a finding.'
+  desc 'fix', 'Configure the application to encrypt remote application maintenance sessions.'
+  impact 0.5
+  ref 'DPMS Target Application Security and Development'
+  tag check_id: 'C-24233r493597_chk'
+  tag severity: 'medium'
+  tag gid: 'V-222563'
+  tag rid: 'SV-222563r879785_rule'
+  tag stig_id: 'APSC-DV-001950'
+  tag gtitle: 'SRG-APP-000412'
+  tag fix_id: 'F-24222r493598_fix'
+  tag 'documentable'
+  tag legacy: ['SV-84799', 'V-70177']
+  tag cci: ['CCI-003123']
+  tag nist: ['MA-4 (6)']
+end

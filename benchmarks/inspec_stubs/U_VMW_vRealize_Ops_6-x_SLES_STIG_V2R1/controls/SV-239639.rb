@@ -1,0 +1,35 @@
+control 'SV-239639' do
+  title 'The SLES for vRealize must generate audit records for all direct access to the information system.'
+  desc 'Without generating audit records that are specific to the security and mission needs of the organization, it would be difficult to establish, correlate, and investigate the events relating to an incident or identify those responsible for one.
+
+Audit records can be generated from various components within the information system (e.g., module or policy filter).'
+  desc 'check', 'The message types that are always recorded to the "/var/log/audit/audit.log" file include "LOGIN", "USER_LOGIN", "USER_START", "USER_END" among others and do not need to be added to audit.rules.
+
+The log files "/var/log/faillog", "/var/log/lastlog", and "/var/log/tallylog" must be protected from tampering of the login records:
+
+# egrep "faillog|lastlog|tallylog" /etc/audit/audit.rules
+
+If "/var/log/faillog", "/var/log/lastlog", and "/var/log/tallylog" entries do not exist, this is a finding.'
+  desc 'fix', 'Ensure the auditing of logins by modifying the "/etc/audit/audit.rules" file to contain:
+
+-w /var/log/faillog -p wa
+-w /var/log/lastlog -p wa
+-w /var/log/tallylog -p wa
+
+OR
+
+# /etc/dodscript.sh'
+  impact 0.5
+  ref 'DPMS Target VMware vRealize Operations Manager 6-x SLES'
+  tag check_id: 'C-42872r662366_chk'
+  tag severity: 'medium'
+  tag gid: 'V-239639'
+  tag rid: 'SV-239639r662368_rule'
+  tag stig_id: 'VROM-SL-001450'
+  tag gtitle: 'SRG-OS-000475-GPOS-00220'
+  tag fix_id: 'F-42831r662367_fix'
+  tag 'documentable'
+  tag legacy: ['SV-99399', 'V-88749']
+  tag cci: ['CCI-000172']
+  tag nist: ['AU-12 c']
+end

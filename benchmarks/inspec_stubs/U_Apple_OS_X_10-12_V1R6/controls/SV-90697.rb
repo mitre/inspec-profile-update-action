@@ -1,0 +1,31 @@
+control 'SV-90697' do
+  title 'The OS X system must enable System Integrity Protection.'
+  desc 'The System Integrity Protection is vital to prevent unauthorized and unintended information transfer via shared system resources, protect audit tools from unauthorized access, modification, and deletion, limit privileges to change software resident within software libraries, limit the ability of non-privileged users to grant other users direct access to the contents of their home directories/folders.
+
+SIP also ensures the presence of an audit record generation capability for DoD-defined auditable events for all operating system components, supports on-demand and after-the-fact reporting requirements, does not alter original content or time ordering of audit records, and does not alter original content or time ordering of audit records.
+
+'
+  desc 'check', 'System Integrity Protection is a security feature, enabled by default, that protects certain system processes and files from being modified or tampered with. Check the current status of "System Integrity Protection" with the following command:
+
+/usr/bin/csrutil status
+
+If the result does not show the following, this is a finding.
+
+System Integrity Protection status: enabled'
+  desc 'fix', 'To reenable "System Integrity Protection", boot the affected system into "Recovery" mode, launch "Terminal" from the "Utilities" menu, and run the following command:
+
+/usr/bin/csrutil enable'
+  impact 0.5
+  ref 'DPMS Target Mac OS 10.12 Workstation'
+  tag check_id: 'C-75693r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-76009'
+  tag rid: 'SV-90697r1_rule'
+  tag stig_id: 'AOSX-12-000240'
+  tag gtitle: 'SRG-OS-000051-GPOS-00024'
+  tag fix_id: 'F-82647r1_fix'
+  tag satisfies: ['SRG-OS-000051-GPOS-00024', 'SRG-OS-000054-GPOS-00025', 'SRG-OS-000062-GPOS-00031', 'SRG-OS-000122-GPOS-00063', 'SRG-OS-000138-GPOS-00069', 'SRG-OS-000256-GPOS-00097', 'SRG-OS-000257-GPOS-00098', 'SRG-OS-000258-GPOS-00099', 'SRG-OS-000259-GPOS-00100', 'SRG-OS-000348-GPOS-00136', 'SRG-OS-000349-GPOS-00137', 'SRG-OS-000350-GPOS-00138', 'SRG-OS-000351-GPOS-00139', 'SRG-OS-000352-GPOS-00140', 'SRG-OS-000353-GPOS-00141', 'SRG-OS-000354-GPOS-00142', 'SRG-OS-000480-GPOS-00228', 'SRG-OS-000480-GPOS-00230']
+  tag 'documentable'
+  tag cci: ['CCI-000154', 'CCI-000158', 'CCI-000169', 'CCI-000366', 'CCI-001090', 'CCI-001493', 'CCI-001494', 'CCI-001495', 'CCI-001499', 'CCI-001875', 'CCI-001876', 'CCI-001877', 'CCI-001878', 'CCI-001879', 'CCI-001880', 'CCI-001881', 'CCI-001882']
+  tag nist: ['AU-6 (4)', 'AU-7 (1)', 'AU-12 a', 'CM-6 b', 'SC-4', 'AU-9 a', 'AU-9', 'AU-9', 'CM-5 (6)', 'AU-7 a', 'AU-7 a', 'AU-7 a', 'AU-7 a', 'AU-7 a', 'AU-7 a', 'AU-7 b', 'AU-7 b']
+end

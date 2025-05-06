@@ -1,0 +1,39 @@
+control 'SV-103007' do
+  title 'Samsung Android must have the DoD root and intermediate PKI certificates installed.'
+  desc 'DoD root and intermediate PKI certificates are used to verify the authenticity of PKI certificates of users and web services. If the root and intermediate certificates are not available, an adversary could falsely sign a certificate in such a way that it could not be detected. Providing access to the DoD root and intermediate PKI certificates greatly diminishes the risk of this attack.
+
+SFR ID: FMT_SMF_EXT.1.1 #47'
+  desc 'check', 'Review device configuration settings to confirm that the DoD root and intermediate PKI certificates are installed. 
+
+This procedure is performed on both the MDM Administration console and the Samsung Android device. 
+
+The current DoD root and intermediate PKI certificates may be obtained in self-extracting zip files at http://iase.disa.mil/pki-pke (for NIPRNet). 
+
+On the MDM console, for the device, in the "Android certificate" group, verify that the DoD root and intermediate PKI certificates are listed. 
+
+On the Samsung Android device, do the following: 
+1. Open Settings. 
+2. Tap "Biometrics and security". 
+3. Tap "Other security settings". 
+4. Tap "View security certificates". 
+5. Verify the DoD root and intermediate certificates are listed under the "Personal" list in both the "System" and "User" tabs. 
+
+If on the MDM console the DoD root and intermediate certificates are not listed in the "Android certificate" group, or on the Samsung Android device "View security certificates" does not list the DoD root and intermediate certificates, this is a finding.'
+  desc 'fix', 'Configure Samsung Android to install DoD root and intermediate certificates. 
+
+On the MDM console, for the device, in the "Android certificate" group, use "install a CA certificate" to install the DoD root and intermediate certificates. 
+
+The current DoD root and intermediate PKI certificates may be obtained in self-extracting zip files at http://iase.disa.mil/pki-pke (for NIPRNet).'
+  impact 0.5
+  ref 'DPMS Target SamsungAndroid9withKnox3.x-COBO KPE(AE)'
+  tag check_id: 'C-92229r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-92919'
+  tag rid: 'SV-103007r1_rule'
+  tag stig_id: 'KNOX-09-001080'
+  tag gtitle: 'PP-MDF-991000'
+  tag fix_id: 'F-99165r1_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end

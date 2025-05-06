@@ -1,0 +1,38 @@
+control 'SV-56394' do
+  title 'McAfee VirusScan On Delivery Email Scanner Properties must be configured to clean attachments as the first action for When an unwanted program is found.'
+  desc 'Email has become one of the most frequently used methods of spreading malware, through embedded HTML code and attachments. User awareness and training, warning users to not open suspicious emails or email attachments and not clicking on hyperlinks, etc., from unknown or known senders, will not fully protect from email-borne malware. Mass mailing worms are similar to an email-borne virus but is self-contained rather than infecting an existing file. Protecting from email-borne viruses and mass mailing worms by scanning email upon delivery mitigates the risk of infection via email.'
+  desc 'check', 'Note: If an email client is not running on this system, this check can be marked as Not Applicable.
+
+Access the local VirusScan console by clicking Start >> All Programs >> McAfee >> VirusScan Console.
+Under the Task column, select the On-Delivery Email Scanner Option, right-click, and select Properties.
+
+Under the Actions tab, locate the "When an unwanted attachment is found:" label. Ensure for the "Perform this action first:" pull down menu, "Clean attachments" is selected.
+
+Criteria:  If "Clean attachments" is selected for "Perform this action first", this is not a finding.
+
+On the client machine, use the Windows Registry Editor to navigate to the following key:
+HKLM\\Software\\McAfee\\ (32-bit)
+HKLM\\Software\\Wow6432Node\\McAfee\\ (64-bit)
+SystemCore\\VSCore\\Email Scanner\\Outlook\\OnDelivery\\ActionOptions
+
+Criteria:  If the value for uAction_Program is not 5, this is a finding.'
+  desc 'fix', 'Access the local VirusScan console by clicking Start >> All Programs >> McAfee >> VirusScan Console.
+Under the Task column, select the On-Delivery Email Scanner Option, right-click, and select Properties.
+
+Under the Actions tab, locate the "When an unwanted attachment is found:" label. From the "Perform this action first:" pull down menu, select "Clean attachments". 
+
+Click OK to Save.'
+  impact 0.5
+  ref 'DPMS Target McAfee AntiVirus Locally Configured Client'
+  tag check_id: 'C-49311r6_chk'
+  tag severity: 'medium'
+  tag gid: 'V-14652'
+  tag rid: 'SV-56394r2_rule'
+  tag stig_id: 'DTAM039'
+  tag gtitle: 'DTAM039-McAfee VirusScan unwanted programs action'
+  tag fix_id: 'F-49211r4_fix'
+  tag 'documentable'
+  tag responsibility: ['System Administrator', 'Information Assurance Officer']
+  tag cci: ['CCI-001243']
+  tag nist: ['SI-3 c 2']
+end

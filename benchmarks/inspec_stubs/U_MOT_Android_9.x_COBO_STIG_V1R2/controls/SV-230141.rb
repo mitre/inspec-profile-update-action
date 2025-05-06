@@ -1,0 +1,36 @@
+control 'SV-230141' do
+  title 'Motorola Android Pie devices must have the latest available Motorola Android Pie operating system installed.'
+  desc 'Required security features are not available in earlier operating system versions. In addition, there may be known vulnerabilities in earlier versions.
+
+SFR ID: FMT_SMF_EXT.1.1 #47'
+  desc 'check', 'Review device configuration settings to confirm that the most recently released version of Motorola Android Pie is installed. 
+
+For Motorola Android Pie, LEXL11 current version: 
+PIE.L11_P_30.22.01 uses latest Google Android 9.0 version (and Security Patches) as provided by Qualcomm (chipset vendor) based on Android OS 9.0. Linux Kernel version is 4.4.153.
+
+This procedure is performed on both the MDM console and the Motorola Android Pie device. 
+ 
+In the MDM management console, review the version of Motorola Android Pie installed on a sample of managed devices. This procedure will vary depending on the MDM product. 
+ 
+On the Android Pie device, to see the installed operating system version: 
+1. Open Settings. 
+2. Tap "About phone". 
+3. Verify "Build number". 
+ 
+If the installed version of the Android operating system on any reviewed Motorola devices is not the latest released by the wireless carrier, this is a finding.'
+  desc 'fix', 'Install the latest released version of the Motorola Android Pie operating system on all managed Motorola devices. 
+
+For Motorola Android Pie, LEXL11 current version: PIE.L11_P_30.22.01 uses latest Google Android 9.0 version (and Security Patches) as provided by Qualcomm (chipset vendor) based on Android OS 9.0. Linux Kernel version is 4.4.153.'
+  impact 0.7
+  ref 'DPMS Target Motorola Android 9.x COBO STIG'
+  tag check_id: 'C-58141r859772_chk'
+  tag severity: 'high'
+  tag gid: 'V-230141'
+  tag rid: 'SV-230141r859774_rule'
+  tag stig_id: 'MOTO-09-010800'
+  tag gtitle: 'GOOG-09-010800'
+  tag fix_id: 'F-58090r859773_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end
