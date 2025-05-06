@@ -1,9 +1,7 @@
 mkdir tmp
 
-for i in {1..5}
-do
-    find . -name "*.zip" -print0 | while read -d $'\0' file
-    do
+for i in {1..5}; do
+    find . -name "*.zip" -print0 | while read -d $'\0' file; do
         echo $file
         unzip -d tmp -o "$file"
         rm -f "$file"
@@ -11,8 +9,7 @@ do
 done
 
 mkdir stigs
-find . -name 'U*xccdf.xml' -print0 | while read -d $'\0' file
-do
+find . -name 'U*xccdf.xml' -print0 | while read -d $'\0' file; do
     cp "$file" ./stigs/
 done
 
