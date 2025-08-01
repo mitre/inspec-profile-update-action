@@ -1,0 +1,32 @@
+control 'SV-239186' do
+  title 'The Photon operating system must be configured to protect the SSH public host key from unauthorized modification.'
+  desc 'If a public host key file is modified by an unauthorized user, the SSH service may be compromised.'
+  desc 'check', 'At the command line, execute the following command:
+
+# stat -c "%n permissions are %a and owned by %U:%G" /etc/ssh/*key.pub
+
+Expected result:
+
+/etc/ssh/ssh_host_dsa_key.pub permissions are 644 and owned by root:root
+/etc/ssh/ssh_host_ecdsa_key.pub permissions are 644 and owned by root:root
+/etc/ssh/ssh_host_ed25519_key.pub permissions are 644 and owned by root:root
+/etc/ssh/ssh_host_rsa_key.pub permissions are 644 and owned by root:root
+
+If the output does not match the expected result, this is a finding.'
+  desc 'fix', 'At the command line, execute the following commands for each returned file:
+
+# chmod 644 <file>
+# chown root:root <file>'
+  impact 0.5
+  ref 'DPMS Target VMware vSphere 6.7 Photon OS'
+  tag check_id: 'C-42397r675364_chk'
+  tag severity: 'medium'
+  tag gid: 'V-239186'
+  tag rid: 'SV-239186r675366_rule'
+  tag stig_id: 'PHTN-67-000115'
+  tag gtitle: 'SRG-OS-000480-GPOS-00227'
+  tag fix_id: 'F-42356r675365_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end

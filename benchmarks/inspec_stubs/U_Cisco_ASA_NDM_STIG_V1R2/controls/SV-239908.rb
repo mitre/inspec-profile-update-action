@@ -1,0 +1,31 @@
+control 'SV-239908' do
+  title 'The Cisco ASA must be configured to produce audit log records containing information to establish the source of events.'
+  desc 'In order to compile an accurate risk assessment and provide forensic analysis, it is essential for security personnel to know the source of the event. The source may be a component, module, or process within the device or an external session, administrator, or device.
+
+Associating information about where the source of the event occurred provides a means of investigating an attack; recognizing resource utilization or capacity thresholds; or identifying an improperly configured device.'
+  desc 'check', 'Review the Cisco ASA configuration to verify that it is compliant with this requirement. The configuration should look similar to the example below:
+
+logging enable
+logging buffered informational
+
+Note: The ASA will log location (IP address or console) from where configuration commands are entered. 
+
+If the ASA is not configured to generate audit records containing information to establish the source of events, this is a finding.'
+  desc 'fix', 'Configure the Cisco ASA as shown in the example below.
+
+ASA(config)# logging enable
+ASA(config)# logging buffered informational
+ASA(config)# end'
+  impact 0.5
+  ref 'DPMS Target Cisco ASA NDM'
+  tag check_id: 'C-43141r666085_chk'
+  tag severity: 'medium'
+  tag gid: 'V-239908'
+  tag rid: 'SV-239908r666087_rule'
+  tag stig_id: 'CASA-ND-000290'
+  tag gtitle: 'SRG-APP-000098-NDM-000228'
+  tag fix_id: 'F-43100r666086_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000133']
+  tag nist: ['AU-3 d']
+end

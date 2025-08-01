@@ -1,0 +1,48 @@
+control 'SV-208908' do
+  title 'The audit system must be configured to audit user deletions of files and programs.'
+  desc 'Auditing file deletions will create an audit trail for files that are removed from the system. The audit trail could aid in system troubleshooting, as well as detecting malicious processes that attempt to delete log files to conceal their presence.'
+  desc 'check', %q(To determine if the system is configured to audit user deletions of files and programs, run the following command:
+
+$ sudo egrep -w 'rmdir|unlink|unlinkat|rename|renameat' /etc/audit/audit.rules
+
+-a always,exit -F arch=b32 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid>=500 -F auid!=4294967295 -k delete
+-a always,exit -F arch=b32 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid=0 -k delete
+
+-a always,exit -F arch=b64 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid>=500 -F auid!=4294967295 -k delete
+-a always,exit -F arch=b64 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid=0 -k delete
+
+If the system is 64-bit and does not return rules for both "b32" and "b64" architectures, this is a finding.
+
+If the system is not configured to audit "rmdir", this is a finding.
+
+If the system is not configured to audit "unlink", this is a finding.
+
+If the system is not configured to audit "unlinkat", this is a finding.
+
+If the system is not configured to audit "rename", this is a finding.
+
+If the system is not configured to audit "renameat", this is a finding.
+
+If no line is returned, this is a finding.)
+  desc 'fix', 'At a minimum, the audit system should collect file deletion events for all users and root. Add the following to "/etc/audit/audit.rules":
+
+-a always,exit -F arch=b32 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid>=500 -F auid!=4294967295 -k delete
+-a always,exit -F arch=b32 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid=0 -k delete
+If the system is 64-bit, then also add the following:
+
+-a always,exit -F arch=b64 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid>=500 -F auid!=4294967295 -k delete
+-a always,exit -F arch=b64 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid=0 -k delete'
+  impact 0.3
+  ref 'DPMS Target Oracle Linux 6'
+  tag check_id: 'C-9161r357704_chk'
+  tag severity: 'low'
+  tag gid: 'V-208908'
+  tag rid: 'SV-208908r793694_rule'
+  tag stig_id: 'OL6-00-000200'
+  tag gtitle: 'SRG-OS-000064'
+  tag fix_id: 'F-9161r357705_fix'
+  tag 'documentable'
+  tag legacy: ['SV-65347', 'V-51137']
+  tag cci: ['CCI-000172']
+  tag nist: ['AU-12 c']
+end

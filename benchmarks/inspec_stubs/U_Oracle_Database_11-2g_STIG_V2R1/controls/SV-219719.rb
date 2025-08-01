@@ -1,0 +1,51 @@
+control 'SV-219719' do
+  title 'Only authorized system accounts must have the SYSTEM tablespace specified as the default tablespace.'
+  desc 'The Oracle SYSTEM tablespace is used by the database to store all DBMS system objects. Other use of the system tablespace may compromise system availability and the effectiveness of host system access controls to the tablespace files.'
+  desc 'check', "Run the query:
+
+select property_name, property_value
+from database_properties
+where property_name in
+('DEFAULT_PERMANENT_TABLESPACE','DEFAULT_TEMP_TABLESPACE');
+
+If either value is set to SYSTEM, this is a finding.
+
+Run the query:
+
+select username from dba_users 
+where (default_tablespace = 'SYSTEM' or temporary_tablespace = 'SYSTEM')
+and username not in
+('LBACSYS','OUTLN','SYS','SYSTEM');
+
+If any non-default account records are returned, this is a finding."
+  desc 'fix', 'Create and dedicate tablespaces to support only one application.
+
+Do not share tablespaces between applications.
+
+Do not grant quotas to application object owners on tablespaces not dedicated to their associated application.
+
+Run the queries:
+
+alter database default tablespace <tablespace_name>;
+alter database default temporary tablespace <temporary_tablespace_name>;
+
+alter user <username> default tablespace <tablespace_name> temporary tablespace <temporary_tablespace_name>;
+
+Replace <username> with the named user account.
+Replace <tablespace_name> with the new default tablespace name.
+Replace <temporary_tablespace_name> with the new default temporary tablespace name (typically TEMP).
+Repeat the "alter user" for each affected user account.'
+  impact 0.5
+  ref 'DPMS Target Oracle Database 11.2g'
+  tag check_id: 'C-21444r307006_chk'
+  tag severity: 'medium'
+  tag gid: 'V-219719'
+  tag rid: 'SV-219719r401224_rule'
+  tag stig_id: 'O112-BP-023600'
+  tag gtitle: 'SRG-APP-000516-DB-000363'
+  tag fix_id: 'F-21443r307007_fix'
+  tag 'documentable'
+  tag legacy: ['SV-68249', 'V-54009']
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end

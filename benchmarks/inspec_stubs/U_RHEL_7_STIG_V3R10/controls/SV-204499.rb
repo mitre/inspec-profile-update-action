@@ -1,0 +1,36 @@
+control 'SV-204499' do
+  title 'The Red Hat Enterprise Linux operating system must be configured so that the file integrity tool is configured to verify extended attributes.'
+  desc 'Extended attributes in file systems are used to contain arbitrary data and file metadata with security implications.'
+  desc 'check', 'Verify the file integrity tool is configured to verify extended attributes.
+
+Note: AIDE is highly configurable at install time. These commands assume the "aide.conf" file is under the "/etc" directory.
+
+Use the following command to determine if the file is in another location:
+     # find / -name aide.conf
+
+Check the "aide.conf" file to determine if the "xattrs" rule has been added to the rule list being applied to the files and directories selection lists.
+
+An example rule that includes the "xattrs" rule follows:
+
+     All= p+i+n+u+g+s+m+S+sha512+acl+xattrs+selinux
+     /bin All # apply the custom rule to the files in bin 
+     /sbin All # apply the same custom rule to the files in sbin 
+
+If the "xattrs" rule is not being used on all uncommented selection lines in the "/etc/aide.conf" file, or extended attributes are not being checked by another file integrity tool, this is a finding.'
+  desc 'fix', 'Configure the file integrity tool to check file and directory extended attributes. 
+
+If AIDE is installed, ensure the "xattrs" rule is present on all uncommented file and directory selection lists.'
+  impact 0.3
+  ref 'DPMS Target Red Hat Enterprise Linux 7'
+  tag check_id: 'C-4623r880857_chk'
+  tag severity: 'low'
+  tag gid: 'V-204499'
+  tag rid: 'SV-204499r880858_rule'
+  tag stig_id: 'RHEL-07-021610'
+  tag gtitle: 'SRG-OS-000480-GPOS-00227'
+  tag fix_id: 'F-4623r88690_fix'
+  tag 'documentable'
+  tag legacy: ['SV-86695', 'V-72071']
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end

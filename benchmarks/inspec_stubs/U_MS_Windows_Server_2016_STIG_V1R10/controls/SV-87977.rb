@@ -1,0 +1,30 @@
+control 'SV-87977' do
+  title 'Windows Server 2016 reversible password encryption must be disabled.'
+  desc 'Storing passwords using reversible encryption is essentially the same as storing clear-text versions of the passwords, which are easily compromised. For this reason, this policy must never be enabled.'
+  desc 'check', 'Verify the effective setting in Local Group Policy Editor.
+
+Run "gpedit.msc".
+
+Navigate to Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Password Policy.
+
+If the value for "Store passwords using reversible encryption" is not set to "Disabled", this is a finding.
+
+For server core installations, run the following command:
+
+Secedit /Export /Areas SecurityPolicy /CFG C:\\Path\\FileName.Txt
+
+If "ClearTextPassword" equals "1" in the file, this is a finding.'
+  desc 'fix', 'Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Password Policy >> "Store passwords using reversible encryption" to "Disabled".'
+  impact 0.7
+  ref 'DPMS Target Windows 2016'
+  tag check_id: 'C-91455r1_chk'
+  tag severity: 'high'
+  tag gid: 'V-73325'
+  tag rid: 'SV-87977r2_rule'
+  tag stig_id: 'WN16-AC-000090'
+  tag gtitle: 'SRG-OS-000073-GPOS-00041'
+  tag fix_id: 'F-79767r1_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000196']
+  tag nist: ['IA-5 (1) (c)']
+end

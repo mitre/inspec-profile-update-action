@@ -1,0 +1,63 @@
+control 'SV-225633' do
+  title 'WebSphere MQ queue resource defined to the MQQUEUE resource class are not protected in accordance with security requirements.'
+  desc 'WebSphere MQ resources allow for the control of administrator functions, connections, commands, queues, processes, and namelists.  Some resources provide the ability to disable or bypass security checking.  Failure to properly protect WebSphere MQ resources may result in unauthorized access.  This exposure could compromise the availability, integrity, and confidentiality of system services, applications, and customer data.'
+  desc 'check', 'Refer to the following report produced by the z/OS Data Collection:
+
+-       MQSRPT(ssid)
+
+NOTE:	ssid is the queue manager name (a.k.a., subsystem identifier). 
+
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(WHOHMQUE)
+
+For all queue identified by the DISPLAY QUEUE(*) ALL command in the MQSRPT(ssid).  These queues will be prefixed by ssid to identify the resources to be protected.  Ensure these queue resources are defined to the MQQUEUE resource class, if the following guidance is true, this is not a finding.
+
+1)	For message queues (i.e., ssid.queuename), access authorization restricts access to users requiring the ability to get messages from and put messages to message queues.  This is difficult to determine.  However, an item for concern may be a profile with * READ specified in the access list. Decentralized MQ Administrators, non-DECC datacenter users; can have up to ALTER access to the user Message Queues.
+2)	For system queues (i.e., ssid.SYSTEM.queuename), access authorization restricts UPDATE and/or  ALTER access to WebSphere MQ STCs, WebSphere MQ administrators, systems programming personnel, and CICS regions running WebSphere MQ applications.
+3)	For the following system queues ensure that UPDATE access is restricted to Auditors and Users that require access to review message queues.
+ssid.SYSTEM.COMMAND.INPUT
+ssid.SYSTEM.COMMAND.REPLY
+ssid.SYSTEM.CSQOREXX.*
+ssid.SYSTEM.CSQUTIL.*
+4)	For the real dead-letter queue (to determine queue name refer to ZWMQ0053), ALTER access authorization restricts access to WebSphere MQ STCs, WebSphere MQ administrators, CICS regions running WebSphere MQ applications, and any automated application used for dead-letter queue maintenance.
+5)	For the alias dead-letter queue (to determine queue name refer to ZWMQ0053), UPDATE access authorization restricts access to users requiring the ability to put messages to the dead-letter queue.  This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.'
+  desc 'fix', 'For all queue resources defined to the MQQUEUE resource class, ensure the following items are in effect:
+
+NOTE:	ssid is the queue manager name (a.k.a., subsystem identifier).
+
+For message queues (i.e., ssid.queuename), access authorization restricts access to users requiring the ability to get messages from and put messages to message queues. This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+For system queues (i.e., ssid.SYSTEM.queuename), access authorization restricts access to WebSphere MQ STCs, WebSphere MQ administrators, systems programming personnel, and CICS regions running WebSphere MQ applications.
+
+For the following system queues ensure that UPDATE access is restricted to WebSphere MQ STCs, WebSphere MQ administrators, systems programming personnel, CICS regions running WebSphere MQ applications, auditors, and users that require access to review message queues.
+
+ssid.SYSTEM.COMMAND.INPUT
+ssid.SYSTEM.COMMAND.REPLY
+ssid.SYSTEM.CSQOREXX.*
+
+For the following system queues (i.e., ssid.SYSTEM.CSQUTIL.*) ensure that UPDATE access is restricted to WebSphere MQ STCs, WebSphere MQ administrators, systems programming personnel, CICS regions running WebSphere MQ applications, and auditors.
+
+For the real dead-letter queue (to determine queue name refer to ZWMQ0053), access authorization restricts access to WebSphere MQ STCs, WebSphere MQ administrators, CICS regions running WebSphere MQ applications, and any automated application used for dead-letter queue maintenance.
+
+For the alias dead-letter queue (to determine queue name refer to ZWMQ0053), access authorization restricts access to users requiring the ability to put messages to the dead-letter queue.  This is difficult to determine. However, an item for concern may be a profile with * READ specified in the access list.
+
+NOTE:	If an alias queue is not used in place of the dead-letter queue, then the RACF rules for the dead-letter queue will be coded to restrict unauthorized users and systems from reading the messages on the file.
+
+The following is a sample of the commands required to allow a user (USER1) to get messages from or put messages to queues beginning with (PAY.) on subsystem (QM1):
+
+TSS PER(USER1) MQQUEUE(QM1.PAY.) ACC(UPDATE)'
+  impact 0.5
+  ref 'DPMS Target zOS WebsphereMQ for TSS'
+  tag check_id: 'C-27334r472701_chk'
+  tag severity: 'medium'
+  tag gid: 'V-225633'
+  tag rid: 'SV-225633r472703_rule'
+  tag stig_id: 'ZWMQ0054'
+  tag gtitle: 'SRG-OS-000080'
+  tag fix_id: 'F-27322r472702_fix'
+  tag 'documentable'
+  tag legacy: ['SV-7545', 'V-6965']
+  tag cci: ['CCI-000213']
+  tag nist: ['AC-3']
+end
