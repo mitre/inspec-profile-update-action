@@ -1,0 +1,30 @@
+control 'SV-217112' do
+  title 'The SUSE operating system must reauthenticate users when changing authenticators, roles, or escalating privileges.'
+  desc 'Without reauthentication, users may access resources or perform tasks for which they do not have authorization. 
+
+When SUSE operating system provide the capability to change user authenticators, change security roles, or escalate a functional capability, it is critical the user reauthenticate.
+
+'
+  desc 'check', %q(Verify that the SUSE operating system requires reauthentication when changing authenticators, roles, or escalating privileges.
+
+Check that "/etc/sudoers" has no occurrences of "NOPASSWD" or "!authenticate" with the following command:
+
+> sudo egrep -i '(nopasswd|!authenticate)' /etc/sudoers
+
+If any uncommented lines containing "!authenticate", or "NOPASSWD" are returned and active accounts on the system have valid passwords, this is a finding.)
+  desc 'fix', 'Configure the SUSE operating system to remove any occurrence of "NOPASSWD" or "!authenticate" found in the "/etc/sudoers" file. If the system does not use passwords for authentication, the "NOPASSWD" tag may exist in the file.'
+  impact 0.7
+  ref 'DPMS Target SUSE Linux Enterprise Server 12'
+  tag check_id: 'C-18340r646685_chk'
+  tag severity: 'high'
+  tag gid: 'V-217112'
+  tag rid: 'SV-217112r854084_rule'
+  tag stig_id: 'SLES-12-010110'
+  tag gtitle: 'SRG-OS-000373-GPOS-00156'
+  tag fix_id: 'F-18338r369493_fix'
+  tag satisfies: ['SRG-OS-000373-GPOS-00156', 'SRG-OS-000373-GPOS-00157', 'SRG-OS-000373-GPOS-00158']
+  tag 'documentable'
+  tag legacy: ['SV-91763', 'V-77067']
+  tag cci: ['CCI-002038']
+  tag nist: ['IA-11']
+end

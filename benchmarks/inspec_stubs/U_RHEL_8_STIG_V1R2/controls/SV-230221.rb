@@ -1,0 +1,44 @@
+control 'SV-230221' do
+  title 'RHEL 8 must be a vendor-supported release.'
+  desc 'An operating system release is considered "supported" if the vendor continues to provide security patches for the product. With an unsupported release, it will not be possible to resolve security issues discovered in the system software.
+
+Red Hat offers the Extended Update Support (EUS) ad-on to a Red Hat Enterprise Linux subscription, for a fee, for those customers who wish to standardize on a specific minor release for an extended period. The RHEL 8 minor releases eligible for EUS are 8.1, 8.2, 8.4, 8.6, and 8.8. Each RHEL 8 EUS stream is available for 24 months from the availability of the minor release. For more details on the Red Hat Enterprise Linux Life Cycle  visit https://access.redhat.com/support/policy/updates/errata.'
+  desc 'check', 'Verify the version of the operating system is vendor supported.
+
+Check the version of the operating system with the following command:
+
+$ sudo cat /etc/redhat-release
+
+Red Hat Enterprise Linux Server release 8.1 (Ootpa)
+
+Current End of Maintenance Support for RHEL 8.1 is 30 April 2020.
+
+Current End of Maintenance Support for RHEL 8.2 is 30 November 2020.
+
+Current End of Maintenance Support for RHEL 8.3 is 30 April 2021.
+
+Current End of Maintenance Support for RHEL 8.4 is 30 November 2021.
+
+Current End of Maintenance Support for RHEL 8.5 is 30 April 2022.
+
+Current End of Maintenance Support for RHEL 8.6 is 30 November 2022.
+
+Current End of Maintenance Support for RHEL 8.7 is 30 April 2023.
+
+Current End of Maintenance Support for RHEL 8.8 is 30 November 2023.
+
+If the release is not supported by the vendor, this is a finding.'
+  desc 'fix', 'Upgrade to a supported version of RHEL 8.'
+  impact 0.7
+  ref 'DPMS Target Red Hat Enterprise Linux 8'
+  tag check_id: 'C-32890r567409_chk'
+  tag severity: 'high'
+  tag gid: 'V-230221'
+  tag rid: 'SV-230221r627750_rule'
+  tag stig_id: 'RHEL-08-010000'
+  tag gtitle: 'SRG-OS-000480-GPOS-00227'
+  tag fix_id: 'F-32865r567410_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end

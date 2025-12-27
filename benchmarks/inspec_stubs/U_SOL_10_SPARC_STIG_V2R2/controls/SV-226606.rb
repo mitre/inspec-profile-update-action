@@ -1,0 +1,23 @@
+control 'SV-226606' do
+  title 'The audit system must be configured to audit all administrative, privileged, and security actions.'
+  desc 'If the system is not configured to audit certain activities and write them to an audit log, it is more difficult to detect and track system compromises and damages incurred during a system compromise.'
+  desc 'check', 'Check the auditing configuration of the system.
+# grep flags /etc/security/audit_control
+If the am flag is not present, and either of the -am or +am flags is not present, this is a finding.'
+  desc 'fix', 'Edit /etc/security/audit_control and add am to the flags list.
+Load the new audit configuration.
+# auditconfig -conf'
+  impact 0.5
+  ref 'DPMS Target Solaris 10 SPARC'
+  tag check_id: 'C-28767r483230_chk'
+  tag severity: 'medium'
+  tag gid: 'V-226606'
+  tag rid: 'SV-226606r603265_rule'
+  tag stig_id: 'GEN002760'
+  tag gtitle: 'SRG-OS-000062'
+  tag fix_id: 'F-28755r483231_fix'
+  tag 'documentable'
+  tag legacy: ['V-816', 'SV-27298']
+  tag cci: ['CCI-000169']
+  tag nist: ['AU-12 a']
+end

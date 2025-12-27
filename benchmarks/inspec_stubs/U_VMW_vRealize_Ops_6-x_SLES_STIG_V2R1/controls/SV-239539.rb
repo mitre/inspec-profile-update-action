@@ -1,0 +1,35 @@
+control 'SV-239539' do
+  title 'The SMTP service must not use .forward files.'
+  desc 'The .forward file allows users to automatically forward mail to another system. Use of .forward files could allow the unauthorized forwarding of mail and could potentially create mail loops that could degrade system performance.'
+  desc 'check', 'Check forwarding from sendmail:
+
+# grep "0 ForwardPath" /etc/sendmail.cf
+
+If the entry contains a file path and is not commented out, this is a finding.'
+  desc 'fix', 'Disable forwarding for sendmail and remove ".forward" files from the system:
+
+Remove all ".forward" files on the system.
+
+# find / -name .forward -delete
+
+Use the following command to disable forwarding:
+
+# sed -i "s/O ForwardPath/#O ForwardPath/" /etc/sendmail.cf
+
+Restart the sendmail service:
+
+# service sendmail restart'
+  impact 0.5
+  ref 'DPMS Target VMware vRealize Operations Manager 6-x SLES'
+  tag check_id: 'C-42772r662066_chk'
+  tag severity: 'medium'
+  tag gid: 'V-239539'
+  tag rid: 'SV-239539r662068_rule'
+  tag stig_id: 'VROM-SL-000600'
+  tag gtitle: 'SRG-OS-000096-GPOS-00050'
+  tag fix_id: 'F-42731r662067_fix'
+  tag 'documentable'
+  tag legacy: ['SV-99199', 'V-88549']
+  tag cci: ['CCI-000382']
+  tag nist: ['CM-7 b']
+end

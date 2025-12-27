@@ -1,0 +1,37 @@
+control 'SV-223379' do
+  title 'Open/Save of PowerPoint 97-2003 presentations, shows, templates, and add-in files must be blocked.'
+  desc 'This policy setting allows you to determine whether users can open, view, edit, or save PowerPoint files with the format specified by the title of this policy setting.
+
+If you enable this policy setting, you can specify whether users can open, view, edit, or save files.
+
+The options that can be selected are below. Note: Not all options may be available for this policy setting.
+- Do not block: The file type will not be blocked.
+- Save blocked: Saving of the file type will be blocked.
+- Open/Save blocked, use open policy: Both opening and saving of the file type will be blocked. The file will open based on the policy setting configured in the "default file block behavior" key.
+- Block: Both opening and saving of the file type will be blocked, and the file will not open.
+- Open in Protected View: Both opening and saving of the file type will be blocked, and the option to edit the file type will not be enabled.
+- Allow editing and open in Protected View: Both opening and saving of the file type will be blocked, and the option to edit will be enabled.
+
+If you disable or do not configure this policy setting, the file type will not be blocked.'
+  desc 'check', 'Verify the policy value for User Configuration >> Administrative Templates >> Microsoft PowerPoint 2016 >> PowerPoint Options >> Security >> Trust Center >> File Block Settings >> PowerPoint 97-2003 presentations, shows, templates and add-in files is set to "Enabled" "Open/Save blocked, use open policy".
+ 
+Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\\software\\policies\\microsoft\\office\\16.0\\powerpoint\\security\\fileblock
+
+If the value for binaryfiles is set to REG_DWORD = 1, this is not a finding.'
+  desc 'fix', 'Set the policy value for User Configuration >> Administrative Templates >> Microsoft PowerPoint 2016 >> PowerPoint Options >> Security >> Trust Center >> File Block Settings >> PowerPoint 97-2003 presentations, shows, templates and add-in files to "Enabled" "Open/Save blocked, use open policy".'
+  impact 0.5
+  ref 'DPMS Target Microsoft Office 365 ProPlus'
+  tag check_id: 'C-25052r442356_chk'
+  tag severity: 'medium'
+  tag gid: 'V-223379'
+  tag rid: 'SV-223379r508019_rule'
+  tag stig_id: 'O365-PT-000003'
+  tag gtitle: 'SRG-APP-000207'
+  tag fix_id: 'F-25040r442357_fix'
+  tag 'documentable'
+  tag legacy: ['SV-108933', 'V-99829']
+  tag cci: ['CCI-001662']
+  tag nist: ['SC-18 (1)']
+end

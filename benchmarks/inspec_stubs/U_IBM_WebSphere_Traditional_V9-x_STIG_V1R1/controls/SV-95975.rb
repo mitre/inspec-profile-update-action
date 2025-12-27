@@ -1,0 +1,42 @@
+control 'SV-95975' do
+  title 'The WebSphere Application Server wsadmin file must be protected from unauthorized modification.'
+  desc 'Protecting log data also includes identifying and protecting the tools used to view and manipulate log data. 
+
+Depending upon the log format and application, system and application log tools may provide the only means to manipulate and manage application and system log data. 
+
+It is, therefore, imperative that access to log tools be controlled and protected from unauthorized modification. If an attacker were to modify log tools, he could also manipulate logs to hide evidence of malicious activity. 
+
+Application servers provide a web- and/or a command line-based management functionality for managing the application server log capabilities. In addition, subsets of log tool components may be stored on the file system as jar or xml configuration files. The application server must ensure that in addition to protecting any web-based log tools, any file system-based tools are protected as well.'
+  desc 'check', 'Review System Security Plan and the system documentation.
+
+Identify the home folder and user account for the WebSphere installation.
+
+Log on to the operating system that is hosting the WebSphere application server. By default, WebSphere will be installed in the "/opt/IBM/Websphere" folder on UNIX like systems and in the "C:\\Program Files\\IBM\\Websphere\\" folder on Windows systems.
+
+On UNIX systems, verify file permissions for the "WebSphere" folder are set to "770" for the WebSphere user, group, and other. Permissions do not propagate to sub-folders.
+
+On Windows systems, verify file permissions for "WebSphere" folder allow SYSTEM, WebSphere User, and Admin Group full control. Permissions do not propagate to sub-folders.
+
+If file permissions exceed these restrictions, this is a finding.'
+  desc 'fix', 'On the system hosting the WebSphere Application Server, log on to the operating system with admin rights.
+
+Navigate to the "WebSphere" folder.
+
+Change the permissions on the folder. Do not propagate permissions to sub-folders.
+
+For UNIX systems: set the "WebSphere" folder permissions to "770".
+
+For Windows systems: set the "WebSphere" folder permission to allow full control for SYSTEM, WebSphere user, and Admin Group. Do not propagate permissions to sub-folders.'
+  impact 0.5
+  ref 'DPMS Target WebSphere AS 9.x'
+  tag check_id: 'C-80959r2_chk'
+  tag severity: 'medium'
+  tag gid: 'V-81261'
+  tag rid: 'SV-95975r1_rule'
+  tag stig_id: 'WBSP-AS-000780'
+  tag gtitle: 'SRG-APP-000122-AS-000082'
+  tag fix_id: 'F-88041r2_fix'
+  tag 'documentable'
+  tag cci: ['CCI-001494']
+  tag nist: ['AU-9']
+end

@@ -1,0 +1,54 @@
+control 'SV-237053' do
+  title 'The A10 Networks ADC, when used to load balance web applications, must enable external logging for WAF data event messages.'
+  desc 'Without coordinated reporting between separate devices, it is not possible to identify the true scale and possible target of an attack.
+
+External logging must be enabled for WAF data event messages. External logging is activated once the WAF template that uses the logging template is bound to an HTTP/HTTPS virtual port.'
+  desc 'check', 'If the device is not used to load balance web servers, this is not applicable.
+
+Review the device configuration and ask the device Administrator which templates are used. 
+
+If no SLB instance for the log server(s) is configured, this is a finding.
+
+If there is no service group with assigned members for the log servers or the service group is not included in the logging template, this is a finding.
+
+If no logging template is configured and bound to the WAF template, this is a finding.'
+  desc 'fix', 'If the device is used to load balance web servers, configure external logging for WAF data event messages. 
+
+Create a server configuration for each log server. 
+The following command adds a server:
+slb server [server-name] [ipaddr]
+
+The following command specifies the TCP or UDP port number on which the server will listen for log traffic:
+port [port-num] [tcp | udp]
+
+If multiple log servers are used, add the log servers to a service group. Use the round-robin load-balancing method, which is the default method.
+
+The following command creates the service group:
+slb service-group [group-name] [tcp | udp]
+
+The following command adds each log server and its TCP or UDP port to the service group:
+member [server-name:portnum]
+
+The following command creates a logging template:
+slb template logging [template-name]
+
+The following command adds the service group containing the log servers to the logging template:
+service-group [group-name]
+
+The following commands bind the logging template to the WAF template:
+slb template waf [template-name]
+template logging [template-name]'
+  impact 0.3
+  ref 'DPMS Target A10 Networks ADC ALG'
+  tag check_id: 'C-40272r639604_chk'
+  tag severity: 'low'
+  tag gid: 'V-237053'
+  tag rid: 'SV-237053r639606_rule'
+  tag stig_id: 'AADC-AG-000107'
+  tag gtitle: 'SRG-NET-000383-ALG-000135'
+  tag fix_id: 'F-40235r639605_fix'
+  tag 'documentable'
+  tag legacy: ['SV-82495', 'V-68005']
+  tag cci: ['CCI-002656']
+  tag nist: ['SI-4 (1)']
+end

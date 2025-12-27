@@ -1,0 +1,31 @@
+control 'SV-240824' do
+  title 'tc Server HORIZON must set URIEncoding to UTF-8.'
+  desc "Invalid user input occurs when a user inserts data or characters into a hosted application's data entry field and the hosted application is unprepared to process that data. This results in unanticipated application behavior, potentially leading to an application compromise. Invalid user input is one of the primary methods employed when attempting to compromise an application. 
+
+An attacker can also enter Unicode into hosted applications in an effort to break out of the document home or root home directory or to bypass security checks.
+
+To mitigate against many types of character-based vulnerabilities, tc Server should be configured to use a consistent character set. The URIEncoding attribute on the Connector nodes provides the means for tc Server to enforce a consistent character set encoding."
+  desc 'check', 'Navigate to and open /opt/vmware/horizon/workspace/conf/server.xml.
+
+Navigate to each of the <Connector> nodes.
+
+If the value of "URIEncoding" is not set to "UTF-8" or is missing, this is a finding.'
+  desc 'fix', %q(Navigate to and open /opt/vmware/horizon/workspace/conf/server.xml.
+
+Navigate to each of the <Connector> nodes.
+
+Configure each <Connector> node with the value 'URIEncoding="UTF-8"'.)
+  impact 0.5
+  ref 'DPMS Target VMware vRealize Automation 7-x tc Server'
+  tag check_id: 'C-44057r674214_chk'
+  tag severity: 'medium'
+  tag gid: 'V-240824'
+  tag rid: 'SV-240824r674216_rule'
+  tag stig_id: 'VRAU-TC-000610'
+  tag gtitle: 'SRG-APP-000251-WSR-000157'
+  tag fix_id: 'F-44016r674215_fix'
+  tag 'documentable'
+  tag legacy: ['SV-100729', 'V-90079']
+  tag cci: ['CCI-001310']
+  tag nist: ['SI-10']
+end

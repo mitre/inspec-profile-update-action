@@ -1,0 +1,64 @@
+control 'SV-253428' do
+  title 'The External Root CA certificates must be installed in the Trusted Root Store on unclassified systems.'
+  desc 'To ensure secure websites protected with External Certificate Authority (ECA) server certificates are properly validated, the system must trust the ECA Root CAs. The ECA root certificates will ensure the trust chain is established for server certificates issued from the External CAs. This requirement only applies to unclassified systems.'
+  desc 'check', 'Verify the ECA Root CA certificates are installed on unclassified systems as Trusted Root Certification Authorities.
+
+Run "PowerShell" as an administrator.
+
+Execute the following command:
+
+Get-ChildItem -Path Cert:Localmachine\\root | Where Subject -Like "*ECA*" | FL Subject, Thumbprint, NotAfter
+
+If the following certificate "Subject" and "Thumbprint" information is not displayed, this is a finding. 
+
+Subject: CN=ECA Root CA 4, OU=ECA, O=U.S. Government, C=US
+Thumbprint: 73E8BB08E337D6A5A6AEF90CFFDD97D9176CB582
+NotAfter: 12/30/2029
+
+Alternately use the Certificates MMC snap-in:
+
+Run "MMC".
+
+Select "File", "Add/Remove Snap-in".
+
+Select "Certificates", click "Add".
+
+Select "Computer account", click "Next".
+
+Select "Local computer: (the computer this console is running on)", click "Finish".
+
+Click "OK".
+
+Expand "Certificates" and navigate to Trusted Root Certification Authorities >> Certificates.
+
+For each of the ECA Root CA certificates noted below:
+
+Right-click on the certificate and select "Open".
+
+Select the "Details" Tab.
+
+Scroll to the bottom and select "Thumbprint".
+
+If the ECA Root CA certificates below are not listed or the value for the "Thumbprint" field is not as noted, this is a finding.
+
+ECA Root CA 4
+Thumbprint: 73E8BB08E337D6A5A6AEF90CFFDD97D9176CB582
+Valid to: Sunday, December 30, 2029'
+  desc 'fix', 'Install the ECA Root CA certificates on unclassified systems.
+
+ECA Root CA 4
+
+The InstallRoot tool is available on Cyber Exchange at https://cyber.mil/pki-pke/tools-configuration-files.'
+  impact 0.5
+  ref 'DPMS Target Microsoft Windows 11'
+  tag check_id: 'C-56881r829366_chk'
+  tag severity: 'medium'
+  tag gid: 'V-253428'
+  tag rid: 'SV-253428r829368_rule'
+  tag stig_id: 'WN11-PK-000010'
+  tag gtitle: 'SRG-OS-000066-GPOS-00034'
+  tag fix_id: 'F-56831r829367_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000185']
+  tag nist: ['IA-5 (2) (b) (1)']
+end

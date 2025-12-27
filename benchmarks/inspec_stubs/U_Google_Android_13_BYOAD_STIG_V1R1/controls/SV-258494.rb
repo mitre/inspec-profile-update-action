@@ -1,0 +1,36 @@
+control 'SV-258494' do
+  title 'The Google Android 13 work profile must be configured to disable the autofill services.'
+  desc "The autofill services allow the user to complete text inputs that could contain sensitive information, such as personally identifiable information (PII), without previous knowledge of the information. By allowing the use of autofill services, an adversary who learns a user's Android 13 device password, or who otherwise can unlock the device, may be able to further breach other systems by relying on the autofill services to provide information unknown to the adversary. By disabling the autofill services, the risk of an adversary gaining further information about the device's user or compromising other systems is significantly mitigated. 
+ 
+Examples of apps that offer autofill services include Samsung Pass, Google, Dashlane, LastPass, and 1Password.
+
+SFR ID: FMT_SMF_EXT.1.1 #47"
+  desc 'check', 'Review the Google Android 13 work profile configuration settings to confirm that autofill services are disabled. 
+ 
+This procedure is performed only on the EMM Administration console. 
+ 
+On the EMM console:
+
+1. Open "Set user restrictions".
+2. Verify "Disallow autofill" is toggled to "ON".
+ 
+If on the EMM console "disallow autofill" is not selected, this is a finding.'
+  desc 'fix', 'Configure the Google Android 13 device work profile to disable the autofill services. 
+ 
+On the EMM console:
+
+1. Open "Set user restrictions".
+2. Toggle "Disallow autofill" to "ON".'
+  impact 0.5
+  ref 'DPMS Target Google Android 13 BYOAD'
+  tag check_id: 'C-62234r929296_chk'
+  tag severity: 'medium'
+  tag gid: 'V-258494'
+  tag rid: 'SV-258494r929298_rule'
+  tag stig_id: 'GOOG-13-710500'
+  tag gtitle: 'PP-MDF-993300'
+  tag fix_id: 'F-62143r929297_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000366']
+  tag nist: ['CM-6 b']
+end

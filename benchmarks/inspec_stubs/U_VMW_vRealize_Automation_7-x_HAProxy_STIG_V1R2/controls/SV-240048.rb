@@ -1,0 +1,71 @@
+control 'SV-240048' do
+  title 'HAProxy must log the source of events.'
+  desc 'Ascertaining the source of an event is important during forensic analysis. The correct determination of the event and what client requested the resource is important in relation to other events that happened at that same time. 
+
+Without sufficient information establishing the source of an event, investigation into the cause of event is severely hindered. Log record content that may be necessary to satisfy the requirement of this control includes, but is not limited to, time stamps, source and destination IP addresses, user/process identifiers, event descriptions, application-specific events, success/fail indications, file names involved, access control, or flow control rules invoked.
+
+When configured for httplog, HAProxy logs uses the Common Log Format (CLF). The CLF format, a World Wide Web Consortium standard, captures the client IP address that requested the web server event in addition to other useful information. This will enable forensic analysis of server events in case of a malicious event.'
+  desc 'check', 'Navigate to and open /etc/haproxy/haproxy.cfg
+
+Navigate to the globals section.
+
+Verify that the globals section contains the log keyword, and that the log option contains the local0 syslog facility as its parameter.
+
+If properly configured, the globals section will contain the following:
+
+global
+  log 127.0.0.1   local0
+
+If the local0 syslog facility is not configured, this is a finding.
+
+Navigate to the defaults section.
+
+Verify that the defaults section contains the log keyword with the global value.
+
+Verify that an option keyword has been configured with the httplog value.
+
+If properly configured, the globals section will contain the following:
+
+defaults
+  log     global
+  option  httplog 
+
+Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Review the configured syslog facilities and determine the location of the log file for the local0 syslog facility. 
+
+If the local0 syslog facility does not refer to a valid log file, this is a finding.
+
+Navigate to and open the local0 syslog log file.
+
+Verify that HAProxy is logging the source of the event to the log file. 
+
+If the log file is not recording the source of the event, this is a finding.'
+  desc 'fix', 'Navigate to and open /etc/rsyslog.d/vcac.conf.
+
+Configure the local0 syslog facility to write to an appropriate log file.
+
+Navigate to and open /etc/haproxy/haproxy.cfg.
+
+Configure the globals section with the following: 
+
+log 127.0.0.1 local0
+
+Configure the defaults section with both of the following:
+
+log     global
+option  httplog'
+  impact 0.5
+  ref 'DPMS Target VMware vRealize Automation 7-x HA Proxy'
+  tag check_id: 'C-43281r665311_chk'
+  tag severity: 'medium'
+  tag gid: 'V-240048'
+  tag rid: 'SV-240048r879566_rule'
+  tag stig_id: 'VRAU-HA-000065'
+  tag gtitle: 'SRG-APP-000098-WSR-000059'
+  tag fix_id: 'F-43240r665312_fix'
+  tag 'documentable'
+  tag legacy: ['SV-100965', 'V-90315']
+  tag cci: ['CCI-000133']
+  tag nist: ['AU-3 d']
+end

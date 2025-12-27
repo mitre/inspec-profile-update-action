@@ -1,0 +1,24 @@
+control 'SV-259097' do
+  title 'The vCenter Perfcharts service example applications must be removed.'
+  desc 'Tomcat provides example applications, documentation, and other directories in the default installation that do not serve a production use. These files must be deleted.'
+  desc 'check', 'At the command prompt, run the following command:
+
+# ls -l /usr/lib/vmware-perfcharts/tc-instance/webapps/examples
+
+If the examples folder exists or contains any content, this is a finding.'
+  desc 'fix', 'At the command prompt, run the following command:
+
+# rm -rf /usr/lib/vmware-perfcharts/tc-instance/webapps/examples'
+  impact 0.5
+  ref 'DPMS Target VMware vSphere 8.0 VCSA Perfcharts'
+  tag check_id: 'C-62837r934947_chk'
+  tag severity: 'medium'
+  tag gid: 'V-259097'
+  tag rid: 'SV-259097r934949_rule'
+  tag stig_id: 'VCPF-80-000141'
+  tag gtitle: 'SRG-APP-000141-AS-000095'
+  tag fix_id: 'F-62746r934948_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000381']
+  tag nist: ['CM-7 a']
+end

@@ -1,0 +1,61 @@
+control 'SV-216756' do
+  title 'The Cisco perimeter router must be configured to protect an enclave connected to an alternate gateway by using an inbound filter that only permits packets with destination addresses within the sites address space.'
+  desc "Enclaves with alternate gateway connections must take additional steps to ensure there is no compromise on the enclave network or NIPRNet. Without verifying the destination address of traffic coming from the site's alternate gateway, the perimeter router could be routing transit data from the Internet into the NIPRNet. This could also make the perimeter router vulnerable to a denial-of-service (DoS) attack as well as provide a back door into the NIPRNet. The DoD enclave must ensure the ingress filter applied to external interfaces on a perimeter router connecting to an Approved Gateway is secure through filters permitting packets with a destination address belonging to the DoD enclave's address block."
+  desc 'check', "This requirement is not applicable for the DODIN Backbone.
+
+Step 1: Verify the interface connecting to ISP has an inbound ACL as shown in the example below.
+
+interface GigabitEthernet0/0/0/2
+ description Link to ISP
+ ipv4 address x.22.1.15 255.255.255.252
+ ipv4 access-group ISP_ACL_INBOUND ingress
+
+Step 2: Verify that the ACL only allows traffic to specific destination addresses (i.e. enclave’s NIPRNet address space) as shown in the example below.
+
+ipv4 access-list ISP_ACL_INBOUND
+ 10 permit tcp any any established
+ 20 permit icmp host x.12.1.16 host x.12.1.17 echo
+ 30 permit icmp host x.12.1.16 host x.12.1.17 echo-reply
+ 40 permit tcp any host x.12.1.22 eq www
+ 50 permit tcp any host x.12.1.23 eq www
+ 60 permit esp any host x.12.1.24
+ 70 permit ahp any host x.12.1.24
+ 80 deny ipv4 any any log-input
+
+Note: An Approved Gateway (AG) is any external connection from a DoD NIPRNet enclave to an Internet Service Provider, or network owned by a contractor, or non-DoD federal agency that has been approved by either the DoD CIO or the DoD Component CIO. This AG requirement does not apply to commercial cloud connections when the Cloud Service Provider (CSP) network is connected via the NIPRNet Boundary Cloud Access Point (BCAP).
+
+If the ingress ACL bound to the interface connecting to an alternate gateway permits packets with addresses other than those specified, such as destination addresses of the site's NIPRNet address space or a destination address belonging to the address block assigned by the alternate gateway network service provider, this is a finding."
+  desc 'fix', "This requirement is not applicable for the DODIN Backbone.
+
+Step 1: Configure the ingress ACL of the perimeter router connected to an alternate gateway to only permit packets with destination addresses of the site's NIPRNet address space or a destination address belonging to the address block assigned by the alternate gateway network service provider as shown in the example below.
+
+RP/0/0/CPU0:R2(config)#ip access-list ISP_ACL_INBOUND
+RP/0/0/CPU0:R2(config-ipv4-acl)#permit tcp any any established
+RP/0/0/CPU0:R2(config-ipv4-acl)#permit icmp host x.12.1.16 host x.12.1.17 echo
+RP/0/0/CPU0:R2(config-ipv4-acl)#permit icmp host x.12.1.16 host x.12.1.17 echo-reply
+RP/0/0/CPU0:R2(config-ipv4-acl)#permit tcp any host x.12.1.22 eq www
+RP/0/0/CPU0:R2(config-ipv4-acl)#permit tcp any host x.12.1.23 eq www
+RP/0/0/CPU0:R2(config-ipv4-acl)#permit 50 any host x.12.1.24
+RP/0/0/CPU0:R2(config-ipv4-acl)#permit 51 any host x.12.1.24
+RP/0/0/CPU0:R2(config-ipv4-acl)#deny   ip any any log-input
+RP/0/0/CPU0:R2(config-ipv4-acl)#end
+
+Step 2: Apply the ACL inbound on the ISP-facing interface.
+
+RP/0/0/CPU0:R3(config)#int g0/0/0/2 
+RP/0/0/CPU0:R3(config-if)#ipv4 access-group ISP_ACL_INBOUND in
+RP/0/0/CPU0:R3(config-if)#end"
+  impact 0.7
+  ref 'DPMS Target Cisco IOS XR Router RTR'
+  tag check_id: 'C-17988r507359_chk'
+  tag severity: 'high'
+  tag gid: 'V-216756'
+  tag rid: 'SV-216756r531087_rule'
+  tag stig_id: 'CISC-RT-000280'
+  tag gtitle: 'SRG-NET-000019-RTR-000008'
+  tag fix_id: 'F-17986r507360_fix'
+  tag 'documentable'
+  tag legacy: ['SV-105857', 'V-96719']
+  tag cci: ['CCI-001414']
+  tag nist: ['AC-4']
+end

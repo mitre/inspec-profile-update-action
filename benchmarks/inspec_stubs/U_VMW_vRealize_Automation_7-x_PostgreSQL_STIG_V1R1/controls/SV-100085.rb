@@ -1,0 +1,27 @@
+control 'SV-100085' do
+  title 'The vRA PostgreSQL database must set log_connections to on.'
+  desc "For completeness of forensic analysis, it is necessary to know how long a user's (or other principal's) connection to the DBMS lasts. This can be achieved by recording disconnections, in addition to logons/connections, in the audit logs. 
+
+Disconnection may be initiated by the user or forced by the system (as in a timeout) or result from a system or network failure. To the greatest extent possible, all disconnections must be logged."
+  desc 'check', %q(At the command prompt, execute the following command:
+
+# grep '^\s*log_connections\b' /storage/db/pgdata/postgresql.conf
+
+If "log_connections" is not "on", this is a finding.)
+  desc 'fix', %q(At the command prompt, execute the following commands:
+
+# /opt/vmware/vpostgres/current/bin/psql -U postgres -c "ALTER SYSTEM SET log_connections TO 'on';"
+# /opt/vmware/vpostgres/current/bin/psql -U postgres -c "SELECT pg_reload_conf();")
+  impact 0.5
+  ref 'DPMS Target VMware vRealize Automation 7.x PostgreSQL'
+  tag check_id: 'C-89127r1_chk'
+  tag severity: 'medium'
+  tag gid: 'V-89435'
+  tag rid: 'SV-100085r1_rule'
+  tag stig_id: 'VRAU-PG-000445'
+  tag gtitle: 'SRG-APP-000505-DB-000352'
+  tag fix_id: 'F-96177r1_fix'
+  tag 'documentable'
+  tag cci: ['CCI-000172']
+  tag nist: ['AU-12 c']
+end

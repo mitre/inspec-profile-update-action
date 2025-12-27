@@ -1,0 +1,45 @@
+control 'SV-240766' do
+  title 'tc Server VCAC must produce log records that contain sufficient information to establish the outcome (success or failure) of events.'
+  desc "After a security incident has occurred, investigators will often review log files to determine what happened. tc Server HORIZON must create a log entry when users access the system, and the system authenticates the users.
+
+The logs must contain information about user sessions to include what type of event occurred, when (date and time) events occurred, where within the server the events occurred, the client source of the events, the outcome (success or failure) of the event, the identity of the user/subject/process associated with the event.
+
+Like all web servers, tc Server generates HTTP status codes. The status code is a 3-digit indicator of the outcome of the server's response to the request."
+  desc 'check', 'At the command prompt, execute the following command:
+
+tail /storage/log/vmware/vcac/access_log.YYYY-MM-dd.txt
+
+Note: Substitute the actual date in the file name.
+
+If the HTTP status codes are not being recorded, this is a finding.
+
+Note: HTTP status codes are 3-digit codes, which are recorded immediately after "HTTP/1.1"'
+  desc 'fix', 'Navigate to and open /etc/vcac/server.xml.
+
+Navigate to and locate <Host>.
+
+Configure the <Host> node with the <AccessLogValve> below.
+
+Note: The "AccessLogValve" should be configured as follows:
+                <Valve className="org.apache.catalina.valves.AccessLogValve"
+                        checkExists="true" 
+                        directory="logs"
+                        pattern="%h %l %u %t &quot;%r&quot; %s %b"
+                        prefix="access_log"
+                        requestAttributesEnabled="true"
+                        rotatable="false"
+                        suffix=".txt"/>'
+  impact 0.5
+  ref 'DPMS Target VMware vRealize Automation 7-x tc Server'
+  tag check_id: 'C-43999r674419_chk'
+  tag severity: 'medium'
+  tag gid: 'V-240766'
+  tag rid: 'SV-240766r879567_rule'
+  tag stig_id: 'VRAU-TC-000230'
+  tag gtitle: 'SRG-APP-000099-WSR-000061'
+  tag fix_id: 'F-43958r674041_fix'
+  tag 'documentable'
+  tag legacy: ['SV-100617', 'V-89967']
+  tag cci: ['CCI-000134']
+  tag nist: ['AU-3 e']
+end
